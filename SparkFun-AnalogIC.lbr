@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2313,20 +2313,6 @@ QFN-24 w/exposed pad.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LTC6244">
-<description>Low-noise, high-speed rail-to-rail CMOS op-amp</description>
-<gates>
-<gate name="G$1" symbol="LTC6244" x="-22.86" y="2.54"/>
-<gate name="G$2" symbol="LTC6244_2" x="20.32" y="0"/>
-</gates>
-<devices>
-<device name="" package="MSOP8">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="MAX323" prefix="U">
 <description>Dual low-voltage SPST analog switch</description>
 <gates>
@@ -2943,6 +2929,30 @@ Decodes NTSC video signal to YCbCr 4:2:2 signal</description>
 <connect gate="G$1" pin="OUT" pad="5"/>
 <connect gate="G$1" pin="V+" pad="6"/>
 <connect gate="G$1" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC6244">
+<description>Low-noise, high-speed rail-to-rail CMOS op-amp</description>
+<gates>
+<gate name="G$1" symbol="LTC6244" x="-22.86" y="2.54"/>
+<gate name="G$2" symbol="LTC6244_2" x="20.32" y="0"/>
+</gates>
+<devices>
+<device name="" package="MSOP8">
+<connects>
+<connect gate="G$1" pin="+IN" pad="3"/>
+<connect gate="G$1" pin="+V" pad="8"/>
+<connect gate="G$1" pin="-IN" pad="2"/>
+<connect gate="G$1" pin="-V" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+<connect gate="G$2" pin="+IN" pad="5"/>
+<connect gate="G$2" pin="-IN" pad="6"/>
+<connect gate="G$2" pin="OUT" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>
