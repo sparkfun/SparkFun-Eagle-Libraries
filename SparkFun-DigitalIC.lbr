@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.0">
+<eagle version="6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -85,6 +85,7 @@
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
@@ -7140,6 +7141,60 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <wire x1="-2.6" y1="-3.6" x2="-2.6" y2="3.6" width="0.127" layer="21"/>
 <circle x="-1.5" y="2.5" radius="0.5" width="0.127" layer="21"/>
 </package>
+<package name="DIL40_0.9">
+<description>Dual inline 40 pin package for mbed microcontroller development platform.</description>
+<wire x1="-25.4" y1="-13.97" x2="-25.4" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-25.4" y1="-3.81" x2="-25.4" y2="3.81" width="0.127" layer="21"/>
+<wire x1="-25.4" y1="3.81" x2="-25.4" y2="13.97" width="0.127" layer="21"/>
+<wire x1="-25.4" y1="13.97" x2="27.94" y2="13.97" width="0.127" layer="21"/>
+<wire x1="27.94" y1="13.97" x2="27.94" y2="-13.97" width="0.127" layer="21"/>
+<wire x1="27.94" y1="-13.97" x2="-25.4" y2="-13.97" width="0.127" layer="21"/>
+<wire x1="-25.4" y1="3.81" x2="-16.51" y2="3.81" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="3.81" x2="-16.51" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-16.51" y1="-3.81" x2="-25.4" y2="-3.81" width="0.127" layer="21"/>
+<pad name="1" x="-22.86" y="-11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="2" x="-20.32" y="-11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="3" x="-17.78" y="-11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="4" x="-15.24" y="-11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="5" x="-12.7" y="-11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="6" x="-10.16" y="-11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="7" x="-7.62" y="-11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="8" x="-5.08" y="-11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="9" x="-2.54" y="-11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="10" x="0" y="-11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="11" x="2.54" y="-11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="12" x="5.08" y="-11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="13" x="7.62" y="-11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="14" x="10.16" y="-11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="15" x="12.7" y="-11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="16" x="15.24" y="-11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="17" x="17.78" y="-11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="18" x="20.32" y="-11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="19" x="22.86" y="-11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="20" x="25.4" y="-11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="21" x="25.4" y="11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="22" x="22.86" y="11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="23" x="20.32" y="11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="24" x="17.78" y="11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="25" x="15.24" y="11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="26" x="12.7" y="11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="27" x="10.16" y="11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="28" x="7.62" y="11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="29" x="5.08" y="11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="30" x="2.54" y="11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="31" x="0" y="11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="32" x="-2.54" y="11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="33" x="-5.08" y="11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="34" x="-7.62" y="11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="35" x="-10.16" y="11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="36" x="-12.7" y="11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="37" x="-15.24" y="11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="38" x="-17.78" y="11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="39" x="-20.32" y="11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<pad name="40" x="-22.86" y="11.43" drill="1" diameter="1.397" shape="octagon" rot="R90"/>
+<text x="-25.4" y="-3.81" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="-2.54" y="-1.27" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="AT25FS010">
@@ -11485,6 +11540,100 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <pin name="22" x="7.62" y="10.16" visible="pad" length="short" direction="pas" rot="R180"/>
 <pin name="23" x="7.62" y="12.7" visible="pad" length="short" direction="pas" rot="R180"/>
 <pin name="24" x="7.62" y="15.24" visible="pad" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="MBED_NXP_LPC1768">
+<description>&lt;h3&gt;mbed NXP LPC1768&lt;/h3&gt;
+&lt;p&gt;Microcontroller development board featuring an ARM cortex M3 and an online IDE with driverless USB programming.&lt;/p&gt;</description>
+<wire x1="-27.94" y1="25.4" x2="-27.94" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-27.94" y1="-27.94" x2="25.4" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-27.94" x2="25.4" y2="25.4" width="0.254" layer="94"/>
+<wire x1="25.4" y1="25.4" x2="1.27" y2="25.4" width="0.254" layer="94"/>
+<wire x1="1.27" y1="25.4" x2="-3.81" y2="25.4" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="25.4" x2="-27.94" y2="25.4" width="0.254" layer="94"/>
+<wire x1="1.27" y1="25.4" x2="-3.81" y2="25.4" width="0.254" layer="94" curve="-180"/>
+<text x="-27.94" y="26.67" size="1.778" layer="95">&gt;NAME</text>
+<text x="-26.67" y="15.24" size="1.4224" layer="94">nR</text>
+<text x="24.13" y="19.05" size="1.4224" layer="94" rot="R180">IF-</text>
+<text x="24.13" y="16.51" size="1.4224" layer="94" rot="R180">IF+</text>
+<text x="24.13" y="13.97" size="1.4224" layer="94" rot="R180">Ethernet RD-</text>
+<text x="24.13" y="11.43" size="1.4224" layer="94" rot="R180">Ethernet RD+</text>
+<text x="24.13" y="8.89" size="1.4224" layer="94" rot="R180">Ethernet TD-</text>
+<text x="24.13" y="6.35" size="1.4224" layer="94" rot="R180">Ethernet TD+</text>
+<text x="24.13" y="3.81" size="1.4224" layer="94" rot="R180">USB D-</text>
+<text x="24.13" y="1.27" size="1.4224" layer="94" rot="R180">USB D+</text>
+<text x="24.13" y="24.13" size="1.4224" layer="94" rot="R180">Vout</text>
+<text x="24.13" y="21.59" size="1.4224" layer="94" rot="R180">Vu</text>
+<text x="24.13" y="-24.13" size="1.4224" layer="94" rot="R180">p21 / PwmOut</text>
+<text x="24.13" y="-21.59" size="1.4224" layer="94" rot="R180">p22 / PwmOut</text>
+<text x="24.13" y="-19.05" size="1.4224" layer="94" rot="R180">p23 / PwmOut</text>
+<text x="24.13" y="-16.51" size="1.4224" layer="94" rot="R180">p24 / PwmOut</text>
+<text x="24.13" y="-13.97" size="1.4224" layer="94" rot="R180">p25 / PwmOut</text>
+<text x="24.13" y="-11.43" size="1.4224" layer="94" rot="R180">p26 / PwmOut</text>
+<text x="24.13" y="-8.89" size="1.4224" layer="94" rot="R180">p27 / I2C scl / Serial rx</text>
+<text x="24.13" y="-6.35" size="1.4224" layer="94" rot="R180">p28 / I2C sda / Serial tx</text>
+<text x="24.13" y="-3.81" size="1.4224" layer="94" rot="R180">p29 / CAN td</text>
+<text x="24.13" y="-1.27" size="1.4224" layer="94" rot="R180">p30 / CAN rd</text>
+<text x="-26.67" y="12.7" size="1.4224" layer="94">p5 / SPI mosi</text>
+<text x="-26.67" y="10.16" size="1.4224" layer="94">p6 / SPI miso</text>
+<text x="-26.67" y="7.62" size="1.4224" layer="94">p7 / SPI sck</text>
+<text x="-26.67" y="5.08" size="1.4224" layer="94">p8</text>
+<text x="-26.67" y="2.54" size="1.4224" layer="94">p9 / Serial tx / I2C sda</text>
+<text x="-26.67" y="0" size="1.4224" layer="94">p10 / Serial rx / I2C scl</text>
+<text x="-26.67" y="-2.54" size="1.4224" layer="94">p11 / SPI mosi</text>
+<text x="-26.67" y="-5.08" size="1.4224" layer="94">p12 / SPI miso</text>
+<text x="-26.67" y="-7.62" size="1.4224" layer="94">p13 / SPI SCK / Serial tx</text>
+<text x="-26.67" y="-10.16" size="1.4224" layer="94">14</text>
+<text x="-26.67" y="-10.16" size="1.4224" layer="94">p14 / Serial rx</text>
+<text x="-26.67" y="-12.7" size="1.4224" layer="94">p15 / AnalogIn</text>
+<text x="-26.67" y="-15.24" size="1.4224" layer="94">p16 / AnalogIn</text>
+<text x="-26.67" y="-17.78" size="1.4224" layer="94">p17 / AnalogIn</text>
+<text x="-26.67" y="-20.32" size="1.4224" layer="94">p18 / AnalogIn / AnalogOut</text>
+<text x="-26.67" y="-22.86" size="1.4224" layer="94">p19 / AnalogIn</text>
+<text x="-26.67" y="-25.4" size="1.4224" layer="94">p20 / AnalogIn</text>
+<text x="-20.32" y="17.78" size="1.6764" layer="94">mbed NXP LPC1768 Microcontroller</text>
+<text x="-26.67" y="20.32" size="1.4224" layer="94">Vin</text>
+<text x="-26.67" y="17.78" size="1.4224" layer="94">Vb</text>
+<text x="-26.67" y="22.86" size="1.4224" layer="94">Gnd</text>
+<pin name="P$1" x="-33.02" y="22.86" visible="off" length="middle"/>
+<pin name="P$2" x="-33.02" y="20.32" visible="off" length="middle"/>
+<pin name="P$3" x="-33.02" y="17.78" visible="off" length="middle"/>
+<pin name="P$4" x="-33.02" y="15.24" visible="off" length="middle"/>
+<pin name="P$5" x="-33.02" y="12.7" visible="off" length="middle"/>
+<pin name="P$6" x="-33.02" y="10.16" visible="off" length="middle"/>
+<pin name="P$7" x="-33.02" y="7.62" visible="off" length="middle"/>
+<pin name="P$8" x="-33.02" y="5.08" visible="off" length="middle"/>
+<pin name="P$9" x="-33.02" y="2.54" visible="off" length="middle"/>
+<pin name="P$10" x="-33.02" y="0" visible="off" length="middle"/>
+<pin name="P$11" x="-33.02" y="-2.54" visible="off" length="middle"/>
+<pin name="P$12" x="-33.02" y="-5.08" visible="off" length="middle"/>
+<pin name="P$13" x="-33.02" y="-7.62" visible="off" length="middle"/>
+<pin name="P$14" x="-33.02" y="-10.16" visible="off" length="middle"/>
+<pin name="P$15" x="-33.02" y="-12.7" visible="off" length="middle"/>
+<pin name="P$16" x="-33.02" y="-15.24" visible="off" length="middle"/>
+<pin name="P$17" x="-33.02" y="-17.78" visible="off" length="middle"/>
+<pin name="P$18" x="-33.02" y="-20.32" visible="off" length="middle"/>
+<pin name="P$19" x="-33.02" y="-22.86" visible="off" length="middle"/>
+<pin name="P$20" x="-33.02" y="-25.4" visible="off" length="middle"/>
+<pin name="P$21" x="30.48" y="-25.4" visible="off" length="middle" rot="R180"/>
+<pin name="P$22" x="30.48" y="-22.86" visible="off" length="middle" rot="R180"/>
+<pin name="P$23" x="30.48" y="-20.32" visible="off" length="middle" rot="R180"/>
+<pin name="P$24" x="30.48" y="-17.78" visible="off" length="middle" rot="R180"/>
+<pin name="P$25" x="30.48" y="-15.24" visible="off" length="middle" rot="R180"/>
+<pin name="P$26" x="30.48" y="-12.7" visible="off" length="middle" rot="R180"/>
+<pin name="P$27" x="30.48" y="-10.16" visible="off" length="middle" rot="R180"/>
+<pin name="P$28" x="30.48" y="-7.62" visible="off" length="middle" rot="R180"/>
+<pin name="P$29" x="30.48" y="-5.08" visible="off" length="middle" rot="R180"/>
+<pin name="P$30" x="30.48" y="-2.54" visible="off" length="middle" rot="R180"/>
+<pin name="P$31" x="30.48" y="0" visible="off" length="middle" rot="R180"/>
+<pin name="P$32" x="30.48" y="2.54" visible="off" length="middle" rot="R180"/>
+<pin name="P$33" x="30.48" y="5.08" visible="off" length="middle" rot="R180"/>
+<pin name="P$34" x="30.48" y="7.62" visible="off" length="middle" rot="R180"/>
+<pin name="P$35" x="30.48" y="10.16" visible="off" length="middle" rot="R180"/>
+<pin name="P$36" x="30.48" y="12.7" visible="off" length="middle" rot="R180"/>
+<pin name="P$37" x="30.48" y="15.24" visible="off" length="middle" rot="R180"/>
+<pin name="P$38" x="30.48" y="17.78" visible="off" length="middle" rot="R180"/>
+<pin name="P$39" x="30.48" y="20.32" visible="off" length="middle" rot="R180"/>
+<pin name="P$40" x="30.48" y="22.86" visible="off" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -17088,6 +17237,60 @@ available in SSOP-20 or DIP-20</description>
 <attribute name="SPARKLE_ID" value="6000" constant="no"/>
 <attribute name="VALUE" value="WTV020SD-20S" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MBED_NXP_LPC1768">
+<gates>
+<gate name="G$1" symbol="MBED_NXP_LPC1768" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIL40_0.9">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$10" pad="10"/>
+<connect gate="G$1" pin="P$11" pad="11"/>
+<connect gate="G$1" pin="P$12" pad="12"/>
+<connect gate="G$1" pin="P$13" pad="13"/>
+<connect gate="G$1" pin="P$14" pad="14"/>
+<connect gate="G$1" pin="P$15" pad="15"/>
+<connect gate="G$1" pin="P$16" pad="16"/>
+<connect gate="G$1" pin="P$17" pad="17"/>
+<connect gate="G$1" pin="P$18" pad="18"/>
+<connect gate="G$1" pin="P$19" pad="19"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+<connect gate="G$1" pin="P$20" pad="20"/>
+<connect gate="G$1" pin="P$21" pad="21"/>
+<connect gate="G$1" pin="P$22" pad="22"/>
+<connect gate="G$1" pin="P$23" pad="23"/>
+<connect gate="G$1" pin="P$24" pad="24"/>
+<connect gate="G$1" pin="P$25" pad="25"/>
+<connect gate="G$1" pin="P$26" pad="26"/>
+<connect gate="G$1" pin="P$27" pad="27"/>
+<connect gate="G$1" pin="P$28" pad="28"/>
+<connect gate="G$1" pin="P$29" pad="29"/>
+<connect gate="G$1" pin="P$3" pad="3"/>
+<connect gate="G$1" pin="P$30" pad="30"/>
+<connect gate="G$1" pin="P$31" pad="31"/>
+<connect gate="G$1" pin="P$32" pad="32"/>
+<connect gate="G$1" pin="P$33" pad="33"/>
+<connect gate="G$1" pin="P$34" pad="34"/>
+<connect gate="G$1" pin="P$35" pad="35"/>
+<connect gate="G$1" pin="P$36" pad="36"/>
+<connect gate="G$1" pin="P$37" pad="37"/>
+<connect gate="G$1" pin="P$38" pad="38"/>
+<connect gate="G$1" pin="P$39" pad="39"/>
+<connect gate="G$1" pin="P$4" pad="4"/>
+<connect gate="G$1" pin="P$40" pad="40"/>
+<connect gate="G$1" pin="P$5" pad="5"/>
+<connect gate="G$1" pin="P$6" pad="6"/>
+<connect gate="G$1" pin="P$7" pad="7"/>
+<connect gate="G$1" pin="P$8" pad="8"/>
+<connect gate="G$1" pin="P$9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
