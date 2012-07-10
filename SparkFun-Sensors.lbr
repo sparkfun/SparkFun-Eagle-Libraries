@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -665,8 +665,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="9.398" y1="3.048" x2="2.54" y2="3.048" width="0.127" layer="21"/>
 <wire x1="2.54" y1="3.048" x2="2.54" y2="-3.048" width="0.127" layer="21"/>
 <wire x1="2.54" y1="-3.048" x2="9.398" y2="-3.048" width="0.127" layer="21"/>
-<pad name="VCC" x="0" y="0" drill="3.302" diameter="4.826"/>
-<pad name="GND" x="13.462" y="9.144" drill="1.4" diameter="2.54"/>
+<pad name="A" x="0" y="0" drill="3.302" diameter="4.826"/>
+<pad name="C" x="13.462" y="9.144" drill="1.4" diameter="2.54"/>
 <text x="10.16" y="5.588" size="1.27" layer="25">&gt;NAME</text>
 <text x="10.16" y="-6.858" size="1.27" layer="27">&gt;VALUE</text>
 </package>
@@ -6817,6 +6817,16 @@ For Vishay VNCL4000 proximity and ambient light sensor.&lt;br&gt;
 <pin name="GND@1" x="-10.16" y="-5.08" length="short"/>
 <pin name="GND@0" x="-10.16" y="-2.54" length="short"/>
 </symbol>
+<symbol name="GEIGER_TUBE-1">
+<text x="-0.762" y="7.62" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-7.62" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="A" x="0" y="0" visible="pad" length="middle"/>
+<pin name="C" x="0" y="5.08" visible="pad" length="middle"/>
+<wire x1="15.24" y1="5.08" x2="15.24" y2="-5.08" width="0.1524" layer="94" curve="-180"/>
+<wire x1="5.08" y1="5.08" x2="15.24" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="0" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="15.24" y2="0" width="0.1524" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ADMP401">
@@ -7282,23 +7292,6 @@ Sensor head for Pulse Oximeter.  Contains IR and visible red LEDs, and PIN photo
 <connect gate="G$1" pin="B1" pad="B1"/>
 <connect gate="G$1" pin="H1" pad="HA"/>
 <connect gate="G$1" pin="H2" pad="HB"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="GEIGER_TUBE">
-<description>LND712 Geiger Tube (COM-08875)</description>
-<gates>
-<gate name="G$1" symbol="GEIGER_TUBE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="LND712" package="GEIGER_TUBE">
-<connects>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9091,6 +9084,23 @@ Simple light detection sensor. Output varies with light intensity input. Spark F
 <connect gate="G$1" pin="SCL" pad="5"/>
 <connect gate="G$1" pin="SDA" pad="4"/>
 <connect gate="G$1" pin="VDD" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GEIGER_TUBE" prefix="U" uservalue="yes">
+<description>LND712 Geiger Tube (COM-08875)</description>
+<gates>
+<gate name="G$1" symbol="GEIGER_TUBE-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="LND712" package="GEIGER_TUBE">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
