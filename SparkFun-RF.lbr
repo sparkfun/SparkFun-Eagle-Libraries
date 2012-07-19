@@ -4837,6 +4837,47 @@ package type SS</description>
 <text x="9.1" y="23.5" size="1.27" layer="51">Keep Out</text>
 <rectangle x1="6.6" y1="20.1" x2="21" y2="27.9" layer="39"/>
 </package>
+<package name="BLE112-A">
+<description>BLE112-A&lt;BR&gt;
+Bluetooth 4.0 module with built-in chip antenna.</description>
+<wire x1="0" y1="0" x2="12.05" y2="0" width="0.127" layer="21"/>
+<wire x1="12.05" y1="0" x2="12.05" y2="18.1" width="0.127" layer="21"/>
+<wire x1="12.05" y1="18.1" x2="0" y2="18.1" width="0.127" layer="21"/>
+<wire x1="0" y1="18.1" x2="0" y2="0" width="0.127" layer="21"/>
+<smd name="13" x="0.05" y="2.2" dx="3" dy="0.85" layer="1" roundness="100"/>
+<smd name="12" x="0.05" y="3.45" dx="3" dy="0.85" layer="1" roundness="100"/>
+<smd name="11" x="0.05" y="4.7" dx="3" dy="0.85" layer="1" roundness="100"/>
+<smd name="10" x="0.05" y="5.95" dx="3" dy="0.85" layer="1" roundness="100"/>
+<smd name="9" x="0.05" y="7.2" dx="3" dy="0.85" layer="1" roundness="100"/>
+<smd name="8" x="0.05" y="8.45" dx="3" dy="0.85" layer="1" roundness="100"/>
+<smd name="7" x="0.05" y="9.7" dx="3" dy="0.85" layer="1" roundness="100"/>
+<smd name="6" x="0.05" y="10.95" dx="3" dy="0.85" layer="1" roundness="100"/>
+<smd name="5" x="0.05" y="12.2" dx="3" dy="0.85" layer="1" roundness="100"/>
+<smd name="4" x="0.05" y="13.45" dx="3" dy="0.85" layer="1" roundness="100"/>
+<smd name="3" x="0.05" y="14.7" dx="3" dy="0.85" layer="1" roundness="100"/>
+<smd name="2" x="0.05" y="15.95" dx="3" dy="0.85" layer="1" roundness="100"/>
+<smd name="1" x="0.05" y="17.2" dx="3" dy="0.85" layer="1" roundness="100"/>
+<smd name="22" x="12" y="2.2" dx="3" dy="0.85" layer="1" roundness="100"/>
+<smd name="23" x="12" y="3.45" dx="3" dy="0.85" layer="1" roundness="100"/>
+<smd name="24" x="12" y="4.7" dx="3" dy="0.85" layer="1" roundness="100"/>
+<smd name="25" x="12" y="5.95" dx="3" dy="0.85" layer="1" roundness="100"/>
+<smd name="26" x="12" y="7.2" dx="3" dy="0.85" layer="1" roundness="100"/>
+<smd name="27" x="12" y="8.45" dx="3" dy="0.85" layer="1" roundness="100"/>
+<smd name="28" x="12" y="9.7" dx="3" dy="0.85" layer="1" roundness="100"/>
+<smd name="29" x="12" y="10.95" dx="3" dy="0.85" layer="1" roundness="100"/>
+<smd name="30" x="12" y="12.2" dx="3" dy="0.85" layer="1" roundness="100"/>
+<smd name="14" x="1.65" y="0.1" dx="3" dy="0.85" layer="1" roundness="100" rot="R90"/>
+<smd name="15" x="2.9" y="0.1" dx="3" dy="0.85" layer="1" roundness="100" rot="R90"/>
+<smd name="16" x="4.15" y="0.1" dx="3" dy="0.85" layer="1" roundness="100" rot="R90"/>
+<smd name="17" x="5.4" y="0.1" dx="3" dy="0.85" layer="1" roundness="100" rot="R90"/>
+<smd name="18" x="6.65" y="0.1" dx="3" dy="0.85" layer="1" roundness="100" rot="R90"/>
+<smd name="19" x="7.9" y="0.1" dx="3" dy="0.85" layer="1" roundness="100" rot="R90"/>
+<smd name="20" x="9.15" y="0.1" dx="3" dy="0.85" layer="1" roundness="100" rot="R90"/>
+<smd name="21" x="10.4" y="0.1" dx="3" dy="0.85" layer="1" roundness="100" rot="R90"/>
+<rectangle x1="6.35" y1="12.85" x2="12.05" y2="18.1" layer="39"/>
+<rectangle x1="6.35" y1="12.85" x2="12.05" y2="18.1" layer="40"/>
+<rectangle x1="6.35" y1="12.85" x2="12.05" y2="18.1" layer="43"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ALM-1412">
@@ -6973,6 +7014,44 @@ package type SS</description>
 <pin name="SCK" x="25.4" y="10.16" length="middle" rot="R180"/>
 <pin name="SDI" x="25.4" y="15.24" length="middle" rot="R180"/>
 <pin name="GND8" x="10.16" y="-33.02" length="middle" rot="R90"/>
+</symbol>
+<symbol name="BLE112-A">
+<description>BlueGiga BLE112-A module&lt;BR&gt;
+Bluetooth 4.0 module with chip antenna.</description>
+<pin name="GND1" x="0" y="2.54" length="middle"/>
+<pin name="AVDD1" x="0" y="0" length="middle"/>
+<pin name="AVDD2" x="0" y="-2.54" length="middle"/>
+<pin name="P2_2" x="0" y="-5.08" length="middle"/>
+<pin name="P2_1" x="0" y="-7.62" length="middle"/>
+<pin name="P2_0" x="0" y="-10.16" length="middle"/>
+<pin name="P1_7" x="0" y="-12.7" length="middle"/>
+<pin name="P1_6" x="0" y="-15.24" length="middle"/>
+<pin name="VDD_USB" x="0" y="-17.78" length="middle"/>
+<pin name="GND2" x="0" y="-20.32" length="middle"/>
+<pin name="USB+" x="0" y="-22.86" length="middle"/>
+<pin name="USB-" x="0" y="-25.4" length="middle"/>
+<pin name="P1_5" x="0" y="-27.94" length="middle"/>
+<pin name="P1_4" x="15.24" y="-35.56" length="middle" rot="R90"/>
+<pin name="P1_3" x="17.78" y="-35.56" length="middle" rot="R90"/>
+<pin name="P1_2" x="20.32" y="-35.56" length="middle" rot="R90"/>
+<pin name="P1_1" x="22.86" y="-35.56" length="middle" rot="R90"/>
+<pin name="P1_0" x="25.4" y="-35.56" length="middle" rot="R90"/>
+<pin name="P0_7" x="27.94" y="-35.56" length="middle" rot="R90"/>
+<pin name="DVDD" x="30.48" y="-35.56" length="middle" rot="R90"/>
+<pin name="GND3" x="33.02" y="-35.56" length="middle" rot="R90"/>
+<pin name="P0_6" x="48.26" y="-27.94" length="middle" rot="R180"/>
+<pin name="P0_5" x="48.26" y="-25.4" length="middle" rot="R180"/>
+<pin name="P0_4" x="48.26" y="-22.86" length="middle" rot="R180"/>
+<pin name="P0_3" x="48.26" y="-20.32" length="middle" rot="R180"/>
+<pin name="P0_2" x="48.26" y="-17.78" length="middle" rot="R180"/>
+<pin name="P0_1" x="48.26" y="-15.24" length="middle" rot="R180"/>
+<pin name="P0_0" x="48.26" y="-12.7" length="middle" rot="R180"/>
+<pin name="RESET" x="48.26" y="-10.16" length="middle" rot="R180"/>
+<pin name="GND4" x="48.26" y="-7.62" length="middle" rot="R180"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-30.48" x2="43.18" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="43.18" y1="-30.48" x2="43.18" y2="5.08" width="0.254" layer="94"/>
+<wire x1="43.18" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -10065,6 +10144,53 @@ Footprint is not confirmed yet.</description>
 <connect gate="G$1" pin="VDD_1.8_4" pad="31"/>
 <connect gate="G$1" pin="VDD_3.3_1" pad="17"/>
 <connect gate="G$1" pin="VDD_3.3_2" pad="29"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BLE112-A" prefix="U">
+<description>BlueGiga Bluetooth 4.0 module&lt;br&gt;
+with integrated chip antenna and onboard&lt;br&gt;
+8051 processor and peripherals</description>
+<gates>
+<gate name="G$1" symbol="BLE112-A" x="-5.08" y="30.48"/>
+</gates>
+<devices>
+<device name="" package="BLE112-A">
+<connects>
+<connect gate="G$1" pin="AVDD1" pad="2"/>
+<connect gate="G$1" pin="AVDD2" pad="3"/>
+<connect gate="G$1" pin="DVDD" pad="20"/>
+<connect gate="G$1" pin="GND1" pad="1"/>
+<connect gate="G$1" pin="GND2" pad="10"/>
+<connect gate="G$1" pin="GND3" pad="21"/>
+<connect gate="G$1" pin="GND4" pad="30"/>
+<connect gate="G$1" pin="P0_0" pad="28"/>
+<connect gate="G$1" pin="P0_1" pad="27"/>
+<connect gate="G$1" pin="P0_2" pad="26"/>
+<connect gate="G$1" pin="P0_3" pad="25"/>
+<connect gate="G$1" pin="P0_4" pad="24"/>
+<connect gate="G$1" pin="P0_5" pad="23"/>
+<connect gate="G$1" pin="P0_6" pad="22"/>
+<connect gate="G$1" pin="P0_7" pad="19"/>
+<connect gate="G$1" pin="P1_0" pad="18"/>
+<connect gate="G$1" pin="P1_1" pad="17"/>
+<connect gate="G$1" pin="P1_2" pad="16"/>
+<connect gate="G$1" pin="P1_3" pad="15"/>
+<connect gate="G$1" pin="P1_4" pad="14"/>
+<connect gate="G$1" pin="P1_5" pad="13"/>
+<connect gate="G$1" pin="P1_6" pad="8"/>
+<connect gate="G$1" pin="P1_7" pad="7"/>
+<connect gate="G$1" pin="P2_0" pad="6"/>
+<connect gate="G$1" pin="P2_1" pad="5"/>
+<connect gate="G$1" pin="P2_2" pad="4"/>
+<connect gate="G$1" pin="RESET" pad="29"/>
+<connect gate="G$1" pin="USB+" pad="11"/>
+<connect gate="G$1" pin="USB-" pad="12"/>
+<connect gate="G$1" pin="VDD_USB" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
