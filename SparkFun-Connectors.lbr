@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -13720,18 +13720,108 @@ Manufacturer: Hirose&lt;br&gt;&lt;br&gt;
 <pad name="P$4" x="1.27" y="0" drill="1.016" diameter="1.778"/>
 <pad name="P$5" x="3.81" y="0" drill="1.016" diameter="1.778"/>
 <pad name="P$6" x="6.35" y="0" drill="1.016" diameter="1.778"/>
-<wire x1="-7.366" y1="1.016" x2="7.62" y2="1.016" width="0.127" layer="21"/>
-<wire x1="7.62" y1="1.016" x2="7.62" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="7.62" y1="-1.016" x2="-7.366" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="-7.366" y1="-1.016" x2="-7.366" y2="1.016" width="0.127" layer="21"/>
-<text x="-7.62" y="-1.524" size="1.27" layer="21" font="vector" rot="R90">GRN</text>
-<text x="9.144" y="-1.524" size="1.27" layer="21" font="vector" rot="R90">BLK</text>
-<text x="-4.826" y="1.27" size="0.8128" layer="21" font="vector">TXO</text>
-<text x="-2.286" y="1.27" size="0.8128" layer="21" font="vector">RXI</text>
-<text x="0.254" y="1.27" size="0.8128" layer="21" font="vector">VCC</text>
-<text x="2.794" y="1.27" size="0.8128" layer="21" font="vector">DTR</text>
-<text x="5.334" y="1.27" size="0.8128" layer="21" font="vector">GND</text>
-<text x="-7.366" y="1.27" size="0.8128" layer="21" font="vector">CTS</text>
+<wire x1="-7.62" y1="1.27" x2="7.62" y2="1.27" width="0.127" layer="21"/>
+<wire x1="7.62" y1="1.27" x2="7.62" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="7.62" y1="-1.27" x2="-7.62" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-7.62" y1="-1.27" x2="-7.62" y2="1.27" width="0.127" layer="21"/>
+<text x="-7.874" y="-1.524" size="1.27" layer="21" font="vector" ratio="15" rot="R90">GRN</text>
+<text x="9.144" y="-1.524" size="1.27" layer="21" font="vector" ratio="15" rot="R90">BLK</text>
+<text x="-4.826" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">TXO</text>
+<text x="-2.286" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">RXI</text>
+<text x="0.254" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">VCC</text>
+<text x="2.794" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">DTR</text>
+<text x="5.334" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">GND</text>
+<text x="-7.366" y="1.524" size="0.8128" layer="21" font="vector" ratio="15">CTS</text>
+</package>
+<package name="3.81MM_TERMINAL_BLOCK_FEMALE_LOCKING">
+<wire x1="-7.9756" y1="38.4949" x2="-7.9756" y2="-38.4949" width="0.2032" layer="51"/>
+<wire x1="-1.27" y1="38.4949" x2="-1.27" y2="-38.4949" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="38.4949" x2="-7.9756" y2="38.4949" width="0.2032" layer="51"/>
+<wire x1="-1.27" y1="-38.4949" x2="-7.9756" y2="-38.4949" width="0.2032" layer="51"/>
+<wire x1="-1.27" y1="38.4949" x2="6.5278" y2="38.4949" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-38.4949" x2="6.5278" y2="-38.4949" width="0.2032" layer="21"/>
+<wire x1="6.5278" y1="-38.4949" x2="6.5278" y2="38.4949" width="0.2032" layer="21"/>
+<pad name="19" x="4.5212" y="32.3863" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="@19" x="1.9812" y="32.3863" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="20" x="4.7244" y="36.1963" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="@20" x="2.1844" y="36.1963" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="17" x="4.5212" y="24.7663" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="@17" x="1.9812" y="24.7663" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="18" x="4.7244" y="28.5763" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="@18" x="2.1844" y="28.5763" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="15" x="4.5212" y="17.1463" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="@15" x="1.9812" y="17.1463" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="16" x="4.7244" y="20.9563" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="@16" x="2.1844" y="20.9563" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="13" x="4.5212" y="9.5263" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="@13" x="1.9812" y="9.5263" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="14" x="4.7244" y="13.3363" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="@14" x="2.1844" y="13.3363" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="11" x="4.5212" y="1.9063" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="@11" x="1.9812" y="1.9063" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="12" x="4.7244" y="5.7163" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="@12" x="2.1844" y="5.7163" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="9" x="4.5212" y="-5.7137" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="@9" x="1.9812" y="-5.7137" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="10" x="4.7244" y="-1.9037" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="@10" x="2.1844" y="-1.9037" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="7" x="4.5212" y="-13.3337" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="@7" x="1.9812" y="-13.3337" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="8" x="4.7244" y="-9.5237" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="@8" x="2.1844" y="-9.5237" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="5" x="4.5212" y="-20.9537" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="@5" x="1.9812" y="-20.9537" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="6" x="4.7244" y="-17.1437" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="@6" x="2.1844" y="-17.1437" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="3" x="4.5212" y="-28.5737" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="@3" x="1.9812" y="-28.5737" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="4" x="4.7244" y="-24.7637" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="@4" x="2.1844" y="-24.7637" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="1" x="4.5212" y="-36.1937" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="@1" x="1.9812" y="-36.1937" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="2" x="4.7244" y="-32.3837" drill="1.2" diameter="2.1844" rot="R270"/>
+<pad name="@2" x="2.1844" y="-32.3837" drill="1.2" diameter="2.1844" rot="R270"/>
+<text x="-7.78" y="-41.41" size="1.27" layer="25">&gt;NAME</text>
+<rectangle x1="4.1529" y1="32.1704" x2="5.0927" y2="32.6022" layer="51"/>
+<rectangle x1="4.1529" y1="35.9804" x2="5.0927" y2="36.4122" layer="51"/>
+<rectangle x1="1.6129" y1="32.1704" x2="2.5527" y2="32.6022" layer="51"/>
+<rectangle x1="1.6129" y1="35.9804" x2="2.5527" y2="36.4122" layer="51"/>
+<rectangle x1="4.1529" y1="24.5504" x2="5.0927" y2="24.9822" layer="51"/>
+<rectangle x1="4.1529" y1="28.3604" x2="5.0927" y2="28.7922" layer="51"/>
+<rectangle x1="1.6129" y1="24.5504" x2="2.5527" y2="24.9822" layer="51"/>
+<rectangle x1="1.6129" y1="28.3604" x2="2.5527" y2="28.7922" layer="51"/>
+<rectangle x1="4.1529" y1="16.9304" x2="5.0927" y2="17.3622" layer="51"/>
+<rectangle x1="4.1529" y1="20.7404" x2="5.0927" y2="21.1722" layer="51"/>
+<rectangle x1="1.6129" y1="16.9304" x2="2.5527" y2="17.3622" layer="51"/>
+<rectangle x1="1.6129" y1="20.7404" x2="2.5527" y2="21.1722" layer="51"/>
+<rectangle x1="4.1529" y1="9.3104" x2="5.0927" y2="9.7422" layer="51"/>
+<rectangle x1="4.1529" y1="13.1204" x2="5.0927" y2="13.5522" layer="51"/>
+<rectangle x1="1.6129" y1="9.3104" x2="2.5527" y2="9.7422" layer="51"/>
+<rectangle x1="1.6129" y1="13.1204" x2="2.5527" y2="13.5522" layer="51"/>
+<rectangle x1="4.1529" y1="1.6904" x2="5.0927" y2="2.1222" layer="51"/>
+<rectangle x1="4.1529" y1="5.5004" x2="5.0927" y2="5.9322" layer="51"/>
+<rectangle x1="1.6129" y1="1.6904" x2="2.5527" y2="2.1222" layer="51"/>
+<rectangle x1="1.6129" y1="5.5004" x2="2.5527" y2="5.9322" layer="51"/>
+<rectangle x1="4.1529" y1="-5.9296" x2="5.0927" y2="-5.4978" layer="51"/>
+<rectangle x1="4.1529" y1="-2.1196" x2="5.0927" y2="-1.6878" layer="51"/>
+<rectangle x1="1.6129" y1="-5.9296" x2="2.5527" y2="-5.4978" layer="51"/>
+<rectangle x1="1.6129" y1="-2.1196" x2="2.5527" y2="-1.6878" layer="51"/>
+<rectangle x1="4.1529" y1="-13.5496" x2="5.0927" y2="-13.1178" layer="51"/>
+<rectangle x1="4.1529" y1="-9.7396" x2="5.0927" y2="-9.3078" layer="51"/>
+<rectangle x1="1.6129" y1="-13.5496" x2="2.5527" y2="-13.1178" layer="51"/>
+<rectangle x1="1.6129" y1="-9.7396" x2="2.5527" y2="-9.3078" layer="51"/>
+<rectangle x1="4.1529" y1="-21.1696" x2="5.0927" y2="-20.7378" layer="51"/>
+<rectangle x1="4.1529" y1="-17.3596" x2="5.0927" y2="-16.9278" layer="51"/>
+<rectangle x1="1.6129" y1="-21.1696" x2="2.5527" y2="-20.7378" layer="51"/>
+<rectangle x1="1.6129" y1="-17.3596" x2="2.5527" y2="-16.9278" layer="51"/>
+<rectangle x1="4.1529" y1="-28.7896" x2="5.0927" y2="-28.3578" layer="51"/>
+<rectangle x1="4.1529" y1="-24.9796" x2="5.0927" y2="-24.5478" layer="51"/>
+<rectangle x1="1.6129" y1="-28.7896" x2="2.5527" y2="-28.3578" layer="51"/>
+<rectangle x1="1.6129" y1="-24.9796" x2="2.5527" y2="-24.5478" layer="51"/>
+<rectangle x1="4.1529" y1="-36.4096" x2="5.0927" y2="-35.9778" layer="51"/>
+<rectangle x1="4.1529" y1="-32.5996" x2="5.0927" y2="-32.1678" layer="51"/>
+<rectangle x1="1.6129" y1="-36.4096" x2="2.5527" y2="-35.9778" layer="51"/>
+<rectangle x1="1.6129" y1="-32.5996" x2="2.5527" y2="-32.1678" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -16337,6 +16427,34 @@ Manufacturer: Hirose&lt;br&gt;&lt;br&gt;
 <wire x1="7.62" y1="7.62" x2="0" y2="7.62" width="0.254" layer="94"/>
 <text x="0" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="7.62" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="MYDAQ_CONNECTOR">
+<wire x1="-7.62" y1="25.4" x2="-7.62" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-27.94" x2="7.62" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-27.94" x2="7.62" y2="25.4" width="0.254" layer="94"/>
+<wire x1="7.62" y1="25.4" x2="-7.62" y2="25.4" width="0.254" layer="94"/>
+<text x="-7.62" y="26.035" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-7.62" y="-30.48" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<pin name="AN1-" x="-10.16" y="0" length="short" direction="in"/>
+<pin name="+15V" x="-10.16" y="22.86" length="short" direction="pwr"/>
+<pin name="-15V" x="-10.16" y="20.32" length="short" direction="pwr"/>
+<pin name="AGND_15V" x="-10.16" y="17.78" length="short" direction="pwr"/>
+<pin name="DIO2" x="-10.16" y="-7.62" length="short"/>
+<pin name="DIO3" x="-10.16" y="-10.16" length="short"/>
+<pin name="DIO4" x="-10.16" y="-12.7" length="short"/>
+<pin name="DIO5" x="-10.16" y="-15.24" length="short"/>
+<pin name="DIO6" x="-10.16" y="-17.78" length="short"/>
+<pin name="DIO7" x="-10.16" y="-20.32" length="short"/>
+<pin name="DGND" x="-10.16" y="-22.86" length="short" direction="pwr"/>
+<pin name="DIO0" x="-10.16" y="-2.54" length="short"/>
+<pin name="DIO1" x="-10.16" y="-5.08" length="short"/>
+<pin name="5V" x="-10.16" y="-25.4" length="short" direction="pwr"/>
+<pin name="AO0" x="-10.16" y="15.24" length="short" direction="out"/>
+<pin name="AO1" x="-10.16" y="12.7" length="short" direction="out"/>
+<pin name="AGND_IO" x="-10.16" y="10.16" length="short" direction="pwr"/>
+<pin name="AI0+" x="-10.16" y="7.62" length="short" direction="in"/>
+<pin name="AI0-" x="-10.16" y="5.08" length="short" direction="in"/>
+<pin name="AI1+" x="-10.16" y="2.54" length="short" direction="in"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -22120,6 +22238,40 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <connect gate="G$1" pin="RXI" pad="P$3"/>
 <connect gate="G$1" pin="TXO" pad="P$2"/>
 <connect gate="G$1" pin="VCC" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MYDAQ" prefix="JP">
+<gates>
+<gate name="G$1" symbol="MYDAQ_CONNECTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="3.81MM_TERMINAL_BLOCK_FEMALE_LOCKING">
+<connects>
+<connect gate="G$1" pin="+15V" pad="1"/>
+<connect gate="G$1" pin="-15V" pad="2"/>
+<connect gate="G$1" pin="5V" pad="20"/>
+<connect gate="G$1" pin="AGND_15V" pad="3"/>
+<connect gate="G$1" pin="AGND_IO" pad="6"/>
+<connect gate="G$1" pin="AI0+" pad="7"/>
+<connect gate="G$1" pin="AI0-" pad="8"/>
+<connect gate="G$1" pin="AI1+" pad="9"/>
+<connect gate="G$1" pin="AN1-" pad="10"/>
+<connect gate="G$1" pin="AO0" pad="4"/>
+<connect gate="G$1" pin="AO1" pad="5"/>
+<connect gate="G$1" pin="DGND" pad="19"/>
+<connect gate="G$1" pin="DIO0" pad="11"/>
+<connect gate="G$1" pin="DIO1" pad="12"/>
+<connect gate="G$1" pin="DIO2" pad="13"/>
+<connect gate="G$1" pin="DIO3" pad="14"/>
+<connect gate="G$1" pin="DIO4" pad="15"/>
+<connect gate="G$1" pin="DIO5" pad="16"/>
+<connect gate="G$1" pin="DIO6" pad="17"/>
+<connect gate="G$1" pin="DIO7" pad="18"/>
 </connects>
 <technologies>
 <technology name=""/>
