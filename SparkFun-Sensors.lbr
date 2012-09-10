@@ -65,7 +65,7 @@
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -6872,6 +6872,16 @@ For Vishay VNCL4000 proximity and ambient light sensor.&lt;br&gt;
 <wire x1="15.24" y1="-5.08" x2="0" y2="-5.08" width="0.1524" layer="94"/>
 <wire x1="5.08" y1="0" x2="15.24" y2="0" width="0.1524" layer="94"/>
 </symbol>
+<symbol name="MQ-4">
+<description>MQ-4 Methane gas sensor</description>
+<pin name="A1" x="-12.7" y="5.08" length="middle"/>
+<pin name="HB" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="A2" x="-12.7" y="-5.08" length="middle"/>
+<pin name="B1" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="HA" x="-15.24" y="0" length="middle"/>
+<pin name="B2" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<circle x="0" y="0" radius="10.77630625" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ADMP401">
@@ -9171,6 +9181,28 @@ Simple light detection sensor. Output varies with light intensity input. Spark F
 <connect gate="G$1" pin="SCLK" pad="P$4"/>
 <connect gate="G$1" pin="VDDIO" pad="P$1"/>
 <connect gate="G$1" pin="VS" pad="P$14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="METHANE_SENSOR">
+<description>MQ-4 Methane Gas Sensor&lt;br&gt;
+SEN-09404</description>
+<gates>
+<gate name="G$1" symbol="MQ-4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MQ-3">
+<connects>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="A2" pad="A2"/>
+<connect gate="G$1" pin="B1" pad="B1"/>
+<connect gate="G$1" pin="B2" pad="B2"/>
+<connect gate="G$1" pin="HA" pad="HA"/>
+<connect gate="G$1" pin="HB" pad="HB"/>
 </connects>
 <technologies>
 <technology name=""/>

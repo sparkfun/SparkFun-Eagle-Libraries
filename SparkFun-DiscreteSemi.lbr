@@ -1886,7 +1886,8 @@ High-power, low thermal resistance package.</description>
 <devicesets>
 <deviceset name="BAV99" prefix="D" uservalue="yes">
 <description>Two small signal silicon diodes connected anode to cathode.&lt;br&gt;
-Connections to all three nodes available.</description>
+Connections to all three nodes available.&lt;br&gt;
+DIO-10647</description>
 <gates>
 <gate name="G$1" symbol="BAV99" x="0" y="0"/>
 </gates>
@@ -1898,7 +1899,9 @@ Connections to all three nodes available.</description>
 <connect gate="G$1" pin="COM" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-10647"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2741,6 +2744,50 @@ PMOS RDS .20-ohm</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MBRA140" prefix="D">
+<description>40V, 1A Schottky rectifier&lt;br&gt;
+SMA/DO-214AC package&lt;br&gt;
+DIO-08053</description>
+<gates>
+<gate name="G$1" symbol="DIODE-SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMA-DIODE">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-08053"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BSS138" prefix="Q" uservalue="yes">
+<description>NMOSFET, Enh Mode&lt;br&gt;
+50V/6-ohm 200mA (SOT-23)&lt;br&gt;
+TRANS-00830</description>
+<gates>
+<gate name="G$1" symbol="MOSFET-NCHANNEL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TRANS-00830" package="SOT23-3">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="TRANS-00830"/>
+<attribute name="VALUE" value="BSS138" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
