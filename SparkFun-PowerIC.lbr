@@ -4368,7 +4368,7 @@ Standard adjustable voltage regulator but in SMD form. Spark Fun Electronics SKU
 </device>
 </devices>
 </deviceset>
-<deviceset name="V_REG_MIC5219" prefix="U">
+<deviceset name="V_REG_MIC5219" prefix="U" uservalue="yes">
 <description>&lt;b&gt;V_REG MIC5219&lt;/b&gt;
 Standard 500mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5219. BP (by-pass) pin is used to lower output noise with 470pF cap,
 may be left open.</description>
@@ -4376,7 +4376,7 @@ may be left open.</description>
 <gate name="G$1" symbol="V-REG-LDO" x="2.54" y="0"/>
 </gates>
 <devices>
-<device name="SMD" package="SOT23-5">
+<device name="3.3V" package="SOT23-5">
 <connects>
 <connect gate="G$1" pin="BP" pad="4"/>
 <connect gate="G$1" pin="EN" pad="3"/>
@@ -4385,7 +4385,25 @@ may be left open.</description>
 <connect gate="G$1" pin="OUT" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="VREG-09872"/>
+<attribute name="VALUE" value="MIC5219 3.3V" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="5V" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="BP" pad="4"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="VREG-10107"/>
+<attribute name="VALUE" value="MIC5219 5V" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -4641,7 +4659,7 @@ Supertex, available in SOW16 and QFN16</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ADP160" prefix="U">
+<deviceset name="ADP160" prefix="U" uservalue="yes">
 <description>Nanopower LDO&lt;br&gt;
 Iq less than 1uA for low Iload</description>
 <gates>
@@ -4656,7 +4674,10 @@ Iq less than 1uA for low Iload</description>
 <connect gate="G$1" pin="VOUT" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="VREG-11306"/>
+<attribute name="VALUE" value="ADP160" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

@@ -7155,6 +7155,36 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <rectangle x1="-4.6949" y1="3.11" x2="-4.1951" y2="4.4399" layer="51"/>
 <rectangle x1="-5.9649" y1="3.11" x2="-5.4651" y2="4.4399" layer="51"/>
 </package>
+<package name="SOP20W">
+<description>&lt;b&gt;SMALL OUTLINE PACKAGE&lt;/b&gt;</description>
+<wire x1="6.35" y1="3.175" x2="6.35" y2="-3.175" width="0.2032" layer="51"/>
+<wire x1="6.35" y1="-3.175" x2="-6.35" y2="-3.175" width="0.2032" layer="51"/>
+<wire x1="-6.35" y1="-3.175" x2="-6.35" y2="3.175" width="0.2032" layer="51"/>
+<wire x1="-6.35" y1="3.175" x2="6.35" y2="3.175" width="0.2032" layer="51"/>
+<smd name="1" x="-5.715" y="-5" dx="0.6" dy="2.2" layer="1"/>
+<smd name="2" x="-4.445" y="-5" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="-3.175" y="-5" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="-1.905" y="-5" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="-0.635" y="-5" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="-5" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="1.905" y="-5" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="3.175" y="-5" dx="0.6" dy="2.2" layer="1"/>
+<smd name="9" x="4.445" y="-5" dx="0.6" dy="2.2" layer="1"/>
+<smd name="10" x="5.715" y="-5" dx="0.6" dy="2.2" layer="1"/>
+<smd name="11" x="5.715" y="5" dx="0.6" dy="2.2" layer="1"/>
+<smd name="12" x="4.445" y="5" dx="0.6" dy="2.2" layer="1"/>
+<smd name="13" x="3.175" y="5" dx="0.6" dy="2.2" layer="1"/>
+<smd name="14" x="1.905" y="5" dx="0.6" dy="2.2" layer="1"/>
+<smd name="15" x="0.635" y="5" dx="0.6" dy="2.2" layer="1"/>
+<smd name="16" x="-0.635" y="5" dx="0.6" dy="2.2" layer="1"/>
+<smd name="17" x="-1.905" y="5" dx="0.6" dy="2.2" layer="1"/>
+<smd name="18" x="-3.175" y="5" dx="0.6" dy="2.2" layer="1"/>
+<smd name="19" x="-4.445" y="5" dx="0.6" dy="2.2" layer="1"/>
+<smd name="20" x="-5.715" y="5" dx="0.6" dy="2.2" layer="1"/>
+<text x="-5.715" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-5.715" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-5.08" y="-2.54" size="1.27" layer="21" rot="R90">1</text>
+</package>
 <package name="DIL24-3">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt; 0.3 inch</description>
 <wire x1="-14.986" y1="-0.635" x2="-14.986" y2="-2.794" width="0.1524" layer="21"/>
@@ -11986,8 +12016,8 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <pin name="GND" x="-22.86" y="-10.16" length="middle"/>
 <pin name="VCC" x="22.86" y="12.7" length="middle" rot="R180"/>
 <pin name="PB7/SCK/SCL" x="22.86" y="10.16" length="middle" rot="R180"/>
-<pin name="PB6/MISO" x="22.86" y="7.62" length="middle" rot="R180"/>
-<pin name="PB5/MOSI/SDA" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="PB6/MISO/DO" x="22.86" y="7.62" length="middle" rot="R180"/>
+<pin name="PB5/MOSI/SDA/DI" x="22.86" y="5.08" length="middle" rot="R180"/>
 <pin name="PB4" x="22.86" y="2.54" length="middle" rot="R180"/>
 <pin name="PB3" x="22.86" y="0" length="middle" rot="R180"/>
 <pin name="PB2" x="22.86" y="-2.54" length="middle" rot="R180"/>
@@ -17793,14 +17823,14 @@ This is the through-hole version of this chip.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ATTINY2313A">
+<deviceset name="ATTINY2313A" prefix="U" uservalue="yes">
 <description>ATTINY2313A&lt;br&gt;
 2kB 20MHz I2C/SPI/UART</description>
 <gates>
 <gate name="G$1" symbol="ATTINY2313A" x="-10.16" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="SOP20">
+<device name="" package="SOP20W">
 <connects>
 <connect gate="G$1" pin="GND" pad="10"/>
 <connect gate="G$1" pin="PA0/XTAL1" pad="5"/>
@@ -17811,8 +17841,8 @@ This is the through-hole version of this chip.</description>
 <connect gate="G$1" pin="PB2" pad="14"/>
 <connect gate="G$1" pin="PB3" pad="15"/>
 <connect gate="G$1" pin="PB4" pad="16"/>
-<connect gate="G$1" pin="PB5/MOSI/SDA" pad="17"/>
-<connect gate="G$1" pin="PB6/MISO" pad="18"/>
+<connect gate="G$1" pin="PB5/MOSI/SDA/DI" pad="17"/>
+<connect gate="G$1" pin="PB6/MISO/DO" pad="18"/>
 <connect gate="G$1" pin="PB7/SCK/SCL" pad="19"/>
 <connect gate="G$1" pin="PD0/RXD" pad="2"/>
 <connect gate="G$1" pin="PD1/TXD" pad="3"/>
@@ -17824,7 +17854,10 @@ This is the through-hole version of this chip.</description>
 <connect gate="G$1" pin="VCC" pad="20"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-11305"/>
+<attribute name="VALUE" value="ATTINY2313A" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
