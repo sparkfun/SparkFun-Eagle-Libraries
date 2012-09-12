@@ -14891,66 +14891,6 @@ Very common IC. This is generically called 'MAX232', but works with the 3V equiv
 </device>
 </devices>
 </deviceset>
-<deviceset name="P8X32A-Q44">
-<description>Propellor uC</description>
-<gates>
-<gate name="P" symbol="4VDD4VSS" x="-27.94" y="7.62" addlevel="request"/>
-<gate name="P8X32A-Q44" symbol="P8X32A" x="5.08" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="P8X32A-Q44">
-<connects>
-<connect gate="P" pin="VDD@1" pad="8"/>
-<connect gate="P" pin="VDD@2" pad="18"/>
-<connect gate="P" pin="VDD@3" pad="30"/>
-<connect gate="P" pin="VDD@4" pad="40"/>
-<connect gate="P" pin="VSS@1" pad="5"/>
-<connect gate="P" pin="VSS@2" pad="17"/>
-<connect gate="P" pin="VSS@3" pad="27"/>
-<connect gate="P" pin="VSS@4" pad="39"/>
-<connect gate="P8X32A-Q44" pin="BOE/" pad="6"/>
-<connect gate="P8X32A-Q44" pin="P0" pad="41"/>
-<connect gate="P8X32A-Q44" pin="P1" pad="42"/>
-<connect gate="P8X32A-Q44" pin="P10" pad="11"/>
-<connect gate="P8X32A-Q44" pin="P11" pad="12"/>
-<connect gate="P8X32A-Q44" pin="P12" pad="13"/>
-<connect gate="P8X32A-Q44" pin="P13" pad="14"/>
-<connect gate="P8X32A-Q44" pin="P14" pad="15"/>
-<connect gate="P8X32A-Q44" pin="P15" pad="16"/>
-<connect gate="P8X32A-Q44" pin="P16" pad="19"/>
-<connect gate="P8X32A-Q44" pin="P17" pad="20"/>
-<connect gate="P8X32A-Q44" pin="P18" pad="21"/>
-<connect gate="P8X32A-Q44" pin="P19" pad="22"/>
-<connect gate="P8X32A-Q44" pin="P2" pad="43"/>
-<connect gate="P8X32A-Q44" pin="P20" pad="23"/>
-<connect gate="P8X32A-Q44" pin="P21" pad="24"/>
-<connect gate="P8X32A-Q44" pin="P22" pad="25"/>
-<connect gate="P8X32A-Q44" pin="P23" pad="26"/>
-<connect gate="P8X32A-Q44" pin="P24" pad="31"/>
-<connect gate="P8X32A-Q44" pin="P25" pad="32"/>
-<connect gate="P8X32A-Q44" pin="P26" pad="33"/>
-<connect gate="P8X32A-Q44" pin="P27" pad="34"/>
-<connect gate="P8X32A-Q44" pin="P28" pad="35"/>
-<connect gate="P8X32A-Q44" pin="P29" pad="36"/>
-<connect gate="P8X32A-Q44" pin="P3" pad="44"/>
-<connect gate="P8X32A-Q44" pin="P30" pad="37"/>
-<connect gate="P8X32A-Q44" pin="P31" pad="38"/>
-<connect gate="P8X32A-Q44" pin="P4" pad="1"/>
-<connect gate="P8X32A-Q44" pin="P5" pad="2"/>
-<connect gate="P8X32A-Q44" pin="P6" pad="3"/>
-<connect gate="P8X32A-Q44" pin="P7" pad="4"/>
-<connect gate="P8X32A-Q44" pin="P8" pad="9"/>
-<connect gate="P8X32A-Q44" pin="P9" pad="10"/>
-<connect gate="P8X32A-Q44" pin="RES/" pad="7"/>
-<connect gate="P8X32A-Q44" pin="XI" pad="28"/>
-<connect gate="P8X32A-Q44" pin="XO" pad="29"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="PCA9306">
 <description>Bidirectional I2C level shifter.&lt;br&gt;
 NOT compatible with all available part number pinout schemes- DOUBLE CHECK!!!</description>
@@ -17986,6 +17926,66 @@ This is the through-hole version of this chip.</description>
 <connect gate="G$1" pin="OE" pad="8"/>
 <connect gate="G$1" pin="VCCA" pad="1"/>
 <connect gate="G$1" pin="VCCB" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="P8X32A-Q44" prefix="U" uservalue="yes">
+<description>Propellor uC</description>
+<gates>
+<gate name="P" symbol="4VDD4VSS" x="-27.94" y="7.62"/>
+<gate name="P8X32A-Q44" symbol="P8X32A" x="5.08" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="P8X32A-Q44">
+<connects>
+<connect gate="P" pin="VDD@1" pad="8"/>
+<connect gate="P" pin="VDD@2" pad="18"/>
+<connect gate="P" pin="VDD@3" pad="30"/>
+<connect gate="P" pin="VDD@4" pad="40"/>
+<connect gate="P" pin="VSS@1" pad="5"/>
+<connect gate="P" pin="VSS@2" pad="17"/>
+<connect gate="P" pin="VSS@3" pad="27"/>
+<connect gate="P" pin="VSS@4" pad="39"/>
+<connect gate="P8X32A-Q44" pin="BOE/" pad="6"/>
+<connect gate="P8X32A-Q44" pin="P0" pad="41"/>
+<connect gate="P8X32A-Q44" pin="P1" pad="42"/>
+<connect gate="P8X32A-Q44" pin="P10" pad="11"/>
+<connect gate="P8X32A-Q44" pin="P11" pad="12"/>
+<connect gate="P8X32A-Q44" pin="P12" pad="13"/>
+<connect gate="P8X32A-Q44" pin="P13" pad="14"/>
+<connect gate="P8X32A-Q44" pin="P14" pad="15"/>
+<connect gate="P8X32A-Q44" pin="P15" pad="16"/>
+<connect gate="P8X32A-Q44" pin="P16" pad="19"/>
+<connect gate="P8X32A-Q44" pin="P17" pad="20"/>
+<connect gate="P8X32A-Q44" pin="P18" pad="21"/>
+<connect gate="P8X32A-Q44" pin="P19" pad="22"/>
+<connect gate="P8X32A-Q44" pin="P2" pad="43"/>
+<connect gate="P8X32A-Q44" pin="P20" pad="23"/>
+<connect gate="P8X32A-Q44" pin="P21" pad="24"/>
+<connect gate="P8X32A-Q44" pin="P22" pad="25"/>
+<connect gate="P8X32A-Q44" pin="P23" pad="26"/>
+<connect gate="P8X32A-Q44" pin="P24" pad="31"/>
+<connect gate="P8X32A-Q44" pin="P25" pad="32"/>
+<connect gate="P8X32A-Q44" pin="P26" pad="33"/>
+<connect gate="P8X32A-Q44" pin="P27" pad="34"/>
+<connect gate="P8X32A-Q44" pin="P28" pad="35"/>
+<connect gate="P8X32A-Q44" pin="P29" pad="36"/>
+<connect gate="P8X32A-Q44" pin="P3" pad="44"/>
+<connect gate="P8X32A-Q44" pin="P30" pad="37"/>
+<connect gate="P8X32A-Q44" pin="P31" pad="38"/>
+<connect gate="P8X32A-Q44" pin="P4" pad="1"/>
+<connect gate="P8X32A-Q44" pin="P5" pad="2"/>
+<connect gate="P8X32A-Q44" pin="P6" pad="3"/>
+<connect gate="P8X32A-Q44" pin="P7" pad="4"/>
+<connect gate="P8X32A-Q44" pin="P8" pad="9"/>
+<connect gate="P8X32A-Q44" pin="P9" pad="10"/>
+<connect gate="P8X32A-Q44" pin="RES/" pad="7"/>
+<connect gate="P8X32A-Q44" pin="XI" pad="28"/>
+<connect gate="P8X32A-Q44" pin="XO" pad="29"/>
 </connects>
 <technologies>
 <technology name=""/>
