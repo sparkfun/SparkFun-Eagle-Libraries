@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3899,8 +3899,9 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TB6621FNG">
-<description>Toshiba 1A dual motor driver</description>
+<deviceset name="TB6621FNG" prefix="U" uservalue="yes">
+<description>Toshiba 1A dual motor driver&lt;br&gt;
+IC-09363</description>
 <gates>
 <gate name="G$1" symbol="TB6612FNG" x="0" y="0"/>
 </gates>
@@ -3933,7 +3934,10 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 <connect gate="G$1" pin="VM3" pad="14"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09363"/>
+<attribute name="VALUE" value="TB6612FNG" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8458,7 +8458,8 @@ Schematic element and footprint production proven. Center pad has reduced paste 
 </devices>
 </deviceset>
 <deviceset name="MMA7361" prefix="U" uservalue="yes">
-<description>3-axis 1.5/6g analog output accelerometer</description>
+<description>3-axis 1.5/6g analog output accelerometer&lt;br&gt;
+IC-09489</description>
 <gates>
 <gate name="G$1" symbol="MMA7361" x="0" y="0"/>
 </gates>
@@ -8476,7 +8477,10 @@ Schematic element and footprint production proven. Center pad has reduced paste 
 <connect gate="G$1" pin="ZOUT" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09489"/>
+<attribute name="VALUE" value="IC-09489"/>
+</technology>
 </technologies>
 </device>
 </devices>
