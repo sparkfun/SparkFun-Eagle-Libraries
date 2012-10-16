@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.0">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -965,21 +965,27 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 </device>
 </devices>
 </deviceset>
-<deviceset name="RESONATOR" prefix="Y">
-<description>&lt;b&gt;Resonator&lt;/b&gt;
-Small SMD resonator. This is the itty bitty 10/20MHz resonators with built in caps. CSTCE10M0G55 and CSTCE20M0V53. Footprint has been reviewed closely but hasn't been tested yet.</description>
+<deviceset name="RESONATOR" prefix="Y" uservalue="yes">
+<description>&lt;b&gt;Resonator&lt;/b&gt;&lt;br&gt;
+Small SMD resonator.&lt;br&gt;
+Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
+8MHz- XTAL-08895&lt;br&gt;
+16MHz- XTAL-08900</description>
 <gates>
 <gate name="G$1" symbol="RESONATOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SMD" package="RESONATOR-SMD">
+<device name="8MHZ" package="RESONATOR-SMD">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-08895"/>
+<attribute name="VALUE" value="8MHZ" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="PTH" package="RESONATOR-PTH">
@@ -990,6 +996,19 @@ Small SMD resonator. This is the itty bitty 10/20MHz resonators with built in ca
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="16MHZ" package="RESONATOR-SMD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-08900"/>
+<attribute name="VALUE" value="16MHz"/>
+</technology>
 </technologies>
 </device>
 </devices>
