@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1675,7 +1675,7 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <wire x1="1.6" y1="-1.6" x2="1.1" y2="-1.6" width="0.2032" layer="21"/>
 <wire x1="-1.1" y1="-1.6" x2="-1.6" y2="-1.6" width="0.2032" layer="21"/>
 <wire x1="-1.6" y1="-1.6" x2="-1.6" y2="-1.1" width="0.2032" layer="21"/>
-<smd name="EXT" x="0" y="0" dx="1.7" dy="1.7" layer="1" cream="no"/>
+<smd name="EXT" x="0" y="0" dx="1.68" dy="1.68" layer="1" cream="no"/>
 <rectangle x1="-0.6" y1="0.15" x2="-0.15" y2="0.6" layer="31"/>
 <rectangle x1="0.15" y1="0.15" x2="0.6" y2="0.6" layer="31"/>
 <rectangle x1="0.15" y1="-0.6" x2="0.6" y2="-0.15" layer="31"/>
@@ -4579,38 +4579,6 @@ Older TI part. LDO 150mA regulator. No output by-pass cap option. See V_REG_LDO 
 </device>
 </devices>
 </deviceset>
-<deviceset name="TPS6214X" prefix="U">
-<description>3-17V, 2A Step Down Converter</description>
-<gates>
-<gate name="G$1" symbol="TPS62143" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="" package="QFN16-3X3MM">
-<connects>
-<connect gate="G$1" pin="AGND" pad="6"/>
-<connect gate="G$1" pin="AVIN" pad="10"/>
-<connect gate="G$1" pin="DEF" pad="8"/>
-<connect gate="G$1" pin="EN" pad="13"/>
-<connect gate="G$1" pin="EXT" pad="EXT"/>
-<connect gate="G$1" pin="FB" pad="5"/>
-<connect gate="G$1" pin="FSW" pad="7"/>
-<connect gate="G$1" pin="PG" pad="4"/>
-<connect gate="G$1" pin="PGND@15" pad="15"/>
-<connect gate="G$1" pin="PGND@16" pad="16"/>
-<connect gate="G$1" pin="PVIN@11" pad="11"/>
-<connect gate="G$1" pin="PVIN@12" pad="12"/>
-<connect gate="G$1" pin="SS_TR" pad="9"/>
-<connect gate="G$1" pin="SW@1" pad="1"/>
-<connect gate="G$1" pin="SW@2" pad="2"/>
-<connect gate="G$1" pin="SW@3" pad="3"/>
-<connect gate="G$1" pin="VOS" pad="14"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="V_REG_MIC5216" prefix="U">
 <description>500mA LDO, MSOP8 for better dissipation</description>
 <gates>
@@ -4685,6 +4653,38 @@ Iq less than 1uA for low Iload</description>
 <attribute name="PROD_ID" value="VREG-11306"/>
 <attribute name="VALUE" value="ADP160" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS6214X" prefix="U">
+<description>3-17V, 2A Step Down Converter</description>
+<gates>
+<gate name="G$1" symbol="TPS62143" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="QFN16-3X3MM">
+<connects>
+<connect gate="G$1" pin="AGND" pad="6"/>
+<connect gate="G$1" pin="AVIN" pad="10"/>
+<connect gate="G$1" pin="DEF" pad="8"/>
+<connect gate="G$1" pin="EN" pad="13"/>
+<connect gate="G$1" pin="EXT" pad="EXT"/>
+<connect gate="G$1" pin="FB" pad="5"/>
+<connect gate="G$1" pin="FSW" pad="7"/>
+<connect gate="G$1" pin="PG" pad="4"/>
+<connect gate="G$1" pin="PGND@15" pad="15"/>
+<connect gate="G$1" pin="PGND@16" pad="16"/>
+<connect gate="G$1" pin="PVIN@11" pad="11"/>
+<connect gate="G$1" pin="PVIN@12" pad="12"/>
+<connect gate="G$1" pin="SS_TR" pad="9"/>
+<connect gate="G$1" pin="SW@1" pad="1"/>
+<connect gate="G$1" pin="SW@2" pad="2"/>
+<connect gate="G$1" pin="SW@3" pad="3"/>
+<connect gate="G$1" pin="VOS" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
