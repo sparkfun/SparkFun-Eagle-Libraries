@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4932,6 +4932,41 @@ Bluetooth 4.0 module with built-in chip antenna.</description>
 <wire x1="-11.08" y1="-5.5" x2="-11.08" y2="-5.8" width="0.2032" layer="21"/>
 <wire x1="-10.445" y1="-5.8" x2="-11.08" y2="-5.8" width="0.2032" layer="21"/>
 </package>
+<package name="SD_MMC_SOCKET">
+<description>&lt;h3&gt;SD/Multi-Media Card Socket&lt;/h3&gt;
+4UCONN part # 19646</description>
+<smd name="9" x="9.27" y="29.87" dx="1.05" dy="1.56" layer="1"/>
+<smd name="1" x="6.77" y="29.87" dx="1.05" dy="1.56" layer="1"/>
+<smd name="2" x="4.27" y="29.87" dx="1.05" dy="1.56" layer="1"/>
+<smd name="3" x="2.52" y="29.87" dx="1.05" dy="1.56" layer="1"/>
+<smd name="CD" x="1.02" y="29.87" dx="1.05" dy="1.56" layer="1"/>
+<smd name="6" x="-5.73" y="29.87" dx="1.05" dy="1.56" layer="1"/>
+<smd name="4" x="-0.73" y="29.87" dx="1.05" dy="1.56" layer="1"/>
+<smd name="5" x="-3.23" y="29.87" dx="1.05" dy="1.56" layer="1"/>
+<smd name="7" x="-8.15" y="29.87" dx="1.05" dy="1.56" layer="1"/>
+<smd name="8" x="-9.85" y="29.87" dx="1.05" dy="1.56" layer="1"/>
+<smd name="WP" x="-13.2" y="29.87" dx="1.05" dy="1.56" layer="1"/>
+<smd name="S1" x="-14.8" y="7.6" dx="1.2" dy="2" layer="1"/>
+<smd name="S2" x="14.8" y="8.8" dx="1.2" dy="2" layer="1"/>
+<hole x="11.98" y="5.5" drill="1.55"/>
+<hole x="-12.22" y="5.5" drill="1.55"/>
+<wire x1="-14.25" y1="0" x2="-14.25" y2="28.8" width="0.127" layer="21"/>
+<wire x1="-14.25" y1="28.8" x2="14.25" y2="28.8" width="0.127" layer="21"/>
+<wire x1="14.25" y1="28.8" x2="14.25" y2="0" width="0.127" layer="21"/>
+<wire x1="14.25" y1="0" x2="10.5" y2="0" width="0.127" layer="21"/>
+<wire x1="10.5" y1="0" x2="9.5" y2="1" width="0.127" layer="21" curve="-90"/>
+<wire x1="9.5" y1="1" x2="0" y2="10" width="0.127" layer="21" curve="90"/>
+<wire x1="0" y1="10" x2="-9.5" y2="1" width="0.127" layer="21" curve="90"/>
+<wire x1="-9.5" y1="1" x2="-10.5" y2="0" width="0.127" layer="21" curve="-90"/>
+<wire x1="-10.5" y1="0" x2="-14.25" y2="0" width="0.127" layer="21"/>
+<text x="-12.7" y="26.67" size="0.4318" layer="25">&gt;Name</text>
+<text x="-12.7" y="25.4" size="0.4318" layer="27">&gt;Value</text>
+<wire x1="-12" y1="-11.8" x2="12" y2="-11.8" width="0.127" layer="51" style="shortdash"/>
+<wire x1="-12" y1="-6.8" x2="12" y2="-6.8" width="0.127" layer="51"/>
+<wire x1="-12" y1="-5.5" x2="12" y2="-5.5" width="0.127" layer="51" style="dashdot"/>
+<rectangle x1="13.68" y1="7.8" x2="14.88" y2="9.8" layer="51"/>
+<rectangle x1="-14.52" y1="6.6" x2="-13.32" y2="8.6" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ALM-1412">
@@ -7144,6 +7179,30 @@ Bluetooth 4.0 module with chip antenna.</description>
 <pin name="NC" x="-17.78" y="38.1" length="middle" direction="nc"/>
 <pin name="PIO_8" x="-17.78" y="5.08" length="middle"/>
 <text x="-12.7" y="-50.8" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="ELECTRIC_IMP">
+<description>&lt;h3&gt;Electric Imp&lt;/h3&gt;
+
+A wi-fi enabled microcontroller, in an SD card package.</description>
+<pin name="1(CLK2/CTS1/TX3/SCL2)" x="-25.4" y="10.16" visible="pin" length="short"/>
+<pin name="2(MISO1/MOSI2/RTS1/RX3/SDA2)" x="-25.4" y="7.62" visible="pin" length="short"/>
+<pin name="5(SCLK1/SCLK2/TX2)" x="-25.4" y="5.08" visible="pin" length="short"/>
+<pin name="7(MOSI1/MISO2/RX2)" x="-25.4" y="2.54" visible="pin" length="short"/>
+<pin name="8(MOSI2/TX1/SCL1)" x="-25.4" y="0" visible="pin" length="short"/>
+<pin name="9(MISO2/RX1/SDA1)" x="-25.4" y="-2.54" visible="pin" length="short"/>
+<pin name="CD" x="-25.4" y="-7.62" visible="pin" length="short"/>
+<pin name="WP" x="-25.4" y="-10.16" visible="pin" length="short"/>
+<pin name="VDD" x="25.4" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="ID" x="25.4" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="25.4" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="S1" x="25.4" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="S2" x="25.4" y="-10.16" visible="pin" length="short" rot="R180"/>
+<wire x1="-22.86" y1="12.7" x2="-22.86" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-22.86" y1="-12.7" x2="22.86" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-12.7" x2="22.86" y2="12.7" width="0.254" layer="94"/>
+<wire x1="22.86" y1="12.7" x2="-22.86" y2="12.7" width="0.254" layer="94"/>
+<text x="-22.86" y="12.954" size="1.778" layer="95">&gt;Name</text>
+<text x="-22.86" y="-14.986" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -10338,6 +10397,39 @@ BR-LE4.0-S2A&lt;br&gt;</description>
 <attribute name="PROD_ID" value="IC-11328"/>
 <attribute name="VALUE" value="BR-LE4.0-S2A" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ELECTRIC_IMP" prefix="U">
+<description>&lt;h3&gt;Electric Imp SD Socket&lt;/h3&gt;
+This symbol matches the &lt;a href="https://www.sparkfun.com/products/11395"&gt;Electric Imp&lt;/a&gt; pinout to a 4UCONN SD MMC connector.&lt;br&gt;
+&lt;br&gt;
+The 4UCONN part number is &lt;a href="http://www.4uconnector.com/online/Itemadrawing.asp?fldseries=19646&amp;seriesno_a=12"&gt;19646&lt;/a&gt;.&lt;br&gt;
+&lt;br&gt;
+See this part in action on the &lt;a href="https://www.sparkfun.com/products/11400"&gt;Electric Imp Breakout&lt;/a&gt;.</description>
+<gates>
+<gate name="G$1" symbol="ELECTRIC_IMP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SD_MMC_SOCKET">
+<connects>
+<connect gate="G$1" pin="1(CLK2/CTS1/TX3/SCL2)" pad="1"/>
+<connect gate="G$1" pin="2(MISO1/MOSI2/RTS1/RX3/SDA2)" pad="2"/>
+<connect gate="G$1" pin="5(SCLK1/SCLK2/TX2)" pad="5"/>
+<connect gate="G$1" pin="7(MOSI1/MISO2/RX2)" pad="7"/>
+<connect gate="G$1" pin="8(MOSI2/TX1/SCL1)" pad="8"/>
+<connect gate="G$1" pin="9(MISO2/RX1/SDA1)" pad="9"/>
+<connect gate="G$1" pin="CD" pad="CD"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="ID" pad="6"/>
+<connect gate="G$1" pin="S1" pad="S1"/>
+<connect gate="G$1" pin="S2" pad="S2"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+<connect gate="G$1" pin="WP" pad="WP"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
