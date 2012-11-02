@@ -1697,6 +1697,34 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <wire x1="1.8" y1="-0.25" x2="1.15" y2="-0.25" width="0.2032" layer="31"/>
 <wire x1="1.8" y1="0.75" x2="1.15" y2="0.75" width="0.2032" layer="31"/>
 </package>
+<package name="WSON-8-PAD">
+<wire x1="-1" y1="-1" x2="-1" y2="1" width="0.127" layer="51"/>
+<wire x1="-1" y1="1" x2="1" y2="1" width="0.127" layer="51"/>
+<wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="51"/>
+<wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="51"/>
+<smd name="6" x="0.25" y="0.95" dx="0.25" dy="0.5" layer="1"/>
+<smd name="5" x="0.75" y="0.95" dx="0.25" dy="0.5" layer="1"/>
+<smd name="8" x="-0.75" y="0.95" dx="0.25" dy="0.5" layer="1"/>
+<smd name="7" x="-0.25" y="0.95" dx="0.25" dy="0.5" layer="1"/>
+<smd name="2" x="-0.25" y="-0.95" dx="0.25" dy="0.5" layer="1"/>
+<smd name="3" x="0.25" y="-0.95" dx="0.25" dy="0.5" layer="1"/>
+<smd name="4" x="0.75" y="-0.95" dx="0.25" dy="0.5" layer="1"/>
+<smd name="1" x="-0.75" y="-0.95" dx="0.25" dy="0.5" layer="1"/>
+<smd name="PAD" x="0" y="0" dx="1.6" dy="0.9" layer="1" cream="no"/>
+<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.127" layer="21"/>
+<wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="21"/>
+<circle x="-1" y="-1" radius="0.05" width="0.127" layer="21"/>
+<rectangle x1="-0.8" y1="-0.45" x2="0.8" y2="0.45" layer="51"/>
+<rectangle x1="-0.375" y1="-1" x2="-0.125" y2="-0.7" layer="51"/>
+<rectangle x1="-0.875" y1="-1" x2="-0.625" y2="-0.7" layer="51"/>
+<rectangle x1="0.125" y1="-1" x2="0.375" y2="-0.7" layer="51"/>
+<rectangle x1="0.625" y1="-1" x2="0.875" y2="-0.7" layer="51"/>
+<rectangle x1="0.125" y1="0.7" x2="0.375" y2="1" layer="51" rot="R180"/>
+<rectangle x1="0.625" y1="0.7" x2="0.875" y2="1" layer="51" rot="R180"/>
+<rectangle x1="-0.375" y1="0.7" x2="-0.125" y2="1" layer="51" rot="R180"/>
+<rectangle x1="-0.875" y1="0.7" x2="-0.625" y2="1" layer="51" rot="R180"/>
+<rectangle x1="-0.65" y1="-0.35" x2="0.65" y2="0.35" layer="31"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADM1087">
@@ -2899,6 +2927,26 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <pin name="GND@6" x="-2.54" y="-10.16" length="middle" rot="R90"/>
 <pin name="GND@7" x="0" y="-10.16" length="middle" rot="R90"/>
 <pin name="GND@8" x="2.54" y="-10.16" length="middle" rot="R90"/>
+</symbol>
+<symbol name="TPS62172">
+<description>&lt;h3&gt;TPS62172&lt;/h3&gt;
+
+3-17V 0.5A Step-Down Converter w/ DCS-Control</description>
+<pin name="VIN" x="-12.7" y="5.08" length="short"/>
+<pin name="EN" x="-12.7" y="2.54" length="short"/>
+<pin name="AGND" x="-12.7" y="0" length="short"/>
+<pin name="PGND" x="-12.7" y="-2.54" length="short"/>
+<pin name="SW" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="VOS" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="PG" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="FB" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="PAD" x="-12.7" y="-5.08" length="short"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="-10.16" y="8.128" size="1.778" layer="95">&gt;Name</text>
+<text x="-10.16" y="-8.128" size="1.778" layer="96" align="top-left">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4682,6 +4730,36 @@ Iq less than 1uA for low Iload</description>
 <connect gate="G$1" pin="SW@2" pad="2"/>
 <connect gate="G$1" pin="SW@3" pad="3"/>
 <connect gate="G$1" pin="VOS" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS62172" prefix="U">
+<description>&lt;h3&gt;Texas Instruments TPS62172&lt;/h3&gt;
+3-17V 0.5A Step-Down Converter with DCS control. Available in adjustable and fixed output voltage versions.&lt;br&gt;&lt;br&gt;
+
+Is packaged in an 8-pin WSON package measuring 2 × 2 mm (DSG).&lt;br&gt; &lt;br&gt;
+
+See a 3.3V fixed output version of this chip in action on the &lt;a href="https://www.sparkfun.com/products/11400"&gt;Electric Imp Breakout Board&lt;/a&gt;.&lt;br&gt;&lt;br&gt;
+&lt;a href="http://www.ti.com/lit/gpn/tps62172"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TPS62172" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WSON-8-PAD">
+<connects>
+<connect gate="G$1" pin="AGND" pad="4"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="FB" pad="5"/>
+<connect gate="G$1" pin="PAD" pad="PAD"/>
+<connect gate="G$1" pin="PG" pad="8"/>
+<connect gate="G$1" pin="PGND" pad="1"/>
+<connect gate="G$1" pin="SW" pad="7"/>
+<connect gate="G$1" pin="VIN" pad="2"/>
+<connect gate="G$1" pin="VOS" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
