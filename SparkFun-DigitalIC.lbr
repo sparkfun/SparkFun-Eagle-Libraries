@@ -12774,13 +12774,13 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 </device>
 </devices>
 </deviceset>
-<deviceset name="ATTINY45">
+<deviceset name="ATTINY45" prefix="U" uservalue="yes">
 <description>Atmel 8-pin 2/4/8kB flash uC</description>
 <gates>
 <gate name="G$1" symbol="ATTINY13" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SO08-EIAJ">
+<device name="TINY45-20-SMT" package="SO08-EIAJ">
 <connects>
 <connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="PB0(MOSI)" pad="5"/>
@@ -12792,10 +12792,13 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <connect gate="G$1" pin="VCC" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-08922"/>
+<attribute name="VALUE" value="Tiny45-20-SMT" constant="no"/>
+</technology>
 </technologies>
 </device>
-<device name="DIP8" package="DIP08">
+<device name="TINY45-20-DIP" package="DIP08">
 <connects>
 <connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="PB0(MOSI)" pad="5"/>
@@ -12807,7 +12810,46 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <connect gate="G$1" pin="VCC" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09439"/>
+<attribute name="VALUE" value="TINY45-20-DIP" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TINY85-20-DIP" package="DIP08">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="PB0(MOSI)" pad="5"/>
+<connect gate="G$1" pin="PB1(MISO)" pad="6"/>
+<connect gate="G$1" pin="PB2(SCK/ADC1)" pad="7"/>
+<connect gate="G$1" pin="PB3(ADC3)" pad="2"/>
+<connect gate="G$1" pin="PB4(ADC2)" pad="3"/>
+<connect gate="G$1" pin="PB5(NRES)" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09445"/>
+<attribute name="VALUE" value="TINY85-20-DIP" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TINY85-20-SMT" package="SO08-EIAJ">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="PB0(MOSI)" pad="5"/>
+<connect gate="G$1" pin="PB1(MISO)" pad="6"/>
+<connect gate="G$1" pin="PB2(SCK/ADC1)" pad="7"/>
+<connect gate="G$1" pin="PB3(ADC3)" pad="2"/>
+<connect gate="G$1" pin="PB4(ADC2)" pad="3"/>
+<connect gate="G$1" pin="PB5(NRES)" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09092"/>
+<attribute name="VALUE" value="Tiny85-20-SMT" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -13872,7 +13914,7 @@ This is the tested schematic and footprint for the DOSonCHIP FAT16 FAT32 IC. Spa
 </device>
 </devices>
 </deviceset>
-<deviceset name="FT232RL" prefix="IC">
+<deviceset name="FT232RL" prefix="U">
 <description>&lt;b&gt;USB UART&lt;/b&gt;
 FT232RL 4&lt;sup&gt;th&lt;/sup&gt; Generation USB UART (USB &amp;lt;-&amp;gt; Serial) Controller. &lt;br&gt;
 Spark Fun Electronics SKU : COM-00650&lt;br&gt;
@@ -15258,8 +15300,10 @@ NOT compatible with all available part number pinout schemes- DOUBLE CHECK!!!</d
 </devices>
 </deviceset>
 <deviceset name="PIC24FXXXDAX06" prefix="U">
-<description>&lt;b&gt;PIC24FXXXDAX06&lt;/b&gt;
-PIC24FXXXDA106 / PIC24FXXXDA206</description>
+<description>&lt;b&gt;PIC24FXXXDAX06&lt;/b&gt;&lt;br&gt;
+PIC24FXXXDA106 / PIC24FXXXDA206&lt;br&gt;
+PIC24FJ256DA206-I/PT for IOIO&lt;br&gt;
+IC-10386</description>
 <gates>
 <gate name="G$1" symbol="PIC24FJXXXDAX06" x="0" y="0"/>
 </gates>
@@ -15332,7 +15376,9 @@ PIC24FXXXDA106 / PIC24FXXXDA206</description>
 <connect gate="G$1" pin="VUSB" pad="35"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-10386"/>
+</technology>
 </technologies>
 </device>
 </devices>
