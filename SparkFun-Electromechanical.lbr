@@ -9187,8 +9187,9 @@ Simple SMD single-pull double-throw slide switch. Good for  less than 350mA powe
 </devices>
 </deviceset>
 <deviceset name="BATTERY" prefix="BAT" uservalue="yes">
-<description>&lt;b&gt;Battery Holders&lt;/b&gt;
-Various common sizes : AA, AAA, 20mm coin cell and 12mm coin cell.</description>
+<description>&lt;b&gt;Battery Holders&lt;/b&gt;&lt;br&gt;
+Various common sizes : AA, AAA, 20mm coin cell and 12mm coin cell.&lt;br&gt;
+20MM_4LEGS, BATT-10373</description>
 <gates>
 <gate name="G$1" symbol="BATTERY" x="0" y="0"/>
 </gates>
@@ -9307,7 +9308,10 @@ Various common sizes : AA, AAA, 20mm coin cell and 12mm coin cell.</description>
 <connect gate="G$1" pin="-" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="BATT-10373"/>
+<attribute name="VALUE" value="20mm coincell" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="AA-KIT" package="BATTERY-AA-KIT">
@@ -10348,7 +10352,7 @@ Three way navigation switch. Commonly used as up/down/select on MP3 players. Sch
 </device>
 </devices>
 </deviceset>
-<deviceset name="STAND-OFF" prefix="JP">
+<deviceset name="STAND-OFF" prefix="STANDOFF">
 <description>&lt;b&gt;#4 Stand Off&lt;/b&gt;&lt;p&gt;
 This is the mechanical footprint for a #4 phillips button head screw. Use the keepout ring to avoid running the screw head into surrounding components. SKU : PRT-00447</description>
 <gates>
@@ -10604,8 +10608,9 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 </devices>
 </deviceset>
 <deviceset name="SWITCH-SPDT" prefix="S" uservalue="yes">
-<description>&lt;b&gt;SPST Switch&lt;/b&gt;
-Simple slide switch. Spark Fun Electronics SKU : COM-00102</description>
+<description>&lt;b&gt;SPDT Switch&lt;/b&gt;&lt;br&gt;
+Simple slide switch, Spark Fun Electronics SKU : COM-00102&lt;br&gt;
+DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 <gates>
 <gate name="1" symbol="TOGGLE" x="-2.54" y="0"/>
 </gates>
@@ -10627,7 +10632,9 @@ Simple slide switch. Spark Fun Electronics SKU : COM-00102</description>
 <connect gate="1" pin="S" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="SWCH-08179" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="PTH2" package="SWITCHE-DPDT">
@@ -10787,8 +10794,10 @@ Spark Fun Electronics SKU : COM-08034</description>
 </devices>
 </deviceset>
 <deviceset name="TAC_SWITCH" prefix="S" uservalue="yes">
-<description>&lt;b&gt;Momentary Switch&lt;/b&gt;
-Button commonly used for reset or general input. Spark Fun Electronics SKU : COM-00097</description>
+<description>&lt;b&gt;Momentary Switch&lt;/b&gt;&lt;br&gt;
+Button commonly used for reset or general input.&lt;br&gt;
+Spark Fun Electronics SKU : COM-00097&lt;br&gt;
+SMT- SWCH-08247</description>
 <gates>
 <gate name="S" symbol="SWITCH-MOMENTARY" x="0" y="0"/>
 </gates>
@@ -10801,7 +10810,9 @@ Button commonly used for reset or general input. Spark Fun Electronics SKU : COM
 <connect gate="S" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="SWCH-08247"/>
+</technology>
 </technologies>
 </device>
 <device name="PTH" package="TACTILE-PTH">

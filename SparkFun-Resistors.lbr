@@ -297,8 +297,8 @@ chip</description>
 <wire x1="-1.55" y1="-0.85" x2="1.55" y2="-0.85" width="0.2032" layer="21"/>
 <wire x1="1.55" y1="-0.85" x2="1.55" y2="0.85" width="0.2032" layer="21"/>
 <wire x1="1.55" y1="0.85" x2="-1.55" y2="0.85" width="0.2032" layer="21"/>
-<pad name="1" x="-2.5" y="0" drill="0.762"/>
-<pad name="2" x="2.5" y="0" drill="0.762"/>
+<pad name="1" x="-2.5" y="0" drill="0.762" diameter="1.6764"/>
+<pad name="2" x="2.5" y="0" drill="0.762" diameter="1.6764"/>
 <text x="-1.2662" y="0.9552" size="0.6096" layer="25">&gt;NAME</text>
 <text x="-1.423" y="-0.4286" size="0.8128" layer="21" ratio="15">&gt;VALUE</text>
 </package>
@@ -451,12 +451,12 @@ Source: RS Components</description>
 <wire x1="1.27" y1="-12.7" x2="1.27" y2="-1.27" width="0.2032" layer="21"/>
 <wire x1="1.27" y1="-1.27" x2="1.27" y2="0" width="0.2032" layer="21"/>
 <wire x1="-1.27" y1="-1.27" x2="1.27" y2="-1.27" width="0.2032" layer="21"/>
-<pad name="P$1" x="0" y="0" drill="0.8" shape="square"/>
-<pad name="P$2" x="0" y="-2.54" drill="0.8"/>
-<pad name="P$3" x="0" y="-5.08" drill="0.8"/>
-<pad name="P$4" x="0" y="-7.62" drill="0.8"/>
-<pad name="P$5" x="0" y="-10.16" drill="0.8"/>
-<pad name="P$6" x="0" y="-12.7" drill="0.8"/>
+<pad name="P$1" x="0" y="0" drill="0.8" diameter="1.6764" shape="square"/>
+<pad name="P$2" x="0" y="-2.54" drill="0.8" diameter="1.6764"/>
+<pad name="P$3" x="0" y="-5.08" drill="0.8" diameter="1.6764"/>
+<pad name="P$4" x="0" y="-7.62" drill="0.8" diameter="1.6764"/>
+<pad name="P$5" x="0" y="-10.16" drill="0.8" diameter="1.6764"/>
+<pad name="P$6" x="0" y="-12.7" drill="0.8" diameter="1.6764"/>
 <text x="-1.778" y="-12.7" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="-3.048" y="0" size="1.27" layer="27" rot="R270">&gt;VALUE</text>
 </package>
@@ -1093,11 +1093,24 @@ RES-07868</description>
 <devices>
 </devices>
 </deviceset>
-<deviceset name="1.2MOHMS-1/10W-1%(0603)" prefix="C" uservalue="yes">
+<deviceset name="1.2MOHMS-1/10W-1%(0603)" prefix="R" uservalue="yes">
 <description>RES-10055</description>
 <gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="0402-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-10055"/>
+<attribute name="VALUE" value="1.2M" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="1.43KOHM-1/10W-1%(0603)" prefix="C" uservalue="yes">
@@ -1491,11 +1504,24 @@ RES-07868</description>
 <devices>
 </devices>
 </deviceset>
-<deviceset name="2.0KOHM1/10W5%(0603)" prefix="C" uservalue="yes">
+<deviceset name="2.0KOHM1/10W5%(0603)" prefix="R" uservalue="yes">
 <description>RES-08296</description>
 <gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="0402-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08296"/>
+<attribute name="VALUE" value="2.0k" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="2.2OHM1/10W5%(0603)" prefix="C" uservalue="yes">
@@ -1687,11 +1713,20 @@ RES-07868</description>
 <devices>
 </devices>
 </deviceset>
-<deviceset name="220KOHM1/10W1%(0603)" prefix="C" uservalue="yes">
+<deviceset name="220KOHM1/10W1%(0603)" prefix="R" uservalue="yes">
 <description>RES-08969</description>
 <gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="0402-RES">
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08969"/>
+<attribute name="VALUE" value="220k" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="22KOHM-1/4W-5%(PTH)" prefix="C" uservalue="yes">
@@ -1715,11 +1750,24 @@ RES-07868</description>
 <devices>
 </devices>
 </deviceset>
-<deviceset name="240OHM1/10W1%(0603)" prefix="C" uservalue="yes">
+<deviceset name="240OHM1/10W1%(0603)" prefix="R" uservalue="yes">
 <description>RES-07849</description>
 <gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="0402-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-07849"/>
+<attribute name="VALUE" value="240" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="240OHM1/6W5%(PTH)" prefix="C" uservalue="yes">
@@ -1785,11 +1833,24 @@ RES-07868</description>
 <devices>
 </devices>
 </deviceset>
-<deviceset name="2MOHMS-1/10W-1%(0603)" prefix="C" uservalue="yes">
+<deviceset name="2MOHMS-1/10W-1%(0603)" prefix="R" uservalue="yes">
 <description>RES-10054</description>
 <gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="0402-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-10054"/>
+<attribute name="VALUE" value="2.0M" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="3.0MOHM-1/10W-1%(0603)" prefix="C" uservalue="yes">
@@ -1876,11 +1937,24 @@ RES-07868</description>
 <devices>
 </devices>
 </deviceset>
-<deviceset name="330OHM1/10W1%(0603)" prefix="C" uservalue="yes">
+<deviceset name="330OHM1/10W1%(0603)" prefix="R" uservalue="yes">
 <description>RES-00818</description>
 <gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="0402-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-00818"/>
+<attribute name="VALUE" value="330" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="330OHM1/6W5%(PTH)" prefix="C" uservalue="yes">
@@ -1925,11 +1999,24 @@ RES-07868</description>
 <devices>
 </devices>
 </deviceset>
-<deviceset name="390OHM1/10W1%(0603)" prefix="C" uservalue="yes">
+<deviceset name="390OHM1/10W1%(0603)" prefix="R" uservalue="yes">
 <description>RES-07864</description>
 <gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="0402-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-07864"/>
+<attribute name="VALUE" value="390" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="390OHM1/6W5%(PTH)" prefix="C" uservalue="yes">
@@ -2023,11 +2110,24 @@ RES-07868</description>
 <devices>
 </devices>
 </deviceset>
-<deviceset name="470OHM1/10W1%(0603)" prefix="C" uservalue="yes">
+<deviceset name="470OHM1/10W1%(0603)" prefix="R" uservalue="yes">
 <description>RES-07869</description>
 <gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="0402-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-07869"/>
+<attribute name="VALUE" value="470" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="470OHM1/4W5%(PTH)" prefix="C" uservalue="yes">

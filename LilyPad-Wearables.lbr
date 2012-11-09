@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -65,7 +65,7 @@
 <layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -1557,6 +1557,13 @@
 <vertex x="-3.81" y="0" curve="90"/>
 </polygon>
 </package>
+<package name="SIMPLE_HOLE">
+<pad name="P$1" x="0" y="0" drill="2.54" diameter="3.048"/>
+<text x="1.905" y="-0.127" size="0.4064" layer="25">&gt;NAME</text>
+</package>
+<package name="SIMPLE_HOLE_SM">
+<pad name="P$1" x="0" y="0" drill="1.778" diameter="2.286"/>
+</package>
 </packages>
 <symbols>
 <symbol name="BUTTONHOLE">
@@ -1648,6 +1655,16 @@
 <vertex x="-2.921" y="-2.413"/>
 <vertex x="-2.413" y="-2.921"/>
 </polygon>
+</symbol>
+<symbol name="SIMPLE_HOLE">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<pin name="P$1" x="-5.08" y="0" visible="off" length="short"/>
+<text x="-2.54" y="-4.318" size="1.27" layer="94">&gt;NAME</text>
+</symbol>
+<symbol name="SIMPLE_HOLE_SM">
+<circle x="0" y="0" radius="1.481059375" width="0.254" layer="94"/>
+<pin name="P$1" x="-2.54" y="0" visible="off" length="point"/>
+<wire x1="-2.54" y1="0" x2="-1.524" y2="0" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1839,6 +1856,39 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <device name="11" package="PETAL-TINY">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SEW_HOLE" prefix="H">
+<description>Simple sew-hole&lt;br&gt;
+.1" diameter hole with 20mil annular ring</description>
+<gates>
+<gate name="G$1" symbol="SIMPLE_HOLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SIMPLE_HOLE">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SEW_HOLE-SMALL" prefix="H">
+<description>.070" hole with 20mil annular ring</description>
+<gates>
+<gate name="G$1" symbol="SIMPLE_HOLE_SM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SIMPLE_HOLE_SM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>

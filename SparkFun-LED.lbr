@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1038,29 +1038,149 @@ This footprint works with the current 1 Watt, 3 Watt, and 5 Watt LEDs. These bli
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED-GREEN">
-<description>Various green LEDs</description>
+<deviceset name="LED-GREEN" prefix="D" uservalue="yes">
+<description>Various green LEDs&lt;br&gt;
+0603- DIO-00821&lt;br&gt;
+LARGE- DIO-00862&lt;br&gt;
+LILYPAD- DIO-09910&lt;br&gt;</description>
 <gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="LED-0603">
+<device name="0603" package="LED-0603">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-00821" constant="no"/>
+<attribute name="VALUE" value="GREEN" constant="no"/>
 </technology>
 </technologies>
 </device>
 <device name="LILYPAD" package="LED-1206">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-09910"/>
+<attribute name="VALUE" value="GREEN" constant="no"/>
 </technology>
 </technologies>
 </device>
 <device name="LARGE" package="LED-1206">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-00862" constant="no"/>
+<attribute name="VALUE" value="GREEN" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED-RED" prefix="D" uservalue="yes">
+<description>Assorted Red LEDs&lt;br&gt;
+LilyPad 1206- DIO-09912&lt;br&gt;
+1206- DIO-00809&lt;br&gt;
+0603- DIO-00819</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0603" package="LED-0603">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-00819"/>
+<attribute name="VALUE" value="RED" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="1206" package="LED-1206">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-00809"/>
+<attribute name="VALUE" value="RED" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="LILYPAD" package="LED-1206">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-09912"/>
+<attribute name="VALUE" value="RED" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED-WHITE" prefix="D" uservalue="yes">
+<description>White SMD LEDs&lt;br&gt;
+LilyPad 1206- DIO-09955</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LED-1206">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-09955" constant="no"/>
+<attribute name="VALUE" value="WHITE" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED-YELLOW" prefix="D" uservalue="yes">
+<description>Yellow SMD LEDs&lt;br&gt;
+LilyPad 1206- DIO-09909&lt;br&gt;
+0603- DIO-09003</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="LILYPAD" package="LED-1206">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-09909"/>
+<attribute name="VALUE" value="Yellow" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="0603" package="LED-0603">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-09003"/>
 </technology>
 </technologies>
 </device>

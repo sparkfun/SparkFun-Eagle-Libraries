@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -20104,7 +20104,7 @@ Two of these half tabs, rotated in opposite directions, can be connected togethe
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ANDROID-ELECTRIC_SHEEP_LOGO">
+<deviceset name="ANDROID-ELECTRIC_SHEEP_LOGO" prefix="LOGO">
 <gates>
 <gate name="G$1" symbol="ANDROID-ELECTRIC_SHEEP_LOGO" x="0" y="0"/>
 </gates>
@@ -20121,7 +20121,7 @@ Two of these half tabs, rotated in opposite directions, can be connected togethe
 </device>
 </devices>
 </deviceset>
-<deviceset name="CREATIVE_COMMONS">
+<deviceset name="CREATIVE_COMMONS" prefix="CC_TEXT">
 <description>Creative Commons License summary</description>
 <gates>
 <gate name="G$1" symbol="CREATIVE_COMMONS" x="0" y="0"/>
@@ -20147,7 +20147,7 @@ Two of these half tabs, rotated in opposite directions, can be connected togethe
 </device>
 </devices>
 </deviceset>
-<deviceset name="FIDUCIAL" prefix="JP">
+<deviceset name="FIDUCIAL" prefix="FID">
 <description>&lt;b&gt;Fiducial Alignment Points&lt;/b&gt;
 Various fiducial points for machine vision alignment.</description>
 <gates>
@@ -20176,7 +20176,7 @@ Various fiducial points for machine vision alignment.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FIDUCIALTAB">
+<deviceset name="FIDUCIALTAB" prefix="FID">
 <description>Fiducial/tab for panelizing boards.</description>
 <gates>
 <gate name="G$1" symbol="FIDUCIALTAB" x="0" y="0"/>
@@ -20189,7 +20189,7 @@ Various fiducial points for machine vision alignment.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FIO_LOGO">
+<deviceset name="FIO_LOGO" prefix="LOGO">
 <description>Logo for the FIO products</description>
 <gates>
 <gate name="G$1" symbol="FIO_LOGO" x="0" y="0"/>
@@ -20295,7 +20295,7 @@ Standard 8.5x11 US Letter frame</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LOGO-FIRST">
+<deviceset name="LOGO-FIRST" prefix="LOGO">
 <gates>
 <gate name="G$1" symbol="FIRST" x="0" y="0"/>
 </gates>
@@ -20307,7 +20307,7 @@ Standard 8.5x11 US Letter frame</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LOGO-OTL">
+<deviceset name="LOGO-OTL" prefix="LOGO">
 <gates>
 <gate name="G$1" symbol="OVERTONE_LOGO" x="0" y="0"/>
 </gates>
@@ -20319,7 +20319,7 @@ Standard 8.5x11 US Letter frame</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LOGO-SFE" prefix="JP">
+<deviceset name="LOGO-SFE" prefix="LOGO">
 <description>&lt;b&gt;Spark Fun Electronics PCB Logo&lt;/b&gt;
 This is the standard Spark Fun Electronics PCB logo.</description>
 <gates>
@@ -20358,7 +20358,7 @@ This is the standard Spark Fun Electronics PCB logo.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="OSHW-LOGO">
+<deviceset name="OSHW-LOGO" prefix="LOGO">
 <description>&lt;b&gt;Open Source Hardware Logo&lt;/b&gt; This logo indicates the piece of hardware it is found on incorporates a OSHW license and/or adheres to the definition of open source hardware found here: http://freedomdefined.org/OSHW</description>
 <gates>
 <gate name="G$1" symbol="OSHW-LOGO" x="-5.08" y="-5.08"/>
@@ -20381,7 +20381,7 @@ This is the standard Spark Fun Electronics PCB logo.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SPARKFUN-EAGLE-RULES">
+<deviceset name="SPARKFUN-EAGLE-RULES" prefix="RULES">
 <description>&lt;b&gt;Description:&lt;/b&gt; These are the default rules that SparkFun engineers must follow. We highly recommend following these rules as well.</description>
 <gates>
 <gate name="G$1" symbol="SPARKFUN-EAGLE-RULES" x="0" y="0"/>
@@ -20394,7 +20394,7 @@ This is the standard Spark Fun Electronics PCB logo.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="STARBOARD_LOGO">
+<deviceset name="STARBOARD_LOGO" prefix="LOGO">
 <gates>
 <gate name="G$1" symbol="STARBOARD_LOGO" x="0" y="0"/>
 </gates>
@@ -20411,7 +20411,7 @@ This is the standard Spark Fun Electronics PCB logo.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="VCC" prefix="P+">
+<deviceset name="VCC" prefix="SUPPLY">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="VCC2" x="0" y="0"/>
@@ -20424,7 +20424,7 @@ This is the standard Spark Fun Electronics PCB logo.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="VNEG">
+<deviceset name="VNEG" prefix="SUPPLY">
 <description>&lt;b&gt;VNEG&lt;/b&gt;&lt;br&gt;
 Generic negative voltage terminal.</description>
 <gates>
@@ -20438,7 +20438,7 @@ Generic negative voltage terminal.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="V_BATT">
+<deviceset name="V_BATT" prefix="SUPPLY">
 <description>&lt;b&gt;V_BATT&lt;/b&gt;&lt;br&gt;
 Generic symbol for the battery input to a system.</description>
 <gates>
@@ -20452,7 +20452,7 @@ Generic symbol for the battery input to a system.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="1.0V">
+<deviceset name="1.0V" prefix="SUPPLY">
 <description>1.0V supply symbol</description>
 <gates>
 <gate name="G$1" symbol="1.0V" x="0" y="0"/>
@@ -20465,7 +20465,7 @@ Generic symbol for the battery input to a system.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="1.8V">
+<deviceset name="1.8V" prefix="SUPPLY">
 <description>1.8V supply symbol</description>
 <gates>
 <gate name="G$1" symbol="1.8V" x="0" y="0"/>
@@ -20478,7 +20478,7 @@ Generic symbol for the battery input to a system.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="2.8V">
+<deviceset name="2.8V" prefix="SUPPLY">
 <description>2.8V supply symbol</description>
 <gates>
 <gate name="G$1" symbol="2.8V" x="0" y="0"/>
@@ -20491,7 +20491,7 @@ Generic symbol for the battery input to a system.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="3.3V" prefix="P+">
+<deviceset name="3.3V" prefix="SUPPLY">
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="3.3V" x="0" y="0"/>
@@ -20504,7 +20504,7 @@ Generic symbol for the battery input to a system.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="5V">
+<deviceset name="5V" prefix="SUPPLY">
 <gates>
 <gate name="G$1" symbol="5V" x="0" y="0"/>
 </gates>
@@ -20516,7 +20516,7 @@ Generic symbol for the battery input to a system.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="VIN">
+<deviceset name="VIN" prefix="SUPPLY">
 <description>Vin supply symbol</description>
 <gates>
 <gate name="G$1" symbol="VIN" x="0" y="0"/>
