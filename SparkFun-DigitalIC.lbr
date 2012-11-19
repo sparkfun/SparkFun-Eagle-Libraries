@@ -13932,13 +13932,28 @@ This is the tested schematic and footprint for the DOSonCHIP FAT16 FAT32 IC. Spa
 </device>
 </devices>
 </deviceset>
-<deviceset name="EEPROM-I2C">
+<deviceset name="EEPROM-I2C" prefix="U">
 <description>I2C EEPROM chips, 24LC256 (and others)</description>
 <gates>
 <gate name="G$1" symbol="EEPROM-I2C" x="0" y="0"/>
 </gates>
 <devices>
 <device name="SMD" package="SO08">
+<connects>
+<connect gate="G$1" pin="A0" pad="1"/>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="3"/>
+<connect gate="G$1" pin="SCL" pad="6"/>
+<connect gate="G$1" pin="SDA" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="VSS" pad="4"/>
+<connect gate="G$1" pin="WP" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="EIAJ" package="SO08-EIAJ">
 <connects>
 <connect gate="G$1" pin="A0" pad="1"/>
 <connect gate="G$1" pin="A1" pad="2"/>
