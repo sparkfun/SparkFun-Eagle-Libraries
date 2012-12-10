@@ -9242,9 +9242,10 @@ Simple light detection sensor. Output varies with light intensity input. Spark F
 </device>
 </devices>
 </deviceset>
-<deviceset name="ADXL362" prefix="U">
+<deviceset name="ADXL362" prefix="U" uservalue="yes">
 <description>Micropower 3-axis accelerometer&lt;BR&gt;
-2/4/8g digital output (SPI)</description>
+2/4/8g digital output (SPI)&lt;br&gt;
+IC-11297</description>
 <gates>
 <gate name="G$1" symbol="ADXL362" x="-7.62" y="-7.62"/>
 </gates>
@@ -9262,7 +9263,10 @@ Simple light detection sensor. Output varies with light intensity input. Spark F
 <connect gate="G$1" pin="VS" pad="P$14"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-11297"/>
+<attribute name="VALUE" value="ADXL362"/>
+</technology>
 </technologies>
 </device>
 </devices>
