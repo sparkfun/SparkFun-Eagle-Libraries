@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -2053,29 +2053,6 @@ Production Part - 8199
 </device>
 </devices>
 </deviceset>
-<deviceset name="IRF7507">
-<description>Dual transistor NMOS/PMOS in one package.</description>
-<gates>
-<gate name="G$1" symbol="IRF7507" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="MSOP8">
-<connects>
-<connect gate="G$1" pin="D1@7" pad="7"/>
-<connect gate="G$1" pin="D1@8" pad="8"/>
-<connect gate="G$1" pin="D2@5" pad="5"/>
-<connect gate="G$1" pin="D2@6" pad="6"/>
-<connect gate="G$1" pin="G1" pad="2"/>
-<connect gate="G$1" pin="G2" pad="4"/>
-<connect gate="G$1" pin="S1" pad="1"/>
-<connect gate="G$1" pin="S2" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="MOC3063*" prefix="U" uservalue="yes">
 <description>&lt;b&gt;Optotriac in DIP and SMD&lt;/b&gt;
 &lt;p&gt;
@@ -2727,7 +2704,8 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <deviceset name="IRF7509" prefix="Q" uservalue="yes">
 <description>30V Dual PMOS/NMOS MSOP-8&lt;BR&gt;
 NMOS RDS .11-ohm&lt;BR&gt;
-PMOS RDS .20-ohm</description>
+PMOS RDS .20-ohm&lt;BR&gt;
+TRANS-07913</description>
 <gates>
 <gate name="NMOS" symbol="MOSFET-NCHANNEL" x="-2.54" y="0"/>
 <gate name="PMOS" symbol="MOSFET-PCHANNEL" x="-2.54" y="-20.32"/>
@@ -2743,7 +2721,9 @@ PMOS RDS .20-ohm</description>
 <connect gate="PMOS" pin="S" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="TRANS-07913"/>
+</technology>
 </technologies>
 </device>
 </devices>
