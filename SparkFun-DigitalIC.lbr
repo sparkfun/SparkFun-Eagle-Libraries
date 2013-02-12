@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -17600,7 +17600,9 @@ Datasheet:  http://www.sparkfun.com/datasheets/Components/LED/WS2801.pdf</descri
 </devices>
 </deviceset>
 <deviceset name="74*08" prefix="U">
-<description>Single 2-input AND gate</description>
+<description>Single 2-input AND gate&lt;br&gt;
+74LVC1G08SE-7&lt;br&gt;
+IC-10841</description>
 <gates>
 <gate name="G$1" symbol="74AHC1G08" x="0" y="0"/>
 </gates>
@@ -17614,7 +17616,10 @@ Datasheet:  http://www.sparkfun.com/datasheets/Components/LED/WS2801.pdf</descri
 <connect gate="G$1" pin="Y" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-10841"/>
+<attribute name="VALUE" value="74LVC1G08SE-7" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
