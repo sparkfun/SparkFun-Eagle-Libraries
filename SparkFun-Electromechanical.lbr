@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8037,6 +8037,334 @@ COM-09117</description>
 <smd name="+" x="2.5" y="14.5" dx="3" dy="6" layer="1"/>
 <smd name="-" x="-2.5" y="14.5" dx="3" dy="6" layer="1"/>
 </package>
+<package name="BATTCON_9V">
+<pad name="+" x="0" y="0" drill="1.905"/>
+<pad name="-" x="0" y="-12.954" drill="1.905"/>
+<wire x1="-53.0098" y1="8.5598" x2="1.9304" y2="8.5598" width="0.1778" layer="21"/>
+<wire x1="1.9304" y1="8.5598" x2="1.9304" y2="-21.4122" width="0.1778" layer="21"/>
+<wire x1="1.9304" y1="-21.4122" x2="-53.0098" y2="-21.4122" width="0.1778" layer="21"/>
+<wire x1="-53.0098" y1="-21.4122" x2="-53.0098" y2="8.5598" width="0.1778" layer="21"/>
+<text x="-2.54" y="-10.16" size="1.27" layer="25" rot="R90">&gt;Name</text>
+<text x="-0.635" y="-10.16" size="1.27" layer="27" rot="R90">&gt;Value</text>
+<circle x="-39.2684" y="4.7498" radius="1.27" width="0.127" layer="51"/>
+<circle x="-12.2936" y="4.7498" radius="1.27" width="0.127" layer="51"/>
+<circle x="-25.781" y="-17.6022" radius="1.27" width="0.127" layer="51"/>
+</package>
+<package name="ENCODER_LED_2_KIT">
+<wire x1="-3.9" y1="6.7" x2="3.9" y2="6.7" width="0.2032" layer="51"/>
+<wire x1="-6.2" y1="1.7" x2="-6.2" y2="5.8938" width="0.2032" layer="21"/>
+<wire x1="-6.2" y1="5.8938" x2="-5.3938" y2="6.7" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-5.3938" y1="6.7" x2="-3.9" y2="6.7" width="0.2032" layer="21"/>
+<wire x1="3.4" y1="-6.7" x2="-3.4" y2="-6.7" width="0.2032" layer="51"/>
+<wire x1="-6.2" y1="-1.7" x2="-6.2" y2="1.7" width="0.2032" layer="51"/>
+<wire x1="6.2" y1="1.7" x2="6.2" y2="-1.7" width="0.2032" layer="51"/>
+<wire x1="6.2" y1="5.8938" x2="5.3938" y2="6.7" width="0.2032" layer="21" curve="90"/>
+<wire x1="5.3938" y1="6.7" x2="3.9" y2="6.7" width="0.2032" layer="21"/>
+<wire x1="6.2" y1="1.7" x2="6.2" y2="5.8938" width="0.2032" layer="21"/>
+<wire x1="6.2" y1="-1.7" x2="6.2" y2="-5.8938" width="0.2032" layer="21"/>
+<wire x1="6.2" y1="-5.8938" x2="5.3938" y2="-6.7" width="0.2032" layer="21" curve="-90"/>
+<wire x1="5.3938" y1="-6.7" x2="3.4" y2="-6.7" width="0.2032" layer="21"/>
+<wire x1="-6.2" y1="-5.8938" x2="-5.3938" y2="-6.7" width="0.2032" layer="21" curve="90"/>
+<wire x1="-5.3938" y1="-6.7" x2="-3.4" y2="-6.7" width="0.2032" layer="21"/>
+<wire x1="-6.2" y1="-1.7" x2="-6.2" y2="-5.8938" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="3" width="0.2032" layer="21"/>
+<pad name="A" x="-2.5" y="-7.5" drill="1.1" diameter="1.8" stop="no"/>
+<pad name="C" x="0" y="-7.5" drill="1.1" diameter="1.8" stop="no"/>
+<pad name="B" x="2.5" y="-7.5" drill="1.1" diameter="1.8" stop="no"/>
+<pad name="+G" x="1" y="7" drill="1.1" diameter="1.778" stop="no"/>
+<pad name="+R" x="-1" y="7" drill="1.1" diameter="1.778" stop="no"/>
+<pad name="P$1" x="-5.55" y="0" drill="2.1" stop="no"/>
+<pad name="P$2" x="5.55" y="0" drill="2.1" stop="no"/>
+<pad name="GND" x="3" y="7" drill="1.1" diameter="1.778" stop="no"/>
+<pad name="SW" x="-3" y="7" drill="1.1" diameter="1.778" stop="no"/>
+<polygon width="0.127" layer="30">
+<vertex x="-1.55" y="-7.5" curve="90"/>
+<vertex x="-2.5" y="-6.55" curve="90"/>
+<vertex x="-3.45" y="-7.5" curve="90"/>
+<vertex x="-2.5" y="-8.45" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="0.95" y="-7.5" curve="90"/>
+<vertex x="0" y="-6.55" curve="90"/>
+<vertex x="-0.95" y="-7.5" curve="90"/>
+<vertex x="0" y="-8.45" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="3.45" y="-7.5" curve="90"/>
+<vertex x="2.5" y="-6.55" curve="90"/>
+<vertex x="1.55" y="-7.5" curve="90"/>
+<vertex x="2.5" y="-8.45" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="-2.05" y="7" curve="90"/>
+<vertex x="-3" y="7.95" curve="90"/>
+<vertex x="-3.95" y="7" curve="90"/>
+<vertex x="-3" y="6.05" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="-0.05" y="7" curve="90"/>
+<vertex x="-1" y="7.95" curve="90"/>
+<vertex x="-1.95" y="7" curve="90"/>
+<vertex x="-1" y="6.05" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="1.95" y="7" curve="90"/>
+<vertex x="1" y="7.95" curve="90"/>
+<vertex x="0.05" y="7" curve="90"/>
+<vertex x="1" y="6.05" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="3.95" y="7" curve="90"/>
+<vertex x="3" y="7.95" curve="90"/>
+<vertex x="2.05" y="7" curve="90"/>
+<vertex x="3" y="6.05" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="4" y="0" curve="-90"/>
+<vertex x="5.55" y="1.55" curve="-90"/>
+<vertex x="7.1" y="0" curve="-90"/>
+<vertex x="5.55" y="-1.55" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="-7.1" y="0" curve="-90"/>
+<vertex x="-5.55" y="1.55" curve="-90"/>
+<vertex x="-4" y="0" curve="-90"/>
+<vertex x="-5.55" y="-1.55" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-5.55" y="1" curve="90"/>
+<vertex x="-6.55" y="0" curve="90"/>
+<vertex x="-5.55" y="-1" curve="90"/>
+<vertex x="-4.55" y="0" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="5.55" y="1" curve="90"/>
+<vertex x="4.55" y="0" curve="90"/>
+<vertex x="5.55" y="-1" curve="90"/>
+<vertex x="6.55" y="0" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-3" y="7.55" curve="90"/>
+<vertex x="-3.55" y="7"/>
+<vertex x="-3.55" y="6.95" curve="90"/>
+<vertex x="-3.05" y="6.45"/>
+<vertex x="-3" y="6.45" curve="90"/>
+<vertex x="-2.45" y="7" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-1" y="7.55" curve="90"/>
+<vertex x="-1.55" y="7"/>
+<vertex x="-1.55" y="6.95" curve="90"/>
+<vertex x="-1.05" y="6.45"/>
+<vertex x="-1" y="6.45" curve="90"/>
+<vertex x="-0.45" y="7" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="1" y="7.55" curve="90"/>
+<vertex x="0.45" y="7"/>
+<vertex x="0.45" y="6.95" curve="90"/>
+<vertex x="0.95" y="6.45"/>
+<vertex x="1" y="6.45" curve="90"/>
+<vertex x="1.55" y="7" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="3" y="7.55" curve="90"/>
+<vertex x="2.45" y="7"/>
+<vertex x="2.45" y="6.95" curve="90"/>
+<vertex x="2.95" y="6.45"/>
+<vertex x="3" y="6.45" curve="90"/>
+<vertex x="3.55" y="7" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-2.5" y="-6.95" curve="90"/>
+<vertex x="-3.05" y="-7.5"/>
+<vertex x="-3.05" y="-7.55" curve="90"/>
+<vertex x="-2.55" y="-8.05"/>
+<vertex x="-2.5" y="-8.05" curve="90"/>
+<vertex x="-1.95" y="-7.5" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="0" y="-6.95" curve="90"/>
+<vertex x="-0.55" y="-7.5"/>
+<vertex x="-0.55" y="-7.55" curve="90"/>
+<vertex x="-0.05" y="-8.05"/>
+<vertex x="0" y="-8.05" curve="90"/>
+<vertex x="0.55" y="-7.5" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="2.55" y="-6.95" curve="90"/>
+<vertex x="2" y="-7.5"/>
+<vertex x="2" y="-7.55" curve="90"/>
+<vertex x="2.5" y="-8.05"/>
+<vertex x="2.55" y="-8.05" curve="90"/>
+<vertex x="3.1" y="-7.5" curve="90"/>
+</polygon>
+</package>
+<package name="ENCODER_LED_3_KIT">
+<wire x1="-3.9" y1="6.7" x2="3.9" y2="6.7" width="0.2032" layer="51"/>
+<wire x1="-6.2" y1="1.7" x2="-6.2" y2="5.8938" width="0.2032" layer="21"/>
+<wire x1="-6.2" y1="5.8938" x2="-5.3938" y2="6.7" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-5.3938" y1="6.7" x2="-3.9" y2="6.7" width="0.2032" layer="21"/>
+<wire x1="3.4" y1="-6.7" x2="-3.4" y2="-6.7" width="0.2032" layer="51"/>
+<wire x1="-6.2" y1="-1.7" x2="-6.2" y2="1.7" width="0.2032" layer="51"/>
+<wire x1="6.2" y1="1.7" x2="6.2" y2="-1.7" width="0.2032" layer="51"/>
+<wire x1="6.2" y1="5.8938" x2="5.3938" y2="6.7" width="0.2032" layer="21" curve="90"/>
+<wire x1="5.3938" y1="6.7" x2="3.9" y2="6.7" width="0.2032" layer="21"/>
+<wire x1="6.2" y1="1.7" x2="6.2" y2="5.8938" width="0.2032" layer="21"/>
+<wire x1="6.2" y1="-1.7" x2="6.2" y2="-5.8938" width="0.2032" layer="21"/>
+<wire x1="6.2" y1="-5.8938" x2="5.3938" y2="-6.7" width="0.2032" layer="21" curve="-90"/>
+<wire x1="5.3938" y1="-6.7" x2="3.4" y2="-6.7" width="0.2032" layer="21"/>
+<wire x1="-6.2" y1="-5.8938" x2="-5.3938" y2="-6.7" width="0.2032" layer="21" curve="90"/>
+<wire x1="-5.3938" y1="-6.7" x2="-3.4" y2="-6.7" width="0.2032" layer="21"/>
+<wire x1="-6.2" y1="-1.7" x2="-6.2" y2="-5.8938" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="3" width="0.2032" layer="21"/>
+<pad name="A" x="-2.5" y="-7.5" drill="1.1" diameter="1.8" stop="no"/>
+<pad name="C" x="0" y="-7.5" drill="1.1" diameter="1.8" stop="no"/>
+<pad name="B" x="2.5" y="-7.5" drill="1.1" diameter="1.8" stop="no"/>
+<pad name="3" x="0" y="7" drill="1.1" diameter="1.778" stop="no"/>
+<pad name="2" x="-2" y="7" drill="1.1" diameter="1.778" stop="no"/>
+<pad name="M1" x="-5.55" y="0" drill="2.1" stop="no"/>
+<pad name="M2" x="5.55" y="0" drill="2.1" stop="no"/>
+<pad name="4" x="2" y="7" drill="1.1" diameter="1.778" stop="no"/>
+<pad name="1" x="-4" y="7" drill="1.1" diameter="1.778" stop="no"/>
+<pad name="5" x="4" y="7" drill="1.1" diameter="1.778" stop="no"/>
+<polygon width="0.127" layer="30">
+<vertex x="-1.55" y="-7.5" curve="90"/>
+<vertex x="-2.5" y="-6.55" curve="90"/>
+<vertex x="-3.45" y="-7.5" curve="90"/>
+<vertex x="-2.5" y="-8.45" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="0.95" y="-7.5" curve="90"/>
+<vertex x="0" y="-6.55" curve="90"/>
+<vertex x="-0.95" y="-7.5" curve="90"/>
+<vertex x="0" y="-8.45" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="3.45" y="-7.5" curve="90"/>
+<vertex x="2.5" y="-6.55" curve="90"/>
+<vertex x="1.55" y="-7.5" curve="90"/>
+<vertex x="2.5" y="-8.45" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="-3.05" y="7" curve="90"/>
+<vertex x="-4" y="7.95" curve="90"/>
+<vertex x="-4.95" y="7" curve="90"/>
+<vertex x="-4" y="6.05" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="-1.05" y="7" curve="90"/>
+<vertex x="-2" y="7.95" curve="90"/>
+<vertex x="-2.95" y="7" curve="90"/>
+<vertex x="-2" y="6.05" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="0.95" y="7" curve="90"/>
+<vertex x="0" y="7.95" curve="90"/>
+<vertex x="-0.95" y="7" curve="90"/>
+<vertex x="0" y="6.05" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="2.95" y="7" curve="90"/>
+<vertex x="2" y="7.95" curve="90"/>
+<vertex x="1.05" y="7" curve="90"/>
+<vertex x="2" y="6.05" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="4" y="0" curve="-90"/>
+<vertex x="5.55" y="1.55" curve="-90"/>
+<vertex x="7.1" y="0" curve="-90"/>
+<vertex x="5.55" y="-1.55" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="-7.1" y="0" curve="-90"/>
+<vertex x="-5.55" y="1.55" curve="-90"/>
+<vertex x="-4" y="0" curve="-90"/>
+<vertex x="-5.55" y="-1.55" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="4.95" y="7" curve="90"/>
+<vertex x="4" y="7.95" curve="90"/>
+<vertex x="3.05" y="7" curve="90"/>
+<vertex x="4" y="6.05" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-5.55" y="1" curve="90"/>
+<vertex x="-6.55" y="0" curve="90"/>
+<vertex x="-5.55" y="-1" curve="90"/>
+<vertex x="-4.55" y="0" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="5.55" y="1" curve="90"/>
+<vertex x="4.55" y="0" curve="90"/>
+<vertex x="5.55" y="-1" curve="90"/>
+<vertex x="6.55" y="0" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-4.016" y="7.55" curve="90"/>
+<vertex x="-4.566" y="7"/>
+<vertex x="-4.566" y="6.95" curve="90"/>
+<vertex x="-4.066" y="6.45"/>
+<vertex x="-4.016" y="6.45" curve="90"/>
+<vertex x="-3.466" y="7" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-2.016" y="7.55" curve="90"/>
+<vertex x="-2.566" y="7"/>
+<vertex x="-2.566" y="6.95" curve="90"/>
+<vertex x="-2.066" y="6.45"/>
+<vertex x="-2.016" y="6.45" curve="90"/>
+<vertex x="-1.466" y="7" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-0.016" y="7.55" curve="90"/>
+<vertex x="-0.566" y="7"/>
+<vertex x="-0.566" y="6.95" curve="90"/>
+<vertex x="-0.066" y="6.45"/>
+<vertex x="-0.016" y="6.45" curve="90"/>
+<vertex x="0.534" y="7" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="1.984" y="7.55" curve="90"/>
+<vertex x="1.434" y="7"/>
+<vertex x="1.434" y="6.95" curve="90"/>
+<vertex x="1.934" y="6.45"/>
+<vertex x="1.984" y="6.45" curve="90"/>
+<vertex x="2.534" y="7" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-2.5" y="-6.95" curve="90"/>
+<vertex x="-3.05" y="-7.5"/>
+<vertex x="-3.05" y="-7.55" curve="90"/>
+<vertex x="-2.55" y="-8.05"/>
+<vertex x="-2.5" y="-8.05" curve="90"/>
+<vertex x="-1.95" y="-7.5" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="0" y="-6.95" curve="90"/>
+<vertex x="-0.55" y="-7.5"/>
+<vertex x="-0.55" y="-7.55" curve="90"/>
+<vertex x="-0.05" y="-8.05"/>
+<vertex x="0" y="-8.05" curve="90"/>
+<vertex x="0.55" y="-7.5" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="2.55" y="-6.95" curve="90"/>
+<vertex x="2" y="-7.5"/>
+<vertex x="2" y="-7.55" curve="90"/>
+<vertex x="2.5" y="-8.05"/>
+<vertex x="2.55" y="-8.05" curve="90"/>
+<vertex x="3.1" y="-7.5" curve="90"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="4.016" y="7.55" curve="90"/>
+<vertex x="3.466" y="7"/>
+<vertex x="3.466" y="6.95" curve="90"/>
+<vertex x="3.966" y="6.45"/>
+<vertex x="4.016" y="6.45" curve="90"/>
+<vertex x="4.566" y="7" curve="90"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="AYZ0202">
@@ -9332,6 +9660,15 @@ Various common sizes : AA, AAA, 20mm coin cell and 12mm coin cell.&lt;br&gt;
 <technology name=""/>
 </technologies>
 </device>
+<device name="9V" package="BATTCON_9V">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="BATTERY-2">
@@ -9864,53 +10201,6 @@ Spark Fun Electronics SKU : Comp-Buzzer</description>
 <connects>
 <connect gate="G$1" pin="RECEIVE" pad="P$1"/>
 <connect gate="G$1" pin="RES" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ENCODER_2LED" prefix="U">
-<description>&lt;H3&gt;Illuminated Rotary Encoder w/ 2 LEDs&lt;/h3&gt;</description>
-<gates>
-<gate name="G$1" symbol="ENCODER_LED_2-1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ENCODER_LED_2">
-<connects>
-<connect gate="G$1" pin="+G" pad="+G"/>
-<connect gate="G$1" pin="+R" pad="+R"/>
-<connect gate="G$1" pin="-" pad="GND"/>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="B" pad="B"/>
-<connect gate="G$1" pin="C" pad="C"/>
-<connect gate="G$1" pin="SW" pad="SW"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ENCODER_RGB_CA" prefix="SW" uservalue="yes">
-<description>&lt;h3&gt;Illuminated Rotary Encoder w/ RGB LED and select switch&lt;/h3&gt;
-
-EC12PLRGBSDVBF-D: http://top-up.so-buy.com/front/bin/ptdetail.phtml?Part=EC12PLRGBSDVBF-D</description>
-<gates>
-<gate name="G$1" symbol="ENCODER_LED_3_CA" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ENCODER_LED_3">
-<connects>
-<connect gate="G$1" pin="+" pad="5"/>
-<connect gate="G$1" pin="-B" pad="4"/>
-<connect gate="G$1" pin="-G" pad="2"/>
-<connect gate="G$1" pin="-R" pad="1"/>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="B" pad="B"/>
-<connect gate="G$1" pin="C" pad="C"/>
-<connect gate="G$1" pin="SW" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11056,6 +11346,82 @@ Example: COM-09117</description>
 <connect gate="G$1" pin="C" pad="C"/>
 <connect gate="G$1" pin="SW+" pad="SW+"/>
 <connect gate="G$1" pin="SW-" pad="SW-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ENCODER_2LED" prefix="U">
+<description>&lt;H3&gt;Illuminated Rotary Encoder w/ 2 LEDs&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="ENCODER_LED_2-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ENCODER_LED_2">
+<connects>
+<connect gate="G$1" pin="+G" pad="+G"/>
+<connect gate="G$1" pin="+R" pad="+R"/>
+<connect gate="G$1" pin="-" pad="GND"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G$1" pin="SW" pad="SW"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="KIT" package="ENCODER_LED_2_KIT">
+<connects>
+<connect gate="G$1" pin="+G" pad="+G"/>
+<connect gate="G$1" pin="+R" pad="+R"/>
+<connect gate="G$1" pin="-" pad="GND"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G$1" pin="SW" pad="SW"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ENCODER_RGB_CA" prefix="SW" uservalue="yes">
+<description>&lt;h3&gt;Illuminated Rotary Encoder w/ RGB LED and select switch&lt;/h3&gt;
+
+EC12PLRGBSDVBF-D: http://top-up.so-buy.com/front/bin/ptdetail.phtml?Part=EC12PLRGBSDVBF-D</description>
+<gates>
+<gate name="G$1" symbol="ENCODER_LED_3_CA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ENCODER_LED_3">
+<connects>
+<connect gate="G$1" pin="+" pad="5"/>
+<connect gate="G$1" pin="-B" pad="4"/>
+<connect gate="G$1" pin="-G" pad="2"/>
+<connect gate="G$1" pin="-R" pad="1"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G$1" pin="SW" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="KIT" package="ENCODER_LED_3_KIT">
+<connects>
+<connect gate="G$1" pin="+" pad="5"/>
+<connect gate="G$1" pin="-B" pad="4"/>
+<connect gate="G$1" pin="-G" pad="2"/>
+<connect gate="G$1" pin="-R" pad="1"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G$1" pin="SW" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
