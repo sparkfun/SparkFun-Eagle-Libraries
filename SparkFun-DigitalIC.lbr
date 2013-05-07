@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -65,7 +65,7 @@
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -7837,6 +7837,25 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <rectangle x1="2.0955" y1="2.3495" x2="2.3495" y2="2.9845" layer="51" rot="R180"/>
 <rectangle x1="2.7305" y1="2.3495" x2="2.9845" y2="2.9845" layer="51" rot="R180"/>
 </package>
+<package name="BGA8DS">
+<rectangle x1="-0.1905" y1="-0.1905" x2="0.1905" y2="0.1905" layer="1"/>
+<smd name="B3" x="-0.50038125" y="0" dx="0.3048" dy="0.3048" layer="1" roundness="100"/>
+<smd name="B1" x="0.50038125" y="0" dx="0.3048" dy="0.3048" layer="1" roundness="100"/>
+<smd name="C3" x="-0.50038125" y="0.50038125" dx="0.3048" dy="0.3048" layer="1" roundness="100"/>
+<smd name="C2" x="0" y="0.50038125" dx="0.3048" dy="0.3048" layer="1" roundness="100"/>
+<smd name="C1" x="0.50038125" y="0.50038125" dx="0.3048" dy="0.3048" layer="1" roundness="100"/>
+<smd name="A3" x="-0.50038125" y="-0.50038125" dx="0.3048" dy="0.3048" layer="1" roundness="100"/>
+<smd name="A2" x="0" y="-0.50038125" dx="0.3048" dy="0.3048" layer="1" roundness="100"/>
+<smd name="A1" x="0.50038125" y="-0.50038125" dx="0.3048" dy="0.3048" layer="1" roundness="100"/>
+<wire x1="0" y1="0" x2="0" y2="-0.50038125" width="0.127" layer="1"/>
+<wire x1="-0.889" y1="0.889" x2="0.889" y2="0.889" width="0.127" layer="21"/>
+<wire x1="0.889" y1="0.889" x2="0.889" y2="-0.889" width="0.127" layer="21"/>
+<wire x1="0.889" y1="-0.889" x2="-0.889" y2="-0.889" width="0.127" layer="21"/>
+<wire x1="-0.889" y1="-0.889" x2="-0.889" y2="0.889" width="0.127" layer="21"/>
+<circle x="1.1938" y="-0.6858" radius="0.09398125" width="0.1778" layer="21"/>
+<text x="-1.524" y="-1.905" size="0.6096" layer="25">&gt;NAME</text>
+<text x="-1.524" y="1.27" size="0.6096" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="AT25FS010">
@@ -10834,6 +10853,7 @@ Source: http://www.maxim-ic.com/cgi-bin/packages?pkg=16%2FSOIC%2E300&amp;Type=Ma
 <pin name="DCPRG" x="-12.7" y="-5.08" length="short"/>
 <pin name="IREF" x="-12.7" y="-12.7" length="short"/>
 <pin name="VCC" x="-12.7" y="17.78" length="short"/>
+<wire x1="10.16" y1="20.32" x2="-10.16" y2="20.32" width="0.254" layer="94"/>
 </symbol>
 <symbol name="UBW32_PIC32MX4XXL">
 <wire x1="-66.04" y1="33.02" x2="-66.04" y2="-33.02" width="0.254" layer="94"/>
@@ -12607,6 +12627,23 @@ Level Shifting GPIO Expander w/ LED Driver and Keypad Engine</description>
 <wire x1="10.16" y1="17.78" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
 <text x="-10.16" y="18.034" size="1.778" layer="95">&gt;Name</text>
 <text x="-10.16" y="-18.288" size="1.778" layer="96" align="top-left">&gt;Value</text>
+</symbol>
+<symbol name="TMP006">
+<wire x1="-10.16" y1="7.62" x2="10.033" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.033" y1="7.62" x2="10.16" y2="7.493" width="0.254" layer="94" curve="-90"/>
+<wire x1="10.16" y1="7.493" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="V+" x="-15.24" y="5.08" visible="pin" length="middle"/>
+<pin name="DGND" x="-15.24" y="-2.54" visible="pin" length="middle"/>
+<pin name="AGND" x="-15.24" y="-5.08" visible="pin" length="middle"/>
+<pin name="SCL" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="SDA" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="!DRDY" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="ADR1" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="ADR0" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<text x="-10.16" y="8.128" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-9.652" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -18823,6 +18860,28 @@ This USB2.0 Full Speed  IC offers a compact bridge to full handshake UART interf
 <connect gate="G$1" pin="USBDP" pad="11"/>
 <connect gate="G$1" pin="VCC" pad="15"/>
 <connect gate="G$1" pin="VCCIO" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TMP600">
+<gates>
+<gate name="G$1" symbol="TMP006" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BGA8DS">
+<connects>
+<connect gate="G$1" pin="!DRDY" pad="C2"/>
+<connect gate="G$1" pin="ADR0" pad="C1"/>
+<connect gate="G$1" pin="ADR1" pad="B1"/>
+<connect gate="G$1" pin="AGND" pad="A2"/>
+<connect gate="G$1" pin="DGND" pad="A1"/>
+<connect gate="G$1" pin="SCL" pad="B3"/>
+<connect gate="G$1" pin="SDA" pad="C3"/>
+<connect gate="G$1" pin="V+" pad="A3"/>
 </connects>
 <technologies>
 <technology name=""/>
