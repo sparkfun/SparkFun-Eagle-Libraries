@@ -1,34 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -65,7 +51,7 @@
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -2801,6 +2787,35 @@ See http://www.sparkfun.com/commerce/product_info.php?products_id=9473 for more 
 <rectangle x1="13.716" y1="7.046" x2="14.224" y2="7.554" layer="51" rot="R90"/>
 <rectangle x1="13.716" y1="9.046" x2="14.224" y2="9.554" layer="51" rot="R90"/>
 </package>
+<package name="AUDIO-AMP-MONO">
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.2032" layer="21"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.2032" layer="21"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.2032" layer="21"/>
+<pad name="S" x="-8.89" y="-8.89" drill="1.016" diameter="1.8796"/>
+<pad name="PWR+" x="-8.89" y="-6.35" drill="1.016" diameter="1.8796"/>
+<pad name="PWR-" x="-8.89" y="-3.81" drill="1.016" diameter="1.8796"/>
+<pad name="OUT-" x="-8.89" y="3.81" drill="1.016" diameter="1.8796"/>
+<pad name="OUT+" x="-8.89" y="6.35" drill="1.016" diameter="1.8796"/>
+<pad name="VOL+" x="8.89" y="-8.89" drill="1.016" diameter="1.8796"/>
+<pad name="VOL" x="8.89" y="-6.35" drill="1.016" diameter="1.8796"/>
+<pad name="VOL-" x="8.89" y="-3.81" drill="1.016" diameter="1.8796"/>
+<pad name="IN-" x="8.89" y="3.81" drill="1.016" diameter="1.8796"/>
+<pad name="IN+" x="8.89" y="6.35" drill="1.016" diameter="1.8796"/>
+<text x="-4.445" y="0" size="1.27" layer="21" ratio="15">SparkFun
+AudioAmp</text>
+<text x="-5.08" y="-2.54" size="1.27" layer="21" ratio="15">TPA2005D1</text>
+<text x="-9.525" y="8.255" size="1.27" layer="21" ratio="15">OUT</text>
+<text x="7.62" y="8.255" size="1.27" layer="21" ratio="15">IN</text>
+<text x="6.35" y="5.715" size="1.27" layer="21" ratio="15">+</text>
+<text x="6.35" y="3.175" size="1.27" layer="21" ratio="15">-</text>
+<text x="-6.985" y="3.175" size="1.27" layer="21" ratio="15">-</text>
+<text x="-6.985" y="5.715" size="1.27" layer="21" ratio="15">+</text>
+<text x="-9.525" y="-2.54" size="1.27" layer="21" ratio="15">PWR</text>
+<text x="6.35" y="-2.54" size="1.27" layer="21" ratio="15">VOL</text>
+<text x="-6.985" y="-6.985" size="1.27" layer="21" ratio="15">+</text>
+<text x="-6.985" y="-4.445" size="1.27" layer="21" ratio="15">-</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO-MEGA">
@@ -3104,6 +3119,24 @@ See http://www.sparkfun.com/commerce/product_info.php?products_id=9473 for more 
 <pin name="CP1" x="15.24" y="-7.62" visible="pin" length="middle" rot="R180"/>
 <pin name="CP2" x="15.24" y="-10.16" visible="pin" length="middle" rot="R180"/>
 <pin name="GND@24" x="-12.7" y="-10.16" visible="pin" length="middle"/>
+</symbol>
+<symbol name="AUDIO-AMP-MONO">
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<pin name="OUT+" x="-15.24" y="7.62" visible="pin" length="short"/>
+<pin name="OUT-" x="-15.24" y="5.08" visible="pin" length="short"/>
+<pin name="GND" x="-15.24" y="0" visible="pin" length="short"/>
+<pin name="VCC" x="-15.24" y="-2.54" visible="pin" length="short"/>
+<pin name="*SHTDWN" x="-15.24" y="-5.08" visible="pin" length="short"/>
+<pin name="VCC@VOL" x="15.24" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="VOL" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="GND@VOL" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="IN-" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="IN+" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
+<text x="-12.7" y="10.922" size="1.778" layer="95">&gt;Name</text>
+<text x="-12.7" y="-10.16" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3738,7 +3771,37 @@ See http://www.sparkfun.com/commerce/product_info.php?products_id=9473 for more 
 </device>
 </devices>
 </deviceset>
+<deviceset name="AUDIO-AMP-MONO" prefix="U">
+<gates>
+<gate name="U1" symbol="AUDIO-AMP-MONO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DIP" package="AUDIO-AMP-MONO">
+<connects>
+<connect gate="U1" pin="*SHTDWN" pad="S"/>
+<connect gate="U1" pin="GND" pad="PWR-"/>
+<connect gate="U1" pin="GND@VOL" pad="VOL-"/>
+<connect gate="U1" pin="IN+" pad="IN+"/>
+<connect gate="U1" pin="IN-" pad="IN-"/>
+<connect gate="U1" pin="OUT+" pad="OUT+"/>
+<connect gate="U1" pin="OUT-" pad="OUT-"/>
+<connect gate="U1" pin="VCC" pad="PWR+"/>
+<connect gate="U1" pin="VCC@VOL" pad="VOL+"/>
+<connect gate="U1" pin="VOL" pad="VOL"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
