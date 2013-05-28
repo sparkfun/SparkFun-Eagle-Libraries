@@ -14254,6 +14254,17 @@ Keying posts into board</description>
 <rectangle x1="1.016" y1="-2.794" x2="1.524" y2="-2.286" layer="51"/>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
 </package>
+<package name="1X02_2.54_SCREWTERM">
+<pad name="P2" x="0" y="0" drill="0.8" shape="square"/>
+<pad name="P1" x="2.54" y="0" drill="0.8" shape="square"/>
+<wire x1="-1.5" y1="3.25" x2="4" y2="3.25" width="0.127" layer="21"/>
+<wire x1="4" y1="3.25" x2="4" y2="2.5" width="0.127" layer="21"/>
+<wire x1="4" y1="2.5" x2="4" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="4" y1="-3.25" x2="-1.5" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-3.25" x2="-1.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="2.5" x2="-1.5" y2="3.25" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="2.5" x2="4" y2="2.5" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -18427,9 +18438,21 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </device>
 </devices>
 </deviceset>
-<deviceset name="M02" prefix="JP" uservalue="yes">
-<description>&lt;b&gt;Header 2&lt;/b&gt;
-Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-00116), right angle break away headers (PRT-00553), swiss pins (PRT-00743), machine pins (PRT-00117), and female headers (PRT-00115). Molex polarized connector foot print use with SKU : PRT-08233 with associated crimp pins and housings.</description>
+<deviceset name="M02" prefix="JP">
+<description>Standard 2-pin 0.1" header. Use with &lt;br&gt;
+- straight break away headers ( PRT-00116)&lt;br&gt;
+- right angle break away headers (PRT-00553)&lt;br&gt;
+- swiss pins (PRT-00743)&lt;br&gt;
+- machine pins (PRT-00117)&lt;br&gt;
+- female headers (PRT-00115)&lt;br&gt;&lt;br&gt;
+
+ Molex polarized connector foot print use with: PRT-08233 with associated crimp pins and housings.&lt;br&gt;&lt;br&gt;
+
+2.54_SCREWTERM for use with  PRT-10571.&lt;br&gt;&lt;br&gt;
+
+3.5mm Screw Terminal footprints for  PRT-08084&lt;br&gt;&lt;br&gt;
+
+5mm Screw Terminal footprints for use with PRT-08433</description>
 <gates>
 <gate name="G$1" symbol="M02" x="-2.54" y="0"/>
 </gates>
@@ -18620,6 +18643,15 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2.54MM_SCREWTERM" package="1X02_2.54_SCREWTERM">
+<connects>
+<connect gate="G$1" pin="1" pad="P1"/>
+<connect gate="G$1" pin="2" pad="P2"/>
 </connects>
 <technologies>
 <technology name=""/>
