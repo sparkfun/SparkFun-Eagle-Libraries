@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2308,7 +2308,10 @@ SMD: MOC3063S</description>
 </devices>
 </deviceset>
 <deviceset name="TRANSISTOR_NPN" prefix="Q" uservalue="yes">
-<description>Generic NPN BJT. MMBT2222 is the common NPN we use. Double check against datasheet- not all devices are the same!</description>
+<description>&lt;b&gt;Generic NPN BJT&lt;/b&gt; &lt;P&gt;
+MMBT2222A - TRANS-08049 (SOT-23, 1A 40V)&lt;br&gt;
+MPSA42 - TRANS-09116 (SOT-23, 500mA 300V)&lt;br&gt;
+MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;</description>
 <gates>
 <gate name="G$1" symbol="NPN" x="0" y="0"/>
 </gates>
@@ -2371,6 +2374,45 @@ SMD: MOC3063S</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="MMBT2222A" package="SOT23">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="TRANS-08049"/>
+<attribute name="VALUE" value="MMBT2222A" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="MPSA42" package="SOT23">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="TRANS-09116"/>
+<attribute name="VALUE" value="MPSA42" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="MMBT5088" package="SOT23">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="TRANS-11160"/>
+<attribute name="VALUE" value="MMBT5088" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2907,6 +2949,32 @@ http://www.vishay.com/docs/71053/71053.pdf</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="TRANS-09516"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TRANSISTOR_NPN2UP">
+<description>&lt;H3&gt;2-up package of NPN transistors&lt;/h3&gt;&lt;P&gt;
+MMDT3904- TRANS-09373 (SOT-363, 200mA 40V)&lt;br&gt;</description>
+<gates>
+<gate name="G$1" symbol="NPN" x="0" y="0"/>
+<gate name="G$2" symbol="NPN" x="20.32" y="0"/>
+</gates>
+<devices>
+<device name="MMDT3904" package="SOT363">
+<connects>
+<connect gate="G$1" pin="B" pad="2"/>
+<connect gate="G$1" pin="C" pad="6"/>
+<connect gate="G$1" pin="E" pad="1"/>
+<connect gate="G$2" pin="B" pad="5"/>
+<connect gate="G$2" pin="C" pad="3"/>
+<connect gate="G$2" pin="E" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="TRANS-09373"/>
+<attribute name="VALUE" value="MMDT3904" constant="no"/>
 </technology>
 </technologies>
 </device>

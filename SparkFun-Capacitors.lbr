@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2053,8 +2053,21 @@ CAP-08310- 10V 10% (EIA-3528)</description>
 <deviceset name="0.1UF-25V-5%(0603)" prefix="C" uservalue="yes">
 <description>CAP-08604</description>
 <gates>
+<gate name="G$1" symbol="CAP" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="0603-CAP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08604"/>
+<attribute name="VALUE" value="0.1uF" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="0.1UF-25V(+80/-20%)(0603)" prefix="C" uservalue="yes">
@@ -2065,7 +2078,7 @@ CAP-00810</description>
 <gate name="G$1" symbol="CAP" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="0402-CAP">
+<device name="" package="0603-CAP">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -2173,8 +2186,21 @@ CAP-00810</description>
 <deviceset name="1.0UF-16V-10%(0603)" prefix="C" uservalue="yes">
 <description>CAP-00868</description>
 <gates>
+<gate name="G$1" symbol="CAP" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="0603-CAP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-00868"/>
+<attribute name="VALUE" value="1.0uF" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="1.0UF-50V-20%-(ELECT)" prefix="C" uservalue="yes">

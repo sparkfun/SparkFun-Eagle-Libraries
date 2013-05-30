@@ -1009,11 +1009,24 @@ RES-07868</description>
 <devices>
 </devices>
 </deviceset>
-<deviceset name="0.22OHM1/4W1%(0805)" prefix="C" uservalue="yes">
+<deviceset name="0.22OHM1/4W1%(0805)" prefix="R" uservalue="yes">
 <description>RES-09883</description>
 <gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-09883"/>
+<attribute name="VALUE" value="0.22" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="0.25OHM1/2W1%(2010)" prefix="C" uservalue="yes">
@@ -1225,6 +1238,10 @@ RES-07868</description>
 </gates>
 <devices>
 <device name="" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="RES-07863" constant="no"/>

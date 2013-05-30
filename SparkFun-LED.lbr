@@ -1492,7 +1492,9 @@ COM-09264 (Diffuse)</description>
 </devices>
 </deviceset>
 <deviceset name="LED-TRICOLOR-5050-IC" prefix="U">
-<description>5x5mm SMD LED with built-in controller IC.</description>
+<description>&lt;h3&gt; WS2811 RGB LED w/driver&lt;/h3&gt;&lt;p&gt;
+5x5mm SMD LED with built-in controller IC.&lt;br&gt;
+DIO-11598</description>
 <gates>
 <gate name="U1" symbol="LED-TRICOLOR-WS28X1" x="0" y="0"/>
 </gates>
@@ -1505,7 +1507,10 @@ COM-09264 (Diffuse)</description>
 <connect gate="U1" pin="VSS" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-11598"/>
+<attribute name="VALUE" value="WS2811" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
