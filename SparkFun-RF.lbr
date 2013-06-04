@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -65,7 +65,7 @@
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -1053,12 +1053,12 @@ We've spent an enormous amount of time creating and checking these footprints an
 <smd name="27" x="-9.4" y="1.6" dx="0.8" dy="1.6" layer="1" rot="R90"/>
 <smd name="28" x="9.4" y="3.1" dx="0.8" dy="1.6" layer="1" rot="R90"/>
 <smd name="29" x="9.4" y="-3.1" dx="0.8" dy="1.6" layer="1" rot="R90"/>
-<smd name="30" x="9.4" y="-4.1222" dx="0.8" dy="1.6" layer="1" rot="R90"/>
-<smd name="31" x="9.4" y="-1.9" dx="0.8" dy="1.6" layer="1" rot="R90"/>
-<smd name="32" x="9.4" y="-0.7" dx="0.8" dy="1.6" layer="1" rot="R90"/>
-<smd name="33" x="9.4" y="0.7" dx="0.8" dy="1.6" layer="1" rot="R90"/>
-<smd name="34" x="9.4" y="1.9" dx="0.8" dy="1.6" layer="1" rot="R90"/>
-<smd name="35" x="9.4" y="4.1222" dx="0.8" dy="1.6" layer="1" rot="R90"/>
+<smd name="35" x="9.4" y="-4.1222" dx="0.8" dy="1.6" layer="1" rot="R90"/>
+<smd name="34" x="9.4" y="-1.9" dx="0.8" dy="1.6" layer="1" rot="R90"/>
+<smd name="33" x="9.4" y="-0.7" dx="0.8" dy="1.6" layer="1" rot="R90"/>
+<smd name="32" x="9.4" y="0.7" dx="0.8" dy="1.6" layer="1" rot="R90"/>
+<smd name="31" x="9.4" y="1.9" dx="0.8" dy="1.6" layer="1" rot="R90"/>
+<smd name="30" x="9.4" y="4.1222" dx="0.8" dy="1.6" layer="1" rot="R90"/>
 </package>
 <package name="BTM182">
 <description>BTM-182 Class2 Bluetooth Module from Rayson</description>
@@ -5284,8 +5284,8 @@ Bluetooth 4.0 module with built-in chip antenna.</description>
 <pin name="PIO8" x="20.32" y="-2.54" length="middle" rot="R180"/>
 <pin name="PIO10" x="20.32" y="-7.62" length="middle" rot="R180"/>
 <pin name="PIO11" x="20.32" y="-10.16" length="middle" rot="R180"/>
-<pin name="AIO1" x="20.32" y="22.86" length="middle" rot="R180"/>
-<pin name="AIO2" x="20.32" y="20.32" length="middle" rot="R180"/>
+<pin name="AIO0" x="20.32" y="22.86" length="middle" rot="R180"/>
+<pin name="AIO1" x="20.32" y="20.32" length="middle" rot="R180"/>
 <pin name="GND5" x="20.32" y="-27.94" length="middle" rot="R180"/>
 </symbol>
 <symbol name="BTM182">
@@ -7736,8 +7736,8 @@ BR-C40A with antenna cut off. 50 Ohm antenna trace and connector required. Footp
 <devices>
 <device name="&quot;" package="RN41">
 <connects>
+<connect gate="G$1" pin="AIO0" pad="30"/>
 <connect gate="G$1" pin="AIO1" pad="35"/>
-<connect gate="G$1" pin="AIO2" pad="30"/>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="GND1" pad="12"/>
 <connect gate="G$1" pin="GND2" pad="25"/>
