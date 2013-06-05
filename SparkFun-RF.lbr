@@ -1048,9 +1048,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <smd name="22" x="-4.2" y="6.6" dx="0.8" dy="1.6" layer="1"/>
 <smd name="23" x="-5.4" y="6.6" dx="0.8" dy="1.6" layer="1"/>
 <smd name="24" x="-6.6" y="6.6" dx="0.8" dy="1.6" layer="1"/>
-<smd name="25" x="-9.4" y="4.8" dx="0.8" dy="1.6" layer="1" rot="R90"/>
-<smd name="26" x="-9.4" y="3.2" dx="0.8" dy="1.6" layer="1" rot="R90"/>
-<smd name="27" x="-9.4" y="1.6" dx="0.8" dy="1.6" layer="1" rot="R90"/>
 <smd name="28" x="9.4" y="3.1" dx="0.8" dy="1.6" layer="1" rot="R90"/>
 <smd name="29" x="9.4" y="-3.1" dx="0.8" dy="1.6" layer="1" rot="R90"/>
 <smd name="35" x="9.4" y="-4.1222" dx="0.8" dy="1.6" layer="1" rot="R90"/>
@@ -5276,17 +5273,14 @@ Bluetooth 4.0 module with built-in chip antenna.</description>
 <pin name="PIO4" x="20.32" y="7.62" length="middle" rot="R180"/>
 <pin name="SPICSB" x="-20.32" y="-22.86" length="middle"/>
 <pin name="SPIMISO" x="-20.32" y="-25.4" length="middle"/>
-<pin name="GND2" x="20.32" y="-20.32" length="middle" rot="R180"/>
-<pin name="NC" x="20.32" y="27.94" length="middle" rot="R180"/>
-<pin name="GND3" x="20.32" y="-22.86" length="middle" rot="R180"/>
 <pin name="PIO9" x="20.32" y="-5.08" length="middle" rot="R180"/>
-<pin name="GND4" x="20.32" y="-25.4" length="middle" rot="R180"/>
+<pin name="GND2" x="20.32" y="-25.4" length="middle" rot="R180"/>
 <pin name="PIO8" x="20.32" y="-2.54" length="middle" rot="R180"/>
 <pin name="PIO10" x="20.32" y="-7.62" length="middle" rot="R180"/>
 <pin name="PIO11" x="20.32" y="-10.16" length="middle" rot="R180"/>
 <pin name="AIO0" x="20.32" y="22.86" length="middle" rot="R180"/>
 <pin name="AIO1" x="20.32" y="20.32" length="middle" rot="R180"/>
-<pin name="GND5" x="20.32" y="-27.94" length="middle" rot="R180"/>
+<pin name="GND3" x="20.32" y="-27.94" length="middle" rot="R180"/>
 </symbol>
 <symbol name="BTM182">
 <wire x1="-12.7" y1="-20.32" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
@@ -7740,11 +7734,8 @@ BR-C40A with antenna cut off. 50 Ohm antenna trace and connector required. Footp
 <connect gate="G$1" pin="AIO1" pad="35"/>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="GND1" pad="12"/>
-<connect gate="G$1" pin="GND2" pad="25"/>
-<connect gate="G$1" pin="GND3" pad="27"/>
-<connect gate="G$1" pin="GND4" pad="28"/>
-<connect gate="G$1" pin="GND5" pad="29"/>
-<connect gate="G$1" pin="NC" pad="26"/>
+<connect gate="G$1" pin="GND2" pad="28"/>
+<connect gate="G$1" pin="GND3" pad="29"/>
 <connect gate="G$1" pin="PCMCLK" pad="7"/>
 <connect gate="G$1" pin="PCMIN" pad="9"/>
 <connect gate="G$1" pin="PCMOUT" pad="10"/>
