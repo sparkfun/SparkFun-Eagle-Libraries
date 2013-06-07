@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -14272,6 +14272,258 @@ Keying posts into board</description>
 <wire x1="-1.5" y1="2.5" x2="-1.5" y2="3.25" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="2.5" x2="4" y2="2.5" width="0.127" layer="21"/>
 </package>
+<package name="BTA">
+<description>British Telecom connector, used for Vernier sensors (analog)</description>
+<pad name="1" x="-3.175" y="-3.81" drill="0.8" shape="square"/>
+<pad name="3" x="-5.715" y="-3.81" drill="0.8" shape="square"/>
+<pad name="5" x="-8.255" y="-3.81" drill="0.8" shape="square"/>
+<pad name="2" x="-4.445" y="-7.62" drill="0.8" shape="square"/>
+<pad name="4" x="-6.985" y="-7.62" drill="0.8" shape="square"/>
+<pad name="6" x="-9.525" y="-7.62" drill="0.8" shape="square"/>
+<wire x1="0" y1="0" x2="0" y2="-10.795" width="0.127" layer="21"/>
+<wire x1="0" y1="-10.795" x2="0" y2="-14.605" width="0.127" layer="21"/>
+<wire x1="0" y1="-14.605" x2="-15.875" y2="-14.605" width="0.127" layer="21"/>
+<wire x1="-15.875" y1="-14.605" x2="-15.875" y2="-10.795" width="0.127" layer="21"/>
+<wire x1="-15.875" y1="-10.795" x2="-15.875" y2="0" width="0.127" layer="21"/>
+<wire x1="-15.875" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="-14.605" x2="3.175" y2="-14.605" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-14.605" x2="3.175" y2="-12.7" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-12.7" x2="1.905" y2="-12.7" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-12.7" x2="0" y2="-10.795" width="0.127" layer="21"/>
+<wire x1="-15.875" y1="-14.605" x2="-19.05" y2="-14.605" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="-14.605" x2="-19.05" y2="-12.7" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="-12.7" x2="-17.78" y2="-12.7" width="0.127" layer="21"/>
+<wire x1="-17.78" y1="-12.7" x2="-15.875" y2="-10.795" width="0.127" layer="21"/>
+<text x="-10.16" y="-6.35" size="1.27" layer="25">&gt;NAME</text>
+</package>
+<package name="BTD">
+<description>British Telecom connector, used for Vernier sensors (digital)</description>
+<pad name="1" x="-6.35" y="-3.81" drill="0.8" shape="square"/>
+<pad name="3" x="-8.89" y="-3.81" drill="0.8" shape="square"/>
+<pad name="5" x="-11.43" y="-3.81" drill="0.8" shape="square"/>
+<pad name="2" x="-7.62" y="-7.62" drill="0.8" shape="square"/>
+<pad name="4" x="-10.16" y="-7.62" drill="0.8" shape="square"/>
+<pad name="6" x="-12.7" y="-7.62" drill="0.8" shape="square"/>
+<wire x1="0" y1="0" x2="0" y2="-10.795" width="0.127" layer="21"/>
+<wire x1="0" y1="-10.795" x2="0" y2="-14.605" width="0.127" layer="21"/>
+<wire x1="0" y1="-14.605" x2="-15.875" y2="-14.605" width="0.127" layer="21"/>
+<wire x1="-15.875" y1="-14.605" x2="-15.875" y2="-10.795" width="0.127" layer="21"/>
+<wire x1="-15.875" y1="-10.795" x2="-15.875" y2="0" width="0.127" layer="21"/>
+<wire x1="-15.875" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="-14.605" x2="3.175" y2="-14.605" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-14.605" x2="3.175" y2="-12.7" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-12.7" x2="1.905" y2="-12.7" width="0.127" layer="21"/>
+<wire x1="1.905" y1="-12.7" x2="0" y2="-10.795" width="0.127" layer="21"/>
+<wire x1="-15.875" y1="-14.605" x2="-19.05" y2="-14.605" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="-14.605" x2="-19.05" y2="-12.7" width="0.127" layer="21"/>
+<wire x1="-19.05" y1="-12.7" x2="-17.78" y2="-12.7" width="0.127" layer="21"/>
+<wire x1="-17.78" y1="-12.7" x2="-15.875" y2="-10.795" width="0.127" layer="21"/>
+<text x="-13.335" y="-6.35" size="1.27" layer="25">&gt;NAME</text>
+</package>
+<package name="1X06_SMD_MALE">
+<text x="-1" y="3.321" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1" y="-4.591" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-1.27" y1="1.25" x2="-1.27" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-1.27" y1="-1.25" x2="13.97" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="13.97" y1="-1.25" x2="13.97" y2="1.25" width="0.127" layer="51"/>
+<wire x1="13.97" y1="1.25" x2="-1.27" y2="1.25" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="0.64" width="0.127" layer="51"/>
+<circle x="2.54" y="0" radius="0.64" width="0.127" layer="51"/>
+<circle x="5.08" y="0" radius="0.64" width="0.127" layer="51"/>
+<circle x="7.62" y="0" radius="0.64" width="0.127" layer="51"/>
+<circle x="10.16" y="0" radius="0.64" width="0.127" layer="51"/>
+<circle x="12.7" y="0" radius="0.64" width="0.127" layer="51"/>
+<rectangle x1="-0.32" y1="0" x2="0.32" y2="2.75" layer="51"/>
+<rectangle x1="4.76" y1="0" x2="5.4" y2="2.75" layer="51"/>
+<rectangle x1="9.84" y1="0" x2="10.48" y2="2.75" layer="51"/>
+<rectangle x1="2.22" y1="-2.75" x2="2.86" y2="0" layer="51" rot="R180"/>
+<rectangle x1="7.3" y1="-2.75" x2="7.94" y2="0" layer="51" rot="R180"/>
+<rectangle x1="12.38" y1="-2.75" x2="13.02" y2="0" layer="51" rot="R180"/>
+<smd name="1" x="0" y="0" dx="1.02" dy="6" layer="1"/>
+<smd name="2" x="2.54" y="0" dx="1.02" dy="6" layer="1"/>
+<smd name="3" x="5.08" y="0" dx="1.02" dy="6" layer="1"/>
+<smd name="4" x="7.62" y="0" dx="1.02" dy="6" layer="1"/>
+<smd name="5" x="10.16" y="0" dx="1.02" dy="6" layer="1"/>
+<smd name="6" x="12.7" y="0" dx="1.02" dy="6" layer="1"/>
+<wire x1="-1.27" y1="1.25" x2="-1.27" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="-1.27" y1="-1.25" x2="-0.635" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="-1.27" y1="1.25" x2="-0.635" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="0.762" y1="1.25" x2="1.778" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="3.302" y1="1.25" x2="4.318" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="5.842" y1="1.25" x2="6.858" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="8.382" y1="1.25" x2="9.398" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="10.922" y1="1.25" x2="11.938" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="1.778" y1="-1.25" x2="0.762" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="4.318" y1="-1.25" x2="3.302" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="6.858" y1="-1.25" x2="5.842" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="9.398" y1="-1.25" x2="8.382" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="11.938" y1="-1.25" x2="10.922" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="13.97" y1="-1.25" x2="13.97" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="13.97" y1="-1.25" x2="13.335" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="13.97" y1="1.25" x2="13.335" y2="1.25" width="0.1778" layer="21"/>
+</package>
+<package name="1X10_SMD_MALE">
+<text x="-1" y="3.321" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1" y="-4.591" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-1.27" y1="1.25" x2="-1.27" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-1.27" y1="-1.25" x2="24.13" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="24.13" y1="-1.25" x2="24.13" y2="1.25" width="0.127" layer="51"/>
+<wire x1="24.13" y1="1.25" x2="-1.27" y2="1.25" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="0.64" width="0.127" layer="51"/>
+<circle x="2.54" y="0" radius="0.64" width="0.127" layer="51"/>
+<circle x="5.08" y="0" radius="0.64" width="0.127" layer="51"/>
+<circle x="7.62" y="0" radius="0.64" width="0.127" layer="51"/>
+<circle x="10.16" y="0" radius="0.64" width="0.127" layer="51"/>
+<circle x="12.7" y="0" radius="0.64" width="0.127" layer="51"/>
+<rectangle x1="-0.32" y1="0" x2="0.32" y2="2.75" layer="51"/>
+<rectangle x1="4.76" y1="0" x2="5.4" y2="2.75" layer="51"/>
+<rectangle x1="9.84" y1="0" x2="10.48" y2="2.75" layer="51"/>
+<rectangle x1="2.22" y1="-2.75" x2="2.86" y2="0" layer="51" rot="R180"/>
+<rectangle x1="7.3" y1="-2.75" x2="7.94" y2="0" layer="51" rot="R180"/>
+<rectangle x1="12.38" y1="-2.75" x2="13.02" y2="0" layer="51" rot="R180"/>
+<smd name="1" x="0" y="0" dx="1.02" dy="6" layer="1"/>
+<smd name="2" x="2.54" y="0" dx="1.02" dy="6" layer="1"/>
+<smd name="3" x="5.08" y="0" dx="1.02" dy="6" layer="1"/>
+<smd name="4" x="7.62" y="0" dx="1.02" dy="6" layer="1"/>
+<smd name="5" x="10.16" y="0" dx="1.02" dy="6" layer="1"/>
+<smd name="6" x="12.7" y="0" dx="1.02" dy="6" layer="1"/>
+<wire x1="-1.27" y1="1.25" x2="-1.27" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="-1.27" y1="-1.25" x2="-0.635" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="-1.27" y1="1.25" x2="-0.635" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="0.762" y1="1.25" x2="1.778" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="3.302" y1="1.25" x2="4.318" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="5.842" y1="1.25" x2="6.858" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="8.382" y1="1.25" x2="9.398" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="10.922" y1="1.25" x2="11.938" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="1.778" y1="-1.25" x2="0.762" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="4.318" y1="-1.25" x2="3.302" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="6.858" y1="-1.25" x2="5.842" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="9.398" y1="-1.25" x2="8.382" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="11.938" y1="-1.25" x2="10.922" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="24.13" y1="-1.25" x2="24.13" y2="1.25" width="0.1778" layer="21"/>
+<circle x="15.24" y="0" radius="0.64" width="0.127" layer="51"/>
+<circle x="17.78" y="0" radius="0.64" width="0.127" layer="51"/>
+<rectangle x1="14.92" y1="0" x2="15.56" y2="2.75" layer="51"/>
+<rectangle x1="17.46" y1="-2.75" x2="18.1" y2="0" layer="51" rot="R180"/>
+<smd name="7" x="15.24" y="0" dx="1.02" dy="6" layer="1"/>
+<smd name="8" x="17.78" y="0" dx="1.02" dy="6" layer="1"/>
+<wire x1="16.002" y1="1.25" x2="17.018" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="17.018" y1="-1.25" x2="16.002" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="24.13" y1="-1.25" x2="23.495" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="24.13" y1="1.25" x2="23.495" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="13.462" y1="1.25" x2="14.478" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="14.478" y1="-1.25" x2="13.462" y2="-1.25" width="0.1778" layer="21"/>
+<smd name="9" x="20.32" y="0" dx="1.02" dy="6" layer="1"/>
+<smd name="10" x="22.86" y="0" dx="1.02" dy="6" layer="1"/>
+<rectangle x1="22.54" y1="-2.75" x2="23.18" y2="0" layer="51" rot="R180"/>
+<rectangle x1="20" y1="0" x2="20.64" y2="2.75" layer="51"/>
+<circle x="20.32" y="0" radius="0.64" width="0.127" layer="51"/>
+<circle x="22.86" y="0" radius="0.64" width="0.127" layer="51"/>
+<wire x1="18.542" y1="1.25" x2="19.558" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="21.082" y1="1.25" x2="22.098" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="19.558" y1="-1.25" x2="18.542" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="22.098" y1="-1.25" x2="21.082" y2="-1.25" width="0.1778" layer="21"/>
+</package>
+<package name="1X08_SMD_MALE">
+<text x="-1" y="3.321" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1" y="-4.591" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-1.27" y1="1.25" x2="-1.27" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-1.27" y1="-1.25" x2="19.05" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="19.05" y1="-1.25" x2="19.05" y2="1.25" width="0.127" layer="51"/>
+<wire x1="19.05" y1="1.25" x2="-1.27" y2="1.25" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="0.64" width="0.127" layer="51"/>
+<circle x="2.54" y="0" radius="0.64" width="0.127" layer="51"/>
+<circle x="5.08" y="0" radius="0.64" width="0.127" layer="51"/>
+<circle x="7.62" y="0" radius="0.64" width="0.127" layer="51"/>
+<circle x="10.16" y="0" radius="0.64" width="0.127" layer="51"/>
+<circle x="12.7" y="0" radius="0.64" width="0.127" layer="51"/>
+<rectangle x1="-0.32" y1="0" x2="0.32" y2="2.75" layer="51"/>
+<rectangle x1="4.76" y1="0" x2="5.4" y2="2.75" layer="51"/>
+<rectangle x1="9.84" y1="0" x2="10.48" y2="2.75" layer="51"/>
+<rectangle x1="2.22" y1="-2.75" x2="2.86" y2="0" layer="51" rot="R180"/>
+<rectangle x1="7.3" y1="-2.75" x2="7.94" y2="0" layer="51" rot="R180"/>
+<rectangle x1="12.38" y1="-2.75" x2="13.02" y2="0" layer="51" rot="R180"/>
+<smd name="1" x="0" y="0" dx="1.02" dy="6" layer="1"/>
+<smd name="2" x="2.54" y="0" dx="1.02" dy="6" layer="1"/>
+<smd name="3" x="5.08" y="0" dx="1.02" dy="6" layer="1"/>
+<smd name="4" x="7.62" y="0" dx="1.02" dy="6" layer="1"/>
+<smd name="5" x="10.16" y="0" dx="1.02" dy="6" layer="1"/>
+<smd name="6" x="12.7" y="0" dx="1.02" dy="6" layer="1"/>
+<wire x1="-1.27" y1="1.25" x2="-1.27" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="-1.27" y1="-1.25" x2="-0.635" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="-1.27" y1="1.25" x2="-0.635" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="0.762" y1="1.25" x2="1.778" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="3.302" y1="1.25" x2="4.318" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="5.842" y1="1.25" x2="6.858" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="8.382" y1="1.25" x2="9.398" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="10.922" y1="1.25" x2="11.938" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="1.778" y1="-1.25" x2="0.762" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="4.318" y1="-1.25" x2="3.302" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="6.858" y1="-1.25" x2="5.842" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="9.398" y1="-1.25" x2="8.382" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="11.938" y1="-1.25" x2="10.922" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="19.05" y1="-1.25" x2="19.05" y2="1.25" width="0.1778" layer="21"/>
+<circle x="15.24" y="0" radius="0.64" width="0.127" layer="51"/>
+<circle x="17.78" y="0" radius="0.64" width="0.127" layer="51"/>
+<rectangle x1="14.92" y1="0" x2="15.56" y2="2.75" layer="51"/>
+<rectangle x1="17.46" y1="-2.75" x2="18.1" y2="0" layer="51" rot="R180"/>
+<smd name="7" x="15.24" y="0" dx="1.02" dy="6" layer="1"/>
+<smd name="8" x="17.78" y="0" dx="1.02" dy="6" layer="1"/>
+<wire x1="16.002" y1="1.25" x2="17.018" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="17.018" y1="-1.25" x2="16.002" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="19.05" y1="-1.25" x2="18.415" y2="-1.25" width="0.1778" layer="21"/>
+<wire x1="19.05" y1="1.25" x2="18.415" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="13.462" y1="1.25" x2="14.478" y2="1.25" width="0.1778" layer="21"/>
+<wire x1="14.478" y1="-1.25" x2="13.462" y2="-1.25" width="0.1778" layer="21"/>
+</package>
+<package name="1X10_SMD_COMBINED">
+<wire x1="-1.37" y1="-1.25" x2="-1.37" y2="1.25" width="0.127" layer="21"/>
+<wire x1="24.23" y1="1.25" x2="24.23" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-0.85" y1="-1.25" x2="-1.37" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="24.23" y1="-1.25" x2="23.583" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="23.71" y1="1.25" x2="24.23" y2="1.25" width="0.127" layer="21"/>
+<wire x1="-1.37" y1="1.25" x2="-0.723" y2="1.25" width="0.127" layer="21"/>
+<wire x1="14.537" y1="-1.25" x2="13.403" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="0.789" y1="1.25" x2="1.751" y2="1.25" width="0.127" layer="21"/>
+<wire x1="3.329" y1="1.25" x2="4.291" y2="1.25" width="0.127" layer="21"/>
+<wire x1="5.869" y1="1.25" x2="6.831" y2="1.25" width="0.127" layer="21"/>
+<wire x1="8.409" y1="1.25" x2="9.371" y2="1.25" width="0.127" layer="21"/>
+<wire x1="10.949" y1="1.25" x2="11.911" y2="1.25" width="0.127" layer="21"/>
+<wire x1="13.489" y1="1.25" x2="14.451" y2="1.25" width="0.127" layer="21"/>
+<wire x1="16.029" y1="1.25" x2="16.991" y2="1.25" width="0.127" layer="21"/>
+<wire x1="17.077" y1="-1.25" x2="15.943" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="11.997" y1="-1.25" x2="10.863" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="9.457" y1="-1.25" x2="8.323" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="6.917" y1="-1.25" x2="5.783" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="4.377" y1="-1.25" x2="3.243" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="1.837" y1="-1.25" x2="0.703" y2="-1.25" width="0.127" layer="21"/>
+<smd name="7B" x="15.24" y="-1.65" dx="2" dy="1" layer="1" rot="R270"/>
+<smd name="5B" x="10.16" y="-1.65" dx="2" dy="1" layer="1" rot="R270"/>
+<smd name="3B" x="5.08" y="-1.65" dx="2" dy="1" layer="1" rot="R270"/>
+<smd name="8A" x="17.78" y="1.65" dx="2" dy="1" layer="1" rot="R270"/>
+<smd name="6A" x="12.7" y="1.65" dx="2" dy="1" layer="1" rot="R270"/>
+<smd name="4A" x="7.62" y="1.65" dx="2" dy="1" layer="1" rot="R270"/>
+<smd name="2A" x="2.54" y="1.65" dx="2" dy="1" layer="1" rot="R270"/>
+<smd name="1A" x="0" y="1.65" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="2B" x="2.54" y="-1.65" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="3A" x="5.08" y="1.65" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="4B" x="7.62" y="-1.65" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="5A" x="10.16" y="1.65" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="6B" x="12.7" y="-1.65" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="7A" x="15.24" y="1.65" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="8B" x="17.78" y="-1.65" dx="2" dy="1" layer="1" rot="R270"/>
+<smd name="1B" x="0" y="-1.65" dx="2" dy="1" layer="1" rot="R270"/>
+<text x="0" y="2.921" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="-4.191" size="1.27" layer="27">&gt;VALUE</text>
+<smd name="9A" x="20.32" y="1.65" dx="2" dy="1" layer="1" rot="R270"/>
+<smd name="10A" x="22.86" y="1.65" dx="2" dy="1" layer="1" rot="R270"/>
+<smd name="9B" x="20.32" y="-1.65" dx="2" dy="1" layer="1" rot="R270"/>
+<smd name="10B" x="22.86" y="-1.65" dx="2" dy="1" layer="1" rot="R270"/>
+<wire x1="18.569" y1="1.25" x2="19.531" y2="1.25" width="0.127" layer="21"/>
+<wire x1="21.109" y1="1.25" x2="22.071" y2="1.25" width="0.127" layer="21"/>
+<wire x1="19.617" y1="-1.25" x2="18.483" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="22.157" y1="-1.25" x2="21.023" y2="-1.25" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -19266,16 +19518,13 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 </devices>
 </deviceset>
 <deviceset name="M06" prefix="JP" uservalue="yes">
-<description>&lt;b&gt;Header 6&lt;/b&gt;
-Standard 6-pin 0.1" header. Use with straight break away headers (SKU : PRT-00116), right angle break away headers (PRT-00553), swiss pins (PRT-00743), machine pins (PRT-00117), and female headers (PRT-00115). Molex polarized connector foot print use with SKU : PRT-08094 with associated crimp pins and housings.
+<description>&lt;b&gt;Header 6&lt;/b&gt;&lt;br&gt;
+Standard 6-pin 0.1" header. Use with straight break away headers (SKU : PRT-00116), right angle break away headers (PRT-00553), swiss pins (PRT-00743), machine pins (PRT-00117), and female headers (PRT-00115). Molex polarized connector foot print use with SKU : PRT-08094 with associated crimp pins and housings.&lt;p&gt;
+
+
 
 NOTES ON THE VARIANTS LOCK and LOCK_LONGPADS...
-This footprint was designed to help hold the alignment of a through-hole component (i.e.  6-pin header) while soldering it into place.  
-You may notice that each hole has been shifted either up or down by 0.005 of an inch from it's more standard position (which is a perfectly straight line).  
-This slight alteration caused the pins (the squares in the middle) to touch the edges of the holes.  Because they are alternating, it causes a "brace" 
-to hold the component in place.  0.005 has proven to be the perfect amount of "off-center" position when using our standard breakaway headers.
-Although looks a little odd when you look at the bare footprint, once you have a header in there, the alteration is very hard to notice.  Also,
-if you push a header all the way into place, it is covered up entirely on the bottom side.  This idea of altering the position of holes to aid alignment 
+This footprint was designed to help hold the alignment of a through-hole component (i.e.  6-pin header) while soldering it into place. You may notice that each hole has been shifted either up or down by 0.005 of an inch from it's more standard position (which is a perfectly straight line).  This slight alteration caused the pins (the squares in the middle) to touch the edges of the holes.  Because they are alternating, it causes a "brace" to hold the component in place.  0.005 has proven to be the perfect amount of "off-center" position when using our standard breakaway headers. Although looks a little odd when you look at the bare footprint, once you have a header in there, the alteration is very hard to notice.  Also,if you push a header all the way into place, it is covered up entirely on the bottom side.  This idea of altering the position of holes to aid alignment 
 will be further integrated into the Sparkfun Library for other footprints.  It can help hold any component with 3 or more connection pins.</description>
 <gates>
 <gate name="G$1" symbol="M06" x="-2.54" y="0"/>
@@ -19541,6 +19790,47 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <technology name=""/>
 </technologies>
 </device>
+<device name="VERNIER-ANALOG" package="BTA">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="VERNIER-DIGITAL" package="BTD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD_MALE" package="1X06_SMD_MALE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-11293"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="M07" prefix="JP" uservalue="yes">
@@ -19764,6 +20054,23 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <technology name=""/>
 </technologies>
 </device>
+<device name="SMD-MALE" package="1X08_SMD_MALE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-11292"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="M08X2">
@@ -19960,6 +20267,42 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="SMD_COMBO" package="1X10_SMD_COMBINED">
+<connects>
+<connect gate="G$1" pin="1" pad="1A 1B"/>
+<connect gate="G$1" pin="10" pad="10A 10B"/>
+<connect gate="G$1" pin="2" pad="2A 2B"/>
+<connect gate="G$1" pin="3" pad="3A 3B"/>
+<connect gate="G$1" pin="4" pad="4A 4B"/>
+<connect gate="G$1" pin="5" pad="5A 5B"/>
+<connect gate="G$1" pin="6" pad="6A 6B"/>
+<connect gate="G$1" pin="7" pad="7A 7B"/>
+<connect gate="G$1" pin="8" pad="8A 8B"/>
+<connect gate="G$1" pin="9" pad="9A 9B"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD_MALE" package="1X10_SMD_MALE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-11291"/>
+</technology>
 </technologies>
 </device>
 </devices>
