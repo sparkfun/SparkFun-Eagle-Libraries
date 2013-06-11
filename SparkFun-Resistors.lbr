@@ -724,10 +724,10 @@ Source: RS Component / Phycomp</description>
 <connect gate="A" pin="2" pad="8"/>
 <connect gate="B" pin="1" pad="2"/>
 <connect gate="B" pin="2" pad="7"/>
-<connect gate="R" pin="1" pad="3"/>
-<connect gate="R" pin="2" pad="6"/>
 <connect gate="D" pin="1" pad="4"/>
 <connect gate="D" pin="2" pad="5"/>
+<connect gate="R" pin="1" pad="3"/>
+<connect gate="R" pin="2" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1456,8 +1456,21 @@ RES-07868</description>
 <deviceset name="15KOHM1/10W1%(0603)" prefix="R" uservalue="yes">
 <description>RES-07854</description>
 <gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
+<device name="0603" package="0603-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-07854"/>
+<attribute name="VALUE" value="15K"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="165KOHM-1/10W-1%(0603)" prefix="R" uservalue="yes">
@@ -1691,8 +1704,21 @@ RES-07868</description>
 <deviceset name="20KOHM1/10W1%(0603)" prefix="R" uservalue="yes">
 <description>RES-09383</description>
 <gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="0603-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-09383"/>
+<attribute name="VALUE" value="20k" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="20KOHM1/10W5%(0603)" prefix="R" uservalue="yes">
