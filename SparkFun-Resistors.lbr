@@ -1053,8 +1053,21 @@ RES-07868</description>
 <deviceset name="0.75OHM1/4W1%(0805)" prefix="R" uservalue="yes">
 <description>RES-08474</description>
 <gates>
+<gate name="G$1" symbol="RESISTOR" x="-2.54" y="0"/>
 </gates>
 <devices>
+<device name="" package="0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08474"/>
+<attribute name="VALUE" value="0.75"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="1OHM(PTH)" prefix="R" uservalue="yes">

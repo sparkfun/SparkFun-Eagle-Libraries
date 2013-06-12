@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -7632,7 +7632,7 @@ A wi-fi enabled microcontroller, in an SD card package.</description>
 <pin name="VCHG" x="-2.54" y="15.24" length="short"/>
 <pin name="CHG_EXT" x="-2.54" y="17.78" length="short"/>
 <pin name="VREGEN" x="-2.54" y="20.32" length="short"/>
-<pin name="3V#_USB" x="-2.54" y="25.4" length="short"/>
+<pin name="3V3_USB" x="-2.54" y="25.4" length="short"/>
 <pin name="!RESET" x="-2.54" y="33.02" length="short"/>
 <wire x1="0" y1="35.56" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
@@ -10964,7 +10964,7 @@ Hyper-competent Bluetooth 4.0 module, with:&lt;br&gt;
 <connect gate=".GPIO" pin="PIO_6" pad="5"/>
 <connect gate=".GPIO" pin="PIO_7" pad="6"/>
 <connect gate=".POWER" pin="!RESET" pad="44"/>
-<connect gate=".POWER" pin="3V#_USB" pad="34"/>
+<connect gate=".POWER" pin="3V3_USB" pad="34"/>
 <connect gate=".POWER" pin="CHG_EXT" pad="29"/>
 <connect gate=".POWER" pin="GND" pad="1 2 3 4 11 22 27"/>
 <connect gate=".POWER" pin="VBAT" pad="32"/>

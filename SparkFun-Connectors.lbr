@@ -17568,8 +17568,10 @@ Simple 3.5mm common PCB mount audio jack. SKU: PRT-08032</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="AUDIO-JACK2">
-<description>Stereo audio jack with bypass switches.</description>
+<deviceset name="AUDIO-JACK2" prefix="J">
+<description>Stereo audio jack with bypass switches.&lt;br&gt;
+Used on LilyPad MP3 board.&lt;br&gt;
+Production SKU: CONN-10353</description>
 <gates>
 <gate name="G$1" symbol="AUDIO-JACK2" x="0" y="0"/>
 </gates>
@@ -17595,7 +17597,9 @@ Simple 3.5mm common PCB mount audio jack. SKU: PRT-08032</description>
 <connect gate="G$1" pin="TSH" pad="TSH"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-10353"/>
+</technology>
 </technologies>
 </device>
 </devices>

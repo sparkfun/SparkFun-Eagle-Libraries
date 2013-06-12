@@ -2435,8 +2435,11 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TRANSISTOR_PNP" prefix="Q">
-<description>Generic PNP BJT. Double check pinouts against datasheets- not all devices are the same!</description>
+<deviceset name="TRANSISTOR_PNP" prefix="Q" uservalue="yes">
+<description>&lt;h3&gt;Generic PNP BJT&lt;/h3&gt; &lt;P&gt;
+ Double check pinouts against datasheets- not all devices are the same!&lt;br&gt;
+MMBT3906 - 40V 200mA SOT-23 (TRANS-08052)&lt;br&gt;
+MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <gates>
 <gate name="G$1" symbol="PNP" x="0" y="0"/>
 </gates>
@@ -2469,6 +2472,32 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="MMBT3906" package="SOT23">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="TRANS-08052"/>
+<attribute name="VALUE" value="MMBT3906"/>
+</technology>
+</technologies>
+</device>
+<device name="MMBT4403" package="SOT23">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="TRANS-09245"/>
+<attribute name="VALUE" value="MMBT4403"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2898,7 +2927,8 @@ DIO-08053</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="DIO-09886" constant="no"/>
+<attribute name="PROD_ID" value="DIO-09886"/>
+<attribute name="VALUE" value="BA340A"/>
 </technology>
 </technologies>
 </device>
