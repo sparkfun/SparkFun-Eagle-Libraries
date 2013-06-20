@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="9" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -85,6 +85,7 @@
 <layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
@@ -5365,6 +5366,72 @@ Bluetooth 4.0 module with built-in chip antenna.</description>
 <vertex x="5.5" y="-8.1"/>
 </polygon>
 </package>
+<package name="RN-52">
+<wire x1="6.8" y1="-11.67" x2="6.8" y2="14.33" width="0.127" layer="51"/>
+<wire x1="6.8" y1="14.33" x2="-6.8" y2="14.33" width="0.127" layer="51"/>
+<wire x1="-6.8" y1="14.33" x2="-6.8" y2="-11.67" width="0.127" layer="51"/>
+<wire x1="-6.8" y1="-11.67" x2="6.8" y2="-11.67" width="0.127" layer="51"/>
+<wire x1="-6.8" y1="14.33" x2="-5.8" y2="14.33" width="0.2032" layer="21"/>
+<wire x1="-6.8" y1="14.33" x2="-6.8" y2="13.33" width="0.2032" layer="21"/>
+<wire x1="6.8" y1="14.33" x2="5.8" y2="14.33" width="0.2032" layer="21"/>
+<wire x1="6.8" y1="14.33" x2="6.8" y2="13.33" width="0.2032" layer="21"/>
+<wire x1="6.8" y1="-11.67" x2="6.8" y2="9.83" width="0.127" layer="21"/>
+<wire x1="-6.8" y1="-11.67" x2="-6.8" y2="9.83" width="0.127" layer="21"/>
+<smd name="1" x="-6.6" y="8.33" dx="1.2" dy="0.8" layer="1"/>
+<smd name="2" x="-6.6" y="7.13" dx="1.2" dy="0.8" layer="1"/>
+<smd name="3" x="-6.6" y="5.93" dx="1.2" dy="0.8" layer="1"/>
+<smd name="4" x="-6.6" y="4.73" dx="1.2" dy="0.8" layer="1"/>
+<smd name="5" x="-6.6" y="3.53" dx="1.2" dy="0.8" layer="1"/>
+<smd name="6" x="-6.6" y="2.33" dx="1.2" dy="0.8" layer="1"/>
+<smd name="7" x="-6.6" y="1.13" dx="1.2" dy="0.8" layer="1"/>
+<smd name="8" x="-6.6" y="-0.07" dx="1.2" dy="0.8" layer="1"/>
+<smd name="9" x="-6.6" y="-1.27" dx="1.2" dy="0.8" layer="1"/>
+<smd name="10" x="-6.6" y="-2.47" dx="1.2" dy="0.8" layer="1"/>
+<smd name="11" x="-6.6" y="-3.67" dx="1.2" dy="0.8" layer="1"/>
+<smd name="12" x="-6.6" y="-4.87" dx="1.2" dy="0.8" layer="1"/>
+<smd name="13" x="-6.6" y="-6.07" dx="1.2" dy="0.8" layer="1"/>
+<smd name="14" x="-6.6" y="-7.27" dx="1.2" dy="0.8" layer="1"/>
+<smd name="15" x="-6.6" y="-8.47" dx="1.2" dy="0.8" layer="1"/>
+<smd name="16" x="-6.6" y="-9.67" dx="1.2" dy="0.8" layer="1"/>
+<smd name="17" x="-4.2" y="-11.47" dx="1.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="18" x="-3" y="-11.47" dx="1.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="19" x="-1.8" y="-11.47" dx="1.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="20" x="-0.6" y="-11.47" dx="1.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="21" x="0.6" y="-11.47" dx="1.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="22" x="1.8" y="-11.47" dx="1.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="23" x="3" y="-11.47" dx="1.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="24" x="4.2" y="-11.47" dx="1.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="25" x="6.6" y="-9.67" dx="1.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="26" x="6.6" y="-8.47" dx="1.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="27" x="6.6" y="-7.27" dx="1.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="28" x="6.6" y="-6.07" dx="1.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="29" x="6.6" y="-4.87" dx="1.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="30" x="6.6" y="-3.67" dx="1.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="31" x="6.6" y="-2.47" dx="1.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="32" x="6.6" y="-1.27" dx="1.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="33" x="6.6" y="-0.07" dx="1.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="34" x="6.6" y="1.13" dx="1.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="35" x="6.6" y="2.33" dx="1.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="36" x="6.6" y="3.53" dx="1.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="37" x="6.6" y="4.73" dx="1.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="38" x="6.6" y="5.93" dx="1.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="39" x="6.6" y="7.13" dx="1.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="40" x="6.6" y="8.33" dx="1.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="G1" x="-6.6" y="9.53" dx="1.2" dy="0.8" layer="1"/>
+<smd name="G2" x="-5.9" y="-11.47" dx="1.2" dy="0.8" layer="1" rot="R90"/>
+<smd name="G3" x="5.9" y="-11.46" dx="0.8" dy="1.2" layer="1" rot="R180"/>
+<smd name="G4" x="6.6" y="9.53" dx="1.2" dy="0.8" layer="1" rot="R180"/>
+<smd name="RFG1" x="-3.5" y="9.03" dx="1.2" dy="0.8" layer="1" roundness="75" rot="R90"/>
+<smd name="RFG2" x="-2.1" y="9.03" dx="1.2" dy="0.8" layer="1" roundness="75" rot="R90"/>
+<smd name="RFG3" x="-0.7" y="9.03" dx="1.2" dy="0.8" layer="1" roundness="75" rot="R90"/>
+<smd name="RFG4" x="0.7" y="9.03" dx="1.2" dy="0.8" layer="1" roundness="75" rot="R90"/>
+<smd name="RFG5" x="2.1" y="9.03" dx="1.2" dy="0.8" layer="1" roundness="75" rot="R90"/>
+<smd name="RFG6" x="3.5" y="9.03" dx="1.2" dy="0.8" layer="1" roundness="75" rot="R90"/>
+<wire x1="6.7972" y1="-11.6714" x2="6.7972" y2="14.3286" width="0.127" layer="51"/>
+<wire x1="6.7972" y1="14.3286" x2="-6.8028" y2="14.3286" width="0.127" layer="51"/>
+<wire x1="-6.8028" y1="14.3286" x2="-6.8028" y2="-11.6714" width="0.127" layer="51"/>
+<wire x1="-6.8028" y1="-11.6714" x2="6.7972" y2="-11.6714" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ALM-1412">
@@ -7675,6 +7742,64 @@ A wi-fi enabled microcontroller, in an SD card package.</description>
 <wire x1="0" y1="0" x2="17.78" y2="0" width="0.254" layer="94"/>
 <wire x1="17.78" y1="0" x2="17.78" y2="27.94" width="0.254" layer="94"/>
 <wire x1="17.78" y1="27.94" x2="0" y2="27.94" width="0.254" layer="94"/>
+</symbol>
+<symbol name="RN-52">
+<wire x1="-17.78" y1="-43.18" x2="17.78" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-43.18" x2="17.78" y2="40.64" width="0.254" layer="94"/>
+<wire x1="17.78" y1="40.64" x2="-17.78" y2="40.64" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="40.64" x2="-17.78" y2="-43.18" width="0.254" layer="94"/>
+<pin name="AGND" x="-22.86" y="-38.1" length="middle"/>
+<pin name="AIC0" x="-22.86" y="20.32" length="middle"/>
+<pin name="GND" x="22.86" y="-25.4" length="middle" rot="R180"/>
+<pin name="GND1" x="22.86" y="-27.94" length="middle" rot="R180"/>
+<pin name="GND2" x="22.86" y="-30.48" length="middle" rot="R180"/>
+<pin name="GND3" x="22.86" y="-33.02" length="middle" rot="R180"/>
+<pin name="GND4" x="22.86" y="-35.56" length="middle" rot="R180"/>
+<pin name="GND5" x="22.86" y="-38.1" length="middle" rot="R180"/>
+<pin name="GND6" x="-22.86" y="-27.94" length="middle"/>
+<pin name="GND7" x="-22.86" y="-30.48" length="middle"/>
+<pin name="GND8" x="-22.86" y="-33.02" length="middle"/>
+<pin name="GND9" x="-22.86" y="-35.56" length="middle"/>
+<pin name="GPIO2" x="-22.86" y="22.86" length="middle"/>
+<pin name="GPIO3" x="-22.86" y="25.4" length="middle"/>
+<pin name="GPIO4" x="-22.86" y="17.78" length="middle"/>
+<pin name="GPIO5" x="-22.86" y="15.24" length="middle"/>
+<pin name="GPIO6" x="-22.86" y="-2.54" length="middle"/>
+<pin name="GPIO7" x="-22.86" y="0" length="middle"/>
+<pin name="GPIO9" x="-22.86" y="2.54" length="middle"/>
+<pin name="GPIO10" x="-22.86" y="5.08" length="middle"/>
+<pin name="GPIO11" x="-22.86" y="7.62" length="middle"/>
+<pin name="GPIO12" x="-22.86" y="12.7" length="middle"/>
+<pin name="GPIO13" x="-22.86" y="10.16" length="middle"/>
+<pin name="LED0" x="22.86" y="7.62" length="middle" rot="R180"/>
+<pin name="LED1" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="MIC_BIAS" x="22.86" y="12.7" length="middle" rot="R180"/>
+<pin name="MIC_L+" x="22.86" y="15.24" length="middle" rot="R180"/>
+<pin name="MIC_L-" x="22.86" y="20.32" length="middle" rot="R180"/>
+<pin name="MIC_R+" x="22.86" y="17.78" length="middle" rot="R180"/>
+<pin name="MIC_R-" x="22.86" y="22.86" length="middle" rot="R180"/>
+<pin name="PCM_CLK" x="22.86" y="-20.32" length="middle" rot="R180"/>
+<pin name="PCM_IN" x="22.86" y="-12.7" length="middle" rot="R180"/>
+<pin name="PCM_OUT" x="22.86" y="-15.24" length="middle" rot="R180"/>
+<pin name="PCM_SYNC" x="22.86" y="-17.78" length="middle" rot="R180"/>
+<pin name="PWREN" x="-22.86" y="30.48" length="middle"/>
+<pin name="SPI_CLK" x="22.86" y="-2.54" length="middle" rot="R180"/>
+<pin name="SPI_MISO" x="22.86" y="-5.08" length="middle" rot="R180"/>
+<pin name="SPI_MOSI" x="22.86" y="0" length="middle" rot="R180"/>
+<pin name="SPI_SS" x="22.86" y="-7.62" length="middle" rot="R180"/>
+<pin name="SPKR_L+" x="22.86" y="35.56" length="middle" rot="R180"/>
+<pin name="SPKR_L-" x="22.86" y="30.48" length="middle" rot="R180"/>
+<pin name="SPKR_R+" x="22.86" y="33.02" length="middle" rot="R180"/>
+<pin name="SPKR_R-" x="22.86" y="27.94" length="middle" rot="R180"/>
+<pin name="UART_CTS" x="-22.86" y="-17.78" length="middle"/>
+<pin name="UART_RTS" x="-22.86" y="-15.24" length="middle"/>
+<pin name="UART_RX" x="-22.86" y="-22.86" length="middle"/>
+<pin name="UART_TX" x="-22.86" y="-20.32" length="middle"/>
+<pin name="USBD+" x="-22.86" y="-10.16" length="middle"/>
+<pin name="USBD-" x="-22.86" y="-7.62" length="middle"/>
+<pin name="VDD" x="-22.86" y="35.56" length="middle"/>
+<text x="-17.78" y="41.148" size="1.778" layer="95">&gt;NAME</text>
+<text x="-17.78" y="-45.72" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -10977,6 +11102,70 @@ Hyper-competent Bluetooth 4.0 module, with:&lt;br&gt;
 <attribute name="PROD_ID" value="xxx"/>
 <attribute name="VALUE" value="BC127"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BLUETOOTH-RN-52">
+<gates>
+<gate name="G$1" symbol="RN-52" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RN-52">
+<connects>
+<connect gate="G$1" pin="AGND" pad="36"/>
+<connect gate="G$1" pin="AIC0" pad="3"/>
+<connect gate="G$1" pin="GND" pad="RFG1"/>
+<connect gate="G$1" pin="GND1" pad="RFG2"/>
+<connect gate="G$1" pin="GND2" pad="RFG3"/>
+<connect gate="G$1" pin="GND3" pad="RFG4"/>
+<connect gate="G$1" pin="GND4" pad="RFG5"/>
+<connect gate="G$1" pin="GND5" pad="RFG6"/>
+<connect gate="G$1" pin="GND6" pad="G4"/>
+<connect gate="G$1" pin="GND7" pad="G3"/>
+<connect gate="G$1" pin="GND8" pad="G2"/>
+<connect gate="G$1" pin="GND9" pad="G1"/>
+<connect gate="G$1" pin="GPIO10" pad="9"/>
+<connect gate="G$1" pin="GPIO11" pad="8"/>
+<connect gate="G$1" pin="GPIO12" pad="6"/>
+<connect gate="G$1" pin="GPIO13" pad="7"/>
+<connect gate="G$1" pin="GPIO2" pad="2"/>
+<connect gate="G$1" pin="GPIO3" pad="1"/>
+<connect gate="G$1" pin="GPIO4" pad="4"/>
+<connect gate="G$1" pin="GPIO5" pad="5"/>
+<connect gate="G$1" pin="GPIO6" pad="18"/>
+<connect gate="G$1" pin="GPIO7" pad="17"/>
+<connect gate="G$1" pin="GPIO9" pad="10"/>
+<connect gate="G$1" pin="LED0" pad="30"/>
+<connect gate="G$1" pin="LED1" pad="29"/>
+<connect gate="G$1" pin="MIC_BIAS" pad="31"/>
+<connect gate="G$1" pin="MIC_L+" pad="32"/>
+<connect gate="G$1" pin="MIC_L-" pad="34"/>
+<connect gate="G$1" pin="MIC_R+" pad="33"/>
+<connect gate="G$1" pin="MIC_R-" pad="35"/>
+<connect gate="G$1" pin="PCM_CLK" pad="24"/>
+<connect gate="G$1" pin="PCM_IN" pad="21"/>
+<connect gate="G$1" pin="PCM_OUT" pad="22"/>
+<connect gate="G$1" pin="PCM_SYNC" pad="23"/>
+<connect gate="G$1" pin="PWREN" pad="19"/>
+<connect gate="G$1" pin="SPI_CLK" pad="27"/>
+<connect gate="G$1" pin="SPI_MISO" pad="26"/>
+<connect gate="G$1" pin="SPI_MOSI" pad="28"/>
+<connect gate="G$1" pin="SPI_SS" pad="25"/>
+<connect gate="G$1" pin="SPKR_L+" pad="40"/>
+<connect gate="G$1" pin="SPKR_L-" pad="38"/>
+<connect gate="G$1" pin="SPKR_R+" pad="39"/>
+<connect gate="G$1" pin="SPKR_R-" pad="37"/>
+<connect gate="G$1" pin="UART_CTS" pad="14"/>
+<connect gate="G$1" pin="UART_RTS" pad="13"/>
+<connect gate="G$1" pin="UART_RX" pad="16"/>
+<connect gate="G$1" pin="UART_TX" pad="15"/>
+<connect gate="G$1" pin="USBD+" pad="12"/>
+<connect gate="G$1" pin="USBD-" pad="11"/>
+<connect gate="G$1" pin="VDD" pad="20"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
