@@ -16333,6 +16333,7 @@ Level Shifting GPIO Expander w/ LED Driver and Keypad Engine</description>
 <pin name="!RESET" x="-25.4" y="25.4" length="middle" direction="in"/>
 <pin name="ANALOG_IN" x="-25.4" y="20.32" length="middle" direction="in"/>
 <pin name="PWM/!VPW" x="25.4" y="5.08" length="middle" direction="out" rot="R180"/>
+</symbol>
 <symbol name="ITG-3200">
 <wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
@@ -22699,25 +22700,6 @@ This USB2.0 Full Speed  IC offers a compact bridge to full handshake UART interf
 <connect gate="G$1" pin="VDD" pad="13"/>
 <connect gate="G$1" pin="VSS@1" pad="8"/>
 <connect gate="G$1" pin="VSS@2" pad="19"/>
-<deviceset name="ITG-3200" prefix="U">
-<description>ITG-3200 3-axis gyro, digital output, qfn24 package</description>
-<gates>
-<gate name="G$1" symbol="ITG-3200" x="0" y="0"/>
-</gates>
-<devices>
-<device name="ORIG" package="QFN-24">
-<connects>
-<connect gate="G$1" pin="AD0" pad="9"/>
-<connect gate="G$1" pin="CLKIN" pad="1"/>
-<connect gate="G$1" pin="CPOUT" pad="20"/>
-<connect gate="G$1" pin="GND" pad="18"/>
-<connect gate="G$1" pin="INT" pad="12"/>
-<connect gate="G$1" pin="REGOUT" pad="10"/>
-<connect gate="G$1" pin="RESV-G" pad="11"/>
-<connect gate="G$1" pin="SCL" pad="23"/>
-<connect gate="G$1" pin="SDA" pad="24"/>
-<connect gate="G$1" pin="VDD" pad="13"/>
-<connect gate="G$1" pin="VLOGIC" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -22788,6 +22770,37 @@ This USB2.0 Full Speed  IC offers a compact bridge to full handshake UART interf
 <connect gate="G$1" pin="VDD" pad="10"/>
 <connect gate="G$1" pin="VSS@1" pad="5"/>
 <connect gate="G$1" pin="VSS@2" pad="16"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ITG-3200" prefix="U">
+<description>ITG-3200 3-axis gyro, digital output, qfn24 package</description>
+<gates>
+<gate name="G$1" symbol="ITG-3200" x="0" y="0"/>
+</gates>
+<devices>
+<device name="ORIG" package="QFN-24">
+<connects>
+<connect gate="G$1" pin="AD0" pad="9"/>
+<connect gate="G$1" pin="CLKIN" pad="1"/>
+<connect gate="G$1" pin="CPOUT" pad="20"/>
+<connect gate="G$1" pin="GND" pad="18"/>
+<connect gate="G$1" pin="INT" pad="12"/>
+<connect gate="G$1" pin="REGOUT" pad="10"/>
+<connect gate="G$1" pin="RESV-G" pad="11"/>
+<connect gate="G$1" pin="SCL" pad="23"/>
+<connect gate="G$1" pin="SDA" pad="24"/>
+<connect gate="G$1" pin="VDD" pad="13"/>
+<connect gate="G$1" pin="VLOGIC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 <device name="1:1" package="QFN-24_ITG3200_1:1">
 <connects>
 <connect gate="G$1" pin="AD0" pad="9"/>
