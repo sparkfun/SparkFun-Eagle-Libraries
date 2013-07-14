@@ -44020,6 +44020,12 @@ Two of these half tabs, rotated in opposite directions, can be connected togethe
 <vertex x="7.27" y="11.2"/>
 </polygon>
 </symbol>
+<symbol name="FRAME_LEDGER">
+<wire x1="0" y1="0" x2="0" y2="279.4" width="0.4064" layer="94"/>
+<wire x1="0" y1="279.4" x2="431.8" y2="279.4" width="0.4064" layer="94"/>
+<wire x1="431.8" y1="279.4" x2="431.8" y2="0" width="0.4064" layer="94"/>
+<wire x1="431.8" y1="0" x2="0" y2="0" width="0.4064" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ANDROID-ELECTRIC_SHEEP_LOGO" prefix="LOGO">
@@ -44665,6 +44671,21 @@ layer for the logo on the board is tSilk.</description>
 </technologies>
 </device>
 <device name="1_INCH" package="SFE_LOGO_NAME_1">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FRAME-LEDGER" prefix="FRAME">
+<description>&lt;b&gt;Schematic Frame&lt;/b&gt;&lt;p&gt;
+Standard 11x14 US Ledger frame</description>
+<gates>
+<gate name="G$1" symbol="FRAME_LEDGER" x="0" y="0"/>
+<gate name="G$2" symbol="DOCFIELD" x="330.2" y="0" addlevel="must"/>
+</gates>
+<devices>
+<device name="" package="CREATIVE_COMMONS">
 <technologies>
 <technology name=""/>
 </technologies>
