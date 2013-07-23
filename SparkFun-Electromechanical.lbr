@@ -8495,6 +8495,9 @@ COM-09117</description>
 <rectangle x1="-13.97" y1="-3.048" x2="-9.906" y2="3.048" layer="31"/>
 <rectangle x1="9.906" y1="-3.048" x2="13.97" y2="3.048" layer="31"/>
 </package>
+<package name="STANDOFF-ELECTRICAL">
+<pad name="P1" x="0" y="0" drill="3.2" diameter="6.35"/>
+</package>
 </packages>
 <symbols>
 <symbol name="AYZ0202">
@@ -9688,6 +9691,11 @@ No illumination</description>
 <vertex x="1.143" y="-5.461"/>
 <vertex x="1.651" y="-4.953"/>
 </polygon>
+</symbol>
+<symbol name="STANDOFF_ELECTRICAL">
+<pin name="P$1" x="7.62" y="0" visible="off" length="short" rot="R180"/>
+<circle x="0" y="0" radius="5.08" width="0.254" layer="94"/>
+<text x="-2.54" y="5.842" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -11677,6 +11685,23 @@ SKU: ROB-09065</description>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STANDOFF_ELECTRICAL" prefix="S">
+<description>A standoff intended to be an electrically connected point.&lt;br&gt;
+Pad size and stop size allow for a #4 Phillips pan screw head to make a solid connection to the board.</description>
+<gates>
+<gate name="G$1" symbol="STANDOFF_ELECTRICAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="STANDOFF-ELECTRICAL">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P1"/>
 </connects>
 <technologies>
 <technology name=""/>
