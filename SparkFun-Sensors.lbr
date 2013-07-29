@@ -79,12 +79,15 @@
 <layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
@@ -7119,6 +7122,134 @@ For Vishay VNCL4000 proximity and ambient light sensor.&lt;br&gt;
 <text x="-0.8453125" y="-0.871725" size="0.013209375" layer="201" font="vector">C:/Users/kade.jensen/Desktop/IC-09303.bmp</text>
 <wire x1="-0.838709375" y1="0.138684375" x2="0.812290625" y2="0.138684375" width="0" layer="49"/>
 </package>
+<package name="CSP-9">
+<wire x1="1.1" y1="1.1" x2="1.1" y2="-1.1" width="0.08" layer="21"/>
+<wire x1="1.1" y1="-1.1" x2="-1.1" y2="-1.1" width="0.08" layer="21"/>
+<wire x1="1.1" y1="1.1" x2="-0.6" y2="1.1" width="0.08" layer="21"/>
+<wire x1="-1.1" y1="-1.1" x2="-1.1" y2="0.6" width="0.08" layer="21"/>
+<wire x1="-1.1" y1="0.6" x2="-0.6" y2="1.1" width="0.08" layer="21"/>
+<smd name="B2" x="0.0254" y="-0.0254" dx="0.21" dy="0.21" layer="1" roundness="100"/>
+<smd name="B3" x="0.56" y="-0.0254" dx="0.21" dy="0.21" layer="1" roundness="100"/>
+<smd name="B1" x="-0.5092" y="-0.0254" dx="0.21" dy="0.21" layer="1" roundness="100"/>
+<smd name="A2" x="0" y="0.5092" dx="0.21" dy="0.21" layer="1" roundness="100"/>
+<smd name="A3" x="0.56" y="0.5092" dx="0.21" dy="0.21" layer="1" roundness="100"/>
+<smd name="A1" x="-0.5092" y="0.5092" dx="0.21" dy="0.21" layer="1" roundness="100"/>
+<smd name="C2" x="0.0254" y="-0.5854" dx="0.21" dy="0.21" layer="1" roundness="100"/>
+<smd name="C3" x="0.56" y="-0.5854" dx="0.21" dy="0.21" layer="1" roundness="100"/>
+<smd name="C1" x="-0.5092" y="-0.5854" dx="0.21" dy="0.21" layer="1" roundness="100"/>
+</package>
+<package name="CSP-9-V2">
+<wire x1="1.1" y1="1.1" x2="1.1" y2="-1.1" width="0.08" layer="21"/>
+<wire x1="1.1" y1="-1.1" x2="-1.1" y2="-1.1" width="0.08" layer="21"/>
+<wire x1="1.1" y1="1.1" x2="-0.6" y2="1.1" width="0.08" layer="21"/>
+<wire x1="-1.1" y1="-1.1" x2="-1.1" y2="0.6" width="0.08" layer="21"/>
+<wire x1="-1.1" y1="0.6" x2="-0.6" y2="1.1" width="0.08" layer="21"/>
+<smd name="B2" x="0" y="0" dx="0.3556" dy="0.3556" layer="1" roundness="100" stop="no"/>
+<smd name="B3" x="0.56" y="0" dx="0.3556" dy="0.3556" layer="1" roundness="100" stop="no"/>
+<smd name="B1" x="-0.56" y="0" dx="0.3556" dy="0.3556" layer="1" roundness="100" stop="no"/>
+<smd name="A2" x="0" y="0.56" dx="0.1524" dy="0.1524" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="A3" x="0.56" y="0.56" dx="0.3556" dy="0.3556" layer="1" roundness="100" stop="no"/>
+<smd name="A1" x="-0.56" y="0.56" dx="0.1524" dy="0.1524" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="C2" x="0" y="-0.56" dx="0.3556" dy="0.3556" layer="1" roundness="100" stop="no"/>
+<smd name="C3" x="0.56" y="-0.56" dx="0.3556" dy="0.3556" layer="1" roundness="100" stop="no"/>
+<smd name="C1" x="-0.56" y="-0.56" dx="0.3556" dy="0.3556" layer="1" roundness="100" stop="no"/>
+<polygon width="0.127" layer="29">
+<vertex x="0.6935" y="0.5588" curve="90.251113"/>
+<vertex x="0.5563" y="0.6934" curve="90"/>
+<vertex x="0.4269" y="0.5614" curve="90.167287"/>
+<vertex x="0.5589" y="0.4242" curve="90.085198"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="0.1372" y="0" curve="90.251113"/>
+<vertex x="0" y="0.1346" curve="90"/>
+<vertex x="-0.1294" y="0.0026" curve="90.167287"/>
+<vertex x="0.0026" y="-0.1346" curve="90.085198"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="0.6909" y="0" curve="90.251113"/>
+<vertex x="0.5537" y="0.1346" curve="90"/>
+<vertex x="0.4243" y="0.0026" curve="90.167287"/>
+<vertex x="0.5563" y="-0.1346" curve="90.085198"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-0.4267" y="0" curve="90.251113"/>
+<vertex x="-0.5639" y="0.1346" curve="90"/>
+<vertex x="-0.6933" y="0.0026" curve="90.167287"/>
+<vertex x="-0.5613" y="-0.1346" curve="90.085198"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-0.4292" y="-0.5613" curve="90.251113"/>
+<vertex x="-0.5664" y="-0.4267" curve="90"/>
+<vertex x="-0.6958" y="-0.5587" curve="90.167287"/>
+<vertex x="-0.5638" y="-0.6959" curve="90.085198"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="0.1347" y="-0.5613" curve="90.251113"/>
+<vertex x="-0.0025" y="-0.4267" curve="90"/>
+<vertex x="-0.1319" y="-0.5587" curve="90.167287"/>
+<vertex x="0.0001" y="-0.6959" curve="90.085198"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="0.6935" y="-0.5639" curve="90.251113"/>
+<vertex x="0.5563" y="-0.4293" curve="90"/>
+<vertex x="0.4269" y="-0.5613" curve="90.167287"/>
+<vertex x="0.5589" y="-0.6985" curve="90.085198"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-0.4775" y="0.475"/>
+<vertex x="-0.4776" y="0.6528"/>
+<vertex x="-0.5639" y="0.6934" curve="90"/>
+<vertex x="-0.6933" y="0.5614" curve="90.167287"/>
+<vertex x="-0.5613" y="0.4242" curve="90.274142"/>
+</polygon>
+<polygon width="0.0254" layer="1">
+<vertex x="-0.5588" y="0.7264" curve="90"/>
+<vertex x="-0.7264" y="0.5588" curve="90.035248"/>
+<vertex x="-0.5739" y="0.3962" curve="64.042519"/>
+<vertex x="-0.4522" y="0.4546"/>
+<vertex x="-0.4521" y="0.4573"/>
+<vertex x="-0.447" y="0.6426"/>
+<vertex x="-0.4495" y="0.6681" curve="-58.281267"/>
+<vertex x="-0.4573" y="0.6807" curve="36.401542"/>
+</polygon>
+<polygon width="0.0254" layer="1">
+<vertex x="-0.0051" y="0.3938" curve="90"/>
+<vertex x="0.1625" y="0.5614" curve="90.035248"/>
+<vertex x="0.01" y="0.724" curve="64.042519"/>
+<vertex x="-0.1117" y="0.6656"/>
+<vertex x="-0.1118" y="0.6629"/>
+<vertex x="-0.1169" y="0.4776"/>
+<vertex x="-0.1144" y="0.4521" curve="-58.281267"/>
+<vertex x="-0.1066" y="0.4395" curve="36.51201"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="-0.5588" y="0.7264" curve="90"/>
+<vertex x="-0.7264" y="0.5588" curve="90.035248"/>
+<vertex x="-0.5739" y="0.3962" curve="64.042519"/>
+<vertex x="-0.4522" y="0.4546"/>
+<vertex x="-0.4521" y="0.4573"/>
+<vertex x="-0.447" y="0.6426"/>
+<vertex x="-0.4495" y="0.6681" curve="-58.281267"/>
+<vertex x="-0.4573" y="0.6807" curve="36.401542"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="-0.0051" y="0.3938" curve="90"/>
+<vertex x="0.1625" y="0.5614" curve="90.035248"/>
+<vertex x="0.01" y="0.724" curve="64.042519"/>
+<vertex x="-0.1117" y="0.6656"/>
+<vertex x="-0.1118" y="0.6629"/>
+<vertex x="-0.1169" y="0.4776"/>
+<vertex x="-0.1144" y="0.4521" curve="-58.281267"/>
+<vertex x="-0.1066" y="0.4395" curve="36.51201"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-0.0865" y="0.6401"/>
+<vertex x="-0.0864" y="0.4623"/>
+<vertex x="-0.0001" y="0.4217" curve="90"/>
+<vertex x="0.1293" y="0.5537" curve="90.167287"/>
+<vertex x="-0.0027" y="0.6909" curve="90.274142"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="ADMP401">
@@ -8937,6 +9068,21 @@ For Vishay VNCL4000 proximity and ambient light sensor.&lt;br&gt;
 <text x="-12.7" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 <text x="-12.7" y="-12.7" size="1.778" layer="95">&gt;VALUE</text>
 <pin name="SDA/SDI" x="17.78" y="0" length="middle" rot="R180"/>
+</symbol>
+<symbol name="ADJD-S311-CR999">
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<pin name="DVDD" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="AVDD" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="DGND" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="AGND" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="SCKSLV" x="-15.24" y="0" length="middle"/>
+<pin name="CLKIO" x="-15.24" y="-2.54" length="middle"/>
+<pin name="SDASLV" x="-15.24" y="2.54" length="middle"/>
+<pin name="SLEEP" x="-15.24" y="-5.08" length="middle"/>
+<pin name="RESET" x="-15.24" y="5.08" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -11345,6 +11491,47 @@ SEN-09404</description>
 <connect gate="G$1" pin="SCL/SCLK" pad="23"/>
 <connect gate="G$1" pin="SDA/SDI" pad="24"/>
 <connect gate="G$1" pin="VDD" pad="13"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADJD-S311-CR999">
+<gates>
+<gate name="G$1" symbol="ADJD-S311-CR999" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CSP-9">
+<connects>
+<connect gate="G$1" pin="AGND" pad="C3"/>
+<connect gate="G$1" pin="AVDD" pad="A3"/>
+<connect gate="G$1" pin="CLKIO" pad="B1"/>
+<connect gate="G$1" pin="DGND" pad="C1"/>
+<connect gate="G$1" pin="DVDD" pad="A1"/>
+<connect gate="G$1" pin="RESET" pad="C2"/>
+<connect gate="G$1" pin="SCKSLV" pad="A2"/>
+<connect gate="G$1" pin="SDASLV" pad="B2"/>
+<connect gate="G$1" pin="SLEEP" pad="B3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="TEST" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="V2" package="CSP-9-V2">
+<connects>
+<connect gate="G$1" pin="AGND" pad="C3"/>
+<connect gate="G$1" pin="AVDD" pad="A3"/>
+<connect gate="G$1" pin="CLKIO" pad="B1"/>
+<connect gate="G$1" pin="DGND" pad="C1"/>
+<connect gate="G$1" pin="DVDD" pad="A1"/>
+<connect gate="G$1" pin="RESET" pad="C2"/>
+<connect gate="G$1" pin="SCKSLV" pad="A2"/>
+<connect gate="G$1" pin="SDASLV" pad="B2"/>
+<connect gate="G$1" pin="SLEEP" pad="B3"/>
 </connects>
 <technologies>
 <technology name=""/>
