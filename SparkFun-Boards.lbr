@@ -2858,6 +2858,36 @@ AudioAmp</text>
 <pad name="TXO" x="3.81" y="15.24" drill="1.016" diameter="1.8796"/>
 <pad name="GRN" x="6.35" y="15.24" drill="1.016" diameter="1.8796"/>
 </package>
+<package name="LOGIC_LEVEL_CONVERTER">
+<pad name="P$1" x="1.27" y="13.97" drill="0.8"/>
+<pad name="P$2" x="1.27" y="11.43" drill="0.8"/>
+<pad name="P$3" x="1.27" y="8.89" drill="0.8"/>
+<pad name="P$4" x="1.27" y="6.35" drill="0.8"/>
+<pad name="P$5" x="1.27" y="3.81" drill="0.8"/>
+<pad name="P$6" x="1.27" y="1.27" drill="0.8"/>
+<pad name="P$7" x="11.43" y="1.27" drill="0.8"/>
+<pad name="P$8" x="11.43" y="3.81" drill="0.8"/>
+<pad name="P$9" x="11.43" y="6.35" drill="0.8"/>
+<pad name="P$10" x="11.43" y="8.89" drill="0.8"/>
+<pad name="P$11" x="11.43" y="11.43" drill="0.8"/>
+<pad name="P$12" x="11.43" y="13.97" drill="0.8"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.127" layer="21"/>
+<wire x1="0" y1="5.08" x2="0" y2="10.16" width="0.127" layer="21"/>
+<wire x1="0" y1="10.16" x2="0" y2="15.24" width="0.127" layer="21"/>
+<wire x1="0" y1="15.24" x2="12.7" y2="15.24" width="0.127" layer="21"/>
+<wire x1="12.7" y1="15.24" x2="12.7" y2="10.16" width="0.127" layer="21"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="5.08" width="0.127" layer="21"/>
+<wire x1="12.7" y1="5.08" x2="12.7" y2="0" width="0.127" layer="21"/>
+<wire x1="12.7" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<text x="3.81" y="10.16" size="1.27" layer="21">Chan1</text>
+<text x="3.81" y="3.81" size="1.27" layer="21">Chan2</text>
+<wire x1="0" y1="10.16" x2="12.7" y2="10.16" width="0.127" layer="21"/>
+<wire x1="0" y1="5.08" x2="12.7" y2="5.08" width="0.127" layer="21"/>
+<text x="2.54" y="13.97" size="1.27" layer="21">LV</text>
+<text x="2.54" y="0" size="1.27" layer="21">LV</text>
+<text x="7.62" y="13.97" size="1.27" layer="21">HV</text>
+<text x="7.62" y="0" size="1.27" layer="21">HV</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO-MEGA">
@@ -3215,6 +3245,25 @@ AudioAmp</text>
 <pin name="A6" x="12.7" y="-20.32" length="short" rot="R180"/>
 <pin name="A4" x="-10.16" y="-17.78" length="short"/>
 <pin name="A5" x="-10.16" y="-20.32" length="short"/>
+</symbol>
+<symbol name="LOGIC_LEVEL_CONVERTER">
+<description>Logic Level Converter (3.3v - 5v)</description>
+<pin name="HV_TXO_1" x="7.62" y="30.48" length="middle" rot="R180"/>
+<pin name="HV_RXI_1" x="7.62" y="27.94" length="middle" rot="R180"/>
+<pin name="HV" x="7.62" y="25.4" length="middle" rot="R180"/>
+<pin name="GND2" x="7.62" y="22.86" length="middle" rot="R180"/>
+<pin name="HV_RXI_2" x="7.62" y="20.32" length="middle" rot="R180"/>
+<pin name="HV_TXO_2" x="7.62" y="17.78" length="middle" rot="R180"/>
+<pin name="LV_TXI_1" x="-30.48" y="30.48" length="middle"/>
+<pin name="LV" x="-30.48" y="25.4" length="middle"/>
+<pin name="LV_RXO_1" x="-30.48" y="27.94" length="middle"/>
+<pin name="GND" x="-30.48" y="22.86" length="middle"/>
+<pin name="LV_RXO_2" x="-30.48" y="20.32" length="middle"/>
+<pin name="LV_TXI_2" x="-30.48" y="17.78" length="middle"/>
+<wire x1="-25.4" y1="15.24" x2="-25.4" y2="33.02" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="33.02" x2="2.54" y2="33.02" width="0.254" layer="94"/>
+<wire x1="2.54" y1="33.02" x2="2.54" y2="15.24" width="0.254" layer="94"/>
+<wire x1="2.54" y1="15.24" x2="-25.4" y2="15.24" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3908,6 +3957,36 @@ See http://www.sparkfun.com/commerce/product_info.php?products_id=9473 for more 
 <connect gate="G$1" pin="RX1" pad="2"/>
 <connect gate="G$1" pin="TX0" pad="1"/>
 <connect gate="G$1" pin="VCC" pad="21"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LOGIC_LEVEL_CONVERTER">
+<description>Logic Level Converter (3.3v - 5v)
+
+
+https://www.sparkfun.com/products/8745</description>
+<gates>
+<gate name="G$1" symbol="LOGIC_LEVEL_CONVERTER" x="10.16" y="-22.86"/>
+</gates>
+<devices>
+<device name="" package="LOGIC_LEVEL_CONVERTER">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$4"/>
+<connect gate="G$1" pin="GND2" pad="P$9"/>
+<connect gate="G$1" pin="HV" pad="P$10"/>
+<connect gate="G$1" pin="HV_RXI_1" pad="P$11"/>
+<connect gate="G$1" pin="HV_RXI_2" pad="P$8"/>
+<connect gate="G$1" pin="HV_TXO_1" pad="P$12"/>
+<connect gate="G$1" pin="HV_TXO_2" pad="P$7"/>
+<connect gate="G$1" pin="LV" pad="P$3"/>
+<connect gate="G$1" pin="LV_RXO_1" pad="P$2"/>
+<connect gate="G$1" pin="LV_RXO_2" pad="P$5"/>
+<connect gate="G$1" pin="LV_TXI_1" pad="P$1"/>
+<connect gate="G$1" pin="LV_TXI_2" pad="P$6"/>
 </connects>
 <technologies>
 <technology name=""/>
