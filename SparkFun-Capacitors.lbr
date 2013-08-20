@@ -2095,8 +2095,20 @@ CAP-00810</description>
 <deviceset name="0.1UF-50V-20%(PTH)" prefix="C" uservalue="yes">
 <description>CAP-08370</description>
 <gates>
+<gate name="G$1" symbol="CAP" x="0" y="-2.54"/>
 </gates>
 <devices>
+<device name="KIT-EZ" package="CAP-PTH-SMALL-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08370" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="0.22UF-25V-10%(0603)" prefix="C" uservalue="yes">
