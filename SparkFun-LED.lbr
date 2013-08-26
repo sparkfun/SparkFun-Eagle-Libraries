@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -503,6 +503,43 @@ http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Components/LED/Top-Up%20LED%20Rin
 <smd name="6" x="2.4" y="1.7" dx="2" dy="1.1" layer="1" roundness="100"/>
 <text x="-2.54" y="2.794" size="0.762" layer="25">&gt;Name</text>
 <text x="-2.54" y="-3.556" size="0.762" layer="27">&gt;Value</text>
+</package>
+<package name="LED-1206-BOTTOM">
+<wire x1="-2" y1="0.4" x2="-2" y2="-0.4" width="0.127" layer="49"/>
+<wire x1="-2.4" y1="0" x2="-1.6" y2="0" width="0.127" layer="49"/>
+<wire x1="1.6" y1="0" x2="2.4" y2="0" width="0.127" layer="49"/>
+<wire x1="-1.27" y1="0" x2="-0.381" y2="0" width="0.127" layer="49"/>
+<wire x1="-0.381" y1="0" x2="-0.381" y2="0.635" width="0.127" layer="49"/>
+<wire x1="-0.381" y1="0.635" x2="0.254" y2="0" width="0.127" layer="49"/>
+<wire x1="0.254" y1="0" x2="-0.381" y2="-0.635" width="0.127" layer="49"/>
+<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0" width="0.127" layer="49"/>
+<wire x1="0.254" y1="0" x2="0.254" y2="0.635" width="0.127" layer="49"/>
+<wire x1="0.254" y1="0" x2="0.254" y2="-0.635" width="0.127" layer="49"/>
+<wire x1="0.254" y1="0" x2="1.27" y2="0" width="0.127" layer="49"/>
+<rectangle x1="-0.75" y1="-0.75" x2="0.75" y2="0.75" layer="51"/>
+<smd name="A" x="-1.8" y="0" dx="1.5" dy="1.6" layer="1"/>
+<smd name="C" x="1.8" y="0" dx="1.5" dy="1.6" layer="1"/>
+<hole x="0" y="0" drill="2.3"/>
+<polygon width="0" layer="51">
+<vertex x="1.1" y="-0.5"/>
+<vertex x="1.1" y="0.5"/>
+<vertex x="1.6" y="0.5"/>
+<vertex x="1.6" y="0.25" curve="90"/>
+<vertex x="1.4" y="0.05"/>
+<vertex x="1.4" y="-0.05" curve="90"/>
+<vertex x="1.6" y="-0.25"/>
+<vertex x="1.6" y="-0.5"/>
+</polygon>
+<polygon width="0" layer="51">
+<vertex x="-1.1" y="0.5"/>
+<vertex x="-1.1" y="-0.5"/>
+<vertex x="-1.6" y="-0.5"/>
+<vertex x="-1.6" y="-0.25" curve="90"/>
+<vertex x="-1.4" y="-0.05"/>
+<vertex x="-1.4" y="0.05" curve="90"/>
+<vertex x="-1.6" y="0.25"/>
+<vertex x="-1.6" y="0.5"/>
+</polygon>
 </package>
 </packages>
 <symbols>
@@ -1055,6 +1092,15 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <technology name=""/>
 </technologies>
 </device>
+<device name="1206-BOTTOM" package="LED-1206-BOTTOM">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="LED-TRICOLOR">
@@ -1291,6 +1337,18 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-00862" constant="no"/>
 <attribute name="VALUE" value="GREEN" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="1206-BOTTOM" package="LED-1206-BOTTOM">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-11076" constant="no"/>
+<attribute name="VALUE" value="Green" constant="no"/>
 </technology>
 </technologies>
 </device>
