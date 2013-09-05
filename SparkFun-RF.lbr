@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -79,6 +79,8 @@
 <layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -5432,6 +5434,69 @@ Bluetooth 4.0 module with built-in chip antenna.</description>
 <wire x1="-6.8028" y1="14.3286" x2="-6.8028" y2="-11.6714" width="0.127" layer="51"/>
 <wire x1="-6.8028" y1="-11.6714" x2="6.7972" y2="-11.6714" width="0.127" layer="51"/>
 </package>
+<package name="QFN-46_CC3000">
+<smd name="P$1" x="-5.85" y="5.4" dx="1.2" dy="0.7" layer="1"/>
+<smd name="P$2" x="-5.85" y="4.2" dx="1.2" dy="0.7" layer="1"/>
+<smd name="P$3" x="-5.85" y="3" dx="1.2" dy="0.7" layer="1"/>
+<smd name="P$4" x="-5.85" y="1.8" dx="1.2" dy="0.7" layer="1"/>
+<smd name="P$5" x="-5.85" y="0.6" dx="1.2" dy="0.7" layer="1"/>
+<smd name="P$6" x="-5.85" y="-0.6" dx="1.2" dy="0.7" layer="1"/>
+<smd name="P$7" x="-5.85" y="-1.8" dx="1.2" dy="0.7" layer="1"/>
+<smd name="P$8" x="-5.85" y="-3" dx="1.2" dy="0.7" layer="1"/>
+<smd name="P$9" x="-5.85" y="-4.2" dx="1.2" dy="0.7" layer="1"/>
+<smd name="P$10" x="-5.85" y="-5.4" dx="1.2" dy="0.7" layer="1"/>
+<smd name="P$28" x="5.85" y="5.4" dx="1.2" dy="0.7" layer="1"/>
+<smd name="P$27" x="5.85" y="4.2" dx="1.2" dy="0.7" layer="1"/>
+<smd name="P$26" x="5.85" y="3" dx="1.2" dy="0.7" layer="1"/>
+<smd name="P$25" x="5.85" y="1.8" dx="1.2" dy="0.7" layer="1"/>
+<smd name="P$24" x="5.85" y="0.6" dx="1.2" dy="0.7" layer="1"/>
+<smd name="P$23" x="5.85" y="-0.6" dx="1.2" dy="0.7" layer="1"/>
+<smd name="P$22" x="5.85" y="-1.8" dx="1.2" dy="0.7" layer="1"/>
+<smd name="P$21" x="5.85" y="-3" dx="1.2" dy="0.7" layer="1"/>
+<smd name="P$20" x="5.85" y="-4.2" dx="1.2" dy="0.7" layer="1"/>
+<smd name="P$19" x="5.85" y="-5.4" dx="1.2" dy="0.7" layer="1"/>
+<smd name="P$11" x="-4.2" y="-7.25" dx="1.2" dy="0.7" layer="1" rot="R90"/>
+<smd name="P$12" x="-3" y="-7.25" dx="1.2" dy="0.7" layer="1" rot="R90"/>
+<smd name="P$13" x="-1.8" y="-7.25" dx="1.2" dy="0.7" layer="1" rot="R90"/>
+<smd name="P$14" x="-0.6" y="-7.25" dx="1.2" dy="0.7" layer="1" rot="R90"/>
+<smd name="P$15" x="0.6" y="-7.25" dx="1.2" dy="0.7" layer="1" rot="R90"/>
+<smd name="P$16" x="1.8" y="-7.25" dx="1.2" dy="0.7" layer="1" rot="R90"/>
+<smd name="P$17" x="3" y="-7.25" dx="1.2" dy="0.7" layer="1" rot="R90"/>
+<smd name="P$18" x="4.2" y="-7.25" dx="1.2" dy="0.7" layer="1" rot="R90"/>
+<smd name="P$29" x="4.2" y="7.25" dx="1.2" dy="0.7" layer="1" rot="R270"/>
+<smd name="P$30" x="3" y="7.25" dx="1.2" dy="0.7" layer="1" rot="R270"/>
+<smd name="P$31" x="1.8" y="7.25" dx="1.2" dy="0.7" layer="1" rot="R270"/>
+<smd name="P$32" x="0.6" y="7.25" dx="1.2" dy="0.7" layer="1" rot="R270"/>
+<smd name="P$33" x="-0.6" y="7.25" dx="1.2" dy="0.7" layer="1" rot="R270"/>
+<smd name="P$34" x="-1.8" y="7.25" dx="1.2" dy="0.7" layer="1" rot="R270"/>
+<smd name="P$35" x="-3" y="7.25" dx="1.2" dy="0.7" layer="1" rot="R270"/>
+<smd name="P$36" x="-4.2" y="7.25" dx="1.2" dy="0.7" layer="1" rot="R270"/>
+<smd name="GND@37" x="-2.15" y="3.6" dx="2.4" dy="1.9" layer="1"/>
+<smd name="GND@38" x="-2.15" y="0" dx="2.4" dy="1.9" layer="1"/>
+<smd name="GND@39" x="-2.15" y="-3.6" dx="2.4" dy="1.9" layer="1"/>
+<smd name="GND@40" x="2.15" y="3.6" dx="2.4" dy="1.9" layer="1"/>
+<smd name="GND@41" x="2.15" y="0" dx="2.4" dy="1.9" layer="1"/>
+<smd name="GND@42" x="2.15" y="-3.6" dx="2.4" dy="1.9" layer="1"/>
+<smd name="GND@43" x="-5.85" y="7.25" dx="1.2" dy="1.2" layer="1"/>
+<smd name="GND@44" x="-5.85" y="-7.25" dx="1.2" dy="1.2" layer="1"/>
+<smd name="GND@45" x="5.85" y="-7.25" dx="1.2" dy="1.2" layer="1"/>
+<smd name="GND@46" x="5.85" y="7.25" dx="1.2" dy="1.2" layer="1"/>
+<wire x1="-6.75" y1="8.15" x2="6.75" y2="8.15" width="0.127" layer="51"/>
+<wire x1="6.75" y1="8.15" x2="6.75" y2="-8.15" width="0.127" layer="51"/>
+<wire x1="6.75" y1="-8.15" x2="-6.75" y2="-8.15" width="0.127" layer="51"/>
+<wire x1="-6.75" y1="-8.15" x2="-6.75" y2="8.15" width="0.127" layer="51"/>
+<wire x1="4.75" y1="8.15" x2="6.75" y2="8.15" width="0.2032" layer="21"/>
+<wire x1="6.75" y1="8.15" x2="6.75" y2="6.15" width="0.2032" layer="21"/>
+<wire x1="6.75" y1="-6.15" x2="6.75" y2="-8.15" width="0.2032" layer="21"/>
+<wire x1="6.75" y1="-8.15" x2="4.75" y2="-8.15" width="0.2032" layer="21"/>
+<wire x1="-4.75" y1="-8.15" x2="-6.75" y2="-8.15" width="0.2032" layer="21"/>
+<wire x1="-6.75" y1="-8.15" x2="-6.75" y2="-6.15" width="0.2032" layer="21"/>
+<wire x1="-6.75" y1="6.15" x2="-6.75" y2="8.15" width="0.2032" layer="21"/>
+<wire x1="-6.75" y1="8.15" x2="-4.75" y2="8.15" width="0.2032" layer="21"/>
+<circle x="-4.2" y="5.4" radius="0.508" width="0.2032" layer="21"/>
+<text x="-6.818" y="8.492" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-6.802" y="-8.93" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ALM-1412">
@@ -7800,6 +7865,60 @@ A wi-fi enabled microcontroller, in an SD card package.</description>
 <pin name="VDD" x="-22.86" y="35.56" length="middle"/>
 <text x="-17.78" y="41.148" size="1.778" layer="95">&gt;NAME</text>
 <text x="-17.78" y="-45.72" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
+<symbol name="CC3000">
+<wire x1="-25.4" y1="30.48" x2="25.4" y2="30.48" width="0.254" layer="94"/>
+<wire x1="25.4" y1="30.48" x2="25.4" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-30.48" x2="-25.4" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-30.48" x2="-25.4" y2="30.48" width="0.254" layer="94"/>
+<pin name="GND@1" x="-30.48" y="12.7" length="middle"/>
+<pin name="RESERVED_1" x="-30.48" y="10.16" length="middle"/>
+<pin name="NC" x="-30.48" y="7.62" length="middle"/>
+<pin name="RESERVED_2" x="-30.48" y="5.08" length="middle"/>
+<pin name="WL_EN2" x="-30.48" y="2.54" length="middle"/>
+<pin name="WL_RS232_TX" x="-30.48" y="0" length="middle"/>
+<pin name="WL_EN1" x="-30.48" y="-2.54" length="middle"/>
+<pin name="WL_RS232_RX" x="-30.48" y="-5.08" length="middle"/>
+<pin name="GND@9" x="-30.48" y="-7.62" length="middle"/>
+<pin name="GND@10" x="-30.48" y="-10.16" length="middle"/>
+<pin name="GND@11" x="-17.78" y="-35.56" length="middle" rot="R90"/>
+<pin name="SPI_CS" x="-15.24" y="-35.56" length="middle" rot="R90"/>
+<pin name="SPI_DOUT" x="-12.7" y="-35.56" length="middle" rot="R90"/>
+<pin name="SPI_IRQ" x="-10.16" y="-35.56" length="middle" rot="R90"/>
+<pin name="SPI_DIN" x="-7.62" y="-35.56" length="middle" rot="R90"/>
+<pin name="GND@16" x="-5.08" y="-35.56" length="middle" rot="R90"/>
+<pin name="SPI_CLK" x="-2.54" y="-35.56" length="middle" rot="R90"/>
+<pin name="GND@18" x="0" y="-35.56" length="middle" rot="R90"/>
+<pin name="VBAT_IN" x="30.48" y="-10.16" length="middle" rot="R180"/>
+<pin name="GND@20" x="30.48" y="-7.62" length="middle" rot="R180"/>
+<pin name="EXT_32K" x="30.48" y="-5.08" length="middle" rot="R180"/>
+<pin name="GND@22" x="30.48" y="-2.54" length="middle" rot="R180"/>
+<pin name="VIO_HOST" x="30.48" y="0" length="middle" rot="R180"/>
+<pin name="RESERVED_3" x="30.48" y="2.54" length="middle" rot="R180"/>
+<pin name="GND@25" x="30.48" y="5.08" length="middle" rot="R180"/>
+<pin name="VBAT_SW_EN" x="30.48" y="7.62" length="middle" rot="R180"/>
+<pin name="SDA_EEPROM" x="30.48" y="10.16" length="middle" rot="R180"/>
+<pin name="SDA_CC3000" x="30.48" y="12.7" length="middle" rot="R180"/>
+<pin name="SCL_EEPROM" x="0" y="35.56" length="middle" rot="R270"/>
+<pin name="SCL_CC3000" x="-2.54" y="35.56" length="middle" rot="R270"/>
+<pin name="GND@31" x="-5.08" y="35.56" length="middle" rot="R270"/>
+<pin name="GND@32" x="-7.62" y="35.56" length="middle" rot="R270"/>
+<pin name="GND@33" x="-10.16" y="35.56" length="middle" rot="R270"/>
+<pin name="GND@34" x="-12.7" y="35.56" length="middle" rot="R270"/>
+<pin name="RF_ANT" x="-15.24" y="35.56" length="middle" rot="R270"/>
+<pin name="GND@36" x="-17.78" y="35.56" length="middle" rot="R270"/>
+<pin name="GND@37" x="10.16" y="-35.56" length="middle" rot="R90"/>
+<pin name="GND@38" x="12.7" y="-35.56" length="middle" rot="R90"/>
+<pin name="GND@39" x="15.24" y="-35.56" length="middle" rot="R90"/>
+<pin name="GND@40" x="17.78" y="-35.56" length="middle" rot="R90"/>
+<pin name="GND@41" x="20.32" y="35.56" length="middle" rot="R270"/>
+<pin name="GND@42" x="17.78" y="35.56" length="middle" rot="R270"/>
+<pin name="GND@43" x="15.24" y="35.56" length="middle" rot="R270"/>
+<pin name="GND@44" x="12.7" y="35.56" length="middle" rot="R270"/>
+<pin name="GND@45" x="10.16" y="35.56" length="middle" rot="R270"/>
+<pin name="GND@46" x="7.62" y="35.56" length="middle" rot="R270"/>
+<text x="-27.94" y="31.75" size="1.778" layer="95">&gt;NAME</text>
+<text x="-27.94" y="-33.02" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -11162,6 +11281,67 @@ Hyper-competent Bluetooth 4.0 module, with:&lt;br&gt;
 <connect gate="G$1" pin="USBD+" pad="12"/>
 <connect gate="G$1" pin="USBD-" pad="11"/>
 <connect gate="G$1" pin="VDD" pad="20"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CC3000">
+<description>TI CC3000 WiFi Module</description>
+<gates>
+<gate name="G$1" symbol="CC3000" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN-46_CC3000">
+<connects>
+<connect gate="G$1" pin="EXT_32K" pad="P$21"/>
+<connect gate="G$1" pin="GND@1" pad="P$1"/>
+<connect gate="G$1" pin="GND@10" pad="P$10"/>
+<connect gate="G$1" pin="GND@11" pad="P$11"/>
+<connect gate="G$1" pin="GND@16" pad="P$16"/>
+<connect gate="G$1" pin="GND@18" pad="P$18"/>
+<connect gate="G$1" pin="GND@20" pad="P$20"/>
+<connect gate="G$1" pin="GND@22" pad="P$22"/>
+<connect gate="G$1" pin="GND@25" pad="P$25"/>
+<connect gate="G$1" pin="GND@31" pad="P$31"/>
+<connect gate="G$1" pin="GND@32" pad="P$32"/>
+<connect gate="G$1" pin="GND@33" pad="P$33"/>
+<connect gate="G$1" pin="GND@34" pad="P$34"/>
+<connect gate="G$1" pin="GND@36" pad="P$36"/>
+<connect gate="G$1" pin="GND@37" pad="GND@37"/>
+<connect gate="G$1" pin="GND@38" pad="GND@38"/>
+<connect gate="G$1" pin="GND@39" pad="GND@39"/>
+<connect gate="G$1" pin="GND@40" pad="GND@40"/>
+<connect gate="G$1" pin="GND@41" pad="GND@41"/>
+<connect gate="G$1" pin="GND@42" pad="GND@42"/>
+<connect gate="G$1" pin="GND@43" pad="GND@43"/>
+<connect gate="G$1" pin="GND@44" pad="GND@44"/>
+<connect gate="G$1" pin="GND@45" pad="GND@45"/>
+<connect gate="G$1" pin="GND@46" pad="GND@46"/>
+<connect gate="G$1" pin="GND@9" pad="P$9"/>
+<connect gate="G$1" pin="NC" pad="P$3"/>
+<connect gate="G$1" pin="RESERVED_1" pad="P$2"/>
+<connect gate="G$1" pin="RESERVED_2" pad="P$4"/>
+<connect gate="G$1" pin="RESERVED_3" pad="P$24"/>
+<connect gate="G$1" pin="RF_ANT" pad="P$35"/>
+<connect gate="G$1" pin="SCL_CC3000" pad="P$30"/>
+<connect gate="G$1" pin="SCL_EEPROM" pad="P$29"/>
+<connect gate="G$1" pin="SDA_CC3000" pad="P$28"/>
+<connect gate="G$1" pin="SDA_EEPROM" pad="P$27"/>
+<connect gate="G$1" pin="SPI_CLK" pad="P$17"/>
+<connect gate="G$1" pin="SPI_CS" pad="P$12"/>
+<connect gate="G$1" pin="SPI_DIN" pad="P$15"/>
+<connect gate="G$1" pin="SPI_DOUT" pad="P$13"/>
+<connect gate="G$1" pin="SPI_IRQ" pad="P$14"/>
+<connect gate="G$1" pin="VBAT_IN" pad="P$19"/>
+<connect gate="G$1" pin="VBAT_SW_EN" pad="P$26"/>
+<connect gate="G$1" pin="VIO_HOST" pad="P$23"/>
+<connect gate="G$1" pin="WL_EN1" pad="P$7"/>
+<connect gate="G$1" pin="WL_EN2" pad="P$5"/>
+<connect gate="G$1" pin="WL_RS232_RX" pad="P$8"/>
+<connect gate="G$1" pin="WL_RS232_TX" pad="P$6"/>
 </connects>
 <technologies>
 <technology name=""/>
