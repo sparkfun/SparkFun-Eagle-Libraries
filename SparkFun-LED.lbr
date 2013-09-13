@@ -563,6 +563,46 @@ http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Components/LED/Top-Up%20LED%20Rin
 <wire x1="-1.5" y1="-2.2" x2="-0.3" y2="-2.2" width="0.2032" layer="21"/>
 <wire x1="0.3" y1="-2.2" x2="1.5" y2="-2.2" width="0.2032" layer="21"/>
 </package>
+<package name="LED3MM-SIDE">
+<description>Side mounted 3mm LED</description>
+<smd name="K" x="-1.27" y="-0.254" dx="0.635" dy="2.032" layer="1"/>
+<smd name="A" x="1.27" y="0" dx="0.635" dy="2.54" layer="1"/>
+<wire x1="-1.25" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-2.5" x2="1.25" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="1.25" y1="-2.5" x2="1.25" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="-1.5" x2="-1.25" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="1.25" y1="-4.5" x2="-1.25" y2="-4.5" width="0.127" layer="21" curve="-180"/>
+<wire x1="1" y1="1.75" x2="1.5" y2="1.75" width="0.127" layer="21"/>
+<wire x1="1.25" y1="2" x2="1.25" y2="1.5" width="0.127" layer="21"/>
+<text x="-2.75" y="2" size="0.6096" layer="21">&gt;name</text>
+<text x="0.25" y="-5" size="0.6096" layer="21" rot="R90">&gt;value</text>
+<wire x1="-0.381" y1="0.508" x2="-0.381" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.381" y1="0" x2="-0.381" y2="-0.508" width="0.127" layer="21"/>
+<wire x1="-0.381" y1="0" x2="0.381" y2="0.508" width="0.127" layer="21"/>
+<wire x1="0.381" y1="0.508" x2="0.381" y2="-0.508" width="0.127" layer="21"/>
+<wire x1="0.381" y1="-0.508" x2="-0.381" y2="0" width="0.127" layer="21"/>
+</package>
+<package name="LED5MM-SIDE">
+<description>Side mounted 5mm LED</description>
+<smd name="K" x="-1.27" y="-0.254" dx="0.635" dy="2.032" layer="1"/>
+<smd name="A" x="1.27" y="0" dx="0.635" dy="2.54" layer="1"/>
+<wire x1="1" y1="1.75" x2="1.5" y2="1.75" width="0.127" layer="21"/>
+<wire x1="1.25" y1="2" x2="1.25" y2="1.5" width="0.127" layer="21"/>
+<text x="-2.75" y="2" size="0.6096" layer="21">&gt;name</text>
+<text x="0.25" y="-5" size="0.6096" layer="21" rot="R90">&gt;value</text>
+<wire x1="-0.381" y1="0.508" x2="-0.381" y2="0" width="0.127" layer="21"/>
+<wire x1="-0.381" y1="0" x2="-0.381" y2="-0.508" width="0.127" layer="21"/>
+<wire x1="-0.381" y1="0" x2="0.381" y2="0.508" width="0.127" layer="21"/>
+<wire x1="0.381" y1="0.508" x2="0.381" y2="-0.508" width="0.127" layer="21"/>
+<wire x1="0.381" y1="-0.508" x2="-0.381" y2="0" width="0.127" layer="21"/>
+<wire x1="-2" y1="-1.5" x2="2.25" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="2.25" y1="-1.5" x2="2.25" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2.25" y1="-2.5" x2="2" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2" y1="-2.5" x2="2" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="-2" y1="-1.5" x2="-2" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="2" y1="-5.5" x2="-2" y2="-5.5" width="0.127" layer="21" curve="-180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="APA3010SF4C">
@@ -1016,6 +1056,8 @@ http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Components/LED/Top-Up%20LED%20Rin
 <text x="-3.175" y="-2.159" size="1.27" layer="94" rot="R90">WS28x1</text>
 <wire x1="-5.08" y1="7.62" x2="-5.08" y2="-5.08" width="0.254" layer="94" style="shortdash"/>
 </symbol>
+<symbol name="SIDE">
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="APA3010SF4C" prefix="D">
@@ -1122,6 +1164,21 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <technologies>
 <technology name=""/>
 </technologies>
+</device>
+<device name="3MM-SIDE" package="LED3MM-SIDE">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="5MM-SIDE" package="LED5MM-SIDE">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="K"/>
+</connects>
 </device>
 </devices>
 </deviceset>

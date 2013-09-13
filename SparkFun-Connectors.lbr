@@ -17381,6 +17381,40 @@ Keying posts into board</description>
 <pin name="23" x="-7.62" y="-12.7" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="25" x="-7.62" y="-15.24" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 </symbol>
+<symbol name="RASPBERRY_PI_GPIO">
+<wire x1="-10.16" y1="27.94" x2="20.32" y2="27.94" width="0.254" layer="94"/>
+<wire x1="20.32" y1="27.94" x2="20.32" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-17.78" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-17.78" x2="-10.16" y2="27.94" width="0.254" layer="94"/>
+<pin name="GND6" x="-15.24" y="-15.24" length="middle" direction="pwr"/>
+<pin name="GND5" x="-15.24" y="-12.7" length="middle" direction="pwr"/>
+<pin name="GND4" x="-15.24" y="-10.16" length="middle" direction="pas"/>
+<pin name="GND3" x="-15.24" y="-7.62" length="middle" direction="pas"/>
+<pin name="GND2" x="-15.24" y="-5.08" length="middle" direction="pas"/>
+<pin name="GND1" x="-15.24" y="-2.54" length="middle" direction="pwr"/>
+<pin name="5V1" x="-15.24" y="25.4" length="middle" direction="pwr"/>
+<pin name="3.3V" x="-15.24" y="17.78" length="middle" direction="pwr"/>
+<pin name="GPIO11/SCLK" x="25.4" y="20.32" length="middle" rot="R180"/>
+<pin name="GPIO8/CE0" x="25.4" y="15.24" length="middle" rot="R180"/>
+<pin name="GPIO7/CE1" x="25.4" y="12.7" length="middle" rot="R180"/>
+<pin name="SDA/GPIO2" x="-15.24" y="12.7" length="middle"/>
+<pin name="SCL/GPIO3" x="-15.24" y="10.16" length="middle"/>
+<pin name="GPIO4" x="25.4" y="2.54" length="middle" rot="R180"/>
+<pin name="GPIO17" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="GPIO21" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="GPIO22" x="25.4" y="-7.62" length="middle" rot="R180"/>
+<pin name="GPIO18" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="GPIO23" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="GPIO24" x="25.4" y="-12.7" length="middle" rot="R180"/>
+<pin name="GPIO25" x="25.4" y="-15.24" length="middle" rot="R180"/>
+<pin name="GPIO9/MISO" x="25.4" y="22.86" length="middle" rot="R180"/>
+<pin name="GPIO10/MOSI" x="25.4" y="25.4" length="middle" rot="R180"/>
+<pin name="RX/GPIO14" x="-15.24" y="5.08" length="middle"/>
+<pin name="TX/GPIO15" x="-15.24" y="2.54" length="middle"/>
+<text x="0" y="30.48" size="1.778" layer="94">&gt;name</text>
+<text x="0" y="-20.32" size="1.778" layer="94">&gt;value</text>
+<pin name="5V2" x="-15.24" y="22.86" length="middle" direction="pwr"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ARDUINO_SERIAL_PROGRAM" prefix="JP" uservalue="yes">
@@ -23630,6 +23664,46 @@ CONN-08352</description>
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RASPBERRY_PI_GPIO" prefix="RPI">
+<gates>
+<gate name="G$1" symbol="RASPBERRY_PI_GPIO" x="-5.08" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="2X13">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="1"/>
+<connect gate="G$1" pin="5V1" pad="2"/>
+<connect gate="G$1" pin="5V2" pad="4"/>
+<connect gate="G$1" pin="GND1" pad="6"/>
+<connect gate="G$1" pin="GND2" pad="9"/>
+<connect gate="G$1" pin="GND3" pad="14"/>
+<connect gate="G$1" pin="GND4" pad="17"/>
+<connect gate="G$1" pin="GND5" pad="20"/>
+<connect gate="G$1" pin="GND6" pad="25"/>
+<connect gate="G$1" pin="GPIO10/MOSI" pad="19"/>
+<connect gate="G$1" pin="GPIO11/SCLK" pad="23"/>
+<connect gate="G$1" pin="GPIO17" pad="11"/>
+<connect gate="G$1" pin="GPIO18" pad="12"/>
+<connect gate="G$1" pin="GPIO21" pad="13"/>
+<connect gate="G$1" pin="GPIO22" pad="15"/>
+<connect gate="G$1" pin="GPIO23" pad="16"/>
+<connect gate="G$1" pin="GPIO24" pad="18"/>
+<connect gate="G$1" pin="GPIO25" pad="22"/>
+<connect gate="G$1" pin="GPIO4" pad="7"/>
+<connect gate="G$1" pin="GPIO7/CE1" pad="26"/>
+<connect gate="G$1" pin="GPIO8/CE0" pad="24"/>
+<connect gate="G$1" pin="GPIO9/MISO" pad="21"/>
+<connect gate="G$1" pin="RX/GPIO14" pad="10"/>
+<connect gate="G$1" pin="SCL/GPIO3" pad="5"/>
+<connect gate="G$1" pin="SDA/GPIO2" pad="3"/>
+<connect gate="G$1" pin="TX/GPIO15" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
