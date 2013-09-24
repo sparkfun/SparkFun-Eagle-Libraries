@@ -1505,6 +1505,15 @@ Source: RS Components</description>
 <smd name="P$2" x="0" y="-0.635" dx="1.27" dy="0.635" layer="1" stop="no" cream="no"/>
 <wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.4064" layer="1"/>
 </package>
+<package name="SDR0403">
+<description>Footprint for Bourns SDR0403 family inductors</description>
+<smd name="P$1" x="-1.65" y="0" dx="4.5" dy="1.8" layer="1" rot="R90"/>
+<smd name="P$2" x="1.65" y="0" dx="4.5" dy="1.8" layer="1" rot="R90"/>
+<wire x1="-0.5" y1="2" x2="0.5" y2="2" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-2" x2="0.5" y2="-2" width="0.127" layer="21"/>
+<text x="-0.762" y="-0.254" size="0.4064" layer="27">&gt;VALUE</text>
+<text x="-0.889" y="1.016" size="0.4064" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP">
@@ -2153,7 +2162,8 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <deviceset name="INDUCTOR" prefix="L" uservalue="yes">
 <description>&lt;b&gt;Inductors&lt;/b&gt;&lt;p&gt;
 Basic Inductor/Choke - 0603 and 1206. Footprints are not proven and vary greatly between part numbers.&lt;br&gt;
-SRN6045- 33uH, 20% 1.4A</description>
+SRN6045- 33uH, 20% 1.4A&lt;BR&gt;
+SDR0403-560KL - 56uH, 10%, 500mA RMS/740mA peak</description>
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
 </gates>
@@ -2365,6 +2375,19 @@ SRN6045- 33uH, 20% 1.4A</description>
 <technology name="">
 <attribute name="PROD_ID" value="NDUC-11627"/>
 <attribute name="VALUE" value="33uH"/>
+</technology>
+</technologies>
+</device>
+<device name="SDR0403-560KL" package="SDR0403">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DIST_ID" value="SDR0403-560KLCT-ND"/>
+<attribute name="VALUE" value="56uH"/>
 </technology>
 </technologies>
 </device>
