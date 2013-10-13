@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -15296,6 +15296,25 @@ Matches 4UCONN part # 11026&lt;br&gt;
 <rectangle x1="-0.85" y1="-4.684" x2="0.85" y2="-2.684" layer="29"/>
 <rectangle x1="-0.85" y1="-1.35" x2="0.85" y2="1.35" layer="29"/>
 </package>
+<package name="1X06-1MM">
+<description>Works with part #579 (https://www.sparkfun.com/products/579). Commonly used on GPS modules EM408, EM406 and GP-635T. Also compatible with cable 9123 (https://www.sparkfun.com/products/9123) and cable 574 (https://www.sparkfun.com/products/574).</description>
+<circle x="-3.6" y="1.2" radius="0.1047" width="0.4064" layer="51"/>
+<wire x1="-2.54" y1="-1.651" x2="2.54" y2="-1.651" width="0.254" layer="21"/>
+<wire x1="-4.318" y1="0.508" x2="-4.318" y2="1.905" width="0.254" layer="21"/>
+<wire x1="3.302" y1="1.905" x2="4.318" y2="1.905" width="0.254" layer="21"/>
+<wire x1="4.318" y1="1.905" x2="4.318" y2="0.508" width="0.254" layer="21"/>
+<wire x1="-4.318" y1="1.905" x2="-3.302" y2="1.905" width="0.254" layer="21"/>
+<smd name="1" x="-2.54" y="1.27" dx="0.6" dy="1.55" layer="1"/>
+<smd name="2" x="-1.54" y="1.27" dx="0.6" dy="1.55" layer="1"/>
+<smd name="3" x="-0.54" y="1.27" dx="0.6" dy="1.55" layer="1"/>
+<smd name="4" x="0.46" y="1.27" dx="0.6" dy="1.55" layer="1"/>
+<smd name="5" x="1.46" y="1.27" dx="0.6" dy="1.55" layer="1"/>
+<smd name="6" x="2.46" y="1.27" dx="0.6" dy="1.55" layer="1"/>
+<smd name="P$1" x="-3.84" y="-0.955" dx="1.2" dy="1.8" layer="1"/>
+<smd name="P$2" x="3.76" y="-0.955" dx="1.2" dy="1.8" layer="1"/>
+<text x="-1.27" y="2.54" size="0.4064" layer="25">&gt;Name</text>
+<text x="-1.27" y="-2.54" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -20771,19 +20790,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <technology name=""/>
 </technologies>
 </device>
-<device name="EM406" package="EM406">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="VERNIER-ANALOG" package="BTA">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -20823,6 +20829,19 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <technology name="">
 <attribute name="PROD_ID" value="CONN-11293"/>
 </technology>
+</technologies>
+</device>
+<device name="SMD-1MM" package="1X06-1MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
