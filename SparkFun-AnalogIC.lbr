@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2663,12 +2663,29 @@ QFN-24 w/exposed pad.</description>
 </devices>
 </deviceset>
 <deviceset name="MCP41XXX" prefix="U">
-<description>SPI controlled single digital potentiometer by Microchip</description>
+<description>SPI controlled single digital potentiometer by Microchip&lt;br /&gt;
+&lt;br /&gt;
+PID: COM-10613</description>
 <gates>
 <gate name="G$1" symbol="MCP41XXX" x="-2.54" y="-7.62"/>
 </gates>
 <devices>
 <device name="" package="SO08">
+<connects>
+<connect gate="G$1" pin="A" pad="5"/>
+<connect gate="G$1" pin="B" pad="7"/>
+<connect gate="G$1" pin="CS" pad="1"/>
+<connect gate="G$1" pin="DI" pad="3"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="SCK" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="W" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DIL" package="DIL-08">
 <connects>
 <connect gate="G$1" pin="A" pad="5"/>
 <connect gate="G$1" pin="B" pad="7"/>
