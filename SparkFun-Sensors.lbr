@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7566,6 +7566,15 @@ For Vishay VNCL4000 proximity and ambient light sensor.&lt;br&gt;
 <wire x1="0.5" y1="1.2" x2="0.5" y2="0.5" width="0.127" layer="51"/>
 <wire x1="0.5" y1="0.5" x2="-0.5" y2="0.5" width="0.127" layer="51"/>
 <wire x1="-0.5" y1="0.5" x2="-0.5" y2="1.2" width="0.127" layer="51"/>
+<polygon width="0.127" layer="29">
+<vertex x="-0.775" y="1.325"/>
+<vertex x="-0.775" y="-1.3"/>
+<vertex x="0.375" y="-1.3"/>
+<vertex x="0.825" y="-0.85"/>
+<vertex x="0.825" y="1.325"/>
+</polygon>
+<text x="-1.075" y="1.775" size="0.5" layer="25">&gt;Name</text>
+<text x="-1.325" y="-2.2" size="0.5" layer="27">&gt;Value</text>
 </package>
 <package name="ADXL3451:1">
 <wire x1="2.5" y1="1.5" x2="-2.5" y2="1.5" width="0.127" layer="51"/>
@@ -8316,6 +8325,54 @@ For Vishay VNCL4000 proximity and ambient light sensor.&lt;br&gt;
 <wire x1="-0.1" y1="0.2" x2="-0.2" y2="0.2" width="0.2032" layer="21"/>
 <wire x1="-0.2" y1="0.2" x2="-0.2" y2="-0.2" width="0.2032" layer="21"/>
 <wire x1="-0.1" y1="-0.2" x2="-0.2" y2="-0.2" width="0.2032" layer="21"/>
+</package>
+<package name="GP-635T">
+<circle x="-3.6" y="1.2" radius="0.1047" width="0.4064" layer="51"/>
+<wire x1="-2.54" y1="-1.651" x2="2.54" y2="-1.651" width="0.254" layer="21"/>
+<wire x1="-4.318" y1="0.508" x2="-4.318" y2="1.905" width="0.254" layer="21"/>
+<wire x1="3.302" y1="1.905" x2="4.318" y2="1.905" width="0.254" layer="21"/>
+<wire x1="4.318" y1="1.905" x2="4.318" y2="0.508" width="0.254" layer="21"/>
+<wire x1="-4.318" y1="1.905" x2="-3.302" y2="1.905" width="0.254" layer="21"/>
+<smd name="1" x="-2.54" y="1.27" dx="0.6" dy="1.55" layer="1"/>
+<smd name="2" x="-1.54" y="1.27" dx="0.6" dy="1.55" layer="1"/>
+<smd name="3" x="-0.54" y="1.27" dx="0.6" dy="1.55" layer="1"/>
+<smd name="4" x="0.46" y="1.27" dx="0.6" dy="1.55" layer="1"/>
+<smd name="5" x="1.46" y="1.27" dx="0.6" dy="1.55" layer="1"/>
+<smd name="6" x="2.46" y="1.27" dx="0.6" dy="1.55" layer="1"/>
+<smd name="P$1" x="-3.84" y="-0.955" dx="1.2" dy="1.8" layer="1"/>
+<smd name="P$2" x="3.76" y="-0.955" dx="1.2" dy="1.8" layer="1"/>
+<text x="-1.27" y="2.54" size="0.4064" layer="25">&gt;Name</text>
+<text x="-1.27" y="-2.54" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+<package name="BMP180">
+<smd name="1" x="1.5" y="1.45" dx="0.5" dy="0.6" layer="1" rot="R90"/>
+<smd name="2" x="0" y="1.45" dx="0.5" dy="0.6" layer="1" rot="R90"/>
+<smd name="3" x="-1.5" y="1.45" dx="0.5" dy="0.6" layer="1" rot="R90"/>
+<smd name="4" x="-1.5" y="-1.45" dx="0.5" dy="0.6" layer="1" rot="R90"/>
+<smd name="5" x="0" y="-1.45" dx="0.5" dy="0.6" layer="1" rot="R90"/>
+<smd name="6" x="1.5" y="-1.45" dx="0.5" dy="0.6" layer="1" rot="R90"/>
+<smd name="7" x="1.5" y="0" dx="0.5" dy="0.6" layer="1" rot="R180"/>
+<wire x1="-1.9" y1="1.8" x2="-1.9" y2="-1.8" width="0.127" layer="51"/>
+<wire x1="-1.9" y1="-1.8" x2="1.9" y2="-1.8" width="0.127" layer="51"/>
+<wire x1="1.9" y1="-1.8" x2="1.9" y2="1.8" width="0.127" layer="51"/>
+<wire x1="1.9" y1="1.8" x2="-1.9" y2="1.8" width="0.127" layer="51"/>
+<circle x="0.75" y="0.75" radius="0.125" width="0.6096" layer="21"/>
+<wire x1="-1.5" y1="1" x2="-1.5" y2="-1" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-1" x2="-1" y2="-1.5" width="0.127" layer="51" curve="90"/>
+<wire x1="-1" y1="-1.5" x2="1" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="1" y1="-1.5" x2="1.5" y2="-1" width="0.127" layer="51" curve="90"/>
+<wire x1="1.5" y1="-1" x2="1.5" y2="1" width="0.127" layer="51"/>
+<wire x1="1.5" y1="1" x2="1" y2="1.5" width="0.127" layer="51" curve="90"/>
+<wire x1="1" y1="1.5" x2="-1" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-1" y1="1.5" x2="-1.5" y2="1" width="0.127" layer="51" curve="90"/>
+<wire x1="-2" y1="1.875" x2="-2" y2="-1.875" width="0.127" layer="21"/>
+<wire x1="-2" y1="-1.875" x2="2" y2="-1.875" width="0.127" layer="21"/>
+<wire x1="2" y1="-1.875" x2="2" y2="1.875" width="0.127" layer="21"/>
+<wire x1="2" y1="1.875" x2="-2" y2="1.875" width="0.127" layer="21"/>
+<circle x="0.75" y="0.75" radius="0.125" width="0.6096" layer="21"/>
+<text x="-2" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2" y="-3.375" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="0.75" y="0.75" radius="0.125" width="0.6096" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -9563,14 +9620,14 @@ For Vishay VNCL4000 proximity and ambient light sensor.&lt;br&gt;
 <wire x1="-10.16" y1="5.08" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
 <text x="-10.16" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="VDD" x="-15.24" y="2.54" length="middle"/>
-<pin name="CAP" x="-15.24" y="0" length="middle"/>
-<pin name="GND" x="-15.24" y="-2.54" length="middle"/>
-<pin name="VDDIO" x="-15.24" y="-5.08" length="middle"/>
-<pin name="SCL" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="SDA" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="INT1" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="INT2" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="VDD" x="-12.7" y="2.54" visible="pin" length="short" direction="pwr"/>
+<pin name="CAP" x="-12.7" y="0" visible="pin" length="short" direction="pwr"/>
+<pin name="GND" x="-12.7" y="-2.54" visible="pin" length="short" direction="pwr"/>
+<pin name="VDDIO" x="-12.7" y="-5.08" visible="pin" length="short" direction="pwr"/>
+<pin name="SCL" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SDA" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="INT1" x="12.7" y="-2.54" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="INT2" x="12.7" y="-5.08" visible="pin" length="short" direction="out" rot="R180"/>
 </symbol>
 <symbol name="MPR121">
 <wire x1="-12.7" y1="-15.24" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
@@ -10159,11 +10216,77 @@ For Vishay VNCL4000 proximity and ambient light sensor.&lt;br&gt;
 <wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
 <text x="-7.62" y="5.588" size="1.778" layer="95">&gt;Name</text>
 <text x="-7.62" y="-7.62" size="1.778" layer="95">&gt;Value</text>
-<pin name="SCK" x="10.16" y="0" length="short" direction="in" rot="R180"/>
-<pin name="DATA" x="10.16" y="2.54" length="short" rot="R180"/>
-<pin name="GND@2" x="-10.16" y="0" length="short" direction="pwr"/>
-<pin name="VDD" x="-10.16" y="2.54" length="short" direction="pwr"/>
-<pin name="GND@7" x="-10.16" y="-2.54" length="short" direction="pwr"/>
+<pin name="SCK" x="10.16" y="0" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="DATA" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="GND@2" x="-10.16" y="0" visible="pin" length="short" direction="pwr"/>
+<pin name="VDD" x="-10.16" y="2.54" visible="pin" length="short" direction="pwr"/>
+<pin name="GND@7" x="-10.16" y="-2.54" visible="pin" length="short" direction="pwr"/>
+</symbol>
+<symbol name="GP-635T">
+<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<pin name="GND" x="7.62" y="5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="VCC" x="7.62" y="2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="TXA" x="7.62" y="0" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="RXA" x="7.62" y="-2.54" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="VBATT" x="7.62" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="PWRC" x="7.62" y="-7.62" visible="pin" length="short" direction="in" rot="R180"/>
+<text x="-5.08" y="8.382" size="1.778" layer="97">&gt;Name</text>
+<text x="-5.08" y="-12.7" size="1.778" layer="97">&gt;Value</text>
+</symbol>
+<symbol name="BMP180">
+<description>BOSCH BMP180 DIGITAL BAROMETRIC PRESSURE SENSOR&lt;p&gt;
+
+Web page: &lt;a href="http://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bmp180_1/bmp180"&gt;http://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bmp180_1/bmp180&lt;/a&gt;&lt;br&gt;
+Datasheet: &lt;a href="http://ae-bst.resource.bosch.com/media/products/dokumente/bmp180/BST-BMP180-DS000-09.pdf"&gt; http://ae-bst.resource.bosch.com/media/products/dokumente/bmp180/BST-BMP180-DS000-09.pdf&lt;/a&gt;&lt;p&gt;
+
+The BMP180 is the function compatible successor of the BMP085, a new generation of high
+precision digital pressure sensors for consumer applications.&lt;p&gt;
+The ultra-low power, low voltage electronics of the BMP180 is optimized for use in mobile phones,
+PDAs, GPS navigation devices and outdoor equipment. With a low altitude noise of merely 0.25m at
+fast conversion time, the BMP180 offers superior performance. The I2C interface allows for easy
+system integration with a microcontroller.&lt;p&gt;
+The BMP180 is based on piezo-resistive technology for EMC robustness, high accuracy and linearity as
+well as long term stability.&lt;p&gt;
+
+Key features:&lt;p&gt;
+
+- Temperature measurement included&lt;br&gt;
+- I2C interface&lt;br&gt;
+- Fully calibrated&lt;br&gt;
+- Pb-free, halogen-free and RoHS compliant,&lt;br&gt;
+- MSL 1&lt;p&gt;
+
+Basic specs:&lt;p&gt;
+
+Pressure range: 300 to 1100hPa (+9000m to -500m relating to sea level)&lt;br&gt;
+Supply voltage: 1.8 to 3.6V (VDD), 1.62V to 3.6V (VDDIO)&lt;br&gt;
+Package: LGA package with metal lid&lt;br&gt;
+Small footprint: 3.6mm x 3.8mm&lt;br&gt;
+Super-flat: 0.93mm height&lt;br&gt;
+Low power: 5μA at 1 sample / sec. in standard mode&lt;br&gt;
+Low noise: 0.06hPa (0.5m) in ultra low power mode, 0.02hPa (0.17m) advanced resolution mode&lt;p&gt;
+
+Typical applications:&lt;p&gt;
+
+- Enhancement of GPS navigation (dead-reckoning, slope detection, etc.)&lt;br&gt;
+- In- and out-door navigation&lt;br&gt;
+- Leisure and sports&lt;br&gt;
+- Weather forecast&lt;br&gt;
+- Vertical velocity indication (rise/sink speed)</description>
+<pin name="VDD" x="15.24" y="5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDDIO" x="15.24" y="0" length="middle" direction="pwr" rot="R180"/>
+<pin name="SCL" x="-15.24" y="-2.54" length="middle" direction="in"/>
+<pin name="SDA" x="-15.24" y="2.54" length="middle"/>
+<pin name="GND" x="15.24" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="-10.16" y="8.255" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -12689,6 +12812,85 @@ SEN-09404</description>
 <connect gate="U$1" pin="GND@7" pad="7"/>
 <connect gate="U$1" pin="SCK" pad="SCK"/>
 <connect gate="U$1" pin="VDD" pad="VDD"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GP-635T" prefix="J">
+<description>&lt;b&gt;Description:&lt;/b&gt; Footprint and symbol for the GP-635T GPS module. This is a very small, very accurate, low-cost GPS receiver. Footprint works with SKU GPS-00579. Use cable GPS-00574 or GPS-09123 to connect the receiver to this footprint+connector.</description>
+<gates>
+<gate name="J1" symbol="GP-635T" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD" package="GP-635T">
+<connects>
+<connect gate="J1" pin="GND" pad="1"/>
+<connect gate="J1" pin="PWRC" pad="6"/>
+<connect gate="J1" pin="RXA" pad="4"/>
+<connect gate="J1" pin="TXA" pad="3"/>
+<connect gate="J1" pin="VBATT" pad="5"/>
+<connect gate="J1" pin="VCC" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BMP180" prefix="U">
+<description>BOSCH BMP180 DIGITAL BAROMETRIC PRESSURE SENSOR&lt;p&gt;
+
+Web page: &lt;a href="http://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bmp180_1/bmp180"&gt;http://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bmp180_1/bmp180&lt;/a&gt;&lt;br&gt;
+Datasheet: &lt;a href="http://ae-bst.resource.bosch.com/media/products/dokumente/bmp180/BST-BMP180-DS000-09.pdf"&gt; http://ae-bst.resource.bosch.com/media/products/dokumente/bmp180/BST-BMP180-DS000-09.pdf&lt;/a&gt;&lt;p&gt;
+
+The BMP180 is the function compatible successor of the BMP085, a new generation of high
+precision digital pressure sensors for consumer applications.&lt;p&gt;
+The ultra-low power, low voltage electronics of the BMP180 is optimized for use in mobile phones,
+PDAs, GPS navigation devices and outdoor equipment. With a low altitude noise of merely 0.25m at
+fast conversion time, the BMP180 offers superior performance. The I2C interface allows for easy
+system integration with a microcontroller.&lt;p&gt;
+The BMP180 is based on piezo-resistive technology for EMC robustness, high accuracy and linearity as
+well as long term stability.&lt;p&gt;
+
+Key features:&lt;p&gt;
+
+- Temperature measurement included&lt;br&gt;
+- I2C interface&lt;br&gt;
+- Fully calibrated&lt;br&gt;
+- Pb-free, halogen-free and RoHS compliant,&lt;br&gt;
+- MSL 1&lt;p&gt;
+
+Basic specs:&lt;p&gt;
+
+Pressure range: 300 to 1100hPa (+9000m to -500m relating to sea level)&lt;br&gt;
+Supply voltage: 1.8 to 3.6V (VDD), 1.62V to 3.6V (VDDIO)&lt;br&gt;
+Package: LGA package with metal lid&lt;br&gt;
+Small footprint: 3.6mm x 3.8mm&lt;br&gt;
+Super-flat: 0.93mm height&lt;br&gt;
+Low power: 5μA at 1 sample / sec. in standard mode&lt;br&gt;
+Low noise: 0.06hPa (0.5m) in ultra low power mode, 0.02hPa (0.17m) advanced resolution mode&lt;p&gt;
+
+Typical applications:&lt;p&gt;
+
+- Enhancement of GPS navigation (dead-reckoning, slope detection, etc.)&lt;br&gt;
+- In- and out-door navigation&lt;br&gt;
+- Leisure and sports&lt;br&gt;
+- Weather forecast&lt;br&gt;
+- Vertical velocity indication (rise/sink speed)</description>
+<gates>
+<gate name="G$1" symbol="BMP180" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BMP180">
+<connects>
+<connect gate="G$1" pin="GND" pad="7"/>
+<connect gate="G$1" pin="SCL" pad="5"/>
+<connect gate="G$1" pin="SDA" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="2"/>
+<connect gate="G$1" pin="VDDIO" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
