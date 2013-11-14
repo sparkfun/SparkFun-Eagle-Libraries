@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -37,7 +37,7 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -460,6 +460,16 @@ Source: RS Components</description>
 <text x="-1.778" y="-12.7" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="-3.048" y="0" size="1.27" layer="27" rot="R270">&gt;VALUE</text>
 </package>
+<package name="AXIAL-0.1EZ">
+<wire x1="1.27" y1="-0.762" x2="1.27" y2="0" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="1.524" y1="0" x2="1.27" y2="0" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0" x2="1.016" y2="0" width="0.2032" layer="21"/>
+<pad name="P$1" x="0" y="0" drill="0.9" diameter="1.8796" stop="no"/>
+<pad name="P$2" x="2.54" y="0" drill="0.9" diameter="1.8796" stop="no"/>
+<text x="0" y="1.27" size="1.016" layer="25" font="vector" ratio="15">&gt;Name</text>
+<text x="0" y="-2.159" size="1.016" layer="21" font="vector" ratio="15">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -698,6 +708,15 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </technologies>
 </device>
 <device name="EZ" package="AXIAL-0.3EZ">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PTH-1/4W-VERT" package="AXIAL-0.1EZ">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -2016,15 +2035,39 @@ RES-07868</description>
 <deviceset name="3.3KOHM1/10W1%(0603)" prefix="R" uservalue="yes">
 <description>RES-07851</description>
 <gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="0603-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-07851" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="3.3MOHM-1/10W-1%(0603)" prefix="R" uservalue="yes">
 <description>RES-11057</description>
 <gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="0603-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-11057" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="3.6KOHM1/10W1%(0603)" prefix="R" uservalue="yes">
