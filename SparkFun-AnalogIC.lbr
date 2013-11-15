@@ -2476,7 +2476,7 @@ QFN-24 w/exposed pad.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LM358">
+<deviceset name="LM358" prefix="IC">
 <description>Jellybean op-amp</description>
 <gates>
 <gate name="G$1" symbol="OP-AMP+-" x="0" y="20.32"/>
@@ -2495,7 +2495,9 @@ QFN-24 w/exposed pad.</description>
 <connect gate="G$2" pin="OUT" pad="7"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09172" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
