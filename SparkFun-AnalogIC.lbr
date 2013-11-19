@@ -37,7 +37,7 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -1145,6 +1145,41 @@ MSOP&lt;br&gt;
 <vertex x="1.524" y="-0.7366"/>
 <vertex x="0.9398" y="-0.7366"/>
 </polygon>
+</package>
+<package name="DIP08-KIT">
+<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-1.524" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-2.54" x2="5.08" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="-1.524" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-1.524" x2="-5.08" y2="-1.016" width="0.2032" layer="21"/>
+<circle x="-3.81" y="-1.27" radius="0.7184" width="0.254" layer="21"/>
+<pad name="1" x="-3.81" y="-3.81" drill="0.8128" diameter="1.7272" stop="no"/>
+<pad name="2" x="-1.27" y="-3.81" drill="0.8128" diameter="1.7272" stop="no"/>
+<pad name="3" x="1.27" y="-3.81" drill="0.8128" diameter="1.7272" stop="no"/>
+<pad name="4" x="3.81" y="-3.81" drill="0.8128" diameter="1.7272" stop="no"/>
+<pad name="5" x="3.81" y="3.81" drill="0.8128" diameter="1.7272" stop="no"/>
+<pad name="6" x="1.27" y="3.81" drill="0.8128" diameter="1.7272" stop="no"/>
+<pad name="7" x="-1.27" y="3.81" drill="0.8128" diameter="1.7272" stop="no"/>
+<pad name="8" x="-3.81" y="3.81" drill="0.8128" diameter="1.7272" stop="no"/>
+<text x="-3.175" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-5.715" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<circle x="-3.81" y="3.81" radius="0.4064" width="0" layer="29"/>
+<circle x="-1.27" y="3.81" radius="0.4064" width="0" layer="29"/>
+<circle x="1.27" y="3.81" radius="0.4064" width="0" layer="29"/>
+<circle x="3.81" y="3.81" radius="0.4064" width="0" layer="29"/>
+<circle x="3.81" y="-3.81" radius="0.4064" width="0" layer="29"/>
+<circle x="1.27" y="-3.81" radius="0.4064" width="0" layer="29"/>
+<circle x="-1.27" y="-3.81" radius="0.4064" width="0" layer="29"/>
+<circle x="-3.81" y="-3.81" radius="0.4064" width="0" layer="29"/>
+<circle x="-3.81" y="3.81" radius="0.8636" width="0" layer="30"/>
+<circle x="-1.27" y="3.81" radius="0.8636" width="0" layer="30"/>
+<circle x="1.27" y="3.81" radius="0.8636" width="0" layer="30"/>
+<circle x="3.81" y="3.81" radius="0.8636" width="0" layer="30"/>
+<circle x="3.81" y="-3.81" radius="0.8636" width="0" layer="30"/>
+<circle x="1.27" y="-3.81" radius="0.8636" width="0" layer="30"/>
+<circle x="-1.27" y="-3.81" radius="0.8636" width="0" layer="30"/>
+<circle x="-3.81" y="-3.81" radius="0.8636" width="0" layer="30"/>
 </package>
 </packages>
 <symbols>
@@ -2498,6 +2533,21 @@ QFN-24 w/exposed pad.</description>
 <technology name="">
 <attribute name="PROD_ID" value="IC-09172" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="KIT" package="DIP08-KIT">
+<connects>
+<connect gate="G$1" pin="+IN" pad="3"/>
+<connect gate="G$1" pin="-IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+<connect gate="G$1" pin="V+" pad="8"/>
+<connect gate="G$1" pin="V-" pad="4"/>
+<connect gate="G$2" pin="+IN" pad="5"/>
+<connect gate="G$2" pin="-IN" pad="6"/>
+<connect gate="G$2" pin="OUT" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

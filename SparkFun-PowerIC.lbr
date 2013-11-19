@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5584,6 +5584,36 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <wire x1="1.81778125" y1="0.75508125" x2="1.401459375" y2="0.755078125" width="0.2032" layer="31"/>
 <rectangle x1="-0.3048" y1="-0.3048" x2="0.2794" y2="0.2794" layer="31"/>
 </package>
+<package name="COILCRAFT_DA230X">
+<description>Coilcraft DA2303, DA2304</description>
+<wire x1="-4.1" y1="5" x2="-3" y2="5" width="0.127" layer="21"/>
+<wire x1="-3" y1="5" x2="3" y2="5" width="0.127" layer="21"/>
+<wire x1="3" y1="5" x2="4.1" y2="5" width="0.127" layer="21"/>
+<wire x1="-4.1" y1="-5" x2="-3" y2="-5" width="0.127" layer="21"/>
+<wire x1="-3" y1="-5" x2="3" y2="-5" width="0.127" layer="21"/>
+<wire x1="3" y1="-5" x2="4.1" y2="-5" width="0.127" layer="21"/>
+<wire x1="4.1" y1="5" x2="4.1" y2="-5" width="0.127" layer="21"/>
+<wire x1="-4.1" y1="5" x2="-4.1" y2="-5" width="0.127" layer="21"/>
+<wire x1="-3" y1="5" x2="-3" y2="3" width="0.127" layer="21"/>
+<wire x1="-3" y1="3" x2="-3" y2="-3" width="0.127" layer="21"/>
+<wire x1="-3" y1="-3" x2="-3" y2="-5" width="0.127" layer="21"/>
+<wire x1="3" y1="5" x2="3" y2="3" width="0.127" layer="21"/>
+<text x="-1" y="-4" size="1.27" layer="21" rot="R90">&gt;NAME</text>
+<text x="2" y="-4" size="1.27" layer="21" rot="R90">&gt;VALUE</text>
+<wire x1="3" y1="3" x2="3" y2="-3" width="0.127" layer="21"/>
+<wire x1="3" y1="-3" x2="3" y2="-5" width="0.127" layer="21"/>
+<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.127" layer="21" curve="-73.739795"/>
+<wire x1="3" y1="3" x2="3" y2="-3" width="0.127" layer="21" curve="-73.739795"/>
+<smd name="P$1" x="-5.4" y="3" dx="1.7" dy="1.6" layer="1"/>
+<smd name="P$2" x="-5.4" y="1" dx="1.7" dy="1.6" layer="1"/>
+<smd name="P$3" x="-5.4" y="-1" dx="1.7" dy="1.6" layer="1"/>
+<smd name="P$4" x="-5.4" y="-3" dx="1.7" dy="1.6" layer="1"/>
+<smd name="P$5" x="5.4" y="-3" dx="1.7" dy="1.6" layer="1"/>
+<smd name="P$6" x="5.4" y="-1" dx="1.7" dy="1.6" layer="1"/>
+<smd name="P$7" x="5.4" y="1" dx="1.7" dy="1.6" layer="1"/>
+<smd name="P$8" x="5.4" y="3" dx="1.7" dy="1.6" layer="1"/>
+<circle x="-1.905" y="3.81" radius="0.635" width="0" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADM1087">
@@ -6858,6 +6888,48 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <text x="0" y="34.036" size="1.778" layer="95">&gt;NAME</text>
 <text x="-0.254" y="31.242" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND_PAD" x="12.7" y="-2.54" length="short" rot="R90"/>
+</symbol>
+<symbol name="TRANSFORMER-QUADFILIAR">
+<wire x1="0" y1="7.62" x2="1.27" y2="6.35" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="5.08" x2="1.27" y2="6.35" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="5.08" x2="1.27" y2="3.81" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="3.81" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="1.27" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="0" x2="1.27" y2="1.27" width="0.1524" layer="94" curve="90" cap="flat"/>
+<text x="-2.54" y="18.542" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="-2.54" y="7.62" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<wire x1="0" y1="17.78" x2="1.27" y2="16.51" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="15.24" x2="1.27" y2="16.51" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="15.24" x2="1.27" y2="13.97" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="12.7" x2="1.27" y2="13.97" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="12.7" x2="1.27" y2="11.43" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="10.16" x2="1.27" y2="11.43" width="0.1524" layer="94" curve="90" cap="flat"/>
+<pin name="4" x="-2.54" y="17.78" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="3" x="-2.54" y="10.16" visible="off" length="short" direction="pas" swaplevel="1"/>
+<wire x1="7.62" y1="7.62" x2="6.35" y2="6.35" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="7.62" y1="5.08" x2="6.35" y2="6.35" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="7.62" y1="5.08" x2="6.35" y2="3.81" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="7.62" y1="2.54" x2="6.35" y2="3.81" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="7.62" y1="2.54" x2="6.35" y2="1.27" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="7.62" y1="0" x2="6.35" y2="1.27" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<pin name="6" x="10.16" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="5" x="10.16" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="7.62" y1="17.78" x2="6.35" y2="16.51" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="7.62" y1="15.24" x2="6.35" y2="16.51" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="7.62" y1="15.24" x2="6.35" y2="13.97" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="7.62" y1="12.7" x2="6.35" y2="13.97" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="7.62" y1="12.7" x2="6.35" y2="11.43" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="7.62" y1="10.16" x2="6.35" y2="11.43" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<pin name="8" x="10.16" y="17.78" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="7" x="10.16" y="10.16" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<circle x="0" y="16.51" radius="0" width="0.8128" layer="94"/>
+<circle x="7.62" y="16.51" radius="0" width="0.8128" layer="94"/>
+<circle x="0" y="6.35" radius="0" width="0.8128" layer="94"/>
+<circle x="7.62" y="6.35" radius="0" width="0.8128" layer="94"/>
+<wire x1="2.54" y1="17.78" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="17.78" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -8906,6 +8978,29 @@ Up to 1A LED current</description>
 <technology name="">
 <attribute name="VALUE" value="LT3652"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TRANSFORMER_QUADFILIAR" prefix="TX">
+<description>Transformer with 4 independent windings</description>
+<gates>
+<gate name="G$1" symbol="TRANSFORMER-QUADFILIAR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="COILCRAFT_DA230X">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
+<connect gate="G$1" pin="7" pad="P$7"/>
+<connect gate="G$1" pin="8" pad="P$8"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
