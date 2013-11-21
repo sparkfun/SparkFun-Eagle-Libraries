@@ -17292,6 +17292,43 @@ Matches 4UCONN part # 11026&lt;br&gt;
 <rectangle x1="28.956" y1="-0.254" x2="29.464" y2="0.254" layer="51"/>
 <rectangle x1="31.496" y1="-0.254" x2="32.004" y2="0.254" layer="51"/>
 </package>
+<package name="1X11_NO_SILK_KIT">
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90" stop="no"/>
+<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90" stop="no"/>
+<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90" stop="no"/>
+<pad name="4" x="7.62" y="0" drill="1.016" diameter="1.8796" rot="R90" stop="no"/>
+<pad name="5" x="10.16" y="0" drill="1.016" diameter="1.8796" rot="R90" stop="no"/>
+<pad name="6" x="12.7" y="0" drill="1.016" diameter="1.8796" rot="R90" stop="no"/>
+<pad name="7" x="15.24" y="0" drill="1.016" diameter="1.8796" rot="R90" stop="no"/>
+<pad name="8" x="17.78" y="0" drill="1.016" diameter="1.8796" rot="R90" stop="no"/>
+<pad name="9" x="20.32" y="0" drill="1.016" diameter="1.8796" rot="R90" stop="no"/>
+<pad name="10" x="22.86" y="0" drill="1.016" diameter="1.8796" rot="R90" stop="no"/>
+<pad name="11" x="25.4" y="0" drill="1.016" diameter="1.8796" rot="R90" stop="no"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<circle x="0" y="0" radius="0.508" width="0" layer="29"/>
+<circle x="0" y="0" radius="0.9525" width="0" layer="30"/>
+<circle x="2.54" y="0" radius="0.9525" width="0" layer="30"/>
+<circle x="5.08" y="0" radius="0.9525" width="0" layer="30"/>
+<circle x="7.62" y="0" radius="0.9525" width="0" layer="30"/>
+<circle x="10.16" y="0" radius="0.9525" width="0" layer="30"/>
+<circle x="12.7" y="0" radius="0.9525" width="0" layer="30"/>
+<circle x="15.24" y="0" radius="0.9525" width="0" layer="30"/>
+<circle x="17.78" y="0" radius="0.9525" width="0" layer="30"/>
+<circle x="20.32" y="0" radius="0.9525" width="0" layer="30"/>
+<circle x="22.86" y="0" radius="0.9525" width="0" layer="30"/>
+<circle x="25.4" y="0" radius="0.9525" width="0" layer="30"/>
+<circle x="2.54" y="0" radius="0.508" width="0" layer="29"/>
+<circle x="5.08" y="0" radius="0.508" width="0" layer="29"/>
+<circle x="7.62" y="0" radius="0.508" width="0" layer="29"/>
+<circle x="10.16" y="0" radius="0.508" width="0" layer="29"/>
+<circle x="12.7" y="0" radius="0.508" width="0" layer="29"/>
+<circle x="15.24" y="0" radius="0.508" width="0" layer="29"/>
+<circle x="17.78" y="0" radius="0.508" width="0" layer="29"/>
+<circle x="20.32" y="0" radius="0.508" width="0" layer="29"/>
+<circle x="22.86" y="0" radius="0.508" width="0" layer="29"/>
+<circle x="25.4" y="0" radius="0.508" width="0" layer="29"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -26466,6 +26503,24 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </technologies>
 </device>
 <device name="1X11_NO_SILK" package="1X11_NO_SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1X11_NO_SILK_KIT" package="1X11_NO_SILK_KIT">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>
