@@ -17329,6 +17329,24 @@ Matches 4UCONN part # 11026&lt;br&gt;
 <circle x="22.86" y="0" radius="0.508" width="0" layer="29"/>
 <circle x="25.4" y="0" radius="0.508" width="0" layer="29"/>
 </package>
+<package name="JST-6-SMD-VERT-1.0MM">
+<circle x="-2.54" y="2.54" radius="0.1047" width="0.4064" layer="21"/>
+<wire x1="-2.54" y1="-1.651" x2="2.54" y2="-1.651" width="0.254" layer="21"/>
+<wire x1="-4.318" y1="0.508" x2="-4.318" y2="1.905" width="0.254" layer="21"/>
+<wire x1="3.302" y1="1.905" x2="4.318" y2="1.905" width="0.254" layer="21"/>
+<wire x1="4.318" y1="1.905" x2="4.318" y2="0.508" width="0.254" layer="21"/>
+<wire x1="-4.318" y1="1.905" x2="-3.302" y2="1.905" width="0.254" layer="21"/>
+<smd name="1" x="-2.54" y="1.27" dx="0.6" dy="1.55" layer="1"/>
+<smd name="2" x="-1.54" y="1.27" dx="0.6" dy="1.55" layer="1"/>
+<smd name="3" x="-0.54" y="1.27" dx="0.6" dy="1.55" layer="1"/>
+<smd name="4" x="0.46" y="1.27" dx="0.6" dy="1.55" layer="1"/>
+<smd name="5" x="1.46" y="1.27" dx="0.6" dy="1.55" layer="1"/>
+<smd name="6" x="2.46" y="1.27" dx="0.6" dy="1.55" layer="1"/>
+<smd name="P$1" x="-3.84" y="-0.955" dx="1.2" dy="1.8" layer="1"/>
+<smd name="P$2" x="3.76" y="-0.955" dx="1.2" dy="1.8" layer="1"/>
+<text x="-1.27" y="2.54" size="0.4064" layer="25">&gt;Name</text>
+<text x="-1.27" y="-2.54" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -20343,6 +20361,20 @@ Matches 4UCONN part # 11026&lt;br&gt;
 <wire x1="2.032" y1="-3.81" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
 <pin name="TIP-NORM" x="5.08" y="0" visible="off" length="short" rot="R180"/>
 <pin name="RING-NORM" x="5.08" y="-5.08" visible="off" length="short" rot="R180"/>
+</symbol>
+<symbol name="JST_6_1MM_VERT">
+<wire x1="-7.62" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="1" x="-12.7" y="5.08" length="middle"/>
+<pin name="2" x="-12.7" y="2.54" length="middle"/>
+<pin name="3" x="-12.7" y="0" length="middle"/>
+<pin name="4" x="-12.7" y="-2.54" length="middle"/>
+<pin name="5" x="-12.7" y="-5.08" length="middle"/>
+<pin name="6" x="-12.7" y="-7.62" length="middle"/>
+<text x="-7.62" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-13.97" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -26938,6 +26970,28 @@ Footprint unproven - datasheet and part seem to be slightly different</descripti
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="COM-11152" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JST_VERTICAL">
+<gates>
+<gate name="G$1" symbol="JST_6_1MM_VERT" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="JST-6-SMD-VERT-1.0MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-08249" constant="no"/>
 </technology>
 </technologies>
 </device>
