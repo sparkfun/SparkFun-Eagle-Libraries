@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -8753,19 +8753,21 @@ Fits EVJY-00, EVJY-80, EVJY-81, EVJY-10, etc</description>
 <pad name="B3" x="11" y="3" drill="0.9" stop="no"/>
 <pad name="A3" x="11" y="5" drill="0.9" stop="no"/>
 <circle x="0" y="0" radius="3" width="0.127" layer="51"/>
-<wire x1="10.7" y1="6.55" x2="10.7" y2="-6.55" width="0.2032" layer="21"/>
-<wire x1="10.7" y1="-6.55" x2="-6.8" y2="-6.55" width="0.2032" layer="21"/>
+<wire x1="9.43" y1="6.55" x2="9.43" y2="-6.55" width="0.2032" layer="21"/>
+<wire x1="9.43" y1="-6.55" x2="1.55" y2="-6.55" width="0.2032" layer="21"/>
+<wire x1="-1.55" y1="-6.55" x2="-6.8" y2="-6.55" width="0.2032" layer="21"/>
 <wire x1="-6.8" y1="-6.55" x2="-6.8" y2="6.55" width="0.2032" layer="21"/>
-<wire x1="-6.8" y1="6.55" x2="10.7" y2="6.55" width="0.2032" layer="21"/>
+<wire x1="-6.8" y1="6.55" x2="-1.55" y2="6.55" width="0.2032" layer="21"/>
+<wire x1="1.55" y1="6.55" x2="9.43" y2="6.55" width="0.2032" layer="21"/>
 <circle x="0" y="0" radius="3" width="0.127" layer="21"/>
-<circle x="0" y="6" radius="1.5" width="0" layer="30"/>
-<circle x="0" y="-6" radius="1.5" width="0" layer="30"/>
-<circle x="11" y="5" radius="0.7" width="0" layer="30"/>
-<circle x="11" y="3" radius="0.7" width="0" layer="30"/>
-<circle x="11" y="1" radius="0.7" width="0" layer="30"/>
-<circle x="11" y="-1" radius="0.7" width="0" layer="30"/>
-<circle x="11" y="-3" radius="0.7" width="0" layer="30"/>
-<circle x="11" y="-5" radius="0.7" width="0" layer="30"/>
+<circle x="0" y="6" radius="1.6256" width="0" layer="30"/>
+<circle x="0" y="-6" radius="1.6256" width="0" layer="30"/>
+<circle x="11" y="5" radius="0.8128" width="0" layer="30"/>
+<circle x="11" y="3" radius="0.8128" width="0" layer="30"/>
+<circle x="11" y="1" radius="0.8128" width="0" layer="30"/>
+<circle x="11" y="-1" radius="0.8128" width="0" layer="30"/>
+<circle x="11" y="-3" radius="0.8128" width="0" layer="30"/>
+<circle x="11" y="-5" radius="0.8128" width="0" layer="30"/>
 <circle x="0" y="6" radius="1" width="0" layer="29"/>
 <circle x="0" y="-6" radius="1" width="0" layer="29"/>
 <circle x="11" y="5" radius="0.45" width="0" layer="29"/>
@@ -8789,21 +8791,23 @@ Fits EVJY-00, EVJY-80, EVJY-81, EVJY-10, etc</description>
 <pad name="P$5" x="0" y="4.4" drill="2" stop="no"/>
 <circle x="0" y="4.4" radius="1" width="0" layer="29"/>
 <circle x="0" y="-4.4" radius="1" width="0" layer="29"/>
-<circle x="0" y="-4.4" radius="1.5" width="0" layer="30"/>
-<circle x="7" y="2.5" radius="0.95" width="0" layer="30"/>
-<circle x="7" y="0" radius="0.95" width="0" layer="30"/>
-<circle x="7" y="-2.5" radius="0.95" width="0" layer="30"/>
+<circle x="0" y="-4.4" radius="1.6256" width="0" layer="30"/>
+<circle x="7" y="2.5" radius="1.0668" width="0" layer="30"/>
+<circle x="7" y="0" radius="1.0668" width="0" layer="30"/>
+<circle x="7" y="-2.5" radius="1.0668" width="0" layer="30"/>
 <circle x="7" y="2.5" radius="0.5" width="0" layer="29"/>
 <circle x="7" y="0" radius="0.5" width="0" layer="29"/>
 <circle x="7" y="-2.5" radius="0.5" width="0" layer="29"/>
 <text x="-3" y="-4" size="1.27" layer="21" rot="R90">&gt;NAME</text>
 <text x="5" y="-4" size="1.27" layer="21" rot="R90">&gt;VALUE</text>
-<wire x1="-5.346" y1="4.93" x2="6.73" y2="4.93" width="0.2032" layer="21"/>
+<wire x1="-5.346" y1="4.93" x2="-1.55" y2="4.93" width="0.2032" layer="21"/>
+<wire x1="1.55" y1="4.93" x2="6.73" y2="4.93" width="0.2032" layer="21"/>
 <wire x1="-5.346" y1="-4.93" x2="-5.346" y2="4.93" width="0.2032" layer="21"/>
-<wire x1="6.73" y1="-4.93" x2="-5.346" y2="-4.93" width="0.2032" layer="21"/>
+<wire x1="6.73" y1="-4.93" x2="1.55" y2="-4.93" width="0.2032" layer="21"/>
+<wire x1="-1.55" y1="-4.93" x2="-5.346" y2="-4.93" width="0.2032" layer="21"/>
 <wire x1="6.73" y1="4.93" x2="6.73" y2="-4.93" width="0.2032" layer="21"/>
 <circle x="0" y="0" radius="3" width="0.127" layer="21"/>
-<circle x="0" y="4.4" radius="1.5" width="0" layer="30"/>
+<circle x="0" y="4.4" radius="1.6256" width="0" layer="30"/>
 </package>
 </packages>
 <symbols>
