@@ -8374,6 +8374,22 @@ For Vishay VNCL4000 proximity and ambient light sensor.&lt;br&gt;
 <text x="-2" y="-3.375" size="1.27" layer="27">&gt;VALUE</text>
 <circle x="0.75" y="0.75" radius="0.125" width="0.6096" layer="51"/>
 </package>
+<package name="QRE1113-W">
+<wire x1="1.35" y1="1.7" x2="-1.35" y2="1.7" width="0.127" layer="51"/>
+<wire x1="-1.35" y1="1.7" x2="-1.35" y2="-1.7" width="0.127" layer="51"/>
+<wire x1="-1.35" y1="-1.7" x2="1.35" y2="-1.7" width="0.127" layer="51"/>
+<wire x1="1.35" y1="-1.7" x2="1.35" y2="1.7" width="0.127" layer="51"/>
+<wire x1="-1.427" y1="1.627" x2="-1.427" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="-1.427" y1="1.7" x2="1.4" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="1.7" x2="1.4" y2="1.654" width="0.2032" layer="21"/>
+<wire x1="-1.37" y1="-1.424" x2="-1.1" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="-1.1" y1="-1.7" x2="1.4" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="-1.7" x2="1.4" y2="-1.627" width="0.2032" layer="21"/>
+<smd name="1" x="-1.927" y="-0.9" dx="1.778" dy="0.762" layer="1"/>
+<smd name="2" x="1.927" y="-0.9" dx="1.778" dy="0.762" layer="1"/>
+<smd name="3" x="1.927" y="0.9" dx="1.778" dy="0.762" layer="1"/>
+<smd name="4" x="-1.927" y="0.9" dx="1.778" dy="0.762" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADMP401">
@@ -12056,6 +12072,17 @@ object passes within its field of view. The area of the optimum response approxi
 <technology name="">
 <attribute name="PROD_ID" value="IC-09357"/>
 </technology>
+</technologies>
+</device>
+<device name="SMD-W" package="QRE1113-W">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="4"/>
+<connect gate="G$1" pin="K" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
