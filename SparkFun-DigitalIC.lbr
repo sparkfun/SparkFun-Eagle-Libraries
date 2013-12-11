@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -16607,6 +16607,19 @@ Level Shifting GPIO Expander w/ LED Driver and Keypad Engine</description>
 <pin name="D" x="-12.7" y="2.54" length="middle" direction="in"/>
 <pin name="S" x="-12.7" y="7.62" length="middle" direction="in"/>
 </symbol>
+<symbol name="74AHC1G125">
+<text x="-7.62" y="5.334" size="1.778" layer="96">&gt;Value</text>
+<text x="-7.366" y="-7.366" size="1.778" layer="95">&gt;Name</text>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<pin name="/OE" x="-12.7" y="2.54" length="middle" function="dot"/>
+<pin name="A" x="-12.7" y="0" length="middle"/>
+<pin name="GND" x="-12.7" y="-2.54" length="middle"/>
+<pin name="VCC" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="Y" x="12.7" y="-2.54" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="AT25FS010">
@@ -23115,6 +23128,25 @@ Footprint unproven.</description>
 <attribute name="DIST_ID" value="296-2033-5-ND" constant="no"/>
 <attribute name="VALUE" value="CD4013B"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74AHC1G125">
+<gates>
+<gate name="G$1" symbol="74AHC1G125" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="/OE" pad="1"/>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+<connect gate="G$1" pin="Y" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
