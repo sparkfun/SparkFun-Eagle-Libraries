@@ -2046,8 +2046,21 @@ RES-07868</description>
 <deviceset name="22OHM1/10W1%(0603)" prefix="R" uservalue="yes">
 <description>RES-08698</description>
 <gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="0603-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08698" constant="no"/>
+<attribute name="VALUE" value="22" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="22OHM1/2W5%(2010)" prefix="R" uservalue="yes">
