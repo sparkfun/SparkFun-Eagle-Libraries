@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1146,6 +1146,37 @@ MSOP&lt;br&gt;
 <vertex x="0.9398" y="-0.7366"/>
 </polygon>
 </package>
+<package name="AD9837">
+<smd name="P$0" x="0" y="0" dx="2.38" dy="1.64" layer="1" rot="R270" cream="no"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="51"/>
+<smd name="P$1" x="-1.5" y="1" dx="0.25" dy="0.8" layer="1" rot="R270"/>
+<smd name="P$2" x="-1.5" y="0.5" dx="0.25" dy="0.8" layer="1" rot="R270"/>
+<smd name="P$3" x="-1.5" y="0" dx="0.25" dy="0.8" layer="1" rot="R270"/>
+<smd name="P$4" x="-1.5" y="-0.5" dx="0.25" dy="0.8" layer="1" rot="R270"/>
+<smd name="P$5" x="-1.5" y="-1" dx="0.25" dy="0.8" layer="1" rot="R270"/>
+<smd name="P$6" x="1.5" y="-1" dx="0.25" dy="0.8" layer="1" rot="R270"/>
+<smd name="P$7" x="1.5" y="-0.5" dx="0.25" dy="0.8" layer="1" rot="R270"/>
+<smd name="P$8" x="1.5" y="0" dx="0.25" dy="0.8" layer="1" rot="R270"/>
+<smd name="P$9" x="1.5" y="0.5" dx="0.25" dy="0.8" layer="1" rot="R270"/>
+<smd name="P$10" x="1.5" y="1" dx="0.25" dy="0.8" layer="1" rot="R270"/>
+<wire x1="1.5" y1="-1.627" x2="1.5" y2="-1.427" width="0.2032" layer="21"/>
+<wire x1="1.5" y1="-1.627" x2="1.3" y2="-1.627" width="0.2032" layer="21"/>
+<wire x1="-1.5" y1="-1.627" x2="-1.5" y2="-1.427" width="0.2032" layer="21"/>
+<wire x1="-1.5" y1="-1.627" x2="-1.3" y2="-1.627" width="0.2032" layer="21"/>
+<wire x1="-1.5" y1="1.627" x2="-1.5" y2="1.427" width="0.2032" layer="21"/>
+<wire x1="-1.5" y1="1.627" x2="-1.3" y2="1.627" width="0.2032" layer="21"/>
+<wire x1="1.5" y1="1.627" x2="1.5" y2="1.427" width="0.2032" layer="21"/>
+<wire x1="1.5" y1="1.627" x2="1.3" y2="1.627" width="0.2032" layer="21"/>
+<circle x="-1" y="1.8" radius="0.14141875" width="0.127" layer="21"/>
+<wire x1="-0.9" y1="1.8" x2="-1.1" y2="1.8" width="0.127" layer="21"/>
+<wire x1="-1" y1="1.7" x2="-1" y2="1.9" width="0.127" layer="21"/>
+<text x="-1.5" y="-2.5" size="0.6096" layer="25" ratio="15">&gt;NAME</text>
+<text x="-1.5" y="-3.5" size="0.6096" layer="27" ratio="15">&gt;VALUE</text>
+<rectangle x1="-0.381" y1="-0.508" x2="0.381" y2="0.508" layer="31"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ACS712">
@@ -2118,6 +2149,48 @@ MSOP&lt;br&gt;
 <wire x1="0" y1="15.24" x2="0" y2="8.89" width="0.1524" layer="94"/>
 <text x="-6.604" y="11.938" size="1.778" layer="94" align="bottom-right">Vin+</text>
 <text x="1.016" y="11.938" size="1.778" layer="94">Vin-</text>
+</symbol>
+<symbol name="ADC8045">
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
+<pin name="IN-" x="-10.16" y="2.54" visible="off" length="middle"/>
+<pin name="IN+" x="-10.16" y="-2.54" visible="off" length="middle"/>
+<pin name="OUT" x="10.16" y="0" visible="off" length="middle" rot="R180"/>
+<pin name="FB" x="-10.16" y="7.62" visible="off" length="middle"/>
+<pin name="VSS" x="0" y="-7.62" visible="off" length="middle" rot="R90"/>
+<pin name="VDD" x="0" y="10.16" visible="off" length="middle" rot="R270"/>
+<text x="0" y="-2.54" size="1.27" layer="94" align="top-left">Vss</text>
+<text x="0" y="2.54" size="1.27" layer="94">Vdd</text>
+<wire x1="0" y1="2.54" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-4.572" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-4.572" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="-1.524" x2="-3.556" y2="-3.556" width="0.254" layer="94"/>
+<text x="-9.144" y="6.604" size="1.27" layer="94" align="center-left">FB</text>
+<wire x1="-5.08" y1="7.62" x2="7.62" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="0.254" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="0.254" x2="7.62" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<circle x="7.62" y="0" radius="0.254" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-0.254" x2="7.62" y2="0.254" width="0.254" layer="94"/>
+</symbol>
+<symbol name="AD9837">
+<pin name="SCLK" x="-17.78" y="5.08" visible="pin" length="middle"/>
+<pin name="SDATA" x="-17.78" y="2.54" visible="pin" length="middle"/>
+<pin name="FSYNC" x="-17.78" y="0" visible="pin" length="middle"/>
+<pin name="MCLK" x="-17.78" y="-2.54" visible="pin" length="middle"/>
+<pin name="DGND" x="-17.78" y="-5.08" visible="pin" length="middle"/>
+<pin name="AGND" x="17.78" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="VOUT" x="17.78" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="COMP" x="17.78" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="VDD" x="17.78" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="CAP/2.5V" x="17.78" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="-7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<text x="-12.7" y="8.382" size="1.6764" layer="95" ratio="15">&gt;NAME</text>
+<text x="-12.7" y="-10.16" size="1.6764" layer="96" ratio="15">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3410,6 +3483,59 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADC8045" prefix="U" uservalue="yes">
+<description>Unity-gain stable feedback amplifier.&lt;br&gt;
+Low noise, low distortion, 1GHz BW.</description>
+<gates>
+<gate name="G$1" symbol="ADC8045" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO08">
+<connects>
+<connect gate="G$1" pin="FB" pad="1"/>
+<connect gate="G$1" pin="IN+" pad="3"/>
+<connect gate="G$1" pin="IN-" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="7"/>
+<connect gate="G$1" pin="VSS" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-11224"/>
+<attribute name="VALUE" value="ADC8045" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AD9837">
+<description>Programmable waveform generator, sine, triangular, and square wave outputs.</description>
+<gates>
+<gate name="G1" symbol="AD9837" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="AD9837">
+<connects>
+<connect gate="G1" pin="AGND" pad="P$9"/>
+<connect gate="G1" pin="CAP/2.5V" pad="P$3"/>
+<connect gate="G1" pin="COMP" pad="P$1"/>
+<connect gate="G1" pin="DGND" pad="P$0 P$4"/>
+<connect gate="G1" pin="FSYNC" pad="P$8"/>
+<connect gate="G1" pin="MCLK" pad="P$5"/>
+<connect gate="G1" pin="SCLK" pad="P$7"/>
+<connect gate="G1" pin="SDATA" pad="P$6"/>
+<connect gate="G1" pin="VDD" pad="P$2"/>
+<connect gate="G1" pin="VOUT" pad="P$10"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-11223"/>
+<attribute name="VALUE" value="AD9837BCPZ"/>
+</technology>
 </technologies>
 </device>
 </devices>

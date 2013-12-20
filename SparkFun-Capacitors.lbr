@@ -2483,8 +2483,21 @@ CAP-00810</description>
 <deviceset name="10UF-20V-10%(TANT)" prefix="C" uservalue="yes">
 <description>CAP-08063</description>
 <gates>
+<gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="EIA3528">
+<connects>
+<connect gate="G$1" pin="+" pad="A"/>
+<connect gate="G$1" pin="-" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08063"/>
+<attribute name="VALUE" value="10uF"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="10UF-25V-20%(PTH)" prefix="C" uservalue="yes">

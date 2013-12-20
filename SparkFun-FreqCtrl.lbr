@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -658,10 +658,10 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
 <text x="-7.62" y="5.842" size="1.27" layer="95">&gt;Name</text>
 <text x="-7.62" y="-7.366" size="1.27" layer="96">&gt;Value</text>
-<pin name="EN" x="-12.7" y="-2.54" length="middle"/>
-<pin name="GND" x="12.7" y="-2.54" length="middle" rot="R180"/>
-<pin name="OUT" x="12.7" y="2.54" length="middle" rot="R180"/>
-<pin name="VCC" x="-12.7" y="2.54" length="middle"/>
+<pin name="EN" x="-12.7" y="-2.54" visible="pin" length="middle"/>
+<pin name="GND" x="12.7" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="OUT" x="12.7" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="VCC" x="-12.7" y="2.54" visible="pin" length="middle"/>
 </symbol>
 <symbol name="RESONATOR">
 <wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
@@ -961,6 +961,20 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="XTAL-11225" package="CRYSTAL-SMD-7X5">
+<connects>
+<connect gate="G$1" pin="EN" pad="P$1"/>
+<connect gate="G$1" pin="GND" pad="P$2"/>
+<connect gate="G$1" pin="OUT" pad="P$3"/>
+<connect gate="G$1" pin="VCC" pad="P$4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-11225"/>
+<attribute name="VALUE" value="16MHz"/>
+</technology>
 </technologies>
 </device>
 </devices>
