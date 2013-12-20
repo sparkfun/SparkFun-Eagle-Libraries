@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -36,8 +36,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -1467,6 +1467,18 @@ Source: RS Components</description>
 <text x="-3.81" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-3.81" y="-1.27" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
+<package name="CPOL-RADIAL-10UF-25V-KIT">
+<wire x1="-0.762" y1="1.397" x2="-1.778" y2="1.397" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="2.5" width="0.2032" layer="21"/>
+<pad name="1" x="1.27" y="0" drill="0.7" diameter="1.651" shape="square" stop="no"/>
+<pad name="2" x="-1.27" y="0" drill="0.7" diameter="1.651" stop="no"/>
+<text x="-0.889" y="1.524" size="0.4064" layer="25">&gt;Name</text>
+<text x="-1.905" y="-3.683" size="0.8128" layer="27">&gt;Value</text>
+<circle x="-1.27" y="0" radius="0.3556" width="0" layer="29"/>
+<circle x="-1.27" y="0" radius="0.9652" width="0" layer="30"/>
+<circle x="1.27" y="0" radius="0.3556" width="0" layer="29"/>
+<rectangle x1="0.3048" y1="-0.9652" x2="2.2352" y2="0.9652" layer="30"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP">
@@ -2084,9 +2096,9 @@ CAP-08310- 10V 10% (EIA-3528)</description>
 </devices>
 </deviceset>
 <deviceset name="0.1UF-25V(+80/-20%)(0603)" prefix="C" uservalue="yes">
-<description>Ceramic&lt;br&gt;
-Standard decoupling cap &lt;br&gt;
-CAP-00810</description>
+<description>CAP-00810&lt;br&gt;
+Ceramic&lt;br&gt;
+Standard decoupling cap</description>
 <gates>
 <gate name="G$1" symbol="CAP" x="0" y="-2.54"/>
 </gates>
@@ -2503,8 +2515,31 @@ CAP-00810</description>
 <deviceset name="10UF-25V-20%(PTH)" prefix="C" uservalue="yes">
 <description>CAP-08440</description>
 <gates>
+<gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="CPOL-RADIAL-10UF-25V">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08440" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="KIT" package="CPOL-RADIAL-10UF-25V-KIT">
+<connects>
+<connect gate="G$1" pin="+" pad="1"/>
+<connect gate="G$1" pin="-" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08440" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="10UF-6.3V-20%(1206)" prefix="C" uservalue="yes">
