@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -11527,7 +11527,9 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <connect gate="G$1" pin="2" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="SWCH-08247" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SMD-2" package="TACTILE_SWITCH_SMD-2">
@@ -11568,7 +11570,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <technology name=""/>
 </technologies>
 </device>
-<device name="" package="TACTILE_SWITCH_TALL">
+<device name="SMD-4" package="TACTILE_SWITCH_TALL">
 <connects>
 <connect gate="G$1" pin="1" pad="A2"/>
 <connect gate="G$1" pin="2" pad="B2"/>
