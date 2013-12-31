@@ -3115,7 +3115,7 @@ PID: COM-10613</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="NE555" prefix="IC">
+<deviceset name="NE555" prefix="IC" uservalue="yes">
 <description>&lt;b&gt;General purpose bipolar Timer&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="NE555" x="60.96" y="-27.94"/>
@@ -3142,6 +3142,21 @@ PID: COM-10613</description>
 </technologies>
 </device>
 <device name="D" package="SO08">
+<connects>
+<connect gate="G$1" pin="/RES" pad="4"/>
+<connect gate="G$1" pin="CON" pad="5"/>
+<connect gate="G$1" pin="DIS" pad="7"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="TRE" pad="6"/>
+<connect gate="G$1" pin="TRI" pad="2"/>
+<connect gate="G$1" pin="VCC+" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="KIT" package="DIP08-KIT">
 <connects>
 <connect gate="G$1" pin="/RES" pad="4"/>
 <connect gate="G$1" pin="CON" pad="5"/>
