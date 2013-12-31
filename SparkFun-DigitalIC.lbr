@@ -20915,13 +20915,13 @@ Digikey P/N NC7SPU04P5XCT-ND</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="VS1033" prefix="U">
+<deviceset name="VS1033/1053" prefix="U">
 <description>MP3 codec</description>
 <gates>
 <gate name="G$1" symbol="VS1033D" x="-20.32" y="-33.02"/>
 </gates>
 <devices>
-<device name="" package="LQFP-48">
+<device name="SMD" package="LQFP-48">
 <connects>
 <connect gate="G$1" pin="AGND1" pad="37"/>
 <connect gate="G$1" pin="AGND2" pad="40"/>
@@ -20973,7 +20973,10 @@ Digikey P/N NC7SPU04P5XCT-ND</description>
 <connect gate="G$1" pin="XTAL2" pad="17"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-08983" constant="no"/>
+<attribute name="VALUE" value="VS1053B" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
