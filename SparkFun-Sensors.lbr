@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -8987,10 +8987,10 @@ For Vishay VNCL4000 proximity and ambient light sensor.&lt;br&gt;
 <wire x1="-1.85" y1="1.75" x2="-1.4" y2="1.75" width="0.127" layer="21"/>
 </package>
 <package name="TSOP572">
-<smd name="P$6" x="1.5" y="1.775" dx="0.8" dy="0.35" layer="1" rot="R90"/>
-<smd name="P$8" x="-1.5" y="1.775" dx="0.8" dy="0.35" layer="1" rot="R90"/>
-<smd name="P$1" x="-1.5" y="-1.775" dx="0.8" dy="0.35" layer="1" rot="R90"/>
-<smd name="P$5" x="1.5" y="-1.775" dx="0.8" dy="0.35" layer="1" rot="R90"/>
+<smd name="6" x="1.5" y="1.775" dx="0.8" dy="0.35" layer="1" rot="R90"/>
+<smd name="8" x="-1.5" y="1.775" dx="0.8" dy="0.35" layer="1" rot="R90"/>
+<smd name="1" x="-1.5" y="-1.775" dx="0.8" dy="0.35" layer="1" rot="R90"/>
+<smd name="5" x="1.5" y="-1.775" dx="0.8" dy="0.35" layer="1" rot="R90"/>
 <wire x1="1.975" y1="1.975" x2="-1.975" y2="1.975" width="0.127" layer="51"/>
 <wire x1="-1.975" y1="1.975" x2="-1.975" y2="-1.975" width="0.127" layer="51"/>
 <wire x1="-1.975" y1="-1.975" x2="1.975" y2="-1.975" width="0.127" layer="51"/>
@@ -10925,10 +10925,10 @@ Typical applications:&lt;p&gt;
 <wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
 <text x="-7.62" y="5.334" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.874" y="-7.112" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="VS" x="-15.24" y="2.54" length="middle"/>
-<pin name="GND1" x="-15.24" y="0" length="middle"/>
-<pin name="OUT" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="GND2" x="-15.24" y="-2.54" length="middle"/>
+<pin name="VS" x="-12.7" y="2.54" length="short"/>
+<pin name="GND1" x="-12.7" y="0" length="short"/>
+<pin name="OUT" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="GND2" x="-12.7" y="-2.54" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -13594,10 +13594,10 @@ Typical applications:&lt;p&gt;
 <devices>
 <device name="" package="TSOP572">
 <connects>
-<connect gate="G$1" pin="GND1" pad="P$6"/>
-<connect gate="G$1" pin="GND2" pad="P$8"/>
-<connect gate="G$1" pin="OUT" pad="P$1"/>
-<connect gate="G$1" pin="VS" pad="P$5"/>
+<connect gate="G$1" pin="GND1" pad="6"/>
+<connect gate="G$1" pin="GND2" pad="8"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+<connect gate="G$1" pin="VS" pad="5"/>
 </connects>
 <technologies>
 <technology name="">
