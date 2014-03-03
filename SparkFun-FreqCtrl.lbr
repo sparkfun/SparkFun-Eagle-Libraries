@@ -632,9 +632,9 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <rectangle x1="-2.159" y1="1.9558" x2="-1.651" y2="3.0988" layer="51"/>
 </package>
 <package name="CRYSTAL-SMD-3225-GND">
-<description>&lt;h3&gt;3225 (metric) smd crystal&lt;/h3&gt;
+<description>&lt;h3&gt;3225 (metric) SMD crystal&lt;/h3&gt;
 &lt;p&gt;
-Example &lt;a href = 'http://www.farnell.com/datasheets/1701004.pdf‎'&gt;datasheet&lt;/a&gt;
+Example &lt;a href = "http://www.farnell.com/datasheets/1701004.pdf"&gt;datasheet&lt;/a&gt;
 &lt;/p&gt;</description>
 <smd name="1" x="-1.1" y="-0.85" dx="1.4" dy="1.2" layer="1"/>
 <smd name="2" x="1.1" y="-0.85" dx="1.4" dy="1.2" layer="1"/>
@@ -1203,9 +1203,11 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="CRYSTAL_WITH_GND" prefix="X">
+<deviceset name="CRYSTAL_WITH_GND" prefix="Q">
 <description>&lt;h3&gt;Crystals with ground connection to case.&lt;/h3&gt;
-A ground connection is used for mechanical stability and to minimise noise. Be careful to not overheat the body of crystal while soldering.</description>
+&lt;p&gt;
+A ground connection is used for mechanical stability and to minimize noise. Be careful to not overheat the body of crystal while soldering.
+&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="Q_WITH_GND" x="0" y="0"/>
 </gates>
