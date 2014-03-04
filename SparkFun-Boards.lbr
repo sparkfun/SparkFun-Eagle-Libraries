@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -29,7 +29,7 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -119,7 +119,9 @@
 In this library you'll find boards and modules: Arduino footprints, breadboards, non-RF modules, etc.&lt;br&gt;&lt;br&gt;
 We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
 &lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
 <package name="ARDUINO_MEGA">
 <description>Full Arduino MEGA footprint</description>
@@ -3223,8 +3225,8 @@ AudioAmp</text>
 <hole x="80.645" y="6.35" drill="3.175"/>
 <hole x="80.645" y="48.26" drill="3.175"/>
 <hole x="14.605" y="51.435" drill="3.175"/>
-<text x="17.78" y="51.435" size="1.27" layer="51" font="vector" ratio="15" rot="R90" align="bottom-center">P8</text>
-<text x="17.78" y="3.175" size="1.27" layer="51" font="vector" ratio="15" rot="R90" align="bottom-center">P9</text>
+<text x="17.78" y="51.435" size="1.27" layer="22" font="vector" ratio="15" rot="SMR270" align="bottom-center">P8</text>
+<text x="17.78" y="3.175" size="1.27" layer="22" font="vector" ratio="15" rot="SMR270" align="bottom-center">P9</text>
 <pad name="P9.1" x="20.32" y="1.905" drill="1.016" diameter="1.8796" shape="square"/>
 <pad name="P9.2" x="20.32" y="4.445" drill="1.016" diameter="1.8796"/>
 <pad name="P9.3" x="22.86" y="1.905" drill="1.016" diameter="1.8796"/>
@@ -3317,14 +3319,14 @@ AudioAmp</text>
 <pad name="P8.44" x="73.66" y="52.705" drill="1.016" diameter="1.8796"/>
 <pad name="P8.45" x="76.2" y="50.165" drill="1.016" diameter="1.8796"/>
 <pad name="P8.46" x="76.2" y="52.705" drill="1.016" diameter="1.8796"/>
-<text x="19.05" y="50.165" size="1.27" layer="51" font="vector" ratio="15" rot="R90" align="bottom-center">1</text>
-<text x="19.05" y="1.905" size="1.016" layer="51" font="vector" ratio="15" rot="R90" align="bottom-center">1</text>
-<text x="19.05" y="4.445" size="1.016" layer="51" font="vector" ratio="15" rot="R90" align="bottom-center">2</text>
-<text x="19.05" y="52.705" size="1.016" layer="51" font="vector" ratio="15" rot="R90" align="bottom-center">2</text>
-<text x="77.47" y="52.705" size="1.016" layer="51" font="vector" ratio="15" rot="R270" align="bottom-center">46</text>
-<text x="77.47" y="50.165" size="1.016" layer="51" font="vector" ratio="15" rot="R270" align="bottom-center">45</text>
-<text x="77.47" y="1.905" size="1.016" layer="51" font="vector" ratio="15" rot="R270" align="bottom-center">45</text>
-<text x="77.47" y="4.445" size="1.016" layer="51" font="vector" ratio="15" rot="R270" align="bottom-center">46</text>
+<text x="19.05" y="50.165" size="1.27" layer="22" font="vector" ratio="15" rot="SMR270" align="bottom-center">1</text>
+<text x="19.05" y="1.905" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="bottom-center">1</text>
+<text x="19.05" y="4.445" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="bottom-center">2</text>
+<text x="19.05" y="52.705" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="bottom-center">2</text>
+<text x="78.74" y="52.705" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="bottom-center">46</text>
+<text x="78.74" y="50.165" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="bottom-center">45</text>
+<text x="78.74" y="1.905" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="bottom-center">45</text>
+<text x="78.74" y="4.445" size="1.016" layer="22" font="vector" ratio="15" rot="SMR270" align="bottom-center">46</text>
 <text x="7.62" y="30.48" size="1.27" layer="48" font="vector" ratio="15" rot="R270" align="center">Ethernet</text>
 <wire x1="0" y1="21.59" x2="19.05" y2="21.59" width="0.127" layer="48" style="longdash"/>
 <wire x1="19.05" y1="21.59" x2="19.05" y2="38.1" width="0.127" layer="48" style="longdash"/>
@@ -3338,6 +3340,16 @@ AudioAmp</text>
 <text x="11.43" y="30.48" size="1.27" layer="48" font="vector" ratio="15" rot="R270" align="center">Cutout</text>
 <text x="19.05" y="-1.27" size="1.27" layer="48" font="vector" ratio="15" align="center-left">&gt;VALUE</text>
 <text x="19.05" y="55.88" size="1.27" layer="48" font="vector" ratio="15" align="center-left">&gt;NAME</text>
+<text x="19.05" y="50.165" size="1.27" layer="21" font="vector" ratio="15" rot="SR90" align="bottom-center">1</text>
+<text x="19.05" y="52.705" size="1.016" layer="21" font="vector" ratio="15" rot="SR90" align="bottom-center">2</text>
+<text x="17.78" y="51.435" size="1.27" layer="21" font="vector" ratio="15" rot="SR90" align="bottom-center">P8</text>
+<text x="78.74" y="50.165" size="1.016" layer="21" font="vector" ratio="15" rot="SR90" align="bottom-center">45</text>
+<text x="78.74" y="52.705" size="1.016" layer="21" font="vector" ratio="15" rot="SR90" align="bottom-center">46</text>
+<text x="78.74" y="4.445" size="1.016" layer="21" font="vector" ratio="15" rot="SR90" align="bottom-center">46</text>
+<text x="78.74" y="1.905" size="1.016" layer="21" font="vector" ratio="15" rot="SR90" align="bottom-center">45</text>
+<text x="19.05" y="1.905" size="1.016" layer="21" font="vector" ratio="15" rot="SR90" align="bottom-center">1</text>
+<text x="19.05" y="4.445" size="1.016" layer="21" font="vector" ratio="15" rot="SR90" align="bottom-center">2</text>
+<text x="17.78" y="3.175" size="1.27" layer="21" font="vector" ratio="15" rot="SR90" align="bottom-center">P9</text>
 </package>
 </packages>
 <symbols>
@@ -4936,4 +4948,10 @@ As defined for the Revistion 2 Pi.</description>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

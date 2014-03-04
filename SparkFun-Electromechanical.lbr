@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -122,7 +122,9 @@
 In this library you'll find anything that moves- switches, relays, buttons, potentiometers. Also, anything that goes on a board but isn't electrical in nature- screws, standoffs, etc.&lt;br&gt;&lt;br&gt;
 We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
 &lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
 <package name="AYZ0202">
 <description>&lt;b&gt;DPDT Slide Switch SMD&lt;/b&gt;
@@ -7478,7 +7480,9 @@ Through-hole SPDT Switch&lt;br&gt;
 <rectangle x1="-1.778" y1="-1.651" x2="-0.762" y2="-1.27" layer="21"/>
 </package>
 <package name="DIPSWITCH-08">
-<description>&lt;b&gt;DIP SWITCH&lt;/b&gt;</description>
+<description>&lt;b&gt;DIP SWITCH&lt;/b&gt;
+&lt;p&gt;Standard size through-hole DIP switch, 2.54 mm / 0.1" pitch&lt;/p&gt;
+Spark Fun Electronics SKU : COM-08034</description>
 <wire x1="-10.922" y1="-4.953" x2="10.922" y2="-4.953" width="0.2032" layer="21"/>
 <wire x1="10.922" y1="4.953" x2="-10.922" y2="4.953" width="0.2032" layer="21"/>
 <wire x1="-10.922" y1="4.953" x2="-10.922" y2="1.651" width="0.2032" layer="21"/>
@@ -8988,6 +8992,211 @@ Fits EVJY-00, EVJY-80, EVJY-81, EVJY-10, etc</description>
 <wire x1="6" y1="-5" x2="5" y2="-6" width="0.2032" layer="21"/>
 <wire x1="6" y1="5" x2="5" y2="6" width="0.2032" layer="21"/>
 <wire x1="-5" y1="6" x2="-6" y2="5" width="0.2032" layer="21"/>
+</package>
+<package name="TACTILE-PTH-EZ">
+<wire x1="3.048" y1="1.016" x2="3.048" y2="2.54" width="0.2032" layer="51"/>
+<wire x1="3.048" y1="2.54" x2="2.54" y2="3.048" width="0.2032" layer="51"/>
+<wire x1="2.54" y1="-3.048" x2="3.048" y2="-2.54" width="0.2032" layer="51"/>
+<wire x1="3.048" y1="-2.54" x2="3.048" y2="-1.016" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="3.048" x2="-3.048" y2="2.54" width="0.2032" layer="51"/>
+<wire x1="-3.048" y1="2.54" x2="-3.048" y2="1.016" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="-3.048" x2="-3.048" y2="-2.54" width="0.2032" layer="51"/>
+<wire x1="-3.048" y1="-2.54" x2="-3.048" y2="-1.016" width="0.2032" layer="51"/>
+<wire x1="2.54" y1="-3.048" x2="2.159" y2="-3.048" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="-3.048" x2="-2.159" y2="-3.048" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="3.048" x2="-2.159" y2="3.048" width="0.2032" layer="51"/>
+<wire x1="2.54" y1="3.048" x2="2.159" y2="3.048" width="0.2032" layer="51"/>
+<wire x1="2.159" y1="3.048" x2="-2.159" y2="3.048" width="0.2032" layer="21"/>
+<wire x1="-2.159" y1="-3.048" x2="2.159" y2="-3.048" width="0.2032" layer="21"/>
+<wire x1="3.048" y1="0.998" x2="3.048" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="-3.048" y1="1.028" x2="-3.048" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="0.508" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="-0.508" x2="-2.54" y2="-1.27" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="0.508" x2="-2.159" y2="-0.381" width="0.2032" layer="51"/>
+<circle x="0" y="0" radius="1.778" width="0.2032" layer="21"/>
+<pad name="1" x="-3.2512" y="2.2606" drill="1.016" diameter="1.8796" stop="no"/>
+<pad name="2" x="3.2512" y="2.2606" drill="1.016" diameter="1.8796" stop="no"/>
+<pad name="3" x="-3.2512" y="-2.2606" drill="1.016" diameter="1.8796" stop="no"/>
+<pad name="4" x="3.2512" y="-2.2606" drill="1.016" diameter="1.8796" stop="no"/>
+<text x="-2.54" y="3.81" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<polygon width="0.127" layer="30">
+<vertex x="-3.2664" y="3.142"/>
+<vertex x="-3.2589" y="3.1445" curve="89.986886"/>
+<vertex x="-4.1326" y="2.286"/>
+<vertex x="-4.1351" y="2.2657" curve="90.00652"/>
+<vertex x="-3.2563" y="1.392"/>
+<vertex x="-3.2487" y="1.3869" curve="90.006616"/>
+<vertex x="-2.3826" y="2.2403"/>
+<vertex x="-2.3775" y="2.2683" curve="89.98711"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-3.2462" y="2.7026"/>
+<vertex x="-3.2589" y="2.7051" curve="90.026544"/>
+<vertex x="-3.6881" y="2.2733"/>
+<vertex x="-3.6881" y="2.2632" curve="89.974074"/>
+<vertex x="-3.2562" y="1.8213"/>
+<vertex x="-3.2259" y="1.8186" curve="90.051271"/>
+<vertex x="-2.8093" y="2.2658"/>
+<vertex x="-2.8093" y="2.2606" curve="90.012964"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="3.2411" y="3.1395"/>
+<vertex x="3.2486" y="3.142" curve="89.986886"/>
+<vertex x="2.3749" y="2.2835"/>
+<vertex x="2.3724" y="2.2632" curve="90.00652"/>
+<vertex x="3.2512" y="1.3895"/>
+<vertex x="3.2588" y="1.3844" curve="90.006616"/>
+<vertex x="4.1249" y="2.2378"/>
+<vertex x="4.13" y="2.2658" curve="89.98711"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="3.2613" y="2.7001"/>
+<vertex x="3.2486" y="2.7026" curve="90.026544"/>
+<vertex x="2.8194" y="2.2708"/>
+<vertex x="2.8194" y="2.2607" curve="89.974074"/>
+<vertex x="3.2513" y="1.8188"/>
+<vertex x="3.2816" y="1.8161" curve="90.051271"/>
+<vertex x="3.6982" y="2.2633"/>
+<vertex x="3.6982" y="2.2581" curve="90.012964"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="-3.2613" y="-1.3868"/>
+<vertex x="-3.2538" y="-1.3843" curve="89.986886"/>
+<vertex x="-4.1275" y="-2.2428"/>
+<vertex x="-4.13" y="-2.2631" curve="90.00652"/>
+<vertex x="-3.2512" y="-3.1368"/>
+<vertex x="-3.2436" y="-3.1419" curve="90.006616"/>
+<vertex x="-2.3775" y="-2.2885"/>
+<vertex x="-2.3724" y="-2.2605" curve="89.98711"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-3.2411" y="-1.8262"/>
+<vertex x="-3.2538" y="-1.8237" curve="90.026544"/>
+<vertex x="-3.683" y="-2.2555"/>
+<vertex x="-3.683" y="-2.2656" curve="89.974074"/>
+<vertex x="-3.2511" y="-2.7075"/>
+<vertex x="-3.2208" y="-2.7102" curve="90.051271"/>
+<vertex x="-2.8042" y="-2.263"/>
+<vertex x="-2.8042" y="-2.2682" curve="90.012964"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="3.2411" y="-1.3843"/>
+<vertex x="3.2486" y="-1.3818" curve="89.986886"/>
+<vertex x="2.3749" y="-2.2403"/>
+<vertex x="2.3724" y="-2.2606" curve="90.00652"/>
+<vertex x="3.2512" y="-3.1343"/>
+<vertex x="3.2588" y="-3.1394" curve="90.006616"/>
+<vertex x="4.1249" y="-2.286"/>
+<vertex x="4.13" y="-2.258" curve="89.98711"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="3.2613" y="-1.8237"/>
+<vertex x="3.2486" y="-1.8212" curve="90.026544"/>
+<vertex x="2.8194" y="-2.253"/>
+<vertex x="2.8194" y="-2.2631" curve="89.974074"/>
+<vertex x="3.2513" y="-2.705"/>
+<vertex x="3.2816" y="-2.7077" curve="90.051271"/>
+<vertex x="3.6982" y="-2.2605"/>
+<vertex x="3.6982" y="-2.2657" curve="90.012964"/>
+</polygon>
+</package>
+<package name="DIPSWITCH-08-50MIL">
+<description>&lt;b&gt;DIP SWITCH&lt;/b&gt;
+&lt;p&gt;Half-size SMT DIP switch, 1.27 mm / 0.05" pitch. For example the following:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Omron A6H series; &lt;a href="http://www.omron.com/ecb/products/pdf/en-a6h.pdf"&gt;Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<wire x1="-5.842" y1="-2.413" x2="5.842" y2="-2.413" width="0.2032" layer="21"/>
+<wire x1="5.842" y1="2.413" x2="-5.842" y2="2.413" width="0.2032" layer="21"/>
+<wire x1="-5.842" y1="2.413" x2="-5.842" y2="1.651" width="0.2032" layer="21"/>
+<wire x1="-5.842" y1="-1.651" x2="-5.842" y2="-2.413" width="0.2032" layer="21"/>
+<wire x1="-5.842" y1="1.651" x2="-5.842" y2="-1.651" width="0.2032" layer="21"/>
+<wire x1="5.842" y1="-2.413" x2="5.842" y2="-1.651" width="0.2032" layer="21"/>
+<wire x1="5.842" y1="1.651" x2="5.842" y2="2.413" width="0.2032" layer="21"/>
+<wire x1="5.842" y1="-1.651" x2="5.842" y2="1.651" width="0.2032" layer="21"/>
+<wire x1="-4.9022" y1="1.905" x2="-4.9022" y2="-1.905" width="0.1778" layer="21"/>
+<wire x1="-4.9022" y1="1.905" x2="-3.9878" y2="1.905" width="0.1778" layer="21"/>
+<wire x1="-3.9878" y1="-1.905" x2="-3.9878" y2="1.905" width="0.1778" layer="21"/>
+<wire x1="-3.9878" y1="-1.905" x2="-4.9022" y2="-1.905" width="0.1524" layer="21"/>
+<text x="-4.826" y="-4.191" size="1.016" layer="51" ratio="10">1</text>
+<text x="-5.715" y="1.27" size="0.8128" layer="51" ratio="10">ON</text>
+<text x="-3.556" y="-4.191" size="1.016" layer="51" ratio="10">2</text>
+<text x="-2.286" y="-4.191" size="1.016" layer="51" ratio="10">3</text>
+<text x="-1.016" y="-4.191" size="1.016" layer="51" ratio="10">4</text>
+<text x="0.254" y="-4.191" size="1.016" layer="51" ratio="10">5</text>
+<text x="1.524" y="-4.191" size="1.016" layer="51" ratio="10">6</text>
+<text x="2.794" y="-4.191" size="1.016" layer="51" ratio="10">7</text>
+<text x="4.064" y="-4.191" size="1.016" layer="51" ratio="10">8</text>
+<text x="0.635" y="5.334" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-5.842" y="5.334" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<rectangle x1="-4.699" y1="-0.381" x2="-4.191" y2="0" layer="21"/>
+<rectangle x1="-4.699" y1="-1.016" x2="-4.191" y2="-0.635" layer="21"/>
+<rectangle x1="-4.699" y1="-1.651" x2="-4.191" y2="-1.27" layer="21"/>
+<smd name="5" x="0.635" y="-3.7" dx="1.27" dy="0.762" layer="1" rot="R90"/>
+<smd name="6" x="1.905" y="-3.7" dx="1.27" dy="0.762" layer="1" rot="R90"/>
+<smd name="7" x="3.175" y="-3.7" dx="1.27" dy="0.762" layer="1" rot="R90"/>
+<smd name="8" x="4.445" y="-3.7" dx="1.27" dy="0.762" layer="1" rot="R90"/>
+<smd name="4" x="-0.635" y="-3.7" dx="1.27" dy="0.762" layer="1" rot="R90"/>
+<smd name="3" x="-1.905" y="-3.7" dx="1.27" dy="0.762" layer="1" rot="R90"/>
+<smd name="2" x="-3.175" y="-3.7" dx="1.27" dy="0.762" layer="1" rot="R90"/>
+<smd name="1" x="-4.445" y="-3.7" dx="1.27" dy="0.762" layer="1" rot="R90"/>
+<smd name="16" x="-4.445" y="3.7" dx="1.27" dy="0.762" layer="1" rot="R90"/>
+<smd name="15" x="-3.175" y="3.7" dx="1.27" dy="0.762" layer="1" rot="R90"/>
+<smd name="14" x="-1.905" y="3.7" dx="1.27" dy="0.762" layer="1" rot="R90"/>
+<smd name="13" x="-0.635" y="3.7" dx="1.27" dy="0.762" layer="1" rot="R90"/>
+<smd name="12" x="0.635" y="3.7" dx="1.27" dy="0.762" layer="1" rot="R90"/>
+<smd name="11" x="1.905" y="3.7" dx="1.27" dy="0.762" layer="1" rot="R90"/>
+<smd name="10" x="3.175" y="3.7" dx="1.27" dy="0.762" layer="1" rot="R90"/>
+<smd name="9" x="4.445" y="3.7" dx="1.27" dy="0.762" layer="1" rot="R90"/>
+<wire x1="-3.6322" y1="1.905" x2="-3.6322" y2="-1.905" width="0.1778" layer="21"/>
+<wire x1="-3.6322" y1="1.905" x2="-2.7178" y2="1.905" width="0.1778" layer="21"/>
+<wire x1="-2.7178" y1="-1.905" x2="-2.7178" y2="1.905" width="0.1778" layer="21"/>
+<wire x1="-2.7178" y1="-1.905" x2="-3.6322" y2="-1.905" width="0.1524" layer="21"/>
+<rectangle x1="-3.429" y1="-0.381" x2="-2.921" y2="0" layer="21"/>
+<rectangle x1="-3.429" y1="-1.016" x2="-2.921" y2="-0.635" layer="21"/>
+<rectangle x1="-3.429" y1="-1.651" x2="-2.921" y2="-1.27" layer="21"/>
+<wire x1="-2.3622" y1="1.905" x2="-2.3622" y2="-1.905" width="0.1778" layer="21"/>
+<wire x1="-2.3622" y1="1.905" x2="-1.4478" y2="1.905" width="0.1778" layer="21"/>
+<wire x1="-1.4478" y1="-1.905" x2="-1.4478" y2="1.905" width="0.1778" layer="21"/>
+<wire x1="-1.4478" y1="-1.905" x2="-2.3622" y2="-1.905" width="0.1524" layer="21"/>
+<rectangle x1="-2.159" y1="-0.381" x2="-1.651" y2="0" layer="21"/>
+<rectangle x1="-2.159" y1="-1.016" x2="-1.651" y2="-0.635" layer="21"/>
+<rectangle x1="-2.159" y1="-1.651" x2="-1.651" y2="-1.27" layer="21"/>
+<wire x1="-1.0922" y1="1.905" x2="-1.0922" y2="-1.905" width="0.1778" layer="21"/>
+<wire x1="-1.0922" y1="1.905" x2="-0.1778" y2="1.905" width="0.1778" layer="21"/>
+<wire x1="-0.1778" y1="-1.905" x2="-0.1778" y2="1.905" width="0.1778" layer="21"/>
+<wire x1="-0.1778" y1="-1.905" x2="-1.0922" y2="-1.905" width="0.1524" layer="21"/>
+<rectangle x1="-0.889" y1="-0.381" x2="-0.381" y2="0" layer="21"/>
+<rectangle x1="-0.889" y1="-1.016" x2="-0.381" y2="-0.635" layer="21"/>
+<rectangle x1="-0.889" y1="-1.651" x2="-0.381" y2="-1.27" layer="21"/>
+<wire x1="0.1778" y1="1.905" x2="0.1778" y2="-1.905" width="0.1778" layer="21"/>
+<wire x1="0.1778" y1="1.905" x2="1.0922" y2="1.905" width="0.1778" layer="21"/>
+<wire x1="1.0922" y1="-1.905" x2="1.0922" y2="1.905" width="0.1778" layer="21"/>
+<wire x1="1.0922" y1="-1.905" x2="0.1778" y2="-1.905" width="0.1524" layer="21"/>
+<rectangle x1="0.381" y1="-0.381" x2="0.889" y2="0" layer="21"/>
+<rectangle x1="0.381" y1="-1.016" x2="0.889" y2="-0.635" layer="21"/>
+<rectangle x1="0.381" y1="-1.651" x2="0.889" y2="-1.27" layer="21"/>
+<wire x1="1.4478" y1="1.905" x2="1.4478" y2="-1.905" width="0.1778" layer="21"/>
+<wire x1="1.4478" y1="1.905" x2="2.3622" y2="1.905" width="0.1778" layer="21"/>
+<wire x1="2.3622" y1="-1.905" x2="2.3622" y2="1.905" width="0.1778" layer="21"/>
+<wire x1="2.3622" y1="-1.905" x2="1.4478" y2="-1.905" width="0.1524" layer="21"/>
+<rectangle x1="1.651" y1="-0.381" x2="2.159" y2="0" layer="21"/>
+<rectangle x1="1.651" y1="-1.016" x2="2.159" y2="-0.635" layer="21"/>
+<rectangle x1="1.651" y1="-1.651" x2="2.159" y2="-1.27" layer="21"/>
+<wire x1="2.7178" y1="1.905" x2="2.7178" y2="-1.905" width="0.1778" layer="21"/>
+<wire x1="2.7178" y1="1.905" x2="3.6322" y2="1.905" width="0.1778" layer="21"/>
+<wire x1="3.6322" y1="-1.905" x2="3.6322" y2="1.905" width="0.1778" layer="21"/>
+<wire x1="3.6322" y1="-1.905" x2="2.7178" y2="-1.905" width="0.1524" layer="21"/>
+<rectangle x1="2.921" y1="-0.381" x2="3.429" y2="0" layer="21"/>
+<rectangle x1="2.921" y1="-1.016" x2="3.429" y2="-0.635" layer="21"/>
+<rectangle x1="2.921" y1="-1.651" x2="3.429" y2="-1.27" layer="21"/>
+<wire x1="3.9878" y1="1.905" x2="3.9878" y2="-1.905" width="0.1778" layer="21"/>
+<wire x1="3.9878" y1="1.905" x2="4.9022" y2="1.905" width="0.1778" layer="21"/>
+<wire x1="4.9022" y1="-1.905" x2="4.9022" y2="1.905" width="0.1778" layer="21"/>
+<wire x1="4.9022" y1="-1.905" x2="3.9878" y2="-1.905" width="0.1524" layer="21"/>
+<rectangle x1="4.191" y1="-0.381" x2="4.699" y2="0" layer="21"/>
+<rectangle x1="4.191" y1="-1.016" x2="4.699" y2="-0.635" layer="21"/>
+<rectangle x1="4.191" y1="-1.651" x2="4.699" y2="-1.27" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -11676,6 +11885,15 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <technology name=""/>
 </technologies>
 </device>
+<device name="PTH_EZ" package="TACTILE-PTH-EZ">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="SWITCH-SP3T" prefix="S" uservalue="yes">
@@ -11853,13 +12071,35 @@ DPDT SMT slide switch, AYZ0202, SWCH-08179</description>
 </devices>
 </deviceset>
 <deviceset name="SW_DIP-8" prefix="SW" uservalue="yes">
-<description>&lt;b&gt;DIP Switch 8 Position&lt;/b&gt;
-Spark Fun Electronics SKU : COM-08034</description>
+<description>&lt;b&gt;DIP Switch 8 Position&lt;/b&gt;</description>
 <gates>
 <gate name="A" symbol="SW_DIP-8" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="DIPSWITCH-08">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="10" pad="10"/>
+<connect gate="A" pin="11" pad="11"/>
+<connect gate="A" pin="12" pad="12"/>
+<connect gate="A" pin="13" pad="13"/>
+<connect gate="A" pin="14" pad="14"/>
+<connect gate="A" pin="15" pad="15"/>
+<connect gate="A" pin="16" pad="16"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="4" pad="4"/>
+<connect gate="A" pin="5" pad="5"/>
+<connect gate="A" pin="6" pad="6"/>
+<connect gate="A" pin="7" pad="7"/>
+<connect gate="A" pin="8" pad="8"/>
+<connect gate="A" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SMT-HALFSIZE" package="DIPSWITCH-08-50MIL">
 <connects>
 <connect gate="A" pin="1" pad="1"/>
 <connect gate="A" pin="10" pad="10"/>
