@@ -2169,20 +2169,16 @@ DIO-10647</description>
 </devices>
 </deviceset>
 <deviceset name="DIODE-SCHOTTKY" prefix="D">
-<description>Commonly MBRA140.</description>
+<description>Schottky diodes in SFE's production catalog&lt;p&gt;
+
+BAT20J 1A 23V 0.62Vf&lt;br&gt;
+RB751 120mA 40V 0.37Vf&lt;br&gt;
+PMEG4005EJ 0.5A 40V 0.42Vf&lt;br&gt;
+MBRA140 1A 40V 0.5Vf</description>
 <gates>
 <gate name="G$1" symbol="DIODE-SCHOTTKY" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOD-523">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="-BAT20J" package="SOD-323">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
@@ -2191,6 +2187,7 @@ DIO-10647</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-11623" constant="no"/>
+<attribute name="VALUE" value="BAT20J" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2202,6 +2199,7 @@ DIO-10647</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-11018" constant="no"/>
+<attribute name="VALUE" value="RB751" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2213,6 +2211,7 @@ DIO-10647</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-08053" constant="no"/>
+<attribute name="VALUE" value="MBRA140" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2224,6 +2223,7 @@ DIO-10647</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-10955" constant="no"/>
+<attribute name="VALUE" value="PMEG4005EJ" constant="no"/>
 </technology>
 </technologies>
 </device>
