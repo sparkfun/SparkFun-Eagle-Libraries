@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -65,7 +65,7 @@
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -2103,6 +2103,64 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <text x="-7.62" y="13.462" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="NPN-DDTD142TC">
+<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
+<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
+<text x="5.08" y="0" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="B" x="-10.16" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
+<wire x1="-7.62" y1="0" x2="-7.239" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-7.239" y1="1.016" x2="-6.604" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-6.604" y1="-1.016" x2="-5.969" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-5.969" y1="1.016" x2="-5.334" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-5.334" y1="-1.016" x2="-4.699" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-4.699" y1="1.016" x2="-4.064" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-4.064" y1="-1.016" x2="-3.429" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-3.429" y1="1.016" x2="-2.794" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-2.794" y1="-1.016" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<text x="-8.382" y="1.524" size="1.016" layer="94">0.47K ohm</text>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.127" layer="94"/>
+</symbol>
+<symbol name="PNP-DDTB142TC">
+<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="1.778" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="1.524" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="1.524" x2="1.27" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="1.2192" y1="2.3114" x2="1.5748" y2="1.6256" width="0.2032" layer="94"/>
+<wire x1="1.143" y1="2.159" x2="1.397" y2="1.6256" width="0.2032" layer="94"/>
+<wire x1="1.016" y1="2.032" x2="1.2192" y2="1.6256" width="0.2032" layer="94"/>
+<wire x1="0.9398" y1="1.8796" x2="1.0414" y2="1.651" width="0.2032" layer="94"/>
+<wire x1="0.8128" y1="1.778" x2="0.889" y2="1.6256" width="0.2032" layer="94"/>
+<text x="5.08" y="0" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="B" x="-10.16" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="C" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
+<pin name="E" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
+<wire x1="-7.62" y1="0" x2="-7.239" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-7.239" y1="1.016" x2="-6.604" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-6.604" y1="-1.016" x2="-5.969" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-5.969" y1="1.016" x2="-5.334" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-5.334" y1="-1.016" x2="-4.699" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-4.699" y1="1.016" x2="-4.064" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-4.064" y1="-1.016" x2="-3.429" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-3.429" y1="1.016" x2="-2.794" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-2.794" y1="-1.016" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<text x="-8.382" y="1.524" size="1.016" layer="94">0.47K ohm</text>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.127" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BAV99" prefix="D" uservalue="yes">
@@ -3298,6 +3356,40 @@ MMDT3904- TRANS-09373 (SOT-363, 200mA 40V)&lt;br&gt;</description>
 <technology name="">
 <attribute name="PROD_ID" value="TRANS-11993"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TRANSISTOR-NPN-DDTD142TC">
+<gates>
+<gate name="G$1" symbol="NPN-DDTD142TC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-3">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TRANSISTOR-PNP-DDTB142TC">
+<gates>
+<gate name="G$1" symbol="PNP-DDTB142TC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-3">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
