@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -65,12 +65,15 @@
 <layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
@@ -1945,6 +1948,28 @@ For Reference, see Amotec Display part ADM0802A (http://amotec-display.com/pdf/A
 <vertex x="4.7498" y="-7.1882" curve="-90"/>
 </polygon>
 </package>
+<package name="DIL12">
+<wire x1="7.62" y1="2.54" x2="7.62" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="-2.54" x2="-7.62" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="2.54" x2="7.62" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="-2.54" x2="7.62" y2="-2.54" width="0.2032" layer="21"/>
+<text x="-3.81" y="0.635" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-1.778" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<text x="-3.81" y="-1.778" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<circle x="-6.35" y="-1.27" radius="0.254" width="0.4064" layer="21"/>
+<pad name="1" x="-6.35" y="-3.81" drill="0.8636" diameter="1.905" shape="square"/>
+<pad name="2" x="-3.81" y="-3.81" drill="0.8636" diameter="1.905"/>
+<pad name="3" x="-1.27" y="-3.81" drill="0.8636" diameter="1.905"/>
+<pad name="4" x="1.27" y="-3.81" drill="0.8636" diameter="1.905"/>
+<pad name="5" x="3.81" y="-3.81" drill="0.8636" diameter="1.905"/>
+<pad name="6" x="6.35" y="-3.81" drill="0.8636" diameter="1.905"/>
+<pad name="7" x="6.35" y="3.81" drill="0.8636" diameter="1.905"/>
+<pad name="8" x="3.81" y="3.81" drill="0.8636" diameter="1.905"/>
+<pad name="9" x="1.27" y="3.81" drill="0.8636" diameter="1.905"/>
+<pad name="10" x="-1.27" y="3.81" drill="0.8636" diameter="1.905"/>
+<pad name="11" x="-3.81" y="3.81" drill="0.8636" diameter="1.905"/>
+<pad name="12" x="-6.35" y="3.81" drill="0.8636" diameter="1.905"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ALPHANUMERIC">
@@ -3498,7 +3523,7 @@ EZ is for kits. Pads are only exposed on the bottom side to help prevent solderi
 </device>
 </devices>
 </deviceset>
-<deviceset name="7-SEGMENT-4DIGIT-COUNTER">
+<deviceset name="7-SEGMENT-4DIGIT-COUNTER" prefix="DISP">
 <gates>
 <gate name="G$1" symbol="7-SEGMENT-4DIGIT-COUNTER" x="0" y="0"/>
 </gates>
@@ -3517,6 +3542,25 @@ EZ is for kits. Pads are only exposed on the bottom side to help prevent solderi
 <connect gate="G$1" pin="E" pad="1"/>
 <connect gate="G$1" pin="F" pad="10"/>
 <connect gate="G$1" pin="G" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-HP-BUBBLE" package="DIL12">
+<connects>
+<connect gate="G$1" pin="A" pad="12"/>
+<connect gate="G$1" pin="B" pad="11"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="D" pad="8"/>
+<connect gate="G$1" pin="D1" pad="1"/>
+<connect gate="G$1" pin="D2" pad="10"/>
+<connect gate="G$1" pin="D3" pad="4"/>
+<connect gate="G$1" pin="D4" pad="6"/>
+<connect gate="G$1" pin="DP" pad="5"/>
+<connect gate="G$1" pin="E" pad="2"/>
+<connect gate="G$1" pin="F" pad="9"/>
+<connect gate="G$1" pin="G" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>
