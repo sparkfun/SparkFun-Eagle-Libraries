@@ -3008,8 +3008,20 @@ Ceramic&lt;BR&gt;</description>
 <deviceset name="47UF-50V-20%(ELECT)" prefix="C" uservalue="yes">
 <description>CAP-10547</description>
 <gates>
+<gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="PANASONIC_D">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-10547" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="560PF-50V-5%(0603)" prefix="C" uservalue="yes">
