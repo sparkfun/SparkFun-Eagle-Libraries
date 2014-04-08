@@ -1058,8 +1058,20 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 <deviceset name="0.11OHM1/2W1%(2010)" prefix="R" uservalue="yes">
 <description>RES-08354</description>
 <gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="R2010">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08354" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="0.22OHM-1W-1%(2010)" prefix="R" uservalue="yes">
