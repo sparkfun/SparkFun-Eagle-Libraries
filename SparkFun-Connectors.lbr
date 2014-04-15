@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.01255" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -18009,6 +18009,15 @@ Reduced openings in tStop, pins spread a tiny bit out to hold part on PCB during
 <rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 </package>
+<package name="BINDING_POST">
+<circle x="0" y="0" radius="5.5" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="5.5" width="0.127" layer="51"/>
+<rectangle x1="-3.175" y1="-3.81" x2="3.175" y2="3.81" layer="46"/>
+<wire x1="-3.1877" y1="3.825240625" x2="-3.1877" y2="-3.825240625" width="0.127" layer="51"/>
+<wire x1="-3.1877" y1="-3.825240625" x2="3.1877" y2="-3.825240625" width="0.127" layer="51"/>
+<wire x1="3.1877" y1="-3.825240625" x2="3.1877" y2="3.825240625" width="0.127" layer="51"/>
+<wire x1="3.1877" y1="3.825240625" x2="-3.1877" y2="3.825240625" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -21091,6 +21100,9 @@ Reduced openings in tStop, pins spread a tiny bit out to hold part on PCB during
 <pin name="22" x="7.62" y="20.32" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="23" x="7.62" y="22.86" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="24" x="7.62" y="25.4" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="STAND-OFF">
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -28002,6 +28014,18 @@ Footprint unproven - datasheet and part seem to be slightly different</descripti
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BINDING_POST" prefix="S">
+<gates>
+<gate name="G$1" symbol="STAND-OFF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BINDING_POST">
 <technologies>
 <technology name=""/>
 </technologies>
