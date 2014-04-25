@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01255" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -18018,6 +18018,21 @@ Reduced openings in tStop, pins spread a tiny bit out to hold part on PCB during
 <wire x1="3.1877" y1="-3.825240625" x2="3.1877" y2="3.825240625" width="0.127" layer="51"/>
 <wire x1="3.1877" y1="3.825240625" x2="-3.1877" y2="3.825240625" width="0.127" layer="51"/>
 </package>
+<package name="BC9VPC_KIT">
+<wire x1="0" y1="0" x2="0" y2="29.972" width="0.127" layer="21"/>
+<wire x1="0" y1="29.972" x2="54.864" y2="29.972" width="0.127" layer="21"/>
+<wire x1="54.864" y1="29.972" x2="54.864" y2="0" width="0.127" layer="21"/>
+<wire x1="54.864" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<pad name="V+" x="53.086" y="21.336" drill="2.032" shape="square" stop="no"/>
+<pad name="V-" x="53.086" y="8.382" drill="2.032" shape="square" stop="no"/>
+<text x="49.276" y="20.828" size="1.27" layer="21">V+</text>
+<text x="49.276" y="7.874" size="1.27" layer="21">V-</text>
+<hole x="27.178" y="3.81" drill="2.286"/>
+<hole x="13.716" y="26.162" drill="2.286"/>
+<hole x="40.64" y="26.162" drill="2.286"/>
+<rectangle x1="51.562" y1="19.812" x2="54.61" y2="22.86" layer="30"/>
+<rectangle x1="51.562" y1="6.858" x2="54.61" y2="9.906" layer="30"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -21605,6 +21620,15 @@ This is the standard AVR In Circuit Serial Programming header. Minimal, but incl
 <technology name="">
 <attribute name="PROD_ID" value="BATT-10855" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="KIT_SOLDERMASK" package="BC9VPC_KIT">
+<connects>
+<connect gate="G$1" pin="V+" pad="V+"/>
+<connect gate="G$1" pin="V-" pad="V-"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
