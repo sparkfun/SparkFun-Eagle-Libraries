@@ -2326,13 +2326,16 @@ Production Part - 8199
 <technology name=""/>
 </technologies>
 </device>
-<device name="-BZT52" package="SOD-323">
+<device name="3.3V" package="SOD-323">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-11284"/>
+<attribute name="VALUE" value="3.3V" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2533,6 +2536,19 @@ FQP27P06 -
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="DMG2307L" package="SOT23-3">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="TRANS-11308"/>
+<attribute name="VALUE" value="30V, 2.5A"/>
+</technology>
 </technologies>
 </device>
 </devices>
