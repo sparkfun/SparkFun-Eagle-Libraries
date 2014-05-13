@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1332,6 +1332,10 @@ MSOP&lt;br&gt;
 <circle x="-0.85" y="1.25" radius="0.070709375" width="0.127" layer="21"/>
 <text x="-0.65" y="1.7" size="0.254" layer="25">&gt;NAME</text>
 <text x="-0.65" y="1.4" size="0.254" layer="27">&gt;VALUE</text>
+<wire x1="-0.75" y1="1" x2="0.75" y2="1" width="0.127" layer="51"/>
+<wire x1="0.75" y1="1" x2="0.75" y2="-1" width="0.127" layer="51"/>
+<wire x1="0.75" y1="-1" x2="-0.75" y2="-1" width="0.127" layer="51"/>
+<wire x1="-0.75" y1="-1" x2="-0.75" y2="1" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -3989,7 +3993,8 @@ Passes up to 5.5V at 3.3V supply&lt;br&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="LM339" prefix="U"><description>
+<deviceset name="LM339" prefix="U">
+<description>
 &lt;p&gt;Based on information from the SLCS006N datasheet from TI (www.ti.com).&lt;/p&gt;
 &lt;table align=center&gt;
   &lt;tr&gt;&lt;td&gt;&lt;h2&gt;Change Log&lt;/h2&gt;&lt;/td&gt;&lt;/tr&gt;
