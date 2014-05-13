@@ -2210,8 +2210,21 @@ Standard decoupling cap</description>
 <deviceset name="100UF-10V-10%(TANT)" prefix="C" uservalue="yes">
 <description>CAP-07890</description>
 <gates>
+<gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="EIA7343">
+<connects>
+<connect gate="G$1" pin="+" pad="A"/>
+<connect gate="G$1" pin="-" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-07890"/>
+<attribute name="VALUE" value="100uF"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="100UF-16V-10%(TANT)" prefix="C" uservalue="yes">
