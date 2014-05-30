@@ -18167,6 +18167,26 @@ Reduced openings in tStop, pins spread a tiny bit out to hold part on PCB during
 <hole x="-1.27" y="0" drill="1.397"/>
 <hole x="1.27" y="0" drill="1.397"/>
 </package>
+<package name="1X03_SMD_RA_MALE_POST_SMALLEST">
+<wire x1="3.81" y1="1.25" x2="-3.81" y2="1.25" width="0.1778" layer="51"/>
+<wire x1="-3.81" y1="1.25" x2="-3.81" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="3.81" y1="-1.25" x2="2.53" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="2.53" y1="-1.25" x2="-0.01" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="-0.01" y1="-1.25" x2="-2.55" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="-2.55" y1="-1.25" x2="-3.81" y2="-1.25" width="0.1778" layer="51"/>
+<wire x1="3.81" y1="-1.25" x2="3.81" y2="1.25" width="0.1778" layer="51"/>
+<wire x1="2.53" y1="-1.25" x2="2.53" y2="-7.25" width="0.127" layer="51"/>
+<wire x1="-0.01" y1="-1.25" x2="-0.01" y2="-7.25" width="0.127" layer="51"/>
+<wire x1="-2.55" y1="-1.25" x2="-2.55" y2="-7.25" width="0.127" layer="51"/>
+<rectangle x1="-0.32" y1="4.15" x2="0.32" y2="5.95" layer="51"/>
+<rectangle x1="-2.86" y1="4.15" x2="-2.22" y2="5.95" layer="51"/>
+<rectangle x1="2.22" y1="4.15" x2="2.86" y2="5.95" layer="51"/>
+<smd name="1" x="-2.54" y="5.07" dx="2.5" dy="1.27" layer="1" rot="R90"/>
+<smd name="2" x="0" y="5.07" dx="2.5" dy="1.27" layer="1" rot="R90"/>
+<smd name="3" x="2.54" y="5.07" dx="2.5" dy="1.27" layer="1" rot="R90"/>
+<hole x="-1.27" y="0" drill="1.3208"/>
+<hole x="1.27" y="0" drill="1.3208"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -23173,6 +23193,16 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </technologies>
 </device>
 <device name="1X03_SMD_RA_MALE_POST_SMALLER" package="1X03_SMD_RA_MALE_POST_SMALLER">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1X03_SMD_RA_MALE_POST_SMALLEST" package="1X03_SMD_RA_MALE_POST_SMALLEST">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
