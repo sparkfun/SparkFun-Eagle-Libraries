@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -13915,96 +13915,95 @@ Source: http://www.linear.com .. LT1996</description>
 <symbol name="MBED_NXP_LPC1768">
 <description>&lt;h3&gt;mbed NXP LPC1768&lt;/h3&gt;
 &lt;p&gt;Microcontroller development board featuring an ARM cortex M3 and an online IDE with driverless USB programming.&lt;/p&gt;</description>
-<wire x1="-27.94" y1="25.4" x2="-27.94" y2="-27.94" width="0.254" layer="94"/>
-<wire x1="-27.94" y1="-27.94" x2="25.4" y2="-27.94" width="0.254" layer="94"/>
-<wire x1="25.4" y1="-27.94" x2="25.4" y2="25.4" width="0.254" layer="94"/>
-<wire x1="25.4" y1="25.4" x2="1.27" y2="25.4" width="0.254" layer="94"/>
-<wire x1="1.27" y1="25.4" x2="-3.81" y2="25.4" width="0.254" layer="94"/>
-<wire x1="-3.81" y1="25.4" x2="-27.94" y2="25.4" width="0.254" layer="94"/>
-<wire x1="1.27" y1="25.4" x2="-3.81" y2="25.4" width="0.254" layer="94" curve="-180"/>
-<text x="-27.94" y="26.67" size="1.778" layer="95">&gt;NAME</text>
-<text x="-26.67" y="15.24" size="1.4224" layer="94">nR</text>
-<text x="24.13" y="19.05" size="1.4224" layer="94" rot="R180">IF-</text>
-<text x="24.13" y="16.51" size="1.4224" layer="94" rot="R180">IF+</text>
-<text x="24.13" y="13.97" size="1.4224" layer="94" rot="R180">Ethernet RD-</text>
-<text x="24.13" y="11.43" size="1.4224" layer="94" rot="R180">Ethernet RD+</text>
-<text x="24.13" y="8.89" size="1.4224" layer="94" rot="R180">Ethernet TD-</text>
-<text x="24.13" y="6.35" size="1.4224" layer="94" rot="R180">Ethernet TD+</text>
-<text x="24.13" y="3.81" size="1.4224" layer="94" rot="R180">USB D-</text>
-<text x="24.13" y="1.27" size="1.4224" layer="94" rot="R180">USB D+</text>
-<text x="24.13" y="24.13" size="1.4224" layer="94" rot="R180">Vout</text>
-<text x="24.13" y="21.59" size="1.4224" layer="94" rot="R180">Vu</text>
-<text x="24.13" y="-24.13" size="1.4224" layer="94" rot="R180">p21 / PwmOut</text>
-<text x="24.13" y="-21.59" size="1.4224" layer="94" rot="R180">p22 / PwmOut</text>
-<text x="24.13" y="-19.05" size="1.4224" layer="94" rot="R180">p23 / PwmOut</text>
-<text x="24.13" y="-16.51" size="1.4224" layer="94" rot="R180">p24 / PwmOut</text>
-<text x="24.13" y="-13.97" size="1.4224" layer="94" rot="R180">p25 / PwmOut</text>
-<text x="24.13" y="-11.43" size="1.4224" layer="94" rot="R180">p26 / PwmOut</text>
-<text x="24.13" y="-8.89" size="1.4224" layer="94" rot="R180">p27 / I2C scl / Serial rx</text>
-<text x="24.13" y="-6.35" size="1.4224" layer="94" rot="R180">p28 / I2C sda / Serial tx</text>
-<text x="24.13" y="-3.81" size="1.4224" layer="94" rot="R180">p29 / CAN td</text>
-<text x="24.13" y="-1.27" size="1.4224" layer="94" rot="R180">p30 / CAN rd</text>
-<text x="-26.67" y="12.7" size="1.4224" layer="94">p5 / SPI mosi</text>
-<text x="-26.67" y="10.16" size="1.4224" layer="94">p6 / SPI miso</text>
-<text x="-26.67" y="7.62" size="1.4224" layer="94">p7 / SPI sck</text>
-<text x="-26.67" y="5.08" size="1.4224" layer="94">p8</text>
-<text x="-26.67" y="2.54" size="1.4224" layer="94">p9 / Serial tx / I2C sda</text>
-<text x="-26.67" y="0" size="1.4224" layer="94">p10 / Serial rx / I2C scl</text>
-<text x="-26.67" y="-2.54" size="1.4224" layer="94">p11 / SPI mosi</text>
-<text x="-26.67" y="-5.08" size="1.4224" layer="94">p12 / SPI miso</text>
-<text x="-26.67" y="-7.62" size="1.4224" layer="94">p13 / SPI SCK / Serial tx</text>
-<text x="-26.67" y="-10.16" size="1.4224" layer="94">14</text>
-<text x="-26.67" y="-10.16" size="1.4224" layer="94">p14 / Serial rx</text>
-<text x="-26.67" y="-12.7" size="1.4224" layer="94">p15 / AnalogIn</text>
-<text x="-26.67" y="-15.24" size="1.4224" layer="94">p16 / AnalogIn</text>
-<text x="-26.67" y="-17.78" size="1.4224" layer="94">p17 / AnalogIn</text>
-<text x="-26.67" y="-20.32" size="1.4224" layer="94">p18 / AnalogIn / AnalogOut</text>
-<text x="-26.67" y="-22.86" size="1.4224" layer="94">p19 / AnalogIn</text>
-<text x="-26.67" y="-25.4" size="1.4224" layer="94">p20 / AnalogIn</text>
-<text x="-20.32" y="17.78" size="1.6764" layer="94">mbed NXP LPC1768 Microcontroller</text>
-<text x="-26.67" y="20.32" size="1.4224" layer="94">Vin</text>
-<text x="-26.67" y="17.78" size="1.4224" layer="94">Vb</text>
-<text x="-26.67" y="22.86" size="1.4224" layer="94">Gnd</text>
-<pin name="P$1" x="-33.02" y="22.86" visible="off" length="middle"/>
-<pin name="P$2" x="-33.02" y="20.32" visible="off" length="middle"/>
-<pin name="P$3" x="-33.02" y="17.78" visible="off" length="middle"/>
-<pin name="P$4" x="-33.02" y="15.24" visible="off" length="middle"/>
-<pin name="P$5" x="-33.02" y="12.7" visible="off" length="middle"/>
-<pin name="P$6" x="-33.02" y="10.16" visible="off" length="middle"/>
-<pin name="P$7" x="-33.02" y="7.62" visible="off" length="middle"/>
-<pin name="P$8" x="-33.02" y="5.08" visible="off" length="middle"/>
-<pin name="P$9" x="-33.02" y="2.54" visible="off" length="middle"/>
-<pin name="P$10" x="-33.02" y="0" visible="off" length="middle"/>
-<pin name="P$11" x="-33.02" y="-2.54" visible="off" length="middle"/>
-<pin name="P$12" x="-33.02" y="-5.08" visible="off" length="middle"/>
-<pin name="P$13" x="-33.02" y="-7.62" visible="off" length="middle"/>
-<pin name="P$14" x="-33.02" y="-10.16" visible="off" length="middle"/>
-<pin name="P$15" x="-33.02" y="-12.7" visible="off" length="middle"/>
-<pin name="P$16" x="-33.02" y="-15.24" visible="off" length="middle"/>
-<pin name="P$17" x="-33.02" y="-17.78" visible="off" length="middle"/>
-<pin name="P$18" x="-33.02" y="-20.32" visible="off" length="middle"/>
-<pin name="P$19" x="-33.02" y="-22.86" visible="off" length="middle"/>
-<pin name="P$20" x="-33.02" y="-25.4" visible="off" length="middle"/>
-<pin name="P$21" x="30.48" y="-25.4" visible="off" length="middle" rot="R180"/>
-<pin name="P$22" x="30.48" y="-22.86" visible="off" length="middle" rot="R180"/>
-<pin name="P$23" x="30.48" y="-20.32" visible="off" length="middle" rot="R180"/>
-<pin name="P$24" x="30.48" y="-17.78" visible="off" length="middle" rot="R180"/>
-<pin name="P$25" x="30.48" y="-15.24" visible="off" length="middle" rot="R180"/>
-<pin name="P$26" x="30.48" y="-12.7" visible="off" length="middle" rot="R180"/>
-<pin name="P$27" x="30.48" y="-10.16" visible="off" length="middle" rot="R180"/>
-<pin name="P$28" x="30.48" y="-7.62" visible="off" length="middle" rot="R180"/>
-<pin name="P$29" x="30.48" y="-5.08" visible="off" length="middle" rot="R180"/>
-<pin name="P$30" x="30.48" y="-2.54" visible="off" length="middle" rot="R180"/>
-<pin name="P$31" x="30.48" y="0" visible="off" length="middle" rot="R180"/>
-<pin name="P$32" x="30.48" y="2.54" visible="off" length="middle" rot="R180"/>
-<pin name="P$33" x="30.48" y="5.08" visible="off" length="middle" rot="R180"/>
-<pin name="P$34" x="30.48" y="7.62" visible="off" length="middle" rot="R180"/>
-<pin name="P$35" x="30.48" y="10.16" visible="off" length="middle" rot="R180"/>
-<pin name="P$36" x="30.48" y="12.7" visible="off" length="middle" rot="R180"/>
-<pin name="P$37" x="30.48" y="15.24" visible="off" length="middle" rot="R180"/>
-<pin name="P$38" x="30.48" y="17.78" visible="off" length="middle" rot="R180"/>
-<pin name="P$39" x="30.48" y="20.32" visible="off" length="middle" rot="R180"/>
-<pin name="P$40" x="30.48" y="22.86" visible="off" length="middle" rot="R180"/>
+<wire x1="-33.02" y1="25.4" x2="-33.02" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-33.02" y1="-27.94" x2="33.02" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="33.02" y1="-27.94" x2="33.02" y2="25.4" width="0.254" layer="94"/>
+<wire x1="33.02" y1="25.4" x2="2.54" y2="25.4" width="0.254" layer="94"/>
+<wire x1="2.54" y1="25.4" x2="-2.54" y2="25.4" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="25.4" x2="-33.02" y2="25.4" width="0.254" layer="94"/>
+<wire x1="2.54" y1="25.4" x2="-2.54" y2="25.4" width="0.254" layer="94" curve="-180"/>
+<text x="-33.02" y="26.67" size="1.778" layer="95">&gt;NAME</text>
+<text x="-31.75" y="15.24" size="1.4224" layer="94">nR</text>
+<text x="31.75" y="19.05" size="1.4224" layer="94" rot="R180">IF-</text>
+<text x="31.75" y="16.51" size="1.4224" layer="94" rot="R180">IF+</text>
+<text x="31.75" y="13.97" size="1.4224" layer="94" rot="R180">Ethernet RD-</text>
+<text x="31.75" y="11.43" size="1.4224" layer="94" rot="R180">Ethernet RD+</text>
+<text x="31.75" y="8.89" size="1.4224" layer="94" rot="R180">Ethernet TD-</text>
+<text x="31.75" y="6.35" size="1.4224" layer="94" rot="R180">Ethernet TD+</text>
+<text x="31.75" y="3.81" size="1.4224" layer="94" rot="R180">USB D-</text>
+<text x="31.75" y="1.27" size="1.4224" layer="94" rot="R180">USB D+</text>
+<text x="31.75" y="24.13" size="1.4224" layer="94" rot="R180">Vout</text>
+<text x="31.75" y="21.59" size="1.4224" layer="94" rot="R180">Vu</text>
+<text x="31.75" y="-24.13" size="1.4224" layer="94" rot="R180">p21 / PwmOut</text>
+<text x="31.75" y="-21.59" size="1.4224" layer="94" rot="R180">p22 / PwmOut</text>
+<text x="31.75" y="-19.05" size="1.4224" layer="94" rot="R180">p23 / PwmOut</text>
+<text x="31.75" y="-16.51" size="1.4224" layer="94" rot="R180">p24 / PwmOut</text>
+<text x="31.75" y="-13.97" size="1.4224" layer="94" rot="R180">p25 / PwmOut</text>
+<text x="31.75" y="-11.43" size="1.4224" layer="94" rot="R180">p26 / PwmOut</text>
+<text x="31.75" y="-8.89" size="1.4224" layer="94" rot="R180">p27 / I2C scl / Serial rx</text>
+<text x="31.75" y="-6.35" size="1.4224" layer="94" rot="R180">p28 / I2C sda / Serial tx</text>
+<text x="31.75" y="-3.81" size="1.4224" layer="94" rot="R180">p29 / CAN td</text>
+<text x="31.75" y="-1.27" size="1.4224" layer="94" rot="R180">p30 / CAN rd</text>
+<text x="-31.75" y="12.7" size="1.4224" layer="94">p5 / SPI mosi</text>
+<text x="-31.75" y="10.16" size="1.4224" layer="94">p6 / SPI miso</text>
+<text x="-31.75" y="7.62" size="1.4224" layer="94">p7 / SPI sck</text>
+<text x="-31.75" y="5.08" size="1.4224" layer="94">p8</text>
+<text x="-31.75" y="2.54" size="1.4224" layer="94">p9 / Serial tx / I2C sda</text>
+<text x="-31.75" y="0" size="1.4224" layer="94">p10 / Serial rx / I2C scl</text>
+<text x="-31.75" y="-2.54" size="1.4224" layer="94">p11 / SPI mosi</text>
+<text x="-31.75" y="-5.08" size="1.4224" layer="94">p12 / SPI miso</text>
+<text x="-31.75" y="-7.62" size="1.4224" layer="94">p13 / SPI SCK / Serial tx</text>
+<text x="-31.75" y="-10.16" size="1.4224" layer="94">p14 / Serial rx</text>
+<text x="-31.75" y="-12.7" size="1.4224" layer="94">p15 / AnalogIn</text>
+<text x="-31.75" y="-15.24" size="1.4224" layer="94">p16 / AnalogIn</text>
+<text x="-31.75" y="-17.78" size="1.4224" layer="94">p17 / AnalogIn</text>
+<text x="-31.75" y="-20.32" size="1.4224" layer="94">p18 / AnalogIn / AnalogOut</text>
+<text x="-31.75" y="-22.86" size="1.4224" layer="94">p19 / AnalogIn</text>
+<text x="-31.75" y="-25.4" size="1.4224" layer="94">p20 / AnalogIn</text>
+<text x="-25.4" y="17.78" size="1.6764" layer="94">mbed NXP LPC1768 Microcontroller</text>
+<text x="-31.75" y="20.32" size="1.4224" layer="94">Vin</text>
+<text x="-31.75" y="17.78" size="1.4224" layer="94">Vb</text>
+<text x="-31.75" y="22.86" size="1.4224" layer="94">Gnd</text>
+<pin name="P$1" x="-38.1" y="22.86" visible="off" length="middle"/>
+<pin name="P$2" x="-38.1" y="20.32" visible="off" length="middle"/>
+<pin name="P$3" x="-38.1" y="17.78" visible="off" length="middle"/>
+<pin name="P$4" x="-38.1" y="15.24" visible="off" length="middle"/>
+<pin name="P$5" x="-38.1" y="12.7" visible="off" length="middle"/>
+<pin name="P$6" x="-38.1" y="10.16" visible="off" length="middle"/>
+<pin name="P$7" x="-38.1" y="7.62" visible="off" length="middle"/>
+<pin name="P$8" x="-38.1" y="5.08" visible="off" length="middle"/>
+<pin name="P$9" x="-38.1" y="2.54" visible="off" length="middle"/>
+<pin name="P$10" x="-38.1" y="0" visible="off" length="middle"/>
+<pin name="P$11" x="-38.1" y="-2.54" visible="off" length="middle"/>
+<pin name="P$12" x="-38.1" y="-5.08" visible="off" length="middle"/>
+<pin name="P$13" x="-38.1" y="-7.62" visible="off" length="middle"/>
+<pin name="P$14" x="-38.1" y="-10.16" visible="off" length="middle"/>
+<pin name="P$15" x="-38.1" y="-12.7" visible="off" length="middle"/>
+<pin name="P$16" x="-38.1" y="-15.24" visible="off" length="middle"/>
+<pin name="P$17" x="-38.1" y="-17.78" visible="off" length="middle"/>
+<pin name="P$18" x="-38.1" y="-20.32" visible="off" length="middle"/>
+<pin name="P$19" x="-38.1" y="-22.86" visible="off" length="middle"/>
+<pin name="P$20" x="-38.1" y="-25.4" visible="off" length="middle"/>
+<pin name="P$21" x="38.1" y="-25.4" visible="off" length="middle" rot="R180"/>
+<pin name="P$22" x="38.1" y="-22.86" visible="off" length="middle" rot="R180"/>
+<pin name="P$23" x="38.1" y="-20.32" visible="off" length="middle" rot="R180"/>
+<pin name="P$24" x="38.1" y="-17.78" visible="off" length="middle" rot="R180"/>
+<pin name="P$25" x="38.1" y="-15.24" visible="off" length="middle" rot="R180"/>
+<pin name="P$26" x="38.1" y="-12.7" visible="off" length="middle" rot="R180"/>
+<pin name="P$27" x="38.1" y="-10.16" visible="off" length="middle" rot="R180"/>
+<pin name="P$28" x="38.1" y="-7.62" visible="off" length="middle" rot="R180"/>
+<pin name="P$29" x="38.1" y="-5.08" visible="off" length="middle" rot="R180"/>
+<pin name="P$30" x="38.1" y="-2.54" visible="off" length="middle" rot="R180"/>
+<pin name="P$31" x="38.1" y="0" visible="off" length="middle" rot="R180"/>
+<pin name="P$32" x="38.1" y="2.54" visible="off" length="middle" rot="R180"/>
+<pin name="P$33" x="38.1" y="5.08" visible="off" length="middle" rot="R180"/>
+<pin name="P$34" x="38.1" y="7.62" visible="off" length="middle" rot="R180"/>
+<pin name="P$35" x="38.1" y="10.16" visible="off" length="middle" rot="R180"/>
+<pin name="P$36" x="38.1" y="12.7" visible="off" length="middle" rot="R180"/>
+<pin name="P$37" x="38.1" y="15.24" visible="off" length="middle" rot="R180"/>
+<pin name="P$38" x="38.1" y="17.78" visible="off" length="middle" rot="R180"/>
+<pin name="P$39" x="38.1" y="20.32" visible="off" length="middle" rot="R180"/>
+<pin name="P$40" x="38.1" y="22.86" visible="off" length="middle" rot="R180"/>
 </symbol>
 <symbol name="ATTINY2313A">
 <pin name="PA2/!RESET" x="-22.86" y="12.7" length="middle"/>
