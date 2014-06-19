@@ -568,8 +568,8 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 <package name="CPOL-RADIAL-1000UF-25V">
 <wire x1="-1.905" y1="1.27" x2="-3.175" y2="1.27" width="0.2032" layer="21"/>
 <circle x="0" y="0" radius="5.461" width="0.2032" layer="21"/>
-<pad name="2" x="-2.54" y="0" drill="0.7" diameter="1.651"/>
-<pad name="1" x="2.54" y="0" drill="0.7" diameter="1.651" shape="square"/>
+<pad name="-" x="-2.54" y="0" drill="0.7" diameter="1.651"/>
+<pad name="+" x="2.54" y="0" drill="0.7" diameter="1.651" shape="square"/>
 <text x="-1.905" y="-4.318" size="0.8128" layer="27">&gt;Value</text>
 <text x="-0.762" y="2.921" size="0.4064" layer="25">&gt;Name</text>
 </package>
@@ -1483,6 +1483,20 @@ Source: RS Components</description>
 <wire x1="1.778" y1="1.397" x2="0.762" y2="1.397" width="0.2032" layer="21"/>
 <wire x1="1.27" y1="1.905" x2="1.27" y2="0.889" width="0.2032" layer="21"/>
 </package>
+<package name="CPOL-RADIAL-1000UF-25V-KIT">
+<wire x1="-1.905" y1="1.27" x2="-3.175" y2="1.27" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="5.461" width="0.2032" layer="21"/>
+<pad name="-" x="-2.5" y="0" drill="0.7" diameter="1.651" stop="no"/>
+<pad name="+" x="2.5" y="0" drill="0.7" diameter="1.651" shape="square" stop="no"/>
+<text x="-2.005" y="-4.018" size="0.8128" layer="27">&gt;Value</text>
+<text x="-0.762" y="2.921" size="0.4064" layer="25">&gt;Name</text>
+<circle x="-2.5" y="0" radius="0.3556" width="0" layer="29"/>
+<circle x="2.5" y="0" radius="0.35" width="0" layer="29"/>
+<rectangle x1="1.6" y1="-0.9" x2="3.4" y2="0.9" layer="30"/>
+<circle x="-2.5" y="0" radius="0.9" width="0" layer="30"/>
+<wire x1="2.978" y1="1.497" x2="1.962" y2="1.497" width="0.2032" layer="21"/>
+<wire x1="2.47" y1="2.005" x2="2.47" y2="0.989" width="0.2032" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP">
@@ -1782,8 +1796,8 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 </device>
 <device name="PTH4" package="CPOL-RADIAL-1000UF-25V">
 <connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2"/>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2189,8 +2203,33 @@ Standard decoupling cap</description>
 <deviceset name="1000UF-25V(PTH)" prefix="C" uservalue="yes">
 <description>CAP-08070</description>
 <gates>
+<gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="CPOL-RADIAL-1000UF-25V">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-09538" constant="no"/>
+<attribute name="VALUE" value="CAP-09538" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="KIT" package="CPOL-RADIAL-1000UF-25V-KIT">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-09538" constant="no"/>
+<attribute name="VALUE" value="1000uf/25V" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="100PF-200V-5%(PTH)" prefix="C" uservalue="yes">
