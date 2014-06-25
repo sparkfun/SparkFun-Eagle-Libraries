@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -14769,6 +14769,54 @@ channels, 3 magnetic field channels&lt;/li&gt;
 <text x="-17.78" y="25.4" size="1.778" layer="95">&gt;NAME</text>
 <text x="-17.78" y="-30.48" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="AY0438">
+<pin name="SEG16" x="-25.4" y="-20.32" length="middle" direction="out"/>
+<pin name="SEG15" x="-25.4" y="-17.78" length="middle" direction="out"/>
+<pin name="SEG14" x="-25.4" y="-15.24" length="middle" direction="out"/>
+<pin name="SEG13" x="-25.4" y="-12.7" length="middle" direction="out"/>
+<pin name="SEG12" x="-25.4" y="-10.16" length="middle" direction="out"/>
+<pin name="SEG11" x="-25.4" y="-7.62" length="middle" direction="out"/>
+<pin name="SEG10" x="-25.4" y="-5.08" length="middle" direction="out"/>
+<pin name="SEG09" x="-25.4" y="-2.54" length="middle" direction="out"/>
+<pin name="SEG08" x="-25.4" y="0" length="middle" direction="out"/>
+<pin name="SEG07" x="-25.4" y="2.54" length="middle" direction="out"/>
+<pin name="SEG06" x="-25.4" y="5.08" length="middle" direction="out"/>
+<pin name="SEG05" x="-25.4" y="7.62" length="middle" direction="out"/>
+<pin name="SEG04" x="-25.4" y="10.16" length="middle" direction="out"/>
+<pin name="SEG03" x="-25.4" y="12.7" length="middle" direction="out"/>
+<pin name="SEG02" x="-25.4" y="15.24" length="middle" direction="out"/>
+<pin name="SEG01" x="-25.4" y="17.78" length="middle" direction="out"/>
+<pin name="SEG32" x="25.4" y="17.78" length="middle" direction="out" rot="R180"/>
+<pin name="SEG31" x="25.4" y="15.24" length="middle" direction="out" rot="R180"/>
+<pin name="SEG30" x="25.4" y="12.7" length="middle" direction="out" rot="R180"/>
+<pin name="SEG29" x="25.4" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="SEG28" x="25.4" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="SEG27" x="25.4" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="SEG26" x="25.4" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="SEG25" x="25.4" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="SEG24" x="25.4" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="SEG23" x="25.4" y="-5.08" length="middle" direction="out" rot="R180"/>
+<pin name="SEG22" x="25.4" y="-7.62" length="middle" direction="out" rot="R180"/>
+<pin name="SEG21" x="25.4" y="-10.16" length="middle" direction="out" rot="R180"/>
+<pin name="SEG20" x="25.4" y="-12.7" length="middle" direction="out" rot="R180"/>
+<pin name="SEG19" x="25.4" y="-15.24" length="middle" direction="out" rot="R180"/>
+<pin name="SEG18" x="25.4" y="-17.78" length="middle" direction="out" rot="R180"/>
+<pin name="SEG17" x="25.4" y="-20.32" length="middle" direction="out" rot="R180"/>
+<pin name="DATAIN" x="-2.54" y="-27.94" length="middle" direction="in" rot="R90"/>
+<pin name="DATAOUT" x="2.54" y="-27.94" length="middle" direction="out" rot="R90"/>
+<pin name="LOAD" x="7.62" y="-27.94" length="middle" direction="in" rot="R90"/>
+<pin name="CLOCK" x="-7.62" y="-27.94" length="middle" direction="in" function="clk" rot="R90"/>
+<pin name="BP" x="2.54" y="25.4" length="middle" direction="out" rot="R270"/>
+<pin name="VSS" x="-2.54" y="25.4" length="middle" direction="pwr" rot="R270"/>
+<pin name="LCDIN" x="7.62" y="25.4" length="middle" direction="in" rot="R270"/>
+<pin name="VDD" x="-7.62" y="25.4" length="middle" direction="pwr" rot="R270"/>
+<wire x1="-20.32" y1="20.32" x2="20.32" y2="20.32" width="0.254" layer="94"/>
+<wire x1="20.32" y1="20.32" x2="20.32" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-22.86" x2="-20.32" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-22.86" x2="-20.32" y2="20.32" width="0.254" layer="94"/>
+<text x="12.7" y="22.86" size="1.778" layer="95">&gt;NAME</text>
+<text x="12.7" y="-27.178" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="AT25FS010">
@@ -21615,6 +21663,74 @@ We use an NXP part which does NOT have a clamping diode.</description>
 <attribute name="PROD_ID" value="IC-12130"/>
 <attribute name="VALUE" value="imp002" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AY0438" prefix="U" uservalue="yes">
+<description>Microchip &lt;b&gt;AY0438&lt;/b&gt;.&lt;br&gt;
+32-Segment CMOS LCD Driver.&lt;br&gt;
+&lt;b&gt;&lt;i&gt;Features:&lt;/i&gt;&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Drives up to 32 LCD segments of arbitrary configuration&lt;/li&gt;
+&lt;li&gt;CMOS process for: wide supply voltage range,
+low- power operation, high-noise immunity, wide
+temperature range&lt;/li&gt;
+&lt;li&gt;CMOS and TTL-compatible inputs&lt;/li&gt;
+&lt;li&gt;Electrostatic discharge protection on all pins&lt;/li&gt;
+&lt;li&gt;Cascadable&lt;/li&gt;
+&lt;li&gt;On-chip oscillator&lt;/li&gt;
+&lt;li&gt;Requires only three control lines&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="AY0438" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DIL" package="DIL40">
+<connects>
+<connect gate="G$1" pin="BP" pad="30"/>
+<connect gate="G$1" pin="CLOCK" pad="40"/>
+<connect gate="G$1" pin="DATAIN" pad="34"/>
+<connect gate="G$1" pin="DATAOUT" pad="35"/>
+<connect gate="G$1" pin="LCDIN" pad="31"/>
+<connect gate="G$1" pin="LOAD" pad="2"/>
+<connect gate="G$1" pin="SEG01" pad="39"/>
+<connect gate="G$1" pin="SEG02" pad="38"/>
+<connect gate="G$1" pin="SEG03" pad="37"/>
+<connect gate="G$1" pin="SEG04" pad="33"/>
+<connect gate="G$1" pin="SEG05" pad="32"/>
+<connect gate="G$1" pin="SEG06" pad="29"/>
+<connect gate="G$1" pin="SEG07" pad="28"/>
+<connect gate="G$1" pin="SEG08" pad="27"/>
+<connect gate="G$1" pin="SEG09" pad="26"/>
+<connect gate="G$1" pin="SEG10" pad="25"/>
+<connect gate="G$1" pin="SEG11" pad="24"/>
+<connect gate="G$1" pin="SEG12" pad="23"/>
+<connect gate="G$1" pin="SEG13" pad="22"/>
+<connect gate="G$1" pin="SEG14" pad="21"/>
+<connect gate="G$1" pin="SEG15" pad="20"/>
+<connect gate="G$1" pin="SEG16" pad="19"/>
+<connect gate="G$1" pin="SEG17" pad="18"/>
+<connect gate="G$1" pin="SEG18" pad="17"/>
+<connect gate="G$1" pin="SEG19" pad="16"/>
+<connect gate="G$1" pin="SEG20" pad="15"/>
+<connect gate="G$1" pin="SEG21" pad="14"/>
+<connect gate="G$1" pin="SEG22" pad="13"/>
+<connect gate="G$1" pin="SEG23" pad="12"/>
+<connect gate="G$1" pin="SEG24" pad="11"/>
+<connect gate="G$1" pin="SEG25" pad="10"/>
+<connect gate="G$1" pin="SEG26" pad="9"/>
+<connect gate="G$1" pin="SEG27" pad="8"/>
+<connect gate="G$1" pin="SEG28" pad="7"/>
+<connect gate="G$1" pin="SEG29" pad="6"/>
+<connect gate="G$1" pin="SEG30" pad="5"/>
+<connect gate="G$1" pin="SEG31" pad="4"/>
+<connect gate="G$1" pin="SEG32" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="VSS" pad="36"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
