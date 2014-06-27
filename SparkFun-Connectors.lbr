@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -15195,12 +15195,12 @@ Matches 4UCONN part # 11026&lt;br&gt;
 <hole x="1.27" y="0" drill="1.6"/>
 </package>
 <package name="AUDIO-JACK-.25-INCH-HORIZ-PTH">
-<pad name="P$5" x="10.5" y="4.38" drill="1.6"/>
-<pad name="P$2" x="4.2" y="-6.92" drill="1.6"/>
-<pad name="P$3" x="4.2" y="4.38" drill="1.6"/>
-<pad name="P$4" x="10.5" y="-6.92" drill="1.6"/>
-<pad name="P$7" x="16.8" y="4.38" drill="1.6"/>
-<pad name="P$6" x="16.8" y="-6.92" drill="1.6"/>
+<pad name="RING-NORM" x="10.5" y="4.35" drill="1.6"/>
+<pad name="SLEEVE" x="4.2" y="-6.95" drill="1.6"/>
+<pad name="SLEEVE-NORM" x="4.2" y="4.35" drill="1.6"/>
+<pad name="RING" x="10.5" y="-6.95" drill="1.6"/>
+<pad name="TIP-NORM" x="16.8" y="4.35" drill="1.6"/>
+<pad name="TIP" x="16.8" y="-6.95" drill="1.6"/>
 <wire x1="0" y1="6.23" x2="0" y2="-8.77" width="0.127" layer="21"/>
 <wire x1="0" y1="-8.77" x2="21" y2="-8.77" width="0.127" layer="21"/>
 <wire x1="21" y1="-8.77" x2="21" y2="-3.97" width="0.127" layer="21"/>
@@ -15228,7 +15228,11 @@ Matches 4UCONN part # 11026&lt;br&gt;
 <text x="2.54" y="0" size="1.778" layer="25" font="vector">&gt;NAME</text>
 <text x="2.54" y="-2.54" size="1.778" layer="27" font="vector">&gt;VALUE</text>
 <hole x="7.4" y="4.38" drill="2"/>
-<hole x="7.4" y="-6.92" drill="2"/>
+<hole x="7.4" y="-6.95" drill="2"/>
+<wire x1="-6" y1="8.75" x2="0" y2="8.75" width="0.127" layer="51"/>
+<wire x1="-6" y1="-8.75" x2="0" y2="-8.75" width="0.127" layer="51"/>
+<wire x1="-6" y1="8.75" x2="-6" y2="-8.75" width="0.127" layer="51"/>
+<wire x1="0" y1="8.75" x2="0" y2="-8.75" width="0.127" layer="51"/>
 </package>
 <package name="AUDIO-JACK-.25-INCH-VERT-PTH">
 <wire x1="0" y1="0" x2="11.6" y2="0" width="0.127" layer="21"/>
@@ -21286,6 +21290,8 @@ Reduced openings in tStop, pins spread a tiny bit out to hold part on PCB during
 <wire x1="3.048" y1="6.35" x2="2.54" y2="7.62" width="0.1524" layer="94"/>
 <pin name="EARTH-NORM" x="5.08" y="5.08" visible="off" length="short" rot="R180"/>
 <pin name="RING-NORM" x="5.08" y="-5.08" visible="off" length="short" rot="R180"/>
+<text x="0" y="2.54" size="1.27" layer="94" align="bottom-center">T</text>
+<text x="-2.54" y="-2.54" size="1.27" layer="94" align="bottom-center">R</text>
 </symbol>
 <symbol name="AUDIO-JACK5-TRS-NORMALED">
 <wire x1="-3.81" y1="-2.54" x2="-2.54" y2="-3.81" width="0.1524" layer="94"/>
@@ -28286,7 +28292,7 @@ CONN-08352</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="AUDIO-JACK4-.25-HORIZ-TRS" prefix="JP" uservalue="yes">
+<deviceset name="AUDIO-JACK4-.25-HORIZ-TRS" prefix="JP">
 <description>1/4" TRS jack, horizontal
 Production SKU: COM-11144
 
@@ -28297,12 +28303,12 @@ Footprint unproven - datasheet and part seem to be slightly different</descripti
 <devices>
 <device name="" package="AUDIO-JACK-.25-INCH-HORIZ-PTH">
 <connects>
-<connect gate="G$1" pin="EARTH" pad="P$2"/>
-<connect gate="G$1" pin="EARTH-NORM" pad="P$3"/>
-<connect gate="G$1" pin="RING" pad="P$4"/>
-<connect gate="G$1" pin="RING-NORM" pad="P$5"/>
-<connect gate="G$1" pin="TIP" pad="P$6"/>
-<connect gate="G$1" pin="TIP-NORM" pad="P$7"/>
+<connect gate="G$1" pin="EARTH" pad="SLEEVE"/>
+<connect gate="G$1" pin="EARTH-NORM" pad="SLEEVE-NORM"/>
+<connect gate="G$1" pin="RING" pad="RING"/>
+<connect gate="G$1" pin="RING-NORM" pad="RING-NORM"/>
+<connect gate="G$1" pin="TIP" pad="TIP"/>
+<connect gate="G$1" pin="TIP-NORM" pad="TIP-NORM"/>
 </connects>
 <technologies>
 <technology name="">
