@@ -63360,6 +63360,11 @@ Two of these half tabs, rotated in opposite directions, can be connected togethe
 <vertex x="17.654" y="0.132"/>
 </polygon>
 </symbol>
+<symbol name="AGND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="AGND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DGND" prefix="GND">
@@ -64094,6 +64099,18 @@ Standard A4 size frame in Landscape</description>
 </gates>
 <devices>
 <device name="" package="SMART_BASIC_LOGO">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AGND">
+<gates>
+<gate name="G$1" symbol="AGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
