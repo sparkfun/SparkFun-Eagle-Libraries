@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.0.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -51,8 +51,8 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -18057,27 +18057,6 @@ Reduced openings in tStop, pins spread a tiny bit out to hold part on PCB during
 <rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 </package>
-<package name="BINDING_POST">
-<circle x="0" y="0" radius="5.5" width="0.127" layer="51"/>
-<circle x="-1.905" y="0" radius="3.556" width="0.127" layer="44"/>
-<circle x="1.905" y="0" radius="3.556" width="0.127" layer="44"/>
-<circle x="0" y="0" radius="3.556" width="0.127" layer="44"/>
-<circle x="-1.905" y="0" radius="3.556" width="0.127" layer="45"/>
-<circle x="1.905" y="0" radius="3.556" width="0.127" layer="45"/>
-<circle x="0" y="0" radius="3.556" width="0.127" layer="45"/>
-<circle x="0" y="0" radius="3.556" width="0.127" layer="29"/>
-<circle x="1.905" y="0" radius="3.556" width="0.127" layer="29"/>
-<circle x="-1.905" y="0" radius="3.556" width="0.127" layer="29"/>
-<circle x="0" y="0" radius="3.556" width="0.127" layer="30"/>
-<circle x="1.905" y="0" radius="3.556" width="0.127" layer="30"/>
-<circle x="-1.905" y="0" radius="3.556" width="0.127" layer="30"/>
-<circle x="0" y="0" radius="3.556" width="0.127" layer="41"/>
-<circle x="1.905" y="0" radius="3.556" width="0.127" layer="41"/>
-<circle x="-1.905" y="0" radius="3.556" width="0.127" layer="41"/>
-<circle x="0" y="0" radius="3.556" width="0.127" layer="42"/>
-<circle x="1.905" y="0" radius="3.556" width="0.127" layer="42"/>
-<circle x="-1.905" y="0" radius="3.556" width="0.127" layer="42"/>
-</package>
 <package name="BC9VPC_KIT">
 <wire x1="0" y1="0" x2="0" y2="29.972" width="0.127" layer="21"/>
 <wire x1="0" y1="29.972" x2="54.864" y2="29.972" width="0.127" layer="21"/>
@@ -18338,6 +18317,26 @@ Reduced openings in tStop, pins spread a tiny bit out to hold part on PCB during
 <wire x1="31.115" y1="-1.27" x2="29.845" y2="-1.27" width="0.2032" layer="21"/>
 <pad name="13" x="30.48" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
 <rectangle x1="30.226" y1="-0.254" x2="30.734" y2="0.254" layer="51"/>
+</package>
+<package name="BINDING_POST">
+<wire x1="-0.5" y1="-3.5" x2="0.5" y2="-3.5" width="0.127" layer="20"/>
+<wire x1="0.5" y1="-3.5" x2="4" y2="0" width="0.127" layer="20" curve="90"/>
+<wire x1="4" y1="0" x2="0.5" y2="3.5" width="0.127" layer="20" curve="90"/>
+<wire x1="-0.5" y1="3.5" x2="-4" y2="0" width="0.127" layer="20" curve="90"/>
+<wire x1="-4" y1="0" x2="-0.5" y2="-3.5" width="0.127" layer="20" curve="90"/>
+<pad name="P$1" x="0" y="7.62" drill="1.5"/>
+<circle x="0" y="0" radius="6.300790625" width="0.127" layer="40"/>
+<circle x="0" y="0" radius="5.5" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="5.5" width="0.254" layer="21"/>
+<text x="2" y="9" size="1.27" layer="25">&gt;NAME</text>
+<text x="2" y="6.46" size="1.27" layer="25">&gt;VALUE</text>
+<wire x1="0.5" y1="3.5" x2="-0.5" y2="3.5" width="0.127" layer="20"/>
+<wire x1="0.5" y1="-3.5" x2="4" y2="0" width="0.127" layer="21" curve="90"/>
+<wire x1="4" y1="0" x2="0.5" y2="3.5" width="0.127" layer="21" curve="90"/>
+<wire x1="-0.5" y1="3.5" x2="-4" y2="0" width="0.127" layer="21" curve="90"/>
+<wire x1="0.5" y1="3.5" x2="-0.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-4" y1="0" x2="-0.5" y2="-3.5" width="0.127" layer="21" curve="90"/>
+<wire x1="-0.5" y1="-3.5" x2="0.5" y2="-3.5" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -21485,6 +21484,12 @@ Reduced openings in tStop, pins spread a tiny bit out to hold part on PCB during
 <pin name="SHIELD@1" x="-17.78" y="-12.7" length="middle"/>
 <pin name="7" x="-17.78" y="-5.08" length="middle"/>
 <pin name="8" x="-17.78" y="-7.62" length="middle"/>
+</symbol>
+<symbol name="BINDING_POST">
+<pin name="P$1" x="-2.54" y="0" visible="off" length="short"/>
+<circle x="0" y="0" radius="1.27" width="0.6096" layer="94"/>
+<text x="-2.54" y="2.54" size="1.27" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.27" layer="95">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -28500,18 +28505,6 @@ Footprint unproven - datasheet and part seem to be slightly different</descripti
 </device>
 </devices>
 </deviceset>
-<deviceset name="BINDING_POST" prefix="S">
-<gates>
-<gate name="G$1" symbol="STAND-OFF" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="BINDING_POST">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="MAGJACK-NOLABELS" prefix="J">
 <gates>
 <gate name="G$1" symbol="MAGJACK_NOLABELS" x="0" y="0"/>
@@ -28538,6 +28531,26 @@ Footprint unproven - datasheet and part seem to be slightly different</descripti
 <technology name="">
 <attribute name="PROD_ID" value="CONN-09556"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BINDING_POST" prefix="JP">
+<description>Single Banana jack.  &lt;br&gt;&lt;br&gt;
+
+PRT-09739 (red) or PRT-09740 (blk) &lt;br&gt;&lt;br&gt;
+
+Footprint is a bit strange.  The component itself has an threaded, insulated body that goes through the board, with a small threaded metal stud coming off the back.  The intent of this package is that the post goes through a milled obling hole, and a small wire would be used to connect from the PCB pad to the metal contact on the post.</description>
+<gates>
+<gate name="G$1" symbol="BINDING_POST" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BINDING_POST">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
