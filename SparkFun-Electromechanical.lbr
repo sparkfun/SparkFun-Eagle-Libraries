@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -86,6 +86,7 @@
 <layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -9276,6 +9277,115 @@ Fits EVJY-00, EVJY-80, EVJY-81, EVJY-10, etc</description>
 <wire x1="5.715" y1="-3.175" x2="-5.715" y2="-3.175" width="0.127" layer="21"/>
 <wire x1="-5.715" y1="-3.175" x2="-5.715" y2="3.175" width="0.127" layer="21"/>
 </package>
+<package name="ROTARY_SWITCH_1X10">
+<description>Taiwan Alpha 1 pole, 10 pos rotary switch
+
+Alpha PN SR2512F-0110-16f2b-c9-s-k
+
+Arrows in tDocu denote pointer positions for 45-degree shaft, assuming a knob with a pointer that's opposite the set screw.</description>
+<circle x="0" y="0" radius="5.5" width="0.127" layer="51"/>
+<wire x1="0" y1="11" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="0" y2="-11" width="0.127" layer="51"/>
+<wire x1="-11" y1="0" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="11" y2="0" width="0.127" layer="51"/>
+<wire x1="-11.5" y1="-1.75" x2="-12.5" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="-12.5" y1="-1.75" x2="-12.5" y2="1.75" width="0.127" layer="51"/>
+<wire x1="-12.5" y1="1.75" x2="-11.5" y2="1.75" width="0.127" layer="51"/>
+<wire x1="-11.5" y1="1.75" x2="-11.5" y2="-1.75" width="0.127" layer="51"/>
+<pad name="COMMON" x="0" y="-5.5" drill="1.4"/>
+<pad name="1" x="7.07106875" y="7.07106875" drill="1.4"/>
+<pad name="2" x="9.659259375" y="2.588190625" drill="1.4"/>
+<pad name="3" x="9.659259375" y="-2.588190625" drill="1.4"/>
+<pad name="4" x="7.07106875" y="-7.07106875" drill="1.4"/>
+<pad name="5" x="2.588190625" y="-9.659259375" drill="1.4"/>
+<pad name="6" x="-2.588190625" y="-9.659259375" drill="1.4"/>
+<pad name="7" x="-7.07106875" y="-7.07106875" drill="1.4"/>
+<pad name="8" x="-9.659259375" y="-2.588190625" drill="1.4"/>
+<pad name="9" x="-9.659259375" y="2.588190625" drill="1.4"/>
+<pad name="10" x="-7.07106875" y="7.07106875" drill="1.4"/>
+<circle x="0" y="0" radius="12.5" width="0.127" layer="51"/>
+<circle x="0" y="10" radius="5.5" width="0.127" layer="51"/>
+<circle x="0" y="-10" radius="5.5" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="4" y2="-4" width="0.127" layer="51"/>
+<wire x1="4" y1="-4" x2="3" y2="-2" width="0.127" layer="51"/>
+<wire x1="3" y1="-2" x2="2" y2="-3" width="0.127" layer="51"/>
+<wire x1="2" y1="-3" x2="4" y2="-4" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="4" y2="4" width="0.127" layer="51"/>
+<wire x1="4" y1="4" x2="2" y2="3" width="0.127" layer="51"/>
+<wire x1="2" y1="3" x2="3" y2="2" width="0.127" layer="51"/>
+<wire x1="3" y1="2" x2="4" y2="4" width="0.127" layer="51"/>
+<text x="4" y="-5" size="1.27" layer="51" font="vector">1</text>
+<text x="4" y="4" size="1.27" layer="51" font="vector">10</text>
+</package>
+<package name="ROTARY_SWITCH_1X10_KIT">
+<circle x="0" y="0" radius="5.5" width="0.127" layer="51"/>
+<wire x1="0" y1="11" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="0" y2="-11" width="0.127" layer="51"/>
+<wire x1="-11" y1="0" x2="0" y2="0" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="11" y2="0" width="0.127" layer="51"/>
+<wire x1="-11.5" y1="-1.75" x2="-12.5" y2="-1.75" width="0.127" layer="51"/>
+<wire x1="-12.5" y1="-1.75" x2="-12.5" y2="1.75" width="0.127" layer="51"/>
+<wire x1="-12.5" y1="1.75" x2="-11.5" y2="1.75" width="0.127" layer="51"/>
+<wire x1="-11.5" y1="1.75" x2="-11.5" y2="-1.75" width="0.127" layer="51"/>
+<pad name="COMMON" x="0" y="-5.5" drill="1.4" stop="no"/>
+<pad name="1" x="7.07106875" y="7.07106875" drill="1.4" stop="no"/>
+<pad name="2" x="9.659259375" y="2.588190625" drill="1.4" stop="no"/>
+<pad name="3" x="9.659259375" y="-2.588190625" drill="1.4" stop="no"/>
+<pad name="4" x="7.07106875" y="-7.07106875" drill="1.4" stop="no"/>
+<pad name="5" x="2.588190625" y="-9.659259375" drill="1.4" stop="no"/>
+<pad name="6" x="-2.588190625" y="-9.659259375" drill="1.4" stop="no"/>
+<pad name="7" x="-7.07106875" y="-7.07106875" drill="1.4" stop="no"/>
+<pad name="8" x="-9.659259375" y="-2.588190625" drill="1.4" stop="no"/>
+<pad name="9" x="-9.659259375" y="2.588190625" drill="1.4" stop="no"/>
+<pad name="10" x="-7.07106875" y="7.07106875" drill="1.4" stop="no"/>
+<circle x="0" y="0" radius="12.5" width="0.127" layer="51"/>
+<circle x="0" y="10" radius="5.5" width="0.127" layer="51"/>
+<circle x="0" y="-10" radius="5.5" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="4" y2="-4" width="0.127" layer="51"/>
+<wire x1="4" y1="-4" x2="3" y2="-2" width="0.127" layer="51"/>
+<wire x1="3" y1="-2" x2="2" y2="-3" width="0.127" layer="51"/>
+<wire x1="2" y1="-3" x2="4" y2="-4" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="4" y2="4" width="0.127" layer="51"/>
+<wire x1="4" y1="4" x2="2" y2="3" width="0.127" layer="51"/>
+<wire x1="2" y1="3" x2="3" y2="2" width="0.127" layer="51"/>
+<wire x1="3" y1="2" x2="4" y2="4" width="0.127" layer="51"/>
+<text x="4" y="-5" size="1.27" layer="51" font="vector">1</text>
+<text x="4" y="4" size="1.27" layer="51" font="vector">10</text>
+<wire x1="-10.16" y1="7.62" x2="-3.592103125" y2="14.187896875" width="0.127" layer="21"/>
+<wire x1="-3.592103125" y1="14.187896875" x2="3.592103125" y2="14.187896875" width="0.127" layer="21" curve="-90"/>
+<wire x1="3.592103125" y1="14.187896875" x2="10.16" y2="7.62" width="0.127" layer="21"/>
+<wire x1="10.16" y1="-7.62" x2="3.592103125" y2="-14.187896875" width="0.127" layer="21"/>
+<wire x1="3.592103125" y1="-14.187896875" x2="-3.592103125" y2="-14.187896875" width="0.127" layer="21" curve="-90"/>
+<wire x1="-3.592103125" y1="-14.187896875" x2="-10.16" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="7.62" x2="-10.5435375" y2="7.04469375" width="0.127" layer="21"/>
+<wire x1="-10.5435375" y1="7.04469375" x2="-10.5435375" y2="-7.04469375" width="0.127" layer="21" curve="67.380151"/>
+<wire x1="-10.5435375" y1="-7.04469375" x2="-10.16" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="10.16" y1="7.62" x2="10.520115625" y2="7.079828125" width="0.127" layer="21"/>
+<wire x1="10.520115625" y1="7.079828125" x2="10.520115625" y2="-7.079828125" width="0.127" layer="21" curve="-67.380143"/>
+<wire x1="10.520115625" y1="-7.079828125" x2="10.16" y2="-7.62" width="0.127" layer="21"/>
+<circle x="-7.07106875" y="7.07106875" radius="0.7" width="0" layer="29"/>
+<circle x="-7.07106875" y="7.07106875" radius="1.05" width="0" layer="30"/>
+<circle x="-9.659259375" y="2.588190625" radius="0.7" width="0" layer="29"/>
+<circle x="-9.659259375" y="-2.588190625" radius="0.7" width="0" layer="29"/>
+<circle x="-7.07106875" y="-7.07106875" radius="0.7" width="0" layer="29"/>
+<circle x="0" y="-5.5" radius="0.7" width="0" layer="29"/>
+<circle x="-2.588190625" y="-9.659259375" radius="0.7" width="0" layer="29"/>
+<circle x="2.588190625" y="-9.659259375" radius="0.7" width="0" layer="29"/>
+<circle x="7.07106875" y="-7.07106875" radius="0.7" width="0" layer="29"/>
+<circle x="9.659259375" y="-2.588190625" radius="0.7" width="0" layer="29"/>
+<circle x="9.659259375" y="2.588190625" radius="0.7" width="0" layer="29"/>
+<circle x="7.07106875" y="7.07106875" radius="0.7" width="0" layer="29"/>
+<circle x="-9.659259375" y="2.588190625" radius="1.05" width="0" layer="30"/>
+<circle x="-9.659259375" y="-2.588190625" radius="1.05" width="0" layer="30"/>
+<circle x="0" y="-5.5" radius="1.05" width="0" layer="30"/>
+<circle x="-7.07106875" y="-7.07106875" radius="1.05" width="0" layer="30"/>
+<circle x="-2.588190625" y="-9.659259375" radius="1.05" width="0" layer="30"/>
+<circle x="2.588190625" y="-9.659259375" radius="1.05" width="0" layer="30"/>
+<circle x="7.07106875" y="-7.07106875" radius="1.05" width="0" layer="30"/>
+<circle x="9.659259375" y="-2.588190625" radius="1.05" width="0" layer="30"/>
+<circle x="9.659259375" y="2.588190625" radius="1.05" width="0" layer="30"/>
+<circle x="7.07106875" y="7.07106875" radius="1.05" width="0" layer="30"/>
+</package>
 </packages>
 <symbols>
 <symbol name="AYZ0202">
@@ -10514,6 +10624,37 @@ No illumination</description>
 <text x="5.588" y="0.508" size="1.27" layer="94">3</text>
 <text x="8.128" y="0.508" size="1.27" layer="94">4</text>
 <text x="10.668" y="8.128" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="ROTARY-SWITCH-1X10">
+<description>1 pole, 10 position rotary switch</description>
+<pin name="COMMON" x="-12.7" y="0" visible="off" length="short"/>
+<pin name="1" x="-5.08" y="12.7" visible="pin" length="short" rot="R270"/>
+<pin name="2" x="0" y="12.7" visible="off" length="short" rot="R270"/>
+<pin name="3" x="5.08" y="12.7" visible="off" length="short" rot="R270"/>
+<pin name="4" x="12.7" y="7.62" visible="off" length="short" rot="R180"/>
+<pin name="5" x="12.7" y="2.54" visible="off" length="short" rot="R180"/>
+<pin name="6" x="12.7" y="-2.54" visible="off" length="short" rot="R180"/>
+<pin name="7" x="12.7" y="-7.62" visible="off" length="short" rot="R180"/>
+<pin name="8" x="5.08" y="-12.7" visible="off" length="short" rot="R90"/>
+<pin name="9" x="0" y="-12.7" visible="off" length="short" rot="R90"/>
+<pin name="10" x="-5.08" y="-12.7" visible="pin" length="short" rot="R90"/>
+<wire x1="0" y1="0" x2="6.35" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="7.62" x2="5.08" y2="5.08" width="0.1778" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="4.064" y2="5.842" width="0.1778" layer="94"/>
+<wire x1="4.064" y1="5.842" x2="6.35" y2="7.62" width="0.1778" layer="94"/>
+<text x="-5.08" y="-2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-5.08" y="-5.08" size="1.778" layer="95" font="vector">&gt;VALUE</text>
+<circle x="0" y="0" radius="10.16" width="0.1524" layer="94"/>
+<circle x="0" y="0" radius="0.762" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="-10.16" y2="0" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="-8.89" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="5.08" y2="-8.89" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="6.858" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="9.906" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="6.858" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="2.54" x2="9.906" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="8.89" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="10.16" x2="-5.08" y2="8.89" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -12786,6 +12927,56 @@ CTS series 219</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SWITCH_ROTARY_1X10" prefix="SW">
+<description>SWCH-12120</description>
+<gates>
+<gate name="G$1" symbol="ROTARY-SWITCH-1X10" x="5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="ROTARY_SWITCH_1X10">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="G$1" pin="COMMON" pad="COMMON"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="SWCH-12120" constant="no"/>
+<attribute name="VALUE" value="1x10"/>
+</technology>
+</technologies>
+</device>
+<device name="KIT" package="ROTARY_SWITCH_1X10_KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="G$1" pin="COMMON" pad="COMMON"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="SWCH-12120" constant="no"/>
+<attribute name="VALUE" value="1x10" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
