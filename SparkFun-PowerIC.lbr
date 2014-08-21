@@ -28,7 +28,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -122,7 +122,9 @@
 In this library you'll find drivers, regulators, and amplifiers.&lt;br&gt;&lt;br&gt;
 We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
 &lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
 <package name="SC-70">
 <wire x1="-1" y1="-0.55" x2="1" y2="-0.55" width="0.05" layer="51"/>
@@ -653,9 +655,8 @@ MSOP&lt;br&gt;
 <wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
 <wire x1="-1.6508" y1="1.5" x2="-1.6508" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="1.6508" y1="1.5" x2="1.6508" y2="-1.5" width="0.127" layer="21"/>
-<circle x="-0.8" y="-0.8" radius="0.3" width="0.127" layer="51"/>
 <circle x="-1.5494" y="-1.9812" radius="0.0567" width="0.127" layer="21"/>
-<smd name="GND" x="0" y="0" dx="2.794" dy="2.083" layer="1" cream="no"/>
+<smd name="GND" x="0" y="0" dx="2" dy="1.8" layer="1" rot="R180" cream="no"/>
 <smd name="8" x="0" y="2.1095" dx="0.305" dy="0.889" layer="1"/>
 <smd name="7" x="0.5" y="2.1095" dx="0.305" dy="0.889" layer="1"/>
 <smd name="6" x="1" y="2.1095" dx="0.305" dy="0.889" layer="1"/>
@@ -678,7 +679,7 @@ MSOP&lt;br&gt;
 <rectangle x1="-0.1" y1="-2.45" x2="0.1" y2="-1.6" layer="51"/>
 <rectangle x1="0.4" y1="-2.45" x2="0.6" y2="-1.6" layer="51"/>
 <rectangle x1="0.9" y1="-2.45" x2="1.1" y2="-1.6" layer="51"/>
-<rectangle x1="-0.9144" y1="-0.6096" x2="0.9144" y2="0.5588" layer="31"/>
+<rectangle x1="-0.5" y1="-0.5" x2="0.5" y2="0.5" layer="31"/>
 </package>
 <package name="TDFN-8">
 <description>TDFN - 8pin, 2mmx3mm</description>
@@ -9085,6 +9086,31 @@ Standard 3.3V and 5V 150mA LDO voltage regulator in SOT-23 layout. Micrel part M
 <technology name="">
 <attribute name="PROD_ID" value="VREG-08428" constant="no"/>
 <attribute name="VALUE" value="1.8V/100mA" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AP2202-ADJ" prefix="U" uservalue="yes">
+<description>AP2202 Adjustable LDO&lt;br&gt;
+Diodes Inc small, low-cost LDO&lt;br&gt;
+150mA, 13.2V, less than 200mV dropout</description>
+<gates>
+<gate name="G$1" symbol="V-REG-LDO-ADJ" x="7.62" y="7.62"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="ADJ" pad="4"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="VREG-12189"/>
+<attribute name="VALUE" value="AP2202-ADJ"/>
 </technology>
 </technologies>
 </device>
