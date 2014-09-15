@@ -6203,12 +6203,12 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <wire x1="15.24" y1="5.08" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
 <text x="-12.7" y="5.588" size="1.6764" layer="95">&gt;Name</text>
 <text x="-12.7" y="-10.16" size="1.6764" layer="96">&gt;Value</text>
-<pin name="ENABLE" x="-17.78" y="-2.54" length="middle"/>
-<pin name="VIN" x="-17.78" y="2.54" length="middle"/>
-<pin name="GND@1" x="0" y="-12.7" length="middle" rot="R90"/>
-<pin name="VOUT" x="20.32" y="2.54" length="middle" rot="R180"/>
-<pin name="ADJUST" x="20.32" y="-2.54" length="middle" rot="R180"/>
-<pin name="GND@0" x="2.54" y="-12.7" length="middle" rot="R90"/>
+<pin name="ENABLE" x="-15.24" y="-2.54" visible="pin" length="short"/>
+<pin name="VIN" x="-15.24" y="2.54" visible="pin" length="short"/>
+<pin name="GND@1" x="0" y="-10.16" visible="pin" length="short" rot="R90"/>
+<pin name="VOUT" x="17.78" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="ADJUST" x="17.78" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="GND@0" x="2.54" y="-10.16" visible="pin" length="short" rot="R90"/>
 </symbol>
 <symbol name="STA540">
 <wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
@@ -7857,7 +7857,7 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SPX29302">
+<deviceset name="SPX29302" prefix="U">
 <description>3A LDO regulator</description>
 <gates>
 <gate name="G$1" symbol="SPX29300" x="-7.62" y="0"/>
