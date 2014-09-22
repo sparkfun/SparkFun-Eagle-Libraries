@@ -27,7 +27,7 @@
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -51,8 +51,8 @@
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -369,9 +369,12 @@ www.SparkFun.com SKU : Comp-SMDS</description>
 <wire x1="-3.048" y1="-6.35" x2="-6.096" y2="-3.302" width="0.2032" layer="21"/>
 <wire x1="-6.096" y1="-3.302" x2="-6.096" y2="4.318" width="0.2032" layer="21"/>
 <wire x1="3.81" y1="5.334" x2="-3.81" y2="5.334" width="0.2032" layer="21" curve="-90"/>
-<smd name="GND" x="0" y="0" dx="3.9624" dy="3.9624" layer="1"/>
+<smd name="GND" x="0" y="0" dx="8" dy="8" layer="1" roundness="100" cream="no"/>
 <smd name="PWR@1" x="-7.874" y="0" dx="3.175" dy="3.175" layer="1"/>
 <smd name="PWR@2" x="7.874" y="0" dx="3.175" dy="3.175" layer="1"/>
+<circle x="0" y="0" radius="6" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="6" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="1" width="2" layer="31"/>
 </package>
 <package name="BATTCON_20MM_4LEGS">
 <wire x1="-7.5" y1="7.35" x2="7.5" y2="7.35" width="0.2032" layer="21"/>
@@ -9386,6 +9389,24 @@ Arrows in tDocu denote pointer positions for 45-degree shaft, assuming a knob wi
 <circle x="9.659259375" y="2.588190625" radius="1.05" width="0" layer="30"/>
 <circle x="7.07106875" y="7.07106875" radius="1.05" width="0" layer="30"/>
 </package>
+<package name="TACTILE_SWITCH-SMD-RIGHT-ANGLE">
+<hole x="0" y="0.9" drill="0.7"/>
+<hole x="0" y="-0.9" drill="0.7"/>
+<smd name="1" x="-1.95" y="0" dx="2" dy="1.1" layer="1" rot="R90"/>
+<smd name="2" x="1.95" y="0" dx="2" dy="1.1" layer="1" rot="R90"/>
+<wire x1="-2" y1="1.2" x2="-2" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-2" y1="1.5" x2="2" y2="1.5" width="0.127" layer="21"/>
+<wire x1="2" y1="1.5" x2="2" y2="1.2" width="0.127" layer="21"/>
+<wire x1="-2" y1="-1.2" x2="-2" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-2" y1="-1.5" x2="-0.7" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-0.7" y1="-1.5" x2="0.7" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="0.7" y1="-1.5" x2="2" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="2" y1="-1.5" x2="2" y2="-1.2" width="0.127" layer="21"/>
+<wire x1="-0.7" y1="-2.1" x2="0.7" y2="-2.1" width="0.127" layer="21"/>
+<wire x1="0.7" y1="-2.1" x2="0.7" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-0.7" y1="-2.1" x2="-0.7" y2="-1.5" width="0.127" layer="21"/>
+<text x="-2" y="1.7" size="0.8128" layer="25" ratio="15">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="AYZ0202">
@@ -10795,7 +10816,9 @@ Various common sizes : AA, AAA, 20mm coin cell and 12mm coin cell.&lt;br&gt;
 <connect gate="G$1" pin="-" pad="GND"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="BATT-08044" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="20MM_4LEGS" package="BATTCON_20MM_4LEGS">
@@ -12141,7 +12164,9 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <connect gate="G$1" pin="2" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="SWCH-08247" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SMD-REDUNDANT" package="TACTILE-SWITCH-SMD">
@@ -12151,6 +12176,17 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="TACTILE-SWITCH-SMD-RIGHT-ANGLE" package="TACTILE_SWITCH-SMD-RIGHT-ANGLE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-12265" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
