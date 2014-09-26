@@ -81,12 +81,24 @@
 <layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
 <layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="IDFDebug" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
@@ -113,6 +125,8 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
@@ -9247,6 +9261,27 @@ For Vishay VNCL4000 proximity and ambient light sensor.&lt;br&gt;
 <wire x1="3.5" y1="0.5" x2="3.5" y2="-0.5" width="0.254" layer="21"/>
 <circle x="1.27" y="0.97" radius="0.2" width="0.127" layer="51"/>
 </package>
+<package name="RPI-103X">
+<circle x="2.54" y="1.42875" radius="0.127" width="0.254" layer="21"/>
+<wire x1="1.95" y1="-2.1" x2="-1.95" y2="-2.1" width="0.2032" layer="21"/>
+<wire x1="1.95" y1="1.95" x2="1.95" y2="-1.95" width="0.2032" layer="51"/>
+<wire x1="-1.95" y1="1.95" x2="-1.95" y2="-1.95" width="0.2032" layer="51"/>
+<wire x1="1.95" y1="2.1" x2="-1.95" y2="2.1" width="0.2032" layer="21"/>
+<smd name="1" x="1.175" y="1.4" dx="1.35" dy="0.9" layer="1"/>
+<smd name="2" x="1.175" y="0" dx="1.35" dy="0.9" layer="1"/>
+<smd name="3" x="1.22" y="-1.355" dx="1.35" dy="0.9" layer="1"/>
+<smd name="4" x="-1.175" y="1.4" dx="1.35" dy="0.9" layer="1"/>
+<smd name="5" x="-1.175" y="0" dx="1.35" dy="0.9" layer="1"/>
+<smd name="6" x="-1.175" y="-1.4" dx="1.35" dy="0.9" layer="1"/>
+<text x="-1.905" y="2.54" size="1.016" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-2.54" size="1.016" layer="27" align="top-left">&gt;VALUE</text>
+<wire x1="-1.95" y1="1.95" x2="1.95" y2="1.95" width="0.2032" layer="51"/>
+<wire x1="-1.95" y1="-1.95" x2="1.95" y2="-1.95" width="0.2032" layer="51"/>
+<text x="0" y="-0.635" size="1.016" layer="51" ratio="15" align="center">up</text>
+<wire x1="0" y1="0" x2="0" y2="1.27" width="0.2032" layer="51"/>
+<wire x1="0" y1="1.27" x2="-0.635" y2="0.635" width="0.2032" layer="51"/>
+<wire x1="0" y1="1.27" x2="0.635" y2="0.635" width="0.2032" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADMP401">
@@ -11301,6 +11336,78 @@ Typical applications:&lt;p&gt;
 <pin name="RH1_RED" x="-17.78" y="-2.54" length="middle"/>
 <pin name="RS2_RED" x="17.78" y="-5.08" length="middle" rot="R180"/>
 <pin name="RH2_RED" x="17.78" y="-2.54" length="middle" rot="R180"/>
+</symbol>
+<symbol name="RPI-103X">
+<rectangle x1="4.826" y1="-7.62" x2="5.588" y2="-2.54" layer="94"/>
+<rectangle x1="-5.334" y1="-7.62" x2="-4.572" y2="-2.54" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="5.08" width="0.3048" layer="94"/>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="0" width="0.3048" layer="94"/>
+<wire x1="-10.16" y1="0" x2="-10.16" y2="-10.16" width="0.3048" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="-12.7" width="0.3048" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="12.7" y2="-12.7" width="0.3048" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="-10.16" width="0.3048" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="0" width="0.3048" layer="94"/>
+<wire x1="12.7" y1="0" x2="12.7" y2="5.08" width="0.3048" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="12.7" y2="10.16" width="0.3048" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="-10.16" y2="10.16" width="0.3048" layer="94"/>
+<wire x1="0" y1="6.35" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="0" y2="3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="6.35" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="6.35" x2="0" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="3.81" width="0.254" layer="94"/>
+<wire x1="0.762" y1="3.048" x2="2.159" y2="1.651" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="3.175" x2="3.302" y2="1.778" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="5.588" y2="-3.556" width="0.254" layer="94"/>
+<wire x1="6.858" y1="-6.604" x2="7.62" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="6.35" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="-7.62" x2="6.858" y2="-6.604" width="0.1524" layer="94"/>
+<wire x1="6.62" y1="-7.12" x2="5.388" y2="-6.504" width="0.254" layer="94"/>
+<wire x1="6.604" y1="-7.493" x2="7.366" y2="-7.493" width="0.254" layer="94"/>
+<wire x1="7.366" y1="-7.493" x2="6.858" y2="-6.858" width="0.254" layer="94"/>
+<wire x1="6.858" y1="-6.858" x2="6.604" y2="-7.366" width="0.254" layer="94"/>
+<wire x1="6.604" y1="-7.366" x2="6.985" y2="-7.366" width="0.254" layer="94"/>
+<wire x1="6.985" y1="-7.366" x2="6.858" y2="-7.112" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-4.572" y2="-3.556" width="0.254" layer="94"/>
+<wire x1="-3.302" y1="-6.604" x2="-2.54" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="-3.81" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="-7.62" x2="-3.302" y2="-6.604" width="0.1524" layer="94"/>
+<wire x1="-3.54" y1="-7.12" x2="-4.772" y2="-6.504" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="-7.493" x2="-2.794" y2="-7.493" width="0.254" layer="94"/>
+<wire x1="-2.794" y1="-7.493" x2="-3.302" y2="-6.858" width="0.254" layer="94"/>
+<wire x1="-3.302" y1="-6.858" x2="-3.556" y2="-7.366" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="-7.366" x2="-3.175" y2="-7.366" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="-7.366" x2="-3.302" y2="-7.112" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="0" x2="12.7" y2="0" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-10.16" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<pin name="ANODE" x="-15.24" y="5.08" visible="off" length="middle" direction="pas"/>
+<pin name="C1" x="17.78" y="0" visible="off" length="middle" direction="pas" rot="R180"/>
+<pin name="C2" x="-15.24" y="0" visible="off" length="middle" direction="pas"/>
+<pin name="CATHODE" x="17.78" y="5.08" visible="off" length="middle" direction="pas" rot="R180"/>
+<pin name="E1" x="17.78" y="-10.16" visible="off" length="middle" direction="pas" rot="R180"/>
+<pin name="E2" x="-15.24" y="-10.16" visible="off" length="middle" direction="pas"/>
+<text x="-10.16" y="10.922" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<text x="9.398" y="-5.842" size="1.778" layer="94">1</text>
+<text x="-8.382" y="-5.842" size="1.778" layer="94">2</text>
+<polygon width="0.1524" layer="94">
+<vertex x="2.159" y="1.651"/>
+<vertex x="1.27" y="2.032"/>
+<vertex x="1.778" y="2.54"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="3.302" y="1.778"/>
+<vertex x="2.413" y="2.159"/>
+<vertex x="2.921" y="2.667"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -14198,6 +14305,28 @@ Typical applications:&lt;p&gt;
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="COMP-12310"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RPI-103X" prefix="U">
+<gates>
+<gate name="G$1" symbol="RPI-103X" x="-6.096" y="-1.524"/>
+</gates>
+<devices>
+<device name="" package="RPI-103X">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="6"/>
+<connect gate="G$1" pin="C1" pad="2"/>
+<connect gate="G$1" pin="C2" pad="5"/>
+<connect gate="G$1" pin="CATHODE" pad="3"/>
+<connect gate="G$1" pin="E1" pad="1"/>
+<connect gate="G$1" pin="E2" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="10414" constant="no"/>
 </technology>
 </technologies>
 </device>
