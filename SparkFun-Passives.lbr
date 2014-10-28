@@ -2106,6 +2106,22 @@ Source: RS Components</description>
 <pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 <wire x1="0" y1="2.032" x2="0" y2="-1.778" width="0.254" layer="94"/>
 </symbol>
+<symbol name="SUPPLY_CONNECT">
+<wire x1="0" y1="5.08" x2="0" y2="0" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="0" x2="0" y2="-5.08" width="0.254" layer="94" style="shortdash"/>
+<wire x1="0" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<pin name="P$1" x="-7.62" y="0" visible="off" length="middle"/>
+<pin name="P$2" x="7.62" y="0" visible="off" length="middle" rot="R180"/>
+<wire x1="-3.81" y1="0" x2="-3.81" y2="1.778" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="1.778" x2="-5.08" y2="1.778" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="1.778" x2="-2.54" y2="1.778" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="1.778" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="1.778" x2="2.54" y2="1.778" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="1.778" x2="5.08" y2="1.778" width="0.1524" layer="94"/>
+<text x="-5.334" y="2.032" size="1.778" layer="94">V1</text>
+<text x="2.286" y="2.032" size="1.778" layer="94">V2</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CAP" prefix="C" uservalue="yes">
@@ -3261,6 +3277,22 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SUPPLY_CONNECT">
+<gates>
+<gate name="G$1" symbol="SUPPLY_CONNECT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2PT_GND_TIE">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
