@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -58,11 +58,12 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -71,6 +72,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
@@ -79,12 +81,31 @@
 <layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
@@ -110,6 +131,8 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
@@ -553,6 +576,24 @@ Source: RS Components</description>
 <wire x1="-5.588" y1="-0.508" x2="-5.08" y2="0" width="0.127" layer="48"/>
 <wire x1="-5.08" y1="0" x2="-5.588" y2="0.508" width="0.127" layer="48"/>
 <wire x1="-5.588" y1="0.508" x2="-5.588" y2="0" width="0.127" layer="48"/>
+</package>
+<package name="2512">
+<wire x1="-3.175" y1="1.5" x2="-1.245" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-1.245" y1="1.5" x2="1.245" y2="1.5" width="0.127" layer="51"/>
+<wire x1="1.245" y1="1.5" x2="3.175" y2="1.5" width="0.127" layer="51"/>
+<wire x1="3.175" y1="1.5" x2="3.175" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="3.175" y1="-1.5" x2="1.245" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="1.245" y1="-1.5" x2="-1.245" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-1.245" y1="-1.5" x2="-3.175" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-3.175" y1="-1.5" x2="-3.175" y2="1.5" width="0.127" layer="51"/>
+<wire x1="-1.245" y1="1.5" x2="-1.245" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="1.245" y1="1.5" x2="1.245" y2="-1.5" width="0.127" layer="51"/>
+<smd name="1" x="-2.25" y="0" dx="3.5" dy="3" layer="1" rot="R90"/>
+<smd name="2" x="2.25" y="0" dx="3.5" dy="3" layer="1" rot="R90"/>
+<text x="1" y="3" size="0.5" layer="25">&gt;Name</text>
+<text x="1" y="2" size="0.5" layer="27">&gt;Value</text>
+<wire x1="-0.4" y1="1.5" x2="0.4" y2="1.5" width="0.2032" layer="21"/>
+<wire x1="-0.4" y1="-1.5" x2="0.4" y2="-1.5" width="0.2032" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -1065,7 +1106,7 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="0OHM1/10W5%(0603)" prefix="R" uservalue="yes">
+<deviceset name="0OHM-1/10W-5%(0603)" prefix="R" uservalue="yes">
 <description>RES-08609</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -1132,7 +1173,7 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 <devices>
 </devices>
 </deviceset>
-<deviceset name="0.22OHM1/4W1%(0805)" prefix="R" uservalue="yes">
+<deviceset name="0.22OHM-1/4W-1%(0805)" prefix="R" uservalue="yes">
 <description>RES-09883</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -1152,21 +1193,21 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="0.25OHM1/2W1%(2010)" prefix="R" uservalue="yes">
+<deviceset name="0.25OHM-1/2W-1%(2010)" prefix="R" uservalue="yes">
 <description>RES-08366</description>
 <gates>
 </gates>
 <devices>
 </devices>
 </deviceset>
-<deviceset name="0.27OHM1/10W1%(0603)" prefix="R" uservalue="yes">
+<deviceset name="0.27OHM-1/10W-1%(0603)" prefix="R" uservalue="yes">
 <description>RES-08787</description>
 <gates>
 </gates>
 <devices>
 </devices>
 </deviceset>
-<deviceset name="0.75OHM1/4W1%(0805)" prefix="R" uservalue="yes">
+<deviceset name="0.75OHM-1/4W-1%(0805)" prefix="R" uservalue="yes">
 <description>RES-08474</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="-2.54" y="0"/>
@@ -1282,7 +1323,7 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 <devices>
 </devices>
 </deviceset>
-<deviceset name="1.5KOHM1/10W1%(0603)" prefix="R" uservalue="yes">
+<deviceset name="1.5KOHM-1/10W-1%(0603)" prefix="R" uservalue="yes">
 <description>RES-08306</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -1302,7 +1343,7 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="1.6KOHM1/10W1%(0603)" prefix="R" uservalue="yes">
+<deviceset name="1.6KOHM-1/10W-1%(0603)" prefix="R" uservalue="yes">
 <description>RES-08361</description>
 <gates>
 </gates>
@@ -1399,7 +1440,7 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="10OHM1/10W5%0603" prefix="R" uservalue="yes">
+<deviceset name="10OHM-1/10W-5%0603" prefix="R" uservalue="yes">
 <description>RES-09834</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -1419,7 +1460,7 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="10OHM1/4W1%(1206)" prefix="R" uservalue="yes">
+<deviceset name="10OHM-1/4W-1%(1206)" prefix="R" uservalue="yes">
 <description>RES-08705</description>
 <gates>
 </gates>
@@ -1453,7 +1494,7 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 <devices>
 </devices>
 </deviceset>
-<deviceset name="100OHM1/10W1%(0603)" prefix="R" uservalue="yes">
+<deviceset name="100OHM-1/10W-1%(0603)" prefix="R" uservalue="yes">
 <description>RES-07863</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -1473,14 +1514,14 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="100OHM1/16W.5%(0603)" prefix="R" uservalue="yes">
+<deviceset name="100OHM-1/16W-0.5%(0603)" prefix="R" uservalue="yes">
 <description>RES-09565</description>
 <gates>
 </gates>
 <devices>
 </devices>
 </deviceset>
-<deviceset name="100OHM1/4W5%(PTH)" prefix="R" uservalue="yes">
+<deviceset name="100OHM-1/4W-5%(PTH)" prefix="R" uservalue="yes">
 <description>RES-08059</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -1592,7 +1633,7 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="100KOHM1/10W1%(0603)" prefix="R" uservalue="yes">
+<deviceset name="100KOHM-1/10W-1%(0603)" prefix="R" uservalue="yes">
 <description>RES-07828</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -1612,21 +1653,14 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="100KOHM1/4W5%(PTH)" prefix="R" uservalue="yes">
-<description>RES-09331</description>
-<gates>
-</gates>
-<devices>
-</devices>
-</deviceset>
-<deviceset name="100KOHM1/6W5%(PTH)" prefix="R" uservalue="yes">
+<deviceset name="100KOHM-1/6W-5%(PTH)" prefix="R" uservalue="yes">
 <description>RES-09498</description>
 <gates>
 </gates>
 <devices>
 </devices>
 </deviceset>
-<deviceset name="102KOHM1/10W1%(0603)" prefix="R" uservalue="yes">
+<deviceset name="102KOHM-1/10W-1%(0603)" prefix="R" uservalue="yes">
 <description>RES-09573</description>
 <gates>
 </gates>
@@ -1716,7 +1750,7 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="10KOHM1/10W1%(0603)" prefix="R" uservalue="yes">
+<deviceset name="10KOHM-1/10W-1%(0603)" prefix="R" uservalue="yes">
 <description>RES-00824</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -1736,7 +1770,7 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="10KOHM1/6W5%(PTH)" prefix="R" uservalue="yes">
+<deviceset name="10KOHM-1/6W-5%(PTH)" prefix="R" uservalue="yes">
 <description>RES-08375</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -1755,14 +1789,14 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="10MOHM1/10W5%(0603)" prefix="R" uservalue="yes">
+<deviceset name="10MOHM-1/10W-5%(0603)" prefix="R" uservalue="yes">
 <description>RES-08283</description>
 <gates>
 </gates>
 <devices>
 </devices>
 </deviceset>
-<deviceset name="10MOHM1/4W5%(PTH)" prefix="R" uservalue="yes">
+<deviceset name="10MOHM-1/4W-5%(PTH)" prefix="R" uservalue="yes">
 <description>RES-09327</description>
 <gates>
 </gates>
@@ -1946,7 +1980,7 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 <devices>
 </devices>
 </deviceset>
-<deviceset name="1KOHM1/10W1%(0603)" prefix="R" uservalue="yes">
+<deviceset name="1KOHM-1/10W-1%(0603)" prefix="R" uservalue="yes">
 <description>RES-07856</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -1966,7 +2000,7 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="1KOHM1/4W5%(PTH)" prefix="R" uservalue="yes">
+<deviceset name="1KOHM-1/4W-5%(PTH)" prefix="R" uservalue="yes">
 <description>RES-08380</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -2022,14 +2056,14 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="1KOHM1/6W5%(PTH)" prefix="R" uservalue="yes">
+<deviceset name="1KOHM-1/6W-5%(PTH)" prefix="R" uservalue="yes">
 <description>RES-09769</description>
 <gates>
 </gates>
 <devices>
 </devices>
 </deviceset>
-<deviceset name="1MOHM1/10W1%(0603)" prefix="R" uservalue="yes">
+<deviceset name="1MOHM-1/10W-1%(0603)" prefix="R" uservalue="yes">
 <description>RES-07868</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -2049,14 +2083,14 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="1MOHM1/4W5%(PTH)" prefix="R" uservalue="yes">
+<deviceset name="1MOHM-1/4W-5%(PTH)" prefix="R" uservalue="yes">
 <description>RES-09329</description>
 <gates>
 </gates>
 <devices>
 </devices>
 </deviceset>
-<deviceset name="1MOHM1/6W5%(PTH)" prefix="R" uservalue="yes">
+<deviceset name="1MOHM-1/6W-5%(PTH)" prefix="R" uservalue="yes">
 <description>RES-09559</description>
 <gates>
 </gates>
@@ -2083,7 +2117,7 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="2.2OHM1/10W5%(0603)" prefix="R" uservalue="yes">
+<deviceset name="2.2OHM-1/10W-5%(0603)" prefix="R" uservalue="yes">
 <description>RES-07823</description>
 <gates>
 </gates>
@@ -2104,7 +2138,7 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 <devices>
 </devices>
 </deviceset>
-<deviceset name="2.2KOHM1/10W1%(0603)" prefix="R" uservalue="yes">
+<deviceset name="2.2KOHM-1/10W-1%(0603)" prefix="R" uservalue="yes">
 <description>RES-08272</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -2124,7 +2158,7 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="2.2MOHM1/10W5%(0603)" prefix="R" uservalue="yes">
+<deviceset name="2.2MOHM-1/10W-5%(0603)" prefix="R" uservalue="yes">
 <description>RES-09288</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="5.08" y="0"/>
@@ -2530,7 +2564,7 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 <devices>
 </devices>
 </deviceset>
-<deviceset name="2MOHM1/10W1%(0603)" prefix="R" uservalue="yes">
+<deviceset name="2MOHM-1/10W-1%(0603)" prefix="R" uservalue="yes">
 <description>RES-07867</description>
 <gates>
 </gates>
@@ -2848,7 +2882,7 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="4.3KOHM1/10W1%(0603)" prefix="R" uservalue="yes">
+<deviceset name="4.3KOHM-1/10W-1%(0603)" prefix="R" uservalue="yes">
 <description>RES-09381</description>
 <gates>
 </gates>
@@ -2902,7 +2936,7 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 <devices>
 </devices>
 </deviceset>
-<deviceset name="4.7KOHM1/10W1%(0603)" prefix="R" uservalue="yes">
+<deviceset name="4.7KOHM-1/10W-1%(0603)" prefix="R" uservalue="yes">
 <description>RES-07857</description>
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
@@ -3792,6 +3826,44 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 <technology name="">
 <attribute name="PROD_ID" value="RES-12427"/>
 <attribute name="VALUE" value="22"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="0.001OHM-3W-1%(2512)" prefix="R">
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="3W/1%" package="2512">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-12449" constant="no"/>
+<attribute name="VALUE" value="0.001" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="100OHM-1/4W-5%(0603)" prefix="R">
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-12438" constant="no"/>
+<attribute name="VALUE" value="100/.25W" constant="no"/>
 </technology>
 </technologies>
 </device>

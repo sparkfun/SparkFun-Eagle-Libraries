@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2440,13 +2440,28 @@ Production Part - 8199
 </technology>
 </technologies>
 </device>
-<device name="SOD-123" package="SOD-123">
+<device name="16V" package="SOD-123">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-12440" constant="no"/>
+<attribute name="VALUE" value="16V" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="5.6V" package="SOD-323">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-12442" constant="no"/>
+<attribute name="VALUE" value="5.6V" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2658,7 +2673,7 @@ FQP27P06 -
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="TRANS-11308"/>
-<attribute name="VALUE" value="30V, 2.5A"/>
+<attribute name="VALUE" value="2.5A/30V"/>
 </technology>
 </technologies>
 </device>
@@ -3031,13 +3046,16 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="SMC" package="SMC">
+<device name="75VWM" package="SMC">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-12443" constant="no"/>
+<attribute name="VALUE" value="75VWM" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3152,7 +3170,7 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <technology name=""/>
 </technologies>
 </device>
-<device name="SOD" package="SOD-323">
+<device name="BAS16" package="SOD-323">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
@@ -3160,6 +3178,7 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-09646" constant="no"/>
+<attribute name="VALUE" value="250mA/100V" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3228,13 +3247,16 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <technology name=""/>
 </technologies>
 </device>
-<device name="SMC/DO-214AB" package="SMC">
+<device name="ES3J" package="SMC">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-12441" constant="no"/>
+<attribute name="VALUE" value="3A/600V" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="KIT" package="DIODE-1N4148-KIT">
@@ -3373,6 +3395,7 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="TRANS-00830" constant="no"/>
+<attribute name="VALUE" value="200mA/50V" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3395,7 +3418,10 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="TRANS-12437" constant="no"/>
+<attribute name="VALUE" value="100A/100V" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3688,7 +3714,10 @@ MMDT3904- TRANS-09373 (SOT-363, 200mA 40V)&lt;br&gt;</description>
 <connect gate="G2" pin="S" pad="S2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="TRAN-12444" constant="no"/>
+<attribute name="VALUE" value="2A/20V" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
