@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -64,6 +64,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -4515,12 +4516,10 @@ shrink quad flat pack, square</description>
 <package name="SSOP20">
 <description>&lt;b&gt;Shrink Small Outline Package&lt;/b&gt;&lt;p&gt;
 package type SS</description>
-<wire x1="-3.8" y1="-2.6" x2="3.8" y2="-2.6" width="0.2032" layer="21"/>
-<wire x1="3.8" y1="-2.6" x2="3.8" y2="2.6" width="0.2032" layer="21"/>
 <wire x1="3.8" y1="2.6" x2="-3.8" y2="2.6" width="0.2032" layer="21"/>
 <wire x1="-3.825" y1="2.575" x2="-3.8" y2="2.575" width="0.127" layer="21"/>
 <wire x1="-3.8" y1="2.575" x2="-3.8" y2="-2.6" width="0.2032" layer="21"/>
-<circle x="-3.048" y="-1.778" radius="0.3592" width="0.2032" layer="21"/>
+<circle x="-3.8354" y="-3.302" radius="0.3592" width="0.2032" layer="21"/>
 <smd name="1" x="-2.925" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
 <smd name="2" x="-2.275" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
 <smd name="3" x="-1.625" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
@@ -4563,6 +4562,12 @@ package type SS</description>
 <rectangle x1="-1.8027" y1="2.6416" x2="-1.4471" y2="3.937" layer="51"/>
 <rectangle x1="-2.4527" y1="2.6416" x2="-2.0971" y2="3.937" layer="51"/>
 <rectangle x1="-3.1027" y1="2.6416" x2="-2.7471" y2="3.937" layer="51"/>
+<wire x1="-3.8" y1="-2.6" x2="3.8" y2="-2.6" width="0.2032" layer="21"/>
+<wire x1="3.8" y1="-2.6" x2="3.8" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="3.8" y1="-1.9" x2="3.8" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="-3.8" y1="2.6" x2="-3.8" y2="2.575" width="0.2032" layer="21"/>
+<wire x1="-3.7" y1="-1.9" x2="3.8" y2="-1.9" width="0.127" layer="21"/>
+<wire x1="-3.7" y1="0.6" x2="-3.7" y2="-0.6" width="0.2032" layer="21" curve="-210.005432"/>
 </package>
 <package name="SOIC-14">
 <wire x1="3.6068" y1="1.9463" x2="-4.8768" y2="1.9463" width="0.2032" layer="21"/>
@@ -15383,6 +15388,36 @@ TO GND</text>
 <text x="-12.446" y="18.288" size="1.778" layer="94">&gt;Name</text>
 <text x="-12.7" y="-20.32" size="1.778" layer="94">&gt;Value</text>
 </symbol>
+<symbol name="PIC16F1829">
+<wire x1="-25.4" y1="20.32" x2="27.94" y2="20.32" width="0.254" layer="94"/>
+<wire x1="27.94" y1="20.32" x2="27.94" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-15.24" x2="-25.4" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-15.24" x2="-25.4" y2="20.32" width="0.254" layer="94"/>
+<pin name="AN4/RC0" x="30.48" y="12.7" length="short" rot="R180"/>
+<pin name="AN6/RC2" x="30.48" y="7.62" length="short" rot="R180"/>
+<pin name="AN7/RC3" x="30.48" y="5.08" length="short" rot="R180"/>
+<pin name="AN8/RC6" x="30.48" y="-2.54" length="short" rot="R180"/>
+<pin name="RA0/AN0/PGD" x="-27.94" y="15.24" length="short"/>
+<pin name="RA1/AN1/PGC" x="-27.94" y="12.7" length="short"/>
+<pin name="RA2/AN2/INT" x="-27.94" y="10.16" length="short"/>
+<pin name="RA3/VPP/!MCLR" x="-27.94" y="7.62" length="short" direction="in"/>
+<pin name="RA4/OSC2/CLKOUT" x="-27.94" y="5.08" length="short"/>
+<pin name="RA5/OSC1/CLKIN/SDO2*" x="-27.94" y="2.54" length="short"/>
+<pin name="RB4/AN10/SDI1" x="-27.94" y="-2.54" length="short"/>
+<pin name="RB5/AN11/SDI2/RX" x="-27.94" y="-5.08" length="short"/>
+<pin name="RB6/SCK1" x="-27.94" y="-7.62" length="short"/>
+<pin name="RB7/SCK2/TX" x="-27.94" y="-10.16" length="short"/>
+<pin name="RX*/RC5" x="30.48" y="0" length="short" rot="R180"/>
+<pin name="SDO1/AN9/RC7" x="30.48" y="-5.08" length="short" rot="R180"/>
+<pin name="SDO2/AN5/RC1" x="30.48" y="10.16" length="short" rot="R180"/>
+<pin name="TX*/RC4" x="30.48" y="2.54" length="short" rot="R180"/>
+<pin name="VDD" x="0" y="22.86" visible="pad" length="short" direction="pwr" rot="R270"/>
+<pin name="VSS" x="0" y="-17.78" visible="pad" length="short" direction="pwr" rot="R90"/>
+<text x="-22.86" y="21.59" size="1.778" layer="95">&gt;NAME</text>
+<text x="-22.86" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-1.27" y="17.78" size="1.524" layer="95">VDD</text>
+<text x="-1.27" y="-13.97" size="1.524" layer="95">VSS</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="AT25FS010">
@@ -22516,6 +22551,40 @@ Can be totem pole or open collector&lt;br&gt;
 <connect gate="G$1" pin="SER_OUT" pad="P$18"/>
 <connect gate="G$1" pin="SRCK" pad="P$13"/>
 <connect gate="G$1" pin="VCC" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PIC16F1829">
+<gates>
+<gate name="1" symbol="PIC16F1829" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SSOP20">
+<connects>
+<connect gate="1" pin="AN4/RC0" pad="16"/>
+<connect gate="1" pin="AN6/RC2" pad="14"/>
+<connect gate="1" pin="AN7/RC3" pad="7"/>
+<connect gate="1" pin="AN8/RC6" pad="8"/>
+<connect gate="1" pin="RA0/AN0/PGD" pad="19"/>
+<connect gate="1" pin="RA1/AN1/PGC" pad="18"/>
+<connect gate="1" pin="RA2/AN2/INT" pad="17"/>
+<connect gate="1" pin="RA3/VPP/!MCLR" pad="4"/>
+<connect gate="1" pin="RA4/OSC2/CLKOUT" pad="3"/>
+<connect gate="1" pin="RA5/OSC1/CLKIN/SDO2*" pad="2"/>
+<connect gate="1" pin="RB4/AN10/SDI1" pad="13"/>
+<connect gate="1" pin="RB5/AN11/SDI2/RX" pad="12"/>
+<connect gate="1" pin="RB6/SCK1" pad="11"/>
+<connect gate="1" pin="RB7/SCK2/TX" pad="10"/>
+<connect gate="1" pin="RX*/RC5" pad="5"/>
+<connect gate="1" pin="SDO1/AN9/RC7" pad="9"/>
+<connect gate="1" pin="SDO2/AN5/RC1" pad="15"/>
+<connect gate="1" pin="TX*/RC4" pad="6"/>
+<connect gate="1" pin="VDD" pad="1"/>
+<connect gate="1" pin="VSS" pad="20"/>
 </connects>
 <technologies>
 <technology name=""/>
