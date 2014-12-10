@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -9722,6 +9722,10 @@ Source: http://www.linear.com .. LT1996</description>
 <wire x1="-2.15" y1="1.025" x2="-2.15" y2="-1.025" width="0.2032" layer="21"/>
 <text x="-2.25" y="1.6" size="0.8128" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <text x="-2.25" y="-2.4" size="0.8128" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+<circle x="-2.45" y="-1.01" radius="0.3" width="0.2032" layer="21"/>
+<circle x="-2.45" y="-1.01" radius="0.3" width="0.127" layer="51"/>
+<wire x1="-2.15" y1="1.025" x2="-2.15" y2="-1.025" width="0.127" layer="51"/>
+<wire x1="2.15" y1="1.025" x2="2.15" y2="-1.025" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
