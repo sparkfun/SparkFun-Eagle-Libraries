@@ -150,6 +150,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-20.32" y="5.08" size="1.778" layer="51">Released under the Creative Commons Attribution Share-Alike 4.0 License</text>
 <text x="0" y="2.54" size="1.778" layer="51"> https://creativecommons.org/licenses/by-sa/4.0/</text>
 <text x="11.43" y="0" size="1.778" layer="51">Designed by:</text>
+<text x="29.21" y="10.16" size="1.27" layer="16" font="vector" ratio="15" rot="SMR0">&gt;VERSION</text>
+<text x="26.67" y="0" size="1.778" layer="51">&gt;DESIGNER</text>
 </package>
 <package name="FIDUCIAL-1X2">
 <smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
@@ -48298,6 +48300,9 @@ Two of these half tabs, rotated in opposite directions, can be connected togethe
 <rectangle x1="5.2578" y1="9.0678" x2="6.0198" y2="9.1186" layer="21"/>
 <text x="-0.2032" y="-0.254" size="0.1016" layer="21" font="vector">C:/Users/brian.huang/Desktop/ludus_2color.bmp</text>
 </package>
+<package name="DUMMY">
+<description>NOTHING HERE!!! For when you want a symbol with no package as an option against symbols with a package.</description>
+</package>
 </packages>
 <symbols>
 <symbol name="ANDROID-ELECTRIC_SHEEP_LOGO">
@@ -48497,6 +48502,8 @@ Two of these half tabs, rotated in opposite directions, can be connected togethe
 <text x="2.54" y="27.94" size="1.9304" layer="94">Attribution Share-Alike 4.0 License</text>
 <text x="2.54" y="24.13" size="1.9304" layer="94"> https://creativecommons.org/licenses/by-sa/4.0/</text>
 <text x="1.27" y="11.43" size="2.54" layer="94">Design by:</text>
+<text x="5.08" y="6.604" size="2.54" layer="94">&gt;DESIGNER</text>
+<text x="88.9" y="6.604" size="2.54" layer="94" font="vector">&gt;VERSION</text>
 </symbol>
 <symbol name="GND_CONNECT">
 <wire x1="5.08" y1="10.16" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
@@ -69105,17 +69112,28 @@ Various fiducial points for machine vision alignment.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="FRAME-LETTER" prefix="FRAME">
+<deviceset name="FRAME-LETTER" prefix="FRAME" uservalue="yes">
 <description>&lt;b&gt;Schematic Frame&lt;/b&gt;&lt;p&gt;
 Standard 8.5x11 US Letter frame</description>
 <gates>
 <gate name="G$1" symbol="LETTER_L" x="0" y="0"/>
-<gate name="G$2" symbol="DOCFIELD" x="147.32" y="0" addlevel="must"/>
+<gate name="V" symbol="DOCFIELD" x="147.32" y="0" addlevel="must"/>
 </gates>
 <devices>
 <device name="" package="CREATIVE_COMMONS">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESIGNER" value="NAME" constant="no"/>
+<attribute name="VERSION" value="v01" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="NO_PACKAGE" package="DUMMY">
+<technologies>
+<technology name="">
+<attribute name="DESIGNER" value="Nobody" constant="no"/>
+<attribute name="VERSION" value="v01" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
