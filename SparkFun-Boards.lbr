@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -63,6 +63,7 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -71,6 +72,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
@@ -79,12 +81,31 @@
 <layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="tplace-old" color="10" fill="1" visible="no" active="yes"/>
+<layer number="109" name="ref-old" color="11" fill="1" visible="no" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="113" name="IDFDebug" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
@@ -110,6 +131,8 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="no" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
@@ -4194,6 +4217,175 @@ AudioAmp</text>
 <wire x1="-3" y1="-2.2" x2="-4.5" y2="-2.2" width="0.2032" layer="21"/>
 <wire x1="-3" y1="2.2" x2="-3" y2="-2.2" width="0.2032" layer="21"/>
 </package>
+<package name="BLACKBERRY_TRACKBALLER">
+<wire x1="-13.97" y1="-8.89" x2="13.97" y2="-8.89" width="0.2032" layer="20"/>
+<wire x1="13.97" y1="-8.89" x2="13.97" y2="10.16" width="0.2032" layer="20"/>
+<wire x1="13.97" y1="10.16" x2="-13.97" y2="10.16" width="0.2032" layer="20"/>
+<wire x1="-13.97" y1="10.16" x2="-13.97" y2="-8.89" width="0.2032" layer="20"/>
+<text x="0" y="6.35" size="1.27" layer="21" font="vector" ratio="15" rot="R180" align="bottom-center">UP</text>
+<text x="10.795" y="0" size="1.27" layer="21" font="vector" ratio="15" rot="R180" align="center-left">RIGHT</text>
+<text x="-9.525" y="0" size="1.27" layer="21" font="vector" ratio="15" rot="R180" align="center-right">LEFT</text>
+<text x="0" y="-5.08" size="1.27" layer="21" font="vector" ratio="15" rot="R180" align="bottom-center">DOWN</text>
+<hole x="0" y="0" drill="7.14375"/>
+<circle x="-0.007621875" y="0.002540625" radius="3.95994375" width="0.254" layer="21"/>
+<circle x="0.007625" y="0.0279375" radius="4.444115625" width="0.254" layer="21"/>
+<polygon width="0.15" layer="21">
+<vertex x="6.7447" y="6.9212" curve="9.498218"/>
+<vertex x="6.8965" y="6.9994"/>
+<vertex x="7.2735" y="6.692"/>
+<vertex x="7.532" y="6.9505"/>
+<vertex x="7.2246" y="7.3275" curve="19.000773"/>
+<vertex x="7.3549" y="7.642"/>
+<vertex x="7.8388" y="7.6912"/>
+<vertex x="7.8388" y="8.0568"/>
+<vertex x="7.3549" y="8.106" curve="19.000773"/>
+<vertex x="7.2246" y="8.4205"/>
+<vertex x="7.532" y="8.7975"/>
+<vertex x="7.2735" y="9.056"/>
+<vertex x="6.8965" y="8.7486" curve="19.000773"/>
+<vertex x="6.582" y="8.8789"/>
+<vertex x="6.5328" y="9.3628"/>
+<vertex x="6.1672" y="9.3628"/>
+<vertex x="6.118" y="8.8789" curve="19.000773"/>
+<vertex x="5.8035" y="8.7486"/>
+<vertex x="5.4265" y="9.056"/>
+<vertex x="5.168" y="8.7975"/>
+<vertex x="5.4754" y="8.4205" curve="19.000773"/>
+<vertex x="5.3451" y="8.106"/>
+<vertex x="4.8612" y="8.0568"/>
+<vertex x="4.8612" y="7.6912"/>
+<vertex x="5.3451" y="7.642" curve="19.000773"/>
+<vertex x="5.4754" y="7.3275"/>
+<vertex x="5.168" y="6.9505"/>
+<vertex x="5.4265" y="6.692"/>
+<vertex x="5.8035" y="6.9994" curve="9.498218"/>
+<vertex x="5.9553" y="6.9212"/>
+<vertex x="6.1706" y="7.4409" curve="-67.514699"/>
+<vertex x="5.8812" y="7.874" curve="-247.473915"/>
+<vertex x="6.5294" y="7.4409"/>
+</polygon>
+<polygon width="0" layer="21">
+<vertex x="-5.92" y="8.84"/>
+<vertex x="-5.92" y="8.75"/>
+<vertex x="-5.93" y="8.72"/>
+<vertex x="-5.94" y="8.7"/>
+<vertex x="-5.97" y="8.67"/>
+<vertex x="-6" y="8.66"/>
+<vertex x="-6.03" y="8.66"/>
+<vertex x="-6.11" y="8.68"/>
+<vertex x="-6.15" y="8.7"/>
+<vertex x="-6.18" y="8.72"/>
+<vertex x="-6.22" y="8.75"/>
+<vertex x="-6.28" y="8.81"/>
+<vertex x="-6.32" y="8.87"/>
+<vertex x="-6.33" y="8.91"/>
+<vertex x="-6.33" y="8.97"/>
+<vertex x="-6.32" y="9"/>
+<vertex x="-6.31" y="9.02"/>
+<vertex x="-6.29" y="9.05"/>
+<vertex x="-6.25" y="9.08"/>
+<vertex x="-6.21" y="9.1"/>
+<vertex x="-6.16" y="9.11"/>
+<vertex x="-6.12" y="9.12"/>
+<vertex x="-6.06" y="9.12"/>
+<vertex x="-6.04" y="9.11"/>
+<vertex x="-6.03" y="9.11"/>
+<vertex x="-6.04" y="9.12"/>
+<vertex x="-6.08" y="9.15"/>
+<vertex x="-6.22" y="9.22"/>
+<vertex x="-6.31" y="9.24"/>
+<vertex x="-6.41" y="9.24"/>
+<vertex x="-6.52" y="9.22"/>
+<vertex x="-6.63" y="9.16"/>
+<vertex x="-6.72" y="9.09"/>
+<vertex x="-6.77" y="9.01"/>
+<vertex x="-6.8" y="8.92"/>
+<vertex x="-6.8" y="8.84"/>
+<vertex x="-6.78" y="8.75"/>
+<vertex x="-6.73" y="8.66"/>
+<vertex x="-6.66" y="8.58"/>
+<vertex x="-6.58" y="8.49"/>
+<vertex x="-6.51" y="8.42"/>
+<vertex x="-6.48" y="8.34"/>
+<vertex x="-6.48" y="8.27"/>
+<vertex x="-6.5" y="8.21"/>
+<vertex x="-6.54" y="8.16"/>
+<vertex x="-6.6" y="8.12"/>
+<vertex x="-6.68" y="8.1"/>
+<vertex x="-6.76" y="8.1"/>
+<vertex x="-6.81" y="8.11"/>
+<vertex x="-6.86" y="8.13"/>
+<vertex x="-6.92" y="8.19"/>
+<vertex x="-6.94" y="8.22"/>
+<vertex x="-6.95" y="8.25"/>
+<vertex x="-6.95" y="8.29"/>
+<vertex x="-6.94" y="8.32"/>
+<vertex x="-6.88" y="8.38"/>
+<vertex x="-6.85" y="8.39"/>
+<vertex x="-6.81" y="8.41"/>
+<vertex x="-6.8" y="8.42"/>
+<vertex x="-6.84" y="8.44"/>
+<vertex x="-6.96" y="8.44"/>
+<vertex x="-7.02" y="8.43"/>
+<vertex x="-7.07" y="8.42"/>
+<vertex x="-7.12" y="8.4"/>
+<vertex x="-7.16" y="8.37"/>
+<vertex x="-7.21" y="8.33"/>
+<vertex x="-7.27" y="8.23"/>
+<vertex x="-7.29" y="8.16"/>
+<vertex x="-7.3" y="8.08"/>
+<vertex x="-7.3" y="6.7"/>
+<vertex x="-7.3" y="6.71"/>
+<vertex x="-5.98" y="8.03"/>
+<vertex x="-7.22" y="6.81"/>
+<vertex x="-7.17" y="6.86"/>
+<vertex x="-7.12" y="6.92"/>
+<vertex x="-7" y="7.04"/>
+<vertex x="-6.88" y="7.18"/>
+<vertex x="-6.78" y="7.28"/>
+<vertex x="-6.68" y="7.34"/>
+<vertex x="-6.62" y="7.35"/>
+<vertex x="-6.43" y="7.35"/>
+<vertex x="-6.31" y="7.37"/>
+<vertex x="-6.2" y="7.4"/>
+<vertex x="-6.1" y="7.44"/>
+<vertex x="-6" y="7.5"/>
+<vertex x="-5.92" y="7.57"/>
+<vertex x="-5.84" y="7.65"/>
+<vertex x="-5.77" y="7.74"/>
+<vertex x="-5.67" y="7.92"/>
+<vertex x="-5.62" y="8.11"/>
+<vertex x="-5.61" y="8.28"/>
+<vertex x="-5.64" y="8.44"/>
+<vertex x="-5.69" y="8.59"/>
+<vertex x="-5.76" y="8.7"/>
+<vertex x="-5.84" y="8.79"/>
+</polygon>
+<wire x1="-11.43" y1="9.4742" x2="-11.43" y2="5.7658" width="0.2032" layer="41" curve="-180"/>
+<wire x1="-11.43" y1="5.7658" x2="-11.43" y2="9.4742" width="0.2032" layer="41" curve="-180"/>
+<wire x1="-11.43" y1="5.7658" x2="-11.43" y2="9.4742" width="0.2032" layer="42" curve="180"/>
+<wire x1="-11.43" y1="5.7658" x2="-11.43" y2="9.4742" width="0.2032" layer="42" curve="-180"/>
+<circle x="-11.43" y="7.62" radius="2.794" width="0.127" layer="39"/>
+<hole x="-11.43" y="7.62" drill="3.048"/>
+<wire x1="11.43" y1="9.4742" x2="11.43" y2="5.7658" width="0.2032" layer="41" curve="-180"/>
+<wire x1="11.43" y1="5.7658" x2="11.43" y2="9.4742" width="0.2032" layer="41" curve="-180"/>
+<wire x1="11.43" y1="5.7658" x2="11.43" y2="9.4742" width="0.2032" layer="42" curve="180"/>
+<wire x1="11.43" y1="5.7658" x2="11.43" y2="9.4742" width="0.2032" layer="42" curve="-180"/>
+<circle x="11.43" y="7.62" radius="2.794" width="0.127" layer="39"/>
+<hole x="11.43" y="7.62" drill="3.048"/>
+<wire x1="-11.43" y1="-4.4958" x2="-11.43" y2="-8.2042" width="0.2032" layer="41" curve="-180"/>
+<wire x1="-11.43" y1="-8.2042" x2="-11.43" y2="-4.4958" width="0.2032" layer="41" curve="-180"/>
+<wire x1="-11.43" y1="-8.2042" x2="-11.43" y2="-4.4958" width="0.2032" layer="42" curve="180"/>
+<wire x1="-11.43" y1="-8.2042" x2="-11.43" y2="-4.4958" width="0.2032" layer="42" curve="-180"/>
+<circle x="-11.43" y="-6.35" radius="2.794" width="0.127" layer="39"/>
+<hole x="-11.43" y="-6.35" drill="3.048"/>
+<wire x1="11.43" y1="-4.4958" x2="11.43" y2="-8.2042" width="0.2032" layer="41" curve="-180"/>
+<wire x1="11.43" y1="-8.2042" x2="11.43" y2="-4.4958" width="0.2032" layer="41" curve="-180"/>
+<wire x1="11.43" y1="-8.2042" x2="11.43" y2="-4.4958" width="0.2032" layer="42" curve="180"/>
+<wire x1="11.43" y1="-8.2042" x2="11.43" y2="-4.4958" width="0.2032" layer="42" curve="-180"/>
+<circle x="11.43" y="-6.35" radius="2.794" width="0.127" layer="39"/>
+<hole x="11.43" y="-6.35" drill="3.048"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO-MEGA">
@@ -4835,6 +5027,14 @@ AudioAmp</text>
 <wire x1="3.556" y1="-27.94" x2="3.556" y2="-30.48" width="0.254" layer="95"/>
 <text x="3.048" y="-30.734" size="1.778" layer="95" rot="R90">B+</text>
 <text x="-1.524" y="1.27" size="1.778" layer="95" rot="R90">B+</text>
+</symbol>
+<symbol name="BLACKBERRY_TRACKBALLER">
+<circle x="0" y="0" radius="5.6796125" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<text x="-14.732" y="-12.446" size="1.27" layer="94">Blackberry Trackballer Mounting Board</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -5654,7 +5854,7 @@ https://www.sparkfun.com/products/8745</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ARDUINO_R3_SHIELD">
+<deviceset name="ARDUINO_R3_SHIELD" prefix="J">
 <description>Shield form compatible with the Arduino Uno R3.</description>
 <gates>
 <gate name="G$1" symbol="ARDUINO_R3_SHIELD" x="0" y="0"/>
@@ -5982,6 +6182,20 @@ As defined for the Revistion 2 Pi.</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BLACKBERRY_TRACKBALLER">
+<gates>
+<gate name="G$1" symbol="BLACKBERRY_TRACKBALLER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BLACKBERRY_TRACKBALLER">
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="PCB-12486"/>
+</technology>
 </technologies>
 </device>
 </devices>

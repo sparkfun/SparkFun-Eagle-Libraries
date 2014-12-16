@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1070,7 +1070,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 </symbols>
 <devicesets>
 <deviceset name="CRYSTAL" prefix="Y" uservalue="yes">
-<description>Various standard crystals. Proven footprints. Spark Fun Electronics SKU : COM-00534</description>
+<description>Various standard crystals. Proven footprints.</description>
 <gates>
 <gate name="G$1" symbol="Q" x="0" y="0"/>
 </gates>
@@ -1140,7 +1140,9 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <connect gate="G$1" pin="2" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-08218" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="EPSONMC146" package="CRYSTAL-32KHZ-SMD_EPSON_MC146">

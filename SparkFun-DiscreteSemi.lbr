@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.0125" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="yes"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="yes"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="yes"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="yes"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="yes"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="yes"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="yes"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="yes"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="yes"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="yes"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="yes"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="yes"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -63,6 +63,8 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -71,6 +73,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
@@ -81,12 +84,28 @@
 <layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
 <layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="IDFDebug" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
@@ -113,6 +132,8 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
@@ -511,20 +532,20 @@ MSOP&lt;br&gt;
 <wire x1="3.2766" y1="-1.651" x2="-3.2766" y2="-1.651" width="0.2032" layer="21"/>
 <wire x1="-3.2766" y1="-1.651" x2="-3.2766" y2="1.651" width="0.2032" layer="21"/>
 <wire x1="-3.2766" y1="1.651" x2="3.2766" y2="1.651" width="0.2032" layer="21"/>
+<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
+<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
+<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
+<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
+<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
+<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
 <smd name="1" x="-2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
 <smd name="2" x="0" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
 <smd name="3" x="2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
 <smd name="4" x="0" y="3.099" dx="3.6" dy="2.2" layer="1"/>
 <text x="-0.8255" y="4.5085" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.0795" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
 </package>
 <package name="SOT89">
 <wire x1="2.3" y1="1.3" x2="2.3" y2="-1.3" width="0.2032" layer="21"/>
@@ -580,14 +601,14 @@ MSOP&lt;br&gt;
 <rectangle x1="-0.2286" y1="-0.381" x2="0.2286" y2="0.381" layer="21"/>
 </package>
 <package name="DIP8SMD">
-<wire x1="-3.81" y1="3.175" x2="3.81" y2="3.175" width="0.127" layer="21"/>
-<wire x1="3.81" y1="3.175" x2="3.81" y2="-2.032" width="0.127" layer="21"/>
-<wire x1="3.81" y1="-2.032" x2="3.81" y2="-3.175" width="0.127" layer="21"/>
-<wire x1="3.81" y1="-3.175" x2="-3.81" y2="-3.175" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-3.175" x2="-3.81" y2="-2.032" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-2.032" x2="-3.81" y2="3.175" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-2.032" x2="3.81" y2="-2.032" width="0.127" layer="21"/>
-<circle x="-2.794" y="-0.889" radius="0.381" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="3.175" x2="3.81" y2="3.175" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="3.175" x2="3.81" y2="-2.032" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-2.032" x2="3.81" y2="-3.175" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-3.175" x2="-3.81" y2="-3.175" width="0.2032" layer="21"/>
+<wire x1="-3.81" y1="-3.175" x2="-3.81" y2="-2.032" width="0.2032" layer="21"/>
+<wire x1="-3.81" y1="-2.032" x2="-3.81" y2="3.175" width="0.2032" layer="21"/>
+<wire x1="-3.81" y1="-2.032" x2="3.81" y2="-2.032" width="0.2032" layer="21"/>
+<circle x="-4.3815" y="-3.1115" radius="0.127" width="0.2032" layer="21"/>
 <smd name="1" x="-2.54" y="-4.572" dx="1.524" dy="1.27" layer="1"/>
 <smd name="2" x="0" y="-4.572" dx="1.524" dy="1.27" layer="1"/>
 <smd name="3" x="2.54" y="-4.572" dx="1.524" dy="1.27" layer="1"/>
@@ -598,21 +619,25 @@ MSOP&lt;br&gt;
 <text x="-3.556" y="0" size="1.016" layer="27">&gt;VALUE</text>
 </package>
 <package name="SMC">
-<description>&lt;b&gt;DIODE&lt;/b&gt;</description>
-<wire x1="-3.5606" y1="3.105" x2="3.5606" y2="3.105" width="0.1016" layer="21"/>
-<wire x1="-3.5606" y1="-3.105" x2="3.5606" y2="-3.105" width="0.1016" layer="21"/>
-<wire x1="-3.5606" y1="-3.105" x2="-3.5606" y2="3.105" width="0.1016" layer="51"/>
-<wire x1="3.5606" y1="-3.105" x2="3.5606" y2="3.105" width="0.1016" layer="51"/>
+<description>&lt;b&gt;SMC Sized Diode&lt;/b&gt;</description>
+<wire x1="-3.5" y1="3" x2="3.5" y2="3" width="0.2032" layer="21"/>
+<wire x1="-3.5" y1="-3" x2="3.5" y2="-3" width="0.2032" layer="21"/>
+<wire x1="-3.5" y1="-3" x2="-3.5" y2="3" width="0.127" layer="51"/>
+<wire x1="3.5" y1="-3" x2="3.5" y2="3" width="0.127" layer="51"/>
 <wire x1="0.543" y1="1" x2="-0.83" y2="0" width="0.2032" layer="21"/>
 <wire x1="-0.83" y1="0" x2="0.543" y2="-1" width="0.2032" layer="21"/>
 <wire x1="0.543" y1="-1" x2="0.543" y2="1" width="0.2032" layer="21"/>
-<smd name="C" x="-3.7" y="0" dx="2.8" dy="3.8" layer="1"/>
-<smd name="A" x="3.7" y="0" dx="2.8" dy="3.8" layer="1"/>
-<text x="-3.459" y="3.359" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.459" y="-4.629" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-4.094" y1="-1.0922" x2="-3.5606" y2="1.0922" layer="51"/>
-<rectangle x1="3.5606" y1="-1.0922" x2="4.094" y2="1.0922" layer="51"/>
-<rectangle x1="-2.1" y1="-3.1" x2="-0.85" y2="3.1" layer="21"/>
+<smd name="C" x="-3.302" y="0" dx="1.778" dy="3.175" layer="1"/>
+<smd name="A" x="3.302" y="0" dx="1.778" dy="3.175" layer="1"/>
+<text x="-0.635" y="1.905" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-2.54" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="-4" y1="-1.5" x2="-3.5" y2="1.5" layer="51"/>
+<rectangle x1="3.5" y1="-1.5" x2="4" y2="1.5" layer="51"/>
+<rectangle x1="-1.7" y1="-3" x2="-1.3" y2="3" layer="21"/>
+<wire x1="-3.5" y1="3" x2="-3.5" y2="2" width="0.2032" layer="21"/>
+<wire x1="-3.5" y1="-3" x2="-3.5" y2="-2" width="0.2032" layer="21"/>
+<wire x1="3.5" y1="3" x2="3.5" y2="2" width="0.2032" layer="21"/>
+<wire x1="3.5" y1="-3" x2="3.5" y2="-2" width="0.2032" layer="21"/>
 </package>
 <package name="0402-RES">
 <description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
@@ -789,12 +814,13 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <circle x="5.08" y="0" radius="0.9906" width="0" layer="30"/>
 </package>
 <package name="SOT26">
-<smd name="1" x="-0.95" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
-<smd name="2" x="0" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
-<smd name="3" x="0.95" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
-<smd name="4" x="0.95" y="1.2" dx="0.55" dy="0.8" layer="1"/>
-<smd name="6" x="-0.95" y="1.2" dx="0.55" dy="0.8" layer="1"/>
-<smd name="5" x="0" y="1.2" dx="0.55" dy="0.8" layer="1" rot="R180"/>
+<description>Footprint for SOT-26 part DMP2240UDM</description>
+<smd name="G1" x="-0.95" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
+<smd name="S2" x="0" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
+<smd name="G2" x="0.95" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
+<smd name="D2" x="0.95" y="1.2" dx="0.55" dy="0.8" layer="1"/>
+<smd name="D1" x="-0.95" y="1.2" dx="0.55" dy="0.8" layer="1"/>
+<smd name="S1" x="0" y="1.2" dx="0.55" dy="0.8" layer="1" rot="R180"/>
 <text x="-1.524" y="1.778" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.524" y="-2.286" size="0.4064" layer="27">&gt;VALUE</text>
 <wire x1="1.5" y1="0.8" x2="-1.5" y2="0.8" width="0.127" layer="51"/>
@@ -842,6 +868,56 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <wire x1="1.35" y1="0.775" x2="1.35" y2="-0.775" width="0.127" layer="51"/>
 <wire x1="1.35" y1="-0.775" x2="-1.35" y2="-0.775" width="0.127" layer="51"/>
 <wire x1="-1.35" y1="-0.775" x2="-1.35" y2="0.775" width="0.127" layer="51"/>
+</package>
+<package name="TO-263/D2PAK">
+<wire x1="5" y1="-1" x2="5" y2="-3.4" width="0.2032" layer="21"/>
+<wire x1="5" y1="-3.4" x2="-5" y2="-3.4" width="0.2032" layer="21"/>
+<wire x1="-5" y1="-3.4" x2="-5" y2="-1" width="0.2032" layer="21"/>
+<rectangle x1="-3.27" y1="-7.6" x2="-1.81" y2="-3.4" layer="51"/>
+<rectangle x1="-0.73" y1="-4.9" x2="0.73" y2="-3.4" layer="21"/>
+<smd name="1" x="-2.54" y="-7.045" dx="2.32" dy="3.81" layer="1"/>
+<smd name="3" x="2.54" y="-7.045" dx="2.32" dy="3.81" layer="1"/>
+<smd name="2" x="0" y="4.125" dx="11" dy="9.65" layer="1"/>
+<text x="-4.064" y="-1.778" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-4.064" y="-2.794" size="0.4064" layer="27">&gt;VALUE</text>
+<polygon width="0.1998" layer="51">
+<vertex x="-5" y="6.25"/>
+<vertex x="-5" y="7"/>
+<vertex x="-1" y="7.65"/>
+<vertex x="1" y="7.65"/>
+<vertex x="5" y="7"/>
+<vertex x="5" y="6.25"/>
+</polygon>
+<wire x1="-5" y1="6.25" x2="-5" y2="-0.65" width="0.127" layer="51"/>
+<wire x1="5" y1="-0.65" x2="5" y2="6.25" width="0.127" layer="51"/>
+<wire x1="-1.81" y1="-3.4" x2="-1.81" y2="-7.6" width="0.127" layer="51"/>
+<wire x1="-1.81" y1="-7.6" x2="-3.27" y2="-7.6" width="0.127" layer="51"/>
+<wire x1="-3.27" y1="-7.6" x2="-3.27" y2="-3.4" width="0.127" layer="51"/>
+<wire x1="-3.27" y1="-3.4" x2="-1.81" y2="-3.4" width="0.127" layer="51"/>
+<wire x1="1.81" y1="-3.4" x2="1.81" y2="-7.6" width="0.127" layer="51"/>
+<wire x1="1.81" y1="-7.6" x2="3.27" y2="-7.6" width="0.127" layer="51"/>
+<wire x1="3.27" y1="-7.6" x2="3.27" y2="-3.4" width="0.127" layer="51"/>
+<wire x1="3.27" y1="-3.4" x2="1.81" y2="-3.4" width="0.127" layer="51"/>
+<rectangle x1="1.81" y1="-7.6" x2="3.27" y2="-3.4" layer="51"/>
+<rectangle x1="-3.27" y1="-4.9" x2="-1.81" y2="-3.4" layer="21"/>
+<rectangle x1="1.81" y1="-4.9" x2="3.27" y2="-3.4" layer="21"/>
+</package>
+<package name="SOT563">
+<description>SOT563 for DMG1023UV-7</description>
+<wire x1="-0.8" y1="0.6" x2="0.8" y2="0.6" width="0.127" layer="51"/>
+<wire x1="0.8" y1="0.6" x2="0.8" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="0.8" y1="-0.6" x2="-0.8" y2="-0.6" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="-0.6" x2="-0.8" y2="0.6" width="0.127" layer="51"/>
+<smd name="D2" x="-0.5" y="0.85" dx="0.375" dy="0.5" layer="1"/>
+<smd name="G1" x="0" y="0.85" dx="0.375" dy="0.5" layer="1"/>
+<smd name="S1" x="0.5" y="0.85" dx="0.375" dy="0.5" layer="1"/>
+<smd name="D1" x="0.5" y="-0.85" dx="0.375" dy="0.5" layer="1"/>
+<smd name="G2" x="0" y="-0.85" dx="0.375" dy="0.5" layer="1"/>
+<smd name="S2" x="-0.5" y="-0.85" dx="0.375" dy="0.5" layer="1"/>
+<text x="-1.3" y="1.3" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.3" y="-2.6" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.2032" layer="21"/>
+<wire x1="-0.8" y1="0.4" x2="-0.8" y2="-0.4" width="0.2032" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -1300,7 +1376,7 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <pin name="D1@7" x="22.86" y="10.16" length="middle" rot="R180"/>
 <pin name="D1@8" x="22.86" y="12.7" length="middle" rot="R180"/>
 </symbol>
-<symbol name="TVS">
+<symbol name="TVS-3">
 <wire x1="-1.27" y1="-0.508" x2="-2.54" y2="2.032" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="2.032" x2="-3.81" y2="-0.508" width="0.254" layer="94"/>
 <wire x1="-3.81" y1="2.032" x2="-2.54" y2="2.032" width="0.254" layer="94"/>
@@ -1780,27 +1856,26 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <pin name="M1" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
 <pin name="G" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
 </symbol>
-<symbol name="SCHOTTKY_BRIDGE">
-<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.905" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="3.81" y1="1.27" x2="3.81" y2="0" width="0.254" layer="94"/>
-<wire x1="3.81" y1="0" x2="3.81" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="3.81" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="3.81" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.905" y1="1.27" x2="1.905" y2="1.016" width="0.254" layer="94"/>
-<wire x1="0.635" y1="-1.016" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
-<text x="-1.27" y="1.905" size="1.778" layer="95">&gt;NAME</text>
-<text x="-1.27" y="-3.429" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
-<pin name="2" x="5.08" y="0" visible="off" length="point" direction="pas" rot="R180"/>
-<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="0" x2="3.81" y2="0" width="0.1524" layer="94"/>
+<symbol name="TVS-2">
+<description>Some TVS have uni-directional characteristics. This symbol has A and C pins so-as to work with uni-directional TVS.</description>
+<wire x1="0" y1="-1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="2.032" y1="1.778" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="3.048" y1="-1.27" x2="3.556" y2="-1.778" width="0.254" layer="94"/>
+<text x="-1.524" y="2.286" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.778" y="-4.064" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
+<pin name="C" x="5.08" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.048" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="3.048" y2="0.762" width="0.254" layer="94"/>
+<wire x1="3.048" y1="0.762" x2="3.048" y2="0" width="0.254" layer="94"/>
+<wire x1="3.048" y1="0" x2="3.048" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="3.048" y1="-1.27" x2="2.54" y2="-0.762" width="0.254" layer="94"/>
 </symbol>
 <symbol name="V18ZA2P">
 <wire x1="-5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
@@ -2223,6 +2298,32 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 </symbol>
+<symbol name="TRIAC-TAB">
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<pin name="G" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
+<pin name="T1" x="0" y="-2.54" visible="off" length="short" rot="R90"/>
+<pin name="T2@1" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="T2@2" x="-2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<text x="3.175" y="0.381" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.048" y="2.159" size="1.778" layer="96" rot="R180">&gt;VALUE</text>
+<text x="-1.524" y="3.048" size="0.6096" layer="94" rot="R90">TAB</text>
+<text x="2.159" y="3.175" size="0.6096" layer="94" rot="R90">PIN</text>
+<polygon width="0.254" layer="94">
+<vertex x="-2.54" y="2.54"/>
+<vertex x="0" y="2.54"/>
+<vertex x="-1.27" y="0"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="0" y="0"/>
+<vertex x="2.54" y="0"/>
+<vertex x="1.27" y="2.54"/>
+</polygon>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BAV99" prefix="D" uservalue="yes">
@@ -2400,6 +2501,30 @@ Production Part - 8199
 </technology>
 </technologies>
 </device>
+<device name="16V" package="SOD-123">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-12440" constant="no"/>
+<attribute name="VALUE" value="16V" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="5.6V" package="SOD-323">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-12442" constant="no"/>
+<attribute name="VALUE" value="5.6V" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="GP1A57HR">
@@ -2472,7 +2597,9 @@ SMD: MOC3063S</description>
 <connect gate="G$1" pin="T2" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-10683" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2480,7 +2607,7 @@ SMD: MOC3063S</description>
 <deviceset name="MMBZ27VCLT1">
 <description>40W Zener-diode transient voltage suppressor (ESD protection)</description>
 <gates>
-<gate name="G$1" symbol="TVS" x="0" y="0"/>
+<gate name="G$1" symbol="TVS-3" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOT23-3">
@@ -2609,7 +2736,7 @@ FQP27P06 -
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="TRANS-11308"/>
-<attribute name="VALUE" value="30V, 2.5A"/>
+<attribute name="VALUE" value="2.5A/30V"/>
 </technology>
 </technologies>
 </device>
@@ -2736,7 +2863,9 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <connect gate="G$1" pin="E" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="TRANS-08049" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO92" package="TO-92">
@@ -2939,7 +3068,7 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TRIAC">
+<deviceset name="TRIAC" uservalue="yes">
 <description>Low-power generic TRIAC packages</description>
 <gates>
 <gate name="G$1" symbol="TRIAC" x="0" y="2.54"/>
@@ -2967,20 +3096,31 @@ MMBT4403 - 40V 600mA SOT-23 (TRANS-09245)</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TVS">
-<description>Transient voltage suppressor- prevents ESD on inputs.&lt;br&gt;
-Ignore package description- MBRA140 is NOT this type of part!!!</description>
+<deviceset name="TVS" prefix="D">
+<description>Transient voltage suppressor- prevents ESD on inputs.</description>
 <gates>
-<gate name="G$1" symbol="SCHOTTKY_BRIDGE" x="0" y="0"/>
+<gate name="G$1" symbol="TVS-2" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SMA-DIODE">
+<device name="SMA" package="SMA-DIODE">
 <connects>
-<connect gate="G$1" pin="1" pad="A"/>
-<connect gate="G$1" pin="2" pad="C"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="75VWM" package="SMC">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-12443" constant="no"/>
+<attribute name="VALUE" value="75VWM" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3095,7 +3235,7 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <technology name=""/>
 </technologies>
 </device>
-<device name="SOD" package="SOD-323">
+<device name="BAS16" package="SOD-323">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
@@ -3103,6 +3243,7 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-09646" constant="no"/>
+<attribute name="VALUE" value="250mA/100V" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3171,13 +3312,16 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <technology name=""/>
 </technologies>
 </device>
-<device name="SMC/DO-214AB" package="SMC">
+<device name="ES3J" package="SMC">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-12441" constant="no"/>
+<attribute name="VALUE" value="3A/600V" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="KIT" package="DIODE-1N4148-KIT">
@@ -3316,6 +3460,7 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="TRANS-00830" constant="no"/>
+<attribute name="VALUE" value="200mA/50V" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3328,6 +3473,19 @@ These are standard reverse protection diodes and small signal diodes. SMA packag
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="TRANS-08345" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="PSMN7R0" package="TO-263/D2PAK">
+<connects>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="TRANS-12437" constant="no"/>
+<attribute name="VALUE" value="100A/100V" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3525,12 +3683,12 @@ MMDT3904- TRANS-09373 (SOT-363, 200mA 40V)&lt;br&gt;</description>
 <devices>
 <device name="" package="SOT26">
 <connects>
-<connect gate="G$1" pin="D1" pad="6"/>
-<connect gate="G$1" pin="D2" pad="4"/>
-<connect gate="G$1" pin="G1" pad="1"/>
-<connect gate="G$1" pin="G2" pad="3"/>
-<connect gate="G$1" pin="S1" pad="5"/>
-<connect gate="G$1" pin="S2" pad="2"/>
+<connect gate="G$1" pin="D1" pad="D1"/>
+<connect gate="G$1" pin="D2" pad="D2"/>
+<connect gate="G$1" pin="G1" pad="G1"/>
+<connect gate="G$1" pin="G2" pad="G2"/>
+<connect gate="G$1" pin="S1" pad="S1"/>
+<connect gate="G$1" pin="S2" pad="S2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -3574,7 +3732,7 @@ MMDT3904- TRANS-09373 (SOT-363, 200mA 40V)&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PHOTOTRANSISTOR" prefix="Q">
+<deviceset name="PHOTOTRANSISTOR" prefix="Q" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="PHOTOTRANSISTOR" x="0" y="0"/>
 </gates>
@@ -3587,6 +3745,66 @@ MMDT3904- TRANS-09373 (SOT-363, 200mA 40V)&lt;br&gt;</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="TRANS-12141"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOSFET-PCHANNEL_DUAL" prefix="U">
+<gates>
+<gate name="G1" symbol="MOSFET-PCHANNEL" x="0" y="10.16"/>
+<gate name="G2" symbol="MOSFET-PCHANNEL" x="0" y="-10.16"/>
+</gates>
+<devices>
+<device name="563" package="SOT563">
+<connects>
+<connect gate="G1" pin="D" pad="D1"/>
+<connect gate="G1" pin="G" pad="G1"/>
+<connect gate="G1" pin="S" pad="S1"/>
+<connect gate="G2" pin="D" pad="D2"/>
+<connect gate="G2" pin="G" pad="G2"/>
+<connect gate="G2" pin="S" pad="S2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT26" package="SOT26">
+<connects>
+<connect gate="G1" pin="D" pad="D1"/>
+<connect gate="G1" pin="G" pad="G1"/>
+<connect gate="G1" pin="S" pad="S1"/>
+<connect gate="G2" pin="D" pad="D2"/>
+<connect gate="G2" pin="G" pad="G2"/>
+<connect gate="G2" pin="S" pad="S2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="TRAN-12444" constant="no"/>
+<attribute name="VALUE" value="2A/20V" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TRIAC-HP" prefix="U" uservalue="yes">
+<description>TRIAC High Power
+&lt;BR&gt;
+Used for EL wire applications</description>
+<gates>
+<gate name="G$1" symbol="TRIAC-TAB" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="SMD" package="SOT223">
+<connects>
+<connect gate="G$1" pin="G" pad="3"/>
+<connect gate="G$1" pin="T1" pad="1"/>
+<connect gate="G$1" pin="T2@1" pad="2"/>
+<connect gate="G$1" pin="T2@2" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="VREG-09120" constant="no"/>
 </technology>
 </technologies>
 </device>
