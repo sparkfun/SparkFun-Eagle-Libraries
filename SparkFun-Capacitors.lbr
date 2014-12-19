@@ -1497,6 +1497,17 @@ Source: RS Components</description>
 <wire x1="2.978" y1="1.497" x2="1.962" y2="1.497" width="0.2032" layer="21"/>
 <wire x1="2.47" y1="2.005" x2="2.47" y2="0.989" width="0.2032" layer="21"/>
 </package>
+<package name="NIC_10X10.5_CAP">
+<smd name="+" x="4.5" y="0" dx="4.5" dy="2.5" layer="1"/>
+<smd name="-" x="-4.5" y="0" dx="4.5" dy="2.5" layer="1"/>
+<circle x="0" y="0" radius="5" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="5.5" x2="-5.5" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="-5.5" x2="3.5" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="5.5" x2="3.5" y2="5.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="5.5" x2="5.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="5.5" y1="3.5" x2="5.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="5.5" y1="-3.5" x2="3.5" y2="-5.5" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP">
@@ -1867,19 +1878,7 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 <gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="PANASONIC_H13">
-<connects>
-<connect gate="G$1" pin="+" pad="+"/>
-<connect gate="G$1" pin="-" pad="-"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-08362"/>
-<attribute name="VALUE" value="100uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="PAN_E" package="PANASONIC_E">
+<device name="" package="NIC_10X10.5_CAP">
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
