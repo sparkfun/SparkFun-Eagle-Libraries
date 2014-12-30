@@ -286,6 +286,31 @@ MSOP&lt;br&gt;
 <rectangle x1="-0.525" y1="1.55" x2="-0.125" y2="2.45" layer="51"/>
 <rectangle x1="-1.175" y1="1.55" x2="-0.775" y2="2.45" layer="51"/>
 </package>
+<package name="LED-DUALCOLOR-3MM">
+<pad name="K" x="0" y="0" drill="0.7" diameter="1.27"/>
+<pad name="A2" x="2.5" y="0" drill="0.7" diameter="1.27"/>
+<pad name="A1" x="-2.5" y="0" drill="0.7" diameter="1.27"/>
+<wire x1="-1.75" y1="0.6" x2="-1.75" y2="0" width="0.06" layer="21"/>
+<wire x1="-1.75" y1="0" x2="-1.75" y2="-0.65" width="0.06" layer="21"/>
+<wire x1="-1.75" y1="-0.65" x2="-0.75" y2="0" width="0.06" layer="21"/>
+<wire x1="-0.75" y1="0" x2="-1.75" y2="0.6" width="0.06" layer="21"/>
+<wire x1="-0.75" y1="0.6" x2="-0.75" y2="0" width="0.06" layer="21"/>
+<wire x1="-0.75" y1="0" x2="-0.75" y2="-0.65" width="0.06" layer="21"/>
+<wire x1="1.75" y1="-0.6" x2="1.75" y2="0" width="0.06" layer="21"/>
+<wire x1="1.75" y1="0" x2="1.75" y2="0.65" width="0.06" layer="21"/>
+<wire x1="1.75" y1="0.65" x2="0.75" y2="0" width="0.06" layer="21"/>
+<wire x1="0.75" y1="0" x2="1.75" y2="-0.6" width="0.06" layer="21"/>
+<wire x1="0.75" y1="-0.6" x2="0.75" y2="0" width="0.06" layer="21"/>
+<wire x1="0.75" y1="0" x2="0.75" y2="0.65" width="0.06" layer="21"/>
+<wire x1="-1.75" y1="0" x2="-2" y2="0" width="0.06" layer="21"/>
+<wire x1="-0.75" y1="0" x2="-0.5" y2="0" width="0.06" layer="21"/>
+<wire x1="0.5" y1="0" x2="0.75" y2="0" width="0.06" layer="21"/>
+<wire x1="1.75" y1="0" x2="2" y2="0" width="0.06" layer="21"/>
+<wire x1="-3.25" y1="0.75" x2="3.25" y2="0.75" width="0.06" layer="21"/>
+<wire x1="3.25" y1="0.75" x2="3.25" y2="-0.75" width="0.06" layer="21"/>
+<wire x1="3.25" y1="-0.75" x2="-3.25" y2="-0.75" width="0.06" layer="21"/>
+<wire x1="-3.25" y1="-0.75" x2="-3.25" y2="0.75" width="0.06" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ESPLORA_SHIELD">
@@ -364,6 +389,24 @@ MSOP&lt;br&gt;
 <text x="1.905" y="5.08" size="1.27" layer="95" font="vector" rot="R90">VCC</text>
 <pin name="GND" x="0" y="-7.62" visible="off" length="middle" direction="pwr" rot="R90"/>
 <pin name="VCC" x="0" y="7.62" visible="off" length="middle" direction="pwr" rot="R270"/>
+</symbol>
+<symbol name="LED-DUALCOLOR-1">
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-2.54" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-3.81" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-3.81" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<pin name="A1" x="-3.81" y="2.54" visible="off" length="short" rot="R270"/>
+<pin name="A2" x="1.27" y="2.54" visible="off" length="short" rot="R270"/>
+<pin name="K" x="-1.27" y="-7.62" visible="off" length="short" rot="R90"/>
+<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="-3.81" y2="-5.08" width="0.127" layer="94"/>
+<wire x1="-3.81" y1="-5.08" x2="-3.81" y2="-2.54" width="0.127" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="1.27" y2="-2.54" width="0.127" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -497,6 +540,23 @@ FQP27P06 -
 <connect gate="B" pin="OUT" pad="7"/>
 <connect gate="PWR" pin="GND" pad="4"/>
 <connect gate="PWR" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED-DUALCOLOR">
+<gates>
+<gate name="G$1" symbol="LED-DUALCOLOR-1" x="2.54" y="2.54"/>
+</gates>
+<devices>
+<device name="3MM-THROUGH-HOLE" package="LED-DUALCOLOR-3MM">
+<connects>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="A2" pad="A2"/>
+<connect gate="G$1" pin="K" pad="K"/>
 </connects>
 <technologies>
 <technology name=""/>
