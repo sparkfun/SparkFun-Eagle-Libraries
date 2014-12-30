@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -8128,49 +8128,6 @@ Resettable Fuse. Spark Fun Electronics SKU : COM-08357</description>
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TB6621FNG" prefix="U" uservalue="yes">
-<description>Toshiba 1A dual motor driver&lt;br&gt;
-IC-09363</description>
-<gates>
-<gate name="G$1" symbol="TB6612FNG" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SSOP24">
-<connects>
-<connect gate="G$1" pin="A01@1" pad="1"/>
-<connect gate="G$1" pin="A01@2" pad="2"/>
-<connect gate="G$1" pin="A02@5" pad="5"/>
-<connect gate="G$1" pin="A02@6" pad="6"/>
-<connect gate="G$1" pin="AIN1" pad="21"/>
-<connect gate="G$1" pin="AIN2" pad="22"/>
-<connect gate="G$1" pin="B01@11" pad="11"/>
-<connect gate="G$1" pin="B01@12" pad="12"/>
-<connect gate="G$1" pin="B02@7" pad="7"/>
-<connect gate="G$1" pin="B02@8" pad="8"/>
-<connect gate="G$1" pin="BIN1" pad="17"/>
-<connect gate="G$1" pin="BIN2" pad="16"/>
-<connect gate="G$1" pin="GND" pad="18"/>
-<connect gate="G$1" pin="PGND1@3" pad="3"/>
-<connect gate="G$1" pin="PGND1@4" pad="4"/>
-<connect gate="G$1" pin="PGND2@10" pad="10"/>
-<connect gate="G$1" pin="PGND2@9" pad="9"/>
-<connect gate="G$1" pin="PWMA" pad="23"/>
-<connect gate="G$1" pin="PWMB" pad="15"/>
-<connect gate="G$1" pin="STBY" pad="19"/>
-<connect gate="G$1" pin="VCC" pad="20"/>
-<connect gate="G$1" pin="VM1" pad="24"/>
-<connect gate="G$1" pin="VM2" pad="13"/>
-<connect gate="G$1" pin="VM3" pad="14"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="IC-09363"/>
-<attribute name="VALUE" value="TB6612FNG" constant="no"/>
-</technology>
 </technologies>
 </device>
 </devices>
