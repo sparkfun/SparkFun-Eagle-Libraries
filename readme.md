@@ -12,6 +12,10 @@ Always check your parts against a 1:1 printout.
 This is the complete SparkFun Electronics default foot prints for Eagle 6.0+. 
 We switched to Eagle back in 2006 and have been extremely impressed with its ease of use and flexibility. 
 As with any new software, it's like learning a new language and takes time. Do it. Eagle is great. 
+
+How to Use Eagle
+----------------
+
 If you need more information about how to use Eagle, checkout our Eagle Tutorials: 
 
 * [Installing an Eagle Library](https://learn.sparkfun.com/tutorials/how-to-install-and-setup-eagle#using-the-sparkfun-libraries)
@@ -21,6 +25,8 @@ If you need more information about how to use Eagle, checkout our Eagle Tutorial
 * [Designing Custom Footprints](https://learn.sparkfun.com/tutorials/designing-pcbs-smd-footprints)
 * [Creating Footprints from Digital Imagery](https://learn.sparkfun.com/tutorials/making-custom-footprints-in-eagle)
 
+How to use GitHub
+-----------------
 
 If you need help getting started using git, check out our GitHub tutorials:
 * [Using GitHub](https://learn.sparkfun.com/tutorials/using-github)
