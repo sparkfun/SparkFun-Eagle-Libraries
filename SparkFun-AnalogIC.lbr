@@ -4260,7 +4260,7 @@ Low noise, low distortion, 1GHz BW.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MCP6291">
+<deviceset name="MCP6291" prefix="U">
 <description>Rail to rail OpAmp with 10MHz GBP</description>
 <gates>
 <gate name="G$1" symbol="OP-AMP+-" x="0" y="0"/>
@@ -4457,6 +4457,28 @@ I&lt;sup&gt;2&lt;/sup&gt;C interface&lt;br&gt;
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCP6021">
+<description>Rail-to-rail input/output op-amp with 10 MHz bandwidth.</description>
+<gates>
+<gate name="G$1" symbol="OP-AMP+-" x="0" y="0"/>
+</gates>
+<devices>
+<device name="T-E/OT" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="+IN" pad="3"/>
+<connect gate="G$1" pin="-IN" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+<connect gate="G$1" pin="V+" pad="5"/>
+<connect gate="G$1" pin="V-" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-12504"/>
+</technology>
 </technologies>
 </device>
 </devices>
