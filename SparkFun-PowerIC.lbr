@@ -7089,6 +7089,33 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <text x="-10.16" y="10.668" size="1.778" layer="95">&gt;Name</text>
 <text x="-10.16" y="-10.668" size="1.778" layer="96" align="top-left">&gt;Value</text>
 </symbol>
+<symbol name="TPS6213X">
+<description>TPS62130, TPS62130A, TPS62131, TPS62132, TPS62133&lt;br/&gt;
+(Will also work for TPS62140, TPS62140A, TPS62141, TPS62142, TPS62143)</description>
+<wire x1="-12.7" y1="12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
+<pin name="PVIN@11" x="-17.78" y="10.16" length="middle"/>
+<pin name="PVIN@12" x="-17.78" y="7.62" length="middle"/>
+<pin name="AVIN" x="-17.78" y="5.08" length="middle"/>
+<pin name="EN" x="-17.78" y="2.54" length="middle"/>
+<pin name="FSW" x="-7.62" y="-17.78" length="middle" rot="R90"/>
+<pin name="PGND@15" x="0" y="-17.78" length="middle" rot="R90"/>
+<pin name="PGND@16" x="2.54" y="-17.78" length="middle" rot="R90"/>
+<pin name="EXT" x="5.08" y="-17.78" length="middle" rot="R90"/>
+<pin name="SW@1" x="17.78" y="10.16" length="middle" rot="R180"/>
+<pin name="SW@2" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="SW@3" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="PG" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="VOS" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="SS_TR" x="-17.78" y="0" length="middle"/>
+<pin name="AGND" x="-2.54" y="-17.78" length="middle" rot="R90"/>
+<pin name="DEF" x="-5.08" y="-17.78" length="middle" rot="R90"/>
+<pin name="FB" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<text x="-12.7" y="15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="12.7" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ADM1087">
@@ -9361,6 +9388,40 @@ Is packaged in a 10-pin PWSON package measuring about 3 x 3 mm. &lt;br&gt;&lt;br
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-12273"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS6213X">
+<description>3-17V, 3A Step Down Converter</description>
+<gates>
+<gate name="G$1" symbol="TPS6213X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN16-3X3MM">
+<connects>
+<connect gate="G$1" pin="AGND" pad="6"/>
+<connect gate="G$1" pin="AVIN" pad="10"/>
+<connect gate="G$1" pin="DEF" pad="8"/>
+<connect gate="G$1" pin="EN" pad="13"/>
+<connect gate="G$1" pin="EXT" pad="EXT"/>
+<connect gate="G$1" pin="FB" pad="5"/>
+<connect gate="G$1" pin="FSW" pad="7"/>
+<connect gate="G$1" pin="PG" pad="4"/>
+<connect gate="G$1" pin="PGND@15" pad="15"/>
+<connect gate="G$1" pin="PGND@16" pad="16"/>
+<connect gate="G$1" pin="PVIN@11" pad="11"/>
+<connect gate="G$1" pin="PVIN@12" pad="12"/>
+<connect gate="G$1" pin="SS_TR" pad="9"/>
+<connect gate="G$1" pin="SW@1" pad="1"/>
+<connect gate="G$1" pin="SW@2" pad="2"/>
+<connect gate="G$1" pin="SW@3" pad="3"/>
+<connect gate="G$1" pin="VOS" pad="14"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-11630" constant="no"/>
 </technology>
 </technologies>
 </device>
