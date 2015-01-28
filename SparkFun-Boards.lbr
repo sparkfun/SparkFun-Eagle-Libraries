@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4579,6 +4579,136 @@ AudioAmp</text>
 <text x="27.305" y="52.451" size="0.508" layer="51" font="vector" ratio="15">RST</text>
 <text x="24.892" y="55.626" size="0.508" layer="51" font="vector" ratio="15">ISP</text>
 <wire x1="23.495" y1="52.832" x2="22.225" y2="52.832" width="0.2032" layer="51"/>
+</package>
+<package name="FLANGED_RED_ENCLOSURE-DIMENSION">
+<hole x="64" y="6" drill="3.175"/>
+<hole x="86" y="6" drill="3.175"/>
+<hole x="136" y="6" drill="3.175"/>
+<hole x="14" y="6" drill="3.175"/>
+<hole x="64" y="74" drill="3.175"/>
+<hole x="86" y="74" drill="3.175"/>
+<hole x="136" y="74" drill="3.175"/>
+<hole x="14" y="74" drill="3.175"/>
+<hole x="89" y="17" drill="3.175"/>
+<hole x="129" y="17" drill="3.175"/>
+<wire x1="9" y1="3" x2="12" y2="0" width="0.127" layer="48" curve="90"/>
+<wire x1="12" y1="0" x2="66" y2="0" width="0.127" layer="48"/>
+<wire x1="66" y1="0" x2="69" y2="3" width="0.127" layer="48" curve="90"/>
+<wire x1="81" y1="3" x2="84" y2="0" width="0.127" layer="48" curve="90"/>
+<wire x1="84" y1="0" x2="138" y2="0" width="0.127" layer="48"/>
+<wire x1="138" y1="0" x2="141" y2="3" width="0.127" layer="48" curve="90"/>
+<wire x1="141" y1="3" x2="146" y2="8" width="0.127" layer="48" curve="-90"/>
+<wire x1="146" y1="8" x2="150" y2="12" width="0.127" layer="48" curve="90"/>
+<wire x1="150" y1="12" x2="150" y2="68" width="0.127" layer="48"/>
+<wire x1="150" y1="68" x2="146" y2="72" width="0.127" layer="48" curve="90"/>
+<wire x1="146" y1="72" x2="141" y2="77" width="0.127" layer="48" curve="-90"/>
+<wire x1="141" y1="77" x2="138" y2="80" width="0.127" layer="48" curve="90"/>
+<wire x1="138" y1="80" x2="84" y2="80" width="0.127" layer="48"/>
+<wire x1="84" y1="80" x2="81" y2="77" width="0.127" layer="48" curve="90"/>
+<wire x1="69" y1="77" x2="66" y2="80" width="0.127" layer="48" curve="90"/>
+<wire x1="66" y1="80" x2="12" y2="80" width="0.127" layer="48"/>
+<wire x1="12" y1="80" x2="9" y2="77" width="0.127" layer="48" curve="90"/>
+<wire x1="9" y1="77" x2="4" y2="72" width="0.127" layer="48" curve="-90"/>
+<wire x1="4" y1="72" x2="0" y2="68" width="0.127" layer="48" curve="90"/>
+<wire x1="0" y1="68" x2="0" y2="12" width="0.127" layer="48"/>
+<wire x1="0" y1="12" x2="4" y2="8" width="0.127" layer="48" curve="90"/>
+<wire x1="4" y1="8" x2="9" y2="3" width="0.127" layer="48" curve="-90"/>
+<wire x1="69" y1="3" x2="74" y2="8" width="0.127" layer="48" curve="-90"/>
+<wire x1="74" y1="8" x2="76" y2="8" width="0.127" layer="48"/>
+<wire x1="76" y1="8" x2="81" y2="3" width="0.127" layer="48" curve="-90"/>
+<wire x1="69" y1="77" x2="74" y2="72" width="0.127" layer="48" curve="90"/>
+<wire x1="74" y1="72" x2="76" y2="72" width="0.127" layer="48"/>
+<wire x1="76" y1="72" x2="81" y2="77" width="0.127" layer="48" curve="90"/>
+<dimension x1="12" y1="3" x2="9.930821875" y2="0.827790625" x3="4.550953125" y3="-4.819953125" textsize="1.27" layer="48" dtype="radius"/>
+<dimension x1="4" y1="3" x2="7.123475" y2="6.90434375" x3="11.996096875" y3="12.995121875" textsize="1.27" layer="48" dtype="radius"/>
+<dimension x1="4" y1="12" x2="0.503371875" y2="10.057428125" x3="-6.315053125" y3="6.2694125" textsize="1.27" layer="48" dtype="radius"/>
+<dimension x1="66" y1="3" x2="68.121321875" y2="0.878678125" x3="73.636753125" y3="-4.636753125" textsize="1.27" layer="48" dtype="radius"/>
+<dimension x1="74" y1="3" x2="70.707478125" y2="6.762884375" x3="65.571140625" y3="12.63298125" textsize="1.27" layer="48" dtype="radius"/>
+<dimension x1="4" y1="68" x2="1.4392625" y2="71.072884375" x3="-3.554175" y3="77.065009375" textsize="1.27" layer="48" dtype="radius"/>
+<dimension x1="4" y1="77" x2="7" y2="73" x3="11.68" y3="66.76" textsize="1.27" layer="48" dtype="radius"/>
+<dimension x1="12" y1="77" x2="10.2" y2="79.4" x3="5.52" y3="85.64" textsize="1.27" layer="48" dtype="radius"/>
+<dimension x1="0" y1="12" x2="150" y2="35" x3="75" y3="-34" textsize="1.27" layer="48" dtype="horizontal"/>
+<dimension x1="0" y1="12" x2="14" y2="74" x3="7" y3="-5" textsize="1.27" layer="48" dtype="horizontal"/>
+<dimension x1="0" y1="12" x2="64" y2="74" x3="32" y3="-10" textsize="1.27" layer="48" dtype="horizontal"/>
+<dimension x1="0" y1="12" x2="86" y2="74" x3="43" y3="-19" textsize="1.27" layer="48" dtype="horizontal"/>
+<dimension x1="0" y1="12" x2="89" y2="17" x3="44.5" y3="-22" textsize="1.27" layer="48" dtype="horizontal"/>
+<dimension x1="0" y1="12" x2="129" y2="17" x3="64.5" y3="-25" textsize="1.27" layer="48" dtype="horizontal"/>
+<dimension x1="0" y1="12" x2="136" y2="74" x3="68" y3="-28" textsize="1.27" layer="48" dtype="horizontal"/>
+<dimension x1="0" y1="12" x2="9" y2="4" x3="4.5" y3="-4" textsize="1.27" layer="48" dtype="horizontal"/>
+<dimension x1="0" y1="12" x2="69" y2="3" x3="34.5" y3="-13" textsize="1.27" layer="48" dtype="horizontal"/>
+<dimension x1="0" y1="12" x2="81" y2="3" x3="40.5" y3="-16" textsize="1.27" layer="48" dtype="horizontal"/>
+<dimension x1="0" y1="12" x2="141" y2="3" x3="70.5" y3="-31" textsize="1.27" layer="48" dtype="horizontal"/>
+<dimension x1="0" y1="0" x2="136" y2="6" x3="-5" y3="3" textsize="1.27" layer="48" dtype="vertical"/>
+<dimension x1="0" y1="0" x2="146" y2="8" x3="-8" y3="4" textsize="1.27" layer="48" dtype="vertical"/>
+<dimension x1="0" y1="0" x2="129" y2="17" x3="-11" y3="8.5" textsize="1.27" layer="48" dtype="vertical"/>
+<dimension x1="0" y1="0" x2="146" y2="72" x3="-14" y3="36" textsize="1.27" layer="48" dtype="vertical"/>
+<dimension x1="0" y1="0" x2="14" y2="74" x3="-17" y3="37" textsize="1.27" layer="48" dtype="vertical"/>
+<dimension x1="0" y1="0" x2="25" y2="80" x3="-20" y3="40" textsize="1.27" layer="48" dtype="vertical"/>
+</package>
+<package name="FLANGED_RED_ENCLOSURE-OUTLINE">
+<hole x="64" y="6" drill="3.175"/>
+<hole x="86" y="6" drill="3.175"/>
+<hole x="136" y="6" drill="3.175"/>
+<hole x="14" y="6" drill="3.175"/>
+<hole x="64" y="74" drill="3.175"/>
+<hole x="86" y="74" drill="3.175"/>
+<hole x="136" y="74" drill="3.175"/>
+<hole x="14" y="74" drill="3.175"/>
+<hole x="89" y="17" drill="3.175"/>
+<hole x="129" y="17" drill="3.175"/>
+<wire x1="9" y1="3" x2="12" y2="0" width="0.127" layer="20" curve="90"/>
+<wire x1="12" y1="0" x2="66" y2="0" width="0.127" layer="20"/>
+<wire x1="66" y1="0" x2="69" y2="3" width="0.127" layer="20" curve="90"/>
+<wire x1="81" y1="3" x2="84" y2="0" width="0.127" layer="20" curve="90"/>
+<wire x1="84" y1="0" x2="138" y2="0" width="0.127" layer="20"/>
+<wire x1="138" y1="0" x2="141" y2="3" width="0.127" layer="20" curve="90"/>
+<wire x1="141" y1="3" x2="146" y2="8" width="0.127" layer="20" curve="-90"/>
+<wire x1="146" y1="8" x2="150" y2="12" width="0.127" layer="20" curve="90"/>
+<wire x1="150" y1="12" x2="150" y2="68" width="0.127" layer="20"/>
+<wire x1="150" y1="68" x2="146" y2="72" width="0.127" layer="20" curve="90"/>
+<wire x1="146" y1="72" x2="141" y2="77" width="0.127" layer="20" curve="-90"/>
+<wire x1="141" y1="77" x2="138" y2="80" width="0.127" layer="20" curve="90"/>
+<wire x1="138" y1="80" x2="84" y2="80" width="0.127" layer="20"/>
+<wire x1="84" y1="80" x2="81" y2="77" width="0.127" layer="20" curve="90"/>
+<wire x1="69" y1="77" x2="66" y2="80" width="0.127" layer="20" curve="90"/>
+<wire x1="66" y1="80" x2="12" y2="80" width="0.127" layer="20"/>
+<wire x1="12" y1="80" x2="9" y2="77" width="0.127" layer="20" curve="90"/>
+<wire x1="9" y1="77" x2="4" y2="72" width="0.127" layer="20" curve="-90"/>
+<wire x1="4" y1="72" x2="0" y2="68" width="0.127" layer="20" curve="90"/>
+<wire x1="0" y1="68" x2="0" y2="12" width="0.127" layer="20"/>
+<wire x1="0" y1="12" x2="4" y2="8" width="0.127" layer="20" curve="90"/>
+<wire x1="4" y1="8" x2="9" y2="3" width="0.127" layer="20" curve="-90"/>
+<wire x1="69" y1="3" x2="74" y2="8" width="0.127" layer="20" curve="-90"/>
+<wire x1="74" y1="8" x2="76" y2="8" width="0.127" layer="20"/>
+<wire x1="76" y1="8" x2="81" y2="3" width="0.127" layer="20" curve="-90"/>
+<wire x1="69" y1="77" x2="74" y2="72" width="0.127" layer="20" curve="90"/>
+<wire x1="74" y1="72" x2="76" y2="72" width="0.127" layer="20"/>
+<wire x1="76" y1="72" x2="81" y2="77" width="0.127" layer="20" curve="90"/>
+<dimension x1="12" y1="3" x2="9.930821875" y2="0.827790625" x3="4.550953125" y3="-4.819953125" textsize="1.27" layer="48" dtype="radius"/>
+<dimension x1="4" y1="3" x2="7.123475" y2="6.90434375" x3="11.996096875" y3="12.995121875" textsize="1.27" layer="48" dtype="radius"/>
+<dimension x1="4" y1="12" x2="0.503371875" y2="10.057428125" x3="-6.315053125" y3="6.2694125" textsize="1.27" layer="48" dtype="radius"/>
+<dimension x1="66" y1="3" x2="68.121321875" y2="0.878678125" x3="73.636753125" y3="-4.636753125" textsize="1.27" layer="48" dtype="radius"/>
+<dimension x1="74" y1="3" x2="70.707478125" y2="6.762884375" x3="65.571140625" y3="12.63298125" textsize="1.27" layer="48" dtype="radius"/>
+<dimension x1="4" y1="68" x2="1.4392625" y2="71.072884375" x3="-3.554175" y3="77.065009375" textsize="1.27" layer="48" dtype="radius"/>
+<dimension x1="4" y1="77" x2="7" y2="73" x3="11.68" y3="66.76" textsize="1.27" layer="48" dtype="radius"/>
+<dimension x1="12" y1="77" x2="10.2" y2="79.4" x3="5.52" y3="85.64" textsize="1.27" layer="48" dtype="radius"/>
+<dimension x1="0" y1="12" x2="150" y2="35" x3="75" y3="-34" textsize="1.27" layer="48" dtype="horizontal"/>
+<dimension x1="0" y1="12" x2="14" y2="74" x3="7" y3="-5" textsize="1.27" layer="48" dtype="horizontal"/>
+<dimension x1="0" y1="12" x2="64" y2="74" x3="32" y3="-10" textsize="1.27" layer="48" dtype="horizontal"/>
+<dimension x1="0" y1="12" x2="86" y2="74" x3="43" y3="-19" textsize="1.27" layer="48" dtype="horizontal"/>
+<dimension x1="0" y1="12" x2="89" y2="17" x3="44.5" y3="-22" textsize="1.27" layer="48" dtype="horizontal"/>
+<dimension x1="0" y1="12" x2="129" y2="17" x3="64.5" y3="-25" textsize="1.27" layer="48" dtype="horizontal"/>
+<dimension x1="0" y1="12" x2="136" y2="74" x3="68" y3="-28" textsize="1.27" layer="48" dtype="horizontal"/>
+<dimension x1="0" y1="12" x2="9" y2="4" x3="4.5" y3="-4" textsize="1.27" layer="48" dtype="horizontal"/>
+<dimension x1="0" y1="12" x2="69" y2="3" x3="34.5" y3="-13" textsize="1.27" layer="48" dtype="horizontal"/>
+<dimension x1="0" y1="12" x2="81" y2="3" x3="40.5" y3="-16" textsize="1.27" layer="48" dtype="horizontal"/>
+<dimension x1="0" y1="12" x2="141" y2="3" x3="70.5" y3="-31" textsize="1.27" layer="48" dtype="horizontal"/>
+<dimension x1="0" y1="0" x2="136" y2="6" x3="-5" y3="3" textsize="1.27" layer="48" dtype="vertical"/>
+<dimension x1="0" y1="0" x2="146" y2="8" x3="-8" y3="4" textsize="1.27" layer="48" dtype="vertical"/>
+<dimension x1="0" y1="0" x2="129" y2="17" x3="-11" y3="8.5" textsize="1.27" layer="48" dtype="vertical"/>
+<dimension x1="0" y1="0" x2="146" y2="72" x3="-14" y3="36" textsize="1.27" layer="48" dtype="vertical"/>
+<dimension x1="0" y1="0" x2="14" y2="74" x3="-17" y3="37" textsize="1.27" layer="48" dtype="vertical"/>
+<dimension x1="0" y1="0" x2="25" y2="80" x3="-20" y3="40" textsize="1.27" layer="48" dtype="vertical"/>
 </package>
 </packages>
 <symbols>
