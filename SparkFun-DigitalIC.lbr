@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -64,6 +64,8 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -97,6 +99,7 @@
 <layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
@@ -3709,6 +3712,22 @@ http://www.ftdichip.com</description>
 <wire x1="-5.207" y1="0.6096" x2="-5.207" y2="-0.6604" width="0.2032" layer="21" curve="-180"/>
 <wire x1="-5.2578" y1="1.4526" x2="-5.2578" y2="0.6096" width="0.2032" layer="21"/>
 <wire x1="-5.2578" y1="-1.6653" x2="-5.2578" y2="-0.6604" width="0.2032" layer="21"/>
+<rectangle x1="-4.699" y1="-3.302" x2="-4.191" y2="-2.2733" layer="51"/>
+<rectangle x1="-3.429" y1="-3.302" x2="-2.921" y2="-2.2733" layer="51"/>
+<rectangle x1="-2.159" y1="-3.302" x2="-1.651" y2="-2.2733" layer="51"/>
+<rectangle x1="-0.889" y1="-3.302" x2="-0.381" y2="-2.2733" layer="51"/>
+<rectangle x1="0.381" y1="-3.302" x2="0.889" y2="-2.2733" layer="51"/>
+<rectangle x1="1.651" y1="-3.302" x2="2.159" y2="-2.2733" layer="51"/>
+<rectangle x1="2.921" y1="-3.302" x2="3.429" y2="-2.2733" layer="51"/>
+<rectangle x1="4.191" y1="-3.302" x2="4.699" y2="-2.2733" layer="51"/>
+<rectangle x1="-4.699" y1="2.286" x2="-4.191" y2="3.3655" layer="51"/>
+<rectangle x1="-3.429" y1="2.286" x2="-2.921" y2="3.302" layer="51"/>
+<rectangle x1="-2.159" y1="2.286" x2="-1.651" y2="3.302" layer="51"/>
+<rectangle x1="-0.889" y1="2.286" x2="-0.381" y2="3.302" layer="51"/>
+<rectangle x1="0.381" y1="2.286" x2="0.889" y2="3.302" layer="51"/>
+<rectangle x1="1.651" y1="2.286" x2="2.159" y2="3.302" layer="51"/>
+<rectangle x1="2.921" y1="2.286" x2="3.429" y2="3.302" layer="51"/>
+<rectangle x1="4.191" y1="2.286" x2="4.699" y2="3.302" layer="51"/>
 <smd name="1" x="-4.445" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
 <smd name="2" x="-3.175" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
 <smd name="3" x="-1.905" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
@@ -3727,22 +3746,6 @@ http://www.ftdichip.com</description>
 <smd name="16" x="-4.445" y="2.8" dx="0.6" dy="1.2" layer="1"/>
 <text x="-3.81" y="0" size="0.6096" layer="25" ratio="10">&gt;NAME</text>
 <text x="-3.81" y="-1.27" size="0.6096" layer="27">&gt;VALUE</text>
-<rectangle x1="-4.699" y1="-3.302" x2="-4.191" y2="-2.2733" layer="51"/>
-<rectangle x1="-3.429" y1="-3.302" x2="-2.921" y2="-2.2733" layer="51"/>
-<rectangle x1="-2.159" y1="-3.302" x2="-1.651" y2="-2.2733" layer="51"/>
-<rectangle x1="-0.889" y1="-3.302" x2="-0.381" y2="-2.2733" layer="51"/>
-<rectangle x1="0.381" y1="-3.302" x2="0.889" y2="-2.2733" layer="51"/>
-<rectangle x1="1.651" y1="-3.302" x2="2.159" y2="-2.2733" layer="51"/>
-<rectangle x1="2.921" y1="-3.302" x2="3.429" y2="-2.2733" layer="51"/>
-<rectangle x1="4.191" y1="-3.302" x2="4.699" y2="-2.2733" layer="51"/>
-<rectangle x1="-4.699" y1="2.286" x2="-4.191" y2="3.3655" layer="51"/>
-<rectangle x1="-3.429" y1="2.286" x2="-2.921" y2="3.302" layer="51"/>
-<rectangle x1="-2.159" y1="2.286" x2="-1.651" y2="3.302" layer="51"/>
-<rectangle x1="-0.889" y1="2.286" x2="-0.381" y2="3.302" layer="51"/>
-<rectangle x1="0.381" y1="2.286" x2="0.889" y2="3.302" layer="51"/>
-<rectangle x1="1.651" y1="2.286" x2="2.159" y2="3.302" layer="51"/>
-<rectangle x1="2.921" y1="2.286" x2="3.429" y2="3.302" layer="51"/>
-<rectangle x1="4.191" y1="2.286" x2="4.699" y2="3.302" layer="51"/>
 </package>
 <package name="SOT23-5">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
@@ -16016,6 +16019,30 @@ TO GND</text>
 <text x="-7.62" y="8.382" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="TPIC6C595">
+<wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="-12.7" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-15.24" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
+<pin name="!CLR" x="-15.24" y="-5.08" visible="pin" length="short" direction="in"/>
+<pin name="!G" x="-15.24" y="-7.62" visible="pin" length="short" direction="in"/>
+<pin name="D0" x="15.24" y="5.08" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="D1" x="15.24" y="2.54" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="D2" x="15.24" y="0" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="D3" x="15.24" y="-2.54" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="D4" x="15.24" y="-5.08" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="D5" x="15.24" y="-7.62" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="D6" x="15.24" y="-10.16" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="D7" x="15.24" y="-12.7" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="GND" x="-15.24" y="-12.7" visible="pin" length="short" direction="pwr"/>
+<pin name="RCK" x="-15.24" y="-2.54" visible="pin" length="short" direction="in"/>
+<pin name="SER_IN" x="-15.24" y="5.08" visible="pin" length="short" direction="in"/>
+<pin name="SER_OUT" x="15.24" y="10.16" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="SRCK" x="-15.24" y="0" visible="pin" length="short" direction="in"/>
+<pin name="VCC" x="-15.24" y="10.16" visible="pin" length="short" direction="pwr"/>
+<text x="-12.446" y="13.208" size="1.778" layer="95">&gt;Name</text>
+<text x="-12.7" y="-17.78" size="1.778" layer="96">&gt;Value</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="AT25FS010">
@@ -23578,6 +23605,40 @@ HWRNG.
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-11985" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPIC6C596" prefix="U">
+<description>SMD version of the popular sink driver. This version can sink up to 100mA per channel</description>
+<gates>
+<gate name="U1" symbol="TPIC6C595" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="SOIC" package="SO016">
+<connects>
+<connect gate="U1" pin="!CLR" pad="7"/>
+<connect gate="U1" pin="!G" pad="8"/>
+<connect gate="U1" pin="D0" pad="3"/>
+<connect gate="U1" pin="D1" pad="4"/>
+<connect gate="U1" pin="D2" pad="5"/>
+<connect gate="U1" pin="D3" pad="6"/>
+<connect gate="U1" pin="D4" pad="11"/>
+<connect gate="U1" pin="D5" pad="12"/>
+<connect gate="U1" pin="D6" pad="13"/>
+<connect gate="U1" pin="D7" pad="14"/>
+<connect gate="U1" pin="GND" pad="16"/>
+<connect gate="U1" pin="RCK" pad="10"/>
+<connect gate="U1" pin="SER_IN" pad="2"/>
+<connect gate="U1" pin="SER_OUT" pad="9"/>
+<connect gate="U1" pin="SRCK" pad="15"/>
+<connect gate="U1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-12522" constant="no"/>
+<attribute name="VALUE" value="TPIC6C596" constant="no"/>
 </technology>
 </technologies>
 </device>
