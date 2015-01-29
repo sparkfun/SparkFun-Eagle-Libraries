@@ -23876,6 +23876,14 @@ remains asserted until the firmware clears it.</description>
 </devices>
 </deviceset>
 <deviceset name="74HC7014D">
+<description>The 74HC7014 is a hex buffer with precision Schmitt-trigger inputs. 
+The precisely defined
+trigger levels are lying in a window between (0.55 x VCC) and (0.65 x VCC). It makes the
+circuit suitable to operate in a highly noisy environment. Input shorts are allowed to -1.5 V
+and +16 V without disturbing other channels. Inputs include clamp diodes that enable the
+use of current limiting resistors to interface inputs to voltages in excess of VCC. Schmitt
+trigger inputs transform slowly changing input signals into sharply defined jitter-free output
+signals.</description>
 <gates>
 <gate name="G$1" symbol="74HC7014" x="0" y="0"/>
 </gates>
