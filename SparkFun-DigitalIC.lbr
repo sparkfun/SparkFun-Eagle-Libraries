@@ -4588,7 +4588,7 @@ package type SS</description>
 <smd name="12" x="-1.905" y="3.3147" dx="0.6604" dy="2.032" layer="1"/>
 <smd name="13" x="-3.175" y="3.3147" dx="0.6604" dy="2.032" layer="1"/>
 <smd name="14" x="-4.445" y="3.3147" dx="0.6604" dy="2.032" layer="1"/>
-<text x="-5.588" y="-1.9685" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-5.588" y="-1.9685" size="0.8128" layer="25" font="vector" ratio="15" rot="R90">&gt;NAME</text>
 <rectangle x1="-4.699" y1="-3.7465" x2="-4.191" y2="-2.2733" layer="51"/>
 <rectangle x1="-3.429" y1="-3.7465" x2="-2.921" y2="-2.2733" layer="51"/>
 <rectangle x1="-2.159" y1="-3.7465" x2="-1.651" y2="-2.2733" layer="51"/>
@@ -4603,6 +4603,8 @@ package type SS</description>
 <rectangle x1="0.381" y1="2.2733" x2="0.889" y2="3.7465" layer="51"/>
 <rectangle x1="1.651" y1="2.2733" x2="2.159" y2="3.7465" layer="51"/>
 <rectangle x1="2.921" y1="2.2733" x2="3.429" y2="3.7465" layer="51"/>
+<circle x="-5.588" y="-2.54" radius="0.127" width="0.4064" layer="21"/>
+<text x="5.08" y="-1.905" size="0.8128" layer="27" font="vector" ratio="15" rot="R90">&gt;VALUE</text>
 </package>
 <package name="PIC24FXXX_TQFP64">
 <description>64-Lead TQFP Plastic Thin Quad Flatpack - 10x10x1mm Body, 2mmFP</description>
@@ -23875,7 +23877,7 @@ remains asserted until the firmware clears it.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="74HC7014D">
+<deviceset name="74HC7014D" prefix="U">
 <description>The 74HC7014 is a hex buffer with precision Schmitt-trigger inputs. 
 The precisely defined
 trigger levels are lying in a window between (0.55 x VCC) and (0.65 x VCC). It makes the
@@ -23885,25 +23887,25 @@ use of current limiting resistors to interface inputs to voltages in excess of V
 trigger inputs transform slowly changing input signals into sharply defined jitter-free output
 signals.</description>
 <gates>
-<gate name="G$1" symbol="74HC7014" x="0" y="0"/>
+<gate name="1" symbol="74HC7014" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOIC-14">
 <connects>
-<connect gate="G$1" pin="1A" pad="1"/>
-<connect gate="G$1" pin="1Y" pad="2"/>
-<connect gate="G$1" pin="2A" pad="3"/>
-<connect gate="G$1" pin="2Y" pad="4"/>
-<connect gate="G$1" pin="3A" pad="5"/>
-<connect gate="G$1" pin="3Y" pad="6"/>
-<connect gate="G$1" pin="4A" pad="9"/>
-<connect gate="G$1" pin="4Y" pad="8"/>
-<connect gate="G$1" pin="5A" pad="11"/>
-<connect gate="G$1" pin="5Y" pad="10"/>
-<connect gate="G$1" pin="6A" pad="13"/>
-<connect gate="G$1" pin="6Y" pad="12"/>
-<connect gate="G$1" pin="GND" pad="7"/>
-<connect gate="G$1" pin="VCC" pad="14"/>
+<connect gate="1" pin="1A" pad="1"/>
+<connect gate="1" pin="1Y" pad="2"/>
+<connect gate="1" pin="2A" pad="3"/>
+<connect gate="1" pin="2Y" pad="4"/>
+<connect gate="1" pin="3A" pad="5"/>
+<connect gate="1" pin="3Y" pad="6"/>
+<connect gate="1" pin="4A" pad="9"/>
+<connect gate="1" pin="4Y" pad="8"/>
+<connect gate="1" pin="5A" pad="11"/>
+<connect gate="1" pin="5Y" pad="10"/>
+<connect gate="1" pin="6A" pad="13"/>
+<connect gate="1" pin="6Y" pad="12"/>
+<connect gate="1" pin="GND" pad="7"/>
+<connect gate="1" pin="VCC" pad="14"/>
 </connects>
 <technologies>
 <technology name="">
