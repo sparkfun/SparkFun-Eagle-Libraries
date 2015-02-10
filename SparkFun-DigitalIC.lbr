@@ -24058,7 +24058,15 @@ signals.</description>
 &lt;li&gt;Precision enable pin &amp; 3 open-drain output flags&lt;/li&gt;
 &lt;li&gt;Input Voltage Range of 2.7 V to 5.5 V&lt;/li&gt;
 &lt;li&gt;Power-Up and Power-Down Control&lt;/li&gt;
-&lt;li&gt;LM3880MF-1AA has delays of 10ms&lt;/li&gt;
+&lt;li&gt;LM3880MF-1XY (Timing Designator)
+&lt;table&gt;
+&lt;tr&gt;&lt;td&gt;AF&lt;/td&gt;&lt;td&gt;16ms&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;AE&lt;/td&gt;&lt;td&gt;2ms&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;AA&lt;/td&gt;&lt;td&gt;10ms&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;AB&lt;/td&gt;&lt;td&gt;30ms&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;AC&lt;/td&gt;&lt;td&gt;60ms&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;AD&lt;/td&gt;&lt;td&gt;120ms&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="LM3880/-QI" x="0" y="0"/>
@@ -24074,7 +24082,10 @@ signals.</description>
 <connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="PROTOTYPE" constant="no"/>
+<attribute name="VALUE" value="LM3880" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
