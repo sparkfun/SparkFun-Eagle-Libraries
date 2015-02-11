@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -8821,7 +8821,7 @@ ULN2803 Darlington array. 500mA max per channel, 8-channel package. Spark Fun El
 </device>
 </devices>
 </deviceset>
-<deviceset name="V_REG_78XX" prefix="IC" uservalue="yes">
+<deviceset name="V_REG_78XX" prefix="U" uservalue="yes">
 <description>&lt;b&gt;Voltage Regulator&lt;/b&gt;
 Standard 78xx regulator. IGO (Input Ground Output). 
 
@@ -8867,7 +8867,10 @@ Spark Fun Electronics SKU : COM-00107</description>
 <connect gate="G$1" pin="OUT" pad="OUT"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="VREG-08450" constant="no"/>
+<attribute name="SF_ID" value="COM-00107" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="7812" package="TO-252">
