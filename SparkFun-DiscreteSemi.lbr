@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1778,8 +1778,8 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <wire x1="-4.318" y1="-2.794" x2="-3.302" y2="-2.794" width="0.2032" layer="94"/>
 <wire x1="-3.302" y1="-2.794" x2="-3.302" y2="-7.62" width="0.2032" layer="94"/>
 <wire x1="-3.302" y1="-7.62" x2="-5.08" y2="-7.62" width="0.2032" layer="94"/>
-<text x="-5.842" y="6.35" size="1.778" layer="94">OPTO DARL</text>
-<text x="-3.556" y="-13.208" size="1.778" layer="94">&gt;VALUE</text>
+<text x="-3.302" y="5.588" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.556" y="-13.208" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="C" x="-10.16" y="-7.62" length="middle"/>
 <pin name="A" x="-10.16" y="2.54" length="middle"/>
 <pin name="VCC" x="12.7" y="2.54" length="middle" rot="R180"/>
@@ -2789,7 +2789,7 @@ FQP27P06 -
 </device>
 </devices>
 </deviceset>
-<deviceset name="OPTO_DARL_6N138S">
+<deviceset name="OPTO_DARL_6N138S" prefix="U" uservalue="yes">
 <description>Optoisolator, darlington pair output</description>
 <gates>
 <gate name="G$1" symbol="OPTO_DARLINGTON_6N138-39" x="0" y="0"/>
@@ -2806,6 +2806,7 @@ FQP27P06 -
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-09482" constant="no"/>
+<attribute name="VALUE" value="6N138M" constant="no"/>
 </technology>
 </technologies>
 </device>
