@@ -3705,6 +3705,7 @@ MMDT3904- TRANS-09373 (SOT-363, 200mA 40V)&lt;br&gt;</description>
 </devices>
 </deviceset>
 <deviceset name="TRANSISTOR-NPN-DDTD142TC">
+<description>NPN transistor with built in base resistor.</description>
 <gates>
 <gate name="G$1" symbol="NPN-DDTD142TC" x="0" y="0"/>
 </gates>
@@ -3716,24 +3717,31 @@ MMDT3904- TRANS-09373 (SOT-363, 200mA 40V)&lt;br&gt;</description>
 <connect gate="G$1" pin="E" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="TRANS-11480" constant="no"/>
+<attribute name="VALUE" value="NPN-500mA" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TRANSISTOR-PNP-DDTB142TC">
+<deviceset name="TRANSISTOR-PNP-DDTB142TC" prefix="Q">
+<description>PNP transistor with base resistor.</description>
 <gates>
-<gate name="G$1" symbol="PNP-DDTB142TC" x="0" y="0"/>
+<gate name="Q1" symbol="PNP-DDTB142TC" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOT23-3">
 <connects>
-<connect gate="G$1" pin="B" pad="1"/>
-<connect gate="G$1" pin="C" pad="3"/>
-<connect gate="G$1" pin="E" pad="2"/>
+<connect gate="Q1" pin="B" pad="1"/>
+<connect gate="Q1" pin="C" pad="3"/>
+<connect gate="Q1" pin="E" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="TRANS-11479" constant="no"/>
+<attribute name="VALUE" value="PNP-500mA" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
