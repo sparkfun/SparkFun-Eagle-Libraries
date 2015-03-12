@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5476,52 +5476,52 @@ AudioAmp</text>
 <text x="-14.732" y="-12.446" size="1.27" layer="94">Blackberry Trackballer Mounting Board</text>
 </symbol>
 <symbol name="96BOARDS-LO-SPEED">
-<wire x1="-10.16" y1="66.04" x2="25.4" y2="66.04" width="0.254" layer="94"/>
-<wire x1="25.4" y1="66.04" x2="25.4" y2="0" width="0.254" layer="94"/>
-<wire x1="25.4" y1="0" x2="-10.16" y2="0" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="0" x2="-10.16" y2="66.04" width="0.254" layer="94"/>
-<pin name="SYS_DCIN@36" x="-12.7" y="58.42" length="short" direction="pwr"/>
-<pin name="I2C0-SDA" x="-12.7" y="27.94" length="short"/>
-<pin name="I2C0-SCL" x="-12.7" y="25.4" length="short"/>
-<pin name="GND@2" x="-12.7" y="7.62" length="short" direction="pwr"/>
-<pin name="I2S-DI" x="27.94" y="2.54" length="short" rot="R180"/>
-<pin name="SPI0-CS" x="27.94" y="58.42" length="short" direction="out" rot="R180"/>
-<pin name="SPI0-DIN" x="27.94" y="60.96" length="short" direction="in" rot="R180"/>
-<pin name="SPI0-SCLK" x="27.94" y="63.5" length="short" direction="out" rot="R180"/>
-<pin name="SPI0-DOUT" x="27.94" y="55.88" length="short" direction="out" rot="R180"/>
-<pin name="I2S-DO" x="27.94" y="5.08" length="short" rot="R180"/>
-<pin name="I2S-CLK" x="27.94" y="7.62" length="short" rot="R180"/>
-<pin name="I2S-FS" x="27.94" y="10.16" length="short" rot="R180"/>
-<pin name="UART0-TXD" x="-12.7" y="45.72" length="short" direction="in"/>
-<pin name="UART0-CTS" x="-12.7" y="48.26" length="short" direction="out"/>
-<pin name="GND@1" x="-12.7" y="10.16" length="short" direction="pwr"/>
-<pin name="5V" x="-12.7" y="60.96" length="short" direction="pwr"/>
-<pin name="1.8V" x="-12.7" y="63.5" length="short" direction="pwr"/>
-<text x="-10.16" y="66.802" size="1.778" layer="95">&gt;Name</text>
-<text x="-10.16" y="-2.54" size="1.778" layer="96">&gt;Value</text>
-<pin name="GND@40" x="-12.7" y="2.54" length="short" direction="pwr"/>
-<pin name="GND@39" x="-12.7" y="5.08" length="short" direction="pwr"/>
-<pin name="!PWR-BTN" x="27.94" y="50.8" length="short" rot="R180"/>
-<pin name="!RST_BTN" x="27.94" y="48.26" length="short" rot="R180"/>
-<pin name="GPIO-A" x="27.94" y="43.18" length="short" rot="R180"/>
-<pin name="UART0-RXD" x="-12.7" y="43.18" length="short" direction="in"/>
-<pin name="UART0-RTS" x="-12.7" y="40.64" length="short" direction="in"/>
-<pin name="UART1-TXD" x="-12.7" y="35.56" length="short" direction="in"/>
-<pin name="UART1-RXD" x="-12.7" y="33.02" length="short" direction="in"/>
-<pin name="I2C1-SDA" x="-12.7" y="20.32" length="short"/>
-<pin name="I2C1-SCL" x="-12.7" y="17.78" length="short"/>
-<pin name="SYS_DCIN@38" x="-12.7" y="55.88" length="short" direction="pwr"/>
-<pin name="GPIO-B" x="27.94" y="40.64" length="short" rot="R180"/>
-<pin name="GPIO-C" x="27.94" y="38.1" length="short" rot="R180"/>
-<pin name="GPIO-D" x="27.94" y="35.56" length="short" rot="R180"/>
-<pin name="GPIO-E" x="27.94" y="33.02" length="short" rot="R180"/>
-<pin name="GPIO-F" x="27.94" y="30.48" length="short" rot="R180"/>
-<pin name="GPIO-G" x="27.94" y="27.94" length="short" rot="R180"/>
-<pin name="GPIO-H" x="27.94" y="25.4" length="short" rot="R180"/>
-<pin name="GPIO-I" x="27.94" y="22.86" length="short" rot="R180"/>
-<pin name="GPIO-J" x="27.94" y="20.32" length="short" rot="R180"/>
-<pin name="GPIO-K" x="27.94" y="17.78" length="short" rot="R180"/>
-<pin name="GPIO-L" x="27.94" y="15.24" length="short" rot="R180"/>
+<wire x1="0" y1="66.04" x2="35.56" y2="66.04" width="0.254" layer="94"/>
+<wire x1="35.56" y1="66.04" x2="35.56" y2="0" width="0.254" layer="94"/>
+<wire x1="35.56" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="66.04" width="0.254" layer="94"/>
+<pin name="SYS_DCIN@36" x="38.1" y="7.62" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="I2C0-SDA" x="-2.54" y="38.1" visible="pin" length="short"/>
+<pin name="I2C0-SCL" x="-2.54" y="35.56" visible="pin" length="short"/>
+<pin name="GND@2" x="38.1" y="63.5" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="I2S-DI" x="38.1" y="30.48" visible="pin" length="short" rot="R180"/>
+<pin name="SPI0-CS" x="38.1" y="45.72" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="SPI0-DIN" x="38.1" y="48.26" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="SPI0-SCLK" x="38.1" y="50.8" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="SPI0-DOUT" x="38.1" y="43.18" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="I2S-DO" x="38.1" y="33.02" visible="pin" length="short" rot="R180"/>
+<pin name="I2S-CLK" x="38.1" y="35.56" visible="pin" length="short" rot="R180"/>
+<pin name="I2S-FS" x="38.1" y="38.1" visible="pin" length="short" rot="R180"/>
+<pin name="UART0-TXD" x="-2.54" y="55.88" visible="pin" length="short" direction="in"/>
+<pin name="UART0-CTS" x="-2.54" y="58.42" visible="pin" length="short" direction="out"/>
+<pin name="GND@1" x="-2.54" y="63.5" visible="pin" length="short" direction="pwr"/>
+<pin name="5V" x="-2.54" y="5.08" visible="pin" length="short" direction="pwr"/>
+<pin name="1.8V" x="-2.54" y="7.62" visible="pin" length="short" direction="pwr"/>
+<text x="0" y="66.802" size="1.778" layer="95">&gt;Name</text>
+<text x="0" y="-2.54" size="1.778" layer="96">&gt;Value</text>
+<pin name="GND@40" x="38.1" y="2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="GND@39" x="-2.54" y="2.54" visible="pin" length="short" direction="pwr"/>
+<pin name="!PWR-BTN" x="38.1" y="58.42" visible="pin" length="short" rot="R180"/>
+<pin name="!RST_BTN" x="38.1" y="55.88" visible="pin" length="short" rot="R180"/>
+<pin name="GPIO-A" x="-2.54" y="25.4" visible="pin" length="short"/>
+<pin name="UART0-RXD" x="-2.54" y="53.34" visible="pin" length="short" direction="in"/>
+<pin name="UART0-RTS" x="-2.54" y="50.8" visible="pin" length="short" direction="in"/>
+<pin name="UART1-TXD" x="-2.54" y="45.72" visible="pin" length="short" direction="in"/>
+<pin name="UART1-RXD" x="-2.54" y="43.18" visible="pin" length="short" direction="in"/>
+<pin name="I2C1-SDA" x="-2.54" y="33.02" visible="pin" length="short"/>
+<pin name="I2C1-SCL" x="-2.54" y="30.48" visible="pin" length="short"/>
+<pin name="SYS_DCIN@38" x="38.1" y="5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="GPIO-B" x="38.1" y="25.4" visible="pin" length="short" rot="R180"/>
+<pin name="GPIO-C" x="-2.54" y="22.86" visible="pin" length="short"/>
+<pin name="GPIO-D" x="38.1" y="22.86" visible="pin" length="short" rot="R180"/>
+<pin name="GPIO-E" x="-2.54" y="20.32" visible="pin" length="short"/>
+<pin name="GPIO-F" x="38.1" y="20.32" visible="pin" length="short" rot="R180"/>
+<pin name="GPIO-G" x="-2.54" y="17.78" visible="pin" length="short"/>
+<pin name="GPIO-H" x="38.1" y="17.78" visible="pin" length="short" rot="R180"/>
+<pin name="GPIO-I" x="-2.54" y="15.24" visible="pin" length="short"/>
+<pin name="GPIO-J" x="38.1" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="GPIO-K" x="-2.54" y="12.7" visible="pin" length="short"/>
+<pin name="GPIO-L" x="38.1" y="12.7" visible="pin" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
