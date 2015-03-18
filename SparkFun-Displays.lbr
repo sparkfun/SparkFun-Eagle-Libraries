@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2077,6 +2077,68 @@ For Reference, see Amotec Display part ADM0802A (http://amotec-display.com/pdf/A
 <hole x="17.15" y="-3.4" drill="0.8"/>
 <hole x="0.4" y="-3.4" drill="0.8"/>
 </package>
+<package name="LCD-16X2_NOSILK-KIT">
+<wire x1="-38.73" y1="16.73" x2="41.27" y2="16.73" width="0.2032" layer="51"/>
+<wire x1="41.27" y1="16.73" x2="41.27" y2="-19.27" width="0.2032" layer="51"/>
+<wire x1="41.27" y1="-19.27" x2="-38.73" y2="-19.27" width="0.2032" layer="51"/>
+<wire x1="-38.73" y1="-19.27" x2="-38.73" y2="16.73" width="0.2032" layer="51"/>
+<wire x1="-34.38" y1="11.88" x2="36.92" y2="11.88" width="0.2032" layer="51"/>
+<wire x1="36.92" y1="11.88" x2="36.92" y2="-14.42" width="0.2032" layer="51"/>
+<wire x1="36.92" y1="-14.42" x2="-34.38" y2="-14.42" width="0.2032" layer="51"/>
+<wire x1="-34.38" y1="-14.42" x2="-34.38" y2="11.88" width="0.2032" layer="51"/>
+<wire x1="-30.98" y1="6.93" x2="33.52" y2="6.93" width="0.2032" layer="51"/>
+<wire x1="33.52" y1="6.93" x2="33.52" y2="-9.47" width="0.2032" layer="51"/>
+<wire x1="33.52" y1="-9.47" x2="-30.98" y2="-9.47" width="0.2032" layer="51"/>
+<wire x1="-30.98" y1="-9.47" x2="-30.98" y2="6.93" width="0.2032" layer="51"/>
+<pad name="1" x="-30.73" y="14.357" drill="1.016" diameter="1.8796" shape="square"/>
+<pad name="2" x="-28.19" y="14.103" drill="1.016" diameter="1.8796"/>
+<pad name="3" x="-25.65" y="14.357" drill="1.016" diameter="1.8796"/>
+<pad name="4" x="-23.11" y="14.103" drill="1.016" diameter="1.8796"/>
+<pad name="5" x="-20.57" y="14.357" drill="1.016" diameter="1.8796"/>
+<pad name="6" x="-18.03" y="14.103" drill="1.016" diameter="1.8796"/>
+<pad name="7" x="-15.49" y="14.357" drill="1.016" diameter="1.8796"/>
+<pad name="8" x="-12.95" y="14.103" drill="1.016" diameter="1.8796"/>
+<pad name="9" x="-10.41" y="14.357" drill="1.016" diameter="1.8796"/>
+<pad name="10" x="-7.87" y="14.103" drill="1.016" diameter="1.8796"/>
+<pad name="11" x="-5.33" y="14.357" drill="1.016" diameter="1.8796"/>
+<pad name="12" x="-2.79" y="14.103" drill="1.016" diameter="1.8796"/>
+<pad name="13" x="-0.25" y="14.357" drill="1.016" diameter="1.8796"/>
+<pad name="14" x="2.29" y="14.103" drill="1.016" diameter="1.8796"/>
+<pad name="15" x="4.83" y="14.357" drill="1.016" diameter="1.8796"/>
+<pad name="16" x="7.37" y="14.103" drill="1.016" diameter="1.8796"/>
+<text x="-33.02" y="13.97" size="1.016" layer="51" ratio="15">1</text>
+<pad name="17" x="9.91" y="14.23" drill="1.016" diameter="1.8796"/>
+<pad name="18" x="12.45" y="14.103" drill="1.016" diameter="1.8796"/>
+</package>
+<package name="LCD-16X2_NOSILK-KIT-4BIT">
+<wire x1="-40" y1="18" x2="40" y2="18" width="0.2032" layer="51"/>
+<wire x1="40" y1="18" x2="40" y2="-18" width="0.2032" layer="51"/>
+<wire x1="40" y1="-18" x2="-40" y2="-18" width="0.2032" layer="51"/>
+<wire x1="-40" y1="-18" x2="-40" y2="18" width="0.2032" layer="51"/>
+<wire x1="-35.65" y1="13.15" x2="35.65" y2="13.15" width="0.2032" layer="51"/>
+<wire x1="35.65" y1="13.15" x2="35.65" y2="-13.15" width="0.2032" layer="51"/>
+<wire x1="35.65" y1="-13.15" x2="-35.65" y2="-13.15" width="0.2032" layer="51"/>
+<wire x1="-35.65" y1="-13.15" x2="-35.65" y2="13.15" width="0.2032" layer="51"/>
+<wire x1="-32.25" y1="8.2" x2="32.25" y2="8.2" width="0.2032" layer="51"/>
+<wire x1="32.25" y1="8.2" x2="32.25" y2="-8.2" width="0.2032" layer="51"/>
+<wire x1="32.25" y1="-8.2" x2="-32.25" y2="-8.2" width="0.2032" layer="51"/>
+<wire x1="-32.25" y1="-8.2" x2="-32.25" y2="8.2" width="0.2032" layer="51"/>
+<pad name="1" x="-32" y="15.627" drill="1.016" diameter="1.8796" shape="square"/>
+<pad name="2" x="-29.46" y="15.373" drill="1.016" diameter="1.8796"/>
+<pad name="3" x="-26.92" y="15.627" drill="1.016" diameter="1.8796"/>
+<pad name="4" x="-24.38" y="15.373" drill="1.016" diameter="1.8796"/>
+<pad name="5" x="-21.84" y="15.627" drill="1.016" diameter="1.8796"/>
+<pad name="6" x="-19.3" y="15.373" drill="1.016" diameter="1.8796"/>
+<pad name="11" x="-6.6" y="15.627" drill="1.016" diameter="1.8796"/>
+<pad name="12" x="-4.06" y="15.373" drill="1.016" diameter="1.8796"/>
+<pad name="13" x="-1.52" y="15.627" drill="1.016" diameter="1.8796"/>
+<pad name="14" x="1.02" y="15.373" drill="1.016" diameter="1.8796"/>
+<pad name="15" x="3.56" y="15.627" drill="1.016" diameter="1.8796"/>
+<pad name="16" x="6.1" y="15.373" drill="1.016" diameter="1.8796"/>
+<text x="-34.29" y="15.24" size="1.016" layer="51" ratio="15">1</text>
+<pad name="17" x="8.64" y="15.627" drill="1.016" diameter="1.8796"/>
+<pad name="18" x="11.18" y="15.373" drill="1.016" diameter="1.8796"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ALPHANUMERIC">
@@ -3163,6 +3225,30 @@ For Reference, see Amotec Display part ADM0802A (http://amotec-display.com/pdf/A
 <text x="-25.4" y="48.768" size="1.778" layer="95">&gt;NAME</text>
 <text x="-25.4" y="-50.546" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="LCD-16X2-MIN">
+<description>This is a somewhat universal part for 16x2 LCDs that have either a white backlight (A/K) or a RGB backlight (RGB+K).</description>
+<wire x1="-7.62" y1="22.86" x2="-7.62" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-25.4" x2="5.08" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-25.4" x2="5.08" y2="22.86" width="0.254" layer="94"/>
+<wire x1="5.08" y1="22.86" x2="-7.62" y2="22.86" width="0.254" layer="94"/>
+<text x="-7.62" y="23.368" size="1.778" layer="95">&gt;Name</text>
+<text x="-7.62" y="-27.94" size="1.778" layer="96">&gt;Value</text>
+<text x="3.048" y="-6.858" size="2.286" layer="94" ratio="20" rot="R90">16x2 LCD</text>
+<pin name="A/K" x="-10.16" y="-15.24" visible="pin" length="short" direction="pwr"/>
+<pin name="DB4" x="-10.16" y="-5.08" visible="pin" length="short"/>
+<pin name="DB5" x="-10.16" y="-7.62" visible="pin" length="short"/>
+<pin name="DB6" x="-10.16" y="-10.16" visible="pin" length="short"/>
+<pin name="DB7" x="-10.16" y="-12.7" visible="pin" length="short"/>
+<pin name="E" x="-10.16" y="7.62" visible="pin" length="short" direction="in"/>
+<pin name="K/RED" x="-10.16" y="-17.78" visible="pin" length="short" direction="pwr"/>
+<pin name="R/W" x="-10.16" y="10.16" visible="pin" length="short" direction="in"/>
+<pin name="RS" x="-10.16" y="12.7" visible="pin" length="short" direction="in"/>
+<pin name="VDD" x="-10.16" y="17.78" visible="pin" length="short" direction="pwr"/>
+<pin name="VO" x="-10.16" y="15.24" visible="pin" length="short"/>
+<pin name="VSS" x="-10.16" y="20.32" visible="pin" length="short" direction="pwr"/>
+<pin name="GRN" x="-10.16" y="-20.32" visible="pin" length="short" direction="pwr"/>
+<pin name="BLU" x="-10.16" y="-22.86" visible="pin" length="short" direction="pwr"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ALPHANUMERIC" prefix="U">
@@ -3749,6 +3835,34 @@ EZ is for kits. Pads are only exposed on the bottom side to help prevent solderi
 <connect gate="G1" pin="VDD" pad="8"/>
 <connect gate="G1" pin="VLSS" pad="27"/>
 <connect gate="G1" pin="VSS" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LCD-16X2-MIN" prefix="U">
+<gates>
+<gate name="U1" symbol="LCD-16X2-MIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="MIN4-RGB" package="LCD-16X2_NOSILK-KIT-4BIT">
+<connects>
+<connect gate="U1" pin="A/K" pad="15"/>
+<connect gate="U1" pin="BLU" pad="18"/>
+<connect gate="U1" pin="DB4" pad="11"/>
+<connect gate="U1" pin="DB5" pad="12"/>
+<connect gate="U1" pin="DB6" pad="13"/>
+<connect gate="U1" pin="DB7" pad="14"/>
+<connect gate="U1" pin="E" pad="6"/>
+<connect gate="U1" pin="GRN" pad="17"/>
+<connect gate="U1" pin="K/RED" pad="16"/>
+<connect gate="U1" pin="R/W" pad="5"/>
+<connect gate="U1" pin="RS" pad="4"/>
+<connect gate="U1" pin="VDD" pad="2"/>
+<connect gate="U1" pin="VO" pad="3"/>
+<connect gate="U1" pin="VSS" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
