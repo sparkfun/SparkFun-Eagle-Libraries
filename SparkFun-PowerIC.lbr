@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9672,20 +9672,19 @@ Up to 1A LED current</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="V_REG_MIC5205">
-<description>&lt;b&gt;V_REG MIC5219&lt;/b&gt;
-Standard 3.3V and 5V 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (by-pass) pin is used to lower output noise with 470pF cap, may be left open.</description>
+<deviceset name="V_REG_MIC5205" prefix="U">
+<description>&lt;b&gt;V_REG MIC5205&lt;/b&gt; Standard 3.3V, 5V, and Adjustable 150mA LDO voltage regulator in SOT-23 layout. Micrel part MIC5205. BP (by-pass) pin is used to lower output noise with 470pF cap, may be left open. On the adjustable version BP is used to set output.</description>
 <gates>
-<gate name="G$1" symbol="V-REG-LDO" x="0" y="0"/>
+<gate name="U1" symbol="V-REG-LDO" x="0" y="0"/>
 </gates>
 <devices>
 <device name="3.3V" package="SOT23-5">
 <connects>
-<connect gate="G$1" pin="BP" pad="4"/>
-<connect gate="G$1" pin="EN" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="5"/>
+<connect gate="U1" pin="BP" pad="4"/>
+<connect gate="U1" pin="EN" pad="3"/>
+<connect gate="U1" pin="GND" pad="2"/>
+<connect gate="U1" pin="IN" pad="1"/>
+<connect gate="U1" pin="OUT" pad="5"/>
 </connects>
 <technologies>
 <technology name="">
@@ -9696,16 +9695,31 @@ Standard 3.3V and 5V 150mA LDO voltage regulator in SOT-23 layout. Micrel part M
 </device>
 <device name="5V" package="SOT23-5">
 <connects>
-<connect gate="G$1" pin="BP" pad="4"/>
-<connect gate="G$1" pin="EN" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="5"/>
+<connect gate="U1" pin="BP" pad="4"/>
+<connect gate="U1" pin="EN" pad="3"/>
+<connect gate="U1" pin="GND" pad="2"/>
+<connect gate="U1" pin="IN" pad="1"/>
+<connect gate="U1" pin="OUT" pad="5"/>
 </connects>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="VREG-00823" constant="no"/>
 <attribute name="VALUE" value="5V" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="ADJ" package="SOT23-5">
+<connects>
+<connect gate="U1" pin="BP" pad="4"/>
+<connect gate="U1" pin="EN" pad="3"/>
+<connect gate="U1" pin="GND" pad="2"/>
+<connect gate="U1" pin="IN" pad="1"/>
+<connect gate="U1" pin="OUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="VREG-12594" constant="no"/>
+<attribute name="VALUE" value="ADJ" constant="no"/>
 </technology>
 </technologies>
 </device>
