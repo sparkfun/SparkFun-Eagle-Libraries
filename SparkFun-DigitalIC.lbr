@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -16338,9 +16338,9 @@ TO GND</text>
 <pin name="VCC" x="0" y="10.16" length="short" rot="R270"/>
 <pin name="EN" x="-10.16" y="0" length="short"/>
 <pin name="GND" x="0" y="-10.16" length="short" rot="R90"/>
-<pin name="!F3" x="10.16" y="-5.08" length="short" rot="R180"/>
-<pin name="!F1" x="10.16" y="5.08" length="short" rot="R180"/>
-<pin name="!F2" x="10.16" y="0" length="short" rot="R180"/>
+<pin name="F3" x="10.16" y="-5.08" length="short" rot="R180"/>
+<pin name="F1" x="10.16" y="5.08" length="short" rot="R180"/>
+<pin name="F2" x="10.16" y="0" length="short" rot="R180"/>
 </symbol>
 <symbol name="MAX17048">
 <wire x1="7.62" y1="-10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
@@ -24102,6 +24102,8 @@ signals.</description>
 &lt;tr&gt;&lt;td&gt;AC&lt;/td&gt;&lt;td&gt;60ms&lt;/td&gt;&lt;/tr&gt;
 &lt;tr&gt;&lt;td&gt;AD&lt;/td&gt;&lt;td&gt;120ms&lt;/td&gt;&lt;/tr&gt;
 &lt;/table&gt;&lt;/li&gt;
+&lt;li&gt;The timing sequence of the LM3880 is controlled entirely by the enable (EN) pin. Upon power up, all the flags are held low until this precision enable is pulled high
+&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="LM3880/-QI" x="0" y="0"/>
@@ -24109,10 +24111,10 @@ signals.</description>
 <devices>
 <device name="" package="SOT23-6">
 <connects>
-<connect gate="G$1" pin="!F1" pad="6"/>
-<connect gate="G$1" pin="!F2" pad="5"/>
-<connect gate="G$1" pin="!F3" pad="4"/>
 <connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="F1" pad="6"/>
+<connect gate="G$1" pin="F2" pad="5"/>
+<connect gate="G$1" pin="F3" pad="4"/>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
