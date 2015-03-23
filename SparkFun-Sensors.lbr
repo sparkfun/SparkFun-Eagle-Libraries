@@ -63,6 +63,7 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -9282,6 +9283,99 @@ For Vishay VNCL4000 proximity and ambient light sensor.&lt;br&gt;
 <wire x1="0" y1="1.27" x2="-0.635" y2="0.635" width="0.2032" layer="51"/>
 <wire x1="0" y1="1.27" x2="0.635" y2="0.635" width="0.2032" layer="51"/>
 </package>
+<package name="VL6180">
+<circle x="-1.905" y="-0.381" radius="0.127" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="1.4" x2="2.4" y2="1.4" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="1.4" x2="2.4" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.4" width="0.2032" layer="21"/>
+<smd name="1" x="-1.875" y="-1" dx="0.55" dy="0.6" layer="1" cream="no"/>
+<smd name="2" x="-1.125" y="-1" dx="0.55" dy="0.6" layer="1" cream="no"/>
+<smd name="3" x="-0.375" y="-1" dx="0.55" dy="0.6" layer="1" cream="no"/>
+<smd name="4" x="0.375" y="-1" dx="0.55" dy="0.6" layer="1" cream="no"/>
+<smd name="5" x="1.125" y="-1" dx="0.55" dy="0.6" layer="1" cream="no"/>
+<smd name="6" x="1.875" y="-1" dx="0.55" dy="0.6" layer="1" cream="no"/>
+<smd name="7" x="1.875" y="1" dx="0.55" dy="0.6" layer="1" cream="no"/>
+<smd name="8" x="1.125" y="1" dx="0.55" dy="0.6" layer="1" cream="no"/>
+<smd name="9" x="0.375" y="1" dx="0.55" dy="0.6" layer="1" cream="no"/>
+<smd name="10" x="-0.375" y="1" dx="0.55" dy="0.6" layer="1" cream="no"/>
+<smd name="11" x="-1.125" y="1" dx="0.55" dy="0.6" layer="1" cream="no"/>
+<smd name="12" x="-1.875" y="1" dx="0.55" dy="0.6" layer="1" cream="no"/>
+<text x="-2.54" y="1.778" size="0.8128" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="0.8128" layer="27" font="vector" ratio="15">&gt;VALUE</text>
+<polygon width="0.127" layer="31">
+<vertex x="-1.875" y="-0.825" curve="-90"/>
+<vertex x="-1.725" y="-0.975" curve="-90"/>
+<vertex x="-1.875" y="-1.125" curve="-90"/>
+<vertex x="-2.025" y="-0.975" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="-1.125" y="-0.825" curve="-90"/>
+<vertex x="-0.975" y="-0.975" curve="-90"/>
+<vertex x="-1.125" y="-1.125" curve="-90"/>
+<vertex x="-1.275" y="-0.975" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="-0.375" y="-0.825" curve="-90"/>
+<vertex x="-0.225" y="-0.975" curve="-90"/>
+<vertex x="-0.375" y="-1.125" curve="-90"/>
+<vertex x="-0.525" y="-0.975" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="0.375" y="-0.825" curve="-90"/>
+<vertex x="0.525" y="-0.975" curve="-90"/>
+<vertex x="0.375" y="-1.125" curve="-90"/>
+<vertex x="0.225" y="-0.975" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="1.125" y="-0.825" curve="-90"/>
+<vertex x="1.275" y="-0.975" curve="-90"/>
+<vertex x="1.125" y="-1.125" curve="-90"/>
+<vertex x="0.975" y="-0.975" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="1.875" y="-0.825" curve="-90"/>
+<vertex x="2.025" y="-0.975" curve="-90"/>
+<vertex x="1.875" y="-1.125" curve="-90"/>
+<vertex x="1.725" y="-0.975" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="1.875" y="1.125" curve="-90"/>
+<vertex x="2.025" y="0.975" curve="-90"/>
+<vertex x="1.875" y="0.825" curve="-90"/>
+<vertex x="1.725" y="0.975" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="1.125" y="1.125" curve="-90"/>
+<vertex x="1.275" y="0.975" curve="-90"/>
+<vertex x="1.125" y="0.825" curve="-90"/>
+<vertex x="0.975" y="0.975" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="0.375" y="1.125" curve="-90"/>
+<vertex x="0.525" y="0.975" curve="-90"/>
+<vertex x="0.375" y="0.825" curve="-90"/>
+<vertex x="0.225" y="0.975" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="-0.375" y="1.125" curve="-90"/>
+<vertex x="-0.225" y="0.975" curve="-90"/>
+<vertex x="-0.375" y="0.825" curve="-90"/>
+<vertex x="-0.525" y="0.975" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="-1.125" y="1.125" curve="-90"/>
+<vertex x="-0.975" y="0.975" curve="-90"/>
+<vertex x="-1.125" y="0.825" curve="-90"/>
+<vertex x="-1.275" y="0.975" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="31">
+<vertex x="-1.875" y="1.125" curve="-90"/>
+<vertex x="-1.725" y="0.975" curve="-90"/>
+<vertex x="-1.875" y="0.825" curve="-90"/>
+<vertex x="-2.025" y="0.975" curve="-90"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="ADMP401">
@@ -11419,6 +11513,22 @@ Typical applications:&lt;p&gt;
 <pin name="VCC" x="10.16" y="-2.54" length="middle" rot="R180"/>
 <pin name="GND" x="10.16" y="0" length="middle" rot="R180"/>
 <pin name="OUT" x="10.16" y="2.54" length="middle" rot="R180"/>
+</symbol>
+<symbol name="VL6180">
+<wire x1="-15.24" y1="-10.16" x2="15.24" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-10.16" x2="15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="10.16" x2="-15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="10.16" x2="-15.24" y2="-10.16" width="0.254" layer="94"/>
+<pin name="AVDD" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="AVDD_VCSEL" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="AVSS_VCSEL" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="GND" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<pin name="GPIO0" x="-20.32" y="2.54" length="middle"/>
+<pin name="GPIO1" x="-20.32" y="7.62" length="middle"/>
+<pin name="SCL" x="-20.32" y="-5.08" length="middle"/>
+<pin name="SDA" x="-20.32" y="-7.62" length="middle"/>
+<text x="-15.24" y="11.43" size="1.6764" layer="94" ratio="15">&gt;NAME</text>
+<text x="-15.24" y="-12.7" size="1.6764" layer="94" ratio="15">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -14373,6 +14483,30 @@ Typical applications:&lt;p&gt;
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="COMP-12505"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VL6180" prefix="U">
+<gates>
+<gate name="G$1" symbol="VL6180" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VL6180">
+<connects>
+<connect gate="G$1" pin="AVDD" pad="10"/>
+<connect gate="G$1" pin="AVDD_VCSEL" pad="8"/>
+<connect gate="G$1" pin="AVSS_VCSEL" pad="9"/>
+<connect gate="G$1" pin="GND" pad="12"/>
+<connect gate="G$1" pin="GPIO0" pad="4"/>
+<connect gate="G$1" pin="GPIO1" pad="1"/>
+<connect gate="G$1" pin="SCL" pad="5"/>
+<connect gate="G$1" pin="SDA" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-12007" constant="no"/>
 </technology>
 </technologies>
 </device>
