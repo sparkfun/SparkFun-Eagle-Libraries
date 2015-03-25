@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -16358,6 +16358,25 @@ TO GND</text>
 <text x="-10.16" y="10.668" size="1.778" layer="95">&gt;Name</text>
 <text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;Value</text>
 </symbol>
+<symbol name="SLB9645">
+<pin name="SDA" x="-22.86" y="7.62" length="short"/>
+<pin name="PP" x="-22.86" y="-7.62" length="short"/>
+<pin name="!DAVINT#" x="-22.86" y="-5.08" length="short"/>
+<pin name="!RESET#" x="-22.86" y="-2.54" length="short"/>
+<pin name="SCL" x="-22.86" y="5.08" length="short"/>
+<pin name="GND@4" x="7.62" y="0" length="short" rot="R180"/>
+<pin name="GND@11" x="7.62" y="-2.54" length="short" rot="R180"/>
+<pin name="GND@18" x="7.62" y="-5.08" length="short" rot="R180"/>
+<pin name="GND@25" x="7.62" y="-7.62" length="short" rot="R180"/>
+<wire x1="-20.32" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="-20.32" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="10.16" x2="-20.32" y2="-10.16" width="0.254" layer="94"/>
+<pin name="VDD@5" x="7.62" y="7.62" length="short" rot="R180"/>
+<pin name="VDD@10" x="7.62" y="5.08" length="short" rot="R180"/>
+<text x="-20.32" y="10.414" size="1.778" layer="95">&gt;NAME</text>
+<text x="-20.32" y="-12.446" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="AT25FS010">
@@ -24146,6 +24165,33 @@ signals.</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SLB9645">
+<gates>
+<gate name="G$1" symbol="SLB9645" x="7.62" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSSOP28">
+<connects>
+<connect gate="G$1" pin="!DAVINT#" pad="6"/>
+<connect gate="G$1" pin="!RESET#" pad="9"/>
+<connect gate="G$1" pin="GND@11" pad="11"/>
+<connect gate="G$1" pin="GND@18" pad="18"/>
+<connect gate="G$1" pin="GND@25" pad="25"/>
+<connect gate="G$1" pin="GND@4" pad="4"/>
+<connect gate="G$1" pin="PP" pad="7"/>
+<connect gate="G$1" pin="SCL" pad="2"/>
+<connect gate="G$1" pin="SDA" pad="1"/>
+<connect gate="G$1" pin="VDD@10" pad="10"/>
+<connect gate="G$1" pin="VDD@5" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-XXXX" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
