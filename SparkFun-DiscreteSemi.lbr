@@ -132,6 +132,13 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
@@ -919,6 +926,25 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <text x="-1.3" y="-2.6" size="1.27" layer="27">&gt;VALUE</text>
 <wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.2032" layer="21"/>
 <wire x1="-0.8" y1="0.4" x2="-0.8" y2="-0.4" width="0.2032" layer="21"/>
+</package>
+<package name="SO08-2">
+<circle x="-2.4384" y="-1.3716" radius="0.1436" width="0.2032" layer="21"/>
+<wire x1="2.921" y1="-1.9558" x2="2.921" y2="1.9558" width="0.2032" layer="21"/>
+<wire x1="-2.921" y1="1.9558" x2="-2.921" y2="-1.9558" width="0.2032" layer="21"/>
+<wire x1="-2.921" y1="1.9558" x2="-2.54" y2="1.9558" width="0.2032" layer="21"/>
+<wire x1="2.921" y1="1.9558" x2="2.54" y2="1.9558" width="0.2032" layer="21"/>
+<wire x1="2.921" y1="-1.9558" x2="2.54" y2="-1.9558" width="0.2032" layer="21"/>
+<wire x1="-2.921" y1="-1.9558" x2="-2.54" y2="-1.9558" width="0.2032" layer="21"/>
+<smd name="1" x="-1.905" y="-2.7305" dx="0.9144" dy="1.143" layer="1"/>
+<smd name="2" x="-0.635" y="-2.7305" dx="0.9144" dy="1.143" layer="1"/>
+<smd name="3" x="0.635" y="-2.7305" dx="0.9144" dy="1.143" layer="1"/>
+<smd name="4" x="1.905" y="-2.7305" dx="0.9144" dy="1.143" layer="1"/>
+<smd name="5" x="1.905" y="2.7305" dx="0.9144" dy="1.143" layer="1"/>
+<smd name="6" x="0.635" y="2.7305" dx="0.9144" dy="1.143" layer="1"/>
+<smd name="7" x="-0.635" y="2.7305" dx="0.9144" dy="1.143" layer="1"/>
+<smd name="8" x="-1.905" y="2.7305" dx="0.9144" dy="1.143" layer="1"/>
+<text x="-1.27" y="-0.635" size="0.4064" layer="27">&gt;VALUE</text>
+<text x="-1.27" y="0" size="0.4064" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -2324,6 +2350,87 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <vertex x="2.54" y="0"/>
 <vertex x="1.27" y="2.54"/>
 </polygon>
+</symbol>
+<symbol name="OPTOISOLATOR-2">
+<wire x1="-5.08" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-3.302" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-3.302" y1="5.08" x2="-3.302" y2="4.318" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="4.318" x2="-4.064" y2="4.318" width="0.254" layer="94"/>
+<wire x1="-4.064" y1="4.318" x2="-3.302" y2="3.556" width="0.254" layer="94"/>
+<wire x1="-3.302" y1="3.556" x2="-2.54" y2="4.318" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="3.556" x2="-3.302" y2="3.556" width="0.254" layer="94"/>
+<wire x1="-3.302" y1="3.556" x2="-4.064" y2="3.556" width="0.254" layer="94"/>
+<wire x1="-3.302" y1="3.556" x2="-3.302" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-3.302" y1="2.54" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="4.572" x2="-0.762" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="3.81" x2="-1.524" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="3.81" x2="-0.762" y2="3.048" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="3.048" x2="-0.762" y2="3.302" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="3.302" x2="-1.016" y2="3.048" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="3.048" x2="-0.762" y2="3.048" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="-0.508" x2="-0.762" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-1.27" x2="-1.524" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="-1.27" x2="-0.762" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-2.032" x2="-0.762" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-1.778" x2="-1.016" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-2.032" x2="-0.762" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-3.302" y2="0" width="0.1524" layer="94"/>
+<wire x1="-3.302" y1="0" x2="-3.302" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="-3.302" y1="-0.762" x2="-2.54" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-0.762" x2="-3.302" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-3.302" y1="-1.524" x2="-4.064" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-4.064" y1="-0.762" x2="-3.302" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.524" x2="-3.302" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-3.302" y1="-1.524" x2="-4.064" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-3.302" y1="-1.524" x2="-3.302" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-3.302" y1="-2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="4.572" x2="0.508" y2="4.318" width="0.254" layer="94"/>
+<wire x1="0.508" y1="4.318" x2="0.508" y2="3.302" width="0.254" layer="94"/>
+<wire x1="0.508" y1="3.302" x2="0.508" y2="3.048" width="0.254" layer="94"/>
+<wire x1="0.508" y1="4.318" x2="0.762" y2="4.318" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="4.318" x2="1.524" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="5.08" x2="2.54" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="2.794" x2="1.27" y2="3.048" width="0.254" layer="94"/>
+<wire x1="1.27" y1="3.048" x2="1.016" y2="2.794" width="0.254" layer="94"/>
+<wire x1="1.016" y1="2.794" x2="1.27" y2="2.794" width="0.254" layer="94"/>
+<wire x1="0.508" y1="3.302" x2="0.762" y2="3.302" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="3.302" x2="1.27" y2="2.794" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="2.794" x2="1.524" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="2.54" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0.508" y1="-0.508" x2="0.508" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.508" y1="-0.762" x2="0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0.508" y1="-1.778" x2="0.508" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="0.508" y1="-0.762" x2="0.762" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="-0.762" x2="1.524" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.286" x2="1.27" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.032" x2="1.016" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.016" y1="-2.286" x2="1.27" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="0.508" y1="-1.778" x2="0.762" y2="-1.778" width="0.1524" layer="94"/>
+<wire x1="0.762" y1="-1.778" x2="1.27" y2="-2.286" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.286" x2="1.524" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<pin name="A1" x="-7.62" y="5.08" visible="off" length="short"/>
+<pin name="A2" x="-7.62" y="0" visible="off" length="short"/>
+<pin name="C1" x="-7.62" y="2.54" visible="off" length="short"/>
+<pin name="C2" x="-7.62" y="-2.54" visible="off" length="short"/>
+<pin name="CL1" x="5.08" y="5.08" visible="off" length="short" rot="R180"/>
+<pin name="CL2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<pin name="EM1" x="5.08" y="2.54" visible="off" length="short" rot="R180"/>
+<pin name="EM2" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
+<text x="-5.08" y="8.382" size="1.778" layer="95">&gt;Name</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3819,6 +3926,31 @@ Used for EL wire applications</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="VREG-09120" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OPTOISOLATOR-2">
+<description>&lt;b&gt;Description:&lt;/b&gt; Dual gate opto isolator. Vishay part : ILD213T</description>
+<gates>
+<gate name="G$1" symbol="OPTOISOLATOR-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOIC8" package="SO08-2">
+<connects>
+<connect gate="G$1" pin="A1" pad="1"/>
+<connect gate="G$1" pin="A2" pad="3"/>
+<connect gate="G$1" pin="C1" pad="2"/>
+<connect gate="G$1" pin="C2" pad="4"/>
+<connect gate="G$1" pin="CL1" pad="8"/>
+<connect gate="G$1" pin="CL2" pad="6"/>
+<connect gate="G$1" pin="EM1" pad="7"/>
+<connect gate="G$1" pin="EM2" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09076"/>
 </technology>
 </technologies>
 </device>
