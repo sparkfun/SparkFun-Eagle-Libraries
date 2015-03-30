@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4635,7 +4635,7 @@ Two of these half tabs, rotated in opposite directions, can be connected togethe
 </polygon>
 </package>
 <package name="OSHW-LOGO-S">
-<polygon width="0.15" layer="21">
+<polygon width="0.15" layer="1">
 <vertex x="0.3947" y="-0.9528" curve="9.498218"/>
 <vertex x="0.5465" y="-0.8746"/>
 <vertex x="0.9235" y="-1.182"/>
@@ -4672,7 +4672,7 @@ Two of these half tabs, rotated in opposite directions, can be connected togethe
 </polygon>
 </package>
 <package name="OSHW-LOGO-M">
-<polygon width="0.15" layer="21">
+<polygon width="0.15" layer="1">
 <vertex x="0.6578" y="-1.588" curve="9.499253"/>
 <vertex x="0.9108" y="-1.4576"/>
 <vertex x="1.5392" y="-1.97"/>
@@ -4709,7 +4709,7 @@ Two of these half tabs, rotated in opposite directions, can be connected togethe
 </polygon>
 </package>
 <package name="OSHW-LOGO-L">
-<polygon width="0.15" layer="21">
+<polygon width="0.15" layer="1">
 <vertex x="0.9209" y="-2.2231" curve="9.497479"/>
 <vertex x="1.2751" y="-2.0407"/>
 <vertex x="2.1548" y="-2.758"/>
@@ -95943,6 +95943,30 @@ Standard A4 size frame in Landscape</description>
 </gates>
 <devices>
 <device name="" package="LOGO-LARGE-SILK">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OSHW-LOGO-COPPER" prefix="LOGO">
+<description>&lt;b&gt;Open Source Hardware Logo&lt;/b&gt;
+ This logo indicates the piece of hardware it is found on incorporates a OSHW license and/or adheres to the definition of open source hardware found here: http://freedomdefined.org/OSHW</description>
+<gates>
+<gate name="G$1" symbol="OSHW-LOGO" x="-5.08" y="-5.08"/>
+</gates>
+<devices>
+<device name="S" package="OSHW-LOGO-S">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="M" package="OSHW-LOGO-M">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="L" package="OSHW-LOGO-L">
 <technologies>
 <technology name=""/>
 </technologies>
