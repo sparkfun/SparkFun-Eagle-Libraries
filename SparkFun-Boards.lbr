@@ -7004,11 +7004,14 @@ As defined for the Revistion 2 Pi.</description>
 <deviceset name="96BOARDS_LOW_SPEED" prefix="JP">
 <description>96 BOARDS SPEC LOW SPEED CONNECTOR &lt;br&gt;&lt;br&gt;
 
-2x20, 40-pin, 2mm-pitch header for low speed expansion. &lt;br&gt;
 
+2x20, 40-pin, header for low speed expansion. &lt;br&gt;
 Has UARTS, I2C, I2S, SPI and GPIO.&lt;br&gt;&lt;br&gt;
 
-See the spec at https://www.96boards.org</description>
+* 2mm-pitch variant interfaces directly with the header on a 96-boards-compliant board.&lt;br&gt;
+* 0.1-pitch version is for applications where the header has been translated to the larger, more available 0.1" 2x20 connector.&lt;br&gt;&lt;br&gt;
+
+For more details, see the spec at https://www.96boards.org</description>
 <gates>
 <gate name="G$1" symbol="96BOARDS-LO-SPEED" x="10.16" y="0"/>
 </gates>
