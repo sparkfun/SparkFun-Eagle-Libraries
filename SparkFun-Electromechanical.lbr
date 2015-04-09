@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7759,6 +7759,8 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <pad name="1" x="-2.54" y="-0.015" drill="1.016" diameter="1.8796" shape="square"/>
 <pad name="2" x="0" y="-0.015" drill="1.016" diameter="1.8796"/>
 <pad name="3" x="2.54" y="-0.015" drill="1.016" diameter="1.8796"/>
+<text x="-5.08" y="5.08" size="1.27" layer="27">&gt;Value</text>
+<text x="-5.08" y="-6.35" size="1.27" layer="25">&gt;Name</text>
 </package>
 <package name="TRIMPOT_TC33">
 <wire x1="-1.55" y1="-1.65" x2="1.55" y2="-1.65" width="0.127" layer="51"/>
@@ -12739,7 +12741,7 @@ Side-actuated SPDT slide switch, as used on the Arduino Pro</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TRIMPOT" prefix="R">
+<deviceset name="TRIMPOT" prefix="R" uservalue="yes">
 <description>Various small potentiometers for "set-and-forget" applications</description>
 <gates>
 <gate name="R?" symbol="TRIMPOT-1" x="0" y="0"/>
@@ -12762,7 +12764,10 @@ Side-actuated SPDT slide switch, as used on the Arduino Pro</description>
 <connect gate="R?" pin="WIPER" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="RES-09730" constant="no"/>
+<attribute name="VALUE" value="TSR-3386" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="3MM-2" package="TRIMPOT-3MM-2">
