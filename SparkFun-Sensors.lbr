@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4571,6 +4571,8 @@ Through-hole photocell (http://www.sparkfun.com/products/9088)&lt;br&gt;
 <smd name="2" x="1.8" y="-0.9" dx="1.2" dy="0.6" layer="1"/>
 <smd name="3" x="1.8" y="0.9" dx="1.2" dy="0.6" layer="1"/>
 <smd name="4" x="-1.8" y="0.9" dx="1.2" dy="0.6" layer="1"/>
+<text x="-2.54" y="1.905" size="1.27" layer="25">&gt;Name</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;Value</text>
 </package>
 <package name="SCA1000">
 <wire x1="1.27" y1="1.27" x2="1.27" y2="-13.97" width="0.3048" layer="21"/>
@@ -14108,31 +14110,32 @@ object passes within its field of view. The area of the optimum response approxi
 </device>
 </devices>
 </deviceset>
-<deviceset name="QRE1113" prefix="U">
+<deviceset name="QRE1113" prefix="U" uservalue="yes">
 <description>Reflective object sensor</description>
 <gates>
-<gate name="G$1" symbol="QRE1113" x="0" y="0"/>
+<gate name="&gt;NAME" symbol="QRE1113" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="QRE1113">
 <connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="C" pad="3"/>
-<connect gate="G$1" pin="E" pad="4"/>
-<connect gate="G$1" pin="K" pad="2"/>
+<connect gate="&gt;NAME" pin="A" pad="1"/>
+<connect gate="&gt;NAME" pin="C" pad="3"/>
+<connect gate="&gt;NAME" pin="E" pad="4"/>
+<connect gate="&gt;NAME" pin="K" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-09357"/>
+<attribute name="VALUE" value="QRE1113" constant="no"/>
 </technology>
 </technologies>
 </device>
 <device name="SMD-W" package="QRE1113-W">
 <connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="C" pad="3"/>
-<connect gate="G$1" pin="E" pad="4"/>
-<connect gate="G$1" pin="K" pad="2"/>
+<connect gate="&gt;NAME" pin="A" pad="1"/>
+<connect gate="&gt;NAME" pin="C" pad="3"/>
+<connect gate="&gt;NAME" pin="E" pad="4"/>
+<connect gate="&gt;NAME" pin="K" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
