@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -4571,6 +4571,8 @@ Through-hole photocell (http://www.sparkfun.com/products/9088)&lt;br&gt;
 <smd name="2" x="1.8" y="-0.9" dx="1.2" dy="0.6" layer="1"/>
 <smd name="3" x="1.8" y="0.9" dx="1.2" dy="0.6" layer="1"/>
 <smd name="4" x="-1.8" y="0.9" dx="1.2" dy="0.6" layer="1"/>
+<text x="-2.54" y="1.905" size="1.27" layer="25">&gt;Name</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;Value</text>
 </package>
 <package name="SCA1000">
 <wire x1="1.27" y1="1.27" x2="1.27" y2="-13.97" width="0.3048" layer="21"/>
@@ -8359,6 +8361,8 @@ For Vishay VNCL4000 proximity and ambient light sensor.&lt;br&gt;
 <rectangle x1="-2.5019" y1="1.49351875" x2="2.5019" y2="1.51891875" layer="200"/>
 <rectangle x1="-2.5019" y1="1.51891875" x2="2.5019" y2="1.54431875" layer="200"/>
 <rectangle x1="-2.5019" y1="1.54431875" x2="2.4765" y2="1.56971875" layer="200"/>
+<circle x="2.905" y="0.635" radius="0.0508" width="0.2032" layer="21"/>
+<rectangle x1="-0.8382" y1="0.4826" x2="-0.762" y2="1.6764" layer="41"/>
 </package>
 <package name="ALS-PT19">
 <wire x1="-0.1" y1="0.2" x2="-0.1" y2="-0.2" width="0.2032" layer="21"/>
@@ -10189,6 +10193,8 @@ For Vishay VNCL4000 proximity and ambient light sensor.&lt;br&gt;
 <rectangle x1="-1.5748" y1="2.0828" x2="-0.64008125" y2="2.10311875" layer="200"/>
 <rectangle x1="-0.5994375" y1="2.0828" x2="1.5748" y2="2.10311875" layer="200"/>
 <rectangle x1="1.6357625" y1="2.0828" x2="1.79831875" y2="2.10311875" layer="200"/>
+<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -14104,31 +14110,32 @@ object passes within its field of view. The area of the optimum response approxi
 </device>
 </devices>
 </deviceset>
-<deviceset name="QRE1113" prefix="U">
+<deviceset name="QRE1113" prefix="U" uservalue="yes">
 <description>Reflective object sensor</description>
 <gates>
-<gate name="G$1" symbol="QRE1113" x="0" y="0"/>
+<gate name="&gt;NAME" symbol="QRE1113" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="QRE1113">
 <connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="C" pad="3"/>
-<connect gate="G$1" pin="E" pad="4"/>
-<connect gate="G$1" pin="K" pad="2"/>
+<connect gate="&gt;NAME" pin="A" pad="1"/>
+<connect gate="&gt;NAME" pin="C" pad="3"/>
+<connect gate="&gt;NAME" pin="E" pad="4"/>
+<connect gate="&gt;NAME" pin="K" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-09357"/>
+<attribute name="VALUE" value="QRE1113" constant="no"/>
 </technology>
 </technologies>
 </device>
 <device name="SMD-W" package="QRE1113-W">
 <connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="C" pad="3"/>
-<connect gate="G$1" pin="E" pad="4"/>
-<connect gate="G$1" pin="K" pad="2"/>
+<connect gate="&gt;NAME" pin="A" pad="1"/>
+<connect gate="&gt;NAME" pin="C" pad="3"/>
+<connect gate="&gt;NAME" pin="E" pad="4"/>
+<connect gate="&gt;NAME" pin="K" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
