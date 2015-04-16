@@ -36,8 +36,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -52,14 +52,14 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -5053,9 +5053,14 @@ Part as drawn in the for the part:
 <text x="-14" y="-1" size="0.8128" layer="25">&gt;NAME</text>
 <text x="2" y="-1" size="0.8128" layer="27">&gt;VALUE</text>
 </package>
-<package name="2X20-2MM-SHROUDED-SMT-M">
+<package name="2X20-2MM-SHROUDED-SMT-BOTTOM-M">
 <description>&lt;B&gt;Warning! this is for the BOTTOM of a 96-boards Layout&lt;/b&gt;&lt;br&gt;&lt;br&gt;
-Pin 1 is not in the right place for ordinary usage!!</description>
+Pin 1 is not in the right place for ordinary usage!!
+
+&lt;BR&gt;&lt;BR&gt;
+Candidate parts:&lt;BR&gt;
+Molex 87832-4072 - shrouded&lt;BR&gt;
+Molex 87759-4050 - unshrouded</description>
 <smd name="1" x="19" y="-2.125" dx="1" dy="2.75" layer="1" rot="R180"/>
 <hole x="-18" y="0" drill="0.8"/>
 <smd name="2" x="19" y="2.125" dx="1" dy="2.75" layer="1" rot="R180"/>
@@ -5105,6 +5110,9 @@ Pin 1 is not in the right place for ordinary usage!!</description>
 <circle x="20.5" y="-4.5" radius="0.5" width="0" layer="21"/>
 <text x="-14" y="-0.4" size="0.8128" layer="25">&gt;NAME</text>
 <text x="2.2" y="-0.5" size="0.8128" layer="27">&gt;VALUE</text>
+<wire x1="-1" y1="-3.15" x2="-1" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="-1" y1="-2.25" x2="1" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="1" y1="-2.25" x2="1" y2="-3.15" width="0.127" layer="21"/>
 </package>
 <package name="2X20-2MM-SHROUDED-RA-PTH">
 <description>2x20, 2mm pitch, shrouded, right-angle header. &lt;br&gt;&lt;br&gt;
@@ -5194,6 +5202,73 @@ Samtec LTMM-120-02-F-D-RA</description>
 <rectangle x1="14.75" y1="-1" x2="15.25" y2="1.25" layer="51"/>
 <rectangle x1="16.75" y1="-1" x2="17.25" y2="1.25" layer="51"/>
 <rectangle x1="18.75" y1="-1" x2="19.25" y2="1.25" layer="51"/>
+</package>
+<package name="2X20-2MM-SHROUDED-SMT-TOP-M">
+<description>96-boards lo-spped male on top of board.&lt;BR&gt;&lt;BR&gt;
+
+This is the 96-boards lo-speed connector, rearranged to put a male header on the top of the board.
+&lt;BR&gt;&lt;BR&gt;
+Candidate parts:&lt;BR&gt;
+Molex 87832-4072 - shrouded&lt;BR&gt;
+Molex 87759-4050 - unshrouded</description>
+<smd name="1" x="-19" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<hole x="-18" y="0" drill="0.8"/>
+<smd name="2" x="-19" y="2.125" dx="1" dy="2.75" layer="1"/>
+<hole x="18" y="0" drill="0.8"/>
+<smd name="3" x="-17" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="4" x="-17" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="5" x="-15" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="6" x="-15" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="7" x="-13" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="8" x="-13" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="9" x="-11" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="10" x="-11" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="11" x="-9" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="12" x="-9" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="13" x="-7" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="14" x="-7" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="15" x="-5" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="16" x="-5" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="17" x="-3" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="18" x="-3" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="19" x="-1" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="20" x="-1" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="21" x="1" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="22" x="1" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="23" x="3" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="24" x="3" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="25" x="5" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="26" x="5" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="27" x="7" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="28" x="7" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="29" x="9" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="30" x="9" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="31" x="11" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="32" x="11" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="33" x="13" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="34" x="13" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="35" x="15" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="36" x="15" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="37" x="17" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="38" x="17" y="2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="39" x="19" y="-2.125" dx="1" dy="2.75" layer="1"/>
+<smd name="40" x="19" y="2.125" dx="1" dy="2.75" layer="1"/>
+<wire x1="-21.4" y1="3.15" x2="21.4" y2="3.15" width="0.127" layer="21"/>
+<wire x1="21.4" y1="3.15" x2="21.4" y2="-3.15" width="0.127" layer="21"/>
+<wire x1="21.4" y1="-3.15" x2="1" y2="-3.15" width="0.127" layer="21"/>
+<wire x1="-1" y1="-3.15" x2="-21.4" y2="-3.15" width="0.127" layer="21"/>
+<wire x1="-21.4" y1="-3.15" x2="-21.4" y2="3.15" width="0.127" layer="21"/>
+<circle x="-20.5" y="-4.5" radius="0.5" width="0" layer="21"/>
+<text x="-14" y="-0.4" size="0.8128" layer="25">&gt;NAME</text>
+<text x="2.2" y="-0.5" size="0.8128" layer="27">&gt;VALUE</text>
+<wire x1="-20" y1="2.25" x2="-20" y2="-2.25" width="0.127" layer="51"/>
+<wire x1="-20" y1="-2.25" x2="20" y2="-2.25" width="0.127" layer="51"/>
+<wire x1="20" y1="-2.25" x2="20" y2="2.25" width="0.127" layer="51"/>
+<wire x1="20" y1="2.25" x2="-20" y2="2.25" width="0.127" layer="51"/>
+<wire x1="-1" y1="-3.15" x2="-1" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="-1" y1="-2.25" x2="1" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="1" y1="-2.25" x2="1" y2="-3.15" width="0.127" layer="21"/>
+<wire x1="1" y1="-3.15" x2="-1" y2="-3.15" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -7334,7 +7409,7 @@ For more details, see the spec at https://www.96boards.org</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="SMT-M" package="2X20-2MM-SHROUDED-SMT-M">
+<device name="SMT-M-BOTTOM" package="2X20-2MM-SHROUDED-SMT-BOTTOM-M">
 <connects>
 <connect gate="G$1" pin="!PWR_BTN" pad="4"/>
 <connect gate="G$1" pin="!RST_BTN" pad="6"/>
@@ -7378,6 +7453,49 @@ For more details, see the spec at https://www.96boards.org</description>
 </technologies>
 </device>
 <device name="" package="2X20-2MM-SHROUDED-RA-PTH">
+<connects>
+<connect gate="G$1" pin="!PWR_BTN" pad="4"/>
+<connect gate="G$1" pin="!RST_BTN" pad="6"/>
+<connect gate="G$1" pin="1.8V" pad="35"/>
+<connect gate="G$1" pin="5V" pad="37"/>
+<connect gate="G$1" pin="GND" pad="1 2 39 40"/>
+<connect gate="G$1" pin="GPIO-A" pad="23"/>
+<connect gate="G$1" pin="GPIO-B" pad="24"/>
+<connect gate="G$1" pin="GPIO-C" pad="25"/>
+<connect gate="G$1" pin="GPIO-D" pad="26"/>
+<connect gate="G$1" pin="GPIO-E" pad="27"/>
+<connect gate="G$1" pin="GPIO-F" pad="28"/>
+<connect gate="G$1" pin="GPIO-G" pad="29"/>
+<connect gate="G$1" pin="GPIO-H" pad="30"/>
+<connect gate="G$1" pin="GPIO-I" pad="31"/>
+<connect gate="G$1" pin="GPIO-J" pad="32"/>
+<connect gate="G$1" pin="GPIO-K" pad="33"/>
+<connect gate="G$1" pin="GPIO-L" pad="34"/>
+<connect gate="G$1" pin="I2C0_SCL" pad="15"/>
+<connect gate="G$1" pin="I2C0_SDA" pad="17"/>
+<connect gate="G$1" pin="I2C1_SCL" pad="19"/>
+<connect gate="G$1" pin="I2C1_SDA" pad="21"/>
+<connect gate="G$1" pin="I2S_CLK" pad="18"/>
+<connect gate="G$1" pin="I2S_DI" pad="22"/>
+<connect gate="G$1" pin="I2S_DO" pad="20"/>
+<connect gate="G$1" pin="I2S_FS" pad="16"/>
+<connect gate="G$1" pin="SPI0_CS" pad="12"/>
+<connect gate="G$1" pin="SPI0_DIN" pad="10"/>
+<connect gate="G$1" pin="SPI0_DOUT" pad="14"/>
+<connect gate="G$1" pin="SPI0_SCLK" pad="8"/>
+<connect gate="G$1" pin="SYS_DCIN" pad="36 38"/>
+<connect gate="G$1" pin="UART0_CTS" pad="3"/>
+<connect gate="G$1" pin="UART0_RTS" pad="9"/>
+<connect gate="G$1" pin="UART0_RXD" pad="7"/>
+<connect gate="G$1" pin="UART0_TXD" pad="5"/>
+<connect gate="G$1" pin="UART1_RXD" pad="13"/>
+<connect gate="G$1" pin="UART1_TXD" pad="11"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMT-M-TOP" package="2X20-2MM-SHROUDED-SMT-TOP-M">
 <connects>
 <connect gate="G$1" pin="!PWR_BTN" pad="4"/>
 <connect gate="G$1" pin="!RST_BTN" pad="6"/>
