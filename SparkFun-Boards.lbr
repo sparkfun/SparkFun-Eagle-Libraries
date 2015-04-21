@@ -6,9 +6,9 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,19 +23,19 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -5003,6 +5003,7 @@ Part as drawn in the for the part:
 <wire x1="-12" y1="-0.5" x2="-12" y2="0.5" width="0.127" layer="51"/>
 </package>
 <package name="2X20-2MM-SMT-F">
+<description>E.G. Molex 87832-4072</description>
 <smd name="1" x="-19" y="-2.75" dx="0.8" dy="1.5" layer="1" rot="R180"/>
 <hole x="-20" y="0" drill="0.8"/>
 <smd name="2" x="-19" y="2.75" dx="0.8" dy="1.5" layer="1" rot="R180"/>
@@ -5052,6 +5053,8 @@ Part as drawn in the for the part:
 <circle x="-20.5" y="-3" radius="0.5" width="0" layer="21"/>
 <text x="-14" y="-1" size="0.8128" layer="25">&gt;NAME</text>
 <text x="2" y="-1" size="0.8128" layer="27">&gt;VALUE</text>
+<text x="-19.05" y="-3.81" size="0.8128" layer="21" font="vector" ratio="15" rot="SR0" align="top-center">1</text>
+<text x="19.05" y="-3.81" size="0.8128" layer="21" font="vector" ratio="15" rot="SR0" align="top-center">39</text>
 </package>
 <package name="2X20-2MM-SHROUDED-SMT-BOTTOM-M">
 <description>&lt;B&gt;Warning! this is for the BOTTOM of a 96-boards Layout&lt;/b&gt;&lt;br&gt;&lt;br&gt;
@@ -5107,12 +5110,14 @@ Molex 87759-4050 - unshrouded</description>
 <wire x1="21.4" y1="3.15" x2="21.4" y2="-3.15" width="0.127" layer="21"/>
 <wire x1="21.4" y1="-3.15" x2="-21.4" y2="-3.15" width="0.127" layer="21"/>
 <wire x1="-21.4" y1="-3.15" x2="-21.4" y2="3.15" width="0.127" layer="21"/>
-<circle x="20.5" y="-4.5" radius="0.5" width="0" layer="21"/>
+<circle x="-21.41" y="-3.865" radius="0.5" width="0" layer="21"/>
 <text x="-14" y="-0.4" size="0.8128" layer="25">&gt;NAME</text>
 <text x="2.2" y="-0.5" size="0.8128" layer="27">&gt;VALUE</text>
 <wire x1="-1" y1="-3.15" x2="-1" y2="-2.25" width="0.127" layer="21"/>
 <wire x1="-1" y1="-2.25" x2="1" y2="-2.25" width="0.127" layer="21"/>
 <wire x1="1" y1="-2.25" x2="1" y2="-3.15" width="0.127" layer="21"/>
+<text x="-19.05" y="-3.81" size="0.8128" layer="21" font="vector" ratio="15" rot="SR0" align="top-center">39</text>
+<text x="19.05" y="-3.81" size="0.8128" layer="21" font="vector" ratio="15" rot="SR0" align="top-center">1</text>
 </package>
 <package name="2X20-2MM-SHROUDED-RA-PTH">
 <description>2x20, 2mm pitch, shrouded, right-angle header. &lt;br&gt;&lt;br&gt;
@@ -5269,6 +5274,10 @@ Molex 87759-4050 - unshrouded</description>
 <wire x1="-1" y1="-2.25" x2="1" y2="-2.25" width="0.127" layer="21"/>
 <wire x1="1" y1="-2.25" x2="1" y2="-3.15" width="0.127" layer="21"/>
 <wire x1="1" y1="-3.15" x2="-1" y2="-3.15" width="0.127" layer="21"/>
+<text x="-19.05" y="-3.81" size="0.8128" layer="21" font="vector" ratio="15" rot="SR0" align="top-center">1</text>
+<text x="-19.05" y="3.81" size="0.8128" layer="21" font="vector" ratio="15" rot="SR0" align="bottom-center">2</text>
+<text x="19.05" y="3.81" size="0.8128" layer="21" font="vector" ratio="15" rot="SR0" align="bottom-center">40</text>
+<text x="19.05" y="-3.81" size="0.8128" layer="21" font="vector" ratio="15" rot="SR0" align="top-center">39</text>
 </package>
 </packages>
 <symbols>
@@ -7406,7 +7415,9 @@ For more details, see the spec at https://www.96boards.org</description>
 <connect gate="G$1" pin="UART1_TXD" pad="11"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-12977"/>
+</technology>
 </technologies>
 </device>
 <device name="SMT-M-BOTTOM" package="2X20-2MM-SHROUDED-SMT-BOTTOM-M">
@@ -7449,7 +7460,9 @@ For more details, see the spec at https://www.96boards.org</description>
 <connect gate="G$1" pin="UART1_TXD" pad="11"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-12975" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="" package="2X20-2MM-SHROUDED-RA-PTH">
@@ -7535,7 +7548,9 @@ For more details, see the spec at https://www.96boards.org</description>
 <connect gate="G$1" pin="UART1_TXD" pad="11"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-12975"/>
+</technology>
 </technologies>
 </device>
 </devices>
