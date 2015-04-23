@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -14169,16 +14169,16 @@ Manufacturer: Hirose&lt;br&gt;&lt;br&gt;
 <smd name="VBUS" x="2.85" y="1.3" dx="0.4" dy="1.4" layer="1" rot="R90"/>
 <smd name="ID" x="2.85" y="-0.65" dx="0.4" dy="1.4" layer="1" rot="R90"/>
 <smd name="GND" x="2.85" y="-1.3" dx="0.4" dy="1.4" layer="1" rot="R90"/>
-<smd name="P$6" x="0" y="1.25" dx="2" dy="1.9" layer="1" rot="R90"/>
-<smd name="P$7" x="0" y="-1.25" dx="2" dy="1.9" layer="1" rot="R90"/>
+<smd name="SHIELD2" x="0" y="1.25" dx="2" dy="1.9" layer="1" rot="R90"/>
+<smd name="SHIELD3" x="0" y="-1.25" dx="2" dy="1.9" layer="1" rot="R90"/>
 <wire x1="-2.75" y1="4" x2="-2.75" y2="-4" width="0.2032" layer="51"/>
 <wire x1="-2.05" y1="5" x2="-2.05" y2="-5" width="0.2032" layer="51"/>
 <text x="-5.2" y="5.5" size="0.3048" layer="51">PCB Front</text>
 <wire x1="-3" y1="5.6" x2="-2.3" y2="5.3" width="0.08" layer="51"/>
 <wire x1="-2.3" y1="5.3" x2="-2.4" y2="5.5" width="0.08" layer="51"/>
 <wire x1="-2.3" y1="5.3" x2="-2.5" y2="5.2" width="0.08" layer="51"/>
-<smd name="P$8" x="0" y="4" dx="2.2" dy="1.9" layer="1" rot="R90"/>
-<smd name="P$9" x="0" y="-4" dx="2.2" dy="1.9" layer="1" rot="R90"/>
+<smd name="SHIELD1" x="0" y="4" dx="2.2" dy="1.9" layer="1" rot="R90"/>
+<smd name="SHIELD4" x="0" y="-4" dx="2.2" dy="1.9" layer="1" rot="R90"/>
 <wire x1="2.9" y1="4" x2="2.9" y2="-4" width="0.2032" layer="51"/>
 <wire x1="-2.7" y1="4" x2="-0.6" y2="4" width="0.2032" layer="51"/>
 <wire x1="-0.6" y1="4" x2="0.6" y2="4" width="0.2032" layer="51"/>
@@ -15166,16 +15166,16 @@ Keying posts into board</description>
 <smd name="VBUS" x="2.85" y="1.3" dx="0.4" dy="1.4" layer="1" rot="R90"/>
 <smd name="ID" x="2.85" y="-0.65" dx="0.4" dy="1.4" layer="1" rot="R90"/>
 <smd name="GND" x="2.85" y="-1.3" dx="0.4" dy="1.4" layer="1" rot="R90"/>
-<smd name="P$6" x="0" y="1.25" dx="2" dy="1.9" layer="1" rot="R90"/>
-<smd name="P$7" x="0" y="-1.25" dx="2" dy="1.9" layer="1" rot="R90"/>
+<smd name="SHIELD2" x="0" y="1.25" dx="2" dy="1.9" layer="1" rot="R90"/>
+<smd name="SHIELD3" x="0" y="-1.25" dx="2" dy="1.9" layer="1" rot="R90"/>
 <wire x1="-2.75" y1="4" x2="-2.75" y2="-4" width="0.2032" layer="51"/>
 <wire x1="-2.05" y1="5" x2="-2.05" y2="-5" width="0.2032" layer="51"/>
 <text x="-5.2" y="5.5" size="0.3048" layer="51">PCB Front</text>
 <wire x1="-3" y1="5.6" x2="-2.3" y2="5.3" width="0.08" layer="51"/>
 <wire x1="-2.3" y1="5.3" x2="-2.4" y2="5.5" width="0.08" layer="51"/>
 <wire x1="-2.3" y1="5.3" x2="-2.5" y2="5.2" width="0.08" layer="51"/>
-<smd name="P$8" x="0" y="4" dx="2.2" dy="1.27" layer="1" rot="R90"/>
-<smd name="P$9" x="0" y="-4" dx="2.2" dy="1.27" layer="1" rot="R90"/>
+<smd name="SHIELD1" x="0" y="4" dx="2.2" dy="1.27" layer="1" rot="R90"/>
+<smd name="SHIELD4" x="0" y="-4" dx="2.2" dy="1.27" layer="1" rot="R90"/>
 <wire x1="2.9" y1="4" x2="2.9" y2="-4" width="0.2032" layer="51"/>
 <wire x1="-2.7" y1="4" x2="-0.6" y2="4" width="0.2032" layer="51"/>
 <wire x1="-0.6" y1="4" x2="0.6" y2="4" width="0.2032" layer="51"/>
@@ -15287,9 +15287,6 @@ Matches 4UCONN part # 11026&lt;br&gt;
 <wire x1="-2.3" y1="5.3" x2="-2.5" y2="5.2" width="0.08" layer="51"/>
 <text x="-1.27" y="5.969" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.27" y="5.461" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.75" y1="2.784" x2="0.75" y2="4.584" layer="1"/>
-<rectangle x1="-0.75" y1="-1.25" x2="0.75" y2="1.25" layer="1"/>
-<rectangle x1="-0.75" y1="-4.584" x2="0.75" y2="-2.784" layer="1"/>
 <smd name="D+1" x="2.7" y="0" dx="0.4" dy="1.4" layer="1" rot="R90"/>
 <smd name="D-1" x="2.7" y="0.65" dx="0.4" dy="1.4" layer="1" rot="R90"/>
 <smd name="VBUS1" x="2.7" y="1.3" dx="0.4" dy="1.4" layer="1" rot="R90"/>
@@ -15314,6 +15311,9 @@ Matches 4UCONN part # 11026&lt;br&gt;
 <rectangle x1="-0.85" y1="2.684" x2="0.85" y2="4.684" layer="29"/>
 <rectangle x1="-0.85" y1="-4.684" x2="0.85" y2="-2.684" layer="29"/>
 <rectangle x1="-0.85" y1="-1.35" x2="0.85" y2="1.35" layer="29"/>
+<smd name="SHIELD1" x="0" y="3.68" dx="1.5" dy="1.8" layer="1"/>
+<smd name="SHIELD3" x="0" y="-3.68" dx="1.5" dy="1.8" layer="1"/>
+<smd name="SHIELD2" x="0" y="0" dx="1.5" dy="2.5" layer="1"/>
 </package>
 <package name="1X06-1MM">
 <description>Works with part #579 (https://www.sparkfun.com/products/579). Commonly used on GPS modules EM408, EM406 and GP-635T. Also compatible with cable 9123 (https://www.sparkfun.com/products/9123) and cable 574 (https://www.sparkfun.com/products/574).</description>
@@ -22164,14 +22164,15 @@ Reduced openings in tStop, pins spread a tiny bit out to hold part on PCB during
 <symbol name="USB_AB">
 <description>USB AB, 5-pins: USBVCC, GND, D+, D-, USBID.</description>
 <wire x1="2.54" y1="6.35" x2="-2.54" y2="6.35" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="6.35" x2="-2.54" y2="-6.35" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-6.35" x2="2.54" y2="-6.35" width="0.254" layer="94"/>
-<text x="1.27" y="-6.096" size="2.54" layer="94" rot="R90">USBAB</text>
+<wire x1="-2.54" y1="6.35" x2="-2.54" y2="-8.89" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-8.89" x2="2.54" y2="-8.89" width="0.254" layer="94"/>
+<text x="1.27" y="-7.366" size="2.54" layer="94" rot="R90">USBAB</text>
 <pin name="D+" x="-5.08" y="0" visible="pad" length="short"/>
 <pin name="D-" x="-5.08" y="-2.54" visible="pad" length="short"/>
 <pin name="VBUS" x="-5.08" y="-5.08" visible="pad" length="short"/>
 <pin name="GND" x="-5.08" y="5.08" visible="pad" length="short"/>
 <pin name="USBID" x="-5.08" y="2.54" visible="pad" length="short"/>
+<pin name="SHIELD" x="-5.08" y="-7.62" visible="pad" length="short"/>
 </symbol>
 <symbol name="SDCARD-1">
 <wire x1="-7.62" y1="17.78" x2="7.62" y2="17.78" width="0.254" layer="94"/>
@@ -29725,6 +29726,7 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <connect gate="G$1" pin="D+" pad="D+"/>
 <connect gate="G$1" pin="D-" pad="D-"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SHIELD" pad="SHIELD1 SHIELD2 SHIELD3 SHIELD4"/>
 <connect gate="G$1" pin="USBID" pad="ID"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
 </connects>
@@ -29737,6 +29739,7 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <connect gate="G$1" pin="D+" pad="D+"/>
 <connect gate="G$1" pin="D-" pad="D-"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SHIELD" pad="SHIELD1 SHIELD2 SHIELD3 SHIELD4"/>
 <connect gate="G$1" pin="USBID" pad="ID"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
 </connects>
@@ -29749,6 +29752,7 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <connect gate="G$1" pin="D+" pad="D+1"/>
 <connect gate="G$1" pin="D-" pad="D-1"/>
 <connect gate="G$1" pin="GND" pad="GND1"/>
+<connect gate="G$1" pin="SHIELD" pad="SHIELD1 SHIELD2 SHIELD3"/>
 <connect gate="G$1" pin="USBID" pad="ID1"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS1"/>
 </connects>
