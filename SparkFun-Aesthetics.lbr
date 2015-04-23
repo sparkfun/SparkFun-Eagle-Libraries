@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="mm" style="dots" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -67596,9 +67596,9 @@ Two of these half tabs, rotated in opposite directions, can be connected togethe
 <pad name="MISO" x="-13.97" y="-10.16" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="MOSI" x="-16.51" y="-10.16" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="RST" x="-11.43" y="-10.16" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="RX" x="-8.89" y="-10.16" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="D0" x="-8.89" y="-10.16" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="SCK" x="-16.51" y="-7.62" drill="1.016" diameter="1.8796" rot="R180"/>
-<pad name="TX" x="-6.35" y="-10.16" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="D1" x="-6.35" y="-10.16" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="VCC" x="3.81" y="10.16" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="VUSB" x="1.27" y="10.16" drill="1.016" diameter="1.8796" rot="R90"/>
 <text x="-16.51" y="12.065" size="0.8128" layer="21" font="vector" ratio="16" rot="SR180" align="center">A5</text>
@@ -67640,7 +67640,7 @@ Two of these half tabs, rotated in opposite directions, can be connected togethe
 <text x="-13.6271" y="0" size="0.8128" layer="22" font="vector" ratio="16" rot="SMR180" align="center">D11</text>
 <text x="-13.6271" y="-2.4511" size="0.8128" layer="22" font="vector" ratio="16" rot="SMR180" align="center">D12</text>
 <text x="-11.43" y="-8.5471" size="0.8128" layer="22" font="vector" ratio="16" rot="SMR90" align="center-left">RST</text>
-<text x="-8.89" y="-8.5471" size="0.8128" layer="22" font="vector" ratio="16" rot="MR90" align="center-left">RX</text>
+<text x="-8.636" y="-8.5471" size="0.8128" layer="22" font="vector" ratio="16" rot="MR90" align="center-left">RX</text>
 <text x="-6.35" y="-8.5471" size="0.8128" layer="22" font="vector" ratio="16" rot="MR90" align="center-left">TX</text>
 <text x="-3.81" y="-8.5471" size="0.8128" layer="22" font="vector" ratio="16" rot="MR90" align="center-left">SDA</text>
 <text x="-1.27" y="-8.5471" size="0.8128" layer="22" font="vector" ratio="16" rot="MR90" align="center-left">SCL</text>
@@ -94283,9 +94283,9 @@ Two of these half tabs, rotated in opposite directions, can be connected togethe
 <pin name="MISO" x="-15.24" y="-12.7" length="middle"/>
 <pin name="MOSI" x="-15.24" y="-15.24" length="middle"/>
 <pin name="RST" x="-15.24" y="-10.16" length="middle"/>
-<pin name="RX" x="15.24" y="15.24" length="middle" rot="R180"/>
+<pin name="D0" x="15.24" y="15.24" length="middle" rot="R180"/>
 <pin name="SCK" x="-15.24" y="-17.78" length="middle"/>
-<pin name="TX" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="D1" x="15.24" y="12.7" length="middle" rot="R180"/>
 <pin name="VCC" x="-15.24" y="0" length="middle"/>
 <pin name="VUSB" x="-15.24" y="-5.08" length="middle"/>
 <text x="-10.16" y="20.32" size="1.778" layer="94">Qduino Mini</text>
@@ -96016,6 +96016,8 @@ Standard A4 size frame in Landscape</description>
 <connect gate="G$1" pin="A3" pad="A3"/>
 <connect gate="G$1" pin="A4" pad="A4"/>
 <connect gate="G$1" pin="A5" pad="A5"/>
+<connect gate="G$1" pin="D0" pad="D0"/>
+<connect gate="G$1" pin="D1" pad="D1"/>
 <connect gate="G$1" pin="D10" pad="D10"/>
 <connect gate="G$1" pin="D11" pad="D11"/>
 <connect gate="G$1" pin="D12" pad="D12"/>
@@ -96032,9 +96034,7 @@ Standard A4 size frame in Landscape</description>
 <connect gate="G$1" pin="MISO" pad="MISO"/>
 <connect gate="G$1" pin="MOSI" pad="MOSI"/>
 <connect gate="G$1" pin="RST" pad="RST"/>
-<connect gate="G$1" pin="RX" pad="RX"/>
 <connect gate="G$1" pin="SCK" pad="SCK"/>
-<connect gate="G$1" pin="TX" pad="TX"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
 <connect gate="G$1" pin="VUSB" pad="VUSB"/>
 </connects>
