@@ -2549,8 +2549,20 @@ Ceramic&lt;br&gt;</description>
 <deviceset name="10UF10V10%(0805)" prefix="C" uservalue="yes">
 <description>CAP-11330</description>
 <gates>
+<gate name="G$1" symbol="CAP" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="0805-CAP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-11330" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="10UF50V20%(1210)" prefix="C" uservalue="yes">
