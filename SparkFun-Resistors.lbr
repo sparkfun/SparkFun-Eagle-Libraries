@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -613,6 +613,20 @@ Source: RS Components</description>
 <smd name="3" x="1" y="-1.825" dx="1.2" dy="1.2" layer="1"/>
 <text x="-1.905" y="-1.905" size="0.8128" layer="25" font="vector" ratio="15" rot="R90">&gt;NAME</text>
 <text x="2.54" y="-1.905" size="0.8128" layer="27" font="vector" ratio="15" rot="R90">&gt;VALUE</text>
+</package>
+<package name="0805-ARV">
+<smd name="1" x="-1.905" y="-1" dx="0.65" dy="1" layer="1"/>
+<smd name="2" x="-0.635" y="-1" dx="0.65" dy="1" layer="1"/>
+<smd name="3" x="0.635" y="-1" dx="0.65" dy="1" layer="1"/>
+<smd name="4" x="1.905" y="-1" dx="0.65" dy="1" layer="1"/>
+<smd name="8" x="-1.905" y="1" dx="0.65" dy="1" layer="1"/>
+<smd name="7" x="-0.635" y="1" dx="0.65" dy="1" layer="1"/>
+<smd name="6" x="0.635" y="1" dx="0.65" dy="1" layer="1"/>
+<smd name="5" x="1.905" y="1" dx="0.65" dy="1" layer="1"/>
+<wire x1="2.5" y1="-1.4" x2="2.5" y2="1.4" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="1.4" x2="-2.5" y2="-1.4" width="0.2032" layer="21"/>
+<text x="-2.7" y="-1.6" size="0.8128" layer="25" font="vector" ratio="15" rot="R90">&gt;NAME</text>
+<text x="3.5" y="-1.5" size="0.8128" layer="27" font="vector" ratio="15" rot="R90">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -4206,6 +4220,33 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 <technology name="">
 <attribute name="PROD_ID" value="RES-12311" constant="no"/>
 <attribute name="VALUE" value="82" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1KOHM-1/10W-5%(0805)-ARRAY(4)">
+<gates>
+<gate name="G$1" symbol="RESISTOR-1" x="0" y="10.16"/>
+<gate name="G$2" symbol="RESISTOR-1" x="0" y="2.54"/>
+<gate name="G$3" symbol="RESISTOR-1" x="0" y="-5.08"/>
+<gate name="G$4" symbol="RESISTOR-1" x="0" y="-12.7"/>
+</gates>
+<devices>
+<device name="" package="0805-ARV">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="8"/>
+<connect gate="G$2" pin="1" pad="2"/>
+<connect gate="G$2" pin="2" pad="7"/>
+<connect gate="G$3" pin="1" pad="3"/>
+<connect gate="G$3" pin="2" pad="6"/>
+<connect gate="G$4" pin="1" pad="4"/>
+<connect gate="G$4" pin="2" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-" constant="no"/>
 </technology>
 </technologies>
 </device>
