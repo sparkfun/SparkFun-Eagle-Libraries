@@ -4225,28 +4225,29 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="1KOHM-1/10W-5%(0805)-ARRAY(4)">
+<deviceset name="1KOHM-1/10W-5%(0805)-ARRAY(4)" prefix="R">
 <gates>
-<gate name="G$1" symbol="RESISTOR-1" x="0" y="10.16"/>
-<gate name="G$2" symbol="RESISTOR-1" x="0" y="2.54"/>
-<gate name="G$3" symbol="RESISTOR-1" x="0" y="-5.08"/>
-<gate name="G$4" symbol="RESISTOR-1" x="0" y="-12.7"/>
+<gate name="A" symbol="RESISTOR-1" x="0" y="10.16"/>
+<gate name="B" symbol="RESISTOR-1" x="0" y="2.54"/>
+<gate name="C" symbol="RESISTOR-1" x="0" y="-5.08"/>
+<gate name="D" symbol="RESISTOR-1" x="0" y="-12.7"/>
 </gates>
 <devices>
 <device name="" package="0805-ARV">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="8"/>
-<connect gate="G$2" pin="1" pad="2"/>
-<connect gate="G$2" pin="2" pad="7"/>
-<connect gate="G$3" pin="1" pad="3"/>
-<connect gate="G$3" pin="2" pad="6"/>
-<connect gate="G$4" pin="1" pad="4"/>
-<connect gate="G$4" pin="2" pad="5"/>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="8"/>
+<connect gate="B" pin="1" pad="2"/>
+<connect gate="B" pin="2" pad="7"/>
+<connect gate="C" pin="1" pad="3"/>
+<connect gate="C" pin="2" pad="6"/>
+<connect gate="D" pin="1" pad="4"/>
+<connect gate="D" pin="2" pad="5"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-" constant="no"/>
+<attribute name="PROD_ID" value="RES-13020" constant="no"/>
+<attribute name="VALUE" value="1K" constant="no"/>
 </technology>
 </technologies>
 </device>
