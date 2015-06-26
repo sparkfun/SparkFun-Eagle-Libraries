@@ -28250,9 +28250,7 @@ Mating wall wart : TOL-00298 (and others)</description>
 <connect gate="G$1" pin="PWR" pad="POWER"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CONN-08106"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 <device name="PTH_LOCK" package="POWER_JACK_PTH_LOCK">
@@ -28285,7 +28283,10 @@ Mating wall wart : TOL-00298 (and others)</description>
 <connect gate="G$1" pin="PWR" pad="VIN0"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-08106" constant="no"/>
+<attribute name="SF_ID" value="PRT-12748" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="PTH_BREAD" package="POWER_JACK_PTH_BREAD">
