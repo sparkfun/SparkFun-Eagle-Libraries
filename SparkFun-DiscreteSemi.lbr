@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -235,9 +235,9 @@ Basic SMA packaged diode. Good for reverse polarization protection. Common part 
 <wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
 <wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.2032" layer="21"/>
 <wire x1="1.4" y1="0.7" x2="1.4" y2="-0.1" width="0.2032" layer="21"/>
-<smd name="3" x="0" y="1.1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
 <smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="3" x="0" y="1.1" dx="0.8" dy="0.9" layer="1"/>
 <text x="-0.8255" y="1.778" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.016" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
@@ -2500,6 +2500,24 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <pin name="3" x="15.24" y="5.08" length="middle" rot="R180"/>
 <wire x1="7.62" y1="5.08" x2="10.16" y2="5.08" width="0.2032" layer="94"/>
 </symbol>
+<symbol name="DIODE-SCHOTTKY-ADJ">
+<wire x1="1.27" y1="-1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.524" y2="1.778" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.524" y2="0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="0.762" y2="0" width="0.1524" layer="94"/>
+<pin name="A" x="0" y="-2.54" visible="off" length="point" direction="pas" rot="R90"/>
+<pin name="ADJ" x="2.54" y="0" visible="off" length="point" rot="R180"/>
+<pin name="C" x="0" y="2.54" visible="off" length="point" direction="pas" rot="R270"/>
+<text x="2.54" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BAV99" prefix="D" uservalue="yes">
@@ -4074,6 +4092,26 @@ Used for EL wire applications</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-12501" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM4051" prefix="U">
+<gates>
+<gate name="U1" symbol="DIODE-SCHOTTKY-ADJ" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-3">
+<connects>
+<connect gate="U1" pin="A" pad="3"/>
+<connect gate="U1" pin="ADJ" pad="1"/>
+<connect gate="U1" pin="C" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-13134" constant="no"/>
+<attribute name="VALUE" value="LM4051" constant="no"/>
 </technology>
 </technologies>
 </device>
