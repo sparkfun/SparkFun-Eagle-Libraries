@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.0125" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -10107,25 +10107,36 @@ Source: http://www.linear.com .. LT1996</description>
 <wire x1="2.1044" y1="0.6626" x2="1.9844" y2="0.6326" width="0.0762" layer="51"/>
 </package>
 <package name="DFN-8">
+<description>Now follows http://pdfserv.maximintegrated.com/land_patterns/90-0065.PDF
+Pasted was reduced by 20% width on the main pads, and a similar amount on the center pads.</description>
 <circle x="-1.0628" y="-0.92" radius="0.070709375" width="0.127" layer="21"/>
-<smd name="P$1" x="-0.6878" y="-0.92" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$2" x="-0.2378" y="-0.92" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$3" x="0.2122" y="-0.92" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$4" x="0.6622" y="-0.92" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$5" x="0.6622" y="0.93" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$6" x="0.2122" y="0.93" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$7" x="-0.2378" y="0.93" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$8" x="-0.6878" y="0.93" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$9" x="-0.0128" y="0.005" dx="1.37" dy="0.64" layer="1"/>
+<smd name="P$1" x="-0.75" y="-0.99" dx="0.7" dy="0.3" layer="1" rot="R90" cream="no"/>
+<smd name="P$2" x="-0.25" y="-0.99" dx="0.7" dy="0.3" layer="1" rot="R90" cream="no"/>
+<smd name="P$3" x="0.25" y="-0.99" dx="0.7" dy="0.3" layer="1" rot="R90" cream="no"/>
+<smd name="P$4" x="0.75" y="-0.99" dx="0.7" dy="0.3" layer="1" rot="R90" cream="no"/>
+<smd name="P$5" x="0.75" y="0.99" dx="0.7" dy="0.3" layer="1" rot="R90" cream="no"/>
+<smd name="P$6" x="0.25" y="0.99" dx="0.7" dy="0.3" layer="1" rot="R90" cream="no"/>
+<smd name="P$7" x="-0.25" y="0.99" dx="0.7" dy="0.3" layer="1" rot="R90" cream="no"/>
+<smd name="P$8" x="-0.75" y="0.99" dx="0.7" dy="0.3" layer="1" rot="R90" cream="no"/>
+<smd name="P$9" x="0" y="0" dx="1.38" dy="0.8" layer="1" cream="no"/>
 <text x="-0.8128" y="1.524" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.0668" y="-1.905" size="0.4064" layer="27">&gt;VALUE</text>
 <circle x="-1.0628" y="-0.92" radius="0.070709375" width="0.127" layer="21"/>
-<wire x1="-1.0128" y1="1.03" x2="0.9872" y2="1.03" width="0.127" layer="51"/>
-<wire x1="0.9872" y1="1.03" x2="0.9872" y2="-0.97" width="0.127" layer="51"/>
-<wire x1="0.9872" y1="-0.97" x2="-1.0128" y2="-0.97" width="0.127" layer="51"/>
-<wire x1="-1.0128" y1="-0.97" x2="-1.0128" y2="1.03" width="0.127" layer="51"/>
+<wire x1="-1" y1="1" x2="1" y2="1" width="0.127" layer="51"/>
+<wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="51"/>
+<wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="51"/>
+<wire x1="-1" y1="-1" x2="-1" y2="1" width="0.127" layer="51"/>
 <text x="-0.8128" y="1.524" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.0668" y="-1.905" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.875" y1="-1.3375" x2="-0.625" y2="-0.6375" layer="31"/>
+<rectangle x1="-0.375" y1="0.6375" x2="-0.125" y2="1.3375" layer="31"/>
+<rectangle x1="-0.875" y1="0.6375" x2="-0.625" y2="1.3375" layer="31"/>
+<rectangle x1="0.125" y1="0.6375" x2="0.375" y2="1.3375" layer="31"/>
+<rectangle x1="0.625" y1="0.6375" x2="0.875" y2="1.3375" layer="31"/>
+<rectangle x1="-0.375" y1="-1.3375" x2="-0.125" y2="-0.6375" layer="31"/>
+<rectangle x1="0.125" y1="-1.3375" x2="0.375" y2="-0.6375" layer="31"/>
+<rectangle x1="0.625" y1="-1.3375" x2="0.875" y2="-0.6375" layer="31"/>
+<rectangle x1="-0.6625" y1="-0.4" x2="0.6625" y2="0.4" layer="31"/>
 </package>
 <package name="SOIC-28">
 <wire x1="-8.78" y1="-3.9575" x2="-8.78" y2="3.9575" width="0.254" layer="21"/>
