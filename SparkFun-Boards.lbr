@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7792,7 +7792,7 @@ Footprint designed for Sullins SBH11-NBPC-D20-SM-BK</description>
 <pin name="VDD_5V@1" x="-20.32" y="20.32" length="middle"/>
 <pin name="VDD_5V@2" x="20.32" y="20.32" length="middle" rot="R180"/>
 </symbol>
-<symbol name="RASPBERRYPI_B+_GPIO">
+<symbol name="RASPBERRYPI_40_PIN_GPIO">
 <wire x1="-12.7" y1="27.94" x2="12.7" y2="27.94" width="0.254" layer="94"/>
 <wire x1="12.7" y1="27.94" x2="12.7" y2="-33.02" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-33.02" x2="-12.7" y2="-33.02" width="0.254" layer="94"/>
@@ -7841,8 +7841,6 @@ Footprint designed for Sullins SBH11-NBPC-D20-SM-BK</description>
 <pin name="GP21" x="-15.24" y="-5.08" length="short"/>
 <wire x1="-3.81" y1="12.7" x2="-3.81" y2="-7.62" width="0.254" layer="95"/>
 <wire x1="3.556" y1="-27.94" x2="3.556" y2="-30.48" width="0.254" layer="95"/>
-<text x="3.048" y="-30.734" size="1.778" layer="95" rot="R90">B+</text>
-<text x="-1.524" y="1.27" size="1.778" layer="95" rot="R90">B+</text>
 </symbol>
 <symbol name="BLACKBERRY_TRACKBALLER">
 <circle x="0" y="0" radius="5.6796125" width="0.254" layer="94"/>
@@ -10059,12 +10057,12 @@ As defined for the Revistion 2 Pi.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="RASPBERRYPI-B+-GPIO" prefix="JP">
-<description>Raspberry Pi B+ GPIO Header
-
-2x20 pin connector</description>
+<deviceset name="RASPBERRYPI-40-PIN-GPIO" prefix="JP">
+<description>Second Generation Raspberry Pi GPIO Header
+&lt;br&gt;&lt;br&gt;
+2x20 pin connector, as found on B, B+, A+ models.</description>
 <gates>
-<gate name="G$1" symbol="RASPBERRYPI_B+_GPIO" x="0" y="2.54"/>
+<gate name="G$1" symbol="RASPBERRYPI_40_PIN_GPIO" x="0" y="2.54"/>
 </gates>
 <devices>
 <device name="" package="2X20-SHROUDED">
