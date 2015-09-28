@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -23090,27 +23090,27 @@ Reduced openings in tStop, pins spread a tiny bit out to hold part on PCB during
 <symbol name="USD_CARD">
 <description>Newer version of USDCARD symbol that moves pins for easier routing and uses more accurate pin names.&lt;br /&gt;
 Renamed DAT2 from NC to RSV to remove the implication that you should leave it not connected.</description>
-<wire x1="-5.08" y1="17.78" x2="22.86" y2="17.78" width="0.254" layer="94"/>
-<wire x1="22.86" y1="17.78" x2="22.86" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="22.86" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
-<text x="-5.08" y="18.288" size="1.778" layer="95">&gt;NAME</text>
-<text x="20.32" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="CS" x="-10.16" y="10.16" length="middle"/>
-<pin name="DI" x="-10.16" y="7.62" length="middle"/>
-<pin name="GND" x="10.16" y="-10.16" length="middle" rot="R90"/>
-<pin name="VCC" x="-10.16" y="12.7" length="middle"/>
-<pin name="SCK" x="-10.16" y="5.08" length="middle"/>
-<pin name="RSV@2" x="27.94" y="7.62" length="middle" rot="R180"/>
-<pin name="DO" x="-10.16" y="2.54" length="middle"/>
-<pin name="RSV@1" x="27.94" y="12.7" length="middle" rot="R180"/>
-<pin name="SHIELD@3" x="7.62" y="-10.16" length="middle" rot="R90"/>
-<pin name="SHIELD@1" x="5.08" y="-10.16" length="middle" rot="R90"/>
-<pin name="CD1" x="12.7" y="-10.16" length="middle" rot="R90"/>
-<pin name="CD2" x="17.78" y="-10.16" length="middle" rot="R90"/>
-<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="17.78" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-3.302" x2="17.78" y2="-3.302" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-3.302" x2="17.78" y2="-4.572" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-3.302" x2="12.7" y2="-4.572" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="10.16" x2="15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="10.16" x2="15.24" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<text x="-12.7" y="10.668" size="1.778" layer="95">&gt;NAME</text>
+<text x="-0.254" y="10.668" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="CS" x="-15.24" y="2.54" visible="pin" length="short"/>
+<pin name="DI" x="-15.24" y="0" visible="pin" length="short"/>
+<pin name="GND" x="2.54" y="-15.24" visible="pin" length="short" rot="R90"/>
+<pin name="VCC" x="-15.24" y="5.08" visible="pin" length="short"/>
+<pin name="SCK" x="-15.24" y="-2.54" visible="pin" length="short"/>
+<pin name="RSV@2" x="17.78" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="DO" x="-15.24" y="-5.08" visible="pin" length="short"/>
+<pin name="RSV@1" x="17.78" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SHIELD@3" x="0" y="-15.24" visible="pin" length="short" rot="R90"/>
+<pin name="SHIELD@1" x="-2.54" y="-15.24" visible="pin" length="short" rot="R90"/>
+<pin name="CD1" x="17.78" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="CD2" x="17.78" y="-10.16" visible="pin" length="short" rot="R180"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="13.462" y1="-10.16" x2="13.462" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="13.462" y1="-5.08" x2="14.732" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="13.462" y1="-10.16" x2="14.732" y2="-10.16" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -30987,7 +30987,7 @@ to be daisy chained easily.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="USD_CONNECTOR" prefix="U">
+<deviceset name="USD_CONNECTOR" prefix="J">
 <description>&lt;b&gt;microSD Socket&lt;/b&gt;&lt;br /&gt;
 Push-push type µSD socket. Footprint production proven. Symbol has new and improved layout and naming accuracy. SparkFun Electronics SKU : PRT-00127. tDoc lines correctly indicate media card edge positions when inserting (unlocked, locked, depressed).&lt;br /&gt;
 NOTE: CD1 and CD2 are connected internally</description>
