@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -23094,8 +23094,8 @@ Renamed DAT2 from NC to RSV to remove the implication that you should leave it n
 <wire x1="15.24" y1="10.16" x2="15.24" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="15.24" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
 <text x="-12.7" y="10.668" size="1.778" layer="95">&gt;NAME</text>
-<text x="-0.254" y="10.668" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="CS" x="-15.24" y="2.54" visible="pin" length="short"/>
+<text x="-7.874" y="10.668" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="!CS" x="-15.24" y="2.54" visible="pin" length="short"/>
 <pin name="DI" x="-15.24" y="0" visible="pin" length="short"/>
 <pin name="GND" x="2.54" y="-15.24" visible="pin" length="short" rot="R90"/>
 <pin name="VCC" x="-15.24" y="5.08" visible="pin" length="short"/>
@@ -30997,9 +30997,9 @@ NOTE: CD1 and CD2 are connected internally</description>
 <devices>
 <device name="" package="MICRO-SD-SOCKET-PP">
 <connects>
+<connect gate="1" pin="!CS" pad="CS"/>
 <connect gate="1" pin="CD1" pad="CD1"/>
 <connect gate="1" pin="CD2" pad="CD2"/>
-<connect gate="1" pin="CS" pad="CS"/>
 <connect gate="1" pin="DI" pad="DI"/>
 <connect gate="1" pin="DO" pad="DO"/>
 <connect gate="1" pin="GND" pad="GND"/>
