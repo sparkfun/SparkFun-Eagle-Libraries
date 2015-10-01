@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -14788,18 +14788,19 @@ Pasted was reduced by 40% width on the center ground pad, and some amount on the
 <text x="-12.7" y="-15.24" size="1.27" layer="96">&gt;VALUE</text>
 <text x="-11.43" y="-8.89" size="1.27" layer="97">1.2-3.6V</text>
 <text x="3.175" y="-8.89" size="1.27" layer="97">1.65-5.5V</text>
-<pin name="VCCA" x="-2.54" y="17.78" length="short" rot="R270"/>
+<pin name="VCCA" x="-5.08" y="17.78" length="short" rot="R270"/>
 <pin name="A1" x="-15.24" y="2.54" length="short"/>
 <pin name="A2" x="-15.24" y="0" length="short"/>
 <pin name="A3" x="-15.24" y="-2.54" length="short"/>
 <pin name="A4" x="-15.24" y="-5.08" length="short"/>
 <pin name="GND" x="0" y="-15.24" length="short" rot="R90"/>
-<pin name="VCCB" x="2.54" y="17.78" length="short" rot="R270"/>
+<pin name="VCCB" x="5.08" y="17.78" length="short" rot="R270"/>
 <pin name="B1" x="15.24" y="2.54" length="short" rot="R180"/>
 <pin name="B2" x="15.24" y="0" length="short" rot="R180"/>
 <pin name="B3" x="15.24" y="-2.54" length="short" rot="R180"/>
 <pin name="B4" x="15.24" y="-5.08" length="short" rot="R180"/>
 <pin name="OE" x="-15.24" y="7.62" length="short"/>
+<text x="0" y="-12.192" size="1.27" layer="97" align="bottom-center">VCCA ≤ VCCB</text>
 </symbol>
 <symbol name="SPARKFUN-DIGITALIC_ATMEGA32U4">
 <wire x1="-15.24" y1="38.1" x2="-15.24" y2="-40.64" width="0.254" layer="94"/>
