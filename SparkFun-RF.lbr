@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1645,6 +1645,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="17.526" y1="22.606" x2="18.034" y2="23.114" layer="51"/>
 </package>
 <package name="EM406">
+<description>&lt;h3&gt;6-Pin Vertical JST Connector&lt;/h3&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;1.0mm pitch&lt;/li&gt;
+&lt;li&gt;JST-SH type&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Common interface for SparkFun GPS modules.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/GPS/EM406-SMDConnector-eSH.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <wire x1="0" y1="-2.921" x2="5.08" y2="-2.921" width="0.254" layer="21"/>
 <wire x1="-1.778" y1="-0.762" x2="-1.778" y2="0.635" width="0.254" layer="21"/>
 <wire x1="5.842" y1="0.635" x2="6.858" y2="0.635" width="0.254" layer="21"/>
@@ -11389,6 +11394,32 @@ A wi-fi enabled microcontroller, in an SD card package.</description>
 <text x="-20.32" y="38.354" size="1.778" layer="95">&gt;Name</text>
 <text x="-20.32" y="-35.814" size="1.778" layer="96" align="top-left">&gt;Value</text>
 </symbol>
+<symbol name="EM-506">
+<description>&lt;h3&gt;EM-506 High Performance GPS Module&lt;/h3&gt;
+&lt;p&gt;EM-506 GPS module features high sensitivity, low power and ultra small form factor. This GPS module is powered by SiRF Star IV, it can provide you with superior sensitivity and performance even in urban canyon and dense foliage environment. With SiRF CGEE (Client Generated Extended Ephemeris) technology, it predicts satellite positions for up to 3 days and delivers CGEE-start time of less than 15 seconds under most conditions, without any network assistance. Besides, MicroPower Mode allows GPS module to stay in a hot-start condition nearly continuously while consuming very little power.&lt;/p&gt;
+&lt;p&gt;Product Features:
+&lt;ul&gt;&lt;li&gt;SiRF Star IV high performance GPS Chipset&lt;/li&gt;
+&lt;li&gt;Very high sensitivity (Tracking Sensitivity: -163 dBm)&lt;/li&gt;
+&lt;li&gt;Extremely fast TTFF (Time To First Fix) at low signal level&lt;/li&gt;
+&lt;li&gt;Support UART interface.&lt;/li&gt;
+&lt;li&gt;Built-in LNA(with in CHIP)&lt;/li&gt;
+&lt;li&gt;Compact size (30.0mm x 30.0 mm x 10.7mm) suitable for space-sensitive application&lt;/li&gt;
+&lt;li&gt;Support NMEA 0183 V3.0 (GGA, GSA, GSV, RMC, VTG, GLL, ZDA) &lt;/li&gt;
+&lt;li&gt;Support OSP protocol&lt;/li&gt;
+&lt;li&gt;Support SBAS (WASS, EGNOS, MSAS, GAGAN)&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<pin name="VIN" x="-10.16" y="5.08" length="short"/>
+<pin name="RX" x="-10.16" y="2.54" length="short"/>
+<pin name="TX" x="-10.16" y="0" length="short"/>
+<pin name="DIRECTIVE" x="-10.16" y="-2.54" length="short"/>
+<pin name="GND@1" x="-10.16" y="-5.08" length="short"/>
+<pin name="GND@5" x="-10.16" y="-7.62" length="short"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="-10.414" size="1.778" layer="96" align="top-left">&gt;Value</text>
+<text x="-7.62" y="7.874" size="1.778" layer="95">&gt;Name</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ALM-1412">
@@ -15240,6 +15271,40 @@ Chip antenna with ground or secondary connection. Common with larger metal RF co
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EM-506" prefix="J">
+<description>&lt;h3&gt;EM-506 High Performance GPS Module&lt;/h3&gt;
+&lt;p&gt;EM-506 GPS module features high sensitivity, low power and ultra small form factor. This GPS module is powered by SiRF Star IV, it can provide you with superior sensitivity and performance even in urban canyon and dense foliage environment. With SiRF CGEE (Client Generated Extended Ephemeris) technology, it predicts satellite positions for up to 3 days and delivers CGEE-start time of less than 15 seconds under most conditions, without any network assistance. Besides, MicroPower Mode allows GPS module to stay in a hot-start condition nearly continuously while consuming very little power.&lt;/p&gt;
+&lt;p&gt;Product Features:
+&lt;ul&gt;&lt;li&gt;SiRF Star IV high performance GPS Chipset&lt;/li&gt;
+&lt;li&gt;Very high sensitivity (Tracking Sensitivity: -163 dBm)&lt;/li&gt;
+&lt;li&gt;Extremely fast TTFF (Time To First Fix) at low signal level&lt;/li&gt;
+&lt;li&gt;Support UART interface.&lt;/li&gt;
+&lt;li&gt;Built-in LNA(with in CHIP)&lt;/li&gt;
+&lt;li&gt;Compact size (30.0mm x 30.0 mm x 10.7mm) suitable for space-sensitive application&lt;/li&gt;
+&lt;li&gt;Support NMEA 0183 V3.0 (GGA, GSA, GSV, RMC, VTG, GLL, ZDA) &lt;/li&gt;
+&lt;li&gt;Support OSP protocol&lt;/li&gt;
+&lt;li&gt;Support SBAS (WASS, EGNOS, MSAS, GAGAN)&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="EM-506" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-VERTICAL" package="EM406">
+<connects>
+<connect gate="G$1" pin="DIRECTIVE" pad="6"/>
+<connect gate="G$1" pin="GND@1" pad="1"/>
+<connect gate="G$1" pin="GND@5" pad="5"/>
+<connect gate="G$1" pin="RX" pad="3"/>
+<connect gate="G$1" pin="TX" pad="4"/>
+<connect gate="G$1" pin="VIN" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-08249"/>
+</technology>
 </technologies>
 </device>
 </devices>
