@@ -18418,7 +18418,7 @@ NCP1400 switiching regulator takes single cell AA and outputs 100mA at 3.3V or 5
 <gate name="G$1" symbol="NCP1400" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SOT23-5" package="SOT23-5">
+<device name="_3.3V" package="SOT23-5">
 <connects>
 <connect gate="G$1" pin="EN" pad="1"/>
 <connect gate="G$1" pin="GND" pad="4"/>
@@ -18427,7 +18427,25 @@ NCP1400 switiching regulator takes single cell AA and outputs 100mA at 3.3V or 5
 <connect gate="G$1" pin="OUT" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-10788" constant="no"/>
+<attribute name="VALUE" value="3.3v" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_5V" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="EN" pad="1"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="LX" pad="5"/>
+<connect gate="G$1" pin="NC" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-10787" constant="no"/>
+<attribute name="VALUE" value="5.0v" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
