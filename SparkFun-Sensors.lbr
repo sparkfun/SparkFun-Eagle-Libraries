@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -10358,6 +10358,25 @@ For Vishay VNCL4000 proximity and ambient light sensor.&lt;br&gt;
 <wire x1="1.7" y1="0.86" x2="1.2" y2="0.86" width="0.0508" layer="41"/>
 <wire x1="1.7" y1="-0.86" x2="1.2" y2="-0.86" width="0.0508" layer="41"/>
 </package>
+<package name="MS5803">
+<circle x="-0.889" y="1.905" radius="0.127" width="0.8128" layer="21"/>
+<wire x1="-3.2" y1="3.1" x2="3.2" y2="3.1" width="0.3048" layer="21"/>
+<wire x1="3.2" y1="-3.1" x2="-3.2" y2="-3.1" width="0.3048" layer="21"/>
+<wire x1="-3.2" y1="-3.1" x2="-3.2" y2="-2.6" width="0.3048" layer="21"/>
+<wire x1="3.2" y1="-3.1" x2="3.2" y2="-2.6" width="0.3048" layer="21"/>
+<wire x1="3.2" y1="3.1" x2="3.2" y2="2.6" width="0.3048" layer="21"/>
+<wire x1="-3.2" y1="3.1" x2="-3.2" y2="2.6" width="0.3048" layer="21"/>
+<smd name="1" x="-2.675" y="1.9" dx="0.9" dy="2.25" layer="1" rot="R90"/>
+<smd name="2" x="-2.675" y="0.65" dx="0.9" dy="2.25" layer="1" rot="R90"/>
+<smd name="3" x="-2.4" y="-0.65" dx="0.9" dy="2.8" layer="1" rot="R90"/>
+<smd name="4" x="-2.675" y="-1.9" dx="0.9" dy="2.25" layer="1" rot="R90"/>
+<smd name="5" x="2.675" y="-1.9" dx="0.9" dy="2.25" layer="1" rot="R90"/>
+<smd name="6" x="2.675" y="-0.65" dx="0.9" dy="2.25" layer="1" rot="R90"/>
+<smd name="7" x="2.675" y="0.65" dx="0.9" dy="2.25" layer="1" rot="R90"/>
+<smd name="8" x="2.675" y="1.9" dx="0.9" dy="2.25" layer="1" rot="R90"/>
+<text x="-3.302" y="3.556" size="0.8128" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-3.048" y="-4.318" size="0.8128" layer="25" font="vector" ratio="15">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ADMP401">
@@ -12575,6 +12594,21 @@ Typical applications:&lt;p&gt;
 <text x="-12.7" y="-19.05" size="1.778" layer="96" align="center-left">&gt;Value</text>
 <text x="-12.7" y="19.05" size="1.778" layer="95" align="center-left">&gt;Name</text>
 <pin name="RES" x="-15.24" y="-12.7" length="short"/>
+</symbol>
+<symbol name="MS5803">
+<wire x1="0" y1="15.24" x2="22.86" y2="15.24" width="0.254" layer="94"/>
+<wire x1="22.86" y1="15.24" x2="22.86" y2="0" width="0.254" layer="94"/>
+<wire x1="22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="15.24" width="0.254" layer="94"/>
+<pin name="AD/CS" x="25.4" y="2.54" length="short" rot="R180"/>
+<pin name="GND" x="-2.54" y="2.54" length="short"/>
+<pin name="PS" x="25.4" y="12.7" length="short" rot="R180"/>
+<pin name="SCL/SCLK" x="-2.54" y="7.62" length="short"/>
+<pin name="SDA/SDI" x="-2.54" y="10.16" length="short"/>
+<pin name="SDO" x="-2.54" y="5.08" length="short"/>
+<pin name="VDD" x="-2.54" y="12.7" length="short"/>
+<text x="0" y="17.78" size="1.4224" layer="95" ratio="15" align="top-left">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.4224" layer="96" ratio="15">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -15703,6 +15737,31 @@ Datasheet: &lt;a href="https://www.sparkfun.com/datasheets/Prototyping/Solar/bpw
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-12536" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MS5803-14BA" prefix="U">
+<description>&lt;b&gt;Measurement Specialties MS5803_14BA Pressure (Depth) Sensor&lt;/b&gt;&lt;p&gt;
+Datasheet: https://cdn.sparkfun.com/datasheets/Sensors/Weather/ms5803_14ba.pdf</description>
+<gates>
+<gate name="G$1" symbol="MS5803" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MS5803">
+<connects>
+<connect gate="G$1" pin="AD/CS" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="PS" pad="6"/>
+<connect gate="G$1" pin="SCL/SCLK" pad="1"/>
+<connect gate="G$1" pin="SDA/SDI" pad="7"/>
+<connect gate="G$1" pin="SDO" pad="8"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-12111" constant="no"/>
 </technology>
 </technologies>
 </device>
