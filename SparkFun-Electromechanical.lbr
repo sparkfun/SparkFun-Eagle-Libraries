@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9584,6 +9584,18 @@ Arrows in tDocu denote pointer positions for 45-degree shaft, assuming a knob wi
 <pad name="P$7" x="5.3" y="4.8" drill="1.2"/>
 <pad name="P$8" x="5.3" y="0" drill="1.2"/>
 <pad name="P$9" x="5.3" y="-4.8" drill="1.2"/>
+<wire x1="1" y1="6" x2="1" y2="-6" width="0.127" layer="51"/>
+<wire x1="1" y1="-6" x2="-1" y2="-6" width="0.127" layer="51"/>
+<wire x1="-1" y1="-6" x2="-1" y2="6" width="0.127" layer="51"/>
+<wire x1="-1" y1="6" x2="1" y2="6" width="0.127" layer="51"/>
+<wire x1="6.3" y1="6" x2="4.3" y2="6" width="0.127" layer="51"/>
+<wire x1="4.3" y1="6" x2="4.3" y2="-6" width="0.127" layer="51"/>
+<wire x1="4.3" y1="-6" x2="6.3" y2="-6" width="0.127" layer="51"/>
+<wire x1="6.3" y1="-6" x2="6.3" y2="6" width="0.127" layer="51"/>
+<wire x1="-6.3" y1="6" x2="-6.3" y2="-6" width="0.127" layer="51"/>
+<wire x1="-6.3" y1="-6" x2="-4.3" y2="-6" width="0.127" layer="51"/>
+<wire x1="-4.3" y1="-6" x2="-4.3" y2="6" width="0.127" layer="51"/>
+<wire x1="-4.3" y1="6" x2="-6.3" y2="6" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -10898,44 +10910,22 @@ No illumination</description>
 <text x="-7.62" y="8.255" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="5.715" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="SWITCH-3PDT">
-<wire x1="1.27" y1="10.16" x2="-2.286" y2="7.874" width="0.254" layer="94"/>
-<wire x1="-2.286" y1="0.254" x2="1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="11.43" x2="2.54" y2="12.7" width="0.254" layer="94"/>
-<wire x1="2.54" y1="12.7" x2="-2.54" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="12.7" x2="-2.54" y2="8.89" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="6.35" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-1.27" x2="2.54" y2="1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="8.89" x2="2.54" y2="6.35" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-5.08" x2="-2.286" y2="-7.366" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-6.35" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-8.89" x2="-2.54" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-12.7" x2="2.54" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-12.7" x2="2.54" y2="-11.43" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-6.35" x2="2.54" y2="-8.89" width="0.254" layer="94"/>
-<wire x1="0" y1="9.398" x2="0" y2="-8.382" width="0.254" layer="94" style="shortdash"/>
-<circle x="-2.54" y="7.62" radius="0.3592" width="0.254" layer="94"/>
-<circle x="2.54" y="10.16" radius="0.3592" width="0.254" layer="94"/>
-<circle x="2.54" y="5.08" radius="0.3592" width="0.254" layer="94"/>
-<circle x="2.54" y="2.54" radius="0.3592" width="0.254" layer="94"/>
-<circle x="2.54" y="-2.54" radius="0.3592" width="0.254" layer="94"/>
-<circle x="-2.54" y="0" radius="0.3592" width="0.254" layer="94"/>
-<circle x="-2.54" y="-7.62" radius="0.3592" width="0.254" layer="94"/>
-<circle x="2.54" y="-5.08" radius="0.3592" width="0.254" layer="94"/>
-<circle x="2.54" y="-10.16" radius="0.3592" width="0.254" layer="94"/>
-<text x="-2.54" y="13.208" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="5.08" y="10.16" visible="off" length="short" rot="R180"/>
-<pin name="2" x="-5.08" y="7.62" visible="off" length="short"/>
-<pin name="3" x="5.08" y="5.08" visible="off" length="short" rot="R180"/>
-<pin name="4" x="5.08" y="2.54" visible="off" length="short" rot="R180"/>
-<pin name="5" x="-5.08" y="0" visible="off" length="short"/>
-<pin name="6" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
-<pin name="7" x="5.08" y="-5.08" visible="off" length="short" rot="R180"/>
-<pin name="8" x="-5.08" y="-7.62" visible="off" length="short"/>
-<pin name="9" x="5.08" y="-10.16" visible="off" length="short" rot="R180"/>
+<symbol name="SW_SPDT_POL">
+<wire x1="-2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0.635" y2="-2.54" width="0.127" layer="94"/>
+<wire x1="0" y1="2.54" x2="0.635" y2="2.54" width="0.1524" layer="94"/>
+<circle x="0" y="2.54" radius="0.3592" width="0.2032" layer="94"/>
+<circle x="0" y="-2.54" radius="0.3592" width="0.2032" layer="94"/>
+<circle x="-2.54" y="0" radius="0.3592" width="0.2032" layer="94"/>
+<text x="-4.445" y="-6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<pin name="S" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="O" x="2.54" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="-1.27" y1="-1.778" x2="-1.27" y2="2.032" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="2.032" x2="-1.524" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.524" y1="1.27" x2="-1.016" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.27" x2="-1.27" y2="2.032" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -13345,10 +13335,23 @@ CTS series 219</description>
 </deviceset>
 <deviceset name="SWITCH-3PDT" prefix="SW">
 <gates>
-<gate name="G$1" symbol="SWITCH-3PDT" x="0" y="0"/>
+<gate name="A" symbol="SW_SPDT_POL" x="0" y="7.62" addlevel="always"/>
+<gate name="B" symbol="SW_SPDT_POL" x="17.78" y="7.62" addlevel="always"/>
+<gate name="C" symbol="SW_SPDT_POL" x="35.56" y="7.62" addlevel="always"/>
 </gates>
 <devices>
 <device name="" package="STOMP-SWITCH-3PDT">
+<connects>
+<connect gate="A" pin="O" pad="P$1"/>
+<connect gate="A" pin="P" pad="P$2"/>
+<connect gate="A" pin="S" pad="P$3"/>
+<connect gate="B" pin="O" pad="P$4"/>
+<connect gate="B" pin="P" pad="P$5"/>
+<connect gate="B" pin="S" pad="P$6"/>
+<connect gate="C" pin="O" pad="P$7"/>
+<connect gate="C" pin="P" pad="P$8"/>
+<connect gate="C" pin="S" pad="P$9"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
