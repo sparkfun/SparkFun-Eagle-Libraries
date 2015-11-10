@@ -9574,11 +9574,11 @@ Arrows in tDocu denote pointer positions for 45-degree shaft, assuming a knob wi
 <pad name="P$4" x="0" y="4.8" drill="1.2"/>
 <pad name="P$5" x="0" y="0" drill="1.2"/>
 <pad name="P$6" x="0" y="-4.8" drill="1.2"/>
-<circle x="0" y="0" radius="6.1" width="0.127" layer="21"/>
-<wire x1="-9.85" y1="8.5" x2="9.85" y2="8.5" width="0.127" layer="51"/>
-<wire x1="9.85" y1="8.5" x2="9.85" y2="-8.5" width="0.127" layer="51"/>
-<wire x1="9.85" y1="-8.5" x2="-9.85" y2="-8.5" width="0.127" layer="51"/>
-<wire x1="-9.85" y1="-8.5" x2="-9.85" y2="8.5" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="6.1" width="0.127" layer="51"/>
+<wire x1="-9.85" y1="8.5" x2="9.85" y2="8.5" width="0.127" layer="21"/>
+<wire x1="9.85" y1="8.5" x2="9.85" y2="-8.5" width="0.127" layer="21"/>
+<wire x1="9.85" y1="-8.5" x2="-9.85" y2="-8.5" width="0.127" layer="21"/>
+<wire x1="-9.85" y1="-8.5" x2="-9.85" y2="8.5" width="0.127" layer="21"/>
 <text x="-2.81" y="1.635" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.81" y="-2.905" size="1.27" layer="27">&gt;VALUE</text>
 <pad name="P$7" x="5.3" y="4.8" drill="1.2"/>
@@ -13333,7 +13333,10 @@ CTS series 219</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SWITCH-3PDT" prefix="SW">
+<deviceset name="SWITCH-3PDT" prefix="S">
+<description>Three-pole, double-throw stomp switch.
+&lt;br&gt;&lt;br&gt;
+Drawn as three separate gates for schematic clarity.</description>
 <gates>
 <gate name="A" symbol="SW_SPDT_POL" x="0" y="7.62" addlevel="always"/>
 <gate name="B" symbol="SW_SPDT_POL" x="17.78" y="7.62" addlevel="always"/>
@@ -13353,7 +13356,9 @@ CTS series 219</description>
 <connect gate="C" pin="S" pad="P$9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="SWCH-13197" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
