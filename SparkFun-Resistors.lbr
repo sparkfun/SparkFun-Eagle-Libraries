@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3324,8 +3324,21 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 <deviceset name="6.8KOHM1/10W1%(0603)" prefix="R" uservalue="yes">
 <description>RES-08597</description>
 <gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="0603-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08597" constant="no"/>
+<attribute name="VALUE" value="6.8K" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="61.9KOHM1/10W1%(0603)" prefix="R" uservalue="yes">
