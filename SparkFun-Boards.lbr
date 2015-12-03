@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9963,7 +9963,9 @@ This is the mechnical outline for the very small self adhesive breadboard from S
 <devices>
 <device name="MINI" package="BREADBOARD-MINI">
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-12034" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -11689,6 +11691,9 @@ If you're placing one on the bottom of a board, take care to mind the pin-1 orie
 </gates>
 <devices>
 <device name="-37X60" package="DP6037_V1">
+<technologies>
+<technology name=""/>
+</technologies>
 </device>
 </devices>
 </deviceset>
