@@ -413,11 +413,11 @@ www.SparkFun.com SKU : Comp-SMDS</description>
 <wire x1="-10.55" y1="-4.55" x2="-10.55" y2="-3.2" width="0.2032" layer="21"/>
 <wire x1="10.55" y1="-4.55" x2="10.55" y2="-3.2" width="0.2032" layer="21"/>
 <circle x="0" y="0" radius="10" width="0.2032" layer="51"/>
-<smd name="1" x="-11" y="1.55" dx="2.54" dy="1.778" layer="1" rot="R90"/>
-<smd name="2" x="0" y="0" dx="13" dy="8" layer="1" roundness="100" cream="no"/>
-<smd name="3" x="11" y="1.55" dx="2.54" dy="1.778" layer="1" rot="R90"/>
-<smd name="P$1" x="-11" y="-1.55" dx="2.54" dy="1.778" layer="1" rot="R90"/>
-<smd name="P$2" x="11" y="-1.55" dx="2.54" dy="1.778" layer="1" rot="R90"/>
+<smd name="POSITIVE@1" x="-11" y="1.55" dx="2.54" dy="1.778" layer="1" rot="R90"/>
+<smd name="NEGATIVE" x="0" y="0" dx="13" dy="8" layer="1" roundness="100" cream="no"/>
+<smd name="POSITIVE@4" x="11" y="1.55" dx="2.54" dy="1.778" layer="1" rot="R90"/>
+<smd name="POSITIVE@2" x="-11" y="-1.55" dx="2.54" dy="1.778" layer="1" rot="R90"/>
+<smd name="POSITIVE@3" x="11" y="-1.55" dx="2.54" dy="1.778" layer="1" rot="R90"/>
 <text x="-0.889" y="5.969" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.889" y="4.699" size="0.4064" layer="27">&gt;VALUE</text>
 <rectangle x1="-2" y1="-2" x2="2" y2="2" layer="31"/>
@@ -11103,8 +11103,8 @@ Various common sizes : AA, AAA, 18650 (PRT-12895), 20mm coin cell and 12mm coin 
 </device>
 <device name="20MM_4LEGS" package="BATTCON_20MM_4LEGS">
 <connects>
-<connect gate="G$1" pin="+" pad="1"/>
-<connect gate="G$1" pin="-" pad="2"/>
+<connect gate="G$1" pin="+" pad="POSITIVE@1 POSITIVE@2 POSITIVE@3 POSITIVE@4"/>
+<connect gate="G$1" pin="-" pad="NEGATIVE"/>
 </connects>
 <technologies>
 <technology name="">
