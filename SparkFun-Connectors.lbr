@@ -23262,6 +23262,20 @@ Renamed DAT2 from NC to RSV to remove the implication that you should leave it n
 <text x="-12.7" y="7.874" size="1.778" layer="95">&gt;Name</text>
 <text x="-12.7" y="-7.874" size="1.778" layer="96" align="top-left">&gt;Value</text>
 </symbol>
+<symbol name="USB-MICROB">
+<wire x1="2.54" y1="8.89" x2="-2.54" y2="8.89" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="8.89" x2="-2.54" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-6.35" x2="2.54" y2="-6.35" width="0.254" layer="94"/>
+<text x="1.524" y="-3.556" size="2.54" layer="94" rot="R90">USB B</text>
+<pin name="D+" x="-5.08" y="2.54" visible="pad" length="short"/>
+<pin name="D-" x="-5.08" y="0" visible="pad" length="short"/>
+<pin name="VBUS" x="-5.08" y="-2.54" visible="pad" length="short"/>
+<pin name="GND" x="-5.08" y="7.62" visible="pad" length="short"/>
+<pin name="USBID" x="-5.08" y="5.08" visible="pad" length="short"/>
+<pin name="SHIELD" x="-5.08" y="-5.08" visible="pad" length="short"/>
+<text x="-2.54" y="10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ARDUINO_SERIAL_PROGRAM" prefix="J" uservalue="yes">
@@ -31264,6 +31278,28 @@ NOTE: CD1 and CD2 are connected internally</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="USB-MICROB">
+<gates>
+<gate name="G$1" symbol="USB-MICROB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="&quot;" package="USB-B-MICRO-SMD_V03">
+<connects>
+<connect gate="G$1" pin="D+" pad="D+1"/>
+<connect gate="G$1" pin="D-" pad="D-1"/>
+<connect gate="G$1" pin="GND" pad="GND1"/>
+<connect gate="G$1" pin="SHIELD" pad="SHIELD1 SHIELD2 SHIELD3"/>
+<connect gate="G$1" pin="USBID" pad="ID1"/>
+<connect gate="G$1" pin="VBUS" pad="VBUS1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-11752" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
