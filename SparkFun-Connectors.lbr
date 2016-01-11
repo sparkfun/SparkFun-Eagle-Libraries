@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -19915,6 +19915,37 @@ Reduced openings in tStop, pins spread a tiny bit out to hold part on PCB during
 <wire x1="-3.175" y1="-1.715" x2="3.175" y2="-1.715" width="0.127" layer="51"/>
 <wire x1="3.175" y1="-1.715" x2="3.175" y2="1.715" width="0.127" layer="51"/>
 </package>
+<package name="MICRO-SD-SOCKET-SDIO">
+<wire x1="-0.03" y1="0" x2="-0.03" y2="13.2" width="0.2032" layer="21"/>
+<wire x1="13.97" y1="12.1" x2="13.97" y2="0" width="0.2032" layer="21"/>
+<wire x1="2.27" y1="15.3" x2="1.47" y2="15.3" width="0.2032" layer="21"/>
+<wire x1="2.97" y1="16" x2="13.97" y2="16" width="0.2032" layer="51"/>
+<wire x1="3.97" y1="13.6" x2="12.37" y2="13.6" width="0.2032" layer="21"/>
+<wire x1="-0.03" y1="0" x2="4.87" y2="0" width="0.2032" layer="21"/>
+<wire x1="10.57" y1="0" x2="7.57" y2="0" width="0.2032" layer="21"/>
+<wire x1="13.97" y1="0" x2="13.27" y2="0" width="0.2032" layer="21"/>
+<wire x1="13.97" y1="17.6" x2="2.97" y2="17.6" width="0.2032" layer="51"/>
+<wire x1="13.97" y1="20.7" x2="2.97" y2="20.7" width="0.2032" layer="51"/>
+<wire x1="2.27" y1="15.3" x2="2.97" y2="14.6" width="0.2032" layer="21" curve="-98.797411"/>
+<wire x1="2.97" y1="14.6" x2="3.97" y2="13.6" width="0.2032" layer="21" curve="87.205638"/>
+<smd name="CD2" x="6.22" y="0.4" dx="1.8" dy="1.4" layer="1"/>
+<smd name="CD1" x="11.92" y="0.4" dx="1.8" dy="1.4" layer="1"/>
+<smd name="GND3" x="13.52" y="13.55" dx="1.4" dy="1.9" layer="1"/>
+<smd name="GND1" x="0.37" y="14.55" dx="1.4" dy="1.9" layer="1"/>
+<smd name="DAT2" x="5.03" y="10.7" dx="0.8" dy="1.5" layer="1"/>
+<smd name="CD/DAT3" x="6.13" y="10.3" dx="0.8" dy="1.5" layer="1"/>
+<smd name="CMD" x="7.23" y="10.7" dx="0.8" dy="1.5" layer="1"/>
+<smd name="VCC" x="8.33" y="10.9" dx="0.8" dy="1.5" layer="1"/>
+<smd name="CLK" x="9.43" y="10.7" dx="0.8" dy="1.5" layer="1"/>
+<smd name="GND" x="10.53" y="10.9" dx="0.8" dy="1.5" layer="1"/>
+<smd name="DAT0" x="11.63" y="10.7" dx="0.8" dy="1.5" layer="1"/>
+<smd name="DAT1" x="12.73" y="10.7" dx="0.8" dy="1.5" layer="1"/>
+<text x="5.08" y="6.35" size="0.8128" layer="25">&gt;Name</text>
+<text x="5.08" y="5.08" size="0.8128" layer="27">&gt;Value</text>
+<text x="14.605" y="15.875" size="1.27" layer="51" font="vector" ratio="10" align="center-left">Pressed</text>
+<text x="14.605" y="17.78" size="1.27" layer="51" font="vector" ratio="10" align="center-left">Locked</text>
+<text x="14.605" y="20.955" size="1.27" layer="51" font="vector" ratio="10" align="center-left">Unlocked</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -23280,6 +23311,29 @@ Renamed DAT2 from NC to RSV to remove the implication that you should leave it n
 <pin name="SHIELD" x="-5.08" y="-5.08" visible="pad" length="short"/>
 <text x="-2.54" y="10.16" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="USDCARD_SDIO">
+<wire x1="0" y1="35.56" x2="12.7" y2="35.56" width="0.254" layer="94"/>
+<wire x1="12.7" y1="35.56" x2="12.7" y2="0" width="0.254" layer="94"/>
+<wire x1="12.7" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0" y="36.068" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="CD/DAT3" x="-5.08" y="30.48" length="middle"/>
+<pin name="CMD" x="-5.08" y="27.94" length="middle"/>
+<pin name="GND" x="-5.08" y="20.32" length="middle"/>
+<pin name="VCC" x="-5.08" y="25.4" length="middle"/>
+<pin name="CLK" x="-5.08" y="22.86" length="middle"/>
+<pin name="DAT1" x="-5.08" y="15.24" length="middle"/>
+<pin name="DAT0" x="-5.08" y="17.78" length="middle"/>
+<pin name="DAT2" x="-5.08" y="33.02" length="middle"/>
+<pin name="SHIELD@3" x="-5.08" y="5.08" length="middle"/>
+<pin name="SHIELD@1" x="-5.08" y="10.16" length="middle"/>
+<pin name="CD1" x="-5.08" y="7.62" length="middle"/>
+<pin name="CD2" x="-5.08" y="2.54" length="middle"/>
+<wire x1="0" y1="0" x2="0" y2="35.56" width="0.254" layer="94"/>
+<wire x1="1.778" y1="7.62" x2="1.778" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.778" y1="2.54" x2="0.508" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.778" y1="7.62" x2="0.508" y2="7.62" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -29433,7 +29487,7 @@ Some male, some female. Watch your step!</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="USD-SOCKET" prefix="U">
+<deviceset name="USD-SOCKET" prefix="JP">
 <description>&lt;b&gt;microSD Socket&lt;/b&gt;
 Push-push type uSD socket. Schematic element and footprint production proven. Spark Fun Electronics SKU : PRT-00127. tDoc lines correctly indicate media card edge positions when inserting (unlocked, locked, depressed).
 
@@ -31304,6 +31358,37 @@ NOTE: CD1 and CD2 are connected internally</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="CONN-11752" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="USD-SDIO-SOCKET" prefix="JP">
+<description>microSD Socket
+&lt;br&gt;&lt;br&gt;
+Push-push type uSD socket with full SDIO signal mapping. Spark Fun Electronics SKU : PRT-00127. tDoc lines correctly indicate media card edge positions when inserting (unlocked, locked, depressed). NOTE: CD1 and CD2 are connected internally, and short to ground when card is removed.</description>
+<gates>
+<gate name="G$1" symbol="USDCARD_SDIO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MICRO-SD-SOCKET-SDIO">
+<connects>
+<connect gate="G$1" pin="CD/DAT3" pad="CD/DAT3"/>
+<connect gate="G$1" pin="CD1" pad="CD1"/>
+<connect gate="G$1" pin="CD2" pad="CD2"/>
+<connect gate="G$1" pin="CLK" pad="CLK"/>
+<connect gate="G$1" pin="CMD" pad="CMD"/>
+<connect gate="G$1" pin="DAT0" pad="DAT0"/>
+<connect gate="G$1" pin="DAT1" pad="DAT1"/>
+<connect gate="G$1" pin="DAT2" pad="DAT2"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SHIELD@1" pad="GND1"/>
+<connect gate="G$1" pin="SHIELD@3" pad="GND3"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-07820" constant="no"/>
 </technology>
 </technologies>
 </device>
