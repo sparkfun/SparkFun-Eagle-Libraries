@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -12080,16 +12080,16 @@ Three way navigation switch. Commonly used as up/down/select on MP3 players. Sch
 <deviceset name="RELAY">
 <description>SPDT relay (COM-00101)</description>
 <gates>
-<gate name="G$1" symbol="RELAY-SPDT" x="2.54" y="0"/>
+<gate name="K$1" symbol="RELAY-SPDT" x="2.54" y="0"/>
 </gates>
 <devices>
 <device name="PTH" package="RELAY-G5Q">
 <connects>
-<connect gate="G$1" pin="COIL1" pad="5"/>
-<connect gate="G$1" pin="COIL2" pad="1"/>
-<connect gate="G$1" pin="MAIN" pad="2"/>
-<connect gate="G$1" pin="NC" pad="4"/>
-<connect gate="G$1" pin="NO" pad="3"/>
+<connect gate="K$1" pin="COIL1" pad="5"/>
+<connect gate="K$1" pin="COIL2" pad="1"/>
+<connect gate="K$1" pin="MAIN" pad="2"/>
+<connect gate="K$1" pin="NC" pad="4"/>
+<connect gate="K$1" pin="NO" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12097,11 +12097,11 @@ Three way navigation switch. Commonly used as up/down/select on MP3 players. Sch
 </device>
 <device name="PTH2" package="RELAY-T9A">
 <connects>
-<connect gate="G$1" pin="COIL1" pad="COIL1"/>
-<connect gate="G$1" pin="COIL2" pad="COIL2"/>
-<connect gate="G$1" pin="MAIN" pad="MAIN"/>
-<connect gate="G$1" pin="NC" pad="NC"/>
-<connect gate="G$1" pin="NO" pad="NO"/>
+<connect gate="K$1" pin="COIL1" pad="COIL1"/>
+<connect gate="K$1" pin="COIL2" pad="COIL2"/>
+<connect gate="K$1" pin="MAIN" pad="MAIN"/>
+<connect gate="K$1" pin="NC" pad="NC"/>
+<connect gate="K$1" pin="NO" pad="NO"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12109,11 +12109,11 @@ Three way navigation switch. Commonly used as up/down/select on MP3 players. Sch
 </device>
 <device name="PTH3" package="RELAY-T9A-2">
 <connects>
-<connect gate="G$1" pin="COIL1" pad="COIL1"/>
-<connect gate="G$1" pin="COIL2" pad="COIL2"/>
-<connect gate="G$1" pin="MAIN" pad="MAIN"/>
-<connect gate="G$1" pin="NC" pad="NC"/>
-<connect gate="G$1" pin="NO" pad="NO"/>
+<connect gate="K$1" pin="COIL1" pad="COIL1"/>
+<connect gate="K$1" pin="COIL2" pad="COIL2"/>
+<connect gate="K$1" pin="MAIN" pad="MAIN"/>
+<connect gate="K$1" pin="NC" pad="NC"/>
+<connect gate="K$1" pin="NO" pad="NO"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12121,11 +12121,11 @@ Three way navigation switch. Commonly used as up/down/select on MP3 players. Sch
 </device>
 <device name="PTH4" package="RELAY-JZC">
 <connects>
-<connect gate="G$1" pin="COIL1" pad="5"/>
-<connect gate="G$1" pin="COIL2" pad="1"/>
-<connect gate="G$1" pin="MAIN" pad="4"/>
-<connect gate="G$1" pin="NC" pad="2"/>
-<connect gate="G$1" pin="NO" pad="3"/>
+<connect gate="K$1" pin="COIL1" pad="5"/>
+<connect gate="K$1" pin="COIL2" pad="1"/>
+<connect gate="K$1" pin="MAIN" pad="4"/>
+<connect gate="K$1" pin="NC" pad="2"/>
+<connect gate="K$1" pin="NO" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -12133,11 +12133,11 @@ Three way navigation switch. Commonly used as up/down/select on MP3 players. Sch
 </device>
 <device name="PTH5" package="RELAY-T90">
 <connects>
-<connect gate="G$1" pin="COIL1" pad="COIL1"/>
-<connect gate="G$1" pin="COIL2" pad="COIL2"/>
-<connect gate="G$1" pin="MAIN" pad="MAIN"/>
-<connect gate="G$1" pin="NC" pad="NC"/>
-<connect gate="G$1" pin="NO" pad="NO"/>
+<connect gate="K$1" pin="COIL1" pad="COIL1"/>
+<connect gate="K$1" pin="COIL2" pad="COIL2"/>
+<connect gate="K$1" pin="MAIN" pad="MAIN"/>
+<connect gate="K$1" pin="NC" pad="NC"/>
+<connect gate="K$1" pin="NO" pad="NO"/>
 </connects>
 <technologies>
 <technology name="">
