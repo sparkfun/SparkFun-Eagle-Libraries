@@ -4038,6 +4038,8 @@ Package used by L3G4200D 3-axis gyro&lt;br&gt;
 <pad name="1" x="-2" y="1.27" drill="0.8" diameter="1.6764"/>
 <pad name="2" x="-2" y="-1.27" drill="0.8" diameter="1.6764"/>
 <text x="-1.386" y="-2.93" size="1.27" layer="21">-</text>
+<text x="-2.54" y="5.08" size="1.016" layer="25">&gt;NAME</text>
+<text x="6.35" y="-2.54" size="1.016" layer="27" rot="R90">&gt;VALUE</text>
 </package>
 <package name="MIC_ELECTRET_SMD">
 <circle x="0" y="0" radius="1.626" width="1" layer="29"/>
@@ -11521,8 +11523,8 @@ For Vishay VNCL4000 proximity and ambient light sensor.&lt;br&gt;
 <wire x1="-2.54" y1="3.81" x2="-2.54" y2="0" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="3.81" x2="5.08" y2="3.81" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
-<text x="-2.54" y="5.08" size="1.778" layer="95">MIC</text>
-<text x="8.128" y="-2.032" size="1.778" layer="96" rot="R90">9.7MM</text>
+<text x="-2.54" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="8.128" y="-2.032" size="1.778" layer="96" rot="R90">&gt;Value</text>
 <pin name="2" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="1" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
@@ -14100,13 +14102,13 @@ Untested part.</description>
 <deviceset name="MIC">
 <description>Omni-directional electret microphone. 9.7mm standard diameter.</description>
 <gates>
-<gate name="MIC" symbol="BUZZER" x="0" y="0"/>
+<gate name="&gt;NAME" symbol="BUZZER" x="0" y="0"/>
 </gates>
 <devices>
 <device name="9.7MM" package="MIC-9.7MM">
 <connects>
-<connect gate="MIC" pin="1" pad="1"/>
-<connect gate="MIC" pin="2" pad="2"/>
+<connect gate="&gt;NAME" pin="1" pad="1"/>
+<connect gate="&gt;NAME" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -14116,8 +14118,8 @@ Untested part.</description>
 </device>
 <device name="ELECTRET_SMD" package="MIC_ELECTRET_SMD">
 <connects>
-<connect gate="MIC" pin="1" pad="1"/>
-<connect gate="MIC" pin="2" pad="2"/>
+<connect gate="&gt;NAME" pin="1" pad="1"/>
+<connect gate="&gt;NAME" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -14125,8 +14127,8 @@ Untested part.</description>
 </device>
 <device name="SMD_LESS_PASTE" package="MIC_ELECTRET_SMD_LESS_PASTE">
 <connects>
-<connect gate="MIC" pin="1" pad="1"/>
-<connect gate="MIC" pin="2" pad="2"/>
+<connect gate="&gt;NAME" pin="1" pad="1"/>
+<connect gate="&gt;NAME" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
