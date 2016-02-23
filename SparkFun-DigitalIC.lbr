@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -25613,88 +25613,91 @@ Schematic element and footprint for NXP LPC2144/2146/2148.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PSOC_52LP_68QFN" uservalue="yes">
+<deviceset name="PSOC_52LP_68QFN" prefix="U" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="CY8C52LP_68QFN_VDDIO0" x="-76.2" y="5.08"/>
-<gate name="G$2" symbol="CY8C52LP_68QFN_VDDIO1" x="-30.48" y="5.08"/>
-<gate name="G$3" symbol="CY8C52LP_68QFN_VDDIO2" x="12.7" y="5.08"/>
-<gate name="G$5" symbol="CY8C52LP_68QFN_VGLOBAL" x="0" y="-50.8"/>
-<gate name="G$4" symbol="CY8C52LP_68QFN_VDDIO3" x="-55.88" y="-50.8"/>
+<gate name="G1" symbol="CY8C52LP_68QFN_VDDIO0" x="-76.2" y="5.08"/>
+<gate name="G2" symbol="CY8C52LP_68QFN_VDDIO1" x="-30.48" y="5.08"/>
+<gate name="G3" symbol="CY8C52LP_68QFN_VDDIO2" x="12.7" y="5.08"/>
+<gate name="G5" symbol="CY8C52LP_68QFN_VGLOBAL" x="0" y="-50.8"/>
+<gate name="G4" symbol="CY8C52LP_68QFN_VDDIO3" x="-55.88" y="-50.8"/>
 </gates>
 <devices>
 <device name="" package="QFN-68">
 <connects>
-<connect gate="G$1" pin="P0[0]" pad="48"/>
-<connect gate="G$1" pin="P0[1]" pad="49"/>
-<connect gate="G$1" pin="P0[2]" pad="50"/>
-<connect gate="G$1" pin="P0[3]" pad="51"/>
-<connect gate="G$1" pin="P0[4]" pad="53"/>
-<connect gate="G$1" pin="P0[5]" pad="54"/>
-<connect gate="G$1" pin="P0[6]" pad="55"/>
-<connect gate="G$1" pin="P0[7]" pad="56"/>
-<connect gate="G$1" pin="P12[2]" pad="46"/>
-<connect gate="G$1" pin="P12[3]" pad="47"/>
-<connect gate="G$1" pin="VDDIO0" pad="52"/>
-<connect gate="G$2" pin="P12[6]" pad="20"/>
-<connect gate="G$2" pin="P12[7]" pad="21"/>
-<connect gate="G$2" pin="P1[0]" pad="11"/>
-<connect gate="G$2" pin="P1[1]" pad="12"/>
-<connect gate="G$2" pin="P1[2]" pad="13"/>
-<connect gate="G$2" pin="P1[3]" pad="14"/>
-<connect gate="G$2" pin="P1[4]" pad="15"/>
-<connect gate="G$2" pin="P1[5]" pad="16"/>
-<connect gate="G$2" pin="P1[6]" pad="18"/>
-<connect gate="G$2" pin="P1[7]" pad="19"/>
-<connect gate="G$2" pin="VDDIO1" pad="17"/>
-<connect gate="G$3" pin="P12[4]" pad="3"/>
-<connect gate="G$3" pin="P12[5]" pad="4"/>
-<connect gate="G$3" pin="P15[4]" pad="60"/>
-<connect gate="G$3" pin="P15[5]" pad="61"/>
-<connect gate="G$3" pin="P2[0]" pad="62"/>
-<connect gate="G$3" pin="P2[1]" pad="63"/>
-<connect gate="G$3" pin="P2[2]" pad="64"/>
-<connect gate="G$3" pin="P2[3]" pad="65"/>
-<connect gate="G$3" pin="P2[4]" pad="66"/>
-<connect gate="G$3" pin="P2[5]" pad="68"/>
-<connect gate="G$3" pin="P2[6]" pad="1"/>
-<connect gate="G$3" pin="P2[7]" pad="2"/>
-<connect gate="G$3" pin="VDDIO2" pad="67"/>
-<connect gate="G$4" pin="P12[0]" pad="38"/>
-<connect gate="G$4" pin="P12[1]" pad="39"/>
-<connect gate="G$4" pin="P15[0]" pad="27"/>
-<connect gate="G$4" pin="P15[1]" pad="28"/>
-<connect gate="G$4" pin="P15[2]" pad="40"/>
-<connect gate="G$4" pin="P15[3]" pad="41"/>
-<connect gate="G$4" pin="P3[0]" pad="29"/>
-<connect gate="G$4" pin="P3[1]" pad="30"/>
-<connect gate="G$4" pin="P3[2]" pad="31"/>
-<connect gate="G$4" pin="P3[3]" pad="32"/>
-<connect gate="G$4" pin="P3[4]" pad="33"/>
-<connect gate="G$4" pin="P3[5]" pad="34"/>
-<connect gate="G$4" pin="P3[6]" pad="36"/>
-<connect gate="G$4" pin="P3[7]" pad="37"/>
-<connect gate="G$4" pin="VDDIO3" pad="35"/>
-<connect gate="G$5" pin="!XRES" pad="10"/>
-<connect gate="G$5" pin="IND" pad="6"/>
-<connect gate="G$5" pin="P15[6]" pad="22"/>
-<connect gate="G$5" pin="P15[7]" pad="23"/>
-<connect gate="G$5" pin="VBAT" pad="8"/>
-<connect gate="G$5" pin="VBOOST" pad="7"/>
-<connect gate="G$5" pin="VCCA" pad="42"/>
-<connect gate="G$5" pin="VCCD0" pad="26"/>
-<connect gate="G$5" pin="VCCD1" pad="57"/>
-<connect gate="G$5" pin="VDDA" pad="44"/>
-<connect gate="G$5" pin="VDDD0" pad="24"/>
-<connect gate="G$5" pin="VDDD1" pad="59"/>
-<connect gate="G$5" pin="VSSA" pad="43"/>
-<connect gate="G$5" pin="VSSB" pad="5"/>
-<connect gate="G$5" pin="VSSD0" pad="9 69"/>
-<connect gate="G$5" pin="VSSD1" pad="25"/>
-<connect gate="G$5" pin="VSSD2" pad="45"/>
-<connect gate="G$5" pin="VSSD3" pad="58"/>
+<connect gate="G1" pin="P0[0]" pad="48"/>
+<connect gate="G1" pin="P0[1]" pad="49"/>
+<connect gate="G1" pin="P0[2]" pad="50"/>
+<connect gate="G1" pin="P0[3]" pad="51"/>
+<connect gate="G1" pin="P0[4]" pad="53"/>
+<connect gate="G1" pin="P0[5]" pad="54"/>
+<connect gate="G1" pin="P0[6]" pad="55"/>
+<connect gate="G1" pin="P0[7]" pad="56"/>
+<connect gate="G1" pin="P12[2]" pad="46"/>
+<connect gate="G1" pin="P12[3]" pad="47"/>
+<connect gate="G1" pin="VDDIO0" pad="52"/>
+<connect gate="G2" pin="P12[6]" pad="20"/>
+<connect gate="G2" pin="P12[7]" pad="21"/>
+<connect gate="G2" pin="P1[0]" pad="11"/>
+<connect gate="G2" pin="P1[1]" pad="12"/>
+<connect gate="G2" pin="P1[2]" pad="13"/>
+<connect gate="G2" pin="P1[3]" pad="14"/>
+<connect gate="G2" pin="P1[4]" pad="15"/>
+<connect gate="G2" pin="P1[5]" pad="16"/>
+<connect gate="G2" pin="P1[6]" pad="18"/>
+<connect gate="G2" pin="P1[7]" pad="19"/>
+<connect gate="G2" pin="VDDIO1" pad="17"/>
+<connect gate="G3" pin="P12[4]" pad="3"/>
+<connect gate="G3" pin="P12[5]" pad="4"/>
+<connect gate="G3" pin="P15[4]" pad="60"/>
+<connect gate="G3" pin="P15[5]" pad="61"/>
+<connect gate="G3" pin="P2[0]" pad="62"/>
+<connect gate="G3" pin="P2[1]" pad="63"/>
+<connect gate="G3" pin="P2[2]" pad="64"/>
+<connect gate="G3" pin="P2[3]" pad="65"/>
+<connect gate="G3" pin="P2[4]" pad="66"/>
+<connect gate="G3" pin="P2[5]" pad="68"/>
+<connect gate="G3" pin="P2[6]" pad="1"/>
+<connect gate="G3" pin="P2[7]" pad="2"/>
+<connect gate="G3" pin="VDDIO2" pad="67"/>
+<connect gate="G4" pin="P12[0]" pad="38"/>
+<connect gate="G4" pin="P12[1]" pad="39"/>
+<connect gate="G4" pin="P15[0]" pad="27"/>
+<connect gate="G4" pin="P15[1]" pad="28"/>
+<connect gate="G4" pin="P15[2]" pad="40"/>
+<connect gate="G4" pin="P15[3]" pad="41"/>
+<connect gate="G4" pin="P3[0]" pad="29"/>
+<connect gate="G4" pin="P3[1]" pad="30"/>
+<connect gate="G4" pin="P3[2]" pad="31"/>
+<connect gate="G4" pin="P3[3]" pad="32"/>
+<connect gate="G4" pin="P3[4]" pad="33"/>
+<connect gate="G4" pin="P3[5]" pad="34"/>
+<connect gate="G4" pin="P3[6]" pad="36"/>
+<connect gate="G4" pin="P3[7]" pad="37"/>
+<connect gate="G4" pin="VDDIO3" pad="35"/>
+<connect gate="G5" pin="!XRES" pad="10"/>
+<connect gate="G5" pin="IND" pad="6"/>
+<connect gate="G5" pin="P15[6]" pad="22"/>
+<connect gate="G5" pin="P15[7]" pad="23"/>
+<connect gate="G5" pin="VBAT" pad="8"/>
+<connect gate="G5" pin="VBOOST" pad="7"/>
+<connect gate="G5" pin="VCCA" pad="42"/>
+<connect gate="G5" pin="VCCD0" pad="26"/>
+<connect gate="G5" pin="VCCD1" pad="57"/>
+<connect gate="G5" pin="VDDA" pad="44"/>
+<connect gate="G5" pin="VDDD0" pad="24"/>
+<connect gate="G5" pin="VDDD1" pad="59"/>
+<connect gate="G5" pin="VSSA" pad="43"/>
+<connect gate="G5" pin="VSSB" pad="5"/>
+<connect gate="G5" pin="VSSD0" pad="9 69"/>
+<connect gate="G5" pin="VSSD1" pad="25"/>
+<connect gate="G5" pin="VSSD2" pad="45"/>
+<connect gate="G5" pin="VSSD3" pad="58"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-13261"/>
+<attribute name="VALUE" value="CY8C5288LTI"/>
+</technology>
 </technologies>
 </device>
 </devices>
