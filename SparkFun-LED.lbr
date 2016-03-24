@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -449,27 +449,6 @@ http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Components/LED/Top-Up%20LED%20Rin
 <wire x1="0.762" y1="-0.762" x2="-0.762" y2="-0.762" width="0.127" layer="21" curve="-180"/>
 <pad name="A" x="1.27" y="0" drill="0.8"/>
 <pad name="C" x="-1.27" y="0" drill="0.8"/>
-</package>
-<package name="LUXEON">
-<wire x1="-3.7" y1="1.5" x2="-3.7" y2="-1.5" width="0.2032" layer="21"/>
-<wire x1="3.7" y1="1.5" x2="3.7" y2="-1.5" width="0.2032" layer="21"/>
-<wire x1="0" y1="4" x2="3.7" y2="1.5" width="0.2032" layer="21" curve="-67.861525"/>
-<wire x1="0" y1="4" x2="-3.7" y2="1.5" width="0.2032" layer="21" curve="67.861525"/>
-<wire x1="0" y1="-4" x2="3.7" y2="-1.5" width="0.2032" layer="21" curve="67.859595"/>
-<wire x1="0" y1="-4" x2="-3.7" y2="-1.5" width="0.2032" layer="21" curve="-67.859595"/>
-<circle x="-4.7" y="1" radius="0.4123" width="0.2032" layer="21"/>
-<smd name="A" x="-6.1" y="-1.1" dx="2.85" dy="1.8" layer="1" roundness="25"/>
-<smd name="C" x="6.1" y="1.1" dx="2.85" dy="1.8" layer="1" roundness="25"/>
-<smd name="S" x="0" y="0" dx="5.2" dy="6" layer="1" roundness="50"/>
-<text x="-6.35" y="2.54" size="1.27" layer="51">+</text>
-<text x="5.08" y="-2.54" size="1.27" layer="51">-</text>
-</package>
-<package name="LUXEON-REBEL">
-<smd name="ANODE" x="-1.39" y="2.63" dx="1.91" dy="2.03" layer="1" roundness="50"/>
-<smd name="CATHODE" x="1.39" y="2.63" dx="1.91" dy="2.03" layer="1" roundness="50"/>
-<smd name="P$3" x="0" y="-1.42" dx="4.68" dy="3.03" layer="1" roundness="50"/>
-<text x="-2.54" y="3.175" size="0.508" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-3.175" size="0.508" layer="27">&gt;VALUE</text>
 </package>
 <package name="LED-RGB-THRU">
 <wire x1="2.5" y1="-1" x2="2.5" y2="1" width="0.127" layer="21"/>
@@ -1135,33 +1114,6 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <pin name="A" x="0" y="2.54" visible="off" length="short" rot="R270"/>
 <pin name="C" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
 </symbol>
-<symbol name="LUXEON">
-<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.524" y1="-0.508" x2="-2.921" y2="-1.905" width="0.1524" layer="94"/>
-<wire x1="-1.397" y1="-1.651" x2="-2.794" y2="-3.048" width="0.1524" layer="94"/>
-<wire x1="-5.08" y1="0" x2="-3.556" y2="0" width="0.1524" layer="94"/>
-<circle x="0" y="-1.27" radius="3.81" width="0.254" layer="94"/>
-<text x="6.096" y="-4.572" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="8.255" y="-4.572" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="C" x="0" y="-7.62" visible="off" length="middle" direction="pas" rot="R90"/>
-<pin name="A" x="0" y="5.08" visible="off" length="middle" direction="pas" rot="R270"/>
-<pin name="S" x="-7.62" y="0" visible="off" length="short"/>
-<polygon width="0.1524" layer="94">
-<vertex x="-2.921" y="-1.905"/>
-<vertex x="-2.54" y="-1.016"/>
-<vertex x="-2.032" y="-1.524"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="-2.794" y="-3.048"/>
-<vertex x="-2.413" y="-2.159"/>
-<vertex x="-1.905" y="-2.667"/>
-</polygon>
-</symbol>
 <symbol name="LED-RGB-CA">
 <pin name="RED_CATHODE" x="-5.08" y="5.08" visible="off" length="middle"/>
 <pin name="GREEN_CATHODE" x="-5.08" y="0" visible="off" length="middle"/>
@@ -1737,43 +1689,6 @@ http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Components/LED/Top-Up%20LED%20Rin
 </device>
 </devices>
 </deviceset>
-<deviceset name="LUXEON">
-<description>&lt;b&gt;Luxeon LED&lt;/b&gt;
-This footprint works with the current 1 Watt, 3 Watt, and 5 Watt LEDs. These blindingly bright LEDs generate a lot of heat so the footprint has a large pad under the LED for thermal transfer. Schematic and footprint are proven. Spark Fun Electronics SKU : COM-00603</description>
-<gates>
-<gate name="G$1" symbol="LUXEON" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SMD" package="LUXEON">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-<connect gate="G$1" pin="S" pad="S"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="LUXEON-REBEL">
-<description>Luxeon Rebel single-color high output LED</description>
-<gates>
-<gate name="G$1" symbol="LUXEON" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="LUXEON-REBEL">
-<connects>
-<connect gate="G$1" pin="A" pad="ANODE"/>
-<connect gate="G$1" pin="C" pad="CATHODE"/>
-<connect gate="G$1" pin="S" pad="P$3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LED-GREEN" prefix="D" uservalue="yes">
 <description>&lt;B&gt;Various green LEDs&lt;br&gt;&lt;br&gt;&lt;/B&gt;
 Green LEDs used in SFE Production&lt;br&gt;&lt;br&gt;
@@ -2134,18 +2049,6 @@ Rebel - DIO-09553&lt;br&gt;
 <technology name="">
 <attribute name="PROD_ID" value="DIO-09911"/>
 <attribute name="VALUE" value="BLUE" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="REBEL" package="LUXEON-REBEL">
-<connects>
-<connect gate="G$1" pin="A" pad="ANODE"/>
-<connect gate="G$1" pin="C" pad="CATHODE"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="DIO-09553"/>
-<attribute name="VALUE" value="BLUE"/>
 </technology>
 </technologies>
 </device>
