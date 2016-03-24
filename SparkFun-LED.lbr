@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -825,8 +825,16 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <rectangle x1="-1.4" y1="-2.2" x2="1.4" y2="-0.65" layer="31"/>
 </package>
 <package name="P-LCC-4-3">
-<description>&lt;h3&gt;Everlight Red/Green/Blue LED&lt;/h3&gt;
-67-23/R6GHBHC-B01/2T &lt;b&gt;||&lt;/b&gt; 67-23/R6GHBH-B01</description>
+<description>&lt;h3&gt;LED P-LCC-4-3 - SMT&lt;/h3&gt;
+
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 4&lt;/li&gt;
+&lt;li&gt;Pin pitch: 0.7mm &lt;/li&gt;
+&lt;li&gt;Size: 3.2*2.8*1.9mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device:
+&lt;ul&gt;&lt;li&gt;Everlight Red/Green/Blue LED&lt;/li&gt;
+&lt;li&gt;67-23/R6GHBHC-B01/2T &lt;b&gt;||&lt;/b&gt; 67-23/R6GHBH-B01&lt;/li&gt;</description>
 <wire x1="-1.4" y1="-1.75" x2="1.4" y2="-1.75" width="0.2032" layer="51"/>
 <wire x1="1.4" y1="-1.75" x2="1.4" y2="1.75" width="0.2032" layer="51"/>
 <wire x1="1.4" y1="1.75" x2="-1.4" y2="1.75" width="0.2032" layer="51"/>
@@ -836,8 +844,8 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <smd name="1" x="0.725" y="1.7" dx="0.75" dy="1.8" layer="1"/>
 <smd name="4" x="0.725" y="-1.7" dx="0.75" dy="1.8" layer="1"/>
 <smd name="3" x="-0.725" y="-1.7" dx="0.75" dy="1.8" layer="1"/>
-<text x="2.9438" y="-2.4534" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="4.427" y="-2.4518" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<text x="-1.65995" y="-1.8184" size="0.6096" layer="25" font="vector" ratio="20" rot="R90">&gt;NAME</text>
+<text x="1.5695" y="-1.8168" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-left">&gt;VALUE</text>
 <wire x1="-1.4" y1="0.508" x2="-1.4" y2="-0.508" width="0.2032" layer="21"/>
 <wire x1="-0.1016" y1="1.75" x2="0.1016" y2="1.75" width="0.2032" layer="21"/>
 <wire x1="1.4" y1="0.508" x2="1.4" y2="-0.508" width="0.2032" layer="21"/>
@@ -849,6 +857,7 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <vertex x="0" y="0.5588"/>
 </polygon>
 <circle x="0" y="0" radius="0.55764375" width="0.127" layer="21"/>
+<circle x="1.74625" y="1.905" radius="0.0508" width="0.3048" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -1411,7 +1420,8 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <text x="7.62" y="0" size="1.778" layer="94">G</text>
 </symbol>
 <symbol name="LED-RGB">
-<description>67-23/R6GHBHC-B01/2T</description>
+<description>&lt;h3&gt;Everlight Red/Green/Blue LED  67-23/R6GHBHC-B01/2T&lt;/h3&gt;
+&lt;p&gt;SMD Full-Color LED PLCC4&lt;/p&gt;</description>
 <wire x1="6.35" y1="1.778" x2="5.08" y2="-0.254" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-0.254" x2="3.81" y2="1.778" width="0.254" layer="94"/>
 <wire x1="6.35" y1="-0.254" x2="5.08" y2="-0.254" width="0.254" layer="94"/>
@@ -1439,8 +1449,8 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <wire x1="5.08" y1="2.54" x2="5.08" y2="0" width="0.1524" layer="94"/>
 <circle x="-5.08" y="2.54" radius="0.1796" width="0.254" layer="94"/>
 <circle x="0" y="2.54" radius="0.1796" width="0.254" layer="94"/>
-<text x="-2.54" y="3.302" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-2.54" y="5.461" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<text x="-8.382" y="-2.54" size="1.778" layer="95" font="vector" rot="R90">&gt;NAME</text>
+<text x="7.239" y="-2.54" size="1.778" layer="96" font="vector" rot="R90" align="top-left">&gt;VALUE</text>
 <pin name="RED" x="5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="GREEN" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="BLUE" x="-5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
@@ -2422,7 +2432,11 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 						&lt;td&gt;✓&lt;/td&gt;
 					&lt;/tr&gt;
 				&lt;/tbody&gt;
-				&lt;/table&gt;</description>
+				&lt;/table&gt;
+
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;&lt;li&gt;&lt;a href=”[https://www.sparkfun.com/products/13614]”&gt;[Qduino Mini]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="LED-RGB" x="0" y="0"/>
 </gates>
