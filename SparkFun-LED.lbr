@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -771,6 +771,16 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <circle x="-2.0398" y="-1.2636" radius="0.1" width="0.2032" layer="21"/>
 </package>
 <package name="LTST-C195KGJRKT">
+<description>&lt;h3&gt;0606 - LED SMT&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:4&lt;/li&gt;
+&lt;li&gt;Pin pitch: 0.8mm&lt;/li&gt;
+&lt;li&gt;Area:1.6mm L x 1.5mm W&lt;/li&gt;
+&lt;li&gt;Height: 0.55m&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;LTST-C195KGJRKT&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <smd name="P$1" x="0.425" y="0.725" dx="0.65" dy="0.85" layer="1"/>
 <smd name="P$2" x="-0.425" y="0.725" dx="0.65" dy="0.85" layer="1"/>
 <smd name="P$3" x="0.425" y="-0.725" dx="0.65" dy="0.85" layer="1"/>
@@ -788,6 +798,8 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <wire x1="0.1" y1="-1.5" x2="0.2" y2="-1.4" width="0.127" layer="21"/>
 <wire x1="-0.1" y1="-1.5" x2="0.1" y2="-1.5" width="0.127" layer="21"/>
 <circle x="0.4" y="0.5" radius="0.1" width="0.127" layer="51"/>
+<text x="-0.9525" y="-1.27" size="0.6096" layer="25" ratio="20" rot="R90">&gt;NAME</text>
+<text x="0.9525" y="-1.27" size="0.6096" layer="27" ratio="20" rot="R90" align="top-left">&gt;VALUE</text>
 </package>
 <package name="SFH4641-SHORT2">
 <smd name="C" x="0" y="2.035" dx="5.62" dy="2.77" layer="1" stop="no" cream="no"/>
@@ -1347,6 +1359,7 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <wire x1="-1.27" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
 </symbol>
 <symbol name="LED-RG">
+<description>&lt;h3&gt;LiteOn Technology Corporation LTST-C195KGJRKT - LED GREEN/RED CLEAR 0606 SMD&lt;/h3&gt;</description>
 <wire x1="6.35" y1="0" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-2.54" x2="3.81" y2="0" width="0.254" layer="94"/>
 <wire x1="6.35" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
@@ -1355,8 +1368,8 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <wire x1="5.08" y1="0" x2="3.81" y2="0" width="0.254" layer="94"/>
 <wire x1="3.048" y1="-0.762" x2="1.651" y2="-2.159" width="0.1524" layer="94"/>
 <wire x1="3.175" y1="-1.905" x2="1.778" y2="-3.302" width="0.1524" layer="94"/>
-<text x="13.716" y="-4.572" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="15.875" y="-4.572" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<text x="-7.874" y="-5.207" size="1.778" layer="95" font="vector" rot="R90">&gt;NAME</text>
+<text x="10.4775" y="-5.207" size="1.778" layer="96" font="vector" rot="R90" align="top-left">&gt;VALUE</text>
 <pin name="GC" x="5.08" y="-7.62" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="GA" x="5.08" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 <polygon width="0.1524" layer="94">
@@ -2331,6 +2344,20 @@ LILYPAD- DIO-09910&lt;br&gt;</description>
 </devices>
 </deviceset>
 <deviceset name="LED-RG" prefix="D">
+<description>&lt;h3&gt;LiteOn Technology Corporation LTST-C195KGJRKT - LED GREEN/RED CLEAR 0606 SMD&lt;/h3&gt;
+
+&lt;p&gt;&lt;li&gt;&lt;b&gt;Color:&lt;/b&gt; Red/Green&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Lens Transparency: &lt;/b&gt; Clear&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Lens Style/Size:&lt;/b&gt; Rectangle with Flat top, 1.10 x 1.5 mm&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;mC Rating&lt;/b&gt;45mcd Red, 35 mcd Green&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt; 20mA Red, 20mA Green&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt; 2V Red, 2V Green&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Packages:&lt;/b&gt; 0606&lt;/li&gt;
+&lt;/p&gt;
+
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;&lt;li&gt;&lt;a href=”[https://www.sparkfun.com/products/12958]”&gt;Electric Imp imp002 Breakout&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="LED-RG" x="-2.54" y="0"/>
 </gates>
