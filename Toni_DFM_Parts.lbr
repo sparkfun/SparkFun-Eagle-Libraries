@@ -181,6 +181,19 @@
 <text x="-2.54" y="3.175" size="0.508" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-3.175" size="0.508" layer="27">&gt;VALUE</text>
 </package>
+<package name="LIGHTPIPE-7511">
+<wire x1="-2.2352" y1="-4.5974" x2="2.2352" y2="-4.5974" width="0.127" layer="21"/>
+<wire x1="-2.2352" y1="-4.5974" x2="-2.2352" y2="-2.3114" width="0.127" layer="21"/>
+<wire x1="-2.2352" y1="-2.3114" x2="-2.2352" y2="4.6228" width="0.127" layer="21"/>
+<wire x1="-1.5748" y1="7.0358" x2="1.5748" y2="7.0358" width="0.127" layer="21"/>
+<wire x1="2.2352" y1="4.6228" x2="2.2352" y2="-2.3114" width="0.127" layer="21"/>
+<wire x1="2.2352" y1="-2.3114" x2="2.2352" y2="-4.5974" width="0.127" layer="21"/>
+<wire x1="-2.2352" y1="-2.3114" x2="2.2352" y2="-2.3114" width="0.127" layer="21"/>
+<wire x1="-1.5748" y1="7.0358" x2="-2.2352" y2="4.6228" width="0.127" layer="21"/>
+<wire x1="1.5748" y1="7.0358" x2="2.2352" y2="4.6228" width="0.127" layer="21"/>
+<hole x="0" y="0" drill="1.6764"/>
+<hole x="0" y="3.175" drill="1.6764"/>
+</package>
 </packages>
 <symbols>
 <symbol name="APA3010SF4C">
@@ -220,6 +233,13 @@
 <vertex x="-2.413" y="-2.159"/>
 <vertex x="-1.905" y="-2.667"/>
 </polygon>
+</symbol>
+<symbol name="LIGHTPIPE-7511">
+<wire x1="0" y1="0" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="2.54" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0.508" y="0.508" size="1.27" layer="94">7511Lightpipe</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -274,6 +294,18 @@ This footprint works with the current 1 Watt, 3 Watt, and 5 Watt LEDs. These bli
 <connect gate="G$1" pin="C" pad="CATHODE"/>
 <connect gate="G$1" pin="S" pad="P$3"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LIGHTPIPE-7511">
+<gates>
+<gate name="G$1" symbol="LIGHTPIPE-7511" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LIGHTPIPE-7511">
 <technologies>
 <technology name=""/>
 </technologies>
