@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.005" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -780,17 +780,22 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 <smd name="P$2" x="6.05" y="0" dx="4.7" dy="1.75" layer="1" rot="R90"/>
 </package>
 <package name="1007">
-<description>1007 (2518 metric) package</description>
-<wire x1="0.9" y1="1.25" x2="-0.9" y2="1.25" width="0.127" layer="51"/>
-<wire x1="-0.9" y1="1.25" x2="-0.9" y2="-1.25" width="0.127" layer="51"/>
-<wire x1="-0.9" y1="-1.25" x2="0.9" y2="-1.25" width="0.127" layer="51"/>
-<wire x1="0.9" y1="-1.25" x2="0.9" y2="1.25" width="0.127" layer="51"/>
-<wire x1="-1" y1="-0.4" x2="-1" y2="0.4" width="0.127" layer="21"/>
-<wire x1="1" y1="-0.4" x2="1" y2="0.4" width="0.127" layer="21"/>
-<smd name="1" x="0" y="1" dx="2" dy="0.8" layer="1"/>
-<smd name="2" x="0" y="-1" dx="2" dy="0.8" layer="1"/>
-<text x="0" y="1.6" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<description>&lt;p&gt;&lt;b&gt;Generic 2518 (1007) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<wire x1="-1.25" y1="0.9" x2="-1.25" y2="-0.9" width="0.127" layer="51"/>
+<wire x1="-1.25" y1="-0.9" x2="1.25" y2="-0.9" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-0.9" x2="1.25" y2="0.9" width="0.127" layer="51"/>
+<wire x1="1.25" y1="0.9" x2="-1.25" y2="0.9" width="0.127" layer="51"/>
+<wire x1="0.4" y1="-1" x2="-0.4" y2="-1" width="0.127" layer="21"/>
+<wire x1="0.4" y1="1" x2="-0.4" y2="1" width="0.127" layer="21"/>
+<smd name="1" x="-1" y="0" dx="2" dy="0.8" layer="1" rot="R90"/>
+<smd name="2" x="1" y="0" dx="2" dy="0.8" layer="1" rot="R90"/>
+<text x="0" y="1.27" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-1.6" y1="1.2" x2="1.6" y2="1.2" width="0.0508" layer="39"/>
+<wire x1="1.6" y1="1.2" x2="1.6" y2="-1.2" width="0.0508" layer="39"/>
+<wire x1="1.6" y1="-1.2" x2="-1.6" y2="-1.2" width="0.0508" layer="39"/>
+<wire x1="-1.6" y1="-1.2" x2="-1.6" y2="1.2" width="0.0508" layer="39"/>
 </package>
 <package name="COOPER_UP4B">
 <wire x1="-6.3" y1="7" x2="-7.5" y2="2" width="0.2032" layer="21"/>
@@ -1232,8 +1237,9 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <wire x1="3.91" y1="-2" x2="-3.91" y2="-2" width="0.127" layer="51"/>
 <wire x1="-3.91" y1="-2" x2="-3.91" y2="2" width="0.127" layer="51"/>
 </package>
-<package name="CAPCP1608">
-<description>Polarized footprint for tantalum 0603 sized capacitors.</description>
+<package name="0603-POLARIZED">
+<description>&lt;p&gt;&lt;b&gt;Polarized 1608 (0603) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
 <wire x1="-1.1" y1="-0.8" x2="-1.7" y2="-0.8" width="0.2032" layer="51"/>
 <wire x1="-1.7" y1="-0.8" x2="-1.7" y2="0.8" width="0.2032" layer="51"/>
 <wire x1="-1.7" y1="0.8" x2="-1.1" y2="0.8" width="0.2032" layer="51"/>
@@ -1242,20 +1248,19 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <wire x1="1.9" y1="-0.4" x2="1.9" y2="0.4" width="0.2032" layer="51"/>
 <wire x1="1.9" y1="0.4" x2="1.5" y2="0.8" width="0.2032" layer="51"/>
 <wire x1="1.5" y1="0.8" x2="1.1" y2="0.8" width="0.2032" layer="51"/>
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-1.6" y1="0.7" x2="1.6" y2="0.7" width="0.0508" layer="39"/>
+<wire x1="1.6" y1="0.7" x2="1.6" y2="-0.7" width="0.0508" layer="39"/>
+<wire x1="1.6" y1="-0.7" x2="-1.6" y2="-0.7" width="0.0508" layer="39"/>
+<wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.0508" layer="39"/>
 <wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
 <wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<wire x1="0" y1="0.027940625" x2="0" y2="-0.027940625" width="0.381" layer="21"/>
 <smd name="K" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
 <smd name="A" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
 <text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 <rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<circle x="1.7" y="0" radius="0.05" width="0.15" layer="21"/>
+<wire x1="1.651" y1="0.508" x2="1.651" y2="-0.508" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -1665,101 +1670,14 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 </device>
 </devices>
 </deviceset>
-<deviceset name="0.01UF-1000V-10%(1812)" prefix="C" uservalue="yes">
-<description>CAP-09114</description>
-<gates>
-</gates>
-<devices>
-</devices>
-</deviceset>
-<deviceset name="0.1UF-100V-10%(0603)" prefix="C" uservalue="yes">
-<description>CAP-08390</description>
+<deviceset name="0.22UF" prefix="C">
+<description>&lt;h3&gt;0.22µF ceramic capacitors&lt;/h3&gt;
+&lt;p&gt;A capacitor (originally known as a condenser) is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="CAP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-08390" constant="no"/>
-<attribute name="VALUE" value="0.1uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="0.1UF-25V-5%(0603)" prefix="C" uservalue="yes">
-<description>CAP-08604</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-08604"/>
-<attribute name="VALUE" value="0.1uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="0.1UF-25V(+80/-20%)(0603)" prefix="C" uservalue="yes">
-<description>CAP-00810&lt;br&gt;
-Ceramic&lt;br&gt;
-Standard decoupling cap</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-00810"/>
-<attribute name="VALUE" value="0.1uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="0.1UF-50V-20%(PTH)" prefix="C" uservalue="yes">
-<description>CAP-08370</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="-2.54"/>
-</gates>
-<devices>
-<device name="KIT-EZ" package="CAP-PTH-SMALL-KIT">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-08370" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="0.22UF-25V-10%(0603)" prefix="C" uservalue="yes">
-<description>CAP-07822</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="0603">
+<device name="-0603-25V-10%" package="0603">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1771,89 +1689,27 @@ Standard decoupling cap</description>
 </technology>
 </technologies>
 </device>
-</devices>
-</deviceset>
-<deviceset name="0.22UF50V-20%,+80%(0603)" prefix="C" uservalue="yes">
-<description>CAP-09885</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="0603">
+<device name="-0603-50V-(-20/+80%)" package="0603">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="CAP-09885" constant="no"/>
-<attribute name="VALUE" value="0.22uF" constant="no"/>
+<attribute name="PROD_ID" value="CAP-09885"/>
+<attribute name="VALUE" value="0.22uF"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="0.33UF-50V-10%(0805)" prefix="C" uservalue="yes">
-<description>CAP-08469</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="0805">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-08469" constant="no"/>
-<attribute name="VALUE" value="0.33uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="0.33UF-50V-10%(TANT)" prefix="C" uservalue="yes">
-<description>CAP-08617</description>
-<gates>
-</gates>
-<devices>
-</devices>
-</deviceset>
-<deviceset name="0.47UF-25V--20%,+80%(PTH)" prefix="C" uservalue="yes">
-<description>CAP-09152</description>
-<gates>
-</gates>
-<devices>
-</devices>
-</deviceset>
-<deviceset name="0.75PF-50V(-/+.25PF)(0603)" prefix="C" uservalue="yes">
-<description>CAP-07878</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-07878" constant="no"/>
-<attribute name="VALUE" value="0.75pF" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="1.0PF-50V(-/+.25PF)(0603)" prefix="C" uservalue="yes">
+<deviceset name="1.0PF" prefix="C">
 <description>CAP-07879</description>
 <gates>
 <gate name="G$1" symbol="CAP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="0603">
+<device name="-0603-50V-25%" package="0603">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1867,87 +1723,13 @@ Standard decoupling cap</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="1.0UF50V10%(1206)" prefix="C" uservalue="yes">
-<description>CAP-09822</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1206-CAP">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-09822"/>
-<attribute name="VALUE" value="1.0uF"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="1.0UF-100V-10%(1206)" prefix="C" uservalue="yes">
-<description>CAP-10742</description>
-<gates>
-</gates>
-<devices>
-</devices>
-</deviceset>
-<deviceset name="1.0UF-16V-10%(0603)" prefix="C" uservalue="yes">
-<description>CAP-00868</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-00868"/>
-<attribute name="VALUE" value="1.0uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="1.0UF-50V-20%-(ELECT)" prefix="C" uservalue="yes">
-<description>CAP-10222</description>
-<gates>
-</gates>
-<devices>
-</devices>
-</deviceset>
-<deviceset name="1.2PF-50V-20%(0603)" prefix="C" uservalue="yes">
-<description>CAP-09201</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-09201" constant="no"/>
-<attribute name="VALUE" value="1.2pF" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="1.5PF-50V(+/-.25PF)(0603)" prefix="C" uservalue="yes">
+<deviceset name="1.5PF" prefix="C">
 <description>CAP-08763</description>
 <gates>
 <gate name="G$1" symbol="CAP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="0603">
+<device name="-0603-50V-16.667%" package="0603">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1961,22 +1743,10 @@ Standard decoupling cap</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="1000UF-10V-20%(PTH)" prefix="C" uservalue="yes">
-<description>CAP-08514</description>
-<gates>
-</gates>
-<devices>
-</devices>
-</deviceset>
-<deviceset name="1000UF-25V-20%(PTH)" prefix="C" uservalue="yes">
-<description>CAP-09538</description>
-<gates>
-</gates>
-<devices>
-</devices>
-</deviceset>
 <deviceset name="1000UF-25V(PTH)" prefix="C" uservalue="yes">
-<description>CAP-08070</description>
+<description>&lt;h3&gt;1,000µF/1mF ceramic capacitors&lt;/h3&gt;
+&lt;p&gt;A capacitor (originally known as a condenser) is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;
+CAP-08070</description>
 <gates>
 <gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
 </gates>
@@ -2380,20 +2150,14 @@ Ceramic&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="1NF-100V-5%(PTH)" prefix="C" uservalue="yes">
-<description>CAP-09182</description>
-<gates>
-</gates>
-<devices>
-</devices>
-</deviceset>
-<deviceset name="1NF/1000PF-50V-10%(0603)" prefix="C" uservalue="yes">
-<description>CAP-07886</description>
+<deviceset name="1.0NF/1000PF" prefix="C" uservalue="yes">
+<description>&lt;h3&gt;1nF/1,000pF ceramic capacitors&lt;/h3&gt;
+&lt;p&gt;A capacitor (originally known as a condenser) is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="CAP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="0603">
+<device name="-0603-50V-10%" package="0603">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -2407,44 +2171,14 @@ Ceramic&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="1UF-25V-10%(0805)" prefix="C" uservalue="yes">
-<description>CAP-08064</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="-2.54"/>
-</gates>
-<devices>
-<device name="&quot;" package="0805">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="1UF-35V-20%(ELECT)" prefix="C" uservalue="yes">
-<description>CAP-09577</description>
-<gates>
-</gates>
-<devices>
-</devices>
-</deviceset>
-<deviceset name="1UF-50V--20,+80%(PTH)" prefix="C" uservalue="yes">
-<description>CAP-09184</description>
-<gates>
-</gates>
-<devices>
-</devices>
-</deviceset>
-<deviceset name="2.2NF/2200PF-50V-10%(0603)" prefix="C" uservalue="yes">
-<description>CAP-07877</description>
+<deviceset name="2.2NF/2200PF" prefix="C">
+<description>&lt;h3&gt;2.2nF/2,200pF ceramic capacitors&lt;/h3&gt;
+&lt;p&gt;A capacitor (originally known as a condenser) is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="CAP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="0603">
+<device name="-0603-50V-10%" package="0603">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -2458,13 +2192,14 @@ Ceramic&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="2.2UF-10V-20%(0603)" prefix="C" uservalue="yes">
-<description>CAP-07888</description>
+<deviceset name="2.2UF" prefix="C">
+<description>&lt;h3&gt;2.2µF ceramic capacitors&lt;/h3&gt;
+&lt;p&gt;A capacitor (originally known as a condenser) is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="CAP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="0603">
+<device name="-0603-10V-20%" package="0603">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -2476,21 +2211,28 @@ Ceramic&lt;br&gt;</description>
 </technology>
 </technologies>
 </device>
-</devices>
-</deviceset>
-<deviceset name="2.2UF50V10%(1206)" prefix="C" uservalue="yes">
-<description>CAP-10009</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="-1.27"/>
-</gates>
-<devices>
-<device name="" package="1206-CAP">
+<device name="-0805-25V-(+80/-20%)" package="0805">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-11624"/>
+<attribute name="VALUE" value="2.2uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-1206-50V-10%" package="1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-10009"/>
+<attribute name="VALUE" value="2.2uF"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3071,84 +2813,6 @@ Ceramic&lt;BR&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="1.0UF-25V-+80/-20(0805)" prefix="C" uservalue="yes">
-<description>CAP-11625</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="&quot;" package="0805">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-11625"/>
-<attribute name="VALUE" value="1.0uF"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="2.2UF-25V-+80/-20(0805)" prefix="C" uservalue="yes">
-<description>CAP-11624</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="0805">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-11624" constant="no"/>
-<attribute name="VALUE" value="2.2uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="0.1UF-16V(+-10%)(0402)" prefix="C" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="0402">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-12416"/>
-<attribute name="VALUE" value="0.1uF"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="1.0UF-16V-10%(0402)" prefix="C" uservalue="yes">
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="0402">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-12417"/>
-<attribute name="VALUE" value="1.0uF"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="10PF-50V-5%(0603)" prefix="C">
 <description>CAP-11812</description>
 <gates>
@@ -3169,19 +2833,22 @@ Ceramic&lt;BR&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="0.18UF-10V(+-10%)(0603)">
+<deviceset name="0.18UF" prefix="C">
+<description>&lt;h3&gt;0.18µF ceramic capacitor&lt;/h3&gt;
+&lt;p&gt;A capacitor (originally known as a condenser) is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="CAP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="0603">
+<device name="-0603-10V-10%" package="0603">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="CAP-12380" constant="no"/>
+<attribute name="PROD_ID" value="CAP-12380"/>
+<attribute name="VALUE" value="0.18uF"/>
 </technology>
 </technologies>
 </device>
@@ -3249,7 +2916,7 @@ Ceramic&lt;BR&gt;</description>
 <gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="&quot;" package="CAPCP1608">
+<device name="&quot;" package="0603-POLARIZED">
 <connects>
 <connect gate="G$1" pin="+" pad="A"/>
 <connect gate="G$1" pin="-" pad="K"/>
@@ -3263,60 +2930,9 @@ Ceramic&lt;BR&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="CAPC1608" prefix="C">
-<description>1608 (0603) ceramic capacitors</description>
-<gates>
-<gate name="G$1" symbol="CAP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-1.0UF-16V-10%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-00868"/>
-<attribute name="VALUE" value="1.0uF"/>
-</technology>
-</technologies>
-</device>
-<device name="-0.1UF-25V-(+80/-20%)" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-00810"/>
-<attribute name="VALUE" value="0.1uF"/>
-</technology>
-</technologies>
-</device>
-<device name="-47PF-50V-5%" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-08913"/>
-<attribute name="VALUE" value="47pF"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="1.0UF" prefix="C">
 <description>&lt;h3&gt;1µF ceramic capacitors&lt;/h3&gt;
-&lt;p&gt;A capacitor (originally known as a condenser) is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;
-&lt;p&gt;Variants:
-&lt;ul&gt;
-&lt;li&gt;&lt;b&gt;1005 ceramic chip&lt;/b&gt;: 1.0mm x 0.5 mm SMT package&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;1608 ceramic chip&lt;/b&gt;: 1.6mm x 0.8 mm SMT package&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;2012 ceramic chip&lt;/b&gt;: 2.0mm x 1.2 mm SMT package&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;3216 ceramic chip&lt;/b&gt;: 3.2mm x 1.6 mm SMT package&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;p&gt;A capacitor (originally known as a condenser) is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="CAP" x="0" y="0"/>
 </gates>
@@ -3345,7 +2961,7 @@ Ceramic&lt;BR&gt;</description>
 </technology>
 </technologies>
 </device>
-<device name="-0805-25V-(+80-20%)" package="0805">
+<device name="-0805-25V-(+80/-20%)" package="0805">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -3366,6 +2982,87 @@ Ceramic&lt;BR&gt;</description>
 <technology name="">
 <attribute name="PROD_ID" value="CAP-09822"/>
 <attribute name="VALUE" value="1.0uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-0805-25V-10%" package="0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08064"/>
+<attribute name="VALUE" value="1.0uF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="0.1UF" prefix="C">
+<description>&lt;h3&gt;0.1µF ceramic capacitors&lt;/h3&gt;
+&lt;p&gt;A capacitor (originally known as a condenser) is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0402-16V-10%" package="0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-12416"/>
+<attribute name="VALUE" value="0.1uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-0603-25V-(+80/-20%)" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-00810"/>
+<attribute name="VALUE" value="0.1uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-0603-25V-5%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08604"/>
+<attribute name="VALUE" value="0.1uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-KIT-EZ-50V-20%" package="CAP-PTH-SMALL-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08370"/>
+<attribute name="VALUE" value="0.1uF"/>
+</technology>
+</technologies>
+</device>
+<device name="-0603-100V-10%" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-08390"/>
+<attribute name="VALUE" value="0.1uF"/>
 </technology>
 </technologies>
 </device>
