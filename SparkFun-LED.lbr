@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.0125" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -28,7 +28,7 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -492,6 +492,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <hole x="0" y="-14" drill="3"/>
 </package>
 <package name="LTE-302">
+<description>&lt;h3&gt;IR Emitter/Detector&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
+&lt;li&gt;Pin pitch: 2.54mm&lt;/li&gt;
+&lt;li&gt;Area: 2.25 x 4.4 mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;a href="https://www.sparkfun.com/datasheets/Components/LTE-302.pdf"&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;LTE-302&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <wire x1="2.159" y1="0.762" x2="2.159" y2="-0.762" width="0.127" layer="21"/>
 <wire x1="2.159" y1="-0.762" x2="0.762" y2="-0.762" width="0.127" layer="21"/>
 <wire x1="0.762" y1="-0.762" x2="0.381" y2="-0.762" width="0.127" layer="21"/>
@@ -510,6 +520,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0.762" y1="-0.762" x2="-0.762" y2="-0.762" width="0.127" layer="21" curve="-180"/>
 <pad name="A" x="1.27" y="0" drill="0.8"/>
 <pad name="C" x="-1.27" y="0" drill="0.8"/>
+<text x="-1.27" y="0.9525" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-1.5875" size="0.6096" layer="27" font="vector" ratio="20" align="top-left">&gt;VALUE</text>
 </package>
 <package name="LED-RGB-THRU">
 <description>&lt;h3&gt;LED - RGB PTH&lt;/h3&gt;
@@ -1143,6 +1155,7 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <pin name="9" x="15.24" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
 </symbol>
 <symbol name="LTE-302">
+<description>&lt;h3&gt;Lite-On LTE-302 IR Emittor/Detector&lt;/h3&gt;</description>
 <wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
@@ -1153,8 +1166,8 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <wire x1="2.54" y1="-2.032" x2="1.27" y2="-0.762" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-2.032" x2="2.286" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-2.032" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
-<text x="3.556" y="-3.048" size="1.27" layer="94">&gt;VALUE</text>
-<text x="3.556" y="-1.016" size="1.27" layer="94">&gt;NAME</text>
+<text x="3.048" y="-4.064" size="1.778" layer="96" font="vector" rot="R90" align="top-left">&gt;VALUE</text>
+<text x="-1.524" y="-4.064" size="1.778" layer="95" font="vector" rot="R90">&gt;NAME</text>
 <pin name="A" x="0" y="2.54" visible="off" length="short" rot="R270"/>
 <pin name="C" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
 </symbol>
@@ -1625,7 +1638,7 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 <gate name="J" symbol="LED_BARGRAPH_10" x="10.16" y="-17.78"/>
 </gates>
 <devices>
-<device name="" package="LED_BARGAPH_10">
+<device name="RED" package="LED_BARGAPH_10">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="C" pad="20"/>
@@ -1649,7 +1662,40 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 <connect gate="J" pin="C" pad="11"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-10615" constant="no"/>
+<attribute name="VALUE" value="RED" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="YELLOW" package="LED_BARGAPH_10">
+<connects>
+<connect gate="A" pin="A" pad="1"/>
+<connect gate="A" pin="C" pad="20"/>
+<connect gate="B" pin="A" pad="2"/>
+<connect gate="B" pin="C" pad="19"/>
+<connect gate="C" pin="A" pad="3"/>
+<connect gate="C" pin="C" pad="18"/>
+<connect gate="D" pin="A" pad="4"/>
+<connect gate="D" pin="C" pad="17"/>
+<connect gate="E" pin="A" pad="5"/>
+<connect gate="E" pin="C" pad="16"/>
+<connect gate="F" pin="A" pad="6"/>
+<connect gate="F" pin="C" pad="15"/>
+<connect gate="G" pin="A" pad="7"/>
+<connect gate="G" pin="C" pad="14"/>
+<connect gate="H" pin="A" pad="8"/>
+<connect gate="H" pin="C" pad="13"/>
+<connect gate="I" pin="A" pad="9"/>
+<connect gate="I" pin="C" pad="12"/>
+<connect gate="J" pin="A" pad="10"/>
+<connect gate="J" pin="C" pad="11"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-10614" constant="no"/>
+<attribute name="VALUE" value="YELLOW" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1731,7 +1777,11 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 </devices>
 </deviceset>
 <deviceset name="LTE-302" prefix="D" uservalue="yes">
-<description>Through-hole side-firing 940nm IR LED</description>
+<description>&lt;h3&gt;Lite-On Electronics LTE-302&lt;/h3&gt;
+&lt;p&gt;Through-hole side-firing 940nm IR Emitters and Detectors&lt;/p&gt;
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/241”&gt;Infrared Emitters and Detectors&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="LTE-302" x="0" y="1.016"/>
 </gates>
@@ -1742,7 +1792,10 @@ COM-09938 (green, Vf = 3.4V, Ifmax = 20mA)&lt;br&gt;</description>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-10904" constant="no"/>
+<attribute name="SF_ID" value="SEN-00241" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
