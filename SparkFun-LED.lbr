@@ -1180,39 +1180,6 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <pin name="A" x="0" y="2.54" visible="off" length="short" rot="R270"/>
 <pin name="C" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
 </symbol>
-<symbol name="LED-RGB-CA-OLD">
-<description>&lt;h3&gt;LED RGB CA &lt;/h3&gt;
-&lt;p&gt;Common Anode Red/Green/Blue LED&lt;/p&gt;</description>
-<pin name="RED_CATHODE" x="-5.08" y="5.08" visible="off" length="middle"/>
-<pin name="GREEN_CATHODE" x="-5.08" y="0" visible="off" length="middle"/>
-<pin name="BLUE_CATHODE" x="-5.08" y="-5.08" visible="off" length="middle"/>
-<pin name="ANODE" x="10.16" y="0" visible="off" length="middle" rot="R180"/>
-<wire x1="2.54" y1="3.556" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="6.604" width="0.254" layer="94"/>
-<wire x1="2.54" y1="6.604" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="2.54" y2="3.556" width="0.254" layer="94"/>
-<wire x1="0" y1="3.556" x2="0" y2="6.604" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-1.524" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="1.524" width="0.254" layer="94"/>
-<wire x1="2.54" y1="1.524" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="2.54" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="0" y1="-1.524" x2="0" y2="1.524" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-6.604" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="2.54" y2="-3.556" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-3.556" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="-5.08" x2="2.54" y2="-6.604" width="0.254" layer="94"/>
-<wire x1="0" y1="-6.604" x2="0" y2="-3.556" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="5.08" y2="0" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="2.54" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<text x="0.254" y="7.112" size="0.8128" layer="94" font="vector">RED</text>
-<text x="0.254" y="2.032" size="0.8128" layer="94" font="vector">GREEN</text>
-<text x="0.254" y="-3.048" size="0.8128" layer="94" font="vector">BLUE</text>
-<text x="5.842" y="1.524" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="5.842" y="-3.556" size="1.778" layer="96" font="vector">&gt;VALUE</text>
-</symbol>
 <symbol name="LED-RGB-CC-OLD">
 <description>&lt;h3&gt;LED RGB CC &lt;/h3&gt;
 &lt;p&gt;Common Cathode Red/Green/Blue LED&lt;/p&gt;</description>
@@ -2035,75 +2002,79 @@ LilyPad 1206- DIO-09909&lt;br&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED-RGB-CA-THRU" prefix="D">
+<deviceset name="LED-RGB-CA-THRU" prefix="D" uservalue="yes">
 <description>RGB Through-hole common anode&lt;br&gt;
 SparkFun store front&lt;br&gt;
 COM-10821 (diffuse)&lt;br&gt;
 COM-10820 (clear)&lt;br&gt;</description>
 <gates>
-<gate name="G$1" symbol="LED-RGB-CA-OLD" x="0" y="0"/>
+<gate name="G$1" symbol="LED-RGB-CA" x="0" y="0"/>
 </gates>
 <devices>
 <device name="DIFFUSE" package="LED-RGB-THRU">
 <connects>
-<connect gate="G$1" pin="ANODE" pad="2"/>
-<connect gate="G$1" pin="BLUE_CATHODE" pad="4"/>
-<connect gate="G$1" pin="GREEN_CATHODE" pad="3"/>
-<connect gate="G$1" pin="RED_CATHODE" pad="1"/>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="BLU" pad="4"/>
+<connect gate="G$1" pin="GRN" pad="3"/>
+<connect gate="G$1" pin="RED" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-10632"/>
+<attribute name="VALUE" value="DIFFUSE" constant="no"/>
 </technology>
 </technologies>
 </device>
 <device name="CLEAR" package="LED-RGB-THRU">
 <connects>
-<connect gate="G$1" pin="ANODE" pad="2"/>
-<connect gate="G$1" pin="BLUE_CATHODE" pad="4"/>
-<connect gate="G$1" pin="GREEN_CATHODE" pad="3"/>
-<connect gate="G$1" pin="RED_CATHODE" pad="1"/>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="BLU" pad="4"/>
+<connect gate="G$1" pin="GRN" pad="3"/>
+<connect gate="G$1" pin="RED" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-10631"/>
+<attribute name="VALUE" value="CLEAR" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED-RGB-CC-THRU" prefix="D">
+<deviceset name="LED-RGB-CC-THRU" prefix="D" uservalue="yes">
 <description>RGB Through-hole common cathode LED&lt;br&gt;
 SparkFun Storefront:&lt;br&gt;
 COM-00105 (Clear)&lt;br&gt;
 COM-09264 (Diffuse)</description>
 <gates>
-<gate name="G$1" symbol="LED-RGB-CC-OLD" x="0" y="0"/>
+<gate name="G$1" symbol="LED-RGB-CC" x="-2.54" y="0"/>
 </gates>
 <devices>
 <device name="DIFFUSE" package="LED-RGB-THRU">
 <connects>
-<connect gate="G$1" pin="BLUE_CATHODE" pad="4"/>
-<connect gate="G$1" pin="CATHODE" pad="2"/>
-<connect gate="G$1" pin="GREEN_CATHODE" pad="3"/>
-<connect gate="G$1" pin="RED_CATHODE" pad="1"/>
+<connect gate="G$1" pin="BLU" pad="4"/>
+<connect gate="G$1" pin="C" pad="2"/>
+<connect gate="G$1" pin="GRN" pad="3"/>
+<connect gate="G$1" pin="RED" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-09434"/>
+<attribute name="VALUE" value="DIFFUSE" constant="no"/>
 </technology>
 </technologies>
 </device>
 <device name="CLEAR" package="LED-RGB-THRU">
 <connects>
-<connect gate="G$1" pin="BLUE_CATHODE" pad="4"/>
-<connect gate="G$1" pin="CATHODE" pad="2"/>
-<connect gate="G$1" pin="GREEN_CATHODE" pad="3"/>
-<connect gate="G$1" pin="RED_CATHODE" pad="1"/>
+<connect gate="G$1" pin="BLU" pad="4"/>
+<connect gate="G$1" pin="C" pad="2"/>
+<connect gate="G$1" pin="GRN" pad="3"/>
+<connect gate="G$1" pin="RED" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-08418"/>
+<attribute name="VALUE" value="CLEAR" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2508,19 +2479,20 @@ DIO-11598</description>
 &lt;ul&gt;&lt;li&gt;&lt;a href=”[https://www.sparkfun.com/products/13614]”&gt;[Qduino Mini]&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="LED-RGB-CA-OLD" x="-2.54" y="0"/>
+<gate name="G$1" symbol="LED-RGB-CA" x="-2.54" y="0"/>
 </gates>
 <devices>
 <device name="PLCC" package="P-LCC-4-3">
 <connects>
-<connect gate="G$1" pin="ANODE" pad="4"/>
-<connect gate="G$1" pin="BLUE_CATHODE" pad="3"/>
-<connect gate="G$1" pin="GREEN_CATHODE" pad="2"/>
-<connect gate="G$1" pin="RED_CATHODE" pad="1"/>
+<connect gate="G$1" pin="A" pad="4"/>
+<connect gate="G$1" pin="BLU" pad="3"/>
+<connect gate="G$1" pin="GRN" pad="2"/>
+<connect gate="G$1" pin="RED" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-12986"/>
+<attribute name="VALUE" value="RGB" constant="no"/>
 </technology>
 </technologies>
 </device>
