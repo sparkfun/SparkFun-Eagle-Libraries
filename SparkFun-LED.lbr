@@ -939,25 +939,27 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <vertex x="-2.413" y="-2.921"/>
 </polygon>
 </symbol>
-<symbol name="LED-TRICOLORSMD">
-<wire x1="10.16" y1="2.54" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="2.54" x2="10.16" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-3.81" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-1.27" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="2.54" y2="-3.81" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-3.81" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="3.81" y2="-2.54" width="0.254" layer="94"/>
-<text x="-7.62" y="3.302" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-10.16" size="1.778" layer="95">&gt;VALUE</text>
-<pin name="GRN" x="-10.16" y="-5.08" visible="pin" length="short"/>
-<pin name="BLU" x="-10.16" y="-2.54" visible="pin" length="short"/>
-<pin name="A" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
-<pin name="RED" x="-10.16" y="0" visible="pin" length="short"/>
+<symbol name="LED-RGB-CA">
+<description>&lt;h3&gt;RGB LED - Common Anode&lt;/h3&gt;
+&lt;p&gt;4 pin Common Anode RGB LED&lt;/p&gt;</description>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="3.81" y2="0" width="0.254" layer="94"/>
+<text x="-7.62" y="5.3975" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-7.62" y="-5.3975" size="1.778" layer="95" font="vector" align="top-left">&gt;VALUE</text>
+<pin name="GRN" x="-10.16" y="-2.54" visible="pin" length="short"/>
+<pin name="BLU" x="-10.16" y="0" visible="pin" length="short"/>
+<pin name="A" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="RED" x="-10.16" y="2.54" visible="pin" length="short"/>
 </symbol>
 <symbol name="LED_BARGRAPH_10">
 <wire x1="0" y1="1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
@@ -982,9 +984,9 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <vertex x="3.429" y="1.651"/>
 </polygon>
 </symbol>
-<symbol name="LED-TRICOLOR-THROUGHHOLE">
-<description>&lt;h3&gt;Aglare Lighting C.o YSRGB7A5BSW25 -5mm RGB Piranha&lt;/h3&gt;
-&lt;p&gt;High-brightness RGB through-hole LED, similar to that used in the Shiftbrite. Common Cathode&lt;/p&gt;</description>
+<symbol name="LED-RGB-CC">
+<description>&lt;h3&gt;RGB LED - Common Cathode&lt;/h3&gt;
+&lt;p&gt;4 pin Common Cathode RGB LED&lt;/p&gt;</description>
 <wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
@@ -997,15 +999,15 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <wire x1="2.54" y1="0" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="2.54" y1="0" x2="3.81" y2="0" width="0.254" layer="94"/>
 <wire x1="1.27" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<text x="-7.62" y="5.715" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-7.62" y="-5.715" size="1.778" layer="95" font="vector" align="top-left">&gt;VALUE</text>
+<text x="-7.62" y="5.3975" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-7.62" y="-5.3975" size="1.778" layer="95" font="vector" align="top-left">&gt;VALUE</text>
 <pin name="GRN" x="-10.16" y="-2.54" visible="pin" length="short"/>
 <pin name="BLU" x="-10.16" y="0" visible="pin" length="short"/>
 <pin name="C" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
 <pin name="RED" x="-10.16" y="2.54" visible="pin" length="short"/>
 </symbol>
 <symbol name="LED_RING">
-<description>&lt;h3&gt;Top Up Industry Corp 16 LED Ring - LED-CCLA&lt;/h3&gt;
+<description>&lt;h3&gt; 16 LED Ring - LED-CCLA&lt;/h3&gt;
 &lt;p&gt;16 LEDs broken into quarters. 4 anode pins + 1 common ground / quadrant. &lt;/p&gt;</description>
 <wire x1="-9.9314" y1="3.1242" x2="-7.6708" y2="1.6256" width="0.254" layer="94"/>
 <wire x1="-7.6708" y1="1.6256" x2="-10.3124" y2="1.0414" width="0.254" layer="94"/>
@@ -1178,7 +1180,7 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <pin name="A" x="0" y="2.54" visible="off" length="short" rot="R270"/>
 <pin name="C" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
 </symbol>
-<symbol name="LED-RGB-CA">
+<symbol name="LED-RGB-CA-OLD">
 <description>&lt;h3&gt;LED RGB CA &lt;/h3&gt;
 &lt;p&gt;Common Anode Red/Green/Blue LED&lt;/p&gt;</description>
 <pin name="RED_CATHODE" x="-5.08" y="5.08" visible="off" length="middle"/>
@@ -1211,7 +1213,7 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <text x="5.842" y="1.524" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="5.842" y="-3.556" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
-<symbol name="LED-RGB-CC">
+<symbol name="LED-RGB-CC-OLD">
 <description>&lt;h3&gt;LED RGB CC &lt;/h3&gt;
 &lt;p&gt;Common Cathode Red/Green/Blue LED&lt;/p&gt;</description>
 <pin name="RED_CATHODE" x="-5.08" y="5.08" visible="off" length="middle"/>
@@ -1244,7 +1246,9 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <text x="5.842" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="5.842" y="-2.54" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
-<symbol name="LED-TRICOLOR-INDV">
+<symbol name="LED-RGB-INDV">
+<description>&lt;h3&gt;RGB LED - No Common&lt;/h3&gt;
+&lt;p&gt;6 pin RGB LED&lt;/p&gt;</description>
 <wire x1="-12.7" y1="5.08" x2="-12.7" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-5.08" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
@@ -1283,6 +1287,8 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <text x="0" y="-5.715" size="1.778" layer="95" font="vector" align="top-center">&gt;VALUE</text>
 </symbol>
 <symbol name="LED-TRICOLOR-WS28X1">
+<description>&lt;h3&gt;WS28X1 RGB LED - I2C Control&lt;/h3&gt;
+&lt;p&gt;4 pin RGB LED with I2C Controller built-in&lt;/p&gt;</description>
 <wire x1="10.16" y1="7.62" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
@@ -1344,44 +1350,9 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <text x="-2.286" y="8.382" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="LED-TRICOLOR-SMD">
-<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-1.27" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<text x="-10.16" y="5.842" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-7.62" size="1.778" layer="95">&gt;VALUE</text>
-<pin name="GRN" x="-12.7" y="-2.54" visible="pin" length="short"/>
-<pin name="BLU" x="-12.7" y="2.54" visible="pin" length="short"/>
-<pin name="BC" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
-<pin name="RED" x="-12.7" y="0" visible="pin" length="short"/>
-<pin name="RC" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
-<pin name="GC" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
-<wire x1="-1.27" y1="3.81" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="2.54" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-1.27" y2="3.81" width="0.254" layer="94"/>
-<wire x1="0" y1="3.81" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="1.27" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-2.54" x2="-1.27" y2="-3.81" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-3.81" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-3.81" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-</symbol>
 <symbol name="LED-RG">
-<description>&lt;h3&gt;LiteOn Technology Corporation LTST-C195KGJRKT - LED GREEN/RED CLEAR 0606 SMD&lt;/h3&gt;</description>
+<description>&lt;h3&gt;RG LED - No Common&lt;/h3&gt;
+&lt;p&gt;4 pin RG LED&lt;/p&gt;</description>
 <wire x1="6.35" y1="0" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-2.54" x2="3.81" y2="0" width="0.254" layer="94"/>
 <wire x1="6.35" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
@@ -1537,7 +1508,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <description>&lt;b&gt;Tri-Color LED SMD&lt;/b&gt;
 Proven layout and schematic for triple color LED in SMD package - common anode. Spark Fun Electronics SKU : COM-07844</description>
 <gates>
-<gate name="G$1" symbol="LED-TRICOLORSMD" x="0" y="2.54"/>
+<gate name="G$1" symbol="LED-RGB-CA" x="0" y="2.54"/>
 </gates>
 <devices>
 <device name="" package="LED-TRICOLOR-SMD">
@@ -1715,7 +1686,7 @@ Proven layout and schematic for triple color LED in SMD package - common anode. 
 &lt;ul&gt;&lt;li&gt;&lt;a href=”[https://www.sparkfun.com/products/11679]”&gt;LED-RGB 5mm Square (Piranha)&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="LED-TRICOLOR-THROUGHHOLE" x="0" y="0"/>
+<gate name="G$1" symbol="LED-RGB-CC" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="LED_PIRANHA_5MM">
@@ -2070,7 +2041,7 @@ SparkFun store front&lt;br&gt;
 COM-10821 (diffuse)&lt;br&gt;
 COM-10820 (clear)&lt;br&gt;</description>
 <gates>
-<gate name="G$1" symbol="LED-RGB-CA" x="0" y="0"/>
+<gate name="G$1" symbol="LED-RGB-CA-OLD" x="0" y="0"/>
 </gates>
 <devices>
 <device name="DIFFUSE" package="LED-RGB-THRU">
@@ -2107,7 +2078,7 @@ SparkFun Storefront:&lt;br&gt;
 COM-00105 (Clear)&lt;br&gt;
 COM-09264 (Diffuse)</description>
 <gates>
-<gate name="G$1" symbol="LED-RGB-CC" x="0" y="0"/>
+<gate name="G$1" symbol="LED-RGB-CC-OLD" x="0" y="0"/>
 </gates>
 <devices>
 <device name="DIFFUSE" package="LED-RGB-THRU">
@@ -2140,7 +2111,7 @@ COM-09264 (Diffuse)</description>
 </deviceset>
 <deviceset name="LED-TRICOLOR-5050" prefix="LED">
 <gates>
-<gate name="D1" symbol="LED-TRICOLOR-INDV" x="0" y="0"/>
+<gate name="D1" symbol="LED-RGB-INDV" x="0" y="0"/>
 </gates>
 <devices>
 <device name="NO_IC" package="LED-TRICOLOR-5050">
@@ -2415,7 +2386,7 @@ DIO-11598</description>
 &lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13321”&gt;Photon RedBoard&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="LED-TRICOLOR-INDV" x="0" y="0"/>
+<gate name="G$1" symbol="LED-RGB-INDV" x="0" y="0"/>
 </gates>
 <devices>
 <device name="PLCC-6-SMD" package="PLCC-6-LED">
@@ -2537,7 +2508,7 @@ DIO-11598</description>
 &lt;ul&gt;&lt;li&gt;&lt;a href=”[https://www.sparkfun.com/products/13614]”&gt;[Qduino Mini]&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="LED-RGB-CA" x="-2.54" y="0"/>
+<gate name="G$1" symbol="LED-RGB-CA-OLD" x="-2.54" y="0"/>
 </gates>
 <devices>
 <device name="PLCC" package="P-LCC-4-3">
