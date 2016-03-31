@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -36,8 +36,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
@@ -142,7 +142,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </description>
 <packages>
 <package name="LCD-16X2">
-<description>Test</description>
+<description>&lt;h3&gt;LCD-16x2&lt;/h3&gt;
+&lt;p&gt;For Standard hitatchi type LCDs with backlight.  Has 16 pin connection, silk outiline, and mounting holes.&lt;/p&gt;
+
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 16&lt;/li&gt;
+&lt;li&gt;Pin pitch: 0.1"&lt;/li&gt;
+&lt;li&gt;Area: &lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s): 
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/255"&gt;Basic 16x2 LCD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <wire x1="-40" y1="18" x2="40" y2="18" width="0.2032" layer="21"/>
 <wire x1="40" y1="18" x2="40" y2="-18" width="0.2032" layer="21"/>
 <wire x1="40" y1="-18" x2="-40" y2="-18" width="0.2032" layer="21"/>
@@ -180,6 +191,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-31.75" y="-19.05" size="0.6096" layer="27" font="vector" ratio="20" align="top-left">&gt;Value</text>
 </package>
 <package name="LCD-16X2_NOSILK">
+<description>&lt;h3&gt;LCD-16x2&lt;/h3&gt;
+&lt;p&gt;For Standard hitatchi type LCDs with backlight.  Has 16 pin connection and outline on docu, and mounting holes, but no silkscreen.&lt;/p&gt;
+
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 16&lt;/li&gt;
+&lt;li&gt;Pin pitch: 0.1"&lt;/li&gt;
+&lt;li&gt;Area: &lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s): 
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/255"&gt;Basic 16x2 LCD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <wire x1="-40" y1="18" x2="40" y2="18" width="0.2032" layer="51"/>
 <wire x1="40" y1="18" x2="40" y2="-18" width="0.2032" layer="51"/>
 <wire x1="40" y1="-18" x2="-40" y2="-18" width="0.2032" layer="51"/>
@@ -217,6 +240,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-31.75" y="-19.05" size="0.6096" layer="27" font="vector" ratio="20" align="top-left">&gt;Value</text>
 </package>
 <package name="LCD-16X2_NOHOLESNOSILK">
+<description>&lt;h3&gt;LCD-16x2 No silk or mounting holes&lt;/h3&gt;
+&lt;p&gt;For Standard hitatchi type LCDs with backlight.  Has 16 pin connection and outline on docu, but no silk or mounting holes.&lt;/p&gt;
+
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 16&lt;/li&gt;
+&lt;li&gt;Pin pitch: 0.1"&lt;/li&gt;
+&lt;li&gt;Area: &lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s): 
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/255"&gt;Basic 16x2 LCD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <wire x1="-40" y1="18" x2="40" y2="18" width="0.2032" layer="51"/>
 <wire x1="40" y1="18" x2="40" y2="-18" width="0.2032" layer="51"/>
 <wire x1="40" y1="-18" x2="-40" y2="-18" width="0.2032" layer="51"/>
@@ -251,11 +286,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 <package name="LCD-8X2">
 <description>&lt;h3&gt;8x2 Character LCD w/ Backlight&lt;/h3&gt;
-Outer Dimensions: 40.0 x 35.4mm&lt;br&gt;
-Viewing Area: 26.4 x 13.9mm&lt;br&gt;
-Character Size: 2.95 x 4.75mm&lt;br&gt;
-&lt;p&gt;Example Device(s):
-&lt;ul&gt;&lt;li&gt;&lt;a href="http://amotec-display.com/pdf/ADM0802A.pdf"&gt;Amotec Display part ADM0802A PDF&lt;/a&gt;&lt;/p&gt;</description>
+
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 16&lt;/li&gt;
+&lt;li&gt;Pin pitch: 0.1"&lt;/li&gt;
+&lt;li&gt;Outer Dimensions: 40.0 x 35.4mm&lt;/li&gt;
+&lt;li&gt;Viewing Area: 26.4 x 13.9mm&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Character Size: 2.95 x 4.75mm&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s): 
+&lt;ul&gt;&lt;li&gt;&lt;a href="http://amotec-display.com/pdf/ADM0802A.pdf"&gt;Amotec Display part ADM0802A PDF&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <wire x1="-20" y1="-11.6" x2="-20" y2="18.4" width="0.2032" layer="21"/>
 <wire x1="-20" y1="18.4" x2="20" y2="18.4" width="0.2032" layer="21"/>
 <wire x1="20" y1="18.4" x2="20" y2="-11.6" width="0.2032" layer="21"/>
@@ -362,8 +404,20 @@ Character Size: 2.95 x 4.75mm&lt;br&gt;
 <hole x="18" y="-15" drill="2"/>
 </package>
 <package name="LCD-8X2-KIT">
-<description>&lt;h3&gt;LCD-8X2-KIT&lt;/h3&gt;
-&lt;b&gt;Warning:&lt;/b&gt; This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.&lt;/ul&gt;&lt;/p&gt;</description>
+<description>&lt;h3&gt;LCD-8x2 for Kits&lt;/h3&gt;
+&lt;b&gt;Warning:&lt;/b&gt; This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.&lt;/ul&gt;&lt;/p&gt;
+
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 16&lt;/li&gt;
+&lt;li&gt;Pin pitch: 0.1"&lt;/li&gt;
+&lt;li&gt;Outer Dimensions: 40.0 x 35.4mm&lt;/li&gt;
+&lt;li&gt;Viewing Area: 26.4 x 13.9mm&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;Character Size: 2.95 x 4.75mm&lt;br&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s): 
+&lt;ul&gt;&lt;li&gt;&lt;a href="http://amotec-display.com/pdf/ADM0802A.pdf"&gt;Amotec Display part ADM0802A PDF&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <wire x1="-20" y1="-11.6" x2="-20" y2="18.4" width="0.2032" layer="51"/>
 <wire x1="-20" y1="18.4" x2="20" y2="18.4" width="0.2032" layer="51"/>
 <wire x1="20" y1="18.4" x2="20" y2="-11.6" width="0.2032" layer="51"/>
@@ -662,6 +716,18 @@ Character Size: 2.95 x 4.75mm&lt;br&gt;
 </polygon>
 </package>
 <package name="LCD-G12864">
+<description>&lt;h3&gt;G12864&lt;/h3&gt;
+&lt;p&gt;For 128x64 LCDs.&lt;/p&gt;
+
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 16&lt;/li&gt;
+&lt;li&gt;Pin pitch: 0.1"&lt;/li&gt;
+&lt;li&gt;Area: &lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s): 
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/255"&gt;Basic 16x2 LCD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <wire x1="0" y1="0" x2="0" y2="5" width="0.2032" layer="21"/>
 <wire x1="0" y1="5" x2="0" y2="49.7" width="0.2032" layer="21"/>
 <wire x1="0" y1="49.7" x2="0" y2="52.7" width="0.2032" layer="21"/>
@@ -882,58 +948,26 @@ none
 <rectangle x1="48.006" y1="-0.254" x2="48.514" y2="0.254" layer="51"/>
 </package>
 <package name="LCD_BACKLIGHT_PADS">
+<description>&lt;h3&gt;Pads for flying backlight leads&lt;/h3&gt;
+&lt;p&gt;Generic&lt;/p&gt;</description>
 <smd name="P$1" x="0" y="0" dx="3.81" dy="3.81" layer="1"/>
 <smd name="P$2" x="0" y="6.35" dx="3.81" dy="3.81" layer="1"/>
 <text x="-1.27" y="8.89" size="0.6096" layer="25" font="vector" ratio="20">&gt;Name</text>
 <text x="-1.27" y="-2.54" size="0.6096" layer="27" font="vector" ratio="20" align="top-left">&gt;Value</text>
 </package>
-<package name="LCD_CFAX">
-<wire x1="28.5" y1="18" x2="-28.5" y2="18" width="0.2032" layer="21"/>
-<wire x1="-28.5" y1="18" x2="-28.5" y2="-25" width="0.2032" layer="21"/>
-<wire x1="-28.5" y1="-25" x2="-16.5" y2="-25" width="0.2032" layer="21"/>
-<wire x1="16.5" y1="-25" x2="28.5" y2="-25" width="0.2032" layer="21"/>
-<wire x1="28.5" y1="-25" x2="28.5" y2="-9.175" width="0.2032" layer="21"/>
-<wire x1="28.5" y1="1.46" x2="28.5" y2="18" width="0.2032" layer="21"/>
-<wire x1="28.5" y1="1.46" x2="34.5" y2="1.46" width="0.2032" layer="21"/>
-<wire x1="28.5" y1="-9.175" x2="34.5" y2="-9.175" width="0.2032" layer="21"/>
-<wire x1="34.5" y1="-9.175" x2="34.5" y2="1.46" width="0.2032" layer="21"/>
-<wire x1="16.5" y1="-25" x2="16.5" y2="-28.5" width="0.2032" layer="21"/>
-<wire x1="16.5" y1="-28.5" x2="-16.5" y2="-28.5" width="0.2032" layer="21"/>
-<wire x1="-16.5" y1="-28.5" x2="-16.5" y2="-25" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="0" x2="-2.54" y2="0" width="0.127" layer="51"/>
-<wire x1="0" y1="-2.54" x2="0" y2="6.54" width="0.127" layer="51"/>
-<wire x1="-24" y1="16" x2="24" y2="16" width="0.2032" layer="21"/>
-<wire x1="-24" y1="-16" x2="-24" y2="16" width="0.2032" layer="21"/>
-<wire x1="24" y1="-16" x2="24" y2="16" width="0.2032" layer="21"/>
-<wire x1="-24" y1="-16" x2="24" y2="-16" width="0.2032" layer="21"/>
-<wire x1="-24" y1="0" x2="0" y2="0" width="0.127" layer="51"/>
-<wire x1="-15.9" y1="16" x2="-15.9" y2="18" width="0.127" layer="51"/>
-<smd name="P$1" x="-4.25" y="11.05" dx="1.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$2" x="-3.75" y="11.05" dx="1.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$3" x="-3.25" y="11.05" dx="1.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$4" x="-2.75" y="11.05" dx="1.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$5" x="-2.25" y="11.05" dx="1.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$6" x="-1.75" y="11.05" dx="1.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$7" x="-1.25" y="11.05" dx="1.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$8" x="-0.75" y="11.05" dx="1.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$9" x="-0.25" y="11.05" dx="1.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$10" x="0.25" y="11.05" dx="1.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$11" x="0.75" y="11.05" dx="1.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$12" x="1.25" y="11.05" dx="1.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$13" x="1.75" y="11.05" dx="1.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$14" x="2.25" y="11.05" dx="1.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$15" x="2.75" y="11.05" dx="1.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$16" x="3.25" y="11.05" dx="1.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$17" x="3.75" y="11.05" dx="1.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$18" x="4.25" y="11.05" dx="1.3" dy="0.25" layer="1" rot="R90"/>
-<smd name="P$19" x="-6.6" y="8.85" dx="1.4" dy="2" layer="1"/>
-<smd name="P$20" x="6.7" y="8.85" dx="1.4" dy="2" layer="1"/>
-<smd name="P$21" x="6.1" y="7.75" dx="1.8" dy="2.2" layer="1"/>
-<smd name="P$22" x="-6.1" y="7.75" dx="1.8" dy="2.2" layer="1"/>
-<text x="-27.94" y="19.05" size="0.6096" layer="25" font="vector" ratio="20">&gt;Name</text>
-<text x="-27.94" y="-25.4" size="0.6096" layer="27" font="vector" ratio="20" align="top-left">&gt;Value</text>
-</package>
 <package name="NOKIA6100_LCD">
+<description>&lt;h3&gt;Nokia 6100 LED Shape and Connector&lt;/h3&gt;
+&lt;p&gt;For Nokia-type LCDs.&lt;/p&gt;
+
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 10&lt;/li&gt;
+&lt;li&gt;Pin pitch: "&lt;/li&gt;
+&lt;li&gt;Area: &lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s): 
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/retired/569"&gt;Retired Color LCD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <wire x1="1.016" y1="0" x2="1.016" y2="40.132" width="0.2032" layer="21"/>
 <wire x1="1.016" y1="40.132" x2="36.576" y2="40.132" width="0.2032" layer="21"/>
 <wire x1="36.576" y1="40.132" x2="36.576" y2="0" width="0.2032" layer="21"/>
@@ -963,26 +997,19 @@ none
 <text x="1.27" y="41.91" size="0.6096" layer="25" font="vector" ratio="20">&gt;Name</text>
 <text x="1.27" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20" align="top-left">&gt;Value</text>
 </package>
-<package name="SCREENKEY-TFT128">
-<wire x1="-14.29" y1="-16.19" x2="-14.29" y2="16.21" width="0.127" layer="51"/>
-<wire x1="-14.29" y1="16.21" x2="14.31" y2="16.21" width="0.127" layer="51"/>
-<wire x1="14.31" y1="16.21" x2="14.31" y2="-16.19" width="0.127" layer="51"/>
-<wire x1="14.31" y1="-16.19" x2="-14.29" y2="-16.19" width="0.127" layer="51"/>
-<wire x1="-12.09" y1="13.41" x2="-12.19" y2="-10.89" width="0.127" layer="51"/>
-<wire x1="-12.19" y1="-10.89" x2="11.81" y2="-10.89" width="0.127" layer="51"/>
-<wire x1="11.81" y1="-10.89" x2="11.91" y2="13.41" width="0.127" layer="51"/>
-<wire x1="11.91" y1="13.41" x2="-12.09" y2="13.41" width="0.127" layer="51"/>
-<wire x1="13.81" y1="-13.69" x2="11.81" y2="-15.69" width="0.127" layer="51" style="shortdash" curve="90"/>
-<wire x1="-11.69" y1="-15.59" x2="-13.69" y2="-13.59" width="0.127" layer="51" style="shortdash" curve="90"/>
-<wire x1="11.81" y1="15.71" x2="13.81" y2="13.71" width="0.127" layer="51" style="shortdash" curve="90"/>
-<wire x1="-13.79" y1="13.71" x2="-11.79" y2="15.71" width="0.127" layer="51" style="shortdash" curve="90"/>
-<hole x="10.01" y="12.01" drill="1.6"/>
-<hole x="10.01" y="-11.99" drill="1.6"/>
-<hole x="0.01" y="0.01" drill="4"/>
-<text x="-13.97" y="16.51" size="0.6096" layer="25" font="vector" ratio="20">&gt;Name</text>
-<text x="-13.97" y="-16.51" size="0.6096" layer="27" font="vector" ratio="20" align="top-left">&gt;Value</text>
-</package>
 <package name="OLED-0.66-64X48">
+<description>&lt;h3&gt;OLDE display, 0.66 inch&lt;/h3&gt;
+&lt;p&gt;For MicroView.&lt;/p&gt;
+
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 28&lt;/li&gt;
+&lt;li&gt;Pin pitch: &lt;/li&gt;
+&lt;li&gt;Area: &lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s): 
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13003"&gt;Microview breakout&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <wire x1="18.05" y1="0.7" x2="-0.5" y2="0.7" width="0.127" layer="49"/>
 <wire x1="-0.5" y1="0.7" x2="-0.5" y2="-4.3" width="0.127" layer="49"/>
 <wire x1="-0.5" y1="-4.3" x2="3.09" y2="-4.3" width="0.127" layer="49"/>
@@ -1064,6 +1091,19 @@ none
 <text x="0" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20" align="top-left">&gt;Value</text>
 </package>
 <package name="LCD-16X2_NOSILK-KIT">
+<description>&lt;h3&gt;LCD-16x2 for Kits&lt;/h3&gt;
+&lt;p&gt;For Standard hitatchi type LCDs with backlight.  Has 16 pin connection and outline on docu, but no silk or mounting holes.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Warning:&lt;/b&gt; This is the kit version of the part, so SIL holes are staggered.
+
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 16&lt;/li&gt;
+&lt;li&gt;Pin pitch: 0.1"&lt;/li&gt;
+&lt;li&gt;Area: &lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s): 
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/255"&gt;Basic 16x2 LCD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <wire x1="-38.73" y1="16.73" x2="41.27" y2="16.73" width="0.2032" layer="51"/>
 <wire x1="41.27" y1="16.73" x2="41.27" y2="-19.27" width="0.2032" layer="51"/>
 <wire x1="41.27" y1="-19.27" x2="-38.73" y2="-19.27" width="0.2032" layer="51"/>
@@ -1099,6 +1139,19 @@ none
 <text x="-30.48" y="-20.32" size="0.6096" layer="27" font="vector" ratio="20" align="top-left">&gt;Value</text>
 </package>
 <package name="LCD-16X2_NOSILK-KIT-4BIT">
+<description>&lt;h3&gt;LCD-16x2, 4 bit for Kits&lt;/h3&gt;
+&lt;p&gt;For Standard hitatchi type LCDs with backlight.  Has a gapped 16-pin connection and outline on docu, but no silk or mounting holes.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Warning:&lt;/b&gt; This is the kit version of the part, so SIL holes are staggered.
+
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 12&lt;/li&gt;
+&lt;li&gt;Pin pitch: 0.1"&lt;/li&gt;
+&lt;li&gt;Area: &lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s): 
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/255"&gt;Basic 16x2 LCD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <wire x1="-40" y1="18" x2="40" y2="18" width="0.2032" layer="51"/>
 <wire x1="40" y1="18" x2="40" y2="-18" width="0.2032" layer="51"/>
 <wire x1="40" y1="-18" x2="-40" y2="-18" width="0.2032" layer="51"/>
@@ -1132,6 +1185,7 @@ none
 </packages>
 <symbols>
 <symbol name="LCD-16X2">
+<description>&lt;h3&gt;Standard Character Display Symbol with Standard Backlight&lt;/h3&gt;</description>
 <wire x1="-7.62" y1="22.86" x2="-7.62" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-20.32" x2="5.08" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-20.32" x2="5.08" y2="22.86" width="0.254" layer="94"/>
@@ -1157,6 +1211,8 @@ none
 <pin name="VSS" x="-10.16" y="20.32" visible="pin" length="short" direction="pwr"/>
 </symbol>
 <symbol name="LCD-G12864">
+<description>&lt;h3&gt;G12864 Connections&lt;/h3&gt;
+&lt;p&gt;This is for the G12864 display.  It is simiar to the standard Hitatchi pinout with additional voltages&lt;/p&gt;</description>
 <wire x1="-7.62" y1="25.4" x2="-7.62" y2="-27.94" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-27.94" x2="7.62" y2="-27.94" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-27.94" x2="7.62" y2="25.4" width="0.254" layer="94"/>
@@ -1185,6 +1241,7 @@ none
 <text x="-7.62" y="-28.702" size="1.778" layer="96" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="LCD_BACKLIGHT_PADS">
+<description>&lt;h3&gt;General Backlight Connection&lt;/h3&gt;</description>
 <wire x1="-5.08" y1="2.54" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-5.08" x2="2.54" y2="2.54" width="0.254" layer="94"/>
@@ -1194,33 +1251,8 @@ none
 <pin name="A" x="-7.62" y="-2.54" visible="pin" length="short"/>
 <pin name="K" x="-7.62" y="0" visible="pin" length="short"/>
 </symbol>
-<symbol name="LCD_CFAX">
-<wire x1="-7.62" y1="27.94" x2="5.08" y2="27.94" width="0.254" layer="94"/>
-<wire x1="5.08" y1="27.94" x2="5.08" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-25.4" x2="-7.62" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-25.4" x2="-7.62" y2="27.94" width="0.254" layer="94"/>
-<text x="-7.62" y="28.448" size="1.778" layer="95">&gt;Name</text>
-<text x="-7.62" y="-26.162" size="1.778" layer="95" align="top-left">&gt;Value</text>
-<pin name="VCC" x="-12.7" y="25.4" visible="pin" length="middle"/>
-<pin name="RESET" x="-12.7" y="22.86" visible="pin" length="middle"/>
-<pin name="GND" x="-12.7" y="20.32" visible="pin" length="middle"/>
-<pin name="CS1B" x="-12.7" y="15.24" visible="pin" length="middle"/>
-<pin name="CS2" x="-12.7" y="12.7" visible="pin" length="middle"/>
-<pin name="RS" x="-12.7" y="10.16" visible="pin" length="middle"/>
-<pin name="RW" x="-12.7" y="7.62" visible="pin" length="middle"/>
-<pin name="ERD" x="-12.7" y="5.08" visible="pin" length="middle"/>
-<pin name="MI" x="-12.7" y="2.54" visible="pin" length="middle"/>
-<pin name="P/S" x="-12.7" y="0" visible="pin" length="middle"/>
-<pin name="D0" x="-12.7" y="-5.08" visible="pin" length="middle"/>
-<pin name="D1" x="-12.7" y="-7.62" visible="pin" length="middle"/>
-<pin name="D2" x="-12.7" y="-10.16" visible="pin" length="middle"/>
-<pin name="D3" x="-12.7" y="-12.7" visible="pin" length="middle"/>
-<pin name="D4" x="-12.7" y="-15.24" visible="pin" length="middle"/>
-<pin name="D5" x="-12.7" y="-17.78" visible="pin" length="middle"/>
-<pin name="D6" x="-12.7" y="-20.32" visible="pin" length="middle"/>
-<pin name="D7" x="-12.7" y="-22.86" visible="pin" length="middle"/>
-</symbol>
 <symbol name="NOKIA6100_LCD">
+<description>&lt;h3&gt;Nokia LCD connections&lt;/h3&gt;</description>
 <wire x1="-7.62" y1="-17.78" x2="-7.62" y2="17.78" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="17.78" x2="7.62" y2="17.78" width="0.254" layer="94"/>
 <wire x1="7.62" y1="17.78" x2="7.62" y2="-17.78" width="0.254" layer="94"/>
@@ -1238,20 +1270,8 @@ none
 <pin name="RESET" x="-10.16" y="-2.54" length="short"/>
 <pin name="VLED" x="-10.16" y="-7.62" length="short"/>
 </symbol>
-<symbol name="SCREENKEY-TFT128">
-<wire x1="0" y1="0" x2="25.4" y2="0" width="0.254" layer="94"/>
-<wire x1="25.4" y1="0" x2="25.4" y2="30.48" width="0.254" layer="94"/>
-<wire x1="25.4" y1="30.48" x2="0" y2="30.48" width="0.254" layer="94"/>
-<wire x1="0" y1="30.48" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="22.86" y1="7.62" x2="2.54" y2="7.62" width="0.254" layer="94"/>
-<wire x1="2.54" y1="7.62" x2="2.54" y2="27.94" width="0.254" layer="94"/>
-<wire x1="2.54" y1="27.94" x2="22.86" y2="27.94" width="0.254" layer="94"/>
-<wire x1="22.86" y1="27.94" x2="22.86" y2="7.62" width="0.254" layer="94"/>
-<text x="2.54" y="2.54" size="1.27" layer="94">SCREENKEY- TFT128</text>
-<text x="0" y="30.988" size="1.778" layer="95">&gt;Name</text>
-<text x="0" y="-0.762" size="1.778" layer="96" align="top-left">&gt;Value</text>
-</symbol>
 <symbol name="OLED0.66">
+<description>&lt;h3&gt;MicroView OLED connections&lt;/h3&gt;</description>
 <wire x1="-25.4" y1="48.26" x2="-25.4" y2="-48.26" width="0.254" layer="94"/>
 <wire x1="-25.4" y1="-48.26" x2="10.16" y2="-48.26" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-48.26" x2="10.16" y2="48.26" width="0.254" layer="94"/>
@@ -1289,7 +1309,8 @@ none
 <text x="-25.4" y="-49.022" size="1.778" layer="96" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="LCD-16X2-MIN">
-<description>This is a somewhat universal part for 16x2 LCDs that have either a white backlight (A/K) or a RGB backlight (RGB+K).</description>
+<description>&lt;h3&gt;4-bit Character Display Symbol, with RGB backlight&lt;/h3&gt;
+&lt;p&gt;This is a somewhat universal part for 16x2 LCDs that have either a white backlight (A/K) or a RGB backlight (RGB+K).&lt;/p&gt;</description>
 <wire x1="-7.62" y1="22.86" x2="-7.62" y2="-25.4" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-25.4" x2="5.08" y2="-25.4" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-25.4" x2="5.08" y2="22.86" width="0.254" layer="94"/>
@@ -1317,12 +1338,7 @@ none
 <deviceset name="LCD-16X2" prefix="U">
 <description>&lt;h3&gt;Standard text-only 16x2 parallel input LCD&lt;/h3&gt;
 &lt;p&gt;Basic 16 character by 2 line display.  Typically utilizes the extremely common HD44780 parallel interface chipset &lt;/p&gt;
-&lt;p&gt;Variants:
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;SILK&lt;/b&gt; - Standard 2x16&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;NOHOLES&lt;/b&gt; - No silkscreen or mounting holes&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;NOSILK&lt;/b&gt; - No silkscreen&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;8x2&lt;/b&gt; - 2x8 version, 2x16 header&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;8x2-KIT&lt;/b&gt; - 2x8 without silkscreen&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
+
 &lt;p&gt;SparkFun Products:
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.sparkfun.com/products/255"&gt;Basic 16x2 Green&lt;/a&gt;&lt;/li&gt;
@@ -1452,11 +1468,7 @@ none
 <deviceset name="LCD-G12864">
 <description>&lt;h3&gt;Graphical LCD 128x64&lt;/h3&gt;
 &lt;p&gt;Footprint is not yet proven. Double check it. Spark Fun Electronics SKU : LCD-00710&lt;/p&gt;
-&lt;p&gt;Variants:
-&lt;ul&gt;
-&lt;li&gt;&lt;b&gt;BARE&lt;/b&gt; - Header only&lt;/li&gt;
-&lt;li&gt;&lt;b&gt;FULL&lt;/b&gt; - With outline&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
+
 &lt;p&gt;SparkFun Products:
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.sparkfun.com/products/710"&gt;Graphic LCD 128x64&lt;/a&gt;&lt;/li&gt;
@@ -1524,10 +1536,6 @@ none
 <deviceset name="LCD_BACKLIGHT_PADS">
 <description>&lt;h3&gt;Pads for flying backlight leads&lt;/h3&gt;
 &lt;p&gt;Use as a place to tack down wires. &lt;/p&gt;
-&lt;p&gt;Variants:
-&lt;ul&gt;
-&lt;li&gt;&lt;b&gt;"&lt;/b&gt; - default&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
 &lt;p&gt;SparkFun Products:
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.sparkfun.com/"&gt;sparkfun.com&lt;/a&gt;&lt;/li&gt;
@@ -1547,49 +1555,12 @@ none
 </device>
 </devices>
 </deviceset>
-<deviceset name="LCD_CFAX">
-<description>Graphic LCD module (LCD-00463) DISCONTINUED</description>
-<gates>
-<gate name="LCD" symbol="LCD_CFAX" x="0" y="-7.62"/>
-</gates>
-<devices>
-<device name="" package="LCD_CFAX">
-<connects>
-<connect gate="LCD" pin="CS1B" pad="P$3"/>
-<connect gate="LCD" pin="CS2" pad="P$4"/>
-<connect gate="LCD" pin="D0" pad="P$9"/>
-<connect gate="LCD" pin="D1" pad="P$10"/>
-<connect gate="LCD" pin="D2" pad="P$11"/>
-<connect gate="LCD" pin="D3" pad="P$12"/>
-<connect gate="LCD" pin="D4" pad="P$13"/>
-<connect gate="LCD" pin="D5" pad="P$14"/>
-<connect gate="LCD" pin="D6" pad="P$15"/>
-<connect gate="LCD" pin="D7" pad="P$16"/>
-<connect gate="LCD" pin="ERD" pad="P$8"/>
-<connect gate="LCD" pin="GND" pad="P$2"/>
-<connect gate="LCD" pin="MI" pad="P$17"/>
-<connect gate="LCD" pin="P/S" pad="P$18"/>
-<connect gate="LCD" pin="RESET" pad="P$5"/>
-<connect gate="LCD" pin="RS" pad="P$6"/>
-<connect gate="LCD" pin="RW" pad="P$7"/>
-<connect gate="LCD" pin="VCC" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="NOKIA6100_LCD">
 <description>&lt;h3&gt;Nokia 6100 Color LCD&lt;/h3&gt;
 &lt;p&gt;
 
 Previously used in production. Spark Fun Electronics SKU : LCD-00569. Mating SMD connector : LCD-00570. &lt;/p&gt;
 
-&lt;p&gt;Variants:
-&lt;ul&gt;
-&lt;li&gt;&lt;b&gt;"&lt;/b&gt; - default&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
 &lt;p&gt;SparkFun Products:
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.sparkfun.com/products/retired/569"&gt;128x128 Nokia Knock-Off&lt;/a&gt; (Retired)&lt;/li&gt;
@@ -1617,39 +1588,12 @@ Previously used in production. Spark Fun Electronics SKU : LCD-00569. Mating SMD
 </device>
 </devices>
 </deviceset>
-<deviceset name="SCREENKEY-TFT128">
-<description>&lt;h3&gt;Mechanical footprint of the ScreenKey&lt;/h3&gt;
-&lt;p&gt;
-Mechanical footprint of the ScreenKey (COM-09366)&lt;br&gt;
-No electrical connections
-&lt;p&gt;Variants:
-&lt;ul&gt;
-&lt;li&gt;&lt;b&gt;"&lt;/b&gt; - default&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;SparkFun Products:
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/retired/9366"&gt;ScreenKey TFT128&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="SCREENKEY-TFT128" x="0" y="0"/>
-</gates>
-<devices>
-<device name="DEMENSIONANDHOLES" package="SCREENKEY-TFT128">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="OLED0.66" prefix="OLED">
 <description>&lt;h3&gt;Micro OLED&lt;/h3&gt;
 &lt;p&gt;
 
 &lt;i&gt;TODO: Add description&lt;/i&gt;
-&lt;p&gt;Variants:
-&lt;ul&gt;
-&lt;li&gt;&lt;b&gt;"&lt;/b&gt; - default&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
+
 &lt;p&gt;SparkFun Products:
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13003"&gt;Micro OLED Breakout&lt;/a&gt;&lt;/li&gt;
@@ -1698,10 +1642,6 @@ No electrical connections
 <deviceset name="LCD-16X2-MIN" prefix="U">
 <description>&lt;h3&gt;RGB 16x2 parallel input LCD, 4bit only&lt;/h3&gt;
 &lt;p&gt;Basic 16 character by 2 line display.  Typically utilizes the extremely common HD44780 parallel interface chipset &lt;/p&gt;
-&lt;p&gt;Variants:
-&lt;ul&gt;
-&lt;li&gt;&lt;b&gt;MIN4-RGB&lt;/b&gt; - 4 bit 2x16 with RGB&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
 &lt;p&gt;SparkFun Products:
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10862"&gt;Basic 16x2 RGB&lt;/a&gt;&lt;/li&gt;
