@@ -1180,9 +1180,32 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <text x="0" y="1.043" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-1.043" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
+<package name="CRYSTAL-SMD-3.2X2.5MM">
+<description>&lt;h3&gt;3.2 x 2.5mm SMD Crystal Package&lt;/h3&gt;
+&lt;p&gt;Example: &lt;a href="http://www.digikey.com/product-search/en?keywords=SER3627TR-ND"&gt;SX-32S&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-0.4" y1="1.377" x2="0.4" y2="1.377" width="0.2032" layer="21"/>
+<wire x1="-1.727" y1="-0.15" x2="-1.727" y2="0.15" width="0.2032" layer="21"/>
+<wire x1="1.727" y1="0.15" x2="1.727" y2="-0.15" width="0.2032" layer="21"/>
+<wire x1="0.4" y1="-1.377" x2="-0.4" y2="-1.377" width="0.2032" layer="21"/>
+<rectangle x1="-1.6" y1="0.35" x2="-0.6" y2="1.15" layer="51"/>
+<rectangle x1="0.6" y1="-1.15" x2="1.6" y2="-0.35" layer="51" rot="R180"/>
+<rectangle x1="-1.6" y1="-1.15" x2="-0.6" y2="-0.35" layer="51"/>
+<rectangle x1="0.6" y1="0.35" x2="1.6" y2="1.15" layer="51" rot="R180"/>
+<smd name="1" x="-1.175" y="-0.875" dx="1.2" dy="1.1" layer="1" rot="R180"/>
+<smd name="2" x="1.175" y="-0.875" dx="1.2" dy="1.1" layer="1"/>
+<smd name="3" x="1.175" y="0.875" dx="1.2" dy="1.1" layer="1"/>
+<smd name="4" x="-1.175" y="0.875" dx="1.2" dy="1.1" layer="1" rot="R180"/>
+<text x="0" y="1.524" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-1.524" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+</package>
 </packages>
 <symbols>
-<symbol name="Q">
+<symbol name="CRYSTAL">
+<description>&lt;h3&gt;Crystal (no ground pin)&lt;/h3&gt;</description>
 <wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
 <wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
@@ -1199,6 +1222,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
 </symbol>
 <symbol name="DS1077">
+<description>&lt;h3&gt;Maxim DS1077 - I2C Real-time clock (RTC)&lt;/h3&gt;</description>
 <wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
@@ -1215,6 +1239,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <pin name="SCL" x="12.7" y="7.62" length="short" rot="R180"/>
 </symbol>
 <symbol name="DS1307">
+<description>&lt;h3&gt;Maxim DS1307 - I2C Real-time clock (RTC)&lt;/h3&gt;</description>
 <wire x1="-7.62" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
 <wire x1="10.16" y1="5.08" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
@@ -1231,6 +1256,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <pin name="VCC" x="12.7" y="2.54" length="short" rot="R180"/>
 </symbol>
 <symbol name="DS3234">
+<description>&lt;h3&gt;Maxim DS3234 - Extremely Accurate SPI RTC&lt;/h3&gt;</description>
 <wire x1="-10.16" y1="15.24" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-17.78" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-17.78" x2="12.7" y2="15.24" width="0.254" layer="94"/>
@@ -1259,6 +1285,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <pin name="GND@7" x="15.24" y="5.08" length="short" rot="R180"/>
 </symbol>
 <symbol name="OSCILLATOR">
+<description>&lt;h3&gt;Active Oscillator w/ Enable Input&lt;/h3&gt;</description>
 <wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
@@ -1271,6 +1298,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <pin name="VCC" x="-10.16" y="2.54" visible="pin" length="short"/>
 </symbol>
 <symbol name="RESONATOR">
+<description>&lt;h3&gt;Resonator&lt;/h3&gt;</description>
 <wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
 <wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.1524" layer="94"/>
@@ -1304,23 +1332,8 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <circle x="-2.54" y="0" radius="0.508" width="0" layer="94"/>
 <circle x="2.54" y="0" radius="0.508" width="0" layer="94"/>
 </symbol>
-<symbol name="RESONATOR_NOCAP">
-<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.1524" layer="94"/>
-<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.1524" layer="94"/>
-<wire x1="1.016" y1="1.778" x2="1.016" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.016" y1="0" x2="1.016" y2="-1.778" width="0.1524" layer="94"/>
-<wire x1="-1.016" y1="1.778" x2="-1.016" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.016" y1="0" x2="-1.016" y2="-1.778" width="0.1524" layer="94"/>
-<text x="0" y="2.032" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.032" size="1.778" layer="96" font="vector" align="top-center">&gt;Value</text>
-<pin name="3" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
-</symbol>
 <symbol name="CRYSTAL-GND">
+<description>&lt;h3&gt;Crystal with Ground pin&lt;/h3&gt;</description>
 <wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
 <wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
@@ -1346,10 +1359,10 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 &lt;p&gt;These are &lt;b&gt;passive&lt;/b&gt; quartz crystals, which can be used as a clock source for a microcontroller.&lt;/p&gt;
 &lt;p&gt;Crystal's are two-terminal devices. They require external "load" capacitors to generate an oscillating signal.&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="Q" x="0" y="0"/>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="HC49UV" package="HC49U">
+<device name="PTH-HC49UV" package="HC49U">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1358,7 +1371,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <technology name=""/>
 </technologies>
 </device>
-<device name="TC38H" package="CRYSTAL-PTH-3X8-CYL">
+<device name="PTH-3X8" package="CRYSTAL-PTH-3X8-CYL">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1367,19 +1380,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <technology name=""/>
 </technologies>
 </device>
-<device name="TC26H" package="CRYSTAL-PTH-2X6-CYL">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="XTAL-10112"/>
-<attribute name="VALUE" value="32.768kHz"/>
-</technology>
-</technologies>
-</device>
-<device name="SMD" package="HC49UP">
+<device name="PTH-2X6" package="CRYSTAL-PTH-2X6-CYL">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1388,7 +1389,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <technology name=""/>
 </technologies>
 </device>
-<device name="HC49US" package="HC49US">
+<device name="SMD-HC49UP" package="HC49UP">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1397,42 +1398,43 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <technology name=""/>
 </technologies>
 </device>
-<device name="32-SMD-MELF" package="CRYSTAL-SMD-2X6-CYL">
+<device name="PTH-HC49US" package="HC49US">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD-2X6" package="CRYSTAL-SMD-2X6-CYL">
 <connects>
 <connect gate="G$1" pin="1" pad="X1"/>
 <connect gate="G$1" pin="2" pad="X2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="XTAL-07894" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
-<device name="CRYSTAL-SMD-5X3-16MHZ" package="CRYSTAL-SMD-5X3.2-4PAD">
+<device name="SMD-5X3.2-4PAD" package="CRYSTAL-SMD-5X3.2-4PAD">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="XTAL-08218"/>
-<attribute name="SF_ID" value="COM-00094"/>
-<attribute name="VALUE" value="16MHz"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
-<device name="EPSONMC146" package="CRYSTAL-SMD-MC-146">
+<device name="SMD-MC146" package="CRYSTAL-SMD-MC-146">
 <connects>
 <connect gate="G$1" pin="1" pad="P$2"/>
 <connect gate="G$1" pin="2" pad="P$1"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="XTAL-09342"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
-<device name="TC26H_EZ" package="CRYSTAL-PTH-2X6-CYL-KIT">
+<device name="PTH-2X6-KIT" package="CRYSTAL-PTH-2X6-CYL-KIT">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1441,7 +1443,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <technology name=""/>
 </technologies>
 </device>
-<device name="TXC-7A" package="CRYSTAL-SMD-5X3.2-2PAD">
+<device name="SMD-5X3.2-2PAD" package="CRYSTAL-SMD-5X3.2-2PAD">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -1450,40 +1452,22 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <technology name=""/>
 </technologies>
 </device>
-<device name="CRYSTAL-SMD-5X3-12.288MHZ" package="CRYSTAL-SMD-5X3.2-4PAD">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="3"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="XTAL-09653" constant="no"/>
-<attribute name="VALUE" value="12.288MHz"/>
-</technology>
-</technologies>
-</device>
-<device name="3.2X1.5MM" package="CRYSTAL-SMD-3.2X1.5MM">
+<device name="SMD-3.2X1.5" package="CRYSTAL-SMD-3.2X1.5MM">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="XTAL-13062"/>
-<attribute name="VALUE" value="32.768kHz"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
-<device name="CRYSTAL-SMD-5X3-12MHZ" package="CRYSTAL-SMD-5X3.2-4PAD">
+<device name="SMD-3.2X2.5" package="CRYSTAL-SMD-3.2X2.5MM">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="XTAL-08297"/>
-<attribute name="VALUE" value="12MHz"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -1512,7 +1496,9 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <connect gate="G$1" pin="VCC" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09075" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1600,7 +1586,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <gate name="G$1" symbol="OSCILLATOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SMD" package="OSCILLATOR-SMD-7X5-4PAD">
+<device name="SMD-7X5-4PAD" package="OSCILLATOR-SMD-7X5-4PAD">
 <connects>
 <connect gate="G$1" pin="EN" pad="1"/>
 <connect gate="G$1" pin="GND" pad="2"/>
@@ -1611,7 +1597,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <technology name=""/>
 </technologies>
 </device>
-<device name="SMD6" package="OSCILLATOR-SMD-7.5X5.2-6PIN">
+<device name="SMD-7X5-6PAD" package="OSCILLATOR-SMD-7.5X5.2-6PIN">
 <connects>
 <connect gate="G$1" pin="EN" pad="1"/>
 <connect gate="G$1" pin="GND" pad="2"/>
@@ -1622,21 +1608,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <technology name=""/>
 </technologies>
 </device>
-<device name="16MHZ-7X5" package="OSCILLATOR-SMD-7X5-4PAD">
-<connects>
-<connect gate="G$1" pin="EN" pad="1"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
-<connect gate="G$1" pin="VCC" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="XTAL-11225"/>
-<attribute name="VALUE" value="16MHz"/>
-</technology>
-</technologies>
-</device>
-<device name="5X3-PIN1-INDICATED" package="OSCILLATOR-SMD-5X3.2">
+<device name="SMD-5X3" package="OSCILLATOR-SMD-5X3.2">
 <connects>
 <connect gate="G$1" pin="EN" pad="1"/>
 <connect gate="G$1" pin="GND" pad="2"/>
@@ -1658,7 +1630,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <gate name="G$1" symbol="RESONATOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="PTH" package="RESONATOR-PTH-7.6X3.8">
+<device name="PTH-7.6X3.8" package="RESONATOR-PTH-7.6X3.8">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1668,46 +1640,27 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <technology name=""/>
 </technologies>
 </device>
-<device name="8MHZ" package="RESONATOR-SMD-3.2X1.3">
+<device name="SMD-3.2X1.3" package="RESONATOR-SMD-3.2X1.3">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="XTAL-08895"/>
-<attribute name="VALUE" value="8MHZ"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
-<device name="16MHZ" package="RESONATOR-SMD-3.2X1.3">
+<device name="SMD-4.5X2.0" package="RESONATOR-SMD-4.5X2.0">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="XTAL-08900"/>
-<attribute name="VALUE" value="16MHZ"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
-<device name="4MHZ" package="RESONATOR-SMD-4.5X2.0">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="XTAL-12492"/>
-<attribute name="VALUE" value="4MHz"/>
-</technology>
-</technologies>
-</device>
-<device name="WIDE" package="RESONATOR-SMD-7.4X3.4">
+<device name="SMD-7.4X3.4" package="RESONATOR-SMD-7.4X3.4">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1727,7 +1680,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <gate name="G$1" symbol="CRYSTAL-GND" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="CRYSTAL-SMD-5X3.2-4PAD">
+<device name="SMD-5X3.2" package="CRYSTAL-SMD-5X3.2-4PAD">
 <connects>
 <connect gate="G$1" pin="1" pad="3"/>
 <connect gate="G$1" pin="2" pad="1"/>
@@ -1737,9 +1690,19 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <technology name=""/>
 </technologies>
 </device>
+<device name="SMD-3.2X2.5" package="CRYSTAL-SMD-3.2X2.5MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="G$1" pin="3" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
-<deviceset name="33MHZ-OSCILLATOR" prefix="Y">
+<deviceset name="OSCILLATOR-33MHZ" prefix="Y">
 <description>&lt;h3&gt;33 MHz 5x3.2mm Oscllator&lt;/h3&gt;
 &lt;p&gt;&lt;ul&gt;&lt;li&gt;Standard 5.0mm x 3.2m 4-pad SMD package&lt;/li&gt;
 &lt;li&gt;Frequency: 33MHz&lt;/li&gt;
@@ -1762,6 +1725,353 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <technology name="">
 <attribute name="PROD_ID" value="XTAL-11986"/>
 <attribute name="VALUE" value="33MHz"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RESONATOR-16MHZ" prefix="Y" uservalue="yes">
+<description>&lt;h3&gt;16MHz Resonator&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.digikey.com/product-detail/en/murata-electronics-north-america/CSTCE16M0V53-R0/490-1198-1-ND/584635"&gt;Digikey Example&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 16MHz&lt;/li&gt;
+&lt;li&gt;Frequency Stability: &amp;plusmn;0.3%&lt;/li&gt;
+&lt;li&gt;Frequency Tolerance: &amp;plusmn;0.5%&lt;/li&gt;
+&lt;li&gt;Capacitance: 15pF&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESONATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD_3.2X1.3" package="RESONATOR-SMD-3.2X1.3">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-08900"/>
+<attribute name="VALUE" value="16MHz"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RESONATOR-8MHZ" prefix="Y" uservalue="yes">
+<description>&lt;h3&gt;8MHz Resonator&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.digikey.com/product-detail/en/murata-electronics-north-america/CSTCE10M0G55-R0/490-1196-1-ND/584633"&gt;Digikey Example&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 8MHz&lt;/li&gt;
+&lt;li&gt;Frequency Stability: &amp;plusmn;0.2%&lt;/li&gt;
+&lt;li&gt;Frequency Tolerance: &amp;plusmn;0.5%&lt;/li&gt;
+&lt;li&gt;Capacitance: 33pF&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESONATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD_3.2X1.3" package="RESONATOR-SMD-3.2X1.3">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-08895"/>
+<attribute name="VALUE" value="8MHz"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRYSTAL-26MHZ" prefix="Y">
+<description>&lt;h3&gt;26MHz Crystal w/ Ground Pin&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.digikey.com/product-detail/en/epson/TSX-3225%2026.0000MF09Z-AC3/SER3627CT-ND/1802878"&gt;Digikey Example&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 26MHz&lt;/li&gt;
+&lt;li&gt;Frequency Stability: &amp;plusmn;9ppm&lt;/li&gt;
+&lt;li&gt;Frequency Tolerance: &amp;plusmn;10ppm&lt;/li&gt;
+&lt;li&gt;Load Capacitance: 9pF&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL-GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD-3.2X2.5" package="CRYSTAL-SMD-3.2X2.5MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="G$1" pin="3" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRYSTAL-16MHZ" prefix="Y" uservalue="yes">
+<description>&lt;h3&gt;16MHz Crystal&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.digikey.com/product-search/en?keywords=535-9122-1-ND"&gt;Digikey Example&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 16MHz&lt;/li&gt;
+&lt;li&gt;Frequency Stability: &amp;plusmn;50ppm&lt;/li&gt;
+&lt;li&gt;Frequency Tolerance: &amp;plusmn;20ppm&lt;/li&gt;
+&lt;li&gt;Load Capacitance: 18pF&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD-5X3.2" package="CRYSTAL-SMD-5X3.2-4PAD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-08218"/>
+<attribute name="SF_ID" value="COM-00094"/>
+<attribute name="VALUE" value="16MHz"/>
+</technology>
+</technologies>
+</device>
+<device name="PTH-HC49US" package="HC49US">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-08181"/>
+<attribute name="SF_ID" value="COM-00536"/>
+<attribute name="VALUE" value="16MHz"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRYSTAL-12.288MHZ" prefix="Y" uservalue="yes">
+<description>&lt;h3&gt;12.288MHz Crystal&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.digikey.com/product-detail/en/abracon-llc/ABM3B-12.288MHZ-B2-T/535-9117-1-ND/675634"&gt;Digikey Example&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 12.288MHz&lt;/li&gt;
+&lt;li&gt;Frequency Stability: &amp;plusmn;50ppm&lt;/li&gt;
+&lt;li&gt;Frequency Tolerance: &amp;plusmn;20ppm&lt;/li&gt;
+&lt;li&gt;Load Capacitance: 18pF&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="&quot;" package="CRYSTAL-SMD-5X3.2-4PAD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-09653"/>
+<attribute name="VALUE" value="12.288MHz"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRYSTAL-32.768KHZ" prefix="Y" uservalue="yes">
+<description>&lt;h3&gt;32.768kHz Crystal&lt;/h3&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 32.768kHz&lt;/li&gt;
+&lt;li&gt;Frequency Stability: &amp;plusmn;20ppm&lt;/li&gt;
+&lt;li&gt;Load Capacitance: 12.5pF (PTH-2X6 &amp; SMD-3.2X1.5), 6pF (SMD-2X6)&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PTH-2X6" package="CRYSTAL-PTH-2X6-CYL">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-10112"/>
+<attribute name="VALUE" value="32.768kHz"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD-2X6" package="CRYSTAL-SMD-2X6-CYL">
+<connects>
+<connect gate="G$1" pin="1" pad="X1"/>
+<connect gate="G$1" pin="2" pad="X2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-07894"/>
+<attribute name="VALUE" value="32.768kHz"/>
+</technology>
+</technologies>
+</device>
+<device name="PTH-2X6-KIT" package="CRYSTAL-PTH-2X6-CYL-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-10112"/>
+<attribute name="VALUE" value="32.768kHz"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD-3.2X1.5" package="CRYSTAL-SMD-3.2X1.5MM">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-13062"/>
+<attribute name="VALUE" value="32.768kHz"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD-MC146" package="CRYSTAL-SMD-MC-146">
+<connects>
+<connect gate="G$1" pin="1" pad="P$2"/>
+<connect gate="G$1" pin="2" pad="P$1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-09342"/>
+<attribute name="VALUE" value="32.768kHz"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRYSTAL-12MHZ" prefix="Y" uservalue="yes">
+<description>&lt;h3&gt;12.0MHz Crystal&lt;/h3&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 12.0MHz&lt;/li&gt;
+&lt;li&gt;Frequency Tolerance: &amp;plusmn;20ppm&lt;/li&gt;
+&lt;li&gt;Load Capacitance: 18pF&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="&quot;" package="CRYSTAL-SMD-5X3.2-4PAD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-08297"/>
+<attribute name="VALUE" value="12MHz"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RESONATOR-4MHZ" prefix="Y" uservalue="yes">
+<description>&lt;h3&gt;4MHz Resonator&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.digikey.com/product-search/en?keywords=490-1200-1-ND"&gt;Digikey Example&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 4MHz&lt;/li&gt;
+&lt;li&gt;Frequency Stability: &amp;plusmn;0.2%&lt;/li&gt;
+&lt;li&gt;Frequency Tolerance: &amp;plusmn;0.5%&lt;/li&gt;
+&lt;li&gt;Capacitance: 15pF&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESONATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD-4.5X2" package="RESONATOR-SMD-4.5X2.0">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-12492"/>
+<attribute name="VALUE" value="4MHz"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRYSTAL-8MHZ" prefix="Y" uservalue="yes">
+<description>&lt;h3&gt;8MHz Crystal&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.futureelectronics.com/en/technologies/electromechanical/timing-devices/crystals/Pages/6008189-ABM3B-8.000MHZ-B2-T.aspx?IM=0"&gt;Example&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 8MHz&lt;/li&gt;
+&lt;li&gt;Frequency Tolerance: &amp;plusmn;20ppm&lt;/li&gt;
+&lt;li&gt;Load Capacitance: 18pF&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD-5X3.2" package="CRYSTAL-SMD-5X3.2-4PAD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-09431"/>
+<attribute name="VALUE" value="8MHz"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD-HC49UP" package="HC49UP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-11706"/>
+<attribute name="VALUE" value="8MHz" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRYSTAL-24MHZ" prefix="Y" uservalue="yes">
+<description>&lt;h3&gt;24MHz Crystal&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Components/AT-SMD-5x3.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 24MHz&lt;/li&gt;
+&lt;li&gt;Frequency Tolerance: &amp;plusmn;20ppm&lt;/li&gt;
+&lt;li&gt;Load Capacitance: 12pF&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="&quot;" package="CRYSTAL-SMD-5X3.2-4PAD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-08298"/>
+<attribute name="SF_ID" value="COM-08581"/>
+<attribute name="VALUE" value="24MHz"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OSCILLATOR-16MHZ" prefix="Y">
+<description>&lt;h3&gt;16 MHz 7x5mm Oscllator&lt;/h3&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 16MHz&lt;/li&gt;
+&lt;li&gt;Frequency Stability: &amp;plusmn;50ppm&lt;/li&gt;
+&lt;li&gt;Operating Voltage: 3.3V&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.futureelectronics.com/en/technologies/electromechanical/timing-devices/oscillators/Pages/9907304-FXO-HC735-16.aspx?IM=0"&gt;Example&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="OSCILLATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD-7X5-4PAD" package="OSCILLATOR-SMD-7X5-4PAD">
+<connects>
+<connect gate="G$1" pin="EN" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-11225"/>
+<attribute name="VALUE" value="16MHz"/>
 </technology>
 </technologies>
 </device>
