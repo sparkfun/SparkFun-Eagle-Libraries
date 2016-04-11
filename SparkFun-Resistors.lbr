@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1287,7 +1287,9 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08787"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2125,7 +2127,7 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="RES-08380" constant="no"/>
-<attribute name="VALE" value="1k" constant="no"/>
+<attribute name="VALUE" value="1k" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2231,8 +2233,21 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 <deviceset name="2.2OHM-1/10W-5%(0603)" prefix="R" uservalue="yes">
 <description>RES-07823</description>
 <gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="0603-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-07823" constant="no"/>
+<attribute name="VALUE" value="2.2" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="2.2KOHM-1/4W-5%(PTH)" prefix="R" uservalue="yes">
@@ -3322,8 +3337,21 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 <deviceset name="6.8KOHM1/10W1%(0603)" prefix="R" uservalue="yes">
 <description>RES-08597</description>
 <gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
 <devices>
+<device name="" package="0603-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08597" constant="no"/>
+<attribute name="VALUE" value="6.8K" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="61.9KOHM1/10W1%(0603)" prefix="R" uservalue="yes">
@@ -4278,7 +4306,7 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="RES-12311" constant="no"/>
-<attribute name="VALUE" value="82" constant="no"/>
+<attribute name="VALUE" value="820K" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -4307,6 +4335,24 @@ SFE parts COM-10855 (330), COM-10856 (10K)&lt;br&gt;</description>
 <technology name="">
 <attribute name="PROD_ID" value="RES-13020" constant="no"/>
 <attribute name="VALUE" value="1K" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="820KOHM-1/10W-1%(0603)">
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0603-RES">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-13247" constant="no"/>
 </technology>
 </technologies>
 </device>

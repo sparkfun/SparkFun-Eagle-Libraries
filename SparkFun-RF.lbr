@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1645,6 +1645,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="17.526" y1="22.606" x2="18.034" y2="23.114" layer="51"/>
 </package>
 <package name="EM406">
+<description>&lt;h3&gt;6-Pin Vertical JST Connector&lt;/h3&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;1.0mm pitch&lt;/li&gt;
+&lt;li&gt;JST-SH type&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Common interface for SparkFun GPS modules.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/GPS/EM406-SMDConnector-eSH.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <wire x1="0" y1="-2.921" x2="5.08" y2="-2.921" width="0.254" layer="21"/>
 <wire x1="-1.778" y1="-0.762" x2="-1.778" y2="0.635" width="0.254" layer="21"/>
 <wire x1="5.842" y1="0.635" x2="6.858" y2="0.635" width="0.254" layer="21"/>
@@ -8643,13 +8648,13 @@ Used by ESP8266.</description>
 <wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
 <wire x1="2.5" y1="-2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
 <wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="51"/>
-<wire x1="2.1" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
-<wire x1="2.5" y1="2.5" x2="2.5" y2="2.1" width="0.127" layer="21"/>
-<wire x1="2.5" y1="-2.1" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="2.5" y1="-2.5" x2="2.1" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="-2.1" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="-2.1" width="0.127" layer="21"/>
-<wire x1="-2.1" y1="2.5" x2="-2.5" y2="2.1" width="0.127" layer="21"/>
+<wire x1="2.1" y1="2.627" x2="2.627" y2="2.627" width="0.2032" layer="21"/>
+<wire x1="2.627" y1="2.627" x2="2.627" y2="2.1" width="0.2032" layer="21"/>
+<wire x1="2.627" y1="-2.1" x2="2.627" y2="-2.627" width="0.2032" layer="21"/>
+<wire x1="2.627" y1="-2.627" x2="2.1" y2="-2.627" width="0.2032" layer="21"/>
+<wire x1="-2.1" y1="-2.627" x2="-2.627" y2="-2.627" width="0.2032" layer="21"/>
+<wire x1="-2.627" y1="-2.627" x2="-2.627" y2="-2.1" width="0.2032" layer="21"/>
+<wire x1="-2.1" y1="2.754" x2="-2.754" y2="2.1" width="0.2032" layer="21"/>
 <smd name="1" x="-2.5" y="1.75" dx="0.8" dy="0.2846" layer="1"/>
 <smd name="2" x="-2.5" y="1.25" dx="0.8" dy="0.2846" layer="1"/>
 <smd name="3" x="-2.5" y="0.75" dx="0.8" dy="0.2846" layer="1"/>
@@ -8721,7 +8726,7 @@ Used by ESP8266.</description>
 <rectangle x1="0.15" y1="0.15" x2="1.45" y2="1.45" layer="31" rot="R270"/>
 <rectangle x1="-1.45" y1="-1.45" x2="-0.15" y2="-0.15" layer="31" rot="R90"/>
 <rectangle x1="0.15" y1="-1.45" x2="1.45" y2="-0.15" layer="31" rot="R180"/>
-<circle x="-2.7" y="2.7" radius="0.15" width="0" layer="21"/>
+<circle x="-2.7" y="2.7" radius="0.2032" width="0" layer="21"/>
 </package>
 <package name="TRACE_ANTENNA_2.4GHZ_25.7MM">
 <polygon width="0.002540625" layer="1">
@@ -11388,6 +11393,65 @@ A wi-fi enabled microcontroller, in an SD card package.</description>
 <wire x1="-20.32" y1="-35.56" x2="-20.32" y2="38.1" width="0.254" layer="94"/>
 <text x="-20.32" y="38.354" size="1.778" layer="95">&gt;Name</text>
 <text x="-20.32" y="-35.814" size="1.778" layer="96" align="top-left">&gt;Value</text>
+</symbol>
+<symbol name="EM-506">
+<description>&lt;h3&gt;EM-506 High Performance GPS Module&lt;/h3&gt;
+&lt;p&gt;EM-506 GPS module features high sensitivity, low power and ultra small form factor. This GPS module is powered by SiRF Star IV, it can provide you with superior sensitivity and performance even in urban canyon and dense foliage environment. With SiRF CGEE (Client Generated Extended Ephemeris) technology, it predicts satellite positions for up to 3 days and delivers CGEE-start time of less than 15 seconds under most conditions, without any network assistance. Besides, MicroPower Mode allows GPS module to stay in a hot-start condition nearly continuously while consuming very little power.&lt;/p&gt;
+&lt;p&gt;Product Features:
+&lt;ul&gt;&lt;li&gt;SiRF Star IV high performance GPS Chipset&lt;/li&gt;
+&lt;li&gt;Very high sensitivity (Tracking Sensitivity: -163 dBm)&lt;/li&gt;
+&lt;li&gt;Extremely fast TTFF (Time To First Fix) at low signal level&lt;/li&gt;
+&lt;li&gt;Support UART interface.&lt;/li&gt;
+&lt;li&gt;Built-in LNA(with in CHIP)&lt;/li&gt;
+&lt;li&gt;Compact size (30.0mm x 30.0 mm x 10.7mm) suitable for space-sensitive application&lt;/li&gt;
+&lt;li&gt;Support NMEA 0183 V3.0 (GGA, GSA, GSV, RMC, VTG, GLL, ZDA) &lt;/li&gt;
+&lt;li&gt;Support OSP protocol&lt;/li&gt;
+&lt;li&gt;Support SBAS (WASS, EGNOS, MSAS, GAGAN)&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<pin name="VIN" x="-10.16" y="5.08" length="short"/>
+<pin name="RX" x="-10.16" y="2.54" length="short"/>
+<pin name="TX" x="-10.16" y="0" length="short"/>
+<pin name="DIRECTIVE" x="-10.16" y="-2.54" length="short"/>
+<pin name="GND@1" x="-10.16" y="-5.08" length="short"/>
+<pin name="GND@5" x="-10.16" y="-7.62" length="short"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="-10.414" size="1.778" layer="96" align="top-left">&gt;Value</text>
+<text x="-7.62" y="7.874" size="1.778" layer="95">&gt;Name</text>
+</symbol>
+<symbol name="GP-735T">
+<description>&lt;h3&gt;GP-735 - Easy-to-use, Ultra-high performance, GPS Smart Antenna Module&lt;/h3&gt;
+
+&lt;p&gt;ADH-tech GP-735 is a slim, ultra-high performance, easy to use GPS smart antenna module designed with u-blox’s latest 7th generation single chip. This feature rich GPS module not only shortens the design efforts but also provides powerful functions. The compact design allows fast adoption and high yield production. The power control feature is very convenient to turn on/off power just via GPIO control pin. It’s  especially useful to turn off power as the GPS function is not needed in the host applications.&lt;/p&gt;
+
+&lt;p&gt;Features
+&lt;ul&gt;&lt;li&gt;Easy adoption with best performance&lt;/li&gt;
+&lt;li&gt;Built-in narrow patch antenna for dimension demanding application&lt;/li&gt;
+&lt;li&gt;Models of I-PEX RF connector option available for using external antenna&lt;/li&gt;
+&lt;li&gt;Built-in backup power pin for faster position fix&lt;/li&gt;
+&lt;li&gt;UART-TTL interface support&lt;/li&gt;
+&lt;li&gt;Minimum RF and EMI efforts&lt;/li&gt;
+&lt;li&gt;Fully implementation of ultra-high performance u-blox 7 single chip architecture&lt;/li&gt;
+&lt;li&gt;High tracking sensitivity of -162dBm!&lt;/li&gt;
+&lt;li&gt;Low power consumption of 37mA for average tracking&lt;/li&gt;
+&lt;li&gt;Hardware power saving control pin allowing power on/off GPS via GPIO&lt;/li&gt;
+&lt;li&gt;Windows location sensor support&lt;/li&gt;
+&lt;li&gt;A-GPS support&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/GPS/GP-735T-150203.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<pin name="VCC" x="-10.16" y="5.08" length="short"/>
+<pin name="RX" x="-10.16" y="0" length="short"/>
+<pin name="TX" x="-10.16" y="2.54" length="short"/>
+<pin name="V_BAT" x="-10.16" y="-2.54" length="short"/>
+<pin name="PWR_CTRL" x="-10.16" y="-5.08" length="short"/>
+<pin name="GND" x="-10.16" y="-7.62" length="short"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.62" y="-10.414" size="1.778" layer="96" align="top-left">&gt;Value</text>
+<text x="-7.62" y="7.874" size="1.778" layer="95">&gt;Name</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -15240,6 +15304,81 @@ Chip antenna with ground or secondary connection. Common with larger metal RF co
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EM-506" prefix="J">
+<description>&lt;h3&gt;EM-506 High Performance GPS Module&lt;/h3&gt;
+&lt;p&gt;EM-506 GPS module features high sensitivity, low power and ultra small form factor. This GPS module is powered by SiRF Star IV, it can provide you with superior sensitivity and performance even in urban canyon and dense foliage environment. With SiRF CGEE (Client Generated Extended Ephemeris) technology, it predicts satellite positions for up to 3 days and delivers CGEE-start time of less than 15 seconds under most conditions, without any network assistance. Besides, MicroPower Mode allows GPS module to stay in a hot-start condition nearly continuously while consuming very little power.&lt;/p&gt;
+&lt;p&gt;Product Features:
+&lt;ul&gt;&lt;li&gt;SiRF Star IV high performance GPS Chipset&lt;/li&gt;
+&lt;li&gt;Very high sensitivity (Tracking Sensitivity: -163 dBm)&lt;/li&gt;
+&lt;li&gt;Extremely fast TTFF (Time To First Fix) at low signal level&lt;/li&gt;
+&lt;li&gt;Support UART interface.&lt;/li&gt;
+&lt;li&gt;Built-in LNA(with in CHIP)&lt;/li&gt;
+&lt;li&gt;Compact size (30.0mm x 30.0 mm x 10.7mm) suitable for space-sensitive application&lt;/li&gt;
+&lt;li&gt;Support NMEA 0183 V3.0 (GGA, GSA, GSV, RMC, VTG, GLL, ZDA) &lt;/li&gt;
+&lt;li&gt;Support OSP protocol&lt;/li&gt;
+&lt;li&gt;Support SBAS (WASS, EGNOS, MSAS, GAGAN)&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="EM-506" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-VERTICAL" package="EM406">
+<connects>
+<connect gate="G$1" pin="DIRECTIVE" pad="6"/>
+<connect gate="G$1" pin="GND@1" pad="1"/>
+<connect gate="G$1" pin="GND@5" pad="5"/>
+<connect gate="G$1" pin="RX" pad="3"/>
+<connect gate="G$1" pin="TX" pad="4"/>
+<connect gate="G$1" pin="VIN" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-08249"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GP-735T" prefix="J">
+<description>&lt;h3&gt;GP-735 - Easy-to-use, Ultra-high performance, GPS Smart Antenna Module&lt;/h3&gt;
+
+&lt;p&gt;ADH-tech GP-735 is a slim, ultra-high performance, easy to use GPS smart antenna module designed with u-blox’s latest 7th generation single chip. This feature rich GPS module not only shortens the design efforts but also provides powerful functions. The compact design allows fast adoption and high yield production. The power control feature is very convenient to turn on/off power just via GPIO control pin. It’s  especially useful to turn off power as the GPS function is not needed in the host applications.&lt;/p&gt;
+
+&lt;p&gt;Features
+&lt;ul&gt;&lt;li&gt;Easy adoption with best performance&lt;/li&gt;
+&lt;li&gt;Built-in narrow patch antenna for dimension demanding application&lt;/li&gt;
+&lt;li&gt;Models of I-PEX RF connector option available for using external antenna&lt;/li&gt;
+&lt;li&gt;Built-in backup power pin for faster position fix&lt;/li&gt;
+&lt;li&gt;UART-TTL interface support&lt;/li&gt;
+&lt;li&gt;Minimum RF and EMI efforts&lt;/li&gt;
+&lt;li&gt;Fully implementation of ultra-high performance u-blox 7 single chip architecture&lt;/li&gt;
+&lt;li&gt;High tracking sensitivity of -162dBm!&lt;/li&gt;
+&lt;li&gt;Low power consumption of 37mA for average tracking&lt;/li&gt;
+&lt;li&gt;Hardware power saving control pin allowing power on/off GPS via GPIO&lt;/li&gt;
+&lt;li&gt;Windows location sensor support&lt;/li&gt;
+&lt;li&gt;A-GPS support&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/GPS/GP-735T-150203.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="GP-735T" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-VERTICAL" package="EM406">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="PWR_CTRL" pad="6"/>
+<connect gate="G$1" pin="RX" pad="4"/>
+<connect gate="G$1" pin="TX" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+<connect gate="G$1" pin="V_BAT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-08249"/>
+</technology>
 </technologies>
 </device>
 </devices>
