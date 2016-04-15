@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -962,27 +962,113 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <pin name="RED" x="-10.16" y="2.54" visible="pin" length="short"/>
 </symbol>
 <symbol name="LED_BARGRAPH_10">
-<wire x1="0" y1="1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="3.81" y1="0.254" x2="5.207" y2="1.651" width="0.1524" layer="94"/>
-<wire x1="2.921" y1="0.635" x2="4.318" y2="2.032" width="0.1524" layer="94"/>
-<text x="-4.445" y="1.651" size="1.778" layer="95" font="vector" rot="MR180" align="top-left">&gt;NAME</text>
-<text x="-4.445" y="-1.651" size="1.778" layer="96" font="vector" rot="MR180">&gt;VALUE</text>
-<pin name="C" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<polygon width="0.1524" layer="94">
-<vertex x="5.207" y="1.651"/>
-<vertex x="4.826" y="0.762"/>
-<vertex x="4.318" y="1.27"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="4.318" y="2.032"/>
-<vertex x="3.937" y="1.143"/>
-<vertex x="3.429" y="1.651"/>
-</polygon>
+<description>10 Pin LED Bar Graph (No Common Pins)</description>
+<wire x1="-0.635" y1="3.175" x2="0.635" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.635" y1="2.54" x2="-0.635" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0.635" y1="3.175" x2="0.635" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.635" y1="2.54" x2="0.635" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="3.175" x2="-0.635" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="2.54" x2="-0.635" y2="1.905" width="0.254" layer="94"/>
+<text x="-5.08" y="12.954" size="1.778" layer="95" font="vector" rot="MR180" align="top-left">&gt;NAME</text>
+<text x="-5.08" y="-15.494" size="1.778" layer="96" font="vector" rot="MR180">&gt;VALUE</text>
+<pin name="C" x="7.62" y="10.16" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="A" x="-7.62" y="10.16" visible="off" length="short" direction="pas"/>
+<wire x1="-5.08" y1="12.7" x2="5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="12.7" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-15.24" x2="-5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-15.24" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
+<pin name="A1" x="-7.62" y="7.62" visible="off" length="short" direction="pas"/>
+<pin name="A2" x="-7.62" y="5.08" visible="off" length="short" direction="pas"/>
+<pin name="A3" x="-7.62" y="2.54" visible="off" length="short" direction="pas"/>
+<pin name="A4" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
+<pin name="A5" x="-7.62" y="-2.54" visible="off" length="short" direction="pas"/>
+<pin name="A6" x="-7.62" y="-5.08" visible="off" length="short" direction="pas"/>
+<pin name="A7" x="-7.62" y="-7.62" visible="off" length="short" direction="pas"/>
+<pin name="A8" x="-7.62" y="-10.16" visible="off" length="short" direction="pas"/>
+<pin name="A9" x="-7.62" y="-12.7" visible="off" length="short" direction="pas"/>
+<pin name="C1" x="7.62" y="7.62" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="C2" x="7.62" y="5.08" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="C3" x="7.62" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="C4" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="C5" x="7.62" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="C6" x="7.62" y="-5.08" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="C7" x="7.62" y="-7.62" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="C8" x="7.62" y="-10.16" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="C9" x="7.62" y="-12.7" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="-0.635" y1="10.795" x2="0.635" y2="10.16" width="0.254" layer="94"/>
+<wire x1="0.635" y1="10.16" x2="-0.635" y2="9.525" width="0.254" layer="94"/>
+<wire x1="0.635" y1="10.795" x2="0.635" y2="10.16" width="0.254" layer="94"/>
+<wire x1="0.635" y1="10.16" x2="0.635" y2="9.525" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="10.795" x2="-0.635" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="10.16" x2="-0.635" y2="9.525" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="8.255" x2="0.635" y2="7.62" width="0.254" layer="94"/>
+<wire x1="0.635" y1="7.62" x2="-0.635" y2="6.985" width="0.254" layer="94"/>
+<wire x1="0.635" y1="8.255" x2="0.635" y2="7.62" width="0.254" layer="94"/>
+<wire x1="0.635" y1="7.62" x2="0.635" y2="6.985" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="8.255" x2="-0.635" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="7.62" x2="-0.635" y2="6.985" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-12.065" x2="0.635" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-12.7" x2="-0.635" y2="-13.335" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-12.065" x2="0.635" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-12.7" x2="0.635" y2="-13.335" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-12.065" x2="-0.635" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-12.7" x2="-0.635" y2="-13.335" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="5.715" x2="0.635" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0.635" y1="5.08" x2="-0.635" y2="4.445" width="0.254" layer="94"/>
+<wire x1="0.635" y1="5.715" x2="0.635" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0.635" y1="5.08" x2="0.635" y2="4.445" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="5.715" x2="-0.635" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="5.08" x2="-0.635" y2="4.445" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="0.635" x2="0.635" y2="0" width="0.254" layer="94"/>
+<wire x1="0.635" y1="0" x2="-0.635" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="0.635" y1="0.635" x2="0.635" y2="0" width="0.254" layer="94"/>
+<wire x1="0.635" y1="0" x2="0.635" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="0.635" x2="-0.635" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="0" x2="-0.635" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-1.905" x2="0.635" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-2.54" x2="-0.635" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-1.905" x2="0.635" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-2.54" x2="0.635" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-1.905" x2="-0.635" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-2.54" x2="-0.635" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-9.525" x2="0.635" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-10.16" x2="-0.635" y2="-10.795" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-9.525" x2="0.635" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-10.16" x2="0.635" y2="-10.795" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-9.525" x2="-0.635" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-10.16" x2="-0.635" y2="-10.795" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-4.445" x2="0.635" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-5.08" x2="-0.635" y2="-5.715" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-4.445" x2="0.635" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-5.08" x2="0.635" y2="-5.715" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-4.445" x2="-0.635" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-5.08" x2="-0.635" y2="-5.715" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-6.985" x2="0.635" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-7.62" x2="-0.635" y2="-8.255" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-6.985" x2="0.635" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-7.62" x2="0.635" y2="-8.255" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-6.985" x2="-0.635" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-7.62" x2="-0.635" y2="-8.255" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="10.16" x2="-0.635" y2="10.16" width="0.254" layer="94"/>
+<wire x1="0.635" y1="10.16" x2="1.905" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="7.62" x2="-0.635" y2="7.62" width="0.254" layer="94"/>
+<wire x1="0.635" y1="7.62" x2="1.905" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-12.7" x2="-0.635" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-12.7" x2="1.905" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="5.08" x2="-0.635" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0.635" y1="5.08" x2="1.905" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="2.54" x2="-0.635" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.635" y1="2.54" x2="1.905" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0" x2="-0.635" y2="0" width="0.254" layer="94"/>
+<wire x1="0.635" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-2.54" x2="-0.635" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-2.54" x2="1.905" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-10.16" x2="-0.635" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-10.16" x2="1.905" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-5.08" x2="-0.635" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-5.08" x2="1.905" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-7.62" x2="-0.635" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-7.62" x2="1.905" y2="-7.62" width="0.254" layer="94"/>
 </symbol>
 <symbol name="LED-RGB-CC">
 <description>&lt;h3&gt;RGB LED - Common Cathode&lt;/h3&gt;
@@ -1163,23 +1249,6 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <pin name="10" x="15.24" y="-7.62" visible="pad" length="short" direction="pas" rot="R180"/>
 <pin name="9" x="15.24" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
 </symbol>
-<symbol name="LTE-302">
-<description>&lt;h3&gt;Lite-On LTE-302 IR Emittor/Detector&lt;/h3&gt;</description>
-<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-3.048" x2="1.27" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-3.048" x2="2.286" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-3.048" x2="1.778" y2="-2.794" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.032" x2="1.27" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.032" x2="2.286" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.032" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
-<text x="3.048" y="-4.064" size="1.778" layer="96" font="vector" rot="R90" align="top-left">&gt;VALUE</text>
-<text x="-1.524" y="-4.064" size="1.778" layer="95" font="vector" rot="R90">&gt;NAME</text>
-<pin name="A" x="0" y="2.54" visible="off" length="short" rot="R270"/>
-<pin name="C" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
-</symbol>
 <symbol name="LED-RGB-INDV">
 <description>&lt;h3&gt;RGB LED - No Common&lt;/h3&gt;
 &lt;p&gt;6 pin RGB LED&lt;/p&gt;</description>
@@ -1268,21 +1337,6 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <text x="-1.524" y="5.5118" size="1.27" layer="94">RGB</text>
 <text x="-3.175" y="-2.159" size="1.27" layer="94" rot="R90">WS28x1</text>
 <wire x1="-5.08" y1="7.62" x2="-5.08" y2="-5.08" width="0.254" layer="94" style="shortdash"/>
-</symbol>
-<symbol name="WS2812B">
-<description>&lt;b&gt;Intelligent control LED with integrated light source&lt;/b&gt;&lt;p&gt;
-WS2812B&lt;br&gt;
-source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</description>
-<pin name="VDD" x="-5.08" y="5.08" length="short" direction="pwr"/>
-<pin name="DOUT" x="-5.08" y="-2.54" length="short" direction="out"/>
-<pin name="VSS" x="17.78" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="DIN" x="17.78" y="5.08" length="short" direction="in" rot="R180"/>
-<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="15.24" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-5.08" x2="15.24" y2="7.62" width="0.254" layer="94"/>
-<wire x1="15.24" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
-<text x="-2.286" y="8.382" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="LED-RG">
 <description>&lt;h3&gt;RG LED - No Common&lt;/h3&gt;
@@ -1473,40 +1527,31 @@ Proven layout and schematic for triple color LED in SMD package - common anode. 
 &lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/9937”&gt;Blue&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="A" symbol="LED_BARGRAPH_10" x="-17.78" y="17.78"/>
-<gate name="B" symbol="LED_BARGRAPH_10" x="-17.78" y="7.62"/>
-<gate name="C" symbol="LED_BARGRAPH_10" x="-17.78" y="-2.54"/>
-<gate name="D" symbol="LED_BARGRAPH_10" x="-17.78" y="-12.7"/>
-<gate name="E" symbol="LED_BARGRAPH_10" x="-17.78" y="-22.86"/>
-<gate name="F" symbol="LED_BARGRAPH_10" x="10.16" y="17.78"/>
-<gate name="G" symbol="LED_BARGRAPH_10" x="10.16" y="7.62"/>
-<gate name="H" symbol="LED_BARGRAPH_10" x="10.16" y="-2.54"/>
-<gate name="I" symbol="LED_BARGRAPH_10" x="10.16" y="-12.7"/>
-<gate name="J" symbol="LED_BARGRAPH_10" x="10.16" y="-22.86"/>
+<gate name="G$1" symbol="LED_BARGRAPH_10" x="0" y="0"/>
 </gates>
 <devices>
 <device name="RED" package="LED_BARGAPH_10">
 <connects>
-<connect gate="A" pin="A" pad="1"/>
-<connect gate="A" pin="C" pad="20"/>
-<connect gate="B" pin="A" pad="2"/>
-<connect gate="B" pin="C" pad="19"/>
-<connect gate="C" pin="A" pad="3"/>
-<connect gate="C" pin="C" pad="18"/>
-<connect gate="D" pin="A" pad="4"/>
-<connect gate="D" pin="C" pad="17"/>
-<connect gate="E" pin="A" pad="5"/>
-<connect gate="E" pin="C" pad="16"/>
-<connect gate="F" pin="A" pad="6"/>
-<connect gate="F" pin="C" pad="15"/>
-<connect gate="G" pin="A" pad="7"/>
-<connect gate="G" pin="C" pad="14"/>
-<connect gate="H" pin="A" pad="8"/>
-<connect gate="H" pin="C" pad="13"/>
-<connect gate="I" pin="A" pad="9"/>
-<connect gate="I" pin="C" pad="12"/>
-<connect gate="J" pin="A" pad="10"/>
-<connect gate="J" pin="C" pad="11"/>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="3"/>
+<connect gate="G$1" pin="A3" pad="4"/>
+<connect gate="G$1" pin="A4" pad="5"/>
+<connect gate="G$1" pin="A5" pad="6"/>
+<connect gate="G$1" pin="A6" pad="7"/>
+<connect gate="G$1" pin="A7" pad="8"/>
+<connect gate="G$1" pin="A8" pad="9"/>
+<connect gate="G$1" pin="A9" pad="10"/>
+<connect gate="G$1" pin="C" pad="20"/>
+<connect gate="G$1" pin="C1" pad="19"/>
+<connect gate="G$1" pin="C2" pad="18"/>
+<connect gate="G$1" pin="C3" pad="17"/>
+<connect gate="G$1" pin="C4" pad="16"/>
+<connect gate="G$1" pin="C5" pad="15"/>
+<connect gate="G$1" pin="C6" pad="14"/>
+<connect gate="G$1" pin="C7" pad="13"/>
+<connect gate="G$1" pin="C8" pad="12"/>
+<connect gate="G$1" pin="C9" pad="11"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1517,26 +1562,26 @@ Proven layout and schematic for triple color LED in SMD package - common anode. 
 </device>
 <device name="YELLOW" package="LED_BARGAPH_10">
 <connects>
-<connect gate="A" pin="A" pad="1"/>
-<connect gate="A" pin="C" pad="20"/>
-<connect gate="B" pin="A" pad="2"/>
-<connect gate="B" pin="C" pad="19"/>
-<connect gate="C" pin="A" pad="3"/>
-<connect gate="C" pin="C" pad="18"/>
-<connect gate="D" pin="A" pad="4"/>
-<connect gate="D" pin="C" pad="17"/>
-<connect gate="E" pin="A" pad="5"/>
-<connect gate="E" pin="C" pad="16"/>
-<connect gate="F" pin="A" pad="6"/>
-<connect gate="F" pin="C" pad="15"/>
-<connect gate="G" pin="A" pad="7"/>
-<connect gate="G" pin="C" pad="14"/>
-<connect gate="H" pin="A" pad="8"/>
-<connect gate="H" pin="C" pad="13"/>
-<connect gate="I" pin="A" pad="9"/>
-<connect gate="I" pin="C" pad="12"/>
-<connect gate="J" pin="A" pad="10"/>
-<connect gate="J" pin="C" pad="11"/>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="3"/>
+<connect gate="G$1" pin="A3" pad="4"/>
+<connect gate="G$1" pin="A4" pad="5"/>
+<connect gate="G$1" pin="A5" pad="6"/>
+<connect gate="G$1" pin="A6" pad="7"/>
+<connect gate="G$1" pin="A7" pad="8"/>
+<connect gate="G$1" pin="A8" pad="9"/>
+<connect gate="G$1" pin="A9" pad="10"/>
+<connect gate="G$1" pin="C" pad="20"/>
+<connect gate="G$1" pin="C1" pad="19"/>
+<connect gate="G$1" pin="C2" pad="18"/>
+<connect gate="G$1" pin="C3" pad="17"/>
+<connect gate="G$1" pin="C4" pad="16"/>
+<connect gate="G$1" pin="C5" pad="15"/>
+<connect gate="G$1" pin="C6" pad="14"/>
+<connect gate="G$1" pin="C7" pad="13"/>
+<connect gate="G$1" pin="C8" pad="12"/>
+<connect gate="G$1" pin="C9" pad="11"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1547,26 +1592,26 @@ Proven layout and schematic for triple color LED in SMD package - common anode. 
 </device>
 <device name="BLUE" package="LED_BARGAPH_10">
 <connects>
-<connect gate="A" pin="A" pad="1"/>
-<connect gate="A" pin="C" pad="20"/>
-<connect gate="B" pin="A" pad="2"/>
-<connect gate="B" pin="C" pad="19"/>
-<connect gate="C" pin="A" pad="3"/>
-<connect gate="C" pin="C" pad="18"/>
-<connect gate="D" pin="A" pad="4"/>
-<connect gate="D" pin="C" pad="17"/>
-<connect gate="E" pin="A" pad="5"/>
-<connect gate="E" pin="C" pad="16"/>
-<connect gate="F" pin="A" pad="6"/>
-<connect gate="F" pin="C" pad="15"/>
-<connect gate="G" pin="A" pad="7"/>
-<connect gate="G" pin="C" pad="14"/>
-<connect gate="H" pin="A" pad="8"/>
-<connect gate="H" pin="C" pad="13"/>
-<connect gate="I" pin="A" pad="9"/>
-<connect gate="I" pin="C" pad="12"/>
-<connect gate="J" pin="A" pad="10"/>
-<connect gate="J" pin="C" pad="11"/>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="3"/>
+<connect gate="G$1" pin="A3" pad="4"/>
+<connect gate="G$1" pin="A4" pad="5"/>
+<connect gate="G$1" pin="A5" pad="6"/>
+<connect gate="G$1" pin="A6" pad="7"/>
+<connect gate="G$1" pin="A7" pad="8"/>
+<connect gate="G$1" pin="A8" pad="9"/>
+<connect gate="G$1" pin="A9" pad="10"/>
+<connect gate="G$1" pin="C" pad="20"/>
+<connect gate="G$1" pin="C1" pad="19"/>
+<connect gate="G$1" pin="C2" pad="18"/>
+<connect gate="G$1" pin="C3" pad="17"/>
+<connect gate="G$1" pin="C4" pad="16"/>
+<connect gate="G$1" pin="C5" pad="15"/>
+<connect gate="G$1" pin="C6" pad="14"/>
+<connect gate="G$1" pin="C7" pad="13"/>
+<connect gate="G$1" pin="C8" pad="12"/>
+<connect gate="G$1" pin="C9" pad="11"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1577,26 +1622,26 @@ Proven layout and schematic for triple color LED in SMD package - common anode. 
 </device>
 <device name="GREEN" package="LED_BARGAPH_10">
 <connects>
-<connect gate="A" pin="A" pad="1"/>
-<connect gate="A" pin="C" pad="20"/>
-<connect gate="B" pin="A" pad="2"/>
-<connect gate="B" pin="C" pad="19"/>
-<connect gate="C" pin="A" pad="3"/>
-<connect gate="C" pin="C" pad="18"/>
-<connect gate="D" pin="A" pad="4"/>
-<connect gate="D" pin="C" pad="17"/>
-<connect gate="E" pin="A" pad="5"/>
-<connect gate="E" pin="C" pad="16"/>
-<connect gate="F" pin="A" pad="6"/>
-<connect gate="F" pin="C" pad="15"/>
-<connect gate="G" pin="A" pad="7"/>
-<connect gate="G" pin="C" pad="14"/>
-<connect gate="H" pin="A" pad="8"/>
-<connect gate="H" pin="C" pad="13"/>
-<connect gate="I" pin="A" pad="9"/>
-<connect gate="I" pin="C" pad="12"/>
-<connect gate="J" pin="A" pad="10"/>
-<connect gate="J" pin="C" pad="11"/>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="3"/>
+<connect gate="G$1" pin="A3" pad="4"/>
+<connect gate="G$1" pin="A4" pad="5"/>
+<connect gate="G$1" pin="A5" pad="6"/>
+<connect gate="G$1" pin="A6" pad="7"/>
+<connect gate="G$1" pin="A7" pad="8"/>
+<connect gate="G$1" pin="A8" pad="9"/>
+<connect gate="G$1" pin="A9" pad="10"/>
+<connect gate="G$1" pin="C" pad="20"/>
+<connect gate="G$1" pin="C1" pad="19"/>
+<connect gate="G$1" pin="C2" pad="18"/>
+<connect gate="G$1" pin="C3" pad="17"/>
+<connect gate="G$1" pin="C4" pad="16"/>
+<connect gate="G$1" pin="C5" pad="15"/>
+<connect gate="G$1" pin="C6" pad="14"/>
+<connect gate="G$1" pin="C7" pad="13"/>
+<connect gate="G$1" pin="C8" pad="12"/>
+<connect gate="G$1" pin="C9" pad="11"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1692,7 +1737,7 @@ Proven layout and schematic for triple color LED in SMD package - common anode. 
 &lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/241”&gt;Infrared Emitters and Detectors&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="LTE-302" x="0" y="1.016"/>
+<gate name="G$1" symbol="LED" x="0" y="2.54"/>
 </gates>
 <devices>
 <device name="" package="LTE-302">
@@ -2264,13 +2309,13 @@ DIO-11598</description>
 &lt;/ul&gt;
 &lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="WS2812B" x="-2.54" y="0"/>
+<gate name="G$1" symbol="LED-TRICOLOR-WS28X1" x="2.54" y="0"/>
 </gates>
 <devices>
 <device name="" package="WS2812B">
 <connects>
-<connect gate="G$1" pin="DIN" pad="4"/>
-<connect gate="G$1" pin="DOUT" pad="2"/>
+<connect gate="G$1" pin="DI" pad="4"/>
+<connect gate="G$1" pin="DO" pad="2"/>
 <connect gate="G$1" pin="VDD" pad="1"/>
 <connect gate="G$1" pin="VSS" pad="3"/>
 </connects>
