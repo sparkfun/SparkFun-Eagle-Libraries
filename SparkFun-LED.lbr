@@ -565,7 +565,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="-2.8575" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
 <package name="LED-TRICOLOR-5050">
-<description>&lt;h3&gt;5060 SMD RGB LED&lt;/h3&gt;
+<description>&lt;h3&gt;5050 SMD RGB LED&lt;/h3&gt;
 &lt;p&gt;&lt;b&gt;Specifications:&lt;/b&gt;
 &lt;ul&gt;&lt;li&gt;Pin count: 6&lt;/li&gt;
 &lt;li&gt;Pin pitch: 0.6mm&lt;/li&gt;
@@ -835,17 +835,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="4.90375" y1="1.92875" x2="4.90375" y2="-1.905" width="0.2032" layer="21"/>
 </package>
 <package name="WS2812B">
-<description>&lt;b&gt;Intelligent control LED with integrated light source&lt;/b&gt;&lt;p&gt;
-WS2812B&lt;br&gt;
-source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf
-
-&lt;h3&gt;WS2812B&lt;/h3&gt;
+<description>&lt;h3&gt;WS2812B&lt;/h3&gt;
 
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count: 4&lt;/li&gt;
 &lt;li&gt;Size: 5.0 x 5.0 mm&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt; &lt;a href=http://cdn.sparkfun.com/datasheets/BreakoutBoards/WS2812B.pdf"&gt;WS2812B&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt; &lt;a href="http://cdn.sparkfun.com/datasheets/BreakoutBoards/WS2812B.pdf"&gt;WS2812B&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Example device:
 &lt;ul&gt;&lt;li&gt;WS2812B&lt;/li&gt;</description>
 <smd name="1" x="2.577" y="-1.6" dx="1.651" dy="1" layer="1" rot="R180"/>
@@ -1606,6 +1602,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-08324" constant="no"/>
+<attribute name="VALUE" value="RGB" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -1830,8 +1827,21 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </devices>
 </deviceset>
 <deviceset name="LTE-302" prefix="D" uservalue="yes">
-<description>&lt;h3&gt;Lite-On Electronics LTE-302&lt;/h3&gt;
+<description>&lt;h3&gt;Lite-On Electronics LTE-302/LTR-301&lt;/h3&gt;
 &lt;p&gt;Through-hole side-firing 940nm IR Emitters and Detectors&lt;/p&gt;
+
+&lt;p&gt;&lt;li&gt;&lt;b&gt; LTE302&lt;/b&gt; -  Emitter (yellow dot)&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;1.2V&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;20 mA&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Datasheet &lt;/b&gt;&lt;a href="https://www.sparkfun.com/datasheets/Components/LTE-302.pdf"&gt;[ Link]&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;li&gt;&lt;b&gt; LTR301&lt;/b&gt; - Detector (red dot)&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;5V&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;1.56 mA&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Datasheet &lt;/b&gt;&lt;a href="https://www.sparkfun.com/datasheets/Components/LTR-301.pdf"&gt;[ Link]&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
+
 &lt;p&gt;SparkFun Products:
 &lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/241”&gt;Infrared Emitters and Detectors&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
@@ -2023,8 +2033,30 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </devices>
 </deviceset>
 <deviceset name="LED-WHITE" prefix="D" uservalue="yes">
-<description>White SMD LEDs&lt;br&gt;
-LilyPad 1206- DIO-09955</description>
+<description>&lt;h3&gt;White SMD LED&lt;/h3&gt;
+
+Used in manufacturing several products at SparkFun. 
+
+&lt;p&gt;&lt;li&gt;&lt;b&gt; 0603&lt;/b&gt; - Bright White SMD 0603  package&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Manufacturer:&lt;/b&gt;Kingbright&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;3.3V&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;30 mA&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;250 mcd&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Kingbright &lt;/b&gt;&lt;a href="http://www.kingbrightusa.com/product.asp?catalog_name=LED&amp;product_id=APT1608QWF/D"&gt;[Product Link]&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
+
+&lt;li&gt;&lt;b&gt; 1206&lt;/b&gt; - Bright White SMD1206  package&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Manufacturer:&lt;/b&gt;Kingbright&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;3.3V&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;20 mA&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;250 mcd&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Kingbright &lt;/b&gt;&lt;a href="http://www.kingbrightusa.com/product.asp?catalog_name=LED&amp;product_id=APT3216QWF/D"&gt;[Product Link]&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13169”&gt;Blackberry Trackballer Breakout&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12651”&gt;Digital SandBox&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
@@ -2056,10 +2088,39 @@ LilyPad 1206- DIO-09955</description>
 </devices>
 </deviceset>
 <deviceset name="LED-YELLOW" prefix="D" uservalue="yes">
-<description>Yellow SMD LEDs&lt;br&gt;
-LilyPad 1206- DIO-09909&lt;br&gt;
-0603- DIO-09003&lt;br&gt;
-"SMART" means more efficient and expensive</description>
+<description>&lt;h3&gt;Yellow SMD LED&lt;/h3&gt;
+
+Used in manufacturing several products at SparkFun. 
+
+&lt;p&gt;&lt;li&gt;&lt;b&gt; 0603&lt;/b&gt; -  SMD 0603  package&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Manufacturer:&lt;/b&gt;Kingbright&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;2V&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;20 mA&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;150 mcd&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Kingbright &lt;/b&gt;&lt;a href=http://www.kingbrightusa.com/product.asp?catalog_name=LED&amp;product_id=APT1608SYCK"&gt;[Product Link]&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;li&gt;&lt;b&gt; 0603 -SMART&lt;/b&gt; - SMART SMD 0603  package (more efficient/more expensive)&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Manufacturer:&lt;/b&gt;OSRAM&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;1.8V&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;20 mA&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;7.85 mcd&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;OSRAM &lt;/b&gt;&lt;a href="http://www.osram-os.com/osram_os/en/products/product-catalog/led-light-emitting-diodes/smartled-0603/ly-l29k/index.jsp"&gt;[Product Link]&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
+
+&lt;li&gt;&lt;b&gt; LilyPad&lt;/b&gt; - SMD1206  package&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Manufacturer:&lt;/b&gt;Kingbright&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;2.4V&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;30 mA&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;150 mcd&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Yetda &lt;/b&gt;&lt;a href="https://www.sparkfun.com/datasheets/DevTools/LilyPad/Q150YUS4.pdf"&gt;[Product Datasheet]&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13794”&gt;Blynk Board&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13613”&gt;IOIO-OTG&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13225”&gt;XBee Explorer Serial&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
@@ -2085,18 +2146,6 @@ LilyPad 1206- DIO-09909&lt;br&gt;
 <technology name="">
 <attribute name="PROD_ID" value="DIO-09003"/>
 <attribute name="VALUE" value="Yellow" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="1206" package="LED-1206">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="DIO-00820" constant="no"/>
-<attribute name="VALUE" value="YELLOW" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2212,6 +2261,17 @@ LilyPad 1206- DIO-09909&lt;br&gt;
 </devices>
 </deviceset>
 <deviceset name="LED-TRICOLOR-5050" prefix="LED">
+<description>&lt;h3&gt;Tri-Color LED SMD-5050: No IC&lt;/h3&gt;
+
+&lt;p&gt;&lt;li&gt;&lt;b&gt;Color:&lt;/b&gt; Red/Green/Blue&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;RGB: 250, 880, 180 mcd&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;RGB: 30, 30, 30 mA&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt; RGB: 2.0, 3.1, 3.1 V&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Packages:&lt;/b&gt; LED RGB-THRU&lt;/li&gt;
+&lt;/p&gt;
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/10866”&gt; LED- SMD RGB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="D1" symbol="LED-RGB-INDV" x="0" y="0"/>
 </gates>
@@ -2226,15 +2286,27 @@ LilyPad 1206- DIO-09909&lt;br&gt;
 <connect gate="D1" pin="RED-C" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-10298" constant="no"/>
+<attribute name="VALUE" value="RGB" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="WS2812" prefix="U">
-<description>&lt;h3&gt; WS2812 RGB LED w/ WS2811 driver&lt;/h3&gt;&lt;p&gt;
-5x5mm SMD LED with built-in controller IC.&lt;br&gt;
-DIO-11598</description>
+<description>&lt;h3&gt;WS2812 RGB LED w/ WS2811 driver&lt;/h3&gt;
+5x5mm SMD LED with built-in controller IC.
+
+&lt;p&gt;&lt;li&gt;&lt;b&gt;Color:&lt;/b&gt; Red/Green/Blue&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;RGB: 550, 1100, 200 mcd&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;RGB: 20, 20, 20 mA&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt; RGB: 1.8, 3.0, 3.2 V&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Packages:&lt;/b&gt;LED-TRICOLOR-5050-IC&lt;/li&gt;
+&lt;/p&gt;
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/11821”&gt;LED-SMD RGB (WS2812)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="U1" symbol="LED-TRICOLOR-WS28X1" x="0" y="0"/>
 </gates>
@@ -2249,7 +2321,7 @@ DIO-11598</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-11598"/>
-<attribute name="VALUE" value="WS2811" constant="no"/>
+<attribute name="VALUE" value="WS2812" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2417,16 +2489,17 @@ DIO-11598</description>
 </devices>
 </deviceset>
 <deviceset name="WS2812B" prefix="D" uservalue="yes">
-<description>&lt;b&gt;WS2812B&lt;/b&gt; - Intelligent control LED integrated light source
+<description>&lt;h3&gt;WS2812B SMD addressable RGB LED&lt;/h3&gt;
+5x5mm SMD LED with built-in controller IC.
 
-&lt;p&gt;Technical Specifications:
-&lt;ul&gt;
-&lt;li&gt;Power Supply Voltage (VDD): 3.5 to 5.3 V&lt;/li&gt;
-&lt;li&gt;Input Voltage (VI): -0.5 to VDD+0.5 V&lt;/li&gt;
-&lt;li&gt;Operating Junction Temperature (Topt): -25°C to +80°C&lt;/li&gt;
-&lt;li&gt;Storage Temperature Range (Tstg): -55°C to +150°C&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</description>
+&lt;p&gt;&lt;li&gt;&lt;b&gt;Color:&lt;/b&gt; Red/Green/Blue&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;RGB: 390, 660, 180 mcd&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt; RGB: 2.0, 3.0, 3.0 V&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Packages:&lt;/b&gt;WS2812B&lt;/li&gt;
+&lt;/p&gt;
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13794”&gt;Blynk Board - ESP8266&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="LED-TRICOLOR-WS28X1" x="2.54" y="0"/>
 </gates>
@@ -2441,7 +2514,7 @@ DIO-11598</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-12503"/>
-<attribute name="VALUE" value="WS2812" constant="no"/>
+<attribute name="VALUE" value="WS2812B" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2484,6 +2557,13 @@ DIO-11598</description>
 <description>&lt;h3&gt;OSRAM LTRB GFSF - RGB LED PLCC-6&lt;/h3&gt;
 &lt;p&gt;SMD PLCC-6 RGB LED (no common connector)&lt;/p&gt;
 
+&lt;p&gt;&lt;li&gt;&lt;b&gt;Color:&lt;/b&gt; Red/Green/Blue&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;RGB (clear): 700, 1350, 160 mcd&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;RGB: 40, 50, 50 mA&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt; RGB: 2.0, 3.2, 3.2 V&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Packages:&lt;/b&gt; PLCC-6&lt;/li&gt;
+&lt;/p&gt;
+
 &lt;p&gt;SparkFun Products:
 &lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12651”&gt;Digital Sandbox&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13321”&gt;Photon RedBoard&lt;/a&gt;&lt;/li&gt;
@@ -2504,7 +2584,7 @@ DIO-11598</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-12113" constant="no"/>
-<attribute name="VALUE" value=" " constant="no"/>
+<attribute name="VALUE" value="RGB" constant="no"/>
 </technology>
 </technologies>
 </device>
