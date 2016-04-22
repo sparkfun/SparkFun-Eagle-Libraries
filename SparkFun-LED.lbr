@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -159,7 +159,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;&lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="LED5MM">
+<package name="LED_5MM">
 <description>&lt;B&gt;LED 5mm PTH&lt;/B&gt;&lt;p&gt;
 5 mm, round
 &lt;p&gt;Specifications:
@@ -168,7 +168,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;li&gt;Diameter: 5mm&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
 &lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;TSAL6100&lt;/li&gt;</description>
+&lt;ul&gt;&lt;li&gt;LED-IR-THRU&lt;/li&gt;</description>
 <wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.2032" layer="22"/>
 <wire x1="-1.143" y1="0" x2="0" y2="1.143" width="0.1524" layer="51" curve="-90" cap="flat"/>
 <wire x1="0" y1="-1.143" x2="1.143" y2="0" width="0.1524" layer="51" curve="90" cap="flat"/>
@@ -184,7 +184,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.254" layer="21" curve="-286.260205" cap="flat"/>
 <circle x="0" y="0" radius="2.54" width="0.1524" layer="21"/>
 </package>
-<package name="LED3MM">
+<package name="LED_3MM">
 <description>&lt;h3&gt;LED 3MM PTH&lt;/h3&gt;
 
 3 mm, round.
@@ -195,7 +195,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;li&gt;Diameter: 3mm&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
 &lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;[]&lt;/li&gt;&lt;/ul&gt;</description>
+&lt;ul&gt;&lt;li&gt;LED&lt;/li&gt;&lt;/ul&gt;</description>
 <wire x1="1.5748" y1="-1.27" x2="1.5748" y2="1.27" width="0.254" layer="51"/>
 <wire x1="0" y1="2.032" x2="1.561" y2="1.3009" width="0.254" layer="22" curve="-50.193108" cap="flat"/>
 <wire x1="-1.7929" y1="0.9562" x2="0" y2="2.032" width="0.254" layer="22" curve="-61.926949" cap="flat"/>
@@ -224,10 +224,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
 &lt;li&gt;Pin pitch: &lt;/li&gt;
-&lt;li&gt;Area: &lt;/li&gt;
+&lt;li&gt;Area: 0.125" x 0.06"&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
 &lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;[]&lt;/li&gt;&lt;/ul&gt;</description>
+&lt;ul&gt;&lt;li&gt;LED&lt;/li&gt;&lt;/ul&gt;</description>
 <wire x1="2.4" y1="0.6825" x2="2.4" y2="-0.6825" width="0.2032" layer="21"/>
 <smd name="A" x="-1.5" y="0" dx="1.2" dy="1.4" layer="1"/>
 <smd name="C" x="1.5" y="0" dx="1.2" dy="1.4" layer="1"/>
@@ -240,17 +240,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
 &lt;li&gt;Pin pitch:0.075inch &lt;/li&gt;
-&lt;li&gt;Area: &lt;/li&gt;
+&lt;li&gt;Area: 0.06" x 0.03"&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
 &lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;&lt;/li&gt;</description>
-<smd name="C" x="0" y="0.877" dx="1" dy="1" layer="1" roundness="30"/>
-<smd name="A" x="0" y="-0.877" dx="1" dy="1" layer="1" roundness="30"/>
-<text x="-0.635" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
-<text x="0.635" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
-<wire x1="-0.47625" y1="1.5875" x2="0.47625" y2="1.5875" width="0.127" layer="21"/>
+&lt;ul&gt;&lt;li&gt;LED - BLUE&lt;/li&gt;</description>
+<smd name="C" x="0.877" y="0" dx="1" dy="1" layer="1" roundness="30" rot="R270"/>
+<smd name="A" x="-0.877" y="0" dx="1" dy="1" layer="1" roundness="30" rot="R270"/>
+<text x="0" y="0.635" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.635" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="1.5875" y1="0.47625" x2="1.5875" y2="-0.47625" width="0.127" layer="21"/>
 </package>
-<package name="LED10MM">
+<package name="LED_10MM">
 <description>&lt;B&gt;LED 10mm PTH&lt;/B&gt;&lt;p&gt;
 10 mm, round
 &lt;p&gt;Specifications:
@@ -259,7 +259,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;li&gt;Diameter: 10mm&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
 &lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;&lt;/li&gt;</description>
+&lt;ul&gt;&lt;li&gt;LED&lt;/li&gt;</description>
 <wire x1="-5" y1="-2" x2="-5" y2="2" width="0.2032" layer="21" curve="316.862624"/>
 <wire x1="-5" y1="2" x2="-5" y2="-2" width="0.2032" layer="21"/>
 <pad name="A" x="2.54" y="0" drill="2.4" diameter="3.7"/>
@@ -275,11 +275,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 1206, surface mount
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
-&lt;li&gt;Pin pitch: &lt;/li&gt;
-&lt;li&gt;Area: &lt;/li&gt;
+&lt;li&gt;Area: 0.125"x 0.06" &lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
 &lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;&lt;/li&gt;</description>
+&lt;ul&gt;&lt;li&gt;LED&lt;/li&gt;</description>
 <wire x1="1.55" y1="-0.75" x2="-1.55" y2="-0.75" width="0.1016" layer="51"/>
 <wire x1="-1.55" y1="-0.75" x2="-1.55" y2="0.75" width="0.1016" layer="51"/>
 <wire x1="-1.55" y1="0.75" x2="1.55" y2="0.75" width="0.1016" layer="51"/>
@@ -297,7 +296,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-0.9" y1="0.55" x2="-0.8" y2="0.7" layer="51"/>
 <wire x1="2.54" y1="0.9525" x2="2.54" y2="-0.9525" width="0.2032" layer="21"/>
 </package>
-<package name="LED3MM-NS">
+<package name="LED_3MM-NS">
 <description>&lt;h3&gt;LED 3MM PTH- No Silk&lt;/h3&gt;
 
 3 mm, round, no silk outline of package
@@ -308,7 +307,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;li&gt;Diameter: 3mm&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
 &lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;[]&lt;/li&gt;&lt;/ul&gt;</description>
+&lt;ul&gt;&lt;li&gt;LED&lt;/li&gt;&lt;/ul&gt;</description>
 <wire x1="1.5748" y1="-1.27" x2="1.5748" y2="1.27" width="0.254" layer="51"/>
 <wire x1="0" y1="2.032" x2="1.561" y2="1.3009" width="0.254" layer="51" curve="-50.193108" cap="flat"/>
 <wire x1="-1.7929" y1="0.9562" x2="0" y2="2.032" width="0.254" layer="51" curve="-61.926949" cap="flat"/>
@@ -323,7 +322,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="2.286" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.286" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
-<package name="LED5MM-KIT">
+<package name="LED_5MM-KIT">
 <description>&lt;h3&gt;LED 5mm KIT PTH&lt;/h3&gt;
 &lt;p&gt;
 &lt;b&gt;Warning:&lt;/b&gt; This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.&lt;/p&gt;
@@ -332,6 +331,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
 &lt;li&gt;Pin pitch: 0.1inch&lt;/li&gt;
 &lt;li&gt;Diameter: 5mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example Device:
+&lt;ul&gt;&lt;li&gt;LED&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <wire x1="2.54" y1="-1.905" x2="2.54" y2="1.905" width="0.2032" layer="22"/>
 <wire x1="-1.143" y1="0" x2="0" y2="1.143" width="0.1524" layer="51" curve="-90" cap="flat"/>
@@ -373,30 +375,38 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <circle x="0" y="0" radius="2.54" width="0.1524" layer="21"/>
 </package>
 <package name="LED-TRICOLOR-SMD">
-<wire x1="-1.3" y1="1.3" x2="-1.6" y2="1.3" width="0.2032" layer="21"/>
-<wire x1="-1.6" y1="1.3" x2="-1.6" y2="-1.3" width="0.2032" layer="21"/>
-<wire x1="-1.6" y1="-1.3" x2="-1.3" y2="-1.3" width="0.2032" layer="21"/>
-<wire x1="1.3" y1="1.3" x2="1.6" y2="1.3" width="0.2032" layer="21"/>
-<wire x1="1.6" y1="1.3" x2="1.6" y2="-1.3" width="0.2032" layer="21"/>
-<wire x1="1.6" y1="-1.3" x2="1.3" y2="-1.3" width="0.2032" layer="21"/>
-<wire x1="0" y1="-1.6" x2="0" y2="-1.8" width="0.2032" layer="21"/>
-<smd name="G" x="-0.7" y="1.5" dx="0.7" dy="1.2" layer="1"/>
-<smd name="B" x="0.7" y="1.5" dx="0.7" dy="1.2" layer="1"/>
-<smd name="R" x="-0.7" y="-1.5" dx="0.7" dy="1.2" layer="1"/>
-<smd name="A" x="0.7" y="-1.5" dx="0.7" dy="1.2" layer="1"/>
-<text x="-1.016" y="0.127" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.016" y="-0.635" size="0.4064" layer="27">&gt;VALUE</text>
+<description>&lt;h3&gt;Tri-Color SMD&lt;/h3&gt;
+&lt;p&gt;&lt;b&gt;Specifications:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;Pin count: 4&lt;/li&gt;
+&lt;li&gt;Pin pitch: 2.0mm&lt;/li&gt;
+&lt;li&gt;Area: 2.6mm x 3.2mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt;&lt;a href="https://www.sparkfun.com/datasheets/Components/DJS-BRGBC-TR8.pdf"&gt; DJS-BRGBC-TR8&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Example device(s):&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;TRI-COLOR LED&lt;/p&gt;</description>
+<wire x1="-1.3" y1="-1.3" x2="-1.3" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="-1.3" y1="-1.6" x2="1.3" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="1.3" y1="-1.6" x2="1.3" y2="-1.3" width="0.2032" layer="21"/>
+<wire x1="-1.3" y1="1.3" x2="-1.3" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="-1.3" y1="1.6" x2="1.3" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="1.3" y1="1.6" x2="1.3" y2="1.3" width="0.2032" layer="21"/>
+<wire x1="1.6" y1="0" x2="1.8" y2="0" width="0.2032" layer="21"/>
+<smd name="G" x="-1.5" y="-0.7" dx="0.7" dy="1.2" layer="1" rot="R90"/>
+<smd name="B" x="-1.5" y="0.7" dx="0.7" dy="1.2" layer="1" rot="R90"/>
+<smd name="R" x="1.5" y="-0.7" dx="0.7" dy="1.2" layer="1" rot="R90"/>
+<smd name="A" x="1.5" y="0.7" dx="0.7" dy="1.2" layer="1" rot="R90"/>
+<text x="0" y="1.778" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.905" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
 <package name="LED_BARGAPH_10">
-<description>&lt;h3&gt;Dual In Line Package - [Package Short Description]&lt;/h3&gt;
+<description>&lt;h3&gt;10 Segment LED Bar Graph&lt;/h3&gt;
 &lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count: [PIN COUNT]&lt;/li&gt;
-&lt;li&gt;Pin pitch: [PIN PITCH]&lt;/li&gt;
-&lt;li&gt;Area: [WIDTH x LENGTH]&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;Pin count: 20&lt;/li&gt;
+&lt;li&gt;Pin pitch: 1.74mm&lt;/li&gt;
+&lt;li&gt;Area:10mm x 25.5mm&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;[EXAMPLE DEVICE 1]&lt;/li&gt;</description>
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt; &lt;a href="https://www.sparkfun.com/datasheets/Components/LED/YSLB-102510B5-10.pdf"&gt;YSLB-102510B5&lt;/a&gt;&lt;/p&gt;</description>
 <wire x1="12.7" y1="5.08" x2="-12.7" y2="5.08" width="0.2032" layer="21"/>
 <wire x1="-10.16" y1="-5.08" x2="12.7" y2="-5.08" width="0.2032" layer="21"/>
 <wire x1="12.7" y1="5.08" x2="12.7" y2="-5.08" width="0.2032" layer="21"/>
@@ -424,8 +434,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pad name="18" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="19" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="20" x="-11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-10.16" y="-0.635" size="1.27" layer="25">&gt;NAME</text>
-<text x="5.08" y="-0.635" size="1.27" layer="27">&gt;VALUE</text>
+<text x="0" y="5.461" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-5.461" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 <polygon width="0.127" layer="21">
 <vertex x="-0.635" y="-0.3175"/>
 <vertex x="0.635" y="-0.3175"/>
@@ -439,6 +449,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;li&gt;Pin pitch: 1.5mm, 5.06 mm&lt;/li&gt;
 &lt;li&gt;Area:5mm x 5mm &lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt; &lt;a href="http://cdn.sparkfun.com/datasheets/Components/LED/YSRGB7A5BSW25.pdf"&gt;YSRGB7A5BSW25&lt;/a&gt;&lt;/p&gt;
+
 &lt;p&gt;Example device(s):
 &lt;ul&gt;&lt;li&gt;LED Pirahana&lt;/li&gt;</description>
 <wire x1="-3.81" y1="-3.81" x2="3.69" y2="-3.81" width="0.127" layer="21"/>
@@ -454,8 +466,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0.962" y="2.298" size="0.6096" layer="25" font="vector" ratio="20">G</text>
 <text x="1.037" y="-3.131" size="0.6096" layer="25" font="vector" ratio="20">R</text>
 <text x="-1.524" y="-3.031" size="0.6096" layer="25" font="vector" ratio="20">-</text>
-<text x="-1.354" y="0.844" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-1.5955" y="-1.3925" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<text x="0" y="4.064" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-4.064" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 <circle x="-3.81" y="3.4925" radius="0.254" width="0.127" layer="21"/>
 </package>
 <package name="LED_RING">
@@ -464,6 +476,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;ul&gt;&lt;li&gt;Pin count: 20&lt;/li&gt;
 &lt;li&gt;Area: 26 x 40mm&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt; &lt;a href="http://cdn.sparkfun.com/datasheets/Components/LED/LED-CCL-A.pdf"&gt;LED-CCL-A&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Example device(s):
 &lt;ul&gt;&lt;li&gt;LED Ring&lt;/li&gt;</description>
 <wire x1="-20" y1="-13" x2="-20" y2="13" width="0.1778" layer="21"/>
@@ -506,7 +519,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;li&gt;Pin pitch: 2.54mm&lt;/li&gt;
 &lt;li&gt;Area: 2.25 x 4.4 mm&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;&lt;a href="https://www.sparkfun.com/datasheets/Components/LTE-302.pdf"&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint&lt;/b&gt;&lt;a href="https://www.sparkfun.com/datasheets/Components/LTE-302.pdf"&gt; LTE-302&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Example device(s):
 &lt;ul&gt;&lt;li&gt;LTE-302&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
@@ -535,9 +548,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <description>&lt;h3&gt;LED - RGB PTH&lt;/h3&gt;
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count: 4&lt;/li&gt;
-&lt;li&gt;Pin pitch: [PIN PITCH]&lt;/li&gt;
-&lt;li&gt;Area: [WIDTH x LENGTH]&lt;/li&gt;
+&lt;li&gt;Area:5 x 5.8 mm&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Datasheet Referenced: &lt;a href="https://www.sparkfun.com/datasheets/Components/YSL-R596CR3G4B5C-C10.pdf"&gt;YSL-R596CR3G4B5C&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Example device(s):
 &lt;ul&gt;&lt;li&gt;LED-RGB-CA&lt;/li&gt;
 &lt;li&gt;LED-RGB-CC&lt;/li&gt;</description>
@@ -548,12 +561,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pad name="3" x="-0.635" y="0" drill="0.762" diameter="0.889" shape="long" rot="R90"/>
 <pad name="4" x="-1.905" y="0" drill="0.762" diameter="0.889" shape="long" rot="R90"/>
 <wire x1="2.5" y1="-1" x2="2.5" y2="1" width="0.127" layer="22"/>
-<text x="0" y="2.8575" size="1.27" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.8575" size="1.27" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<text x="0" y="2.8575" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.8575" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
 <package name="LED-TRICOLOR-5050">
-<description>&lt;H3&gt;5050 SMD RGB LED&lt;/h3&gt;
-5.0mm x 5.0mm, 2.6mm thickness</description>
+<description>&lt;h3&gt;5050 SMD RGB LED&lt;/h3&gt;
+&lt;p&gt;&lt;b&gt;Specifications:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;Pin count: 6&lt;/li&gt;
+&lt;li&gt;Pin pitch: 0.6mm&lt;/li&gt;
+&lt;li&gt;Area: 5.0mm x 5.mm&lt;/li&gt;
+&lt;li&gt;Thickness: 2.6mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Components/LED/5060BRG4.pdf"&gt; 5060BRG4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Example device(s):&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;LED-TRICOLOR-RGB&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <circle x="-0.7" y="2" radius="0.2236" width="0.2032" layer="21"/>
 <circle x="0" y="0" radius="2" width="0.127" layer="51"/>
 <wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2" width="0.127" layer="51"/>
@@ -583,10 +605,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="4" x="2.4" y="-1.7" dx="2" dy="1.1" layer="1" roundness="100"/>
 <smd name="5" x="2.4" y="0" dx="2" dy="1.1" layer="1" roundness="100"/>
 <smd name="6" x="2.4" y="1.7" dx="2" dy="1.1" layer="1" roundness="100"/>
-<text x="-2.54" y="2.794" size="0.762" layer="25">&gt;Name</text>
-<text x="-2.54" y="-3.556" size="0.762" layer="27">&gt;Value</text>
+<text x="0" y="2.667" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-2.667" size="0.6096" layer="27" ratio="20" align="top-center">&gt;Value</text>
 </package>
 <package name="LED-TRICOLOR-5050-IC">
+<description>&lt;h3&gt;5060 SMD RGB LED&lt;/h3&gt;
+&lt;p&gt;&lt;b&gt;Specifications:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;Pin count: 6&lt;/li&gt;
+&lt;li&gt;Pin pitch: 0.6mm&lt;/li&gt;
+&lt;li&gt;Area: 5.0mm x 5.0mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Components/LED/WS2812.pdf"&gt; WS2812&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Example device(s):&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;WS2812&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <circle x="-0.7" y="2" radius="0.2236" width="0.2032" layer="21"/>
 <circle x="0" y="0" radius="2" width="0.127" layer="51"/>
 <wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2" width="0.127" layer="51"/>
@@ -620,8 +652,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="4" x="2.4" y="-1.7" dx="2" dy="1.1" layer="1" roundness="100"/>
 <smd name="5" x="2.4" y="0" dx="2" dy="1.1" layer="1" roundness="100"/>
 <smd name="6" x="2.4" y="1.7" dx="2" dy="1.1" layer="1" roundness="100"/>
-<text x="-2.54" y="2.794" size="0.762" layer="25">&gt;Name</text>
-<text x="-2.54" y="-3.556" size="0.762" layer="27">&gt;Value</text>
+<text x="0" y="2.667" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-2.667" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
 <package name="LED-1206-BOTTOM">
 <description>&lt;h3&gt;LED 1206 SMT&lt;/h3&gt;
@@ -630,11 +662,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
-&lt;li&gt;Pin pitch: &lt;/li&gt;
-&lt;li&gt;Area: &lt;/li&gt;
+&lt;li&gt;Area: 0.125" x 0.06"&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
 &lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;[]&lt;/li&gt;&lt;/ul&gt;</description>
+&lt;ul&gt;&lt;li&gt;LED&lt;/li&gt;&lt;/ul&gt;</description>
 <wire x1="-2" y1="0.4" x2="-2" y2="-0.4" width="0.127" layer="49"/>
 <wire x1="-2.4" y1="0" x2="-1.6" y2="0" width="0.127" layer="49"/>
 <wire x1="1.6" y1="0" x2="2.4" y2="0" width="0.127" layer="49"/>
@@ -676,150 +707,195 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="2.7686" y1="1.016" x2="2.7686" y2="-1.016" width="0.127" layer="22"/>
 </package>
 <package name="SFH4641">
-<smd name="C" x="0" y="2.65" dx="4" dy="4" layer="1" stop="no" cream="no"/>
-<rectangle x1="-1.2" y1="0.65" x2="1.2" y2="2" layer="29"/>
-<rectangle x1="-1.2" y1="0.65" x2="1.2" y2="2" layer="31"/>
-<smd name="A" x="0" y="-2.65" dx="4" dy="4" layer="1" rot="R180" stop="no" cream="no"/>
-<rectangle x1="-1.2" y1="-2" x2="1.2" y2="-0.65" layer="29" rot="R180"/>
-<rectangle x1="-1.2" y1="-2" x2="1.2" y2="-0.65" layer="31" rot="R180"/>
-<text x="-2.06375" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
-<text x="2.06375" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
-<wire x1="1.175" y1="1.65" x2="-1.175" y2="1.65" width="0.127" layer="51"/>
-<wire x1="-1.175" y1="1.65" x2="-1.175" y2="-1.65" width="0.127" layer="51"/>
-<wire x1="-1.175" y1="-1.65" x2="1.175" y2="-1.65" width="0.127" layer="51"/>
-<wire x1="1.175" y1="-1.65" x2="1.175" y2="1.65" width="0.127" layer="51"/>
-<wire x1="-0.5" y1="0.3" x2="0" y2="0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="0.3" x2="0.5" y2="0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="0.5" x2="0" y2="0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="0.3" x2="-0.4" y2="-0.3" width="0.127" layer="51"/>
-<wire x1="-0.4" y1="-0.3" x2="0" y2="-0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="-0.3" x2="0.4" y2="-0.3" width="0.127" layer="51"/>
-<wire x1="0.4" y1="-0.3" x2="0" y2="0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="-0.3" x2="0" y2="-0.5" width="0.127" layer="51"/>
-<wire x1="-2.0875" y1="4.745" x2="0" y2="4.745" width="0.2032" layer="21"/>
-<wire x1="0" y1="4.745" x2="2.06375" y2="4.745" width="0.2032" layer="21"/>
-<wire x1="0" y1="4.745" x2="0" y2="4.945" width="0.2032" layer="21"/>
+<description>&lt;h3&gt;SFH4641&lt;/h3&gt;
+
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
+&lt;li&gt;Size: 3.3 x 2.35 mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt; &lt;a href="http://www.mouser.com/ds/2/311/SFH%204641,%20Lead%20(Pb)%20Free%20Product%20-%20RoHS%20Compliant-318787.pdf"&gt;SFH 4641&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device:
+&lt;ul&gt;&lt;li&gt;SFH4641&lt;/li&gt;</description>
+<smd name="C" x="2.65" y="0" dx="4" dy="4" layer="1" rot="R270" stop="no" cream="no"/>
+<rectangle x1="0.125" y1="-0.675" x2="2.525" y2="0.675" layer="29" rot="R270"/>
+<rectangle x1="0.125" y1="-0.675" x2="2.525" y2="0.675" layer="31" rot="R270"/>
+<smd name="A" x="-2.65" y="0" dx="4" dy="4" layer="1" rot="R90" stop="no" cream="no"/>
+<rectangle x1="-2.525" y1="-0.675" x2="-0.125" y2="0.675" layer="29" rot="R90"/>
+<rectangle x1="-2.525" y1="-0.675" x2="-0.125" y2="0.675" layer="31" rot="R90"/>
+<text x="0" y="2.06375" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.06375" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="1.65" y1="-1.175" x2="1.65" y2="1.175" width="0.127" layer="51"/>
+<wire x1="1.65" y1="1.175" x2="-1.65" y2="1.175" width="0.127" layer="51"/>
+<wire x1="-1.65" y1="1.175" x2="-1.65" y2="-1.175" width="0.127" layer="51"/>
+<wire x1="-1.65" y1="-1.175" x2="1.65" y2="-1.175" width="0.127" layer="51"/>
+<wire x1="0.3" y1="0.5" x2="0.3" y2="0" width="0.127" layer="51"/>
+<wire x1="0.3" y1="0" x2="0.3" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="0.5" y1="0" x2="0.3" y2="0" width="0.127" layer="51"/>
+<wire x1="0.3" y1="0" x2="-0.3" y2="0.4" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="0.4" x2="-0.3" y2="0" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="0" x2="-0.3" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="-0.4" x2="0.3" y2="0" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="0" x2="-0.5" y2="0" width="0.127" layer="51"/>
+<wire x1="4.90375" y1="1.92875" x2="4.90375" y2="-1.905" width="0.2032" layer="21"/>
 </package>
 <package name="SFH4641-NARROW">
-<smd name="C" x="0" y="2.65" dx="3.5" dy="4" layer="1" stop="no" cream="no"/>
-<rectangle x1="-1.2" y1="0.65" x2="1.2" y2="2" layer="29"/>
-<rectangle x1="-1.2" y1="0.65" x2="1.2" y2="2" layer="31"/>
-<smd name="A" x="0" y="-2.65" dx="3.5" dy="4" layer="1" rot="R180" stop="no" cream="no"/>
-<rectangle x1="-1.2" y1="-2" x2="1.2" y2="-0.65" layer="29" rot="R180"/>
-<rectangle x1="-1.2" y1="-2" x2="1.2" y2="-0.65" layer="31" rot="R180"/>
-<text x="-1.905" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
-<text x="1.905" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
-<wire x1="1.175" y1="1.65" x2="-1.175" y2="1.65" width="0.127" layer="51"/>
-<wire x1="-1.175" y1="1.65" x2="-1.175" y2="-1.65" width="0.127" layer="51"/>
-<wire x1="-1.175" y1="-1.65" x2="1.175" y2="-1.65" width="0.127" layer="51"/>
-<wire x1="1.175" y1="-1.65" x2="1.175" y2="1.65" width="0.127" layer="51"/>
-<wire x1="-0.5" y1="0.3" x2="0" y2="0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="0.3" x2="0.5" y2="0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="0.5" x2="0" y2="0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="0.3" x2="-0.4" y2="-0.3" width="0.127" layer="51"/>
-<wire x1="-0.4" y1="-0.3" x2="0" y2="-0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="-0.3" x2="0.4" y2="-0.3" width="0.127" layer="51"/>
-<wire x1="0.4" y1="-0.3" x2="0" y2="0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="-0.3" x2="0" y2="-0.5" width="0.127" layer="51"/>
-<wire x1="-1.77" y1="4.745" x2="1.74625" y2="4.745" width="0.2032" layer="21"/>
-<wire x1="0" y1="4.90375" x2="0" y2="4.78625" width="0.2032" layer="21"/>
+<description>&lt;h3&gt;SFH4641&lt;/h3&gt;
+
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
+&lt;li&gt;Size: 3.3 x 2.35 mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt; &lt;a href="http://www.mouser.com/ds/2/311/SFH%204641,%20Lead%20(Pb)%20Free%20Product%20-%20RoHS%20Compliant-318787.pdf"&gt;SFH 4641&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device:
+&lt;ul&gt;&lt;li&gt;SFH4641&lt;/li&gt;</description>
+<smd name="C" x="2.65" y="0" dx="3.5" dy="4" layer="1" rot="R270" stop="no" cream="no"/>
+<rectangle x1="0.125" y1="-0.675" x2="2.525" y2="0.675" layer="29" rot="R270"/>
+<rectangle x1="0.125" y1="-0.675" x2="2.525" y2="0.675" layer="31" rot="R270"/>
+<smd name="A" x="-2.65" y="0" dx="3.5" dy="4" layer="1" rot="R90" stop="no" cream="no"/>
+<rectangle x1="-2.525" y1="-0.675" x2="-0.125" y2="0.675" layer="29" rot="R90"/>
+<rectangle x1="-2.525" y1="-0.675" x2="-0.125" y2="0.675" layer="31" rot="R90"/>
+<text x="0" y="1.905" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.905" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="1.65" y1="-1.175" x2="1.65" y2="1.175" width="0.127" layer="51"/>
+<wire x1="1.65" y1="1.175" x2="-1.65" y2="1.175" width="0.127" layer="51"/>
+<wire x1="-1.65" y1="1.175" x2="-1.65" y2="-1.175" width="0.127" layer="51"/>
+<wire x1="-1.65" y1="-1.175" x2="1.65" y2="-1.175" width="0.127" layer="51"/>
+<wire x1="0.3" y1="0.5" x2="0.3" y2="0" width="0.127" layer="51"/>
+<wire x1="0.3" y1="0" x2="0.3" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="0.5" y1="0" x2="0.3" y2="0" width="0.127" layer="51"/>
+<wire x1="0.3" y1="0" x2="-0.3" y2="0.4" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="0.4" x2="-0.3" y2="0" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="0" x2="-0.3" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="-0.4" x2="0.3" y2="0" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="0" x2="-0.5" y2="0" width="0.127" layer="51"/>
+<wire x1="4.90375" y1="1.77" x2="4.90375" y2="-1.74625" width="0.2032" layer="21"/>
 </package>
 <package name="SFH4641-SHORT">
-<smd name="C" x="0" y="2.35" dx="4" dy="3.4" layer="1" stop="no" cream="no"/>
-<rectangle x1="-1.2" y1="0.65" x2="1.2" y2="2" layer="29"/>
-<rectangle x1="-1.2" y1="0.65" x2="1.2" y2="2" layer="31"/>
-<smd name="A" x="0" y="-2.35" dx="4" dy="3.4" layer="1" rot="R180" stop="no" cream="no"/>
-<rectangle x1="-1.2" y1="-2" x2="1.2" y2="-0.65" layer="29" rot="R180"/>
-<rectangle x1="-1.2" y1="-2" x2="1.2" y2="-0.65" layer="31" rot="R180"/>
-<text x="-2.0701" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
-<text x="2.0701" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
-<wire x1="1.175" y1="1.65" x2="-1.175" y2="1.65" width="0.127" layer="51"/>
-<wire x1="-1.175" y1="1.65" x2="-1.175" y2="-1.65" width="0.127" layer="51"/>
-<wire x1="-1.175" y1="-1.65" x2="1.175" y2="-1.65" width="0.127" layer="51"/>
-<wire x1="1.175" y1="-1.65" x2="1.175" y2="1.65" width="0.127" layer="51"/>
-<wire x1="-0.5" y1="0.3" x2="0" y2="0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="0.3" x2="0.5" y2="0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="0.5" x2="0" y2="0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="0.3" x2="-0.4" y2="-0.3" width="0.127" layer="51"/>
-<wire x1="-0.4" y1="-0.3" x2="0" y2="-0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="-0.3" x2="0.4" y2="-0.3" width="0.127" layer="51"/>
-<wire x1="0.4" y1="-0.3" x2="0" y2="0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="-0.3" x2="0" y2="-0.5" width="0.127" layer="51"/>
-<wire x1="-2.071625" y1="4.157625" x2="2.0955" y2="4.157625" width="0.2032" layer="21"/>
-<wire x1="0" y1="4.36725" x2="0" y2="4.16725" width="0.2032" layer="21"/>
+<description>&lt;h3&gt;SFH4641&lt;/h3&gt;
+
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
+&lt;li&gt;Size: 3.3 x 2.35 mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt; &lt;a href="http://www.mouser.com/ds/2/311/SFH%204641,%20Lead%20(Pb)%20Free%20Product%20-%20RoHS%20Compliant-318787.pdf"&gt;SFH 4641&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device:
+&lt;ul&gt;&lt;li&gt;SFH4641&lt;/li&gt;</description>
+<smd name="C" x="2.35" y="0" dx="4" dy="3.4" layer="1" rot="R270" stop="no" cream="no"/>
+<rectangle x1="0.125" y1="-0.675" x2="2.525" y2="0.675" layer="29" rot="R270"/>
+<rectangle x1="0.125" y1="-0.675" x2="2.525" y2="0.675" layer="31" rot="R270"/>
+<smd name="A" x="-2.35" y="0" dx="4" dy="3.4" layer="1" rot="R90" stop="no" cream="no"/>
+<rectangle x1="-2.525" y1="-0.675" x2="-0.125" y2="0.675" layer="29" rot="R90"/>
+<rectangle x1="-2.525" y1="-0.675" x2="-0.125" y2="0.675" layer="31" rot="R90"/>
+<text x="0" y="2.0701" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.0701" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="1.65" y1="-1.175" x2="1.65" y2="1.175" width="0.127" layer="51"/>
+<wire x1="1.65" y1="1.175" x2="-1.65" y2="1.175" width="0.127" layer="51"/>
+<wire x1="-1.65" y1="1.175" x2="-1.65" y2="-1.175" width="0.127" layer="51"/>
+<wire x1="-1.65" y1="-1.175" x2="1.65" y2="-1.175" width="0.127" layer="51"/>
+<wire x1="0.3" y1="0.5" x2="0.3" y2="0" width="0.127" layer="51"/>
+<wire x1="0.3" y1="0" x2="0.3" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="0.5" y1="0" x2="0.3" y2="0" width="0.127" layer="51"/>
+<wire x1="0.3" y1="0" x2="-0.3" y2="0.4" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="0.4" x2="-0.3" y2="0" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="0" x2="-0.3" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="-0.4" x2="0.3" y2="0" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="0" x2="-0.5" y2="0" width="0.127" layer="51"/>
+<wire x1="4.316375" y1="1.912875" x2="4.316375" y2="-1.93675" width="0.2032" layer="21"/>
 </package>
 <package name="SFH4641-OVERSIZE">
-<smd name="C" x="0" y="2.65" dx="4" dy="4" layer="1" stop="no" cream="no"/>
-<rectangle x1="-1.4" y1="0.65" x2="1.4" y2="2.2" layer="29"/>
-<rectangle x1="-1.4" y1="0.65" x2="1.4" y2="2.2" layer="31"/>
-<smd name="A" x="0" y="-2.65" dx="4" dy="4" layer="1" rot="R180" stop="no" cream="no"/>
-<text x="-2.06375" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
-<text x="2.06375" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
-<wire x1="1.175" y1="1.65" x2="-1.175" y2="1.65" width="0.127" layer="51"/>
-<wire x1="-1.175" y1="1.65" x2="-1.175" y2="-1.65" width="0.127" layer="51"/>
-<wire x1="-1.175" y1="-1.65" x2="1.175" y2="-1.65" width="0.127" layer="51"/>
-<wire x1="1.175" y1="-1.65" x2="1.175" y2="1.65" width="0.127" layer="51"/>
-<wire x1="-0.5" y1="0.3" x2="0" y2="0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="0.3" x2="0.5" y2="0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="0.5" x2="0" y2="0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="0.3" x2="-0.4" y2="-0.3" width="0.127" layer="51"/>
-<wire x1="-0.4" y1="-0.3" x2="0" y2="-0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="-0.3" x2="0.4" y2="-0.3" width="0.127" layer="51"/>
-<wire x1="0.4" y1="-0.3" x2="0" y2="0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="-0.3" x2="0" y2="-0.5" width="0.127" layer="51"/>
-<rectangle x1="-1.4" y1="-2.2" x2="1.4" y2="-0.65" layer="31"/>
-<rectangle x1="-1.4" y1="-2.2" x2="1.4" y2="-0.65" layer="29"/>
-<wire x1="-2.0875" y1="4.745" x2="0" y2="4.745" width="0.2032" layer="21"/>
-<wire x1="0" y1="4.745" x2="2.06375" y2="4.745" width="0.2032" layer="21"/>
-<wire x1="0" y1="4.745" x2="0" y2="4.945" width="0.2032" layer="21"/>
+<description>&lt;h3&gt;SFH4641&lt;/h3&gt;
+
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
+&lt;li&gt;Size: 3.3 x 2.35 mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt; &lt;a href="http://www.mouser.com/ds/2/311/SFH%204641,%20Lead%20(Pb)%20Free%20Product%20-%20RoHS%20Compliant-318787.pdf"&gt;SFH 4641&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device:
+&lt;ul&gt;&lt;li&gt;SFH4641&lt;/li&gt;</description>
+<smd name="C" x="2.65" y="0" dx="4" dy="4" layer="1" rot="R270" stop="no" cream="no"/>
+<rectangle x1="0.025" y1="-0.775" x2="2.825" y2="0.775" layer="29" rot="R270"/>
+<rectangle x1="0.025" y1="-0.775" x2="2.825" y2="0.775" layer="31" rot="R270"/>
+<smd name="A" x="-2.65" y="0" dx="4" dy="4" layer="1" rot="R90" stop="no" cream="no"/>
+<text x="0" y="2.06375" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.06375" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="1.65" y1="-1.175" x2="1.65" y2="1.175" width="0.127" layer="51"/>
+<wire x1="1.65" y1="1.175" x2="-1.65" y2="1.175" width="0.127" layer="51"/>
+<wire x1="-1.65" y1="1.175" x2="-1.65" y2="-1.175" width="0.127" layer="51"/>
+<wire x1="-1.65" y1="-1.175" x2="1.65" y2="-1.175" width="0.127" layer="51"/>
+<wire x1="0.3" y1="0.5" x2="0.3" y2="0" width="0.127" layer="51"/>
+<wire x1="0.3" y1="0" x2="0.3" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="0.5" y1="0" x2="0.3" y2="0" width="0.127" layer="51"/>
+<wire x1="0.3" y1="0" x2="-0.3" y2="0.4" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="0.4" x2="-0.3" y2="0" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="0" x2="-0.3" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="-0.4" x2="0.3" y2="0" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="0" x2="-0.5" y2="0" width="0.127" layer="51"/>
+<rectangle x1="-2.825" y1="-0.775" x2="-0.025" y2="0.775" layer="31" rot="R270"/>
+<rectangle x1="-2.825" y1="-0.775" x2="-0.025" y2="0.775" layer="29" rot="R270"/>
+<wire x1="4.90375" y1="1.92875" x2="4.90375" y2="-1.905" width="0.2032" layer="21"/>
 </package>
 <package name="WS2812B">
-<description>&lt;b&gt;Intelligent control LED with integrated light source&lt;/b&gt;&lt;p&gt;
-WS2812B&lt;br&gt;
-source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</description>
-<smd name="1" x="-2.577" y="1.6" dx="1.651" dy="1" layer="1"/>
-<smd name="4" x="2.577" y="1.6" dx="1.651" dy="1" layer="1"/>
-<smd name="3" x="2.577" y="-1.6" dx="1.651" dy="1" layer="1"/>
-<smd name="2" x="-2.577" y="-1.6" dx="1.651" dy="1" layer="1"/>
-<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
-<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
+<description>&lt;h3&gt;WS2812B&lt;/h3&gt;
+
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 4&lt;/li&gt;
+&lt;li&gt;Size: 5.0 x 5.0 mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt; &lt;a href="http://cdn.sparkfun.com/datasheets/BreakoutBoards/WS2812B.pdf"&gt;WS2812B&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device:
+&lt;ul&gt;&lt;li&gt;WS2812B&lt;/li&gt;</description>
+<smd name="1" x="2.577" y="-1.6" dx="1.651" dy="1" layer="1" rot="R180"/>
+<smd name="4" x="-2.577" y="-1.6" dx="1.651" dy="1" layer="1" rot="R180"/>
+<smd name="3" x="-2.577" y="1.6" dx="1.651" dy="1" layer="1" rot="R180"/>
+<smd name="2" x="2.577" y="1.6" dx="1.651" dy="1" layer="1" rot="R180"/>
 <wire x1="2.5" y1="-2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
 <wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="51"/>
-<text x="4.254" y="1.2" size="1.016" layer="25">&gt;NAME</text>
-<text x="4.254" y="-1.6" size="0.6096" layer="27">&gt;VALUE</text>
-<wire x1="-2.4892" y1="2.362203125" x2="-2.4892" y2="2.616203125" width="0.2032" layer="21"/>
-<wire x1="-2.4892" y1="2.616203125" x2="-2.4384" y2="2.616203125" width="0.2032" layer="21"/>
-<wire x1="-2.4384" y1="2.616203125" x2="-2.4384" y2="2.611121875" width="0.2032" layer="21"/>
-<wire x1="-2.4384" y1="2.611121875" x2="2.512059375" y2="2.611121875" width="0.2032" layer="21"/>
-<wire x1="2.512059375" y1="2.611121875" x2="2.512059375" y2="2.37998125" width="0.2032" layer="21"/>
-<wire x1="-2.50951875" y1="-2.319021875" x2="-2.50951875" y2="-2.5908" width="0.2032" layer="21"/>
-<wire x1="-2.50951875" y1="-2.5908" x2="-2.45871875" y2="-2.5908" width="0.2032" layer="21"/>
-<wire x1="-2.45871875" y1="-2.5908" x2="-2.45871875" y2="-2.593340625" width="0.2032" layer="21"/>
-<wire x1="-2.45871875" y1="-2.593340625" x2="2.50951875" y2="-2.593340625" width="0.2032" layer="21"/>
-<wire x1="2.50951875" y1="-2.593340625" x2="2.50951875" y2="-2.36728125" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="-0.889" x2="-2.54" y2="0.8128" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="0.8636" x2="2.54" y2="0" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-0.8636" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="0" x2="0" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
+<text x="0" y="2.794" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.794" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="2.4892" y1="-2.362203125" x2="2.4892" y2="-2.616203125" width="0.2032" layer="21"/>
+<wire x1="2.4892" y1="-2.616203125" x2="2.4384" y2="-2.616203125" width="0.2032" layer="21"/>
+<wire x1="2.4384" y1="-2.616203125" x2="2.4384" y2="-2.611121875" width="0.2032" layer="21"/>
+<wire x1="2.4384" y1="-2.611121875" x2="-2.512059375" y2="-2.611121875" width="0.2032" layer="21"/>
+<wire x1="-2.512059375" y1="-2.611121875" x2="-2.512059375" y2="-2.37998125" width="0.2032" layer="21"/>
+<wire x1="2.50951875" y1="2.319021875" x2="2.50951875" y2="2.5908" width="0.2032" layer="21"/>
+<wire x1="2.50951875" y1="2.5908" x2="2.45871875" y2="2.5908" width="0.2032" layer="21"/>
+<wire x1="2.45871875" y1="2.5908" x2="2.45871875" y2="2.593340625" width="0.2032" layer="21"/>
+<wire x1="2.45871875" y1="2.593340625" x2="-2.50951875" y2="2.593340625" width="0.2032" layer="21"/>
+<wire x1="-2.50951875" y1="2.593340625" x2="-2.50951875" y2="2.36728125" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="0.889" x2="2.54" y2="-0.8128" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="-0.8636" x2="-2.54" y2="0" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="0.8636" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="0" x2="0" y2="2.54" width="0.2032" layer="21"/>
 </package>
 <package name="PLCC-6-LED">
-<wire x1="-1.6" y1="1.5" x2="1.6" y2="1.5" width="0.127" layer="51"/>
-<wire x1="1.6" y1="1.5" x2="1.6" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="1.6" y1="-1.5" x2="-1.6" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="-1.6" y1="-1.5" x2="-1.6" y2="1.5" width="0.127" layer="51"/>
-<circle x="-1.3" y="-1.3" radius="0.1" width="0.127" layer="51"/>
-<smd name="CB" x="-1.1" y="-1.475" dx="1.3" dy="0.7" layer="1" rot="R90"/>
-<smd name="CR" x="0" y="-1.475" dx="1.3" dy="0.7" layer="1" rot="R90"/>
-<smd name="CG" x="1.1" y="-1.475" dx="1.3" dy="0.7" layer="1" rot="R90"/>
-<smd name="AG" x="1.1" y="1.475" dx="1.3" dy="0.7" layer="1" rot="R90"/>
-<smd name="AR" x="0" y="1.475" dx="1.3" dy="0.7" layer="1" rot="R90"/>
-<smd name="AB" x="-1.1" y="1.475" dx="1.3" dy="0.7" layer="1" rot="R90"/>
-<wire x1="-1.7" y1="-1.4" x2="-1.7" y2="1.4" width="0.2032" layer="21"/>
-<wire x1="1.7" y1="1.4" x2="1.7" y2="-1.4" width="0.2032" layer="21"/>
-<circle x="-1.1" y="-0.4" radius="0.1" width="0.2032" layer="21"/>
-<text x="-1.2" y="2.45" size="0.508" layer="25">&gt;Name</text>
-<text x="-1.3" y="-3.1" size="0.508" layer="27">&gt;Value</text>
-<circle x="-2.0398" y="-1.2636" radius="0.1" width="0.2032" layer="21"/>
+<description>&lt;h3&gt;PLCC-6-LED&lt;/h3&gt;
+
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 6&lt;/li&gt;
+&lt;li&gt;Size: 3.2*2.8*1.39mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt; &lt;a href="http://www.osram-os.com/Graphics/XPic9/00134830_0.pdf"&gt;LTRB GFSF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device:
+&lt;ul&gt;&lt;li&gt;RGB-LED-PLCC&lt;/li&gt;</description>
+<wire x1="1.5" y1="1.6" x2="1.5" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-1.6" x2="-1.5" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-1.6" x2="-1.5" y2="1.6" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="1.6" x2="1.5" y2="1.6" width="0.127" layer="51"/>
+<circle x="-1.3" y="1.3" radius="0.1" width="0.127" layer="51"/>
+<smd name="CB" x="-1.475" y="1.1" dx="1.3" dy="0.7" layer="1"/>
+<smd name="CR" x="-1.475" y="0" dx="1.3" dy="0.7" layer="1"/>
+<smd name="CG" x="-1.475" y="-1.1" dx="1.3" dy="0.7" layer="1"/>
+<smd name="AG" x="1.475" y="-1.1" dx="1.3" dy="0.7" layer="1"/>
+<smd name="AR" x="1.475" y="0" dx="1.3" dy="0.7" layer="1"/>
+<smd name="AB" x="1.475" y="1.1" dx="1.3" dy="0.7" layer="1"/>
+<wire x1="-1.4" y1="1.7" x2="1.4" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="-1.7" x2="-1.4" y2="-1.7" width="0.2032" layer="21"/>
+<circle x="-0.4" y="1.1" radius="0.1" width="0.2032" layer="21"/>
+<text x="0" y="1.905" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-1.905" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+<circle x="-1.778" y="1.905" radius="0.1" width="0.2032" layer="21"/>
 </package>
 <package name="LTST-C195KGJRKT">
 <description>&lt;h3&gt;0606 - LED SMT&lt;/h3&gt;
@@ -829,53 +905,61 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 &lt;li&gt;Area:1.6mm L x 1.5mm W&lt;/li&gt;
 &lt;li&gt;Height: 0.55m&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt; &lt;a href="http://optoelectronics.liteon.com/upload/download/DS22-2000-282/P_100_LTST-C195KGJRKT.pdf"&gt;LTST-C195KGJRKT&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Example device(s):
 &lt;ul&gt;&lt;li&gt;LTST-C195KGJRKT&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
-<smd name="P$1" x="0.425" y="0.725" dx="0.65" dy="0.85" layer="1"/>
-<smd name="P$2" x="-0.425" y="0.725" dx="0.65" dy="0.85" layer="1"/>
-<smd name="P$3" x="0.425" y="-0.725" dx="0.65" dy="0.85" layer="1"/>
-<smd name="P$4" x="-0.425" y="-0.725" dx="0.65" dy="0.85" layer="1"/>
-<wire x1="0.75" y1="0.8" x2="0.75" y2="-0.8" width="0.127" layer="51"/>
-<wire x1="0.75" y1="-0.8" x2="-0.75" y2="-0.8" width="0.127" layer="51"/>
-<wire x1="-0.75" y1="-0.8" x2="-0.75" y2="0.8" width="0.127" layer="51"/>
-<wire x1="-0.75" y1="0.8" x2="0.75" y2="0.8" width="0.127" layer="51"/>
-<wire x1="-0.75" y1="0.05" x2="-0.75" y2="-0.05" width="0.2032" layer="21"/>
-<wire x1="0.75" y1="0.05" x2="0.75" y2="-0.05" width="0.2032" layer="21"/>
-<wire x1="-0.2" y1="-1.4" x2="0.2" y2="-1.4" width="0.127" layer="21"/>
-<wire x1="-0.2" y1="-1.4" x2="-0.1" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="-0.1" y1="-1.5" x2="0" y2="-1.6" width="0.127" layer="21"/>
-<wire x1="0" y1="-1.6" x2="0.1" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="0.1" y1="-1.5" x2="0.2" y2="-1.4" width="0.127" layer="21"/>
-<wire x1="-0.1" y1="-1.5" x2="0.1" y2="-1.5" width="0.127" layer="21"/>
-<circle x="0.4" y="0.5" radius="0.1" width="0.127" layer="51"/>
-<text x="-0.9525" y="-1.27" size="0.6096" layer="25" ratio="20" rot="R90">&gt;NAME</text>
-<text x="0.9525" y="-1.27" size="0.6096" layer="27" ratio="20" rot="R90" align="top-left">&gt;VALUE</text>
+<smd name="P$1" x="-0.725" y="0.425" dx="0.65" dy="0.85" layer="1" rot="R90"/>
+<smd name="P$2" x="-0.725" y="-0.425" dx="0.65" dy="0.85" layer="1" rot="R90"/>
+<smd name="P$3" x="0.725" y="0.425" dx="0.65" dy="0.85" layer="1" rot="R90"/>
+<smd name="P$4" x="0.725" y="-0.425" dx="0.65" dy="0.85" layer="1" rot="R90"/>
+<wire x1="-0.8" y1="0.75" x2="0.8" y2="0.75" width="0.127" layer="51"/>
+<wire x1="0.8" y1="0.75" x2="0.8" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="0.8" y1="-0.75" x2="-0.8" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="-0.8" y1="-0.75" x2="-0.8" y2="0.75" width="0.127" layer="51"/>
+<wire x1="-0.05" y1="-0.75" x2="0.05" y2="-0.75" width="0.2032" layer="21"/>
+<wire x1="-0.05" y1="0.75" x2="0.05" y2="0.75" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="-0.2" x2="1.4" y2="0.2" width="0.127" layer="21"/>
+<wire x1="1.4" y1="-0.2" x2="1.5" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-0.1" x2="1.6" y2="0" width="0.127" layer="21"/>
+<wire x1="1.6" y1="0" x2="1.5" y2="0.1" width="0.127" layer="21"/>
+<wire x1="1.5" y1="0.1" x2="1.4" y2="0.2" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-0.1" x2="1.5" y2="0.1" width="0.127" layer="21"/>
+<circle x="-0.5" y="0.4" radius="0.1" width="0.127" layer="51"/>
+<text x="0" y="0.9525" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.9525" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
 <package name="SFH4641-SHORT2">
-<smd name="C" x="0" y="2.035" dx="5.62" dy="2.77" layer="1" stop="no" cream="no"/>
-<rectangle x1="-1.4" y1="0.65" x2="1.4" y2="2.2" layer="29"/>
-<rectangle x1="-1.4" y1="0.65" x2="1.4" y2="2.2" layer="31"/>
-<smd name="A" x="0" y="-2.035" dx="5.62" dy="2.77" layer="1" rot="R180" stop="no" cream="no"/>
-<text x="-2.8575" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
-<text x="2.8575" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
-<wire x1="1.175" y1="1.65" x2="-1.175" y2="1.65" width="0.127" layer="51"/>
-<wire x1="-1.175" y1="1.65" x2="-1.175" y2="-1.65" width="0.127" layer="51"/>
-<wire x1="-1.175" y1="-1.65" x2="1.175" y2="-1.65" width="0.127" layer="51"/>
-<wire x1="1.175" y1="-1.65" x2="1.175" y2="1.65" width="0.127" layer="51"/>
-<wire x1="-0.5" y1="0.3" x2="0" y2="0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="0.3" x2="0.5" y2="0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="0.5" x2="0" y2="0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="0.3" x2="-0.4" y2="-0.3" width="0.127" layer="51"/>
-<wire x1="-0.4" y1="-0.3" x2="0" y2="-0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="-0.3" x2="0.4" y2="-0.3" width="0.127" layer="51"/>
-<wire x1="0.4" y1="-0.3" x2="0" y2="0.3" width="0.127" layer="51"/>
-<wire x1="0" y1="-0.3" x2="0" y2="-0.5" width="0.127" layer="51"/>
-<rectangle x1="-1.4" y1="-2.2" x2="1.4" y2="-0.65" layer="29"/>
-<rectangle x1="-1.4" y1="-2.2" x2="1.4" y2="-0.65" layer="31"/>
-<wire x1="-2.88125" y1="3.5385" x2="0" y2="3.5385" width="0.2032" layer="21"/>
-<wire x1="0" y1="3.5385" x2="2.8575" y2="3.5385" width="0.2032" layer="21"/>
-<wire x1="0" y1="3.5385" x2="0" y2="3.7385" width="0.2032" layer="21"/>
+<description>&lt;h3&gt;SFH4641&lt;/h3&gt;
+
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
+&lt;li&gt;Size: 3.3 x 2.35 mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt; &lt;a href="http://www.mouser.com/ds/2/311/SFH%204641,%20Lead%20(Pb)%20Free%20Product%20-%20RoHS%20Compliant-318787.pdf"&gt;SFH 4641&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device:
+&lt;ul&gt;&lt;li&gt;SFH4641&lt;/li&gt;</description>
+<smd name="C" x="2.035" y="0" dx="5.62" dy="2.77" layer="1" rot="R270" stop="no" cream="no"/>
+<rectangle x1="0.025" y1="-0.775" x2="2.825" y2="0.775" layer="29" rot="R270"/>
+<rectangle x1="0.025" y1="-0.775" x2="2.825" y2="0.775" layer="31" rot="R270"/>
+<smd name="A" x="-2.035" y="0" dx="5.62" dy="2.77" layer="1" rot="R90" stop="no" cream="no"/>
+<text x="0" y="2.8575" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.8575" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="1.65" y1="-1.175" x2="1.65" y2="1.175" width="0.127" layer="51"/>
+<wire x1="1.65" y1="1.175" x2="-1.65" y2="1.175" width="0.127" layer="51"/>
+<wire x1="-1.65" y1="1.175" x2="-1.65" y2="-1.175" width="0.127" layer="51"/>
+<wire x1="-1.65" y1="-1.175" x2="1.65" y2="-1.175" width="0.127" layer="51"/>
+<wire x1="0.3" y1="0.5" x2="0.3" y2="0" width="0.127" layer="51"/>
+<wire x1="0.3" y1="0" x2="0.3" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="0.5" y1="0" x2="0.3" y2="0" width="0.127" layer="51"/>
+<wire x1="0.3" y1="0" x2="-0.3" y2="0.4" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="0.4" x2="-0.3" y2="0" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="0" x2="-0.3" y2="-0.4" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="-0.4" x2="0.3" y2="0" width="0.127" layer="51"/>
+<wire x1="-0.3" y1="0" x2="-0.5" y2="0" width="0.127" layer="51"/>
+<rectangle x1="-2.825" y1="-0.775" x2="-0.025" y2="0.775" layer="29" rot="R270"/>
+<rectangle x1="-2.825" y1="-0.775" x2="-0.025" y2="0.775" layer="31" rot="R270"/>
+<wire x1="3.602" y1="2.7225" x2="3.602" y2="-2.76225" width="0.2032" layer="21"/>
 </package>
 <package name="P-LCC-4-3">
 <description>&lt;h3&gt;LED P-LCC-4-3 - SMT&lt;/h3&gt;
@@ -885,32 +969,32 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 &lt;li&gt;Pin pitch: 0.7mm &lt;/li&gt;
 &lt;li&gt;Size: 3.2*2.8*1.9mm&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt; &lt;a href="http://www.fairchip.com/pdf/Everlight/67-23-R6GHBHC-B01-2T.pdf"&gt;R6GHBHC&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Example device:
-&lt;ul&gt;&lt;li&gt;Everlight Red/Green/Blue LED&lt;/li&gt;
-&lt;li&gt;67-23/R6GHBHC-B01/2T &lt;b&gt;||&lt;/b&gt; 67-23/R6GHBH-B01&lt;/li&gt;</description>
-<wire x1="-1.4" y1="-1.75" x2="1.4" y2="-1.75" width="0.2032" layer="51"/>
-<wire x1="1.4" y1="-1.75" x2="1.4" y2="1.75" width="0.2032" layer="51"/>
-<wire x1="1.4" y1="1.75" x2="-1.4" y2="1.75" width="0.2032" layer="51"/>
-<wire x1="-1.4" y1="1.75" x2="-1.4" y2="-1.75" width="0.2032" layer="51"/>
+&lt;ul&gt;&lt;li&gt;0.13_RGB_LED&lt;/li&gt;</description>
+<wire x1="1.75" y1="-1.4" x2="1.75" y2="1.4" width="0.2032" layer="51"/>
+<wire x1="1.75" y1="1.4" x2="-1.75" y2="1.4" width="0.2032" layer="51"/>
+<wire x1="-1.75" y1="1.4" x2="-1.75" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-1.75" y1="-1.4" x2="1.75" y2="-1.4" width="0.2032" layer="51"/>
 <circle x="0" y="0" radius="1.1" width="0.2032" layer="51"/>
-<smd name="2" x="-0.725" y="1.7" dx="0.75" dy="1.8" layer="1"/>
-<smd name="1" x="0.725" y="1.7" dx="0.75" dy="1.8" layer="1"/>
-<smd name="4" x="0.725" y="-1.7" dx="0.75" dy="1.8" layer="1"/>
-<smd name="3" x="-0.725" y="-1.7" dx="0.75" dy="1.8" layer="1"/>
-<text x="-1.65995" y="-1.8184" size="0.6096" layer="25" font="vector" ratio="20" rot="R90">&gt;NAME</text>
-<text x="1.5695" y="-1.8168" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-left">&gt;VALUE</text>
-<wire x1="-1.4" y1="0.508" x2="-1.4" y2="-0.508" width="0.2032" layer="21"/>
-<wire x1="-0.1016" y1="1.75" x2="0.1016" y2="1.75" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="0.508" x2="1.4" y2="-0.508" width="0.2032" layer="21"/>
-<wire x1="-0.1016" y1="-1.75" x2="0.1016" y2="-1.75" width="0.2032" layer="21"/>
-<wire x1="1.3598" y1="1.1662" x2="0.8098" y2="1.7162" width="0.2032" layer="51"/>
+<smd name="2" x="-1.7" y="-0.725" dx="0.75" dy="1.8" layer="1" rot="R90"/>
+<smd name="1" x="-1.7" y="0.725" dx="0.75" dy="1.8" layer="1" rot="R90"/>
+<smd name="4" x="1.7" y="0.725" dx="0.75" dy="1.8" layer="1" rot="R90"/>
+<smd name="3" x="1.7" y="-0.725" dx="0.75" dy="1.8" layer="1" rot="R90"/>
+<text x="0" y="1.65995" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.5695" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-0.508" y1="-1.4" x2="0.508" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="-0.1016" x2="-1.75" y2="0.1016" width="0.2032" layer="21"/>
+<wire x1="-0.508" y1="1.4" x2="0.508" y2="1.4" width="0.2032" layer="21"/>
+<wire x1="1.75" y1="-0.1016" x2="1.75" y2="0.1016" width="0.2032" layer="21"/>
+<wire x1="-1.1662" y1="1.3598" x2="-1.7162" y2="0.8098" width="0.2032" layer="51"/>
 <polygon width="0.127" layer="21">
 <vertex x="0" y="0"/>
-<vertex x="0.5588" y="0" curve="90"/>
-<vertex x="0" y="0.5588"/>
+<vertex x="0" y="0.5588" curve="90"/>
+<vertex x="-0.5588" y="0"/>
 </polygon>
 <circle x="0" y="0" radius="0.55764375" width="0.127" layer="21"/>
-<circle x="1.74625" y="1.905" radius="0.0508" width="0.3048" layer="21"/>
+<circle x="-1.905" y="1.74625" radius="0.0508" width="0.3048" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -962,27 +1046,113 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <pin name="RED" x="-10.16" y="2.54" visible="pin" length="short"/>
 </symbol>
 <symbol name="LED_BARGRAPH_10">
-<wire x1="0" y1="1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="1.27" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="3.81" y1="0.254" x2="5.207" y2="1.651" width="0.1524" layer="94"/>
-<wire x1="2.921" y1="0.635" x2="4.318" y2="2.032" width="0.1524" layer="94"/>
-<text x="-4.445" y="1.651" size="1.778" layer="95" font="vector" rot="MR180" align="top-left">&gt;NAME</text>
-<text x="-4.445" y="-1.651" size="1.778" layer="96" font="vector" rot="MR180">&gt;VALUE</text>
-<pin name="C" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<polygon width="0.1524" layer="94">
-<vertex x="5.207" y="1.651"/>
-<vertex x="4.826" y="0.762"/>
-<vertex x="4.318" y="1.27"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="4.318" y="2.032"/>
-<vertex x="3.937" y="1.143"/>
-<vertex x="3.429" y="1.651"/>
-</polygon>
+<description>10 Pin LED Bar Graph (No Common Pins)</description>
+<wire x1="-0.635" y1="3.175" x2="0.635" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.635" y1="2.54" x2="-0.635" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0.635" y1="3.175" x2="0.635" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.635" y1="2.54" x2="0.635" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="3.175" x2="-0.635" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="2.54" x2="-0.635" y2="1.905" width="0.254" layer="94"/>
+<text x="-5.08" y="12.954" size="1.778" layer="95" font="vector" rot="MR180" align="top-left">&gt;NAME</text>
+<text x="-5.08" y="-15.494" size="1.778" layer="96" font="vector" rot="MR180">&gt;VALUE</text>
+<pin name="C" x="7.62" y="10.16" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="A" x="-7.62" y="10.16" visible="off" length="short" direction="pas"/>
+<wire x1="-5.08" y1="12.7" x2="5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="12.7" x2="5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-15.24" x2="-5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-15.24" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
+<pin name="A1" x="-7.62" y="7.62" visible="off" length="short" direction="pas"/>
+<pin name="A2" x="-7.62" y="5.08" visible="off" length="short" direction="pas"/>
+<pin name="A3" x="-7.62" y="2.54" visible="off" length="short" direction="pas"/>
+<pin name="A4" x="-7.62" y="0" visible="off" length="short" direction="pas"/>
+<pin name="A5" x="-7.62" y="-2.54" visible="off" length="short" direction="pas"/>
+<pin name="A6" x="-7.62" y="-5.08" visible="off" length="short" direction="pas"/>
+<pin name="A7" x="-7.62" y="-7.62" visible="off" length="short" direction="pas"/>
+<pin name="A8" x="-7.62" y="-10.16" visible="off" length="short" direction="pas"/>
+<pin name="A9" x="-7.62" y="-12.7" visible="off" length="short" direction="pas"/>
+<pin name="C1" x="7.62" y="7.62" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="C2" x="7.62" y="5.08" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="C3" x="7.62" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="C4" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="C5" x="7.62" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="C6" x="7.62" y="-5.08" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="C7" x="7.62" y="-7.62" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="C8" x="7.62" y="-10.16" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="C9" x="7.62" y="-12.7" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="-0.635" y1="10.795" x2="0.635" y2="10.16" width="0.254" layer="94"/>
+<wire x1="0.635" y1="10.16" x2="-0.635" y2="9.525" width="0.254" layer="94"/>
+<wire x1="0.635" y1="10.795" x2="0.635" y2="10.16" width="0.254" layer="94"/>
+<wire x1="0.635" y1="10.16" x2="0.635" y2="9.525" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="10.795" x2="-0.635" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="10.16" x2="-0.635" y2="9.525" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="8.255" x2="0.635" y2="7.62" width="0.254" layer="94"/>
+<wire x1="0.635" y1="7.62" x2="-0.635" y2="6.985" width="0.254" layer="94"/>
+<wire x1="0.635" y1="8.255" x2="0.635" y2="7.62" width="0.254" layer="94"/>
+<wire x1="0.635" y1="7.62" x2="0.635" y2="6.985" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="8.255" x2="-0.635" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="7.62" x2="-0.635" y2="6.985" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-12.065" x2="0.635" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-12.7" x2="-0.635" y2="-13.335" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-12.065" x2="0.635" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-12.7" x2="0.635" y2="-13.335" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-12.065" x2="-0.635" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-12.7" x2="-0.635" y2="-13.335" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="5.715" x2="0.635" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0.635" y1="5.08" x2="-0.635" y2="4.445" width="0.254" layer="94"/>
+<wire x1="0.635" y1="5.715" x2="0.635" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0.635" y1="5.08" x2="0.635" y2="4.445" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="5.715" x2="-0.635" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="5.08" x2="-0.635" y2="4.445" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="0.635" x2="0.635" y2="0" width="0.254" layer="94"/>
+<wire x1="0.635" y1="0" x2="-0.635" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="0.635" y1="0.635" x2="0.635" y2="0" width="0.254" layer="94"/>
+<wire x1="0.635" y1="0" x2="0.635" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="0.635" x2="-0.635" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="0" x2="-0.635" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-1.905" x2="0.635" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-2.54" x2="-0.635" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-1.905" x2="0.635" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-2.54" x2="0.635" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-1.905" x2="-0.635" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-2.54" x2="-0.635" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-9.525" x2="0.635" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-10.16" x2="-0.635" y2="-10.795" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-9.525" x2="0.635" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-10.16" x2="0.635" y2="-10.795" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-9.525" x2="-0.635" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-10.16" x2="-0.635" y2="-10.795" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-4.445" x2="0.635" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-5.08" x2="-0.635" y2="-5.715" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-4.445" x2="0.635" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-5.08" x2="0.635" y2="-5.715" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-4.445" x2="-0.635" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-5.08" x2="-0.635" y2="-5.715" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-6.985" x2="0.635" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-7.62" x2="-0.635" y2="-8.255" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-6.985" x2="0.635" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-7.62" x2="0.635" y2="-8.255" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-6.985" x2="-0.635" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-7.62" x2="-0.635" y2="-8.255" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="10.16" x2="-0.635" y2="10.16" width="0.254" layer="94"/>
+<wire x1="0.635" y1="10.16" x2="1.905" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="7.62" x2="-0.635" y2="7.62" width="0.254" layer="94"/>
+<wire x1="0.635" y1="7.62" x2="1.905" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-12.7" x2="-0.635" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-12.7" x2="1.905" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="5.08" x2="-0.635" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0.635" y1="5.08" x2="1.905" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="2.54" x2="-0.635" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.635" y1="2.54" x2="1.905" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0" x2="-0.635" y2="0" width="0.254" layer="94"/>
+<wire x1="0.635" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-2.54" x2="-0.635" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-2.54" x2="1.905" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-10.16" x2="-0.635" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-10.16" x2="1.905" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-5.08" x2="-0.635" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-5.08" x2="1.905" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-7.62" x2="-0.635" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-7.62" x2="1.905" y2="-7.62" width="0.254" layer="94"/>
 </symbol>
 <symbol name="LED-RGB-CC">
 <description>&lt;h3&gt;RGB LED - Common Cathode&lt;/h3&gt;
@@ -1163,23 +1333,6 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <pin name="10" x="15.24" y="-7.62" visible="pad" length="short" direction="pas" rot="R180"/>
 <pin name="9" x="15.24" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
 </symbol>
-<symbol name="LTE-302">
-<description>&lt;h3&gt;Lite-On LTE-302 IR Emittor/Detector&lt;/h3&gt;</description>
-<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="-2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-3.048" x2="1.27" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-3.048" x2="2.286" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-3.048" x2="1.778" y2="-2.794" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.032" x2="1.27" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.032" x2="2.286" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.032" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
-<text x="3.048" y="-4.064" size="1.778" layer="96" font="vector" rot="R90" align="top-left">&gt;VALUE</text>
-<text x="-1.524" y="-4.064" size="1.778" layer="95" font="vector" rot="R90">&gt;NAME</text>
-<pin name="A" x="0" y="2.54" visible="off" length="short" rot="R270"/>
-<pin name="C" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
-</symbol>
 <symbol name="LED-RGB-INDV">
 <description>&lt;h3&gt;RGB LED - No Common&lt;/h3&gt;
 &lt;p&gt;6 pin RGB LED&lt;/p&gt;</description>
@@ -1269,21 +1422,6 @@ source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</descript
 <text x="-3.175" y="-2.159" size="1.27" layer="94" rot="R90">WS28x1</text>
 <wire x1="-5.08" y1="7.62" x2="-5.08" y2="-5.08" width="0.254" layer="94" style="shortdash"/>
 </symbol>
-<symbol name="WS2812B">
-<description>&lt;b&gt;Intelligent control LED with integrated light source&lt;/b&gt;&lt;p&gt;
-WS2812B&lt;br&gt;
-source: http://www.world-semi.com/uploads/soft/130904/1_1500205981.pdf</description>
-<pin name="VDD" x="-5.08" y="5.08" length="short" direction="pwr"/>
-<pin name="DOUT" x="-5.08" y="-2.54" length="short" direction="out"/>
-<pin name="VSS" x="17.78" y="-2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="DIN" x="17.78" y="5.08" length="short" direction="in" rot="R180"/>
-<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-5.08" x2="15.24" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-5.08" x2="15.24" y2="7.62" width="0.254" layer="94"/>
-<wire x1="15.24" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
-<text x="-2.286" y="8.382" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-</symbol>
 <symbol name="LED-RG">
 <description>&lt;h3&gt;RG LED - No Common&lt;/h3&gt;
 &lt;p&gt;4 pin RG LED&lt;/p&gt;</description>
@@ -1353,7 +1491,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="5MM" package="LED5MM">
+<device name="5MM" package="LED_5MM">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="K"/>
@@ -1362,7 +1500,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <technology name=""/>
 </technologies>
 </device>
-<device name="3MM" package="LED3MM">
+<device name="3MM" package="LED_3MM">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="K"/>
@@ -1391,7 +1529,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <technology name=""/>
 </technologies>
 </device>
-<device name="10MM" package="LED10MM">
+<device name="10MM" package="LED_10MM">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
@@ -1409,7 +1547,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <technology name=""/>
 </technologies>
 </device>
-<device name="-3MM-NO_SILK" package="LED3MM-NS">
+<device name="-3MM-NO_SILK" package="LED_3MM-NS">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="K"/>
@@ -1418,7 +1556,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <technology name=""/>
 </technologies>
 </device>
-<device name="5MM-KIT" package="LED5MM-KIT">
+<device name="5MM-KIT" package="LED_5MM-KIT">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="K"/>
@@ -1439,8 +1577,17 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </devices>
 </deviceset>
 <deviceset name="LED-TRICOLOR">
-<description>&lt;b&gt;Tri-Color LED SMD&lt;/b&gt;
-Proven layout and schematic for triple color LED in SMD package - common anode. Spark Fun Electronics SKU : COM-07844</description>
+<description>&lt;h3&gt;Tri-Color LED SMD- Common Anode&lt;/h3&gt;
+
+&lt;p&gt;&lt;li&gt;&lt;b&gt;Color:&lt;/b&gt; Red/Green/Blue&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;RGB: 81, 130, 54 mcd&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;RGB: 50, 30, 30 mA&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt; RGB: 2, 3.5, 3.5 V&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Packages:&lt;/b&gt; LED RGB-THRU&lt;/li&gt;
+&lt;/p&gt;
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/7844”&gt;Triple Output LED RGB - SMD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="LED-RGB-CA" x="0" y="2.54"/>
 </gates>
@@ -1453,7 +1600,10 @@ Proven layout and schematic for triple color LED in SMD package - common anode. 
 <connect gate="G$1" pin="RED" pad="R"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-08324" constant="no"/>
+<attribute name="VALUE" value="RGB" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1473,40 +1623,31 @@ Proven layout and schematic for triple color LED in SMD package - common anode. 
 &lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/9937”&gt;Blue&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="A" symbol="LED_BARGRAPH_10" x="-17.78" y="17.78"/>
-<gate name="B" symbol="LED_BARGRAPH_10" x="-17.78" y="7.62"/>
-<gate name="C" symbol="LED_BARGRAPH_10" x="-17.78" y="-2.54"/>
-<gate name="D" symbol="LED_BARGRAPH_10" x="-17.78" y="-12.7"/>
-<gate name="E" symbol="LED_BARGRAPH_10" x="-17.78" y="-22.86"/>
-<gate name="F" symbol="LED_BARGRAPH_10" x="10.16" y="17.78"/>
-<gate name="G" symbol="LED_BARGRAPH_10" x="10.16" y="7.62"/>
-<gate name="H" symbol="LED_BARGRAPH_10" x="10.16" y="-2.54"/>
-<gate name="I" symbol="LED_BARGRAPH_10" x="10.16" y="-12.7"/>
-<gate name="J" symbol="LED_BARGRAPH_10" x="10.16" y="-22.86"/>
+<gate name="G$1" symbol="LED_BARGRAPH_10" x="0" y="0"/>
 </gates>
 <devices>
 <device name="RED" package="LED_BARGAPH_10">
 <connects>
-<connect gate="A" pin="A" pad="1"/>
-<connect gate="A" pin="C" pad="20"/>
-<connect gate="B" pin="A" pad="2"/>
-<connect gate="B" pin="C" pad="19"/>
-<connect gate="C" pin="A" pad="3"/>
-<connect gate="C" pin="C" pad="18"/>
-<connect gate="D" pin="A" pad="4"/>
-<connect gate="D" pin="C" pad="17"/>
-<connect gate="E" pin="A" pad="5"/>
-<connect gate="E" pin="C" pad="16"/>
-<connect gate="F" pin="A" pad="6"/>
-<connect gate="F" pin="C" pad="15"/>
-<connect gate="G" pin="A" pad="7"/>
-<connect gate="G" pin="C" pad="14"/>
-<connect gate="H" pin="A" pad="8"/>
-<connect gate="H" pin="C" pad="13"/>
-<connect gate="I" pin="A" pad="9"/>
-<connect gate="I" pin="C" pad="12"/>
-<connect gate="J" pin="A" pad="10"/>
-<connect gate="J" pin="C" pad="11"/>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="3"/>
+<connect gate="G$1" pin="A3" pad="4"/>
+<connect gate="G$1" pin="A4" pad="5"/>
+<connect gate="G$1" pin="A5" pad="6"/>
+<connect gate="G$1" pin="A6" pad="7"/>
+<connect gate="G$1" pin="A7" pad="8"/>
+<connect gate="G$1" pin="A8" pad="9"/>
+<connect gate="G$1" pin="A9" pad="10"/>
+<connect gate="G$1" pin="C" pad="20"/>
+<connect gate="G$1" pin="C1" pad="19"/>
+<connect gate="G$1" pin="C2" pad="18"/>
+<connect gate="G$1" pin="C3" pad="17"/>
+<connect gate="G$1" pin="C4" pad="16"/>
+<connect gate="G$1" pin="C5" pad="15"/>
+<connect gate="G$1" pin="C6" pad="14"/>
+<connect gate="G$1" pin="C7" pad="13"/>
+<connect gate="G$1" pin="C8" pad="12"/>
+<connect gate="G$1" pin="C9" pad="11"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1517,26 +1658,26 @@ Proven layout and schematic for triple color LED in SMD package - common anode. 
 </device>
 <device name="YELLOW" package="LED_BARGAPH_10">
 <connects>
-<connect gate="A" pin="A" pad="1"/>
-<connect gate="A" pin="C" pad="20"/>
-<connect gate="B" pin="A" pad="2"/>
-<connect gate="B" pin="C" pad="19"/>
-<connect gate="C" pin="A" pad="3"/>
-<connect gate="C" pin="C" pad="18"/>
-<connect gate="D" pin="A" pad="4"/>
-<connect gate="D" pin="C" pad="17"/>
-<connect gate="E" pin="A" pad="5"/>
-<connect gate="E" pin="C" pad="16"/>
-<connect gate="F" pin="A" pad="6"/>
-<connect gate="F" pin="C" pad="15"/>
-<connect gate="G" pin="A" pad="7"/>
-<connect gate="G" pin="C" pad="14"/>
-<connect gate="H" pin="A" pad="8"/>
-<connect gate="H" pin="C" pad="13"/>
-<connect gate="I" pin="A" pad="9"/>
-<connect gate="I" pin="C" pad="12"/>
-<connect gate="J" pin="A" pad="10"/>
-<connect gate="J" pin="C" pad="11"/>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="3"/>
+<connect gate="G$1" pin="A3" pad="4"/>
+<connect gate="G$1" pin="A4" pad="5"/>
+<connect gate="G$1" pin="A5" pad="6"/>
+<connect gate="G$1" pin="A6" pad="7"/>
+<connect gate="G$1" pin="A7" pad="8"/>
+<connect gate="G$1" pin="A8" pad="9"/>
+<connect gate="G$1" pin="A9" pad="10"/>
+<connect gate="G$1" pin="C" pad="20"/>
+<connect gate="G$1" pin="C1" pad="19"/>
+<connect gate="G$1" pin="C2" pad="18"/>
+<connect gate="G$1" pin="C3" pad="17"/>
+<connect gate="G$1" pin="C4" pad="16"/>
+<connect gate="G$1" pin="C5" pad="15"/>
+<connect gate="G$1" pin="C6" pad="14"/>
+<connect gate="G$1" pin="C7" pad="13"/>
+<connect gate="G$1" pin="C8" pad="12"/>
+<connect gate="G$1" pin="C9" pad="11"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1547,26 +1688,26 @@ Proven layout and schematic for triple color LED in SMD package - common anode. 
 </device>
 <device name="BLUE" package="LED_BARGAPH_10">
 <connects>
-<connect gate="A" pin="A" pad="1"/>
-<connect gate="A" pin="C" pad="20"/>
-<connect gate="B" pin="A" pad="2"/>
-<connect gate="B" pin="C" pad="19"/>
-<connect gate="C" pin="A" pad="3"/>
-<connect gate="C" pin="C" pad="18"/>
-<connect gate="D" pin="A" pad="4"/>
-<connect gate="D" pin="C" pad="17"/>
-<connect gate="E" pin="A" pad="5"/>
-<connect gate="E" pin="C" pad="16"/>
-<connect gate="F" pin="A" pad="6"/>
-<connect gate="F" pin="C" pad="15"/>
-<connect gate="G" pin="A" pad="7"/>
-<connect gate="G" pin="C" pad="14"/>
-<connect gate="H" pin="A" pad="8"/>
-<connect gate="H" pin="C" pad="13"/>
-<connect gate="I" pin="A" pad="9"/>
-<connect gate="I" pin="C" pad="12"/>
-<connect gate="J" pin="A" pad="10"/>
-<connect gate="J" pin="C" pad="11"/>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="3"/>
+<connect gate="G$1" pin="A3" pad="4"/>
+<connect gate="G$1" pin="A4" pad="5"/>
+<connect gate="G$1" pin="A5" pad="6"/>
+<connect gate="G$1" pin="A6" pad="7"/>
+<connect gate="G$1" pin="A7" pad="8"/>
+<connect gate="G$1" pin="A8" pad="9"/>
+<connect gate="G$1" pin="A9" pad="10"/>
+<connect gate="G$1" pin="C" pad="20"/>
+<connect gate="G$1" pin="C1" pad="19"/>
+<connect gate="G$1" pin="C2" pad="18"/>
+<connect gate="G$1" pin="C3" pad="17"/>
+<connect gate="G$1" pin="C4" pad="16"/>
+<connect gate="G$1" pin="C5" pad="15"/>
+<connect gate="G$1" pin="C6" pad="14"/>
+<connect gate="G$1" pin="C7" pad="13"/>
+<connect gate="G$1" pin="C8" pad="12"/>
+<connect gate="G$1" pin="C9" pad="11"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1577,26 +1718,26 @@ Proven layout and schematic for triple color LED in SMD package - common anode. 
 </device>
 <device name="GREEN" package="LED_BARGAPH_10">
 <connects>
-<connect gate="A" pin="A" pad="1"/>
-<connect gate="A" pin="C" pad="20"/>
-<connect gate="B" pin="A" pad="2"/>
-<connect gate="B" pin="C" pad="19"/>
-<connect gate="C" pin="A" pad="3"/>
-<connect gate="C" pin="C" pad="18"/>
-<connect gate="D" pin="A" pad="4"/>
-<connect gate="D" pin="C" pad="17"/>
-<connect gate="E" pin="A" pad="5"/>
-<connect gate="E" pin="C" pad="16"/>
-<connect gate="F" pin="A" pad="6"/>
-<connect gate="F" pin="C" pad="15"/>
-<connect gate="G" pin="A" pad="7"/>
-<connect gate="G" pin="C" pad="14"/>
-<connect gate="H" pin="A" pad="8"/>
-<connect gate="H" pin="C" pad="13"/>
-<connect gate="I" pin="A" pad="9"/>
-<connect gate="I" pin="C" pad="12"/>
-<connect gate="J" pin="A" pad="10"/>
-<connect gate="J" pin="C" pad="11"/>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="3"/>
+<connect gate="G$1" pin="A3" pad="4"/>
+<connect gate="G$1" pin="A4" pad="5"/>
+<connect gate="G$1" pin="A5" pad="6"/>
+<connect gate="G$1" pin="A6" pad="7"/>
+<connect gate="G$1" pin="A7" pad="8"/>
+<connect gate="G$1" pin="A8" pad="9"/>
+<connect gate="G$1" pin="A9" pad="10"/>
+<connect gate="G$1" pin="C" pad="20"/>
+<connect gate="G$1" pin="C1" pad="19"/>
+<connect gate="G$1" pin="C2" pad="18"/>
+<connect gate="G$1" pin="C3" pad="17"/>
+<connect gate="G$1" pin="C4" pad="16"/>
+<connect gate="G$1" pin="C5" pad="15"/>
+<connect gate="G$1" pin="C6" pad="14"/>
+<connect gate="G$1" pin="C7" pad="13"/>
+<connect gate="G$1" pin="C8" pad="12"/>
+<connect gate="G$1" pin="C9" pad="11"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1686,13 +1827,26 @@ Proven layout and schematic for triple color LED in SMD package - common anode. 
 </devices>
 </deviceset>
 <deviceset name="LTE-302" prefix="D" uservalue="yes">
-<description>&lt;h3&gt;Lite-On Electronics LTE-302&lt;/h3&gt;
+<description>&lt;h3&gt;Lite-On Electronics LTE-302/LTR-301&lt;/h3&gt;
 &lt;p&gt;Through-hole side-firing 940nm IR Emitters and Detectors&lt;/p&gt;
+
+&lt;p&gt;&lt;li&gt;&lt;b&gt; LTE302&lt;/b&gt; -  Emitter (yellow dot)&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;1.2V&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;20 mA&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Datasheet &lt;/b&gt;&lt;a href="https://www.sparkfun.com/datasheets/Components/LTE-302.pdf"&gt;[ Link]&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;li&gt;&lt;b&gt; LTR301&lt;/b&gt; - Detector (red dot)&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;5V&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;1.56 mA&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Datasheet &lt;/b&gt;&lt;a href="https://www.sparkfun.com/datasheets/Components/LTR-301.pdf"&gt;[ Link]&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
+
 &lt;p&gt;SparkFun Products:
 &lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/241”&gt;Infrared Emitters and Detectors&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="LTE-302" x="0" y="1.016"/>
+<gate name="G$1" symbol="LED" x="0" y="2.54"/>
 </gates>
 <devices>
 <device name="" package="LTE-302">
@@ -1879,8 +2033,30 @@ Proven layout and schematic for triple color LED in SMD package - common anode. 
 </devices>
 </deviceset>
 <deviceset name="LED-WHITE" prefix="D" uservalue="yes">
-<description>White SMD LEDs&lt;br&gt;
-LilyPad 1206- DIO-09955</description>
+<description>&lt;h3&gt;White SMD LED&lt;/h3&gt;
+
+Used in manufacturing several products at SparkFun. 
+
+&lt;p&gt;&lt;li&gt;&lt;b&gt; 0603&lt;/b&gt; - Bright White SMD 0603  package&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Manufacturer:&lt;/b&gt;Kingbright&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;3.3V&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;30 mA&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;250 mcd&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Kingbright &lt;/b&gt;&lt;a href="http://www.kingbrightusa.com/product.asp?catalog_name=LED&amp;product_id=APT1608QWF/D"&gt;[Product Link]&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
+
+&lt;li&gt;&lt;b&gt; 1206&lt;/b&gt; - Bright White SMD1206  package&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Manufacturer:&lt;/b&gt;Kingbright&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;3.3V&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;20 mA&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;250 mcd&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Kingbright &lt;/b&gt;&lt;a href="http://www.kingbrightusa.com/product.asp?catalog_name=LED&amp;product_id=APT3216QWF/D"&gt;[Product Link]&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13169”&gt;Blackberry Trackballer Breakout&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12651”&gt;Digital SandBox&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
@@ -1905,16 +2081,46 @@ LilyPad 1206- DIO-09955</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-09004"/>
+<attribute name="VALUE" value="WHITE" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="LED-YELLOW" prefix="D" uservalue="yes">
-<description>Yellow SMD LEDs&lt;br&gt;
-LilyPad 1206- DIO-09909&lt;br&gt;
-0603- DIO-09003&lt;br&gt;
-"SMART" means more efficient and expensive</description>
+<description>&lt;h3&gt;Yellow SMD LED&lt;/h3&gt;
+
+Used in manufacturing several products at SparkFun. 
+
+&lt;p&gt;&lt;li&gt;&lt;b&gt; 0603&lt;/b&gt; -  SMD 0603  package&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Manufacturer:&lt;/b&gt;Kingbright&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;2V&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;20 mA&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;150 mcd&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Kingbright &lt;/b&gt;&lt;a href=http://www.kingbrightusa.com/product.asp?catalog_name=LED&amp;product_id=APT1608SYCK"&gt;[Product Link]&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;li&gt;&lt;b&gt; 0603 -SMART&lt;/b&gt; - SMART SMD 0603  package (more efficient/more expensive)&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Manufacturer:&lt;/b&gt;OSRAM&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;1.8V&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;20 mA&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;7.85 mcd&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;OSRAM &lt;/b&gt;&lt;a href="http://www.osram-os.com/osram_os/en/products/product-catalog/led-light-emitting-diodes/smartled-0603/ly-l29k/index.jsp"&gt;[Product Link]&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
+
+&lt;li&gt;&lt;b&gt; LilyPad&lt;/b&gt; - SMD1206  package&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Manufacturer:&lt;/b&gt;Kingbright&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;2.4V&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;30 mA&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;150 mcd&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Yetda &lt;/b&gt;&lt;a href="https://www.sparkfun.com/datasheets/DevTools/LilyPad/Q150YUS4.pdf"&gt;[Product Datasheet]&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13794”&gt;Blynk Board&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13613”&gt;IOIO-OTG&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13225”&gt;XBee Explorer Serial&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
@@ -1943,18 +2149,6 @@ LilyPad 1206- DIO-09909&lt;br&gt;
 </technology>
 </technologies>
 </device>
-<device name="1206" package="LED-1206">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="DIO-00820" constant="no"/>
-<attribute name="VALUE" value="YELLOW" constant="no"/>
-</technology>
-</technologies>
-</device>
 <device name="0603-SMART" package="LED-0603">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
@@ -1970,10 +2164,19 @@ LilyPad 1206- DIO-09909&lt;br&gt;
 </devices>
 </deviceset>
 <deviceset name="LED-RGB-CA-THRU" prefix="D" uservalue="yes">
-<description>RGB Through-hole common anode&lt;br&gt;
-SparkFun store front&lt;br&gt;
-COM-10821 (diffuse)&lt;br&gt;
-COM-10820 (clear)&lt;br&gt;</description>
+<description>&lt;h3&gt;LED-RGB Diffused Common Anode&lt;/h3&gt;
+
+&lt;p&gt;&lt;li&gt;&lt;b&gt;Color:&lt;/b&gt; Red/Green/Blue&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;RGB: 2800, 6500, 1200 mcd&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;RGB: 20, 20, 20 mA&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt; RGB: 2.0, 3.2, 3.2 V&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Packages:&lt;/b&gt; LED RGB-THRU&lt;/li&gt;
+&lt;/p&gt;
+
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;&lt;li&gt;&lt;a href=”[https://www.sparkfun.com/products/10821]”&gt;RGB Diffused Common Anode- Diffuse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”[https://www.sparkfun.com/products/10820]”&gt;RGB Diffused Common Anode - Clear&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="LED-RGB-CA" x="0" y="0"/>
 </gates>
@@ -2009,10 +2212,20 @@ COM-10820 (clear)&lt;br&gt;</description>
 </devices>
 </deviceset>
 <deviceset name="LED-RGB-CC-THRU" prefix="D" uservalue="yes">
-<description>RGB Through-hole common cathode LED&lt;br&gt;
-SparkFun Storefront:&lt;br&gt;
-COM-00105 (Clear)&lt;br&gt;
-COM-09264 (Diffuse)</description>
+<description>&lt;h3&gt;LED-RGB Diffused Common Cathode&lt;/h3&gt;
+
+&lt;p&gt;&lt;li&gt;&lt;b&gt;Color:&lt;/b&gt; Red/Green/Blue&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;RGB (clear): 800, 4000, 900 mcd&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;RGB (diffuse): 2800, 6500, 1200 mcd&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;RGB: 20, 20, 20 mA&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt; RGB: 2.0, 3.2, 3.2 V&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Packages:&lt;/b&gt; LED RGB-THRU&lt;/li&gt;
+&lt;/p&gt;
+
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;&lt;li&gt;&lt;a href=”[https://www.sparkfun.com/products/9264]”&gt;RGB Diffused Common Cathode- Diffuse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”[https://www.sparkfun.com/products/105]”&gt;RGB Diffused Common Cathode - Clear&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="LED-RGB-CC" x="-2.54" y="0"/>
 </gates>
@@ -2048,6 +2261,17 @@ COM-09264 (Diffuse)</description>
 </devices>
 </deviceset>
 <deviceset name="LED-TRICOLOR-5050" prefix="LED">
+<description>&lt;h3&gt;Tri-Color LED SMD-5050: No IC&lt;/h3&gt;
+
+&lt;p&gt;&lt;li&gt;&lt;b&gt;Color:&lt;/b&gt; Red/Green/Blue&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;RGB: 250, 880, 180 mcd&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;RGB: 30, 30, 30 mA&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt; RGB: 2.0, 3.1, 3.1 V&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Packages:&lt;/b&gt; LED RGB-THRU&lt;/li&gt;
+&lt;/p&gt;
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/10866”&gt; LED- SMD RGB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="D1" symbol="LED-RGB-INDV" x="0" y="0"/>
 </gates>
@@ -2062,15 +2286,27 @@ COM-09264 (Diffuse)</description>
 <connect gate="D1" pin="RED-C" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-10298" constant="no"/>
+<attribute name="VALUE" value="RGB" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="WS2812" prefix="U">
-<description>&lt;h3&gt; WS2812 RGB LED w/ WS2811 driver&lt;/h3&gt;&lt;p&gt;
-5x5mm SMD LED with built-in controller IC.&lt;br&gt;
-DIO-11598</description>
+<description>&lt;h3&gt;WS2812 RGB LED w/ WS2811 driver&lt;/h3&gt;
+5x5mm SMD LED with built-in controller IC.
+
+&lt;p&gt;&lt;li&gt;&lt;b&gt;Color:&lt;/b&gt; Red/Green/Blue&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;RGB: 550, 1100, 200 mcd&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;RGB: 20, 20, 20 mA&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt; RGB: 1.8, 3.0, 3.2 V&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Packages:&lt;/b&gt;LED-TRICOLOR-5050-IC&lt;/li&gt;
+&lt;/p&gt;
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/11821”&gt;LED-SMD RGB (WS2812)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="U1" symbol="LED-TRICOLOR-WS28X1" x="0" y="0"/>
 </gates>
@@ -2085,7 +2321,7 @@ DIO-11598</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-11598"/>
-<attribute name="VALUE" value="WS2811" constant="no"/>
+<attribute name="VALUE" value="WS2812" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2253,31 +2489,32 @@ DIO-11598</description>
 </devices>
 </deviceset>
 <deviceset name="WS2812B" prefix="D" uservalue="yes">
-<description>&lt;b&gt;WS2812B&lt;/b&gt; - Intelligent control LED integrated light source
+<description>&lt;h3&gt;WS2812B SMD addressable RGB LED&lt;/h3&gt;
+5x5mm SMD LED with built-in controller IC.
 
-&lt;p&gt;Technical Specifications:
-&lt;ul&gt;
-&lt;li&gt;Power Supply Voltage (VDD): 3.5 to 5.3 V&lt;/li&gt;
-&lt;li&gt;Input Voltage (VI): -0.5 to VDD+0.5 V&lt;/li&gt;
-&lt;li&gt;Operating Junction Temperature (Topt): -25°C to +80°C&lt;/li&gt;
-&lt;li&gt;Storage Temperature Range (Tstg): -55°C to +150°C&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/p&gt;</description>
+&lt;p&gt;&lt;li&gt;&lt;b&gt;Color:&lt;/b&gt; Red/Green/Blue&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;RGB: 390, 660, 180 mcd&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt; RGB: 2.0, 3.0, 3.0 V&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Packages:&lt;/b&gt;WS2812B&lt;/li&gt;
+&lt;/p&gt;
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13794”&gt;Blynk Board - ESP8266&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="WS2812B" x="-2.54" y="0"/>
+<gate name="G$1" symbol="LED-TRICOLOR-WS28X1" x="2.54" y="0"/>
 </gates>
 <devices>
 <device name="" package="WS2812B">
 <connects>
-<connect gate="G$1" pin="DIN" pad="4"/>
-<connect gate="G$1" pin="DOUT" pad="2"/>
+<connect gate="G$1" pin="DI" pad="4"/>
+<connect gate="G$1" pin="DO" pad="2"/>
 <connect gate="G$1" pin="VDD" pad="1"/>
 <connect gate="G$1" pin="VSS" pad="3"/>
 </connects>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-12503"/>
-<attribute name="VALUE" value="WS2812" constant="no"/>
+<attribute name="VALUE" value="WS2812B" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2303,7 +2540,7 @@ DIO-11598</description>
 <gate name="G$1" symbol="LED" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="TSAL6100" package="LED5MM">
+<device name="TSAL6100" package="LED_5MM">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="K"/>
@@ -2319,6 +2556,13 @@ DIO-11598</description>
 <deviceset name="LED-RGB-PLCC" prefix="D" uservalue="yes">
 <description>&lt;h3&gt;OSRAM LTRB GFSF - RGB LED PLCC-6&lt;/h3&gt;
 &lt;p&gt;SMD PLCC-6 RGB LED (no common connector)&lt;/p&gt;
+
+&lt;p&gt;&lt;li&gt;&lt;b&gt;Color:&lt;/b&gt; Red/Green/Blue&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;RGB (clear): 700, 1350, 160 mcd&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;RGB: 40, 50, 50 mA&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt; RGB: 2.0, 3.2, 3.2 V&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Packages:&lt;/b&gt; PLCC-6&lt;/li&gt;
+&lt;/p&gt;
 
 &lt;p&gt;SparkFun Products:
 &lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12651”&gt;Digital Sandbox&lt;/a&gt;&lt;/li&gt;
@@ -2340,7 +2584,7 @@ DIO-11598</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-12113" constant="no"/>
-<attribute name="VALUE" value=" " constant="no"/>
+<attribute name="VALUE" value="RGB" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2383,67 +2627,13 @@ DIO-11598</description>
 <deviceset name="0.13_RGB_LED" prefix="D" uservalue="yes">
 <description>&lt;h3&gt;Everlight Red/Green/Blue LED&lt;/h3&gt;
 67-23/R6GHBHC-B01/2T &lt;b&gt;||&lt;/b&gt; 67-23/R6GHBH-B01&lt;br /&gt;
-&lt;table width="100%"&gt;
-				&lt;tbody&gt;
-					&lt;tr&gt;
-						&lt;td width="50%"&gt;&lt;strong&gt;Size&lt;/strong&gt;&lt;/td&gt;
-						&lt;td&gt;3.2*2.8*1.9mm&lt;/td&gt;
-					&lt;/tr&gt;
-                                        &lt;tr&gt;
-                                                &lt;td width="50%"&gt;&lt;strong&gt;Mounting Type&lt;/strong&gt;&lt;/td&gt;
-                                                &lt;td&gt;SMD Full-Color LED PLCC4&lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                                &lt;td width="50%"&gt;&lt;strong&gt;Emitting Color&lt;/strong&gt;&lt;/td&gt;
-                                                &lt;td&gt;Red/Green/Blue (620-625/530-535/470-475 nm)&lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                                &lt;td width="50%"&gt;&lt;strong&gt;Chip Material&lt;/strong&gt;&lt;/td&gt;
-                                                &lt;td&gt;AlGaInP/InGaN/InGaN&lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                                &lt;td width="50%"&gt;&lt;strong&gt;Luminous Intensity&lt;/strong&gt;&lt;/td&gt;
-                                                &lt;td&gt;57-112/225-450/36-72 mcd&lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                                &lt;td width="50%"&gt;&lt;strong&gt;Viewing Angle&lt;/strong&gt;&lt;/td&gt;
-                                                &lt;td&gt;120 deg&lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                                &lt;td width="50%"&gt;&lt;strong&gt;Lens Type-Color&lt;/strong&gt;&lt;/td&gt;
-                                                &lt;td&gt;Water Clear&lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                                &lt;td width="50%"&gt;&lt;strong&gt;Forward Voltage&lt;/strong&gt;&lt;/td&gt;
-                                                &lt;td&gt;2.0/3.5/3.5 V&lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                                &lt;td width="50%"&gt;&lt;strong&gt;Forward Current&lt;/strong&gt;&lt;/td&gt;
-                                                &lt;td&gt;10 mA&lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                                &lt;td width="50%"&gt;&lt;strong&gt;Maximum Forward Voltage&lt;/strong&gt;&lt;/td&gt;
-                                                &lt;td&gt;2.4/3.9/3.9 V&lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                                &lt;td width="50%"&gt;&lt;strong&gt;Maximum Forward Current&lt;/strong&gt;&lt;/td&gt;
-                                                &lt;td&gt;25/25/25 mA&lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                                &lt;td width="50%"&gt;&lt;strong&gt;Min-Max Operating Temperature&lt;/strong&gt;&lt;/td&gt;
-                                                &lt;td&gt; -40C to +85C&lt;/td&gt;
-                                        &lt;/tr&gt;
-                                        &lt;tr&gt;
-                                                &lt;td width="50%"&gt;&lt;strong&gt;Factory Pack&lt;/strong&gt;&lt;/td&gt;
-                                                &lt;td&gt;2000 pcs-Reel&lt;/td&gt;
-                                        &lt;/tr&gt;
-					&lt;tr&gt;
-						&lt;td&gt;&lt;strong&gt;RoHS&lt;/strong&gt;&lt;/td&gt;
-						&lt;td&gt;✓&lt;/td&gt;
-					&lt;/tr&gt;
-				&lt;/tbody&gt;
-				&lt;/table&gt;
 
+&lt;p&gt;&lt;li&gt;&lt;b&gt;Color:&lt;/b&gt; Red/Green/Blue&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;RGB: 57, 225, 36 mcd&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;RGB: 25, 25, 25 mA&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt; RGB: 2.4, 3.9, 3.9 V&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Packages:&lt;/b&gt; P-LCC-4-3&lt;/li&gt;
+&lt;/p&gt;
 &lt;p&gt;SparkFun Products:
 &lt;ul&gt;&lt;li&gt;&lt;a href=”[https://www.sparkfun.com/products/13614]”&gt;[Qduino Mini]&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
