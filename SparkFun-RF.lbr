@@ -6552,6 +6552,8 @@ Package for the Xtend Digi Modem 40 mile range.&lt;/p&gt;
 <text x="17.78" y="12.954" size="1.778" layer="96" font="vector" align="bottom-right">&gt;VALUE</text>
 </symbol>
 <symbol name="NRF24LE1">
+<description>&lt;h3&gt;Nordic nRF24LE1 Ultra-low Power Wireless System on Chip&lt;/h3&gt;
+&lt;p&gt;The Nordic Semiconductor nRF24LE1 is a 2.4GHz ISM band radio with emhanced 8051 MCU, up to 2Mbps on air data rate, 1.9 to 3.6V supply range, 16-32-bit multiplication-division co-processor (MDU), 16 kBytes of on-chip Flash, 1 kBytes on SRAM, 1 kBytes NV data memory, 512 Bytes NV data memory (extended endurance), Interrupt controller with 18 sources and 4 priority levels, 1 Analog comparator, 10 Bit ADC, Hardware SPI slave and master, UART, three 16-bit timers/counters, AES encryption/decryption co-processor, Random number generator, 2-Wire interface, 2 Channel PWM, 7, 15, or 31 GPIO lines, On-chip hardware debug support for a JTAG debugger.&lt;/p&gt;</description>
 <wire x1="-17.78" y1="-20.32" x2="20.32" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="20.32" y1="-20.32" x2="20.32" y2="17.78" width="0.254" layer="94"/>
 <wire x1="20.32" y1="17.78" x2="-17.78" y2="17.78" width="0.254" layer="94"/>
@@ -6592,70 +6594,83 @@ Package for the Xtend Digi Modem 40 mile range.&lt;/p&gt;
 <text x="-17.78" y="-20.574" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="NRF24LU1">
-<wire x1="-17.78" y1="-20.32" x2="20.32" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-20.32" x2="-17.78" y2="17.78" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="17.78" x2="20.32" y2="17.78" width="0.254" layer="94"/>
-<wire x1="20.32" y1="17.78" x2="20.32" y2="-20.32" width="0.254" layer="94"/>
-<pin name="VDD3" x="-7.62" y="-22.86" length="short" rot="R90"/>
-<pin name="P0.0" x="-5.08" y="-22.86" length="short" rot="R90"/>
-<pin name="P0.1" x="-2.54" y="-22.86" length="short" rot="R90"/>
-<pin name="VSS2" x="0" y="-22.86" length="short" rot="R90"/>
-<pin name="P0.2" x="2.54" y="-22.86" length="short" rot="R90"/>
-<pin name="P0.3" x="5.08" y="-22.86" length="short" rot="R90"/>
-<pin name="P0.4" x="7.62" y="-22.86" length="short" rot="R90"/>
-<pin name="P0.5" x="10.16" y="-22.86" length="short" rot="R90"/>
-<pin name="/RESET" x="-20.32" y="-10.16" length="short"/>
-<pin name="PROG" x="-20.32" y="-7.62" length="short"/>
-<pin name="VSS1" x="-20.32" y="-5.08" length="short"/>
-<pin name="D-" x="-20.32" y="-2.54" length="short"/>
-<pin name="D+" x="-20.32" y="0" length="short"/>
-<pin name="VDD2" x="-20.32" y="2.54" length="short"/>
-<pin name="VBUS" x="-20.32" y="5.08" length="short"/>
-<pin name="VDD1" x="-20.32" y="7.62" length="short"/>
-<pin name="XC1" x="-7.62" y="20.32" length="short" rot="R270"/>
-<pin name="XC2" x="-5.08" y="20.32" length="short" rot="R270"/>
-<pin name="VSS7" x="-2.54" y="20.32" length="short" rot="R270"/>
-<pin name="DEC2" x="0" y="20.32" length="short" rot="R270"/>
-<pin name="DEC1" x="2.54" y="20.32" length="short" rot="R270"/>
-<pin name="VDD6" x="5.08" y="20.32" length="short" rot="R270"/>
-<pin name="VSS6" x="7.62" y="20.32" length="short" rot="R270"/>
-<pin name="IREF" x="10.16" y="20.32" length="short" rot="R270"/>
-<pin name="VDD5" x="22.86" y="7.62" length="short" rot="R180"/>
-<pin name="VSS5" x="22.86" y="5.08" length="short" rot="R180"/>
-<pin name="ANT2" x="22.86" y="2.54" length="short" rot="R180"/>
-<pin name="ANT1" x="22.86" y="0" length="short" rot="R180"/>
-<pin name="VDD_PA" x="22.86" y="-2.54" length="short" rot="R180"/>
-<pin name="VDD4" x="22.86" y="-5.08" length="short" rot="R180"/>
-<pin name="VSS4" x="22.86" y="-7.62" length="short" rot="R180"/>
-<pin name="VSS3" x="22.86" y="-10.16" length="short" rot="R180"/>
-<text x="-17.78" y="18.034" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-17.78" y="-20.574" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<description>&lt;h3&gt;Nordic nRF24LU1+ Single-Chip 2.4GHz Transceiver w/ USB Microcontroller and Flash&lt;/h3&gt;
+&lt;p&gt;Nordic’s nRF24LU1+ is a complete system-on-chip wireless transceiver. The nRF24LU1+ features a fully integrated USB 2.0 compliant device controller, which makes this chip a great choice for a compact wireless USB dongle. The nRF24LU1+ is compatible with our nRF24L01+ 2.4GHz RF transceivers as well. Additional features include an 8-bit application microcontroller, 32 kB flash memory, 6 GPIO pins, SPI and UART support, and up to 2Mbps on air data rates.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/retired/9525"&gt;2.4GHz Transceiver IC - nRF24LU1+ (COM-09525)&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="-17.78" y1="-17.78" x2="20.32" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-17.78" x2="-17.78" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="20.32" x2="20.32" y2="20.32" width="0.254" layer="94"/>
+<wire x1="20.32" y1="20.32" x2="20.32" y2="-17.78" width="0.254" layer="94"/>
+<pin name="VDD3" x="-7.62" y="-20.32" length="short" rot="R90"/>
+<pin name="P0.0" x="-5.08" y="-20.32" length="short" rot="R90"/>
+<pin name="P0.1" x="-2.54" y="-20.32" length="short" rot="R90"/>
+<pin name="VSS2" x="0" y="-20.32" length="short" rot="R90"/>
+<pin name="P0.2" x="2.54" y="-20.32" length="short" rot="R90"/>
+<pin name="P0.3" x="5.08" y="-20.32" length="short" rot="R90"/>
+<pin name="P0.4" x="7.62" y="-20.32" length="short" rot="R90"/>
+<pin name="P0.5" x="10.16" y="-20.32" length="short" rot="R90"/>
+<pin name="/RESET" x="-20.32" y="-7.62" length="short"/>
+<pin name="PROG" x="-20.32" y="-5.08" length="short"/>
+<pin name="VSS1" x="-20.32" y="-2.54" length="short"/>
+<pin name="D-" x="-20.32" y="0" length="short"/>
+<pin name="D+" x="-20.32" y="2.54" length="short"/>
+<pin name="VDD2" x="-20.32" y="5.08" length="short"/>
+<pin name="VBUS" x="-20.32" y="7.62" length="short"/>
+<pin name="VDD1" x="-20.32" y="10.16" length="short"/>
+<pin name="XC1" x="-7.62" y="22.86" length="short" rot="R270"/>
+<pin name="XC2" x="-5.08" y="22.86" length="short" rot="R270"/>
+<pin name="VSS7" x="-2.54" y="22.86" length="short" rot="R270"/>
+<pin name="DEC2" x="0" y="22.86" length="short" rot="R270"/>
+<pin name="DEC1" x="2.54" y="22.86" length="short" rot="R270"/>
+<pin name="VDD6" x="5.08" y="22.86" length="short" rot="R270"/>
+<pin name="VSS6" x="7.62" y="22.86" length="short" rot="R270"/>
+<pin name="IREF" x="10.16" y="22.86" length="short" rot="R270"/>
+<pin name="VDD5" x="22.86" y="10.16" length="short" rot="R180"/>
+<pin name="VSS5" x="22.86" y="7.62" length="short" rot="R180"/>
+<pin name="ANT2" x="22.86" y="5.08" length="short" rot="R180"/>
+<pin name="ANT1" x="22.86" y="2.54" length="short" rot="R180"/>
+<pin name="VDD_PA" x="22.86" y="0" length="short" rot="R180"/>
+<pin name="VDD4" x="22.86" y="-2.54" length="short" rot="R180"/>
+<pin name="VSS4" x="22.86" y="-5.08" length="short" rot="R180"/>
+<pin name="VSS3" x="22.86" y="-7.62" length="short" rot="R180"/>
+<text x="-17.78" y="20.574" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-17.78" y="-18.034" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="RF-LINK_RX">
-<wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="-5.08" y1="10.16" x2="-5.08" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="5.08" y1="-2.54" x2="5.08" y2="10.16" width="0.4064" layer="94"/>
-<wire x1="-5.08" y1="10.16" x2="5.08" y2="10.16" width="0.4064" layer="94"/>
-<pin name="GND" x="-7.62" y="0" length="short" direction="pwr" swaplevel="1"/>
-<pin name="ANT" x="-7.62" y="5.08" length="short" direction="pas" swaplevel="1"/>
-<pin name="+5V" x="-7.62" y="7.62" length="short" direction="pwr" swaplevel="1"/>
-<pin name="DATA" x="-7.62" y="2.54" length="short" direction="in" swaplevel="1"/>
-<text x="-5.08" y="10.414" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-5.08" y="-2.794" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<description>&lt;h3&gt;RF Link Receiver (434 MHz, 315 MHz)&lt;/h3&gt;
+&lt;p&gt;These wireless receivers work with equivalent transmitters. They can easily fit into a breadboard and work well with microcontrollers to create a very simple wireless data link. Since these are only receivers, they will only work communicating data one-way, you would need two pairs (of different frequencies) to act as a transmitter/receiver pair..&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/10532"&gt;RF Link Receiver - 4800bps (434 MHz) (WRL-10532)&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.4064" layer="94"/>
+<pin name="GND" x="-7.62" y="-2.54" length="short" direction="pwr" swaplevel="1"/>
+<pin name="ANT" x="-7.62" y="2.54" length="short" direction="pas" swaplevel="1"/>
+<pin name="+5V" x="-7.62" y="5.08" length="short" direction="pwr" swaplevel="1"/>
+<pin name="DATA" x="-7.62" y="0" length="short" direction="in" swaplevel="1"/>
+<text x="-5.08" y="7.874" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-5.08" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="RF-LINK_TX">
-<wire x1="7.62" y1="-7.62" x2="-2.54" y2="-7.62" width="0.4064" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-7.62" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="7.62" y2="5.08" width="0.4064" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="7.62" y2="5.08" width="0.4064" layer="94"/>
-<pin name="GND" x="-5.08" y="-5.08" length="short" direction="pwr" swaplevel="1"/>
-<pin name="DATA" x="-5.08" y="-2.54" length="short" direction="in" swaplevel="1"/>
-<pin name="ANT" x="-5.08" y="0" length="short" direction="pas" swaplevel="1"/>
-<pin name="+5V" x="-5.08" y="2.54" length="short" direction="pwr" swaplevel="1"/>
-<text x="-2.54" y="5.334" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-2.54" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<description>&lt;h3&gt;RF Link Transmitter (434 MHz, 315 MHz)&lt;/h3&gt;
+&lt;p&gt;These wireless transmitters work with equivalent receivers. They can easily fit into a breadboard and work well with microcontrollers to create a very simple wireless data link. Since these are only transmitters, they will only work communicating data one-way, you would need two pairs (of different frequencies) to act as a transmitter/receiver pair.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/10534"&gt;RF Link Transmitter - 434MHz (WRL-10534)&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.4064" layer="94"/>
+<pin name="GND" x="-7.62" y="-2.54" length="short" direction="pwr" swaplevel="1"/>
+<pin name="DATA" x="-7.62" y="0" length="short" direction="in" swaplevel="1"/>
+<pin name="ANT" x="-7.62" y="2.54" length="short" direction="pas" swaplevel="1"/>
+<pin name="+5V" x="-7.62" y="5.08" length="short" direction="pwr" swaplevel="1"/>
+<text x="-5.08" y="7.874" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-5.08" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="RFM22">
+<description>&lt;h3&gt;Hope RF RFM22 ISM Transciever Module&lt;/h3&gt;
+
+&lt;p&gt;The RFM22 is a low-power, low cost radio that is capable of operating in the 434MHz and 900MHz open bands. It's frequency is software defined and there are some very good libraries written for it.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/11018"&gt;SparkFun RFM22 Shield - 434MHz (DEV-11018)&lt;/a&gt;&lt;/p&gt;</description>
 <wire x1="-10.16" y1="15.24" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-17.78" x2="10.16" y2="15.24" width="0.254" layer="94"/>
@@ -6680,6 +6695,14 @@ Package for the Xtend Digi Modem 40 mile range.&lt;/p&gt;
 <text x="-10.16" y="-18.034" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="RMCM01">
+<description>&lt;h3&gt;Polar RMCM01 Heart Rate Monitor Receiver&lt;/h3&gt; 
+&lt;p&gt;The Polar heart rate receiver component receiver
+wirelessly receives the heart rate signal from Polar
+transmitter belt. The complete heart rate measurement
+system consists of three different parts; transmitter,
+receiver and electronics and/or display device that is
+outputting the heart rate value.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/8661"&gt;Polar Heart Rate Monitor Interface (SEN-08661)&lt;/a&gt;&lt;/p&gt;</description>
 <wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="7.62" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
@@ -6699,6 +6722,9 @@ Package for the Xtend Digi Modem 40 mile range.&lt;/p&gt;
 <text x="-10.16" y="-10.414" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="RN171">
+<description>&lt;h3&gt;Roving Networks RN-171 802.11b/g WiFi Serial Module&lt;/h3&gt; 
+&lt;p&gt;The RN-171 is a small form factor, ultra-low power embedded TCP/IP module. The RN-171 is a standalone, complete TCP/IP wireless networking module. Due to its small form factor and extremely low power consumption, it is perfect for mobile wireless applications such as asset monitoring, sensors, and portable battery operated devices.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/retired/11049"&gt;WiFly RN-171 802.11b/g Serial Module (WRL-11049)&lt;/a&gt;&lt;/p&gt;</description>
 <wire x1="-15.24" y1="-27.94" x2="15.24" y2="-27.94" width="0.254" layer="94"/>
 <wire x1="15.24" y1="-27.94" x2="15.24" y2="27.94" width="0.254" layer="94"/>
 <wire x1="15.24" y1="27.94" x2="-15.24" y2="27.94" width="0.254" layer="94"/>
@@ -6749,6 +6775,9 @@ Package for the Xtend Digi Modem 40 mile range.&lt;/p&gt;
 <text x="-15.24" y="-28.194" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="SI470X">
+<description>&lt;h3&gt;Silicon Labs Si4703 FM Tuner&lt;/h3&gt;
+&lt;p&gt;Beyond enabling you to tune in to FM radio stations, the Si4703 is also capable of detecting and processing both Radio Data Service (RDS) and Radio Broadcast Data Service (RBDS) information. The Si4703 even does a very good job of filtering and carrier detection. It also enables data such as the station ID and song name to be displayed to the user.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/12938"&gt;SparkFun FM Tuner Evaluation Board - Si4703 (WRL-12938)&lt;/a&gt;&lt;/p&gt;</description>
 <wire x1="-15.24" y1="12.7" x2="15.24" y2="12.7" width="0.254" layer="94"/>
 <wire x1="15.24" y1="12.7" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
@@ -6776,6 +6805,9 @@ Package for the Xtend Digi Modem 40 mile range.&lt;/p&gt;
 <text x="-15.24" y="-15.494" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="SM130">
+<description>&lt;h3&gt;SonMicro SMB130 - 13.56 MHz RFID Mifare Read/Write Module&lt;/h3&gt;
+&lt;p&gt;The SMB130 is a 28 pin DIP module that includes all necessary components for a 13.56 MHz RFID MIFARE®, aside from a PCB antenna.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/10126"&gt;SparkFun Product Link&lt;/a&gt;&lt;/p&gt;</description>
 <wire x1="-12.7" y1="-15.24" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
 <wire x1="12.7" y1="15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
@@ -6803,6 +6835,9 @@ Package for the Xtend Digi Modem 40 mile range.&lt;/p&gt;
 <text x="-12.7" y="-15.494" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="SM5100B">
+<description>&lt;h3&gt;LinkSprite SM5100B GSM/GPRS Module&lt;/h3&gt;
+&lt;p&gt;The SM5100B is a miniature, quad-band GSM 850/EGSM 900/DCS 1800/PCS 1900 module, which can be integrated into a great number of wireless projects. You can use this module to accomplish almost anything a normal cell phone can - SMS text messages, GSM/GPRS, TCP/IP, and more!&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/9533"&gt;SparkFun Product Link&lt;/a&gt;&lt;/p&gt;</description>
 <wire x1="15.24" y1="45.72" x2="-15.24" y2="45.72" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="45.72" x2="-15.24" y2="-45.72" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="-45.72" x2="15.24" y2="-45.72" width="0.254" layer="94"/>
@@ -6871,72 +6906,82 @@ Package for the Xtend Digi Modem 40 mile range.&lt;/p&gt;
 <text x="-15.24" y="-45.974" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="VENUS638FLPX-L">
-<wire x1="-12.7" y1="-66.04" x2="12.7" y2="-66.04" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-66.04" x2="12.7" y2="22.86" width="0.254" layer="94"/>
-<wire x1="12.7" y1="22.86" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="22.86" x2="-12.7" y2="-66.04" width="0.254" layer="94"/>
-<pin name="LED/GPIO0" x="-15.24" y="-35.56" length="short"/>
-<pin name="TXD0" x="-15.24" y="-5.08" length="short"/>
-<pin name="RXD0" x="-15.24" y="-2.54" length="short"/>
-<pin name="PPS" x="-15.24" y="-38.1" length="short"/>
-<pin name="CLK" x="-15.24" y="-30.48" length="short"/>
-<pin name="CSN" x="-15.24" y="-27.94" length="short"/>
-<pin name="MISO" x="-15.24" y="-25.4" length="short"/>
-<pin name="MOSI" x="-15.24" y="-22.86" length="short"/>
-<pin name="GND@10" x="-15.24" y="-48.26" length="short"/>
-<pin name="GND@11" x="-15.24" y="-50.8" length="short"/>
-<pin name="GND@19" x="-15.24" y="-55.88" length="short"/>
-<pin name="GND@15" x="-15.24" y="-53.34" length="short"/>
-<pin name="GNDRF@21" x="15.24" y="-33.02" length="short" rot="R180"/>
-<pin name="GNDRF@22" x="15.24" y="-35.56" length="short" rot="R180"/>
-<pin name="GNDRF@24" x="15.24" y="-38.1" length="short" rot="R180"/>
-<pin name="GNDRF@25" x="15.24" y="-40.64" length="short" rot="R180"/>
-<pin name="GNDRF@27" x="15.24" y="-43.18" length="short" rot="R180"/>
-<pin name="GNDRF@28" x="15.24" y="-45.72" length="short" rot="R180"/>
-<pin name="GNDRF@29" x="15.24" y="-48.26" length="short" rot="R180"/>
-<pin name="GNDRF@31" x="15.24" y="-50.8" length="short" rot="R180"/>
-<pin name="GNDRF@33" x="15.24" y="-53.34" length="short" rot="R180"/>
-<pin name="RTC" x="-15.24" y="-43.18" length="short"/>
-<pin name="BTSEL" x="-15.24" y="2.54" length="short"/>
-<pin name="RSTN" x="-15.24" y="10.16" length="short"/>
-<pin name="RFIN" x="15.24" y="20.32" length="short" rot="R180"/>
-<pin name="VCC" x="-15.24" y="17.78" length="short"/>
-<pin name="VBAT" x="-15.24" y="5.08" length="short"/>
-<pin name="GPIO1" x="15.24" y="15.24" length="short" rot="R180"/>
-<pin name="REGEN" x="-15.24" y="12.7" length="short"/>
-<pin name="GPIO2" x="15.24" y="12.7" length="short" rot="R180"/>
-<pin name="GPIO20" x="15.24" y="-10.16" length="short" rot="R180"/>
-<pin name="PIO12" x="15.24" y="-2.54" length="short" rot="R180"/>
-<pin name="PIO14" x="15.24" y="-5.08" length="short" rot="R180"/>
-<pin name="GPIO24" x="15.24" y="-17.78" length="short" rot="R180"/>
-<pin name="SDA" x="-15.24" y="-15.24" length="short"/>
-<pin name="SCL" x="-15.24" y="-17.78" length="short"/>
-<pin name="GPIO4" x="15.24" y="7.62" length="short" rot="R180"/>
-<pin name="GPIO3" x="15.24" y="10.16" length="short" rot="R180"/>
-<pin name="GND@49" x="-15.24" y="-58.42" length="short"/>
-<pin name="PIO5" x="15.24" y="5.08" length="short" rot="R180"/>
-<pin name="PIO11" x="15.24" y="0" length="short" rot="R180"/>
-<pin name="RXD1" x="-15.24" y="-7.62" length="short"/>
-<pin name="GPIO25" x="15.24" y="-20.32" length="short" rot="R180"/>
-<pin name="GPIO30" x="15.24" y="-27.94" length="short" rot="R180"/>
-<pin name="PIO15" x="15.24" y="-7.62" length="short" rot="R180"/>
-<pin name="TXD1" x="-15.24" y="-10.16" length="short"/>
-<pin name="VCC@58" x="-15.24" y="20.32" length="short"/>
-<pin name="GPIO28" x="15.24" y="-22.86" length="short" rot="R180"/>
-<pin name="GND@60" x="-15.24" y="-60.96" length="short"/>
-<pin name="GNDRF@61" x="15.24" y="-55.88" length="short" rot="R180"/>
-<pin name="GNDRF@62" x="15.24" y="-58.42" length="short" rot="R180"/>
-<pin name="GPIO6" x="15.24" y="2.54" length="short" rot="R180"/>
-<pin name="GND@64" x="-15.24" y="-63.5" length="short"/>
-<pin name="GNDRF@65" x="15.24" y="-60.96" length="short" rot="R180"/>
-<pin name="GNDRF@69" x="15.24" y="-63.5" length="short" rot="R180"/>
-<pin name="GPIO22" x="15.24" y="-12.7" length="short" rot="R180"/>
-<pin name="GPIO23" x="15.24" y="-15.24" length="short" rot="R180"/>
-<pin name="GPIO29" x="15.24" y="-25.4" length="short" rot="R180"/>
-<text x="-12.7" y="23.114" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-12.7" y="-66.294" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<description>&lt;h3&gt;Venus638FLPX-L GPS Receiver&lt;/h3&gt;
+
+&lt;p&gt;Venus638FLPx is a high performance, low cost, single
+chip GPS receiver targeting mobile consumer and cellular
+handset applications. It offers very low power
+consumption, high sensitivity, and best in class signal
+acquisition and time-to-first-fix performance.&lt;/p&gt;</description>
+<wire x1="-12.7" y1="-48.26" x2="12.7" y2="-48.26" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-48.26" x2="12.7" y2="40.64" width="0.254" layer="94"/>
+<wire x1="12.7" y1="40.64" x2="-12.7" y2="40.64" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="40.64" x2="-12.7" y2="-48.26" width="0.254" layer="94"/>
+<pin name="LED/GPIO0" x="-15.24" y="-17.78" length="short"/>
+<pin name="TXD0" x="-15.24" y="12.7" length="short"/>
+<pin name="RXD0" x="-15.24" y="15.24" length="short"/>
+<pin name="PPS" x="-15.24" y="-20.32" length="short"/>
+<pin name="CLK" x="-15.24" y="-12.7" length="short"/>
+<pin name="CSN" x="-15.24" y="-10.16" length="short"/>
+<pin name="MISO" x="-15.24" y="-7.62" length="short"/>
+<pin name="MOSI" x="-15.24" y="-5.08" length="short"/>
+<pin name="GND@10" x="-15.24" y="-30.48" length="short"/>
+<pin name="GND@11" x="-15.24" y="-33.02" length="short"/>
+<pin name="GND@19" x="-15.24" y="-38.1" length="short"/>
+<pin name="GND@15" x="-15.24" y="-35.56" length="short"/>
+<pin name="GNDRF@21" x="15.24" y="-15.24" length="short" rot="R180"/>
+<pin name="GNDRF@22" x="15.24" y="-17.78" length="short" rot="R180"/>
+<pin name="GNDRF@24" x="15.24" y="-20.32" length="short" rot="R180"/>
+<pin name="GNDRF@25" x="15.24" y="-22.86" length="short" rot="R180"/>
+<pin name="GNDRF@27" x="15.24" y="-25.4" length="short" rot="R180"/>
+<pin name="GNDRF@28" x="15.24" y="-27.94" length="short" rot="R180"/>
+<pin name="GNDRF@29" x="15.24" y="-30.48" length="short" rot="R180"/>
+<pin name="GNDRF@31" x="15.24" y="-33.02" length="short" rot="R180"/>
+<pin name="GNDRF@33" x="15.24" y="-35.56" length="short" rot="R180"/>
+<pin name="RTC" x="-15.24" y="-25.4" length="short"/>
+<pin name="BTSEL" x="-15.24" y="20.32" length="short"/>
+<pin name="RSTN" x="-15.24" y="27.94" length="short"/>
+<pin name="RFIN" x="15.24" y="38.1" length="short" rot="R180"/>
+<pin name="VCC" x="-15.24" y="35.56" length="short"/>
+<pin name="VBAT" x="-15.24" y="22.86" length="short"/>
+<pin name="GPIO1" x="15.24" y="33.02" length="short" rot="R180"/>
+<pin name="REGEN" x="-15.24" y="30.48" length="short"/>
+<pin name="GPIO2" x="15.24" y="30.48" length="short" rot="R180"/>
+<pin name="GPIO20" x="15.24" y="7.62" length="short" rot="R180"/>
+<pin name="PIO12" x="15.24" y="15.24" length="short" rot="R180"/>
+<pin name="PIO14" x="15.24" y="12.7" length="short" rot="R180"/>
+<pin name="GPIO24" x="15.24" y="0" length="short" rot="R180"/>
+<pin name="SDA" x="-15.24" y="2.54" length="short"/>
+<pin name="SCL" x="-15.24" y="0" length="short"/>
+<pin name="GPIO4" x="15.24" y="25.4" length="short" rot="R180"/>
+<pin name="GPIO3" x="15.24" y="27.94" length="short" rot="R180"/>
+<pin name="GND@49" x="-15.24" y="-40.64" length="short"/>
+<pin name="PIO5" x="15.24" y="22.86" length="short" rot="R180"/>
+<pin name="PIO11" x="15.24" y="17.78" length="short" rot="R180"/>
+<pin name="RXD1" x="-15.24" y="10.16" length="short"/>
+<pin name="GPIO25" x="15.24" y="-2.54" length="short" rot="R180"/>
+<pin name="GPIO30" x="15.24" y="-10.16" length="short" rot="R180"/>
+<pin name="PIO15" x="15.24" y="10.16" length="short" rot="R180"/>
+<pin name="TXD1" x="-15.24" y="7.62" length="short"/>
+<pin name="VCC@58" x="-15.24" y="38.1" length="short"/>
+<pin name="GPIO28" x="15.24" y="-5.08" length="short" rot="R180"/>
+<pin name="GND@60" x="-15.24" y="-43.18" length="short"/>
+<pin name="GNDRF@61" x="15.24" y="-38.1" length="short" rot="R180"/>
+<pin name="GNDRF@62" x="15.24" y="-40.64" length="short" rot="R180"/>
+<pin name="GPIO6" x="15.24" y="20.32" length="short" rot="R180"/>
+<pin name="GND@64" x="-15.24" y="-45.72" length="short"/>
+<pin name="GNDRF@65" x="15.24" y="-43.18" length="short" rot="R180"/>
+<pin name="GNDRF@69" x="15.24" y="-45.72" length="short" rot="R180"/>
+<pin name="GPIO22" x="15.24" y="5.08" length="short" rot="R180"/>
+<pin name="GPIO23" x="15.24" y="2.54" length="short" rot="R180"/>
+<pin name="GPIO29" x="15.24" y="-7.62" length="short" rot="R180"/>
+<text x="-12.7" y="40.894" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-12.7" y="-48.514" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="WIFLY_GSX">
+<description>&lt;h3&gt;Roving Networks WiFly GSX (RN-131C) Wi-Fi Module&lt;/h3&gt;
+&lt;p&gt;The WiFly GSX (RN-131C) module is a complete ultra low power embedded TCP/IP solution. The WiFly GSX module is a stand alone, embedded wireless 802.11b/g networking module.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/10004"&gt;SparkFun Product Link&lt;/a&gt;&lt;/p&gt;</description>
 <wire x1="-20.32" y1="-25.4" x2="20.32" y2="-25.4" width="0.254" layer="94"/>
 <wire x1="20.32" y1="-25.4" x2="20.32" y2="35.56" width="0.254" layer="94"/>
 <wire x1="20.32" y1="35.56" x2="-20.32" y2="35.56" width="0.254" layer="94"/>
@@ -6989,6 +7034,8 @@ Package for the Xtend Digi Modem 40 mile range.&lt;/p&gt;
 <text x="20.32" y="35.814" size="1.778" layer="96" font="vector" align="bottom-right">&gt;VALUE</text>
 </symbol>
 <symbol name="XTEND-DIGI-MODEM">
+<description>&lt;h3&gt;Digi XTend 900 1W RF Transceiver&lt;/h3&gt;
+&lt;p&gt;The XTend Modem packs a ton of RF punch into a small, low-power, easy-to-use, and reliable module. Outdoors, with line-of-sight, this module can communicate at up to 40 miles; indoors it can still do up to 3000ft. The module transfers a standard asynchronous serial data stream, operates within the ISM 900MHz frequency band and sustains up to 115.2kbps data throughput. The module comes with an attached RPSMA antenna connector.&lt;/p&gt;</description>
 <wire x1="-7.62" y1="15.24" x2="7.62" y2="15.24" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-15.24" x2="-7.62" y2="15.24" width="0.254" layer="94"/>
 <wire x1="7.62" y1="15.24" x2="7.62" y2="-15.24" width="0.254" layer="94"/>
@@ -7299,6 +7346,21 @@ A wi-fi enabled microcontroller, in an SD card package.</description>
 <text x="-18.034" y="-30.988" size="1.778" layer="96" font="vector" align="top-right">&gt;VALUE</text>
 </symbol>
 <symbol name="RFM69H">
+<description>&lt;h3&gt;Hope RF RFM69H ISM Transceiver Module&lt;/h3&gt; 
+&lt;p&gt;The RFM69H is a transceiver module capable of operation 
+over a wide frequency range, including the 
+315,433,868 and 
+915MHz license-free ISM (Industry Scientific and Medical) 
+frequency bands. All major RF communication parameters 
+are programmable and most of them  can  be  dynamically 
+set.  The  RFM69H  offers  the unique advantage of 
+programmable narrow-band and wide- band  communication 
+modes. The RFM69H is optimized for low power 
+consumption while offering high RF output power and 
+channelized operation.
+Compliance  ETSI and FCC 
+regulations. &lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.hoperf.cn/upload/docs/RF/SX/RFM69H_DataSheet_v1.3.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <pin name="RESET" x="-12.7" y="-10.16" length="short" direction="in"/>
 <pin name="DIO0" x="12.7" y="12.7" length="short" rot="R180"/>
 <pin name="DIO1" x="12.7" y="10.16" length="short" rot="R180"/>
@@ -7322,6 +7384,9 @@ A wi-fi enabled microcontroller, in an SD card package.</description>
 <text x="-10.16" y="-12.954" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="RFM69">
+<description>&lt;h3&gt;Hope RF RFM69CW ISM Transceiver Module&lt;/h3&gt; 
+&lt;p&gt;The RFM69CW radio module by HopeRF is a compact, powerful radio transceiver module for swapping data packets in the 868 MHz ISM band, using standard and enhanced FSK modulation. The radio is great for sub-compact designs; just 4mm of mounted height from using an SMD precision crystal.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.hoperf.com/upload/rf/RFM69CW-V1.1.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <pin name="RESET" x="-12.7" y="-10.16" length="short" direction="in"/>
 <pin name="DIO0" x="12.7" y="10.16" length="short" rot="R180"/>
 <pin name="DIO1" x="12.7" y="7.62" length="short" rot="R180"/>
@@ -7390,6 +7455,8 @@ A wi-fi enabled microcontroller, in an SD card package.</description>
 <text x="-5.08" y="7.874" size="1.778" layer="95" font="vector">&gt;NAME</text>
 </symbol>
 <symbol name="XBEE">
+<description>&lt;h3&gt;Digi XBee and XBee Pro&lt;/h3&gt;
+&lt;p&gt;XBees are tiny blue chips that can communicate wirelessly with each other. They can do simple things, like replacing a couple of wires in serial communication, which is nice when you want to make a remote for your paintball vehicle.&lt;/p&gt;</description>
 <wire x1="-15.24" y1="12.7" x2="15.24" y2="12.7" width="0.254" layer="94"/>
 <wire x1="15.24" y1="12.7" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
@@ -8041,7 +8108,8 @@ This is the very popular, low cost, very low power RF transceiver from Nordic Se
 </devices>
 </deviceset>
 <deviceset name="NRF24LE1">
-<description>2.4GHz transceiver</description>
+<description>&lt;h3&gt;Nordic nRF24LE1 Ultra-low Power Wireless System on Chip&lt;/h3&gt;
+&lt;p&gt;The Nordic Semiconductor nRF24LE1 is a 2.4GHz ISM band radio with emhanced 8051 MCU, up to 2Mbps on air data rate, 1.9 to 3.6V supply range, 16-32-bit multiplication-division co-processor (MDU), 16 kBytes of on-chip Flash, 1 kBytes on SRAM, 1 kBytes NV data memory, 512 Bytes NV data memory (extended endurance), Interrupt controller with 18 sources and 4 priority levels, 1 Analog comparator, 10 Bit ADC, Hardware SPI slave and master, UART, three 16-bit timers/counters, AES encryption/decryption co-processor, Random number generator, 2-Wire interface, 2 Channel PWM, 7, 15, or 31 GPIO lines, On-chip hardware debug support for a JTAG debugger.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="NRF24LE1" x="0" y="0"/>
 </gates>
@@ -8090,7 +8158,9 @@ This is the very popular, low cost, very low power RF transceiver from Nordic Se
 </devices>
 </deviceset>
 <deviceset name="NRF24LU1">
-<description>2.4GHz transceiver</description>
+<description>&lt;h3&gt;Nordic nRF24LU1+ Single-Chip 2.4GHz Transceiver w/ USB Microcontroller and Flash&lt;/h3&gt;
+&lt;p&gt;Nordic’s nRF24LU1+ is a complete system-on-chip wireless transceiver. The nRF24LU1+ features a fully integrated USB 2.0 compliant device controller, which makes this chip a great choice for a compact wireless USB dongle. The nRF24LU1+ is compatible with our nRF24L01+ 2.4GHz RF transceivers as well. Additional features include an 8-bit application microcontroller, 32 kB flash memory, 6 GPIO pins, SPI and UART support, and up to 2Mbps on air data rates.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/retired/9525"&gt;2.4GHz Transceiver IC - nRF24LU1+ (COM-09525)&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="NRF24LU1" x="0" y="0"/>
 </gates>
@@ -8139,9 +8209,11 @@ This is the very popular, low cost, very low power RF transceiver from Nordic Se
 </devices>
 </deviceset>
 <deviceset name="RF-LINK_RX">
-<description>RF Link receivers- WRL-8947, 8948, 8949, 8950, 10532, 10533</description>
+<description>&lt;h3&gt;RF Link Receiver (434 MHz, 315 MHz)&lt;/h3&gt;
+&lt;p&gt;These wireless receivers work with equivalent transmitters. They can easily fit into a breadboard and work well with microcontrollers to create a very simple wireless data link. Since these are only receivers, they will only work communicating data one-way, you would need two pairs (of different frequencies) to act as a transmitter/receiver pair..&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/10532"&gt;RF Link Receiver - 4800bps (434 MHz) (WRL-10532)&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="RF-LINK_RX" x="0" y="-2.54"/>
+<gate name="G$1" symbol="RF-LINK_RX" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="RF-LINK_RX">
@@ -8160,9 +8232,11 @@ This is the very popular, low cost, very low power RF transceiver from Nordic Se
 </devices>
 </deviceset>
 <deviceset name="RF-LINK_TX">
-<description>RF Link transmitters WRL-8945, 8946</description>
+<description>&lt;h3&gt;RF Link Transmitter (434 MHz, 315 MHz)&lt;/h3&gt;
+&lt;p&gt;These wireless transmitters work with equivalent receivers. They can easily fit into a breadboard and work well with microcontrollers to create a very simple wireless data link. Since these are only transmitters, they will only work communicating data one-way, you would need two pairs (of different frequencies) to act as a transmitter/receiver pair.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/10534"&gt;RF Link Transmitter - 434MHz (WRL-10534)&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="RF-LINK_TX" x="0" y="2.54"/>
+<gate name="G$1" symbol="RF-LINK_TX" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="RF-LINK_TX">
@@ -8181,7 +8255,10 @@ This is the very popular, low cost, very low power RF transceiver from Nordic Se
 </devices>
 </deviceset>
 <deviceset name="RFM22">
-<description>The RFM22 is a low-power, low cost radio that is capable of operating in the 434MHz and 900MHz open bands. It's frequency is software defined and there are some very good libraries written for it.</description>
+<description>&lt;h3&gt;Hope RF RFM22 ISM Transciever Module&lt;/h3&gt;
+
+&lt;p&gt;The RFM22 is a low-power, low cost radio that is capable of operating in the 434MHz and 900MHz open bands. It's frequency is software defined and there are some very good libraries written for it.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/11018"&gt;SparkFun RFM22 Shield - 434MHz (DEV-11018)&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="RFM22" x="0" y="0"/>
 </gates>
@@ -8243,12 +8320,19 @@ This is the very popular, low cost, very low power RF transceiver from Nordic Se
 </devices>
 </deviceset>
 <deviceset name="RMCM01">
-<description>Polar Heart Rate Monitor module</description>
+<description>&lt;h3&gt;Polar RMCM01 Heart Rate Monitor Receiver&lt;/h3&gt; 
+&lt;p&gt;The Polar heart rate receiver component receiver
+wirelessly receives the heart rate signal from Polar
+transmitter belt. The complete heart rate measurement
+system consists of three different parts; transmitter,
+receiver and electronics and/or display device that is
+outputting the heart rate value.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/8661"&gt;Polar Heart Rate Monitor Interface (SEN-08661)&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="RMCM01" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SMD" package="RMCM01">
+<device name="" package="RMCM01">
 <connects>
 <connect gate="G$1" pin="F32KIN" pad="3"/>
 <connect gate="G$1" pin="FPLS" pad="6"/>
@@ -8271,12 +8355,14 @@ This is the very popular, low cost, very low power RF transceiver from Nordic Se
 </devices>
 </deviceset>
 <deviceset name="RN171" prefix="U">
-<description>WiFi Module</description>
+<description>&lt;h3&gt;Roving Networks RN-171 802.11b/g WiFi Serial Module&lt;/h3&gt; 
+&lt;p&gt;The RN-171 is a small form factor, ultra-low power embedded TCP/IP module. The RN-171 is a standalone, complete TCP/IP wireless networking module. Due to its small form factor and extremely low power consumption, it is perfect for mobile wireless applications such as asset monitoring, sensors, and portable battery operated devices.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/retired/11049"&gt;WiFly RN-171 802.11b/g Serial Module (WRL-11049)&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="RN171" x="0" y="0"/>
 </gates>
 <devices>
-<device name="RN171" package="RN171">
+<device name="" package="RN171">
 <connects>
 <connect gate="G$1" pin="ANT" pad="24"/>
 <connect gate="G$1" pin="AWAKE" pad="41"/>
@@ -8331,7 +8417,9 @@ This is the very popular, low cost, very low power RF transceiver from Nordic Se
 </devices>
 </deviceset>
 <deviceset name="SI4703" prefix="U">
-<description>FM receiver IC. Tested with Si4703. You really only need SEN, RST, SCLK, and SDIO to get a full FM radio working. Antenna comes from headphone jack. See WRL-12938.</description>
+<description>&lt;h3&gt;Silicon Labs Si4703 FM Tuner&lt;/h3&gt;
+&lt;p&gt;Beyond enabling you to tune in to FM radio stations, the Si4703 is also capable of detecting and processing both Radio Data Service (RDS) and Radio Broadcast Data Service (RBDS) information. The Si4703 even does a very good job of filtering and carrier detection. It also enables data such as the station ID and song name to be displayed to the user.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/12938"&gt;SparkFun FM Tuner Evaluation Board - Si4703 (WRL-12938)&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="SI470X" x="0" y="0"/>
 </gates>
@@ -8367,7 +8455,9 @@ This is the very popular, low cost, very low power RF transceiver from Nordic Se
 </devices>
 </deviceset>
 <deviceset name="SM130" prefix="U">
-<description>13.56MHz RFID Mifare Read/Write Module</description>
+<description>&lt;h3&gt;SonMicro SMB130 - 13.56 MHz RFID Mifare Read/Write Module&lt;/h3&gt;
+&lt;p&gt;The SMB130 is a 28 pin DIP module that includes all necessary components for a 13.56 MHz RFID MIFARE®, aside from a PCB antenna.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/10126"&gt;SparkFun Product Link&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="SM130" x="0" y="0"/>
 </gates>
@@ -8403,7 +8493,9 @@ This is the very popular, low cost, very low power RF transceiver from Nordic Se
 </devices>
 </deviceset>
 <deviceset name="SM5100B">
-<description>Quad-band GSM modem</description>
+<description>&lt;h3&gt;LinkSprite SM5100B GSM/GPRS Module&lt;/h3&gt;
+&lt;p&gt;The SM5100B is a miniature, quad-band GSM 850/EGSM 900/DCS 1800/PCS 1900 module, which can be integrated into a great number of wireless projects. You can use this module to accomplish almost anything a normal cell phone can - SMS text messages, GSM/GPRS, TCP/IP, and more!&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/9533"&gt;SparkFun Product Link&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="SM5100B" x="0" y="0"/>
 </gates>
@@ -8480,7 +8572,7 @@ This is the very popular, low cost, very low power RF transceiver from Nordic Se
 </devices>
 </deviceset>
 <deviceset name="VENUS638FLPX-L" prefix="U">
-<description>&lt;b&gt;Venus638FLPX-L GPS Receiver&lt;/b&gt;&lt;p&gt;
+<description>&lt;h3&gt;Venus638FLPX-L GPS Receiver&lt;/h3&gt;
 
 Venus638FLPx is a high performance, low cost, single
 chip GPS receiver targeting mobile consumer and cellular
@@ -8597,7 +8689,9 @@ FEATURES&lt;p&gt;
 </devices>
 </deviceset>
 <deviceset name="WIFLY_GSX">
-<description>WiFi module</description>
+<description>&lt;h3&gt;Roving Networks WiFly GSX (RN-131C) Wi-Fi Module&lt;/h3&gt;
+&lt;p&gt;The WiFly GSX (RN-131C) module is a complete ultra low power embedded TCP/IP solution. The WiFly GSX module is a stand alone, embedded wireless 802.11b/g networking module.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/10004"&gt;SparkFun Product Link&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="WIFLY_GSX" x="0" y="0"/>
 </gates>
@@ -8659,7 +8753,9 @@ FEATURES&lt;p&gt;
 </devices>
 </deviceset>
 <deviceset name="XTEND-DIGI-MODEM">
-<description>Xtend Digi Modem WRL-09411</description>
+<description>&lt;h3&gt;Digi XTend 900 1W RF Transceiver&lt;/h3&gt;
+&lt;p&gt;The XTend Modem packs a ton of RF punch into a small, low-power, easy-to-use, and reliable module. Outdoors, with line-of-sight, this module can communicate at up to 40 miles; indoors it can still do up to 3000ft. The module transfers a standard asynchronous serial data stream, operates within the ISM 900MHz frequency band and sustains up to 115.2kbps data throughput. The module comes with an attached RPSMA antenna connector.&lt;/p&gt;
+&lt;p&gt;&lt;A href="https://www.sparkfun.com/products/9411"&gt;SparkFun Product (WRL-09411)&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="XTEND-DIGI-MODEM" x="0" y="2.54"/>
 </gates>
@@ -9022,6 +9118,21 @@ Hyper-competent Bluetooth 4.0 module, with:&lt;br&gt;
 </devices>
 </deviceset>
 <deviceset name="RFM69H" prefix="U">
+<description>&lt;h3&gt;Hope RF RFM69H ISM Transceiver Module&lt;/h3&gt; 
+&lt;p&gt;The RFM69H is a transceiver module capable of operation 
+over a wide frequency range, including the 
+315,433,868 and 
+915MHz license-free ISM (Industry Scientific and Medical) 
+frequency bands. All major RF communication parameters 
+are programmable and most of them  can  be  dynamically 
+set.  The  RFM69H  offers  the unique advantage of 
+programmable narrow-band and wide- band  communication 
+modes. The RFM69H is optimized for low power 
+consumption while offering high RF output power and 
+channelized operation.
+Compliance  ETSI and FCC 
+regulations. &lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.hoperf.cn/upload/docs/RF/SX/RFM69H_DataSheet_v1.3.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="RFM69H" x="0" y="-2.54"/>
 </gates>
@@ -9101,6 +9212,9 @@ Hyper-competent Bluetooth 4.0 module, with:&lt;br&gt;
 </devices>
 </deviceset>
 <deviceset name="RFM69" prefix="U">
+<description>&lt;h3&gt;Hope RF RFM69CW ISM Transceiver Module&lt;/h3&gt; 
+&lt;p&gt;The RFM69CW radio module by HopeRF is a compact, powerful radio transceiver module for swapping data packets in the 868 MHz ISM band, using standard and enhanced FSK modulation. The radio is great for sub-compact designs; just 4mm of mounted height from using an SMD precision crystal.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.hoperf.com/upload/rf/RFM69CW-V1.1.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="RFM69" x="0" y="0"/>
 </gates>
@@ -9173,12 +9287,15 @@ Hyper-competent Bluetooth 4.0 module, with:&lt;br&gt;
 </devices>
 </deviceset>
 <deviceset name="XBEE" prefix="JP" uservalue="yes">
-<description>Xbee module footprints</description>
+<description>&lt;h3&gt;Digi XBee and XBee Pro&lt;/h3&gt;
+&lt;p&gt;XBees are tiny blue chips that can communicate wirelessly with each other. They can do simple things, like replacing a couple of wires in serial communication, which is nice when you want to make a remote for your paintball vehicle.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://cdn.sparkfun.com/r/300-300/assets/parts/6/8/0/5/11215-01.jpg"&gt;&lt;/img&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/pages/xbee_guide"&gt;SparkFun XBee Buying Guide&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="XBEE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="B1" package="XBEE">
+<device name="SILK" package="XBEE-SILK">
 <connects>
 <connect gate="G$1" pin="CTS" pad="12"/>
 <connect gate="G$1" pin="DIN" pad="3"/>
@@ -9205,34 +9322,7 @@ Hyper-competent Bluetooth 4.0 module, with:&lt;br&gt;
 <technology name=""/>
 </technologies>
 </device>
-<device name="B2" package="XBEE-SILK">
-<connects>
-<connect gate="G$1" pin="CTS" pad="12"/>
-<connect gate="G$1" pin="DIN" pad="3"/>
-<connect gate="G$1" pin="DIO0" pad="20"/>
-<connect gate="G$1" pin="DIO1" pad="19"/>
-<connect gate="G$1" pin="DIO11" pad="7"/>
-<connect gate="G$1" pin="DIO12" pad="4"/>
-<connect gate="G$1" pin="DIO2" pad="18"/>
-<connect gate="G$1" pin="DIO3" pad="17"/>
-<connect gate="G$1" pin="DIO4" pad="11"/>
-<connect gate="G$1" pin="DIO5" pad="15"/>
-<connect gate="G$1" pin="DIO9" pad="13"/>
-<connect gate="G$1" pin="DOUT" pad="2"/>
-<connect gate="G$1" pin="DTR" pad="9"/>
-<connect gate="G$1" pin="GND" pad="10"/>
-<connect gate="G$1" pin="RES@14" pad="14"/>
-<connect gate="G$1" pin="RES@8" pad="8"/>
-<connect gate="G$1" pin="RESET" pad="5"/>
-<connect gate="G$1" pin="RSSI" pad="6"/>
-<connect gate="G$1" pin="RTS" pad="16"/>
-<connect gate="G$1" pin="VDD" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="B3" package="XBEE-SMD">
+<device name="SMD" package="XBEE-SMD">
 <connects>
 <connect gate="G$1" pin="CTS" pad="12"/>
 <connect gate="G$1" pin="DIN" pad="3"/>
@@ -9288,7 +9378,34 @@ Hyper-competent Bluetooth 4.0 module, with:&lt;br&gt;
 <technology name=""/>
 </technologies>
 </device>
-<device name="XBEE-1_LOCK" package="XBEE-LOCK">
+<device name="LOCK" package="XBEE-LOCK">
+<connects>
+<connect gate="G$1" pin="CTS" pad="12"/>
+<connect gate="G$1" pin="DIN" pad="3"/>
+<connect gate="G$1" pin="DIO0" pad="20"/>
+<connect gate="G$1" pin="DIO1" pad="19"/>
+<connect gate="G$1" pin="DIO11" pad="7"/>
+<connect gate="G$1" pin="DIO12" pad="4"/>
+<connect gate="G$1" pin="DIO2" pad="18"/>
+<connect gate="G$1" pin="DIO3" pad="17"/>
+<connect gate="G$1" pin="DIO4" pad="11"/>
+<connect gate="G$1" pin="DIO5" pad="15"/>
+<connect gate="G$1" pin="DIO9" pad="13"/>
+<connect gate="G$1" pin="DOUT" pad="2"/>
+<connect gate="G$1" pin="DTR" pad="9"/>
+<connect gate="G$1" pin="GND" pad="10"/>
+<connect gate="G$1" pin="RES@14" pad="14"/>
+<connect gate="G$1" pin="RES@8" pad="8"/>
+<connect gate="G$1" pin="RESET" pad="5"/>
+<connect gate="G$1" pin="RSSI" pad="6"/>
+<connect gate="G$1" pin="RTS" pad="16"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="XBEE">
 <connects>
 <connect gate="G$1" pin="CTS" pad="12"/>
 <connect gate="G$1" pin="DIN" pad="3"/>
