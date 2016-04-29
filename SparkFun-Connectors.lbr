@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -24768,7 +24768,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </device>
 </devices>
 </deviceset>
-<deviceset name="M02" prefix="J" uservalue="yes">
+<deviceset name="CONN_02" prefix="J" uservalue="yes">
 <description>Standard 2-pin 0.1" header. Use with &lt;br&gt;
 - straight break away headers ( PRT-00116)&lt;br&gt;
 - right angle break away headers (PRT-00553)&lt;br&gt;
@@ -25009,7 +25009,7 @@ Standard 1-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </device>
 </devices>
 </deviceset>
-<deviceset name="M03" prefix="J" uservalue="yes">
+<deviceset name="CONN_03" prefix="J" uservalue="yes">
 <description>&lt;b&gt;Header 3&lt;/b&gt;
 Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-00116), right angle break away headers (PRT-00553), swiss pins (PRT-00743), machine pins (PRT-00117), and female headers (PRT-00115). Molex polarized connector foot print use with SKU : PRT-08232 with associated crimp pins and housings.</description>
 <gates>
@@ -25244,7 +25244,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </device>
 </devices>
 </deviceset>
-<deviceset name="M04" prefix="J" uservalue="yes">
+<deviceset name="CONN_04" prefix="J" uservalue="yes">
 <description>&lt;b&gt;Header 4&lt;/b&gt;
 Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-00116), right angle break away headers (PRT-00553), swiss pins (PRT-00743), machine pins (PRT-00117), and female headers (PRT-00115). Molex polarized connector foot print use with SKU : PRT-08231 with associated crimp pins and housings. 1MM SMD Version SKU: PRT-10208</description>
 <gates>
@@ -25485,7 +25485,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </device>
 </devices>
 </deviceset>
-<deviceset name="M04X2" prefix="J" uservalue="yes">
+<deviceset name="CONN_04X2" prefix="J" uservalue="yes">
 <description>.1" header, two rows of four.</description>
 <gates>
 <gate name="G$1" symbol="M04X2" x="0" y="0"/>
@@ -25508,7 +25508,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </device>
 </devices>
 </deviceset>
-<deviceset name="M05" prefix="J" uservalue="yes">
+<deviceset name="CONN_05" prefix="J" uservalue="yes">
 <description>&lt;b&gt;Header 5&lt;/b&gt;
 Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-00116), right angle break away headers (PRT-00553), swiss pins (PRT-00743), machine pins (PRT-00117), and female headers (PRT-00115). Molex polarized connector foot print use with SKU : PRT-08230 with associated crimp pins and housings.</description>
 <gates>
@@ -25651,7 +25651,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </device>
 </devices>
 </deviceset>
-<deviceset name="M05X2" prefix="J" uservalue="yes">
+<deviceset name="CONN_05X2" prefix="J" uservalue="yes">
 <description>&lt;b&gt;Header 5x2&lt;/b&gt;
 Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark Fun Electronics SKU: PRT-00778</description>
 <gates>
@@ -25813,7 +25813,7 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 </device>
 </devices>
 </deviceset>
-<deviceset name="M06" prefix="J" uservalue="yes">
+<deviceset name="CONN_06" prefix="J" uservalue="yes">
 <description>&lt;b&gt;Header 6&lt;/b&gt;&lt;br&gt;
 Standard 6-pin 0.1" header. Use with straight break away headers (SKU : PRT-00116), right angle break away headers (PRT-00553), swiss pins (PRT-00743), machine pins (PRT-00117), and female headers (PRT-00115). Molex polarized connector foot print use with SKU : PRT-08094 with associated crimp pins and housings.&lt;p&gt;
 
@@ -26172,7 +26172,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </device>
 </devices>
 </deviceset>
-<deviceset name="M07" prefix="J" uservalue="yes">
+<deviceset name="CONN_07" prefix="J" uservalue="yes">
 <description>&lt;b&gt;Header 7&lt;/b&gt;
 Standard 7-pin 0.1" header. Use with straight break away headers (SKU : PRT-00116), right angle break away headers (PRT-00553), swiss pins (PRT-00743), machine pins (PRT-00117), and female headers (PRT-00115).  NOTES ON THE VARIANTS LOCK and LOCK_LONGPADS... This footprint was designed to help hold the alignment of a through-hole component (i.e. 7-pin header) while soldering it into place. You may notice that each hole has been shifted either up or down by 0.005 of an inch from it's more standard position (which is usually a perfectly straight line). This slight alteration caused the pins (the squares in the middle) to touch the edges of the holes. Because they are alternating, it causes a "brace" to hold the header in place. 0.005 has proven to be the perfect amount of "off-center" position when using our standard breakaway headers. Although looks a little odd when you look at the bare footprint, once you have a header in there, the alteration is very hard to notice. Also, if you push a header all the way into place, it is covered up entirely on the bottom side. This idea of altering the position of holes to aid alignment will be further integrated into the Sparkfun Library for other footprints. It can help hold any component with 3 or more connection pins.</description>
 <gates>
@@ -26265,7 +26265,7 @@ Standard 7-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </device>
 </devices>
 </deviceset>
-<deviceset name="M08" prefix="J" uservalue="yes">
+<deviceset name="CONN_08" prefix="J" uservalue="yes">
 <description>&lt;b&gt;Header 8&lt;/b&gt;
 Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-00116), right angle break away headers (PRT-00553), swiss pins (PRT-00743), machine pins (PRT-00117), and female headers (PRT-00115).</description>
 <gates>
@@ -26513,7 +26513,7 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </device>
 </devices>
 </deviceset>
-<deviceset name="M08X2" prefix="J" uservalue="yes">
+<deviceset name="CONN_08X2" prefix="J" uservalue="yes">
 <description>.1" headers, two rows of 8 each</description>
 <gates>
 <gate name="G$1" symbol="M2X8" x="0" y="0"/>
@@ -26544,7 +26544,7 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </device>
 </devices>
 </deviceset>
-<deviceset name="M09" prefix="J" uservalue="yes">
+<deviceset name="CONN_09" prefix="J" uservalue="yes">
 <description>&lt;b&gt;Header 9&lt;/b&gt;
 Standard 9-pin 0.1" header. Use with straight break away headers (SKU : PRT-00116), right angle break away headers (PRT-00553), swiss pins (PRT-00743), machine pins (PRT-00117), and female headers (PRT-00115).</description>
 <gates>
@@ -26633,7 +26633,7 @@ Standard 9-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </device>
 </devices>
 </deviceset>
-<deviceset name="M10" prefix="J" uservalue="yes">
+<deviceset name="CONN_10" prefix="J" uservalue="yes">
 <description>&lt;b&gt;Header 10&lt;/b&gt;
 Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-00116), right angle break away headers (PRT-00553), swiss pins (PRT-00743), machine pins (PRT-00117), and female headers (PRT-00115).</description>
 <gates>
@@ -26786,7 +26786,7 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </device>
 </devices>
 </deviceset>
-<deviceset name="M10X2" prefix="J" uservalue="yes">
+<deviceset name="CONN_10X2" prefix="J" uservalue="yes">
 <description>This was SPECIALLY designed to be used with our Graphic LCD Backpack.  Be sure you want to use this!  It is not only staggered on each line of header holes, but IT IS ALSO offset of the center point of the top and bottom lines by 5 mil.  This causes the headers to lock into place on the "standard" footprint on the LCD screen.  The extra squares on the tdocu layer are there simply to reference other pins (if you were to actually populate a longer header than ten long - this is what we do with the backpacks).</description>
 <gates>
 <gate name="G$1" symbol="M10X2" x="0" y="0"/>
@@ -26929,7 +26929,7 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </device>
 </devices>
 </deviceset>
-<deviceset name="M12" prefix="J" uservalue="yes">
+<deviceset name="CONN_12" prefix="J" uservalue="yes">
 <description>&lt;b&gt;Header 12&lt;/b&gt;
 Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-00116), right angle break away headers (PRT-00553), swiss pins (PRT-00743), machine pins (PRT-00117), and female headers (PRT-00115).</description>
 <gates>
@@ -27109,7 +27109,7 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </device>
 </devices>
 </deviceset>
-<deviceset name="M13" prefix="J" uservalue="yes">
+<deviceset name="CONN_13" prefix="J" uservalue="yes">
 <description>13-pin single row .1" header</description>
 <gates>
 <gate name="G$1" symbol="M13" x="0" y="0"/>
@@ -27197,7 +27197,7 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </device>
 </devices>
 </deviceset>
-<deviceset name="M14" prefix="J" uservalue="yes">
+<deviceset name="CONN_14" prefix="J" uservalue="yes">
 <description>&lt;b&gt;Header 14&lt;/b&gt;
 Standard 14-pin 0.1" header. Use with straight break away headers (SKU : PRT-00116), right angle break away headers (PRT-00553), swiss pins (PRT-00743), machine pins (PRT-00117), and female headers (PRT-00115).</description>
 <gates>
@@ -27290,7 +27290,7 @@ Standard 14-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </device>
 </devices>
 </deviceset>
-<deviceset name="M15" prefix="J" uservalue="yes">
+<deviceset name="CONN_15" prefix="J" uservalue="yes">
 <description>&lt;b&gt;Header 15&lt;/b&gt;
 Standard 15-pin 0.1" header. Use with straight break away headers (SKU : PRT-00116), right angle break away headers (PRT-00553), swiss pins (PRT-00743), machine pins (PRT-00117), and female headers (PRT-00115).</description>
 <gates>
@@ -27387,7 +27387,7 @@ Standard 15-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </device>
 </devices>
 </deviceset>
-<deviceset name="M17" prefix="J" uservalue="yes">
+<deviceset name="CONN_17" prefix="J" uservalue="yes">
 <description>1x17 .1" header</description>
 <gates>
 <gate name="G$1" symbol="M17" x="0" y="0"/>
@@ -27469,7 +27469,7 @@ Standard 15-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </device>
 </devices>
 </deviceset>
-<deviceset name="M18" prefix="J" uservalue="yes">
+<deviceset name="CONN_18" prefix="J" uservalue="yes">
 <description>1x18 .1" header</description>
 <gates>
 <gate name="G$1" symbol="M18" x="0" y="0"/>
@@ -27502,7 +27502,7 @@ Standard 15-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </device>
 </devices>
 </deviceset>
-<deviceset name="M20" prefix="J" uservalue="yes">
+<deviceset name="CONN_20" prefix="J" uservalue="yes">
 <description>1x20 .1" header&lt;br&gt;
 This is just like the LOCK variant in that the holes are staggared by 5 mil, but except for the last two holes.  They are not altered from the "standard" footprint layout.  This is used for a special purpose on the layout of our Graphic LCD Backpack.  Make sure you want to use this device before selecting it for you project!</description>
 <gates>
@@ -27702,7 +27702,7 @@ This is just like the LOCK variant in that the holes are staggared by 5 mil, but
 </device>
 </devices>
 </deviceset>
-<deviceset name="M24" prefix="J" uservalue="yes">
+<deviceset name="CONN_24" prefix="J" uservalue="yes">
 <description>1x24 .1" header</description>
 <gates>
 <gate name="G$1" symbol="M24" x="0" y="0"/>
@@ -27803,7 +27803,7 @@ This is just like the LOCK variant in that the holes are staggared by 5 mil, but
 </device>
 </devices>
 </deviceset>
-<deviceset name="M25" prefix="J" uservalue="yes">
+<deviceset name="CONN_25" prefix="J" uservalue="yes">
 <description>1x25 .1" header</description>
 <gates>
 <gate name="G$1" symbol="M25" x="0" y="0"/>
@@ -27939,7 +27939,7 @@ This is just like the LOCK variant in that the holes are staggared by 5 mil, but
 </device>
 </devices>
 </deviceset>
-<deviceset name="M27" prefix="J" uservalue="yes">
+<deviceset name="CONN_27" prefix="J" uservalue="yes">
 <description>1x27 .1" header</description>
 <gates>
 <gate name="G$1" symbol="M27" x="0" y="0"/>
@@ -27981,7 +27981,7 @@ This is just like the LOCK variant in that the holes are staggared by 5 mil, but
 </device>
 </devices>
 </deviceset>
-<deviceset name="M29" prefix="J" uservalue="yes">
+<deviceset name="CONN_29" prefix="J" uservalue="yes">
 <description>1x29 .1" header</description>
 <gates>
 <gate name="G$1" symbol="M29" x="0" y="0"/>
@@ -28061,7 +28061,7 @@ This is just like the LOCK variant in that the holes are staggared by 5 mil, but
 </device>
 </devices>
 </deviceset>
-<deviceset name="M30" prefix="J" uservalue="yes">
+<deviceset name="CONN_30" prefix="J" uservalue="yes">
 <description>1x30 .1" header</description>
 <gates>
 <gate name="G$1" symbol="M30" x="0" y="0"/>
@@ -28143,7 +28143,7 @@ This is just like the LOCK variant in that the holes are staggared by 5 mil, but
 </device>
 </devices>
 </deviceset>
-<deviceset name="M40" prefix="J" uservalue="yes">
+<deviceset name="CONN_40" prefix="J" uservalue="yes">
 <description>1x40 .1" header</description>
 <gates>
 <gate name="G$1" symbol="M40" x="0" y="-50.8"/>
@@ -29908,7 +29908,7 @@ NOTE: CD1 and CD2 are connected internally</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="M16" prefix="J" uservalue="yes">
+<deviceset name="CONN_16" prefix="J" uservalue="yes">
 <description>1x16 .1" header</description>
 <gates>
 <gate name="G$1" symbol="M16" x="0" y="0"/>
@@ -30054,7 +30054,7 @@ NOTE: CD1 and CD2 are connected internally</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="M19" prefix="J" uservalue="yes">
+<deviceset name="CONN_19" prefix="J" uservalue="yes">
 <description>1x19 .1" header</description>
 <gates>
 <gate name="G$1" symbol="M19" x="0" y="0"/>
@@ -30114,7 +30114,7 @@ NOTE: CD1 and CD2 are connected internally</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="M11" prefix="J" uservalue="yes">
+<deviceset name="CONN_11" prefix="J" uservalue="yes">
 <description>&lt;b&gt;Header 11&lt;/b&gt;
 Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-00116), right angle break away headers (PRT-00553), swiss pins (PRT-00743), machine pins (PRT-00117), and female headers (PRT-00115).</description>
 <gates>
@@ -30529,7 +30529,7 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </device>
 </devices>
 </deviceset>
-<deviceset name="M03X2" prefix="J" uservalue="yes">
+<deviceset name="CONN_03X2" prefix="J" uservalue="yes">
 <description>2x3 .1" header.&lt;br&gt;
 Shrouded, with keying- CONN-10681&lt;br&gt;
 SMT- CONN-11415&lt;br&gt;
@@ -30705,7 +30705,7 @@ Now with smashable polarity marks!</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="M13X2" prefix="J" uservalue="yes">
+<deviceset name="CONN_13X2" prefix="J" uservalue="yes">
 <description>0.1" spaced headers</description>
 <gates>
 <gate name="G$1" symbol="M13X2" x="0" y="0"/>
@@ -30820,7 +30820,7 @@ Footprint unproven - datasheet and part seem to be slightly different</descripti
 </device>
 </devices>
 </deviceset>
-<deviceset name="M23" prefix="J" uservalue="yes">
+<deviceset name="CONN_23" prefix="J" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="M23" x="0" y="0"/>
 </gates>
@@ -30967,7 +30967,7 @@ Footprint is a bit strange.  The component itself has an threaded, insulated bod
 </device>
 </devices>
 </deviceset>
-<deviceset name="M06X2" prefix="J" uservalue="yes">
+<deviceset name="CONN_06X2" prefix="J" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="M06X2" x="0" y="0"/>
 </gates>
@@ -31048,7 +31048,7 @@ to be daisy chained easily.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="M20X2" prefix="J">
+<deviceset name="CONN_20X2" prefix="J">
 <description>0.1" spaced headers</description>
 <gates>
 <gate name="G$1" symbol="M20X2" x="0" y="0"/>
