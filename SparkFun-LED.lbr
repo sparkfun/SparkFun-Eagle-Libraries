@@ -321,6 +321,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pad name="K" x="1.27" y="0" drill="0.8128"/>
 <text x="0" y="2.286" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.286" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="1.8923" y1="1.2954" x2="1.8923" y2="0.7874" width="0.254" layer="21"/>
+<wire x1="1.8923" y1="-1.2954" x2="1.8923" y2="-0.8382" width="0.254" layer="21"/>
 </package>
 <package name="LED_5MM-KIT">
 <description>&lt;h3&gt;LED 5mm KIT PTH&lt;/h3&gt;
@@ -399,7 +401,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="1.778" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.905" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
-<package name="LED_BARGAPH_10">
+<package name="LED_BARGRAPH_10">
 <description>&lt;h3&gt;10 Segment LED Bar Graph&lt;/h3&gt;
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count: 20&lt;/li&gt;
@@ -407,11 +409,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;li&gt;Area:10mm x 25.5mm&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
 &lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt; &lt;a href="https://www.sparkfun.com/datasheets/Components/LED/YSLB-102510B5-10.pdf"&gt;YSLB-102510B5&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="12.7" y1="5.08" x2="-12.7" y2="5.08" width="0.2032" layer="21"/>
-<wire x1="-10.16" y1="-5.08" x2="12.7" y2="-5.08" width="0.2032" layer="21"/>
-<wire x1="12.7" y1="5.08" x2="12.7" y2="-5.08" width="0.2032" layer="21"/>
-<wire x1="-10.16" y1="-5.08" x2="-12.7" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="-12.7" y1="-2.54" x2="-12.7" y2="5.08" width="0.2032" layer="21"/>
+<wire x1="12.7" y1="5.3975" x2="-12.7" y2="5.3975" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="-5.3975" x2="12.7" y2="-5.3975" width="0.2032" layer="21"/>
+<wire x1="12.7" y1="5.3975" x2="12.7" y2="-5.3975" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="-5.3975" x2="-12.7" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-12.7" y1="-2.54" x2="-12.7" y2="5.3975" width="0.2032" layer="21"/>
 <wire x1="0" y1="-2.2225" x2="0" y2="2.2225" width="0.2032" layer="21"/>
 <wire x1="-0.635" y1="0.635" x2="0.635" y2="0.635" width="0.2032" layer="21"/>
 <pad name="1" x="-11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
@@ -434,13 +436,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pad name="18" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="19" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="20" x="-11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="0" y="5.461" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-5.461" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<text x="0" y="6.096" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-5.7785" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 <polygon width="0.127" layer="21">
 <vertex x="-0.635" y="-0.3175"/>
 <vertex x="0.635" y="-0.3175"/>
 <vertex x="0" y="0.635"/>
 </polygon>
+<circle x="-13.335" y="-2.54" radius="0.2032" width="0" layer="21"/>
+<wire x1="-12.7" y1="5.715" x2="12.7" y2="5.715" width="0.127" layer="21"/>
 </package>
 <package name="LED_PIRANHA_5MM">
 <description>&lt;h3&gt;LED 5mm PTH - Piranha&lt;/h3&gt;
@@ -468,7 +472,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-1.524" y="-3.031" size="0.6096" layer="25" font="vector" ratio="20">-</text>
 <text x="0" y="4.064" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-4.064" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<circle x="-3.81" y="3.4925" radius="0.254" width="0.127" layer="21"/>
+<circle x="-3.81" y="3.4925" radius="0.254" width="0" layer="21"/>
 </package>
 <package name="LED_RING">
 <description>&lt;h3&gt;16 LED Ring - LED-CCL-A&lt;/h3&gt;
@@ -574,9 +578,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;/ul&gt;&lt;/p&gt;
 &lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Components/LED/5060BRG4.pdf"&gt; 5060BRG4&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;b&gt;Example device(s):&lt;/b&gt;
-&lt;ul&gt;&lt;li&gt;LED-TRICOLOR-RGB&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;LED-RGB&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
-<circle x="-0.7" y="2" radius="0.2236" width="0.2032" layer="21"/>
+<circle x="-0.7" y="2" radius="0.2236" width="0" layer="21"/>
 <circle x="0" y="0" radius="2" width="0.127" layer="51"/>
 <wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2" width="0.127" layer="51"/>
 <wire x1="-1.8" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
@@ -607,6 +611,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="6" x="2.4" y="1.7" dx="2" dy="1.1" layer="1" roundness="100"/>
 <text x="0" y="2.667" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-2.667" size="0.6096" layer="27" ratio="20" align="top-center">&gt;Value</text>
+<circle x="-2.2875" y="2.635" radius="0.2236" width="0" layer="21"/>
 </package>
 <package name="LED-TRICOLOR-5050-IC">
 <description>&lt;h3&gt;5060 SMD RGB LED&lt;/h3&gt;
@@ -619,7 +624,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;&lt;b&gt;Example device(s):&lt;/b&gt;
 &lt;ul&gt;&lt;li&gt;WS2812&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
-<circle x="-0.7" y="2" radius="0.2236" width="0.2032" layer="21"/>
+<circle x="-0.7" y="2" radius="0.2236" width="0" layer="21"/>
 <circle x="0" y="0" radius="2" width="0.127" layer="51"/>
 <wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2" width="0.127" layer="51"/>
 <wire x1="-1.8" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
@@ -654,6 +659,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="6" x="2.4" y="1.7" dx="2" dy="1.1" layer="1" roundness="100"/>
 <text x="0" y="2.667" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-2.667" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+<circle x="-2.224" y="2.6096" radius="0.2236" width="0" layer="21"/>
 </package>
 <package name="LED-1206-BOTTOM">
 <description>&lt;h3&gt;LED 1206 SMT&lt;/h3&gt;
@@ -868,6 +874,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-2.54" y1="-0.8636" x2="-2.54" y2="0" width="0.2032" layer="21"/>
 <wire x1="-2.54" y1="0" x2="-2.54" y2="0.8636" width="0.2032" layer="21"/>
 <wire x1="-2.54" y1="0" x2="0" y2="2.54" width="0.2032" layer="21"/>
+<circle x="-2.8575" y="2.8575" radius="0.2032" width="0" layer="21"/>
 </package>
 <package name="PLCC-6-LED">
 <description>&lt;h3&gt;PLCC-6-LED&lt;/h3&gt;
@@ -1594,7 +1601,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <gate name="G$1" symbol="LED_BARGRAPH_10" x="0" y="0"/>
 </gates>
 <devices>
-<device name="RED" package="LED_BARGAPH_10">
+<device name="RED" package="LED_BARGRAPH_10">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="A1" pad="2"/>
@@ -1624,7 +1631,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </technology>
 </technologies>
 </device>
-<device name="YELLOW" package="LED_BARGAPH_10">
+<device name="YELLOW" package="LED_BARGRAPH_10">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="A1" pad="2"/>
@@ -1654,7 +1661,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </technology>
 </technologies>
 </device>
-<device name="BLUE" package="LED_BARGAPH_10">
+<device name="BLUE" package="LED_BARGRAPH_10">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="A1" pad="2"/>
@@ -1684,7 +1691,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </technology>
 </technologies>
 </device>
-<device name="GREEN" package="LED_BARGAPH_10">
+<device name="GREEN" package="LED_BARGRAPH_10">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="A1" pad="2"/>
@@ -1767,36 +1774,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <description>&lt;h3&gt;Green SMD LED&lt;/h3&gt;
 &lt;p&gt;Used in manufacturing of various products at SparkFun&lt;/p&gt;
 
+&lt;p&gt;&lt;b&gt;Packages:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;0603&lt;/b&gt; - SMD 0603 package &lt;a href="http://www.futureelectronics.com/en/technologies/semiconductors/optoelectronics/leds/Pages/9894312-LTST-C190GKT.aspx?CrossPart=HSMG-C190&amp;IM=0"&gt;[Product Link]&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;LilyPad 1206&lt;/b&gt; - SMD1206 LilyPad package &lt;a href="http://www.futureelectronics.com/en/Technologies/Product.aspx?ProductID=IN150NGHARVATEKCORPORATION2049943&amp;IM=0"&gt;[Product Link]&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; 1206&lt;/b&gt; - SMD1206  package &lt;a href=http://www.futureelectronics.com/en/technologies/semiconductors/optoelectronics/leds/Pages/8315665-LTST-C150KGKT.aspx?IM=0"&gt;[Product Link]&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; 1206 Bottom Mount&lt;/b&gt; -SMD 1206 Bottom Mount &lt;a href=http://www.digikey.com/product-detail/en/lite-on-inc/LTST-C230KGKT/160-1456-1-ND/386854"&gt;[Product Link]&lt;/li&gt;
+&lt;ul&gt;&lt;/p&gt;
 
-&lt;li&gt;&lt;b&gt;0603&lt;/b&gt; - SMD 0603 package&lt;/li&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Manufacturer:&lt;/b&gt; Lite-On&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;2.1V&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Current: &lt;/b&gt;30mA&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Wavelength: &lt;/b&gt;470nm&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Future Electronics: &lt;/b&gt;&lt;a href="http://www.futureelectronics.com/en/technologies/semiconductors/optoelectronics/leds/Pages/9894312-LTST-C190GKT.aspx?CrossPart=HSMG-C190&amp;IM=0"&gt;[Product Link]&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;
-
-&lt;li&gt;&lt;b&gt;LilyPad 1206&lt;/b&gt; - SMD1206 LilyPad  package&lt;/li&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Manufacturer:&lt;/b&gt;INOLUX&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;3.3V&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Current: &lt;/b&gt;20mA&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Wavelength: &lt;/b&gt;468nm&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Future Electronics: &lt;/b&gt;&lt;a href="http://www.futureelectronics.com/en/Technologies/Product.aspx?ProductID=IN150NGHARVATEKCORPORATION2049943&amp;IM=0"&gt;[Product Link]&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;
-
-&lt;li&gt;&lt;b&gt; 1206&lt;/b&gt; - SMD1206  package&lt;/li&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Manufacturer:&lt;/b&gt;INOLUX&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;2.1V&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Current: &lt;/b&gt;30mA&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Future Electronics: &lt;/b&gt;&lt;a href=http://www.futureelectronics.com/en/technologies/semiconductors/optoelectronics/leds/Pages/8315665-LTST-C150KGKT.aspx?IM=0"&gt;[Product Link]&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;
-
-&lt;li&gt;&lt;b&gt; 1206 Bottom Mount&lt;/b&gt; -SMD 1206 Bottom Mount&lt;/li&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Manufacturer:&lt;/b&gt;INOLUX&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;2.1V&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Current: &lt;/b&gt;30mA&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Digikey: &lt;/b&gt;&lt;a href=http://www.digikey.com/product-detail/en/lite-on-inc/LTST-C230KGKT/160-1456-1-ND/386854"&gt;[Product Link]&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/821”&gt;Pro Mini 328 -5V&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12757”&gt;RedBoard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13720”&gt;MP3 Trigger&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/11076”&gt;Makey Makey&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
@@ -1855,29 +1845,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <description>&lt;h3&gt;Red SMD LED&lt;/h3&gt;
 &lt;p&gt;Used in manufacturing of most products at SparkFun&lt;/p&gt;
 
-&lt;li&gt;&lt;b&gt;0603&lt;/b&gt; - SMD 0603 package&lt;/li&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;1.9V&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Current: &lt;/b&gt;20mA&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Datasheet: &lt;/b&gt;&lt;a href="http://docs.avagotech.com/docs/AV02-0551EN"&gt;[Product Link]&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;Packages:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;0603&lt;/b&gt; - SMD 0603 package &lt;a href="http://docs.avagotech.com/docs/AV02-0551EN"&gt;[Product Link]&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;0603 SMART&lt;/b&gt; - SMD 0603 SMART package ( more efficient and expensive)&lt;a href="http://www.osram-os.com/Graphics/XPic2/00077099_0.pdf"&gt;[Product Link]&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; 1206&lt;/b&gt; - SMD1206  package &lt;a href="https://www.sparkfun.com/datasheets/DevTools/LilyPad/Q150OVS4.pdff"&gt;[Product Link]&lt;/li&gt;
+&lt;ul&gt;&lt;/p&gt;
 
-&lt;li&gt;&lt;b&gt;0603 SMART&lt;/b&gt; - SMD 0603 SMART package ( more efficient and expensive)&lt;/li&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;1.8V&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Current: &lt;/b&gt;20mA&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Datasheet: &lt;/b&gt;&lt;a href="http://www.osram-os.com/Graphics/XPic2/00077099_0.pdf"&gt;[Product Link]&lt;/li&gt;&lt;/ul&gt;
-
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;li&gt;&lt;b&gt;1206&lt;/b&gt; - SMD 1206 package&lt;/li&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;2V&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Current: &lt;/b&gt;20mA&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Datasheet: &lt;/b&gt;&lt;a href="https://www.sparkfun.com/datasheets/DevTools/LilyPad/Q150OVS4.pdff"&gt;[Product Link]&lt;/li&gt;&lt;/ul&gt;
-
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;li&gt;&lt;b&gt;1206 LilyPad&lt;/b&gt; - SMD 1206 LilyPad package&lt;/li&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;2V&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Current: &lt;/b&gt;20mA&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Datasheet: &lt;/b&gt;&lt;a href="https://www.sparkfun.com/datasheets/DevTools/LilyPad/Q150OVS4.pdf"&gt;[Product Link]&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/821”&gt;Pro Mini 328 -5V&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12757”&gt;RedBoard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13613”&gt;IOIO-OTG&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
@@ -1895,18 +1873,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </technologies>
 </device>
 <device name="1206" package="LED-1206">
-<connects>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="C" pad="C"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="DIO-09912"/>
-<attribute name="VALUE" value="RED" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="LILYPAD" package="LED-1206">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
@@ -1937,25 +1903,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 
 Used in manufacturing several products at SparkFun. 
 
-&lt;p&gt;&lt;li&gt;&lt;b&gt; 0603&lt;/b&gt; - Bright White SMD 0603  package&lt;/li&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Manufacturer:&lt;/b&gt;Kingbright&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;3.3V&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;30 mA&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;250 mcd&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Kingbright &lt;/b&gt;&lt;a href="http://www.kingbrightusa.com/product.asp?catalog_name=LED&amp;product_id=APT1608QWF/D"&gt;[Product Link]&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
-
-&lt;li&gt;&lt;b&gt; 1206&lt;/b&gt; - Bright White SMD1206  package&lt;/li&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Manufacturer:&lt;/b&gt;Kingbright&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;3.3V&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;20 mA&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;250 mcd&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Kingbright &lt;/b&gt;&lt;a href="http://www.kingbrightusa.com/product.asp?catalog_name=LED&amp;product_id=APT3216QWF/D"&gt;[Product Link]&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;Packages:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt; 0603&lt;/b&gt; - Bright White SMD 0603  package&lt;a href="http://www.kingbrightusa.com/product.asp?catalog_name=LED&amp;product_id=APT1608QWF/D"&gt;[Product Link]&lt;/li&gt;
+&lt;b&gt; 1206&lt;/b&gt; - Bright White SMD1206  package &lt;a href="http://www.kingbrightusa.com/product.asp?catalog_name=LED&amp;product_id=APT3216QWF/D"&gt;[Product Link]&lt;/li&gt;
+&lt;ul&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
-&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13169”&gt;Blackberry Trackballer Breakout&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12651”&gt;Digital SandBox&lt;/a&gt;&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13169”&gt;Blackberry Trackballer Breakout&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12651”&gt;Digital SandBox&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
@@ -1992,34 +1947,17 @@ Used in manufacturing several products at SparkFun.
 
 Used in manufacturing several products at SparkFun. 
 
-&lt;p&gt;&lt;li&gt;&lt;b&gt; 0603&lt;/b&gt; -  SMD 0603  package&lt;/li&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Manufacturer:&lt;/b&gt;Kingbright&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;2V&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;20 mA&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;150 mcd&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Kingbright &lt;/b&gt;&lt;a href=http://www.kingbrightusa.com/product.asp?catalog_name=LED&amp;product_id=APT1608SYCK"&gt;[Product Link]&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Packages:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt; 0603&lt;/b&gt; -  SMD 0603  package&lt;a href=http://www.kingbrightusa.com/product.asp?catalog_name=LED&amp;product_id=APT1608SYCK"&gt;[Product Link]&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; 0603 -SMART&lt;/b&gt; - SMART SMD 0603  package (more efficient/more expensive) &lt;a href="http://www.osram-os.com/osram_os/en/products/product-catalog/led-light-emitting-diodes/smartled-0603/ly-l29k/index.jsp"&gt;[Product Link]&lt;/li&gt;
+&lt;li&gt;&lt;b&gt; LilyPad&lt;/b&gt; - SMD1206  package&lt;a href="https://www.sparkfun.com/datasheets/DevTools/LilyPad/Q150YUS4.pdf"&gt;[Product Datasheet]&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;li&gt;&lt;b&gt; 0603 -SMART&lt;/b&gt; - SMART SMD 0603  package (more efficient/more expensive)&lt;/li&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Manufacturer:&lt;/b&gt;OSRAM&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;1.8V&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;20 mA&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;7.85 mcd&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;OSRAM &lt;/b&gt;&lt;a href="http://www.osram-os.com/osram_os/en/products/product-catalog/led-light-emitting-diodes/smartled-0603/ly-l29k/index.jsp"&gt;[Product Link]&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
-
-&lt;li&gt;&lt;b&gt; LilyPad&lt;/b&gt; - SMD1206  package&lt;/li&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Manufacturer:&lt;/b&gt;Kingbright&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;2.4V&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Current:&lt;/b&gt;30 mA&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;150 mcd&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Yetda &lt;/b&gt;&lt;a href="https://www.sparkfun.com/datasheets/DevTools/LilyPad/Q150YUS4.pdf"&gt;[Product Datasheet]&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;
 
 &lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
-&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13794”&gt;Blynk Board&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13613”&gt;IOIO-OTG&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13225”&gt;XBee Explorer Serial&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13794”&gt;Blynk Board&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13613”&gt;IOIO-OTG&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13225”&gt;XBee Explorer Serial&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
@@ -2239,21 +2177,15 @@ Used in manufacturing several products at SparkFun.
 &lt;p&gt;Used in manufacturing of various products at SparkFun&lt;/p&gt;
 
 
-&lt;li&gt;&lt;b&gt;0603&lt;/b&gt; - SMD 0603 package&lt;/li&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Manufacturer:&lt;/b&gt; Rohm Semiconductor&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;2.9V&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Current: &lt;/b&gt;5mA&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Wavelength: &lt;/b&gt;470nm&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Digikey: &lt;/b&gt;&lt;a href="http://www.digikey.com/product-detail/en/SMLE12BC7TT86/511-1589-2-ND/1641808"&gt;[Product Link]&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;Packages:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;0603&lt;/b&gt; - SMD 0603 package &lt;a href="http://www.digikey.com/product-detail/en/SMLE12BC7TT86/511-1589-2-ND/1641808"&gt;[Product Link]&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;1206&lt;/b&gt; - SMD1206  package &lt;a href="http://www.digikey.com/product-detail/en/lite-on-inc/LTST-C150TBKT/160-1643-1-ND/573584"&gt;[Product Link]&lt;/li&gt;
+&lt;ul&gt;&lt;/p&gt;
 
-&lt;li&gt;&lt;b&gt;1206&lt;/b&gt; - SMD1206  package&lt;/li&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Manufacturer:&lt;/b&gt;Lite-On Inc.&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;3.3V&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Current: &lt;/b&gt;20mA&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Wavelength: &lt;/b&gt;468nm&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Digikey: &lt;/b&gt;&lt;a href="http://www.digikey.com/product-detail/en/lite-on-inc/LTST-C150TBKT/160-1643-1-ND/573584"&gt;[Product Link]&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13711”&gt;ESP8266 Thing-Dev Board&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12757”&gt;RedBoard&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="2.54"/>
 </gates>
@@ -2288,12 +2220,13 @@ Used in manufacturing several products at SparkFun.
 <description>&lt;h3&gt;Pink SMD LED&lt;/h3&gt;
 &lt;p&gt;Used in manufacturing of various products at SparkFun&lt;/p&gt;
 
+&lt;p&gt;&lt;b&gt;Packages:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;0603&lt;/b&gt; - SMD 0603 package &lt;a href="http://cdn.sparkfun.com/datasheets/Components/General/S1206PKSBJC.pdf"&gt;[Product Link]&lt;/li&gt;
+&lt;ul&gt;&lt;/p&gt;
 
-&lt;li&gt;&lt;b&gt;0603&lt;/b&gt; - SMD 0603 package&lt;/li&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt;2.5V&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Forward Current: &lt;/b&gt;20mA&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;Datasheet: &lt;/b&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Components/General/S1206PKSBJC.pdf"&gt;[Product Link]&lt;/li&gt;&lt;/ul&gt;
-&lt;ul&gt;&lt;li&gt;&lt;b&gt;&lt;/b&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/10962”&gt;LilyPad LED Pink&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
