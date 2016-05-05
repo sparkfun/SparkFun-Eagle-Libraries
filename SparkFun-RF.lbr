@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -140,63 +140,13 @@
 </layers>
 <library>
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find things that send or receive RF- GPS, cellular modules, Bluetooth, WiFi, etc.&lt;br&gt;&lt;br&gt;
+In this library you'll find things that send or receive RF-- cellular modules, Bluetooth, WiFi, etc.&lt;br&gt;&lt;br&gt;
 We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
 &lt;br&gt;&lt;br&gt;
 &lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
 &lt;br&gt;&lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="ALM-1412">
-<description>&lt;h3&gt;ALM-1412 GPS LNA-Filter Front-End Module&lt;/h3&gt;
-&lt;p&gt;Low-noise amplifier (LNA) module with integrated filter, designed for GPS band applications.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.mouser.com/ds/2/678/ALM-1412-909459.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="-1.65" y1="-1.05" x2="-1.65" y2="1.05" width="0.127" layer="51"/>
-<wire x1="-1.65" y1="1.05" x2="1.65" y2="1.05" width="0.127" layer="51"/>
-<wire x1="1.65" y1="1.05" x2="1.65" y2="-1.05" width="0.127" layer="51"/>
-<wire x1="1.65" y1="-1.05" x2="-1.65" y2="-1.05" width="0.127" layer="51"/>
-<smd name="1" x="-1.4" y="-0.78" dx="0.35" dy="0.35" layer="1"/>
-<smd name="2" x="-0.71" y="-0.78" dx="0.35" dy="0.35" layer="1"/>
-<smd name="3" x="1.35" y="0" dx="0.35" dy="0.35" layer="1"/>
-<smd name="4" x="-0.72" y="0.77" dx="0.35" dy="0.35" layer="1"/>
-<smd name="5" x="-1.4" y="0.77" dx="0.35" dy="0.35" layer="1"/>
-<smd name="9" x="0.07" y="0.77" dx="0.35" dy="0.35" layer="1" cream="no"/>
-<smd name="8" x="1.12" y="0.77" dx="0.35" dy="0.35" layer="1" cream="no"/>
-<smd name="6" x="0.07" y="-0.77" dx="0.35" dy="0.35" layer="1" cream="no"/>
-<smd name="7" x="1.12" y="-0.77" dx="0.35" dy="0.35" layer="1" cream="no"/>
-<text x="0" y="-1.3" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<text x="0" y="1.3" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-0.24" y1="0.48" x2="1.52" y2="0.95" layer="1"/>
-<rectangle x1="-0.24" y1="-0.95" x2="1.52" y2="-0.48" layer="1"/>
-<rectangle x1="-0.24" y1="-0.55" x2="0.87" y2="0.55" layer="1"/>
-<rectangle x1="-1.3" y1="-0.3" x2="0.36" y2="0.3" layer="1"/>
-<rectangle x1="-0.892" y1="-0.65" x2="-0.533" y2="-0.25" layer="1"/>
-<rectangle x1="-0.07" y1="0.635" x2="0.21" y2="0.945" layer="31"/>
-<rectangle x1="0.46" y1="0.635" x2="0.72" y2="0.945" layer="31"/>
-<rectangle x1="0.97" y1="0.56" x2="1.27" y2="0.94" layer="31"/>
-<rectangle x1="-0.07" y1="-0.945" x2="0.21" y2="-0.635" layer="31"/>
-<rectangle x1="0.46" y1="-0.945" x2="0.72" y2="-0.635" layer="31"/>
-<rectangle x1="0.97" y1="-0.94" x2="1.27" y2="-0.56" layer="31"/>
-<rectangle x1="0.46" y1="-0.31" x2="0.72" y2="0.31" layer="31"/>
-<rectangle x1="-1.405" y1="-0.25" x2="-0.855" y2="0.25" layer="31"/>
-<rectangle x1="-0.61" y1="-0.31" x2="0.21" y2="0.31" layer="31"/>
-<rectangle x1="-0.31" y1="0.48" x2="1.6" y2="1.05" layer="29"/>
-<rectangle x1="-0.31" y1="-1.06" x2="1.6" y2="-0.48" layer="29"/>
-<rectangle x1="-0.31" y1="-0.48" x2="0.87" y2="0.48" layer="29"/>
-<rectangle x1="-1.68" y1="-0.38" x2="-0.31" y2="0.39" layer="29"/>
-<polygon width="0.01" layer="1">
-<vertex x="-1.57" y="-0.3"/>
-<vertex x="-1.57" y="0.05"/>
-<vertex x="-1.32" y="0.3"/>
-<vertex x="-1.3" y="0.3"/>
-<vertex x="-1.3" y="-0.3"/>
-</polygon>
-<wire x1="-1.75" y1="1.15" x2="1.75" y2="1.15" width="0.2032" layer="21"/>
-<wire x1="-1.75" y1="-1.15" x2="-1.75" y2="1.15" width="0.2032" layer="21"/>
-<wire x1="1.75" y1="1.15" x2="1.75" y2="-1.15" width="0.2032" layer="21"/>
-<wire x1="1.75" y1="-1.15" x2="-1.75" y2="-1.15" width="0.2032" layer="21"/>
-<circle x="-2.1" y="1.5" radius="0.316225" width="0" layer="21"/>
-</package>
 <package name="ANT-2.4GHZ-9.5X2.0MM">
 <description>&lt;h3&gt;2.4GHz Chip Antenna - 9.5 x 2.0 x 1.2 mm&lt;/h3&gt;
 &lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/Wireless/General/SPK-AT9520-B2R4HAA.pdf"&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;</description>
@@ -216,25 +166,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-1" y1="-4.75" x2="1" y2="-4.25" layer="51"/>
 <rectangle x1="-1" y1="4.25" x2="1" y2="4.75" layer="51" rot="R180"/>
 <wire x1="0.8" y1="5.5" x2="-0.8" y2="5.5" width="0.2032" layer="21"/>
-</package>
-<package name="ANT-GPS-2X8MM">
-<description>&lt;h3&gt;GPS Chip Antenna - 2.0 x 8.0 x 1.5 mm&lt;/h3&gt;
-&lt;p&gt;2.0 x 8.0 x 1.5 mm package&lt;/p&gt;
-&lt;p&gt;Package used for Chant Sincere Co. 922D03E15X11113 GPS Antenna&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/GPS/GPS-ChipAntenna.pdf"&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="-4" y1="1" x2="-4" y2="-1" width="0.127" layer="51"/>
-<wire x1="-4" y1="-1" x2="4" y2="-1" width="0.127" layer="51"/>
-<wire x1="4" y1="-1" x2="4" y2="1" width="0.127" layer="51"/>
-<wire x1="4" y1="1" x2="-4" y2="1" width="0.127" layer="51"/>
-<wire x1="-3" y1="1.1" x2="3" y2="1.1" width="0.2032" layer="21"/>
-<wire x1="3" y1="-1.1" x2="-3" y2="-1.1" width="0.2032" layer="21"/>
-<circle x="-3" y="0.6" radius="0.254" width="0" layer="21"/>
-<smd name="SIG" x="-4" y="0" dx="1" dy="2" layer="1"/>
-<smd name="NC" x="4" y="0" dx="1" dy="2" layer="1"/>
-<text x="0" y="0" size="0.6096" layer="51" font="vector" align="center">152111</text>
-<text x="0" y="-1.243" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<text x="0" y="1.243" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<wire x1="-4.7" y1="1" x2="-4.7" y2="-1" width="0.2032" layer="21"/>
 </package>
 <package name="ANT-2.4GHZ-6.5X2.2MM">
 <description>&lt;h3&gt;2.45GHz Chip Antenna - 6.5 x 2.2 x 1.0 mm&lt;/h3&gt;
@@ -258,27 +189,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="1.77" y1="1.7" x2="2.259" y2="1.7" width="0.2032" layer="21"/>
 <wire x1="2.259" y1="1.7" x2="2.078" y2="1.881" width="0.2032" layer="21"/>
 <wire x1="2.259" y1="1.7" x2="2.078" y2="1.519" width="0.2032" layer="21"/>
-</package>
-<package name="ANT-GPS-2X7MM">
-<description>&lt;h3&gt;GPS Chip Antenna - 7.0 x 2.0 x 0.8 mm&lt;/h3&gt;
-&lt;p&gt;7.0 x 2.0 x 0.8 mm package&lt;/p&gt;
-&lt;p&gt;Package used for Johanson 1575AT43A40 GPS Antenna&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/GPS/JTI_Antenna-1575AT43A40_2006-09.pdf"&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="-2.7" y1="1.1" x2="2.7" y2="1.1" width="0.2032" layer="21"/>
-<wire x1="-2.7" y1="-1.1" x2="2.7" y2="-1.1" width="0.2032" layer="21"/>
-<wire x1="-2.6" y1="0.3" x2="-2.6" y2="-0.3" width="0.2032" layer="21"/>
-<wire x1="-2.6" y1="-0.3" x2="-1.6" y2="-0.3" width="0.2032" layer="21"/>
-<wire x1="-1.6" y1="-0.3" x2="-1.6" y2="0.3" width="0.2032" layer="21"/>
-<wire x1="-1.6" y1="0.3" x2="-2.6" y2="0.3" width="0.2032" layer="21"/>
-<wire x1="-3.5" y1="1" x2="3.5" y2="1" width="0.127" layer="51"/>
-<wire x1="3.5" y1="1" x2="3.5" y2="-1" width="0.127" layer="51"/>
-<wire x1="3.5" y1="-1" x2="-3.5" y2="-1" width="0.127" layer="51"/>
-<wire x1="-3.5" y1="-1" x2="-3.5" y2="1" width="0.127" layer="51"/>
-<smd name="NC" x="3.4" y="0" dx="2" dy="0.75" layer="1" rot="R90"/>
-<smd name="1" x="-3.4" y="0" dx="2" dy="0.75" layer="1" rot="R90"/>
-<text x="0" y="1.243" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.243" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<wire x1="-4.1" y1="1" x2="-4.1" y2="-1" width="0.2032" layer="21"/>
 </package>
 <package name="QFN-64-9X9MM">
 <description>&lt;h3&gt;64-pin QFN 9x9mm, 0.5mm pitch&lt;/h3&gt;
@@ -501,623 +411,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="2.79" y="1.59" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="2.79" y="-0.95" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 <rectangle x1="-12.4" y1="-7.2" x2="-7.7" y2="7.2" layer="41"/>
-</package>
-<package name="COPERNICUS">
-<description>&lt;h3&gt;Trimble Copernicus and Copernicus II GPS Receiver&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Sensors/GPS/63530-10_Rev-B_Manual_Copernicus-II.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="-9" y1="9.7" x2="-9.7" y2="9.7" width="0.2032" layer="21"/>
-<wire x1="9.1" y1="-9.7" x2="9.7" y2="-9.7" width="0.2032" layer="21"/>
-<wire x1="9.7" y1="9.7" x2="9.1" y2="9.7" width="0.2032" layer="21"/>
-<wire x1="-9.7" y1="9.7" x2="-9.7" y2="-9.7" width="0.2032" layer="21"/>
-<wire x1="-9.7" y1="-9.7" x2="-8.9" y2="-9.7" width="0.2032" layer="21"/>
-<wire x1="-9.5" y1="9.5" x2="9.5" y2="9.5" width="0.127" layer="51"/>
-<wire x1="-9.5" y1="9.5" x2="-9.5" y2="-9.5" width="0.127" layer="51"/>
-<wire x1="9.5" y1="9.5" x2="9.5" y2="-9.5" width="0.127" layer="51"/>
-<wire x1="-9.5" y1="-9.5" x2="9.5" y2="-9.5" width="0.127" layer="51"/>
-<circle x="-8.2" y="-6.8" radius="0.457" width="0.2032" layer="21"/>
-<smd name="28" x="-8.2" y="9.2" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="26" x="-5.66" y="9.2" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="25" x="-4.39" y="9.2" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="24" x="-3.12" y="9.2" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="23" x="-1.85" y="9.2" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="22" x="-0.58" y="9.2" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="21" x="0.69" y="9.2" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="20" x="1.96" y="9.2" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="19" x="3.23" y="9.2" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="18" x="4.5" y="9.2" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="17" x="5.77" y="9.2" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="16" x="7.04" y="9.2" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="15" x="8.31" y="9.2" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="1" x="-8.2" y="-9.1642" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="2" x="-6.93" y="-9.1642" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="3" x="-5.66" y="-9.1642" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="4" x="-4.39" y="-9.1642" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="5" x="-3.12" y="-9.1642" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="6" x="-1.85" y="-9.1642" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="7" x="-0.58" y="-9.1642" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="8" x="0.69" y="-9.1642" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="9" x="1.96" y="-9.1642" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="10" x="3.23" y="-9.1642" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="11" x="4.5" y="-9.1642" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="12" x="5.77" y="-9.1642" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="13" x="7.04" y="-9.1642" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="14" x="8.31" y="-9.1642" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<smd name="27" x="-6.93" y="9.2" dx="0.762" dy="1.651" layer="1" rot="R180" cream="no"/>
-<polygon width="0.0254" layer="31">
-<vertex x="-8.581" y="8.3872"/>
-<vertex x="-8.581" y="9.5302"/>
-<vertex x="-8.6826" y="9.5302"/>
-<vertex x="-8.6826" y="10.1398"/>
-<vertex x="-7.7174" y="10.1398"/>
-<vertex x="-7.7174" y="9.5302"/>
-<vertex x="-7.819" y="9.5302"/>
-<vertex x="-7.819" y="8.3872"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-7.311" y="8.3872"/>
-<vertex x="-7.311" y="9.5302"/>
-<vertex x="-7.4126" y="9.5302"/>
-<vertex x="-7.4126" y="10.1398"/>
-<vertex x="-6.4474" y="10.1398"/>
-<vertex x="-6.4474" y="9.5302"/>
-<vertex x="-6.549" y="9.5302"/>
-<vertex x="-6.549" y="8.3872"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-6.041" y="8.3872"/>
-<vertex x="-6.041" y="9.5302"/>
-<vertex x="-6.1426" y="9.5302"/>
-<vertex x="-6.1426" y="10.1398"/>
-<vertex x="-5.1774" y="10.1398"/>
-<vertex x="-5.1774" y="9.5302"/>
-<vertex x="-5.279" y="9.5302"/>
-<vertex x="-5.279" y="8.3872"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-4.771" y="8.3872"/>
-<vertex x="-4.771" y="9.5302"/>
-<vertex x="-4.8726" y="9.5302"/>
-<vertex x="-4.8726" y="10.1398"/>
-<vertex x="-3.9074" y="10.1398"/>
-<vertex x="-3.9074" y="9.5302"/>
-<vertex x="-4.009" y="9.5302"/>
-<vertex x="-4.009" y="8.3872"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-3.501" y="8.3872"/>
-<vertex x="-3.501" y="9.5302"/>
-<vertex x="-3.6026" y="9.5302"/>
-<vertex x="-3.6026" y="10.1398"/>
-<vertex x="-2.6374" y="10.1398"/>
-<vertex x="-2.6374" y="9.5302"/>
-<vertex x="-2.739" y="9.5302"/>
-<vertex x="-2.739" y="8.3872"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-2.231" y="8.3872"/>
-<vertex x="-2.231" y="9.5302"/>
-<vertex x="-2.3326" y="9.5302"/>
-<vertex x="-2.3326" y="10.1398"/>
-<vertex x="-1.3674" y="10.1398"/>
-<vertex x="-1.3674" y="9.5302"/>
-<vertex x="-1.469" y="9.5302"/>
-<vertex x="-1.469" y="8.3872"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-0.961" y="8.3872"/>
-<vertex x="-0.961" y="9.5302"/>
-<vertex x="-1.0626" y="9.5302"/>
-<vertex x="-1.0626" y="10.1398"/>
-<vertex x="-0.0974" y="10.1398"/>
-<vertex x="-0.0974" y="9.5302"/>
-<vertex x="-0.199" y="9.5302"/>
-<vertex x="-0.199" y="8.3872"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="0.309" y="8.3872"/>
-<vertex x="0.309" y="9.5302"/>
-<vertex x="0.2074" y="9.5302"/>
-<vertex x="0.2074" y="10.1398"/>
-<vertex x="1.1726" y="10.1398"/>
-<vertex x="1.1726" y="9.5302"/>
-<vertex x="1.071" y="9.5302"/>
-<vertex x="1.071" y="8.3872"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="1.579" y="8.3872"/>
-<vertex x="1.579" y="9.5302"/>
-<vertex x="1.4774" y="9.5302"/>
-<vertex x="1.4774" y="10.1398"/>
-<vertex x="2.4426" y="10.1398"/>
-<vertex x="2.4426" y="9.5302"/>
-<vertex x="2.341" y="9.5302"/>
-<vertex x="2.341" y="8.3872"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="2.849" y="8.3872"/>
-<vertex x="2.849" y="9.5302"/>
-<vertex x="2.7474" y="9.5302"/>
-<vertex x="2.7474" y="10.1398"/>
-<vertex x="3.7126" y="10.1398"/>
-<vertex x="3.7126" y="9.5302"/>
-<vertex x="3.611" y="9.5302"/>
-<vertex x="3.611" y="8.3872"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="4.119" y="8.3872"/>
-<vertex x="4.119" y="9.5302"/>
-<vertex x="4.0174" y="9.5302"/>
-<vertex x="4.0174" y="10.1398"/>
-<vertex x="4.9826" y="10.1398"/>
-<vertex x="4.9826" y="9.5302"/>
-<vertex x="4.881" y="9.5302"/>
-<vertex x="4.881" y="8.3872"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="5.389" y="8.3872"/>
-<vertex x="5.389" y="9.5302"/>
-<vertex x="5.2874" y="9.5302"/>
-<vertex x="5.2874" y="10.1398"/>
-<vertex x="6.2526" y="10.1398"/>
-<vertex x="6.2526" y="9.5302"/>
-<vertex x="6.151" y="9.5302"/>
-<vertex x="6.151" y="8.3872"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="6.659" y="8.3872"/>
-<vertex x="6.659" y="9.5302"/>
-<vertex x="6.5574" y="9.5302"/>
-<vertex x="6.5574" y="10.1398"/>
-<vertex x="7.5226" y="10.1398"/>
-<vertex x="7.5226" y="9.5302"/>
-<vertex x="7.421" y="9.5302"/>
-<vertex x="7.421" y="8.3872"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="7.929" y="8.3872"/>
-<vertex x="7.929" y="9.5302"/>
-<vertex x="7.8274" y="9.5302"/>
-<vertex x="7.8274" y="10.1398"/>
-<vertex x="8.7926" y="10.1398"/>
-<vertex x="8.7926" y="9.5302"/>
-<vertex x="8.691" y="9.5302"/>
-<vertex x="8.691" y="8.3872"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-7.819" y="-8.3514"/>
-<vertex x="-7.819" y="-9.4944"/>
-<vertex x="-7.7174" y="-9.4944"/>
-<vertex x="-7.7174" y="-10.104"/>
-<vertex x="-8.6826" y="-10.104"/>
-<vertex x="-8.6826" y="-9.4944"/>
-<vertex x="-8.581" y="-9.4944"/>
-<vertex x="-8.581" y="-8.3514"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-6.549" y="-8.3514"/>
-<vertex x="-6.549" y="-9.4944"/>
-<vertex x="-6.4474" y="-9.4944"/>
-<vertex x="-6.4474" y="-10.104"/>
-<vertex x="-7.4126" y="-10.104"/>
-<vertex x="-7.4126" y="-9.4944"/>
-<vertex x="-7.311" y="-9.4944"/>
-<vertex x="-7.311" y="-8.3514"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-5.279" y="-8.3514"/>
-<vertex x="-5.279" y="-9.4944"/>
-<vertex x="-5.1774" y="-9.4944"/>
-<vertex x="-5.1774" y="-10.104"/>
-<vertex x="-6.1426" y="-10.104"/>
-<vertex x="-6.1426" y="-9.4944"/>
-<vertex x="-6.041" y="-9.4944"/>
-<vertex x="-6.041" y="-8.3514"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-4.009" y="-8.3514"/>
-<vertex x="-4.009" y="-9.4944"/>
-<vertex x="-3.9074" y="-9.4944"/>
-<vertex x="-3.9074" y="-10.104"/>
-<vertex x="-4.8726" y="-10.104"/>
-<vertex x="-4.8726" y="-9.4944"/>
-<vertex x="-4.771" y="-9.4944"/>
-<vertex x="-4.771" y="-8.3514"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-2.739" y="-8.3514"/>
-<vertex x="-2.739" y="-9.4944"/>
-<vertex x="-2.6374" y="-9.4944"/>
-<vertex x="-2.6374" y="-10.104"/>
-<vertex x="-3.6026" y="-10.104"/>
-<vertex x="-3.6026" y="-9.4944"/>
-<vertex x="-3.501" y="-9.4944"/>
-<vertex x="-3.501" y="-8.3514"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-1.469" y="-8.3514"/>
-<vertex x="-1.469" y="-9.4944"/>
-<vertex x="-1.3674" y="-9.4944"/>
-<vertex x="-1.3674" y="-10.104"/>
-<vertex x="-2.3326" y="-10.104"/>
-<vertex x="-2.3326" y="-9.4944"/>
-<vertex x="-2.231" y="-9.4944"/>
-<vertex x="-2.231" y="-8.3514"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="-0.199" y="-8.3514"/>
-<vertex x="-0.199" y="-9.4944"/>
-<vertex x="-0.0974" y="-9.4944"/>
-<vertex x="-0.0974" y="-10.104"/>
-<vertex x="-1.0626" y="-10.104"/>
-<vertex x="-1.0626" y="-9.4944"/>
-<vertex x="-0.961" y="-9.4944"/>
-<vertex x="-0.961" y="-8.3514"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="1.071" y="-8.3514"/>
-<vertex x="1.071" y="-9.4944"/>
-<vertex x="1.1726" y="-9.4944"/>
-<vertex x="1.1726" y="-10.104"/>
-<vertex x="0.2074" y="-10.104"/>
-<vertex x="0.2074" y="-9.4944"/>
-<vertex x="0.309" y="-9.4944"/>
-<vertex x="0.309" y="-8.3514"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="2.341" y="-8.3514"/>
-<vertex x="2.341" y="-9.4944"/>
-<vertex x="2.4426" y="-9.4944"/>
-<vertex x="2.4426" y="-10.104"/>
-<vertex x="1.4774" y="-10.104"/>
-<vertex x="1.4774" y="-9.4944"/>
-<vertex x="1.579" y="-9.4944"/>
-<vertex x="1.579" y="-8.3514"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="3.611" y="-8.3514"/>
-<vertex x="3.611" y="-9.4944"/>
-<vertex x="3.7126" y="-9.4944"/>
-<vertex x="3.7126" y="-10.104"/>
-<vertex x="2.7474" y="-10.104"/>
-<vertex x="2.7474" y="-9.4944"/>
-<vertex x="2.849" y="-9.4944"/>
-<vertex x="2.849" y="-8.3514"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="4.881" y="-8.3514"/>
-<vertex x="4.881" y="-9.4944"/>
-<vertex x="4.9826" y="-9.4944"/>
-<vertex x="4.9826" y="-10.104"/>
-<vertex x="4.0174" y="-10.104"/>
-<vertex x="4.0174" y="-9.4944"/>
-<vertex x="4.119" y="-9.4944"/>
-<vertex x="4.119" y="-8.3514"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="6.151" y="-8.3514"/>
-<vertex x="6.151" y="-9.4944"/>
-<vertex x="6.2526" y="-9.4944"/>
-<vertex x="6.2526" y="-10.104"/>
-<vertex x="5.2874" y="-10.104"/>
-<vertex x="5.2874" y="-9.4944"/>
-<vertex x="5.389" y="-9.4944"/>
-<vertex x="5.389" y="-8.3514"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="7.421" y="-8.3514"/>
-<vertex x="7.421" y="-9.4944"/>
-<vertex x="7.5226" y="-9.4944"/>
-<vertex x="7.5226" y="-10.104"/>
-<vertex x="6.5574" y="-10.104"/>
-<vertex x="6.5574" y="-9.4944"/>
-<vertex x="6.659" y="-9.4944"/>
-<vertex x="6.659" y="-8.3514"/>
-</polygon>
-<polygon width="0.0254" layer="31">
-<vertex x="8.691" y="-8.3514"/>
-<vertex x="8.691" y="-9.4944"/>
-<vertex x="8.7926" y="-9.4944"/>
-<vertex x="8.7926" y="-10.104"/>
-<vertex x="7.8274" y="-10.104"/>
-<vertex x="7.8274" y="-9.4944"/>
-<vertex x="7.929" y="-9.4944"/>
-<vertex x="7.929" y="-8.3514"/>
-</polygon>
-<text x="0" y="1" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<circle x="-10.273" y="-9.3" radius="0.457" width="0" layer="21"/>
-<wire x1="9.7" y1="9.7" x2="9.7" y2="-9.7" width="0.2032" layer="21"/>
-</package>
-<package name="COPERNICUS-DIP">
-<description>&lt;h3&gt;SparkFun Copernicus II DIP Board&lt;/h3&gt;
-&lt;p&gt;Pin layout for the SparkFun Copernicus II DIP GPS Module (GPS-11858)&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/11858"&gt;Product Link&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="20.955" y1="3.81" x2="22.225" y2="3.81" width="0.2032" layer="21"/>
-<wire x1="22.225" y1="3.81" x2="22.86" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="22.86" y1="1.905" x2="22.225" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="17.78" y1="3.175" x2="18.415" y2="3.81" width="0.2032" layer="21"/>
-<wire x1="18.415" y1="3.81" x2="19.685" y2="3.81" width="0.2032" layer="21"/>
-<wire x1="19.685" y1="3.81" x2="20.32" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="20.32" y1="1.905" x2="19.685" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="19.685" y1="1.27" x2="18.415" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="18.415" y1="1.27" x2="17.78" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="20.955" y1="3.81" x2="20.32" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="20.32" y1="1.905" x2="20.955" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="22.225" y1="1.27" x2="20.955" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="13.335" y1="3.81" x2="14.605" y2="3.81" width="0.2032" layer="21"/>
-<wire x1="14.605" y1="3.81" x2="15.24" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="15.24" y1="1.905" x2="14.605" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="15.24" y1="3.175" x2="15.875" y2="3.81" width="0.2032" layer="21"/>
-<wire x1="15.875" y1="3.81" x2="17.145" y2="3.81" width="0.2032" layer="21"/>
-<wire x1="17.145" y1="3.81" x2="17.78" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="17.78" y1="1.905" x2="17.145" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="17.145" y1="1.27" x2="15.875" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="15.875" y1="1.27" x2="15.24" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="10.16" y1="3.175" x2="10.795" y2="3.81" width="0.2032" layer="21"/>
-<wire x1="10.795" y1="3.81" x2="12.065" y2="3.81" width="0.2032" layer="21"/>
-<wire x1="12.065" y1="3.81" x2="12.7" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="12.7" y1="1.905" x2="12.065" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="12.065" y1="1.27" x2="10.795" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="10.795" y1="1.27" x2="10.16" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="13.335" y1="3.81" x2="12.7" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="12.7" y1="1.905" x2="13.335" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="14.605" y1="1.27" x2="13.335" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="5.715" y1="3.81" x2="6.985" y2="3.81" width="0.2032" layer="21"/>
-<wire x1="6.985" y1="3.81" x2="7.62" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="7.62" y1="1.905" x2="6.985" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="7.62" y1="3.175" x2="8.255" y2="3.81" width="0.2032" layer="21"/>
-<wire x1="8.255" y1="3.81" x2="9.525" y2="3.81" width="0.2032" layer="21"/>
-<wire x1="9.525" y1="3.81" x2="10.16" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="10.16" y1="1.905" x2="9.525" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="9.525" y1="1.27" x2="8.255" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="8.255" y1="1.27" x2="7.62" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="3.175" x2="5.08" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="5.715" y1="3.81" x2="5.08" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="1.905" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="6.985" y1="1.27" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="27.94" y1="3.175" x2="28.575" y2="3.81" width="0.2032" layer="21"/>
-<wire x1="28.575" y1="3.81" x2="29.845" y2="3.81" width="0.2032" layer="21"/>
-<wire x1="29.845" y1="3.81" x2="30.48" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="30.48" y1="1.905" x2="29.845" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="29.845" y1="1.27" x2="28.575" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="28.575" y1="1.27" x2="27.94" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="23.495" y1="3.81" x2="24.765" y2="3.81" width="0.2032" layer="21"/>
-<wire x1="24.765" y1="3.81" x2="25.4" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="25.4" y1="1.905" x2="24.765" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="25.4" y1="3.175" x2="26.035" y2="3.81" width="0.2032" layer="21"/>
-<wire x1="26.035" y1="3.81" x2="27.305" y2="3.81" width="0.2032" layer="21"/>
-<wire x1="27.305" y1="3.81" x2="27.94" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="27.94" y1="1.905" x2="27.305" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="27.305" y1="1.27" x2="26.035" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="26.035" y1="1.27" x2="25.4" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="23.495" y1="3.81" x2="22.86" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="22.86" y1="1.905" x2="23.495" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="24.765" y1="1.27" x2="23.495" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="30.48" y1="3.175" x2="30.48" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="20.955" y1="26.67" x2="22.225" y2="26.67" width="0.2032" layer="21"/>
-<wire x1="22.225" y1="26.67" x2="22.86" y2="26.035" width="0.2032" layer="21"/>
-<wire x1="22.86" y1="24.765" x2="22.225" y2="24.13" width="0.2032" layer="21"/>
-<wire x1="17.78" y1="26.035" x2="18.415" y2="26.67" width="0.2032" layer="21"/>
-<wire x1="18.415" y1="26.67" x2="19.685" y2="26.67" width="0.2032" layer="21"/>
-<wire x1="19.685" y1="26.67" x2="20.32" y2="26.035" width="0.2032" layer="21"/>
-<wire x1="20.32" y1="24.765" x2="19.685" y2="24.13" width="0.2032" layer="21"/>
-<wire x1="19.685" y1="24.13" x2="18.415" y2="24.13" width="0.2032" layer="21"/>
-<wire x1="18.415" y1="24.13" x2="17.78" y2="24.765" width="0.2032" layer="21"/>
-<wire x1="20.955" y1="26.67" x2="20.32" y2="26.035" width="0.2032" layer="21"/>
-<wire x1="20.32" y1="24.765" x2="20.955" y2="24.13" width="0.2032" layer="21"/>
-<wire x1="22.225" y1="24.13" x2="20.955" y2="24.13" width="0.2032" layer="21"/>
-<wire x1="13.335" y1="26.67" x2="14.605" y2="26.67" width="0.2032" layer="21"/>
-<wire x1="14.605" y1="26.67" x2="15.24" y2="26.035" width="0.2032" layer="21"/>
-<wire x1="15.24" y1="24.765" x2="14.605" y2="24.13" width="0.2032" layer="21"/>
-<wire x1="15.24" y1="26.035" x2="15.875" y2="26.67" width="0.2032" layer="21"/>
-<wire x1="15.875" y1="26.67" x2="17.145" y2="26.67" width="0.2032" layer="21"/>
-<wire x1="17.145" y1="26.67" x2="17.78" y2="26.035" width="0.2032" layer="21"/>
-<wire x1="17.78" y1="24.765" x2="17.145" y2="24.13" width="0.2032" layer="21"/>
-<wire x1="17.145" y1="24.13" x2="15.875" y2="24.13" width="0.2032" layer="21"/>
-<wire x1="15.875" y1="24.13" x2="15.24" y2="24.765" width="0.2032" layer="21"/>
-<wire x1="10.16" y1="26.035" x2="10.795" y2="26.67" width="0.2032" layer="21"/>
-<wire x1="10.795" y1="26.67" x2="12.065" y2="26.67" width="0.2032" layer="21"/>
-<wire x1="12.065" y1="26.67" x2="12.7" y2="26.035" width="0.2032" layer="21"/>
-<wire x1="12.7" y1="24.765" x2="12.065" y2="24.13" width="0.2032" layer="21"/>
-<wire x1="12.065" y1="24.13" x2="10.795" y2="24.13" width="0.2032" layer="21"/>
-<wire x1="10.795" y1="24.13" x2="10.16" y2="24.765" width="0.2032" layer="21"/>
-<wire x1="13.335" y1="26.67" x2="12.7" y2="26.035" width="0.2032" layer="21"/>
-<wire x1="12.7" y1="24.765" x2="13.335" y2="24.13" width="0.2032" layer="21"/>
-<wire x1="14.605" y1="24.13" x2="13.335" y2="24.13" width="0.2032" layer="21"/>
-<wire x1="5.715" y1="26.67" x2="6.985" y2="26.67" width="0.2032" layer="21"/>
-<wire x1="6.985" y1="26.67" x2="7.62" y2="26.035" width="0.2032" layer="21"/>
-<wire x1="7.62" y1="24.765" x2="6.985" y2="24.13" width="0.2032" layer="21"/>
-<wire x1="7.62" y1="26.035" x2="8.255" y2="26.67" width="0.2032" layer="21"/>
-<wire x1="8.255" y1="26.67" x2="9.525" y2="26.67" width="0.2032" layer="21"/>
-<wire x1="9.525" y1="26.67" x2="10.16" y2="26.035" width="0.2032" layer="21"/>
-<wire x1="10.16" y1="24.765" x2="9.525" y2="24.13" width="0.2032" layer="21"/>
-<wire x1="9.525" y1="24.13" x2="8.255" y2="24.13" width="0.2032" layer="21"/>
-<wire x1="8.255" y1="24.13" x2="7.62" y2="24.765" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="26.035" x2="5.08" y2="24.765" width="0.2032" layer="21"/>
-<wire x1="5.715" y1="26.67" x2="5.08" y2="26.035" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="24.765" x2="5.715" y2="24.13" width="0.2032" layer="21"/>
-<wire x1="6.985" y1="24.13" x2="5.715" y2="24.13" width="0.2032" layer="21"/>
-<wire x1="27.94" y1="26.035" x2="28.575" y2="26.67" width="0.2032" layer="21"/>
-<wire x1="28.575" y1="26.67" x2="29.845" y2="26.67" width="0.2032" layer="21"/>
-<wire x1="29.845" y1="26.67" x2="30.48" y2="26.035" width="0.2032" layer="21"/>
-<wire x1="30.48" y1="24.765" x2="29.845" y2="24.13" width="0.2032" layer="21"/>
-<wire x1="29.845" y1="24.13" x2="28.575" y2="24.13" width="0.2032" layer="21"/>
-<wire x1="28.575" y1="24.13" x2="27.94" y2="24.765" width="0.2032" layer="21"/>
-<wire x1="23.495" y1="26.67" x2="24.765" y2="26.67" width="0.2032" layer="21"/>
-<wire x1="24.765" y1="26.67" x2="25.4" y2="26.035" width="0.2032" layer="21"/>
-<wire x1="25.4" y1="24.765" x2="24.765" y2="24.13" width="0.2032" layer="21"/>
-<wire x1="25.4" y1="26.035" x2="26.035" y2="26.67" width="0.2032" layer="21"/>
-<wire x1="26.035" y1="26.67" x2="27.305" y2="26.67" width="0.2032" layer="21"/>
-<wire x1="27.305" y1="26.67" x2="27.94" y2="26.035" width="0.2032" layer="21"/>
-<wire x1="27.94" y1="24.765" x2="27.305" y2="24.13" width="0.2032" layer="21"/>
-<wire x1="27.305" y1="24.13" x2="26.035" y2="24.13" width="0.2032" layer="21"/>
-<wire x1="26.035" y1="24.13" x2="25.4" y2="24.765" width="0.2032" layer="21"/>
-<wire x1="23.495" y1="26.67" x2="22.86" y2="26.035" width="0.2032" layer="21"/>
-<wire x1="22.86" y1="24.765" x2="23.495" y2="24.13" width="0.2032" layer="21"/>
-<wire x1="24.765" y1="24.13" x2="23.495" y2="24.13" width="0.2032" layer="21"/>
-<wire x1="30.48" y1="26.035" x2="30.48" y2="24.765" width="0.2032" layer="21"/>
-<wire x1="0" y1="27.94" x2="0" y2="22.86" width="0.127" layer="51"/>
-<wire x1="-0.2" y1="28.14" x2="-0.2" y2="23.06" width="0.2032" layer="21"/>
-<wire x1="-0.2" y1="23.06" x2="-0.2" y2="16.31" width="0.2032" layer="21"/>
-<wire x1="-0.2" y1="16.31" x2="-0.2" y2="-0.2" width="0.2032" layer="21"/>
-<wire x1="0" y1="0" x2="31.75" y2="0" width="0.127" layer="51"/>
-<wire x1="31.95" y1="-0.2" x2="31.95" y2="28.14" width="0.2032" layer="21"/>
-<wire x1="31.75" y1="27.94" x2="0" y2="27.94" width="0.127" layer="51"/>
-<wire x1="-0.2" y1="23.06" x2="-5.28" y2="23.06" width="0.2032" layer="21"/>
-<wire x1="-5.28" y1="23.06" x2="-5.28" y2="16.31" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="16.51" x2="0" y2="16.51" width="0.127" layer="51"/>
-<pad name="1" x="6.35" y="2.54" drill="1.016" rot="R90"/>
-<pad name="2" x="8.89" y="2.54" drill="1.016" rot="R90"/>
-<pad name="3" x="11.43" y="2.54" drill="1.016" rot="R90"/>
-<pad name="4" x="13.97" y="2.54" drill="1.016" rot="R90"/>
-<pad name="5" x="16.51" y="2.54" drill="1.016" rot="R90"/>
-<pad name="6" x="19.05" y="2.54" drill="1.016" rot="R90"/>
-<pad name="7" x="21.59" y="2.54" drill="1.016" rot="R90"/>
-<pad name="8" x="24.13" y="2.54" drill="1.016" rot="R90"/>
-<pad name="9" x="26.67" y="2.54" drill="1.016" rot="R90"/>
-<pad name="10" x="29.21" y="2.54" drill="1.016" rot="R90"/>
-<pad name="20" x="6.35" y="25.4" drill="1.016" rot="R90"/>
-<pad name="19" x="8.89" y="25.4" drill="1.016" rot="R90"/>
-<pad name="18" x="11.43" y="25.4" drill="1.016" rot="R90"/>
-<pad name="17" x="13.97" y="25.4" drill="1.016" rot="R90"/>
-<pad name="16" x="16.51" y="25.4" drill="1.016" rot="R90"/>
-<pad name="15" x="19.05" y="25.4" drill="1.016" rot="R90"/>
-<pad name="14" x="21.59" y="25.4" drill="1.016" rot="R90"/>
-<pad name="13" x="24.13" y="25.4" drill="1.016" rot="R90"/>
-<pad name="12" x="26.67" y="25.4" drill="1.016" rot="R90"/>
-<pad name="11" x="29.21" y="25.4" drill="1.016" rot="R90"/>
-<rectangle x1="21.336" y1="2.286" x2="21.844" y2="2.794" layer="51"/>
-<rectangle x1="18.796" y1="2.286" x2="19.304" y2="2.794" layer="51"/>
-<rectangle x1="16.256" y1="2.286" x2="16.764" y2="2.794" layer="51"/>
-<rectangle x1="13.716" y1="2.286" x2="14.224" y2="2.794" layer="51"/>
-<rectangle x1="11.176" y1="2.286" x2="11.684" y2="2.794" layer="51"/>
-<rectangle x1="8.636" y1="2.286" x2="9.144" y2="2.794" layer="51"/>
-<rectangle x1="6.096" y1="2.286" x2="6.604" y2="2.794" layer="51"/>
-<rectangle x1="28.956" y1="2.286" x2="29.464" y2="2.794" layer="51"/>
-<rectangle x1="26.416" y1="2.286" x2="26.924" y2="2.794" layer="51"/>
-<rectangle x1="23.876" y1="2.286" x2="24.384" y2="2.794" layer="51"/>
-<rectangle x1="21.336" y1="25.146" x2="21.844" y2="25.654" layer="51"/>
-<rectangle x1="18.796" y1="25.146" x2="19.304" y2="25.654" layer="51"/>
-<rectangle x1="16.256" y1="25.146" x2="16.764" y2="25.654" layer="51"/>
-<rectangle x1="13.716" y1="25.146" x2="14.224" y2="25.654" layer="51"/>
-<rectangle x1="11.176" y1="25.146" x2="11.684" y2="25.654" layer="51"/>
-<rectangle x1="8.636" y1="25.146" x2="9.144" y2="25.654" layer="51"/>
-<rectangle x1="6.096" y1="25.146" x2="6.604" y2="25.654" layer="51"/>
-<rectangle x1="28.956" y1="25.146" x2="29.464" y2="25.654" layer="51"/>
-<rectangle x1="26.416" y1="25.146" x2="26.924" y2="25.654" layer="51"/>
-<rectangle x1="23.876" y1="25.146" x2="24.384" y2="25.654" layer="51"/>
-<text x="16.51" y="16.51" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="16.51" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<wire x1="31.75" y1="0" x2="31.75" y2="27.94" width="0.127" layer="51"/>
-<wire x1="-0.2" y1="-0.2" x2="31.95" y2="-0.2" width="0.2032" layer="21"/>
-<wire x1="0" y1="16.51" x2="0" y2="0" width="0.127" layer="51"/>
-<wire x1="0" y1="22.86" x2="0" y2="16.51" width="0.127" layer="51"/>
-<wire x1="31.95" y1="28.14" x2="-0.2" y2="28.14" width="0.2032" layer="21"/>
-<wire x1="0" y1="22.86" x2="-5.08" y2="22.86" width="0.127" layer="51"/>
-<wire x1="-5.08" y1="22.86" x2="-5.08" y2="16.51" width="0.127" layer="51"/>
-<wire x1="-5.28" y1="16.31" x2="-0.2" y2="16.31" width="0.2032" layer="21"/>
-<text x="29.21" y="24.13" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">LNA</text>
-<text x="26.67" y="24.13" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">VBAT</text>
-<text x="24.13" y="24.13" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">OPEN</text>
-<text x="21.59" y="24.13" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">SHORT</text>
-<text x="19.05" y="24.13" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">R1</text>
-<text x="16.51" y="24.13" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">R2</text>
-<text x="13.97" y="24.13" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">XRST</text>
-<text x="11.43" y="24.13" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">VCC</text>
-<text x="8.89" y="24.13" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">GND</text>
-<text x="6.35" y="24.13" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-right">XSTBY</text>
-<text x="6.35" y="4.064" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-left">R3</text>
-<text x="8.89" y="4.064" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-left">R4</text>
-<text x="11.43" y="4.064" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-left">PPS</text>
-<text x="13.97" y="4.064" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-left">RX-B</text>
-<text x="16.51" y="4.064" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-left">RX-A</text>
-<text x="19.05" y="4.064" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-left">R5</text>
-<text x="21.59" y="4.064" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-left">TX-A</text>
-<text x="24.13" y="4.064" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-left">TX-B</text>
-<text x="26.67" y="4.064" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-left">R6</text>
-<text x="29.21" y="4.064" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center-left">R7</text>
-<text x="16.51" y="15.24" size="1.27" layer="21" font="vector" ratio="15" align="center">Copernicus II DIP</text>
-</package>
-<package name="JST-6PIN-1MM">
-<description>&lt;h3&gt;6-Pin Vertical JST Connector&lt;/h3&gt;
-&lt;p&gt;&lt;ul&gt;&lt;li&gt;1.0mm pitch&lt;/li&gt;
-&lt;li&gt;JST-SH type&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;Common interface for SparkFun GPS modules.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/GPS/EM406-SMDConnector-eSH.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="-2.5" y1="-1.598" x2="2.58" y2="-1.598" width="0.2032" layer="21"/>
-<wire x1="3.342" y1="1.577" x2="4.104" y2="1.577" width="0.2032" layer="21"/>
-<wire x1="4.104" y1="1.577" x2="4.104" y2="0.688" width="0.2032" layer="21"/>
-<circle x="-3.262" y="2.212" radius="0.1047" width="0.4064" layer="21"/>
-<smd name="P$1" x="-3.8" y="-0.775" dx="1.2" dy="1.8" layer="1"/>
-<smd name="P$2" x="3.8" y="-0.775" dx="1.2" dy="1.8" layer="1"/>
-<smd name="1" x="-2.5" y="1.45" dx="0.6" dy="1.55" layer="1"/>
-<smd name="2" x="-1.5" y="1.45" dx="0.6" dy="1.55" layer="1"/>
-<smd name="3" x="-0.5" y="1.45" dx="0.6" dy="1.55" layer="1"/>
-<smd name="4" x="0.5" y="1.45" dx="0.6" dy="1.55" layer="1"/>
-<smd name="5" x="1.5" y="1.45" dx="0.6" dy="1.55" layer="1"/>
-<smd name="6" x="2.5" y="1.45" dx="0.6" dy="1.55" layer="1"/>
-<text x="-4.659" y="0.18" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
-<text x="4.739" y="0.18" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
-<wire x1="-4" y1="-1.471" x2="4" y2="-1.471" width="0.127" layer="51"/>
-<wire x1="4" y1="-1.471" x2="4" y2="1.471" width="0.127" layer="51"/>
-<wire x1="4" y1="1.471" x2="-4" y2="1.471" width="0.127" layer="51"/>
-<wire x1="-4" y1="1.471" x2="-4" y2="-1.471" width="0.127" layer="51"/>
-<wire x1="-4.104" y1="1.577" x2="-4.104" y2="0.688" width="0.2032" layer="21"/>
-<wire x1="-3.342" y1="1.577" x2="-4.104" y2="1.577" width="0.2032" layer="21"/>
-</package>
-<package name="EM-506_OUTLINE">
-<description>&lt;h3&gt;EM-406 and EM-506 module dimensions&lt;/h3&gt;
-&lt;p&gt;The EM-506 is a GPS receiver module with on-board voltage regulation and patch antenna built-in.&lt;/p&gt;
-&lt;p&gt;30 x 30 x 10.7 mm&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/12751"&gt;Product Link&lt;/a&gt;&lt;/p&gt;</description>
-<text x="0.24" y="0.24" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<wire x1="-15.127" y1="-15.127" x2="-15.127" y2="15.127" width="0.2032" layer="21"/>
-<wire x1="-15.127" y1="15.127" x2="15.127" y2="15.127" width="0.2032" layer="21"/>
-<wire x1="15" y1="15" x2="15" y2="-15" width="0.127" layer="51"/>
-<wire x1="15.127" y1="-15.127" x2="4" y2="-15.127" width="0.2032" layer="21"/>
-<wire x1="4" y1="-15.127" x2="-4" y2="-15.127" width="0.2032" layer="21"/>
-<wire x1="-4" y1="-15.127" x2="-15.127" y2="-15.127" width="0.2032" layer="21"/>
-<wire x1="-15" y1="-15" x2="-15" y2="15" width="0.127" layer="51"/>
-<wire x1="-15" y1="15" x2="15" y2="15" width="0.127" layer="51"/>
-<wire x1="15.127" y1="15.127" x2="15.127" y2="-15.127" width="0.2032" layer="21"/>
-<wire x1="15" y1="-15" x2="-15" y2="-15" width="0.127" layer="51"/>
-<wire x1="-4" y1="-15.127" x2="-4" y2="-12" width="0.2032" layer="21"/>
-<wire x1="-4" y1="-12" x2="4" y2="-12" width="0.2032" layer="21"/>
-<wire x1="4" y1="-15.127" x2="4" y2="-12" width="0.2032" layer="21"/>
-</package>
-<package name="10-PIN-SOCKET-0.5MM">
-<description>&lt;h3&gt;10-Pin SMD Socket for GS406/407&lt;/h3&gt;
-&lt;p&gt;50 Channel GS406 Helical GPS Receiver - SMD Connector
-&lt;br&gt;
-sku: GPS-09079&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/GPS/Modules/SPK-GPS-GS406-1R.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="2.477" y1="-2.837" x2="-2.477" y2="-2.837" width="0.2032" layer="21"/>
-<wire x1="-2.477" y1="2.817" x2="2.477" y2="2.817" width="0.2032" layer="21"/>
-<wire x1="2.4" y1="-2.75" x2="-2.4" y2="-2.75" width="0.127" layer="51"/>
-<wire x1="-2.4" y1="-2.75" x2="-2.4" y2="2.75" width="0.127" layer="51"/>
-<wire x1="-2.4" y1="2.75" x2="2.4" y2="2.75" width="0.127" layer="51"/>
-<wire x1="2.4" y1="2.75" x2="2.4" y2="-2.75" width="0.127" layer="51"/>
-<wire x1="-0.418" y1="2.697" x2="-0.418" y2="2.062" width="0.2032" layer="21"/>
-<wire x1="-0.418" y1="2.062" x2="0.598" y2="2.062" width="0.2032" layer="21"/>
-<wire x1="0.598" y1="2.062" x2="0.598" y2="2.697" width="0.2032" layer="21"/>
-<circle x="2.757" y="3.205" radius="0.3592" width="0" layer="21"/>
-<smd name="8" x="-2.85" y="-0.41" dx="1" dy="0.2" layer="1"/>
-<smd name="6" x="-2.85" y="0.09" dx="1" dy="0.2" layer="1"/>
-<smd name="4" x="-2.85" y="0.59" dx="1" dy="0.2" layer="1"/>
-<smd name="10" x="-2.85" y="-0.91" dx="1" dy="0.2" layer="1"/>
-<smd name="2" x="-2.85" y="1.09" dx="1" dy="0.2" layer="1"/>
-<smd name="1" x="2.85" y="1.09" dx="1" dy="0.2" layer="1"/>
-<smd name="3" x="2.85" y="0.59" dx="1" dy="0.2" layer="1"/>
-<smd name="5" x="2.85" y="0.09" dx="1" dy="0.2" layer="1"/>
-<smd name="7" x="2.85" y="-0.41" dx="1" dy="0.2" layer="1"/>
-<smd name="9" x="2.85" y="-0.91" dx="1" dy="0.2" layer="1"/>
-<text x="0" y="3.067" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
-<text x="0" y="-3.007" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
-<wire x1="-2.477" y1="1.481" x2="-2.477" y2="2.817" width="0.2032" layer="21"/>
-<wire x1="2.477" y1="-1.481" x2="2.477" y2="-2.817" width="0.2032" layer="21"/>
-<wire x1="2.477" y1="1.481" x2="2.477" y2="2.817" width="0.2032" layer="21"/>
-<wire x1="-2.477" y1="-1.481" x2="-2.477" y2="-2.817" width="0.2032" layer="21"/>
 </package>
 <package name="ID-12">
 <description>&lt;h3&gt;ID-2, ID-12, and ID-20 Low-voltage RFID Readers&lt;/h3&gt;
@@ -2144,96 +1437,6 @@ sku: GPS-09079&lt;/p&gt;
 <wire x1="17.6" y1="-2.5" x2="7.746" y2="-2.5" width="0.2032" layer="21"/>
 <wire x1="-7.673" y1="-2.5" x2="-17.4" y2="-2.5" width="0.2032" layer="21"/>
 </package>
-<package name="VENUS638FLPX">
-<description>&lt;h3&gt;Skytraq Venus638FLPX GPS Receiver - 44-pin 10 x 10 mm QFN&lt;/h3&gt;
-&lt;p&gt;Venus638FLPx  is  a  high  performance,  low  cost,  single chip GPS receiver.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Sensors/GPS/Venus638FLPx.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/10919"&gt;SparkFun Product Link&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="5" y1="5" x2="-5" y2="5" width="0.127" layer="51"/>
-<wire x1="-5" y1="5" x2="-5" y2="-5" width="0.127" layer="51"/>
-<wire x1="-5" y1="-5" x2="5" y2="-5" width="0.127" layer="51"/>
-<wire x1="5" y1="-5" x2="5" y2="5" width="0.127" layer="51"/>
-<wire x1="-5.1" y1="4.5" x2="-5.1" y2="5.1" width="0.2032" layer="21"/>
-<wire x1="-5.1" y1="5.1" x2="-4.5" y2="5.1" width="0.2032" layer="21"/>
-<wire x1="5.1" y1="4.5" x2="5.1" y2="5.1" width="0.2032" layer="21"/>
-<wire x1="5.1" y1="5.1" x2="4.5" y2="5.1" width="0.2032" layer="21"/>
-<wire x1="-5.1" y1="-4.5" x2="-5.1" y2="-5.1" width="0.2032" layer="21"/>
-<wire x1="-5.1" y1="-5.1" x2="-4.5" y2="-5.1" width="0.2032" layer="21"/>
-<wire x1="5.1" y1="-5.1" x2="5.1" y2="-4.5" width="0.2032" layer="21"/>
-<wire x1="5.1" y1="-5.1" x2="4.5" y2="-5.1" width="0.2032" layer="21"/>
-<circle x="-5.461" y="5.461" radius="0.381" width="0" layer="21"/>
-<smd name="28" x="4.9" y="0" dx="1" dy="0.36" layer="1"/>
-<smd name="29" x="4.9" y="0.8" dx="1" dy="0.36" layer="1"/>
-<smd name="30" x="4.9" y="1.6" dx="1" dy="0.36" layer="1"/>
-<smd name="31" x="4.9" y="2.4" dx="1" dy="0.36" layer="1"/>
-<smd name="32" x="4.9" y="3.2" dx="1" dy="0.36" layer="1"/>
-<smd name="33" x="4.9" y="4" dx="1" dy="0.36" layer="1"/>
-<smd name="23" x="4.9" y="-4" dx="1" dy="0.36" layer="1"/>
-<smd name="24" x="4.9" y="-3.2" dx="1" dy="0.36" layer="1"/>
-<smd name="25" x="4.9" y="-2.4" dx="1" dy="0.36" layer="1"/>
-<smd name="26" x="4.9" y="-1.6" dx="1" dy="0.36" layer="1"/>
-<smd name="27" x="4.9" y="-0.8" dx="1" dy="0.36" layer="1"/>
-<smd name="39" x="0" y="4.9" dx="1" dy="0.36" layer="1" rot="R90"/>
-<smd name="40" x="-0.8" y="4.9" dx="1" dy="0.36" layer="1" rot="R90"/>
-<smd name="41" x="-1.6" y="4.9" dx="1" dy="0.36" layer="1" rot="R90"/>
-<smd name="42" x="-2.4" y="4.9" dx="1" dy="0.36" layer="1" rot="R90"/>
-<smd name="43" x="-3.2" y="4.9" dx="1" dy="0.36" layer="1" rot="R90"/>
-<smd name="44" x="-4" y="4.9" dx="1" dy="0.36" layer="1" rot="R90"/>
-<smd name="34" x="4" y="4.9" dx="1" dy="0.36" layer="1" rot="R90"/>
-<smd name="35" x="3.2" y="4.9" dx="1" dy="0.36" layer="1" rot="R90"/>
-<smd name="36" x="2.4" y="4.9" dx="1" dy="0.36" layer="1" rot="R90"/>
-<smd name="37" x="1.6" y="4.9" dx="1" dy="0.36" layer="1" rot="R90"/>
-<smd name="38" x="0.8" y="4.9" dx="1" dy="0.36" layer="1" rot="R90"/>
-<smd name="6" x="-4.9" y="0" dx="1" dy="0.36" layer="1" rot="R180"/>
-<smd name="7" x="-4.9" y="-0.8" dx="1" dy="0.36" layer="1" rot="R180"/>
-<smd name="8" x="-4.9" y="-1.6" dx="1" dy="0.36" layer="1" rot="R180"/>
-<smd name="9" x="-4.9" y="-2.4" dx="1" dy="0.36" layer="1" rot="R180"/>
-<smd name="10" x="-4.9" y="-3.2" dx="1" dy="0.36" layer="1" rot="R180"/>
-<smd name="11" x="-4.9" y="-4" dx="1" dy="0.36" layer="1" rot="R180"/>
-<smd name="1" x="-4.9" y="4" dx="1" dy="0.36" layer="1" rot="R180"/>
-<smd name="2" x="-4.9" y="3.2" dx="1" dy="0.36" layer="1" rot="R180"/>
-<smd name="3" x="-4.9" y="2.4" dx="1" dy="0.36" layer="1" rot="R180"/>
-<smd name="4" x="-4.9" y="1.6" dx="1" dy="0.36" layer="1" rot="R180"/>
-<smd name="5" x="-4.9" y="0.8" dx="1" dy="0.36" layer="1" rot="R180"/>
-<smd name="17" x="0" y="-4.9" dx="1" dy="0.36" layer="1" rot="R270"/>
-<smd name="18" x="0.8" y="-4.9" dx="1" dy="0.36" layer="1" rot="R270"/>
-<smd name="19" x="1.6" y="-4.9" dx="1" dy="0.36" layer="1" rot="R270"/>
-<smd name="20" x="2.4" y="-4.9" dx="1" dy="0.36" layer="1" rot="R270"/>
-<smd name="21" x="3.2" y="-4.9" dx="1" dy="0.36" layer="1" rot="R270"/>
-<smd name="22" x="4" y="-4.9" dx="1" dy="0.36" layer="1" rot="R270"/>
-<smd name="12" x="-4" y="-4.9" dx="1" dy="0.36" layer="1" rot="R270"/>
-<smd name="13" x="-3.2" y="-4.9" dx="1" dy="0.36" layer="1" rot="R270"/>
-<smd name="14" x="-2.4" y="-4.9" dx="1" dy="0.36" layer="1" rot="R270"/>
-<smd name="15" x="-1.6" y="-4.9" dx="1" dy="0.36" layer="1" rot="R270"/>
-<smd name="16" x="-0.8" y="-4.9" dx="1" dy="0.36" layer="1" rot="R270"/>
-<smd name="45" x="-3" y="3" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<smd name="46" x="-3" y="1.5" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<smd name="47" x="-3" y="0" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<smd name="48" x="-3" y="-1.5" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<smd name="49" x="-3" y="-3" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<smd name="50" x="-1.5" y="3" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<smd name="51" x="-1.5" y="1.5" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<smd name="52" x="-1.5" y="0" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<smd name="53" x="-1.5" y="-1.5" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<smd name="54" x="-1.5" y="-3" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<smd name="55" x="0" y="3" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<smd name="56" x="0" y="1.5" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<smd name="57" x="0" y="0" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<smd name="58" x="0" y="-1.5" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<smd name="59" x="0" y="-3" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<smd name="60" x="1.5" y="3" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<smd name="61" x="1.5" y="1.5" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<smd name="62" x="1.5" y="0" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<smd name="63" x="1.5" y="-1.5" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<smd name="64" x="1.5" y="-3" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<smd name="65" x="3" y="3" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<smd name="66" x="3" y="1.5" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<smd name="67" x="3" y="0" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<smd name="68" x="3" y="-1.5" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<smd name="69" x="3" y="-3" dx="0.6" dy="0.6" layer="1" roundness="100"/>
-<text x="0" y="5.588" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-5.588" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-</package>
 <package name="WIFLY_GSX">
 <description>&lt;h3&gt;Roving Networks RN-131C (WiFly GSX) 802.11b/g Module&lt;/h3&gt;
 &lt;p&gt;Wi-Fi module with a 37 x 28.5 x 3.5 mm footprint.&lt;/p&gt;
@@ -2560,57 +1763,6 @@ Package for the Xtend Digi Modem 40 mile range.&lt;/p&gt;
 <wire x1="18.627" y1="-30.627" x2="18.627" y2="30.627" width="0.2032" layer="21"/>
 <wire x1="-18.5" y1="30.5" x2="18.5" y2="30.5" width="0.127" layer="51"/>
 <text x="-8.9" y="-28.7" size="1.016" layer="21" font="vector" ratio="15" align="top-center">1</text>
-</package>
-<package name="BLE112-A">
-<description>&lt;h3&gt;BLE112-A Bluetooth Smart Module&lt;/h3&gt;
-&lt;p&gt;Bluetooth 4.0 module with built-in chip antenna.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.mouser.com/ds/2/368/Bluegiga_Technologies_BLE112_Datasheet-558666.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="6.175" y1="9.2" x2="-6.175" y2="9.2" width="0.2032" layer="21"/>
-<smd name="13" x="-5.975" y="-6.85" dx="3" dy="0.85" layer="1" roundness="100"/>
-<smd name="12" x="-5.975" y="-5.6" dx="3" dy="0.85" layer="1" roundness="100"/>
-<smd name="11" x="-5.975" y="-4.35" dx="3" dy="0.85" layer="1" roundness="100"/>
-<smd name="10" x="-5.975" y="-3.1" dx="3" dy="0.85" layer="1" roundness="100"/>
-<smd name="9" x="-5.975" y="-1.85" dx="3" dy="0.85" layer="1" roundness="100"/>
-<smd name="8" x="-5.975" y="-0.6" dx="3" dy="0.85" layer="1" roundness="100"/>
-<smd name="7" x="-5.975" y="0.65" dx="3" dy="0.85" layer="1" roundness="100"/>
-<smd name="6" x="-5.975" y="1.9" dx="3" dy="0.85" layer="1" roundness="100"/>
-<smd name="5" x="-5.975" y="3.15" dx="3" dy="0.85" layer="1" roundness="100"/>
-<smd name="4" x="-5.975" y="4.4" dx="3" dy="0.85" layer="1" roundness="100"/>
-<smd name="3" x="-5.975" y="5.65" dx="3" dy="0.85" layer="1" roundness="100"/>
-<smd name="2" x="-5.975" y="6.9" dx="3" dy="0.85" layer="1" roundness="100"/>
-<smd name="1" x="-5.975" y="8.15" dx="3" dy="0.85" layer="1" roundness="100"/>
-<smd name="22" x="5.975" y="-6.85" dx="3" dy="0.85" layer="1" roundness="100"/>
-<smd name="23" x="5.975" y="-5.6" dx="3" dy="0.85" layer="1" roundness="100"/>
-<smd name="24" x="5.975" y="-4.35" dx="3" dy="0.85" layer="1" roundness="100"/>
-<smd name="25" x="5.975" y="-3.1" dx="3" dy="0.85" layer="1" roundness="100"/>
-<smd name="26" x="5.975" y="-1.85" dx="3" dy="0.85" layer="1" roundness="100"/>
-<smd name="27" x="5.975" y="-0.6" dx="3" dy="0.85" layer="1" roundness="100"/>
-<smd name="28" x="5.975" y="0.65" dx="3" dy="0.85" layer="1" roundness="100"/>
-<smd name="29" x="5.975" y="1.9" dx="3" dy="0.85" layer="1" roundness="100"/>
-<smd name="30" x="5.975" y="3.15" dx="3" dy="0.85" layer="1" roundness="100"/>
-<smd name="14" x="-4.375" y="-8.95" dx="3" dy="0.85" layer="1" roundness="100" rot="R90"/>
-<smd name="15" x="-3.125" y="-8.95" dx="3" dy="0.85" layer="1" roundness="100" rot="R90"/>
-<smd name="16" x="-1.875" y="-8.95" dx="3" dy="0.85" layer="1" roundness="100" rot="R90"/>
-<smd name="17" x="-0.625" y="-8.95" dx="3" dy="0.85" layer="1" roundness="100" rot="R90"/>
-<smd name="18" x="0.625" y="-8.95" dx="3" dy="0.85" layer="1" roundness="100" rot="R90"/>
-<smd name="19" x="1.875" y="-8.95" dx="3" dy="0.85" layer="1" roundness="100" rot="R90"/>
-<smd name="20" x="3.125" y="-8.95" dx="3" dy="0.85" layer="1" roundness="100" rot="R90"/>
-<smd name="21" x="4.375" y="-8.95" dx="3" dy="0.85" layer="1" roundness="100" rot="R90"/>
-<rectangle x1="0.325" y1="3.8" x2="6.025" y2="9.05" layer="39"/>
-<rectangle x1="0.325" y1="3.8" x2="6.025" y2="9.05" layer="40"/>
-<rectangle x1="0.325" y1="3.8" x2="6.025" y2="9.05" layer="43"/>
-<text x="0.325" y="1.11" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
-<text x="0.325" y="-1.43" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
-<wire x1="-6.025" y1="-9.05" x2="-6.025" y2="9.05" width="0.127" layer="51"/>
-<wire x1="-6.025" y1="9.05" x2="6.025" y2="9.05" width="0.127" layer="51"/>
-<wire x1="6.025" y1="9.05" x2="6.025" y2="-9.05" width="0.127" layer="51"/>
-<wire x1="6.025" y1="-9.05" x2="-6.025" y2="-9.05" width="0.127" layer="51"/>
-<wire x1="-6.175" y1="9.2" x2="-6.175" y2="8.8" width="0.2032" layer="21"/>
-<wire x1="6.175" y1="-9.2" x2="6.175" y2="-7.5" width="0.2032" layer="21"/>
-<wire x1="5.025" y1="-9.2" x2="6.175" y2="-9.2" width="0.2032" layer="21"/>
-<wire x1="-6.175" y1="-9.2" x2="-5.025" y2="-9.2" width="0.2032" layer="21"/>
-<wire x1="6.175" y1="3.8" x2="6.175" y2="9.2" width="0.2032" layer="21"/>
-<wire x1="-6.175" y1="-7.5" x2="-6.175" y2="-9.2" width="0.2032" layer="21"/>
 </package>
 <package name="BLUERADIO_BR-LE4.0-S2">
 <description>&lt;h3&gt;BlueRadio BR-LE4.0-S2 Bluetooth 4.0 Module&lt;/h3&gt;
@@ -6195,26 +5347,6 @@ Package for the Xtend Digi Modem 40 mile range.&lt;/p&gt;
 </package>
 </packages>
 <symbols>
-<symbol name="ALM-1412">
-<description>&lt;h3&gt;ALM-1412 GPS LNA-Filter Front-End Module&lt;/h3&gt;
-&lt;p&gt;Low-noise amplifier (LNA) module with integrated filter, designed for GPS band applications.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.mouser.com/ds/2/678/ALM-1412-909459.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
-<text x="-10.16" y="7.874" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="10.16" y="7.874" size="1.778" layer="96" font="vector" align="bottom-right">&gt;VALUE</text>
-<pin name="RF_IN" x="-12.7" y="-2.54" visible="pin" length="short"/>
-<pin name="GND" x="-5.08" y="-15.24" visible="pin" length="short" rot="R90"/>
-<pin name="SD" x="-12.7" y="2.54" visible="pin" length="short"/>
-<pin name="RF_OUT" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
-<pin name="VDD" x="0" y="10.16" visible="pin" length="short" rot="R270"/>
-<pin name="GND@6" x="-2.54" y="-15.24" length="short" rot="R90"/>
-<pin name="GND@7" x="0" y="-15.24" length="short" rot="R90"/>
-<pin name="GND@8" x="2.54" y="-15.24" length="short" rot="R90"/>
-<pin name="GND@9" x="5.08" y="-15.24" length="short" rot="R90"/>
-</symbol>
 <symbol name="ANTENNA-GROUNDED">
 <description>&lt;h3&gt;Antenna (with ground termination)&lt;/h3&gt;</description>
 <wire x1="0" y1="-2.54" x2="0" y2="-7.62" width="0.254" layer="94"/>
@@ -6411,97 +5543,6 @@ Package for the Xtend Digi Modem 40 mile range.&lt;/p&gt;
 <pin name="PIO2" x="17.78" y="15.24" length="middle" rot="R180"/>
 <pin name="PIO1" x="17.78" y="17.78" length="middle" rot="R180"/>
 <pin name="PIO0" x="17.78" y="20.32" length="middle" rot="R180"/>
-</symbol>
-<symbol name="COPERNICUS">
-<wire x1="-17.78" y1="17.78" x2="20.32" y2="17.78" width="0.254" layer="94"/>
-<wire x1="20.32" y1="17.78" x2="20.32" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-20.32" x2="-17.78" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-20.32" x2="-17.78" y2="17.78" width="0.254" layer="94"/>
-<text x="-17.78" y="18.034" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-17.78" y="-20.574" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
-<pin name="BOOT" x="-22.86" y="-7.62" length="middle"/>
-<pin name="SHORT" x="-22.86" y="-2.54" length="middle"/>
-<pin name="GND@4" x="-22.86" y="-15.24" length="middle"/>
-<pin name="GND@5" x="-22.86" y="-17.78" length="middle"/>
-<pin name="RFIN" x="-22.86" y="10.16" length="middle"/>
-<pin name="GND@3" x="-22.86" y="7.62" length="middle"/>
-<pin name="LNA" x="-22.86" y="5.08" length="middle"/>
-<pin name="GND@6" x="25.4" y="-17.78" length="middle" rot="R180"/>
-<pin name="XSTANDBY" x="25.4" y="-15.24" length="middle" rot="R180"/>
-<pin name="RESERVED3" x="25.4" y="-12.7" length="middle" rot="R180"/>
-<pin name="RESERVED4" x="25.4" y="-10.16" length="middle" rot="R180"/>
-<pin name="PPS" x="25.4" y="-7.62" length="middle" rot="R180"/>
-<pin name="RXD-A" x="25.4" y="-2.54" length="middle" rot="R180"/>
-<pin name="RESERVED5" x="25.4" y="0" length="middle" rot="R180"/>
-<pin name="TXD-A" x="25.4" y="2.54" length="middle" rot="R180"/>
-<pin name="TXD-B" x="25.4" y="5.08" length="middle" rot="R180"/>
-<pin name="RESERVED6" x="25.4" y="7.62" length="middle" rot="R180"/>
-<pin name="RESERVED7" x="25.4" y="10.16" length="middle" rot="R180"/>
-<pin name="GND@7" x="25.4" y="12.7" length="middle" rot="R180"/>
-<pin name="GND@8" x="25.4" y="15.24" length="middle" rot="R180"/>
-<pin name="GND@1" x="-22.86" y="15.24" length="middle"/>
-<pin name="GND@2" x="-22.86" y="12.7" length="middle"/>
-<pin name="RESERVED1" x="-22.86" y="2.54" length="middle"/>
-<pin name="OPEN" x="-22.86" y="0" length="middle"/>
-<pin name="RESERVED2" x="-22.86" y="-5.08" length="middle"/>
-<pin name="XRESET" x="-22.86" y="-10.16" length="middle"/>
-<pin name="RXD-B" x="25.4" y="-5.08" length="middle" rot="R180"/>
-<pin name="VCC" x="-22.86" y="-12.7" length="middle"/>
-</symbol>
-<symbol name="COPERNICUS-DIP">
-<wire x1="-17.78" y1="15.24" x2="17.78" y2="15.24" width="0.254" layer="94"/>
-<wire x1="17.78" y1="15.24" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-12.7" x2="-17.78" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-12.7" x2="-17.78" y2="15.24" width="0.254" layer="94"/>
-<pin name="BOOT" x="-22.86" y="0" length="middle"/>
-<pin name="SHORT" x="-22.86" y="5.08" length="middle"/>
-<pin name="GND" x="-22.86" y="-7.62" length="middle"/>
-<pin name="LNA" x="-22.86" y="12.7" length="middle"/>
-<pin name="XSTANDBY" x="-22.86" y="-10.16" length="middle"/>
-<pin name="RESERVED3" x="22.86" y="-10.16" length="middle" rot="R180"/>
-<pin name="RESERVED4" x="22.86" y="-7.62" length="middle" rot="R180"/>
-<pin name="PPS" x="22.86" y="-5.08" length="middle" rot="R180"/>
-<pin name="RXD-A" x="22.86" y="0" length="middle" rot="R180"/>
-<pin name="RESERVED5" x="22.86" y="2.54" length="middle" rot="R180"/>
-<pin name="TXD-A" x="22.86" y="5.08" length="middle" rot="R180"/>
-<pin name="TXD-B" x="22.86" y="7.62" length="middle" rot="R180"/>
-<pin name="RESERVED6" x="22.86" y="10.16" length="middle" rot="R180"/>
-<pin name="RESERVED7" x="22.86" y="12.7" length="middle" rot="R180"/>
-<pin name="RESERVED1" x="-22.86" y="10.16" length="middle"/>
-<pin name="OPEN" x="-22.86" y="7.62" length="middle"/>
-<pin name="RESERVED2" x="-22.86" y="2.54" length="middle"/>
-<pin name="XRESET" x="-22.86" y="-2.54" length="middle"/>
-<pin name="RXD-B" x="22.86" y="-2.54" length="middle" rot="R180"/>
-<pin name="VCC" x="-22.86" y="-5.08" length="middle"/>
-<text x="-17.78" y="15.494" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-17.78" y="-12.954" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
-</symbol>
-<symbol name="EM506_OUTLINE">
-<wire x1="0" y1="0" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="5.08" x2="10.16" y2="0" width="0.254" layer="94"/>
-<wire x1="10.16" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<text x="1.27" y="1.778" size="1.778" layer="94">EM406</text>
-<text x="0" y="5.334" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="0" y="-0.254" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
-</symbol>
-<symbol name="GS406SMD">
-<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="15.24" x2="7.62" y2="15.24" width="0.254" layer="94"/>
-<wire x1="7.62" y1="15.24" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
-<pin name="P1" x="-12.7" y="12.7" length="middle"/>
-<pin name="P2" x="-12.7" y="10.16" length="middle"/>
-<pin name="P3" x="-12.7" y="7.62" length="middle"/>
-<pin name="P4" x="-12.7" y="5.08" length="middle"/>
-<pin name="P5" x="-12.7" y="2.54" length="middle"/>
-<pin name="P6" x="-12.7" y="0" length="middle"/>
-<pin name="P7" x="-12.7" y="-2.54" length="middle"/>
-<pin name="P8" x="-12.7" y="-5.08" length="middle"/>
-<pin name="P9" x="-12.7" y="-7.62" length="middle"/>
-<pin name="P10" x="-12.7" y="-10.16" length="middle"/>
-<text x="-7.62" y="15.494" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-7.62" y="-12.954" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="ID-12">
 <wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
@@ -6905,79 +5946,6 @@ outputting the heart rate value.&lt;/p&gt;
 <text x="-15.24" y="45.974" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="-15.24" y="-45.974" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
-<symbol name="VENUS638FLPX-L">
-<description>&lt;h3&gt;Venus638FLPX-L GPS Receiver&lt;/h3&gt;
-
-&lt;p&gt;Venus638FLPx is a high performance, low cost, single
-chip GPS receiver targeting mobile consumer and cellular
-handset applications. It offers very low power
-consumption, high sensitivity, and best in class signal
-acquisition and time-to-first-fix performance.&lt;/p&gt;</description>
-<wire x1="-12.7" y1="-48.26" x2="12.7" y2="-48.26" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-48.26" x2="12.7" y2="40.64" width="0.254" layer="94"/>
-<wire x1="12.7" y1="40.64" x2="-12.7" y2="40.64" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="40.64" x2="-12.7" y2="-48.26" width="0.254" layer="94"/>
-<pin name="LED/GPIO0" x="-15.24" y="-17.78" length="short"/>
-<pin name="TXD0" x="-15.24" y="12.7" length="short"/>
-<pin name="RXD0" x="-15.24" y="15.24" length="short"/>
-<pin name="PPS" x="-15.24" y="-20.32" length="short"/>
-<pin name="CLK" x="-15.24" y="-12.7" length="short"/>
-<pin name="CSN" x="-15.24" y="-10.16" length="short"/>
-<pin name="MISO" x="-15.24" y="-7.62" length="short"/>
-<pin name="MOSI" x="-15.24" y="-5.08" length="short"/>
-<pin name="GND@10" x="-15.24" y="-30.48" length="short"/>
-<pin name="GND@11" x="-15.24" y="-33.02" length="short"/>
-<pin name="GND@19" x="-15.24" y="-38.1" length="short"/>
-<pin name="GND@15" x="-15.24" y="-35.56" length="short"/>
-<pin name="GNDRF@21" x="15.24" y="-15.24" length="short" rot="R180"/>
-<pin name="GNDRF@22" x="15.24" y="-17.78" length="short" rot="R180"/>
-<pin name="GNDRF@24" x="15.24" y="-20.32" length="short" rot="R180"/>
-<pin name="GNDRF@25" x="15.24" y="-22.86" length="short" rot="R180"/>
-<pin name="GNDRF@27" x="15.24" y="-25.4" length="short" rot="R180"/>
-<pin name="GNDRF@28" x="15.24" y="-27.94" length="short" rot="R180"/>
-<pin name="GNDRF@29" x="15.24" y="-30.48" length="short" rot="R180"/>
-<pin name="GNDRF@31" x="15.24" y="-33.02" length="short" rot="R180"/>
-<pin name="GNDRF@33" x="15.24" y="-35.56" length="short" rot="R180"/>
-<pin name="RTC" x="-15.24" y="-25.4" length="short"/>
-<pin name="BTSEL" x="-15.24" y="20.32" length="short"/>
-<pin name="RSTN" x="-15.24" y="27.94" length="short"/>
-<pin name="RFIN" x="15.24" y="38.1" length="short" rot="R180"/>
-<pin name="VCC" x="-15.24" y="35.56" length="short"/>
-<pin name="VBAT" x="-15.24" y="22.86" length="short"/>
-<pin name="GPIO1" x="15.24" y="33.02" length="short" rot="R180"/>
-<pin name="REGEN" x="-15.24" y="30.48" length="short"/>
-<pin name="GPIO2" x="15.24" y="30.48" length="short" rot="R180"/>
-<pin name="GPIO20" x="15.24" y="7.62" length="short" rot="R180"/>
-<pin name="PIO12" x="15.24" y="15.24" length="short" rot="R180"/>
-<pin name="PIO14" x="15.24" y="12.7" length="short" rot="R180"/>
-<pin name="GPIO24" x="15.24" y="0" length="short" rot="R180"/>
-<pin name="SDA" x="-15.24" y="2.54" length="short"/>
-<pin name="SCL" x="-15.24" y="0" length="short"/>
-<pin name="GPIO4" x="15.24" y="25.4" length="short" rot="R180"/>
-<pin name="GPIO3" x="15.24" y="27.94" length="short" rot="R180"/>
-<pin name="GND@49" x="-15.24" y="-40.64" length="short"/>
-<pin name="PIO5" x="15.24" y="22.86" length="short" rot="R180"/>
-<pin name="PIO11" x="15.24" y="17.78" length="short" rot="R180"/>
-<pin name="RXD1" x="-15.24" y="10.16" length="short"/>
-<pin name="GPIO25" x="15.24" y="-2.54" length="short" rot="R180"/>
-<pin name="GPIO30" x="15.24" y="-10.16" length="short" rot="R180"/>
-<pin name="PIO15" x="15.24" y="10.16" length="short" rot="R180"/>
-<pin name="TXD1" x="-15.24" y="7.62" length="short"/>
-<pin name="VCC@58" x="-15.24" y="38.1" length="short"/>
-<pin name="GPIO28" x="15.24" y="-5.08" length="short" rot="R180"/>
-<pin name="GND@60" x="-15.24" y="-43.18" length="short"/>
-<pin name="GNDRF@61" x="15.24" y="-38.1" length="short" rot="R180"/>
-<pin name="GNDRF@62" x="15.24" y="-40.64" length="short" rot="R180"/>
-<pin name="GPIO6" x="15.24" y="20.32" length="short" rot="R180"/>
-<pin name="GND@64" x="-15.24" y="-45.72" length="short"/>
-<pin name="GNDRF@65" x="15.24" y="-43.18" length="short" rot="R180"/>
-<pin name="GNDRF@69" x="15.24" y="-45.72" length="short" rot="R180"/>
-<pin name="GPIO22" x="15.24" y="5.08" length="short" rot="R180"/>
-<pin name="GPIO23" x="15.24" y="2.54" length="short" rot="R180"/>
-<pin name="GPIO29" x="15.24" y="-7.62" length="short" rot="R180"/>
-<text x="-12.7" y="40.894" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-12.7" y="-48.514" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
-</symbol>
 <symbol name="WIFLY_GSX">
 <description>&lt;h3&gt;Roving Networks WiFly GSX (RN-131C) Wi-Fi Module&lt;/h3&gt;
 &lt;p&gt;The WiFly GSX (RN-131C) module is a complete ultra low power embedded TCP/IP solution. The WiFly GSX module is a stand alone, embedded wireless 802.11b/g networking module.&lt;/p&gt;
@@ -7053,46 +6021,6 @@ acquisition and time-to-first-fix performance.&lt;/p&gt;</description>
 <pin name="CONFIG" x="-10.16" y="-12.7" length="short"/>
 <text x="-7.62" y="15.494" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="-7.62" y="-15.494" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
-</symbol>
-<symbol name="BLE112-A">
-<description>BlueGiga BLE112-A module&lt;BR&gt;
-Bluetooth 4.0 module with chip antenna.</description>
-<pin name="GND1" x="-20.32" y="15.24" length="short"/>
-<pin name="AVDD1" x="-20.32" y="12.7" length="short"/>
-<pin name="AVDD2" x="-20.32" y="10.16" length="short"/>
-<pin name="P2_2" x="-20.32" y="7.62" length="short"/>
-<pin name="P2_1" x="-20.32" y="5.08" length="short"/>
-<pin name="P2_0" x="-20.32" y="2.54" length="short"/>
-<pin name="P1_7" x="-20.32" y="0" length="short"/>
-<pin name="P1_6" x="-20.32" y="-2.54" length="short"/>
-<pin name="VDD_USB" x="-20.32" y="-5.08" length="short"/>
-<pin name="GND2" x="-20.32" y="-7.62" length="short"/>
-<pin name="USB+" x="-20.32" y="-10.16" length="short"/>
-<pin name="USB-" x="-20.32" y="-12.7" length="short"/>
-<pin name="P1_5" x="-20.32" y="-15.24" length="short"/>
-<pin name="P1_4" x="-7.62" y="-20.32" length="short" rot="R90"/>
-<pin name="P1_3" x="-5.08" y="-20.32" length="short" rot="R90"/>
-<pin name="P1_2" x="-2.54" y="-20.32" length="short" rot="R90"/>
-<pin name="P1_1" x="0" y="-20.32" length="short" rot="R90"/>
-<pin name="P1_0" x="2.54" y="-20.32" length="short" rot="R90"/>
-<pin name="P0_7" x="5.08" y="-20.32" length="short" rot="R90"/>
-<pin name="DVDD" x="7.62" y="-20.32" length="short" rot="R90"/>
-<pin name="GND3" x="10.16" y="-20.32" length="short" rot="R90"/>
-<pin name="P0_6" x="22.86" y="-15.24" length="short" rot="R180"/>
-<pin name="P0_5" x="22.86" y="-12.7" length="short" rot="R180"/>
-<pin name="P0_4" x="22.86" y="-10.16" length="short" rot="R180"/>
-<pin name="P0_3" x="22.86" y="-7.62" length="short" rot="R180"/>
-<pin name="P0_2" x="22.86" y="-5.08" length="short" rot="R180"/>
-<pin name="P0_1" x="22.86" y="-2.54" length="short" rot="R180"/>
-<pin name="P0_0" x="22.86" y="0" length="short" rot="R180"/>
-<pin name="RESET" x="22.86" y="2.54" length="short" rot="R180"/>
-<pin name="GND4" x="22.86" y="5.08" length="short" rot="R180"/>
-<wire x1="-17.78" y1="17.78" x2="-17.78" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-17.78" y1="-17.78" x2="20.32" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="20.32" y1="-17.78" x2="20.32" y2="17.78" width="0.254" layer="94"/>
-<wire x1="20.32" y1="17.78" x2="-17.78" y2="17.78" width="0.254" layer="94"/>
-<text x="20.32" y="18.034" size="1.778" layer="96" font="vector" align="bottom-right">&gt;Value</text>
-<text x="-17.78" y="18.034" size="1.778" layer="95" font="vector">&gt;Name</text>
 </symbol>
 <symbol name="BLUERADIO_BR-LE4.0-S2">
 <wire x1="-12.7" y1="43.18" x2="12.7" y2="43.18" width="0.254" layer="94"/>
@@ -7526,98 +6454,16 @@ regulations. &lt;/p&gt;
 <text x="-20.32" y="38.354" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="-20.32" y="-35.814" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
-<symbol name="EM-506">
-<description>&lt;h3&gt;EM-506 High Performance GPS Module&lt;/h3&gt;
-&lt;p&gt;EM-506 GPS module features high sensitivity, low power and ultra small form factor. This GPS module is powered by SiRF Star IV, it can provide you with superior sensitivity and performance even in urban canyon and dense foliage environment. With SiRF CGEE (Client Generated Extended Ephemeris) technology, it predicts satellite positions for up to 3 days and delivers CGEE-start time of less than 15 seconds under most conditions, without any network assistance. Besides, MicroPower Mode allows GPS module to stay in a hot-start condition nearly continuously while consuming very little power.&lt;/p&gt;
-&lt;p&gt;Product Features:
-&lt;ul&gt;&lt;li&gt;SiRF Star IV high performance GPS Chipset&lt;/li&gt;
-&lt;li&gt;Very high sensitivity (Tracking Sensitivity: -163 dBm)&lt;/li&gt;
-&lt;li&gt;Extremely fast TTFF (Time To First Fix) at low signal level&lt;/li&gt;
-&lt;li&gt;Support UART interface.&lt;/li&gt;
-&lt;li&gt;Built-in LNA(with in CHIP)&lt;/li&gt;
-&lt;li&gt;Compact size (30.0mm x 30.0 mm x 10.7mm) suitable for space-sensitive application&lt;/li&gt;
-&lt;li&gt;Support NMEA 0183 V3.0 (GGA, GSA, GSV, RMC, VTG, GLL, ZDA) &lt;/li&gt;
-&lt;li&gt;Support OSP protocol&lt;/li&gt;
-&lt;li&gt;Support SBAS (WASS, EGNOS, MSAS, GAGAN)&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
-<pin name="VIN" x="-10.16" y="5.08" length="short"/>
-<pin name="RX" x="-10.16" y="2.54" length="short"/>
-<pin name="TX" x="-10.16" y="0" length="short"/>
-<pin name="DIRECTIVE" x="-10.16" y="-2.54" length="short"/>
-<pin name="GND@1" x="-10.16" y="-5.08" length="short"/>
-<pin name="GND@5" x="-10.16" y="-7.62" length="short"/>
-<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<text x="-7.62" y="7.874" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-7.62" y="-10.414" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
-</symbol>
-<symbol name="GP-735T">
-<description>&lt;h3&gt;GP-735 - Easy-to-use, Ultra-high performance, GPS Smart Antenna Module&lt;/h3&gt;
-
-&lt;p&gt;ADH-tech GP-735 is a slim, ultra-high performance, easy to use GPS smart antenna module designed with u-blox’s latest 7th generation single chip. This feature rich GPS module not only shortens the design efforts but also provides powerful functions. The compact design allows fast adoption and high yield production. The power control feature is very convenient to turn on/off power just via GPIO control pin. It’s  especially useful to turn off power as the GPS function is not needed in the host applications.&lt;/p&gt;
-
-&lt;p&gt;Features
-&lt;ul&gt;&lt;li&gt;Easy adoption with best performance&lt;/li&gt;
-&lt;li&gt;Built-in narrow patch antenna for dimension demanding application&lt;/li&gt;
-&lt;li&gt;Models of I-PEX RF connector option available for using external antenna&lt;/li&gt;
-&lt;li&gt;Built-in backup power pin for faster position fix&lt;/li&gt;
-&lt;li&gt;UART-TTL interface support&lt;/li&gt;
-&lt;li&gt;Minimum RF and EMI efforts&lt;/li&gt;
-&lt;li&gt;Fully implementation of ultra-high performance u-blox 7 single chip architecture&lt;/li&gt;
-&lt;li&gt;High tracking sensitivity of -162dBm!&lt;/li&gt;
-&lt;li&gt;Low power consumption of 37mA for average tracking&lt;/li&gt;
-&lt;li&gt;Hardware power saving control pin allowing power on/off GPS via GPIO&lt;/li&gt;
-&lt;li&gt;Windows location sensor support&lt;/li&gt;
-&lt;li&gt;A-GPS support&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/GPS/GP-735T-150203.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
-<pin name="VCC" x="-10.16" y="5.08" length="short"/>
-<pin name="RX" x="-10.16" y="0" length="short"/>
-<pin name="TX" x="-10.16" y="2.54" length="short"/>
-<pin name="V_BAT" x="-10.16" y="-2.54" length="short"/>
-<pin name="PWR_CTRL" x="-10.16" y="-5.08" length="short"/>
-<pin name="GND" x="-10.16" y="-7.62" length="short"/>
-<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<text x="-7.62" y="7.874" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-7.62" y="-10.414" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
-</symbol>
 </symbols>
 <devicesets>
-<deviceset name="ALM-1412">
-<description>&lt;h3&gt;ALM-1412 GPS LNA-Filter Front-End Module&lt;/h3&gt;
-&lt;p&gt;Low-noise amplifier (LNA) module with integrated filter, designed for GPS band applications.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.mouser.com/ds/2/678/ALM-1412-909459.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="ALM-1412" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ALM-1412">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="GND@6" pad="6"/>
-<connect gate="G$1" pin="GND@7" pad="7"/>
-<connect gate="G$1" pin="GND@8" pad="8"/>
-<connect gate="G$1" pin="GND@9" pad="9"/>
-<connect gate="G$1" pin="RF_IN" pad="5"/>
-<connect gate="G$1" pin="RF_OUT" pad="3"/>
-<connect gate="G$1" pin="SD" pad="1"/>
-<connect gate="G$1" pin="VDD" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="COMP-08740"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="ANTENNA">
-<description>&lt;b&gt;Chip antenna&lt;/b&gt;&lt;p&gt;
-Single endded antenna. Common with smaller chip antennas. CHIP4 package is the GPS Chip Antenna &lt;b&gt;SKU:&lt;/b&gt; GPS-08418. CHIP5 package is 2.4GHz chip antenna &lt;b&gt;SKU:&lt;/b&gt; WRL-00144.</description>
+<description>&lt;h3&gt;Single-ended Antennae&lt;/h3&gt;
+&lt;p&gt;2.4GHz and antennae with just one terminal. These are all chip antennae.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;2.4GHz (WiFi/BT/ZigBee) Antennae&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;ANT-2.4GHZ-6.5X2.2MM&lt;/b&gt; - 6.5 x 2.2 mm chip antenna. (&lt;a href="https://www.sparkfun.com/products/144"&gt;SparkFun Product&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;ANT-2.4GHZ8.0X1.0MM&lt;/b&gt; -  8.0 x 1.0 mm chip antenna. (&lt;a href="http://www.mouser.com/ds/2/611/antenna_2500at44m0400-242425.pdf"&gt;Datasheet&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;ANT-2.4GHZ9.5X2.0MM&lt;/b&gt; - 9.5 x 2.0 mm chip antenna. (&lt;a href="https://www.sparkfun.com/products/9025"&gt;SparkFun Product&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="ANTENNA" x="0" y="0"/>
 </gates>
@@ -7633,18 +6479,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 </technology>
 </technologies>
 </device>
-<device name="GPS-2X8MM" package="ANT-GPS-2X8MM">
-<connects>
-<connect gate="G$1" pin="SIGNAL" pad="SIG"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="GPS-08510"/>
-<attribute name="SF_ID" value="GPS-08418"/>
-<attribute name="VALUE" value="1.575GHz"/>
-</technology>
-</technologies>
-</device>
 <device name="2.4GHZ-6.5X2.2MM" package="ANT-2.4GHZ-6.5X2.2MM">
 <connects>
 <connect gate="G$1" pin="SIGNAL" pad="FEED"/>
@@ -7654,18 +6488,6 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <attribute name="PROD_ID" value="ANT-08187"/>
 <attribute name="SF_ID" value="WRL-00144"/>
 <attribute name="VALUE" value="2.45GHz"/>
-</technology>
-</technologies>
-</device>
-<device name="GPS-2X7MM" package="ANT-GPS-2X7MM">
-<connects>
-<connect gate="G$1" pin="SIGNAL" pad="1"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="ANT-09087"/>
-<attribute name="SF_ID" value="GPS-09131"/>
-<attribute name="VALUE" value="1.575GHz"/>
 </technology>
 </technologies>
 </device>
@@ -7789,8 +6611,13 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 </device>
 </devices>
 </deviceset>
-<deviceset name="BLUETOOTH-RN41">
-<description>Bluetooth SMD module</description>
+<deviceset name="BLUETOOTH-RN-41">
+<description>&lt;h3&gt;Roving Networks RN-41 Bluetooth Module&lt;/h3&gt;
+&lt;p&gt;The RN-41 module is a small form factor, low power, class 1 Bluetooth radio that is ideal for designers who want to add wireless capability to their products without spending significant time and money developing Bluetooth-specific hardware and software. The RN-41 supports multiple interface protocols, is simple to design in, and is fully certified, making it a complete embedded Bluetooth solution.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products&lt;/b&gt;:
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12575"&gt;Bluetooth SMD Module - RN-41&lt;/a&gt; (WRL-12575)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12579"&gt;Bluetooth Module Breakout - Roving Networks (RN-41 v6.15)&lt;/a&gt; (WRL-12579)&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="RN41" x="0" y="0"/>
 </gates>
@@ -7831,13 +6658,20 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <connect gate="G$1" pin="VDD" pad="11"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-11844"/>
+<attribute name="SF_ID" value="WRL-12575"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BTM182" prefix="U">
-<description>BTM-182 Bluetooth Module from Rayson</description>
+<deviceset name="BTM-182" prefix="U">
+<description>&lt;h3&gt;Rayson BTM-182 Bluetooth Module&lt;/h3&gt;
+&lt;p&gt;The BTM-182  is an easy to use Bluetooth SPP (Serial Port Protocol) module, designed for transparent wireless serial connection setup. This is a fully qualified Bluetooth V2.0+EDR (Enhanced Data Rate) 3Mbps modulation with complete 2.4GHz radio transceiver. It uses CSR Bluecore 04 external single chip Bluetooth system with CMOS technology and with AFH (Adaptive Frequency Hopping).&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products&lt;/b&gt;:
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/retired/9977"&gt;Bluetooth DIP Module - Rayson BTM-182&lt;/a&gt; (WRL-9977)&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="BTM182" x="0" y="0"/>
 </gates>
@@ -7878,135 +6712,23 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <connect gate="G$1" pin="VDD_USB" pad="16"/>
 </connects>
 <technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="COPERNICUS" prefix="IC">
-<description>Copernicus II GPS-  Trimble recommended layout and paste layer. Footprint production proven. Spark Fun Electronics SKU : GPS-07951</description>
-<gates>
-<gate name="G$2" symbol="COPERNICUS" x="-17.78" y="17.78"/>
-</gates>
-<devices>
-<device name="SMD" package="COPERNICUS">
-<connects>
-<connect gate="G$2" pin="BOOT" pad="10"/>
-<connect gate="G$2" pin="GND@1" pad="1"/>
-<connect gate="G$2" pin="GND@2" pad="2"/>
-<connect gate="G$2" pin="GND@3" pad="4"/>
-<connect gate="G$2" pin="GND@4" pad="13"/>
-<connect gate="G$2" pin="GND@5" pad="14"/>
-<connect gate="G$2" pin="GND@6" pad="15"/>
-<connect gate="G$2" pin="GND@7" pad="27"/>
-<connect gate="G$2" pin="GND@8" pad="28"/>
-<connect gate="G$2" pin="LNA" pad="5"/>
-<connect gate="G$2" pin="OPEN" pad="7"/>
-<connect gate="G$2" pin="PPS" pad="19"/>
-<connect gate="G$2" pin="RESERVED1" pad="6"/>
-<connect gate="G$2" pin="RESERVED2" pad="9"/>
-<connect gate="G$2" pin="RESERVED3" pad="17"/>
-<connect gate="G$2" pin="RESERVED4" pad="18"/>
-<connect gate="G$2" pin="RESERVED5" pad="22"/>
-<connect gate="G$2" pin="RESERVED6" pad="25"/>
-<connect gate="G$2" pin="RESERVED7" pad="26"/>
-<connect gate="G$2" pin="RFIN" pad="3"/>
-<connect gate="G$2" pin="RXD-A" pad="21"/>
-<connect gate="G$2" pin="RXD-B" pad="20"/>
-<connect gate="G$2" pin="SHORT" pad="8"/>
-<connect gate="G$2" pin="TXD-A" pad="23"/>
-<connect gate="G$2" pin="TXD-B" pad="24"/>
-<connect gate="G$2" pin="VCC" pad="12"/>
-<connect gate="G$2" pin="XRESET" pad="11"/>
-<connect gate="G$2" pin="XSTANDBY" pad="16"/>
-</connects>
-<technologies>
 <technology name="">
-<attribute name="PROD_ID" value="GPS-10735"/>
+<attribute name="PROD_ID" value="IC-09842"/>
+<attribute name="SF_ID" value="WRL-09913"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="COPERNICUS-DIP">
-<description>Copernicus II dip module, SKU GPS-10923</description>
-<gates>
-<gate name="G$1" symbol="COPERNICUS-DIP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="PTH" package="COPERNICUS-DIP">
-<connects>
-<connect gate="G$1" pin="BOOT" pad="6"/>
-<connect gate="G$1" pin="GND" pad="9"/>
-<connect gate="G$1" pin="LNA" pad="1"/>
-<connect gate="G$1" pin="OPEN" pad="3"/>
-<connect gate="G$1" pin="PPS" pad="13"/>
-<connect gate="G$1" pin="RESERVED1" pad="2"/>
-<connect gate="G$1" pin="RESERVED2" pad="5"/>
-<connect gate="G$1" pin="RESERVED3" pad="11"/>
-<connect gate="G$1" pin="RESERVED4" pad="12"/>
-<connect gate="G$1" pin="RESERVED5" pad="16"/>
-<connect gate="G$1" pin="RESERVED6" pad="19"/>
-<connect gate="G$1" pin="RESERVED7" pad="20"/>
-<connect gate="G$1" pin="RXD-A" pad="15"/>
-<connect gate="G$1" pin="RXD-B" pad="14"/>
-<connect gate="G$1" pin="SHORT" pad="4"/>
-<connect gate="G$1" pin="TXD-A" pad="17"/>
-<connect gate="G$1" pin="TXD-B" pad="18"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-<connect gate="G$1" pin="XRESET" pad="7"/>
-<connect gate="G$1" pin="XSTANDBY" pad="10"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="SF_ID" value="11858"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="EM-506_OUTLINE">
-<description>Package outline for EM406 GPS module</description>
-<gates>
-<gate name="G$1" symbol="EM506_OUTLINE" x="-5.08" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="EM-506_OUTLINE">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="GS406SMD" prefix="U">
-<description>50 Channel GS406 Helical GPS Receiver - SMD Connector.  The Mating SMD SPECIAL is called SPECIAL for a reason. This package was only made in order to make a dummy gs407 PCB with mating connector (used for testing).
-
-sku: GPS-09079</description>
-<gates>
-<gate name="CONNECTOR" symbol="GS406SMD" x="2.54" y="0"/>
-</gates>
-<devices>
-<device name="SOCKET" package="10-PIN-SOCKET-0.5MM">
-<connects>
-<connect gate="CONNECTOR" pin="P1" pad="1"/>
-<connect gate="CONNECTOR" pin="P10" pad="10"/>
-<connect gate="CONNECTOR" pin="P2" pad="2"/>
-<connect gate="CONNECTOR" pin="P3" pad="3"/>
-<connect gate="CONNECTOR" pin="P4" pad="4"/>
-<connect gate="CONNECTOR" pin="P5" pad="5"/>
-<connect gate="CONNECTOR" pin="P6" pad="6"/>
-<connect gate="CONNECTOR" pin="P7" pad="7"/>
-<connect gate="CONNECTOR" pin="P8" pad="8"/>
-<connect gate="CONNECTOR" pin="P9" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="ID-12/20">
-<description>RFID reader for ID2, ID12, and ID20 Package</description>
+<description>&lt;h3&gt;ID Innovations 125kHz RFID Reader (ID2, ID3, ID12, and ID20)&lt;/h3&gt;
+&lt;p&gt;The IDS, ID3, ID12, and ID20 are very simple to use RFID reader modules. Power the module, hold up a 125kHz card, and get a serial string output containing the unique ID of the card.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11862"&gt;RFID Reader ID-3LA (125 kHz)&lt;/a&gt; (SEN-11862)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11827"&gt;RFID Reader ID-12LA (125 kHz)&lt;/a&gt; (SEN-11827)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11828"&gt;RFID Reader ID-20LA (125 kHz)&lt;/a&gt; (SEN-11828)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9963"&gt;SparkFun RFID USB Reader&lt;/a&gt; (SEN-9963)&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="ID-12" x="0" y="-2.54"/>
 </gates>
@@ -8026,7 +6748,9 @@ sku: GPS-09079</description>
 <connect gate="G$1" pin="RES" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-08875"/>
+</technology>
 </technologies>
 </device>
 <device name="ID-12_LOCK" package="ID-12_LOCK">
@@ -8044,7 +6768,9 @@ sku: GPS-09079</description>
 <connect gate="G$1" pin="RES" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-08875"/>
+</technology>
 </technologies>
 </device>
 <device name="SMD" package="ID-12_SMD">
@@ -8062,14 +6788,21 @@ sku: GPS-09079</description>
 <connect gate="G$1" pin="RES" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-09345, CONN-09344"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="NRF24L01">
-<description>&lt;b&gt;2.4GHz Low Power Transceiver&lt;/b&gt;
-This is the very popular, low cost, very low power RF transceiver from Nordic Semiconductor. Simple SPI interface. SKU: COM-00690</description>
+<description>&lt;h3&gt;Nordic nrf24L01 2.4GHz Low-power Transceiver&lt;/h3&gt;
+&lt;p&gt;This is the very popular, low cost, very low power RF transceiver from Nordic Semiconductor. Simple SPI interface.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/690"&gt;2.4GHz Transceiver IC - nRF24L01+&lt;/a&gt; (COM-00690)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/705"&gt;SparkFun Transceiver Breakout - nRF24L01+ (RP-SMA)&lt;/a&gt; (WRL-00705)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/691"&gt;SparkFun Transceiver Breakout - nRF24L01+&lt;/a&gt; (COM-00691)&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="NRF24L01-1" x="0" y="0"/>
 </gates>
@@ -8160,7 +6893,9 @@ This is the very popular, low cost, very low power RF transceiver from Nordic Se
 <deviceset name="NRF24LU1">
 <description>&lt;h3&gt;Nordic nRF24LU1+ Single-Chip 2.4GHz Transceiver w/ USB Microcontroller and Flash&lt;/h3&gt;
 &lt;p&gt;Nordic’s nRF24LU1+ is a complete system-on-chip wireless transceiver. The nRF24LU1+ features a fully integrated USB 2.0 compliant device controller, which makes this chip a great choice for a compact wireless USB dongle. The nRF24LU1+ is compatible with our nRF24L01+ 2.4GHz RF transceivers as well. Additional features include an 8-bit application microcontroller, 32 kB flash memory, 6 GPIO pins, SPI and UART support, and up to 2Mbps on air data rates.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/retired/9525"&gt;2.4GHz Transceiver IC - nRF24LU1+ (COM-09525)&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;b&gt;SparkFun Products&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9525"&gt;2.4GHz Transceiver IC - nRF24LU1+&lt;/a&gt; (COM-09525)&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="NRF24LU1" x="0" y="0"/>
 </gates>
@@ -8211,7 +6946,9 @@ This is the very popular, low cost, very low power RF transceiver from Nordic Se
 <deviceset name="RF-LINK_RX">
 <description>&lt;h3&gt;RF Link Receiver (434 MHz, 315 MHz)&lt;/h3&gt;
 &lt;p&gt;These wireless receivers work with equivalent transmitters. They can easily fit into a breadboard and work well with microcontrollers to create a very simple wireless data link. Since these are only receivers, they will only work communicating data one-way, you would need two pairs (of different frequencies) to act as a transmitter/receiver pair..&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/10532"&gt;RF Link Receiver - 4800bps (434 MHz) (WRL-10532)&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;b&gt;SparkFun Products&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10532"&gt;RF Link Receiver - 4800bps (434 MHz)&lt;/a&gt;(WRL-10532)&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="RF-LINK_RX" x="0" y="0"/>
 </gates>
@@ -8234,7 +6971,8 @@ This is the very popular, low cost, very low power RF transceiver from Nordic Se
 <deviceset name="RF-LINK_TX">
 <description>&lt;h3&gt;RF Link Transmitter (434 MHz, 315 MHz)&lt;/h3&gt;
 &lt;p&gt;These wireless transmitters work with equivalent receivers. They can easily fit into a breadboard and work well with microcontrollers to create a very simple wireless data link. Since these are only transmitters, they will only work communicating data one-way, you would need two pairs (of different frequencies) to act as a transmitter/receiver pair.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/10534"&gt;RF Link Transmitter - 434MHz (WRL-10534)&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;b&gt;SparkFun Products&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10534"&gt;RF Link Transmitter - 434MHz&lt;/a&gt; (WRL-10534)&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="RF-LINK_TX" x="0" y="0"/>
 </gates>
@@ -8258,7 +6996,8 @@ This is the very popular, low cost, very low power RF transceiver from Nordic Se
 <description>&lt;h3&gt;Hope RF RFM22 ISM Transciever Module&lt;/h3&gt;
 
 &lt;p&gt;The RFM22 is a low-power, low cost radio that is capable of operating in the 434MHz and 900MHz open bands. It's frequency is software defined and there are some very good libraries written for it.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/11018"&gt;SparkFun RFM22 Shield - 434MHz (DEV-11018)&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;b&gt;SparkFun Products&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11018"&gt;SparkFun RFM22 Shield - 434MHz&lt;/a&gt; (DEV-11018)&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="RFM22" x="0" y="0"/>
 </gates>
@@ -8327,7 +7066,8 @@ transmitter belt. The complete heart rate measurement
 system consists of three different parts; transmitter,
 receiver and electronics and/or display device that is
 outputting the heart rate value.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/8661"&gt;Polar Heart Rate Monitor Interface (SEN-08661)&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;b&gt;SparkFun Products&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8661"&gt;Polar Heart Rate Monitor Interface&lt;/a&gt; (SEN-08661)&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="RMCM01" x="0" y="0"/>
 </gates>
@@ -8357,7 +7097,10 @@ outputting the heart rate value.&lt;/p&gt;
 <deviceset name="RN171" prefix="U">
 <description>&lt;h3&gt;Roving Networks RN-171 802.11b/g WiFi Serial Module&lt;/h3&gt; 
 &lt;p&gt;The RN-171 is a small form factor, ultra-low power embedded TCP/IP module. The RN-171 is a standalone, complete TCP/IP wireless networking module. Due to its small form factor and extremely low power consumption, it is perfect for mobile wireless applications such as asset monitoring, sensors, and portable battery operated devices.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/retired/11049"&gt;WiFly RN-171 802.11b/g Serial Module (WRL-11049)&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;b&gt;SparkFun Products&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/retired/11049"&gt;WiFly RN-171 802.11b/g Serial Module&lt;/a&gt; (WRL-11049)&lt;/li&gt;
+
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="RN171" x="0" y="0"/>
 </gates>
@@ -8419,7 +7162,12 @@ outputting the heart rate value.&lt;/p&gt;
 <deviceset name="SI4703" prefix="U">
 <description>&lt;h3&gt;Silicon Labs Si4703 FM Tuner&lt;/h3&gt;
 &lt;p&gt;Beyond enabling you to tune in to FM radio stations, the Si4703 is also capable of detecting and processing both Radio Data Service (RDS) and Radio Broadcast Data Service (RBDS) information. The Si4703 even does a very good job of filtering and carrier detection. It also enables data such as the station ID and song name to be displayed to the user.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/12938"&gt;SparkFun FM Tuner Evaluation Board - Si4703 (WRL-12938)&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;b&gt;SparkFun Products&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12938"&gt;SparkFun FM Tuner Evaluation Board - Si4703&lt;/a&gt; (WRL-12938)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11083"&gt;SparkFun FM Tuner Basic Breakout - Si4703&lt;/a&gt; (WRL-11083)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11043"&gt;FabFM Radio Kit &lt;/a&gt; (KIT-11043)&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="SI470X" x="0" y="0"/>
 </gates>
@@ -8457,7 +7205,8 @@ outputting the heart rate value.&lt;/p&gt;
 <deviceset name="SM130" prefix="U">
 <description>&lt;h3&gt;SonMicro SMB130 - 13.56 MHz RFID Mifare Read/Write Module&lt;/h3&gt;
 &lt;p&gt;The SMB130 is a 28 pin DIP module that includes all necessary components for a 13.56 MHz RFID MIFARE®, aside from a PCB antenna.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/10126"&gt;SparkFun Product Link&lt;/a&gt;&lt;/p&gt;</description>
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10126"&gt;RFID Module - SM130 MIFARE® (13.56 MHz) &lt;/a&gt; (SEN-10126)&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="SM130" x="0" y="0"/>
 </gates>
@@ -8495,7 +7244,8 @@ outputting the heart rate value.&lt;/p&gt;
 <deviceset name="SM5100B">
 <description>&lt;h3&gt;LinkSprite SM5100B GSM/GPRS Module&lt;/h3&gt;
 &lt;p&gt;The SM5100B is a miniature, quad-band GSM 850/EGSM 900/DCS 1800/PCS 1900 module, which can be integrated into a great number of wireless projects. You can use this module to accomplish almost anything a normal cell phone can - SMS text messages, GSM/GPRS, TCP/IP, and more!&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/9533"&gt;SparkFun Product Link&lt;/a&gt;&lt;/p&gt;</description>
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9533"&gt;GSM/GPRS Module - SM5100B&lt;/a&gt; (CEL-09533)&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="SM5100B" x="0" y="0"/>
 </gates>
@@ -8571,127 +7321,11 @@ outputting the heart rate value.&lt;/p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="VENUS638FLPX-L" prefix="U">
-<description>&lt;h3&gt;Venus638FLPX-L GPS Receiver&lt;/h3&gt;
-
-Venus638FLPx is a high performance, low cost, single
-chip GPS receiver targeting mobile consumer and cellular
-handset applications. It offers very low power
-consumption, high sensitivity, and best in class signal
-acquisition and time-to-first-fix performance.&lt;p&gt;
-Venus638FLPx contains all the necessary components of
-a complete GPS receiver, includes 1.2dB cascaded
-system NF RF front-end, GPS baseband signal processor,
-0.5ppm TCXO, 32.768kHz RTC crystal, RTC LDO
-regulator, and passive components. It requires very low
-external component count and takes up only 100mm2
-PCB footprint.&lt;p&gt;
-Dedicated massive-correlator signal parameter search
-engine within the baseband enables rapid search of all the
-available satellites and acquisition of very weak signal. An
-advanced track engine allows weak signal tracking and
-positioning in harsh environments such as urban canyons
-and under deep foliage. The self-contained architecture keeps GPS processing off
-the host and allows integration into applications with very
-little resource.&lt;p&gt;
-FEATURES&lt;p&gt;
-&lt;ul&gt;
-&lt;li&gt;20Hz update rate&lt;/li&gt;
-&lt;li&gt;-148dBm cold start sensitivity&lt;/li&gt;
-&lt;li&gt;-165dBm tracking sensitivity&lt;/li&gt;
-&lt;li&gt;29 second cold start TTFF&lt;/li&gt;
-&lt;li&gt;3.5 second TTFF with AGPS&lt;/li&gt;
-&lt;li&gt;1 second hot start&lt;/li&gt;
-&lt;li&gt;2.5m accuracy&lt;/li&gt;
-&lt;li&gt;Multipath detection and suppression&lt;/li&gt;
-&lt;li&gt;Jamming detection and mitigation&lt;/li&gt;
-&lt;li&gt;SBAS (WAAS / EGNOS) support&lt;/li&gt;
-&lt;li&gt;7-day extended ephemeris AGPS&lt;/li&gt;
-&lt;li&gt;67mW full power navigation&lt;/li&gt;
-&lt;li&gt;Works directly with active or passive antenna&lt;/li&gt;
-&lt;li&gt;Internal flash for optional 75K point data logging&lt;/li&gt;
-&lt;li&gt;Supports external SPI flash memory data logging&lt;/li&gt;
-&lt;li&gt;Complete receiver in 10mm x 10mm x 1.3mm size&lt;/li&gt;
-&lt;li&gt;Contains LNA, SAW Filter, TCXO, RTC Xtal, LDO&lt;/li&gt;
-&lt;li&gt;Pb-free RoHS compliant&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="VENUS638FLPX-L" x="0" y="15.24"/>
-</gates>
-<devices>
-<device name="" package="VENUS638FLPX">
-<connects>
-<connect gate="G$1" pin="BTSEL" pad="9"/>
-<connect gate="G$1" pin="CLK" pad="41"/>
-<connect gate="G$1" pin="CSN" pad="43"/>
-<connect gate="G$1" pin="GND@10" pad="10"/>
-<connect gate="G$1" pin="GND@11" pad="11"/>
-<connect gate="G$1" pin="GND@15" pad="15"/>
-<connect gate="G$1" pin="GND@19" pad="19"/>
-<connect gate="G$1" pin="GND@49" pad="49"/>
-<connect gate="G$1" pin="GND@60" pad="60"/>
-<connect gate="G$1" pin="GND@64" pad="64"/>
-<connect gate="G$1" pin="GNDRF@21" pad="21"/>
-<connect gate="G$1" pin="GNDRF@22" pad="22"/>
-<connect gate="G$1" pin="GNDRF@24" pad="24"/>
-<connect gate="G$1" pin="GNDRF@25" pad="25"/>
-<connect gate="G$1" pin="GNDRF@27" pad="27"/>
-<connect gate="G$1" pin="GNDRF@28" pad="28"/>
-<connect gate="G$1" pin="GNDRF@29" pad="29"/>
-<connect gate="G$1" pin="GNDRF@31" pad="31"/>
-<connect gate="G$1" pin="GNDRF@33" pad="33"/>
-<connect gate="G$1" pin="GNDRF@61" pad="61"/>
-<connect gate="G$1" pin="GNDRF@62" pad="62"/>
-<connect gate="G$1" pin="GNDRF@65" pad="65"/>
-<connect gate="G$1" pin="GNDRF@69" pad="69"/>
-<connect gate="G$1" pin="GPIO1" pad="6"/>
-<connect gate="G$1" pin="GPIO2" pad="5"/>
-<connect gate="G$1" pin="GPIO20" pad="14"/>
-<connect gate="G$1" pin="GPIO22" pad="12"/>
-<connect gate="G$1" pin="GPIO23" pad="13"/>
-<connect gate="G$1" pin="GPIO24" pad="8"/>
-<connect gate="G$1" pin="GPIO25" pad="53"/>
-<connect gate="G$1" pin="GPIO28" pad="59"/>
-<connect gate="G$1" pin="GPIO29" pad="16"/>
-<connect gate="G$1" pin="GPIO3" pad="48"/>
-<connect gate="G$1" pin="GPIO30" pad="54"/>
-<connect gate="G$1" pin="GPIO4" pad="47"/>
-<connect gate="G$1" pin="GPIO6" pad="63"/>
-<connect gate="G$1" pin="LED/GPIO0" pad="7"/>
-<connect gate="G$1" pin="MISO" pad="39"/>
-<connect gate="G$1" pin="MOSI" pad="38"/>
-<connect gate="G$1" pin="PIO11" pad="51"/>
-<connect gate="G$1" pin="PIO12" pad="4"/>
-<connect gate="G$1" pin="PIO14" pad="37"/>
-<connect gate="G$1" pin="PIO15" pad="55"/>
-<connect gate="G$1" pin="PIO5" pad="50"/>
-<connect gate="G$1" pin="PPS" pad="40"/>
-<connect gate="G$1" pin="REGEN" pad="36"/>
-<connect gate="G$1" pin="RFIN" pad="32"/>
-<connect gate="G$1" pin="RSTN" pad="1"/>
-<connect gate="G$1" pin="RTC" pad="17"/>
-<connect gate="G$1" pin="RXD0" pad="42"/>
-<connect gate="G$1" pin="RXD1" pad="52"/>
-<connect gate="G$1" pin="SCL" pad="46"/>
-<connect gate="G$1" pin="SDA" pad="45"/>
-<connect gate="G$1" pin="TXD0" pad="44"/>
-<connect gate="G$1" pin="TXD1" pad="57"/>
-<connect gate="G$1" pin="VBAT" pad="18"/>
-<connect gate="G$1" pin="VCC" pad="2"/>
-<connect gate="G$1" pin="VCC@58" pad="58"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="IC-10734"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="WIFLY_GSX">
 <description>&lt;h3&gt;Roving Networks WiFly GSX (RN-131C) Wi-Fi Module&lt;/h3&gt;
 &lt;p&gt;The WiFly GSX (RN-131C) module is a complete ultra low power embedded TCP/IP solution. The WiFly GSX module is a stand alone, embedded wireless 802.11b/g networking module.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/10004"&gt;SparkFun Product Link&lt;/a&gt;&lt;/p&gt;</description>
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10004"&gt;WiFly GSX 802.11b/g Serial Module - Roving Networks&lt;/a&gt; (WRL-10004)&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="WIFLY_GSX" x="0" y="0"/>
 </gates>
@@ -8755,7 +7389,8 @@ FEATURES&lt;p&gt;
 <deviceset name="XTEND-DIGI-MODEM">
 <description>&lt;h3&gt;Digi XTend 900 1W RF Transceiver&lt;/h3&gt;
 &lt;p&gt;The XTend Modem packs a ton of RF punch into a small, low-power, easy-to-use, and reliable module. Outdoors, with line-of-sight, this module can communicate at up to 40 miles; indoors it can still do up to 3000ft. The module transfers a standard asynchronous serial data stream, operates within the ISM 900MHz frequency band and sustains up to 115.2kbps data throughput. The module comes with an attached RPSMA antenna connector.&lt;/p&gt;
-&lt;p&gt;&lt;A href="https://www.sparkfun.com/products/9411"&gt;SparkFun Product (WRL-09411)&lt;/a&gt;&lt;/p&gt;</description>
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9411"&gt;XTend 900 1W RPSMA - 40 Mile Range&lt;/a&gt; (WRL-09411)&lt;/li&gt;&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="XTEND-DIGI-MODEM" x="0" y="2.54"/>
 </gates>
@@ -8782,56 +7417,12 @@ FEATURES&lt;p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="BLE112-A" prefix="U">
-<description>BlueGiga Bluetooth 4.0 module&lt;br&gt;
-with integrated chip antenna and onboard&lt;br&gt;
-8051 processor and peripherals</description>
-<gates>
-<gate name="G$1" symbol="BLE112-A" x="-5.08" y="30.48"/>
-</gates>
-<devices>
-<device name="" package="BLE112-A">
-<connects>
-<connect gate="G$1" pin="AVDD1" pad="2"/>
-<connect gate="G$1" pin="AVDD2" pad="3"/>
-<connect gate="G$1" pin="DVDD" pad="20"/>
-<connect gate="G$1" pin="GND1" pad="1"/>
-<connect gate="G$1" pin="GND2" pad="10"/>
-<connect gate="G$1" pin="GND3" pad="21"/>
-<connect gate="G$1" pin="GND4" pad="30"/>
-<connect gate="G$1" pin="P0_0" pad="28"/>
-<connect gate="G$1" pin="P0_1" pad="27"/>
-<connect gate="G$1" pin="P0_2" pad="26"/>
-<connect gate="G$1" pin="P0_3" pad="25"/>
-<connect gate="G$1" pin="P0_4" pad="24"/>
-<connect gate="G$1" pin="P0_5" pad="23"/>
-<connect gate="G$1" pin="P0_6" pad="22"/>
-<connect gate="G$1" pin="P0_7" pad="19"/>
-<connect gate="G$1" pin="P1_0" pad="18"/>
-<connect gate="G$1" pin="P1_1" pad="17"/>
-<connect gate="G$1" pin="P1_2" pad="16"/>
-<connect gate="G$1" pin="P1_3" pad="15"/>
-<connect gate="G$1" pin="P1_4" pad="14"/>
-<connect gate="G$1" pin="P1_5" pad="13"/>
-<connect gate="G$1" pin="P1_6" pad="8"/>
-<connect gate="G$1" pin="P1_7" pad="7"/>
-<connect gate="G$1" pin="P2_0" pad="6"/>
-<connect gate="G$1" pin="P2_1" pad="5"/>
-<connect gate="G$1" pin="P2_2" pad="4"/>
-<connect gate="G$1" pin="RESET" pad="29"/>
-<connect gate="G$1" pin="USB+" pad="11"/>
-<connect gate="G$1" pin="USB-" pad="12"/>
-<connect gate="G$1" pin="VDD_USB" pad="9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="BLUERADIO_BR-LE4.0-S2" uservalue="yes">
-<description>BlueRadios BlueTooth 4.0 Module&lt;br&gt;
-BR-LE4.0-S2A&lt;br&gt;</description>
+<description>&lt;H3&gt;Blue Radios BR-LE4.0-S2A BlueTooth 4.0 Module&lt;/H3&gt;
+&lt;p&gt;The BR-LE4.0-S2A is a standalone Class 1 Bluetooth 4.0 module that requires no firmware or external components. Custom client applications can be written directly onto the module, which supports both analog and digital peripherals, eliminating the need for a second microprocessor. Alternately, the BR-LE4.0-S2A can be integrated into an existing design as a HCI network processor device, with a host processor running the core application and the BR-LE4.0-S2A providing Bluetooth low energy communications.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products&lt;/b&gt;:
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12991"&gt;Bluetooth 4.0 Module - BR-LE 4.0-S2A&lt;/a&gt; (WRL-12991)&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="BLUERADIO_BR-LE4.0-S2" x="0" y="5.08"/>
 </gates>
@@ -8880,11 +7471,12 @@ BR-LE4.0-S2A&lt;br&gt;</description>
 </deviceset>
 <deviceset name="ELECTRIC_IMP" prefix="U">
 <description>&lt;h3&gt;Electric Imp SD Socket&lt;/h3&gt;
-This symbol matches the &lt;a href="https://www.sparkfun.com/products/11395"&gt;Electric Imp&lt;/a&gt; pinout to a 4UCONN SD MMC connector.&lt;br&gt;
-&lt;br&gt;
-The  4UCONN part number is &lt;a href="http://www.4uconnector.com/online/Itemadrawing.asp?fldseries=19646&amp;seriesno_a=12"&gt;19646&lt;/a&gt;.&lt;br&gt;
-&lt;br&gt;
-See this part in action on the &lt;a href="https://www.sparkfun.com/products/11400"&gt;Electric Imp Breakout&lt;/a&gt;.</description>
+&lt;p&gt;The Electric Imp provides an easy, integrated way to connect almost any hardware device both to other devices and to internet services. It’s more than just a WiFi card, or even a WiFi module with processing built in - it’s an integrated platform that deals with the drudgery of connectivity, allowing you to concentrate on the application instead of the mechanics.
+&lt;p&gt;This device matches the &lt;a href="https://www.sparkfun.com/products/11395"&gt;Electric Imp&lt;/a&gt; pinout to a 4UCONN SD MMC connector. The 4UCONN part number for the connector is &lt;a href="http://www.4uconnector.com/online/Itemadrawing.asp?fldseries=19646&amp;seriesno_a=12"&gt;19646&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products&lt;/b&gt;:
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12886"&gt;Electric Imp Breakout&lt;/a&gt; (WRL-12886)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12887"&gt;SparkFun Electric Imp Shield&lt;/a&gt; (WRL-12887)&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="ELECTRIC_IMP" x="0" y="0"/>
 </gates>
@@ -8914,19 +7506,13 @@ See this part in action on the &lt;a href="https://www.sparkfun.com/products/114
 </devices>
 </deviceset>
 <deviceset name="BC127" prefix="U" uservalue="yes">
-<description>&lt;H3&gt;Blue Creations BC127 BLE module&lt;/H3&gt;&lt;p&gt;
-Hyper-competent Bluetooth 4.0 module, with:&lt;br&gt;
-- Pre-4.0 support&lt;br&gt;
-- 4 Cap sense inputs&lt;br&gt;
-- 1 Analog input&lt;br&gt;
-- 8 GPIO&lt;br&gt;
-- 3 Open-drain LED drivers&lt;br&gt;
-- Onboard battery charge circuitry&lt;br&gt;
-- SPP/UART support&lt;br&gt;
-- PCM Audio support&lt;br&gt;
-- SPI port&lt;br&gt;
-- Built-in USB&lt;br&gt;
-- All kinds of other crazy crap&lt;br&gt;</description>
+<description>&lt;H3&gt;Blue Creations BC127 BLE module&lt;/H3&gt;
+&lt;p&gt;The BC127 is a highly flexible, low power, small form factor Bluetooth Version 4.0 Certified Audio module. It comes preloaded with BlueCreation Melody software, and is ideal for developers who want to quickly and cost effectively integrate Bluetooth functionality into their products.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products&lt;/b&gt;:
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12819"&gt;Bluetooth SMD Module - BC127&lt;/a&gt; (WRL-12819)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11927"&gt;Bluetooth Audio Breakout - BC127&lt;/a&gt; (WRL-11927)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11924"&gt;Purpletooth Jamboree - BC127 Development Board&lt;/a&gt; (WRL-11924)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name=".ANALOG_AUDIO" symbol="BC127_ANALOG_AUDIO" x="-66.04" y="-5.08"/>
 <gate name=".GPIO" symbol="BC127_GPIO" x="-33.02" y="-5.08"/>
@@ -8991,6 +7577,12 @@ Hyper-competent Bluetooth 4.0 module, with:&lt;br&gt;
 </devices>
 </deviceset>
 <deviceset name="BLUETOOTH-RN-52">
+<description>&lt;h3&gt;Roving Networks RN-52 Bluetooth Audio Module&lt;/h3&gt;
+&lt;p&gt;The RN-52 is an audio module that provides a highly integrated solution for delivering high quality stereo audio in a small form factor with little difficulty. This module is perfect for a project involving hands free audio for your car, remote controlling your media center, or streaming 2-channel audio.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products&lt;/b&gt;:
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11678"&gt;RN-52 - Bluetooth Audio Module&lt;/a&gt; (WRL-11678)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12849"&gt;Audio Bluetooth Breakout - RN-52&lt;/a&gt; (WRL-12849)&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="RN-52" x="0" y="0"/>
 </gates>
@@ -9049,13 +7641,22 @@ Hyper-competent Bluetooth 4.0 module, with:&lt;br&gt;
 <connect gate="G$1" pin="VDD" pad="20"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-11569"/>
+<attribute name="SF_ID" value="WRL-11678"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="CC3000">
-<description>TI CC3000 WiFi Module</description>
+<description>&lt;h3&gt;Texas Instruments CC3000 WiFi Module&lt;/h3&gt;
+&lt;p&gt;The CC3000 from TI (Texas Instruments) is a self-contained wireless network processor that makes incorporating internet connectivity into your project simple. Instead of the more standard UART communication method, the CC3000 module utilizes an SPI interface allowing you, the user, to control the flow of data as you please.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12820"&gt;WiFi SMD Module - CC3000&lt;/a&gt; (WRL-12820)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12072"&gt;SparkFun WiFi Breakout - CC3000&lt;/a&gt; (WRL-12072)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12071"&gt;SparkFun WiFi Shield - CC3000&lt;/a&gt; (WRL-12071)&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="CC3000" x="0" y="0"/>
 </gates>
@@ -9112,6 +7713,7 @@ Hyper-competent Bluetooth 4.0 module, with:&lt;br&gt;
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-12643"/>
+<attribute name="SF_ID" value="WRL-13444"/>
 </technology>
 </technologies>
 </device>
@@ -9119,20 +7721,14 @@ Hyper-competent Bluetooth 4.0 module, with:&lt;br&gt;
 </deviceset>
 <deviceset name="RFM69H" prefix="U">
 <description>&lt;h3&gt;Hope RF RFM69H ISM Transceiver Module&lt;/h3&gt; 
-&lt;p&gt;The RFM69H is a transceiver module capable of operation 
-over a wide frequency range, including the 
-315,433,868 and 
-915MHz license-free ISM (Industry Scientific and Medical) 
-frequency bands. All major RF communication parameters 
-are programmable and most of them  can  be  dynamically 
-set.  The  RFM69H  offers  the unique advantage of 
-programmable narrow-band and wide- band  communication 
-modes. The RFM69H is optimized for low power 
-consumption while offering high RF output power and 
-channelized operation.
-Compliance  ETSI and FCC 
-regulations. &lt;/p&gt;
-&lt;p&gt;&lt;a href="http://www.hoperf.cn/upload/docs/RF/SX/RFM69H_DataSheet_v1.3.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;The RFM69H is a transceiver module capable of operation over a wide frequency range, including the 315,433,868 and 915MHz license-free ISM (Industry Scientific and Medical) frequency bands. All major RF communication parameters are programmable and most of them  can  be  dynamically set.  The  RFM69H  offers  the unique advantage of programmable narrow-band and wide- band  communication modes. The RFM69H is optimized for low power consumption while offering high RF output power and channelized operation.Compliance  ETSI and FCC regulations. &lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.hoperf.cn/upload/docs/RF/SX/RFM69H_DataSheet_v1.3.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13909"&gt;RFM69HCW Wireless Transceiver - 915MHz&lt;/a&gt; (COM-13909)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13910"&gt;RFM69HCW Wireless Transceiver - 434MHz&lt;/a&gt; (COM-13910)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12775"&gt;SparkFun RFM69 Breakout (915MHz)&lt;/a&gt; (WRL-12775)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12823"&gt;SparkFun RFM69 Breakout (434MHz)&lt;/a&gt; (WRL-12823)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="RFM69H" x="0" y="-2.54"/>
 </gates>
@@ -9246,6 +7842,16 @@ regulations. &lt;/p&gt;
 </devices>
 </deviceset>
 <deviceset name="BC118" prefix="U" uservalue="yes">
+<description>&lt;h3&gt;Blue Creation BC118 Bluetooth 4.0 Audio Module&lt;/h3&gt;
+&lt;p&gt;BC118 consists of a Bluetooth Smart (Bluetooth 4.0) radio, a microprocessor running an embedded protocol stack. The
+module is controlled by high level UART instructions or GPIOs. B118 supports UART and I2C Transparent mode for
+cable replacement, standard/custom profiles, central and peripheral modes. It can connect to any Android, iOS or
+Windows Mobile Smartphone that is Bluetooth smart capable. The firmware can be upgraded using an App provided by
+BlueCreation. BC118 can run standalone, with a host processor or controlled by an App.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://media.digikey.com/pdf/Data%20Sheets/BlueCreation%20PDFs/BC118_DS.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products&lt;/b&gt;:
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13019"&gt;BLE Mate 2&lt;/a&gt; (WRL-13019)
+&lt;/li&gt;&lt;/ul&gt;</description>
 <gates>
 <gate name="G1" symbol="BC118_POWER" x="0" y="0"/>
 <gate name="G2" symbol="BC118_PIO" x="22.86" y="0"/>
@@ -9289,8 +7895,15 @@ regulations. &lt;/p&gt;
 <deviceset name="XBEE" prefix="JP" uservalue="yes">
 <description>&lt;h3&gt;Digi XBee and XBee Pro&lt;/h3&gt;
 &lt;p&gt;XBees are tiny blue chips that can communicate wirelessly with each other. They can do simple things, like replacing a couple of wires in serial communication, which is nice when you want to make a remote for your paintball vehicle.&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://cdn.sparkfun.com/r/300-300/assets/parts/6/8/0/5/11215-01.jpg"&gt;&lt;/img&gt;
-&lt;p&gt;&lt;a href="https://www.sparkfun.com/pages/xbee_guide"&gt;SparkFun XBee Buying Guide&lt;/a&gt;&lt;/p&gt;</description>
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/pages/xbee_guide"&gt;SparkFun XBee Buying Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11812"&gt;SparkFun XBee Explorer USB&lt;/a&gt; (WRL-11812)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8276"&gt;Breakout Board for XBee Module&lt;/a&gt; (WRL-8276)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11373"&gt;SparkFun XBee Explorer Regulated&lt;/a&gt; (WRL-11373)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11697"&gt;SparkFun XBee Explorer Dongle&lt;/a&gt; (WRL-11697)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12847"&gt;SparkFun XBee Shield&lt;/a&gt; (WRL-12847)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13225"&gt;SparkFun XBee Explorer Serial&lt;/a&gt; (WRL-13225)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="XBEE" x="0" y="0"/>
 </gates>
@@ -9435,8 +8048,15 @@ regulations. &lt;/p&gt;
 </devices>
 </deviceset>
 <deviceset name="ESP8266" prefix="U">
-<description>&lt;h3&gt;Espressif ESP8266&lt;/h3&gt;
-&lt;p&gt;WiFi Smart Connectivity Platform.&lt;/p&gt;</description>
+<description>&lt;h3&gt;Espressif ESP8266 WiFi/Microcontroller SoC&lt;/h3&gt;
+&lt;p&gt;The ESP8266 WiFi Module is a self contained SOC with integrated TCP/IP protocol stack that can give any microcontroller access to your WiFi network. The ESP8266 is capable of either hosting an application or offloading all Wi-Fi networking functions from another application processor.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13678"&gt;WiFi Module ESP8266&lt;/a&gt; (WRL-13678)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13231"&gt;SparkFun ESP8266 Thing&lt;/a&gt; (WRL-13231)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13287"&gt;SparkFun WiFi Shield - ESP8266&lt;/a&gt; (WRL-13287)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13711"&gt;SparkFun ESP8266 Thing - Dev Board&lt;/a&gt; (WRL-13711)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13794"&gt;SparkFun Blynk Board - ESP8266&lt;/a&gt; (WRL-13794)&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="ESP8266" x="0" y="0"/>
 </gates>
@@ -9486,8 +8106,18 @@ regulations. &lt;/p&gt;
 </devices>
 </deviceset>
 <deviceset name="ANTENNA-GROUNDED" prefix="E">
-<description>&lt;h3&gt;Antenna with Ground Connection&lt;/h3&gt;
-&lt;p&gt;For antenna's that need a connection to ground&lt;/p&gt;</description>
+<description>&lt;h3&gt;Antenna w/ Ground Connection&lt;/h3&gt;
+&lt;p&gt;2.4GHz antennae with signal and ground terminals.&lt;/p&gt;
+&lt;p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;TRACE_ANTENNA_2.4GHZ_15.2MM&lt;/b&gt; - Meander Trace antenna
+&lt;ul&gt;&lt;li&gt;15.2 x 5.7mm footprint&lt;/li&gt;
+&lt;li&gt;Based on layout from &lt;a href="http://www.ti.com/lit/an/swra117d/swra117d.pdf"&gt;TI app note AN043&lt;/a&gt;.&lt;/li&gt;&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;TRACE_ANTENNA_2.4GHZ_25.7MM&lt;/b&gt; - Inverted F trace antenna
+&lt;ul&gt;&lt;li&gt;25.7 x 7.5 mm footprint.&lt;/li&gt;
+&lt;li&gt;Based on layout from &lt;a href="http://www.ti.com/lit/an/swru120b/swru120b.pdf"&gt;TI design note DN0007&lt;/a&gt;.&lt;/li&gt;&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="ANTENNA-GROUNDED" x="0" y="5.08"/>
 </gates>
@@ -9508,81 +8138,6 @@ regulations. &lt;/p&gt;
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="EM-506" prefix="J">
-<description>&lt;h3&gt;EM-506 High Performance GPS Module&lt;/h3&gt;
-&lt;p&gt;EM-506 GPS module features high sensitivity, low power and ultra small form factor. This GPS module is powered by SiRF Star IV, it can provide you with superior sensitivity and performance even in urban canyon and dense foliage environment. With SiRF CGEE (Client Generated Extended Ephemeris) technology, it predicts satellite positions for up to 3 days and delivers CGEE-start time of less than 15 seconds under most conditions, without any network assistance. Besides, MicroPower Mode allows GPS module to stay in a hot-start condition nearly continuously while consuming very little power.&lt;/p&gt;
-&lt;p&gt;Product Features:
-&lt;ul&gt;&lt;li&gt;SiRF Star IV high performance GPS Chipset&lt;/li&gt;
-&lt;li&gt;Very high sensitivity (Tracking Sensitivity: -163 dBm)&lt;/li&gt;
-&lt;li&gt;Extremely fast TTFF (Time To First Fix) at low signal level&lt;/li&gt;
-&lt;li&gt;Support UART interface.&lt;/li&gt;
-&lt;li&gt;Built-in LNA(with in CHIP)&lt;/li&gt;
-&lt;li&gt;Compact size (30.0mm x 30.0 mm x 10.7mm) suitable for space-sensitive application&lt;/li&gt;
-&lt;li&gt;Support NMEA 0183 V3.0 (GGA, GSA, GSV, RMC, VTG, GLL, ZDA) &lt;/li&gt;
-&lt;li&gt;Support OSP protocol&lt;/li&gt;
-&lt;li&gt;Support SBAS (WASS, EGNOS, MSAS, GAGAN)&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="EM-506" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-VERTICAL" package="JST-6PIN-1MM">
-<connects>
-<connect gate="G$1" pin="DIRECTIVE" pad="6"/>
-<connect gate="G$1" pin="GND@1" pad="1"/>
-<connect gate="G$1" pin="GND@5" pad="5"/>
-<connect gate="G$1" pin="RX" pad="3"/>
-<connect gate="G$1" pin="TX" pad="4"/>
-<connect gate="G$1" pin="VIN" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CONN-08249"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="GP-735T" prefix="J">
-<description>&lt;h3&gt;GP-735 - Easy-to-use, Ultra-high performance, GPS Smart Antenna Module&lt;/h3&gt;
-
-&lt;p&gt;ADH-tech GP-735 is a slim, ultra-high performance, easy to use GPS smart antenna module designed with u-blox’s latest 7th generation single chip. This feature rich GPS module not only shortens the design efforts but also provides powerful functions. The compact design allows fast adoption and high yield production. The power control feature is very convenient to turn on/off power just via GPIO control pin. It’s  especially useful to turn off power as the GPS function is not needed in the host applications.&lt;/p&gt;
-
-&lt;p&gt;Features
-&lt;ul&gt;&lt;li&gt;Easy adoption with best performance&lt;/li&gt;
-&lt;li&gt;Built-in narrow patch antenna for dimension demanding application&lt;/li&gt;
-&lt;li&gt;Models of I-PEX RF connector option available for using external antenna&lt;/li&gt;
-&lt;li&gt;Built-in backup power pin for faster position fix&lt;/li&gt;
-&lt;li&gt;UART-TTL interface support&lt;/li&gt;
-&lt;li&gt;Minimum RF and EMI efforts&lt;/li&gt;
-&lt;li&gt;Fully implementation of ultra-high performance u-blox 7 single chip architecture&lt;/li&gt;
-&lt;li&gt;High tracking sensitivity of -162dBm!&lt;/li&gt;
-&lt;li&gt;Low power consumption of 37mA for average tracking&lt;/li&gt;
-&lt;li&gt;Hardware power saving control pin allowing power on/off GPS via GPIO&lt;/li&gt;
-&lt;li&gt;Windows location sensor support&lt;/li&gt;
-&lt;li&gt;A-GPS support&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/GPS/GP-735T-150203.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="GP-735T" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-VERTICAL" package="JST-6PIN-1MM">
-<connects>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="PWR_CTRL" pad="6"/>
-<connect gate="G$1" pin="RX" pad="4"/>
-<connect gate="G$1" pin="TX" pad="3"/>
-<connect gate="G$1" pin="VCC" pad="2"/>
-<connect gate="G$1" pin="V_BAT" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CONN-08249"/>
-</technology>
 </technologies>
 </device>
 </devices>
