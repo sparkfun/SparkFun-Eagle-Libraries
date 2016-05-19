@@ -679,7 +679,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-5" y="2.5" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-5" y="-3" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
-<package name="MQ-3">
+<package name="GAS_SENSOR">
 <description>MQ-3 in Configuration B</description>
 <circle x="0" y="0" radius="8.4" width="0.1" layer="21"/>
 <pad name="HA" x="-4.75" y="0" drill="1.016"/>
@@ -2793,32 +2793,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="1" x="-1.75" y="0" dx="0.3" dy="0.6" layer="1"/>
 <smd name="8" x="1.74" y="0" dx="0.3" dy="0.6" layer="1"/>
 </package>
-<package name="HMC1051Z_2">
-<wire x1="-1.27" y1="10.16" x2="-1.27" y2="-0.762" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-0.762" x2="-1.27" y2="-0.889" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-1.016" x2="-1.27" y2="-1.143" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-1.143" x2="-1.27" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-1.27" x2="1.27" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-1.27" x2="1.27" y2="-1.143" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-1.016" x2="1.27" y2="-0.889" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-0.762" x2="1.27" y2="10.16" width="0.127" layer="21"/>
-<wire x1="1.27" y1="10.16" x2="-1.27" y2="10.16" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-1.143" x2="1.27" y2="-1.143" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-1.143" x2="1.27" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-1.016" x2="-1.27" y2="-1.016" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-1.016" x2="-1.27" y2="-0.889" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-0.889" x2="1.27" y2="-0.889" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-0.889" x2="1.27" y2="-0.762" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-0.762" x2="-1.27" y2="-0.762" width="0.127" layer="21"/>
-<pad name="1" x="0" y="0" drill="0.6" diameter="0.9144"/>
-<pad name="2" x="0" y="1.27" drill="0.6" diameter="0.9144"/>
-<pad name="3" x="0" y="2.54" drill="0.6" diameter="0.9144"/>
-<pad name="4" x="0" y="3.81" drill="0.6" diameter="0.9144"/>
-<pad name="5" x="0" y="5.08" drill="0.6" diameter="0.9144"/>
-<pad name="6" x="0" y="6.35" drill="0.6" diameter="0.9144"/>
-<pad name="7" x="0" y="7.62" drill="0.6" diameter="0.9144"/>
-<pad name="8" x="0" y="8.89" drill="0.6" diameter="0.9144"/>
-</package>
 <package name="HMC1051Z3">
 <wire x1="-1.27" y1="10.16" x2="-1.27" y2="-0.762" width="0.127" layer="21"/>
 <wire x1="-1.27" y1="-0.762" x2="-1.27" y2="-0.889" width="0.127" layer="21"/>
@@ -4041,14 +4015,6 @@ Package used by L3G4200D 3-axis gyro&lt;br&gt;
 <text x="-2.54" y="5.08" size="1.016" layer="25">&gt;NAME</text>
 <text x="6.35" y="-2.54" size="1.016" layer="27" rot="R90">&gt;VALUE</text>
 </package>
-<package name="MIC_ELECTRET_SMD">
-<circle x="0" y="0" radius="1.626" width="1" layer="29"/>
-<circle x="0" y="0" radius="1.625" width="0.75" layer="31"/>
-<circle x="0" y="0" radius="1.625" width="0.75" layer="1"/>
-<circle x="0" y="0" radius="3.3" width="0.4" layer="21"/>
-<smd name="1" x="0" y="0" dx="1.3" dy="1.3" layer="1" roundness="100"/>
-<smd name="2" x="0" y="1.6" dx="0.75" dy="0.75" layer="1" roundness="100"/>
-</package>
 <package name="MEMS-MIC">
 <circle x="0" y="1.524" radius="0.0889" width="0.3048" layer="21"/>
 <smd name="2" x="-1.11" y="-1.49" dx="1.24" dy="1.45" layer="1"/>
@@ -4262,48 +4228,6 @@ Used in MPL115A1 -</description>
 <text x="-1.524" y="2.667" size="0.4064" layer="25" font="vector" ratio="15">&gt;Name</text>
 <text x="-1.524" y="-3.048" size="0.4064" layer="27" font="vector" ratio="15">&gt;Value</text>
 <circle x="-2.0574" y="2.4384" radius="0.160640625" width="0.127" layer="21"/>
-</package>
-<package name="QFN-20-0.4MM">
-<description>** 20-pin QFN ** 
-initially designed for MPR121 | 
-0.4mm pitch | 
-3x3x0.65mm |
-** VERY UNPROVEN **</description>
-<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="51"/>
-<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="51"/>
-<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
-<wire x1="-1.5" y1="1" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="1.5" x2="-1" y2="1.5" width="0.127" layer="21"/>
-<wire x1="1.5" y1="1.5" x2="1" y2="1.5" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="-1.5" x2="-1" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-1.5" x2="1" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="1.5" y1="1" x2="1.5" y2="1.5" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-1" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="-1" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
-<circle x="-0.66" y="0.66" radius="0.05" width="0.127" layer="21"/>
-<smd name="18" x="0" y="1.4" dx="0.2" dy="0.6" layer="1"/>
-<smd name="20" x="-0.8" y="1.4" dx="0.2" dy="0.6" layer="1"/>
-<smd name="16" x="0.8" y="1.4" dx="0.2" dy="0.6" layer="1"/>
-<smd name="19" x="-0.4" y="1.4" dx="0.2" dy="0.6" layer="1"/>
-<smd name="17" x="0.4" y="1.4" dx="0.2" dy="0.6" layer="1"/>
-<smd name="3" x="-1.4" y="0" dx="0.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="5" x="-1.4" y="-0.8" dx="0.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="1" x="-1.4" y="0.8" dx="0.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="4" x="-1.4" y="-0.4" dx="0.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="2" x="-1.4" y="0.4" dx="0.2" dy="0.6" layer="1" rot="R90"/>
-<smd name="13" x="1.4" y="0" dx="0.2" dy="0.6" layer="1" rot="R270"/>
-<smd name="15" x="1.4" y="0.8" dx="0.2" dy="0.6" layer="1" rot="R270"/>
-<smd name="11" x="1.4" y="-0.8" dx="0.2" dy="0.6" layer="1" rot="R270"/>
-<smd name="14" x="1.4" y="0.4" dx="0.2" dy="0.6" layer="1" rot="R270"/>
-<smd name="12" x="1.4" y="-0.4" dx="0.2" dy="0.6" layer="1" rot="R270"/>
-<smd name="8" x="0" y="-1.4" dx="0.2" dy="0.6" layer="1" rot="R180"/>
-<smd name="10" x="0.8" y="-1.4" dx="0.2" dy="0.6" layer="1" rot="R180"/>
-<smd name="6" x="-0.8" y="-1.4" dx="0.2" dy="0.6" layer="1" rot="R180"/>
-<smd name="9" x="0.4" y="-1.4" dx="0.2" dy="0.6" layer="1" rot="R180"/>
-<smd name="7" x="-0.4" y="-1.4" dx="0.2" dy="0.6" layer="1" rot="R180"/>
-<text x="-0.889" y="0.2032" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.0668" y="-0.5842" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
 <package name="OS4000-T">
 <description>Footprint for the OS4000-T</description>
@@ -4738,24 +4662,6 @@ Sensirion Humdity Sensor</description>
 <text x="-1.565" y="-2.03" size="0.4064" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.3" y1="-0.4" x2="0.3" y2="0.4" layer="31"/>
 </package>
-<package name="SOLARBIT-12X1">
-<wire x1="11" y1="3.5" x2="-11" y2="3.5" width="0.2032" layer="51"/>
-<wire x1="-11" y1="3.5" x2="-11" y2="-3.5" width="0.2032" layer="51"/>
-<wire x1="-11" y1="-3.5" x2="11" y2="-3.5" width="0.2032" layer="51"/>
-<wire x1="11" y1="-3.5" x2="11" y2="3.5" width="0.2032" layer="51"/>
-<wire x1="-11" y1="3.6" x2="-8" y2="3.6" width="0.2032" layer="21"/>
-<wire x1="-11" y1="-3.6" x2="-8" y2="-3.6" width="0.2032" layer="21"/>
-<wire x1="8" y1="-3.6" x2="11" y2="-3.6" width="0.2032" layer="21"/>
-<wire x1="8" y1="3.6" x2="11" y2="3.6" width="0.2032" layer="21"/>
-<wire x1="-8" y1="0.4" x2="-8" y2="-0.4" width="0.2032" layer="21"/>
-<wire x1="-8.4" y1="0" x2="-7.7" y2="0" width="0.2032" layer="21"/>
-<wire x1="-7.7" y1="0" x2="-7.6" y2="0" width="0.2032" layer="21"/>
-<wire x1="8" y1="0.4" x2="8" y2="-0.4" width="0.2032" layer="21"/>
-<smd name="+" x="-10.2" y="0" dx="6" dy="2.5" layer="1" rot="R90"/>
-<smd name="-" x="10.2" y="0" dx="6" dy="2.5" layer="1" rot="R90"/>
-<text x="-8" y="2" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-8" y="-2" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
 <package name="SPM0204UD5">
 <wire x1="-0.86" y1="-0.96" x2="-0.86" y2="3.93" width="0.2" layer="21"/>
 <wire x1="-0.86" y1="3.93" x2="3.07" y2="3.93" width="0.2" layer="21"/>
@@ -4971,17 +4877,6 @@ Sensirion Humdity Sensor</description>
 <vertex x="0" y="2.352" curve="-90"/>
 <vertex x="0.4419" y="1.8949" curve="-90.012967"/>
 </polygon>
-</package>
-<package name="SOT563">
-<wire x1="0.8" y1="-0.6" x2="0.8" y2="0.6" width="0.2032" layer="21"/>
-<wire x1="-0.8" y1="-0.6" x2="-0.8" y2="0.6" width="0.2032" layer="21"/>
-<wire x1="-1.0318" y1="-0.2" x2="-1.0318" y2="0.2" width="0.2032" layer="21"/>
-<smd name="5" x="0" y="0.66" dx="0.25" dy="0.4" layer="1"/>
-<smd name="2" x="0" y="-0.66" dx="0.25" dy="0.4" layer="1"/>
-<smd name="3" x="0.5" y="-0.66" dx="0.25" dy="0.4" layer="1"/>
-<smd name="1" x="-0.5" y="-0.66" dx="0.25" dy="0.4" layer="1"/>
-<smd name="4" x="0.5" y="0.66" dx="0.25" dy="0.4" layer="1"/>
-<smd name="6" x="-0.5" y="0.67" dx="0.25" dy="0.4" layer="1"/>
 </package>
 <package name="TOUCH1">
 <circle x="0" y="0" radius="1.796" width="3.81" layer="1"/>
@@ -5888,7 +5783,8 @@ For Vishay VNCL4000 proximity and ambient light sensor.&lt;br&gt;
 <text x="-0.1" y="-0.6" size="0.254" layer="51">Z</text>
 <text x="-1.9834" y="-2.1048" size="0.0366" layer="200" font="vector">C:/Documents and Settings/jbartlett/Desktop/mpu-6050.bmp</text>
 </package>
-<package name="SOT563-2">
+<package name="SOT563">
+<description>1:1 footprint</description>
 <wire x1="-0.6" y1="-0.8" x2="0.6" y2="-0.8" width="0.127" layer="21"/>
 <wire x1="-0.6" y1="0.8" x2="0.6" y2="0.8" width="0.127" layer="21"/>
 <wire x1="-0.2" y1="0.9683" x2="0.2" y2="0.9683" width="0.127" layer="21"/>
@@ -7293,7 +7189,7 @@ For Vishay VNCL4000 proximity and ambient light sensor.&lt;br&gt;
 <vertex x="-0.0027" y="0.6909" curve="90.274142"/>
 </polygon>
 </package>
-<package name="QFN-20-0.4MM-V2">
+<package name="QFN-20-0.4MM">
 <wire x1="-1.5" y1="1" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
 <wire x1="-1.5" y1="1.5" x2="-1" y2="1.5" width="0.127" layer="21"/>
 <wire x1="1.5" y1="1.5" x2="1" y2="1.5" width="0.127" layer="21"/>
@@ -8376,24 +8272,6 @@ For Vishay VNCL4000 proximity and ambient light sensor.&lt;br&gt;
 <wire x1="-0.2" y1="0.2" x2="-0.2" y2="-0.2" width="0.2032" layer="21"/>
 <wire x1="-0.1" y1="-0.2" x2="-0.2" y2="-0.2" width="0.2032" layer="21"/>
 </package>
-<package name="GP-635T">
-<circle x="-3.6" y="1.2" radius="0.1047" width="0.4064" layer="51"/>
-<wire x1="-2.54" y1="-1.651" x2="2.54" y2="-1.651" width="0.254" layer="21"/>
-<wire x1="-4.318" y1="0.508" x2="-4.318" y2="1.905" width="0.254" layer="21"/>
-<wire x1="3.302" y1="1.905" x2="4.318" y2="1.905" width="0.254" layer="21"/>
-<wire x1="4.318" y1="1.905" x2="4.318" y2="0.508" width="0.254" layer="21"/>
-<wire x1="-4.318" y1="1.905" x2="-3.302" y2="1.905" width="0.254" layer="21"/>
-<smd name="1" x="-2.54" y="1.27" dx="0.6" dy="1.55" layer="1"/>
-<smd name="2" x="-1.54" y="1.27" dx="0.6" dy="1.55" layer="1"/>
-<smd name="3" x="-0.54" y="1.27" dx="0.6" dy="1.55" layer="1"/>
-<smd name="4" x="0.46" y="1.27" dx="0.6" dy="1.55" layer="1"/>
-<smd name="5" x="1.46" y="1.27" dx="0.6" dy="1.55" layer="1"/>
-<smd name="6" x="2.46" y="1.27" dx="0.6" dy="1.55" layer="1"/>
-<smd name="P$1" x="-3.84" y="-0.955" dx="1.2" dy="1.8" layer="1"/>
-<smd name="P$2" x="3.76" y="-0.955" dx="1.2" dy="1.8" layer="1"/>
-<text x="-1.27" y="2.54" size="0.4064" layer="25">&gt;Name</text>
-<text x="-1.27" y="-2.54" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
 <package name="BMP180">
 <smd name="1" x="1.5" y="1.45" dx="0.5" dy="0.6" layer="1" rot="R90"/>
 <smd name="2" x="0" y="1.45" dx="0.5" dy="0.6" layer="1" rot="R90"/>
@@ -9194,7 +9072,7 @@ For Vishay VNCL4000 proximity and ambient light sensor.&lt;br&gt;
 <wire x1="-2.34923125" y1="6.33505" x2="-2.34923125" y2="4.62495" width="0.2032" layer="21" curve="39.999989"/>
 <wire x1="-0.85505" y1="3.13076875" x2="0.85505" y2="3.13076875" width="0.2032" layer="21" curve="39.999989"/>
 </package>
-<package name="T5400">
+<package name="T5403">
 <wire x1="-1.4732" y1="1.2192" x2="-1.4732" y2="0.1778" width="0.127" layer="21"/>
 <wire x1="1.4732" y1="1.2192" x2="1.4732" y2="0.4318" width="0.127" layer="21"/>
 <wire x1="0.7874" y1="1.2192" x2="1.4732" y2="1.2192" width="0.127" layer="21"/>
@@ -9214,7 +9092,7 @@ For Vishay VNCL4000 proximity and ambient light sensor.&lt;br&gt;
 <text x="-1.27" y="1.27" size="0.4064" layer="25" font="vector" ratio="10">&gt;Name</text>
 <text x="-1.27" y="-1.27" size="0.4064" layer="27" font="vector" ratio="10" align="top-left">&gt;Value</text>
 </package>
-<package name="MIC_ELECTRET_SMD_LESS_PASTE">
+<package name="MIC_ELECTRET_SMD">
 <circle x="0" y="0" radius="1.625" width="0.75" layer="1"/>
 <circle x="0" y="0" radius="3.3" width="0.4" layer="21"/>
 <smd name="1" x="0" y="0" dx="1.3" dy="1.3" layer="1" roundness="100" cream="no"/>
@@ -12272,20 +12150,6 @@ For Vishay VNCL4000 proximity and ambient light sensor.&lt;br&gt;
 <pin name="VDD" x="-10.16" y="2.54" visible="pin" length="short" direction="pwr"/>
 <pin name="GND@7" x="-10.16" y="-2.54" visible="pin" length="short" direction="pwr"/>
 </symbol>
-<symbol name="GP-635T">
-<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<pin name="GND" x="7.62" y="5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
-<pin name="VCC" x="7.62" y="2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
-<pin name="TXA" x="7.62" y="0" visible="pin" length="short" direction="out" rot="R180"/>
-<pin name="RXA" x="7.62" y="-2.54" visible="pin" length="short" direction="in" rot="R180"/>
-<pin name="VBATT" x="7.62" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
-<pin name="PWRC" x="7.62" y="-7.62" visible="pin" length="short" direction="in" rot="R180"/>
-<text x="-5.08" y="8.382" size="1.778" layer="97">&gt;Name</text>
-<text x="-5.08" y="-12.7" size="1.778" layer="97">&gt;Value</text>
-</symbol>
 <symbol name="BMP180">
 <description>BOSCH BMP180 DIGITAL BAROMETRIC PRESSURE SENSOR&lt;p&gt;
 
@@ -12422,7 +12286,7 @@ Typical applications:&lt;p&gt;
 <pin name="GND" x="10.16" y="0" length="middle" rot="R180"/>
 <pin name="OUT" x="10.16" y="2.54" length="middle" rot="R180"/>
 </symbol>
-<symbol name="T5400">
+<symbol name="T5403">
 <pin name="VDD" x="17.78" y="7.62" length="middle" rot="R180"/>
 <pin name="SEL" x="17.78" y="2.54" length="middle" rot="R180"/>
 <pin name="GND" x="17.78" y="-2.54" length="middle" rot="R180"/>
@@ -12808,7 +12672,13 @@ Typical applications:&lt;p&gt;
 </symbols>
 <devicesets>
 <deviceset name="ADMP401">
-<description>Omnidirection bottom-port MEMS microphone</description>
+<description>&lt;h3&gt;ADMP401 - Omnidirection Bottom-Port MEMS Microphone&lt;/h3&gt;
+&lt;p&gt;The ADMP401 is a high quality, low cost, low power analog output bottom-ported omnidirectional MEMS microphone. The ADMP401 consists of a MEMS microphone element, an impedance converter, and an output amplifier. The ADMP401 sensitivity specification makes it an excellent choice for both near field and far field applications.&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9868"&gt;SparkFun MEMS Microphone Breakout - INMP401 (ADMP401)&lt;/a&gt; (BOB-09868)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10028"&gt;MEMS Microphone - INMP401 (ADMP401)&lt;/a&gt; (COM-10028)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ADMP401" x="0" y="0"/>
 </gates>
@@ -12822,7 +12692,9 @@ Typical applications:&lt;p&gt;
 <connect gate="G$1" pin="VDD" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09773"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -12896,7 +12768,13 @@ Typical applications:&lt;p&gt;
 </devices>
 </deviceset>
 <deviceset name="ADXL193">
-<description>250g accelerometer analog out</description>
+<description>&lt;h3&gt;Analog Devices ADXL193 - 250g Accelerometer w/ Analog Output&lt;/h3&gt;
+&lt;p&gt;The ADXL193 is a small (5 mm x 5 mm x 2 mm ceramic LCC package), low power (1.5 mA current at 5V), single axis high-g iMEMS® accelerometer designed to sense shock and vibration at g-ranges of ±120g or ±250g. Three models are available and include AD22282-A-R2 (±120g) and AD22283-B-R2 (±250g). These products are used in a variety of crash/impact detection applications which include automotive airbag crash detection systems as well as medical, industrial, and sports equipment.&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9332"&gt;
+SparkFun Single Axis Accelerometer Breakout - ADXL193 (+/-250g)&lt;/a&gt; (SEN-09332)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ADXL193" x="0" y="0"/>
 </gates>
@@ -12910,14 +12788,20 @@ Typical applications:&lt;p&gt;
 <connect gate="G$1" pin="VDD2" pad="P$8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09219"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="ADXL330">
-<description>&lt;b&gt;Triple Axis Accelerometer&lt;/b&gt;
-Analog Devices ADXL330 +/-3g 2.4V-5.25V Analog output. Spark Fun Electronics SKU : COM-00730. Center pad paste layer has been reduced to avoid shorting.</description>
+<description>&lt;h3&gt;Analog Devices ADXL330 3-Axis Analog Accelerometer&lt;/h3&gt;
+&lt;p&gt;The ADXL330 is a small, thin, low power, complete 3-axis accelerometer with signal conditioned voltage outputs, all on a single monolithic IC. The product measures acceleration with a minimum full-scale range of ±3g. It can measure the static acceleration of gravity in tilt-sensing applications, as well as dynamic acceleration resulting from motion, shock, or vibration.&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/retired/692"&gt;Triple Axis Accelerometer Breakout - ADXL330&lt;/a&gt; (SEN-00692)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ADXL330" x="0" y="0"/>
 </gates>
@@ -12936,13 +12820,21 @@ Analog Devices ADXL330 +/-3g 2.4V-5.25V Analog output. Spark Fun Electronics SKU
 <connect gate="G$1" pin="ZOUT" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-08189"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="ADXL335" prefix="U">
-<description>3-axis, 3g accelerometer, analog out</description>
+<description>&lt;h3&gt;Analog Devices ADXL335 3-Axis Analog Accelerometer&lt;/h3&gt;
+&lt;p&gt;The ADXL335 is a small, thin, low power, complete 3-axis accelerometer with signal conditioned voltage outputs. The product measures acceleration with a minimum full-scale range of ±3 g. It can measure the static acceleration of gravity in tiltsensing applications, as well as dynamic acceleration resulting from motion, shock, or vibration.&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9269"&gt;SparkFun Triple Axis Accelerometer Breakout - ADXL335&lt;/a&gt; (SEN-09269)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9265"&gt;Triple Axis Accelerometer - ADXL335&lt;/a&gt; (SEN-09265)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ADXL335" x="0" y="0"/>
 </gates>
@@ -12961,13 +12853,23 @@ Analog Devices ADXL330 +/-3g 2.4V-5.25V Analog output. Spark Fun Electronics SKU
 <connect gate="G$1" pin="ZOUT" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-08942"/>
+<attribute name="SF_ID" value="COM-09265"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="ADXL345" prefix="U">
-<description>3-axis SPI/I2C 2/4/8/16g accelerometer</description>
+<description>&lt;h3&gt;Analog Devices ADXL345 3-Axis SPI/I2C 2/4/8/16g Accelerometer&lt;/h3&gt;
+&lt;p&gt;The ADXL345 is a small, thin, low power, 3-axis accelerometer with high resolution (13-bit) measurement at up to ±16g. Digital output data is formatted as 16-bit twos complement and is accessible through either a SPI (3- or 4-wire) or I2C digital interface.&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9836"&gt;SparkFun Triple Axis Accelerometer Breakout - ADXL345&lt;/a&gt; (SEN-09836)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9045"&gt;Triple Axis Accelerometer - ADXL345&lt;/a&gt; (SEN-09045)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10121"&gt;SparkFun 6 Degrees of Freedom IMU Digital Combo Board - ITG3200/ADXL345&lt;/a&gt; (SEN-10121)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ADXL345" x="0" y="0"/>
 </gates>
@@ -12990,7 +12892,10 @@ Analog Devices ADXL330 +/-3g 2.4V-5.25V Analog output. Spark Fun Electronics SKU
 <connect gate="G$1" pin="VS" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09097"/>
+<attribute name="SF_ID" value="SEN-09045"/>
+</technology>
 </technologies>
 </device>
 <device name="&quot;" package="ADXL3451:1">
@@ -13050,7 +12955,12 @@ Analog Devices ADXL330 +/-3g 2.4V-5.25V Analog output. Spark Fun Electronics SKU
 </devices>
 </deviceset>
 <deviceset name="AT42QT1012" prefix="U">
-<description>One channel capacitive touch sense</description>
+<description>&lt;h3&gt;Atmel AT42QT1010 1-Channel Capacitive Touch Sensor&lt;/h3&gt;
+&lt;p&gt;The AT42QT1010 is a dedicated, single-button capacitive sense chip. The chip handles monitoring a conductive area for touch. As long as a touch (e.g. from a finger) is detected, the AT42QT1010 keeps the output line high. Otherwise, the line is kept low.&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12041"&gt;SparkFun Capacitive Touch Breakout - AT42QT1010&lt;/a&gt; (SEN-12041)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="AT42QT1012" x="0" y="0"/>
 </gates>
@@ -13065,7 +12975,9 @@ Analog Devices ADXL330 +/-3g 2.4V-5.25V Analog output. Spark Fun Electronics SKU
 <connect gate="G$1" pin="VDD" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-11778"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -13231,10 +13143,9 @@ Footprint proven. Spark Fun Electronics Camera SKU : SEN-00637, Mating Connector
 </devices>
 </deviceset>
 <deviceset name="DCM01" prefix="U">
-<description>&lt;b&gt;DCM01 Reflective Blood Sensor&lt;/b&gt;&lt;br&gt;
-UNPROVEN&lt;br&gt;
-Sensor head for Pulse Oximeter.  Contains IR and visible red LEDs, and PIN photodiode.&lt;br&gt;
-&lt;href="http://www.apmkr.com/bio-device/DCM01_datasheet.pdf"&gt;http://www.apmkr.com/bio-device/DCM01_datasheet.pdf&lt;/a&gt;</description>
+<description>&lt;h3&gt;APMKorea DCM01 Reflective Blood Sensor&lt;/h3&gt;
+&lt;p&gt;Sensor head for Pulse Oximeter.  Contains IR and visible red LEDs, and PIN photodiode.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.apmkr.com/bio-device/DCM01_datasheet.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="DCM01" x="2.54" y="5.08"/>
 </gates>
@@ -13247,7 +13158,9 @@ Sensor head for Pulse Oximeter.  Contains IR and visible red LEDs, and PIN photo
 <connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-10303"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -13282,12 +13195,22 @@ Sensor head for Pulse Oximeter.  Contains IR and visible red LEDs, and PIN photo
 </devices>
 </deviceset>
 <deviceset name="GAS_SENSOR" prefix="U">
-<description>MQ-3 alcohol gas sensor . FP not tested. SEN-08880.</description>
+<description>&lt;h3&gt;Gas Sensors - MQ-3, MQ-4, MQ-6, MQ-7, MQ-8&lt;/h3&gt;
+&lt;p&gt;Through-hole gas sensors with a heating coil and an analog output.&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8891"&gt;Gas Sensor Breakout Board&lt;/a&gt; (BOB-8891) - Breakout board compatible with all gas sensors.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8880"&gt;Alcohol Gas Sensor - MQ-3&lt;/a&gt; (SEN-08880)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9404"&gt;Methane CNG Gas Sensor - MQ-4&lt;/a&gt; (SEN-09404)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9405"&gt;LPG Gas Sensor - MQ-6&lt;/a&gt; (SEN-09405)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9403"&gt;Carbon Monoxide Sensor - MQ-7&lt;/a&gt; (SEN-09403)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10916"&gt;Hydrogen Gas Sensor - MQ-8&lt;/a&gt; (SEN-10916)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="MQ-3" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MQ-3">
+<device name="MQ-3" package="GAS_SENSOR">
 <connects>
 <connect gate="G$1" pin="A1" pad="A1"/>
 <connect gate="G$1" pin="B1" pad="B1"/>
@@ -13295,13 +13218,77 @@ Sensor head for Pulse Oximeter.  Contains IR and visible red LEDs, and PIN photo
 <connect gate="G$1" pin="H2" pad="HB"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-12216"/>
+<attribute name="SF_ID" value="SEN-08880"/>
+</technology>
+</technologies>
+</device>
+<device name="MQ-4" package="GAS_SENSOR">
+<connects>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="B1" pad="B1"/>
+<connect gate="G$1" pin="H1" pad="HA"/>
+<connect gate="G$1" pin="H2" pad="HB"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-11559"/>
+<attribute name="SF_ID" value="SEN-09404"/>
+</technology>
+</technologies>
+</device>
+<device name="MQ-6" package="GAS_SENSOR">
+<connects>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="B1" pad="B1"/>
+<connect gate="G$1" pin="H1" pad="HA"/>
+<connect gate="G$1" pin="H2" pad="HB"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="SF_ID" value="SEN-09405"/>
+</technology>
+</technologies>
+</device>
+<device name="MQ-7" package="GAS_SENSOR">
+<connects>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="B1" pad="B1"/>
+<connect gate="G$1" pin="H1" pad="HA"/>
+<connect gate="G$1" pin="H2" pad="HB"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-12214"/>
+<attribute name="SF_ID" value="SEN-09403"/>
+</technology>
+</technologies>
+</device>
+<device name="MQ-8" package="GAS_SENSOR">
+<connects>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="B1" pad="B1"/>
+<connect gate="G$1" pin="H1" pad="HA"/>
+<connect gate="G$1" pin="H2" pad="HB"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-13351"/>
+<attribute name="SF_ID" value="SEN-10916"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="HALL-EFFECT">
-<description>Hall effect sensor in SC70 package</description>
+<description>&lt;h3&gt;Panasonic AN4884 Hall Effect Sensor&lt;/h3&gt;
+&lt;p&gt;The AN48841B is a Hall IC (a magnetic sensor) for 3.0 V supply voltage built using Bi-CMOS technology. In this Hall IC are a Hall element, an offset cancel circuit, an amplifier circuit, a sample-and-hold circuit, a Schmidt circuit, and an output stage FET are integrated on a single chip housed in a small SC70 package.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.semicon.panasonic.co.jp/ds4/AN48841B_E.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13169"&gt;SparkFun Blackberry Trackballer Breakout&lt;/a&gt; (COM-13169) - Hall sensor is triggered by tiny magnets on trackball.&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="HALL-EFFECT" x="0" y="0"/>
 </gates>
@@ -13321,7 +13308,7 @@ Sensor head for Pulse Oximeter.  Contains IR and visible red LEDs, and PIN photo
 </devices>
 </deviceset>
 <deviceset name="HDJD-S822-QR999">
-<description>Avago RGB color sensor, analog out</description>
+<description>&lt;h3&gt;Avago HDJD-S822-QR999 RGB Color Sensor w/ Analog Output&lt;/h3&gt;</description>
 <gates>
 <gate name="G$1" symbol="HDJD-S822-QR999" x="0" y="0"/>
 </gates>
@@ -13369,7 +13356,13 @@ Sensor head for Pulse Oximeter.  Contains IR and visible red LEDs, and PIN photo
 </devices>
 </deviceset>
 <deviceset name="HIH-4030" prefix="U">
-<description>Humidity Sensor</description>
+<description>&lt;h3&gt;Honeywell HIH-4030 Humidity Sensor - Analog Output&lt;/h3&gt;
+&lt;p&gt;The HIH-4030/4031 Series delivers instrumentation-quality RH (Relative Humidity) sensing performance in a competitively priced, solderable SMD.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/Sensors/Weather/SEN-09569-HIH-4030-datasheet.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9569"&gt;SparkFun Humidity Sensor Breakout - HIH-4030&lt;/a&gt; (SEN-09569)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="HIH-4030" x="0" y="0"/>
 </gates>
@@ -13381,7 +13374,9 @@ Sensor head for Pulse Oximeter.  Contains IR and visible red LEDs, and PIN photo
 <connect gate="G$1" pin="VCC" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09448"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -13410,26 +13405,19 @@ Sensor head for Pulse Oximeter.  Contains IR and visible red LEDs, and PIN photo
 </devices>
 </deviceset>
 <deviceset name="HMC1051Z">
-<description>Honeywell 1-axis magnetometer</description>
+<description>&lt;h3&gt;Honeywell HMC1051Z 1-Axis Magnetometer&lt;/h3&gt;
+&lt;p&gt;The  Honeywell  HMC1051Z,  HMC1051ZL,  HMC1052L and HMC1053  are magnetoresistive sensors designed for low field magnetic sensing. Various  packaging  options  have been created  from  the  basic HMC1052  sensor  chip to create  1,  2  and  3-axis  magneto-resistive  sensors  forcost effective  and small  size  solutions.  The  advantage  of  the HMC105X   family   of   sensors is   in   the   near-perfectly orthogonal   dual   sensor   on   a   single   chip   with   shared set/reset and offset coils/straps included.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www51.honeywell.com/aero/common/documents/myaerospacecatalog-documents/Defense_Brochures-documents/HMC_1051-1052-1053_Data_Sheet.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11071"&gt;Compass Module - HMC1051Z (single axis)&lt;/a&gt; (COM-11071)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8726"&gt;IMU 6DOF v4 Sensor Board&lt;/a&gt; (COM-08726)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8454"&gt;IMU 6 Degrees of Freedom - v4 with Bluetooth Capability&lt;/a&gt; (COM-08454)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="HMC1051Z" x="-10.16" y="-12.7"/>
 </gates>
 <devices>
-<device name="2" package="HMC1051Z_2">
-<connects>
-<connect gate="G$1" pin="GND@1" pad="1"/>
-<connect gate="G$1" pin="GND@4" pad="4"/>
-<connect gate="G$1" pin="GND@5" pad="5"/>
-<connect gate="G$1" pin="S/R+" pad="6"/>
-<connect gate="G$1" pin="S/R-" pad="7"/>
-<connect gate="G$1" pin="V0+" pad="2"/>
-<connect gate="G$1" pin="VCC" pad="3"/>
-<connect gate="G$1" pin="VO-" pad="8"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="" package="HMC1051Z3">
 <connects>
 <connect gate="G$1" pin="GND@1" pad="1"/>
@@ -13442,14 +13430,24 @@ Sensor head for Pulse Oximeter.  Contains IR and visible red LEDs, and PIN photo
 <connect gate="G$1" pin="VO-" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-08797"/>
+<attribute name="SF_ID" value="COM-11071"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="HMC1052L">
-<description>&lt;b&gt;HMC1052L&lt;/b&gt;
-Dual axis magnetic sensor. Used for compass and magnetometer applications. Schematic and footprint are not tested and probably need fixing. Spark Fun Electronics SKU : COM-00708</description>
+<description>&lt;h3&gt;Honeywell HMC1052L 2-Axis Magnetometer&lt;/h3&gt;
+&lt;p&gt;The  Honeywell  HMC1051Z,  HMC1051ZL,  HMC1052L and HMC1053  are magnetoresistive sensors designed for low field magnetic sensing. Various  packaging  options  have been created  from  the  basic HMC1052  sensor  chip to create  1,  2  and  3-axis  magneto-resistive  sensors  forcost effective  and small  size  solutions.  The  advantage  of  the HMC105X   family   of   sensors is   in   the   near-perfectly orthogonal   dual   sensor   on   a   single   chip   with   shared set/reset and offset coils/straps included.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www51.honeywell.com/aero/common/documents/myaerospacecatalog-documents/Defense_Brochures-documents/HMC_1051-1052-1053_Data_Sheet.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11071"&gt;Compass Module - HMC1051Z (single axis)&lt;/a&gt; (COM-11071)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8726"&gt;IMU 6DOF v4 Sensor Board&lt;/a&gt; (COM-08726)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8454"&gt;IMU 6 Degrees of Freedom - v4 with Bluetooth Capability&lt;/a&gt; (COM-08454)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="HMC1052L" x="-10.16" y="-10.16"/>
 </gates>
@@ -13474,7 +13472,10 @@ Dual axis magnetic sensor. Used for compass and magnetometer applications. Schem
 <connect gate="G$1" pin="VB" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-08228"/>
+<attribute name="SF_ID" value="COM-00708"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -13512,7 +13513,18 @@ Dual axis magnetic sensor. Used for compass and magnetometer applications. Schem
 </devices>
 </deviceset>
 <deviceset name="HMC5883L" prefix="U">
-<description>3 Axis Digital Compass IC</description>
+<description>&lt;h3&gt;Honewell HMC5883L 3 Axis Digital Compass IC&lt;/h3&gt;
+&lt;p&gt;a 3-axis digital magnetometer designed for low-field magnetic sensing. The sensor has a full-scale range of ±8 Guass and a resolution of up to 5 milli-Gauss.&lt;/p&gt;
+&lt;p&gt;Supplied voltage should be between 2.16 and 3.6VDC.&lt;/p&gt;
+&lt;p&gt;Communication with the HMC5883L is simple and all done through an I2C interface. All registers and operating modes are well described in the datasheet below.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Sensors/Magneto/HMC5883L-FDS.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10494"&gt;Magnetometer Digital Triple Axis - HMC5883L&lt;/a&gt; (COM-10494)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10530"&gt;SparkFun Triple Axis Magnetometer Breakout - HMC5883L&lt;/a&gt; (SEN-10530)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10736"&gt;9 Degrees of Freedom - Razor IMU&lt;/a&gt; (SEN-10736)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10724"&gt;SparkFun 9 Degrees of Freedom - Sensor Stick&lt;/a&gt; (SEN-10724)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="HMC5883L" x="0" y="0"/>
 </gates>
@@ -13538,7 +13550,8 @@ Dual axis magnetic sensor. Used for compass and magnetometer applications. Schem
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="IC-10284" constant="no"/>
+<attribute name="PROD_ID" value="IC-10284"/>
+<attribute name="SF_ID" value="COM-10494"/>
 </technology>
 </technologies>
 </device>
@@ -13576,7 +13589,13 @@ Dual axis magnetic sensor. Used for compass and magnetometer applications. Schem
 </devices>
 </deviceset>
 <deviceset name="HMC6343">
-<description>Honeywell compass IC with tilt compensation, SEN-08656</description>
+<description>&lt;h3&gt;Honewell HMC6343 Compass w/ Tilt Compensation&lt;/h3&gt;
+&lt;p&gt;The Honeywell HMC6343 is a fully integrated compass module that includes firmware  for  heading  computation and  calibration  for  magnetic  distortions.  The module combines three-axis magneto-resistive sensor, three-axis MEMS accelerometer,   analog   and   digital   support   circuits,   microprocessor and algorithms required for  heading  computation&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www51.honeywell.com/aero/common/documents/myaerospacecatalog-documents/Missiles-Munitions/HMC6343.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12916"&gt;SparkFun HMC6343 Breakout &lt;/a&gt; (SEN-12916)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="HMC6343" x="0" y="0"/>
 </gates>
@@ -13594,7 +13613,9 @@ Dual axis magnetic sensor. Used for compass and magnetometer applications. Schem
 <connect gate="G$1" pin="VDD@3" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-12117"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -13688,7 +13709,14 @@ Dual axis magnetic sensor. Used for compass and magnetometer applications. Schem
 </devices>
 </deviceset>
 <deviceset name="IDG1215">
-<description>Invensense dual-axis 67 deg/s gyro, COM-09071</description>
+<description>&lt;h3&gt;Invensense IDG1215 Dual-Axis 67 &amp;deg;/s Gyro&lt;/h3&gt;
+&lt;p&gt;he IDG-1215 is an integrated dual-axis angular rate sensor (gyroscope). It uses InvenSense’s proprietary and patented MEMS technology with vertically driven, vibrating masses to make a functionally complete, low-cost, dual-axis angular rate sensor. All required electronics are integrated onto a single chip with the sensor.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Components/SMD/Datasheet_IDG1215.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9071"&gt;Dual Axis Gyro - IDG1215&lt;/a&gt; (COM-09071)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9093"&gt;Gyro Breakout Board - IDG1215 Dual 67°/s&lt;/a&gt; (SEN-09093)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="IDG1215" x="0" y="0"/>
 </gates>
@@ -13715,14 +13743,23 @@ Dual axis magnetic sensor. Used for compass and magnetometer applications. Schem
 <connect gate="G$1" pin="YOUT" pad="14"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09061"/>
+<attribute name="SF_ID" value="COM-09071"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="IMU3000" prefix="U">
-<description>3-axis I2C programmable gyro.&lt;BR&gt;
-Can interface with an I2C accelerometer to provide 6-axis motion information.</description>
+<description>&lt;h3&gt;Invensense IMU3000 3-axis I2C Programmable Gyroscope&lt;/h3&gt;
+&lt;p&gt;3-axis MEMS digital gyro with programmable ranges from +-250 to +-2000 degrees/sec. In addition, it has a secondary I2C port that interfaces with a digital accelerometer to deliver a complete 6-axis sensor output from its primary I2C port. The fusion output offloads the intensive motion processing computation requirements from the host processor, reducing the need for frequent polling of the motion sensor output and enabling low cost, low power microcontrollers.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Sensors/IMU/RM-IMU-3000A.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10251"&gt;SparkFun Digital IMU Breakout - IMU3000&lt;/a&gt; (SEN-10251)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10252"&gt;SparkFun IMU Fusion Board - ADXL345 &amp; IMU3000&lt;/a&gt; (SEN-10252)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="IMU3000" x="-2.54" y="-2.54"/>
 </gates>
@@ -13745,7 +13782,9 @@ Can interface with an I2C accelerometer to provide 6-axis motion information.</d
 <connect gate="G$1" pin="VLOG" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-10050"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -13856,11 +13895,14 @@ Can interface with an I2C accelerometer to provide 6-axis motion information.</d
 </devices>
 </deviceset>
 <deviceset name="L3G4200D" prefix="U">
-<description>&lt;h3&gt;L3G4200D Three-axis, digital output gyroscope&lt;/h3&gt;
-The L3G4200D is a low-power three-axis angular rate sensor, has a full scale of ±250/±500/±2000 dps and is capable of measuring rates with a user-selectable bandwidth.&lt;br&gt;&lt;br&gt;
-It includes a sensing element and an IC interface capable of providing the measured angular rate to the external world through a digital interface (I2C/SPI).
-&lt;hr&gt;
-&lt;b&gt;Package:&lt;/b&gt; 4x4x1.1 LGA-16 (LGA16-4x4.PAC)&lt;br&gt;</description>
+<description>&lt;h3&gt;ST Microelectronics L3G4200D 3-Axis Digital Output Gyroscope&lt;/h3&gt;
+&lt;p&gt;The L3G4200D is a low-power three-axis angular rate sensor, has a full scale of ±250/±500/±2000 dps and is capable of measuring rates with a user-selectable bandwidth.&lt;br&gt;&lt;br&gt;
+It includes a sensing element and an IC interface capable of providing the measured angular rate to the external world through a digital interface (I2C/SPI).&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Sensors/Gyros/3-Axis/CD00265057.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10612"&gt;SparkFun Tri-Axis Gyro Breakout - L3G4200D&lt;/a&gt; (SEN-10612)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="L3G4200D" x="0" y="0"/>
 </gates>
@@ -13885,7 +13927,9 @@ It includes a sensing element and an IC interface capable of providing the measu
 <connect gate="G$1" pin="VDDIO" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-10395"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -13949,7 +13993,14 @@ It includes a sensing element and an IC interface capable of providing the measu
 </devices>
 </deviceset>
 <deviceset name="LIS331" prefix="U">
-<description>3-axis 6/12/24g SPI/I2C accelerometer</description>
+<description>&lt;h3&gt;ST Microelectronics LIS331 3-Axis &amp;plusmn;6/12/24g SPI/I2C Accelerometer&lt;/h3&gt;
+&lt;p&gt;The LIS331HH is an ultra low-power full-scale three axis MEMS linear accelerometer. It has a digital I2C/SPI serial interface which makes it ideal for using in embedded applications. The device also features ultra low-power operational modes that allow advanced power saving and smart sleep to wake-up functions.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Sensors/Accelerometer/LIS331HH.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10345"&gt;SparkFun Triple Axis Accelerometer Breakout - LIS331&lt;/a&gt; (SEN-10345)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9755"&gt;Triple Axis Accelerometer - LIS331HH&lt;/a&gt; (SEN-09755)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="LIS331-1" x="0" y="0"/>
 </gates>
@@ -13972,7 +14023,10 @@ It includes a sensing element and an IC interface capable of providing the measu
 <connect gate="G$1" pin="VDDR" pad="15"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-12675"/>
+<attribute name="SF_ID" value="COM-09755"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -14005,7 +14059,9 @@ Untested part.</description>
 </devices>
 </deviceset>
 <deviceset name="LM34">
-<description>10mV/degF, 1 degF accurate analog temp sensor</description>
+<description>&lt;h3&gt;Texas Instruments LM34 - Precision Fahrenheit Temperature Sensor&lt;/h3&gt;
+&lt;p&gt;10mV/degF, 1 degF accurate analog temp sensor&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.ti.com/lit/ds/symlink/lm34.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="LM34" x="0" y="2.54"/>
 </gates>
@@ -14017,13 +14073,21 @@ Untested part.</description>
 <connect gate="G$1" pin="VOUT" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-08232"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="LOAD_CELL" prefix="J">
-<description>&lt;h3&gt;Half-wheatstone bridge Load Cell&lt;/h3&gt;</description>
+<description>&lt;h3&gt;Load Cell - Half-Wheatstone Bridge&lt;/h3&gt;
+&lt;p&gt;Load cell weight sensors commonly found in scales. 3- pin, half-wheatstone bridge configuration.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Sensors/loadsensor.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10245"&gt;Load Sensor - 50kg&lt;/a&gt; (SEN-10245)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="LOAD_CELL" x="0" y="-5.08"/>
 </gates>
@@ -14035,7 +14099,9 @@ Untested part.</description>
 <connect gate="G$1" pin="W" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="SF_ID" value="SEN-10245"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -14078,7 +14144,13 @@ Untested part.</description>
 </devices>
 </deviceset>
 <deviceset name="LTR-301" prefix="Q" uservalue="yes">
-<description>Through-hole side-receiving IR phototransistor</description>
+<description>&lt;h3&gt;LiteOn LTR-301 IR Phototransistor (Side-Receiving)&lt;/h3&gt;
+&lt;p&gt;Side-looking Infrared detectors. These simple devices operate at 940nm and work well for generic IR systems including remote control and touch-less object sensing. Using a simple ADC on any microcontroller will allow variable readings to be collected from the detector.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Components/LTR-301.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/241"&gt;Infrared Emitters and Detectors&lt;/a&gt; (SEN-00241)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="LTR-301" x="0" y="0"/>
 </gates>
@@ -14089,7 +14161,10 @@ Untested part.</description>
 <connect gate="G$1" pin="E" pad="E"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-10904"/>
+<attribute name="SF_ID" value="SEN-00241"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -14159,7 +14234,13 @@ Untested part.</description>
 </devices>
 </deviceset>
 <deviceset name="MAG3110" prefix="U">
-<description>3-axis digital (I2C) magnetometer</description>
+<description>&lt;h3&gt;Freescale MAG3110 3-Axis Digital (I2C) Magnetometer&lt;/h3&gt;
+&lt;p&gt;Freescale’s MAG3110 is a small, low-power, digital 3-axis magnetometer. The device can be used in conjunction with a 3-axis accelerometer to produce orientation independent accurate compass heading information. It features a standard I2C serial interface output and smart embedded functions.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Sensors/Magneto/MAG3110_v9.2.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12670"&gt;SparkFun Triple Axis Magnetometer Breakout - MAG3110&lt;/a&gt; (SEN-12670)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="MAG3110" x="0" y="0"/>
 </gates>
@@ -14177,7 +14258,9 @@ Untested part.</description>
 <connect gate="G$1" pin="VDDIO" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-10404"/>
+</technology>
 </technologies>
 </device>
 <device name="1:1" package="DFN-10-W">
@@ -14199,7 +14282,14 @@ Untested part.</description>
 </devices>
 </deviceset>
 <deviceset name="MCP9700">
-<description>Analog-output temperature sensor</description>
+<description>&lt;h3&gt;Microchip MCP9700 Analog-Output Temperature Sensor&lt;/h3&gt;
+&lt;p&gt;The MCP9700 can accurately measure temperature from -40C to +150C. The output of the MCP9700 is calibrated to a slope of 10mV/°C and has a DC offset of 500mV. The offset allows reading negative temperatures without the need for a negative supply. &lt;/p&gt;
+&lt;p&gt;&lt;a href="http://ww1.microchip.com/downloads/en/DeviceDoc/20001942F.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8777"&gt;LilyPad Temperature Sensor&lt;/a&gt; (DEV-08777)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12651"&gt;SparkFun Digital Sandbox&lt;/a&gt; (DEV-12651)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="MCP9700" x="0" y="-2.54"/>
 </gates>
@@ -14212,14 +14302,24 @@ Untested part.</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="IC-08917" constant="no"/>
+<attribute name="PROD_ID" value="IC-08917"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="MIC">
-<description>Omni-directional electret microphone. 9.7mm standard diameter.</description>
+<description>&lt;h3&gt;Microphone&lt;/h3&gt;
+&lt;p&gt;Omni-directional electret microphones - one through-hole, the other SMD.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Sensors/Sound/CEM-C9745JAD462P2.54R.pdf"&gt;Datasheet&lt;/a&gt; (through-hole mic)&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8635"&gt;Electret Microphone&lt;/a&gt; (COM-08635)&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9964"&gt;SparkFun Electret Microphone Breakout &lt;/a&gt; (BOB-09964)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12651"&gt;Digital Sandbox&lt;/a&gt; (DEV-12651)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12642"&gt;SparkFun Sound Detector&lt;/a&gt; (SEN-12642)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="&gt;NAME" symbol="BUZZER" x="0" y="0"/>
 </gates>
@@ -14231,26 +14331,20 @@ Untested part.</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="COMP-08856" constant="no"/>
+<attribute name="PROD_ID" value="COMP-08856"/>
+<attribute name="SF_ID" value="COM-08635"/>
 </technology>
 </technologies>
 </device>
-<device name="ELECTRET_SMD" package="MIC_ELECTRET_SMD">
+<device name="SMD" package="MIC_ELECTRET_SMD">
 <connects>
 <connect gate="&gt;NAME" pin="1" pad="1"/>
 <connect gate="&gt;NAME" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SMD_LESS_PASTE" package="MIC_ELECTRET_SMD_LESS_PASTE">
-<connects>
-<connect gate="&gt;NAME" pin="1" pad="1"/>
-<connect gate="&gt;NAME" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-10458"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -14292,12 +14386,19 @@ Untested part.</description>
 </devices>
 </deviceset>
 <deviceset name="MLX90614" prefix="U">
-<description>Non-contact PIR I2C interface temperature sensor</description>
+<description>&lt;h3&gt;Melexis MLX90614 Infrared (IR) Thermometer&lt;/h3&gt;
+&lt;p&gt;The MLX90614 is a passive infrared (PIR) I&lt;sup&gt;2&lt;/sup&gt;C temperature sensor.It is designed for non-contact temperature sensing. An internal 17-bit ADC and a powerful DSP contribute to the MLX90614’s high accuracy and resolution. It has a huge number of applications including body temperature measurment and movement detection.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Sensors/Temperature/SEN-09570-datasheet-3901090614M005.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9570"&gt;Infrared Thermometer - MLX90614&lt;/a&gt; (SEN-09570)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10740"&gt;SparkFun IR Thermometer Evaluation Board - MLX90614 &lt;/a&gt; (SEN-10740)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="MLX90614" x="0" y="0"/>
 </gates>
 <devices>
-<device name="_" package="TO-39">
+<device name="" package="TO-39">
 <connects>
 <connect gate="G$1" pin="PWM/SDA" pad="2"/>
 <connect gate="G$1" pin="SCL/VZ" pad="1"/>
@@ -14305,7 +14406,10 @@ Untested part.</description>
 <connect gate="G$1" pin="VSS" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-09719"/>
+<attribute name="SF_ID" value="SEN-09570"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -14364,7 +14468,8 @@ IC-09489</description>
 </devices>
 </deviceset>
 <deviceset name="MMA8452Q" prefix="U">
-<description>&lt;h3&gt;MMA8452Q 3-Axis, 12/8-bit Digital Accelerometer&lt;/h3&gt;
+<description>&lt;h3&gt;NXP MMA8452Q 3-Axis Digital Accelerometer&lt;/h3&gt;
+&lt;p&gt;The MMA8452Q is a smart low-power, three-axis, capacitive MEMS accelerometer with 12 bits of resolution. This accelerometer is packed with embedded functions with flexible user programmable options, configurable to two interrupt pins. &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;B&gt;Supply Voltage:&lt;/b&gt; 1.6-3.6V&lt;/li&gt;
 &lt;li&gt;&lt;B&gt;Range:&lt;/b&gt; +/- 2g, 4g, 8g&lt;/li&gt;
@@ -14372,9 +14477,12 @@ IC-09489</description>
 &lt;li&gt;&lt;b&gt;ODR:&lt;/b&gt; 1.56 Hz - 800 Hz&lt;/li&gt;
 &lt;li&gt;&lt;B&gt;Package:&lt;/b&gt; QFN-16&lt;/li&gt;
 &lt;/ul&gt;
-&lt;br&gt;
-&lt;br&gt;
-http://cache.freescale.com/files/sensors/doc/data_sheet/MMA8452Q.pdf</description>
+&lt;p&gt;&lt;a href="http://cache.freescale.com/files/sensors/doc/data_sheet/MMA8452Q.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12756"&gt;SparkFun Triple Axis Accelerometer Breakout - MMA8452Q&lt;/a&gt; (SEN-12756)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12589"&gt;SparkFun RedBot Sensor - Accelerometer&lt;/a&gt; (SEN-12589)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="MMA8452Q" x="0" y="0"/>
 </gates>
@@ -14402,9 +14510,14 @@ http://cache.freescale.com/files/sensors/doc/data_sheet/MMA8452Q.pdf</descriptio
 </devices>
 </deviceset>
 <deviceset name="MPL115A" prefix="U">
-<description>&lt;b&gt;&lt;h3&gt;MPL115A1 (SPI) and MPL115A2 (I2C) Miniature Digital Barometer&lt;/h3&gt;&lt;/b&gt;
-&lt;br&gt;
-5.0x3.0x1.2mm LGA Package</description>
+<description>&lt;h3&gt;NXP MPL115A 50 to 115kPa, Absolute Digital Pressure Sensor&lt;/h3&gt;
+&lt;p&gt;The MPL115A is a simple barometer with digital output for cost-effective applications. It employs a MEMS pressure sensor with a conditioning integrated circuit to provide accurate pressure data. An integrated analog-to-digital converter (ADC) provides digitized temperature and pressure sensor outputs via either a serial peripheral interface (SPI) (MPL115A1) or I²C (MPL115A2) port.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Sensors/Pressure/MPL115A1.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9721"&gt;SparkFun Barometric Pressure Sensor Breakout - MPL115A1&lt;/a&gt; (SEN-09721)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9602"&gt;Barometric Pressure Sensor - MPL115A1&lt;/a&gt; (SEN-09602)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="MPL115A" x="0" y="0"/>
 </gates>
@@ -14421,13 +14534,26 @@ http://cache.freescale.com/files/sensors/doc/data_sheet/MMA8452Q.pdf</descriptio
 <connect gate="G$1" pin="VDD" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09492"/>
+<attribute name="SF_ID" value="SEN-09602"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="MPL3115A2" prefix="U">
-<description>Altimeter/Pressure Sensor, I2C, 1.95V-3.6V supply, 50 to 110kPa</description>
+<description>&lt;h3&gt;NXP MPL3115A2 Digital Altimeter/Pressure Sensor&lt;/h3&gt;
+&lt;p&gt;The MPL3115A2 is a compact piezoresistive absolute pressure sensor with an I2C interface.
+MPL3115 has a wide operating range of 20kPa to 110 kPa, a range that covers all surface elevations on Earth.
+The fully internally compensated MEMS in conjunction with an embedded high resolution 24-bit equivalent ADC provide accurate pressure [Pascals] /altitude [meters] and temperature [degrees Celsius] data.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Sensors/Pressure/MPL3115A2.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11084"&gt;SparkFun Altitude/Pressure Sensor Breakout - MPL3115A2&lt;/a&gt; (SEN-11084)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12081"&gt;SparkFun Weather Shield&lt;/a&gt; (DEV-12081)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13630"&gt;SparkFun Photon Weather Shield&lt;/a&gt; (DEV-13630)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="MPL3115A2" x="0" y="0"/>
 </gates>
@@ -14487,7 +14613,13 @@ http://cache.freescale.com/files/sensors/doc/data_sheet/MMA8452Q.pdf</descriptio
 </devices>
 </deviceset>
 <deviceset name="PHOTOCELL" prefix="R">
-<description>CdS photoresistor. This is a low cost way to detect light levels. Resistance decreases with more incoming light. SparkFun SKU: SEN-09088</description>
+<description>&lt;h3&gt;Photocell (Photodetector, Photo Resistor, CdS)&lt;/h3&gt;
+&lt;p&gt;This is a very small light sensor. A photocell changes (also called a photodetector, photo resistor, CdS or photoconductive cell) resistance depending on the amount of light it is exposed to. These little sensors make great ambient light triggers (when light in the room turns on, do something).&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Sensors/LightImaging/SEN-09088.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9088"&gt;Mini Photocell&lt;/a&gt; (SEN-09088)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="PHOTOCELL" x="0" y="0"/>
 </gates>
@@ -14498,7 +14630,10 @@ http://cache.freescale.com/files/sensors/doc/data_sheet/MMA8452Q.pdf</descriptio
 <connect gate="G$1" pin="P$2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-09129"/>
+<attribute name="SF_ID" value="SEN-09088"/>
+</technology>
 </technologies>
 </device>
 <device name="PTH-KIT" package="PHOTOCELL-KIT">
@@ -14507,7 +14642,10 @@ http://cache.freescale.com/files/sensors/doc/data_sheet/MMA8452Q.pdf</descriptio
 <connect gate="G$1" pin="P$2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-09129"/>
+<attribute name="SF_ID" value="SEN-09088"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -14547,7 +14685,13 @@ object passes within its field of view. The area of the optimum response approxi
 </devices>
 </deviceset>
 <deviceset name="QRD1114">
-<description>Reflective object sensor</description>
+<description>&lt;h3&gt;QRD1114 Reflective Proximity, Object Sensor&lt;/h3&gt;
+&lt;p&gt;This sensor uses an infrared emitted diode combined with an infrared phototransistor to detect the reflected infrared signal. Ideal for sensing black-to-white transitions or can be used to detect nearby objects (.5-1cm).&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/BOT/QRD1114.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/246"&gt;Optical Detector / Phototransistor - QRD1114&lt;/a&gt; (SEN-00246)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="QRD1114" x="-5.08" y="0"/>
 </gates>
@@ -14560,13 +14704,28 @@ object passes within its field of view. The area of the optimum response approxi
 <connect gate="G$1" pin="K" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09032"/>
+<attribute name="SF_ID" value="SEN-00246"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="QRE1113" prefix="U" uservalue="yes">
-<description>Reflective object sensor</description>
+<description>&lt;h3&gt;QRE1113 Reflective Object Sensor&lt;/h3&gt;
+&lt;p&gt;The QRE1113 is a small IR reflectance sensor. This sensor is often used in line following robots because, if it can sense if a surface is white or black.&lt;/p&gt;
+&lt;p&gt;There are four pins on the QRE1113 - two control the IR emitting LED while the other two are the collector and emitter of a phototransistor. The IR diode has a max forward current of 50mA and operates at 940nm.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Components/SMD/QRE1113.GR.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9542"&gt;IR Reflectance Sensor - QRE1113&lt;/a&gt; (COM-09542)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9453"&gt;SparkFun Line Sensor Breakout - QRE1113 (Analog)&lt;/a&gt; (ROB-09453)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9454"&gt;SparkFun Line Sensor Breakout - QRE1113 (Digital)&lt;/a&gt; (ROB-09454)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11769"&gt;SparkFun RedBot Sensor - Line Follower&lt;/a&gt; (SEN-11769)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12617"&gt;SparkFun RedBot Sensor - Wheel Encoder&lt;/a&gt; (SEN-12617)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13582"&gt;SparkFun Line Follower Array&lt;/a&gt; (SEN-13582)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="&gt;NAME" symbol="QRE1113" x="0" y="0"/>
 </gates>
@@ -14581,7 +14740,7 @@ object passes within its field of view. The area of the optimum response approxi
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-09357"/>
-<attribute name="VALUE" value="QRE1113" constant="no"/>
+<attribute name="SF_ID" value="COM-09542"/>
 </technology>
 </technologies>
 </device>
@@ -14593,7 +14752,10 @@ object passes within its field of view. The area of the optimum response approxi
 <connect gate="&gt;NAME" pin="K" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09357"/>
+<attribute name="SF_ID" value="COM-09542"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -14704,13 +14866,19 @@ object passes within its field of view. The area of the optimum response approxi
 </devices>
 </deviceset>
 <deviceset name="SHT1X">
-<description>&lt;b&gt;SHT1x Humdity Sensor&lt;/b&gt;
-Sensirion humdity sensor. Schematic element and footprint proven. Spark Fun Electronics SKU : COM-08227</description>
+<description>&lt;h3&gt;Sensiron SHT1x (SHT10, SHT11, SHT15) Digital Humidity Sensor&lt;/h3&gt;
+&lt;p&gt;The SHT1x humidity sensor series (including SHT10, SHT11, and SHT15) is Sensirion’s family of surface-mountable relative humidity sensors. The humidity sensors integrate sensor elements plus signal processing on a tiny footprint and provide a fully calibrated digital output. A unique capacitive sensor element is used for measuring relative humidity, while temperature is measured by a band-gap sensor.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Sensors/Pressure/Sensirion_Humidity_SHT1x_Datasheet_V5.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8227"&gt;Humidity and Temperature Sensor - SHT15&lt;/a&gt; (COM-08227)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13683"&gt;SparkFun Humidity and Temperature Sensor Breakout - SHT15&lt;/a&gt; (SEN-13683)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="SHT1X" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SMD" package="SHT1X">
+<device name="SHT15" package="SHT1X">
 <connects>
 <connect gate="G$1" pin="DATA" pad="2"/>
 <connect gate="G$1" pin="GND" pad="1"/>
@@ -14720,13 +14888,20 @@ Sensirion humdity sensor. Schematic element and footprint proven. Spark Fun Elec
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-08303"/>
+<attribute name="SF_ID" value="COM-08227"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="SI1120">
-<description>Si1120: Proximity/Ambient Light Sensor</description>
+<description>&lt;h3&gt;Silicon Labs Si1120 Proximity/Ambient Light Sensor&lt;/h3&gt;
+&lt;p&gt;The Si1120 is a high-sensitivity active infrared proximity and ambient light sensor IC, enabling innovative touchless human interface applications with ultra-low power advantages. Consisting of an infrared LED driver, an infrared photodiode, an ambient light sensor and control logic, the device is packaged in a 3 mm x 3 mm clear DFN.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.silabs.com/Support%20Documents/TechnicalDocs/Si1120.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;No current assemblies&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="SI1120" x="0" y="0"/>
 </gates>
@@ -14743,32 +14918,34 @@ Sensirion humdity sensor. Schematic element and footprint proven. Spark Fun Elec
 <connect gate="G$1" pin="VSS" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09981"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="SOLAR-IXYS" prefix="D">
+<description>&lt;h3&gt;IXYS CPC1822 4V Output Solar Cell&lt;/h3&gt;
+&lt;p&gt;The CPC1822 is a monolithic photovoltaic string of solar cells with switching circuitry. When operating in sunlight or a bright artificial light environment the optical energy will activate the cell array and generate a voltage at the output. The solar cells are capable of generating a floating source voltage and current sufficient to drive and power CMOS ICs, logic gates and/or provide “trickle charge” for battery applications.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/Prototyping/Solar/CPC1822-1.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9962"&gt;Miniature Solar Cell - CPC1822&lt;/a&gt; (PRT-09962)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="SOLARCELL_SINGLE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="_" package="SO08">
+<device name="" package="SO08">
 <connects>
 <connect gate="G$1" pin="A" pad="8"/>
 <connect gate="G$1" pin="C" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-" package="SOLARBIT-12X1">
-<connects>
-<connect gate="G$1" pin="A" pad="+"/>
-<connect gate="G$1" pin="C" pad="-"/>
-</connects>
-<technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="SF_ID" value="PRT-09962"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -14876,7 +15053,14 @@ Sensirion humdity sensor. Schematic element and footprint proven. Spark Fun Elec
 </devices>
 </deviceset>
 <deviceset name="TCM8240MD" uservalue="yes">
-<description>1.3MP color image sensor</description>
+<description>&lt;h3&gt;Toshiba TCM8240MD 1.3MP Color Image Sensor&lt;/h3&gt;
+&lt;p&gt;The TCM8240MD is a high quality, very small 1.3 mega-pixel color camera from Toshiba with the standard data+I2C interface. The nice thing is that we have a good supplier of these cameras, so they should be around for some time. This camera is also unique in that it offers on-board JPEG compression.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Sensors/Imaging/TCM8240MD_E150405_REV13.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/retired/8668"&gt;CMOS Camera - 1300x1040&lt;/a&gt; (SEN-08668)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/retired/9504"&gt;TCM8240 Camera Breakout&lt;/a&gt; (BOB-09504)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="TCM8240MD" x="25.4" y="15.24"/>
 </gates>
@@ -14909,7 +15093,10 @@ Sensirion humdity sensor. Schematic element and footprint proven. Spark Fun Elec
 <connect gate="G$1" pin="VBLK" pad="P$16"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-09354"/>
+<attribute name="SF_ID" value="SEN-08668"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -14932,9 +15119,15 @@ Sensirion humdity sensor. Schematic element and footprint proven. Spark Fun Elec
 </device>
 </devices>
 </deviceset>
-<deviceset name="LIGHTSENSOR" prefix="U">
-<description>&lt;b&gt;Ambient Light Sensor&lt;/b&gt;
-Simple light detection sensor. Output varies with light intensity input. Spark Fun Electronics SKU : COM-08348</description>
+<deviceset name="LIGHT_SENSOR" prefix="U">
+<description>&lt;h3&gt;Ambient Light Sensors - Phototransistors&lt;/h3&gt;
+&lt;p&gt;Low cost ambient light sensors, consisting of a phototransistor in miniature SMD packages. Output voltage varies with light intensity.&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12566"&gt;ALS-PT19 Light Sensor&lt;/a&gt; (SEN-12566)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8348"&gt;Ambient Light Sensor - TEMT6000&lt;/a&gt; (SEN-08348)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8688"&gt;SparkFun Ambient Light Sensor Breakout - TEMT60000&lt;/a&gt; (SEN-08688)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="LIGHTSENSOR" x="0" y="0"/>
 </gates>
@@ -14945,7 +15138,10 @@ Simple light detection sensor. Output varies with light intensity input. Spark F
 <connect gate="G$1" pin="E1" pad="EMITTER"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-08569"/>
+<attribute name="SF_ID" value="COM-08348"/>
+</technology>
 </technologies>
 </device>
 <device name="ALS" package="ALS-PT19">
@@ -14955,14 +15151,22 @@ Simple light detection sensor. Output varies with light intensity input. Spark F
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="IC-11836" constant="no"/>
+<attribute name="PROD_ID" value="IC-11836"/>
+<attribute name="SF_ID" value="SEN-12566"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="TMP36" prefix="U" uservalue="yes">
-<description>Precision degC temp sensor, analog out</description>
+<description>&lt;h3&gt;TMP36 Precision Analog &amp;deg;C Temperature Sensor&lt;/h3&gt;
+&lt;p&gt;The TMP36 is a low voltage, precision centigrade temperature sensor. It provides a voltage output that is linearly proportional to the Celsius temperature. It also doesn’t require any external calibration to provide typical accuracies of ±1°C at +25°C and ±2°C over the −40°C to +125°C temperature range. We like it because it’s so easy to use: Just give the device a ground and 2.7 to 5.5 VDC and read the voltage on the Vout pin. The output voltage can be converted to temperature easily using the scale factor of 10 mV/°C.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Sensors/Temp/TMP35_36_37.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10988"&gt;Temperature Sensor - TMP36&lt;/a&gt; (SEN-10988)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11649"&gt;SparkFun Danger Shield&lt;/a&gt; (DEV-11649)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="TMP36" x="0" y="0"/>
 </gates>
@@ -14974,7 +15178,10 @@ Simple light detection sensor. Output varies with light intensity input. Spark F
 <connect gate="G$1" pin="VOUT" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09880"/>
+<attribute name="SF_ID" value="SEN-10988"/>
+</technology>
 </technologies>
 </device>
 <device name="TO-92-KIT" package="TO-92-KIT">
@@ -14984,13 +15191,22 @@ Simple light detection sensor. Output varies with light intensity input. Spark F
 <connect gate="G$1" pin="VOUT" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09880"/>
+<attribute name="SF_ID" value="SEN-10988"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="TMP102" prefix="U">
-<description>I2C degC temp sensor</description>
+<description>&lt;h3&gt;Texas Instruments TMP102 Low-Power Digital Temperature Sensor&lt;/h3&gt;
+&lt;p&gt;The TMP102 is a digital sensor (I2C a.k.a. TWI), has a resolution of 0.0625°C, and is accurate up to 0.5°C. This is a very handy sensor that requires a very low-current.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Sensors/Temperature/tmp102.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11931"&gt;SparkFun Digital Temperature Sensor Breakout - TMP102&lt;/a&gt; (SEN-11931)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="TMP102" x="0" y="0"/>
 </gates>
@@ -15006,22 +15222,8 @@ Simple light detection sensor. Output varies with light intensity input. Spark F
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="IC-09303" constant="no"/>
-<attribute name="VALUE" value="TMP102" constant="no"/>
+<attribute name="PROD_ID" value="IC-09303"/>
 </technology>
-</technologies>
-</device>
-<device name="1:1" package="SOT563-2">
-<connects>
-<connect gate="G$1" pin="ADD0" pad="4"/>
-<connect gate="G$1" pin="ALERT" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="SCL" pad="1"/>
-<connect gate="G$1" pin="SDA" pad="6"/>
-<connect gate="G$1" pin="VCC" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -15116,7 +15318,14 @@ Simple light detection sensor. Output varies with light intensity input. Spark F
 </devices>
 </deviceset>
 <deviceset name="GEIGER_TUBE" prefix="U" uservalue="yes">
-<description>LND712 Geiger Tube (COM-08875)</description>
+<description>&lt;h3&gt;LND, INC LND712 Geiger Tube&lt;/h3&gt;
+&lt;p&gt;Geiger tubes are the sensing elements of Geiger counters, which are used to measure ionizing radiation. This tube is made of a thin-walled stainless steel and is filled with a mixture of Neon and Halogen gases at low-pressure.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Components/General/LND-712-Geiger-Tube.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8875"&gt;Geiger Tube&lt;/a&gt; (COM-08875)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11345"&gt;SparkFun Geiger Counter&lt;/a&gt; (SEN-11345)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="GEIGER_TUBE-1" x="0" y="0"/>
 </gates>
@@ -15127,15 +15336,21 @@ Simple light detection sensor. Output varies with light intensity input. Spark F
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-09328"/>
+<attribute name="SF_ID" value="SEN-11345"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="ADXL362" prefix="U" uservalue="yes">
-<description>Micropower 3-axis accelerometer&lt;BR&gt;
-2/4/8g digital output (SPI)&lt;br&gt;
-IC-11297</description>
+<description>&lt;h3&gt;Analog Devices ADXL362 3-Axis SPI Accelerometer&lt;/h3&gt;
+&lt;p&gt;The ADXL362 is an ultralow power, 3-axis MEMS accelerometer that consumes less than 2 μA at a 100 Hz output data rate and 270 nA when in motion triggered wake-up mode. Unlike accelerometers that use power duty cycling to achieve low power consumption, the ADXL362 does not alias input signals by undersampling; it samples the full bandwidth of the sensor at all data rates.&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11446"&gt;SparkFun Triple Axis Accelerometer Breakout - ADXL362&lt;/a&gt; (SEN-11446)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ADXL362" x="-7.62" y="-7.62"/>
 </gates>
@@ -15177,30 +15392,14 @@ IC-11297</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="METHANE_SENSOR">
-<description>MQ-4 Methane Gas Sensor&lt;br&gt;
-SEN-09404</description>
-<gates>
-<gate name="G$1" symbol="MQ-4" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MQ-3">
-<connects>
-<connect gate="G$1" pin="A1" pad="A1"/>
-<connect gate="G$1" pin="A2" pad="A2"/>
-<connect gate="G$1" pin="B1" pad="B1"/>
-<connect gate="G$1" pin="B2" pad="B2"/>
-<connect gate="G$1" pin="HA" pad="HA"/>
-<connect gate="G$1" pin="HB" pad="HB"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="MPU-9150" prefix="U" uservalue="yes">
-<description>9DOF (3mag, 3accel, 3rotat). I2C interface.</description>
+<description>&lt;h3&gt;Invensense MPU-9150 9DOF (3 magnetometer, 3 accelerometer, 3 gyroscope)&lt;/h3&gt;
+&lt;p&gt;The MPU-9150 is a System in Package (SiP) that combines two chips: the MPU-6050, which contains a 3-axis gyroscope, 3-axis accelerometer, and an onboard Digital Motion Processor™ (DMP™) capable of processing complex MotionFusion algorithms; and the AK8975, a 3-axis digital compass. The part’s integrated 6-axis MotionFusion algorithms access all internal sensors to gather a full set of sensor data.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Sensors/IMU/MPU-9150-Datasheet.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11486"&gt;SparkFun 9 Degrees of Freedom Breakout - MPU-9150&lt;/a&gt; (SEN-11486)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="MPU-9150" x="0" y="0"/>
 </gates>
@@ -15232,12 +15431,19 @@ SEN-09404</description>
 </devices>
 </deviceset>
 <deviceset name="MPU-6000" prefix="U">
-<description>MPU-6000 - I2C address is 0x68 with AD0 low and 0x69 with AD0 high.</description>
+<description>&lt;h3&gt;Invensense MPU-6000 6-Axis Gryoscope/Accelerometer&lt;/h3&gt;
+&lt;p&gt;3-axis gyroscope, 3-axis accelerometer in a 4x4 package. The MPU-6000 is the world’s first 6-axis I²C MotionTracking device designed for the low power, low cost, and high performance requirements of smartphones, tablets and wearable sensors.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Components/General%20IC/PS-MPU-6000A.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11234"&gt;MPU-6000 - Motion Processing Unit&lt;/a&gt; (SEN-11234)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11703"&gt;SparkFun UDB5 - PIC UAV Development Board&lt;/a&gt; (GPS-11703)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="MPU-6000" x="0" y="0"/>
 </gates>
 <devices>
-<device name="QFN-24" package="QFN-24-TESTING">
+<device name="" package="QFN-24-TESTING">
 <connects>
 <connect gate="G$1" pin="AD0/SDO" pad="9"/>
 <connect gate="G$1" pin="AUXCL" pad="7"/>
@@ -15255,7 +15461,11 @@ SEN-09404</description>
 <connect gate="G$1" pin="VDD" pad="13"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-11089"/>
+<attribute name="SF_ID" value="SEN-11234
+"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -15302,12 +15512,21 @@ SEN-09404</description>
 </devices>
 </deviceset>
 <deviceset name="MPR121">
-<description>MPR121 Capacitive Touch Sensor Controller. Variant "V2" was created using an image import of the bottom of the IC. It matches metal to metal.</description>
+<description>&lt;h3&gt;NXP MPR121 Proximity Capacitive Touch Sensor Controller&lt;/h3&gt;
+&lt;p&gt;The MPR121 is a capacitive touch sensor controller driven by an I2C interface. The chip can control up to twelve individual electrodes, as well as a simulated thirteenth electrode. The MPR121 also features eight LED driving pins. When these pins are not configured as electrodes, they may be used to drive LEDs.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Components/MPR121.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9604"&gt;Capacitive Touch Sensor Controller - MPR121QR2&lt;/a&gt; (COM-09604)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9695"&gt;SparkFun Capacitive Touch Sensor Breakout - MPR121&lt;/a&gt; (SEN-09695)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12013"&gt;SparkFun Touch Shield&lt;/a&gt; (DEV-12013)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12017"&gt;SparkFun Capacitive Touch Keypad - MPR121&lt;/a&gt; (SEN-12017)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="MPR121" x="0" y="0"/>
 </gates>
 <devices>
-<device name="QFN20" package="QFN-20-0.4MM">
+<device name="" package="QFN-20-0.4MM">
 <connects>
 <connect gate="G$1" pin="ADDR" pad="4"/>
 <connect gate="G$1" pin="ELE0" pad="8"/>
@@ -15331,39 +15550,24 @@ SEN-09404</description>
 <connect gate="G$1" pin="~IRQ" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="V2" package="QFN-20-0.4MM-V2">
-<connects>
-<connect gate="G$1" pin="ADDR" pad="4"/>
-<connect gate="G$1" pin="ELE0" pad="8"/>
-<connect gate="G$1" pin="ELE1" pad="9"/>
-<connect gate="G$1" pin="ELE10/LED6" pad="18"/>
-<connect gate="G$1" pin="ELE11/LED7" pad="19"/>
-<connect gate="G$1" pin="ELE2" pad="10"/>
-<connect gate="G$1" pin="ELE3" pad="11"/>
-<connect gate="G$1" pin="ELE4/LED0" pad="12"/>
-<connect gate="G$1" pin="ELE5/LED1" pad="13"/>
-<connect gate="G$1" pin="ELE6/LED2" pad="14"/>
-<connect gate="G$1" pin="ELE7/LED3" pad="15"/>
-<connect gate="G$1" pin="ELE8/LED4" pad="16"/>
-<connect gate="G$1" pin="ELE9/LED5" pad="17"/>
-<connect gate="G$1" pin="REXT" pad="7"/>
-<connect gate="G$1" pin="SCL" pad="2"/>
-<connect gate="G$1" pin="SDA" pad="3"/>
-<connect gate="G$1" pin="VDD" pad="20"/>
-<connect gate="G$1" pin="VREG" pad="5"/>
-<connect gate="G$1" pin="VSS" pad="6"/>
-<connect gate="G$1" pin="~IRQ" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09490"/>
+<attribute name="SF_ID" value="COM-09604"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="HTU21D" prefix="U">
+<description>&lt;h3&gt;Measurement Specialties HTU21D Relative Humidity Sensor w/ Temperature&lt;/h3&gt;
+&lt;p&gt;HTU21D(F) digital humidity sensors are dedicated humidity and temperature plug and play transducers for OEM applications  where  reliable  and  accurate  measurements  are  needed.  Direct  interface  with  a  micro-controller  is made  possible  with  the  module for humidity  and  temperature  digital  outputs. These  low  power sensors are designed for high volume and cost sensitive applications with tight space constraints. &lt;/p&gt;
+&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/BreakoutBoards/HTU21D.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12064"&gt;SparkFun Humidity and Temperature Sensor Breakout - HTU21D&lt;/a&gt; (SEN-12064)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12081"&gt;SparkFun Weather Shield&lt;/a&gt; (SEN-12081)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13630"&gt;SparkFun Photon Weather Shield&lt;/a&gt; (SEN-13630)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="U$1" symbol="HTU21D" x="0" y="0"/>
 </gates>
@@ -15378,73 +15582,23 @@ SEN-09404</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="IC-11793" constant="no"/>
+<attribute name="PROD_ID" value="IC-11793"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="GP-635T" prefix="J">
-<description>&lt;b&gt;Description:&lt;/b&gt; Footprint and symbol for the GP-635T GPS module. This is a very small, very accurate, low-cost GPS receiver. Footprint works with SKU GPS-00579. Use cable GPS-00574 or GPS-09123 to connect the receiver to this footprint+connector.</description>
-<gates>
-<gate name="J1" symbol="GP-635T" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SMD" package="GP-635T">
-<connects>
-<connect gate="J1" pin="GND" pad="1"/>
-<connect gate="J1" pin="PWRC" pad="6"/>
-<connect gate="J1" pin="RXA" pad="4"/>
-<connect gate="J1" pin="TXA" pad="3"/>
-<connect gate="J1" pin="VBATT" pad="5"/>
-<connect gate="J1" pin="VCC" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="BMP180" prefix="U">
-<description>BOSCH BMP180 DIGITAL BAROMETRIC PRESSURE SENSOR&lt;p&gt;
-
-Web page: &lt;a href="http://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bmp180_1/bmp180"&gt;http://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bmp180_1/bmp180&lt;/a&gt;&lt;br&gt;
-Datasheet: &lt;a href="http://ae-bst.resource.bosch.com/media/products/dokumente/bmp180/BST-BMP180-DS000-09.pdf"&gt; http://ae-bst.resource.bosch.com/media/products/dokumente/bmp180/BST-BMP180-DS000-09.pdf&lt;/a&gt;&lt;p&gt;
-
-The BMP180 is the function compatible successor of the BMP085, a new generation of high
-precision digital pressure sensors for consumer applications.&lt;p&gt;
-The ultra-low power, low voltage electronics of the BMP180 is optimized for use in mobile phones,
-PDAs, GPS navigation devices and outdoor equipment. With a low altitude noise of merely 0.25m at
-fast conversion time, the BMP180 offers superior performance. The I2C interface allows for easy
-system integration with a microcontroller.&lt;p&gt;
-The BMP180 is based on piezo-resistive technology for EMC robustness, high accuracy and linearity as
-well as long term stability.&lt;p&gt;
-
-Key features:&lt;p&gt;
-
-- Temperature measurement included&lt;br&gt;
-- I2C interface&lt;br&gt;
-- Fully calibrated&lt;br&gt;
-- Pb-free, halogen-free and RoHS compliant,&lt;br&gt;
-- MSL 1&lt;p&gt;
-
-Basic specs:&lt;p&gt;
-
-Pressure range: 300 to 1100hPa (+9000m to -500m relating to sea level)&lt;br&gt;
-Supply voltage: 1.8 to 3.6V (VDD), 1.62V to 3.6V (VDDIO)&lt;br&gt;
-Package: LGA package with metal lid&lt;br&gt;
-Small footprint: 3.6mm x 3.8mm&lt;br&gt;
-Super-flat: 0.93mm height&lt;br&gt;
-Low power: 5μA at 1 sample / sec. in standard mode&lt;br&gt;
-Low noise: 0.06hPa (0.5m) in ultra low power mode, 0.02hPa (0.17m) advanced resolution mode&lt;p&gt;
-
-Typical applications:&lt;p&gt;
-
-- Enhancement of GPS navigation (dead-reckoning, slope detection, etc.)&lt;br&gt;
-- In- and out-door navigation&lt;br&gt;
-- Leisure and sports&lt;br&gt;
-- Weather forecast&lt;br&gt;
-- Vertical velocity indication (rise/sink speed)</description>
+<description>&lt;h3&gt;Bosch BMP180 Digital Barometric Pressures Sensor&lt;/h3&gt;
+&lt;p&gt;The BMP180 is the function compatible successor of the BMP085, a new generation of high precision digital pressure sensors for consumer applications.&lt;/p&gt;
+&lt;p&gt;The ultra-low power, low voltage electronics of the BMP180 is optimized for use in mobile phones, PDAs, GPS navigation devices and outdoor equipment. With a low altitude noise of merely 0.25m at fast conversion time, the BMP180 offers superior performance. The I2C interface allows for easy system integration with a microcontroller. The BMP180 is based on piezo-resistive technology for EMC robustness, high accuracy and linearity as well as long term stability.&lt;/p&gt;
+&lt;p&gt;Web page: &lt;a href="http://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bmp180_1/bmp180"&gt;http://www.bosch-sensortec.com/en/homepage/products_3/environmental_sensors_1/bmp180_1/bmp180&lt;/a&gt;&lt;br&gt;
+Datasheet: &lt;a href="http://ae-bst.resource.bosch.com/media/products/dokumente/bmp180/BST-BMP180-DS000-09.pdf"&gt; http://ae-bst.resource.bosch.com/media/products/dokumente/bmp180/BST-BMP180-DS000-09.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11823"&gt;Barometric Pressure Sensor - BMP180&lt;/a&gt; (COM-11823)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11824"&gt;SparkFun Barometric Pressure Sensor Breakout - BMP180&lt;/a&gt; (SEN-11824)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="BMP180" x="0" y="0"/>
 </gates>
@@ -15458,12 +15612,22 @@ Typical applications:&lt;p&gt;
 <connect gate="G$1" pin="VDDIO" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-11600"/>
+<attribute name="SF_ID" value="11823"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="TSOP57238TT1">
+<description>&lt;h3&gt;Vishay TSOP572...TT1 (TSOP57238TT1) IR Receiver Module&lt;/h3&gt;
+&lt;p&gt;The  TSOP57...  series  are  miniaturized  SMD  IR  receiver  modules  for  infrared  remote  control  systems.  A  PIN  diode  and  a  preamplifier  are  assembled  on  a  PCB,  the  epoxy  package contains an IR filter. The demodulated output signal can be directly connected to a microprocessor for decoding.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.vishay.com/docs/82434/tsop572.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt; Not currently in a SparkFun Assembly
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="TSOP57238TT1" x="0" y="0"/>
 </gates>
@@ -15484,7 +15648,12 @@ Typical applications:&lt;p&gt;
 </devices>
 </deviceset>
 <deviceset name="ADXL337">
-<description>ADXL337 Low Power 3-Axis ±3 g Accelerometer with Analog Output.</description>
+<description>&lt;h3&gt;Analog Devices ADXL337 3-Axis Analog Accelerometer&lt;/h3&gt;
+&lt;p&gt;The ADXL337 is a small, thin, low power, complete 3-axis accelerometer with signal conditioned voltage outputs. The product measures acceleration with a minimum full-scale range of ±3g. It can measure the static acceleration of gravity in tiltsensing applications, as well as dynamic acceleration resulting from motion, shock, or vibration.&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12786"&gt;SparkFun Triple Axis Accelerometer Breakout - ADXL337&lt;/a&gt; (SEN-12786)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ADXL337" x="0" y="0"/>
 </gates>
@@ -15501,13 +15670,20 @@ Typical applications:&lt;p&gt;
 <connect gate="G$1" pin="ZOUT" pad="16"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-12011"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="APDS-9960" prefix="U">
-<description>Avago APDS-9960 digital proximity, ambient light, RGB, and gesture sensor.</description>
+<description>&lt;h3&gt;Avago APDS-9960 Digital Proximity, Ambient Light, RGB, and Gesture Sensor.&lt;/h3&gt;
+&lt;p&gt;The APDS-9960 offers ambient light and color measuring, proximity detection, and touchless gesture sensing. It features UV and IR blocking filters, four separate diodes sensitive to different directions, and an I2C compatible interface.&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12787"&gt;SparkFun RGB and Gesture Sensor - APDS-9960&lt;/a&gt; (SEN-12787)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="APDS-9960" x="0" y="0"/>
 </gates>
@@ -15532,7 +15708,12 @@ Typical applications:&lt;p&gt;
 </devices>
 </deviceset>
 <deviceset name="ADXL377">
-<description>ADXL377 Low Power 3-Axis ±200 g Accelerometer with Analog Output.</description>
+<description>&lt;h3&gt;Analog Devices ADXL377 Low Power 3-Axis ±200 g Accelerometer with Analog Output&lt;/h3&gt;
+&lt;p&gt;The ADXL377 is a small, thin, low power, complete 3-axis accelerometer with signal conditioned voltage outputs. The ADXL377 measures acceleration resulting from motion, shock, or vibration with a typical full-scale range of ±200g.&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12803"&gt;SparkFun Triple Axis Accelerometer Breakout - ADXL377&lt;/a&gt; (SEN-12803)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ADXL377" x="0" y="0"/>
 </gates>
@@ -15549,13 +15730,21 @@ Typical applications:&lt;p&gt;
 <connect gate="G$1" pin="ZOUT" pad="16"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-12027"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="ISL29125">
-<description>The ISL29125 is a low power, high sensitivity RGB color light sensor with an I2C interface.</description>
+<description>&lt;h3&gt;Intersil ISL29125 RGB Color Light Sensor&lt;/h3&gt;
+&lt;p&gt;The ISL29125 is a low power, high sensitivity, RED, GREEN and BLUE color light sensor (RGB) with an I2C (SMBus compatible) interface. Its state-of-the-art photodiode array provides an accurate RGB spectral response and excellent light source to light source variation (LS2LS).&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Sensors/LightImaging/isl29125.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12829"&gt;SparkFun RGB Light Sensor - ISL29125&lt;/a&gt; (SEN-12829)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ISL29125" x="0" y="0"/>
 </gates>
@@ -15569,12 +15758,17 @@ Typical applications:&lt;p&gt;
 <connect gate="G$1" pin="VDD" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-12055"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="BRM-2508" prefix="U">
+<description>&lt;h3&gt;BRM-2508 IR Receiver Module&lt;/h3&gt;
+&lt;p&gt; 2.7V/5.5V IR Receiver with Low Power Consumption, High-immunity Against Ambient Light.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.sinoskysun.com/upload/20110512/201105120447164615.PDF"&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="BRM-2508" x="0" y="0"/>
 </gates>
@@ -15605,12 +15799,19 @@ Typical applications:&lt;p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="T5400" prefix="U">
+<deviceset name="T5403" prefix="U">
+<description>&lt;h3&gt;Epcos T5403 Digital Barometric Pressure Sensor&lt;/h3&gt;
+&lt;p&gt;The T5403 sensor measures the absolute pressure of the air around. This pressure varies with both the weather and altitude. Depending on how you interpret the data, you can monitor changes in the weather, measure altitude, or any other tasks that require an accurate pressure reading.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Sensors/Weather/T5400.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12039"&gt;SparkFun Barometric Sensor Breakout - T5403&lt;/a&gt; (SEN-12039)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
-<gate name="U$1" symbol="T5400" x="0" y="0"/>
+<gate name="U$1" symbol="T5403" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="T5400">
+<device name="" package="T5403">
 <connects>
 <connect gate="U$1" pin="!RST!/&amp;SS" pad="5"/>
 <connect gate="U$1" pin="EOC" pad="4"/>
@@ -15623,13 +15824,20 @@ Typical applications:&lt;p&gt;
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="IC-11772" constant="no"/>
+<attribute name="PROD_ID" value="IC-11772"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="ML8511-UV-SENSOR" prefix="U">
+<description>&lt;h3&gt;Lapis ML8511 Ultraviolet Sensor&lt;/h3&gt;
+&lt;p&gt;The MP8511 UV (ultraviolet) Sensor works by outputing an analog signal in relation to the amount of UV light that’s detected. This sensor detects 280-390nm light most effectively. This is categorized as part of the UVB (burning rays) spectrum and most of the UVA (tanning rays) spectrum. It outputs a analog voltage that is linearly related to the measured UV intensity (mW/cm2).&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Sensors/LightImaging/ML8511_3-8-13.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12705"&gt;SparkFun UV Sensor Breakout - ML8511 &lt;/a&gt; (SEN-12705)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="U1" symbol="ML8511" x="0" y="0"/>
 </gates>
@@ -15644,14 +15852,20 @@ Typical applications:&lt;p&gt;
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="IC-11927" constant="no"/>
+<attribute name="PROD_ID" value="IC-11927"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="MICS-2614">
-<description>Metal oxide MEMS ozone (O3) sensor in an SMD package.</description>
+<description>&lt;h3&gt;SGX Sensortech MiCS-2614 Ozone Detector&lt;/h3&gt;
+&lt;p&gt;The MiCS-2614 is a robust MEMS sensor for ozone (O&lt;sub&gt;3&lt;/sub&gt;) detection; suitable also for gas leak detection and outdoor air quality monitoring.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://sgx.cdistore.com/datasheets/e2v/1087_Datasheet%20MiCS-2614%20rev%206.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Not currently in use.
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="MICS-2614" x="0" y="0"/>
 </gates>
@@ -15672,7 +15886,13 @@ Typical applications:&lt;p&gt;
 </devices>
 </deviceset>
 <deviceset name="MICS-4514">
-<description>Metal oxide MEMS carbon monoxide (CO) and NOx sensor in an SMD package.</description>
+<description>&lt;h3&gt;SGX Sensortech MiCS-4514 Ozone Detector&lt;/h3&gt;
+&lt;p&gt;The MiCS-4514 is a dual, robust MEMS sensor for the detection of pollution from automobile exhausts. This device detects carbon monoxide (CO) and nitrogen dioxide (NO&lt;sub&gt;2&lt;/sub&gt;). &lt;/p&gt;
+&lt;p&gt;&lt;a href="https://sgx.cdistore.com/datasheets/e2v/0278_Datasheet%20MiCS-4514%20rev%2016.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Not currently in use.
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="MICS-4514" x="0" y="0"/>
 </gates>
@@ -15719,7 +15939,14 @@ Typical applications:&lt;p&gt;
 </devices>
 </deviceset>
 <deviceset name="BRM-2A18" prefix="U">
-<description>BRM-2A18 IR receiver.</description>
+<description>&lt;h3&gt;BRM-2A18 IR Receiver&lt;/h3&gt;
+&lt;p&gt;The BRM-2A18 is miniaturized infrared receiver for remote control and other applications requiring improved ambient light rejection. &lt;/p&gt;
+&lt;p&gt;Vertical package is a primary component on the ZX Distance and Gesture Sensor. RA package is not currently in-use.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.sinoskysun.com/upload/20110512/201105120447164615.PDF"&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12780"&gt;ZX Distance and Gesture Sensor&lt;/a&gt; (COM-12780)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="BRM-2A18" x="0" y="0"/>
 </gates>
@@ -15749,6 +15976,14 @@ Typical applications:&lt;p&gt;
 </devices>
 </deviceset>
 <deviceset name="VL6180" prefix="U">
+<description>&lt;h3&gt;ST VL6180X Proximity and Ambient Light Sensing (ALS) Module&lt;/h3&gt;
+&lt;p&gt; Instead of estimating the distance by measuring the amount of light reflected back from the object (which is significantly influenced by color and surface), the VL6180 precisely measures the time the light takes to travel to the nearest object and reflect back to the sensor (Time-of-Flight). Combining an IR emitter, a range sensor and an ambient light sensor in a three-in-one ready-to-use reflowable package, the VL6180 is easy to integrate and saves the end-product makers the long and costly optical and mechanical design optimizations.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Sensors/Proximity/DM00112632.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12784"&gt;SparkFun ToF Range Finder Breakout - VL6180&lt;/a&gt; (SEN-12784)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12785"&gt;SparkFun ToF Range Finder Sensor - VL6180&lt;/a&gt; (SEN-12785)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="VL6180" x="0" y="0"/>
 </gates>
@@ -15773,7 +16008,17 @@ Typical applications:&lt;p&gt;
 </devices>
 </deviceset>
 <deviceset name="ITG-3200" prefix="U">
-<description>ITG-3200 3-axis gyro, digital output, qfn24 package</description>
+<description>&lt;h3&gt;Invensense ITG-3200 3-Axis Gyroscope&lt;/h3&gt;
+&lt;p&gt;The ITG-3200 is the world’s first single-chip, digital-output, 3-axis MEMS motion processing gyro optimized for gaming, 3D mice, and motion-based remote control applications for Internet connected Digital TVs and Set Top Boxes. The ITG-3200 features three 16-bit analog-to-digital converters (ADCs) for digitizing the gyro outputs, a user-selectable internal low-pass filter bandwidth, and a Fast-Mode I²C (400kHz) interface. Additional features include an embedded temperature sensor and a 2% accurate internal oscillator. This breakthrough in MEMS motion processing gyro technology provides a dramatic 60% package size reduction, delivers a 60% power reduction, and has inherent cost advantages compared to competing multi-chip gyro solutions.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/Sensors/Gyro/PS-ITG-3200-00-01.4.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9793"&gt;Triple-Axis Digital-Output Gyroscope - ITG-3200&lt;/a&gt; (SEN-09793)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11977"&gt;SparkFun Triple-Axis Digital-Output Gyro Breakout - ITG-3200&lt;/a&gt; (SEN-11977)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10724"&gt;SparkFun 9 Degrees of Freedom - Sensor Stick&lt;/a&gt; (SEN-10724)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10121"&gt;SparkFun 6 Degrees of Freedom IMU Digital Combo Board - ITG3200/ADXL345&lt;/a&gt; (SEN-10121)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10736"&gt;9 Degrees of Freedom - Razor IMU&lt;/a&gt; (SEN-10736)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ITG-3200" x="0" y="0"/>
 </gates>
@@ -15793,7 +16038,10 @@ Typical applications:&lt;p&gt;
 <connect gate="G$1" pin="VLOGIC" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09685"/>
+<attribute name="SF_ID" value="SEN-09793"/>
+</technology>
 </technologies>
 </device>
 <device name="1:1" package="QFN-24_ITG3200_1:1">
@@ -15819,28 +16067,13 @@ Typical applications:&lt;p&gt;
 </devices>
 </deviceset>
 <deviceset name="TSL2561" prefix="U">
-<description>&lt;b&gt;TSL2561 illumination sensor&lt;/b&gt;&lt;p&gt;
-Approximates Human Eye Response&lt;br&gt;
-Precisely Measures Illuminance&lt;br&gt;
-Programmable Interrupt Function with
-User-Defined Upper and Lower Threshold&lt;br&gt;
-400 KHz I2C interface&lt;br&gt;
-Programmable Analog Gain and Integration
-Time Supporting 1,000,000-to-1 Dynamic
-Range&lt;br&gt;
-Automatically Rejects 50/60-Hz Lighting
-Ripple&lt;br&gt;
-Low Active Power (0.75 mW Typical) with
-Power Down Mode&lt;br&gt;
-RoHS Compliant&lt;p&gt;
-
-The TSL2561 is a light-to-digital converter that transform light intensity to a digital signal output via I2C interface. The device combines one broadband
-photodiode (visible plus infrared) and one infrared-responding photodiode on a single CMOS integrated circuit
-capable of providing a near-photopic response over an effective 20-bit dynamic range (16-bit resolution). Two
-integrating ADCs convert the photodiode currents to a digital output that represents the irradiance measured
-on each channel. This digital output can be input to a microprocessor where illuminance (ambient light level)
-in lux is derived using an empirical formula to approximate the human eye response. The TSL2561 device supports a traditional level style interrupt that
-remains asserted until the firmware clears it.</description>
+<description>&lt;h3&gt;TAOS TSL2561 Digital Luminosity (Light) Sensor&lt;/h3&gt;
+&lt;p&gt;The TSL2561 is a light-to-digital converter that transform light intensity to a digital signal output via I2C interface. The device combines one broadband photodiode (visible plus infrared) and one infrared-responding photodiode on a single CMOS integrated circuit capable of providing a near-photopic response over an effective 20-bit dynamic range (16-bit resolution). Two integrating ADCs convert the photodiode currents to a digital output that represents the irradiance measured on each channel. This digital output can be input to a microprocessor where illuminance (ambient light level) in lux is derived using an empirical formula to approximate the human eye response. The TSL2561 device supports a traditional level style interrupt that remains asserted until the firmware clears it.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Sensors/LightImaging/TSL2561.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12055"&gt;SparkFun Luminosity Sensor Breakout - TSL2561&lt;/a&gt; (SEN-12055)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="TSL2561" x="0" y="0"/>
 </gates>
@@ -15855,7 +16088,9 @@ remains asserted until the firmware clears it.</description>
 <connect gate="G$1" pin="VDD" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-11791"/>
+</technology>
 </technologies>
 </device>
 <device name="T" package="TMB-6">
@@ -15874,8 +16109,13 @@ remains asserted until the firmware clears it.</description>
 </devices>
 </deviceset>
 <deviceset name="BPW34" prefix="D">
-<description>Large-area PIN photodiode ("miniature solar cell")&lt;p&gt;
-Datasheet: &lt;a href="https://www.sparkfun.com/datasheets/Prototyping/Solar/bpw34.pdf"&gt;https://www.sparkfun.com/datasheets/Prototyping/Solar/bpw34.pdf&lt;/a&gt;</description>
+<description>&lt;h3&gt;Vishay BPW34 Silicon PIN Photodiode (Miniature Solar Cell)&lt;/h3&gt;
+&lt;p&gt;BPW34 is a PIN photodiode with high speed and high radiant sensitivity in miniature, flat, top view, clear plastic package. It is sensitive to visible and near infrared radiation. BPW34S is packed in tubes, specifications like BPW34.&lt;/p&gt;
+&lt;p&gt;Datasheet: &lt;a href="https://www.sparkfun.com/datasheets/Prototyping/Solar/bpw34.pdf"&gt;https://www.sparkfun.com/datasheets/Prototyping/Solar/bpw34.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9541"&gt;Miniature Solar Cell - BPW34&lt;/a&gt; (PRT-09541)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="DIODE" x="0" y="0"/>
 </gates>
@@ -15887,24 +16127,21 @@ Datasheet: &lt;a href="https://www.sparkfun.com/datasheets/Prototyping/Solar/bpw
 </connects>
 <technologies>
 <technology name="">
-<attribute name="STOREID" value="9541" constant="no"/>
+<attribute name="SF_ID" value="PRT-09541"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="LSM9DS1" prefix="U">
-<description>&lt;h3&gt;LSM9DS1 3D accelerometer, gyroscope &amp; magnetometer&lt;/h3&gt;
-
-&lt;p&gt;The LSM9DS1 is a system-in-package featuring a 3D digital linear acceleration sensor, a 3D digital angular rate sensor, and a 3D digital magnetic sensor.&lt;/p&gt;
-
-&lt;p&gt;The LSM9DS1 has a linear acceleration full scale of ±2g/±4g/±8/±16 g, a magnetic field full scale of ±4/±8/±12/±16 gauss and an angular rate of ±245/±500/±2000 dps.&lt;/p&gt;
-
-&lt;p&gt;The LSM9DS1 includes an I&lt;sup&gt;2&lt;/sup&gt; C serial bus interface supporting standard and fast mode (100 kHz and 400 kHz) and an SPI serial standard interface.&lt;/p&gt;
-
-&lt;p&gt;Magnetic, accelerometer and gyroscope sensing can be enabled or set in power-down mode separately for smart power management.&lt;/p&gt;
-
-&lt;p&gt;The LSM9DS1 is available in a plastic land grid array package (LGA) and it is guaranteed to operate over an extended temperature range from -40 °C to +85 °C.&lt;/p&gt;</description>
+<description>&lt;h3&gt;ST Microelectronics LSM9DS1 9DOF IMU - Accelerometer, Gyroscope &amp; Magnetometer&lt;/h3&gt;
+&lt;p&gt;The LSM9DS1 is a versatile, motion-sensing system-in-a-chip. It houses a 3-axis accelerometer, 3-axis gyroscope, and 3-axis magnetometer – nine degrees of freedom (9DOF) in a single IC! The LSM9DS1 is equipped with a digital interface, but even that is flexible: it supports both I2C and SPI, so you’ll be hard-pressed to find a microcontroller it doesn’t work with.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/assets/learn_tutorials/3/7/3/LSM9DS1_Datasheet.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13284"&gt;SparkFun 9 Degrees of Freedom IMU Breakout - LSM9DS1&lt;/a&gt; (SEN-13284)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13629"&gt;SparkFun Photon IMU Shield&lt;/a&gt; (DEV-13629)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="LSM9DS1" x="0" y="0"/>
 </gates>
@@ -15938,8 +16175,13 @@ Datasheet: &lt;a href="https://www.sparkfun.com/datasheets/Prototyping/Solar/bpw
 </devices>
 </deviceset>
 <deviceset name="MS5803-14BA" prefix="U">
-<description>&lt;b&gt;Measurement Specialties MS5803_14BA Pressure (Depth) Sensor&lt;/b&gt;&lt;p&gt;
-Datasheet: https://cdn.sparkfun.com/datasheets/Sensors/Weather/ms5803_14ba.pdf</description>
+<description>&lt;h3&gt;Measurement Specialties MS5803_14BA Pressure (Depth) Sensor&lt;/h3&gt;
+&lt;p&gt;The MS5803-14BA is a new generation of high resolution pressure sensors with SPI and I2C bus interface. It is optimized for depth measurement systems with a water depth resolution of 1cm and below. The sensor module includes a high linear pressure sensor and an ultra low power 24 bit ΔΣ ADC with internal factory calibrated coefficients. It provides a precise digital 24 Bit pressure and temperature value and different operation modes that allow the user to optimize for conversion speed and current consumption.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Sensors/Weather/ms5803_14ba.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12909"&gt;SparkFun Pressure Sensor Breakout - MS5803-14BA&lt;/a&gt; (SEN-12909)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="MS5803" x="0" y="0"/>
 </gates>
@@ -15956,17 +16198,20 @@ Datasheet: https://cdn.sparkfun.com/datasheets/Sensors/Weather/ms5803_14ba.pdf</
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="IC-12111" constant="no"/>
+<attribute name="PROD_ID" value="IC-12111"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="DS18B20" prefix="U">
-<description>&lt;b&gt;Dallas/Maxim DS18B20 1-wire temperature sensor&lt;/b&gt;&lt;p&gt;
-
-Datasheet: http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf&lt;br&gt;
-temp thermometer 1-wire one-wire one wire</description>
+<description>&lt;h3&gt;Dallas/Maxim DS18B20 1-Wire Temperature Sensor&lt;/h3&gt;
+&lt;p&gt;The DS18B20 reports degrees C with 9 to 12-bit precision, -55C to 125C (+/-0.5C). Each sensor has a unique 64-Bit Serial number etched into it - allows for a huge number of sensors to be used on one data bus.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/245"&gt;One Wire Digital Temperature Sensor - DS18B20&lt;/a&gt; (SEN-00245)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="DS18B20" x="7.62" y="-10.16"/>
 </gates>
@@ -15986,7 +16231,14 @@ temp thermometer 1-wire one-wire one wire</description>
 </devices>
 </deviceset>
 <deviceset name="SI7021">
-<description>The Si7021 is an I2C Humidity and Temperature Sensor</description>
+<description>&lt;h3&gt;Silicon Labs Si7021 I&lt;sup&gt;2&lt;/sup&gt;C Humidity and Temperature Sensor&lt;/h3&gt;
+&lt;p&gt;The Si7021 is a low-cost, easy-to-use, highly accurate, digital humidity and temperature sensor. This sensor is ideal for environmental sensing and data logging and perfect for build a weather stations or humidor control system. All you need are two lines for I2C communication, and you’ll have relative humidity readings and very accurate temperature readings as a bonus!&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Sensors/Weather/Si7021.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13763"&gt;SparkFun Humidity and Temperature Sensor Breakout - Si7021&lt;/a&gt; (SEN-13763)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13794"&gt;SparkFun Blynk Board - ESP8266&lt;/a&gt; (WRL-13794)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="SI7021" x="0" y="0"/>
 </gates>
@@ -16000,15 +16252,21 @@ temp thermometer 1-wire one-wire one wire</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="IC-13093" constant="no"/>
+<attribute name="PROD_ID" value="IC-13093"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="GP1A57HR" prefix="U">
-<description>&lt;h3&gt;Transmissive Photointerrupter&lt;/h3&gt;
-&lt;p&gt;Standard, OPIC output, transmissive photointerrupter with opposing emitter and detector in a case, providing non-contact sensing. 10mm gap. Built in 15kΩ pull-up resistor&lt;/p&gt;</description>
+<description>&lt;h3&gt;Sharp GP1A57HR Transmissive Photointerrupter&lt;/h3&gt;
+&lt;p&gt;Standard, OPIC output, transmissive photointerrupter with opposing emitter and detector in a case, providing non-contact sensing. 10mm gap. Built in 15kΩ pull-up resistor.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/Components/GP1A57HRJ00F.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9299"&gt;Photo Interrupter - GP1A57HRJ00F&lt;/a&gt; (SEN-09299)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9322"&gt;SparkFun Photo Interrupter Breakout Board - GP1A57HRJ00F&lt;/a&gt; (BOB-09322) - Breakout board for above.&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="GP1A57HR" x="0" y="0"/>
 </gates>
@@ -16023,8 +16281,7 @@ temp thermometer 1-wire one-wire one wire</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="NA"/>
-<attribute name="VALUE" value="10mm"/>
+<attribute name="SF_ID" value="SEN-09299"/>
 </technology>
 </technologies>
 </device>
