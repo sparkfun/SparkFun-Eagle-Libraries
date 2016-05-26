@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.3.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -155,8 +155,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;&lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="HC49U-V">
-<description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
+<package name="HC49U">
+<description>&lt;h3&gt;HC49/U 11.6x4.6mm PTH Crystal (13.46mm height)&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.digikey.com/Web%20Export/Supplier%20Content/Citizen_300/PDF/Citizen_HC49US.pdf?redirected=1"&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <wire x1="-2.921" y1="-2.286" x2="2.921" y2="-2.286" width="0.4064" layer="21"/>
 <wire x1="-2.921" y1="2.286" x2="2.921" y2="2.286" width="0.4064" layer="21"/>
 <wire x1="-2.921" y1="-1.778" x2="2.921" y2="-1.778" width="0.1524" layer="21"/>
@@ -177,8 +178,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-0.635" y1="0" x2="-1.27" y2="0" width="0.1524" layer="21"/>
 <pad name="1" x="-2.413" y="0" drill="0.8128"/>
 <pad name="2" x="2.413" y="0" drill="0.8128"/>
-<text x="-5.08" y="2.921" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.08" y="-4.191" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="0" y="2.667" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.667" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 <rectangle x1="-3.81" y1="-2.794" x2="3.81" y2="2.794" layer="43"/>
 <rectangle x1="-4.318" y1="-2.54" x2="-3.81" y2="2.54" layer="43"/>
 <rectangle x1="-4.826" y1="-2.286" x2="-4.318" y2="2.286" layer="43"/>
@@ -189,8 +190,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="4.826" y1="-1.778" x2="5.334" y2="1.778" layer="43"/>
 <rectangle x1="5.334" y1="-1.016" x2="5.588" y2="1.016" layer="43"/>
 </package>
-<package name="TC38H">
-<description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
+<package name="CRYSTAL-PTH-3X8-CYL">
+<description>&lt;h3&gt;3x8mm Cylindrical Can (Radial) PTH Crystal&lt;/h3&gt;
+
+This is the "KIT" version, which has limited top masking for improved ease of assembly.
+
+&lt;p&gt;Example product: &lt;a href="https://www.sparkfun.com/products/540"&gt;32kHz crystal&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.ecsxtal.com/store/pdf/ECS-3x8.pdf"&gt;Example datasheet&lt;/a&gt; (ECS-3X8)&lt;/p&gt;</description>
 <wire x1="-1.397" y1="1.651" x2="1.397" y2="1.651" width="0.1524" layer="21"/>
 <wire x1="1.27" y1="9.906" x2="1.524" y2="9.652" width="0.1524" layer="21" curve="-90"/>
 <wire x1="-1.524" y1="9.652" x2="-1.27" y2="9.906" width="0.1524" layer="21" curve="-90"/>
@@ -220,14 +226,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0" y1="5.969" x2="0.762" y2="5.969" width="0.1524" layer="21"/>
 <pad name="1" x="-1.27" y="0" drill="0.8128" diameter="1.6764"/>
 <pad name="2" x="1.27" y="0" drill="0.8128" diameter="1.6764"/>
-<text x="-1.905" y="2.032" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="3.175" y="2.032" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 <rectangle x1="0.3048" y1="1.016" x2="0.7112" y2="1.6002" layer="21"/>
 <rectangle x1="-0.7112" y1="1.016" x2="-0.3048" y2="1.6002" layer="21"/>
 <rectangle x1="-1.778" y1="1.016" x2="1.778" y2="10.414" layer="43"/>
+<text x="-1.778" y="5.334" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="1.778" y="5.334" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
 </package>
-<package name="TC26H_KIT">
-<description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
+<package name="CRYSTAL-PTH-2X6-CYL">
+<description>&lt;h3&gt;2x6mm Cylindrical Can (Radial) PTH Crystal&lt;/h3&gt;
+
+&lt;p&gt;Example product: &lt;a href="https://www.sparkfun.com/products/540"&gt;32kHz crystal&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.ecsxtal.com/store/pdf/ECS-3x8.pdf"&gt;Example datasheet&lt;/a&gt; (ECS-2X6)&lt;/p&gt;</description>
 <wire x1="-0.889" y1="1.651" x2="0.889" y2="1.651" width="0.1524" layer="21"/>
 <wire x1="0.762" y1="7.747" x2="1.016" y2="7.493" width="0.1524" layer="21" curve="-90"/>
 <wire x1="-1.016" y1="7.493" x2="-0.762" y2="7.747" width="0.1524" layer="21" curve="-90"/>
@@ -255,49 +264,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0.889" y1="2.032" x2="-0.889" y2="2.032" width="0.1524" layer="21"/>
 <pad name="1" x="-1.27" y="0" drill="0.8128" diameter="1.6764"/>
 <pad name="2" x="1.27" y="0" drill="0.8128" diameter="1.6764"/>
-<text x="-1.397" y="2.032" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="2.667" y="2.032" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 <rectangle x1="0.3048" y1="1.016" x2="0.7112" y2="1.6002" layer="21"/>
 <rectangle x1="-0.7112" y1="1.016" x2="-0.3048" y2="1.6002" layer="21"/>
 <rectangle x1="-1.778" y1="0.762" x2="1.778" y2="8.382" layer="43"/>
-</package>
-<package name="TC26H">
-<description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
-<wire x1="-0.889" y1="1.651" x2="0.889" y2="1.651" width="0.1524" layer="21"/>
-<wire x1="0.762" y1="7.747" x2="1.016" y2="7.493" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.016" y1="7.493" x2="-0.762" y2="7.747" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-0.762" y1="7.747" x2="0.762" y2="7.747" width="0.1524" layer="21"/>
-<wire x1="0.889" y1="1.651" x2="0.889" y2="2.032" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="2.032" x2="1.016" y2="7.493" width="0.1524" layer="21"/>
-<wire x1="-0.889" y1="1.651" x2="-0.889" y2="2.032" width="0.1524" layer="21"/>
-<wire x1="-1.016" y1="2.032" x2="-0.889" y2="2.032" width="0.1524" layer="21"/>
-<wire x1="-1.016" y1="2.032" x2="-1.016" y2="7.493" width="0.1524" layer="21"/>
-<wire x1="0.508" y1="0.762" x2="0.508" y2="1.143" width="0.4064" layer="21"/>
-<wire x1="-0.508" y1="0.762" x2="-0.508" y2="1.27" width="0.4064" layer="21"/>
-<wire x1="0.635" y1="0.635" x2="1.27" y2="0" width="0.4064" layer="51"/>
-<wire x1="-0.635" y1="0.635" x2="-1.27" y2="0" width="0.4064" layer="51"/>
-<wire x1="-0.508" y1="4.953" x2="-0.508" y2="4.572" width="0.1524" layer="21"/>
-<wire x1="0.508" y1="4.572" x2="-0.508" y2="4.572" width="0.1524" layer="21"/>
-<wire x1="0.508" y1="4.572" x2="0.508" y2="4.953" width="0.1524" layer="21"/>
-<wire x1="-0.508" y1="4.953" x2="0.508" y2="4.953" width="0.1524" layer="21"/>
-<wire x1="-0.508" y1="5.334" x2="0" y2="5.334" width="0.1524" layer="21"/>
-<wire x1="-0.508" y1="4.191" x2="0" y2="4.191" width="0.1524" layer="21"/>
-<wire x1="0" y1="4.191" x2="0" y2="3.683" width="0.1524" layer="21"/>
-<wire x1="0" y1="4.191" x2="0.508" y2="4.191" width="0.1524" layer="21"/>
-<wire x1="0" y1="5.334" x2="0" y2="5.842" width="0.1524" layer="21"/>
-<wire x1="0" y1="5.334" x2="0.508" y2="5.334" width="0.1524" layer="21"/>
-<wire x1="1.016" y1="2.032" x2="0.889" y2="2.032" width="0.1524" layer="21"/>
-<wire x1="0.889" y1="2.032" x2="-0.889" y2="2.032" width="0.1524" layer="21"/>
-<pad name="1" x="-1.27" y="0" drill="0.8128" diameter="1.6764"/>
-<pad name="2" x="1.27" y="0" drill="0.8128" diameter="1.6764"/>
-<text x="-1.397" y="2.032" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="2.667" y="2.032" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="0.3048" y1="1.016" x2="0.7112" y2="1.6002" layer="21"/>
-<rectangle x1="-0.7112" y1="1.016" x2="-0.3048" y2="1.6002" layer="21"/>
-<rectangle x1="-1.778" y1="0.762" x2="1.778" y2="8.382" layer="43"/>
+<text x="-1.27" y="4.572" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="1.27" y="4.572" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
 </package>
 <package name="HC49UP">
-<description>&lt;b&gt;CRYSTAL&lt;/b&gt;</description>
+<description>&lt;h3&gt;HC-49/UP 11.4x4.8mm SMD Crystal&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.standardcrystalcorp.com/pdf%5Cc-3.pdf"&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <wire x1="-5.1091" y1="1.143" x2="-3.429" y2="2.0321" width="0.0508" layer="21" curve="-55.770993" cap="flat"/>
 <wire x1="-5.715" y1="1.143" x2="-5.715" y2="2.159" width="0.1524" layer="21"/>
 <wire x1="3.429" y1="2.032" x2="5.1091" y2="1.143" width="0.0508" layer="21" curve="-55.772485" cap="flat"/>
@@ -346,43 +321,94 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0.635" y1="0" x2="1.016" y2="0" width="0.0508" layer="21"/>
 <smd name="1" x="-4.826" y="0" dx="5.334" dy="1.9304" layer="1"/>
 <smd name="2" x="4.826" y="0" dx="5.334" dy="1.9304" layer="1"/>
-<text x="-5.715" y="2.794" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-5.715" y="-4.191" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-6.604" y1="-3.048" x2="6.604" y2="3.048" layer="43"/>
+<text x="-0.254" y="2.667" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.667" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
 <package name="HC49US">
-<description>&lt;B&gt;CRYSTAL&lt;/B&gt;</description>
+<description>&lt;h3&gt;HC49/US 11.6x4.6mm PTH Crystal&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.digikey.com/Web%20Export/Supplier%20Content/Citizen_300/PDF/Citizen_HC49US.pdf?redirected=1"&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <wire x1="-3.429" y1="-2.286" x2="3.429" y2="-2.286" width="0.2032" layer="21"/>
 <wire x1="3.429" y1="2.286" x2="-3.429" y2="2.286" width="0.2032" layer="21"/>
 <wire x1="3.429" y1="2.286" x2="3.429" y2="-2.286" width="0.2032" layer="21" curve="-180"/>
 <wire x1="-3.429" y1="2.286" x2="-3.429" y2="-2.286" width="0.2032" layer="21" curve="180"/>
 <pad name="1" x="-2.54" y="0" drill="0.7" diameter="1.651" rot="R90"/>
 <pad name="2" x="2.54" y="0" drill="0.7" diameter="1.651" rot="R90"/>
-<text x="-5.08" y="-3.937" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-5.08" y="2.667" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="0" y="2.54" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.54" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
-<package name="CRYSTAL-32KHZ-SMD-MELF">
+<package name="CRYSTAL-SMD-2X6-CYL">
+<description>&lt;h3&gt;6.0x2.0mm Cylindrical Can (Radial) SMD Crystal&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://cfm.citizen.co.jp/english/product/pdf/CMR200T.pdf"&gt;Example&lt;/a&gt;&lt;/p&gt;</description>
 <smd name="X1" x="-1.27" y="0" dx="1" dy="2.5" layer="1"/>
 <smd name="X2" x="1.27" y="0" dx="1" dy="2.5" layer="1"/>
 <smd name="SHEILD" x="0" y="5.08" dx="2.5" dy="6" layer="1"/>
-<text x="-0.635" y="8.255" size="0.4064" layer="25">&gt;Name</text>
-<text x="-0.635" y="-1.905" size="0.4064" layer="27">&gt;Value</text>
+<text x="0" y="8.255" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-1.524" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+<wire x1="-1.27" y1="-1" x2="-1.27" y2="1" width="0.3" layer="51"/>
+<wire x1="-1.27" y1="1" x2="-0.6" y2="1" width="0.3" layer="51"/>
+<wire x1="-0.6" y1="1" x2="-0.6" y2="2" width="0.3" layer="51"/>
+<wire x1="-0.6" y1="2" x2="-0.5" y2="2" width="0.127" layer="51"/>
+<wire x1="1.27" y1="-1" x2="1.27" y2="1" width="0.3" layer="51"/>
+<wire x1="1.27" y1="1" x2="0.6" y2="1" width="0.3" layer="51"/>
+<wire x1="0.6" y1="1" x2="0.6" y2="2" width="0.3" layer="51"/>
+<wire x1="0.6" y1="2" x2="0.5" y2="2" width="0.127" layer="51"/>
+<polygon width="0.1" layer="51">
+<vertex x="-1" y="8"/>
+<vertex x="-1" y="2"/>
+<vertex x="1" y="2"/>
+<vertex x="1" y="8"/>
+</polygon>
 </package>
-<package name="CRYSTAL-SMD-5X3">
-<wire x1="-0.6" y1="1.6" x2="0.6" y2="1.6" width="0.2032" layer="21"/>
-<wire x1="2.5" y1="0.3" x2="2.5" y2="-0.3" width="0.2032" layer="21"/>
-<wire x1="0.6" y1="-1.6" x2="-0.6" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="-2.5" y1="0.3" x2="-2.5" y2="-0.3" width="0.2032" layer="21"/>
+<package name="CRYSTAL-SMD-5X3.2-4PAD">
+<description>&lt;h3&gt;5x3.2mm SMD Crystal&lt;/h3&gt;
+&lt;p&gt;Example: &lt;a href="https://www.sparkfun.com/products/94"&gt;16MHz SMD Crystal&lt;/a&gt; (&lt;a href="https://www.sparkfun.com/datasheets/Components/SPK-5032-16MHZ.pdf"&gt;Datasheet&lt;/a&gt;)&lt;/p&gt;</description>
+<wire x1="-0.6" y1="1.7" x2="0.6" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="2.6" y1="0.3" x2="2.6" y2="-0.3" width="0.2032" layer="21"/>
+<wire x1="0.6" y1="-1.7" x2="-0.6" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="-2.6" y1="0.3" x2="-2.6" y2="-0.3" width="0.2032" layer="21"/>
 <smd name="1" x="-1.85" y="-1.15" dx="1.9" dy="1.1" layer="1"/>
 <smd name="3" x="1.85" y="1.15" dx="1.9" dy="1.1" layer="1"/>
 <smd name="4" x="-1.85" y="1.15" dx="1.9" dy="1.1" layer="1"/>
 <smd name="2" x="1.85" y="-1.15" dx="1.9" dy="1.1" layer="1"/>
-<text x="-2.54" y="1.905" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="0.4064" layer="27">&gt;VALUE</text>
+<text x="0" y="1.905" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.905" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-2.5" y1="1.6" x2="-2.5" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-1.6" x2="2.5" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-1.6" x2="2.5" y2="1.6" width="0.127" layer="51"/>
+<wire x1="2.5" y1="1.6" x2="-2.5" y2="1.6" width="0.127" layer="51"/>
+<polygon width="0.127" layer="51">
+<vertex x="-2.5" y="1.6"/>
+<vertex x="-2.5" y="0.8"/>
+<vertex x="-1.3" y="0.8"/>
+<vertex x="-1.3" y="1.6"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="2.5" y="-1.6"/>
+<vertex x="2.5" y="-0.8"/>
+<vertex x="1.3" y="-0.8"/>
+<vertex x="1.3" y="-1.6"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="1.3" y="1.6"/>
+<vertex x="1.3" y="0.8"/>
+<vertex x="2.5" y="0.8"/>
+<vertex x="2.5" y="1.6"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="-1.3" y="-1.6"/>
+<vertex x="-1.3" y="-0.8"/>
+<vertex x="-2.5" y="-0.8"/>
+<vertex x="-2.5" y="-1.6"/>
+</polygon>
 </package>
-<package name="TC26HEZ">
-<description>32kHz crystal package&lt;br&gt;
-This is the "EZ" version, which has limited top masking for improved ease of assembly.</description>
+<package name="CRYSTAL-PTH-2X6-CYL-KIT">
+<description>&lt;h3&gt;2x6mm Cylindrical Can (Radial) PTH Crystal&lt;/h3&gt;
+
+This is the "KIT" version, which has limited top masking for improved ease of assembly.
+
+&lt;p&gt;Example product: &lt;a href="https://www.sparkfun.com/products/540"&gt;32kHz crystal&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.ecsxtal.com/store/pdf/ECS-3x8.pdf"&gt;Example datasheet&lt;/a&gt; (ECS-2X6)&lt;/p&gt;</description>
 <wire x1="-0.889" y1="1.651" x2="0.889" y2="1.651" width="0.1524" layer="21"/>
 <wire x1="0.762" y1="7.747" x2="1.016" y2="7.493" width="0.1524" layer="21" curve="-90"/>
 <wire x1="-1.016" y1="7.493" x2="-0.762" y2="7.747" width="0.1524" layer="21" curve="-90"/>
@@ -410,8 +436,6 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <wire x1="0.889" y1="2.032" x2="-0.889" y2="2.032" width="0.1524" layer="21"/>
 <pad name="1" x="-1.27" y="0" drill="0.8128" diameter="1.6764" stop="no"/>
 <pad name="2" x="1.27" y="0" drill="0.8128" diameter="1.6764" stop="no"/>
-<text x="-1.397" y="2.032" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="2.667" y="2.032" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 <rectangle x1="0.3048" y1="1.016" x2="0.7112" y2="1.6002" layer="21"/>
 <rectangle x1="-0.7112" y1="1.016" x2="-0.3048" y2="1.6002" layer="21"/>
 <rectangle x1="-1.778" y1="0.762" x2="1.778" y2="8.382" layer="43"/>
@@ -419,64 +443,33 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <circle x="1.27" y="0" radius="0.508" width="0" layer="29"/>
 <circle x="-1.27" y="0" radius="0.924571875" width="0" layer="30"/>
 <circle x="1.27" y="0" radius="0.915809375" width="0" layer="30"/>
+<text x="-1.27" y="4.572" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="1.27" y="4.572" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
 </package>
-<package name="CRYSTAL-32KHZ-SMD_EPSON_MC146">
-<wire x1="0.2" y1="0" x2="7.2" y2="0" width="0.127" layer="51"/>
-<wire x1="7.2" y1="0" x2="7.2" y2="1.5" width="0.127" layer="51"/>
-<wire x1="7.2" y1="1.5" x2="0.2" y2="1.5" width="0.127" layer="51"/>
-<wire x1="0.2" y1="1.5" x2="0.2" y2="0" width="0.127" layer="51"/>
-<wire x1="6.2" y1="1.4" x2="5.9" y2="1.4" width="0.127" layer="21"/>
-<wire x1="5.9" y1="1.4" x2="5.9" y2="0.1" width="0.127" layer="21"/>
-<wire x1="5.9" y1="0.1" x2="6.2" y2="0.1" width="0.127" layer="21"/>
-<wire x1="1.3" y1="1.4" x2="1.9" y2="1.4" width="0.127" layer="21"/>
-<wire x1="1.3" y1="0.1" x2="1.9" y2="0.1" width="0.127" layer="21"/>
+<package name="CRYSTAL-SMD-MC-146">
+<description>&lt;h3&gt;7x1.5mm MC-146 Flat Lead SMD Crystal&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://support.epson.biz/td/api/doc_check.php?dl=brief_MC-156_en.pdf"&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="0.35" y1="0" x2="7.05" y2="0" width="0.127" layer="51"/>
+<wire x1="7.05" y1="0" x2="7.05" y2="1.5" width="0.127" layer="51"/>
+<wire x1="7.05" y1="1.5" x2="0.35" y2="1.5" width="0.127" layer="51"/>
+<wire x1="0.35" y1="1.5" x2="0.35" y2="0" width="0.127" layer="51"/>
 <smd name="P$1" x="0.6" y="0.3" dx="1.2" dy="0.6" layer="1"/>
 <smd name="P$2" x="0.6" y="1.2" dx="1.2" dy="0.6" layer="1"/>
 <smd name="NC2" x="6.9" y="0.3" dx="1.2" dy="0.6" layer="1"/>
 <smd name="NC1" x="6.9" y="1.2" dx="1.2" dy="0.6" layer="1"/>
+<text x="3.81" y="1.851" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="3.81" y="-0.327" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+<wire x1="7.05" y1="-0.2" x2="0.35" y2="-0.2" width="0.2032" layer="21"/>
+<wire x1="0.35" y1="1.7" x2="7.05" y2="1.7" width="0.2032" layer="21"/>
 </package>
-<package name="CRYSTAL-SMD-10.5X4.8-2PIN">
-<wire x1="-6.2" y1="1.5" x2="-6.2" y2="2.4" width="0.127" layer="21"/>
-<wire x1="-6.2" y1="2.4" x2="6.2" y2="2.4" width="0.127" layer="21"/>
-<wire x1="6.2" y1="2.4" x2="6.2" y2="1.5" width="0.127" layer="21"/>
-<wire x1="-6.2" y1="-1.5" x2="-6.2" y2="-2.4" width="0.127" layer="21"/>
-<wire x1="-6.2" y1="-2.4" x2="6.2" y2="-2.4" width="0.127" layer="21"/>
-<wire x1="6.2" y1="-2.4" x2="6.2" y2="-1.5" width="0.127" layer="21"/>
-<smd name="P$1" x="-4.3" y="0" dx="5.5" dy="1.5" layer="1"/>
-<smd name="P$2" x="4.3" y="0" dx="5.5" dy="1.5" layer="1"/>
-</package>
-<package name="SO08">
-<description>&lt;b&gt;Small Outline Package&lt;/b&gt; Fits JEDEC packages (narrow SOIC-8)</description>
-<wire x1="-2.362" y1="-1.803" x2="2.362" y2="-1.803" width="0.1524" layer="51"/>
-<wire x1="2.362" y1="-1.803" x2="2.362" y2="1.803" width="0.1524" layer="21"/>
-<wire x1="2.362" y1="1.803" x2="-2.362" y2="1.803" width="0.1524" layer="51"/>
-<wire x1="-2.362" y1="1.803" x2="-2.362" y2="-1.803" width="0.1524" layer="21"/>
-<circle x="-1.8034" y="-0.9906" radius="0.1436" width="0.2032" layer="21"/>
-<smd name="1" x="-1.905" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="2" x="-0.635" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="3" x="0.635" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="4" x="1.905" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="5" x="1.905" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="6" x="0.635" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="7" x="-0.635" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="8" x="-1.905" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
-<text x="-1.27" y="-0.635" size="0.4064" layer="27">&gt;VALUE</text>
-<text x="-1.27" y="0" size="0.4064" layer="25">&gt;NAME</text>
-<rectangle x1="-2.0828" y1="-2.8702" x2="-1.7272" y2="-1.8542" layer="51"/>
-<rectangle x1="-0.8128" y1="-2.8702" x2="-0.4572" y2="-1.8542" layer="51"/>
-<rectangle x1="0.4572" y1="-2.8702" x2="0.8128" y2="-1.8542" layer="51"/>
-<rectangle x1="1.7272" y1="-2.8702" x2="2.0828" y2="-1.8542" layer="51"/>
-<rectangle x1="-2.0828" y1="1.8542" x2="-1.7272" y2="2.8702" layer="51"/>
-<rectangle x1="-0.8128" y1="1.8542" x2="-0.4572" y2="2.8702" layer="51"/>
-<rectangle x1="0.4572" y1="1.8542" x2="0.8128" y2="2.8702" layer="51"/>
-<rectangle x1="1.7272" y1="1.8542" x2="2.0828" y2="2.8702" layer="51"/>
-</package>
-<package name="DS3234">
-<wire x1="6.5" y1="3.75" x2="6.5" y2="-3.75" width="0.254" layer="21"/>
-<wire x1="6.5" y1="3.75" x2="-6.5" y2="3.75" width="0.127" layer="51"/>
-<wire x1="6.5" y1="-3.75" x2="-6.5" y2="-3.75" width="0.127" layer="51"/>
-<wire x1="-6.5" y1="3.75" x2="-6.5" y2="-3.75" width="0.254" layer="21"/>
-<circle x="-5.7" y="-1" radius="0.2" width="0.254" layer="21"/>
+<package name="SO20-0.3">
+<description>&lt;h3&gt;20-Pin SOIC (0.3" Wide)&lt;/h3&gt;
+&lt;p&gt;Dimensions: ~0.5x0.3"&lt;/p&gt;
+&lt;p&gt;Package used by Maxim DS3234 SPI RTC&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://pdfserv.maximintegrated.com/package_dwgs/21-0042.PDF"&gt;Package Outline&lt;/a&gt; (W20#H2)&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://pdfserv.maximintegrated.com/land_patterns/90-0108.PDF"&gt;Land Pattern&lt;/a&gt;&lt;/p&gt;</description>
+<circle x="-6.843" y="-4.048" radius="0.254" width="0" layer="21"/>
 <smd name="10" x="5.715" y="-4.685" dx="0.53" dy="1.98" layer="1" rot="R180"/>
 <smd name="11" x="5.715" y="4.685" dx="0.53" dy="1.98" layer="1" rot="R180"/>
 <smd name="12" x="4.445" y="4.685" dx="0.53" dy="1.98" layer="1" rot="R180"/>
@@ -497,58 +490,199 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <smd name="3" x="-3.175" y="-4.685" dx="0.53" dy="1.98" layer="1" rot="R180"/>
 <smd name="2" x="-4.445" y="-4.685" dx="0.53" dy="1.98" layer="1" rot="R180"/>
 <smd name="1" x="-5.715" y="-4.685" dx="0.53" dy="1.98" layer="1" rot="R180"/>
-<text x="-6.985" y="-1.905" size="1.016" layer="25" rot="R90">&gt;NAME</text>
+<text x="-6.731" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="6.731" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;Value</text>
+<wire x1="-6.4008" y1="-3.7465" x2="6.4008" y2="-3.7465" width="0.127" layer="51"/>
+<wire x1="6.4008" y1="-3.7465" x2="6.4008" y2="3.7465" width="0.127" layer="51"/>
+<wire x1="6.4008" y1="3.7465" x2="-6.4008" y2="3.7465" width="0.127" layer="51"/>
+<wire x1="-6.4008" y1="3.7465" x2="-6.4008" y2="-3.7465" width="0.127" layer="51"/>
+<wire x1="-6.5278" y1="3.7465" x2="-6.5278" y2="-3.7465" width="0.2032" layer="21"/>
+<wire x1="6.5278" y1="-3.7465" x2="6.5278" y2="3.7465" width="0.2032" layer="21"/>
+<wire x1="-6.5278" y1="-3.7465" x2="-6.1722" y2="-3.7465" width="0.2032" layer="21"/>
+<wire x1="6.5278" y1="-3.7465" x2="6.1722" y2="-3.7465" width="0.2032" layer="21"/>
+<wire x1="-6.5278" y1="3.7465" x2="-6.1722" y2="3.7465" width="0.2032" layer="21"/>
+<wire x1="6.5278" y1="3.7465" x2="6.1722" y2="3.7465" width="0.2032" layer="21"/>
+<rectangle x1="0.43" y1="3.7465" x2="0.85" y2="5.1625" layer="51"/>
+<rectangle x1="-0.84" y1="3.7465" x2="-0.42" y2="5.1625" layer="51"/>
+<rectangle x1="-2.11" y1="3.7465" x2="-1.69" y2="5.1625" layer="51"/>
+<rectangle x1="-3.38" y1="3.7465" x2="-2.96" y2="5.1625" layer="51"/>
+<rectangle x1="-4.65" y1="3.7465" x2="-4.23" y2="5.1625" layer="51"/>
+<rectangle x1="-5.92" y1="3.7465" x2="-5.5" y2="5.1625" layer="51"/>
+<rectangle x1="1.7" y1="3.7465" x2="2.12" y2="5.1625" layer="51"/>
+<rectangle x1="2.97" y1="3.7465" x2="3.39" y2="5.1625" layer="51"/>
+<rectangle x1="4.24" y1="3.7465" x2="4.66" y2="5.1625" layer="51"/>
+<rectangle x1="5.51" y1="3.7465" x2="5.93" y2="5.1625" layer="51"/>
+<rectangle x1="-5.93" y1="-5.1625" x2="-5.51" y2="-3.7465" layer="51" rot="R180"/>
+<rectangle x1="-4.66" y1="-5.1625" x2="-4.24" y2="-3.7465" layer="51" rot="R180"/>
+<rectangle x1="-3.39" y1="-5.1625" x2="-2.97" y2="-3.7465" layer="51" rot="R180"/>
+<rectangle x1="-2.12" y1="-5.1625" x2="-1.7" y2="-3.7465" layer="51" rot="R180"/>
+<rectangle x1="-0.85" y1="-5.1625" x2="-0.43" y2="-3.7465" layer="51" rot="R180"/>
+<rectangle x1="0.42" y1="-5.1625" x2="0.84" y2="-3.7465" layer="51" rot="R180"/>
+<rectangle x1="1.69" y1="-5.1625" x2="2.11" y2="-3.7465" layer="51" rot="R180"/>
+<rectangle x1="2.96" y1="-5.1625" x2="3.38" y2="-3.7465" layer="51" rot="R180"/>
+<rectangle x1="4.23" y1="-5.1625" x2="4.65" y2="-3.7465" layer="51" rot="R180"/>
+<rectangle x1="5.5" y1="-5.1625" x2="5.92" y2="-3.7465" layer="51" rot="R180"/>
 </package>
-<package name="CRYSTAL-SMD-7X5">
-<wire x1="1.402" y1="-0.4094" x2="1.402" y2="-0.6094" width="0.127" layer="21"/>
-<wire x1="-0.889" y1="1.27" x2="-0.889" y2="2.921" width="0.2032" layer="21"/>
-<wire x1="5.969" y1="1.27" x2="5.969" y2="2.921" width="0.2032" layer="21"/>
-<wire x1="3.937" y1="5.207" x2="1.143" y2="5.207" width="0.2032" layer="21"/>
-<wire x1="3.937" y1="-1.016" x2="1.143" y2="-1.016" width="0.2032" layer="21"/>
-<circle x="1.402" y="-0.5094" radius="0.3" width="0.127" layer="21"/>
-<circle x="1.402" y="-0.5094" radius="0.2236" width="0.127" layer="21"/>
-<circle x="1.402" y="-0.5094" radius="0.1" width="0.127" layer="21"/>
-<smd name="P$1" x="0" y="0" dx="2" dy="1.8" layer="1" rot="R90"/>
-<smd name="P$2" x="5.08" y="0" dx="2" dy="1.8" layer="1" rot="R90"/>
-<smd name="P$3" x="5.08" y="4.2" dx="2" dy="1.8" layer="1" rot="R90"/>
-<smd name="P$4" x="0" y="4.2" dx="2" dy="1.8" layer="1" rot="R90"/>
-<text x="-1.016" y="5.842" size="1.27" layer="25" ratio="15">&gt;Name</text>
-<text x="-1.016" y="-2.921" size="1.27" layer="27" ratio="15">&gt;Value</text>
+<package name="OSCILLATOR-SMD-7X5-4PAD">
+<description>&lt;h3&gt;7x5mm, 4-Pin Oscillator (Polarized)&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="http://www.farnell.com/datasheets/21116.pdf"&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<smd name="1" x="-2.54" y="-2.0955" dx="2" dy="1.8" layer="1" rot="R90"/>
+<smd name="2" x="2.54" y="-2.0955" dx="2" dy="1.8" layer="1" rot="R90"/>
+<smd name="3" x="2.54" y="2.1045" dx="2" dy="1.8" layer="1" rot="R90"/>
+<smd name="4" x="-2.54" y="2.1045" dx="2" dy="1.8" layer="1" rot="R90"/>
+<text x="0.046" y="2.9925" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-2.9655" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+<circle x="-4.138" y="-2.6049" radius="0.3" width="0" layer="21"/>
+<wire x1="-3.6" y1="-2.6" x2="3.6" y2="-2.6" width="0.127" layer="51"/>
+<wire x1="3.6" y1="-2.6" x2="3.6" y2="2.6" width="0.127" layer="51"/>
+<wire x1="-3.6" y1="2.6" x2="-3.6" y2="-2.6" width="0.127" layer="51"/>
+<wire x1="-3.7" y1="2.7" x2="-3.7" y2="-2.7" width="0.2032" layer="21"/>
+<wire x1="3.6" y1="2.6" x2="-3.6" y2="2.6" width="0.127" layer="51"/>
+<wire x1="3.7" y1="-2.7" x2="3.7" y2="2.7" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="-2.7" x2="1.4" y2="-2.7" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="2.7" x2="-1.4" y2="2.7" width="0.2032" layer="21"/>
+<polygon width="0.127" layer="51">
+<vertex x="-3.5" y="2.6"/>
+<vertex x="-2.1" y="2.6"/>
+<vertex x="-2.1" y="1.3"/>
+<vertex x="-3.5" y="1.3"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="3.5" y="-2.6"/>
+<vertex x="2.1" y="-2.6"/>
+<vertex x="2.1" y="-1.3"/>
+<vertex x="3.5" y="-1.3"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="-3.5" y="-2.6"/>
+<vertex x="-2.1" y="-2.6"/>
+<vertex x="-2.1" y="-1.3"/>
+<vertex x="-3.5" y="-1.3"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="3.5" y="2.6"/>
+<vertex x="2.1" y="2.6"/>
+<vertex x="2.1" y="1.3"/>
+<vertex x="3.5" y="1.3"/>
+</polygon>
 </package>
-<package name="CRYSTAL-SMD-7.5X5.2-6PIN">
-<description>FXO-HC73 Series Oscillator. 7.5x5.2mm 6-pin package</description>
+<package name="OSCILLATOR-SMD-7.5X5.2-6PIN">
+<description>&lt;h3&gt;7x5mm, 6-Pin FXO-HC73 Oscillator (Polarized)&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="http://www.foxonline.com/pdfs/FXO_HC73.pdf"&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <wire x1="3.75" y1="2.6" x2="-3.75" y2="2.6" width="0.127" layer="51"/>
-<wire x1="-3.75" y1="2.6" x2="-3.75" y2="-2.6" width="0.127" layer="51"/>
+<wire x1="-3.85" y1="2.7" x2="-3.85" y2="-2.7" width="0.2032" layer="21"/>
 <wire x1="-3.75" y1="-2.6" x2="3.75" y2="-2.6" width="0.127" layer="51"/>
 <wire x1="3.75" y1="-2.6" x2="3.75" y2="2.6" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="2.4" x2="-3.8" y2="-2.4" width="0.127" layer="21"/>
-<wire x1="3.8" y1="2.4" x2="3.8" y2="-2.4" width="0.127" layer="21"/>
-<circle x="-3" y="-0.5" radius="0.3605" width="0.127" layer="21"/>
+<circle x="-4.131" y="-2.981" radius="0.3605" width="0" layer="21"/>
 <smd name="2" x="2.54" y="-2.1" dx="2" dy="1.8" layer="1" rot="R90"/>
 <smd name="3" x="2.54" y="2.1" dx="2" dy="1.8" layer="1" rot="R90"/>
 <smd name="4" x="-2.54" y="2.1" dx="2" dy="1.8" layer="1" rot="R90"/>
 <smd name="1" x="-2.54" y="-2.1" dx="2" dy="1.8" layer="1" rot="R90"/>
 <smd name="NC0" x="0" y="-2.1" dx="2" dy="1.4" layer="1" rot="R90"/>
 <smd name="NC1" x="0" y="2.1" dx="2" dy="1.4" layer="1" rot="R90"/>
-<text x="-3.6" y="3.4" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-3.7" y="-3.8" size="0.4064" layer="27">&gt;VALUE</text>
+<text x="0" y="3.302" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.302" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-3.75" y1="2.6" x2="-3.75" y2="-2.6" width="0.127" layer="51"/>
+<wire x1="3.85" y1="-2.7" x2="3.85" y2="2.7" width="0.2032" layer="21"/>
+<wire x1="-3.85" y1="-2.7" x2="-3.65" y2="-2.7" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="-2.7" x2="-0.95" y2="-2.7" width="0.2032" layer="21"/>
+<wire x1="0.95" y1="-2.7" x2="1.4" y2="-2.7" width="0.2032" layer="21"/>
+<wire x1="3.65" y1="-2.7" x2="3.85" y2="-2.7" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="2.7" x2="-0.95" y2="2.7" width="0.2032" layer="21"/>
+<wire x1="0.95" y1="2.7" x2="1.4" y2="2.7" width="0.2032" layer="21"/>
+<wire x1="3.65" y1="2.7" x2="3.85" y2="2.7" width="0.2032" layer="21"/>
+<wire x1="-3.85" y1="2.7" x2="-3.65" y2="2.7" width="0.2032" layer="21"/>
+<polygon width="0.127" layer="51">
+<vertex x="-3.24" y="2.6"/>
+<vertex x="-3.00661875" y="2.6" curve="-90"/>
+<vertex x="-2.89" y="2.48338125"/>
+<vertex x="-2.89" y="2.35518125" curve="90"/>
+<vertex x="-2.68481875" y="2.15"/>
+<vertex x="-2.378678125" y="2.15" curve="90"/>
+<vertex x="-2.19" y="2.338678125"/>
+<vertex x="-2.19" y="2.492296875" curve="-90"/>
+<vertex x="-2.082296875" y="2.6"/>
+<vertex x="-1.84" y="2.6"/>
+<vertex x="-1.84" y="1.3"/>
+<vertex x="-3.24" y="1.3"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="-0.7" y="2.6"/>
+<vertex x="-0.46661875" y="2.6" curve="-90"/>
+<vertex x="-0.35" y="2.48338125"/>
+<vertex x="-0.35" y="2.35518125" curve="90"/>
+<vertex x="-0.14481875" y="2.15"/>
+<vertex x="0.161321875" y="2.15" curve="90"/>
+<vertex x="0.35" y="2.338678125"/>
+<vertex x="0.35" y="2.492296875" curve="-90"/>
+<vertex x="0.457703125" y="2.6"/>
+<vertex x="0.7" y="2.6"/>
+<vertex x="0.7" y="1.3"/>
+<vertex x="-0.7" y="1.3"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="1.84" y="2.6"/>
+<vertex x="2.07338125" y="2.6" curve="-90"/>
+<vertex x="2.19" y="2.48338125"/>
+<vertex x="2.19" y="2.35518125" curve="90"/>
+<vertex x="2.39518125" y="2.15"/>
+<vertex x="2.701321875" y="2.15" curve="90"/>
+<vertex x="2.89" y="2.338678125"/>
+<vertex x="2.89" y="2.492296875" curve="-90"/>
+<vertex x="2.997703125" y="2.6"/>
+<vertex x="3.24" y="2.6"/>
+<vertex x="3.24" y="1.3"/>
+<vertex x="1.84" y="1.3"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="3.24" y="-2.6"/>
+<vertex x="3.00661875" y="-2.6" curve="-90"/>
+<vertex x="2.89" y="-2.48338125"/>
+<vertex x="2.89" y="-2.35518125" curve="90"/>
+<vertex x="2.68481875" y="-2.15"/>
+<vertex x="2.378678125" y="-2.15" curve="90"/>
+<vertex x="2.19" y="-2.338678125"/>
+<vertex x="2.19" y="-2.492296875" curve="-90"/>
+<vertex x="2.082296875" y="-2.6"/>
+<vertex x="1.84" y="-2.6"/>
+<vertex x="1.84" y="-1.3"/>
+<vertex x="3.24" y="-1.3"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="0.7" y="-2.6"/>
+<vertex x="0.46661875" y="-2.6" curve="-90"/>
+<vertex x="0.35" y="-2.48338125"/>
+<vertex x="0.35" y="-2.35518125" curve="90"/>
+<vertex x="0.14481875" y="-2.15"/>
+<vertex x="-0.161321875" y="-2.15" curve="90"/>
+<vertex x="-0.35" y="-2.338678125"/>
+<vertex x="-0.35" y="-2.492296875" curve="-90"/>
+<vertex x="-0.457703125" y="-2.6"/>
+<vertex x="-0.7" y="-2.6"/>
+<vertex x="-0.7" y="-1.3"/>
+<vertex x="0.7" y="-1.3"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="-1.84" y="-2.6"/>
+<vertex x="-2.07338125" y="-2.6" curve="-90"/>
+<vertex x="-2.19" y="-2.48338125"/>
+<vertex x="-2.19" y="-2.35518125" curve="90"/>
+<vertex x="-2.39518125" y="-2.15"/>
+<vertex x="-2.701321875" y="-2.15" curve="90"/>
+<vertex x="-2.89" y="-2.338678125"/>
+<vertex x="-2.89" y="-2.492296875" curve="-90"/>
+<vertex x="-2.997703125" y="-2.6"/>
+<vertex x="-3.24" y="-2.6"/>
+<vertex x="-3.24" y="-1.3"/>
+<vertex x="-1.84" y="-1.3"/>
+</polygon>
 </package>
-<package name="CRYSTAL-OSC-SMD-5X3">
-<wire x1="-0.6" y1="1.6" x2="0.6" y2="1.6" width="0.2032" layer="21"/>
-<wire x1="2.5" y1="0.3" x2="2.5" y2="-0.3" width="0.2032" layer="21"/>
-<wire x1="0.6" y1="-1.6" x2="-0.6" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="-2.5" y1="0.3" x2="-2.5" y2="-0.3" width="0.2032" layer="21"/>
-<circle x="-3.4986" y="-1.2794" radius="0.2653" width="0.127" layer="21"/>
-<circle x="-3.4986" y="-1.2794" radius="0.1456" width="0.127" layer="21"/>
-<circle x="-3.4986" y="-1.2794" radius="0.0284" width="0.127" layer="21"/>
-<smd name="1" x="-1.85" y="-1.15" dx="1.9" dy="1.1" layer="1"/>
-<smd name="3" x="1.85" y="1.15" dx="1.9" dy="1.1" layer="1"/>
-<smd name="4" x="-1.85" y="1.15" dx="1.9" dy="1.1" layer="1"/>
-<smd name="2" x="1.85" y="-1.15" dx="1.9" dy="1.1" layer="1"/>
-<text x="-2.54" y="1.905" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-<package name="RESONATOR-PTH">
+<package name="RESONATOR-PTH-7.6X3.8">
+<description>&lt;h3&gt;7.6x3.8mm 3-Pin PTH Resonator&lt;/h3&gt;
+&lt;p&gt;0.1" pitch&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/Components/Resonator-16MHz.pdf"&gt;Example datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <wire x1="-2.286" y1="1.778" x2="-2.286" y2="-1.778" width="0.2032" layer="21" curve="162.403081"/>
 <wire x1="2.286" y1="-1.778" x2="2.286" y2="1.778" width="0.2032" layer="21" curve="162.403081"/>
 <wire x1="-2.286" y1="-1.778" x2="2.286" y2="-1.778" width="0.2032" layer="21" curve="12.71932"/>
@@ -556,45 +690,80 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <pad name="2" x="0" y="0" drill="0.8" diameter="1.8796"/>
 <pad name="1" x="-2.54" y="0" drill="0.8" diameter="1.8796"/>
 <pad name="3" x="2.54" y="0" drill="0.8" diameter="1.8796"/>
+<text x="0" y="2.159" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.159" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
-<package name="RESONATOR-WIDE-SMD">
-<wire x1="-3.3" y1="2.3" x2="-3.7" y2="2.3" width="0.127" layer="121"/>
-<wire x1="-3.7" y1="2.3" x2="-3.7" y2="-2.4" width="0.127" layer="121"/>
-<wire x1="-3.7" y1="-2.4" x2="-3.3" y2="-2.4" width="0.127" layer="121"/>
-<wire x1="3.3" y1="2.3" x2="3.8" y2="2.3" width="0.127" layer="121"/>
-<wire x1="3.8" y1="2.3" x2="3.8" y2="-2.4" width="0.127" layer="121"/>
-<wire x1="3.8" y1="-2.4" x2="3.3" y2="-2.4" width="0.127" layer="121"/>
+<package name="RESONATOR-SMD-7.4X3.4">
+<description>&lt;h3&gt;7.4x3.4mm 3-Pin SMD Resonator&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://global.kyocera.com/prdct/electro/pdf/add_pdf/pbr_all_e.pdf"&gt;Example datasheet&lt;/a&gt; (PBRC-H)&lt;/p&gt;</description>
 <smd name="1" x="-2.5" y="0" dx="1.7" dy="4" layer="1" rot="R180"/>
 <smd name="2" x="0" y="0" dx="1.5" dy="4" layer="1" rot="R180"/>
 <smd name="3" x="2.5" y="0" dx="1.7" dy="4" layer="1" rot="R180"/>
+<text x="0" y="2.286" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.24" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-3.7" y1="-1.7" x2="3.7" y2="-1.7" width="0.127" layer="51"/>
+<wire x1="3.7" y1="-1.7" x2="3.7" y2="1.7" width="0.127" layer="51"/>
+<wire x1="3.7" y1="1.7" x2="-3.7" y2="1.7" width="0.127" layer="51"/>
+<wire x1="-3.7" y1="1.7" x2="-3.7" y2="-1.7" width="0.127" layer="51"/>
+<wire x1="-3.8" y1="2.2445" x2="-3.8" y2="-2.2445" width="0.2032" layer="21"/>
+<wire x1="3.8" y1="-2.2445" x2="3.8" y2="2.2445" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="2.2445" x2="-3.8" y2="2.2445" width="0.2032" layer="21"/>
+<wire x1="-3.8" y1="-2.2445" x2="-3.3" y2="-2.2445" width="0.2032" layer="21"/>
+<wire x1="3.3" y1="-2.2445" x2="3.8" y2="-2.2445" width="0.2032" layer="21"/>
+<wire x1="3.8" y1="2.2445" x2="3.3" y2="2.2445" width="0.2032" layer="21"/>
+<polygon width="0.127" layer="51">
+<vertex x="-0.6" y="1.6"/>
+<vertex x="0.6" y="1.6"/>
+<vertex x="0.6" y="-1.6"/>
+<vertex x="-0.6" y="-1.6"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="-3.1" y="1.6"/>
+<vertex x="-1.9" y="1.6"/>
+<vertex x="-1.9" y="-1.6"/>
+<vertex x="-3.1" y="-1.6"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="1.9" y="1.6"/>
+<vertex x="3.1" y="1.6"/>
+<vertex x="3.1" y="-1.6"/>
+<vertex x="1.9" y="-1.6"/>
+</polygon>
 </package>
-<package name="RESONATOR_NOCAP">
-<wire x1="0.6" y1="3" x2="3.3" y2="3" width="0.254" layer="21"/>
-<wire x1="0.5" y1="-3" x2="3.4" y2="-3" width="0.254" layer="21"/>
-<smd name="P$1" x="0" y="0" dx="0.8" dy="5.1" layer="1"/>
-<smd name="P$2" x="3.9" y="0" dx="0.8" dy="5.1" layer="1"/>
-</package>
-<package name="SIT8002">
-<wire x1="0" y1="0" x2="7" y2="0" width="0.127" layer="51"/>
-<wire x1="7" y1="0" x2="7" y2="5" width="0.127" layer="51"/>
-<wire x1="7" y1="5" x2="0" y2="5" width="0.127" layer="51"/>
-<wire x1="0" y1="5" x2="0" y2="0" width="0.127" layer="51"/>
-<circle x="7.239" y="5.08" radius="0.2839" width="0.127" layer="21"/>
-<smd name="1" x="5.7" y="4.4" dx="1.6" dy="1.1" layer="1"/>
-<smd name="2" x="1.3" y="4.4" dx="1.6" dy="1.1" layer="1"/>
-<smd name="3" x="1.3" y="0.6" dx="1.6" dy="1.1" layer="1"/>
-<smd name="4" x="5.7" y="0.6" dx="1.6" dy="1.1" layer="1"/>
-<smd name="N" x="3.5" y="2.5" dx="2.3" dy="1.8" layer="1" rot="R90"/>
-</package>
-<package name="CRYSTAL-TXC-7A">
+<package name="CRYSTAL-SMD-5X3.2-2PAD">
+<description>&lt;h3&gt;5x3.2mm 2-pad SMD Crystal&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.txccrystal.com/images/pdf/7a.pdf"&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <smd name="P$1" x="1.85" y="0" dx="1.7" dy="2.4" layer="1"/>
 <smd name="P$2" x="-1.85" y="0" dx="1.7" dy="2.4" layer="1"/>
-<wire x1="-2.6" y1="1.6" x2="2.6" y2="1.6" width="0.127" layer="21"/>
-<wire x1="2.6" y1="-1.6" x2="-2.6" y2="-1.6" width="0.127" layer="21"/>
-<text x="-1.016" y="0.254" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.016" y="-0.508" size="0.4064" layer="27">&gt;VALUE</text>
+<wire x1="-2.6" y1="1.7" x2="2.6" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="2.6" y1="-1.7" x2="-2.6" y2="-1.7" width="0.2032" layer="21"/>
+<text x="0" y="1.878" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.878" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-2.5" y1="-1.6" x2="2.5" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-1.6" x2="2.5" y2="1.6" width="0.127" layer="51"/>
+<wire x1="2.5" y1="1.6" x2="-2.5" y2="1.6" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="1.6" x2="-2.5" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="-2.6" y1="1.7" x2="-2.6" y2="1.4" width="0.2032" layer="21"/>
+<wire x1="2.6" y1="-1.7" x2="2.6" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="-2.6" y1="-1.7" x2="-2.6" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="2.6" y1="1.7" x2="2.6" y2="1.4" width="0.2032" layer="21"/>
+<polygon width="0.127" layer="51">
+<vertex x="-2.5" y="1"/>
+<vertex x="-1.2" y="1"/>
+<vertex x="-1.2" y="-1"/>
+<vertex x="-2.5" y="-1"/>
+</polygon>
+<polygon width="0.127" layer="51">
+<vertex x="2.5" y="-1"/>
+<vertex x="1.2" y="-1"/>
+<vertex x="1.2" y="1"/>
+<vertex x="2.5" y="1"/>
+</polygon>
 </package>
-<package name="SO08-TIGHT">
+<package name="SO08-0.15">
+<description>&lt;h3&gt;8-Pin SOIC 150mil&lt;/h3&gt;
+&lt;p&gt;0.154" (3.9mm) width. Fits JEDEC packages (narrow SOIC-8).&lt;/p&gt;
+&lt;p&gt;Used by DS1077 and DS1307 programmable oscillators&lt;/p&gt;</description>
 <wire x1="2.159" y1="1.9558" x2="-2.159" y2="1.9558" width="0.2032" layer="21"/>
 <wire x1="2.159" y1="-1.9558" x2="2.54" y2="-1.5748" width="0.2032" layer="21" curve="90"/>
 <wire x1="-2.159" y1="1.9558" x2="-2.54" y2="1.5748" width="0.2032" layer="21" curve="90"/>
@@ -615,8 +784,6 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <smd name="6" x="0.635" y="2.8" dx="0.6" dy="1.2" layer="1"/>
 <smd name="7" x="-0.635" y="2.8" dx="0.6" dy="1.2" layer="1"/>
 <smd name="8" x="-1.905" y="2.8" dx="0.6" dy="1.2" layer="1"/>
-<text x="-1.524" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-2.921" y="-1.778" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <rectangle x1="1.651" y1="1.9558" x2="2.159" y2="3.0988" layer="51"/>
 <rectangle x1="-2.159" y1="-3.0988" x2="-1.651" y2="-1.9558" layer="51"/>
 <rectangle x1="-0.889" y1="-3.0988" x2="-0.381" y2="-1.9558" layer="51"/>
@@ -625,8 +792,13 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <rectangle x1="0.381" y1="1.9558" x2="0.889" y2="3.0988" layer="51"/>
 <rectangle x1="-0.889" y1="1.9558" x2="-0.381" y2="3.0988" layer="51"/>
 <rectangle x1="-2.159" y1="1.9558" x2="-1.651" y2="3.0988" layer="51"/>
+<text x="-2.794" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="2.794" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
+<circle x="-2.921" y="-1.905" radius="0.254" width="0" layer="21"/>
 </package>
-<package name="RESONATOR-SMD">
+<package name="RESONATOR-SMD-3.2X1.3">
+<description>&lt;h3&gt;3.2x1.3mm 3-Pin SMD Resonator&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.murata.com/~/media/webrenewal/support/library/catalog/products/timingdevice/ceralock/p16e.ashx"&gt;Example datasheet&lt;/a&gt; (CSTCE_VH3L)&lt;/p&gt;</description>
 <wire x1="1.87111875" y1="0.660159375" x2="1.87111875" y2="-0.639840625" width="0.2032" layer="21"/>
 <wire x1="-1.878740625" y1="-0.639840625" x2="-1.878740625" y2="0.660159375" width="0.2032" layer="21"/>
 <wire x1="-1.6" y1="0.65" x2="1.6" y2="0.65" width="0.127" layer="51"/>
@@ -636,8 +808,6 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <smd name="1" x="-1.2" y="0" dx="0.45" dy="1.905" layer="1" roundness="100"/>
 <smd name="2" x="0" y="0" dx="0.45" dy="1.905" layer="1" roundness="100"/>
 <smd name="3" x="1.2" y="0" dx="0.45" dy="1.905" layer="1" roundness="100"/>
-<text x="-1.016" y="1.27" size="0.4064" layer="25">&gt;Name</text>
-<text x="-0.9525" y="-1.5875" size="0.4064" layer="27">&gt;Value</text>
 <rectangle x1="-1.6332625" y1="-0.6406375" x2="1.6433375" y2="-0.61879375" layer="200"/>
 <rectangle x1="-1.6332625" y1="-0.61879375" x2="-1.61141875" y2="-0.59695" layer="200"/>
 <rectangle x1="-1.414821875" y1="-0.61879375" x2="-0.999790625" y2="-0.59695" layer="200"/>
@@ -931,11 +1101,13 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <rectangle x1="-0.6604" y1="-0.7112" x2="-0.5334" y2="0.7112" layer="41"/>
 <rectangle x1="0.508" y1="-0.7112" x2="0.635" y2="0.7112" layer="41"/>
 <rectangle x1="1.5748" y1="-0.7112" x2="1.7018" y2="0.7112" layer="41"/>
+<text x="0" y="1.27" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
-<package name="RESONATOR-SMD_MED">
-<wire x1="-2.25" y1="-1" x2="-2.25" y2="1" width="0.2032" layer="21"/>
-<text x="-2" y="1.5" size="0.4064" layer="25">&gt;Name</text>
-<text x="-2" y="-1.9" size="0.4064" layer="27">&gt;Value</text>
+<package name="RESONATOR-SMD-4.5X2.0">
+<description>&lt;h3&gt;4.5x2.0mm 3-Pin SMD Resonator&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.murata.com/~/media/webrenewal/support/library/catalog/products/timingdevice/ceralock/p16e.ashx"&gt;Example datasheet&lt;/a&gt; (CSTCR_G15L)&lt;/p&gt;</description>
+<wire x1="-2.35" y1="-1.1" x2="-2.35" y2="1.1" width="0.2032" layer="21"/>
 <smd name="1" x="-1.5" y="0" dx="0.4" dy="1.6" layer="1"/>
 <smd name="2" x="0" y="0" dx="0.4" dy="1.6" layer="1"/>
 <smd name="3" x="1.5" y="0" dx="0.4" dy="1.6" layer="1"/>
@@ -951,11 +1123,11 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <rectangle x1="1" y1="-1.4" x2="2" y2="-0.7" layer="29"/>
 <rectangle x1="-0.5" y1="-1.4" x2="0.5" y2="-0.7" layer="29"/>
 <rectangle x1="-2" y1="-1.4" x2="-1" y2="-0.7" layer="29"/>
-<wire x1="-2.1" y1="1" x2="-2.25" y2="1" width="0.2032" layer="21"/>
-<wire x1="-2.1" y1="-1" x2="-2.25" y2="-1" width="0.2032" layer="21"/>
-<wire x1="2.25" y1="-1" x2="2.25" y2="1" width="0.2032" layer="21"/>
-<wire x1="2.25" y1="1" x2="2.1" y2="1" width="0.2032" layer="21"/>
-<wire x1="2.25" y1="-1" x2="2.1" y2="-1" width="0.2032" layer="21"/>
+<wire x1="-2.1" y1="1.1" x2="-2.35" y2="1.1" width="0.2032" layer="21"/>
+<wire x1="-2.1" y1="-1.1" x2="-2.35" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="2.35" y1="-1.1" x2="2.35" y2="1.1" width="0.2032" layer="21"/>
+<wire x1="2.35" y1="1.1" x2="2.1" y2="1.1" width="0.2032" layer="21"/>
+<wire x1="2.35" y1="-1.1" x2="2.1" y2="-1.1" width="0.2032" layer="21"/>
 <rectangle x1="-1.9" y1="0.8" x2="-1.1" y2="1.3" layer="31"/>
 <rectangle x1="-0.4" y1="0.8" x2="0.4" y2="1.3" layer="31"/>
 <rectangle x1="1.1" y1="0.8" x2="1.9" y2="1.3" layer="31"/>
@@ -966,38 +1138,74 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <wire x1="2.25" y1="1" x2="2.25" y2="-1" width="0.127" layer="51"/>
 <wire x1="2.25" y1="-1" x2="-2.25" y2="-1" width="0.127" layer="51"/>
 <wire x1="-2.25" y1="-1" x2="-2.25" y2="1" width="0.127" layer="51"/>
+<text x="0" y="1.524" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.524" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
-<package name="CRYSTAL-OSC-SMD-5X3.2">
-<circle x="-2.54" y="-1.524" radius="0.0284" width="0.127" layer="21"/>
-<circle x="-2.54" y="-1.524" radius="0.127" width="0.127" layer="21"/>
-<wire x1="-0.254" y1="1.778" x2="0.254" y2="1.778" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="1.524" x2="2.54" y2="-1.524" width="0.2032" layer="21"/>
-<wire x1="0.254" y1="-1.778" x2="-0.254" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="1.524" x2="-2.54" y2="-1.016" width="0.2032" layer="21"/>
+<package name="OSCILLATOR-SMD-5X3.2">
+<description>&lt;h3&gt;5.0x3.2 mm 4-SMD Oscillator (Polarized)&lt;/h3&gt;
+&lt;p&gt;&lt;b&gt;Size&lt;/b&gt;: 0.197" x 0.126" (5.00mm x 3.20mm)&lt;br&gt;
+&lt;b&gt;Height&lt;/b&gt;: 0.051" (1.30mm)&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.ctscorp.com/wp-content/uploads/2015/11/008-0250-0.pdf"&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<circle x="-2.827" y="-1.927" radius="0.254" width="0" layer="21"/>
 <smd name="1" x="-1.27" y="-1.1" dx="1.397" dy="1.1938" layer="1"/>
 <smd name="2" x="1.27" y="-1.1" dx="1.397" dy="1.1938" layer="1"/>
 <smd name="3" x="1.27" y="1.1" dx="1.397" dy="1.1938" layer="1"/>
 <smd name="4" x="-1.27" y="1.1" dx="1.397" dy="1.1938" layer="1"/>
-<text x="-2.54" y="1.905" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="0.4064" layer="27">&gt;VALUE</text>
+<text x="0" y="2.032" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-2.5" y1="1.6" x2="-2.5" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-1.6" x2="2.5" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-1.6" x2="2.5" y2="1.6" width="0.127" layer="51"/>
+<wire x1="2.5" y1="1.6" x2="-2.5" y2="1.6" width="0.127" layer="51"/>
+<wire x1="-2.573" y1="1.673" x2="-2.573" y2="-1.673" width="0.2032" layer="21"/>
+<wire x1="2.573" y1="-1.673" x2="2.573" y2="1.673" width="0.2032" layer="21"/>
+<wire x1="-2.573" y1="-1.673" x2="-2.2" y2="-1.673" width="0.2032" layer="21"/>
+<wire x1="2.573" y1="1.673" x2="2.2" y2="1.673" width="0.2032" layer="21"/>
+<wire x1="-2.573" y1="1.673" x2="-2.2" y2="1.673" width="0.2032" layer="21"/>
+<wire x1="2.573" y1="-1.673" x2="2.2" y2="-1.673" width="0.2032" layer="21"/>
+<wire x1="-0.3" y1="-1.8" x2="0.3" y2="-1.8" width="0.2032" layer="21"/>
+<wire x1="0.3" y1="1.8" x2="-0.3" y2="1.8" width="0.2032" layer="21"/>
 </package>
 <package name="CRYSTAL-SMD-3.2X1.5MM">
-<description>&lt;h3&gt;3.2 x 1.5mm Crystal Package&lt;/h3&gt;
-&lt;p&gt;e.g: &lt;a href="http://www.sii.co.jp/en/quartz/files/2013/03/file_PRODUCT_MASTER_50812_GRAPHIC03.pdf"&gt;SX-32S&lt;/a&gt;&lt;/p&gt;</description>
+<description>&lt;h3&gt;3.2 x 1.5mm SMD Crystal Package&lt;/h3&gt;
+&lt;p&gt;Example: &lt;a href="http://www.sii.co.jp/en/quartz/files/2013/03/file_PRODUCT_MASTER_50812_GRAPHIC03.pdf"&gt;SX-32S&lt;/a&gt;&lt;/p&gt;</description>
 <smd name="P$1" x="-1.25" y="0" dx="1" dy="1.8" layer="1"/>
 <smd name="P$2" x="1.25" y="0" dx="1" dy="1.8" layer="1"/>
 <wire x1="-1.6" y1="0.75" x2="1.6" y2="0.75" width="0.127" layer="51"/>
 <wire x1="1.6" y1="0.75" x2="1.6" y2="-0.75" width="0.127" layer="51"/>
 <wire x1="1.6" y1="-0.75" x2="-1.6" y2="-0.75" width="0.127" layer="51"/>
 <wire x1="-1.6" y1="-0.75" x2="-1.6" y2="0.75" width="0.127" layer="51"/>
-<wire x1="-0.5" y1="0.75" x2="0.5" y2="0.75" width="0.2032" layer="21"/>
-<wire x1="0.5" y1="-0.75" x2="-0.5" y2="-0.75" width="0.2032" layer="21"/>
-<text x="0" y="1.143" size="0.8128" layer="25" align="bottom-center">&gt;Name</text>
-<text x="0" y="-1.143" size="0.8128" layer="27" align="top-center">&gt;Value</text>
+<wire x1="-0.5" y1="0.85" x2="0.5" y2="0.85" width="0.2032" layer="21"/>
+<wire x1="0.5" y1="-0.85" x2="-0.5" y2="-0.85" width="0.2032" layer="21"/>
+<text x="0" y="1.043" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-1.043" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+</package>
+<package name="CRYSTAL-SMD-3.2X2.5MM">
+<description>&lt;h3&gt;3.2 x 2.5mm SMD Crystal Package&lt;/h3&gt;
+&lt;p&gt;Example: &lt;a href="http://www.digikey.com/product-search/en?keywords=SER3627TR-ND"&gt;SX-32S&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="-1.6" y1="-1.25" x2="-1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-1.6" y1="1.25" x2="1.6" y2="1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="1.25" x2="1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.6" y1="-1.25" x2="-1.6" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-0.4" y1="1.377" x2="0.4" y2="1.377" width="0.2032" layer="21"/>
+<wire x1="-1.727" y1="-0.15" x2="-1.727" y2="0.15" width="0.2032" layer="21"/>
+<wire x1="1.727" y1="0.15" x2="1.727" y2="-0.15" width="0.2032" layer="21"/>
+<wire x1="0.4" y1="-1.377" x2="-0.4" y2="-1.377" width="0.2032" layer="21"/>
+<rectangle x1="-1.6" y1="0.35" x2="-0.6" y2="1.15" layer="51"/>
+<rectangle x1="0.6" y1="-1.15" x2="1.6" y2="-0.35" layer="51" rot="R180"/>
+<rectangle x1="-1.6" y1="-1.15" x2="-0.6" y2="-0.35" layer="51"/>
+<rectangle x1="0.6" y1="0.35" x2="1.6" y2="1.15" layer="51" rot="R180"/>
+<smd name="1" x="-1.175" y="-0.875" dx="1.2" dy="1.1" layer="1" rot="R180"/>
+<smd name="2" x="1.175" y="-0.875" dx="1.2" dy="1.1" layer="1"/>
+<smd name="3" x="1.175" y="0.875" dx="1.2" dy="1.1" layer="1"/>
+<smd name="4" x="-1.175" y="0.875" dx="1.2" dy="1.1" layer="1" rot="R180"/>
+<text x="0" y="1.524" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-1.524" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
 </packages>
 <symbols>
-<symbol name="Q">
+<symbol name="CRYSTAL">
+<description>&lt;h3&gt;Crystal (no ground pin)&lt;/h3&gt;</description>
 <wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
 <wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
@@ -1006,36 +1214,38 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
 <wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
 <wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
-<text x="2.54" y="1.016" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="2.032" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.032" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
 <text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
 <text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
 <pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
 </symbol>
 <symbol name="DS1077">
+<description>&lt;h3&gt;Maxim DS1077 - I2C Real-time clock (RTC)&lt;/h3&gt;</description>
 <wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<text x="-10.16" y="10.668" size="1.27" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-11.938" size="1.27" layer="96">&gt;VALUE</text>
-<pin name="OUT1" x="-15.24" y="7.62" length="middle"/>
-<pin name="OUT0" x="-15.24" y="2.54" length="middle"/>
-<pin name="VCC" x="-15.24" y="-2.54" length="middle"/>
-<pin name="GND" x="-15.24" y="-7.62" length="middle"/>
-<pin name="CTRL0" x="15.24" y="-7.62" length="middle" rot="R180"/>
-<pin name="CTRL1" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="SDA" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="SCL" x="15.24" y="7.62" length="middle" rot="R180"/>
+<text x="-10.16" y="10.414" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-10.16" y="-10.414" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<pin name="OUT1" x="-12.7" y="7.62" length="short"/>
+<pin name="OUT0" x="-12.7" y="2.54" length="short"/>
+<pin name="VCC" x="-12.7" y="-2.54" length="short"/>
+<pin name="GND" x="-12.7" y="-7.62" length="short"/>
+<pin name="CTRL0" x="12.7" y="-7.62" length="short" rot="R180"/>
+<pin name="CTRL1" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="SDA" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="SCL" x="12.7" y="7.62" length="short" rot="R180"/>
 </symbol>
 <symbol name="DS1307">
+<description>&lt;h3&gt;Maxim DS1307 - I2C Real-time clock (RTC)&lt;/h3&gt;</description>
 <wire x1="-7.62" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
 <wire x1="10.16" y1="5.08" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-7.62" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<text x="-7.62" y="5.842" size="1.778" layer="95">&gt;Name</text>
-<text x="-7.62" y="-10.16" size="1.778" layer="95">&gt;Value</text>
+<text x="-7.62" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-7.62" y="-7.874" size="1.778" layer="95" font="vector" align="top-left">&gt;Value</text>
 <pin name="X1" x="-10.16" y="2.54" length="short"/>
 <pin name="X2" x="-10.16" y="0" length="short"/>
 <pin name="VBATT" x="-10.16" y="-2.54" length="short"/>
@@ -1046,46 +1256,49 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <pin name="VCC" x="12.7" y="2.54" length="short" rot="R180"/>
 </symbol>
 <symbol name="DS3234">
+<description>&lt;h3&gt;Maxim DS3234 - Extremely Accurate SPI RTC&lt;/h3&gt;</description>
 <wire x1="-10.16" y1="15.24" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-17.78" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-17.78" x2="12.7" y2="15.24" width="0.254" layer="94"/>
 <wire x1="12.7" y1="15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
-<text x="-9.144" y="15.494" size="1.778" layer="95">&gt;NAME</text>
-<text x="-9.398" y="-20.066" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND" x="17.78" y="-15.24" length="middle" rot="R180"/>
-<pin name="VCC" x="-15.24" y="12.7" length="middle"/>
-<pin name="SCLK@20" x="-15.24" y="5.08" length="middle"/>
-<pin name="DOUT" x="-15.24" y="2.54" length="middle"/>
-<pin name="DIN" x="-15.24" y="0" length="middle"/>
-<pin name="CS" x="-15.24" y="-2.54" length="middle"/>
-<pin name="INT/SQW" x="-15.24" y="-7.62" length="middle"/>
-<pin name="RST" x="-15.24" y="-12.7" length="middle"/>
-<pin name="32KHZ" x="-15.24" y="-15.24" length="middle"/>
-<pin name="GND@2" x="17.78" y="7.62" length="middle" rot="R180"/>
-<pin name="VBAT" x="17.78" y="12.7" length="middle" rot="R180"/>
-<pin name="SCLK@18" x="-15.24" y="7.62" length="middle"/>
-<pin name="GND@14" x="17.78" y="-12.7" length="middle" rot="R180"/>
-<pin name="GND@9" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="GND@13" x="17.78" y="-10.16" length="middle" rot="R180"/>
-<pin name="GND@12" x="17.78" y="-7.62" length="middle" rot="R180"/>
-<pin name="GND@11" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="GND@10" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="GND@8" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="GND@7" x="17.78" y="5.08" length="middle" rot="R180"/>
+<text x="-10.16" y="15.494" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-10.16" y="-18.034" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<pin name="GND" x="15.24" y="-15.24" length="short" rot="R180"/>
+<pin name="VCC" x="-12.7" y="12.7" length="short"/>
+<pin name="SCLK@20" x="-12.7" y="5.08" length="short"/>
+<pin name="DOUT" x="-12.7" y="2.54" length="short"/>
+<pin name="DIN" x="-12.7" y="0" length="short"/>
+<pin name="CS" x="-12.7" y="-2.54" length="short"/>
+<pin name="INT/SQW" x="-12.7" y="-7.62" length="short"/>
+<pin name="RST" x="-12.7" y="-12.7" length="short"/>
+<pin name="32KHZ" x="-12.7" y="-15.24" length="short"/>
+<pin name="GND@2" x="15.24" y="7.62" length="short" rot="R180"/>
+<pin name="VBAT" x="15.24" y="12.7" length="short" rot="R180"/>
+<pin name="SCLK@18" x="-12.7" y="7.62" length="short"/>
+<pin name="GND@14" x="15.24" y="-12.7" length="short" rot="R180"/>
+<pin name="GND@9" x="15.24" y="0" length="short" rot="R180"/>
+<pin name="GND@13" x="15.24" y="-10.16" length="short" rot="R180"/>
+<pin name="GND@12" x="15.24" y="-7.62" length="short" rot="R180"/>
+<pin name="GND@11" x="15.24" y="-5.08" length="short" rot="R180"/>
+<pin name="GND@10" x="15.24" y="-2.54" length="short" rot="R180"/>
+<pin name="GND@8" x="15.24" y="2.54" length="short" rot="R180"/>
+<pin name="GND@7" x="15.24" y="5.08" length="short" rot="R180"/>
 </symbol>
 <symbol name="OSCILLATOR">
+<description>&lt;h3&gt;Active Oscillator w/ Enable Input&lt;/h3&gt;</description>
 <wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<text x="-7.62" y="5.842" size="1.27" layer="95">&gt;Name</text>
-<text x="-7.62" y="-7.366" size="1.27" layer="96">&gt;Value</text>
-<pin name="EN" x="-12.7" y="-2.54" visible="pin" length="middle"/>
-<pin name="GND" x="12.7" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="OUT" x="12.7" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="VCC" x="-12.7" y="2.54" visible="pin" length="middle"/>
+<text x="-7.62" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-7.62" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
+<pin name="EN" x="-10.16" y="-2.54" visible="pin" length="short"/>
+<pin name="GND" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="OUT" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="VCC" x="-10.16" y="2.54" visible="pin" length="short"/>
 </symbol>
 <symbol name="RESONATOR">
+<description>&lt;h3&gt;Resonator&lt;/h3&gt;</description>
 <wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
 <wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.1524" layer="94"/>
@@ -1111,43 +1324,16 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <wire x1="2.54" y1="-5.08" x2="0" y2="-5.08" width="0.1524" layer="94"/>
 <wire x1="0" y1="-5.08" x2="-2.54" y2="-5.08" width="0.1524" layer="94"/>
 <wire x1="0" y1="-5.08" x2="0" y2="-7.62" width="0.1524" layer="94"/>
-<text x="2.54" y="1.016" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-3.302" y="-2.54" size="1.778" layer="95" font="vector" align="center-right">&gt;NAME</text>
+<text x="0" y="2.032" size="1.778" layer="96" font="vector" align="bottom-center">&gt;VALUE</text>
 <pin name="3" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
 <pin name="2" x="0" y="-7.62" visible="off" length="point" direction="pas" swaplevel="1" rot="R90"/>
 <circle x="-2.54" y="0" radius="0.508" width="0" layer="94"/>
 <circle x="2.54" y="0" radius="0.508" width="0" layer="94"/>
 </symbol>
-<symbol name="RESONATOR_NOCAP">
-<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.1524" layer="94"/>
-<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.1524" layer="94"/>
-<wire x1="1.016" y1="1.778" x2="1.016" y2="0" width="0.1524" layer="94"/>
-<wire x1="1.016" y1="0" x2="1.016" y2="-1.778" width="0.1524" layer="94"/>
-<wire x1="-1.016" y1="1.778" x2="-1.016" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.016" y1="0" x2="-1.016" y2="-1.778" width="0.1524" layer="94"/>
-<text x="-2.794" y="2.54" size="1.27" layer="95">&gt;NAME</text>
-<text x="-3.048" y="-4.064" size="1.27" layer="96">&gt;Value</text>
-<pin name="3" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
-</symbol>
-<symbol name="SIT8002">
-<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
-<text x="-6.604" y="5.842" size="1.778" layer="94">&gt;VALUE</text>
-<text x="-4.826" y="-7.874" size="1.778" layer="94">&gt;NAME</text>
-<pin name="/ST-OE" x="-15.24" y="0" length="middle"/>
-<pin name="GND" x="-15.24" y="-2.54" length="middle"/>
-<pin name="OUT" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="VDD" x="-15.24" y="2.54" length="middle"/>
-</symbol>
 <symbol name="CRYSTAL-GND">
+<description>&lt;h3&gt;Crystal with Ground pin&lt;/h3&gt;</description>
 <wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
 <wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
 <wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
@@ -1156,7 +1342,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
 <wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
 <wire x1="-1.016" y1="1.778" x2="-1.016" y2="0" width="0.254" layer="94"/>
-<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="1.524" y="-1.524" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 <text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
 <text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
 <pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
@@ -1164,28 +1350,19 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <wire x1="-1.016" y1="0" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
 <pin name="3" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 <wire x1="0" y1="-2.8" x2="0" y2="-1.6" width="0.1524" layer="94"/>
-</symbol>
-<symbol name="OSCILLATOR-1">
-<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<pin name="EN" x="-12.7" y="-2.54" visible="pin" length="middle"/>
-<pin name="GND" x="12.7" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="OUT" x="12.7" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="VCC" x="-12.7" y="2.54" visible="pin" length="middle"/>
-<text x="-7.62" y="5.842" size="1.27" layer="95">&gt;Name</text>
-<text x="-7.62" y="-7.366" size="1.27" layer="96">&gt;Value</text>
+<text x="-1.27" y="-1.524" size="1.778" layer="95" font="vector" align="top-right">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
 <deviceset name="CRYSTAL" prefix="Y" uservalue="yes">
-<description>Various standard crystals. Proven footprints.</description>
+<description>&lt;h3&gt;Crystals (Generic)&lt;/h3&gt;
+&lt;p&gt;These are &lt;b&gt;passive&lt;/b&gt; quartz crystals, which can be used as a clock source for a microcontroller.&lt;/p&gt;
+&lt;p&gt;Crystal's are two-terminal devices. They require external "load" capacitors to generate an oscillating signal.&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="Q" x="0" y="0"/>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="HC49UV" package="HC49U-V">
+<device name="PTH-HC49UV" package="HC49U">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1194,7 +1371,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <technology name=""/>
 </technologies>
 </device>
-<device name="TC38H" package="TC38H">
+<device name="PTH-3X8" package="CRYSTAL-PTH-3X8-CYL">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1203,19 +1380,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <technology name=""/>
 </technologies>
 </device>
-<device name="TC26H" package="TC26H">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="XTAL-10112"/>
-<attribute name="VALUE" value="32.768kHz"/>
-</technology>
-</technologies>
-</device>
-<device name="SMD" package="HC49UP">
+<device name="PTH-2X6" package="CRYSTAL-PTH-2X6-CYL">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1224,7 +1389,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <technology name=""/>
 </technologies>
 </device>
-<device name="HC49US" package="HC49US">
+<device name="SMD-HC49UP" package="HC49UP">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1233,29 +1398,34 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <technology name=""/>
 </technologies>
 </device>
-<device name="32-SMD-MELF" package="CRYSTAL-32KHZ-SMD-MELF">
+<device name="PTH-HC49US" package="HC49US">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD-2X6" package="CRYSTAL-SMD-2X6-CYL">
 <connects>
 <connect gate="G$1" pin="1" pad="X1"/>
 <connect gate="G$1" pin="2" pad="X2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="XTAL-07894" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
-<device name="CRYSTAL-SMD-5X3-16MHZ" package="CRYSTAL-SMD-5X3">
+<device name="SMD-5X3.2-4PAD" package="CRYSTAL-SMD-5X3.2-4PAD">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="XTAL-08218" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
-<device name="EPSONMC146" package="CRYSTAL-32KHZ-SMD_EPSON_MC146">
+<device name="SMD-MC146" package="CRYSTAL-SMD-MC-146">
 <connects>
 <connect gate="G$1" pin="1" pad="P$2"/>
 <connect gate="G$1" pin="2" pad="P$1"/>
@@ -1264,16 +1434,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <technology name=""/>
 </technologies>
 </device>
-<device name="10.5X4.8" package="CRYSTAL-SMD-10.5X4.8-2PIN">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TC26H_EZ" package="TC26HEZ">
+<device name="PTH-2X6-KIT" package="CRYSTAL-PTH-2X6-CYL-KIT">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1282,7 +1443,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <technology name=""/>
 </technologies>
 </device>
-<device name="TXC-7A" package="CRYSTAL-TXC-7A">
+<device name="SMD-5X3.2-2PAD" package="CRYSTAL-SMD-5X3.2-2PAD">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -1291,51 +1452,39 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <technology name=""/>
 </technologies>
 </device>
-<device name="CRYSTAL-SMD-5X3-12.288MHZ" package="CRYSTAL-SMD-5X3">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="3"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="XTAL-09653" constant="no"/>
-<attribute name="VALUE" value="12.288MHz"/>
-</technology>
-</technologies>
-</device>
-<device name="3.2X1.5MM" package="CRYSTAL-SMD-3.2X1.5MM">
+<device name="SMD-3.2X1.5" package="CRYSTAL-SMD-3.2X1.5MM">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="XTAL-13062"/>
-<attribute name="VALUE" value="32.768kHz"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
-<device name="CRYSTAL-SMD-5X3-12MHZ" package="CRYSTAL-SMD-5X3">
+<device name="SMD-3.2X2.5" package="CRYSTAL-SMD-3.2X2.5MM">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="XTAL-08297"/>
-<attribute name="VALUE" value="12MHz"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DS1077">
-<description>I2C non-volatile programmable oscillator, 16kHz to 133MHz</description>
+<deviceset name="DS1077" prefix="U">
+<description>&lt;h3&gt;Maxim DS1077 - I2C Real-time clock (RTC)&lt;/h3&gt;
+
+&lt;p&gt;The   DS1077   is   a   dual-output,   programmable,   fixed-frequency   oscillator   requiring   no   external   components for operation. The DS1077 can be used as a processor-controlled frequency synthesizer or as  a  standalone  oscillator.&lt;/p&gt;
+&lt;p&gt;The  DS1077  features  a  2-wire  serial  interface  that  allows  in-circuit  on-the-fly  programming  of the  programmable  prescalers  (P0  &amp;  P1)  and  divider  (N)  with  the  desired  values  being  stored  in  NV  (EEPROM)   memory.&lt;/p&gt;
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/retired/99"&gt;Real Time Clock Module&lt;/a&gt; (BOB-00099)&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;a href="http://datasheets.maximintegrated.com/en/ds/DS1077.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="DS1077" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SO08">
+<device name="U" package="SO08-0.15">
 <connects>
 <connect gate="G$1" pin="CTRL0" pad="5"/>
 <connect gate="G$1" pin="CTRL1" pad="6"/>
@@ -1347,33 +1496,25 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <connect gate="G$1" pin="VCC" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09075" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DS1307">
-<description>I2C real-time clock with battery backup.</description>
+<deviceset name="DS1307" prefix="U">
+<description>&lt;h3&gt;Maxim DS1307 - I2C Real-time clock (RTC)&lt;/h3&gt;
+
+&lt;p&gt;The  DS1307  serial  real-time  clock  (RTC)  is  a  low-power, full binary-coded decimal (BCD) clock/calendar plus  56  bytes  of  NV  SRAM.  Address  and  data  are transferred  serially  through  an  I2C,  bidirectional  bus. The clock/calendar provides seconds, minutes, hours, day,  date,  month,  and  year  information.&lt;/p&gt;
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12708"&gt;Real Time Clock Module&lt;/a&gt; (BOB-12708)&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/BreakoutBoards/DS1307.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="DS1307" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SO8" package="SO08">
-<connects>
-<connect gate="G$1" pin="GND" pad="4"/>
-<connect gate="G$1" pin="SCL" pad="6"/>
-<connect gate="G$1" pin="SDA" pad="5"/>
-<connect gate="G$1" pin="SQW" pad="7"/>
-<connect gate="G$1" pin="VBATT" pad="3"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-<connect gate="G$1" pin="X1" pad="1"/>
-<connect gate="G$1" pin="X2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SO8-TIGHT" package="SO08-TIGHT">
+<device name="Z" package="SO08-0.15">
 <connects>
 <connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="SCL" pad="6"/>
@@ -1392,13 +1533,20 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 </device>
 </devices>
 </deviceset>
-<deviceset name="DS3234">
-<description>SPI RTC module with battery backup and internal clock.</description>
+<deviceset name="DS3234" prefix="U">
+<description>&lt;h3&gt;Maxim DS3234 - Extremely Accurate SPI RTC&lt;/h3&gt;
+
+&lt;p&gt;The  DS3234  is  a  low-cost,  extremely  accurate  SPI™  bus real-time clock (RTC) with an integrated temperature-compensated crystal oscillator (TCXO) and crystal.&lt;/p&gt;
+
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10079"&gt;Real Time Clock - DS3234&lt;/a&gt; (COM-10079)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10160"&gt;SparkFun DeadOn RTC Breakout&lt;/a&gt; (BOB-10160)&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/BreakoutBoards/DS3234.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="DS3234" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DS3234">
+<device name="" package="SO20-0.3">
 <connects>
 <connect gate="G$1" pin="32KHZ" pad="3"/>
 <connect gate="G$1" pin="CS" pad="1"/>
@@ -1422,29 +1570,23 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <connect gate="G$1" pin="VCC" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-10016"/>
+<attribute name="SF_ID" value="COM-10079"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="OSCILLATOR" prefix="U">
-<description>Generic 5x3 and 7x5 oscillators</description>
+<deviceset name="OSCILLATOR" prefix="Y">
+<description>&lt;h3&gt;Oscillators (Generic)&lt;/h3&gt;
+&lt;p&gt;These are &lt;b&gt;active&lt;/b&gt; oscillators, which require a power source to generate their clock output. Most oscillators are configured to generate a set frequency (e.g. 16MHz).&lt;/p&gt;
+&lt;p&gt;They have four pins: power, ground, output, and an enable input.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="OSCILLATOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SMD" package="CRYSTAL-SMD-7X5">
-<connects>
-<connect gate="G$1" pin="EN" pad="P$1"/>
-<connect gate="G$1" pin="GND" pad="P$2"/>
-<connect gate="G$1" pin="OUT" pad="P$3"/>
-<connect gate="G$1" pin="VCC" pad="P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SMD6" package="CRYSTAL-SMD-7.5X5.2-6PIN">
+<device name="SMD-7X5-4PAD" package="OSCILLATOR-SMD-7X5-4PAD">
 <connects>
 <connect gate="G$1" pin="EN" pad="1"/>
 <connect gate="G$1" pin="GND" pad="2"/>
@@ -1455,7 +1597,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <technology name=""/>
 </technologies>
 </device>
-<device name="5X3" package="CRYSTAL-SMD-5X3">
+<device name="SMD-7X5-6PAD" package="OSCILLATOR-SMD-7.5X5.2-6PIN">
 <connects>
 <connect gate="G$1" pin="EN" pad="1"/>
 <connect gate="G$1" pin="GND" pad="2"/>
@@ -1466,7 +1608,7 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <technology name=""/>
 </technologies>
 </device>
-<device name="5X3-PIN1-INDICATED" package="CRYSTAL-OSC-SMD-5X3">
+<device name="SMD-5X3" package="OSCILLATOR-SMD-5X3.2">
 <connects>
 <connect gate="G$1" pin="EN" pad="1"/>
 <connect gate="G$1" pin="GND" pad="2"/>
@@ -1475,35 +1617,20 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-<device name="XTAL-11225" package="CRYSTAL-SMD-7X5">
-<connects>
-<connect gate="G$1" pin="EN" pad="P$1"/>
-<connect gate="G$1" pin="GND" pad="P$2"/>
-<connect gate="G$1" pin="OUT" pad="P$3"/>
-<connect gate="G$1" pin="VCC" pad="P$4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="XTAL-11225"/>
-<attribute name="VALUE" value="16MHz"/>
-</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="RESONATOR" prefix="Y" uservalue="yes">
-<description>&lt;b&gt;Resonator&lt;/b&gt;&lt;br&gt;
-Small SMD resonator.&lt;br&gt;
-Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
-8MHz- XTAL-08895&lt;br&gt;
-16MHz- XTAL-08900</description>
+<description>&lt;h3&gt;Resonators (Generic)&lt;/h3&gt;
+&lt;p&gt;Ceramic resonators are clock-generating components, often used to control timing in microcontrollers. They usually have 3 pins: two pins for oscillation, and one pin for ground.&lt;/p&gt;
+&lt;p&gt;Compared to crystals, resonators have worse tolerance, but are usually much cheaper. Plus, they have built-in load capacitors!&lt;/p&gt;
+&lt;p&gt;These devices are used on boards like the &lt;a href="https://www.sparkfun.com/products/11114"&gt;Arduino Pro 8MHz&lt;/a&gt; and &lt;a href="https://www.sparkfun.com/products/11113"&gt;Arduino Pro 16MHz&lt;/a&gt;.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="RESONATOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="PTH" package="RESONATOR-PTH">
+<device name="PTH-7.6X3.8" package="RESONATOR-PTH-7.6X3.8">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1513,20 +1640,108 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <technology name=""/>
 </technologies>
 </device>
-<device name="8MHZ" package="RESONATOR-SMD">
+<device name="SMD-3.2X1.3" package="RESONATOR-SMD-3.2X1.3">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD-4.5X2.0" package="RESONATOR-SMD-4.5X2.0">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD-7.4X3.4" package="RESONATOR-SMD-7.4X3.4">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRYSTAL-GROUNDED" prefix="Y">
+<description>&lt;h3&gt;Crystals w/ Ground Pin (Generic)&lt;/h3&gt;
+&lt;p&gt;These are &lt;b&gt;passive&lt;/b&gt; quartz crystals, which can be used as a clock source for a microcontroller.&lt;/p&gt;
+&lt;p&gt;Crystal's are usually two-terminal devices. A third terminal may be optionally connected to ground, as recommended by the manufaturer.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL-GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD-5X3.2" package="CRYSTAL-SMD-5X3.2-4PAD">
+<connects>
+<connect gate="G$1" pin="1" pad="3"/>
+<connect gate="G$1" pin="2" pad="1"/>
+<connect gate="G$1" pin="3" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD-3.2X2.5" package="CRYSTAL-SMD-3.2X2.5MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="G$1" pin="3" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OSCILLATOR-33MHZ" prefix="Y">
+<description>&lt;h3&gt;33 MHz 5x3.2mm Oscllator&lt;/h3&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Standard 5.0mm x 3.2m 4-pad SMD package&lt;/li&gt;
+&lt;li&gt;Frequency: 33MHz&lt;/li&gt;
+&lt;li&gt;Frequency Stability: &amp;plusmn;50ppm&lt;/li&gt;
+&lt;li&gt;Operating Voltage: 3.3V&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.ctscorp.com/wp-content/uploads/2015/11/008-0250-0.pdf"&gt;Example datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="OSCILLATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OSCILLATOR-SMD-5X3.2">
+<connects>
+<connect gate="G$1" pin="EN" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
 <technology name="">
-<attribute name="PROD_ID" value="XTAL-08895"/>
-<attribute name="VALUE" value="8MHZ"/>
+<attribute name="PROD_ID" value="XTAL-11986"/>
+<attribute name="VALUE" value="33MHz"/>
 </technology>
 </technologies>
 </device>
-<device name="16MHZ" package="RESONATOR-SMD">
+</devices>
+</deviceset>
+<deviceset name="RESONATOR-16MHZ" prefix="Y" uservalue="yes">
+<description>&lt;h3&gt;16MHz Resonator&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.digikey.com/product-detail/en/murata-electronics-north-america/CSTCE16M0V53-R0/490-1198-1-ND/584635"&gt;Digikey Example&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 16MHz&lt;/li&gt;
+&lt;li&gt;Frequency Stability: &amp;plusmn;0.3%&lt;/li&gt;
+&lt;li&gt;Frequency Tolerance: &amp;plusmn;0.5%&lt;/li&gt;
+&lt;li&gt;Capacitance: 15pF&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESONATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD_3.2X1.3" package="RESONATOR-SMD-3.2X1.3">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1535,11 +1750,233 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="XTAL-08900"/>
-<attribute name="VALUE" value="16MHZ"/>
+<attribute name="VALUE" value="16MHz"/>
 </technology>
 </technologies>
 </device>
-<device name="4MHZ" package="RESONATOR-SMD_MED">
+</devices>
+</deviceset>
+<deviceset name="RESONATOR-8MHZ" prefix="Y" uservalue="yes">
+<description>&lt;h3&gt;8MHz Resonator&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.digikey.com/product-detail/en/murata-electronics-north-america/CSTCE10M0G55-R0/490-1196-1-ND/584633"&gt;Digikey Example&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 8MHz&lt;/li&gt;
+&lt;li&gt;Frequency Stability: &amp;plusmn;0.2%&lt;/li&gt;
+&lt;li&gt;Frequency Tolerance: &amp;plusmn;0.5%&lt;/li&gt;
+&lt;li&gt;Capacitance: 33pF&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESONATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD_3.2X1.3" package="RESONATOR-SMD-3.2X1.3">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-08895"/>
+<attribute name="VALUE" value="8MHz"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRYSTAL-26MHZ" prefix="Y">
+<description>&lt;h3&gt;26MHz Crystal w/ Ground Pin&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.digikey.com/product-detail/en/epson/TSX-3225%2026.0000MF09Z-AC3/SER3627CT-ND/1802878"&gt;Digikey Example&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 26MHz&lt;/li&gt;
+&lt;li&gt;Frequency Stability: &amp;plusmn;9ppm&lt;/li&gt;
+&lt;li&gt;Frequency Tolerance: &amp;plusmn;10ppm&lt;/li&gt;
+&lt;li&gt;Load Capacitance: 9pF&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL-GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD-3.2X2.5" package="CRYSTAL-SMD-3.2X2.5MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="G$1" pin="3" pad="2 4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-12454"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRYSTAL-16MHZ" prefix="Y" uservalue="yes">
+<description>&lt;h3&gt;16MHz Crystal&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.digikey.com/product-search/en?keywords=535-9122-1-ND"&gt;Digikey Example&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 16MHz&lt;/li&gt;
+&lt;li&gt;Frequency Stability: &amp;plusmn;50ppm&lt;/li&gt;
+&lt;li&gt;Frequency Tolerance: &amp;plusmn;20ppm&lt;/li&gt;
+&lt;li&gt;Load Capacitance: 18pF&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD-5X3.2" package="CRYSTAL-SMD-5X3.2-4PAD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-08218"/>
+<attribute name="SF_ID" value="COM-00094"/>
+<attribute name="VALUE" value="16MHz"/>
+</technology>
+</technologies>
+</device>
+<device name="PTH-HC49US" package="HC49US">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-08181"/>
+<attribute name="SF_ID" value="COM-00536"/>
+<attribute name="VALUE" value="16MHz"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRYSTAL-12.288MHZ" prefix="Y" uservalue="yes">
+<description>&lt;h3&gt;12.288MHz Crystal&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.digikey.com/product-detail/en/abracon-llc/ABM3B-12.288MHZ-B2-T/535-9117-1-ND/675634"&gt;Digikey Example&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 12.288MHz&lt;/li&gt;
+&lt;li&gt;Frequency Stability: &amp;plusmn;50ppm&lt;/li&gt;
+&lt;li&gt;Frequency Tolerance: &amp;plusmn;20ppm&lt;/li&gt;
+&lt;li&gt;Load Capacitance: 18pF&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="&quot;" package="CRYSTAL-SMD-5X3.2-4PAD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-09653"/>
+<attribute name="VALUE" value="12.288MHz"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRYSTAL-32.768KHZ" prefix="Y" uservalue="yes">
+<description>&lt;h3&gt;32.768kHz Crystal&lt;/h3&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 32.768kHz&lt;/li&gt;
+&lt;li&gt;Frequency Stability: &amp;plusmn;20ppm&lt;/li&gt;
+&lt;li&gt;Load Capacitance: 12.5pF (PTH-2X6 &amp; SMD-3.2X1.5), 6pF (SMD-2X6)&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PTH-2X6" package="CRYSTAL-PTH-2X6-CYL">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-10112"/>
+<attribute name="VALUE" value="32.768kHz"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD-2X6" package="CRYSTAL-SMD-2X6-CYL">
+<connects>
+<connect gate="G$1" pin="1" pad="X1"/>
+<connect gate="G$1" pin="2" pad="X2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-07894"/>
+<attribute name="VALUE" value="32.768kHz"/>
+</technology>
+</technologies>
+</device>
+<device name="PTH-2X6-KIT" package="CRYSTAL-PTH-2X6-CYL-KIT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-10112"/>
+<attribute name="VALUE" value="32.768kHz"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD-3.2X1.5" package="CRYSTAL-SMD-3.2X1.5MM">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-13062"/>
+<attribute name="VALUE" value="32.768kHz"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD-MC146" package="CRYSTAL-SMD-MC-146">
+<connects>
+<connect gate="G$1" pin="1" pad="P$2"/>
+<connect gate="G$1" pin="2" pad="P$1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-09342"/>
+<attribute name="VALUE" value="32.768kHz"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRYSTAL-12MHZ" prefix="Y" uservalue="yes">
+<description>&lt;h3&gt;12.0MHz Crystal&lt;/h3&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 12.0MHz&lt;/li&gt;
+&lt;li&gt;Frequency Tolerance: &amp;plusmn;20ppm&lt;/li&gt;
+&lt;li&gt;Load Capacitance: 18pF&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="&quot;" package="CRYSTAL-SMD-5X3.2-4PAD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-08297"/>
+<attribute name="VALUE" value="12MHz"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RESONATOR-4MHZ" prefix="Y" uservalue="yes">
+<description>&lt;h3&gt;4MHz Resonator&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.digikey.com/product-search/en?keywords=490-1200-1-ND"&gt;Digikey Example&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 4MHz&lt;/li&gt;
+&lt;li&gt;Frequency Stability: &amp;plusmn;0.2%&lt;/li&gt;
+&lt;li&gt;Frequency Tolerance: &amp;plusmn;0.5%&lt;/li&gt;
+&lt;li&gt;Capacitance: 15pF&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESONATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD-4.5X2" package="RESONATOR-SMD-4.5X2.0">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1554,82 +1991,79 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="RESONATOR-WIDE">
+<deviceset name="CRYSTAL-8MHZ" prefix="Y" uservalue="yes">
+<description>&lt;h3&gt;8MHz Crystal&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.futureelectronics.com/en/technologies/electromechanical/timing-devices/crystals/Pages/6008189-ABM3B-8.000MHZ-B2-T.aspx?IM=0"&gt;Example&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 8MHz&lt;/li&gt;
+&lt;li&gt;Frequency Tolerance: &amp;plusmn;20ppm&lt;/li&gt;
+&lt;li&gt;Load Capacitance: 18pF&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="RESONATOR" x="0" y="2.54"/>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="RESONATOR-WIDE-SMD">
+<device name="SMD-5X3.2" package="CRYSTAL-SMD-5X3.2-4PAD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-09431"/>
+<attribute name="VALUE" value="8MHz"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD-HC49UP" package="HC49UP">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-11706"/>
+<attribute name="VALUE" value="8MHz" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="RESONATOR_NOCAP">
+<deviceset name="CRYSTAL-24MHZ" prefix="Y" uservalue="yes">
+<description>&lt;h3&gt;24MHz Crystal&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Components/AT-SMD-5x3.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 24MHz&lt;/li&gt;
+&lt;li&gt;Frequency Tolerance: &amp;plusmn;20ppm&lt;/li&gt;
+&lt;li&gt;Load Capacitance: 12pF&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="RESONATOR_NOCAP" x="0" y="0"/>
+<gate name="G$1" symbol="CRYSTAL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="RESONATOR_NOCAP">
+<device name="&quot;" package="CRYSTAL-SMD-5X3.2-4PAD">
 <connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="3" pad="P$2"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-08298"/>
+<attribute name="SF_ID" value="COM-08581"/>
+<attribute name="VALUE" value="24MHz"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SIT8002">
-<description>Silicon Oscillator- not field programmable</description>
+<deviceset name="OSCILLATOR-16MHZ" prefix="Y">
+<description>&lt;h3&gt;16 MHz 7x5mm Oscllator&lt;/h3&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 16MHz&lt;/li&gt;
+&lt;li&gt;Frequency Stability: &amp;plusmn;50ppm&lt;/li&gt;
+&lt;li&gt;Operating Voltage: 3.3V&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.futureelectronics.com/en/technologies/electromechanical/timing-devices/oscillators/Pages/9907304-FXO-HC735-16.aspx?IM=0"&gt;Example&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="SIT8002" x="0" y="0"/>
+<gate name="G$1" symbol="OSCILLATOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SIT8002">
-<connects>
-<connect gate="G$1" pin="/ST-OE" pad="1"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
-<connect gate="G$1" pin="VDD" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CRYSTAL-GROUNDED">
-<gates>
-<gate name="G$1" symbol="CRYSTAL-GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CRYSTAL-SMD-5X3">
-<connects>
-<connect gate="G$1" pin="1" pad="3"/>
-<connect gate="G$1" pin="2" pad="1"/>
-<connect gate="G$1" pin="3" pad="2 4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="33MHZ-OSCILLATOR" prefix="U">
-<description>Generic 5x3.2 Oscillator</description>
-<gates>
-<gate name="G$1" symbol="OSCILLATOR-1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CRYSTAL-OSC-SMD-5X3.2">
+<device name="SMD-7X5-4PAD" package="OSCILLATOR-SMD-7X5-4PAD">
 <connects>
 <connect gate="G$1" pin="EN" pad="1"/>
 <connect gate="G$1" pin="GND" pad="2"/>
@@ -1638,7 +2072,8 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="XTAL-11986" constant="no"/>
+<attribute name="PROD_ID" value="XTAL-11225"/>
+<attribute name="VALUE" value="16MHz"/>
 </technology>
 </technologies>
 </device>
