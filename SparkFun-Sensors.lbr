@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -6948,8 +6948,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
 <wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
-<text x="-7.62" y="10.668" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-12.192" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-7.62" y="10.414" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-7.62" y="-10.414" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 <pin name="VDD" x="-10.16" y="7.62" visible="pin" length="short"/>
 <pin name="OUT" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
 <pin name="GND@6" x="-10.16" y="-7.62" visible="pin" length="short"/>
@@ -6963,13 +6963,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<text x="-7.62" y="5.588" size="1.524" layer="95">&gt;Name</text>
-<text x="-7.62" y="-7.366" size="1.524" layer="95">&gt;Value</text>
-<pin name="VDD" x="-12.7" y="2.54" visible="pin" length="middle"/>
-<pin name="VDD2" x="-12.7" y="0" visible="pin" length="middle"/>
-<pin name="ST" x="-12.7" y="-2.54" visible="pin" length="middle"/>
-<pin name="OUT" x="12.7" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="GND" x="12.7" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="VDD" x="-10.16" y="2.54" visible="pin" length="short"/>
+<pin name="VDD2" x="-10.16" y="0" visible="pin" length="short"/>
+<pin name="ST" x="-10.16" y="-2.54" visible="pin" length="short"/>
+<pin name="OUT" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
+<text x="-7.62" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-7.62" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="ADXL330">
 <description>&lt;h3&gt;Analog Devices ADXL330 3-Axis Analog Accelerometer&lt;/h3&gt;
@@ -6978,8 +6978,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<text x="-2.54" y="12.7" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="ST" x="12.7" y="-7.62" length="short" rot="R180"/>
 <pin name="COM@3" x="-12.7" y="0" length="short"/>
 <pin name="COM@2" x="-12.7" y="-2.54" length="short"/>
@@ -6990,6 +6988,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="XOUT" x="12.7" y="7.62" length="short" rot="R180"/>
 <pin name="VS@1" x="-12.7" y="5.08" length="short"/>
 <pin name="VS" x="-12.7" y="7.62" length="short"/>
+<text x="-10.16" y="10.414" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-10.414" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="ADXL335">
 <description>&lt;h3&gt;Analog Devices ADXL335 3-Axis Analog Accelerometer&lt;/h3&gt;
@@ -6998,8 +6998,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<text x="-2.54" y="12.7" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="ST" x="12.7" y="-7.62" length="short" rot="R180"/>
 <pin name="COM@6" x="-12.7" y="-5.08" length="short"/>
 <pin name="ZOUT" x="12.7" y="2.54" length="short" rot="R180"/>
@@ -7010,6 +7008,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="COM@5" x="-12.7" y="-2.54" visible="off" length="short"/>
 <pin name="COM@3" x="-12.7" y="0" visible="off" length="short"/>
 <pin name="COM@7" x="-12.7" y="-7.62" visible="off" length="short"/>
+<text x="-10.16" y="10.414" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-10.414" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="ADXL345">
 <description>&lt;h3&gt;Analog Devices ADXL345 3-Axis SPI/I2C 2/4/8/16g Accelerometer&lt;/h3&gt;
@@ -7019,8 +7019,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="10.16" y1="12.7" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-15.24" x2="-7.62" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-15.24" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
-<text x="-7.62" y="13.462" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VDD" x="-10.16" y="10.16" length="short"/>
 <pin name="NC@11" x="-10.16" y="-2.54" length="short"/>
 <pin name="NC@3" x="-10.16" y="2.54" length="short"/>
@@ -7035,6 +7033,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="SDO" x="12.7" y="5.08" length="short" rot="R180"/>
 <pin name="SDA" x="12.7" y="2.54" length="short" rot="R180"/>
 <pin name="SCL" x="12.7" y="0" length="short" rot="R180"/>
+<text x="-7.62" y="12.954" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-7.62" y="-15.494" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="AT42QT1012">
 <description>&lt;h3&gt;Atmel AT42QT1010 1-Channel Capacitive Touch Sensor&lt;/h3&gt;
@@ -7044,97 +7044,79 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="VDD" x="0" y="12.7" length="middle" rot="R270"/>
-<pin name="SNSK" x="-15.24" y="5.08" length="middle"/>
-<pin name="GND" x="0" y="-12.7" length="middle" rot="R90"/>
-<pin name="SNS" x="-15.24" y="-5.08" length="middle"/>
-<pin name="OUT" x="15.24" y="5.08" length="middle" rot="R180"/>
-<pin name="TIME" x="15.24" y="-5.08" length="middle" rot="R180"/>
-</symbol>
-<symbol name="AT45DB041B">
-<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-5.08" x2="10.16" y2="7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<text x="-4.826" y="8.382" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="SI" x="-10.16" y="5.08" visible="pin" length="middle"/>
-<pin name="SCK" x="-10.16" y="2.54" visible="pin" length="middle"/>
-<pin name="RST" x="-10.16" y="0" visible="pin" length="middle" function="dot"/>
-<pin name="CS" x="-10.16" y="-2.54" visible="pin" length="middle" function="dot"/>
-<pin name="WP" x="15.24" y="-2.54" visible="pin" length="middle" function="dot" rot="R180"/>
-<pin name="VCC" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
-<pin name="GND" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="SO" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="VDD" x="0" y="10.16" length="short" rot="R270"/>
+<pin name="SNSK" x="-12.7" y="5.08" length="short"/>
+<pin name="GND" x="0" y="-10.16" length="short" rot="R90"/>
+<pin name="SNS" x="-12.7" y="-5.08" length="short"/>
+<pin name="OUT" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="TIME" x="12.7" y="-5.08" length="short" rot="R180"/>
+<text x="-10.16" y="7.874" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="DCM01">
 <description>&lt;h3&gt;APMKorea DCM01 Reflective Blood Sensor&lt;/h3&gt;
 &lt;p&gt;Sensor head for Pulse Oximeter.  Contains IR and visible red LEDs, and PIN photodiode.&lt;/p&gt;</description>
-<wire x1="3.81" y1="-1.27" x2="3.81" y2="-2.54" width="0.127" layer="94"/>
-<wire x1="6.35" y1="-1.27" x2="6.35" y2="-2.54" width="0.127" layer="94"/>
-<wire x1="6.35" y1="-2.54" x2="6.35" y2="-3.81" width="0.127" layer="94"/>
-<wire x1="3.81" y1="-2.54" x2="3.81" y2="-3.81" width="0.127" layer="94"/>
-<wire x1="3.81" y1="-11.43" x2="3.81" y2="-12.7" width="0.127" layer="94"/>
-<wire x1="6.35" y1="-11.43" x2="6.35" y2="-12.7" width="0.127" layer="94"/>
-<wire x1="6.35" y1="-12.7" x2="6.35" y2="-13.97" width="0.127" layer="94"/>
-<wire x1="3.81" y1="-12.7" x2="3.81" y2="-13.97" width="0.127" layer="94"/>
-<wire x1="6.35" y1="-19.05" x2="6.35" y2="-17.78" width="0.127" layer="94"/>
-<wire x1="3.81" y1="-19.05" x2="3.81" y2="-17.78" width="0.127" layer="94"/>
-<wire x1="3.81" y1="-17.78" x2="3.81" y2="-16.51" width="0.127" layer="94"/>
-<wire x1="6.35" y1="-17.78" x2="6.35" y2="-16.51" width="0.127" layer="94"/>
-<wire x1="0" y1="-2.54" x2="3.81" y2="-2.54" width="0.127" layer="94"/>
-<wire x1="6.35" y1="-2.54" x2="10.16" y2="-2.54" width="0.127" layer="94"/>
-<wire x1="3.81" y1="-12.7" x2="1.27" y2="-12.7" width="0.127" layer="94"/>
-<wire x1="1.27" y1="-12.7" x2="1.27" y2="-15.24" width="0.127" layer="94"/>
-<wire x1="1.27" y1="-15.24" x2="1.27" y2="-17.78" width="0.127" layer="94"/>
-<wire x1="1.27" y1="-17.78" x2="3.81" y2="-17.78" width="0.127" layer="94"/>
-<wire x1="6.35" y1="-12.7" x2="8.89" y2="-12.7" width="0.127" layer="94"/>
-<wire x1="8.89" y1="-12.7" x2="8.89" y2="-15.24" width="0.127" layer="94"/>
-<wire x1="8.89" y1="-15.24" x2="8.89" y2="-17.78" width="0.127" layer="94"/>
-<wire x1="8.89" y1="-17.78" x2="6.35" y2="-17.78" width="0.127" layer="94"/>
-<wire x1="3.81" y1="-6.858" x2="3.81" y2="-8.382" width="0.127" layer="94"/>
-<wire x1="4.572" y1="-7.874" x2="4.572" y2="-9.906" width="0.127" layer="94"/>
-<wire x1="5.334" y1="-6.096" x2="5.334" y2="-7.62" width="0.127" layer="94"/>
-<wire x1="6.096" y1="-7.112" x2="6.096" y2="-9.144" width="0.127" layer="94"/>
-<wire x1="0" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
-<wire x1="10.16" y1="0" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-15.24" x2="10.16" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-20.32" x2="0" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="0" y1="-20.32" x2="0" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="0" y1="-15.24" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="-15.24" x2="1.27" y2="-15.24" width="0.127" layer="94"/>
-<wire x1="8.89" y1="-15.24" x2="10.16" y2="-15.24" width="0.127" layer="94"/>
-<wire x1="6.35" y1="-1.27" x2="3.81" y2="-2.54" width="0.127" layer="94"/>
-<wire x1="3.81" y1="-2.54" x2="6.35" y2="-3.81" width="0.127" layer="94"/>
-<wire x1="6.35" y1="-11.43" x2="3.81" y2="-12.7" width="0.127" layer="94"/>
-<wire x1="3.81" y1="-12.7" x2="6.35" y2="-13.97" width="0.127" layer="94"/>
-<wire x1="3.81" y1="-16.51" x2="6.35" y2="-17.78" width="0.127" layer="94"/>
-<wire x1="6.35" y1="-17.78" x2="3.81" y2="-19.05" width="0.127" layer="94"/>
-<wire x1="3.81" y1="-8.382" x2="4.572" y2="-7.874" width="0.127" layer="94"/>
-<wire x1="5.334" y1="-7.62" x2="6.096" y2="-7.112" width="0.127" layer="94"/>
-<text x="0" y="1.27" size="1.778" layer="95">&gt;NAME</text>
-<text x="0" y="-21.59" size="1.778" layer="96" rot="MR180">&gt;VALUE</text>
-<text x="1.524" y="-12.192" size="0.8128" layer="94">IR</text>
-<text x="1.524" y="-17.272" size="0.8128" layer="94">VIS</text>
-<text x="0.508" y="-1.27" size="0.8128" layer="94">SENSOR</text>
-<pin name="4" x="12.7" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="3" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas"/>
-<pin name="1" x="-2.54" y="-15.24" visible="pad" length="short" direction="pas"/>
-<pin name="2" x="12.7" y="-15.24" visible="pad" length="short" direction="pas" rot="R180"/>
+<wire x1="-1.27" y1="8.89" x2="-1.27" y2="7.62" width="0.127" layer="94"/>
+<wire x1="1.27" y1="8.89" x2="1.27" y2="7.62" width="0.127" layer="94"/>
+<wire x1="1.27" y1="7.62" x2="1.27" y2="6.35" width="0.127" layer="94"/>
+<wire x1="-1.27" y1="7.62" x2="-1.27" y2="6.35" width="0.127" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="-2.54" width="0.127" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="1.27" y2="-2.54" width="0.127" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="-3.81" width="0.127" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="-1.27" y2="-3.81" width="0.127" layer="94"/>
+<wire x1="1.27" y1="-8.89" x2="1.27" y2="-7.62" width="0.127" layer="94"/>
+<wire x1="-1.27" y1="-8.89" x2="-1.27" y2="-7.62" width="0.127" layer="94"/>
+<wire x1="-1.27" y1="-7.62" x2="-1.27" y2="-6.35" width="0.127" layer="94"/>
+<wire x1="1.27" y1="-7.62" x2="1.27" y2="-6.35" width="0.127" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="-1.27" y2="7.62" width="0.127" layer="94"/>
+<wire x1="1.27" y1="7.62" x2="5.08" y2="7.62" width="0.127" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="-3.81" y2="-2.54" width="0.127" layer="94"/>
+<wire x1="-3.81" y1="-2.54" x2="-3.81" y2="-5.08" width="0.127" layer="94"/>
+<wire x1="-3.81" y1="-5.08" x2="-3.81" y2="-7.62" width="0.127" layer="94"/>
+<wire x1="-3.81" y1="-7.62" x2="-1.27" y2="-7.62" width="0.127" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="3.81" y2="-2.54" width="0.127" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="3.81" y2="-5.08" width="0.127" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="3.81" y2="-7.62" width="0.127" layer="94"/>
+<wire x1="3.81" y1="-7.62" x2="1.27" y2="-7.62" width="0.127" layer="94"/>
+<wire x1="-1.27" y1="3.302" x2="-1.27" y2="1.778" width="0.127" layer="94"/>
+<wire x1="-0.508" y1="2.286" x2="-0.508" y2="0.254" width="0.127" layer="94"/>
+<wire x1="0.254" y1="4.064" x2="0.254" y2="2.54" width="0.127" layer="94"/>
+<wire x1="1.016" y1="3.048" x2="1.016" y2="1.016" width="0.127" layer="94"/>
+<wire x1="-5.08" y1="10.16" x2="5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="10.16" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="-3.81" y2="-5.08" width="0.127" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="5.08" y2="-5.08" width="0.127" layer="94"/>
+<wire x1="1.27" y1="8.89" x2="-1.27" y2="7.62" width="0.127" layer="94"/>
+<wire x1="-1.27" y1="7.62" x2="1.27" y2="6.35" width="0.127" layer="94"/>
+<wire x1="1.27" y1="-1.27" x2="-1.27" y2="-2.54" width="0.127" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="1.27" y2="-3.81" width="0.127" layer="94"/>
+<wire x1="-1.27" y1="-6.35" x2="1.27" y2="-7.62" width="0.127" layer="94"/>
+<wire x1="1.27" y1="-7.62" x2="-1.27" y2="-8.89" width="0.127" layer="94"/>
+<wire x1="-1.27" y1="1.778" x2="-0.508" y2="2.286" width="0.127" layer="94"/>
+<wire x1="0.254" y1="2.54" x2="1.016" y2="3.048" width="0.127" layer="94"/>
+<text x="-3.556" y="-2.032" size="0.8128" layer="94">IR</text>
+<text x="-3.556" y="-7.112" size="0.8128" layer="94">VIS</text>
+<text x="-4.572" y="8.89" size="0.8128" layer="94">SENSOR</text>
+<pin name="4" x="7.62" y="7.62" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="3" x="-7.62" y="7.62" visible="pad" length="short" direction="pas"/>
+<pin name="1" x="-7.62" y="-5.08" visible="pad" length="short" direction="pas"/>
+<pin name="2" x="7.62" y="-5.08" visible="pad" length="short" direction="pas" rot="R180"/>
 <polygon width="0.127" layer="94">
-<vertex x="3.81" y="-6.858"/>
-<vertex x="4.064" y="-6.858"/>
-<vertex x="3.81" y="-6.35"/>
-<vertex x="3.556" y="-6.858"/>
+<vertex x="-1.524" y="3.302"/>
+<vertex x="-1.016" y="3.302"/>
+<vertex x="-1.27" y="3.81"/>
 </polygon>
 <polygon width="0.127" layer="94">
-<vertex x="5.334" y="-6.096"/>
-<vertex x="5.588" y="-6.096"/>
-<vertex x="5.334" y="-5.588"/>
-<vertex x="5.08" y="-6.096"/>
+<vertex x="0" y="4.064"/>
+<vertex x="0.508" y="4.064"/>
+<vertex x="0.254" y="4.572"/>
 </polygon>
+<text x="-5.08" y="10.414" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-5.08" y="-10.414" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="MQ-3">
 <description>&lt;h3&gt;Gas Sensors - MQ-3, MQ-4, MQ-6, MQ-7, MQ-8&lt;/h3&gt;
@@ -7143,25 +7125,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-7.62" y1="-2.54" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-2.54" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<text x="0" y="7.62" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<text x="-7.62" y="-5.08" size="1.778" layer="95">&gt;VALUE</text>
-<pin name="A1" x="-12.7" y="2.54" visible="pin" length="middle"/>
-<pin name="H1" x="-12.7" y="0" visible="pin" length="middle"/>
-<pin name="B1" x="12.7" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="H2" x="12.7" y="0" visible="pin" length="middle" rot="R180"/>
-</symbol>
-<symbol name="GEIGER_TUBE">
-<wire x1="7.62" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<text x="-1.778" y="7.62" size="1.27" layer="95" rot="R180">&gt;NAME</text>
-<text x="-7.62" y="-7.62" size="1.27" layer="96">&gt;VALUE</text>
-<pin name="VCC" x="-12.7" y="-2.54" length="middle"/>
-<pin name="GND" x="-12.7" y="2.54" length="middle"/>
+<pin name="A1" x="-10.16" y="2.54" visible="pin" length="short"/>
+<pin name="H1" x="-10.16" y="0" visible="pin" length="short"/>
+<pin name="B1" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="H2" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
+<text x="-7.62" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-7.62" y="-2.794" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="HALL-EFFECT">
 <description>&lt;h3&gt;Hall Effect Sensor&lt;/h3&gt;
@@ -7195,11 +7164,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0" y1="-0.508" x2="-0.508" y2="-0.508" width="0.254" layer="94"/>
 <wire x1="2.54" y1="0" x2="3.048" y2="0" width="0.254" layer="94"/>
 <wire x1="10.16" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
-<text x="-10.16" y="5.588" size="1.778" layer="95">&gt;Name</text>
-<text x="-10.16" y="-7.62" size="1.778" layer="96">&gt;Value</text>
 <pin name="GND" x="-12.7" y="-2.54" length="short"/>
 <pin name="OUT" x="12.7" y="0" length="short" rot="R180"/>
 <pin name="VCC" x="-12.7" y="2.54" length="short"/>
+<text x="-10.16" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="HIH-4030">
 <description>&lt;h3&gt;Honeywell HIH-4030 Humidity Sensor - Analog Output&lt;/h3&gt;
@@ -7208,11 +7177,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<text x="-5.08" y="5.588" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VCC" x="-7.62" y="2.54" length="short"/>
 <pin name="GND" x="-7.62" y="-2.54" length="short"/>
 <pin name="OUT" x="7.62" y="0" length="short" rot="R180"/>
+<text x="-5.08" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-5.08" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="HMC5883L">
 <description>&lt;h3&gt;Honewell HMC5883L 3 Axis Digital Compass IC&lt;/h3&gt;
@@ -7221,24 +7190,24 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="10.16" y1="-15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
-<text x="-10.16" y="15.24" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="SCL" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="VDD" x="15.24" y="12.7" length="middle" rot="R180"/>
-<pin name="NC@1" x="-15.24" y="12.7" length="middle"/>
-<pin name="S1" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="NC@2" x="-15.24" y="10.16" length="middle"/>
-<pin name="NC@3" x="-15.24" y="7.62" length="middle"/>
-<pin name="NC@4" x="-15.24" y="5.08" length="middle"/>
-<pin name="SETP" x="15.24" y="-5.08" length="middle" rot="R180"/>
-<pin name="GND@1" x="-15.24" y="-7.62" length="middle"/>
-<pin name="C1" x="-15.24" y="-2.54" length="middle"/>
-<pin name="GND@2" x="-15.24" y="-10.16" length="middle"/>
-<pin name="SETC" x="15.24" y="-7.62" length="middle" rot="R180"/>
-<pin name="VDDIO" x="15.24" y="10.16" length="middle" rot="R180"/>
-<pin name="NC@5" x="-15.24" y="2.54" length="middle"/>
-<pin name="DRDY" x="15.24" y="-12.7" length="middle" rot="R180"/>
-<pin name="SDA" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="SCL" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="VDD" x="12.7" y="12.7" length="short" rot="R180"/>
+<pin name="NC@1" x="-12.7" y="12.7" length="short"/>
+<pin name="S1" x="12.7" y="7.62" length="short" rot="R180"/>
+<pin name="NC@2" x="-12.7" y="10.16" length="short"/>
+<pin name="NC@3" x="-12.7" y="7.62" length="short"/>
+<pin name="NC@4" x="-12.7" y="5.08" length="short"/>
+<pin name="SETP" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="GND@1" x="-12.7" y="-7.62" length="short"/>
+<pin name="C1" x="-12.7" y="-2.54" length="short"/>
+<pin name="GND@2" x="-12.7" y="-10.16" length="short"/>
+<pin name="SETC" x="12.7" y="-7.62" length="short" rot="R180"/>
+<pin name="VDDIO" x="12.7" y="10.16" length="short" rot="R180"/>
+<pin name="NC@5" x="-12.7" y="2.54" length="short"/>
+<pin name="DRDY" x="12.7" y="-12.7" length="short" rot="R180"/>
+<pin name="SDA" x="12.7" y="0" length="short" rot="R180"/>
+<text x="-10.16" y="15.494" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-15.494" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="HMC6343">
 <description>&lt;h3&gt;Honewell HMC6343 Compass w/ Tilt Compensation&lt;/h3&gt;
@@ -7247,17 +7216,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="10.16" y1="-10.16" x2="10.16" y2="7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="7.62" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
-<text x="-9.398" y="8.128" size="1.778" layer="95">&gt;NAME</text>
-<text x="-9.906" y="-12.446" size="1.778" layer="95">&gt;VALUE</text>
-<pin name="VDD@3" x="-15.24" y="5.08" visible="pin" length="middle"/>
-<pin name="VDD@21" x="-15.24" y="2.54" visible="pin" length="middle"/>
-<pin name="VDD@11" x="-15.24" y="0" visible="pin" length="middle"/>
-<pin name="GND@25" x="-15.24" y="-5.08" visible="pin" length="middle"/>
-<pin name="GND@29" x="-15.24" y="-7.62" visible="pin" length="middle"/>
-<pin name="SDA" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="SCL" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="CS" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="CSC" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="VDD@3" x="-12.7" y="5.08" visible="pin" length="short"/>
+<pin name="VDD@21" x="-12.7" y="2.54" visible="pin" length="short"/>
+<pin name="VDD@11" x="-12.7" y="0" visible="pin" length="short"/>
+<pin name="GND@25" x="-12.7" y="-5.08" visible="pin" length="short"/>
+<pin name="GND@29" x="-12.7" y="-7.62" visible="pin" length="short"/>
+<pin name="SDA" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SCL" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="CS" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="CSC" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<text x="-10.16" y="7.874" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-10.414" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="IDG1215">
 <description>&lt;h3&gt;Invensense IDG1215 Dual-Axis 67 &amp;deg;/s Gyro&lt;/h3&gt;
@@ -7266,8 +7235,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="12.7" y1="-12.7" x2="12.7" y2="12.7" width="0.254" layer="94"/>
 <wire x1="12.7" y1="12.7" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
-<text x="-12.7" y="12.7" size="1.27" layer="95">&gt;Name</text>
-<text x="-12.7" y="-15.24" size="1.27" layer="96">&gt;Value</text>
 <pin name="GND@2" x="-15.24" y="-10.16" length="short"/>
 <pin name="GND@26" x="-15.24" y="-7.62" length="short"/>
 <pin name="GND@27" x="-15.24" y="-5.08" length="short"/>
@@ -7286,6 +7253,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="PTATS" x="15.24" y="-5.08" length="short" rot="R180"/>
 <pin name="AZ" x="15.24" y="-7.62" length="short" rot="R180"/>
 <pin name="VREF" x="15.24" y="-10.16" length="short" rot="R180"/>
+<text x="-12.7" y="12.954" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-12.7" y="-12.954" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="L3G4200D">
 <description>&lt;h3&gt;ST Microelectronics L3G4200D 3-Axis Digital Output Gyroscope&lt;/h3&gt;
@@ -7295,8 +7264,6 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="-12.7" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-12.7" x2="10.16" y2="15.24" width="0.254" layer="94"/>
 <wire x1="10.16" y1="15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
-<text x="-12.7" y="15.748" size="1.778" layer="95">&gt;Name</text>
-<text x="-12.7" y="-14.986" size="1.778" layer="96">&gt;Value</text>
 <pin name="VDDIO" x="-15.24" y="12.7" length="short"/>
 <pin name="SCL" x="12.7" y="12.7" length="short" rot="R180"/>
 <pin name="SDA/SDI" x="12.7" y="10.16" length="short" rot="R180"/>
@@ -7313,6 +7280,8 @@ It includes a sensing element and an IC interface capable of providing the measu
 <pin name="RSDVG@3" x="-15.24" y="-5.08" length="short"/>
 <pin name="RSVDG@2" x="-15.24" y="-2.54" length="short"/>
 <pin name="RSVDG@1" x="-15.24" y="0" length="short"/>
+<text x="-12.7" y="15.494" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-12.7" y="-12.954" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="LIS331">
 <description>&lt;h3&gt;ST Microelectronics LIS331 3-Axis &amp;plusmn;6/12/24g SPI/I2C Accelerometer&lt;/h3&gt;
@@ -7321,33 +7290,35 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="-15.24" y1="12.7" x2="15.24" y2="12.7" width="0.254" layer="94"/>
 <wire x1="15.24" y1="12.7" x2="15.24" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="15.24" y1="-12.7" x2="-15.24" y2="-12.7" width="0.254" layer="94"/>
-<text x="-15.24" y="12.7" size="1.778" layer="95">&gt;NAME</text>
-<text x="-15.24" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="VDD" x="-20.32" y="10.16" length="middle"/>
-<pin name="SCL/SPC" x="20.32" y="7.62" length="middle" rot="R180"/>
-<pin name="GND@5" x="-20.32" y="0" length="middle"/>
-<pin name="GND@13" x="-20.32" y="-5.08" length="middle"/>
-<pin name="GND@12" x="-20.32" y="-2.54" length="middle"/>
-<pin name="INT1" x="20.32" y="-2.54" length="middle" rot="R180"/>
-<pin name="GNDR" x="-20.32" y="-10.16" length="middle"/>
-<pin name="INT2" x="20.32" y="-5.08" length="middle" rot="R180"/>
-<pin name="VDDIO" x="-20.32" y="7.62" length="middle"/>
-<pin name="VDDR" x="-20.32" y="5.08" length="middle"/>
-<pin name="GND@16" x="-20.32" y="-7.62" length="middle"/>
-<pin name="CS" x="20.32" y="10.16" length="middle" rot="R180"/>
-<pin name="SA0/SDO" x="20.32" y="2.54" length="middle" rot="R180"/>
-<pin name="SDA/SDI" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="VDD" x="-17.78" y="10.16" length="short"/>
+<pin name="SCL/SPC" x="17.78" y="7.62" length="short" rot="R180"/>
+<pin name="GND@5" x="-17.78" y="0" length="short"/>
+<pin name="GND@13" x="-17.78" y="-5.08" length="short"/>
+<pin name="GND@12" x="-17.78" y="-2.54" length="short"/>
+<pin name="INT1" x="17.78" y="-2.54" length="short" rot="R180"/>
+<pin name="GNDR" x="-17.78" y="-10.16" length="short"/>
+<pin name="INT2" x="17.78" y="-5.08" length="short" rot="R180"/>
+<pin name="VDDIO" x="-17.78" y="7.62" length="short"/>
+<pin name="VDDR" x="-17.78" y="5.08" length="short"/>
+<pin name="GND@16" x="-17.78" y="-7.62" length="short"/>
+<pin name="CS" x="17.78" y="10.16" length="short" rot="R180"/>
+<pin name="SA0/SDO" x="17.78" y="2.54" length="short" rot="R180"/>
+<pin name="SDA/SDI" x="17.78" y="5.08" length="short" rot="R180"/>
+<text x="-15.24" y="12.954" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-15.24" y="-12.954" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="LM34">
 <description>&lt;h3&gt;Texas Instruments LM34 - Precision Fahrenheit Temperature Sensor&lt;/h3&gt;
 &lt;p&gt;10mV/degF, 1 degF accurate analog temp sensor&lt;/p&gt;</description>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<pin name="V+" x="-12.7" y="5.08" length="middle"/>
-<pin name="VOUT" x="-12.7" y="-2.54" length="middle"/>
-<pin name="GND" x="-12.7" y="-10.16" length="middle"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<pin name="V+" x="-10.16" y="7.62" length="short"/>
+<pin name="VOUT" x="-10.16" y="0" length="short"/>
+<pin name="GND" x="-10.16" y="-7.62" length="short"/>
+<text x="-7.62" y="10.414" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-7.62" y="-10.414" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="LOAD_CELL">
 <description>&lt;h3&gt;Load Cell - Half-Wheatstone Bridge&lt;/h3&gt;
@@ -7376,8 +7347,8 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
-<text x="-5.08" y="-3.81" size="1.778" layer="95" rot="R90">&gt;Name</text>
-<text x="-3.048" y="-3.81" size="1.778" layer="96" rot="R90">&gt;Value</text>
+<text x="-2.794" y="0" size="1.778" layer="95" rot="R90" align="bottom-center">&gt;Name</text>
+<text x="-4.826" y="0" size="1.778" layer="96" rot="R90" align="bottom-center">&gt;Value</text>
 <pin name="B" x="0" y="7.62" visible="pin" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="R" x="7.62" y="0" visible="pin" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="W" x="0" y="-7.62" visible="pin" length="short" direction="pas" swaplevel="1" rot="R90"/>
@@ -7389,17 +7360,17 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="CAP-A" x="-15.24" y="5.08" length="middle"/>
-<pin name="CAP-R" x="-15.24" y="2.54" length="middle"/>
-<pin name="GND@5" x="-15.24" y="-2.54" length="middle"/>
-<pin name="GND@10" x="-15.24" y="-5.08" length="middle"/>
-<pin name="SCL" x="15.24" y="-5.08" length="middle" rot="R180"/>
-<pin name="SDA" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="INT1" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="VDDIO" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="VDD" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="CAP-A" x="-12.7" y="5.08" length="short"/>
+<pin name="CAP-R" x="-12.7" y="2.54" length="short"/>
+<pin name="GND@5" x="-12.7" y="-2.54" length="short"/>
+<pin name="GND@10" x="-12.7" y="-5.08" length="short"/>
+<pin name="SCL" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="SDA" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="INT1" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="VDDIO" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="VDD" x="12.7" y="5.08" length="short" rot="R180"/>
+<text x="-10.16" y="7.874" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="MCP9700">
 <description>&lt;h3&gt;Microchip MCP9700 Analog-Output Temperature Sensor&lt;/h3&gt;
@@ -7409,63 +7380,38 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="7.62" y1="-2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-2.54" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
 <text x="-2.286" y="-1.524" size="1.778" layer="95">GND</text>
-<text x="-7.62" y="5.588" size="1.778" layer="95">&gt;Name</text>
-<text x="2.54" y="5.588" size="1.778" layer="96">&gt;Value</text>
 <pin name="GND" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
 <pin name="VCC" x="-10.16" y="2.54" visible="pin" length="short"/>
 <pin name="VO" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
-</symbol>
-<symbol name="MCP73831">
-<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<text x="-7.62" y="5.588" size="1.778" layer="95">&gt;Name</text>
-<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;Value</text>
-<pin name="VIN" x="-10.16" y="2.54" length="short" direction="pwr"/>
-<pin name="STAT" x="-10.16" y="-2.54" length="short" direction="out"/>
-<pin name="VBAT" x="10.16" y="2.54" length="short" direction="pwr" rot="R180"/>
-<pin name="PROG" x="10.16" y="0" length="short" direction="in" rot="R180"/>
-<pin name="VSS" x="10.16" y="-2.54" length="short" direction="pwr" rot="R180"/>
+<text x="-7.62" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-7.62" y="-2.794" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="MIC">
 <description>&lt;h3&gt;Microphone&lt;/h3&gt;
 &lt;p&gt;Omni-directional electret microphones - one through-hole, the other SMD.&lt;/p&gt;</description>
-<wire x1="-1.27" y1="1.905" x2="0" y2="1.905" width="0.1524" layer="94"/>
-<wire x1="0" y1="1.905" x2="0" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="1.905" x2="0" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="0.635" y1="3.175" x2="0.635" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="0.635" y1="0.635" x2="1.905" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="1.905" y1="0.635" x2="1.905" y2="3.175" width="0.1524" layer="94"/>
-<wire x1="1.905" y1="3.175" x2="0.635" y2="3.175" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="1.905" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="1.905" x2="3.81" y2="1.905" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="1.905" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="3.81" width="0.254" layer="94"/>
-<wire x1="5.08" y1="3.81" x2="5.715" y2="3.81" width="0.254" layer="94"/>
-<wire x1="5.715" y1="3.81" x2="5.715" y2="4.445" width="0.254" layer="94"/>
-<wire x1="5.715" y1="4.445" x2="-3.175" y2="4.445" width="0.254" layer="94"/>
-<wire x1="-3.175" y1="4.445" x2="-3.175" y2="3.81" width="0.254" layer="94"/>
-<wire x1="-3.175" y1="3.81" x2="-2.54" y2="3.81" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="3.81" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="3.81" x2="5.08" y2="3.81" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
-<text x="-2.54" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<text x="8.128" y="-2.032" size="1.778" layer="96" rot="R90">&gt;Value</text>
-<pin name="2" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="1" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
-</symbol>
-<symbol name="MEMS-MIC">
-<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
-<text x="-7.62" y="8.128" size="1.27" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-9.398" size="1.27" layer="96">&gt;VALUE</text>
-<pin name="VIN" x="-10.16" y="5.08" length="short"/>
-<pin name="GND1" x="-10.16" y="-2.54" length="short"/>
-<pin name="GND2" x="-10.16" y="-5.08" length="short"/>
-<pin name="OUT" x="10.16" y="0" length="short" rot="R180"/>
+<wire x1="-1.27" y1="-0.635" x2="0" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="0" y1="-0.635" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="-0.635" x2="0" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0.635" x2="0.635" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="-1.905" x2="1.905" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="-1.905" x2="1.905" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="0.635" x2="0.635" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-0.635" x2="3.81" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-0.635" x2="2.54" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="5.08" y1="1.27" x2="5.715" y2="1.27" width="0.254" layer="94"/>
+<wire x1="5.715" y1="1.27" x2="5.715" y2="1.905" width="0.254" layer="94"/>
+<wire x1="5.715" y1="1.905" x2="-3.175" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="1.905" x2="-3.175" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-3.175" y1="1.27" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="5.08" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<pin name="2" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="1" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<text x="1.27" y="2.286" size="1.778" layer="95" font="vector" align="bottom-center">&gt;Name</text>
+<text x="1.27" y="4.318" size="1.778" layer="96" font="vector" align="bottom-center">&gt;Value</text>
 </symbol>
 <symbol name="MLX90614">
 <description>&lt;h3&gt;Melexis MLX90614 Infrared (IR) Thermometer&lt;/h3&gt;
@@ -7474,12 +7420,12 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
 <wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
-<text x="-10.16" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VDD" x="-15.24" y="2.54" length="middle"/>
 <pin name="VSS" x="-15.24" y="-2.54" length="middle"/>
 <pin name="SCL/VZ" x="15.24" y="2.54" length="middle" rot="R180"/>
 <pin name="PWM/SDA" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<text x="-10.16" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="MMA8452Q">
 <description>&lt;h3&gt;NXP MMA8452Q 3-Axis Digital Accelerometer&lt;/h3&gt;
@@ -7488,8 +7434,6 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="-7.62" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
-<text x="-7.62" y="10.668" size="1.778" layer="95">&gt;Name</text>
-<text x="-7.62" y="-12.446" size="1.778" layer="96">&gt;Value</text>
 <pin name="VDDIO" x="-10.16" y="5.08" length="short"/>
 <pin name="BYP" x="-10.16" y="2.54" length="short"/>
 <pin name="SCL" x="12.7" y="7.62" length="short" rot="R180"/>
@@ -7501,6 +7445,8 @@ It includes a sensing element and an IC interface capable of providing the measu
 <pin name="INT1" x="12.7" y="-2.54" length="short" rot="R180"/>
 <pin name="GND@2" x="-10.16" y="-2.54" length="short"/>
 <pin name="VDD" x="-10.16" y="7.62" length="short"/>
+<text x="-7.62" y="10.414" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-7.62" y="-10.414" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="MPL115A">
 <description>&lt;h3&gt;NXP MPL115A 50 to 115kPa, Absolute Digital Pressure Sensor&lt;/h3&gt;
@@ -7509,8 +7455,6 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-7.62" x2="10.16" y2="5.08" width="0.254" layer="94"/>
 <wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
-<text x="-10.16" y="5.588" size="1.778" layer="95">&gt;Name</text>
-<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;Value</text>
 <pin name="VDD" x="-12.7" y="2.54" length="short"/>
 <pin name="CAP" x="-12.7" y="0" length="short"/>
 <pin name="GND" x="-12.7" y="-2.54" length="short"/>
@@ -7519,6 +7463,8 @@ It includes a sensing element and an IC interface capable of providing the measu
 <pin name="NC/DOUT" x="12.7" y="-2.54" length="short" rot="R180"/>
 <pin name="SDA/DIN" x="12.7" y="0" length="short" rot="R180"/>
 <pin name="SCLK" x="12.7" y="2.54" length="short" rot="R180"/>
+<text x="-10.16" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="MPL3115A2">
 <description>&lt;h3&gt;NXP MPL3115A2 Digital Altimeter/Pressure Sensor&lt;/h3&gt;
@@ -7527,8 +7473,6 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="10.16" y1="-7.62" x2="10.16" y2="5.08" width="0.254" layer="94"/>
 <wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="5.08" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<text x="-10.16" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VDD" x="-12.7" y="2.54" visible="pin" length="short" direction="pwr"/>
 <pin name="CAP" x="-12.7" y="0" visible="pin" length="short" direction="pwr"/>
 <pin name="GND" x="-12.7" y="-2.54" visible="pin" length="short" direction="pwr"/>
@@ -7537,36 +7481,38 @@ It includes a sensing element and an IC interface capable of providing the measu
 <pin name="SDA" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
 <pin name="INT1" x="12.7" y="-2.54" visible="pin" length="short" direction="out" rot="R180"/>
 <pin name="INT2" x="12.7" y="-5.08" visible="pin" length="short" direction="out" rot="R180"/>
+<text x="-10.16" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="MPR121">
 <description>&lt;h3&gt;NXP MPR121 Proximity Capacitive Touch Sensor Controller&lt;/h3&gt;
 &lt;p&gt;The MPR121 is a capacitive touch sensor controller driven by an I2C interface. The chip can control up to twelve individual electrodes, as well as a simulated thirteenth electrode. The MPR121 also features eight LED driving pins. When these pins are not configured as electrodes, they may be used to drive LEDs.&lt;/p&gt;</description>
-<wire x1="-12.7" y1="-15.24" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="17.78" x2="12.7" y2="17.78" width="0.254" layer="94"/>
-<wire x1="12.7" y1="17.78" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-15.24" x2="-12.7" y2="-15.24" width="0.254" layer="94"/>
-<text x="-12.7" y="18.034" size="1.778" layer="95">&gt;NAME</text>
-<text x="-12.954" y="-17.272" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="VDD" x="-17.78" y="15.24" length="middle"/>
-<pin name="VSS" x="-17.78" y="12.7" length="middle"/>
-<pin name="VREG" x="-17.78" y="10.16" length="middle"/>
-<pin name="~IRQ" x="-17.78" y="7.62" length="middle"/>
-<pin name="SCL" x="-17.78" y="5.08" length="middle"/>
-<pin name="SDA" x="-17.78" y="2.54" length="middle"/>
-<pin name="ADDR" x="-17.78" y="0" length="middle"/>
-<pin name="REXT" x="-17.78" y="-2.54" length="middle"/>
-<pin name="ELE11/LED7" x="17.78" y="15.24" length="middle" rot="R180"/>
-<pin name="ELE10/LED6" x="17.78" y="12.7" length="middle" rot="R180"/>
-<pin name="ELE9/LED5" x="17.78" y="10.16" length="middle" rot="R180"/>
-<pin name="ELE8/LED4" x="17.78" y="7.62" length="middle" rot="R180"/>
-<pin name="ELE7/LED3" x="17.78" y="5.08" length="middle" rot="R180"/>
-<pin name="ELE6/LED2" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="ELE5/LED1" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="ELE4/LED0" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="ELE3" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="ELE2" x="17.78" y="-7.62" length="middle" rot="R180"/>
-<pin name="ELE1" x="17.78" y="-10.16" length="middle" rot="R180"/>
-<pin name="ELE0" x="17.78" y="-12.7" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="-17.78" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
+<pin name="VDD" x="-15.24" y="12.7" length="short"/>
+<pin name="VSS" x="-15.24" y="10.16" length="short"/>
+<pin name="VREG" x="-15.24" y="7.62" length="short"/>
+<pin name="~IRQ" x="-15.24" y="5.08" length="short"/>
+<pin name="SCL" x="-15.24" y="2.54" length="short"/>
+<pin name="SDA" x="-15.24" y="0" length="short"/>
+<pin name="ADDR" x="-15.24" y="-2.54" length="short"/>
+<pin name="REXT" x="-15.24" y="-5.08" length="short"/>
+<pin name="ELE11/LED7" x="15.24" y="12.7" length="short" rot="R180"/>
+<pin name="ELE10/LED6" x="15.24" y="10.16" length="short" rot="R180"/>
+<pin name="ELE9/LED5" x="15.24" y="7.62" length="short" rot="R180"/>
+<pin name="ELE8/LED4" x="15.24" y="5.08" length="short" rot="R180"/>
+<pin name="ELE7/LED3" x="15.24" y="2.54" length="short" rot="R180"/>
+<pin name="ELE6/LED2" x="15.24" y="0" length="short" rot="R180"/>
+<pin name="ELE5/LED1" x="15.24" y="-2.54" length="short" rot="R180"/>
+<pin name="ELE4/LED0" x="15.24" y="-5.08" length="short" rot="R180"/>
+<pin name="ELE3" x="15.24" y="-7.62" length="short" rot="R180"/>
+<pin name="ELE2" x="15.24" y="-10.16" length="short" rot="R180"/>
+<pin name="ELE1" x="15.24" y="-12.7" length="short" rot="R180"/>
+<pin name="ELE0" x="15.24" y="-15.24" length="short" rot="R180"/>
+<text x="-12.7" y="15.494" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-12.7" y="-18.034" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="PHOTOCELL">
 <description>&lt;h3&gt;Photocell (Photodetector, Photo Resistor, CdS)&lt;/h3&gt;
@@ -7590,10 +7536,10 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="-1.27" y1="-1.524" x2="1.016" y2="-1.524" width="0.254" layer="94"/>
 <wire x1="1.524" y1="-2.032" x2="1.016" y2="-1.524" width="0.254" layer="94" curve="90"/>
 <wire x1="1.524" y1="-2.032" x2="1.524" y2="-2.54" width="0.254" layer="94"/>
-<text x="-5.08" y="3.048" size="1.778" layer="95">&gt;Name</text>
-<text x="-5.08" y="-5.08" size="1.778" layer="96">&gt;Value</text>
 <pin name="P$1" x="-7.62" y="0" visible="off" length="short"/>
 <pin name="P$2" x="7.62" y="0" visible="off" length="short" rot="R180"/>
+<text x="0" y="2.794" size="1.778" layer="95" font="vector" align="bottom-center">&gt;Name</text>
+<text x="0" y="-2.794" size="1.778" layer="96" font="vector" align="top-center">&gt;Value</text>
 </symbol>
 <symbol name="QRE1113">
 <description>&lt;h3&gt;QRE1113 Reflective Object Sensor&lt;/h3&gt;
@@ -7618,8 +7564,6 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="5.08" y1="-2.54" x2="6.604" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-1.524" y1="-4.064" x2="-0.508" y2="-4.064" width="0.254" layer="94"/>
 <wire x1="-1.524" y1="-4.064" x2="-1.524" y2="-3.048" width="0.254" layer="94"/>
-<text x="-1.778" y="3.048" size="1.778" layer="96">&gt;Value</text>
-<text x="-1.27" y="-7.112" size="1.778" layer="95">&gt;Name</text>
 <pin name="A" x="5.08" y="5.08" visible="off" length="short" rot="R270"/>
 <pin name="E" x="-2.54" y="-7.62" visible="off" length="short" rot="R90"/>
 <pin name="C" x="-2.54" y="5.08" visible="off" length="short" rot="R270"/>
@@ -7630,6 +7574,8 @@ It includes a sensing element and an IC interface capable of providing the measu
 <vertex x="3.81" y="-1.016"/>
 <vertex x="4.826" y="-2.032"/>
 </polygon>
+<text x="-2.032" y="2.794" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-2.032" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="QRD1114">
 <description>&lt;h3&gt;QRD1114 Reflective Proximity, Object Sensor&lt;/h3&gt;
@@ -7642,8 +7588,7 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="6.35" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
 <wire x1="2.54" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="5.08" x2="-8.89" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-0.635" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-0.635" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="0" y1="3.175" x2="0" y2="0.635" width="0.254" layer="94"/>
 <wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.254" layer="94"/>
 <wire x1="0" y1="-0.635" x2="0" y2="-3.175" width="0.254" layer="94"/>
@@ -7652,8 +7597,6 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="0" y1="-0.635" x2="2.54" y2="-3.175" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-3.175" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-6.35" y1="-0.635" x2="-3.81" y2="-0.635" width="0.254" layer="94"/>
-<text x="5.08" y="-7.62" size="1.778" layer="96">&gt;Value</text>
-<text x="-11.43" y="6.35" size="1.778" layer="95">&gt;Name</text>
 <text x="-7.62" y="2.54" size="1.778" layer="94">A</text>
 <text x="-7.62" y="-3.81" size="1.778" layer="94">K</text>
 <text x="3.81" y="2.54" size="1.778" layer="94">C</text>
@@ -7672,6 +7615,8 @@ It includes a sensing element and an IC interface capable of providing the measu
 <vertex x="1.905" y="-1.905"/>
 <vertex x="1.27" y="-2.54"/>
 </polygon>
+<text x="-4.572" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-4.572" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="SHT1X">
 <description>&lt;h3&gt;Sensiron SHT1x (SHT10, SHT11, SHT15) Digital Humidity Sensor&lt;/h3&gt;
@@ -7680,12 +7625,12 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="-5.08" y1="-5.08" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
 <wire x1="5.08" y1="7.62" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<text x="-5.08" y="8.382" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;Value</text>
 <pin name="DATA" x="-7.62" y="2.54" visible="pin" length="short"/>
 <pin name="GND" x="-7.62" y="5.08" visible="pin" length="short" direction="pwr"/>
 <pin name="SCK" x="-7.62" y="0" visible="pin" length="short" direction="in"/>
 <pin name="VDD" x="-7.62" y="-2.54" visible="pin" length="short" direction="pwr"/>
+<text x="-5.08" y="7.874" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-5.08" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="SI1120">
 <description>&lt;h3&gt;Silicon Labs Si1120 Proximity/Ambient Light Sensor&lt;/h3&gt;
@@ -7694,16 +7639,16 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-7.62" x2="10.16" y2="5.08" width="0.254" layer="94"/>
 <wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
-<text x="-10.16" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="VDD" x="-15.24" y="2.54" length="middle"/>
-<pin name="TXGD" x="-15.24" y="0" length="middle"/>
-<pin name="TXO" x="-15.24" y="-2.54" length="middle"/>
-<pin name="VSS" x="-15.24" y="-5.08" length="middle"/>
-<pin name="PRX" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="MD" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="SC" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="STX" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="VDD" x="-12.7" y="2.54" length="short"/>
+<pin name="TXGD" x="-12.7" y="0" length="short"/>
+<pin name="TXO" x="-12.7" y="-2.54" length="short"/>
+<pin name="VSS" x="-12.7" y="-5.08" length="short"/>
+<pin name="PRX" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="MD" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="SC" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="STX" x="12.7" y="-5.08" length="short" rot="R180"/>
+<text x="-10.16" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="SOLARCELL_SINGLE">
 <description>&lt;h3&gt;Single Solar Cell&lt;/h3&gt;
@@ -7723,10 +7668,10 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="1.016" y1="3.302" x2="3.556" y2="5.842" width="0.1524" layer="94"/>
 <wire x1="1.016" y1="3.302" x2="1.016" y2="4.064" width="0.1524" layer="94"/>
 <wire x1="1.016" y1="3.302" x2="1.778" y2="3.302" width="0.1524" layer="94"/>
-<text x="2.54" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="A" x="-5.08" y="0" visible="off" length="middle" direction="pas"/>
 <pin name="C" x="5.08" y="0" visible="off" length="middle" direction="pas" rot="R180"/>
+<text x="2.794" y="0.254" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="2.794" y="-0.254" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="TCM8240MD">
 <description>&lt;h3&gt;Toshiba TCM8240MD 1.3MP Color Image Sensor&lt;/h3&gt;
@@ -7735,32 +7680,32 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="12.7" y1="-20.32" x2="12.7" y2="20.32" width="0.254" layer="94"/>
 <wire x1="12.7" y1="20.32" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="20.32" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
-<text x="-12.7" y="21.082" size="1.27" layer="95">&gt;Name</text>
-<text x="-12.7" y="-22.86" size="1.27" layer="96">&gt;Value</text>
-<pin name="DOUT3" x="17.78" y="10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="DOUT2" x="17.78" y="12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="DOUT1" x="17.78" y="15.24" visible="pin" length="middle" rot="R180"/>
-<pin name="DOUT0" x="17.78" y="17.78" visible="pin" length="middle" rot="R180"/>
-<pin name="GND@5" x="17.78" y="-7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="PVDD(2.8V)" x="-17.78" y="15.24" visible="pin" length="middle"/>
-<pin name="RESET" x="-17.78" y="7.62" visible="pin" length="middle"/>
-<pin name="SCL" x="-17.78" y="2.54" visible="pin" length="middle"/>
-<pin name="GND@9" x="17.78" y="-10.16" visible="pin" length="middle" rot="R180"/>
-<pin name="SDA" x="-17.78" y="0" visible="pin" length="middle"/>
-<pin name="GND@11" x="17.78" y="-12.7" visible="pin" length="middle" rot="R180"/>
-<pin name="DVDD(1.6V)" x="-17.78" y="17.78" visible="pin" length="middle"/>
-<pin name="EXTCLK" x="-17.78" y="-5.08" visible="pin" length="middle"/>
-<pin name="STROBE" x="-17.78" y="-17.78" visible="pin" length="middle"/>
-<pin name="HBLK" x="-17.78" y="-12.7" visible="pin" length="middle"/>
-<pin name="VBLK" x="-17.78" y="-15.24" visible="pin" length="middle"/>
-<pin name="GND@17" x="17.78" y="-15.24" visible="pin" length="middle" rot="R180"/>
-<pin name="IOVDD" x="-17.78" y="12.7" visible="pin" length="middle"/>
-<pin name="DCLK" x="-17.78" y="-7.62" visible="pin" length="middle"/>
-<pin name="GND@20" x="17.78" y="-17.78" visible="pin" length="middle" rot="R180"/>
-<pin name="DOUT7" x="17.78" y="0" visible="pin" length="middle" rot="R180"/>
-<pin name="DOUT6" x="17.78" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="DOUT5" x="17.78" y="5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="DOUT4" x="17.78" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="DOUT3" x="15.24" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="DOUT2" x="15.24" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="DOUT1" x="15.24" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="DOUT0" x="15.24" y="17.78" visible="pin" length="short" rot="R180"/>
+<pin name="GND@5" x="15.24" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="PVDD(2.8V)" x="-15.24" y="15.24" visible="pin" length="short"/>
+<pin name="RESET" x="-15.24" y="7.62" visible="pin" length="short"/>
+<pin name="SCL" x="-15.24" y="2.54" visible="pin" length="short"/>
+<pin name="GND@9" x="15.24" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="SDA" x="-15.24" y="0" visible="pin" length="short"/>
+<pin name="GND@11" x="15.24" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="DVDD(1.6V)" x="-15.24" y="17.78" visible="pin" length="short"/>
+<pin name="EXTCLK" x="-15.24" y="-5.08" visible="pin" length="short"/>
+<pin name="STROBE" x="-15.24" y="-17.78" visible="pin" length="short"/>
+<pin name="HBLK" x="-15.24" y="-12.7" visible="pin" length="short"/>
+<pin name="VBLK" x="-15.24" y="-15.24" visible="pin" length="short"/>
+<pin name="GND@17" x="15.24" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="IOVDD" x="-15.24" y="12.7" visible="pin" length="short"/>
+<pin name="DCLK" x="-15.24" y="-7.62" visible="pin" length="short"/>
+<pin name="GND@20" x="15.24" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="DOUT7" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="DOUT6" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="DOUT5" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="DOUT4" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
+<text x="-12.7" y="20.574" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-12.7" y="-20.574" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="LIGHTSENSOR">
 <description>&lt;h3&gt;Phototransistor&lt;/h3&gt;
@@ -7786,11 +7731,11 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="-2.159" y1="0.254" x2="-2.286" y2="0.508" width="0.254" layer="94"/>
 <wire x1="-3.81" y1="1.143" x2="-2.794" y2="1.143" width="0.1524" layer="94"/>
 <wire x1="-2.794" y1="1.143" x2="-4.191" y2="2.286" width="0.1524" layer="94"/>
-<text x="5.08" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<text x="5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
 <rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
 <pin name="E1" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
 <pin name="C1" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
+<text x="3.048" y="0.508" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="3.048" y="-0.508" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="TMP36">
 <description>&lt;h3&gt;TMP36 Precision Analog &amp;deg;C Temperature Sensor&lt;/h3&gt;
@@ -7799,11 +7744,11 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<text x="-5.08" y="5.588" size="1.778" layer="95">&gt;Name</text>
-<text x="-5.08" y="-7.366" size="1.778" layer="96">&gt;Value</text>
 <pin name="VCC" x="-7.62" y="2.54" length="short"/>
 <pin name="GND" x="-7.62" y="-2.54" length="short"/>
 <pin name="VOUT" x="7.62" y="0" length="short" rot="R180"/>
+<text x="-5.08" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-5.08" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="TMP102">
 <description>&lt;h3&gt;Texas Instruments TMP102 Low-Power Digital Temperature Sensor&lt;/h3&gt;
@@ -7812,55 +7757,45 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<text x="-7.62" y="8.382" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="SCL" x="10.16" y="2.54" length="short" rot="R180"/>
 <pin name="GND" x="-12.7" y="-5.08" length="short"/>
 <pin name="ALERT" x="10.16" y="-2.54" length="short" rot="R180"/>
 <pin name="ADD0" x="10.16" y="-5.08" length="short" rot="R180"/>
 <pin name="VCC" x="-12.7" y="5.08" length="short"/>
 <pin name="SDA" x="10.16" y="5.08" length="short" rot="R180"/>
+<text x="-10.16" y="7.874" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="ADXL362">
 <description>&lt;h3&gt;Analog Devices ADXL362 3-Axis SPI Accelerometer&lt;/h3&gt;
 &lt;p&gt;The ADXL362 is an ultralow power, 3-axis MEMS accelerometer that consumes less than 2 μA at a 100 Hz output data rate and 270 nA when in motion triggered wake-up mode. Unlike accelerometers that use power duty cycling to achieve low power consumption, the ADXL362 does not alias input signals by undersampling; it samples the full bandwidth of the sensor at all data rates.&lt;/p&gt;</description>
-<pin name="VDDIO" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="VS" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="SCLK" x="-15.24" y="5.08" visible="pin" length="middle"/>
-<pin name="MOSI" x="-15.24" y="2.54" visible="pin" length="middle"/>
-<pin name="MISO" x="-15.24" y="0" visible="pin" length="middle"/>
-<pin name="!CS" x="-15.24" y="-2.54" visible="pin" length="middle"/>
-<pin name="GND" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="INT2" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="INT1" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="VDDIO" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="VS" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SCLK" x="-12.7" y="5.08" visible="pin" length="short"/>
+<pin name="MOSI" x="-12.7" y="2.54" visible="pin" length="short"/>
+<pin name="MISO" x="-12.7" y="0" visible="pin" length="short"/>
+<pin name="!CS" x="-12.7" y="-2.54" visible="pin" length="short"/>
+<pin name="GND" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="INT2" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="INT1" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
 <wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<text x="-10.16" y="10.16" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-10.16" y="7.874" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
-<symbol name="GEIGER_TUBE-1">
+<symbol name="GEIGER_TUBE">
 <description>&lt;h3&gt;Geiger Tube&lt;/h3&gt;
 &lt;p&gt;Geiger tubes are the sensing elements of Geiger counters, which are used to measure ionizing radiation. This tube is made of a thin-walled stainless steel and is filled with a mixture of Neon and Halogen gases at low-pressure.&lt;/p&gt;</description>
-<text x="-0.762" y="7.62" size="1.27" layer="95">&gt;NAME</text>
-<text x="0" y="-7.62" size="1.27" layer="96">&gt;VALUE</text>
-<pin name="A" x="0" y="0" visible="pad" length="middle"/>
-<pin name="C" x="0" y="5.08" visible="pad" length="middle"/>
-<wire x1="15.24" y1="5.08" x2="15.24" y2="-5.08" width="0.1524" layer="94" curve="-180"/>
-<wire x1="5.08" y1="5.08" x2="15.24" y2="5.08" width="0.1524" layer="94"/>
-<wire x1="15.24" y1="-5.08" x2="0" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="0" x2="15.24" y2="0" width="0.1524" layer="94"/>
-</symbol>
-<symbol name="MQ-4">
-<description>MQ-4 Methane gas sensor</description>
-<pin name="A1" x="-12.7" y="5.08" length="middle"/>
-<pin name="HB" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="A2" x="-12.7" y="-5.08" length="middle"/>
-<pin name="B1" x="12.7" y="5.08" length="middle" rot="R180"/>
-<pin name="HA" x="-15.24" y="0" length="middle"/>
-<pin name="B2" x="12.7" y="-5.08" length="middle" rot="R180"/>
-<circle x="0" y="0" radius="10.77630625" width="0.254" layer="94"/>
+<pin name="A" x="-10.16" y="0" visible="pad" length="middle"/>
+<pin name="C" x="-10.16" y="5.08" visible="pad" length="middle"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-5.08" width="0.1524" layer="94" curve="-180"/>
+<wire x1="-5.08" y1="5.08" x2="5.08" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="-10.16" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<text x="-7.62" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-7.62" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="MPU-6000">
 <description>&lt;h3&gt;Invensense MPU-6000 6-Axis Gryoscope/Accelerometer&lt;/h3&gt;
@@ -7870,22 +7805,22 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="-12.7" y1="-10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
 <wire x1="12.7" y1="10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
-<pin name="VDD" x="-17.78" y="7.62" length="middle"/>
-<pin name="INT" x="-17.78" y="5.08" length="middle"/>
-<pin name="FSYNC" x="-17.78" y="2.54" length="middle"/>
-<pin name="CLKIN" x="-17.78" y="0" length="middle"/>
-<pin name="REGOUT" x="-17.78" y="-2.54" length="middle"/>
-<pin name="CPOUT" x="-17.78" y="-5.08" length="middle"/>
-<pin name="GND" x="-17.78" y="-7.62" length="middle"/>
-<pin name="AUXDA" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="AUXCL" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="CS" x="17.78" y="7.62" length="middle" rot="R180"/>
-<pin name="SCL/SCLK" x="17.78" y="5.08" length="middle" rot="R180"/>
-<pin name="CLKOUT" x="17.78" y="-7.62" length="middle" rot="R180"/>
-<pin name="AD0/SDO" x="17.78" y="2.54" length="middle" rot="R180"/>
-<text x="-12.7" y="10.16" size="1.778" layer="95">&gt;NAME</text>
-<text x="-12.7" y="-12.7" size="1.778" layer="95">&gt;VALUE</text>
-<pin name="SDA/SDI" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="VDD" x="-15.24" y="7.62" length="short"/>
+<pin name="INT" x="-15.24" y="5.08" length="short"/>
+<pin name="FSYNC" x="-15.24" y="2.54" length="short"/>
+<pin name="CLKIN" x="-15.24" y="0" length="short"/>
+<pin name="REGOUT" x="-15.24" y="-2.54" length="short"/>
+<pin name="CPOUT" x="-15.24" y="-5.08" length="short"/>
+<pin name="GND" x="-15.24" y="-7.62" length="short"/>
+<pin name="AUXDA" x="15.24" y="-5.08" length="short" rot="R180"/>
+<pin name="AUXCL" x="15.24" y="-2.54" length="short" rot="R180"/>
+<pin name="CS" x="15.24" y="7.62" length="short" rot="R180"/>
+<pin name="SCL/SCLK" x="15.24" y="5.08" length="short" rot="R180"/>
+<pin name="CLKOUT" x="15.24" y="-7.62" length="short" rot="R180"/>
+<pin name="AD0/SDO" x="15.24" y="2.54" length="short" rot="R180"/>
+<pin name="SDA/SDI" x="15.24" y="0" length="short" rot="R180"/>
+<text x="-12.7" y="10.414" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-12.7" y="-10.414" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="HTU21D">
 <description>&lt;h3&gt;Measurement Specialties HTU21D Relative Humidity Sensor w/ Temperature&lt;/h3&gt;
@@ -7894,28 +7829,28 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<text x="-7.62" y="5.588" size="1.778" layer="95">&gt;Name</text>
-<text x="-7.62" y="-7.62" size="1.778" layer="95">&gt;Value</text>
 <pin name="SCK" x="10.16" y="0" visible="pin" length="short" direction="in" rot="R180"/>
 <pin name="DATA" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
 <pin name="GND@2" x="-10.16" y="0" visible="pin" length="short" direction="pwr"/>
 <pin name="VDD" x="-10.16" y="2.54" visible="pin" length="short" direction="pwr"/>
 <pin name="GND@7" x="-10.16" y="-2.54" visible="pin" length="short" direction="pwr"/>
+<text x="-7.62" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-7.62" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="BMP180">
 <description>&lt;h3&gt;Bosch BMP180 Digital Barometric Pressures Sensor&lt;/h3&gt;
 &lt;p&gt;The BMP180 is the function compatible successor of the BMP085, a new generation of high precision digital pressure sensors for consumer applications.&lt;/p&gt;</description>
-<pin name="VDD" x="15.24" y="5.08" length="middle" direction="pwr" rot="R180"/>
-<pin name="VDDIO" x="15.24" y="0" length="middle" direction="pwr" rot="R180"/>
-<pin name="SCL" x="-15.24" y="-2.54" length="middle" direction="in"/>
-<pin name="SDA" x="-15.24" y="2.54" length="middle"/>
-<pin name="GND" x="15.24" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDD" x="12.7" y="5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="VDDIO" x="12.7" y="0" length="short" direction="pwr" rot="R180"/>
+<pin name="SCL" x="-12.7" y="-2.54" length="short" direction="in"/>
+<pin name="SDA" x="-12.7" y="2.54" length="short"/>
+<pin name="GND" x="12.7" y="-5.08" length="short" direction="pwr" rot="R180"/>
 <wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<text x="-10.16" y="8.255" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-10.16" y="7.874" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="TSOP57238TT1">
 <description>&lt;h3&gt;Vishay TSOP572...TT1 (TSOP57238TT1) IR Receiver Module&lt;/h3&gt;
@@ -7924,12 +7859,12 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
 <wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
-<text x="-7.62" y="5.334" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.874" y="-7.112" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="VS" x="-12.7" y="2.54" length="short"/>
 <pin name="GND1" x="-12.7" y="0" length="short"/>
 <pin name="OUT" x="12.7" y="2.54" length="short" rot="R180"/>
 <pin name="GND2" x="-12.7" y="-2.54" length="short"/>
+<text x="-10.16" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="ADXL337">
 <description>&lt;h3&gt;Analog Devices ADXL337 3-Axis Analog Accelerometer&lt;/h3&gt;
@@ -7938,8 +7873,6 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<text x="-2.54" y="10.16" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="ST" x="12.7" y="-5.08" length="short" rot="R180"/>
 <pin name="GND@1" x="-12.7" y="-2.54" length="short"/>
 <pin name="ZOUT" x="12.7" y="0" length="short" rot="R180"/>
@@ -7948,6 +7881,8 @@ It includes a sensing element and an IC interface capable of providing the measu
 <pin name="VS@1" x="-12.7" y="5.08" length="short"/>
 <pin name="GND@2" x="-12.7" y="-5.08" length="short"/>
 <pin name="VS@2" x="-12.7" y="2.54" length="short"/>
+<text x="-10.16" y="7.874" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="APDS-9960">
 <description>&lt;h3&gt;Avago APDS-9960 Digital Proximity, Ambient Light, RGB, and Gesture Sensor.&lt;/h3&gt;
@@ -7957,8 +7892,6 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<text x="-2.54" y="10.16" size="1.778" layer="95" rot="R180">&gt;NAME</text>
-<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="LEDK" x="12.7" y="5.08" length="short" rot="R180"/>
 <pin name="VDD" x="-12.7" y="5.08" length="short"/>
 <pin name="GND" x="-12.7" y="0" length="short"/>
@@ -7967,6 +7900,8 @@ It includes a sensing element and an IC interface capable of providing the measu
 <pin name="INT" x="12.7" y="0" length="short" rot="R180"/>
 <pin name="SCL" x="12.7" y="-2.54" length="short" rot="R180"/>
 <pin name="SDA" x="12.7" y="-5.08" length="short" rot="R180"/>
+<text x="-10.16" y="7.874" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="ADXL377">
 <description>&lt;h3&gt;Analog Devices ADXL377 Low Power 3-Axis ±200 g Accelerometer with Analog Output&lt;/h3&gt;
@@ -7976,8 +7911,6 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<text x="-10.16" y="8.382" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="ST" x="12.7" y="-5.08" length="short" rot="R180"/>
 <pin name="GND@1" x="-12.7" y="-2.54" length="short"/>
 <pin name="ZOUT" x="12.7" y="0" length="short" rot="R180"/>
@@ -7986,6 +7919,8 @@ It includes a sensing element and an IC interface capable of providing the measu
 <pin name="VS@1" x="-12.7" y="5.08" length="short"/>
 <pin name="GND@2" x="-12.7" y="-5.08" length="short"/>
 <pin name="VS@2" x="-12.7" y="2.54" length="short"/>
+<text x="-10.16" y="7.874" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="ISL29125">
 <description>&lt;h3&gt;Intersil ISL29125 RGB Color Light Sensor&lt;/h3&gt;
@@ -7994,13 +7929,13 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<text x="-7.62" y="5.842" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="-10.16" y="-2.54" length="short"/>
 <pin name="!INT" x="10.16" y="-2.54" length="short" rot="R180"/>
 <pin name="SCL" x="10.16" y="0" length="short" rot="R180"/>
 <pin name="SDA" x="10.16" y="2.54" length="short" rot="R180"/>
 <pin name="VDD" x="-10.16" y="2.54" length="short"/>
+<text x="-7.62" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-7.62" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="BRM-2508">
 <description>&lt;h3&gt;BRM-2508 IR Receiver Module&lt;/h3&gt;
@@ -8009,29 +7944,29 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<text x="-5.08" y="5.842" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="VCC" x="10.16" y="-2.54" length="middle" rot="R180"/>
-<pin name="GND" x="10.16" y="0" length="middle" rot="R180"/>
-<pin name="OUT" x="10.16" y="2.54" length="middle" rot="R180"/>
+<pin name="VCC" x="7.62" y="-2.54" length="short" rot="R180"/>
+<pin name="GND" x="7.62" y="0" length="short" rot="R180"/>
+<pin name="OUT" x="7.62" y="2.54" length="short" rot="R180"/>
+<text x="-5.08" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-5.08" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="T5403">
 <description>&lt;h3&gt;Epcos T5403 Digital Barometric Pressure Sensor&lt;/h3&gt;
 &lt;p&gt;The T5403 sensor measures the absolute pressure of the air around. This pressure varies with both the weather and altitude. Depending on how you interpret the data, you can monitor changes in the weather, measure altitude, or any other tasks that require an accurate pressure reading.&lt;/p&gt;</description>
-<pin name="VDD" x="17.78" y="7.62" length="middle" rot="R180"/>
-<pin name="SEL" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="GND" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="EOC" x="17.78" y="-7.62" length="middle" rot="R180"/>
-<pin name="!RST!/&amp;SS" x="-17.78" y="-7.62" length="middle"/>
-<pin name="MISO" x="-17.78" y="-2.54" length="middle"/>
-<pin name="SDA/MOSI" x="-17.78" y="2.54" length="middle"/>
-<pin name="SCL/SCLK" x="-17.78" y="7.62" length="middle"/>
+<pin name="VDD" x="15.24" y="7.62" length="short" rot="R180"/>
+<pin name="SEL" x="15.24" y="2.54" length="short" rot="R180"/>
+<pin name="GND" x="15.24" y="-2.54" length="short" rot="R180"/>
+<pin name="EOC" x="15.24" y="-7.62" length="short" rot="R180"/>
+<pin name="!RST!/&amp;SS" x="-15.24" y="-7.62" length="short"/>
+<pin name="MISO" x="-15.24" y="-2.54" length="short"/>
+<pin name="SDA/MOSI" x="-15.24" y="2.54" length="short"/>
+<pin name="SCL/SCLK" x="-15.24" y="7.62" length="short"/>
 <wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
 <wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
-<text x="-12.7" y="-12.7" size="1.778" layer="95">&gt;Name</text>
-<text x="-12.7" y="-15.24" size="1.778" layer="96">&gt;Values</text>
+<text x="-12.7" y="10.414" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-12.7" y="-10.414" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="ML8511">
 <description>&lt;h3&gt;Lapis ML8511 Ultraviolet Sensor&lt;/h3&gt;
@@ -8045,8 +7980,8 @@ It includes a sensing element and an IC interface capable of providing the measu
 <pin name="OUT" x="10.16" y="-5.08" visible="pin" length="short" direction="out" rot="R180"/>
 <pin name="TR" x="-10.16" y="0" visible="pin" length="short" direction="pwr"/>
 <pin name="VDD" x="-10.16" y="5.08" visible="pin" length="short" direction="pwr"/>
-<text x="-7.62" y="8.382" size="1.778" layer="95">&gt;Name</text>
-<text x="-7.62" y="-10.16" size="1.778" layer="96">&gt;Value</text>
+<text x="-7.62" y="7.874" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-7.62" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="MICS-2614">
 <description>&lt;h3&gt;SGX Sensortech MiCS-2614 Ozone Detector&lt;/h3&gt;
@@ -8055,12 +7990,12 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="7.62" y2="2.54" width="0.254" layer="94"/>
 <wire x1="7.62" y1="2.54" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
-<text x="-7.62" y="3.302" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="RH1" x="-12.7" y="0" length="middle"/>
-<pin name="RS1" x="-12.7" y="-2.54" length="middle"/>
-<pin name="RH2" x="12.7" y="0" length="middle" rot="R180"/>
-<pin name="RS2" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="RH1" x="-10.16" y="0" length="short"/>
+<pin name="RS1" x="-10.16" y="-2.54" length="short"/>
+<pin name="RH2" x="10.16" y="0" length="short" rot="R180"/>
+<pin name="RS2" x="10.16" y="-2.54" length="short" rot="R180"/>
+<text x="-7.62" y="2.794" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-7.62" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="MICS-4514">
 <description>&lt;h3&gt;SGX Sensortech MiCS-4514 Ozone Detector&lt;/h3&gt;
@@ -8069,16 +8004,16 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="-12.7" y1="-7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
 <wire x1="12.7" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
-<text x="-12.7" y="8.382" size="1.778" layer="95">&gt;NAME</text>
-<text x="-12.7" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="RH1_OX" x="-17.78" y="5.08" length="middle"/>
-<pin name="RS1_OX" x="-17.78" y="2.54" length="middle"/>
-<pin name="RH2_OX" x="17.78" y="5.08" length="middle" rot="R180"/>
-<pin name="RS2_OX" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="RS1_RED" x="-17.78" y="-5.08" length="middle"/>
-<pin name="RH1_RED" x="-17.78" y="-2.54" length="middle"/>
-<pin name="RS2_RED" x="17.78" y="-5.08" length="middle" rot="R180"/>
-<pin name="RH2_RED" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="RH1_OX" x="-15.24" y="5.08" length="short"/>
+<pin name="RS1_OX" x="-15.24" y="2.54" length="short"/>
+<pin name="RH2_OX" x="15.24" y="5.08" length="short" rot="R180"/>
+<pin name="RS2_OX" x="15.24" y="2.54" length="short" rot="R180"/>
+<pin name="RS1_RED" x="-15.24" y="-5.08" length="short"/>
+<pin name="RH1_RED" x="-15.24" y="-2.54" length="short"/>
+<pin name="RS2_RED" x="15.24" y="-5.08" length="short" rot="R180"/>
+<pin name="RH2_RED" x="15.24" y="-2.54" length="short" rot="R180"/>
+<text x="-12.7" y="7.874" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-12.7" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="BRM-2A18">
 <description>&lt;h3&gt;BRM-2A18 IR Receiver&lt;/h3&gt;
@@ -8087,11 +8022,11 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<text x="-5.08" y="5.842" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="VCC" x="10.16" y="-2.54" length="middle" rot="R180"/>
-<pin name="GND" x="10.16" y="0" length="middle" rot="R180"/>
-<pin name="OUT" x="10.16" y="2.54" length="middle" rot="R180"/>
+<pin name="VCC" x="7.62" y="-2.54" length="short" rot="R180"/>
+<pin name="GND" x="7.62" y="0" length="short" rot="R180"/>
+<pin name="OUT" x="7.62" y="2.54" length="short" rot="R180"/>
+<text x="-5.08" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-5.08" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="VL6180">
 <description>&lt;h3&gt;ST VL6180X Proximity and Ambient Light Sensing (ALS) Module&lt;/h3&gt;
@@ -8100,16 +8035,16 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="15.24" y1="-10.16" x2="15.24" y2="10.16" width="0.254" layer="94"/>
 <wire x1="15.24" y1="10.16" x2="-15.24" y2="10.16" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="10.16" x2="-15.24" y2="-10.16" width="0.254" layer="94"/>
-<pin name="AVDD" x="20.32" y="7.62" length="middle" rot="R180"/>
-<pin name="AVDD_VCSEL" x="20.32" y="5.08" length="middle" rot="R180"/>
-<pin name="AVSS_VCSEL" x="20.32" y="-5.08" length="middle" rot="R180"/>
-<pin name="GND" x="20.32" y="-7.62" length="middle" rot="R180"/>
-<pin name="GPIO0" x="-20.32" y="2.54" length="middle"/>
-<pin name="GPIO1" x="-20.32" y="7.62" length="middle"/>
-<pin name="SCL" x="-20.32" y="-5.08" length="middle"/>
-<pin name="SDA" x="-20.32" y="-7.62" length="middle"/>
-<text x="-15.24" y="11.43" size="1.6764" layer="94" ratio="15">&gt;NAME</text>
-<text x="-15.24" y="-12.7" size="1.6764" layer="94" ratio="15">&gt;VALUE</text>
+<pin name="AVDD" x="17.78" y="7.62" length="short" rot="R180"/>
+<pin name="AVDD_VCSEL" x="17.78" y="5.08" length="short" rot="R180"/>
+<pin name="AVSS_VCSEL" x="17.78" y="-5.08" length="short" rot="R180"/>
+<pin name="GND" x="17.78" y="-7.62" length="short" rot="R180"/>
+<pin name="GPIO0" x="-17.78" y="2.54" length="short"/>
+<pin name="GPIO1" x="-17.78" y="7.62" length="short"/>
+<pin name="SCL" x="-17.78" y="-5.08" length="short"/>
+<pin name="SDA" x="-17.78" y="-7.62" length="short"/>
+<text x="-15.24" y="10.414" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-15.24" y="-10.414" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="ITG-3200">
 <description>&lt;h3&gt;Invensense ITG-3200 3-Axis Gyroscope&lt;/h3&gt;
@@ -8118,8 +8053,6 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="-10.16" y1="-10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
 <wire x1="12.7" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<text x="-10.16" y="10.922" size="1.778" layer="95">&gt;Name</text>
-<text x="-10.16" y="-12.446" size="1.778" layer="96">&gt;Value</text>
 <pin name="CLKIN" x="15.24" y="-7.62" length="short" rot="R180"/>
 <pin name="VLOGIC" x="-12.7" y="2.54" length="short"/>
 <pin name="AD0" x="15.24" y="-5.08" length="short" rot="R180"/>
@@ -8131,6 +8064,8 @@ It includes a sensing element and an IC interface capable of providing the measu
 <pin name="CPOUT" x="-12.7" y="-2.54" length="short"/>
 <pin name="GND" x="-12.7" y="-7.62" length="short"/>
 <pin name="VDD" x="-12.7" y="7.62" length="short"/>
+<text x="-10.16" y="10.414" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-10.414" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="TSL2561">
 <description>&lt;h3&gt;TAOS TSL2561 Digital Luminosity (Light) Sensor&lt;/h3&gt;
@@ -8145,8 +8080,8 @@ It includes a sensing element and an IC interface capable of providing the measu
 <pin name="SCL" x="-10.16" y="5.08" length="short" direction="in"/>
 <pin name="SDA" x="-10.16" y="2.54" length="short"/>
 <pin name="VDD" x="12.7" y="5.08" length="short" direction="pwr" rot="R180"/>
-<text x="-7.62" y="-10.16" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="10.16" size="1.778" layer="95" rot="MR180">&gt;VALUE</text>
+<text x="-7.62" y="7.874" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-7.62" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="DIODE">
 <description>&lt;h3&gt;Diode&lt;/h3&gt;
@@ -8157,8 +8092,8 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<text x="2.54" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="1.778" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.778" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
 <pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
 <wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
@@ -8187,39 +8122,39 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="-12.7" y1="-17.78" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-17.78" x2="12.7" y2="17.78" width="0.254" layer="94"/>
 <wire x1="12.7" y1="17.78" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
-<text x="-12.7" y="-19.05" size="1.778" layer="96" align="center-left">&gt;Value</text>
-<text x="-12.7" y="19.05" size="1.778" layer="95" align="center-left">&gt;Name</text>
 <pin name="RES" x="-15.24" y="-12.7" length="short"/>
+<text x="-12.7" y="18.034" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-12.7" y="-18.034" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="MS5803">
 <description>&lt;h3&gt;Measurement Specialties MS5803_14BA Pressure (Depth) Sensor&lt;/h3&gt;
 &lt;p&gt;The MS5803-14BA is a new generation of high resolution pressure sensors with SPI and I2C bus interface. It is optimized for depth measurement systems with a water depth resolution of 1cm and below. The sensor module includes a high linear pressure sensor and an ultra low power 24 bit ΔΣ ADC with internal factory calibrated coefficients. It provides a precise digital 24 Bit pressure and temperature value and different operation modes that allow the user to optimize for conversion speed and current consumption.&lt;/p&gt;</description>
-<wire x1="0" y1="15.24" x2="22.86" y2="15.24" width="0.254" layer="94"/>
-<wire x1="22.86" y1="15.24" x2="22.86" y2="0" width="0.254" layer="94"/>
-<wire x1="22.86" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="15.24" width="0.254" layer="94"/>
-<pin name="AD/CS" x="25.4" y="2.54" length="short" rot="R180"/>
-<pin name="GND" x="-2.54" y="2.54" length="short"/>
-<pin name="PS" x="25.4" y="12.7" length="short" rot="R180"/>
-<pin name="SCL/SCLK" x="-2.54" y="7.62" length="short"/>
-<pin name="SDA/SDI" x="-2.54" y="10.16" length="short"/>
-<pin name="SDO" x="-2.54" y="5.08" length="short"/>
-<pin name="VDD" x="-2.54" y="12.7" length="short"/>
-<text x="0" y="17.78" size="1.4224" layer="95" ratio="15" align="top-left">&gt;NAME</text>
-<text x="0" y="-2.54" size="1.4224" layer="96" ratio="15">&gt;VALUE</text>
+<wire x1="-10.16" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="AD/CS" x="15.24" y="-5.08" length="short" rot="R180"/>
+<pin name="GND" x="-12.7" y="-5.08" length="short"/>
+<pin name="PS" x="15.24" y="5.08" length="short" rot="R180"/>
+<pin name="SCL/SCLK" x="-12.7" y="0" length="short"/>
+<pin name="SDA/SDI" x="-12.7" y="2.54" length="short"/>
+<pin name="SDO" x="-12.7" y="-2.54" length="short"/>
+<pin name="VDD" x="-12.7" y="5.08" length="short"/>
+<text x="-10.16" y="7.874" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="DS18B20">
 <description>&lt;h3&gt;Dallas/Maxim DS18B20 1-Wire Temperature Sensor&lt;/h3&gt;
 &lt;p&gt;The DS18B20 reports degrees C with 9 to 12-bit precision, -55C to 125C (+/-0.5C). Each sensor has a unique 64-Bit Serial number etched into it - allows for a huge number of sensors to be used on one data bus.&lt;/p&gt;</description>
-<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="5.08" y2="10.16" width="0.254" layer="94"/>
-<wire x1="5.08" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
-<text x="-7.62" y="10.922" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="DQ" x="-10.16" y="2.54" length="short"/>
-<pin name="VDD" x="-10.16" y="7.62" length="short" direction="pwr"/>
-<pin name="GND" x="-10.16" y="-2.54" length="short" direction="pwr"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="DQ" x="-10.16" y="0" length="short"/>
+<pin name="VDD" x="-10.16" y="5.08" length="short" direction="pwr"/>
+<pin name="GND" x="-10.16" y="-5.08" length="short" direction="pwr"/>
+<text x="-7.62" y="7.874" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-7.62" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="SI7021">
 <description>&lt;h3&gt;Silicon Labs Si7021 I&lt;sup&gt;2&lt;/sup&gt;C Humidity and Temperature Sensor&lt;/h3&gt;
@@ -8228,12 +8163,12 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
-<text x="-7.62" y="5.588" size="1.778" layer="95">&gt;Name</text>
-<text x="-7.62" y="-5.08" size="1.778" layer="95">&gt;Value</text>
 <pin name="SCK" x="10.16" y="0" visible="pin" length="short" direction="in" rot="R180"/>
 <pin name="DATA" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
 <pin name="GND" x="-10.16" y="0" visible="pin" length="short" direction="pwr"/>
 <pin name="VDD" x="-10.16" y="2.54" visible="pin" length="short" direction="pwr"/>
+<text x="-7.62" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-7.62" y="-2.794" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="GP1A57HR">
 <description>&lt;h3&gt;Sharp GP1A57HR Transmissive Photointerrupter&lt;/h3&gt;
@@ -8334,14 +8269,14 @@ It includes a sensing element and an IC interface capable of providing the measu
 <wire x1="5.08" y1="4.572" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="5.08" y1="2.54" x2="5.08" y2="1.27" width="0.1524" layer="94"/>
 <wire x1="5.08" y1="2.54" x2="7.62" y2="2.54" width="0.1524" layer="94"/>
-<text x="7.874" y="5.08" size="1.778" layer="95" font="vector">&gt;Name</text>
-<text x="7.874" y="-2.54" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 <text x="0.254" y="4.826" size="1.524" layer="94" font="vector">15k</text>
 <pin name="2" x="-5.08" y="10.16" visible="off" length="short" rot="R270"/>
 <pin name="1" x="-5.08" y="-7.62" visible="off" length="short" rot="R90"/>
 <pin name="5" x="5.08" y="-7.62" visible="off" length="short" rot="R90"/>
 <pin name="3" x="5.08" y="10.16" visible="off" length="short" rot="R270"/>
 <pin name="4" x="10.16" y="2.54" visible="off" length="short" rot="R180"/>
+<text x="0" y="7.874" size="1.778" layer="95" font="vector" align="bottom-center">&gt;Name</text>
+<text x="0" y="-5.334" size="1.778" layer="96" font="vector" align="top-center">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -8907,7 +8842,7 @@ It includes a sensing element and an IC interface capable of providing the measu
 &lt;p&gt;10mV/degF, 1 degF accurate analog temp sensor&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.ti.com/lit/ds/symlink/lm34.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="LM34" x="0" y="2.54"/>
+<gate name="G$1" symbol="LM34" x="0" y="0"/>
 </gates>
 <devices>
 <device name="DM" package="SOIC-8">
@@ -8933,7 +8868,7 @@ It includes a sensing element and an IC interface capable of providing the measu
 &lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10245"&gt;Load Sensor - 50kg&lt;/a&gt; (SEN-10245)&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
-<gate name="G$1" symbol="LOAD_CELL" x="0" y="-5.08"/>
+<gate name="G$1" symbol="LOAD_CELL" x="0" y="0"/>
 </gates>
 <devices>
 <device name="1X03-PTH" package="1X03">
@@ -9263,7 +9198,7 @@ It includes a sensing element and an IC interface capable of providing the measu
 &lt;li&gt;&lt;a href="https://www.sparkfun.com/products/246"&gt;Optical Detector / Phototransistor - QRD1114&lt;/a&gt; (SEN-00246)&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
-<gate name="G$1" symbol="QRD1114" x="-5.08" y="0"/>
+<gate name="G$1" symbol="QRD1114" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="QRD1114">
@@ -9583,7 +9518,7 @@ It includes a sensing element and an IC interface capable of providing the measu
 &lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11345"&gt;SparkFun Geiger Counter&lt;/a&gt; (SEN-11345)&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
-<gate name="G$1" symbol="GEIGER_TUBE-1" x="0" y="0"/>
+<gate name="G$1" symbol="GEIGER_TUBE" x="0" y="0"/>
 </gates>
 <devices>
 <device name="LND712" package="GEIGER_TUBE">
