@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -64,6 +64,8 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -89,6 +91,7 @@
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -97,6 +100,7 @@
 <layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
@@ -9650,6 +9654,56 @@ Arrows in tDocu denote pointer positions for 45-degree shaft, assuming a knob wi
 <text x="-23.495" y="-20.32" size="0.8128" layer="25" font="vector" ratio="15" rot="R90">&gt;Name</text>
 <text x="-22.225" y="-20.32" size="0.8128" layer="27" font="vector" ratio="15" rot="R90">&gt;Value</text>
 </package>
+<package name="CHERRY-MX-LED">
+<description>&lt;h3&gt;Cherry MX Switch - Electromechanical Swith w/ LED&lt;/h3&gt;
+
+&lt;p&gt;Cherry MX Keyswitches are top-of-the-line mechanical keyboard switches. They’re satisfyingly “clicky”, reliable up to tens-of-millions of key presses, and a standard in gaming and programming keyboards across the globe. This ‘blue’ version Cherry MX Switch is favored by most due to its secondary internal actuator making it less likely to “double-tap.” If you are looking for a noticeably audible and high-quality key switch, this is the perfect option for you!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/13834"&gt;SparkFun Product Link&lt;/a&gt;&lt;/p&gt;</description>
+<hole x="0" y="0" drill="4.0894"/>
+<hole x="-5.08" y="0" drill="1.70688125"/>
+<hole x="5.08" y="0" drill="1.70688125"/>
+<pad name="A" x="-1.27" y="-5.08" drill="1.0922" diameter="2.032"/>
+<pad name="K" x="1.27" y="-5.08" drill="1.0922" diameter="2.032"/>
+<pad name="S1" x="-3.81" y="2.54" drill="1.7526" diameter="3.2258"/>
+<pad name="S2" x="2.54" y="5.08" drill="1.7526" diameter="3.2258"/>
+<text x="-2.159" y="-5.08" size="1.524" layer="21" font="vector" ratio="15" align="center-right">+</text>
+<text x="2.54" y="-5.08" size="1.524" layer="21" font="vector" ratio="15" align="center-left">-</text>
+<wire x1="-6.731" y1="6.731" x2="-7.747" y2="6.731" width="0.254" layer="51"/>
+<wire x1="-7.747" y1="6.731" x2="-6.731" y2="7.747" width="0.254" layer="51" curve="-90"/>
+<wire x1="-6.731" y1="7.747" x2="-3.175" y2="7.747" width="0.254" layer="51"/>
+<wire x1="-3.175" y1="7.747" x2="-3.175" y2="6.731" width="0.254" layer="51"/>
+<wire x1="3.175" y1="7.747" x2="3.175" y2="6.731" width="0.254" layer="51"/>
+<wire x1="6.731" y1="6.731" x2="7.747" y2="6.731" width="0.254" layer="51"/>
+<wire x1="7.747" y1="6.731" x2="6.731" y2="7.747" width="0.254" layer="51" curve="90"/>
+<wire x1="6.731" y1="7.747" x2="3.175" y2="7.747" width="0.254" layer="51"/>
+<wire x1="6.731" y1="6.731" x2="6.731" y2="-6.731" width="0.254" layer="51"/>
+<wire x1="6.731" y1="-6.731" x2="7.747" y2="-6.731" width="0.254" layer="51"/>
+<wire x1="7.747" y1="-6.731" x2="6.731" y2="-7.747" width="0.254" layer="51" curve="-90"/>
+<wire x1="6.731" y1="-7.747" x2="3.175" y2="-7.747" width="0.254" layer="51"/>
+<wire x1="3.175" y1="-7.747" x2="3.175" y2="-6.731" width="0.254" layer="51"/>
+<wire x1="-3.175" y1="-7.747" x2="-3.175" y2="-6.731" width="0.254" layer="51"/>
+<wire x1="-6.731" y1="-7.747" x2="-3.175" y2="-7.747" width="0.254" layer="51"/>
+<wire x1="-7.747" y1="-6.731" x2="-6.731" y2="-7.747" width="0.254" layer="51" curve="90"/>
+<wire x1="-6.731" y1="-6.731" x2="-7.747" y2="-6.731" width="0.254" layer="51"/>
+<wire x1="-6.731" y1="-6.731" x2="-6.731" y2="6.731" width="0.254" layer="51"/>
+<wire x1="-3.175" y1="6.731" x2="-0.762" y2="6.731" width="0.254" layer="51"/>
+<wire x1="-0.762" y1="6.731" x2="-0.762" y2="7.747" width="0.254" layer="51"/>
+<wire x1="-0.762" y1="7.747" x2="0.762" y2="7.747" width="0.254" layer="51"/>
+<wire x1="0.762" y1="7.747" x2="0.762" y2="6.731" width="0.254" layer="51"/>
+<wire x1="0.762" y1="6.731" x2="3.175" y2="6.731" width="0.254" layer="51"/>
+<wire x1="3.175" y1="-6.731" x2="0.762" y2="-6.731" width="0.254" layer="51"/>
+<wire x1="0.762" y1="-6.731" x2="0.762" y2="-7.747" width="0.254" layer="51"/>
+<wire x1="-0.762" y1="-7.747" x2="-0.762" y2="-6.731" width="0.254" layer="51"/>
+<wire x1="0.762" y1="-7.747" x2="-0.762" y2="-7.747" width="0.254" layer="51"/>
+<wire x1="-0.762" y1="-6.731" x2="-3.175" y2="-6.731" width="0.254" layer="51"/>
+<wire x1="-3.81" y1="2.54" x2="-1.27" y2="5.08" width="0.254" layer="21"/>
+<wire x1="2.54" y1="5.08" x2="-0.762" y2="3.81" width="0.254" layer="21"/>
+<wire x1="-6.096" y1="6.731" x2="6.096" y2="6.731" width="0.254" layer="21"/>
+<wire x1="6.096" y1="6.731" x2="6.096" y2="-6.731" width="0.254" layer="21"/>
+<wire x1="6.096" y1="-6.731" x2="-6.096" y2="-6.731" width="0.254" layer="21"/>
+<wire x1="-6.096" y1="-6.731" x2="-6.096" y2="6.731" width="0.254" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="AYZ0202">
@@ -10979,6 +11033,47 @@ No illumination</description>
 <wire x1="-1.27" y1="2.032" x2="-1.524" y2="1.27" width="0.254" layer="94"/>
 <wire x1="-1.524" y1="1.27" x2="-1.016" y2="1.27" width="0.254" layer="94"/>
 <wire x1="-1.016" y1="1.27" x2="-1.27" y2="2.032" width="0.254" layer="94"/>
+</symbol>
+<symbol name="CHERRY-MX-LED">
+<wire x1="-2.54" y1="2.54" x2="1.905" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-3.81" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-3.81" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-3.81" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-0.508" x2="0.889" y2="0.889" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="-0.635" x2="2.032" y2="0.762" width="0.1524" layer="94"/>
+<circle x="-2.54" y="2.54" radius="0.127" width="0.4064" layer="94"/>
+<circle x="2.54" y="2.54" radius="0.127" width="0.4064" layer="94"/>
+<text x="0" y="5.334" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-5.334" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
+<pin name="S1" x="-7.62" y="2.54" visible="off" length="short" direction="pas" swaplevel="2"/>
+<pin name="S2" x="7.62" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="A" x="-7.62" y="-2.54" visible="off" length="short" direction="pas"/>
+<pin name="C" x="7.62" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<polygon width="0.1524" layer="94">
+<vertex x="0.889" y="0.889"/>
+<vertex x="0" y="0.508"/>
+<vertex x="0.508" y="0"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="2.032" y="0.762"/>
+<vertex x="1.143" y="0.381"/>
+<vertex x="1.651" y="-0.127"/>
+</polygon>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -13472,6 +13567,31 @@ Drawn as three separate gates for schematic clarity.</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="SWCH-13065"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CHERRY-MX-LED" prefix="S">
+<description>&lt;h3&gt;Cherry MX Switch - Electromechanical Swith w/ LED&lt;/h3&gt;
+
+&lt;p&gt;Cherry MX Keyswitches are top-of-the-line mechanical keyboard switches. They’re satisfyingly “clicky”, reliable up to tens-of-millions of key presses, and a standard in gaming and programming keyboards across the globe. This ‘blue’ version Cherry MX Switch is favored by most due to its secondary internal actuator making it less likely to “double-tap.” If you are looking for a noticeably audible and high-quality key switch, this is the perfect option for you!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/13834"&gt;SparkFun Product Link&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CHERRY-MX-LED" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="CHERRY-MX-LED">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="K"/>
+<connect gate="G$1" pin="S1" pad="S1"/>
+<connect gate="G$1" pin="S2" pad="S2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="SF_ID" value="COM-13834"/>
 </technology>
 </technologies>
 </device>
