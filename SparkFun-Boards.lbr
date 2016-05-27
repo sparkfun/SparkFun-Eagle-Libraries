@@ -4002,16 +4002,17 @@ Footprint for mating with Edison SBC.
 <text x="-5.08" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="MICRO-SDCARD">
+<description>&lt;h3&gt; microSD Card&lt;/h3&gt;</description>
 <wire x1="12.7" y1="22.86" x2="12.7" y2="0" width="0.254" layer="94"/>
 <wire x1="12.7" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="22.86" width="0.254" layer="94"/>
 <wire x1="0" y1="22.86" x2="12.7" y2="22.86" width="0.254" layer="94"/>
-<text x="5.08" y="25.4" size="1.27" layer="95" rot="R180">&gt;NAME</text>
-<text x="0" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
+<text x="2.54" y="23.114" size="1.27" layer="95" font="vector">&gt;NAME</text>
+<text x="2.54" y="-0.254" size="1.27" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 <pin name="CD/DAT3" x="17.78" y="5.08" length="middle" rot="R180"/>
 <pin name="CMD" x="17.78" y="7.62" length="middle" rot="R180"/>
-<pin name="GND" x="17.78" y="10.16" length="middle" rot="R180"/>
-<pin name="VDD" x="17.78" y="12.7" length="middle" rot="R180"/>
+<pin name="GND" x="17.78" y="10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDD" x="17.78" y="12.7" length="middle" direction="pwr" rot="R180"/>
 <pin name="CLK" x="17.78" y="15.24" length="middle" rot="R180"/>
 <pin name="DAT0" x="17.78" y="17.78" length="middle" rot="R180"/>
 <pin name="DAT1" x="17.78" y="20.32" length="middle" rot="R180"/>
@@ -4138,23 +4139,26 @@ Footprint for mating with Edison SBC.
 <pin name="A5" x="-10.16" y="-20.32" length="short"/>
 </symbol>
 <symbol name="LOGIC_LEVEL_CONVERTER">
-<description>Logic Level Converter (3.3v - 5v)</description>
-<pin name="HV_TXO_1" x="7.62" y="30.48" length="middle" rot="R180"/>
-<pin name="HV_RXI_1" x="7.62" y="27.94" length="middle" rot="R180"/>
-<pin name="HV" x="7.62" y="25.4" length="middle" rot="R180"/>
-<pin name="GND@2" x="7.62" y="22.86" length="middle" rot="R180"/>
-<pin name="HV_RXI_2" x="7.62" y="20.32" length="middle" rot="R180"/>
-<pin name="HV_TXO_2" x="7.62" y="17.78" length="middle" rot="R180"/>
-<pin name="LV_TXI_1" x="-30.48" y="30.48" length="middle"/>
-<pin name="LV" x="-30.48" y="25.4" length="middle"/>
-<pin name="LV_RXO_1" x="-30.48" y="27.94" length="middle"/>
-<pin name="GND" x="-30.48" y="22.86" length="middle"/>
-<pin name="LV_RXO_2" x="-30.48" y="20.32" length="middle"/>
-<pin name="LV_TXI_2" x="-30.48" y="17.78" length="middle"/>
-<wire x1="-25.4" y1="15.24" x2="-25.4" y2="33.02" width="0.254" layer="94"/>
-<wire x1="-25.4" y1="33.02" x2="2.54" y2="33.02" width="0.254" layer="94"/>
-<wire x1="2.54" y1="33.02" x2="2.54" y2="15.24" width="0.254" layer="94"/>
-<wire x1="2.54" y1="15.24" x2="-25.4" y2="15.24" width="0.254" layer="94"/>
+<description>&lt;h3&gt;SparkFun Logic Level Converter - Bidirectional&lt;/h3&gt;
+&lt;p&gt;3.3v-5v&lt;/p&gt;</description>
+<pin name="HV_TXO_1" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="HV_RXI_1" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="HV" x="20.32" y="2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND@2" x="20.32" y="0" length="middle" direction="pwr" rot="R180"/>
+<pin name="HV_RXI_2" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="HV_TXO_2" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="LV_TXI_1" x="-17.78" y="7.62" length="middle"/>
+<pin name="LV" x="-17.78" y="2.54" length="middle" direction="pwr"/>
+<pin name="LV_RXO_1" x="-17.78" y="5.08" length="middle"/>
+<pin name="GND" x="-17.78" y="0" length="middle" direction="pwr"/>
+<pin name="LV_RXO_2" x="-17.78" y="-2.54" length="middle"/>
+<pin name="LV_TXI_2" x="-17.78" y="-5.08" length="middle"/>
+<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="10.16" x2="15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="15.24" y1="10.16" x2="15.24" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<text x="-2.54" y="10.414" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-7.874" size="1.778" layer="95" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="ARDUINO_R3_SHIELD">
 <description>&lt;h3&gt;Arduino Uno R3-No ICSP&lt;/h3&gt;
@@ -4459,6 +4463,8 @@ Footprint for mating with Edison SBC.
 <pin name="PROG" x="17.78" y="27.94" length="middle" rot="R180"/>
 </symbol>
 <symbol name="MOJO_ANALOG_HEADER">
+<description>&lt;h3&gt;Mojo v3 FPGA Dev Board - Analog Pins &lt;/h3&gt;
+&lt;p&gt;Only shows the analog pins available on the board.&lt;/p&gt;</description>
 <wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
@@ -4473,8 +4479,12 @@ Footprint for mating with Edison SBC.
 <pin name="A9" x="-12.7" y="2.54" visible="pin" length="middle" direction="in"/>
 <pin name="AREF" x="-12.7" y="5.08" visible="pin" length="middle" direction="in"/>
 <pin name="GND" x="12.7" y="5.08" visible="pin" length="middle" direction="sup" rot="R180"/>
+<text x="-5.08" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<text x="-5.08" y="7.874" size="1.778" layer="95" font="vector">&gt;NAME</text>
 </symbol>
 <symbol name="MOJO_HEADER_1">
+<description>&lt;h3&gt;Mojo v3 FPGA Dev Board - Header 1 &lt;/h3&gt;
+&lt;p&gt;Only shows the header 1 pins available on the board.&lt;/p&gt;</description>
 <wire x1="-7.62" y1="33.02" x2="7.62" y2="33.02" width="0.254" layer="94"/>
 <wire x1="7.62" y1="33.02" x2="7.62" y2="-33.02" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-33.02" x2="-7.62" y2="-33.02" width="0.254" layer="94"/>
@@ -4529,8 +4539,12 @@ Footprint for mating with Edison SBC.
 <pin name="GND@1" x="12.7" y="30.48" visible="pin" length="middle" direction="sup" rot="R180"/>
 <pin name="GND@2" x="12.7" y="27.94" visible="pin" length="middle" direction="sup" rot="R180"/>
 <pin name="RAW" x="-12.7" y="30.48" visible="pin" length="middle" direction="sup"/>
+<text x="-5.08" y="33.274" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-5.08" y="-33.274" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="MOJO_HEADER_2">
+<description>&lt;h3&gt;Mojo v3 FPGA Dev Board - Header 2 Pins &lt;/h3&gt;
+&lt;p&gt;Only shows the Header 2 pins available on the board.&lt;/p&gt;</description>
 <wire x1="-7.62" y1="33.02" x2="7.62" y2="33.02" width="0.254" layer="94"/>
 <wire x1="7.62" y1="33.02" x2="7.62" y2="-33.02" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-33.02" x2="-7.62" y2="-33.02" width="0.254" layer="94"/>
@@ -4585,8 +4599,12 @@ Footprint for mating with Edison SBC.
 <pin name="TDI" x="12.7" y="-27.94" visible="pin" length="middle" direction="in" rot="R180"/>
 <pin name="TDO" x="-12.7" y="-25.4" visible="pin" length="middle" direction="out"/>
 <pin name="TMS" x="12.7" y="-25.4" visible="pin" length="middle" direction="in" rot="R180"/>
+<text x="-5.08" y="33.274" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-5.08" y="-33.274" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="MOJO_OUTLINE">
+<description>&lt;h3&gt;Mojo v3 FPGA Dev Board -Outline &lt;/h3&gt;
+&lt;p&gt;Silk outline of the Mojo board.&lt;/p&gt;</description>
 <text x="0" y="0" size="2.54" layer="94">Mojo PCB Outline</text>
 </symbol>
 <symbol name="EDISON_CONNECTOR_BASE">
