@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4019,12 +4019,14 @@ Footprint for mating with Edison SBC.
 <pin name="DAT2" x="17.78" y="2.54" length="middle" rot="R180"/>
 </symbol>
 <symbol name="SD-MMC-CARD">
+<description>&lt;h3&gt;SD/MMC Card &lt;/h3&gt;
+&lt;p&gt;Breaks out all 9 pins&lt;/p&gt;</description>
 <wire x1="-5.08" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
 <wire x1="7.62" y1="12.7" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
-<text x="0.762" y="14.478" size="1.27" layer="95" rot="R180">&gt;NAME</text>
-<text x="3.048" y="-13.462" size="1.27" layer="96" rot="R180">&gt;VALUE</text>
+<text x="-2.54" y="12.954" size="1.27" layer="95" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-12.954" size="1.27" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 <pin name="DAT2" x="-10.16" y="10.16" length="middle"/>
 <pin name="CD/DAT3" x="-10.16" y="7.62" length="middle"/>
 <pin name="CMD" x="-10.16" y="5.08" length="middle"/>
@@ -4103,12 +4105,14 @@ Footprint for mating with Edison SBC.
 <text x="-12.7" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 <symbol name="PRO_MINI">
+<description>&lt;h3&gt;Arduino Pro Mini&lt;/h3&gt;
+&lt;p&gt;3.3V/5V and 8MHz/16MHz. Includes connections for the updated ADC6/ADC7 pins.&lt;/p&gt;</description>
 <wire x1="-7.62" y1="17.78" x2="-7.62" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-22.86" x2="10.16" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-22.86" x2="10.16" y2="17.78" width="0.254" layer="94"/>
 <wire x1="10.16" y1="17.78" x2="-7.62" y2="17.78" width="0.254" layer="94"/>
-<text x="-7.62" y="18.542" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-7.62" y="18.542" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-7.62" y="-23.114" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 <pin name="2" x="-10.16" y="5.08" length="short"/>
 <pin name="*3" x="-10.16" y="2.54" length="short"/>
 <pin name="4" x="-10.16" y="0" length="short"/>
@@ -4125,14 +4129,14 @@ Footprint for mating with Edison SBC.
 <pin name="A1" x="12.7" y="0" length="short" rot="R180"/>
 <pin name="A2" x="12.7" y="2.54" length="short" rot="R180"/>
 <pin name="A3" x="12.7" y="5.08" length="short" rot="R180"/>
-<pin name="GND" x="-10.16" y="7.62" length="short"/>
-<pin name="GND@2" x="12.7" y="12.7" length="short" rot="R180"/>
-<pin name="RAW" x="12.7" y="15.24" length="short" rot="R180"/>
+<pin name="GND" x="-10.16" y="7.62" length="short" direction="pwr"/>
+<pin name="GND@2" x="12.7" y="12.7" length="short" direction="pwr" rot="R180"/>
+<pin name="RAW" x="12.7" y="15.24" length="short" direction="pwr" rot="R180"/>
 <pin name="RST" x="-10.16" y="10.16" length="short"/>
 <pin name="RST@2" x="12.7" y="10.16" length="short" rot="R180"/>
 <pin name="RXI" x="-10.16" y="12.7" length="short"/>
 <pin name="TXO" x="-10.16" y="15.24" length="short"/>
-<pin name="VCC" x="12.7" y="7.62" length="short" rot="R180"/>
+<pin name="VCC" x="12.7" y="7.62" length="short" direction="pwr" rot="R180"/>
 <pin name="A7" x="12.7" y="-17.78" length="short" rot="R180"/>
 <pin name="A6" x="12.7" y="-20.32" length="short" rot="R180"/>
 <pin name="A4" x="-10.16" y="-17.78" length="short"/>
@@ -4202,6 +4206,8 @@ Footprint for mating with Edison SBC.
 <pin name="SCL" x="12.7" y="-22.86" visible="pin" length="short" rot="R180"/>
 </symbol>
 <symbol name="SPARKFUN_PRO_MICRO">
+<description>&lt;h3&gt;SparkFun Pro Micro&lt;/h3&gt;
+&lt;p&gt;3.3V/5V at 8MHz/16MHz. Does not require a USB to serial converter board for programming.  &lt;/p&gt;</description>
 <wire x1="-7.62" y1="17.78" x2="-7.62" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-15.24" x2="10.16" y2="17.78" width="0.254" layer="94"/>
 <wire x1="10.16" y1="17.78" x2="-7.62" y2="17.78" width="0.254" layer="94"/>
@@ -4223,14 +4229,14 @@ Footprint for mating with Edison SBC.
 <pin name="A1" x="12.7" y="0" length="short" rot="R180"/>
 <pin name="A2" x="12.7" y="2.54" length="short" rot="R180"/>
 <pin name="A3" x="12.7" y="5.08" length="short" rot="R180"/>
-<pin name="GND" x="-10.16" y="7.62" length="short"/>
-<pin name="GND@2" x="12.7" y="12.7" length="short" rot="R180"/>
-<pin name="RAW" x="12.7" y="15.24" length="short" rot="R180"/>
-<pin name="GND@1" x="-10.16" y="10.16" length="short"/>
+<pin name="GND" x="-10.16" y="7.62" length="short" direction="pwr"/>
+<pin name="GND@2" x="12.7" y="12.7" length="short" direction="pwr" rot="R180"/>
+<pin name="RAW" x="12.7" y="15.24" length="short" direction="pwr" rot="R180"/>
+<pin name="GND@1" x="-10.16" y="10.16" length="short" direction="pwr"/>
 <pin name="RESET" x="12.7" y="10.16" length="short" rot="R180"/>
 <pin name="RXI" x="-10.16" y="12.7" length="short"/>
 <pin name="TXO" x="-10.16" y="15.24" length="short"/>
-<pin name="VCC" x="12.7" y="7.62" length="short" rot="R180"/>
+<pin name="VCC" x="12.7" y="7.62" length="short" direction="pwr" rot="R180"/>
 <wire x1="-7.62" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
 </symbol>
 <symbol name="BEAGLE_BONE_BLACK_P8">
@@ -4422,15 +4428,15 @@ Footprint for mating with Edison SBC.
 <wire x1="-15.24" y1="30.48" x2="12.7" y2="30.48" width="0.254" layer="94"/>
 <wire x1="12.7" y1="30.48" x2="12.7" y2="-33.02" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-33.02" x2="-15.24" y2="-33.02" width="0.254" layer="94"/>
-<text x="-5.08" y="33.02" size="1.778" layer="95" align="top-left">&gt;NAME</text>
-<text x="-5.08" y="-35.56" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND1" x="-20.32" y="-30.48" length="middle"/>
-<pin name="GND" x="-20.32" y="-27.94" length="middle"/>
-<pin name="VBAT" x="-20.32" y="-15.24" length="middle"/>
-<pin name="3.3V" x="-20.32" y="-12.7" length="middle"/>
-<pin name="3V" x="-20.32" y="-10.16" length="middle"/>
-<pin name="VIN" x="-20.32" y="-7.62" length="middle"/>
-<pin name="AGND" x="-20.32" y="-25.4" length="middle"/>
+<text x="-5.08" y="30.734" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-5.08" y="-33.274" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<pin name="GND1" x="-20.32" y="-30.48" length="middle" direction="pwr"/>
+<pin name="GND" x="-20.32" y="-27.94" length="middle" direction="pwr"/>
+<pin name="VBAT" x="-20.32" y="-15.24" length="middle" direction="pwr"/>
+<pin name="3.3V" x="-20.32" y="-12.7" length="middle" direction="pwr"/>
+<pin name="3V" x="-20.32" y="-10.16" length="middle" direction="pwr"/>
+<pin name="VIN" x="-20.32" y="-7.62" length="middle" direction="pwr"/>
+<pin name="AGND" x="-20.32" y="-25.4" length="middle" direction="pwr"/>
 <pin name="A0/14" x="-20.32" y="27.94" length="middle"/>
 <pin name="A1/15" x="-20.32" y="25.4" length="middle"/>
 <pin name="A2/16" x="-20.32" y="22.86" length="middle"/>
@@ -4449,7 +4455,7 @@ Footprint for mating with Edison SBC.
 <pin name="A11" x="-20.32" y="0" length="middle"/>
 <pin name="A14/DAC" x="-20.32" y="-2.54" length="middle"/>
 <pin name="AREF" x="-20.32" y="-20.32" length="middle"/>
-<pin name="VUSB" x="-20.32" y="-17.78" length="middle"/>
+<pin name="VUSB" x="-20.32" y="-17.78" length="middle" direction="pwr"/>
 <pin name="8/TX3" x="17.78" y="-7.62" length="middle" rot="R180"/>
 <pin name="7/RX3" x="17.78" y="-5.08" length="middle" rot="R180"/>
 <pin name="6*" x="17.78" y="-2.54" length="middle" rot="R180"/>
@@ -4784,18 +4790,23 @@ Only shows part of the Hirose pins available on the Edison. &lt;/p&gt;</descript
 <text x="0" y="2.794" size="1.778" layer="95" font="vector">&gt;NAME</text>
 </symbol>
 <symbol name="RGB_LIGHT_SENSOR_ISL29125">
-<pin name="GND" x="-15.24" y="5.08" length="short"/>
-<pin name="3.3V" x="-15.24" y="2.54" length="short"/>
+<description>&lt;h3&gt;SparkFun RGB Light Sensor - ISL29125&lt;/h3&gt;
+&lt;p&gt;3.3V, I2C&lt;/p&gt;</description>
+<pin name="GND" x="-15.24" y="5.08" length="short" direction="pwr"/>
+<pin name="3.3V" x="-15.24" y="2.54" length="short" direction="pwr"/>
 <pin name="SDA" x="-15.24" y="0" length="short"/>
 <pin name="SCL" x="-15.24" y="-2.54" length="short"/>
 <pin name="INT" x="-15.24" y="-5.08" length="short"/>
 <wire x1="-12.7" y1="7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-7.62" x2="15.24" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-7.62" x2="15.24" y2="7.62" width="0.254" layer="94"/>
-<wire x1="15.24" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
-<text x="-4.318" y="-2.54" size="1.27" layer="94">RGB Light Sensor 
+<wire x1="-12.7" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<text x="-4.318" y="-2.54" size="1.27" layer="94">RGB Light 
+Sensor 
 ISL29125
 Breakout</text>
+<text x="-7.62" y="7.874" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-7.62" y="-7.874" size="1.778" layer="95" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="BIG_RED_PCB">
 <description>&lt;h3&gt;Big Red PCB Symbol&lt;/h3&gt;</description>
