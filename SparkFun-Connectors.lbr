@@ -2863,16 +2863,16 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pad name="VCC" x="7.62" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="CTS" x="10.16" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="GND" x="12.7" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="1.1938" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<text x="0.635" y="1.905" size="1.27" layer="51" rot="R90">GRN</text>
-<text x="13.335" y="1.905" size="1.27" layer="51" rot="R90">BLK</text>
+<text x="0.635" y="1.905" size="1.27" layer="51" font="vector" rot="R90">GRN</text>
+<text x="13.335" y="1.905" size="1.27" layer="51" font="vector" rot="R90">BLK</text>
 <rectangle x1="12.446" y1="-0.254" x2="12.954" y2="0.254" layer="51"/>
 <rectangle x1="9.906" y1="-0.254" x2="10.414" y2="0.254" layer="51"/>
 <rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
 <rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
 <rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<text x="4.572" y="1.651" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="4.572" y="-2.159" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
 <package name="IPOD_FEMALE_CONNECTOR">
 <wire x1="-10.7" y1="6.625" x2="10.7" y2="6.625" width="0.2032" layer="51"/>
@@ -23496,30 +23496,6 @@ Renamed DAT2 from NC to RSV to remove the implication that you should leave it n
 </device>
 </devices>
 </deviceset>
-<deviceset name="ATARI_CONNECTOR">
-<description>DB9 labeled for Atari joystick</description>
-<gates>
-<gate name="G$1" symbol="ATARI_CONNECTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ATARI_CONNECTOR">
-<connects>
-<connect gate="G$1" pin="BUTTON" pad="P$1"/>
-<connect gate="G$1" pin="DOWN" pad="P$6"/>
-<connect gate="G$1" pin="GND" pad="P$3"/>
-<connect gate="G$1" pin="LEFT" pad="P$7"/>
-<connect gate="G$1" pin="NC1" pad="P$9"/>
-<connect gate="G$1" pin="NC2" pad="P$2"/>
-<connect gate="G$1" pin="NC3" pad="P$4"/>
-<connect gate="G$1" pin="RIGHT" pad="P$8"/>
-<connect gate="G$1" pin="UP" pad="P$5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="ATX24" prefix="J">
 <description>&lt;b&gt;ATX24 Pin Power Supply Connector&lt;/b&gt; This is a good connector for connecting a computer power supply to a PCB. It's massive, but provides many amps of power at 5V and 12V. SKU: PRT-09498</description>
 <gates>
@@ -23715,7 +23691,7 @@ SMT version used on LilyPad MP3 board.&lt;br&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="AVR_SPI_PRG_3X2" prefix="J">
+<deviceset name="AVR_SPI_PROG_3X2" prefix="J">
 <description>&lt;b&gt;AVR ISP 6 Pin&lt;/b&gt;
 This is the reduced ISP connector for AVR programming. Common on Arduino. This footprint will take up less PCB space and can be used with a 10-pin to 6-pin adapter such as SKU: BOB-08508
 
@@ -24486,7 +24462,7 @@ You should include the "EM408_Outline" device in your schematic if you are to us
 </device>
 </devices>
 </deviceset>
-<deviceset name="FTDI_BASIC" prefix="J">
+<deviceset name="FTDI_BASIC_CONVERTER_SIDE" prefix="J">
 <description>FTDI Basic header with labels</description>
 <gates>
 <gate name="G$1" symbol="CONN_06" x="0" y="0"/>
@@ -29774,134 +29750,6 @@ NOTE: CD1 and CD2 are connected internally</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="50-PIN-CENTRONICS-F">
-<gates>
-<gate name="G$1" symbol="50-PIN-CENTRONICS" x="-7.62" y="-60.96"/>
-</gates>
-<devices>
-<device name="FEMALE" package="50-PIN-CENTRONICS-F">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$10" pad="P$10"/>
-<connect gate="G$1" pin="P$11" pad="P$11"/>
-<connect gate="G$1" pin="P$12" pad="P$12"/>
-<connect gate="G$1" pin="P$13" pad="P$13"/>
-<connect gate="G$1" pin="P$14" pad="P$14"/>
-<connect gate="G$1" pin="P$15" pad="P$15"/>
-<connect gate="G$1" pin="P$16" pad="P$16"/>
-<connect gate="G$1" pin="P$17" pad="P$17"/>
-<connect gate="G$1" pin="P$18" pad="P$18"/>
-<connect gate="G$1" pin="P$19" pad="P$19"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-<connect gate="G$1" pin="P$20" pad="P$20"/>
-<connect gate="G$1" pin="P$21" pad="P$21"/>
-<connect gate="G$1" pin="P$22" pad="P$22"/>
-<connect gate="G$1" pin="P$23" pad="P$23"/>
-<connect gate="G$1" pin="P$24" pad="P$24"/>
-<connect gate="G$1" pin="P$25" pad="P$25"/>
-<connect gate="G$1" pin="P$26" pad="P$26"/>
-<connect gate="G$1" pin="P$27" pad="P$27"/>
-<connect gate="G$1" pin="P$28" pad="P$28"/>
-<connect gate="G$1" pin="P$29" pad="P$29"/>
-<connect gate="G$1" pin="P$3" pad="P$3"/>
-<connect gate="G$1" pin="P$30" pad="P$30"/>
-<connect gate="G$1" pin="P$31" pad="P$31"/>
-<connect gate="G$1" pin="P$32" pad="P$32"/>
-<connect gate="G$1" pin="P$33" pad="P$33"/>
-<connect gate="G$1" pin="P$34" pad="P$34"/>
-<connect gate="G$1" pin="P$35" pad="P$35"/>
-<connect gate="G$1" pin="P$36" pad="P$36"/>
-<connect gate="G$1" pin="P$37" pad="P$37"/>
-<connect gate="G$1" pin="P$38" pad="P$38"/>
-<connect gate="G$1" pin="P$39" pad="P$39"/>
-<connect gate="G$1" pin="P$4" pad="P$4"/>
-<connect gate="G$1" pin="P$40" pad="P$40"/>
-<connect gate="G$1" pin="P$41" pad="P$41"/>
-<connect gate="G$1" pin="P$42" pad="P$42"/>
-<connect gate="G$1" pin="P$43" pad="P$43"/>
-<connect gate="G$1" pin="P$44" pad="P$44"/>
-<connect gate="G$1" pin="P$45" pad="P$45"/>
-<connect gate="G$1" pin="P$46" pad="P$46"/>
-<connect gate="G$1" pin="P$47" pad="P$47"/>
-<connect gate="G$1" pin="P$48" pad="P$48"/>
-<connect gate="G$1" pin="P$49" pad="P$49"/>
-<connect gate="G$1" pin="P$5" pad="P$5"/>
-<connect gate="G$1" pin="P$50" pad="P$50"/>
-<connect gate="G$1" pin="P$6" pad="P$6"/>
-<connect gate="G$1" pin="P$7" pad="P$7"/>
-<connect gate="G$1" pin="P$8" pad="P$8"/>
-<connect gate="G$1" pin="P$9" pad="P$9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="50-PIN-CENTRONICS-M">
-<gates>
-<gate name="G$1" symbol="50-PIN-CENTRONICS" x="-7.62" y="-58.42"/>
-</gates>
-<devices>
-<device name="MALE" package="50-PIN-CENTRONICS-M">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$10" pad="P$10"/>
-<connect gate="G$1" pin="P$11" pad="P$11"/>
-<connect gate="G$1" pin="P$12" pad="P$12"/>
-<connect gate="G$1" pin="P$13" pad="P$13"/>
-<connect gate="G$1" pin="P$14" pad="P$14"/>
-<connect gate="G$1" pin="P$15" pad="P$15"/>
-<connect gate="G$1" pin="P$16" pad="P$16"/>
-<connect gate="G$1" pin="P$17" pad="P$17"/>
-<connect gate="G$1" pin="P$18" pad="P$18"/>
-<connect gate="G$1" pin="P$19" pad="P$19"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
-<connect gate="G$1" pin="P$20" pad="P$20"/>
-<connect gate="G$1" pin="P$21" pad="P$21"/>
-<connect gate="G$1" pin="P$22" pad="P$22"/>
-<connect gate="G$1" pin="P$23" pad="P$23"/>
-<connect gate="G$1" pin="P$24" pad="P$24"/>
-<connect gate="G$1" pin="P$25" pad="P$25"/>
-<connect gate="G$1" pin="P$26" pad="P$26"/>
-<connect gate="G$1" pin="P$27" pad="P$27"/>
-<connect gate="G$1" pin="P$28" pad="P$28"/>
-<connect gate="G$1" pin="P$29" pad="P$29"/>
-<connect gate="G$1" pin="P$3" pad="P$3"/>
-<connect gate="G$1" pin="P$30" pad="P$30"/>
-<connect gate="G$1" pin="P$31" pad="P$31"/>
-<connect gate="G$1" pin="P$32" pad="P$32"/>
-<connect gate="G$1" pin="P$33" pad="P$33"/>
-<connect gate="G$1" pin="P$34" pad="P$34"/>
-<connect gate="G$1" pin="P$35" pad="P$35"/>
-<connect gate="G$1" pin="P$36" pad="P$36"/>
-<connect gate="G$1" pin="P$37" pad="P$37"/>
-<connect gate="G$1" pin="P$38" pad="P$38"/>
-<connect gate="G$1" pin="P$39" pad="P$39"/>
-<connect gate="G$1" pin="P$4" pad="P$4"/>
-<connect gate="G$1" pin="P$40" pad="P$40"/>
-<connect gate="G$1" pin="P$41" pad="P$41"/>
-<connect gate="G$1" pin="P$42" pad="P$42"/>
-<connect gate="G$1" pin="P$43" pad="P$43"/>
-<connect gate="G$1" pin="P$44" pad="P$44"/>
-<connect gate="G$1" pin="P$45" pad="P$45"/>
-<connect gate="G$1" pin="P$46" pad="P$46"/>
-<connect gate="G$1" pin="P$47" pad="P$47"/>
-<connect gate="G$1" pin="P$48" pad="P$48"/>
-<connect gate="G$1" pin="P$49" pad="P$49"/>
-<connect gate="G$1" pin="P$5" pad="P$5"/>
-<connect gate="G$1" pin="P$50" pad="P$50"/>
-<connect gate="G$1" pin="P$6" pad="P$6"/>
-<connect gate="G$1" pin="P$7" pad="P$7"/>
-<connect gate="G$1" pin="P$8" pad="P$8"/>
-<connect gate="G$1" pin="P$9" pad="P$9"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="RCA" prefix="J">
 <gates>
 <gate name="G$1" symbol="RCA" x="0" y="0"/>
@@ -30401,13 +30249,13 @@ Standard 11-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </device>
 </devices>
 </deviceset>
-<deviceset name="FTDI_DEVICE" prefix="J">
+<deviceset name="FTDI_BASIC_DEVICE_SIDE" prefix="J">
 <description>Connector which mates to FTDI basic or FTDI cable.</description>
 <gates>
 <gate name="G$1" symbol="FTDI_DEVICE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="FTDI_DEVICE_SIDE">
+<device name="PTH" package="FTDI_DEVICE_SIDE">
 <connects>
 <connect gate="G$1" pin="CTS" pad="P$5"/>
 <connect gate="G$1" pin="DTR" pad="P$1"/>
@@ -31311,49 +31159,6 @@ NOTE: CD1 and CD2 are connected internally</description>
 <technology name="">
 <attribute name="PROD_ID" value="CONN-07820"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CORTEX_DEBUG" prefix="J">
-<description>&lt;h3&gt;Cortex Debug Connector&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://infocenter.arm.com/help/topic/com.arm.doc.faqs/attached/13634/cortex_debug_connectors.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="CORTEX_DEBUG" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SMD" package="SAMTECH_FTSH-105-01">
-<connects>
-<connect gate="G$1" pin="GND@3" pad="3"/>
-<connect gate="G$1" pin="GND@5" pad="5"/>
-<connect gate="G$1" pin="GNDDTCT" pad="9"/>
-<connect gate="G$1" pin="KEY" pad="7"/>
-<connect gate="G$1" pin="NC/TDI" pad="8"/>
-<connect gate="G$1" pin="NRESET" pad="10"/>
-<connect gate="G$1" pin="SWDCLK/TCK" pad="4"/>
-<connect gate="G$1" pin="SWDIO/TMS" pad="2"/>
-<connect gate="G$1" pin="SWO/TDO" pad="6"/>
-<connect gate="G$1" pin="VCC" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PTH" package="2X5-PTH-1.27MM">
-<connects>
-<connect gate="G$1" pin="GND@3" pad="3"/>
-<connect gate="G$1" pin="GND@5" pad="5"/>
-<connect gate="G$1" pin="GNDDTCT" pad="9"/>
-<connect gate="G$1" pin="KEY" pad="7"/>
-<connect gate="G$1" pin="NC/TDI" pad="8"/>
-<connect gate="G$1" pin="NRESET" pad="10"/>
-<connect gate="G$1" pin="SWDCLK/TCK" pad="4"/>
-<connect gate="G$1" pin="SWDIO/TMS" pad="2"/>
-<connect gate="G$1" pin="SWO/TDO" pad="6"/>
-<connect gate="G$1" pin="VCC" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
