@@ -853,6 +853,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;Devices Using:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;LIS331&lt;/li&gt;
+&lt;li&gt;LIS3DH&lt;/li&gt;
 &lt;/ul&gt;</description>
 <wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.2032" layer="51"/>
 <wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.2032" layer="51"/>
@@ -8278,6 +8279,30 @@ It includes a sensing element and an IC interface capable of providing the measu
 <text x="0" y="7.874" size="1.778" layer="95" font="vector" align="bottom-center">&gt;Name</text>
 <text x="0" y="-5.334" size="1.778" layer="96" font="vector" align="top-center">&gt;Value</text>
 </symbol>
+<symbol name="LIS3DH">
+<description>&lt;h3&gt;ST Microelectronics LIS3DH 3-Axis &amp;plusmn;2/4/8/16g SPI/I2C Accelerometer&lt;/h3&gt;
+&lt;p&gt;The LIS3DH is a three axis MEMS linear accelerometer in the "nano" family. It has a digital I2C/SPI serial interface which makes it ideal for using in embedded applications. The device also features ultra low-power operational modes that allow advanced power saving and smart sleep to wake-up functions, built in detections with interrupts, and auxiliary ADC inputs&lt;/p&gt;</description>
+<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="15.24" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
+<pin name="VDD" x="-17.78" y="12.7" length="short"/>
+<pin name="SCL/SPC" x="17.78" y="10.16" length="short" rot="R180"/>
+<pin name="GND@5" x="-17.78" y="-10.16" length="short"/>
+<pin name="GND@12" x="-17.78" y="-12.7" length="short"/>
+<pin name="RES" x="-17.78" y="-5.08" length="short"/>
+<pin name="INT1" x="17.78" y="0" length="short" rot="R180"/>
+<pin name="ADC1" x="17.78" y="-7.62" length="short" rot="R180"/>
+<pin name="INT2" x="17.78" y="-2.54" length="short" rot="R180"/>
+<pin name="VDDIO" x="-17.78" y="10.16" length="short"/>
+<pin name="CS/MODE" x="17.78" y="12.7" length="short" rot="R180"/>
+<pin name="SA0/SDO" x="17.78" y="5.08" length="short" rot="R180"/>
+<pin name="SDA/SDI" x="17.78" y="7.62" length="short" rot="R180"/>
+<text x="-15.24" y="15.494" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-15.24" y="-15.494" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
+<pin name="ADC2" x="17.78" y="-10.16" length="short" rot="R180"/>
+<pin name="ADC3" x="17.78" y="-12.7" length="short" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ADMP401">
@@ -10338,6 +10363,45 @@ Datasheet: &lt;a href="http://ae-bst.resource.bosch.com/media/products/dokumente
 <technologies>
 <technology name="">
 <attribute name="SF_ID" value="SEN-09299"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LIS3DH" prefix="U">
+<description>&lt;h3&gt;ST Microelectronics LIS3DH 3-Axis &amp;plusmn;2/4/8/16g SPI/I2C Accelerometer&lt;/h3&gt;
+&lt;p&gt;The LIS3DH is a three axis MEMS linear accelerometer in the "nano" family. It has a digital I2C/SPI serial interface which makes it ideal for using in embedded applications. The device also features ultra low-power operational modes that allow advanced power saving and smart sleep to wake-up functions, built in detections with interrupts, and auxiliary ADC inputs&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Sensors/Accelerometer/LIS3DH.pdf"&gt;Datasheet-XXXX&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10345"&gt;SparkFun Triple Axis Accelerometer Breakout - LIS3DH&lt;/a&gt; (SEN-XXXXX)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9755"&gt;Triple Axis Accelerometer - LIS3DH&lt;/a&gt; (SEN-XXXXX)&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="LIS3DH" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LGA-16-3X3">
+<connects>
+<connect gate="G$1" pin="ADC1" pad="16"/>
+<connect gate="G$1" pin="ADC2" pad="15"/>
+<connect gate="G$1" pin="ADC3" pad="13"/>
+<connect gate="G$1" pin="CS/MODE" pad="8"/>
+<connect gate="G$1" pin="GND@12" pad="12"/>
+<connect gate="G$1" pin="GND@5" pad="5"/>
+<connect gate="G$1" pin="INT1" pad="11"/>
+<connect gate="G$1" pin="INT2" pad="9"/>
+<connect gate="G$1" pin="RES" pad="10"/>
+<connect gate="G$1" pin="SA0/SDO" pad="7"/>
+<connect gate="G$1" pin="SCL/SPC" pad="4"/>
+<connect gate="G$1" pin="SDA/SDI" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="14"/>
+<connect gate="G$1" pin="VDDIO" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-XXXXX"/>
+<attribute name="SF_ID" value="COM-XXXXX"/>
 </technology>
 </technologies>
 </device>
