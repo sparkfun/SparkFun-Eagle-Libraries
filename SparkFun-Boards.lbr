@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1059,10 +1059,10 @@ Basic reference with pads for SMD mounting of SD card.
 <pad name="6" x="1.27" y="8.89" drill="1.02" diameter="1.8796"/>
 <pad name="4" x="3.81" y="8.89" drill="1.02" diameter="1.8796"/>
 <pad name="2" x="6.35" y="8.89" drill="1.02" diameter="1.8796"/>
-<text x="7.49" y="9.7" size="1.27" layer="51">J1</text>
-<text x="7.49" y="-10.3" size="1.27" layer="51">J2</text>
-<text x="12.49" y="10.7" size="1.27" layer="51">WIZnet</text>
-<text x="9.79" y="-11.9" size="1.27" layer="51">WIZ811MJ REV1.0</text>
+<text x="7.49" y="9.7" size="1.27" layer="51" font="vector">J1</text>
+<text x="7.49" y="-10.3" size="1.27" layer="51" font="vector">J2</text>
+<text x="12.49" y="10.7" size="1.27" layer="51" font="vector">WIZnet</text>
+<text x="9.79" y="-11.9" size="1.27" layer="51" font="vector">WIZ811MJ REV1.0</text>
 <text x="-0.11" y="13.1" size="0.8128" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="-0.11" y="-12.446" size="0.8128" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 <hole x="-21.51" y="-8.3" drill="3"/>
@@ -1118,7 +1118,6 @@ AudioAmp</text>
 &lt;/ul&gt;&lt;/p&gt;
 &lt;p&gt;Example device(s):
 &lt;ul&gt;&lt;li&gt;Arduino Pro Mini&lt;/li&gt;
-&lt;li&gt;[EXAMPLE DEVICE 2]&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <wire x1="-8.89" y1="16.51" x2="-8.89" y2="-16.51" width="0.127" layer="51"/>
 <wire x1="-8.89" y1="-16.51" x2="8.89" y2="-16.51" width="0.127" layer="51"/>
@@ -2279,7 +2278,6 @@ Includes holes for ICSP header
 &lt;ul&gt;&lt;li&gt;Pin count: 38&lt;/li&gt;
 &lt;li&gt;Area:2.7x2.1in&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;Example device(s):
 &lt;ul&gt;&lt;li&gt;Arduino Uno R3&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
@@ -4002,42 +4000,48 @@ Footprint for mating with Edison SBC.
 <text x="-5.08" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="MICRO-SDCARD">
-<description>&lt;h3&gt; microSD Card&lt;/h3&gt;</description>
-<wire x1="12.7" y1="22.86" x2="12.7" y2="0" width="0.254" layer="94"/>
-<wire x1="12.7" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="22.86" width="0.254" layer="94"/>
-<wire x1="0" y1="22.86" x2="12.7" y2="22.86" width="0.254" layer="94"/>
-<text x="2.54" y="23.114" size="1.27" layer="95" font="vector">&gt;NAME</text>
-<text x="2.54" y="-0.254" size="1.27" layer="96" font="vector" align="top-left">&gt;VALUE</text>
-<pin name="CD/DAT3" x="17.78" y="5.08" length="middle" rot="R180"/>
-<pin name="CMD" x="17.78" y="7.62" length="middle" rot="R180"/>
-<pin name="GND" x="17.78" y="10.16" length="middle" direction="pwr" rot="R180"/>
-<pin name="VDD" x="17.78" y="12.7" length="middle" direction="pwr" rot="R180"/>
-<pin name="CLK" x="17.78" y="15.24" length="middle" rot="R180"/>
-<pin name="DAT0" x="17.78" y="17.78" length="middle" rot="R180"/>
-<pin name="DAT1" x="17.78" y="20.32" length="middle" rot="R180"/>
-<pin name="DAT2" x="17.78" y="2.54" length="middle" rot="R180"/>
+<description>&lt;h3&gt; microSD Card&lt;/h3&gt;
+
+&lt;p&gt;Breaks out all standard pins from microSD spec.&lt;/p&gt;</description>
+<wire x1="7.62" y1="12.7" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<text x="-2.54" y="12.954" size="1.27" layer="95" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-10.414" size="1.27" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<pin name="CD/DAT3" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="CMD" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND" x="12.7" y="0" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDD" x="12.7" y="2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="CLK" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="DAT0" x="12.7" y="7.62" length="middle" rot="R180"/>
+<pin name="DAT1" x="12.7" y="10.16" length="middle" rot="R180"/>
+<pin name="DAT2" x="12.7" y="-7.62" length="middle" rot="R180"/>
 </symbol>
 <symbol name="SD-MMC-CARD">
 <description>&lt;h3&gt;SD/MMC Card &lt;/h3&gt;
-&lt;p&gt;Breaks out all 9 pins&lt;/p&gt;</description>
-<wire x1="-5.08" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
-<wire x1="7.62" y1="12.7" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
-<text x="-2.54" y="12.954" size="1.27" layer="95" font="vector">&gt;NAME</text>
-<text x="-2.54" y="-12.954" size="1.27" layer="96" font="vector" align="top-left">&gt;VALUE</text>
-<pin name="DAT2" x="-10.16" y="10.16" length="middle"/>
-<pin name="CD/DAT3" x="-10.16" y="7.62" length="middle"/>
-<pin name="CMD" x="-10.16" y="5.08" length="middle"/>
-<pin name="VSS1" x="-10.16" y="2.54" length="middle"/>
-<pin name="VDD" x="-10.16" y="0" length="middle"/>
-<pin name="DAT1" x="-10.16" y="-10.16" length="middle"/>
-<pin name="DAT0" x="-10.16" y="-7.62" length="middle"/>
-<pin name="VSS2" x="-10.16" y="-5.08" length="middle"/>
-<pin name="CLK" x="-10.16" y="-2.54" length="middle"/>
+&lt;p&gt;Breaks out all 9 pins for SD/MMC cards&lt;/p&gt;</description>
+<wire x1="-7.62" y1="-12.7" x2="5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-12.7" x2="5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="5.08" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<text x="-5.08" y="12.954" size="1.27" layer="95" font="vector">&gt;NAME</text>
+<text x="-5.08" y="-12.954" size="1.27" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<pin name="DAT2" x="-12.7" y="10.16" length="middle"/>
+<pin name="CD/DAT3" x="-12.7" y="7.62" length="middle"/>
+<pin name="CMD" x="-12.7" y="5.08" length="middle"/>
+<pin name="VSS1" x="-12.7" y="2.54" length="middle"/>
+<pin name="VDD" x="-12.7" y="0" length="middle"/>
+<pin name="DAT1" x="-12.7" y="-10.16" length="middle"/>
+<pin name="DAT0" x="-12.7" y="-7.62" length="middle"/>
+<pin name="VSS2" x="-12.7" y="-5.08" length="middle"/>
+<pin name="CLK" x="-12.7" y="-2.54" length="middle"/>
 </symbol>
 <symbol name="WIZ811MJ">
+<description>&lt;h3&gt;WIZNet 811MJ Breakout board&lt;/h3&gt;
+&lt;p&gt;WIZnet’s WIZ811MJ works as a breakout board for their W5100 embedded TCP/IP chip. Also included on the board is an RJ-45 MagJack connector (RJ45 with X’FMR). It can be used as a component and little effort is required to interface to the W5100. The WIZ811MJ is an ideal option for users who want a simple solution to adding TCP/IP capability to their project.
+
+There is no on-board regulation. All pins of the W5100 are broken out to two pairs of 10-pin, 0.1" pitch headers.&lt;/p&gt;</description>
 <wire x1="-12.7" y1="30.48" x2="-12.7" y2="-33.02" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="-33.02" x2="12.7" y2="-33.02" width="0.254" layer="94"/>
 <wire x1="12.7" y1="-33.02" x2="12.7" y2="30.48" width="0.254" layer="94"/>
@@ -4107,62 +4111,62 @@ Footprint for mating with Edison SBC.
 <symbol name="PRO_MINI">
 <description>&lt;h3&gt;Arduino Pro Mini&lt;/h3&gt;
 &lt;p&gt;3.3V/5V and 8MHz/16MHz. Includes connections for the updated ADC6/ADC7 pins.&lt;/p&gt;</description>
-<wire x1="-7.62" y1="17.78" x2="-7.62" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-22.86" x2="10.16" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-22.86" x2="10.16" y2="17.78" width="0.254" layer="94"/>
-<wire x1="10.16" y1="17.78" x2="-7.62" y2="17.78" width="0.254" layer="94"/>
-<text x="-7.62" y="18.542" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-7.62" y="-23.114" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
-<pin name="2" x="-10.16" y="5.08" length="short"/>
-<pin name="*3" x="-10.16" y="2.54" length="short"/>
-<pin name="4" x="-10.16" y="0" length="short"/>
-<pin name="*5" x="-10.16" y="-2.54" length="short"/>
-<pin name="*6" x="-10.16" y="-5.08" length="short"/>
-<pin name="7" x="-10.16" y="-7.62" length="short"/>
-<pin name="8" x="-10.16" y="-10.16" length="short"/>
-<pin name="*9" x="-10.16" y="-12.7" length="short"/>
-<pin name="*10" x="12.7" y="-12.7" length="short" rot="R180"/>
-<pin name="*11" x="12.7" y="-10.16" length="short" rot="R180"/>
-<pin name="12" x="12.7" y="-7.62" length="short" rot="R180"/>
-<pin name="13" x="12.7" y="-5.08" length="short" rot="R180"/>
-<pin name="A0" x="12.7" y="-2.54" length="short" rot="R180"/>
-<pin name="A1" x="12.7" y="0" length="short" rot="R180"/>
-<pin name="A2" x="12.7" y="2.54" length="short" rot="R180"/>
-<pin name="A3" x="12.7" y="5.08" length="short" rot="R180"/>
-<pin name="GND" x="-10.16" y="7.62" length="short" direction="pwr"/>
-<pin name="GND@2" x="12.7" y="12.7" length="short" direction="pwr" rot="R180"/>
-<pin name="RAW" x="12.7" y="15.24" length="short" direction="pwr" rot="R180"/>
-<pin name="RST" x="-10.16" y="10.16" length="short"/>
-<pin name="RST@2" x="12.7" y="10.16" length="short" rot="R180"/>
-<pin name="RXI" x="-10.16" y="12.7" length="short"/>
-<pin name="TXO" x="-10.16" y="15.24" length="short"/>
-<pin name="VCC" x="12.7" y="7.62" length="short" direction="pwr" rot="R180"/>
-<pin name="A7" x="12.7" y="-17.78" length="short" rot="R180"/>
-<pin name="A6" x="12.7" y="-20.32" length="short" rot="R180"/>
-<pin name="A4" x="-10.16" y="-17.78" length="short"/>
-<pin name="A5" x="-10.16" y="-20.32" length="short"/>
+<wire x1="-7.62" y1="20.32" x2="-7.62" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-20.32" x2="10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-20.32" x2="10.16" y2="20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="20.32" x2="-7.62" y2="20.32" width="0.254" layer="94"/>
+<text x="-7.62" y="21.082" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-7.62" y="-20.574" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<pin name="2" x="-10.16" y="7.62" length="short"/>
+<pin name="*3" x="-10.16" y="5.08" length="short"/>
+<pin name="4" x="-10.16" y="2.54" length="short"/>
+<pin name="*5" x="-10.16" y="0" length="short"/>
+<pin name="*6" x="-10.16" y="-2.54" length="short"/>
+<pin name="7" x="-10.16" y="-5.08" length="short"/>
+<pin name="8" x="-10.16" y="-7.62" length="short"/>
+<pin name="*9" x="-10.16" y="-10.16" length="short"/>
+<pin name="*10" x="12.7" y="-10.16" length="short" rot="R180"/>
+<pin name="*11" x="12.7" y="-7.62" length="short" rot="R180"/>
+<pin name="12" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="13" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="A0" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="A1" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="A2" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="A3" x="12.7" y="7.62" length="short" rot="R180"/>
+<pin name="GND" x="-10.16" y="10.16" length="short" direction="pwr"/>
+<pin name="GND@2" x="12.7" y="15.24" length="short" direction="pwr" rot="R180"/>
+<pin name="RAW" x="12.7" y="17.78" length="short" direction="pwr" rot="R180"/>
+<pin name="RST" x="-10.16" y="12.7" length="short"/>
+<pin name="RST@2" x="12.7" y="12.7" length="short" rot="R180"/>
+<pin name="RXI" x="-10.16" y="15.24" length="short"/>
+<pin name="TXO" x="-10.16" y="17.78" length="short"/>
+<pin name="VCC" x="12.7" y="10.16" length="short" direction="pwr" rot="R180"/>
+<pin name="A7" x="12.7" y="-15.24" length="short" rot="R180"/>
+<pin name="A6" x="12.7" y="-17.78" length="short" rot="R180"/>
+<pin name="A4" x="-10.16" y="-15.24" length="short"/>
+<pin name="A5" x="-10.16" y="-17.78" length="short"/>
 </symbol>
 <symbol name="LOGIC_LEVEL_CONVERTER">
 <description>&lt;h3&gt;SparkFun Logic Level Converter - Bidirectional&lt;/h3&gt;
 &lt;p&gt;3.3v-5v&lt;/p&gt;</description>
-<pin name="HV_TXO_1" x="20.32" y="7.62" length="middle" rot="R180"/>
-<pin name="HV_RXI_1" x="20.32" y="5.08" length="middle" rot="R180"/>
-<pin name="HV" x="20.32" y="2.54" length="middle" direction="pwr" rot="R180"/>
-<pin name="GND@2" x="20.32" y="0" length="middle" direction="pwr" rot="R180"/>
-<pin name="HV_RXI_2" x="20.32" y="-2.54" length="middle" rot="R180"/>
-<pin name="HV_TXO_2" x="20.32" y="-5.08" length="middle" rot="R180"/>
-<pin name="LV_TXI_1" x="-17.78" y="7.62" length="middle"/>
-<pin name="LV" x="-17.78" y="2.54" length="middle" direction="pwr"/>
-<pin name="LV_RXO_1" x="-17.78" y="5.08" length="middle"/>
-<pin name="GND" x="-17.78" y="0" length="middle" direction="pwr"/>
-<pin name="LV_RXO_2" x="-17.78" y="-2.54" length="middle"/>
-<pin name="LV_TXI_2" x="-17.78" y="-5.08" length="middle"/>
-<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="10.16" x2="15.24" y2="10.16" width="0.254" layer="94"/>
-<wire x1="15.24" y1="10.16" x2="15.24" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
-<text x="-2.54" y="10.414" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-2.54" y="-7.874" size="1.778" layer="95" font="vector" align="top-left">&gt;VALUE</text>
+<pin name="HV_TXO_1" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="HV_RXI_1" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="HV" x="17.78" y="2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND@2" x="17.78" y="0" length="middle" direction="pwr" rot="R180"/>
+<pin name="HV_RXI_2" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="HV_TXO_2" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="LV_TXI_1" x="-20.32" y="7.62" length="middle"/>
+<pin name="LV" x="-20.32" y="2.54" length="middle" direction="pwr"/>
+<pin name="LV_RXO_1" x="-20.32" y="5.08" length="middle"/>
+<pin name="GND" x="-20.32" y="0" length="middle" direction="pwr"/>
+<pin name="LV_RXO_2" x="-20.32" y="-2.54" length="middle"/>
+<pin name="LV_TXI_2" x="-20.32" y="-5.08" length="middle"/>
+<wire x1="-15.24" y1="-7.62" x2="-15.24" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-15.24" y2="-7.62" width="0.254" layer="94"/>
+<text x="-5.08" y="10.414" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-5.08" y="-7.874" size="1.778" layer="95" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="ARDUINO_R3_SHIELD">
 <description>&lt;h3&gt;Arduino Uno R3-No ICSP&lt;/h3&gt;
@@ -4357,73 +4361,77 @@ Footprint for mating with Edison SBC.
 </symbol>
 <symbol name="BLACKBERRY_TRACKBALLER">
 <description>&lt;h3&gt;SparkFun BlackBerry Trackballer&lt;/h3&gt;
-&lt;p&gt;2.5-5.5V input&lt;/p&gt;</description>
-<wire x1="-10.16" y1="-2.54" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="17.78" x2="10.16" y2="17.78" width="0.254" layer="94"/>
-<wire x1="10.16" y1="17.78" x2="10.16" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-2.54" x2="10.16" y2="-2.54" width="0.254" layer="94"/>
-<text x="-10.16" y="18.288" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-10.16" y="-3.048" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
-<pin name="UP" x="-15.24" y="15.24" length="middle" direction="out"/>
-<pin name="DWN" x="-15.24" y="12.7" length="middle" direction="out"/>
-<pin name="LFT" x="-15.24" y="10.16" length="middle" direction="out"/>
-<pin name="RHT" x="-15.24" y="7.62" length="middle" direction="out"/>
-<pin name="WHT" x="15.24" y="15.24" length="middle" direction="in" rot="R180"/>
-<pin name="RED" x="15.24" y="10.16" length="middle" direction="in" rot="R180"/>
-<pin name="BLU" x="15.24" y="7.62" length="middle" direction="in" rot="R180"/>
-<pin name="GRN" x="15.24" y="12.7" length="middle" direction="in" rot="R180"/>
-<pin name="BTN" x="-15.24" y="2.54" length="middle" direction="out"/>
-<pin name="VCC" x="15.24" y="2.54" length="middle" direction="pwr" rot="R180"/>
-<pin name="GND" x="15.24" y="0" length="middle" direction="pwr" rot="R180"/>
+&lt;p&gt;&lt;li&gt;2.5-5.5V input&lt;/li&gt;
+&lt;li&gt;RGBW LED included in trackball&lt;/li&gt;
+&lt;li&gt;Reads directions Up, Down, Left, Right, and Button Click&lt;/li&gt;&lt;/p&gt;</description>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<text x="-10.16" y="10.668" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-10.16" y="-10.668" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<pin name="UP" x="-15.24" y="7.62" length="middle" direction="out"/>
+<pin name="DWN" x="-15.24" y="5.08" length="middle" direction="out"/>
+<pin name="LFT" x="-15.24" y="2.54" length="middle" direction="out"/>
+<pin name="RHT" x="-15.24" y="0" length="middle" direction="out"/>
+<pin name="WHT" x="15.24" y="7.62" length="middle" direction="in" rot="R180"/>
+<pin name="RED" x="15.24" y="2.54" length="middle" direction="in" rot="R180"/>
+<pin name="BLU" x="15.24" y="0" length="middle" direction="in" rot="R180"/>
+<pin name="GRN" x="15.24" y="5.08" length="middle" direction="in" rot="R180"/>
+<pin name="BTN" x="-15.24" y="-5.08" length="middle" direction="out"/>
+<pin name="VCC" x="15.24" y="-5.08" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="15.24" y="-7.62" length="middle" direction="pwr" rot="R180"/>
 </symbol>
 <symbol name="ARDUINO_R3">
 <description>&lt;h3&gt;Arduino Uno R3&lt;/h3&gt;
 &lt;p&gt;Symbol showing all available pins on Arduino Uno R3 footprint (including ICSP)&lt;/p&gt;</description>
-<wire x1="-10.16" y1="-35.56" x2="-10.16" y2="25.4" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="25.4" x2="10.16" y2="25.4" width="0.254" layer="94"/>
-<wire x1="10.16" y1="25.4" x2="10.16" y2="-35.56" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-35.56" x2="-10.16" y2="-35.56" width="0.254" layer="94"/>
-<text x="-9.652" y="26.162" size="1.778" layer="95" font="vector">&gt;Name</text>
-<text x="-10.16" y="-35.814" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
-<pin name="D0" x="12.7" y="22.86" visible="pin" length="short" rot="R180"/>
-<pin name="D1" x="12.7" y="20.32" visible="pin" length="short" rot="R180"/>
-<pin name="D2" x="12.7" y="17.78" visible="pin" length="short" rot="R180"/>
-<pin name="*D3" x="12.7" y="15.24" visible="pin" length="short" rot="R180"/>
-<pin name="D4" x="12.7" y="12.7" visible="pin" length="short" rot="R180"/>
-<pin name="*D5" x="12.7" y="10.16" visible="pin" length="short" rot="R180"/>
-<pin name="*D6" x="12.7" y="7.62" visible="pin" length="short" rot="R180"/>
-<pin name="D7" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
-<pin name="D8" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
-<pin name="*D9" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
-<pin name="*D10" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
-<pin name="*D11" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
-<pin name="D12" x="12.7" y="-10.16" visible="pin" length="short" rot="R180"/>
-<pin name="D13" x="12.7" y="-12.7" visible="pin" length="short" rot="R180"/>
-<pin name="A0" x="-12.7" y="22.86" visible="pin" length="short"/>
-<pin name="A1" x="-12.7" y="20.32" visible="pin" length="short"/>
-<pin name="A2" x="-12.7" y="17.78" visible="pin" length="short"/>
-<pin name="A3" x="-12.7" y="15.24" visible="pin" length="short"/>
-<pin name="A4" x="-12.7" y="12.7" visible="pin" length="short"/>
-<pin name="A5" x="-12.7" y="10.16" visible="pin" length="short"/>
-<pin name="VIN" x="-12.7" y="0" visible="pin" length="short"/>
-<pin name="!RESET!@1" x="-12.7" y="2.54" visible="pin" length="short"/>
-<pin name="5V" x="-12.7" y="-2.54" visible="pin" length="short"/>
-<pin name="AREF" x="-12.7" y="-7.62" visible="pin" length="short"/>
-<pin name="GND@2" x="-12.7" y="-10.16" visible="pin" length="short"/>
-<pin name="GND@1" x="-12.7" y="-12.7" visible="pin" length="short"/>
-<pin name="GND@0" x="-12.7" y="-15.24" visible="pin" length="short"/>
-<pin name="3.3V" x="-12.7" y="-5.08" visible="pin" length="short"/>
-<pin name="IOREF" x="-12.7" y="5.08" visible="pin" length="short"/>
-<pin name="SDA" x="12.7" y="-15.24" visible="pin" length="short" rot="R180"/>
-<pin name="SCL" x="12.7" y="-17.78" visible="pin" length="short" rot="R180"/>
-<pin name="VCC" x="-12.7" y="-20.32" visible="pin" length="short"/>
-<pin name="MISO" x="-12.7" y="-22.86" visible="pin" length="short"/>
-<pin name="MOSI" x="-12.7" y="-25.4" visible="pin" length="short"/>
-<pin name="SCK" x="-12.7" y="-27.94" visible="pin" length="short"/>
-<pin name="!RESET!@2" x="-12.7" y="-30.48" visible="pin" length="short"/>
-<pin name="GND" x="-12.7" y="-33.02" visible="pin" length="short"/>
+<wire x1="-10.16" y1="-30.48" x2="-10.16" y2="30.48" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="30.48" x2="10.16" y2="30.48" width="0.254" layer="94"/>
+<wire x1="10.16" y1="30.48" x2="10.16" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-30.48" x2="-10.16" y2="-30.48" width="0.254" layer="94"/>
+<text x="-9.652" y="31.242" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-30.734" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
+<pin name="D0" x="12.7" y="27.94" visible="pin" length="short" rot="R180"/>
+<pin name="D1" x="12.7" y="25.4" visible="pin" length="short" rot="R180"/>
+<pin name="D2" x="12.7" y="22.86" visible="pin" length="short" rot="R180"/>
+<pin name="*D3" x="12.7" y="20.32" visible="pin" length="short" rot="R180"/>
+<pin name="D4" x="12.7" y="17.78" visible="pin" length="short" rot="R180"/>
+<pin name="*D5" x="12.7" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="*D6" x="12.7" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="D7" x="12.7" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="D8" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="*D9" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="*D10" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="*D11" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="D12" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="D13" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="A0" x="-12.7" y="27.94" visible="pin" length="short"/>
+<pin name="A1" x="-12.7" y="25.4" visible="pin" length="short"/>
+<pin name="A2" x="-12.7" y="22.86" visible="pin" length="short"/>
+<pin name="A3" x="-12.7" y="20.32" visible="pin" length="short"/>
+<pin name="A4" x="-12.7" y="17.78" visible="pin" length="short"/>
+<pin name="A5" x="-12.7" y="15.24" visible="pin" length="short"/>
+<pin name="VIN" x="-12.7" y="5.08" visible="pin" length="short"/>
+<pin name="!RESET!@1" x="-12.7" y="7.62" visible="pin" length="short"/>
+<pin name="5V" x="-12.7" y="2.54" visible="pin" length="short"/>
+<pin name="AREF" x="-12.7" y="-2.54" visible="pin" length="short"/>
+<pin name="GND@2" x="-12.7" y="-5.08" visible="pin" length="short"/>
+<pin name="GND@1" x="-12.7" y="-7.62" visible="pin" length="short"/>
+<pin name="GND@0" x="-12.7" y="-10.16" visible="pin" length="short"/>
+<pin name="3.3V" x="-12.7" y="0" visible="pin" length="short"/>
+<pin name="IOREF" x="-12.7" y="10.16" visible="pin" length="short"/>
+<pin name="SDA" x="12.7" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="SCL" x="12.7" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="VCC" x="-12.7" y="-15.24" visible="pin" length="short"/>
+<pin name="MISO" x="-12.7" y="-17.78" visible="pin" length="short"/>
+<pin name="MOSI" x="-12.7" y="-20.32" visible="pin" length="short"/>
+<pin name="SCK" x="-12.7" y="-22.86" visible="pin" length="short"/>
+<pin name="!RESET!@2" x="-12.7" y="-25.4" visible="pin" length="short"/>
+<pin name="GND" x="-12.7" y="-27.94" visible="pin" length="short"/>
 </symbol>
 <symbol name="TEENSY-31">
+<description>&lt;h3&gt;Teensy 3.1&lt;/h3&gt;
+&lt;p&gt;Breaks out all the PTH pins on the Teensy 3.1. Does not break out all of the additional SMD pins on the underside of the Teensy, or the external crystal pins. &lt;/p&gt;</description>
 <wire x1="-15.24" y1="-33.02" x2="-15.24" y2="30.48" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="30.48" x2="12.7" y2="30.48" width="0.254" layer="94"/>
 <wire x1="12.7" y1="30.48" x2="12.7" y2="-33.02" width="0.254" layer="94"/>
@@ -4617,181 +4625,183 @@ Footprint for mating with Edison SBC.
 <description>&lt;h3&gt;Intel Edison - Basic Connections&lt;/h3&gt;
 &lt;p&gt;Basic power/IO connections required to get started with the module. 
 Only shows part of the Hirose pins available on the Edison. &lt;/p&gt;</description>
-<pin name="VSYS@1" x="-2.54" y="0" length="short" direction="pwr"/>
-<pin name="3.3V@1" x="-2.54" y="-10.16" length="short" direction="pwr"/>
-<pin name="1.8V" x="-2.54" y="-17.78" length="short" direction="pwr"/>
-<pin name="GND@1" x="-2.54" y="-22.86" length="short" direction="pwr"/>
-<pin name="3.3V@2" x="-2.54" y="-12.7" length="short" direction="pwr"/>
-<pin name="VSYS@2" x="-2.54" y="-2.54" length="short" direction="pwr"/>
-<pin name="VSYS@3" x="-2.54" y="-5.08" length="short" direction="pwr"/>
-<pin name="GND@2" x="-2.54" y="-25.4" length="short" direction="pwr"/>
-<pin name="GND@3" x="-2.54" y="-27.94" length="short" direction="pwr"/>
-<pin name="GND@4" x="-2.54" y="-30.48" length="short" direction="pwr"/>
-<pin name="GND@5" x="-2.54" y="-33.02" length="short" direction="pwr"/>
-<pin name="GND@6" x="-2.54" y="-35.56" length="short" direction="pwr"/>
-<wire x1="0" y1="2.54" x2="30.48" y2="2.54" width="0.254" layer="94"/>
-<wire x1="30.48" y1="2.54" x2="30.48" y2="-38.1" width="0.254" layer="94"/>
-<wire x1="30.48" y1="-38.1" x2="0" y2="-38.1" width="0.254" layer="94"/>
-<wire x1="0" y1="-38.1" x2="0" y2="2.54" width="0.254" layer="94"/>
-<text x="0" y="2.794" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="0" y="-38.354" size="1.778" layer="96" font="vector" align="top-left">Basic Connections</text>
-<pin name="MSIC_SLP_CLK" x="33.02" y="-27.94" length="short" rot="R180"/>
-<pin name="PWRBTN#" x="33.02" y="0" length="short" rot="R180"/>
-<pin name="V_VAT_BKUP" x="33.02" y="-22.86" length="short" direction="pwr" rot="R180"/>
-<pin name="RESET_OUT#" x="33.02" y="-2.54" length="short" rot="R180"/>
-<pin name="OSC_CLK_OUT_0" x="33.02" y="-15.24" length="short" rot="R180"/>
-<pin name="RCVR_MODE" x="33.02" y="-10.16" length="short" rot="R180"/>
-<pin name="FW_RCVR" x="33.02" y="-7.62" length="short" rot="R180"/>
-<pin name="DCIN" x="-2.54" y="-7.62" length="short" direction="pwr"/>
+<pin name="VSYS@1" x="-17.78" y="17.78" length="short" direction="pwr"/>
+<pin name="3.3V@1" x="-17.78" y="7.62" length="short" direction="pwr"/>
+<pin name="1.8V" x="-17.78" y="0" length="short" direction="pwr"/>
+<pin name="GND@1" x="-17.78" y="-5.08" length="short" direction="pwr"/>
+<pin name="3.3V@2" x="-17.78" y="5.08" length="short" direction="pwr"/>
+<pin name="VSYS@2" x="-17.78" y="15.24" length="short" direction="pwr"/>
+<pin name="VSYS@3" x="-17.78" y="12.7" length="short" direction="pwr"/>
+<pin name="GND@2" x="-17.78" y="-7.62" length="short" direction="pwr"/>
+<pin name="GND@3" x="-17.78" y="-10.16" length="short" direction="pwr"/>
+<pin name="GND@4" x="-17.78" y="-12.7" length="short" direction="pwr"/>
+<pin name="GND@5" x="-17.78" y="-15.24" length="short" direction="pwr"/>
+<pin name="GND@6" x="-17.78" y="-17.78" length="short" direction="pwr"/>
+<wire x1="-15.24" y1="20.32" x2="15.24" y2="20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="20.32" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-20.32" x2="-15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-20.32" x2="-15.24" y2="20.32" width="0.254" layer="94"/>
+<text x="-15.24" y="20.574" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-15.24" y="-20.574" size="1.778" layer="96" font="vector" align="top-left">Basic Connections</text>
+<pin name="MSIC_SLP_CLK" x="17.78" y="-10.16" length="short" rot="R180"/>
+<pin name="PWRBTN#" x="17.78" y="17.78" length="short" rot="R180"/>
+<pin name="V_VAT_BKUP" x="17.78" y="-5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="RESET_OUT#" x="17.78" y="15.24" length="short" rot="R180"/>
+<pin name="OSC_CLK_OUT_0" x="17.78" y="2.54" length="short" rot="R180"/>
+<pin name="RCVR_MODE" x="17.78" y="7.62" length="short" rot="R180"/>
+<pin name="FW_RCVR" x="17.78" y="10.16" length="short" rot="R180"/>
+<pin name="DCIN" x="-17.78" y="10.16" length="short" direction="pwr"/>
 </symbol>
 <symbol name="EDISON_CONNECTOR_GPIO">
 <description>&lt;h3&gt;Intel Edison - GPIO Connections&lt;/h3&gt;
 &lt;p&gt;GPIO connections on the module. 
 Only shows part of the Hirose pins available on the Edison. &lt;/p&gt;</description>
-<pin name="GP44" x="-2.54" y="0" length="short"/>
-<pin name="GP165" x="-2.54" y="-2.54" length="short"/>
-<pin name="GP45" x="-2.54" y="-5.08" length="short"/>
-<pin name="GP46" x="-2.54" y="-7.62" length="short"/>
-<pin name="GP47" x="-2.54" y="-10.16" length="short"/>
-<pin name="GP48" x="-2.54" y="-12.7" length="short"/>
-<pin name="GP49" x="-2.54" y="-15.24" length="short"/>
-<pin name="GP15" x="-2.54" y="-17.78" length="short"/>
-<pin name="GP14" x="-2.54" y="-20.32" length="short"/>
-<pin name="GP12_PWM0" x="-2.54" y="-25.4" length="short"/>
-<pin name="GP13_PWM1" x="-2.54" y="-27.94" length="short"/>
-<pin name="GP182_PWM2" x="-2.54" y="-30.48" length="short"/>
-<pin name="GP183_PWM3" x="-2.54" y="-33.02" length="short"/>
-<wire x1="0" y1="2.54" x2="17.78" y2="2.54" width="0.254" layer="94"/>
-<wire x1="17.78" y1="2.54" x2="17.78" y2="-35.56" width="0.254" layer="94"/>
-<wire x1="17.78" y1="-35.56" x2="0" y2="-35.56" width="0.254" layer="94"/>
-<wire x1="0" y1="-35.56" x2="0" y2="2.54" width="0.254" layer="94"/>
-<text x="0" y="2.794" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="0" y="-35.814" size="1.778" layer="96" font="vector" align="top-left">GPIO</text>
+<pin name="GP44" x="-12.7" y="15.24" length="short"/>
+<pin name="GP165" x="-12.7" y="12.7" length="short"/>
+<pin name="GP45" x="-12.7" y="10.16" length="short"/>
+<pin name="GP46" x="-12.7" y="7.62" length="short"/>
+<pin name="GP47" x="-12.7" y="5.08" length="short"/>
+<pin name="GP48" x="-12.7" y="2.54" length="short"/>
+<pin name="GP49" x="-12.7" y="0" length="short"/>
+<pin name="GP15" x="-12.7" y="-2.54" length="short"/>
+<pin name="GP14" x="-12.7" y="-5.08" length="short"/>
+<pin name="GP12_PWM0" x="-12.7" y="-10.16" length="short"/>
+<pin name="GP13_PWM1" x="-12.7" y="-12.7" length="short"/>
+<pin name="GP182_PWM2" x="-12.7" y="-15.24" length="short"/>
+<pin name="GP183_PWM3" x="-12.7" y="-17.78" length="short"/>
+<wire x1="-10.16" y1="17.78" x2="7.62" y2="17.78" width="0.254" layer="94"/>
+<wire x1="7.62" y1="17.78" x2="7.62" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-20.32" x2="-10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-20.32" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
+<text x="-10.16" y="18.034" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-10.16" y="-20.574" size="1.778" layer="96" font="vector" align="top-left">GPIO</text>
 </symbol>
 <symbol name="EDISON_CONNECTOR_I2C_1">
 <description>&lt;h3&gt;Intel Edison - I2C 1&lt;/h3&gt;
 &lt;p&gt;I2C_1 connections on the module. 
 Only shows part of the Hirose pins available on the Edison. &lt;/p&gt;</description>
-<pin name="GP19_I2C_1_SCL" x="-2.54" y="-2.54" length="short"/>
-<pin name="GP20_I2C_1_SDA" x="-2.54" y="0" length="short"/>
-<wire x1="0" y1="2.54" x2="22.86" y2="2.54" width="0.254" layer="94"/>
-<wire x1="22.86" y1="2.54" x2="22.86" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="22.86" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="-5.08" x2="0" y2="2.54" width="0.254" layer="94"/>
-<text x="0" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">I2C 1</text>
-<text x="0" y="2.794" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<pin name="GP19_I2C_1_SCL" x="-15.24" y="0" length="short"/>
+<pin name="GP20_I2C_1_SDA" x="-15.24" y="2.54" length="short"/>
+<wire x1="-12.7" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="-12.7" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-2.54" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
+<text x="-12.7" y="-2.794" size="1.778" layer="96" font="vector" align="top-left">I2C 1</text>
+<text x="-12.7" y="5.334" size="1.778" layer="95" font="vector">&gt;NAME</text>
 </symbol>
 <symbol name="EDISON_CONNECTOR_I2C_6">
 <description>&lt;h3&gt;Intel Edison - I2C 6&lt;/h3&gt;
 &lt;p&gt;I2C_6 connections on the module. 
 Only shows part of the Hirose pins available on the Edison. &lt;/p&gt;</description>
-<pin name="GP27_I2C_6_SCL" x="-2.54" y="-2.54" length="short"/>
-<pin name="GP28_I2C_6_SDA" x="-2.54" y="0" length="short"/>
-<wire x1="0" y1="2.54" x2="22.86" y2="2.54" width="0.254" layer="94"/>
-<wire x1="22.86" y1="2.54" x2="22.86" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="22.86" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="-5.08" x2="0" y2="2.54" width="0.254" layer="94"/>
-<text x="0" y="2.794" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="0" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">I2C 6</text>
+<pin name="GP27_I2C_6_SCL" x="-15.24" y="0" length="short"/>
+<pin name="GP28_I2C_6_SDA" x="-15.24" y="2.54" length="short"/>
+<wire x1="-12.7" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="-12.7" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-2.54" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
+<text x="-12.7" y="5.334" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-12.7" y="-2.794" size="1.778" layer="96" font="vector" align="top-left">I2C 6</text>
 </symbol>
 <symbol name="EDISON_CONNECTOR_I2S_2">
 <description>&lt;h3&gt;Intel Edison - I2S2&lt;/h3&gt;
 &lt;p&gt;I2S2 connections on the module. 
 Only shows part of the Hirose pins available on the Edison. &lt;/p&gt;</description>
-<pin name="GP42_I2S_2_RXD" x="-2.54" y="-7.62" length="short"/>
-<pin name="GP40_I2S_2_CLK" x="-2.54" y="-5.08" length="short"/>
-<pin name="GP41_I2S_2_FS" x="-2.54" y="-2.54" length="short"/>
-<pin name="GP43_I2S_2_TXD" x="-2.54" y="0" length="short"/>
-<wire x1="0" y1="2.54" x2="22.86" y2="2.54" width="0.254" layer="94"/>
-<wire x1="22.86" y1="2.54" x2="22.86" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="22.86" y1="-10.16" x2="0" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="0" y1="-10.16" x2="0" y2="2.54" width="0.254" layer="94"/>
-<text x="0" y="-10.414" size="1.778" layer="96" font="vector" align="top-left">I2S 2</text>
-<text x="0" y="2.794" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<pin name="GP42_I2S_2_RXD" x="-15.24" y="-2.54" length="short"/>
+<pin name="GP40_I2S_2_CLK" x="-15.24" y="0" length="short"/>
+<pin name="GP41_I2S_2_FS" x="-15.24" y="2.54" length="short"/>
+<pin name="GP43_I2S_2_TXD" x="-15.24" y="5.08" length="short"/>
+<wire x1="-12.7" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<text x="-12.7" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">I2S 2</text>
+<text x="-12.7" y="7.874" size="1.778" layer="95" font="vector">&gt;NAME</text>
 </symbol>
 <symbol name="EDISON_CONNECTOR_SD">
 <description>&lt;h3&gt;Intel Edison - SD&lt;/h3&gt;
 &lt;p&gt;SD connections on the module. 
 Only shows part of the Hirose pins available on the Edison. &lt;/p&gt;</description>
-<pin name="GP78_SD_0_CLK" x="-2.54" y="-12.7" length="short"/>
-<pin name="!GP77_SD_0_CD#" x="-2.54" y="-22.86" length="short"/>
-<pin name="GP79_SD_0_CMD" x="-2.54" y="-5.08" length="short"/>
-<pin name="GP80_SD_0_DAT0" x="-2.54" y="-17.78" length="short"/>
-<pin name="GP81_SD_0_DAT1" x="-2.54" y="-20.32" length="short"/>
-<pin name="GP82_SD_0_DAT2" x="-2.54" y="0" length="short"/>
-<pin name="GP83_SD_0_DAT3" x="-2.54" y="-2.54" length="short"/>
-<wire x1="0" y1="2.54" x2="25.4" y2="2.54" width="0.254" layer="94"/>
-<wire x1="25.4" y1="2.54" x2="25.4" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="25.4" y1="-30.48" x2="0" y2="-30.48" width="0.254" layer="94"/>
-<wire x1="0" y1="-30.48" x2="0" y2="2.54" width="0.254" layer="94"/>
-<text x="0" y="-30.734" size="1.778" layer="96" font="vector" align="top-left">SD</text>
-<text x="0" y="2.794" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<pin name="GP84_SD_0_CLK_FB" x="-2.54" y="-27.94" length="short"/>
+<pin name="GP78_SD_0_CLK" x="-15.24" y="2.54" length="short"/>
+<pin name="!GP77_SD_0_CD#" x="-15.24" y="-7.62" length="short"/>
+<pin name="GP79_SD_0_CMD" x="-15.24" y="10.16" length="short"/>
+<pin name="GP80_SD_0_DAT0" x="-15.24" y="-2.54" length="short"/>
+<pin name="GP81_SD_0_DAT1" x="-15.24" y="-5.08" length="short"/>
+<pin name="GP82_SD_0_DAT2" x="-15.24" y="15.24" length="short"/>
+<pin name="GP83_SD_0_DAT3" x="-15.24" y="12.7" length="short"/>
+<wire x1="-12.7" y1="17.78" x2="12.7" y2="17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="17.78" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="-12.7" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-15.24" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
+<text x="-12.7" y="-15.494" size="1.778" layer="96" font="vector" align="top-left">SD</text>
+<text x="-12.7" y="18.034" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<pin name="GP84_SD_0_CLK_FB" x="-15.24" y="-12.7" length="short"/>
 </symbol>
 <symbol name="EDISON_CONNECTOR_SPI_2">
 <description>&lt;h3&gt;Intel Edison - SPI 2&lt;/h3&gt;
 &lt;p&gt;SPI 2 connections on the module. 
 Only shows part of the Hirose pins available on the Edison. &lt;/p&gt;</description>
-<pin name="GP111_SPI_2_FS1" x="-2.54" y="-10.16" length="short"/>
-<pin name="GP110_SPI_2_FS0" x="-2.54" y="-7.62" length="short"/>
-<pin name="GP109_SPI_2_CLK" x="-2.54" y="-5.08" length="short"/>
-<pin name="GP115_SPI_2_TXD" x="-2.54" y="-2.54" length="short"/>
-<pin name="GP114_SPI_2_RXD" x="-2.54" y="0" length="short"/>
-<wire x1="0" y1="2.54" x2="22.86" y2="2.54" width="0.254" layer="94"/>
-<wire x1="22.86" y1="2.54" x2="22.86" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="22.86" y1="-12.7" x2="0" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="0" y1="-12.7" x2="0" y2="2.54" width="0.254" layer="94"/>
-<text x="0" y="2.794" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="0" y="-12.954" size="1.778" layer="96" font="vector" align="top-left">SPI 2</text>
+<pin name="GP111_SPI_2_FS1" x="-12.7" y="-5.08" length="short"/>
+<pin name="GP110_SPI_2_FS0" x="-12.7" y="-2.54" length="short"/>
+<pin name="GP109_SPI_2_CLK" x="-12.7" y="0" length="short"/>
+<pin name="GP115_SPI_2_TXD" x="-12.7" y="2.54" length="short"/>
+<pin name="GP114_SPI_2_RXD" x="-12.7" y="5.08" length="short"/>
+<wire x1="-10.16" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="-10.16" y="7.874" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-10.16" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">SPI 2</text>
 </symbol>
 <symbol name="EDISON_CONNECTOR_UART_1">
 <description>&lt;h3&gt;Intel Edison - UART 1&lt;/h3&gt;
 &lt;p&gt;UART 1 connections on the module. 
 Only shows part of the Hirose pins available on the Edison. &lt;/p&gt;</description>
-<pin name="GP131_UART_1_TX" x="-2.54" y="-7.62" length="short"/>
-<pin name="GP130_UART_1_RX" x="-2.54" y="-5.08" length="short"/>
-<pin name="GP129_UART_1_RTS" x="-2.54" y="-2.54" length="short"/>
-<pin name="GP128_UART_1_CTS" x="-2.54" y="0" length="short"/>
-<wire x1="0" y1="2.54" x2="25.4" y2="2.54" width="0.254" layer="94"/>
-<wire x1="25.4" y1="2.54" x2="25.4" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="25.4" y1="-10.16" x2="0" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="0" y1="-10.16" x2="0" y2="2.54" width="0.254" layer="94"/>
-<text x="0" y="-10.414" size="1.778" layer="96" font="vector" align="top-left">UART 1</text>
-<text x="0" y="2.794" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<pin name="GP131_UART_1_TX" x="-15.24" y="-2.54" length="short"/>
+<pin name="GP130_UART_1_RX" x="-15.24" y="0" length="short"/>
+<pin name="GP129_UART_1_RTS" x="-15.24" y="2.54" length="short"/>
+<pin name="GP128_UART_1_CTS" x="-15.24" y="5.08" length="short"/>
+<wire x1="-12.7" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="-12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<text x="-12.7" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">UART 1</text>
+<text x="-12.7" y="7.874" size="1.778" layer="95" font="vector">&gt;NAME</text>
 </symbol>
 <symbol name="EDISON_CONNECTOR_UART_2">
 <description>&lt;h3&gt;Intel Edison - UART 2&lt;/h3&gt;
 &lt;p&gt;UART 2 connections on the module. 
 Only shows part of the Hirose pins available on the Edison. &lt;/p&gt;</description>
-<pin name="GP134_UART_2_RX" x="-2.54" y="-2.54" length="short"/>
-<pin name="GP135_UART_2_TX" x="-2.54" y="0" length="short"/>
-<wire x1="0" y1="2.54" x2="25.4" y2="2.54" width="0.254" layer="94"/>
-<wire x1="25.4" y1="2.54" x2="25.4" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="25.4" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="-5.08" x2="0" y2="2.54" width="0.254" layer="94"/>
-<text x="0" y="2.794" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="0" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">UART 2</text>
+<pin name="GP134_UART_2_RX" x="-15.24" y="0" length="short"/>
+<pin name="GP135_UART_2_TX" x="-15.24" y="2.54" length="short"/>
+<wire x1="-12.7" y1="5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="12.7" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-2.54" x2="-12.7" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-2.54" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
+<text x="-12.7" y="5.334" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-12.7" y="-2.794" size="1.778" layer="96" font="vector" align="top-left">UART 2</text>
 </symbol>
 <symbol name="EDISON_CONNECTOR_USB">
 <description>&lt;h3&gt;Intel Edison - USB&lt;/h3&gt;
 &lt;p&gt;USB connections on the module. 
 Only shows part of the Hirose pins available on the Edison. &lt;/p&gt;</description>
-<pin name="USB_ID" x="-2.54" y="0" length="short"/>
-<pin name="USB_DP" x="-2.54" y="-2.54" length="short"/>
-<pin name="USB_DN" x="-2.54" y="-5.08" length="short"/>
-<pin name="USB_VBUS" x="-2.54" y="-7.62" length="short"/>
-<pin name="FAULT" x="-2.54" y="-10.16" length="short"/>
-<pin name="PSW" x="-2.54" y="-12.7" length="short"/>
-<wire x1="0" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
-<wire x1="15.24" y1="2.54" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-15.24" x2="0" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="0" y1="-15.24" x2="0" y2="2.54" width="0.254" layer="94"/>
-<text x="0" y="-15.494" size="1.778" layer="96" font="vector" align="top-left">USB</text>
-<text x="0" y="2.794" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<pin name="USB_ID" x="-10.16" y="7.62" length="short"/>
+<pin name="USB_DP" x="-10.16" y="5.08" length="short"/>
+<pin name="USB_DN" x="-10.16" y="2.54" length="short"/>
+<pin name="USB_VBUS" x="-10.16" y="0" length="short"/>
+<pin name="FAULT" x="-10.16" y="-2.54" length="short"/>
+<pin name="PSW" x="-10.16" y="-5.08" length="short"/>
+<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<text x="-7.62" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">USB</text>
+<text x="-7.62" y="10.414" size="1.778" layer="95" font="vector">&gt;NAME</text>
 </symbol>
 <symbol name="RGB_LIGHT_SENSOR_ISL29125">
 <description>&lt;h3&gt;SparkFun RGB Light Sensor - ISL29125&lt;/h3&gt;
-&lt;p&gt;3.3V, I2C&lt;/p&gt;</description>
+&lt;p&gt;3.3V, I2C&lt;/li&gt;
+&lt;li&gt;RGB Light sensor&lt;/li&gt;
+&lt;/p&gt;</description>
 <pin name="GND" x="-15.24" y="5.08" length="short" direction="pwr"/>
 <pin name="3.3V" x="-15.24" y="2.54" length="short" direction="pwr"/>
 <pin name="SDA" x="-15.24" y="0" length="short"/>
@@ -4801,7 +4811,8 @@ Only shows part of the Hirose pins available on the Edison. &lt;/p&gt;</descript
 <wire x1="-12.7" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
-<text x="-4.318" y="-2.54" size="1.27" layer="94">RGB Light 
+<text x="-4.318" y="-2.54" size="1.27" layer="94">SparkFun
+RGB Light 
 Sensor 
 ISL29125
 Breakout</text>
@@ -4809,12 +4820,17 @@ Breakout</text>
 <text x="-7.62" y="-7.874" size="1.778" layer="95" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="BIG_RED_PCB">
-<description>&lt;h3&gt;Big Red PCB Symbol&lt;/h3&gt;</description>
+<description>&lt;h3&gt;Big Red PCB Symbol&lt;/h3&gt;
+
+Symbol for the Big Red Enclosure PCB layout. This part is dimension-reference only, so there are no pins.</description>
 <text x="0" y="0" size="2.54" layer="94" font="vector">Big Red PCB</text>
 </symbol>
 <symbol name="THING">
 <description>&lt;h3&gt;SparkFun Thing&lt;/h3&gt;
-&lt;p&gt;Basic Breakout for ESP8266 WiFi IC.&lt;/p&gt;</description>
+&lt;p&gt;Basic Breakout for ESP8266 WiFi IC. Includes:
+&lt;li&gt;JST Battery connector&lt;/li&gt;
+&lt;li&gt;On/off switch&lt;/li&gt;
+Does not include connections for the onboard sensor footprints. &lt;/p&gt;</description>
 <wire x1="-12.7" y1="-17.78" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0.254" layer="94"/>
 <wire x1="12.7" y1="20.32" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
