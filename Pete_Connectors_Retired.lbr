@@ -2231,6 +2231,54 @@
 <text x="-3.175" y="6.985" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="1.905" y="6.985" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
+<package name="FFC_16">
+<wire x1="-11.4" y1="-3.2" x2="11.4" y2="-3.2" width="0.127" layer="21"/>
+<wire x1="-11.4" y1="-3.2" x2="-11.4" y2="-0.5" width="0.127" layer="21"/>
+<wire x1="11.4" y1="-3.2" x2="11.4" y2="-0.5" width="0.127" layer="21"/>
+<circle x="7.493" y="5.715" radius="0.3592" width="0.127" layer="21"/>
+<smd name="16" x="-7.5" y="3.9" dx="0.6" dy="1.8" layer="1"/>
+<smd name="15" x="-6.5" y="3.9" dx="0.6" dy="1.8" layer="1"/>
+<smd name="14" x="-5.5" y="3.9" dx="0.6" dy="1.8" layer="1"/>
+<smd name="13" x="-4.5" y="3.9" dx="0.6" dy="1.8" layer="1"/>
+<smd name="12" x="-3.5" y="3.9" dx="0.6" dy="1.8" layer="1"/>
+<smd name="11" x="-2.5" y="3.9" dx="0.6" dy="1.8" layer="1"/>
+<smd name="10" x="-1.5" y="3.9" dx="0.6" dy="1.8" layer="1"/>
+<smd name="9" x="-0.5" y="3.9" dx="0.6" dy="1.8" layer="1"/>
+<smd name="8" x="0.5" y="3.9" dx="0.6" dy="1.8" layer="1"/>
+<smd name="7" x="1.5" y="3.9" dx="0.6" dy="1.8" layer="1"/>
+<smd name="6" x="2.5" y="3.9" dx="0.6" dy="1.8" layer="1"/>
+<smd name="5" x="3.5" y="3.9" dx="0.6" dy="1.8" layer="1"/>
+<smd name="4" x="4.5" y="3.9" dx="0.6" dy="1.8" layer="1"/>
+<smd name="3" x="5.5" y="3.9" dx="0.6" dy="1.8" layer="1"/>
+<smd name="2" x="6.5" y="3.9" dx="0.6" dy="1.8" layer="1"/>
+<smd name="1" x="7.5" y="3.9" dx="0.6" dy="1.8" layer="1"/>
+<rectangle x1="-11.3" y1="-0.4" x2="-9" y2="2.1" layer="1"/>
+<rectangle x1="9" y1="-0.4" x2="11.3" y2="2.1" layer="1"/>
+<polygon width="0.127" layer="29">
+<vertex x="-11.43" y="2.286"/>
+<vertex x="-8.89" y="2.286"/>
+<vertex x="-8.89" y="-0.508"/>
+<vertex x="-11.43" y="-0.508"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="8.89" y="2.286"/>
+<vertex x="11.43" y="2.286"/>
+<vertex x="11.43" y="-0.508"/>
+<vertex x="8.89" y="-0.508"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="-11.303" y="2.159"/>
+<vertex x="-9.017" y="2.159"/>
+<vertex x="-9.017" y="-0.381"/>
+<vertex x="-11.303" y="-0.381"/>
+</polygon>
+<polygon width="0.0254" layer="31">
+<vertex x="9.017" y="2.159"/>
+<vertex x="11.303" y="2.159"/>
+<vertex x="11.303" y="-0.381"/>
+<vertex x="9.017" y="-0.381"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="CORTEX_DEBUG">
@@ -2576,6 +2624,30 @@
 <pin name="12" x="7.62" y="-15.24" visible="pad" length="middle" direction="pas" rot="R180"/>
 <pin name="25" x="-7.62" y="-15.24" visible="pad" length="middle" direction="pas"/>
 <pin name="13" x="7.62" y="-17.78" visible="pad" length="middle" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="KENT_LCD_CONN">
+<wire x1="-10.16" y1="-15.24" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<text x="-3.556" y="13.716" size="1.27" layer="94">&gt;VALUE</text>
+<text x="-3.302" y="-17.272" size="1.27" layer="94">&gt;NAME</text>
+<pin name="VSS1" x="-15.24" y="-5.08" length="middle"/>
+<pin name="VSS2" x="-15.24" y="-7.62" length="middle"/>
+<pin name="VSS3" x="-15.24" y="-10.16" length="middle"/>
+<pin name="VSS4" x="-15.24" y="-12.7" length="middle"/>
+<pin name="VCC" x="-15.24" y="10.16" length="middle"/>
+<pin name="VPWR1" x="-15.24" y="5.08" length="middle"/>
+<pin name="VPWR2" x="-15.24" y="2.54" length="middle"/>
+<pin name="VPWR3" x="-15.24" y="0" length="middle"/>
+<pin name="/RESET" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="BUSY" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="SCK" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="SO" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="SI" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="CS" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="NC1" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="NC2" x="15.24" y="-12.7" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3343,6 +3415,37 @@ This is the connector that will insert into an iPods. Use this connector to gain
 <connect gate="-1" pin="7" pad="7"/>
 <connect gate="-1" pin="8" pad="8"/>
 <connect gate="-1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="KENT_LCD_CONN">
+<description>Connector for Kent display (LCD-09560)</description>
+<gates>
+<gate name="G$1" symbol="KENT_LCD_CONN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FFC_16">
+<connects>
+<connect gate="G$1" pin="/RESET" pad="1"/>
+<connect gate="G$1" pin="BUSY" pad="2"/>
+<connect gate="G$1" pin="CS" pad="7"/>
+<connect gate="G$1" pin="NC1" pad="15"/>
+<connect gate="G$1" pin="NC2" pad="16"/>
+<connect gate="G$1" pin="SCK" pad="4"/>
+<connect gate="G$1" pin="SI" pad="6"/>
+<connect gate="G$1" pin="SO" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="9"/>
+<connect gate="G$1" pin="VPWR1" pad="10"/>
+<connect gate="G$1" pin="VPWR2" pad="11"/>
+<connect gate="G$1" pin="VPWR3" pad="13"/>
+<connect gate="G$1" pin="VSS1" pad="3"/>
+<connect gate="G$1" pin="VSS2" pad="8"/>
+<connect gate="G$1" pin="VSS3" pad="12"/>
+<connect gate="G$1" pin="VSS4" pad="14"/>
 </connects>
 <technologies>
 <technology name=""/>
