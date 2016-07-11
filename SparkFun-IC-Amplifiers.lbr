@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -157,7 +157,7 @@
 <vertex x="-4.28625" y="-2.69875" curve="90"/>
 </polygon>
 </package>
-<package name="DIL08">
+<package name="DIP08">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
 <pad name="1" x="-3.81" y="-3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
 <pad name="2" x="-1.27" y="-3.81" drill="0.8128" diameter="1.6256" rot="R90"/>
@@ -182,7 +182,7 @@
 <vertex x="-5.715" y="-3.65125" curve="-90"/>
 </polygon>
 </package>
-<package name="DIL08-KIT">
+<package name="DIP08-KIT">
 <pad name="1" x="-3.81" y="-4.191" drill="0.8128" diameter="1.905" stop="no"/>
 <pad name="2" x="-1.27" y="-4.191" drill="0.8128" diameter="1.905" stop="no"/>
 <pad name="3" x="1.27" y="-4.191" drill="0.8128" diameter="1.905" stop="no"/>
@@ -590,9 +590,17 @@ MSOP&lt;br&gt;
 </symbols>
 <devicesets>
 <deviceset name="AD8607" prefix="U">
-<description>Micropower Low-noise Rail to Rail OP-AMP&lt;br&gt;
+<description>&lt;h3&gt;Micropower Low-noise Rail to Rail OP-AMP&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=""&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=""&gt;&lt;/a&gt; ()&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;br&gt;
-Proto: IC-13133&lt;br&gt;</description>
+
+&lt;p&gt;Currently in prototype (unknown project)&lt;/p&gt;</description>
 <gates>
 <gate name="A" symbol="OP-AMP+--2" x="-15.24" y="0"/>
 <gate name="B" symbol="OP-AMP-1-1" x="12.7" y="0"/>
@@ -619,11 +627,18 @@ Proto: IC-13133&lt;br&gt;</description>
 </devices>
 </deviceset>
 <deviceset name="ADC8045" prefix="U" uservalue="yes">
-<description>Unity-gain stable feedback amplifier.&lt;br&gt;
-Low noise, low distortion, 1GHz BW.&lt;br&gt;
+<description>&lt;h3&gt;Unity-gain stable feedback amplifier&lt;/h3&gt;
+&lt;p&gt;Low noise, low distortion, 1GHz BW.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/BreakoutBoards/AD8045.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11420"&gt;SparkFun MiniGen - Pro Mini Signal Generator Shield&lt;/a&gt; (BOB-11420)&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;br&gt;
-VFP: IC-11224&lt;br&gt;
-TODO: Fix this insane symbol&lt;br&gt;</description>
+
+&lt;p&gt;TODO: Fix this insane symbol&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="ADC8045" x="0" y="0"/>
 </gates>
@@ -647,18 +662,14 @@ TODO: Fix this insane symbol&lt;br&gt;</description>
 </devices>
 </deviceset>
 <deviceset name="LM339" prefix="U">
-<description>&lt;p&gt;Based on information from the SLCS006N datasheet from TI (www.ti.com).&lt;/p&gt;
-&lt;table align=center&gt;
-  &lt;tr&gt;&lt;td&gt;&lt;h2&gt;Change Log&lt;/h2&gt;&lt;/td&gt;&lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;th&gt;Date&lt;/th&gt;&lt;th&gt;Author&lt;/th&gt;&lt;th&gt;Change&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;July 16, 2008&lt;/td&gt;&lt;td&gt;nick@scantool.net&lt;/td&gt;&lt;td&gt;Device created.&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-&lt;br&gt;
-VFP: IC-09990</description>
+<description>&lt;h3&gt;Quad Comparator - LM339PWR&lt;/h3&gt;
+&lt;p&gt;Based on information from the SLCS006N datasheet from TI (www.ti.com).&lt;/p&gt;
+&lt;p&gt;Created by nick@scantool.net, 2008.  Updated 2016.&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9555"&gt;SparkFun OBD-II UART&lt;/a&gt; (WIG-09555)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10769"&gt;SparkFun Car Diagnostics Kit&lt;/a&gt; (RTL-10769)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="B" symbol="LM339" x="10.16" y="7.62" swaplevel="1"/>
 <gate name="A" symbol="LM339" x="-20.32" y="7.62" swaplevel="1"/>
@@ -686,26 +697,27 @@ VFP: IC-09990</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DESC" value="IC, Quad Comparator" constant="no"/>
-<attribute name="MANUF" value="Texas Instruments" constant="no"/>
-<attribute name="PARTNUM" value="LM339PWR" constant="no"/>
-<attribute name="SUPPLIER" value="Digikey:296-6607-1-ND" constant="no"/>
-<attribute name="VALSTAT" value="PARTNUM" constant="no"/>
+<attribute name="PROD_ID" value="IC-09990" constant="no"/>
+<attribute name="VALUE" value="LM339PWR" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="LM358" prefix="IC">
-<description>Jellybean op-amp&lt;br&gt;
-&lt;br&gt;
-VFP: IC-09172&lt;br&gt;</description>
+<description>&lt;h3&gt;LM358&lt;/h3&gt;
+&lt;p&gt;Jellybean op-amp&lt;p&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Components/General/LM358.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9456"&gt;Op-Amp (Thru-Hole) - LM358&lt;/a&gt; (COM-09456)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G1" symbol="OP-AMP+-" x="0" y="20.32"/>
 <gate name="G2" symbol="OP-AMP" x="2.54" y="-15.24"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP08">
 <connects>
 <connect gate="G1" pin="+IN" pad="3"/>
 <connect gate="G1" pin="-IN" pad="2"/>
@@ -719,10 +731,11 @@ VFP: IC-09172&lt;br&gt;</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-09172" constant="no"/>
+<attribute name="VALUE" value="LM358" constant="no"/>
 </technology>
 </technologies>
 </device>
-<device name="KIT" package="DIL08-KIT">
+<device name="KIT" package="DIP08-KIT">
 <connects>
 <connect gate="G1" pin="+IN" pad="3"/>
 <connect gate="G1" pin="-IN" pad="2"/>
@@ -736,20 +749,24 @@ VFP: IC-09172&lt;br&gt;</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-09172" constant="no"/>
+<attribute name="VALUE" value="LM358" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="LM386" prefix="U">
-<description>low voltage audio power amplifier&lt;br&gt;
-&lt;br&gt;
-VFP: IC-10899 in PTH</description>
+<description>&lt;h3&gt;low voltage audio power amplifier&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11043"&gt;FabFM Radio Kit&lt;/a&gt; (KIT-11043)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="OP-AMP+-FULL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP08">
 <connects>
 <connect gate="G$1" pin="+IN" pad="3"/>
 <connect gate="G$1" pin="-IN" pad="2"/>
@@ -761,15 +778,24 @@ VFP: IC-10899 in PTH</description>
 <connect gate="G$1" pin="V-" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-10899" constant="no"/>
+<attribute name="VALUE" value="LM386N" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="LMV324" prefix="IC">
-<description>Jellybean quad op-amp&lt;br&gt;
-&lt;br&gt;
-VFP: IC-08227&lt;br&gt;</description>
+<description>&lt;h3&gt;IC LMV324 Quad Op Amp &lt;/h3&gt;
+&lt;p&gt;Jellybean quad op-amp&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Sensors/Sound/LMV324.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13754"&gt;SparkFun Sensor Kit&lt;/a&gt; (DEV-13754)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13844"&gt;SparkFun Inventor's Kit for Arduino 101&lt;/a&gt; (KIT-13844)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12642"&gt;SparkFun Sound Detector&lt;/a&gt; (SEN-12642)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G1" symbol="LMV324" x="-7.62" y="0" swaplevel="1"/>
 <gate name="G3" symbol="LMV324_2" x="0" y="-40.64" swaplevel="1"/>
@@ -804,10 +830,15 @@ VFP: IC-08227&lt;br&gt;</description>
 </devices>
 </deviceset>
 <deviceset name="LMV358" prefix="IC">
-<description>Jellybean rail-to-rail output op-amp&lt;br&gt;
-&lt;br&gt;
-&lt;br&gt;
-VFP: IC-09657</description>
+<description>&lt;h3&gt;IC LMV358 DUAL OP AMP&lt;/h3&gt;
+&lt;p&gt;Jellybean rail-to-rail output op-amp&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11888"&gt;SparkFun PicoBoard&lt;/a&gt; (WIG-11888)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12858"&gt;SparkFun Vernier Interface Shield&lt;/a&gt; (DEV-12858)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13794"&gt;SparkFun Blynk Board - ESP8266&lt;/a&gt; (WRL-13794)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12651"&gt;SparkFun Digital Sandbox&lt;/a&gt; (DEV-12651 RoHS)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G1" symbol="OPAMP_2" x="0" y="15.24"/>
 <gate name="G2" symbol="OPAMP_2_1" x="0" y="-12.7"/>
@@ -827,15 +858,19 @@ VFP: IC-09657</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-09657"/>
+<attribute name="VALUE" value="LMV358" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="MCP6021">
-<description>Rail-to-rail input/output op-amp with 10 MHz bandwidth.&lt;br&gt;
-&lt;br&gt;
-VFP: IC-12504&lt;br&gt;</description>
+<description>&lt;h3&gt;MCP6021T-E/OT OP AMP&lt;/h3&gt;
+&lt;p&gt;Rail-to-rail input/output op-amp with 10 MHz bandwidth.&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12780"&gt;ZX Distance and Gesture Sensor&lt;/a&gt; (SEN-12780)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="OP-AMP+-" x="0" y="0"/>
 </gates>
@@ -851,15 +886,21 @@ VFP: IC-12504&lt;br&gt;</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-12504"/>
+<attribute name="VALUE" value="MCP6021T" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="OPA344">
-<description>Single gate rail-to-rail output op-amp. Inputs extend 300mV past rails.&lt;br&gt;
-&lt;br&gt;
-VFP: IC-08251</description>
+<description>&lt;h3&gt;&lt;/h3&gt;
+&lt;p&gt;Single gate rail-to-rail output op-amp. Inputs extend 300mV past rails.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.ti.com/product/OPA344"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8883"&gt;SparkFun Low Current Sensor&lt;/a&gt; (SEN-08883)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12758"&gt;SparkFun Electret Microphone Breakout&lt;/a&gt; (BOB-12758)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="OP-AMP+-" x="0" y="0"/>
 </gates>
@@ -875,15 +916,26 @@ VFP: IC-08251</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-08251" constant="no"/>
+<attribute name="VALUE" value="OPA344" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="OPAMP-DUAL" prefix="IC">
-<description>Generic op-amp footprint&lt;br&gt;
-&lt;br&gt;
-Standard 358 pinning</description>
+<description>&lt;h3&gt;Generic op-amp footprint&lt;/h3&gt;
+&lt;p&gt;This component is for the standard 358 pinning of a dual op-amp&lt;/p&gt;
+&lt;p&gt;From the LM358 datasheet:&lt;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pin 1: Output A&lt;/li&gt;
+&lt;li&gt;Pin 2: Inverting Input A&lt;/li&gt;
+&lt;li&gt;Pin 3: Non-Inverting Input A&lt;/li&gt;
+&lt;li&gt;Pin 4: Gnd&lt;/li&gt;
+&lt;li&gt;Pin 5: Non-Inverting Input B&lt;/li&gt;
+&lt;li&gt;Pin 6: Inverting Input B&lt;/li&gt;
+&lt;li&gt;Pin 7: Output B&lt;/li&gt;
+&lt;li&gt;Pin 8: V+&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="A" symbol="OP-AMP+-" x="-15.24" y="0"/>
 <gate name="B" symbol="OP-AMP" x="12.7" y="0"/>
@@ -901,10 +953,13 @@ Standard 358 pinning</description>
 <connect gate="B" pin="OUT" pad="7"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="NA-XXXXX" constant="no"/>
+<attribute name="VALUE" value="OP-AMP" constant="no"/>
+</technology>
 </technologies>
 </device>
-<device name="" package="DIL08">
+<device name="" package="DIP08">
 <connects>
 <connect gate="A" pin="+IN" pad="3"/>
 <connect gate="A" pin="-IN" pad="2"/>
@@ -916,16 +971,22 @@ Standard 358 pinning</description>
 <connect gate="B" pin="OUT" pad="7"/>
 </connects>
 <technologies>
-<technology name="DIP"/>
+<technology name="DIP">
+<attribute name="PROD_ID" value="NA-XXXXX" constant="no"/>
+<attribute name="VALUE" value="OP-AMP" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="TPA6138A2">
-<description>&lt;H3&gt;Headphone driver amp&lt;/h3&gt;&lt;p&gt;
-Differential to single-ended audio amplifier.&lt;br&gt;
-&lt;br&gt;
-VFP: IC-11779</description>
+<description>&lt;h3&gt;Headphone driver amp&lt;/h3&gt;
+&lt;p&gt;Differential to single-ended audio amplifier.&lt;/p&gt;
+&lt;p&gt;&lt;a href=""&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11924"&gt;SparkFun Purpletooth Jamboree - BC127 Development Board&lt;/a&gt; (WRL-11924)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="TPA6138A2" x="0" y="0"/>
 </gates>
@@ -947,16 +1008,18 @@ VFP: IC-11779</description>
 <connect gate="G$1" pin="VSS" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-11779" constant="no"/>
+<attribute name="VALUE" value="TPA6138A2" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="TPA2005D1" prefix="U">
-<description>&lt;b&gt;1.4W MONO CLASS-D AUDIO POWER AMPLIFIER&lt;/b&gt;&lt;p&gt;
-
-The TPA2005D1 is a 1.4-W high efficiency filter-free class-D audio power amplifier in a BGA, QFN, or MSOP package that requires only three external components.&lt;p&gt;
-Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf&lt;/a&gt;
+<description>&lt;h3&gt;1.4W MONO CLASS-D AUDIO POWER AMPLIFIER&lt;/h3&gt;
+&lt;p&gt;The TPA2005D1 is a 1.4-W high efficiency filter-free class-D audio power amplifier in a BGA, QFN, or MSOP package that requires only three external components.&lt;/p&gt;
+&lt;p&gt;Datasheet: &lt;a href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;1.4 W Into 8 ? From a 5V Supply at THD = 10% (Typ)&lt;/li&gt;
 &lt;li&gt;Maximum Battery Life and Minimum Heat&lt;/li&gt;
@@ -972,8 +1035,12 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 &lt;li&gt;Fully Differential Design Reduces RF Rectification and Eliminates Bypass Capacitor&lt;/li&gt;
 &lt;li&gt;Improved CMRR Eliminates Two Input Coupling Capacitors&lt;/li&gt;
 &lt;/ul&gt;
-&lt;br&gt;
-VFP: IC-10975</description>
+
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11044"&gt;SparkFun Mono Audio Amp Breakout - TPA2005D1&lt;/a&gt; (BOB-11044)&lt;/li&gt;
+&lt;/ul&gt;
+Note:  SparkFun currenly only uses the QFN style part</description>
 <gates>
 <gate name="G$1" symbol="TPA2005D1" x="0" y="0"/>
 </gates>
@@ -990,7 +1057,10 @@ VFP: IC-10975</description>
 <connect gate="G$1" pin="VDD" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="NA-XXXXX" constant="no"/>
+<attribute name="VALUE" value="TPA2005D1" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="DRB" package="QFN-8_PAD">
@@ -1005,15 +1075,21 @@ VFP: IC-10975</description>
 <connect gate="G$1" pin="VDD" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-10975" constant="no"/>
+<attribute name="VALUE" value="TPA2005D1" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="TPA6111" prefix="U">
-<description>TPA6111A2: Basic 150mW stereo headphone amplifier.&lt;br&gt;
-&lt;br&gt;
-VFP: IC-10149</description>
+<description>&lt;h3&gt;TPA6111A2&lt;/h3&gt;
+&lt;p&gt;Basic 150mW stereo headphone amplifier.&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12938"&gt;SparkFun FM Tuner Evaluation Board - Si4703&lt;/a&gt; (WRL-12938)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="TPA6111" x="0" y="0"/>
 </gates>
@@ -1032,6 +1108,7 @@ VFP: IC-10149</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-10149" constant="no"/>
+<attribute name="VALUE" value="TPA6111A2DR" constant="no"/>
 </technology>
 </technologies>
 </device>
