@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1738,21 +1738,6 @@ shrink quad flat pack, square</description>
 <smd name="28" x="2.921" y="4.6228" dx="0.8" dy="0.25" layer="1"/>
 <text x="0" y="5.715" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-5.715" size="0.6096" layer="27" font="vector" ratio="20" align="bottom-center">&gt;VALUE</text>
-</package>
-<package name="SOT23-3">
-<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-0.8" y1="0.7" x2="-1.4" y2="0.7" width="0.2032" layer="21"/>
-<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
-<wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.1" width="0.2032" layer="21"/>
-<smd name="3" x="0" y="1.1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
-<text x="-0.8255" y="1.778" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.016" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
 <package name="P8X32A-Q44">
 <wire x1="-5.7912" y1="-4.5974" x2="-5.7912" y2="-5.7912" width="0.2032" layer="21"/>
@@ -5792,17 +5777,6 @@ IC needs to have legs bent before insertion.</description>
 <pin name="(PCINT11/~RESET/DW)PB3" x="25.4" y="15.24" length="middle" rot="R180"/>
 <pin name="GND" x="-25.4" y="-15.24" length="middle"/>
 </symbol>
-<symbol name="ATSHA204">
-<pin name="SDA" x="-10.16" y="0" length="short"/>
-<pin name="VCC" x="7.62" y="2.54" length="short" rot="R180"/>
-<pin name="GND" x="7.62" y="-2.54" length="short" rot="R180"/>
-<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<text x="-7.62" y="5.588" size="1.778" layer="95">&gt;Name</text>
-<text x="-7.62" y="-7.366" size="1.778" layer="96">&gt;Value</text>
-</symbol>
 <symbol name="STM32F405RG">
 <wire x1="-22.86" y1="45.72" x2="25.4" y2="45.72" width="0.254" layer="94"/>
 <wire x1="25.4" y1="45.72" x2="25.4" y2="-43.18" width="0.254" layer="94"/>
@@ -7127,7 +7101,12 @@ RTC_GPIO3</text>
 </symbols>
 <devicesets>
 <deviceset name="ATMEGA8U2" prefix="U">
-<description>Atmel 32-pin 8-bit Microcontroller with 8/16/32K Bystes of ISP Flash and USB Controller. ATmega8U2, ATmega16U2, and ATmega32U2</description>
+<description>&lt;h3&gt;Atmel 32-pin 8-bit Microcontroller with 8/16/32K Bystes of ISP Flash and USB Controller. ATmega8U2, ATmega16U2, and ATmega32U2&lt;/h3&gt;
+&lt;p&gt;&lt;a href=""&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13703"&gt;Storefront component: ATMEGA8U2-AU&lt;/a&gt; (COM-13703)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ATMEGA8U2" x="0" y="0"/>
 </gates>
@@ -7168,13 +7147,18 @@ RTC_GPIO3</text>
 <connect gate="G$1" pin="XTAL2/PC0" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-10104" constant="no"/>
+<attribute name="VALUE" value="8U2-AU" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="ATMEGA128" prefix="U">
-<description>ATmega128/128L/1281/2561. Note: The ATmega128 pin 1 is PEN and the ATmega256/1281 pin 1 is PG5.</description>
+<description>&lt;h3&gt;ATmega 128&lt;/h3&gt;
+&lt;p&gt;ATmega128/128L/1281/2561. Note: The ATmega128 pin 1 is PEN and the ATmega256/1281 pin 1 is PG5.&lt;/p&gt;
+&lt;p&gt;Not in catalog&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="ATMEGA128" x="0" y="5.08"/>
 </gates>
@@ -7324,7 +7308,14 @@ RTC_GPIO3</text>
 </devices>
 </deviceset>
 <deviceset name="ATMEGA168" prefix="U">
-<description>Atmel 32-pin 8-bit micro, 16k flash.</description>
+<description>&lt;h3&gt;ATMEGA 168&lt;/h3&gt;
+&lt;p&gt;Atmel 32-pin 8-bit micro, 16k flash.&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9351"&gt;SparkFun Serial Graphic LCD 128x64&lt;/a&gt; (LCD-09351)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9352"&gt;SparkFun Graphic LCD Serial Backpack&lt;/a&gt; (LCD-09352)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8884"&gt;SparkFun Serial Graphic LCD 160x128&lt;/a&gt; (LCD-08884)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ATMEGAXX8-32PIN" x="0" y="0"/>
 </gates>
@@ -7365,7 +7356,10 @@ RTC_GPIO3</text>
 <connect gate="G$1" pin="VCC@6" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="NA-XXXXX" constant="no"/>
+<attribute name="VALUE" value="ATMEGA168" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="" package="TQFP32-08">
@@ -7404,20 +7398,28 @@ RTC_GPIO3</text>
 <connect gate="G$1" pin="VCC@6" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-08594" constant="no"/>
+<attribute name="VALUE" value="ATMEGA168" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="ATMEGA2560" prefix="U">
-<description>Atmel 100-pin 8-bit uC&lt;BR&gt;
+<description>&lt;h3&gt;Atmel 100-pin 8-bit uC&lt;/h3&gt;
 64/128/256 Kbytes FLASH&lt;BR&gt;
 4 Kbytes EEPROM&lt;BR&gt;
 8 Kbytes SRAM&lt;BR&gt;
 86 General Purpose I/O pins&lt;BR&gt;
 12-channels16-bit PWM&lt;BR&gt;
 4 x Serial USARTs&lt;BR&gt;
-16-channels 10-bit A/D&lt;BR&gt;</description>
+16-channels 10-bit A/D&lt;BR&gt;
+&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;None.&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="1" symbol="ATMEGA2560" x="0" y="0"/>
 </gates>
@@ -7534,7 +7536,8 @@ RTC_GPIO3</text>
 </devices>
 </deviceset>
 <deviceset name="ATTINY13">
-<description>Atmel 8-pin 1kB flash uC</description>
+<description>&lt;h3&gt;ATTINY13&lt;/h3&gt;
+&lt;p&gt;Retired&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="ATTINY13" x="0" y="0"/>
 </gates>
@@ -7572,7 +7575,8 @@ RTC_GPIO3</text>
 </devices>
 </deviceset>
 <deviceset name="ATTINY24">
-<description>Atmel 20-pin 2kB flash uC</description>
+<description>&lt;h3&gt;Atmel 20-pin 2kB flash uC&lt;/h3&gt;
+&lt;p&gt;Retired&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="ATTINY24" x="0" y="0"/>
 </gates>
@@ -7602,7 +7606,8 @@ RTC_GPIO3</text>
 </devices>
 </deviceset>
 <deviceset name="ATTINY45" prefix="U" uservalue="yes">
-<description>Atmel 8-pin 2/4/8kB flash uC</description>
+<description>&lt;h3&gt;Atmel 8-pin 2/4/8kB flash uC&lt;/h3&gt;
+&lt;p&gt;Retired&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="ATTINY13" x="0" y="0"/>
 </gates>
@@ -7682,13 +7687,18 @@ RTC_GPIO3</text>
 </devices>
 </deviceset>
 <deviceset name="AVR-MEGA8" prefix="U$">
-<description>&lt;b&gt;MICROCONTROLLER&lt;/b&gt;&lt;p&gt;
-8 Kbytes FLASH&lt;p&gt;
-1 kbytes SRAM&lt;p&gt;
-512 bytes EEPROM&lt;p&gt;
-USART&lt;p&gt;
-6-channel 10 bit ADC&lt;p&gt;
-2-channel 8 bit ADC</description>
+<description>&lt;h3&gt;MCU&lt;/h3&gt;
+&lt;p&gt;8 Kbytes FLASH&lt;br&gt;
+1 kbytes SRAM&lt;br&gt;
+512 bytes EEPROM&lt;br&gt;
+USART&lt;br&gt;
+6-channel 10 bit ADC&lt;br&gt;
+2-channel 8 bit ADC
+&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;None.&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="23-I/O" x="0" y="2.54"/>
 </gates>
@@ -7774,13 +7784,18 @@ USART&lt;p&gt;
 </devices>
 </deviceset>
 <deviceset name="AVR-MEGA8-P" prefix="IC">
-<description>&lt;b&gt;MICROCONTROLLER&lt;/b&gt;&lt;p&gt;
-8 Kbytes FLASH&lt;p&gt;
-1 kbytes SRAM&lt;p&gt;
-512 bytes EEPROM&lt;p&gt;
-USART&lt;p&gt;
-4-channel 10 bit ADC&lt;p&gt;
-2-channel 8 bit ADC</description>
+<description>&lt;h3&gt;MCU&lt;/h3&gt;
+&lt;p&gt;8 Kbytes FLASH&lt;br&gt;
+1 kbytes SRAM&lt;br&gt;
+512 bytes EEPROM&lt;br&gt;
+USART&lt;br&gt;
+6-channel 10 bit ADC&lt;br&gt;
+2-channel 8 bit ADC
+&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;None.&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="23-I/O-2" x="0" y="0"/>
 </gates>
@@ -7893,7 +7908,12 @@ USART&lt;p&gt;
 </devices>
 </deviceset>
 <deviceset name="CY7C64215">
-<description>Cypress PSOC uC with USB</description>
+<description>&lt;h3&gt;Cypress PSOC uC with USB&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;None&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="CY7C64215" x="0" y="0"/>
 </gates>
@@ -7936,7 +7956,13 @@ USART&lt;p&gt;
 </devices>
 </deviceset>
 <deviceset name="DSPIC30F4011">
-<description>Microchip 16-bit DSP for UAVv2x, not tested</description>
+<description>&lt;h3&gt;Microchip 16-bit DSP for UAVv2x&lt;/h3&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;None&lt;/li&gt;
+&lt;/ul&gt;
+
+Not tested</description>
 <gates>
 <gate name="G$1" symbol="DSPIC30F4011" x="0" y="0"/>
 </gates>
@@ -8038,7 +8064,11 @@ USART&lt;p&gt;
 </devices>
 </deviceset>
 <deviceset name="DSPIC30F6015" prefix="U">
-<description>Microchip 16-bit DSP</description>
+<description>&lt;h3&gt;Microchip 16-bit DSP&lt;/h3&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;None&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="DSPIC30F6015" x="0" y="0"/>
 </gates>
@@ -8117,7 +8147,13 @@ USART&lt;p&gt;
 </devices>
 </deviceset>
 <deviceset name="DSPIC33FJ256GP710" prefix="U">
-<description>Microchip 16-bit DSP</description>
+<description>&lt;h3&gt;Microchip 16-bit DSP&lt;/h3&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;None&lt;/li&gt;
+&lt;/ul&gt;
+
+Not tested</description>
 <gates>
 <gate name="G1" symbol="DSPIC33FJ256GP710_POWER" x="0" y="0"/>
 <gate name="G2" symbol="DSPIC33FJ256GP710_CONTROL" x="66.04" y="2.54"/>
@@ -8235,7 +8271,9 @@ USART&lt;p&gt;
 </devices>
 </deviceset>
 <deviceset name="LPC213X" prefix="IC">
-<description>Schematic element and footprint for NXP LPC213x uC. Spark Fun Electronics SKU : COM-00520</description>
+<description>NXP LPC213x uC. Spark Fun Electronics SKU : COM-00520
+&lt;br&gt;&lt;br&gt;
+RETIRED</description>
 <gates>
 <gate name="G$1" symbol="LPC213X" x="-2.54" y="25.4"/>
 </gates>
@@ -8314,7 +8352,8 @@ USART&lt;p&gt;
 </devices>
 </deviceset>
 <deviceset name="LPC2103">
-<description>NXP LPC2103 ARM7 based MCU</description>
+<description>&lt;h3&gt;NXP LPC2103 ARM7 based MCU&lt;/h3&gt;
+Dead prototype</description>
 <gates>
 <gate name="G$1" symbol="LPC2103" x="27.94" y="55.88"/>
 </gates>
@@ -8371,13 +8410,17 @@ USART&lt;p&gt;
 <connect gate="G$1" pin="XTAL2" pad="12"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09387" constant="no"/>
+<attribute name="VALUE" value="LPC2103" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="MC9S12XS64">
-<description>Freescale 16-bit uC</description>
+<description>&lt;h3&gt;Freescale 16-bit uC&lt;/h3&gt;
+Dead prototype</description>
 <gates>
 <gate name="G$1" symbol="MC9S12XS64" x="0" y="0"/>
 </gates>
@@ -8450,13 +8493,17 @@ USART&lt;p&gt;
 <connect gate="G$1" pin="XTAL" pad="29"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09432" constant="no"/>
+<attribute name="VALUE" value="MC9S12XS64" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="PIC16F88-DIP">
-<description>8-bit PIC uC</description>
+<description>&lt;h3&gt;8-bit PIC uC&lt;/h3&gt;
+RETIRED</description>
 <gates>
 <gate name="G$1" symbol="PIC16F88-DIP" x="0" y="0"/>
 </gates>
@@ -8483,16 +8530,18 @@ USART&lt;p&gt;
 <connect gate="G$1" pin="VSS" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-08463" constant="no"/>
+<attribute name="VALUE" value="PIC16F88" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="PIC16F88-SSOP" prefix="IC">
-<description>&lt;b&gt;PIC 16F8x&lt;/b&gt;
-8-Bit PIC16F8X Family
-
-&lt;p&gt;Pin Compatible : PIC16F83, PIC16CR83, PIC16F84A, PIC16CR84</description>
+<description>&lt;h3&gt;8-Bit PIC16F8X Family&lt;/h3&gt;
+&lt;p&gt;Pin Compatible : PIC16F83, PIC16CR83, PIC16F84A, PIC16CR84&lt;/p&gt;
+RETIRED</description>
 <gates>
 <gate name="G$1" symbol="PIC16F88-SSOP" x="0" y="0"/>
 </gates>
@@ -8527,8 +8576,9 @@ USART&lt;p&gt;
 </devices>
 </deviceset>
 <deviceset name="PIC16F688">
-<description>&lt;b&gt;PIC 16F688&lt;/b&gt;
-8-Bit PIC16F88</description>
+<description>&lt;h3&gt;PIC 16F68&lt;/h3&gt;
+&lt;p&gt;8-Bit PIC16F88&lt;/p&gt;
+RETIRED: IC-07818</description>
 <gates>
 <gate name="G$1" symbol="PIC16F688" x="0" y="0"/>
 </gates>
@@ -8557,6 +8607,11 @@ USART&lt;p&gt;
 </devices>
 </deviceset>
 <deviceset name="PIC16F883">
+<description>&lt;h3&gt;PIC16F833&lt;/h3&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;None&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="PIC16F883" x="0" y="0"/>
 </gates>
@@ -8599,6 +8654,14 @@ USART&lt;p&gt;
 </devices>
 </deviceset>
 <deviceset name="PIC16F913">
+<description>&lt;h3&gt;PIC16F913&lt;/h3&gt;
+&lt;p&gt;IC PIC MCU FLASH 4KX14 28SOIC&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8661"&gt;Polar Heart Rate Monitor Interface&lt;/a&gt; (SEN-08661)&lt;/li&gt;
+&lt;/ul&gt;
+
+Short timer</description>
 <gates>
 <gate name="G$1" symbol="PIC16F913" x="-2.54" y="-2.54"/>
 </gates>
@@ -8641,6 +8704,9 @@ USART&lt;p&gt;
 </devices>
 </deviceset>
 <deviceset name="PIC18F2455">
+<description>&lt;h3&gt;PIC18F2455-I/SO&lt;/h3&gt;
+
+Retired: IC-08246</description>
 <gates>
 <gate name="G$1" symbol="PIC18F2550" x="2.54" y="0"/>
 </gates>
@@ -8683,6 +8749,8 @@ USART&lt;p&gt;
 </devices>
 </deviceset>
 <deviceset name="PIC18F2550">
+<description>&lt;h3&gt;PIC18F2550&lt;/h3&gt;
+Retired: IC-08240</description>
 <gates>
 <gate name="G$1" symbol="PIC18F2550" x="0" y="0"/>
 </gates>
@@ -8725,10 +8793,15 @@ USART&lt;p&gt;
 </devices>
 </deviceset>
 <deviceset name="PIC24FXXXGPX06" prefix="U">
-<description>&lt;b&gt;PIC24FXXXGPX06&lt;/b&gt;&lt;br&gt;
-PIC24FXXXGP106 / PIC24FXXXDA206&lt;br&gt;
+<description>&lt;h3&gt;PIC24FXXXGPX06&lt;/h3&gt;
+&lt;p&gt;PIC24FXXXGP106 / PIC24FXXXDA206&lt;br&gt;
 PIC24FJ256GP206-I/PT for IOIO&lt;br&gt;
-IC-11312</description>
+&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Dev/Android/39975a.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13613"&gt;IOIO-OTG - V2.2&lt;/a&gt; (DEV-13613)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="PIC24FJXXXDAX06" x="0" y="0"/>
 </gates>
@@ -8803,12 +8876,15 @@ IC-11312</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-11312"/>
+<attribute name="VALUE" value="PIC24FJ256GB206" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="PIC24HJ32GP202">
+<description>&lt;h3&gt;PIC24HJ32GP202&lt;/h3&gt;
+Retired: IC-08923</description>
 <gates>
 <gate name="G$1" symbol="PIC24HJ32GP202" x="-15.24" y="2.54"/>
 </gates>
@@ -8886,6 +8962,8 @@ IC-11312</description>
 </devices>
 </deviceset>
 <deviceset name="PIC32MX440F512H">
+<description>&lt;h3&gt;PIC32MX440F512H&lt;/h3&gt;
+Retired: IC-09313</description>
 <gates>
 <gate name="G$1" symbol="PIC32MX440F512H" x="2.54" y="0"/>
 </gates>
@@ -8964,6 +9042,12 @@ IC-11312</description>
 </devices>
 </deviceset>
 <deviceset name="UBW32_PIC32MX4XXL">
+<description>&lt;h3&gt;Generic PIC32MX4XXL&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;None&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="UBW32_PIC32MX4XXL" x="0" y="-2.54"/>
 </gates>
@@ -9078,7 +9162,8 @@ IC-11312</description>
 </devices>
 </deviceset>
 <deviceset name="XMEGA-100">
-<description>Atmel XMega uC</description>
+<description>&lt;h3&gt;Atmel XMega uC&lt;/h3&gt;
+Not in catalog</description>
 <gates>
 <gate name="G$1" symbol="XMEGA" x="0" y="0"/>
 </gates>
@@ -9193,7 +9278,9 @@ IC-11312</description>
 </devices>
 </deviceset>
 <deviceset name="XMEGA-A3">
-<description>Atmel's 8/16-bit AVR XMEGA A3 Microcontroller - ATxmega256A3, etc.</description>
+<description>&lt;h3&gt;Atmel's 8/16-bit AVR XMEGA A3 Microcontroller - ATxmega256A3, etc.&lt;/h3&gt;
+Retired: IC-09806 - ATXMEGA256A3&lt;br&gt;
+Retired: IC-09429 - ATXMEGA128A1&lt;br&gt;</description>
 <gates>
 <gate name="G$1" symbol="XMEGA-A3B" x="0" y="0"/>
 </gates>
@@ -9272,9 +9359,26 @@ IC-11312</description>
 </devices>
 </deviceset>
 <deviceset name="ATMEGA328P_PDIP" prefix="U">
-<description>uC used in the Arduino&lt;br&gt;
-32kb flash, 1k EEPROM, 2k SRAM&lt;br&gt;
-This is the through-hole version of this chip.</description>
+<description>&lt;h3&gt;Atmel 328P&lt;/h3&gt;
+&lt;p&gt;Through hole ATMEGA328P&lt;br&gt;
+uC used in the Arduino&lt;br&gt;
+32kb flash, 1k EEPROM, 2k SRAM&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Components/SMD/ATMega328.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9061"&gt;Storefront component: AVR 28 Pin 20MHz 32K 6A/D - ATMega328P&lt;/a&gt; (COM-09061)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10547"&gt;SparkFun Simon Says - Through-Hole Soldering Kit&lt;/a&gt; (KIT-10547)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13708"&gt;SparkFun Learn to Solder - Simon Says&lt;/a&gt; (KIT-13708)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11734"&gt;SparkFun BigTime Watch Kit&lt;/a&gt; (KIT-11734)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10930"&gt;SparkFun ClockIt&lt;/a&gt; (KIT-10930)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10097"&gt;SparkFun Serial Enabled LCD Kit&lt;/a&gt; (LCD-10097)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12634"&gt;SparkFun Simon Tilts - Through Hole Soldering Kit&lt;/a&gt; (KIT-12634)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10140"&gt;SparkFun Frequency Counter Kit&lt;/a&gt; (KIT-10140)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11043"&gt;FabFM Radio Kit&lt;/a&gt; (KIT-11043)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12037"&gt;SparkFun Binary Blaster Kit&lt;/a&gt; (KIT-12037)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9236"&gt;SparkFun Metro-Gnome&lt;/a&gt; (KIT-09236)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10524"&gt;ATmega328 with Arduino Optiboot (Uno)&lt;/a&gt; (DEV-10524)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ATMEGAXX8-28PIN" x="0" y="0"/>
 </gates>
@@ -9311,15 +9415,18 @@ This is the through-hole version of this chip.</description>
 <connect gate="G$1" pin="VCC" pad="7"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09136" constant="no"/>
+<attribute name="VALUE" value="328P" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="ATMEGA328P_PDIP_EZ" prefix="U">
-<description>uC used in the Arduino&lt;br&gt;
-32kb flash, 1k EEPROM, 2k SRAM&lt;br&gt;
-This is the through-hole version of this chip.</description>
+<description>&lt;h3&gt;Keyed ATMEGA328 DIP&lt;/h3&gt;
+&lt;p&gt;This is a version of the DIP package with pin 28 clipped to prevent reverse insertion.&lt;br&gt;
+See regular 328 for product references.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="ATMEGAXX8-28PIN_EZ" x="0" y="0"/>
 </gates>
@@ -9361,8 +9468,13 @@ This is the through-hole version of this chip.</description>
 </devices>
 </deviceset>
 <deviceset name="ATTINY2313A" prefix="U" uservalue="yes">
-<description>ATTINY2313A&lt;br&gt;
-2kB 20MHz I2C/SPI/UART</description>
+<description>&lt;h3&gt;ATTINY2313A&lt;/h3&gt;
+&lt;p&gt;2kB 20MHz I2C/SPI/UART&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Widgets/ATtiny2313A.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11447"&gt;SparkFun Wake on Shake&lt;/a&gt; (SEN-11447)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ATTINY2313A" x="-10.16" y="-2.54"/>
 </gates>
@@ -9400,7 +9512,14 @@ This is the through-hole version of this chip.</description>
 </devices>
 </deviceset>
 <deviceset name="ATTINY84">
-<description>Atmel 14-pin 2/4/8kB flash uC</description>
+<description>&lt;h3&gt;Atmel 14-pin 2/4/8kB flash uC&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Widgets/doc8006.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11801"&gt;Tiny AVR Programmer&lt;/a&gt; (PGM-11801)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13872"&gt;SparkFun Servo Trigger - Continuous Rotation&lt;/a&gt; (WIG-13872)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13118"&gt;SparkFun Servo Trigger&lt;/a&gt; (WIG-13118)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ATTINY84" x="0" y="0"/>
 </gates>
@@ -9425,6 +9544,7 @@ This is the through-hole version of this chip.</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-11285" constant="no"/>
+<attribute name="VALUE" value="ATTINY84" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9473,7 +9593,8 @@ This is the through-hole version of this chip.</description>
 </devices>
 </deviceset>
 <deviceset name="P8X32A-Q44" prefix="U" uservalue="yes">
-<description>Propellor uC</description>
+<description>&lt;h3&gt;Propellor uC&lt;/h3&gt;
+RETIRED</description>
 <gates>
 <gate name="P" symbol="4VDD4VSS" x="-27.94" y="7.62"/>
 <gate name="P8X32A-Q44" symbol="P8X32A" x="5.08" y="2.54"/>
@@ -9527,13 +9648,26 @@ This is the through-hole version of this chip.</description>
 <connect gate="P8X32A-Q44" pin="XO" pad="29"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-10929" constant="no"/>
+<attribute name="VALUE" value="P8X32A" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="ATMEGA328P_MLF" prefix="U" uservalue="yes">
-<description>32-Pin Atmega328 part&lt;BR&gt;
+<description>&lt;h3&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=""&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=""&gt;&lt;/a&gt; ()&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;&lt;/a&gt; ()&lt;/li&gt;
+&lt;/ul&gt;
+
+
+32-Pin Atmega328 part&lt;BR&gt;
 Commonly used on Arduino compatible boards&lt;br&gt;
 Available in QFP and QFN packages&lt;br&gt;
 TQFP is IC-09069
@@ -9584,28 +9718,15 @@ QFN is non-stock</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ATSHA204" prefix="U">
-<description>&lt;h3&gt;Atmel ATSHA204&lt;/h3&gt;
-
-The Atmel ATSHA204 is an optimized authentication chip that includes a 4.5Kb EEPROM. This array can be used for storage of keys, miscellaneous read/write, read-only, password or secret data, and consumption tracking. Access to the various sections of memory can be restricted in a variety of ways and then the configuration locked to prevent changes.</description>
-<gates>
-<gate name="G$1" symbol="ATSHA204" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-TSU" package="SOT23-3">
-<connects>
-<connect gate="G$1" pin="GND" pad="3"/>
-<connect gate="G$1" pin="SDA" pad="1"/>
-<connect gate="G$1" pin="VCC" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="STM32F405RG">
-<description>ARM DSP Chip used on the WAV Trigger board.</description>
+<description>&lt;h3&gt;STM32F405RGT6&lt;/h3&gt;
+&lt;p&gt;ARM DSP Chip used on the WAV Trigger board.&lt;br&gt;
+IC MCU 32BIT 1MB FLASH 64LQFP&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Widgets/STM32F405RGT6.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13660"&gt;WAV Trigger&lt;/a&gt; (WIG-13660)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="STM32F405RG" x="0" y="0"/>
 </gates>
@@ -9678,12 +9799,23 @@ The Atmel ATSHA204 is an optimized authentication chip that includes a 4.5Kb EEP
 <connect gate="G$1" pin="VSSA" pad="12"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-11709" constant="no"/>
+<attribute name="VALUE" value="STM32F405RGT6" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="PIC16F1823-14PIN">
+<description>&lt;h3&gt;MCU PIC FLASH&lt;/h3&gt;
+&lt;p&gt;14TSSOP&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Sensors/Proximity/40001413E.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12780"&gt;ZX Distance and Gesture Sensor&lt;/a&gt; (SEN-12780)&lt;/li&gt;
+&lt;/ul&gt;
+Short timer</description>
 <gates>
 <gate name="G$1" symbol="PIC16F1823-14PIN" x="0" y="0"/>
 </gates>
@@ -9714,7 +9846,19 @@ The Atmel ATSHA204 is an optimized authentication chip that includes a 4.5Kb EEP
 </devices>
 </deviceset>
 <deviceset name="ATMEGA32U4">
-<description>Atmel 44-pin 8-bit Microcontroller with 32KBytes of ISP Flash and USB Controller</description>
+<description>&lt;h3&gt;Atmel MCU, 32KByte&lt;/h3&gt;
+&lt;p&gt;Atmel 44-pin 8-bit Microcontroller with 32KBytes of ISP Flash and USB Controller&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/ATMega32U4.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12049"&gt;LilyPad Arduino USB - ATmega32U4 Board&lt;/a&gt; (DEV-12049)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12640"&gt;Pro Micro - 5V/16MHz&lt;/a&gt; (DEV-12640)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12587"&gt;Pro Micro - 3.3V/8MHz&lt;/a&gt; (DEV-12587)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11520"&gt;Fio v3 - ATmega32U4&lt;/a&gt; (DEV-11520)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13614"&gt;Qduino Mini&lt;/a&gt; (DEV-13614)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11511"&gt;Makey Makey - Standard Kit&lt;/a&gt; (WIG-11511)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11519"&gt;Makey Makey Deluxe Kit&lt;/a&gt; (WIG-11519)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ATMEGA32U4" x="0" y="0"/>
 </gates>
@@ -9767,7 +9911,10 @@ The Atmel ATSHA204 is an optimized authentication chip that includes a 4.5Kb EEP
 <connect gate="G$1" pin="XTAL2" pad="16"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-10828" constant="no"/>
+<attribute name="VALUE" value="32U4" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="QFN2" package="QFN-44-NOPAD">
@@ -9818,7 +9965,10 @@ The Atmel ATSHA204 is an optimized authentication chip that includes a 4.5Kb EEP
 <connect gate="G$1" pin="XTAL2" pad="16"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-10828" constant="no"/>
+<attribute name="VALUE" value="32U4" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="1:1" package="QFN-44-NOPAD_1:1">
@@ -9869,7 +10019,10 @@ The Atmel ATSHA204 is an optimized authentication chip that includes a 4.5Kb EEP
 <connect gate="G$1" pin="XTAL2" pad="16"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-10828" constant="no"/>
+<attribute name="VALUE" value="32U4" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="1:1-LESS_PASTE" package="QFN-44-NOPAD_1:1-LESS_PASTE">
@@ -9920,7 +10073,10 @@ The Atmel ATSHA204 is an optimized authentication chip that includes a 4.5Kb EEP
 <connect gate="G$1" pin="XTAL2" pad="16"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-10828" constant="no"/>
+<attribute name="VALUE" value="32U4" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TQFP-44" package="TQFP44">
@@ -9971,20 +10127,28 @@ The Atmel ATSHA204 is an optimized authentication chip that includes a 4.5Kb EEP
 <connect gate="G$1" pin="XTAL2" pad="16"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-11161" constant="no"/>
+<attribute name="VALUE" value="32U4" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="PSOC_5LP_100QFP" prefix="U" uservalue="yes">
-<description>Cypress PSOC 5LP, 100-pin package&lt;br&gt;
-We use the CY8C5868AXI-LP035, which has the "full" feature set:&lt;br&gt;
+<description>&lt;h3&gt;Cypress PSOC 5LP, 100-pin package&lt;/h3&gt;
+&lt;p&gt;We use the CY8C5868AXI-LP035, which has the "full" feature set:&lt;br&gt;
 - 256k flash&lt;br&gt;
 - 64k SRAM&lt;br&gt;
 - 2k EEPROM &lt;br&gt;
 - CAN&lt;br&gt; 
 - Full-speed USB&lt;br&gt; 
-- 67MHz operation</description>
+- 67MHz operation&lt;/p&gt;
+&lt;p&gt;&lt;a href=""&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13229"&gt;FreeSoC2 Development Board - PSoC5LP&lt;/a&gt; (DEV-13229) -- Involved with change to new unposted revision&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G1" symbol="CY8C58LP_100QFP_VDDIO0" x="0" y="0"/>
 <gate name="G2" symbol="CY8C58LP_100QFP_VDDIO1" x="45.72" y="0"/>
@@ -10098,7 +10262,13 @@ We use the CY8C5868AXI-LP035, which has the "full" feature set:&lt;br&gt;
 </devices>
 </deviceset>
 <deviceset name="PSOC_5LP_68QFN" prefix="U" uservalue="yes">
-<description>PSoC5LP 68-QFN package</description>
+<description>&lt;h3&gt;PSoC5LP 68-QFN package&lt;/h3&gt;
+&lt;p&gt;CY8C5868LTI-LP039 PSOC 5LP 256K/64K/2K 80MHz&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Dev/ARM/CY8C58LP_001-84932_0H_V.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13229"&gt;FreeSoC2 Development Board - PSoC5LP&lt;/a&gt; (DEV-13229) -- Involved with change to new unposted revision&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G1" symbol="CY8C58LP_68QFN_VDDIO0" x="0" y="0"/>
 <gate name="G2" symbol="CY8C58LP_68QFN_VDDIO1" x="45.72" y="0"/>
@@ -10188,6 +10358,11 @@ We use the CY8C5868AXI-LP035, which has the "full" feature set:&lt;br&gt;
 </devices>
 </deviceset>
 <deviceset name="PIC16F1829">
+<description>&lt;h3&gt;PIC16F1829-I/SS&lt;/h3&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13144"&gt;SparkFun Touch Potentiometer&lt;/a&gt; (PRT-13144)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="1" symbol="PIC16F1829" x="0" y="0"/>
 </gates>
@@ -10218,14 +10393,19 @@ We use the CY8C5868AXI-LP035, which has the "full" feature set:&lt;br&gt;
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-12357" constant="no"/>
+<attribute name="VALUE" value="PIC16F1829-I/SS" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="CY7C65213" prefix="U">
-<description>&lt;b&gt;USB UART&lt;/b&gt;&lt;br&gt;
-CY7C65213 USB-UART controller.</description>
+<description>&lt;h3&gt;CY7C65213 USB-UART controller&lt;/h3&gt;
+&lt;p&gt;USB UART&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;None&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="CY7C65213" x="0" y="0"/>
 </gates>
@@ -10270,6 +10450,8 @@ CY7C65213 USB-UART controller.</description>
 </devices>
 </deviceset>
 <deviceset name="ATMEGA328P_VQFN" prefix="U">
+<description>&lt;h3&gt;Atmel 328P&lt;/h3&gt;
+&lt;p&gt;QFN part not in catalog&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="ATMEGAXX8-28PIN_PAD" x="0" y="0"/>
 </gates>
@@ -10313,6 +10495,46 @@ CY7C65213 USB-UART controller.</description>
 </devices>
 </deviceset>
 <deviceset name="ATMEGA328P_TQFP" prefix="U">
+<description>&lt;h3&gt;Popular 328P in QFP&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/13448"&gt;Storefront component: ATmega328 - TQFP&lt;/a&gt; (COM-13448)&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Components/SMD/ATMega328.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12757"&gt;SparkFun RedBoard - Programmed with Arduino&lt;/a&gt; (DEV-12757)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11113"&gt;Arduino Pro Mini 328 - 5V/16MHz&lt;/a&gt; (DEV-11113)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11114"&gt;Arduino Pro Mini 328 - 3.3V/8MHz&lt;/a&gt; (DEV-11114)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13712"&gt;SparkFun OpenLog&lt;/a&gt; (DEV-13712)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12923"&gt;SparkFun MicroView - OLED Arduino Module&lt;/a&gt; (DEV-12923)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12651"&gt;SparkFun Digital Sandbox&lt;/a&gt; (DEV-12651)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11888"&gt;SparkFun PicoBoard&lt;/a&gt; (WIG-11888)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10116"&gt;Arduino Fio&lt;/a&gt; (DEV-10116)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13342"&gt;LilyPad Arduino 328 Main Board&lt;/a&gt; (DEV-13342)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13741"&gt;SparkFun RedStick&lt;/a&gt; (DEV-13741)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11013"&gt;LilyPad MP3&lt;/a&gt; (DEV-11013)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10941"&gt;LilyPad Arduino SimpleSnap&lt;/a&gt; (DEV-10941)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13899"&gt;SparkFun Stepoko&lt;/a&gt; (ROB-13899)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11345"&gt;SparkFun Geiger Counter&lt;/a&gt; (SEN-11345)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12781"&gt;SparkFun EL Sequencer&lt;/a&gt; (COM-12781)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10915"&gt;Arduino Pro 328 - 5V/16MHz&lt;/a&gt; (DEV-10915)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12773"&gt;CryptoCape&lt;/a&gt; (DEV-12773)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10740"&gt;SparkFun IR Thermometer Evaluation Board - MLX90614&lt;/a&gt; (SEN-10740)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12097"&gt;SparkFun RedBot Mainboard&lt;/a&gt; (ROB-12097)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10914"&gt;Arduino Pro 328 - 3.3V/8MHz&lt;/a&gt; (DEV-10914)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13036"&gt;SparkFun Block for Intel® Edison - Arduino&lt;/a&gt; (DEV-13036)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10935"&gt;SparkFun Simon Says - Surface Mount Soldering Kit&lt;/a&gt; (KIT-10935)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11441"&gt;SparkFun 7-Segment Serial Display - Red&lt;/a&gt; (COM-11441)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11629"&gt;SparkFun 7-Segment Serial Display - White&lt;/a&gt; (COM-11629)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11443"&gt;SparkFun 7-Segment Serial Display - Yellow&lt;/a&gt; (COM-11443)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11440"&gt;SparkFun 7-Segment Serial Display - Kelly Green&lt;/a&gt; (COM-11440)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11442"&gt;SparkFun 7-Segment Serial Display - Blue&lt;/a&gt; (COM-11442)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11647"&gt;SparkFun OpenSegment Serial Display - 20mm (Blue)&lt;/a&gt; (COM-11647)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11646"&gt;SparkFun OpenSegment Serial Display - 20mm (Green)&lt;/a&gt; (COM-11646)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11648"&gt;SparkFun OpenSegment Serial Display - 20mm (White)&lt;/a&gt; (COM-11648)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11644"&gt;SparkFun OpenSegment Serial Display - 20mm (Red)&lt;/a&gt; (COM-11644)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11645"&gt;SparkFun OpenSegment Serial Display - 20mm (Yellow)&lt;/a&gt; (COM-11645)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13190"&gt;SparkFun OpenSegment Shield&lt;/a&gt; (DEV-13190)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="U$1" symbol="ATMEGAXX8-32PIN_NOPAD" x="0" y="0"/>
 </gates>
@@ -10362,7 +10584,13 @@ CY7C65213 USB-UART controller.</description>
 </devices>
 </deviceset>
 <deviceset name="AT97SC3204T" prefix="TPM">
-<description>Atmel TPM 1.2</description>
+<description>&lt;h3&gt;Atmel Trusted Platform Module 1.2&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Dev/Beagle/doc8161.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12773"&gt;CryptoCape&lt;/a&gt; (DEV-12773)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13183"&gt;SparkFun CryptoShield&lt;/a&gt; (DEV-13183)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="AT97SC3204T" x="0" y="0"/>
 </gates>
@@ -10401,13 +10629,20 @@ CY7C65213 USB-UART controller.</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-11984" constant="no"/>
+<attribute name="VALUE" value="ATMEL TPM1.2" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="CY8C29466-24*">
-<description>CYPRESS MCU 32K FLASH 2K SRAM 28-SOIC</description>
+<description>&lt;h3&gt;CYPRESS MCU 32K FLASH 2K SRAM 28-SOIC&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Widgets/CY8C29466-8_2015.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13720"&gt;MP3 Trigger&lt;/a&gt; (WIG-13720)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="CY8C29466" x="0" y="0"/>
 </gates>
@@ -10446,6 +10681,7 @@ CY7C65213 USB-UART controller.</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-08972"/>
+<attribute name="VALUE" value="CY8C29466" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -10453,7 +10689,6 @@ CY7C65213 USB-UART controller.</description>
 </deviceset>
 <deviceset name="ATSAMD21G" prefix="U">
 <description>&lt;h3&gt;Atmel SAMD21G SMART ARM-Based Microcontroller&lt;/h3&gt;
-
 &lt;p&gt;The Atmel ® | SMART ™ SAM D21 is a series of low-power microcontrollers using the 32-bit
 ARM ® Cortex ® -M0+ processor, and ranging from 32- to 64-pins with up to 256KB Flash and
 32KB of SRAM. The SAM D21 devices operate at a maximum frequency of 48MHz and reach
@@ -10461,7 +10696,13 @@ ARM ® Cortex ® -M0+ processor, and ranging from 32- to 64-pins with up to 256K
 peripheral modules, hex compatible code, identical linear address map and pin compatible
 migration paths between all devices in the product series. All devices include intelligent and
 flexible peripherals, Atmel Event System for inter-peripheral signaling, and support for capacitive
-touch button, slider and wheel user interfaces.&lt;/p&gt;</description>
+touch button, slider and wheel user interfaces.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/Atmel-42181-SAM-D21_Datasheet.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13664"&gt;SparkFun SAMD21 Mini Breakout&lt;/a&gt; (DEV-13664)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13672"&gt;SparkFun SAMD21 Dev Breakout&lt;/a&gt; (DEV-13672)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ATSAMD21G" x="0" y="0"/>
 </gates>
@@ -10583,8 +10824,13 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;</description>
 </devices>
 </deviceset>
 <deviceset name="LPC214X" prefix="U">
-<description>&lt;b&gt;LPC214x&lt;/b&gt;
-Schematic element and footprint for NXP LPC2144/2146/2148.</description>
+<description>&lt;h3&gt;NXP LPC2144/2146/2148&lt;/h3&gt;
+&lt;p&gt;ARM7 MCU FLASH 512K 64LQFP&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Widgets/LPC2141_42_44_46_48.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12772"&gt;SparkFun Logomatic v2 - Serial SD Datalogger (FAT32)&lt;/a&gt; (WIG-12772)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="LPC213X-1" x="-2.54" y="25.4"/>
 </gates>
@@ -10659,12 +10905,22 @@ Schematic element and footprint for NXP LPC2144/2146/2148.</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-07934" constant="no"/>
+<attribute name="VALUE" value="LPC2148" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="PSOC_52LP_68QFN" prefix="U" uservalue="yes">
+<description>&lt;h3&gt;CY8C5288LTI PSOC5LP MCU&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=""&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=""&gt;ProSoC Micro&lt;/a&gt; ()&lt;/li&gt;
+&lt;/ul&gt;
+
+Prototype in process - do keep!</description>
 <gates>
 <gate name="G1" symbol="CY8C52LP_68QFN_VDDIO0" x="-76.2" y="5.08"/>
 <gate name="G2" symbol="CY8C52LP_68QFN_VDDIO1" x="-30.48" y="5.08"/>
@@ -10754,6 +11010,16 @@ Schematic element and footprint for NXP LPC2144/2146/2148.</description>
 </devices>
 </deviceset>
 <deviceset name="PSOC_4M_68QFN" prefix="U" uservalue="yes">
+<description>&lt;h3&gt;PSoC 4200&lt;/h3&gt;
+&lt;p&gt;CY8C4247LTI PSoC4200M&lt;/p&gt;
+&lt;p&gt;&lt;a href=""&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=""&gt;Spectacle Directory Board&lt;/a&gt; ()&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;ProSoC Mini&lt;/a&gt; ()&lt;/li&gt;
+&lt;/ul&gt;
+
+Prototype in process!  Do keep!</description>
 <gates>
 <gate name="G1" symbol="CY8C42M-68QFN_P0_P1" x="-55.88" y="12.7"/>
 <gate name="G2" symbol="CY8C42M-68QFN_P2_P3" x="-15.24" y="12.7"/>
@@ -10840,6 +11106,14 @@ Schematic element and footprint for NXP LPC2144/2146/2148.</description>
 </devices>
 </deviceset>
 <deviceset name="PSOC4_4100S_32QFN" prefix="U" uservalue="yes">
+<description>&lt;h3&gt;PSOC4100&lt;/h3&gt;
+&lt;p&gt;CY8C4146LQI-S422 PSOC4100S 64k FLASH, 8K RAM, 32QFN&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;None&lt;/li&gt;
+&lt;/ul&gt;
+
+Prototype</description>
 <gates>
 <gate name="G2" symbol="PSOC_4100S_32QFN_PORT_4" x="-22.86" y="2.54"/>
 <gate name="G0" symbol="PSOC_4100S_32QFN_PORTS_0_AND_1" x="10.16" y="2.54"/>
@@ -10892,7 +11166,12 @@ Schematic element and footprint for NXP LPC2144/2146/2148.</description>
 </devices>
 </deviceset>
 <deviceset name="UM-FPU_V3_1" uservalue="yes">
-<description>Micromega floating point coprocessor</description>
+<description>&lt;h3&gt;Micromega floating point coprocessor&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;None&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="UM-FPU_V3_1" x="0" y="0"/>
 </gates>
@@ -10950,6 +11229,7 @@ Schematic element and footprint for NXP LPC2144/2146/2148.</description>
 </devices>
 </deviceset>
 <deviceset name="ESP32" prefix="U" uservalue="yes">
+<description>TODO: UPDATE WITH NEW PART WHEN AVAILABLE</description>
 <gates>
 <gate name="G1" symbol="ESP32_0-9" x="-68.58" y="0"/>
 <gate name="G2" symbol="ESP32_10-19" x="-27.94" y="0"/>
