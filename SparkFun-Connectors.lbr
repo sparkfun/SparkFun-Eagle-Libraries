@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -18026,8 +18026,8 @@ Reduced openings in tStop, pins spread a tiny bit out to hold part on PCB during
 <wire x1="0.7874" y1="-1.7145" x2="0.4826" y2="-1.7145" width="0.2032" layer="21"/>
 <wire x1="-0.4826" y1="-1.7145" x2="-0.7874" y2="-1.7145" width="0.2032" layer="21"/>
 <wire x1="-1.7526" y1="-1.7145" x2="-2.0574" y2="-1.7145" width="0.2032" layer="21"/>
-<text x="0" y="0" size="0.8128" layer="25" align="bottom-center">&gt;Name</text>
-<text x="0" y="0" size="0.8128" layer="27" align="top-center">&gt;Value</text>
+<text x="-1.3462" y="0.4572" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.7018" y="-0.9652" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
 <package name="2X5-PTH-1.27MM">
 <description>&lt;h3&gt;ARM Cortex Debug Connector (10-pin)&lt;/h3&gt;
@@ -18038,8 +18038,6 @@ Reduced openings in tStop, pins spread a tiny bit out to hold part on PCB during
 <pad name="6" x="0" y="0.635" drill="0.508" diameter="1"/>
 <pad name="4" x="-1.27" y="0.635" drill="0.508" diameter="1"/>
 <pad name="2" x="-2.54" y="0.635" drill="0.508" diameter="1"/>
-<text x="-3.048" y="1.397" size="0.8128" layer="25">&gt;NAME</text>
-<text x="-2.921" y="-1.397" size="0.8128" layer="27" align="top-left">&gt;VALUE</text>
 <pad name="10" x="2.54" y="0.635" drill="0.508" diameter="1"/>
 <pad name="7" x="1.27" y="-0.635" drill="0.508" diameter="1"/>
 <pad name="5" x="0" y="-0.635" drill="0.508" diameter="1"/>
@@ -18051,6 +18049,8 @@ Reduced openings in tStop, pins spread a tiny bit out to hold part on PCB during
 <wire x1="-3.175" y1="1.715" x2="-3.175" y2="-1.715" width="0.127" layer="51"/>
 <wire x1="-3.175" y1="-1.715" x2="3.175" y2="-1.715" width="0.127" layer="51"/>
 <wire x1="3.175" y1="-1.715" x2="3.175" y2="1.715" width="0.127" layer="51"/>
+<text x="-1.5748" y="1.9304" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.8288" y="-2.4638" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
 <package name="MICRO-SD-SOCKET-SDIO">
 <wire x1="-0.03" y1="0" x2="-0.03" y2="13.2" width="0.2032" layer="21"/>
@@ -21342,7 +21342,7 @@ Renamed DAT2 from NC to RSV to remove the implication that you should leave it n
 <pin name="GND@5" x="-15.24" y="0" length="short"/>
 <pin name="KEY" x="-15.24" y="-2.54" length="short"/>
 <pin name="GNDDTCT" x="-15.24" y="-5.08" length="short"/>
-<pin name="NRESET" x="17.78" y="-5.08" length="short" rot="R180"/>
+<pin name="!RESET" x="17.78" y="-5.08" length="short" rot="R180"/>
 <pin name="NC/TDI" x="17.78" y="-2.54" length="short" rot="R180"/>
 <pin name="SWO/TDO" x="17.78" y="0" length="short" rot="R180"/>
 <pin name="SWDCLK/TCK" x="17.78" y="2.54" length="short" rot="R180"/>
@@ -21351,8 +21351,8 @@ Renamed DAT2 from NC to RSV to remove the implication that you should leave it n
 <wire x1="-12.7" y1="7.62" x2="15.24" y2="7.62" width="0.254" layer="94"/>
 <wire x1="15.24" y1="7.62" x2="15.24" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="15.24" y1="-7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
-<text x="-12.7" y="7.874" size="1.778" layer="95">&gt;Name</text>
-<text x="-12.7" y="-7.874" size="1.778" layer="96" align="top-left">&gt;Value</text>
+<text x="-12.7" y="7.874" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-12.7" y="-9.906" size="1.778" layer="96" font="vector">&gt;Value</text>
 </symbol>
 <symbol name="USB-MICROB">
 <wire x1="2.54" y1="8.89" x2="-2.54" y2="8.89" width="0.254" layer="94"/>
@@ -28642,6 +28642,49 @@ Push-push type uSD socket with full SDIO signal mapping. Spark Fun Electronics S
 <device name="TP_15TH_THRU" package="TP_15TH">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CORTEX_DEBUG" prefix="J">
+<description>&lt;h3&gt;Cortex Debug Connector&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://infocenter.arm.com/help/topic/com.arm.doc.faqs/attached/13634/cortex_debug_connectors.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CORTEX_DEBUG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD" package="SAMTECH_FTSH-105-01">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="10"/>
+<connect gate="G$1" pin="GND@3" pad="3"/>
+<connect gate="G$1" pin="GND@5" pad="5"/>
+<connect gate="G$1" pin="GNDDTCT" pad="9"/>
+<connect gate="G$1" pin="KEY" pad="7"/>
+<connect gate="G$1" pin="NC/TDI" pad="8"/>
+<connect gate="G$1" pin="SWDCLK/TCK" pad="4"/>
+<connect gate="G$1" pin="SWDIO/TMS" pad="2"/>
+<connect gate="G$1" pin="SWO/TDO" pad="6"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PTH" package="2X5-PTH-1.27MM">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="10"/>
+<connect gate="G$1" pin="GND@3" pad="3"/>
+<connect gate="G$1" pin="GND@5" pad="5"/>
+<connect gate="G$1" pin="GNDDTCT" pad="9"/>
+<connect gate="G$1" pin="KEY" pad="7"/>
+<connect gate="G$1" pin="NC/TDI" pad="8"/>
+<connect gate="G$1" pin="SWDCLK/TCK" pad="4"/>
+<connect gate="G$1" pin="SWDIO/TMS" pad="2"/>
+<connect gate="G$1" pin="SWO/TDO" pad="6"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
