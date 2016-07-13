@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -508,20 +508,6 @@
 <text x="-6.604" y="11.938" size="1.778" layer="94" align="bottom-right">Vin+</text>
 <text x="1.016" y="11.938" size="1.778" layer="94">Vin-</text>
 </symbol>
-<symbol name="MAX323">
-<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-5.08" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-5.08" x2="12.7" y2="7.62" width="0.254" layer="94"/>
-<wire x1="12.7" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<pin name="NO1" x="-10.16" y="5.08" length="middle"/>
-<pin name="COM1" x="-10.16" y="2.54" length="middle"/>
-<pin name="IN2" x="-10.16" y="0" length="middle"/>
-<pin name="V-" x="-10.16" y="-2.54" length="middle"/>
-<pin name="NO2" x="17.78" y="-2.54" length="middle" rot="R180"/>
-<pin name="COM2" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="IN1" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="V+" x="17.78" y="5.08" length="middle" rot="R180"/>
-</symbol>
 <symbol name="MCP41XXX">
 <wire x1="-5.08" y1="25.4" x2="-5.08" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
@@ -679,9 +665,12 @@
 </symbols>
 <devicesets>
 <deviceset name="AD5262">
-<description>Digital Potentiometer IC&lt;br&gt;
-&lt;br&gt;
-VFP: IC-12358&lt;br&gt;</description>
+<description>&lt;h3&gt;Digital Potentiometer IC&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/assets/learn_tutorials/1/8/8/AD5262BRU_datasheet.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13144"&gt;SparkFun Touch Potentiometer&lt;/a&gt; (PRT-13144)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="1" symbol="AD5262" x="0" y="0"/>
 </gates>
@@ -708,15 +697,21 @@ VFP: IC-12358&lt;br&gt;</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-12358" constant="no"/>
+<attribute name="VALUE" value="AD5262BRU" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="556" prefix="IC" uservalue="yes">
-<description>Dual timer circuit (2 555 timers in one package)&lt;br&gt;
-&lt;br&gt;
-PTH valid: IC-11898&lt;br&gt;</description>
+<description>&lt;h3&gt;556 Dual 555 timer&lt;/h3&gt;
+&lt;p&gt;2 555 timers in one package&lt;br&gt;
+1MHZ 14DIP&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Kits/icm7555-56.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11177"&gt;SparkFun SparkPunk Sound Kit&lt;/a&gt; (KIT-11177)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="556_TIMER_DUAL" x="0" y="0"/>
 </gates>
@@ -739,7 +734,10 @@ PTH valid: IC-11898&lt;br&gt;</description>
 <connect gate="G$1" pin="VCC" pad="14"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-11898" constant="no"/>
+<attribute name="VALUE" value="556" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="KIT" package="DIP14-KIT">
@@ -761,6 +759,7 @@ PTH valid: IC-11898&lt;br&gt;</description>
 </connects>
 <technologies>
 <technology name="">
+<attribute name="PROD_ID" value="IC-11898" constant="no"/>
 <attribute name="VALUE" value="556" constant="no"/>
 </technology>
 </technologies>
@@ -768,9 +767,13 @@ PTH valid: IC-11898&lt;br&gt;</description>
 </devices>
 </deviceset>
 <deviceset name="AD9837">
-<description>Programmable waveform generator, sine, triangular, and square wave outputs.&lt;br&gt;
-&lt;br&gt;
-VFP: IC-11223&lt;br&gt;</description>
+<description>&lt;h3&gt;Programmable waveform generator&lt;/h3&gt;
+&lt;p&gt;Sine, triangular, and square wave outputs&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/BreakoutBoards/AD9837.PDF"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11420"&gt;SparkFun MiniGen - Pro Mini Signal Generator Shield&lt;/a&gt; (BOB-11420)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G1" symbol="AD9837" x="0" y="0"/>
 </gates>
@@ -798,9 +801,13 @@ VFP: IC-11223&lt;br&gt;</description>
 </devices>
 </deviceset>
 <deviceset name="INA169" prefix="U">
-<description>Current Output Current Shunt Monitor&lt;br&gt;
-&lt;br&gt;
-VFP: IC-11776&lt;br&gt;</description>
+<description>&lt;h3&gt;Current Output Current Shunt Monitor&lt;/h3&gt;
+&lt;p&gt;0.5%, SOT23-5&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Sensors/Current/ina169.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12040"&gt;SparkFun Current Sensor Breakout - INA169&lt;/a&gt; (SEN-12040)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="INA169" x="0" y="0"/>
 </gates>
@@ -814,41 +821,22 @@ VFP: IC-11776&lt;br&gt;</description>
 <connect gate="G$1" pin="VIN-" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MAX323" prefix="U">
-<description>Dual low-voltage SPST analog switch&lt;br&gt;
-&lt;br&gt;
-VFP: IC-08171&lt;br&gt;</description>
-<gates>
-<gate name="G$1" symbol="MAX323" x="-2.54" y="-2.54"/>
-</gates>
-<devices>
-<device name="" package="SO08">
-<connects>
-<connect gate="G$1" pin="COM1" pad="2"/>
-<connect gate="G$1" pin="COM2" pad="6"/>
-<connect gate="G$1" pin="IN1" pad="7"/>
-<connect gate="G$1" pin="IN2" pad="3"/>
-<connect gate="G$1" pin="NO1" pad="1"/>
-<connect gate="G$1" pin="NO2" pad="5"/>
-<connect gate="G$1" pin="V+" pad="8"/>
-<connect gate="G$1" pin="V-" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-11776" constant="no"/>
+<attribute name="VALUE" value="INA169" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="MCP41XXX" prefix="U">
-<description>SPI controlled single digital potentiometer by Microchip&lt;br /&gt;
-&lt;br /&gt;
-PID: COM-10613&lt;br&gt;
-Live: RES-13155</description>
+<description>&lt;h3&gt;Digital Potentiometer - 10K&lt;/h3&gt;
+&lt;p&gt;SPI controlled single digital potentiometer by Microchip&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Components/General%20IC/22060b.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10613"&gt;Storefront component: Digital Potentiometer - 10K&lt;/a&gt; (COM-10613)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="MCP41XXX" x="-2.54" y="-7.62"/>
 </gates>
@@ -865,7 +853,10 @@ Live: RES-13155</description>
 <connect gate="G$1" pin="W" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="NA-XXXXX" constant="no"/>
+<attribute name="VALUE" value="MCP41XXX" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="DIL" package="DIP08">
@@ -880,17 +871,24 @@ Live: RES-13155</description>
 <connect gate="G$1" pin="W" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="RES-13155" constant="no"/>
+<attribute name="VALUE" value="MCP41XXX" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="MSGEQ7" prefix="IC">
-<description>7-band graphic equalizer&lt;br&gt;
-&lt;br&gt;
-This may have confusion with the "generic SOIC 8 part for adapter"&lt;br&gt;
-VFP: IC-10141&lt;br&gt;
-Live: IC-12196&lt;br&gt;</description>
+<description>&lt;h3&gt;7-band graphic equalizer&lt;/h3&gt;
+&lt;p&gt;This IC is for making a 7 band/channel audio spectrometer.&lt;br&gt;
+There are two versions of this part.  The DIP available on the storefront, and the SO used in product.
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/Components/General/MSGEQ7.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10468"&gt;Storefront component: Graphic Equalizer Display Filter - MSGEQ7&lt;/a&gt; (COM-10468)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13116"&gt;SparkFun Spectrum Shield&lt;/a&gt; (DEV-13116)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="MSGEQ7" x="0" y="5.08"/>
 </gates>
@@ -909,6 +907,7 @@ Live: IC-12196&lt;br&gt;</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-10141"/>
+<attribute name="VALUE" value="MSGEQ7N" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -924,18 +923,27 @@ Live: IC-12196&lt;br&gt;</description>
 <connect gate="G$1" pin="VDD" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-12196" constant="no"/>
+<attribute name="VALUE" value="MSGEQ7P" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="NE555" prefix="IC" uservalue="yes">
-<description>&lt;b&gt;General purpose bipolar Timer&lt;/b&gt;
-&lt;br&gt;
+<deviceset name="555" prefix="IC" uservalue="yes">
+<description>&lt;h3&gt;General purpose bipolar Timer&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Components/General/ne555.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12707"&gt;SparkFun SparkPunk Sequencer Kit&lt;/a&gt; (KIT-12707)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9273"&gt;Storefront Component: 555 Timer&lt;/a&gt; (COM-09273)&lt;/li&gt;
+&lt;/ul&gt;
+
+Two parts valid for production:&lt;br&gt;
 &lt;br&gt;
 VFP: IC-11930 (M7555 PTH)&lt;br&gt;
-VFP: IC-09173 (555 PTH)&lt;br&gt;
-Also a few dead/reatired</description>
+VFP: IC-09173 (555 PTH) - &lt;b&gt;Preferred&lt;/b&gt;&lt;br&gt;</description>
 <gates>
 <gate name="G$1" symbol="NE555" x="60.96" y="-27.94"/>
 </gates>
@@ -953,10 +961,9 @@ Also a few dead/reatired</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="MF" value="Arrow Electronics" constant="no"/>
-<attribute name="MPN" value="NE555N" constant="no"/>
-<attribute name="OC_FARNELL" value="1467742" constant="no"/>
-<attribute name="OC_NEWARK" value="89K1486" constant="no"/>
+<attribute name="PROD_ID" value="IC-09173" constant="no"/>
+<attribute name="PROD_ID_ALT" value="IC-09173" constant="no"/>
+<attribute name="VALUE" value="555" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -972,7 +979,10 @@ Also a few dead/reatired</description>
 <connect gate="G$1" pin="VCC+" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="NA-XXXXX" constant="no"/>
+<attribute name="VALUE" value="555" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="KIT" package="DIP08-KIT">
@@ -988,19 +998,25 @@ Also a few dead/reatired</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="IC-11930" constant="no"/>
+<attribute name="PROD_ID" value="IC-09173" constant="no"/>
+<attribute name="PROD_ID_ALT" value="IC-11930" constant="no"/>
+<attribute name="VALUE" value="555" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="TS3USB221A" prefix="U" uservalue="yes">
-<description>DPDT Analog Mux&lt;br&gt;
+<description>&lt;h3&gt;DPDT Analog Mux&lt;/h3&gt;
+&lt;p&gt;DPDT Analog Mux&lt;br&gt;
 Vcc 2.5 to 3.3V&lt;br&gt;
 Passes up to 5.5V at 3.3V supply&lt;br&gt;
 900MHz BW, 6&amp;#8486; switch resistance&lt;br&gt;
-&lt;br&gt;
-VFP: IC-12115 13 in stock</description>
+&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12935"&gt;SparkFun FTDI SmartBasic&lt;/a&gt; (DEV-12935)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="TS3USB221A" x="0" y="0"/>
 </gates>
@@ -1028,13 +1044,20 @@ VFP: IC-12115 13 in stock</description>
 </devices>
 </deviceset>
 <deviceset name="ATAES132" prefix="AES">
-<description>32Kb Serial EEPROM.
-AES-128-CCM.
-MAC.
-Secure Storage for 128-bit keys.
-Encrypted User Memory Readn and Write.
-HWRNG.
-2.5V to 5.5V.</description>
+<description>&lt;h3&gt;Crypto 32Kb Serial EEPROM&lt;/h3&gt;
+&lt;p&gt;AES-128-CCM&lt;br&gt;
+MAC&lt;br&gt;
+Secure Storage for 128-bit keys&lt;br&gt;
+Encrypted User Memory Readn and Write&lt;br&gt;
+HWRNG&lt;br&gt;
+2.5V to 5.5V&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Dev/Beagle/Atmel-8760-CryptoAuth-ATAES132-Datasheet.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12773"&gt;CryptoCape&lt;/a&gt; (DEV-12773)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13183"&gt;SparkFun CryptoShield&lt;/a&gt; (DEV-13183)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ATAES132" x="0" y="0"/>
 </gates>
@@ -1053,13 +1076,21 @@ HWRNG.
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-11983" constant="no"/>
+<attribute name="VALUE" value="ATAES132" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="ATECC108" prefix="ECC">
-<description>ATECC108: Provides ECDSA with NIST curves P256, B283, and K283.  Also, a RNG, 8.5Kb EEPROM.  2.0V - 5.5V.</description>
+<description>&lt;h3&gt;ATECC108 ECDSA with NIST&lt;/h3&gt;
+&lt;p&gt;ATECC108: Provides ECDSA with NIST curves P256, B283, and K283.  Also, a RNG, 8.5Kb EEPROM.  2.0V - 5.5V.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Dev/Beagle/Atmel-8873S-CryptoAuth-ATECC108-Datasheet-Summary.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12773"&gt;CryptoCape&lt;/a&gt; (DEV-12773)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13183"&gt;SparkFun CryptoShield&lt;/a&gt; (DEV-13183)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ATECC108" x="0" y="0"/>
 </gates>
@@ -1078,13 +1109,20 @@ HWRNG.
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-11982" constant="no"/>
+<attribute name="VALUE" value="ATECC108" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="ATSHA204_SOIC8" prefix="SHA">
-<description>ATSHA204</description>
+<description>&lt;h3&gt;Crypto 4.5KB I2C&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Dev/Beagle/Atmel-8740-CryptoAuth-ATSHA204-Datasheet.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12773"&gt;CryptoCape&lt;/a&gt; (DEV-12773)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13183"&gt;SparkFun CryptoShield&lt;/a&gt; (DEV-13183)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="ATSHA204-1" x="0" y="0"/>
 </gates>
@@ -1103,6 +1141,7 @@ HWRNG.
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-11981" constant="no"/>
+<attribute name="VALUE" value="ATSHA204" constant="no"/>
 </technology>
 </technologies>
 </device>

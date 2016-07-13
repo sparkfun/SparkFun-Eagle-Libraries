@@ -4051,6 +4051,34 @@ channels, 3 magnetic field channels&lt;/li&gt;
 <pin name="LEDA" x="17.78" y="22.86" length="middle" rot="R180"/>
 <pin name="VDD" x="-17.78" y="2.54" length="middle"/>
 </symbol>
+<symbol name="M93C46">
+<wire x1="-12.7" y1="15.24" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
+<text x="-12.7" y="15.748" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-14.986" size="1.778" layer="95">&gt;VALUE</text>
+<pin name="CS" x="-17.78" y="12.7" length="middle"/>
+<pin name="SK" x="-17.78" y="5.08" length="middle"/>
+<pin name="DIN" x="-17.78" y="-2.54" length="middle"/>
+<pin name="DOUT" x="-17.78" y="-10.16" length="middle"/>
+<pin name="VCC" x="17.78" y="12.7" length="middle" rot="R180"/>
+<pin name="GND" x="17.78" y="-10.16" length="middle" rot="R180"/>
+</symbol>
+<symbol name="MAX323">
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<pin name="NO1" x="-10.16" y="5.08" length="middle"/>
+<pin name="COM1" x="-10.16" y="2.54" length="middle"/>
+<pin name="IN2" x="-10.16" y="0" length="middle"/>
+<pin name="V-" x="-10.16" y="-2.54" length="middle"/>
+<pin name="NO2" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="COM2" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="IN1" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="V+" x="17.78" y="5.08" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DOSONCHIP-IC">
@@ -5833,6 +5861,68 @@ Prototype by abe, 2010.  Dead?</description>
 <technology name="">
 <attribute name="PROD_ID" value="IC-09541" constant="no"/>
 <attribute name="VALUE" value="ENC28J60" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="M93C46">
+<description>&lt;h3&gt;&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=""&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=""&gt;&lt;/a&gt; ()&lt;/li&gt;
+&lt;li&gt;&lt;a href=""&gt;&lt;/a&gt; ()&lt;/li&gt;
+&lt;/ul&gt;
+
+
+1kbit SPI EEPROM
+&lt;br&gt;&lt;br&gt;
+IC-09397 -- Dead prototype</description>
+<gates>
+<gate name="G$1" symbol="M93C46" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO08">
+<connects>
+<connect gate="G$1" pin="CS" pad="1"/>
+<connect gate="G$1" pin="DIN" pad="3"/>
+<connect gate="G$1" pin="DOUT" pad="4"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="SK" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX323" prefix="U">
+<description>RETIRED
+
+Dual low-voltage SPST analog switch&lt;br&gt;
+&lt;br&gt;</description>
+<gates>
+<gate name="G$1" symbol="MAX323" x="-2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="SO08">
+<connects>
+<connect gate="G$1" pin="COM1" pad="2"/>
+<connect gate="G$1" pin="COM2" pad="6"/>
+<connect gate="G$1" pin="IN1" pad="7"/>
+<connect gate="G$1" pin="IN2" pad="3"/>
+<connect gate="G$1" pin="NO1" pad="1"/>
+<connect gate="G$1" pin="NO2" pad="5"/>
+<connect gate="G$1" pin="V+" pad="8"/>
+<connect gate="G$1" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-08171" constant="no"/>
+<attribute name="VALUE" value="MAX323" constant="no"/>
 </technology>
 </technologies>
 </device>
