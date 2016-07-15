@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -173,8 +173,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
 <package name="CR54">
-<description>&lt;h3&gt;Legacy footprint&lt;/h3&gt;
-&lt;p&gt;Not listed anywhere, but apparently from &lt;a href="http://www.niccomp.com/catalog/npis_ls.pdf"&gt;here&lt;/a&gt;.</description>
+<description>&lt;h3&gt;CR54 footprint&lt;/h3&gt;
+&lt;p&gt;These vary by manufacturer, but we used the NPIS54LS footprint from &lt;a href="http://www.niccomp.com/catalog/npis_ls.pdf"&gt;here&lt;/a&gt;.</description>
 <wire x1="2.6" y1="2.6" x2="-2.6" y2="2.6" width="0.127" layer="51"/>
 <wire x1="-2.6" y1="2.6" x2="-2.6" y2="-2.6" width="0.127" layer="51"/>
 <wire x1="-2.6" y1="-2.6" x2="2.6" y2="-2.6" width="0.127" layer="51"/>
@@ -195,8 +195,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="2.6" y1="2.87" x2="2.87" y2="2.6" width="0.2032" layer="21"/>
 </package>
 <package name="CR75">
-<description>&lt;h3&gt;Some sort of legacy footprint&lt;/h3&gt;
-&lt;p&gt;Not messing with it since production uses it. Origin unknown.&lt;/p&gt;</description>
+<description>&lt;h3&gt;4600 series footprint&lt;/h3&gt;
+&lt;p&gt;Not messing with it since production uses it. Origin unknown but loosely based on this &lt;a href="http://www.murata-ps.com/data/magnetics/kmp_4600.pdf"&gt;datasheet&lt;/a&gt;.&lt;/p&gt;</description>
 <wire x1="-4.025" y1="3.65" x2="3.975" y2="3.65" width="0.127" layer="21"/>
 <wire x1="3.975" y1="3.65" x2="3.975" y2="2.55" width="0.127" layer="21"/>
 <wire x1="-4.025" y1="3.65" x2="-4.025" y2="2.55" width="0.127" layer="21"/>
@@ -221,24 +221,26 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-1.5" y1="-0.8" x2="-1.5" y2="0.8" width="0.0508" layer="39"/>
 </package>
 <package name="SRN6045">
-<smd name="1" x="-2.175" y="-0.175" dx="6" dy="2.5" layer="1" rot="R90"/>
-<smd name="2" x="2.125" y="-0.175" dx="6" dy="2.5" layer="1" rot="R90"/>
-<wire x1="-2.175" y1="-3.175" x2="-3.175" y2="-2.175" width="0.127" layer="51"/>
-<wire x1="-3.175" y1="-2.175" x2="-3.175" y2="1.825" width="0.127" layer="51"/>
-<wire x1="-3.175" y1="1.825" x2="-2.175" y2="2.825" width="0.127" layer="51"/>
-<wire x1="-2.175" y1="2.825" x2="2.125" y2="2.825" width="0.127" layer="51"/>
-<wire x1="2.125" y1="2.825" x2="3.125" y2="1.825" width="0.127" layer="51"/>
-<wire x1="3.125" y1="1.825" x2="3.125" y2="-2.175" width="0.127" layer="51"/>
-<wire x1="3.125" y1="-2.175" x2="2.125" y2="-3.175" width="0.127" layer="51"/>
-<wire x1="2.125" y1="-3.175" x2="-2.175" y2="-3.175" width="0.127" layer="51"/>
-<text x="0" y="3.048" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-3.429" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<wire x1="-0.762" y1="2.794" x2="0.762" y2="2.794" width="0.1524" layer="21"/>
-<wire x1="-0.762" y1="-3.175" x2="0.762" y2="-3.175" width="0.1524" layer="21"/>
+<description>&lt;h3&gt;SRN6045 series  footprint&lt;/h3&gt;
+&lt;p&gt;Roughly based on the recommendation in this &lt;a href="http://www.mouser.com/ds/2/54/RN6045-778135.pdf"&gt;datasheet&lt;/a&gt;.&lt;/p&gt;</description>
+<smd name="1" x="-2.175" y="0" dx="6" dy="2.5" layer="1" rot="R90"/>
+<smd name="2" x="2.125" y="0" dx="6" dy="2.5" layer="1" rot="R90"/>
+<wire x1="-2.175" y1="-3" x2="-3.175" y2="-2" width="0.127" layer="51"/>
+<wire x1="-3.175" y1="-2" x2="-3.175" y2="2" width="0.127" layer="51"/>
+<wire x1="-3.175" y1="2" x2="-2.175" y2="3" width="0.127" layer="51"/>
+<wire x1="-2.175" y1="3" x2="2.125" y2="3" width="0.127" layer="51"/>
+<wire x1="2.125" y1="3" x2="3.125" y2="2" width="0.127" layer="51"/>
+<wire x1="3.125" y1="2" x2="3.125" y2="-2" width="0.127" layer="51"/>
+<wire x1="3.125" y1="-2" x2="2.125" y2="-3" width="0.127" layer="51"/>
+<wire x1="2.125" y1="-3" x2="-2.175" y2="-3" width="0.127" layer="51"/>
+<text x="0" y="3.223" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.254" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-0.762" y1="2.969" x2="0.762" y2="2.969" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="-3" x2="0.762" y2="-3" width="0.1524" layer="21"/>
 </package>
 <package name="INDUCTOR_4.7UH">
-<description>&lt;h3&gt;Some sort of legacy footprint&lt;/h3&gt;
-&lt;p&gt;Not messing with it since production uses it. Origin unknown.&lt;/p&gt;</description>
+<description>&lt;h3&gt;CDRH2D18/HPNP footprint&lt;/h3&gt;
+&lt;p&gt;Recommended footprint for CDRH2D18/HPNP series inductors from &lt;a href="http://products.sumida.com/products/pdf/CDRH2D18HP.pdf"&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
 <wire x1="-1.2" y1="0.9" x2="-0.6" y2="1.5" width="0.2032" layer="21"/>
 <wire x1="-0.6" y1="1.5" x2="0.6" y2="1.5" width="0.2032" layer="21"/>
 <wire x1="0.6" y1="1.5" x2="1.2" y2="0.9" width="0.2032" layer="21"/>
@@ -259,8 +261,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="-1.778" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
 <package name="INDUCTOR_SDR1307">
-<description>&lt;h3&gt;Some sort of legacy footprint&lt;/h3&gt;
-&lt;p&gt;Not messing with it since production uses it. Origin unknown.&lt;/p&gt;</description>
+<description>&lt;h3&gt;SDR1307 series footprint&lt;/h3&gt;
+&lt;p&gt;Footprint based on recommendation from &lt;a href="https://www.bourns.com/pdfs/SDR1307.pdf"&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
 <smd name="P$1" x="0" y="4.6" dx="14" dy="4.75" layer="1"/>
 <smd name="P$2" x="0" y="-4.6" dx="14" dy="4.75" layer="1"/>
 <wire x1="-6.5" y1="1.5" x2="-6.5" y2="-1.5" width="0.3048" layer="21"/>
