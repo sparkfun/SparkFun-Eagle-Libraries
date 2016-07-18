@@ -12800,9 +12800,9 @@ Manufacturer: Hirose&lt;br&gt;&lt;br&gt;
 <text x="-11.43" y="4.572" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-11.43" y="-5.207" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
-<package name="FTDI_DEVICE_SIDE">
+<package name="6_PIN_SERIAL_TARGET_SIDE_W_SILK">
 <description>Package for devices meant to mate to an FTDI connector.</description>
-<pad name="P$1" x="-6.35" y="0" drill="1.016" diameter="1.8796" shape="square"/>
+<pad name="P$1" x="-6.35" y="0" drill="1.016" diameter="1.8796"/>
 <pad name="P$2" x="-3.81" y="0" drill="1.016" diameter="1.8796"/>
 <pad name="P$3" x="-1.27" y="0" drill="1.016" diameter="1.8796"/>
 <pad name="P$4" x="1.27" y="0" drill="1.016" diameter="1.8796"/>
@@ -18068,7 +18068,7 @@ Reduced openings in tStop, pins spread a tiny bit out to hold part on PCB during
 <text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
-<package name="FTDI_DEVICE_RA_SMT">
+<package name="6_PIN_SERIAL_TARGET_SIDE_RA_SMT">
 <description>Package for devices meant to mate to an FTDI connector.</description>
 <wire x1="7.62" y1="1.25" x2="-7.62" y2="1.25" width="0.127" layer="51"/>
 <wire x1="-7.62" y1="1.25" x2="-7.62" y2="-1.25" width="0.127" layer="51"/>
@@ -18092,8 +18092,6 @@ Reduced openings in tStop, pins spread a tiny bit out to hold part on PCB during
 <smd name="3" x="-1.27" y="5" dx="3" dy="1" layer="1" rot="R90"/>
 <smd name="2" x="-3.81" y="5" dx="3" dy="1" layer="1" rot="R90"/>
 <smd name="1" x="-6.35" y="5" dx="3" dy="1" layer="1" rot="R90"/>
-<text x="-1.905" y="1.905" size="0.8128" layer="25">&gt;NAME</text>
-<text x="-1.905" y="0.635" size="0.8128" layer="27">&gt;VALUE</text>
 <text x="-3.81" y="-1.016" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">TXO</text>
 <text x="-1.27" y="-1.016" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">RXI</text>
 <text x="1.27" y="-1.016" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="center-left">VCC</text>
@@ -18104,6 +18102,8 @@ Reduced openings in tStop, pins spread a tiny bit out to hold part on PCB during
 <text x="7.366" y="-2.54" size="0.8128" layer="51" font="vector" ratio="15" rot="R90" align="bottom-center">BLK</text>
 <hole x="-5.08" y="0" drill="1.4"/>
 <hole x="5.08" y="0" drill="1.4"/>
+<text x="-1.27" y="2.54" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.397" y="1.651" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
 <package name="2X20_SHROUDED_SMT">
 <wire x1="-5.95" y1="24.765" x2="-5.95" y2="23.495" width="0.2032" layer="21"/>
@@ -21651,12 +21651,23 @@ Renamed DAT2 from NC to RSV to remove the implication that you should leave it n
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ARDUINO_SERIAL_PROGRAM" prefix="J" uservalue="yes">
-<description>&lt;h3&gt;Popular 6-pin header connection for use with the "FTDI BASIC" pinout.&lt;/h3&gt;
+<deviceset name="6_PIN_SERIAL_TARGET" prefix="J" uservalue="yes">
+<description>&lt;h3&gt;6-pin header connection for use with the "FTDI BASIC" pinout - TARGET SIDE.&lt;/h3&gt;
 &lt;p&gt;&lt;/p&gt;
-It is used to mate with our FTDI Basic serial programmers using the Arduino IDE.
+
+&lt;h3&gt;Also known as "Arduino Serial Program Header".&lt;/h3&gt;
 &lt;p&gt;&lt;/p&gt;
-You can populate with some of these:
+
+It is used to mate with our FTDI Basic serial programmers using the Arduino IDE. 
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Note, this device has "TARGET" in the name.&lt;/b&gt; It is intended to be used on a design that contains a target micro-controller that you wish to program. 
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;The "sister" device, named "CABLE"&lt;/b&gt; is inteneded to be used on a design that usually lives on the end of your USB cable and prvides the converter chip (FTDI232 or FTDI231x) to commnicate serial RX/TX.
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;You can populate with some of these:&lt;/b&gt;
 &lt;p&gt;&lt;a href="https://www.sparkfun.com/products/116"&gt; Break Away Headers - Straight&lt;/a&gt; (PRT-00116)&lt;/p&gt;
 &lt;p&gt;&lt;/p&gt;
 For reference (or to suit your programming needs) check out these designs:
@@ -21685,7 +21696,7 @@ For reference (or to suit your programming needs) check out these designs:
 </technology>
 </technologies>
 </device>
-<device name="PTH" package="1X06">
+<device name="" package="1X06">
 <connects>
 <connect gate="G$1" pin="CTS" pad="5"/>
 <connect gate="G$1" pin="DTR" pad="1"/>
@@ -21748,6 +21759,34 @@ For reference (or to suit your programming needs) check out these designs:
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="SILK" package="6_PIN_SERIAL_TARGET_SIDE_W_SILK">
+<connects>
+<connect gate="G$1" pin="CTS" pad="P$5"/>
+<connect gate="G$1" pin="DTR" pad="P$1"/>
+<connect gate="G$1" pin="GND" pad="P$6"/>
+<connect gate="G$1" pin="RXI" pad="P$3"/>
+<connect gate="G$1" pin="TXO" pad="P$2"/>
+<connect gate="G$1" pin="VCC" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="RA_SMT" package="6_PIN_SERIAL_TARGET_SIDE_RA_SMT">
+<connects>
+<connect gate="G$1" pin="CTS" pad="5"/>
+<connect gate="G$1" pin="DTR" pad="1"/>
+<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="RXI" pad="3"/>
+<connect gate="G$1" pin="TXO" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-08971" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -22297,8 +22336,33 @@ You should include the "EM408_Outline" device in your schematic if you are to us
 </device>
 </devices>
 </deviceset>
-<deviceset name="FTDI_BASIC_CABLE_SIDE" prefix="J">
-<description>FTDI Basic header with labels</description>
+<deviceset name="6_PIN_SERIAL_CABLE" prefix="J">
+<description>&lt;h3&gt;6-pin header connection for use with the "FTDI BASIC" pinout - CABLE SIDE.&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h3&gt;Also known as "Arduino Serial Program Header".&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;
+
+This is used on a design to provide a 6-pin connection point for serial communication usually from a USB cable (D+/D-) to these headers (RX/TX). It also has the remaining pins necessary for programming in the Arduino evironment (DTR, GND, and sometimes VCC).
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Note, this device has "CABLE" in the name.&lt;/b&gt;  It is intended to be used on a design that usually lives on the end of your USB cable and prvides the converter chip (FTDI232 or FTDI231x) to commnicate serial RX/TX.
+ 
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;The "sister" device, named "TARGET"&lt;/b&gt; is inteneded to be used on a design that contains a target micro-controller that you wish to program.
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;You can populate with some of these:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/115"&gt; Female Headers&lt;/a&gt; (PRT-00115)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;/p&gt;
+For reference (or to suit your programming needs) check out these designs:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9716"&gt; SparkFun FTDI Basic Breakout - 5V&lt;/a&gt; (DEV-09716)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9873"&gt; SparkFun FTDI Basic Breakout - 3.3V&lt;/a&gt; (DEV-09873)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12935"&gt; SparkFun FTDI SmartBasic&lt;/a&gt; (DEV-12935)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13746"&gt; SparkFun Beefy 3 - FTDI Basic Breakout&lt;/a&gt; (DEV-13746)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="CONN_06" x="0" y="0"/>
 </gates>
@@ -28707,42 +28771,6 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </device>
 </devices>
 </deviceset>
-<deviceset name="FTDI_BASIC_TARGET_SIDE" prefix="J">
-<description>Connector which mates to FTDI basic or FTDI cable.</description>
-<gates>
-<gate name="G$1" symbol="FTDI_DEVICE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="PTH" package="FTDI_DEVICE_SIDE">
-<connects>
-<connect gate="G$1" pin="CTS" pad="P$5"/>
-<connect gate="G$1" pin="DTR" pad="P$1"/>
-<connect gate="G$1" pin="GND" pad="P$6"/>
-<connect gate="G$1" pin="RXI" pad="P$3"/>
-<connect gate="G$1" pin="TXO" pad="P$2"/>
-<connect gate="G$1" pin="VCC" pad="P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="RA_SMT" package="FTDI_DEVICE_RA_SMT">
-<connects>
-<connect gate="G$1" pin="CTS" pad="5"/>
-<connect gate="G$1" pin="DTR" pad="1"/>
-<connect gate="G$1" pin="GND" pad="6"/>
-<connect gate="G$1" pin="RXI" pad="3"/>
-<connect gate="G$1" pin="TXO" pad="2"/>
-<connect gate="G$1" pin="VCC" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CONN-08971" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="MYDAQ" prefix="J">
 <gates>
 <gate name="G$1" symbol="MYDAQ_CONNECTOR" x="0" y="0"/>
@@ -29812,7 +29840,7 @@ Push-push type uSD socket with full SDIO signal mapping. Spark Fun Electronics S
 <description>&lt;h3&gt;Vernier Sensor (Analog) - British Telecom Connector&lt;/h3&gt;
 
 &lt;p&gt;&lt;/p&gt;
-&lt;b&gt;This device is useful when designing a project that uses any of the Vernier ecosystem (sensors and/or controllers)&lt;/b&gt;
+&lt;b&gt;This device is useful when designing a project that uses any of the analog sensors in the Vernier ecosystem (sensors and/or controllers)&lt;/b&gt;
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt;At SparkFun we used this device on the following shield designed to interface with 4 Vernier style sensors:&lt;/b&gt;
 &lt;ul&gt;
@@ -29820,9 +29848,9 @@ Push-push type uSD socket with full SDIO signal mapping. Spark Fun Electronics S
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;/p&gt;
-&lt;b&gt; All of the Vernier sensors can be found here:&lt;/b&gt;
+&lt;b&gt; All of the Vernier sensors and connecotrs can be found here:&lt;/b&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/search/results?term=Screw+Terminals"&gt; Screw Terimnals on SparkFun.com&lt;/a&gt; (5mm/3.5mm/2.54mm spacing)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/search/results?term=vernier"&gt; Vernier Products on SparkFun.com&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;/p&gt;
@@ -29850,6 +29878,27 @@ Push-push type uSD socket with full SDIO signal mapping. Spark Fun Electronics S
 </devices>
 </deviceset>
 <deviceset name="VERNIER_DIGITAL">
+<description>&lt;h3&gt;Vernier Sensor (Digital) - British Telecom Connector&lt;/h3&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;This device is useful when designing a project that uses any of the analog sensors in the Vernier ecosystem (sensors and/or controllers)&lt;/b&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;At SparkFun we used this device on the following shield designed to interface with 4 Vernier style sensors:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12858"&gt; SparkFun Vernier Interface Shieldt&lt;/a&gt; (DEV-12858)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt; All of the Vernier sensors and connecotrs can be found here:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/search/results?term=vernier"&gt; Vernier Products on SparkFun.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt; More information about the Vernier ecosystem can be found here:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.vernier.com/engineering/arduino/"&gt; http://www.vernier.com/engineering/arduino/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="VERNIER_DIGITAL" x="0" y="0"/>
 </gates>
