@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1185,8 +1185,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <smd name="4" x="-0.75" y="2.45" dx="1.5" dy="0.3" layer="1" rot="R90"/>
 <smd name="P$5" x="-2.525" y="0.7" dx="1.85" dy="2.6" layer="1"/>
 <smd name="P$6" x="2.525" y="0.7" dx="1.85" dy="2.6" layer="1"/>
-<text x="-1.905" y="-2.54" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-1.905" y="-3.81" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<text x="-1.397" y="-1.524" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.651" y="-2.413" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
 <package name="EB-85A">
 <wire x1="0" y1="-4.25" x2="7" y2="-4.25" width="0.254" layer="21"/>
@@ -22305,7 +22305,22 @@ Through-hole MiniDIN 7 connector. Commonly used with Roomba products. Also used 
 </devices>
 </deviceset>
 <deviceset name="DS_TOUCH_CONNECTOR" prefix="J">
-<description>4-pin DS touch screen connector (LCD-09105)</description>
+<description>&lt;h3&gt;4-pin DS touch screen connector&lt;/h3&gt;
+This is the SMD connector for the PSP touch screen. 4-pin right angle good, friction fit connector with 1 mm pitch.
+
+This connector is compatible with the PSP Touch Screen NOT the Sharp Color 24-Bit LCD.
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Here is the connector we sell at SparkFun:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9104"&gt;Color 24-Bit LCD 4.3" PSP Touch Screen Connector&lt;/a&gt; (LCD-09104)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;It was also used on this SparkFun product:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13631"&gt;SparkFun Nintendo DS Screen Kit&lt;/a&gt; (LCD-13631)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="DS_TOUCH_CONNECTOR" x="0" y="0"/>
 </gates>
