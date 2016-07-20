@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -518,6 +518,7 @@ http://dlnmh9ip6v2uc.cloudfront.net/datasheets/Components/LED/Top-Up%20LED%20Rin
 <smd name="6" x="2.4" y="1.7" dx="2" dy="1.1" layer="1" roundness="100"/>
 <text x="-2.54" y="2.794" size="0.762" layer="25">&gt;Name</text>
 <text x="-2.54" y="-3.556" size="0.762" layer="27">&gt;Value</text>
+<circle x="-2.605" y="2.889" radius="0.2236" width="0.2032" layer="21"/>
 </package>
 <package name="LED-TRICOLOR-5050-IC">
 <circle x="-0.7" y="2" radius="0.2236" width="0.2032" layer="21"/>
@@ -2086,7 +2087,9 @@ COM-09264 (Diffuse)</description>
 <connect gate="D1" pin="RED-C" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-10298" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
