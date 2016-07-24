@@ -2950,6 +2950,30 @@ RDY</text>
 <wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
 </symbol>
+<symbol name="HX711">
+<wire x1="-12.7" y1="20.32" x2="10.16" y2="20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="20.32" x2="10.16" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-20.32" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
+<pin name="AGND" x="-15.24" y="-2.54" visible="pin" length="short"/>
+<pin name="AVDD" x="-15.24" y="7.62" visible="pin" length="short"/>
+<pin name="BASE" x="-15.24" y="12.7" visible="pin" length="short"/>
+<pin name="DOUT" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="DVDD" x="12.7" y="17.78" visible="pin" length="short" rot="R180"/>
+<pin name="INA+" x="-15.24" y="-17.78" visible="pin" length="short"/>
+<pin name="INA-" x="-15.24" y="-12.7" visible="pin" length="short"/>
+<pin name="INB+" x="12.7" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="INB-" x="12.7" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="PD_SCK" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="RATE" x="12.7" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="VBG" x="-15.24" y="-7.62" visible="pin" length="short"/>
+<pin name="VFB" x="-15.24" y="2.54" visible="pin" length="short"/>
+<pin name="VSUP" x="-15.24" y="17.78" visible="pin" length="short"/>
+<pin name="XI" x="12.7" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="XO" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<text x="-12.7" y="21.082" size="1.778" layer="95">&gt;Name</text>
+<text x="-12.7" y="-22.86" size="1.778" layer="96">&gt;Value</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ACS712">
@@ -4853,6 +4877,39 @@ This converter resolves temperatures to 0.25°C, allows readings as high as +180
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HX711" prefix="U">
+<gates>
+<gate name="U1" symbol="HX711" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="HX711" package="SO16">
+<connects>
+<connect gate="U1" pin="AGND" pad="5"/>
+<connect gate="U1" pin="AVDD" pad="3"/>
+<connect gate="U1" pin="BASE" pad="2"/>
+<connect gate="U1" pin="DOUT" pad="12"/>
+<connect gate="U1" pin="DVDD" pad="16"/>
+<connect gate="U1" pin="INA+" pad="8"/>
+<connect gate="U1" pin="INA-" pad="7"/>
+<connect gate="U1" pin="INB+" pad="10"/>
+<connect gate="U1" pin="INB-" pad="9"/>
+<connect gate="U1" pin="PD_SCK" pad="11"/>
+<connect gate="U1" pin="RATE" pad="15"/>
+<connect gate="U1" pin="VBG" pad="6"/>
+<connect gate="U1" pin="VFB" pad="4"/>
+<connect gate="U1" pin="VSUP" pad="1"/>
+<connect gate="U1" pin="XI" pad="14"/>
+<connect gate="U1" pin="XO" pad="13"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-12445" constant="no"/>
+<attribute name="VALUE" value="HX711" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
