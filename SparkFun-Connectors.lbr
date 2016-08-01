@@ -11108,6 +11108,8 @@ This RJ-45 jack with magnetics has 10 pins, gives you access to the unused twist
 <pad name="1" x="-4.445" y="6.35" drill="1" diameter="1.8796" shape="square"/>
 <hole x="-5.715" y="0" drill="3.2"/>
 <hole x="5.715" y="0" drill="3.2"/>
+<text x="-1.3208" y="-6.477" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.651" y="-7.874" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
 <package name="SCREENKEYMATINGCONNECTOR">
 <wire x1="0" y1="0.127" x2="10" y2="0.127" width="0.2032" layer="21"/>
@@ -25921,13 +25923,34 @@ Commonly found on CAT3 devices and some Microchip programmers.
 </devices>
 </deviceset>
 <deviceset name="RJ45-8" prefix="J">
-<description>&lt;b&gt;RJ45 Jack&lt;/b&gt;
-Simple RJ45, 8-pin connection - connector for common Cat5, Cat5e, and Cat6 Ethernet cables. Footprint not yet proven in production. Connector sku is PRT-00643; Breakout PCB sku is BOB-00716.</description>
+<description>&lt;h3&gt;RJ45 Jack - 8 pin&lt;/h3&gt;
+Simple RJ45, 8-pin connection. Commonly used for Cat5, Cat5e, and Cat6 Ethernet cables.
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Here is the connector we sell at SparkFun:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/643"&gt;RJ45 8-Pin Connector&lt;/a&gt; (PRT-00643)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Prototyping/04908.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;It is used on this SparkFun product:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/716"&gt;SparkFun RJ45 Breakout&lt;/a&gt; (BOB-00716)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;br&gt;&lt;/br&gt;
+Note, you may also be interested in the "MAGJACK" version of this. It is basically a RJ45 connector, but also has some status LEDs built into the connector housing. You can check that out in this library at the device named "MAGJACK.dev" and see these products online:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8534"&gt;RJ45 Ethernet MagJack-Compatible&lt;/a&gt; (PRT-08534)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13021"&gt;SparkFun RJ45 MagJack Breakout&lt;/a&gt; (BOB-13021)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="JP1" symbol="RJ45-8" x="0" y="0"/>
 </gates>
 <devices>
-<device name="PTH" package="RJ45-8">
+<device name="" package="RJ45-8">
 <connects>
 <connect gate="JP1" pin="1" pad="1"/>
 <connect gate="JP1" pin="2" pad="2"/>
