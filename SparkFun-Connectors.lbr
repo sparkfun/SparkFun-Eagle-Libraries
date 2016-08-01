@@ -12484,6 +12484,8 @@ Manufacturer: Hirose&lt;br&gt;&lt;br&gt;
 <pad name="SWITCH" x="3.7" y="-3.7" drill="2.3"/>
 <hole x="-3.1" y="4.25" drill="2.1"/>
 <hole x="-3.1" y="-4.25" drill="2.1"/>
+<text x="-1.5748" y="5.969" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.905" y="-6.477" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
 <package name="RCA_LOCK">
 <wire x1="-4" y1="5" x2="-4" y2="-5" width="0.2032" layer="51"/>
@@ -12509,6 +12511,8 @@ Manufacturer: Hirose&lt;br&gt;&lt;br&gt;
 <rectangle x1="2.8702" y1="3.4798" x2="5.1054" y2="3.8354" layer="51"/>
 <hole x="-3.1" y="4.25" drill="2.1336"/>
 <hole x="-3.1" y="-4.25" drill="2.1336"/>
+<text x="-1.5748" y="5.969" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.905" y="-6.477" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
 <package name="USB-AB-MICRO-SMD">
 <description>micro USB AB connector for OTG support. 5-pins: USBVCC, GND, D+, D-, USBID. Can act as host or device</description>
@@ -19492,15 +19496,15 @@ PROD_ID CONN=09481</description>
 <wire x1="-7.62" y1="-2.54" x2="-5.08" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="-5.08" y1="-2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
-<text x="-12.7" y="5.08" size="1.778" layer="96">&gt;Value</text>
-<text x="-12.7" y="-5.08" size="1.778" layer="95">&gt;Name</text>
+<text x="-12.7" y="5.08" size="1.778" layer="96" font="vector">&gt;Value</text>
+<text x="-12.7" y="-5.08" size="1.778" layer="95" font="vector">&gt;Name</text>
 <rectangle x1="-12.7" y1="1.778" x2="-2.54" y2="3.302" layer="94"/>
 <pin name="SWITCH" x="0" y="0" visible="off" length="short" rot="R180"/>
 <pin name="SHELL" x="0" y="-2.54" visible="off" length="short" rot="R180"/>
 <pin name="PIN" x="0" y="2.54" visible="off" length="short" rot="R180"/>
 <wire x1="-5.08" y1="0" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
-<text x="-4.826" y="1.016" size="0.6096" layer="94">OPEN WHEN</text>
-<text x="-4.826" y="0.254" size="0.6096" layer="94">CONNECTED</text>
+<text x="-4.826" y="1.016" size="0.6096" layer="94" font="vector">OPEN WHEN</text>
+<text x="-4.826" y="0.254" size="0.6096" layer="94" font="vector">CONNECTED</text>
 </symbol>
 <symbol name="USB_AB">
 <description>USB AB, 5-pins: USBVCC, GND, D+, D-, USBID.</description>
@@ -26807,6 +26811,28 @@ NOTE: CD1 and CD2 are connected internally</description>
 </devices>
 </deviceset>
 <deviceset name="RCA" prefix="J">
+<description>&lt;h3&gt;RCA Jack connector&lt;/h3&gt;
+This is a right angle RCA jack connecotr. Commonly used for video or audio.
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Here is the connector we sell at SparkFun:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8631"&gt;RCA Jack&lt;/a&gt; (PRT-08631)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.sparkfun.com/datasheets/Prototyping/Connectors/RCA-Jack.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;It is not used on any active designs, however it was used on a couple retired products:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8826"&gt;RCA Jack Breakout [RETIRED]&lt;/a&gt; (PRT-08826)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9168"&gt;SparkFun On Screen Display Breakout - MAX7456 [RETIRED]&lt;/a&gt; (BOB-09168)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;You may also be interested in a cable:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11573"&gt;RCA Video Cable - 6'&lt;/a&gt; (CAB-11573)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="RCA" x="0" y="0"/>
 </gates>
@@ -26821,7 +26847,7 @@ NOTE: CD1 and CD2 are connected internally</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-LOCK" package="RCA_LOCK">
+<device name="LOCK" package="RCA_LOCK">
 <connects>
 <connect gate="G$1" pin="PIN" pad="PIN"/>
 <connect gate="G$1" pin="SHELL" pad="SHELL"/>
