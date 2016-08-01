@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11070,22 +11070,6 @@ This RJ-45 jack with magnetics has 10 pins, gives you access to the unused twist
 <smd name="Y1" x="-1.5" y="2.85" dx="2.3" dy="0.6" layer="1" rot="R90"/>
 <text x="-3.25" y="0.9" size="0.4" layer="25">&gt;NAME</text>
 <text x="-3.35" y="-3.85" size="0.4" layer="27">&gt;VALUE</text>
-</package>
-<package name="RJ9">
-<description>Footprint for RJ9 simple connector. Common with telephone handsets. SparkFun SKU: PRT-08694</description>
-<wire x1="5.64" y1="-6.477" x2="5.64" y2="10.16" width="0.2032" layer="21"/>
-<wire x1="5.64" y1="10.16" x2="-5.64" y2="10.16" width="0.2032" layer="21"/>
-<wire x1="-5.64" y1="10.16" x2="-5.64" y2="-6.477" width="0.2032" layer="21"/>
-<wire x1="5.64" y1="-6.477" x2="-5.64" y2="-6.477" width="0.2032" layer="21"/>
-<wire x1="-5.64" y1="-6.477" x2="-5.64" y2="-10.41" width="0.2032" layer="51"/>
-<wire x1="-5.64" y1="-10.41" x2="5.64" y2="-10.41" width="0.2032" layer="51"/>
-<wire x1="5.64" y1="-10.41" x2="5.64" y2="-6.477" width="0.2032" layer="51"/>
-<pad name="1" x="-1.905" y="6.35" drill="0.889"/>
-<pad name="2" x="-0.635" y="8.89" drill="0.889"/>
-<pad name="3" x="0.635" y="6.35" drill="0.889"/>
-<pad name="4" x="1.905" y="8.89" drill="0.889"/>
-<hole x="-3.81" y="0" drill="3.2"/>
-<hole x="3.81" y="0" drill="3.2"/>
 </package>
 <package name="RJ11-6">
 <wire x1="6.858" y1="-5.207" x2="6.858" y2="10.414" width="0.2032" layer="21"/>
@@ -25890,25 +25874,6 @@ We no longer sell the &lt;a href="https://www.sparkfun.com/products/retired/8448
 <connect gate="G$1" pin="X2" pad="X2"/>
 <connect gate="G$1" pin="Y1" pad="Y1"/>
 <connect gate="G$1" pin="Y2" pad="Y2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="RJ9">
-<description>RJ9 connector (e.g., phone handsets)</description>
-<gates>
-<gate name="G$1" symbol="CONN_04" x="2.54" y="0"/>
-</gates>
-<devices>
-<device name="PTH" package="RJ9">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
