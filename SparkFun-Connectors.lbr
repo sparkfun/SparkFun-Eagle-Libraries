@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -11087,8 +11087,8 @@ This RJ-45 jack with magnetics has 10 pins, gives you access to the unused twist
 <pad name="6" x="3.175" y="6.35" drill="1.016" diameter="1.8796"/>
 <hole x="-5.08" y="0" drill="3.2512"/>
 <hole x="5.08" y="0" drill="3.2512"/>
-<text x="-2.54" y="2.54" size="0.4064" layer="25">&gt;Name</text>
-<text x="-2.54" y="1.27" size="0.4064" layer="27">&gt;Value</text>
+<text x="-1.3208" y="2.413" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.651" y="-2.794" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
 <package name="RJ45-8">
 <wire x1="-7.62" y1="10" x2="7.62" y2="10" width="0.2032" layer="21"/>
@@ -25882,13 +25882,27 @@ We no longer sell the &lt;a href="https://www.sparkfun.com/products/retired/8448
 </devices>
 </deviceset>
 <deviceset name="RJ11-6" prefix="J">
-<description>&lt;b&gt;RJ11 Jack&lt;/b&gt;
-Simple 6 pin RJ11 jack. Commonly found on CAT3 devices and Microchip programmers. SKU: PRT-00132</description>
+<description>&lt;h3&gt;RJ11 Jack - 6 pin&lt;/h3&gt;
+Commonly found on CAT3 devices and some Microchip programmers.
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Here is the connector we sell at SparkFun:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/132"&gt;RJ11 6-Pin Connector&lt;/a&gt; (PRT-00132)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.sparkfun.com/datasheets/Prototyping/Connectors/RJ11-Datasheet.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;It is used on this SparkFun product:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12081"&gt;SparkFun Weather Shield&lt;/a&gt; (DEV-12081)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8942"&gt;Weather Meters&lt;/a&gt; (SEN-08942)&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="CONN_06" x="0" y="0"/>
 </gates>
 <devices>
-<device name="PTH" package="RJ11-6">
+<device name="" package="RJ11-6">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
