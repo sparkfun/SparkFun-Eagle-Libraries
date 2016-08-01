@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -10399,8 +10399,12 @@ This RJ-45 jack with magnetics has 10 pins, gives you access to the unused twist
 <pad name="11" x="5.78" y="4.59" drill="2.2"/>
 <pad name="10" x="9.73" y="4.59" drill="2.2"/>
 <pad name="9" x="13.68" y="4.59" drill="2.2"/>
-<text x="13.335" y="-1.905" size="1.27" layer="21">1</text>
-<text x="-15.24" y="1.27" size="1.27" layer="21">16</text>
+<text x="13.335" y="-1.905" size="1.27" layer="21" font="vector" ratio="15">1</text>
+<text x="-15.24" y="1.27" size="1.27" layer="21" font="vector" ratio="15">16</text>
+<text x="-1.651" y="7.112" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.651" y="-6.858" size="0.6096" layer="25" font="vector" ratio="20">&gt;VALUE</text>
+<text x="-12.7" y="1.27" size="1.27" layer="22" font="vector" ratio="15" rot="MR0">16</text>
+<text x="14.605" y="-1.905" size="1.27" layer="22" font="vector" ratio="15" rot="MR0">1</text>
 </package>
 <package name="PIC-ICSP-MINI">
 <wire x1="-4" y1="1" x2="-4" y2="-1" width="0.2032" layer="51"/>
@@ -26846,7 +26850,21 @@ This connector will mate with standard 5-pin midi cables. This type of connector
 </devices>
 </deviceset>
 <deviceset name="OBDII">
-<description>OBDII connector footprint</description>
+<description>&lt;h3&gt;OBD-II Connector&lt;/h3&gt;
+OBDII is an on board diagnostics standard that is used on a large variety of cars. 
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;Here is the connector we sell at SparkFun:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9911"&gt;OBD-II connector&lt;/a&gt; (DEV-09911)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://pinoutsguide.com/CarElectronics/car_obd2_pinout.shtml"&gt;Info and Pinout&lt;/a&gt; (sorry, no datasheet)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;b&gt;We do not use this connector on any active designs, however, if you're looking for OBDII tech, please check out these:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/search/results?term=obd"&gt;SparkFun OBD related products&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="OBDII" x="0" y="0"/>
 </gates>
