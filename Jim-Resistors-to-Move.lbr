@@ -739,48 +739,9 @@ Fits EVJY-00, EVJY-80, EVJY-81, EVJY-10, etc</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-09177" constant="no"/>
+<attribute name="PROD_ID" value="RES-09177"/>
+<attribute name="SF_SKU" value="COM-09288"/>
 </technology>
-</technologies>
-</device>
-<device name="TRIM" package="TRIM_POT">
-<connects>
-<connect gate="G$1" pin="A" pad="3"/>
-<connect gate="G$1" pin="E" pad="2"/>
-<connect gate="G$1" pin="S" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="100K_3362U" package="3362U">
-<connects>
-<connect gate="G$1" pin="A" pad="P$3"/>
-<connect gate="G$1" pin="E" pad="P$1"/>
-<connect gate="G$1" pin="S" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-RV16AF-20" package="POT_ALPHA_RV16AF-20">
-<connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="E" pad="3"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="MAM" package="POT_MAMMOTH">
-<connects>
-<connect gate="G$1" pin="A" pad="P$2"/>
-<connect gate="G$1" pin="E" pad="P$3"/>
-<connect gate="G$1" pin="S" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 <device name="ALPS-KIT" package="ALPS_POT_KIT">
@@ -791,7 +752,8 @@ Fits EVJY-00, EVJY-80, EVJY-81, EVJY-10, etc</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-09177" constant="no"/>
+<attribute name="PROD_ID" value="RES-09177"/>
+<attribute name="SF_SKU" value="COM-09288"/>
 </technology>
 </technologies>
 </device>
@@ -804,18 +766,6 @@ Fits EVJY-00, EVJY-80, EVJY-81, EVJY-10, etc</description>
 <gate name="G$2" symbol="SWITCH-MOMENTARY-2-1" x="15.24" y="7.62"/>
 </gates>
 <devices>
-<device name="POT_PTH" package="POT_PTH">
-<connects>
-<connect gate="G$1" pin="A" pad="E@1"/>
-<connect gate="G$1" pin="E" pad="E@2"/>
-<connect gate="G$1" pin="S" pad="WAND"/>
-<connect gate="G$2" pin="1" pad="S1"/>
-<connect gate="G$2" pin="2" pad="S2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
 <device name="POT_PTH_SWITCH" package="POT_PTH_SWITCH">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
@@ -825,7 +775,9 @@ Fits EVJY-00, EVJY-80, EVJY-81, EVJY-10, etc</description>
 <connect gate="G$2" pin="2" pad="S2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="RES-11300"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -854,8 +806,9 @@ Fits EVJY-00, EVJY-80, EVJY-81, EVJY-10, etc</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-09730" constant="no"/>
-<attribute name="VALUE" value="TSR-3386" constant="no"/>
+<attribute name="PROD_ID" value="RES-09730"/>
+<attribute name="SF_SKU" value="COM-09806"/>
+<attribute name="VALUE" value="10k"/>
 </technology>
 </technologies>
 </device>
@@ -879,7 +832,9 @@ Fits EVJY-00, EVJY-80, EVJY-81, EVJY-10, etc</description>
 <connect gate="R?" pin="WIPER" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08876"/>
+</technology>
 </technologies>
 </device>
 <device name="PTH" package="TRIM_POT_PTH">
@@ -889,17 +844,22 @@ Fits EVJY-00, EVJY-80, EVJY-81, EVJY-10, etc</description>
 <connect gate="R?" pin="WIPER" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08445"/>
+</technology>
 </technologies>
 </device>
-<device name="SMD" package="TRIMPOT-3MM">
+<device name="-SMD" package="TRIMPOT-3MM">
 <connects>
 <connect gate="R?" pin="CCW" pad="1"/>
 <connect gate="R?" pin="CW" pad="3"/>
 <connect gate="R?" pin="WIPER" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="RES-08048"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
 </technologies>
 </device>
 <device name="TRIMPOT-5MM" package="TRIMPOT-5MM">
@@ -909,7 +869,10 @@ Fits EVJY-00, EVJY-80, EVJY-81, EVJY-10, etc</description>
 <connect gate="R?" pin="WIPER" pad="B"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="RES-11156"/>
+<attribute name="VALUE" value="5k"/>
+</technology>
 </technologies>
 </device>
 <device name="TRIMPOT_PTH_S3_LOCK" package="TRIMPOT_PTH_S3_LOCK">
@@ -941,6 +904,7 @@ Fits EVJY-00, EVJY-80, EVJY-81, EVJY-10, etc</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="RES-11156"/>
+<attribute name="VALUE" value="5k"/>
 </technology>
 </technologies>
 </device>
@@ -1017,7 +981,7 @@ Small and meduim footprints untested.</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-09484" constant="no"/>
+<attribute name="PROD_ID" value="RES-09484"/>
 </technology>
 </technologies>
 </device>
@@ -1029,7 +993,8 @@ Small and meduim footprints untested.</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="COM-11621" constant="no"/>
+<attribute name="PROD_ID" value="RES-11931"/>
+<attribute name="SF_SKU" value="COM-11621"/>
 </technology>
 </technologies>
 </device>
@@ -1041,7 +1006,8 @@ Small and meduim footprints untested.</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="COM-11620" constant="no"/>
+<attribute name="PROD_ID" value="RES-11924"/>
+<attribute name="SF_SKU" value="COM-11620"/>
 </technology>
 </technologies>
 </device>
@@ -1053,7 +1019,8 @@ Small and meduim footprints untested.</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-11931" constant="no"/>
+<attribute name="PROD_ID" value="RES-11931"/>
+<attribute name="SF_SKU" value="COM-11621"/>
 </technology>
 </technologies>
 </device>
