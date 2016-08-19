@@ -64,6 +64,8 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -89,6 +91,7 @@
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -97,6 +100,7 @@
 <layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
@@ -334,7 +338,10 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <wire x1="-5.08" y1="0" x2="-5.588" y2="0.508" width="0.127" layer="48"/>
 <wire x1="-5.588" y1="0.508" x2="-5.588" y2="0" width="0.127" layer="48"/>
 </package>
-<package name="TC33X">
+<package name="TRIMPOT-SMD-TC33X">
+<description>&lt;h3&gt;Bourns TC33X Trimpot - SMD, 3mm Square, Open-Frame&lt;/h3&gt;
+&lt;p&gt;Used on e.g. &lt;a href="https://www.sparkfun.com/products/13899"&gt;Shapeoko&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.bourns.com/docs/Product-Datasheets/TC33.pdf"&gt;Datasheet&lt;/a&gt; (TS53YL502MR10)&lt;/p&gt;</description>
 <circle x="0" y="0" radius="1.15" width="0.1016" layer="51"/>
 <wire x1="-1.45" y1="1.75" x2="-1.45" y2="-1.65" width="0.254" layer="51"/>
 <wire x1="-1.45" y1="-1.65" x2="1.45" y2="-1.65" width="0.254" layer="51"/>
@@ -441,6 +448,396 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <text x="1.524" y="-6.35" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center">&gt;NAME</text>
 <text x="-1.524" y="-6.35" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center">&gt;VALUE</text>
 </package>
+<package name="TRIMPOT-PTH-3386U">
+<description>&lt;h3&gt;Trimpot - PTH, Trimpot w/ finger-adjustable knob&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/9806"&gt;Trimpot 10K with Knob&lt;/a&gt; (COM-09806)&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Components/General/TSR-3386.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<circle x="0" y="0.575" radius="4" width="0.127" layer="51"/>
+<wire x1="-4.765" y1="-4.765" x2="-4" y2="-4.765" width="0.2032" layer="21"/>
+<wire x1="4" y1="-4.765" x2="4.765" y2="-4.765" width="0.2032" layer="21"/>
+<wire x1="4.765" y1="-4.765" x2="4.765" y2="4.765" width="0.2032" layer="21"/>
+<wire x1="4.765" y1="4.765" x2="-4.765" y2="4.765" width="0.2032" layer="21"/>
+<wire x1="-4.765" y1="4.765" x2="-4.765" y2="-4.765" width="0.2032" layer="21"/>
+<wire x1="-1.5" y1="2.2" x2="-0.5" y2="2.2" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="2.2" x2="-0.5" y2="-1.8" width="0.127" layer="51"/>
+<wire x1="-0.5" y1="-1.8" x2="0.5" y2="-1.8" width="0.127" layer="51"/>
+<wire x1="0.5" y1="-1.8" x2="0.5" y2="2.2" width="0.127" layer="51"/>
+<wire x1="0.5" y1="2.2" x2="1.5" y2="2.2" width="0.127" layer="51"/>
+<wire x1="0" y1="3.7" x2="-1.5" y2="2.2" width="0.127" layer="51"/>
+<wire x1="1.5" y1="2.2" x2="0" y2="3.7" width="0.127" layer="51"/>
+<wire x1="-4" y1="-4.765" x2="-4" y2="-4.365" width="0.2032" layer="21"/>
+<wire x1="-4" y1="-4.365" x2="4" y2="-4.365" width="0.2032" layer="21"/>
+<wire x1="4" y1="-4.365" x2="4" y2="-4.765" width="0.2032" layer="21"/>
+<pad name="1" x="-2.54" y="-0.015" drill="1.016" diameter="1.8796" shape="square"/>
+<pad name="2" x="0" y="-0.015" drill="1.016" diameter="1.8796"/>
+<pad name="3" x="2.54" y="-0.015" drill="1.016" diameter="1.8796"/>
+<text x="0" y="4.953" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-4.572" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+</package>
+<package name="TRIMPOT-SMD-3MM-OPEN">
+<description>&lt;h3&gt;Trimpot - SMD, 3mm Square, Open-Frame&lt;/h3&gt;
+&lt;p&gt;Used on e.g. &lt;a href="https://www.sparkfun.com/products/8883"&gt;SparkFun Low Current Sensor Breakout - ACS712&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.bourns.com/docs/Product-Datasheets/TC33.pdf"&gt;Datasheet&lt;/a&gt; (TC33X-2-103E)&lt;/p&gt;</description>
+<wire x1="-1.1016" y1="1.6" x2="-2.0064" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="-2.0064" y1="1.6" x2="-2.0064" y2="-1.5238" width="0.2032" layer="21"/>
+<wire x1="1.1016" y1="1.6" x2="2.0064" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="2.0064" y1="1.6" x2="2.0064" y2="-1.5238" width="0.2032" layer="21"/>
+<smd name="1" x="-1.1548" y="-1.4214" dx="1.0922" dy="1.6002" layer="1"/>
+<smd name="2" x="0" y="1.4214" dx="1.6002" dy="1.6002" layer="1"/>
+<smd name="3" x="1.1548" y="-1.4214" dx="1.0922" dy="1.6002" layer="1"/>
+<text x="-2.159" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;Name</text>
+<text x="2.159" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;Value</text>
+</package>
+<package name="TRIMPOT-SMD-5MM">
+<description>&lt;h3&gt;Trimpot - SMD, 5mm Square, Closed-Frame&lt;/h3&gt;
+&lt;p&gt;Used on e.g. &lt;a href="https://www.sparkfun.com/products/13613"&gt;IOIO-OTG - V2.2&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.vishay.com/docs/51008/ts53.pdf"&gt;Datasheet&lt;/a&gt; (TS53YL502MR10)&lt;/p&gt;</description>
+<wire x1="-2.5" y1="-2.14" x2="-2.5" y2="2.86" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="2.86" x2="2.5" y2="2.86" width="0.127" layer="51"/>
+<wire x1="2.5" y1="2.86" x2="2.5" y2="-2.14" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-2.14" x2="-2.5" y2="-2.14" width="0.127" layer="51"/>
+<wire x1="-1.4" y1="2.96" x2="-2.6" y2="2.96" width="0.2032" layer="21"/>
+<wire x1="-2.6" y1="2.96" x2="-2.6" y2="1.56" width="0.2032" layer="21"/>
+<wire x1="1.409221875" y1="2.96" x2="2.6" y2="2.96" width="0.2032" layer="21"/>
+<wire x1="2.6" y1="2.96" x2="2.6" y2="1.56" width="0.2032" layer="21"/>
+<wire x1="-2.09398125" y1="-2.24" x2="-2.6" y2="-2.24" width="0.2032" layer="21"/>
+<wire x1="-2.6" y1="-2.24" x2="-2.6" y2="-1.54" width="0.2032" layer="21"/>
+<wire x1="2.1" y1="-2.24" x2="2.6" y2="-2.24" width="0.2032" layer="21"/>
+<wire x1="2.6" y1="-2.24" x2="2.6" y2="-1.54" width="0.2032" layer="21"/>
+<smd name="A" x="1.15" y="-2.54" dx="1.3" dy="1.3" layer="1"/>
+<smd name="B" x="0" y="3.2385" dx="2" dy="1.4016" layer="1" rot="R270"/>
+<smd name="C" x="-1.15" y="-2.54" dx="1.3" dy="1.3" layer="1"/>
+<text x="-2.794" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;Name</text>
+<text x="2.794" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;Value</text>
+</package>
+<package name="TRIMPOT-SMD-3MM-CLOSED">
+<description>&lt;h3&gt;Trimpot - SMD, 3mm Square, Closed-Frame&lt;/h3&gt;
+&lt;p&gt;Used on e.g. &lt;a href="https://www.sparkfun.com/products/12779"&gt;EasyDriver - Stepper Motor Driver&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.bitechnologies.com/pdfs/22.pdf"&gt;Datasheet&lt;/a&gt; (22AR10KTR)&lt;/p&gt;</description>
+<wire x1="-1" y1="1.6" x2="-1.6" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="-1.6" y1="1.6" x2="-1.6" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="1" y1="1.6" x2="1.6" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="1.6" y1="1.6" x2="1.6" y2="-1.6" width="0.2032" layer="21"/>
+<smd name="1" x="-0.85" y="-1.65" dx="1" dy="0.9" layer="1"/>
+<smd name="2" x="0" y="1.65" dx="1.1" dy="0.9" layer="1"/>
+<smd name="3" x="0.85" y="-1.65" dx="1" dy="0.9" layer="1"/>
+<text x="-1.778" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;Name</text>
+<text x="1.778" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;Value</text>
+</package>
+<package name="SLIDER-XLARGE">
+<description>&lt;h3&gt;Slide Potentiometer - PTH 60mm travel&lt;/h3&gt;
+&lt;p&gt;10k linear slide pot with 60mm travel.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Components/Switches/SC608N-b10k.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="-44.15" y1="-6.25" x2="44.15" y2="-6.25" width="0.2032" layer="21"/>
+<wire x1="44.15" y1="-6.25" x2="44.15" y2="6.25" width="0.2032" layer="21"/>
+<wire x1="44.15" y1="6.25" x2="-44.15" y2="6.25" width="0.2032" layer="21"/>
+<wire x1="-44.15" y1="6.25" x2="-44.15" y2="-6.25" width="0.2032" layer="21"/>
+<circle x="-40" y="0" radius="0.7" width="0.5" layer="21"/>
+<circle x="40" y="0" radius="0.7" width="0.5" layer="21"/>
+<pad name="2A" x="-40" y="-3" drill="2.8" diameter="4.064"/>
+<pad name="1" x="-35" y="2" drill="2.8" diameter="4.064"/>
+<pad name="3" x="35" y="2" drill="2.8" diameter="4.064"/>
+<text x="0" y="6.477" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="6.096" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+</package>
+<package name="SLIDER-MEDIUM">
+<description>&lt;h3&gt;Slide Potentiometer - PTH, 30mm Travel&lt;/h3&gt;
+&lt;p&gt;10k linear slide pot with 30mm travel.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Components/Switches/C-31-.pdf"&gt;Datasheet&lt;/a&gt; (C3031N-1A2-B10K-GP)&lt;/p&gt;</description>
+<wire x1="-22.5" y1="-4.75" x2="22.5" y2="-4.75" width="0.2032" layer="21"/>
+<wire x1="22.5" y1="-4.75" x2="22.5" y2="4.75" width="0.2032" layer="21"/>
+<wire x1="22.5" y1="4.75" x2="-22.5" y2="4.75" width="0.2032" layer="21"/>
+<wire x1="-22.5" y1="4.75" x2="-22.5" y2="-4.75" width="0.2032" layer="21"/>
+<circle x="-20.5" y="0" radius="0.7" width="0.5" layer="21"/>
+<circle x="20.5" y="0" radius="0.7" width="0.5" layer="21"/>
+<pad name="TOP" x="-21.75" y="-2" drill="1.5"/>
+<pad name="WIPER" x="-21.75" y="2" drill="1.5"/>
+<pad name="BOTTOM" x="21.75" y="-2" drill="1.5"/>
+<text x="0" y="4.953" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="4.572" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+</package>
+<package name="SLIDER-SMALL">
+<description>&lt;h3&gt;Slide Potentiometer - PTH, 20mm Travel&lt;/h3&gt;
+&lt;p&gt;10k linear slide pot with 20mm travel.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Components/Switches/C-31-.pdf"&gt;Datasheet&lt;/a&gt; (C2031N-1A2-B10K-GP)&lt;/p&gt;</description>
+<wire x1="-18" y1="-4.75" x2="18" y2="-4.75" width="0.2032" layer="21"/>
+<wire x1="18" y1="-4.75" x2="18" y2="4.75" width="0.2032" layer="21"/>
+<wire x1="18" y1="4.75" x2="-18" y2="4.75" width="0.2032" layer="21"/>
+<wire x1="-18" y1="4.75" x2="-18" y2="-4.75" width="0.2032" layer="21"/>
+<circle x="-15.5" y="0" radius="0.7" width="0.5" layer="21"/>
+<circle x="15.5" y="0" radius="0.7" width="0.5" layer="21"/>
+<pad name="TOP" x="-16.75" y="-2" drill="1.5"/>
+<pad name="WIPER" x="-16.75" y="2" drill="1.5"/>
+<pad name="BOTTOM" x="16.75" y="-2" drill="1.5"/>
+<text x="0" y="4.953" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="4.572" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+<wire x1="-14" y1="2" x2="-14" y2="-2" width="0.127" layer="21"/>
+<wire x1="-14" y1="-2" x2="14" y2="-2" width="0.127" layer="21"/>
+<wire x1="14" y1="-2" x2="14" y2="2" width="0.127" layer="21"/>
+<wire x1="14" y1="2" x2="-14" y2="2" width="0.127" layer="21"/>
+<wire x1="-12.192" y1="0.508" x2="-8.89" y2="0.508" width="0.127" layer="48"/>
+<wire x1="-8.89" y1="0.508" x2="-8.89" y2="-0.508" width="0.127" layer="48"/>
+<wire x1="-8.89" y1="-0.508" x2="-12.192" y2="-0.508" width="0.127" layer="48"/>
+<wire x1="-12.192" y1="-0.508" x2="-12.192" y2="0.508" width="0.127" layer="48"/>
+<wire x1="-8.128" y1="0" x2="-5.588" y2="0" width="0.127" layer="48"/>
+<wire x1="-5.588" y1="0" x2="-5.588" y2="-0.508" width="0.127" layer="48"/>
+<wire x1="-5.588" y1="-0.508" x2="-5.08" y2="0" width="0.127" layer="48"/>
+<wire x1="-5.08" y1="0" x2="-5.588" y2="0.508" width="0.127" layer="48"/>
+<wire x1="-5.588" y1="0.508" x2="-5.588" y2="0" width="0.127" layer="48"/>
+</package>
+<package name="SLIDER-MEDIUM-KIT">
+<description>&lt;h3&gt;Slide Potentiometer - PTH, 30mm Travel (KIT Variant)&lt;/h3&gt;
+&lt;p&gt;10k linear slide pot with 30mm travel.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Components/Switches/C-31-.pdf"&gt;Datasheet&lt;/a&gt; (C3031N-1A2-B10K-GP)&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Warning:&lt;/b&gt; This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.&lt;/p&gt;</description>
+<wire x1="-22.5" y1="-4.75" x2="22.5" y2="-4.75" width="0.2032" layer="21"/>
+<wire x1="22.5" y1="-4.75" x2="22.5" y2="4.75" width="0.2032" layer="21"/>
+<wire x1="22.5" y1="4.75" x2="-22.5" y2="4.75" width="0.2032" layer="21"/>
+<wire x1="-22.5" y1="4.75" x2="-22.5" y2="-4.75" width="0.2032" layer="21"/>
+<circle x="-20.5" y="0" radius="0.7" width="0.5" layer="21"/>
+<circle x="20.5" y="0" radius="0.7" width="0.5" layer="21"/>
+<pad name="TOP" x="-21.65" y="-2" drill="1.2" diameter="2.5" stop="no"/>
+<pad name="WIPER" x="-21.65" y="2" drill="1.2" diameter="2.5" stop="no"/>
+<pad name="BOTTOM" x="21.65" y="-2" drill="1.2" diameter="2.5" stop="no"/>
+<circle x="-21.65" y="2" radius="0.6" width="0" layer="29"/>
+<circle x="-21.65" y="-2" radius="0.6" width="0" layer="29"/>
+<circle x="21.65" y="-2" radius="0.6" width="0" layer="29"/>
+<circle x="-21.65" y="2" radius="1.31529375" width="0" layer="30"/>
+<circle x="-21.65" y="-2" radius="1.31529375" width="0" layer="30"/>
+<circle x="21.65" y="-2" radius="1.31529375" width="0" layer="30"/>
+<rectangle x1="-22" y1="1.5" x2="-21.5" y2="2.5" layer="51"/>
+<rectangle x1="-22" y1="-2.5" x2="-21.5" y2="-1.5" layer="51"/>
+<rectangle x1="21.5" y1="-2.5" x2="22" y2="-1.5" layer="51"/>
+<text x="0" y="4.953" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="4.572" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+</package>
+<package name="POT-SWITCH-PTH">
+<description>&lt;h3&gt;17mm PTH Potentiometer (Pot) with Switch&lt;/h3&gt;
+&lt;p&gt;Three-terminal potentiometers, with an adjustable wiper and two adjustable resistors. A pot can be used to create a configurable voltage divider, or as a variable resistor.&lt;/p&gt;
+&lt;p&gt;This potentiometer includes a "select" switch - actuated by pushing down on the wiper.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.top-up.com.tw/front/bin/download.phtml?Part=16M1SHB-A&amp;Nbr=42285&amp;Category=60664"&gt;Datasheet&lt;/a&gt; (Top Up 16M1SHB-B3-20KM-A2K-16Y)&lt;/p&gt;</description>
+<pad name="2" x="0" y="0" drill="1.2"/>
+<pad name="3" x="0" y="5" drill="1.2"/>
+<pad name="1" x="0" y="-5" drill="1.2"/>
+<pad name="S2" x="-5.5" y="-5" drill="1.2"/>
+<pad name="S1" x="-5.5" y="5" drill="1.2"/>
+<wire x1="3.8" y1="6.5" x2="3.8" y2="2.73" width="0.127" layer="51"/>
+<text x="4.699" y="-2.27" size="0.4064" layer="51" rot="R90">mounting surface</text>
+<wire x1="3.8" y1="2.73" x2="3.8" y2="-2.73" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-2.73" x2="3.8" y2="-3.1" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-3.1" x2="3.8" y2="-4" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-4" x2="3.8" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="4.318" y1="1.667" x2="4.064" y2="1.667" width="0.127" layer="51"/>
+<wire x1="4.318" y1="-2.016" x2="4.064" y2="-2.016" width="0.127" layer="51"/>
+<wire x1="-7.7" y1="6.5" x2="-7.7" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="-7.7" y1="-6.5" x2="3.8" y2="-6.5" width="0.127" layer="51"/>
+<wire x1="-7.7" y1="6.5" x2="3.8" y2="6.5" width="0.127" layer="51"/>
+<wire x1="3.8" y1="2.73" x2="8" y2="2.73" width="0.127" layer="51"/>
+<wire x1="8" y1="2.73" x2="8" y2="1.73" width="0.127" layer="51"/>
+<wire x1="8" y1="1.73" x2="8" y2="-1.73" width="0.127" layer="51"/>
+<wire x1="8" y1="-1.73" x2="8" y2="-2.73" width="0.127" layer="51"/>
+<wire x1="8" y1="-2.73" x2="3.8" y2="-2.73" width="0.127" layer="51"/>
+<wire x1="8" y1="1.73" x2="10" y2="1.73" width="0.127" layer="51"/>
+<wire x1="10" y1="-1.73" x2="8" y2="-1.73" width="0.127" layer="51"/>
+<wire x1="-7.874" y1="6.604" x2="3.683" y2="6.604" width="0.2032" layer="21"/>
+<wire x1="3.683" y1="6.604" x2="3.683" y2="4.191" width="0.2032" layer="21"/>
+<wire x1="-7.874" y1="-6.604" x2="3.683" y2="-6.604" width="0.2032" layer="21"/>
+<wire x1="3.683" y1="-6.604" x2="3.683" y2="-4.191" width="0.2032" layer="21"/>
+<wire x1="-7.874" y1="-6.604" x2="-7.874" y2="6.604" width="0.2032" layer="21"/>
+<text x="6.28" y="-3.72" size="0.4064" layer="51">*2.8mm diameter x 2mm tab at 9 o'clock (from front)</text>
+<wire x1="10" y1="1.7" x2="9" y2="1" width="0.127" layer="51"/>
+<wire x1="9" y1="1" x2="10" y2="0" width="0.127" layer="51"/>
+<wire x1="10" y1="0" x2="9" y2="-1" width="0.127" layer="51"/>
+<wire x1="9" y1="-1" x2="10" y2="-1.7" width="0.127" layer="51"/>
+<wire x1="3.8" y1="-3.1" x2="5.8" y2="-3.1" width="0.127" layer="51"/>
+<wire x1="5.8" y1="-3.1" x2="5.8" y2="-4" width="0.127" layer="51"/>
+<wire x1="5.8" y1="-4" x2="3.8" y2="-4" width="0.127" layer="51"/>
+<text x="-8.128" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;Name</text>
+<text x="-7.62" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;Value</text>
+</package>
+<package name="POT-DUAL-PTH-PANASONIC-VERT">
+<description>&lt;h3&gt;Panasonic Dual-Gang 12mm PTH Potentiometer&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="http://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Electronic%20Components/EVJC,EVJY.pdf"&gt;Datasheet&lt;/a&gt; (Fits EVJY-00, EVJY-80, EVJY-81, EVJY-10, etc)&lt;/p&gt;</description>
+<wire x1="10.7" y1="6.55" x2="10.7" y2="-6.55" width="0.2032" layer="51"/>
+<wire x1="10.7" y1="-6.55" x2="-6.8" y2="-6.55" width="0.2032" layer="51"/>
+<wire x1="-6.8" y1="-6.55" x2="-6.8" y2="6.55" width="0.2032" layer="51"/>
+<wire x1="-6.8" y1="6.55" x2="10.7" y2="6.55" width="0.2032" layer="51"/>
+<pad name="A2" x="11" y="-5" drill="0.8" shape="square"/>
+<pad name="A1" x="11" y="-3" drill="0.8" shape="square"/>
+<pad name="B1" x="11" y="-1" drill="0.8" shape="square"/>
+<pad name="P$4" x="0" y="-6" drill="2" shape="octagon"/>
+<pad name="P$5" x="0" y="6" drill="2" shape="octagon"/>
+<pad name="B2" x="11" y="1" drill="0.8" shape="square"/>
+<pad name="B3" x="11" y="3" drill="0.8" shape="square"/>
+<pad name="A3" x="11" y="5" drill="0.8" shape="square"/>
+<circle x="0" y="0" radius="3" width="0.127" layer="51"/>
+<wire x1="-6.927" y1="-6.677" x2="-6.927" y2="6.677" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="3" width="0.127" layer="21"/>
+<text x="-7.112" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;Name</text>
+<text x="-6.731" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;Value</text>
+<wire x1="-1.746" y1="-6.677" x2="-6.927" y2="-6.677" width="0.2032" layer="21"/>
+<wire x1="10.827" y1="-6.677" x2="1.836" y2="-6.677" width="0.2032" layer="21"/>
+<wire x1="-1.746" y1="6.677" x2="-6.927" y2="6.677" width="0.2032" layer="21"/>
+<wire x1="10.827" y1="6.677" x2="1.836" y2="6.677" width="0.2032" layer="21"/>
+<wire x1="10.827" y1="-5.896" x2="10.827" y2="-6.677" width="0.2032" layer="21"/>
+<wire x1="10.827" y1="6.677" x2="10.827" y2="5.896" width="0.2032" layer="21"/>
+</package>
+<package name="POT-DUAL-PTH-PANASONIC-VERT-KIT">
+<description>&lt;h3&gt;Panasonic Dual-Gang 12mm PTH Potentiometer (KIT Variant)&lt;/h3&gt;
+&lt;p&gt;&lt;b&gt;Warning:&lt;/b&gt; This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://media.digikey.com/pdf/Data%20Sheets/Panasonic%20Electronic%20Components/EVJC,EVJY.pdf"&gt;Datasheet&lt;/a&gt; (Fits EVJY-00, EVJY-80, EVJY-81, EVJY-10, etc)&lt;/p&gt;</description>
+<wire x1="10.7" y1="6.55" x2="10.7" y2="-6.55" width="0.2032" layer="51"/>
+<wire x1="10.7" y1="-6.55" x2="-6.8" y2="-6.55" width="0.2032" layer="51"/>
+<wire x1="-6.8" y1="-6.55" x2="-6.8" y2="6.55" width="0.2032" layer="51"/>
+<wire x1="-6.8" y1="6.55" x2="10.7" y2="6.55" width="0.2032" layer="51"/>
+<pad name="A2" x="11" y="-5" drill="0.9" shape="long" stop="no"/>
+<pad name="A1" x="11" y="-3" drill="0.9" shape="long" stop="no"/>
+<pad name="B1" x="11" y="-1" drill="0.9" shape="long" stop="no"/>
+<pad name="P$4" x="0" y="-6" drill="2.1" stop="no"/>
+<pad name="P$5" x="0" y="6" drill="2.1" stop="no"/>
+<pad name="B2" x="11" y="1" drill="0.9" shape="long" stop="no"/>
+<pad name="B3" x="11" y="3" drill="0.9" shape="long" stop="no"/>
+<pad name="A3" x="11" y="5" drill="0.9" shape="long" stop="no"/>
+<circle x="0" y="0" radius="3" width="0.127" layer="51"/>
+<wire x1="9.43" y1="6.677" x2="9.43" y2="-6.677" width="0.2032" layer="21"/>
+<wire x1="9.43" y1="-6.677" x2="1.55" y2="-6.677" width="0.2032" layer="21"/>
+<wire x1="-1.55" y1="-6.677" x2="-6.927" y2="-6.677" width="0.2032" layer="21"/>
+<wire x1="-6.927" y1="-6.677" x2="-6.927" y2="6.677" width="0.2032" layer="21"/>
+<wire x1="-6.927" y1="6.677" x2="-1.55" y2="6.677" width="0.2032" layer="21"/>
+<wire x1="1.55" y1="6.677" x2="9.43" y2="6.677" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="3" width="0.127" layer="21"/>
+<circle x="0" y="6" radius="1.6256" width="0" layer="30"/>
+<circle x="0" y="-6" radius="1.6256" width="0" layer="30"/>
+<circle x="0" y="6" radius="1.05" width="0" layer="29"/>
+<circle x="0" y="-6" radius="1.05" width="0" layer="29"/>
+<circle x="11" y="5" radius="0.45" width="0" layer="29"/>
+<circle x="11" y="3" radius="0.45" width="0" layer="29"/>
+<circle x="11" y="1" radius="0.45" width="0" layer="29"/>
+<circle x="11" y="-1" radius="0.45" width="0" layer="29"/>
+<circle x="11" y="-3" radius="0.45" width="0" layer="29"/>
+<circle x="11" y="-5" radius="0.45" width="0" layer="29"/>
+<polygon width="0.127" layer="30">
+<vertex x="9.6" y="4.940309375"/>
+<vertex x="9.6" y="5.059690625" curve="-90"/>
+<vertex x="10.240309375" y="5.7"/>
+<vertex x="11.759690625" y="5.7" curve="-90"/>
+<vertex x="12.4" y="5.059690625"/>
+<vertex x="12.4" y="4.940309375" curve="-90"/>
+<vertex x="11.759690625" y="4.3"/>
+<vertex x="10.240309375" y="4.3" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="9.6" y="2.940309375"/>
+<vertex x="9.6" y="3.059690625" curve="-90"/>
+<vertex x="10.240309375" y="3.7"/>
+<vertex x="11.759690625" y="3.7" curve="-90"/>
+<vertex x="12.4" y="3.059690625"/>
+<vertex x="12.4" y="2.940309375" curve="-90"/>
+<vertex x="11.759690625" y="2.3"/>
+<vertex x="10.240309375" y="2.3" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="9.6" y="0.940309375"/>
+<vertex x="9.6" y="1.059690625" curve="-90"/>
+<vertex x="10.240309375" y="1.7"/>
+<vertex x="11.759690625" y="1.7" curve="-90"/>
+<vertex x="12.4" y="1.059690625"/>
+<vertex x="12.4" y="0.940309375" curve="-90"/>
+<vertex x="11.759690625" y="0.3"/>
+<vertex x="10.240309375" y="0.3" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="9.6" y="-1.059690625"/>
+<vertex x="9.6" y="-0.940309375" curve="-90"/>
+<vertex x="10.240309375" y="-0.3"/>
+<vertex x="11.759690625" y="-0.3" curve="-90"/>
+<vertex x="12.4" y="-0.940309375"/>
+<vertex x="12.4" y="-1.059690625" curve="-90"/>
+<vertex x="11.759690625" y="-1.7"/>
+<vertex x="10.240309375" y="-1.7" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="9.6" y="-3.059690625"/>
+<vertex x="9.6" y="-2.940309375" curve="-90"/>
+<vertex x="10.240309375" y="-2.3"/>
+<vertex x="11.759690625" y="-2.3" curve="-90"/>
+<vertex x="12.4" y="-2.940309375"/>
+<vertex x="12.4" y="-3.059690625" curve="-90"/>
+<vertex x="11.759690625" y="-3.7"/>
+<vertex x="10.240309375" y="-3.7" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="30">
+<vertex x="9.6" y="-5.059690625"/>
+<vertex x="9.6" y="-4.940309375" curve="-90"/>
+<vertex x="10.240309375" y="-4.3"/>
+<vertex x="11.759690625" y="-4.3" curve="-90"/>
+<vertex x="12.4" y="-4.940309375"/>
+<vertex x="12.4" y="-5.059690625" curve="-90"/>
+<vertex x="11.759690625" y="-5.7"/>
+<vertex x="10.240309375" y="-5.7" curve="-90"/>
+</polygon>
+<text x="-7.112" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;Name</text>
+<text x="-6.731" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;Value</text>
+</package>
+<package name="POT-PTH-ALPS">
+<description>&lt;h3&gt;9mm Square Rotary Potentiometer - PTH&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/Components/General/Linear-Trimpot.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="6.73" y1="4.93" x2="6.73" y2="-4.93" width="0.2032" layer="51"/>
+<wire x1="6.73" y1="-4.93" x2="-5.346" y2="-4.93" width="0.2032" layer="51"/>
+<wire x1="-5.346" y1="-4.93" x2="-5.346" y2="4.93" width="0.2032" layer="51"/>
+<wire x1="-5.346" y1="4.93" x2="6.73" y2="4.93" width="0.2032" layer="51"/>
+<pad name="P$1" x="7" y="-2.5" drill="1" diameter="1.8796" shape="square"/>
+<pad name="P$2" x="7" y="0" drill="1" diameter="1.8796" shape="square"/>
+<pad name="P$3" x="7" y="2.5" drill="1" diameter="1.8796" shape="square"/>
+<pad name="P$4" x="0" y="-4.4" drill="2" shape="octagon"/>
+<pad name="P$5" x="0" y="4.4" drill="2" shape="octagon"/>
+<wire x1="6.827" y1="5.057" x2="6.827" y2="3.6" width="0.2032" layer="21"/>
+<wire x1="6.7" y1="-1.1" x2="6.7" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="-5.473" y1="-5.057" x2="-1.625" y2="-5.057" width="0.2032" layer="21"/>
+<wire x1="1.64" y1="5.057" x2="6.827" y2="5.057" width="0.2032" layer="21"/>
+<wire x1="1.639" y1="-5.057" x2="6.827" y2="-5.057" width="0.2032" layer="21"/>
+<wire x1="-5.473" y1="5.057" x2="-1.625" y2="5.057" width="0.2032" layer="21"/>
+<wire x1="-5.473" y1="5.057" x2="-5.473" y2="-5.057" width="0.2032" layer="21"/>
+<wire x1="6.827" y1="-3.6" x2="6.827" y2="-5.027" width="0.2032" layer="21"/>
+<wire x1="6.7" y1="1.4" x2="6.7" y2="1.1" width="0.2032" layer="21"/>
+<text x="-5.715" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;Name</text>
+<text x="-5.207" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;Value</text>
+</package>
+<package name="POT-PTH-ALPS-KIT">
+<description>&lt;h3&gt;9mm Square Rotary Potentiometer - PTH (KIT Variant)&lt;/h3&gt;
+&lt;p&gt;&lt;b&gt;Warning:&lt;/b&gt; This is the KIT version of this package. This package has a smaller diameter top stop mask, which doesn't cover the diameter of the pad. This means only the bottom side of the pads' copper will be exposed. You'll only be able to solder to the bottom side.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/datasheets/Components/General/Linear-Trimpot.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="6.73" y1="4.93" x2="6.73" y2="-4.93" width="0.2032" layer="51"/>
+<wire x1="6.73" y1="-4.93" x2="-5.346" y2="-4.93" width="0.2032" layer="51"/>
+<wire x1="-5.346" y1="-4.93" x2="-5.346" y2="4.93" width="0.2032" layer="51"/>
+<wire x1="-5.346" y1="4.93" x2="6.73" y2="4.93" width="0.2032" layer="51"/>
+<pad name="P$1" x="7" y="-2.5" drill="1" diameter="1.8796" stop="no"/>
+<pad name="P$2" x="7" y="0" drill="1" diameter="1.8796" stop="no"/>
+<pad name="P$3" x="7" y="2.5" drill="1" diameter="1.8796" stop="no"/>
+<pad name="P$4" x="0" y="-4.4" drill="2" stop="no"/>
+<pad name="P$5" x="0" y="4.4" drill="2" stop="no"/>
+<circle x="0" y="4.4" radius="1" width="0" layer="29"/>
+<circle x="0" y="-4.4" radius="1" width="0" layer="29"/>
+<circle x="0" y="-4.4" radius="1.6256" width="0" layer="30"/>
+<circle x="7" y="2.5" radius="1.0668" width="0" layer="30"/>
+<circle x="7" y="0" radius="1.0668" width="0" layer="30"/>
+<circle x="7" y="-2.5" radius="1.0668" width="0" layer="30"/>
+<circle x="7" y="2.5" radius="0.5" width="0" layer="29"/>
+<circle x="7" y="0" radius="0.5" width="0" layer="29"/>
+<circle x="7" y="-2.5" radius="0.5" width="0" layer="29"/>
+<wire x1="-5.473" y1="5.057" x2="-1.55" y2="5.057" width="0.2032" layer="21"/>
+<wire x1="1.55" y1="5.057" x2="6.857" y2="5.057" width="0.2032" layer="21"/>
+<wire x1="-5.473" y1="-5.057" x2="-5.473" y2="5.057" width="0.2032" layer="21"/>
+<wire x1="6.857" y1="-5.057" x2="1.55" y2="-5.057" width="0.2032" layer="21"/>
+<wire x1="-1.55" y1="-5.057" x2="-5.473" y2="-5.057" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="2.667" width="0.2032" layer="21"/>
+<circle x="0" y="4.4" radius="1.6256" width="0" layer="30"/>
+<text x="-5.588" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;Name</text>
+<text x="-5.08" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;Value</text>
+<wire x1="6.857" y1="5.057" x2="6.857" y2="3.706" width="0.2032" layer="21"/>
+<wire x1="6.857" y1="-3.706" x2="6.857" y2="-5.057" width="0.2032" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -473,27 +870,6 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <text x="0" y="-1.524" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
 <pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
 <pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-<symbol name="POT">
-<pin name="A" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="E" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="S" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<wire x1="0" y1="-2.54" x2="-1.016" y2="-2.159" width="0.1524" layer="94"/>
-<wire x1="-1.016" y1="-2.159" x2="1.016" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="1.016" y1="-1.524" x2="-1.016" y2="-0.889" width="0.1524" layer="94"/>
-<wire x1="-1.016" y1="-0.889" x2="1.016" y2="-0.254" width="0.1524" layer="94"/>
-<wire x1="1.016" y1="-0.254" x2="-1.016" y2="0.381" width="0.1524" layer="94"/>
-<wire x1="-1.016" y1="0.381" x2="1.016" y2="1.016" width="0.1524" layer="94"/>
-<wire x1="1.016" y1="1.016" x2="-1.016" y2="1.651" width="0.1524" layer="94"/>
-<wire x1="-1.016" y1="1.651" x2="1.016" y2="2.286" width="0.1524" layer="94"/>
-<wire x1="1.016" y1="2.286" x2="0" y2="2.54" width="0.1524" layer="94"/>
-<text x="-1.524" y="2.54" size="1.778" layer="95" font="vector" rot="R90">&gt;NAME</text>
-<text x="1.524" y="2.54" size="1.778" layer="96" font="vector" rot="R90" align="top-left">&gt;VALUE</text>
-<polygon width="0.1524" layer="94">
-<vertex x="1.016" y="0"/>
-<vertex x="2.54" y="-1.016"/>
-<vertex x="2.54" y="1.016"/>
-</polygon>
 </symbol>
 <symbol name="RPACK-BUSSED-5">
 <wire x1="4.572" y1="0" x2="4.953" y2="1.016" width="0.1524" layer="94"/>
@@ -573,6 +949,70 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <pin name="4" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1"/>
 <pin name="5" x="0" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1"/>
 <pin name="6" x="0" y="-10.16" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="TRIMPOT">
+<description>&lt;h3&gt;Trimming Potentiometer (Trimpot)&lt;/h3&gt;
+&lt;p&gt;Three-terminal potentiometers, with an adjustable wiper and two adjustable resistors. A pot can be used to create a configurable voltage divider, or as a variable resistor.&lt;/p&gt;
+&lt;p&gt;"Trimpots" are a subset of potentiometers, usually intended for "set-and-forget" applications. They're often more delicate than standard potentiometers - rated for fewer turns.&lt;/p&gt;</description>
+<pin name="CCW" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="CW" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="WIPER" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="0" y1="-2.54" x2="-1.016" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="-1.016" y1="-2.159" x2="1.016" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="-1.524" x2="-1.016" y2="-0.889" width="0.1524" layer="94"/>
+<wire x1="-1.016" y1="-0.889" x2="1.016" y2="-0.254" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="-0.254" x2="-1.016" y2="0.381" width="0.1524" layer="94"/>
+<wire x1="-1.016" y1="0.381" x2="1.016" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="1.016" x2="-1.016" y2="1.651" width="0.1524" layer="94"/>
+<wire x1="-1.016" y1="1.651" x2="1.016" y2="2.286" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="2.286" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<text x="-1.524" y="2.54" size="1.778" layer="95" font="vector" rot="R90">&gt;NAME</text>
+<text x="1.524" y="2.54" size="1.778" layer="96" font="vector" rot="R90" align="top-left">&gt;VALUE</text>
+<polygon width="0.1524" layer="94">
+<vertex x="1.016" y="0"/>
+<vertex x="2.54" y="-1.016"/>
+<vertex x="2.54" y="1.016"/>
+</polygon>
+</symbol>
+<symbol name="POTENTIOMETER">
+<description>&lt;h3&gt;Potentiometer (Pot)&lt;/h3&gt;
+&lt;p&gt;Three-terminal potentiometers, with an adjustable wiper and two adjustable resistors. A pot can be used to create a configurable voltage divider, or as a variable resistor.&lt;/p&gt;</description>
+<wire x1="0" y1="-5.08" x2="0" y2="-4.572" width="0.1524" layer="94"/>
+<wire x1="0" y1="-4.572" x2="-1.016" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-3.81" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="-1.016" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.016" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.27" x2="1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="-1.016" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="3.81" x2="0" y2="4.572" width="0.254" layer="94"/>
+<wire x1="0" y1="4.572" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="-2.159" x2="2.667" y2="-3.429" width="0.1524" layer="94"/>
+<wire x1="2.667" y1="-3.429" x2="2.032" y2="-3.429" width="0.1524" layer="94"/>
+<wire x1="2.032" y1="-3.429" x2="1.397" y2="-3.429" width="0.1524" layer="94"/>
+<wire x1="1.397" y1="-3.429" x2="2.032" y2="-2.159" width="0.1524" layer="94"/>
+<text x="3.048" y="-0.254" size="1.778" layer="95" font="vector" rot="R270">&gt;NAME</text>
+<text x="-1.27" y="0" size="1.778" layer="95" font="vector" rot="R90" align="bottom-center">&gt;Value</text>
+<pin name="A" x="0" y="-7.62" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="E" x="0" y="7.62" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<polygon width="0.2032" layer="94">
+<vertex x="2.54" y="-1.27"/>
+<vertex x="1.27" y="0"/>
+<vertex x="2.54" y="1.27"/>
+</polygon>
+<wire x1="2.032" y1="-4.699" x2="2.032" y2="-3.429" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="SWITCH-MOMENTARY">
+<description>&lt;h3&gt;Single-Pole, Single-Throw (SPST) Switch&lt;/h3&gt;</description>
+<wire x1="1.905" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="1.905" y2="1.27" width="0.254" layer="94"/>
+<circle x="-2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
+<circle x="2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
+<text x="0" y="1.524" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-0.762" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="2"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2829,41 +3269,6 @@ It has a reduced top mask to make it harder to install upside-down.</description
 </device>
 </devices>
 </deviceset>
-<deviceset name="10K_LINEAR_POT_SMD" prefix="R">
-<description>&lt;h3&gt;10kΩ Linear Potentiometer (adjustable voltage divider)&lt;/h3&gt;
-&lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="POT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-ROT-1/10W-25%" package="TC33X">
-<connects>
-<connect gate="G$1" pin="A" pad="1"/>
-<connect gate="G$1" pin="E" pad="3"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-12428"/>
-<attribute name="VALUE" value="10k"/>
-</technology>
-</technologies>
-</device>
-<device name="-LINEAR-1/20W|1/40W-20%" package="C2031N-1A2-B10K-GP">
-<connects>
-<connect gate="G$1" pin="A" pad="2"/>
-<connect gate="G$1" pin="E" pad="3"/>
-<connect gate="G$1" pin="S" pad="1"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="RES-11924"/>
-<attribute name="VALUE" value="10k"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="5.6KOHM" prefix="R">
 <description>&lt;h3&gt;5.6kΩ resistor&lt;/h3&gt;
 &lt;p&gt;A resistor is a passive two-terminal electrical component that implements electrical resistance as a circuit element. Resistors act to reduce current flow, and, at the same time, act to lower voltage levels within circuits. - Wikipedia&lt;/p&gt;</description>
@@ -3152,6 +3557,276 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <technology name="">
 <attribute name="SF_SKU" value="COM-10856"/>
 <attribute name="VALUE" value="330"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TRIMPOT" prefix="VR" uservalue="yes">
+<description>&lt;h3&gt;Trimming Potentiometer (Trimpot)&lt;/h3&gt;
+&lt;p&gt;Three-terminal potentiometers, with an adjustable wiper and two adjustable resistors. A pot can be used to create a configurable voltage divider, or as a variable resistor.&lt;/p&gt;
+&lt;p&gt;"Trimpots" are a subset of potentiometers, usually intended for "set-and-forget" applications. They're often more delicate than standard potentiometers - rated for fewer turns.&lt;/p&gt;
+&lt;h4&gt;Variants&lt;/h4&gt;
+&lt;h5&gt;PTH-KNOB - PTH Trimpot w/ finger-adjustable knob&lt;/h5&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9806"&gt;Trimpot 10K with Knob&lt;/a&gt; (COM-09806)&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.sparkfun.com/datasheets/Components/General/TSR-3386.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;/ul&gt;
+&lt;h5&gt;SMD-3MM-CLOSED-FRAME - SMD 3mm Square Closed-Frame Trimpot&lt;/h5&gt;
+&lt;ul&gt;&lt;li&gt;Used on e.g. &lt;a href="https://www.sparkfun.com/products/12779"&gt;EasyDriver - Stepper Motor Driver&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.bitechnologies.com/pdfs/22.pdf"&gt;Datasheet&lt;/a&gt; (22AR10KTR)&lt;/li&gt;&lt;/ul&gt;
+&lt;h5&gt;SMD-5MM - SMD 5mm Square Closed-Frame Trimpot&lt;/h5&gt;
+&lt;ul&gt;&lt;li&gt;Used on e.g. &lt;a href="https://www.sparkfun.com/products/13613"&gt;IOIO-OTG - V2.2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.vishay.com/docs/51008/ts53.pdf"&gt;Datasheet&lt;/a&gt; (TS53YL502MR10)&lt;/li&gt;&lt;/ul&gt;
+&lt;h5&gt;SMD-3MM-1/10W-25% - 3mm Square Open-Frame Trimpot&lt;/h5&gt;
+&lt;ul&gt;&lt;li&gt;Used on e.g. &lt;a href="https://www.sparkfun.com/products/13899"&gt;SparkFun Shapeoko&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.bourns.com/docs/Product-Datasheets/TC33.pdf"&gt;Datasheet&lt;/a&gt; (TC33X-2-103E)&lt;/li&gt;&lt;/ul&gt;</description>
+<gates>
+<gate name="R?" symbol="TRIMPOT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-PTH-10MM-KNOB-1/2W-10%" package="TRIMPOT-PTH-3386U">
+<connects>
+<connect gate="R?" pin="CCW" pad="1"/>
+<connect gate="R?" pin="CW" pad="3"/>
+<connect gate="R?" pin="WIPER" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-09730"/>
+<attribute name="SF_SKU" value="COM-09806"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+<device name="-SMD-5MM-CLOSED-1/4W-20%" package="TRIMPOT-SMD-5MM">
+<connects>
+<connect gate="R?" pin="CCW" pad="A"/>
+<connect gate="R?" pin="CW" pad="C"/>
+<connect gate="R?" pin="WIPER" pad="B"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-11156"/>
+<attribute name="VALUE" value="5k"/>
+</technology>
+</technologies>
+</device>
+<device name="-SMD-3MM-CLOSED-1/8W-20%" package="TRIMPOT-SMD-3MM-CLOSED">
+<connects>
+<connect gate="R?" pin="CCW" pad="1"/>
+<connect gate="R?" pin="CW" pad="3"/>
+<connect gate="R?" pin="WIPER" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-09285"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+<device name="-SMD-3MM-OPEN-1/10W-25%" package="TRIMPOT-SMD-TC33X">
+<connects>
+<connect gate="R?" pin="CCW" pad="3"/>
+<connect gate="R?" pin="CW" pad="1"/>
+<connect gate="R?" pin="WIPER" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-12428"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POTENTIOMETER_SLIDE" prefix="VR" uservalue="yes">
+<description>&lt;h3&gt;Slide Potentiometer&lt;/h3&gt;
+&lt;p&gt;Slide-type potentiometers - pots that are adjusted by sliding a wiper up or down. Commonly found en-masse on sound boards.&lt;/p&gt;
+&lt;h4&gt;Variants&lt;/h4&gt;
+&lt;h5&gt;60MM  - &lt;a href="https://www.sparkfun.com/products/9119"&gt;Slide Pot - X-Large (10k Linear Taper)&lt;/a&gt; (COM-09119)&lt;/h5&gt;
+&lt;ul&gt;&lt;li&gt;10k linear slide pot with 60mm travel.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Components/Switches/SC608N-b10k.pdf"&gt;Datasheet&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;h5&gt;30MM, 30MM-KIT - &lt;a href="https://www.sparkfun.com/products/11621"&gt;Slide Pot - Medium (10k Linear Taper)&lt;/a&gt; (COM-11621)&lt;/h5&gt;
+&lt;ul&gt;&lt;li&gt;10k linear slide pot with 30mm travel.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Components/Switches/C-31-.pdf"&gt;Datasheet&lt;/a&gt; (C3031N-1A2-B10K-GP)&lt;/li&gt;
+&lt;li&gt;"KIT" variant, intended for soldering kits, has tStop removed from pads so the component can only be stuffed on one side of the board.&lt;/li&gt;&lt;/ul&gt;
+&lt;h5&gt;20MM - &lt;a href="https://www.sparkfun.com/products/11620"&gt;Slide Pot - Small (10k Linear Taper)&lt;/a&gt; (COM-11620)&lt;/h5&gt;
+&lt;ul&gt;&lt;li&gt;10k linear slide pot with 20mm travel.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Components/Switches/C-31-.pdf"&gt;Datasheet&lt;/a&gt; (C2031N-1A2-B10K-GP)&lt;/li&gt;&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="POTENTIOMETER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-60MM-1/2W-20%" package="SLIDER-XLARGE">
+<connects>
+<connect gate="G$1" pin="A" pad="3"/>
+<connect gate="G$1" pin="E" pad="1"/>
+<connect gate="G$1" pin="S" pad="2A"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-09484"/>
+<attribute name="SF_SKU" value="COM-09119"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+<device name="-30MM-1/10W-20%" package="SLIDER-MEDIUM">
+<connects>
+<connect gate="G$1" pin="A" pad="BOTTOM"/>
+<connect gate="G$1" pin="E" pad="TOP"/>
+<connect gate="G$1" pin="S" pad="WIPER"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-11931"/>
+<attribute name="SF_SKU" value="COM-11621"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+<device name="-20MM-1/10W-20%" package="SLIDER-SMALL">
+<connects>
+<connect gate="G$1" pin="A" pad="BOTTOM"/>
+<connect gate="G$1" pin="E" pad="TOP"/>
+<connect gate="G$1" pin="S" pad="WIPER"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-11924"/>
+<attribute name="SF_SKU" value="COM-11620"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+<device name="-30MM-1/10W-20%-KIT" package="SLIDER-MEDIUM-KIT">
+<connects>
+<connect gate="G$1" pin="A" pad="BOTTOM"/>
+<connect gate="G$1" pin="E" pad="TOP"/>
+<connect gate="G$1" pin="S" pad="WIPER"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-11931"/>
+<attribute name="SF_SKU" value="COM-11621"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POTENTIOMETER_W/SWITCH" prefix="VR" uservalue="yes">
+<description>&lt;h3&gt;Potentiometer (Pot) with Switch&lt;/h3&gt;
+&lt;p&gt;Three-terminal potentiometers, with an adjustable wiper and two adjustable resistors. A pot can be used to create a configurable voltage divider, or as a variable resistor.&lt;/p&gt;
+&lt;p&gt;This potentiometer includes a "select" switch - actuated by pushing down on the wiper.&lt;/p&gt;
+&lt;h4&gt;Variants&lt;/h4&gt;
+&lt;h5&gt;POT-SWITCH-PTH - 16mm PTH Pot w/ Switch&lt;/h5&gt;
+&lt;ul&gt;&lt;li&gt;Used on &lt;a href="https://www.sparkfun.com/products/11043"&gt;SparkFun FabFM Radio Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="POTENTIOMETER" x="0" y="0"/>
+<gate name="G$2" symbol="SWITCH-MOMENTARY" x="15.24" y="7.62"/>
+</gates>
+<devices>
+<device name="POT_PTH_SWITCH" package="POT-SWITCH-PTH">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
+<connect gate="G$2" pin="1" pad="S1"/>
+<connect gate="G$2" pin="2" pad="S2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-11300"/>
+<attribute name="VALUE" value="1k"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POTENTIOMETER_DUAL" prefix="VR" uservalue="yes">
+<description>&lt;h3&gt;Potentiometer (Pot) Dual-Gang&lt;/h3&gt;
+&lt;p&gt;Three-terminal potentiometers, with an adjustable wiper and two adjustable resistors. A pot can be used to create a configurable voltage divider, or as a variable resistor.&lt;/p&gt;
+&lt;p&gt;This is a dua-gang pot - it includes two separate circuits, both controlled by one wiper.&lt;/p&gt;
+&lt;h4&gt;Variants&lt;/h4&gt;
+&lt;h5&gt;PTH-12MM and PTH-12MM-KIT - 12mm Square, PTH Vertical Pots&lt;/h5&gt;
+&lt;ul&gt;&lt;li&gt;Used on the &lt;a href="https://www.sparkfun.com/products/11177"&gt;SparkFun SparkPunk Sound Kit&lt;/a&gt; (filter control)&lt;/li&gt;
+&lt;li&gt;The &lt;b&gt;KIT&lt;/b&gt; variant exposes copper on only one side of the PTH pad, so the part can only be assembled on one side of the PCB. Useful for beginner soldering kits.&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="POTENTIOMETER" x="0" y="0"/>
+<gate name="G$2" symbol="POTENTIOMETER" x="20.32" y="0"/>
+</gates>
+<devices>
+<device name="-PTH-12MM-1/20W-20%" package="POT-DUAL-PTH-PANASONIC-VERT">
+<connects>
+<connect gate="G$1" pin="A" pad="A3"/>
+<connect gate="G$1" pin="E" pad="A1"/>
+<connect gate="G$1" pin="S" pad="A2"/>
+<connect gate="G$2" pin="A" pad="B3"/>
+<connect gate="G$2" pin="E" pad="B1"/>
+<connect gate="G$2" pin="S" pad="B2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-11897"/>
+</technology>
+</technologies>
+</device>
+<device name="-PTH-12MM-1/20W-20%-KIT" package="POT-DUAL-PTH-PANASONIC-VERT-KIT">
+<connects>
+<connect gate="G$1" pin="A" pad="A3"/>
+<connect gate="G$1" pin="E" pad="A1"/>
+<connect gate="G$1" pin="S" pad="A2"/>
+<connect gate="G$2" pin="A" pad="B3"/>
+<connect gate="G$2" pin="E" pad="B1"/>
+<connect gate="G$2" pin="S" pad="B2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-11897"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POTENTIOMETER" prefix="VR" uservalue="yes">
+<description>&lt;h3&gt;Potentiometer (Pot)&lt;/h3&gt;
+&lt;p&gt;Three-terminal potentiometers, with an adjustable wiper and two adjustable resistors. A pot can be used to create a configurable voltage divider, or as a variable resistor.&lt;/p&gt;
+&lt;h4&gt;Variants&lt;/h4&gt;
+&lt;h5&gt;ALPS_POT and ALPS_POT_KIT - PTH, breadboard compatible, 9mm square pots&lt;/h5&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9288"&gt;Rotary Potentiometer - Linear (10k ohm)&lt;/a&gt; (COM-09288)&lt;/li&gt;
+&lt;li&gt;The &lt;b&gt;KIT&lt;/b&gt; variant exposes copper on only one side of the PTH pad, so the part can only be assembled on one side of the PCB. Useful for beginner soldering kits.&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="POTENTIOMETER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-PTH-9MM-1/20W-20%" package="POT-PTH-ALPS">
+<connects>
+<connect gate="G$1" pin="A" pad="P$3"/>
+<connect gate="G$1" pin="E" pad="P$1"/>
+<connect gate="G$1" pin="S" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-09177"/>
+<attribute name="SF_SKU" value="COM-09288"/>
+<attribute name="VALUE" value="10k"/>
+</technology>
+</technologies>
+</device>
+<device name="-PTH-9MM-1/20W-20%-KIT" package="POT-PTH-ALPS-KIT">
+<connects>
+<connect gate="G$1" pin="A" pad="P$3"/>
+<connect gate="G$1" pin="E" pad="P$1"/>
+<connect gate="G$1" pin="S" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-09177"/>
+<attribute name="SF_SKU" value="COM-09288"/>
+<attribute name="VALUE" value="10k"/>
 </technology>
 </technologies>
 </device>
