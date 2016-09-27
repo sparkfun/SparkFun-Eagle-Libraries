@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -15266,7 +15266,7 @@ SEN-09404</description>
 </devices>
 </deviceset>
 <deviceset name="GP-635T" prefix="J">
-<description>&lt;b&gt;Description:&lt;/b&gt; Footprint and symbol for the GP-635T GPS module. This is a very small, very accurate, low-cost GPS receiver. Footprint works with SKU GPS-00579. Use cable GPS-00574 or GPS-09123 to connect the receiver to this footprint+connector.</description>
+<description>Footprint and symbol for a generic 6-pin JST GPS module connector.</description>
 <gates>
 <gate name="J1" symbol="GP-635T" x="0" y="0"/>
 </gates>
@@ -15281,7 +15281,9 @@ SEN-09404</description>
 <connect gate="J1" pin="VCC" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-08249" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
