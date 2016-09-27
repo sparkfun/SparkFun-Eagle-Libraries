@@ -19516,7 +19516,12 @@ For reference (or to suit your programming needs) check out these designs:
 </devices>
 </deviceset>
 <deviceset name="ATX24" prefix="J">
-<description>&lt;b&gt;ATX24 Pin Power Supply Connector&lt;/b&gt; This is a good connector for connecting a computer power supply to a PCB. It's massive, but provides many amps of power at 5V and 12V. SKU: PRT-09498</description>
+<description>&lt;h3&gt;ATX24 Pin Power Supply Connector - Right Angle PTH Mount&lt;/h3&gt;
+&lt;p&gt;This is a good connector for connecting a computer power supply to a PCB. It's massive, but provides many amps of power at 5V and 12V.&lt;/p&gt;
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12867”&gt;SparkFun Benchtop Power Board Kit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/10618”&gt;SparkFun Power Driver Shield Kit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="ATX24-1" x="-12.7" y="-22.86"/>
 </gates>
@@ -19549,27 +19554,37 @@ For reference (or to suit your programming needs) check out these designs:
 <connect gate="G$1" pin="PWR_OK" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-09674" constant="no"/>
+<attribute name="SF_ID" value="PRT-09498" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
 <deviceset name="AUDIO_JACK" prefix="J" uservalue="yes">
-<description>&lt;b&gt;3.5mm Audio Jack&lt;/b&gt;
-Simple 3.5mm common PCB mount audio jack. &lt;br&gt; 
-Variant PTH is our storefront SKU PRT-08032</description>
+<description>&lt;h3&gt;Audio Jack&lt;/h3&gt;
+&lt;p&gt;2.5mm and 3.5mm variants of PTH and SMT audio jacks.&lt;/p&gt;
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;&lt;li&gt;&lt;a href=”[PRODUCT1LINK]”&gt;[PRODUCT 1]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”PRODUCT2LINK”&gt;[PRODUCT 2]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”PRODUCT3LINK”&gt;[PRODUCT 3]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="AUDIO-JACK" x="0" y="0"/>
 </gates>
 <devices>
-<device name="PTH" package="AUDIO-JACK">
+<device name="_PTH" package="AUDIO-JACK">
 <connects>
 <connect gate="G$1" pin="LEFT" pad="TIP"/>
 <connect gate="G$1" pin="RIGHT" pad="RING"/>
 <connect gate="G$1" pin="SLEEVE" pad="SLEEVE"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-08774" constant="no"/>
+<attribute name="SF_ID" value="PRT-08032" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="2.5MM" package="STEREOJACK2.5MM_STEREOJACK2.5MM">
@@ -19602,19 +19617,7 @@ Variant PTH is our storefront SKU PRT-08032</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="SMD" package="STEREOJACK2.5MM_SMD">
-<connects>
-<connect gate="G$1" pin="LEFT" pad="1"/>
-<connect gate="G$1" pin="RIGHT" pad="4"/>
-<connect gate="G$1" pin="SLEEVE" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CONN-10062" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="SMD2" package="AUDIO-JACK-3.5MM-SMD">
+<device name="_3.5MM_SMD" package="AUDIO-JACK-3.5MM-SMD">
 <connects>
 <connect gate="G$1" pin="LEFT" pad="TIP"/>
 <connect gate="G$1" pin="RIGHT" pad="RING"/>
@@ -19626,14 +19629,16 @@ Variant PTH is our storefront SKU PRT-08032</description>
 </technology>
 </technologies>
 </device>
-<device name="1:1" package="STEREOJACK2.5MM">
+<device name="_2.5MM_SMD" package="STEREOJACK2.5MM">
 <connects>
 <connect gate="G$1" pin="LEFT" pad="1"/>
 <connect gate="G$1" pin="RIGHT" pad="4"/>
 <connect gate="G$1" pin="SLEEVE" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-10062" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
