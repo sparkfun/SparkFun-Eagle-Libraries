@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -269,8 +269,8 @@ Petal for wearable applications. No sew tap present- this is only for aesthetics
 <vertex x="2.54" y="-1.27" curve="90"/>
 <vertex x="3.81" y="0" curve="90"/>
 </polygon>
-<text x="-3.81" y="-2.794" size="1.27" layer="27" font="vector" ratio="20" align="top-left">&gt;VALUE</text>
-<text x="-3.81" y="2.794" size="1.27" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-3.81" y="-2.794" size="0.6096" layer="27" font="vector" ratio="20" align="top-left">&gt;VALUE</text>
+<text x="-3.81" y="2.794" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 </package>
 <package name="PETAL-LONG-1">
 <description>&lt;h3&gt;Petal-Long&lt;/h3&gt;
@@ -763,7 +763,7 @@ Petal for wearable applications. No sew tap present- this is only for aesthetics
 <text x="-2.54" y="-7.874" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 <pin name="P$1" x="5.08" y="-1.27" visible="off" length="middle" rot="R180"/>
 </symbol>
-<symbol name="SEWTAP-NOHOLE">
+<symbol name="SEWTAP-NO_CONNECTION">
 <description>&lt;h3&gt;SparkFun SewTap without Holes&lt;/h3&gt;
 &lt;p&gt;Symbol for aesthetic sew tap - no holes, and no connections available&lt;/p&gt;</description>
 <wire x1="0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.1524" layer="94" curve="180"/>
@@ -771,6 +771,8 @@ Petal for wearable applications. No sew tap present- this is only for aesthetics
 <text x="0" y="-1.27" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 <symbol name="SEWTAP">
+<description>&lt;h3&gt;Sew Tap&lt;/h3&gt;
+&lt;p&gt;Basic connector for sew taps for wearable boards&lt;/p&gt;</description>
 <wire x1="0" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
 <wire x1="0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.1524" layer="94" curve="180"/>
 <pin name="1" x="-2.54" y="0" visible="off" length="point" rot="R180"/>
@@ -779,7 +781,7 @@ Petal for wearable applications. No sew tap present- this is only for aesthetics
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="BUTTONHOLE" prefix="CONN">
+<deviceset name="BUTTONHOLE" prefix="J">
 <description>&lt;h3&gt;SparkFun Button Hole - Sewable button holes for connectors&lt;/h3&gt;
 &lt;p&gt;Enables users to sew connections in wearables projects.&lt;/p&gt;
 &lt;p&gt;SparkFun Products:
@@ -807,7 +809,7 @@ Petal for wearable applications. No sew tap present- this is only for aesthetics
 </device>
 </devices>
 </deviceset>
-<deviceset name="SEWTAP-NOHOLE" prefix="CONN">
+<deviceset name="SEWTAP-NOHOLE" prefix="J">
 <description>&lt;h3&gt;SparkFun LilyPad Sew Taps without Holes&lt;/h3&gt;
 &lt;p&gt;Petals used for PCB aesthetics. No connection points for circuits, and no hole available for sewing.&lt;/p&gt;
 &lt;p&gt;SparkFun Products:
@@ -817,32 +819,32 @@ Petal for wearable applications. No sew tap present- this is only for aesthetics
 &lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/8463"&gt;LilyPad Buzzer&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="SEWTAP-NOHOLE" x="0" y="0"/>
+<gate name="G$1" symbol="SEWTAP-NO_CONNECTION" x="0" y="0"/>
 </gates>
 <devices>
-<device name="1" package="PETAL-NOHOLE">
+<device name="&quot;" package="PETAL-NOHOLE">
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="2" package="PETAL-NOHOLE-2SIDE">
+<device name="_2SIDE" package="PETAL-NOHOLE-2SIDE">
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="3" package="PETAL-MEDIUM-2SIDE-NOHOLE">
+<device name="_MEDIUM-2SIDE" package="PETAL-MEDIUM-2SIDE-NOHOLE">
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="4" package="PETAL-MEDIUM-NOHOLE">
+<device name="_MEDIUM" package="PETAL-MEDIUM-NOHOLE">
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="SEWTAP" prefix="CONN">
+<deviceset name="SEWTAP" prefix="J">
 <description>&lt;h3&gt;SparkFun LilyPad Sew Taps&lt;/h3&gt;
 &lt;p&gt;Sewable connection points for LilyPad Boards&lt;/p&gt;
 &lt;p&gt;SparkFun Products:
@@ -854,7 +856,7 @@ Petal for wearable applications. No sew tap present- this is only for aesthetics
 <gate name="G$1" symbol="SEWTAP" x="2.54" y="0"/>
 </gates>
 <devices>
-<device name="1" package="PETAL-LONG-1">
+<device name="_LONG" package="PETAL-LONG-1">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
@@ -862,7 +864,7 @@ Petal for wearable applications. No sew tap present- this is only for aesthetics
 <technology name=""/>
 </technologies>
 </device>
-<device name="2" package="PETAL-LONG-2">
+<device name="_LONG_ROUND" package="PETAL-LONG-2">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
@@ -870,7 +872,7 @@ Petal for wearable applications. No sew tap present- this is only for aesthetics
 <technology name=""/>
 </technologies>
 </device>
-<device name="3" package="PETAL-MEDIUM">
+<device name="_MEDIUM" package="PETAL-MEDIUM">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
@@ -878,7 +880,7 @@ Petal for wearable applications. No sew tap present- this is only for aesthetics
 <technology name=""/>
 </technologies>
 </device>
-<device name="5" package="PETAL-LARGE">
+<device name="_LARGE" package="PETAL-LARGE">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
@@ -886,7 +888,7 @@ Petal for wearable applications. No sew tap present- this is only for aesthetics
 <technology name=""/>
 </technologies>
 </device>
-<device name="4" package="PETAL-SMALL">
+<device name="_SMALL" package="PETAL-SMALL">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
@@ -894,7 +896,7 @@ Petal for wearable applications. No sew tap present- this is only for aesthetics
 <technology name=""/>
 </technologies>
 </device>
-<device name="6" package="PETAL-SMALL-2SIDE">
+<device name="_SMALL-2SIDE" package="PETAL-SMALL-2SIDE">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
@@ -902,7 +904,7 @@ Petal for wearable applications. No sew tap present- this is only for aesthetics
 <technology name=""/>
 </technologies>
 </device>
-<device name="7" package="PETAL-LARGE-2SIDE">
+<device name="_LARGE-2SIDE" package="PETAL-LARGE-2SIDE">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
@@ -910,7 +912,7 @@ Petal for wearable applications. No sew tap present- this is only for aesthetics
 <technology name=""/>
 </technologies>
 </device>
-<device name="8" package="PETAL-MEDIUM-2SIDE">
+<device name="_MEDIUM-2SIDE" package="PETAL-MEDIUM-2SIDE">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
@@ -918,7 +920,7 @@ Petal for wearable applications. No sew tap present- this is only for aesthetics
 <technology name=""/>
 </technologies>
 </device>
-<device name="9" package="PETAL-LONG-1-2SIDE">
+<device name="_LONG-2SIDE" package="PETAL-LONG-1-2SIDE">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
@@ -926,7 +928,7 @@ Petal for wearable applications. No sew tap present- this is only for aesthetics
 <technology name=""/>
 </technologies>
 </device>
-<device name="10" package="PETAL-LONG-2-2SIDE">
+<device name="_LONG_ROUND-2SIDE" package="PETAL-LONG-2-2SIDE">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
@@ -934,7 +936,7 @@ Petal for wearable applications. No sew tap present- this is only for aesthetics
 <technology name=""/>
 </technologies>
 </device>
-<device name="11" package="PETAL-TINY">
+<device name="_TINY" package="PETAL-TINY">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
