@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="14" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -19566,9 +19566,9 @@ For reference (or to suit your programming needs) check out these designs:
 <description>&lt;h3&gt;Audio Jack&lt;/h3&gt;
 &lt;p&gt;2.5mm and 3.5mm variants of PTH and SMT audio jacks.&lt;/p&gt;
 &lt;p&gt;SparkFun Products:
-&lt;ul&gt;&lt;li&gt;&lt;a href=”[PRODUCT1LINK]”&gt;[PRODUCT 1]&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=”PRODUCT2LINK”&gt;[PRODUCT 2]&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=”PRODUCT3LINK”&gt;[PRODUCT 3]&lt;/a&gt;&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”[https://www.sparkfun.com/products/11177]”&gt;SparkFun SparkPunk Sound Kit &lt;/a&gt; - PTH&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13720”&gt;MP3 Trigger&lt;/a&gt; -3.5mm SMD&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/11888”&gt;SparkFun PicoBoard&lt;/a&gt;- 2.5mm SMD&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="AUDIO-JACK" x="0" y="0"/>
@@ -19695,10 +19695,15 @@ SMT version used on LilyPad MP3 board.&lt;br&gt;</description>
 </devices>
 </deviceset>
 <deviceset name="AVR_SPI_PROG_3X2" prefix="J">
-<description>&lt;b&gt;AVR ISP 6 Pin&lt;/b&gt;
-This is the reduced ISP connector for AVR programming. Common on Arduino. This footprint will take up less PCB space and can be used with a 10-pin to 6-pin adapter such as SKU: BOB-08508
+<description>&lt;h3&gt;AVR ISP 6 Pin&lt;/h3&gt;
+&lt;p&gt;This is the reduced ISP connector for AVR programming. Common on Arduino. This footprint will take up less PCB space and can be used with a 10-pin to 6-pin adapter such as SKU: BOB-08508&lt;/p&gt;
 
-&lt;b&gt;**Special note about "TEST_POINT" package.&lt;/b&gt; The stop mask is on the top side, so if you want your programming test points to be on the bottom of your board, make sure to place this package on the bottom side of the board. This also ensure that the orientation to program from the bottom side will be correct.</description>
+&lt;p&gt;&lt;b&gt;**Special note about "TEST_POINT" package.&lt;/b&gt; The stop mask is on the top side, so if you want your programming test points to be on the bottom of your board, make sure to place this package on the bottom side of the board. This also ensure that the orientation to program from the bottom side will be correct.&lt;/p&gt;
+
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11591"&gt;SparkFun ISP Pogo Adapter&lt;/a&gt; - NS&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11801"&gt;Tiny AVR Programmer&lt;/a&gt; -PTH&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="AVR_SPI_PROGRAMMER_6" x="0" y="0"/>
 </gates>
@@ -19771,8 +19776,12 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </devices>
 </deviceset>
 <deviceset name="AVR_SPI_PROG_5X2" prefix="J">
-<description>&lt;b&gt;AVR 10-pin ICSP Header&lt;/b&gt; 
-This is the standard AVR In Circuit Serial Programming header. Minimal, but includes pin one indicator. Works with standard Olimex programmers. Also look for the 6-pin reduced version. Spark Fun Electronics SKU: PRT-00778</description>
+<description>&lt;h3&gt;AVR 10-pin ICSP Header&lt;/h3&gt;
+&lt;p&gt;This is the standard AVR In Circuit Serial Programming header. Minimal, but includes pin one indicator. Works with standard Olimex programmers. &lt;/p&gt;
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/778"&gt;2x5 AVR ICSP Male Header&lt;/a&gt; - PTH&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/8506”&gt;2x5 Pin Shrouded Header&lt;/a&gt; - PTH2&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="AVR_SPI_PROGRAMMER-1" x="0" y="0"/>
 </gates>
@@ -19808,7 +19817,10 @@ This is the standard AVR In Circuit Serial Programming header. Minimal, but incl
 <connect gate="G$1" pin="VCC" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-08671" constant="no"/>
+<attribute name="SF_ID" value="PRT-08506" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="LOCK" package="2X5-SHROUDED_LOCK">
@@ -19825,7 +19837,10 @@ This is the standard AVR In Circuit Serial Programming header. Minimal, but incl
 <connect gate="G$1" pin="VCC" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-08671" constant="no"/>
+<attribute name="SF_ID" value="PRT-08506" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SMD" package="2X5-SHROUDED_SMD">
@@ -19848,7 +19863,15 @@ This is the standard AVR In Circuit Serial Programming header. Minimal, but incl
 </devices>
 </deviceset>
 <deviceset name="BANANA_CONN" prefix="J" uservalue="yes">
-<description>Through-hole banana jack</description>
+<description>&lt;h3&gt;Through-hole Banana Jack&lt;/h3&gt;
+&lt;p&gt;Basic PTH connection for banana jack plugs&lt;/p&gt;
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/retired/10956"&gt;Multimeter Kit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/retired/509"&gt;Banana to Alligator Cable&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/retired/508"&gt;Banana to Alligator Coax Cable&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/retired/507"&gt;Banana to Banana Cable&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/retired/506"&gt;Banana to IC Hook Cables&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="BANANA_CONN" x="-2.54" y="0"/>
 </gates>
@@ -19863,8 +19886,13 @@ This is the standard AVR In Circuit Serial Programming header. Minimal, but incl
 </device>
 </devices>
 </deviceset>
-<deviceset name="BC9VPC" prefix="BAT" uservalue="yes">
-<description>9V board-mount battery cradle</description>
+<deviceset name="BC9VPC" prefix="J" uservalue="yes">
+<description>&lt;h3&gt;9V Battery Holder - PC Mount&lt;/h3&gt;
+&lt;p&gt;Standard and Kit footprints included&lt;/p&gt;
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11177"&gt;SparkFun SparkPunk Sound Kit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12707”&gt;SparkFun SparkPunk Sequencer Kit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="BC9VPC" x="0" y="0"/>
 </gates>
@@ -19880,7 +19908,7 @@ This is the standard AVR In Circuit Serial Programming header. Minimal, but incl
 </technology>
 </technologies>
 </device>
-<device name="KIT" package="BC9VPC_KIT">
+<device name="_KIT" package="BC9VPC_KIT">
 <connects>
 <connect gate="G$1" pin="V+" pad="V+"/>
 <connect gate="G$1" pin="V-" pad="V-"/>
@@ -19893,8 +19921,12 @@ This is the standard AVR In Circuit Serial Programming header. Minimal, but incl
 </device>
 </devices>
 </deviceset>
-<deviceset name="BNC">
-<description>BNC Connector, Mouser Part# 5227161</description>
+<deviceset name="BNC" prefix="J">
+<description>&lt;h3&gt;BNC Right Angle Connector&lt;/h3&gt;
+&lt;p&gt;Mouser Part# 5227161&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/10550”&gt;BNC Connector - Right Angle&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="BNC" x="0" y="0"/>
 </gates>
@@ -19905,7 +19937,10 @@ This is the standard AVR In Circuit Serial Programming header. Minimal, but incl
 <connect gate="G$1" pin="OUT" pad="S"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="LPA-12729" constant="no"/>
+<attribute name="SF_ID" value="PRT-10550" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -26627,11 +26662,16 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </devices>
 </deviceset>
 <deviceset name="BINDING_POST" prefix="J">
-<description>Single Banana jack.  &lt;br&gt;&lt;br&gt;
-
-PRT-09739 (red) or PRT-09740 (blk) &lt;br&gt;&lt;br&gt;
-
-Footprint is a bit strange.  The component itself has an threaded, insulated body that goes through the board, with a small threaded metal stud coming off the back.  The intent of this package is that the post goes through a milled obling hole, and a small wire would be used to connect from the PCB pad to the metal contact on the post.</description>
+<description>&lt;h3&gt;Binding Post&lt;/h3&gt;
+&lt;p&gt;The component itself has an threaded, insulated body that goes through the board, with a small threaded metal stud coming off the back. 
+&lt;p&gt; The intent of this package is that the post goes through a milled obling hole, and a small wire would be used to connect from the PCB pad to the metal contact on the post.
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13006”&gt;SparkFun Decade Resistance Box&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12867”&gt;SparkFun Benchtop Power Board Kit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/9739”&gt;Binding Post - Red&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/9740”&gt;Binding Post - Black&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="BINDING_POST" x="0" y="0"/>
 </gates>
@@ -26641,7 +26681,9 @@ Footprint is a bit strange.  The component itself has an threaded, insulated bod
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-09675" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -26946,19 +26988,27 @@ to be daisy chained easily.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BATTERY_CONN" prefix="J">
-<description>Various footprints for battery connectors</description>
+<deviceset name="BATTERY_CONN" prefix="J" uservalue="yes">
+<description>&lt;h3&gt;Battery Connectors&lt;/h3&gt;
+&lt;p&gt;Various footprints for battery connections&lt;/p&gt;
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11864"&gt;Deans Connector -M/F Pair&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”PRODUCT2LINK”&gt;[PRODUCT 2]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”PRODUCT3LINK”&gt;[PRODUCT 3]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="BATTERY_CONN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="DEANS" package="DEANS">
+<device name="_DEANS" package="DEANS">
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="SF_ID" value="PRT-11864" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
