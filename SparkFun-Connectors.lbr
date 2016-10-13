@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -19939,7 +19939,7 @@ Standard DB9 (D-Sub 9) serial connector. Can be used for CAN bus as well as RS48
 </device>
 </devices>
 </deviceset>
-<deviceset name="DIN7">
+<deviceset name="DIN7" prefix="J">
 <description>&lt;h3&gt;Mini-DIN7 Connector&lt;/h3&gt;
 Through-hole MiniDIN 7 connector. Commonly used with Roomba products. Don't confuse this with DIN-6, which is commonly used on oldschool keyboards and mice.
 
@@ -19963,7 +19963,10 @@ Through-hole MiniDIN 7 connector. Commonly used with Roomba products. Don't conf
 <connect gate="G$1" pin="7" pad="7"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-08318" constant="no"/>
+<attribute name="SF_ID" value="PRT-00696" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -20039,7 +20042,7 @@ Horizontal surface mount connector for the EB-85A/FV-M8 GPS receiver.
 </device>
 </devices>
 </deviceset>
-<deviceset name="EM406" prefix="U">
+<deviceset name="EM406" prefix="J">
 <description>&lt;h3&gt;EM406 GPS Connector&lt;/h3&gt;
 Here is a six pin vertical 1.0mm pitch connector. It is useful if you need something very tiny as a connection. These are not the standard JST type connectors we use on most of our boards, but are actually the much smaller JST-SH type.
 
@@ -20071,12 +20074,15 @@ Here is a six pin vertical 1.0mm pitch connector. It is useful if you need somet
 <connect gate="G$1" pin="VCC" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-08249" constant="no"/>
+<attribute name="SF_ID" value="GPS-00579" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="EM408" prefix="U">
+<deviceset name="EM408" prefix="J">
 <description>&lt;h3&gt;EM-408 GPS receiver connector&lt;/h3&gt;
 This is the mating connector for the EM408 GPS receiver. The EM408 connects to the board via a cable. Note, this connector footprint does not include the outline of the receiver.
 
@@ -20108,7 +20114,10 @@ This is the mating connector for the EM408 GPS receiver. The EM408 connects to t
 <connect gate="G$1" pin="VCC" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-08528" constant="no"/>
+<attribute name="SF_ID" value="GPS-08288" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -26655,10 +26664,16 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </devices>
 </deviceset>
 <deviceset name="I2C_STANDARD" prefix="J" uservalue="yes">
-<description>SparkFun has standardized on a pinout for all I&lt;sup&gt;2&lt;/sup&gt;C based sensor breakouts.&lt;br&gt;
+<description>&lt;h3&gt;SparkFun I&lt;sup&gt;2&lt;/sup&gt;C Standard Pinout Header&lt;/h3&gt;
+&lt;p&gt;SparkFun has standardized on a pinout for all I&lt;sup&gt;2&lt;/sup&gt;C based sensor breakouts.&lt;br&gt;
 &lt;br&gt;
 This pinout allows I&lt;sup&gt;2&lt;/sup&gt;C boards to be plugged directly into the headers on Arduino Uno compatible boards, and
-to be daisy chained easily.</description>
+to be daisy chained easily.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Example SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13676"&gt;SparkFun Atmospheric Sensor Breakout - BME280&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/11084”&gt;SparkFun Altitude/Pressure Sensor Breakout - MPL3115A2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12785”&gt;SparkFun TOF Range Finder Sensor - VL6180&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="I2C_STANDARD" x="2.54" y="0"/>
 </gates>
@@ -27032,12 +27047,19 @@ Push-push type uSD socket with full SDIO signal mapping. Spark Fun Electronics S
 </deviceset>
 <deviceset name="CORTEX_DEBUG" prefix="J">
 <description>&lt;h3&gt;Cortex Debug Connector&lt;/h3&gt;
-&lt;p&gt;&lt;a href="http://infocenter.arm.com/help/topic/com.arm.doc.faqs/attached/13634/cortex_debug_connectors.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href="http://infocenter.arm.com/help/topic/com.arm.doc.faqs/attached/13634/cortex_debug_connectors.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;[Manufacturer (if applicable)] [General Part Number (if applicable)] - [Short Part Description (required)]&lt;/h3&gt;
+&lt;p&gt;[Few-sentence description of part(s)]&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”[PRODUCT1LINK]”&gt;[PRODUCT 1]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”PRODUCT2LINK”&gt;[PRODUCT 2]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”PRODUCT3LINK”&gt;[PRODUCT 3]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="CORTEX_DEBUG" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SMD" package="SAMTECH_FTSH-105-01">
+<device name="_SMD" package="SAMTECH_FTSH-105-01">
 <connects>
 <connect gate="G$1" pin="!RESET" pad="10"/>
 <connect gate="G$1" pin="GND@3" pad="3"/>
@@ -27054,7 +27076,7 @@ Push-push type uSD socket with full SDIO signal mapping. Spark Fun Electronics S
 <technology name=""/>
 </technologies>
 </device>
-<device name="PTH" package="2X5-PTH-1.27MM">
+<device name="_PTH" package="2X5-PTH-1.27MM">
 <connects>
 <connect gate="G$1" pin="!RESET" pad="10"/>
 <connect gate="G$1" pin="GND@3" pad="3"/>
@@ -27338,12 +27360,23 @@ For more information on the pinout and electrical specifications of MIDI communi
 </device>
 </devices>
 </deviceset>
-<deviceset name="EDISON_CONNECTOR_FULL" prefix="U">
+<deviceset name="EDISON_CONNECTOR_FULL" prefix="J">
+<description>&lt;h3&gt;Intel &amp;reg; Edison Hirose Connectors &lt;/h3&gt;
+&lt;p&gt;DF40 Series 70 pin connector 3mm headers and sockets used on the SparkFun Edison Blocks.
+&lt;p&gt;
+Edison Daughter package includes layout for the Edison module itself, including mounting holes and antenna area marked.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13770”&gt;SparkFun ADC Edison Block&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13727”&gt;SparkFun Power Edison Block&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13045”&gt;SparkFun Base Edison Block&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13043”&gt;SparkFun Dual H-Bridge Edison Block&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13041”&gt;SparkFun microSD Edison Block&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="EDISON_CONNECTOR" x="-20.32" y="17.78"/>
 </gates>
 <devices>
-<device name="MOUNTING_HOLES" package="EDISON_DAUGHTER">
+<device name="_MOUNTING_HOLES" package="EDISON_DAUGHTER">
 <connects>
 <connect gate="G$1" pin="1.8V" pad="12"/>
 <connect gate="G$1" pin="3.3V@1" pad="8"/>
@@ -27416,7 +27449,7 @@ For more information on the pinout and electrical specifications of MIDI communi
 <technology name=""/>
 </technologies>
 </device>
-<device name="HEADER" package="DF40C-70DP-0.4(51)">
+<device name="_HEADER" package="DF40C-70DP-0.4(51)">
 <connects>
 <connect gate="G$1" pin="1.8V" pad="12"/>
 <connect gate="G$1" pin="3.3V@1" pad="8"/>
@@ -27486,10 +27519,12 @@ For more information on the pinout and electrical specifications of MIDI communi
 <connect gate="G$1" pin="V_VAT_BKUP" pad="23"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-12248" constant="no"/>
+</technology>
 </technologies>
 </device>
-<device name="SOCKET" package="DF40-XC-(X.X)-70DS-0.4V(51)">
+<device name="_SOCKET" package="DF40-XC-(X.X)-70DS-0.4V(51)">
 <connects>
 <connect gate="G$1" pin="1.8V" pad="12"/>
 <connect gate="G$1" pin="3.3V@1" pad="8"/>
@@ -27559,7 +27594,9 @@ For more information on the pinout and electrical specifications of MIDI communi
 <connect gate="G$1" pin="V_VAT_BKUP" pad="23"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-12247" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
