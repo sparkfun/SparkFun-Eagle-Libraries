@@ -25206,13 +25206,17 @@ NOTE: CD1 and CD2 are connected internally</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ZIFSOCKET-28-3">
-<description>Lever-action ZIF socket for 28-pin ICs</description>
+<deviceset name="ZIFSOCKET-28-3" prefix="J">
+<description>&lt;h3&gt;ZIF Socket 28-Pin 0.3"&lt;/h3&gt;
+&lt;p&gt;Lever-action ZIF socket for 28-pin ICs&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9175"&gt;ZIF Socket 28-Pin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="DIL-28-3" x="-10.16" y="-38.1"/>
 </gates>
 <devices>
-<device name="ZIFFSOCKET-28-3" package="DIL28-3-ZIF_SOCKET">
+<device name="&quot;" package="DIL28-3-ZIF_SOCKET">
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
 <connect gate="G$1" pin="P$10" pad="10"/>
@@ -25244,7 +25248,10 @@ NOTE: CD1 and CD2 are connected internally</description>
 <connect gate="G$1" pin="P$9" pad="9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-10960" constant="no"/>
+<attribute name="SF_ID" value="PRT-09175" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -26691,9 +26698,15 @@ to be daisy chained easily.&lt;/p&gt;
 </devices>
 </deviceset>
 <deviceset name="USD_CONNECTOR" prefix="J">
-<description>&lt;b&gt;microSD Socket&lt;/b&gt;&lt;br /&gt;
-Push-push type µSD socket. Footprint production proven. Symbol has new and improved layout and naming accuracy. SparkFun Electronics SKU : PRT-00127. tDoc lines correctly indicate media card edge positions when inserting (unlocked, locked, depressed).&lt;br /&gt;
-NOTE: CD1 and CD2 are connected internally</description>
+<description>&lt;h3&gt;microSD Socket for Transflash&lt;/h3&gt;
+&lt;p&gt;Push-push type µSD socket.  tDoc lines correctly indicate media card edge positions when inserting (unlocked, locked, depressed).
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt;NOTE:&lt;/b&gt; CD1 and CD2 are connected internally, and the default detect state of the socket is detect pin to ground.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13660”&gt;WAV Trigger&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13262”&gt;CAN-Bus Shield&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13743”&gt;SparkFun Level Shifing microSD Breakout&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="1" symbol="USD_CARD" x="-5.08" y="-7.62"/>
 </gates>
@@ -26716,6 +26729,7 @@ NOTE: CD1 and CD2 are connected internally</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="CONN-07820"/>
+<attribute name="SF_ID" value="PRT-00127" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -26856,28 +26870,13 @@ PTH and SMD connector options available.&lt;/p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="VERNIER_ANALOG">
-<description>&lt;h3&gt;Vernier Sensor (Analog) - British Telecom Connector&lt;/h3&gt;
-
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;This device is useful when designing a project that uses any of the analog sensors in the Vernier ecosystem (sensors and/or controllers)&lt;/b&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;At SparkFun we used this device on the following shield designed to interface with 4 Vernier style sensors:&lt;/b&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12858"&gt; SparkFun Vernier Interface Shield&lt;/a&gt; (DEV-12858)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt; All of the Vernier sensors and connecotrs can be found here:&lt;/b&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/search/results?term=vernier"&gt; Vernier Products on SparkFun.com&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt; More information about the Vernier ecosystem can be found here:&lt;/b&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.vernier.com/engineering/arduino/"&gt; http://www.vernier.com/engineering/arduino/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
+<deviceset name="VERNIER_ANALOG" prefix="J">
+<description>&lt;h3&gt;British Telecom Connector - BTA (female)&lt;/h3&gt;
+&lt;p&gt;This device is useful when designing a project that uses any of the analog sensors in the Vernier ecosystem (sensors and/or controllers)&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12858"&gt; SparkFun Vernier Interface Shield&lt;/a&gt; (DEV-12858)&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12753”&gt;British Telecom Connector - BTA (female)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="VERNIER_ANALOG" x="0" y="0"/>
 </gates>
@@ -26892,27 +26891,22 @@ PTH and SMD connector options available.&lt;/p&gt;
 <connect gate="G$1" pin="VRES" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-11653" constant="no"/>
+<attribute name="SF_ID" value="PRT-12753" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="VERNIER_DIGITAL">
-<description>&lt;h3&gt;Vernier Sensor (Digital) - British Telecom Connector&lt;/h3&gt;
+<deviceset name="VERNIER_DIGITAL" prefix="J">
+<description>&lt;h3&gt;British Telecom Connector - BTD Digital (female)&lt;/h3&gt;
+&lt;p&gt;This device is useful when designing a project that uses any of the analog sensors in the Vernier ecosystem (sensors and/or controllers)&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12858"&gt; SparkFun Vernier Interface Shield&lt;/a&gt; (DEV-12858)&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12754”&gt;British Telecom Connector - BTD (female)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;This device is useful when designing a project that uses any of the analog sensors in the Vernier ecosystem (sensors and/or controllers)&lt;/b&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt;At SparkFun we used this device on the following shield designed to interface with 4 Vernier style sensors:&lt;/b&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12858"&gt; SparkFun Vernier Interface Shield&lt;/a&gt; (DEV-12858)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;/p&gt;
-&lt;b&gt; All of the Vernier sensors and connecotrs can be found here:&lt;/b&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.sparkfun.com/search/results?term=vernier"&gt; Vernier Products on SparkFun.com&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 
 &lt;p&gt;&lt;/p&gt;
 &lt;b&gt; More information about the Vernier ecosystem can be found here:&lt;/b&gt;
@@ -26933,7 +26927,10 @@ PTH and SMD connector options available.&lt;/p&gt;
 <connect gate="G$1" pin="VCC" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-11654" constant="no"/>
+<attribute name="SF_ID" value="PRT-12754" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
