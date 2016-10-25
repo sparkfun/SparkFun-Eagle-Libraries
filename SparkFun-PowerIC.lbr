@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -15650,10 +15650,8 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <circle x="-1.305" y="1.56" radius="0.1" width="0.1" layer="21"/>
 <wire x1="-1.205" y1="-1.24" x2="1.795" y2="-1.24" width="0.1" layer="21"/>
 <wire x1="-1.205" y1="1.36" x2="1.795" y2="1.36" width="0.1" layer="21"/>
-<text x="-2.905" y="-0.14" size="1.27" layer="125">&gt;NAME
-</text>
-<text x="-3.34" y="-4.74" size="1.27" layer="127">&gt;VALUE
-</text>
+<text x="-2.905" y="2.4" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.34" y="-3.47" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -17203,8 +17201,8 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <pin name="GND" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
 <pin name="OUT-" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
 <pin name="VDD" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
-<text x="-2.54" y="8.382" size="1.27" layer="125">&gt;NAME</text>
-<text x="-3.048" y="-9.652" size="1.27" layer="127">&gt;VALUE</text>
+<text x="-2.54" y="8.382" size="1.27" layer="95">&gt;NAME</text>
+<text x="-3.048" y="-9.652" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -20118,21 +20116,21 @@ This high-voltage regulator contains an N-Channel Buck switch, a startup regulat
 </deviceset>
 <deviceset name="DRV2605L">
 <gates>
-<gate name="U" symbol="DRV2605L" x="0" y="2.54"/>
+<gate name="DRV2605" symbol="DRV2605L" x="0" y="2.54"/>
 </gates>
 <devices>
 <device name="" package="VSSOP-10">
 <connects>
-<connect gate="U" pin="EN" pad="P$5"/>
-<connect gate="U" pin="GND" pad="P$8"/>
-<connect gate="U" pin="IN/TRIG" pad="P$4"/>
-<connect gate="U" pin="OUT+" pad="P$7"/>
-<connect gate="U" pin="OUT-" pad="P$9"/>
-<connect gate="U" pin="REG" pad="P$1"/>
-<connect gate="U" pin="SCL" pad="P$2"/>
-<connect gate="U" pin="SDA" pad="P$3"/>
-<connect gate="U" pin="VDD" pad="P$10"/>
-<connect gate="U" pin="VDD/NC" pad="P$6"/>
+<connect gate="DRV2605" pin="EN" pad="P$5"/>
+<connect gate="DRV2605" pin="GND" pad="P$8"/>
+<connect gate="DRV2605" pin="IN/TRIG" pad="P$4"/>
+<connect gate="DRV2605" pin="OUT+" pad="P$7"/>
+<connect gate="DRV2605" pin="OUT-" pad="P$9"/>
+<connect gate="DRV2605" pin="REG" pad="P$1"/>
+<connect gate="DRV2605" pin="SCL" pad="P$2"/>
+<connect gate="DRV2605" pin="SDA" pad="P$3"/>
+<connect gate="DRV2605" pin="VDD" pad="P$10"/>
+<connect gate="DRV2605" pin="VDD/NC" pad="P$6"/>
 </connects>
 <technologies>
 <technology name="">
@@ -20145,10 +20143,4 @@ This high-voltage regulator contains an N-Channel Buck switch, a startup regulat
 </devicesets>
 </library>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
