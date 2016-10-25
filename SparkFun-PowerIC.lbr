@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -15626,6 +15626,35 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <rectangle x1="0.5" y1="-2.375" x2="0.7" y2="-1.575" layer="31" rot="R180"/>
 <rectangle x1="0.9" y1="-2.375" x2="1.1" y2="-1.575" layer="31" rot="R180"/>
 </package>
+<package name="VSSOP-10-PIN">
+<wire x1="-1.5" y1="-1.5" x2="1.6" y2="-1.5" width="0.08" layer="51"/>
+<wire x1="1.6" y1="-1.5" x2="1.6" y2="1.6" width="0.08" layer="51"/>
+<wire x1="1.6" y1="1.6" x2="-1.5" y2="1.6" width="0.08" layer="51"/>
+<wire x1="-1.5" y1="1.6" x2="-1.5" y2="-1.5" width="0.08" layer="51"/>
+</package>
+<package name="VSSOP-10">
+<smd name="P$5" x="-1.905" y="-0.94" dx="1.45" dy="0.3" layer="1"/>
+<smd name="P$6" x="2.495" y="-0.94" dx="1.45" dy="0.3" layer="1"/>
+<smd name="P$7" x="2.495" y="-0.44" dx="1.45" dy="0.3" layer="1"/>
+<smd name="P$4" x="-1.905" y="-0.44" dx="1.45" dy="0.3" layer="1"/>
+<smd name="P$3" x="-1.905" y="0.06" dx="1.45" dy="0.3" layer="1"/>
+<smd name="P$2" x="-1.905" y="0.56" dx="1.45" dy="0.3" layer="1"/>
+<smd name="P$1" x="-1.905" y="1.06" dx="1.45" dy="0.3" layer="1"/>
+<smd name="P$8" x="2.495" y="0.06" dx="1.45" dy="0.3" layer="1"/>
+<smd name="P$9" x="2.495" y="0.56" dx="1.45" dy="0.3" layer="1"/>
+<smd name="P$10" x="2.495" y="1.06" dx="1.45" dy="0.3" layer="1"/>
+<wire x1="-1.205" y1="1.36" x2="-1.205" y2="-1.24" width="0.1" layer="51"/>
+<wire x1="-1.205" y1="-1.24" x2="1.795" y2="-1.24" width="0.1" layer="51"/>
+<wire x1="1.795" y1="-1.24" x2="1.795" y2="1.36" width="0.1" layer="51"/>
+<wire x1="1.795" y1="1.36" x2="-1.205" y2="1.36" width="0.1" layer="51"/>
+<circle x="-1.305" y="1.56" radius="0.1" width="0.1" layer="21"/>
+<wire x1="-1.205" y1="-1.24" x2="1.795" y2="-1.24" width="0.1" layer="21"/>
+<wire x1="-1.205" y1="1.36" x2="1.795" y2="1.36" width="0.1" layer="21"/>
+<text x="-2.905" y="-0.14" size="1.27" layer="125">&gt;NAME
+</text>
+<text x="-3.34" y="-4.74" size="1.27" layer="127">&gt;VALUE
+</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ADM1087">
@@ -17158,6 +17187,24 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <wire x1="10.16" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
 <text x="-7.62" y="-10.414" size="1.778" layer="96" align="top-left">&gt;Value</text>
 <text x="-7.62" y="10.414" size="1.778" layer="96">&gt;Name</text>
+</symbol>
+<symbol name="DRV2605L">
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="REG" x="-15.24" y="5.08" visible="pin" length="middle"/>
+<pin name="SCL" x="-15.24" y="0" visible="pin" length="middle"/>
+<pin name="SDA" x="-15.24" y="2.54" visible="pin" length="middle"/>
+<pin name="IN/TRIG" x="-15.24" y="-2.54" visible="pin" length="middle"/>
+<pin name="EN" x="-15.24" y="-5.08" visible="pin" length="middle"/>
+<pin name="VDD/NC" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="OUT+" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="GND" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="OUT-" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="VDD" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
+<text x="-2.54" y="8.382" size="1.27" layer="125">&gt;NAME</text>
+<text x="-3.048" y="-9.652" size="1.27" layer="127">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -20069,7 +20116,39 @@ This high-voltage regulator contains an N-Channel Buck switch, a startup regulat
 </device>
 </devices>
 </deviceset>
+<deviceset name="DRV2605L">
+<gates>
+<gate name="U" symbol="DRV2605L" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="VSSOP-10">
+<connects>
+<connect gate="U" pin="EN" pad="P$5"/>
+<connect gate="U" pin="GND" pad="P$8"/>
+<connect gate="U" pin="IN/TRIG" pad="P$4"/>
+<connect gate="U" pin="OUT+" pad="P$7"/>
+<connect gate="U" pin="OUT-" pad="P$9"/>
+<connect gate="U" pin="REG" pad="P$1"/>
+<connect gate="U" pin="SCL" pad="P$2"/>
+<connect gate="U" pin="SDA" pad="P$3"/>
+<connect gate="U" pin="VDD" pad="P$10"/>
+<connect gate="U" pin="VDD/NC" pad="P$6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-13504" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
