@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2394,6 +2394,148 @@ IC needs to have legs bent before insertion.</description>
 <text x="-9.525" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
 <text x="10.16" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;VALUE</text>
 </package>
+<package name="QFN-40">
+<description>40-QFN from Cypress 4245 datasheet, with Sparkfun DFM</description>
+<circle x="-3.21790625" y="-3.18384375" radius="0.1" width="0.127" layer="21"/>
+<circle x="0.85" y="0.85" radius="0.762" width="0" layer="31"/>
+<circle x="-0.85" y="0.85" radius="0.762" width="0" layer="31"/>
+<circle x="-0.85" y="-0.85" radius="0.762" width="0" layer="31"/>
+<circle x="0.85" y="-0.85" radius="0.762" width="0" layer="31"/>
+<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.127" layer="51"/>
+<wire x1="3" y1="-3" x2="3" y2="3" width="0.127" layer="51"/>
+<wire x1="3" y1="3" x2="-3" y2="3" width="0.127" layer="51"/>
+<wire x1="-3" y1="3" x2="-3" y2="-3" width="0.127" layer="51"/>
+<wire x1="-3" y1="2.6" x2="-3" y2="3" width="0.127" layer="21"/>
+<wire x1="-3" y1="3" x2="-2.6" y2="3" width="0.127" layer="21"/>
+<wire x1="2.6" y1="3" x2="3" y2="3" width="0.127" layer="21"/>
+<wire x1="3" y1="3" x2="3" y2="2.6" width="0.127" layer="21"/>
+<wire x1="3" y1="-2.6" x2="3" y2="-3" width="0.127" layer="21"/>
+<wire x1="3" y1="-3" x2="2.6" y2="-3" width="0.127" layer="21"/>
+<wire x1="-3" y1="-2.6" x2="-2.6" y2="-3" width="0.127" layer="21"/>
+<rectangle x1="-3" y1="-0.37" x2="-2.6" y2="-0.13" layer="51"/>
+<rectangle x1="-3" y1="-0.87" x2="-2.6" y2="-0.63" layer="51"/>
+<rectangle x1="-3" y1="-1.37" x2="-2.6" y2="-1.13" layer="51"/>
+<rectangle x1="-3" y1="-1.87" x2="-2.6" y2="-1.63" layer="51"/>
+<rectangle x1="-3" y1="-2.37" x2="-2.6" y2="-2.13" layer="51"/>
+<rectangle x1="-3" y1="0.13" x2="-2.6" y2="0.37" layer="51"/>
+<rectangle x1="-3" y1="0.63" x2="-2.6" y2="0.87" layer="51"/>
+<rectangle x1="-3" y1="1.13" x2="-2.6" y2="1.37" layer="51"/>
+<rectangle x1="-0.45" y1="2.68" x2="-0.05" y2="2.92" layer="51" rot="R270"/>
+<rectangle x1="-0.95" y1="2.68" x2="-0.55" y2="2.92" layer="51" rot="R270"/>
+<rectangle x1="-1.45" y1="2.68" x2="-1.05" y2="2.92" layer="51" rot="R270"/>
+<rectangle x1="-1.95" y1="2.68" x2="-1.55" y2="2.92" layer="51" rot="R270"/>
+<rectangle x1="-2.45" y1="2.68" x2="-2.05" y2="2.92" layer="51" rot="R270"/>
+<rectangle x1="0.05" y1="2.68" x2="0.45" y2="2.92" layer="51" rot="R270"/>
+<rectangle x1="0.55" y1="2.68" x2="0.95" y2="2.92" layer="51" rot="R270"/>
+<rectangle x1="1.05" y1="2.68" x2="1.45" y2="2.92" layer="51" rot="R270"/>
+<rectangle x1="0.05" y1="-2.92" x2="0.45" y2="-2.68" layer="51" rot="R90"/>
+<rectangle x1="0.55" y1="-2.92" x2="0.95" y2="-2.68" layer="51" rot="R90"/>
+<rectangle x1="1.05" y1="-2.92" x2="1.45" y2="-2.68" layer="51" rot="R90"/>
+<rectangle x1="1.55" y1="-2.92" x2="1.95" y2="-2.68" layer="51" rot="R90"/>
+<rectangle x1="2.05" y1="-2.92" x2="2.45" y2="-2.68" layer="51" rot="R90"/>
+<rectangle x1="-0.45" y1="-2.92" x2="-0.05" y2="-2.68" layer="51" rot="R90"/>
+<rectangle x1="-0.95" y1="-2.92" x2="-0.55" y2="-2.68" layer="51" rot="R90"/>
+<rectangle x1="-1.45" y1="-2.92" x2="-1.05" y2="-2.68" layer="51" rot="R90"/>
+<rectangle x1="1.55" y1="2.68" x2="1.95" y2="2.92" layer="51" rot="R270"/>
+<rectangle x1="-1.95" y1="-2.92" x2="-1.55" y2="-2.68" layer="51" rot="R270"/>
+<rectangle x1="-2.45" y1="-2.92" x2="-2.05" y2="-2.68" layer="51" rot="R270"/>
+<rectangle x1="2.6" y1="-1.87" x2="3" y2="-1.63" layer="51" rot="R180"/>
+<rectangle x1="2.6" y1="-1.37" x2="3" y2="-1.13" layer="51" rot="R180"/>
+<rectangle x1="2.05" y1="2.68" x2="2.45" y2="2.92" layer="51" rot="R270"/>
+<rectangle x1="-3" y1="1.63" x2="-2.6" y2="1.87" layer="51" rot="R180"/>
+<rectangle x1="2.6" y1="-2.37" x2="3" y2="-2.13" layer="51" rot="R180"/>
+<rectangle x1="-2.36746875" y1="-3.3415" x2="-2.13886875" y2="-2.7954" layer="31"/>
+<rectangle x1="-1.86746875" y1="-3.3415" x2="-1.63886875" y2="-2.7954" layer="31"/>
+<rectangle x1="-1.36746875" y1="-3.3415" x2="-1.13886875" y2="-2.7954" layer="31"/>
+<rectangle x1="-0.86746875" y1="-3.3415" x2="-0.63886875" y2="-2.7954" layer="31"/>
+<rectangle x1="-0.36746875" y1="-3.3415" x2="-0.13886875" y2="-2.7954" layer="31"/>
+<rectangle x1="0.13253125" y1="-3.3415" x2="0.36113125" y2="-2.7954" layer="31"/>
+<rectangle x1="0.63253125" y1="-3.3415" x2="0.86113125" y2="-2.7954" layer="31"/>
+<rectangle x1="1.13253125" y1="-3.3415" x2="1.36113125" y2="-2.7954" layer="31"/>
+<rectangle x1="1.63253125" y1="-3.3415" x2="1.86113125" y2="-2.7954" layer="31"/>
+<rectangle x1="2.13253125" y1="-3.3415" x2="2.36113125" y2="-2.7954" layer="31"/>
+<rectangle x1="2.95415" y1="-2.52621875" x2="3.18275" y2="-1.98011875" layer="31" rot="R90"/>
+<rectangle x1="2.95415" y1="-2.02621875" x2="3.18275" y2="-1.48011875" layer="31" rot="R90"/>
+<rectangle x1="2.95415" y1="-1.52621875" x2="3.18275" y2="-0.98011875" layer="31" rot="R90"/>
+<rectangle x1="2.95415" y1="-1.02621875" x2="3.18275" y2="-0.48011875" layer="31" rot="R90"/>
+<rectangle x1="2.95415" y1="-0.52621875" x2="3.18275" y2="0.01988125" layer="31" rot="R90"/>
+<rectangle x1="2.95415" y1="-0.02621875" x2="3.18275" y2="0.51988125" layer="31" rot="R90"/>
+<rectangle x1="2.95415" y1="0.47378125" x2="3.18275" y2="1.01988125" layer="31" rot="R90"/>
+<rectangle x1="2.95415" y1="0.97378125" x2="3.18275" y2="1.51988125" layer="31" rot="R90"/>
+<rectangle x1="2.95415" y1="1.47378125" x2="3.18275" y2="2.01988125" layer="31" rot="R90"/>
+<rectangle x1="2.95415" y1="1.97378125" x2="3.18275" y2="2.51988125" layer="31" rot="R90"/>
+<rectangle x1="2.13886875" y1="2.7954" x2="2.36746875" y2="3.3415" layer="31" rot="R180"/>
+<rectangle x1="1.63886875" y1="2.7954" x2="1.86746875" y2="3.3415" layer="31" rot="R180"/>
+<rectangle x1="1.13886875" y1="2.7954" x2="1.36746875" y2="3.3415" layer="31" rot="R180"/>
+<rectangle x1="0.63886875" y1="2.7954" x2="0.86746875" y2="3.3415" layer="31" rot="R180"/>
+<rectangle x1="0.13886875" y1="2.7954" x2="0.36746875" y2="3.3415" layer="31" rot="R180"/>
+<rectangle x1="-0.36113125" y1="2.7954" x2="-0.13253125" y2="3.3415" layer="31" rot="R180"/>
+<rectangle x1="-0.86113125" y1="2.7954" x2="-0.63253125" y2="3.3415" layer="31" rot="R180"/>
+<rectangle x1="-1.36113125" y1="2.7954" x2="-1.13253125" y2="3.3415" layer="31" rot="R180"/>
+<rectangle x1="-1.86113125" y1="2.7954" x2="-1.63253125" y2="3.3415" layer="31" rot="R180"/>
+<rectangle x1="-2.36113125" y1="2.7954" x2="-2.13253125" y2="3.3415" layer="31" rot="R180"/>
+<rectangle x1="-3.18275" y1="1.98011875" x2="-2.95415" y2="2.52621875" layer="31" rot="R270"/>
+<rectangle x1="-3.18275" y1="1.48011875" x2="-2.95415" y2="2.02621875" layer="31" rot="R270"/>
+<rectangle x1="-3.18275" y1="0.98011875" x2="-2.95415" y2="1.52621875" layer="31" rot="R270"/>
+<rectangle x1="-3.18275" y1="0.48011875" x2="-2.95415" y2="1.02621875" layer="31" rot="R270"/>
+<rectangle x1="-3.18275" y1="-0.01988125" x2="-2.95415" y2="0.52621875" layer="31" rot="R270"/>
+<rectangle x1="-3.18275" y1="-0.51988125" x2="-2.95415" y2="0.02621875" layer="31" rot="R270"/>
+<rectangle x1="-3.18275" y1="-1.01988125" x2="-2.95415" y2="-0.47378125" layer="31" rot="R270"/>
+<rectangle x1="-3.18275" y1="-1.51988125" x2="-2.95415" y2="-0.97378125" layer="31" rot="R270"/>
+<rectangle x1="-3.18275" y1="-2.01988125" x2="-2.95415" y2="-1.47378125" layer="31" rot="R270"/>
+<rectangle x1="-3.18275" y1="-2.51988125" x2="-2.95415" y2="-1.97378125" layer="31" rot="R270"/>
+<rectangle x1="2.6" y1="0.13" x2="3" y2="0.37" layer="51" rot="R180"/>
+<rectangle x1="2.6" y1="0.63" x2="3" y2="0.87" layer="51" rot="R180"/>
+<rectangle x1="2.6" y1="1.13" x2="3" y2="1.37" layer="51" rot="R180"/>
+<rectangle x1="2.6" y1="1.63" x2="3" y2="1.87" layer="51" rot="R180"/>
+<rectangle x1="2.6" y1="2.13" x2="3" y2="2.37" layer="51" rot="R180"/>
+<rectangle x1="2.6" y1="-0.37" x2="3" y2="-0.13" layer="51" rot="R180"/>
+<rectangle x1="2.6" y1="-0.87" x2="3" y2="-0.63" layer="51" rot="R180"/>
+<rectangle x1="-3" y1="2.13" x2="-2.6" y2="2.37" layer="51" rot="R180"/>
+<smd name="1" x="-2.25" y="-3" dx="0.8" dy="0.2846" layer="1" rot="R90" cream="no"/>
+<smd name="2" x="-1.75" y="-3" dx="0.8" dy="0.2846" layer="1" rot="R90" cream="no"/>
+<smd name="3" x="-1.25" y="-3" dx="0.8" dy="0.2846" layer="1" rot="R90" cream="no"/>
+<smd name="4" x="-0.75" y="-3" dx="0.8" dy="0.2846" layer="1" rot="R90" cream="no"/>
+<smd name="5" x="-0.25" y="-3" dx="0.8" dy="0.2846" layer="1" rot="R90" cream="no"/>
+<smd name="6" x="0.25" y="-3" dx="0.8" dy="0.2846" layer="1" rot="R90" cream="no"/>
+<smd name="7" x="0.75" y="-3" dx="0.8" dy="0.2846" layer="1" rot="R90" cream="no"/>
+<smd name="8" x="1.25" y="-3" dx="0.8" dy="0.2846" layer="1" rot="R90" cream="no"/>
+<smd name="9" x="1.75" y="-3" dx="0.8" dy="0.2846" layer="1" rot="R90" cream="no"/>
+<smd name="10" x="2.25" y="-3" dx="0.8" dy="0.2846" layer="1" rot="R90" cream="no"/>
+<smd name="11" x="3" y="-2.25" dx="0.8" dy="0.2846" layer="1" rot="R180" cream="no"/>
+<smd name="12" x="3" y="-1.75" dx="0.8" dy="0.2846" layer="1" rot="R180" cream="no"/>
+<smd name="13" x="3" y="-1.25" dx="0.8" dy="0.2846" layer="1" rot="R180" cream="no"/>
+<smd name="14" x="3" y="-0.75" dx="0.8" dy="0.2846" layer="1" rot="R180" cream="no"/>
+<smd name="15" x="3" y="-0.25" dx="0.8" dy="0.2846" layer="1" rot="R180" cream="no"/>
+<smd name="16" x="3" y="0.25" dx="0.8" dy="0.2846" layer="1" rot="R180" cream="no"/>
+<smd name="17" x="3" y="0.75" dx="0.8" dy="0.2846" layer="1" rot="R180" cream="no"/>
+<smd name="18" x="3" y="1.25" dx="0.8" dy="0.2846" layer="1" rot="R180" cream="no"/>
+<smd name="19" x="3" y="1.75" dx="0.8" dy="0.2846" layer="1" rot="R180" cream="no"/>
+<smd name="20" x="3" y="2.25" dx="0.8" dy="0.2846" layer="1" rot="R180" cream="no"/>
+<smd name="21" x="2.25" y="3" dx="0.8" dy="0.2846" layer="1" rot="R270" cream="no"/>
+<smd name="22" x="1.75" y="3" dx="0.8" dy="0.2846" layer="1" rot="R270" cream="no"/>
+<smd name="23" x="1.25" y="3" dx="0.8" dy="0.2846" layer="1" rot="R270" cream="no"/>
+<smd name="24" x="0.75" y="3" dx="0.8" dy="0.2846" layer="1" rot="R270" cream="no"/>
+<smd name="25" x="0.25" y="3" dx="0.8" dy="0.2846" layer="1" rot="R270" cream="no"/>
+<smd name="26" x="-0.25" y="3" dx="0.8" dy="0.2846" layer="1" rot="R270" cream="no"/>
+<smd name="27" x="-0.75" y="3" dx="0.8" dy="0.2846" layer="1" rot="R270" cream="no"/>
+<smd name="28" x="-1.25" y="3" dx="0.8" dy="0.2846" layer="1" rot="R270" cream="no"/>
+<smd name="29" x="-1.75" y="3" dx="0.8" dy="0.2846" layer="1" rot="R270" cream="no"/>
+<smd name="30" x="-2.25" y="3" dx="0.8" dy="0.2846" layer="1" rot="R270" cream="no"/>
+<smd name="31" x="-3" y="2.25" dx="0.8" dy="0.2846" layer="1" cream="no"/>
+<smd name="32" x="-3" y="1.75" dx="0.8" dy="0.2846" layer="1" cream="no"/>
+<smd name="33" x="-3" y="1.25" dx="0.8" dy="0.2846" layer="1" cream="no"/>
+<smd name="34" x="-3" y="0.75" dx="0.8" dy="0.2846" layer="1" cream="no"/>
+<smd name="35" x="-3" y="0.25" dx="0.8" dy="0.2846" layer="1" cream="no"/>
+<smd name="36" x="-3" y="-0.25" dx="0.8" dy="0.2846" layer="1" cream="no"/>
+<smd name="37" x="-3" y="-0.75" dx="0.8" dy="0.2846" layer="1" cream="no"/>
+<smd name="38" x="-3" y="-1.25" dx="0.8" dy="0.2846" layer="1" cream="no"/>
+<smd name="39" x="-3" y="-1.75" dx="0.8" dy="0.2846" layer="1" cream="no"/>
+<smd name="40" x="-3" y="-2.25" dx="0.8" dy="0.2846" layer="1" cream="no"/>
+<smd name="EP" x="0" y="0" dx="4.4" dy="4.4" layer="1" cream="no"/>
+<text x="-2.5" y="3.6" size="0.6096" layer="25" font="vector" ratio="20" distance="15">&gt;Name</text>
+<text x="-2.5" y="-4.15" size="0.6096" layer="27" font="vector" ratio="20" distance="15">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ATMEGA32U4">
@@ -3971,6 +4113,100 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;</description>
 <pin name="VCCD" x="7.62" y="27.94" length="middle" rot="R270"/>
 <pin name="VDD" x="12.7" y="27.94" length="middle" rot="R270"/>
 <pin name="XRES" x="22.86" y="12.7" length="middle" rot="R180"/>
+</symbol>
+<symbol name="CY8C4245LQI_40QFN_PORT0">
+<description>&lt;h3&gt;Cypress CY8C4245LQI Port0 Bus&lt;/h3&gt;</description>
+<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<pin name="P0.0" x="-12.7" y="7.62" length="middle"/>
+<pin name="P0.1" x="-12.7" y="5.08" length="middle"/>
+<pin name="P0.2" x="-12.7" y="2.54" length="middle"/>
+<pin name="P0.3" x="-12.7" y="0" length="middle"/>
+<pin name="P0.4" x="-12.7" y="-2.54" length="middle"/>
+<pin name="P0.5" x="-12.7" y="-5.08" length="middle"/>
+<pin name="P0.6" x="-12.7" y="-7.62" length="middle"/>
+<pin name="P0.7" x="-12.7" y="-10.16" length="middle"/>
+<text x="-7.62" y="-12.954" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
+<text x="-7.366" y="10.414" size="1.778" layer="95" font="vector">&gt;Name</text>
+</symbol>
+<symbol name="CY8C4245LQI_40QFN_PORT1">
+<description>&lt;h3&gt;Cypress CY8C4245LQI Port1 Bus&lt;/h3&gt;</description>
+<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<pin name="P1.0" x="-12.7" y="7.62" length="middle"/>
+<pin name="P1.1" x="-12.7" y="5.08" length="middle"/>
+<pin name="P1.2" x="-12.7" y="2.54" length="middle"/>
+<pin name="P1.3" x="-12.7" y="0" length="middle"/>
+<pin name="P1.4" x="-12.7" y="-2.54" length="middle"/>
+<text x="-7.62" y="-12.954" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
+<text x="-7.366" y="10.414" size="1.778" layer="95" font="vector">&gt;Name</text>
+</symbol>
+<symbol name="CY8C4245LQI_40QFN_PORT2">
+<description>&lt;h3&gt;Cypress CY8C4245LQI Port2 Bus&lt;/h3&gt;</description>
+<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<pin name="P2.0" x="-12.7" y="7.62" length="middle"/>
+<pin name="P2.1" x="-12.7" y="5.08" length="middle"/>
+<pin name="P2.2" x="-12.7" y="2.54" length="middle"/>
+<pin name="P2.3" x="-12.7" y="0" length="middle"/>
+<pin name="P2.4" x="-12.7" y="-2.54" length="middle"/>
+<pin name="P2.5" x="-12.7" y="-5.08" length="middle"/>
+<pin name="P2.6" x="-12.7" y="-7.62" length="middle"/>
+<pin name="P2.7" x="-12.7" y="-10.16" length="middle"/>
+<text x="-7.62" y="-12.954" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
+<text x="-7.366" y="10.414" size="1.778" layer="95" font="vector">&gt;Name</text>
+</symbol>
+<symbol name="CY8C4245LQI_40QFN_PORT3">
+<description>&lt;h3&gt;Cypress CY8C4245LQI Port3 Bus&lt;/h3&gt;</description>
+<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<pin name="P3.0" x="-12.7" y="7.62" length="middle"/>
+<pin name="P3.1" x="-12.7" y="5.08" length="middle"/>
+<pin name="P3.2" x="-12.7" y="2.54" length="middle"/>
+<pin name="P3.3" x="-12.7" y="0" length="middle"/>
+<pin name="P3.4" x="-12.7" y="-2.54" length="middle"/>
+<pin name="P3.5" x="-12.7" y="-5.08" length="middle"/>
+<pin name="P3.6" x="-12.7" y="-7.62" length="middle"/>
+<pin name="P3.7" x="-12.7" y="-10.16" length="middle"/>
+<text x="-7.62" y="-12.954" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
+<text x="-7.366" y="10.414" size="1.778" layer="95">&gt;Name</text>
+</symbol>
+<symbol name="CY8C4245LQI_40QFN_PORT4">
+<description>&lt;h3&gt;Cypress CY8C4245LQI Port4 Bus&lt;/h3&gt;</description>
+<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<pin name="P4.0" x="-12.7" y="7.62" length="middle"/>
+<pin name="P4.1" x="-12.7" y="5.08" length="middle"/>
+<pin name="P4.2" x="-12.7" y="2.54" length="middle"/>
+<pin name="P4.3" x="-12.7" y="0" length="middle"/>
+<text x="-7.62" y="-12.954" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
+<text x="-7.366" y="10.414" size="1.778" layer="95" font="vector">&gt;Name</text>
+</symbol>
+<symbol name="CY8C4245LQI_40QFN_POWER">
+<description>&lt;h3&gt;Cypress CY8C4245LQI Power Bus&lt;/h3&gt;</description>
+<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<pin name="VCCD" x="-12.7" y="7.62" length="middle"/>
+<pin name="VDDA" x="-12.7" y="2.54" length="middle"/>
+<pin name="VDDD" x="-12.7" y="5.08" length="middle"/>
+<pin name="VREF" x="-12.7" y="0" length="middle"/>
+<pin name="VSS" x="-12.7" y="-10.16" length="middle"/>
+<pin name="VSSA" x="-12.7" y="-7.62" length="middle"/>
+<pin name="XRES" x="-12.7" y="-2.54" length="middle"/>
+<text x="-7.62" y="-12.954" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
+<text x="-7.366" y="10.414" size="1.778" layer="95" font="vector">&gt;Name</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -6078,6 +6314,75 @@ Prototype</description>
 <technology name="">
 <attribute name="PROD_ID" value="IC-13286"/>
 <attribute name="VALUE" value="CY8C4146LQI-S422"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PSOC4_4200_40QFN" prefix="U">
+<description>&lt;h3&gt;Cypress PSoC 4200&lt;/h3&gt;
+&lt;p&gt;32-bit MCU
+&lt;br&gt;48-MHz ARM Cortex-M0
+&lt;li&gt;&lt;a href=”http://www.cypress.com/file/138656/download”&gt;Datasheet&lt;/a&gt;&lt;/li&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13911”&gt;SparkFun serial Controlled Motor Driver&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G1" symbol="CY8C4245LQI_40QFN_PORT0" x="-55.88" y="-15.24"/>
+<gate name="G2" symbol="CY8C4245LQI_40QFN_PORT1" x="-27.94" y="-15.24"/>
+<gate name="G3" symbol="CY8C4245LQI_40QFN_PORT2" x="0" y="-15.24"/>
+<gate name="G4" symbol="CY8C4245LQI_40QFN_PORT3" x="27.94" y="-15.24"/>
+<gate name="G5" symbol="CY8C4245LQI_40QFN_PORT4" x="55.88" y="-15.24"/>
+<gate name="G6" symbol="CY8C4245LQI_40QFN_POWER" x="0" y="17.78"/>
+</gates>
+<devices>
+<device name="" package="QFN-40">
+<connects>
+<connect gate="G1" pin="P0.0" pad="22"/>
+<connect gate="G1" pin="P0.1" pad="23"/>
+<connect gate="G1" pin="P0.2" pad="24"/>
+<connect gate="G1" pin="P0.3" pad="25"/>
+<connect gate="G1" pin="P0.4" pad="26"/>
+<connect gate="G1" pin="P0.5" pad="27"/>
+<connect gate="G1" pin="P0.6" pad="28"/>
+<connect gate="G1" pin="P0.7" pad="29"/>
+<connect gate="G2" pin="P1.0" pad="35"/>
+<connect gate="G2" pin="P1.1" pad="36"/>
+<connect gate="G2" pin="P1.2" pad="37"/>
+<connect gate="G2" pin="P1.3" pad="38"/>
+<connect gate="G2" pin="P1.4" pad="39"/>
+<connect gate="G3" pin="P2.0" pad="1"/>
+<connect gate="G3" pin="P2.1" pad="2"/>
+<connect gate="G3" pin="P2.2" pad="3"/>
+<connect gate="G3" pin="P2.3" pad="4"/>
+<connect gate="G3" pin="P2.4" pad="5"/>
+<connect gate="G3" pin="P2.5" pad="6"/>
+<connect gate="G3" pin="P2.6" pad="7"/>
+<connect gate="G3" pin="P2.7" pad="8"/>
+<connect gate="G4" pin="P3.0" pad="10"/>
+<connect gate="G4" pin="P3.1" pad="11"/>
+<connect gate="G4" pin="P3.2" pad="12"/>
+<connect gate="G4" pin="P3.3" pad="13"/>
+<connect gate="G4" pin="P3.4" pad="14"/>
+<connect gate="G4" pin="P3.5" pad="15"/>
+<connect gate="G4" pin="P3.6" pad="16"/>
+<connect gate="G4" pin="P3.7" pad="17"/>
+<connect gate="G5" pin="P4.0" pad="18"/>
+<connect gate="G5" pin="P4.1" pad="19"/>
+<connect gate="G5" pin="P4.2" pad="20"/>
+<connect gate="G5" pin="P4.3" pad="21"/>
+<connect gate="G6" pin="VCCD" pad="31"/>
+<connect gate="G6" pin="VDDA" pad="33"/>
+<connect gate="G6" pin="VDDD" pad="32"/>
+<connect gate="G6" pin="VREF" pad="40"/>
+<connect gate="G6" pin="VSS" pad="9 EP"/>
+<connect gate="G6" pin="VSSA" pad="34"/>
+<connect gate="G6" pin="XRES" pad="30"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-13292" constant="no"/>
+<attribute name="VALUE" value="CY8C4245LQI-483" constant="no"/>
 </technology>
 </technologies>
 </device>
