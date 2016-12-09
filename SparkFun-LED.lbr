@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -90,6 +90,8 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -1937,6 +1939,69 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="2.921" y="-46.355" size="1.27" layer="51" ratio="15">3</text>
 <text x="-2.794" y="-50.419" size="1.27" layer="51" ratio="15" rot="R90">Segment</text>
 </package>
+<package name="LED_BAR_SMD">
+<description>&lt;h3&gt;SMA-B520LB LED Bargraph - 5 segment&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:6&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=””&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;[EXAMPLE DEVICE 1]&lt;/li&gt;
+&lt;li&gt;[EXAMPLE DEVICE 2]&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<circle x="-10.16" y="-8.89" radius="0.4490125" width="0" layer="21"/>
+<wire x1="10.16" y1="8.89" x2="10.16" y2="-8.89" width="0.127" layer="49"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="8.89" width="0.127" layer="49"/>
+<wire x1="-8.89" y1="6.35" x2="-6.35" y2="6.35" width="0.127" layer="49"/>
+<wire x1="-6.35" y1="6.35" x2="-6.35" y2="-6.35" width="0.127" layer="49"/>
+<wire x1="-6.35" y1="-6.35" x2="-8.89" y2="-6.35" width="0.127" layer="49"/>
+<wire x1="-8.89" y1="-6.35" x2="-8.89" y2="6.35" width="0.127" layer="49"/>
+<wire x1="-5.08" y1="6.35" x2="-2.54" y2="6.35" width="0.127" layer="49"/>
+<wire x1="-2.54" y1="6.35" x2="-2.54" y2="-6.35" width="0.127" layer="49"/>
+<wire x1="-2.54" y1="-6.35" x2="-5.08" y2="-6.35" width="0.127" layer="49"/>
+<wire x1="-5.08" y1="-6.35" x2="-5.08" y2="6.35" width="0.127" layer="49"/>
+<wire x1="-1.27" y1="6.35" x2="1.27" y2="6.35" width="0.127" layer="49"/>
+<wire x1="1.27" y1="6.35" x2="1.27" y2="-6.35" width="0.127" layer="49"/>
+<wire x1="1.27" y1="-6.35" x2="-1.27" y2="-6.35" width="0.127" layer="49"/>
+<wire x1="-1.27" y1="-6.35" x2="-1.27" y2="6.35" width="0.127" layer="49"/>
+<wire x1="2.54" y1="6.35" x2="5.08" y2="6.35" width="0.127" layer="49"/>
+<wire x1="5.08" y1="6.35" x2="5.08" y2="-6.35" width="0.127" layer="49"/>
+<wire x1="5.08" y1="-6.35" x2="2.54" y2="-6.35" width="0.127" layer="49"/>
+<wire x1="2.54" y1="-6.35" x2="2.54" y2="6.35" width="0.127" layer="49"/>
+<wire x1="6.35" y1="6.35" x2="8.89" y2="6.35" width="0.127" layer="49"/>
+<wire x1="8.89" y1="6.35" x2="8.89" y2="-6.35" width="0.127" layer="49"/>
+<wire x1="8.89" y1="-6.35" x2="6.35" y2="-6.35" width="0.127" layer="49"/>
+<wire x1="6.35" y1="-6.35" x2="6.35" y2="6.35" width="0.127" layer="49"/>
+<wire x1="-6.35" y1="8.89" x2="-5.08" y2="7.62" width="0.127" layer="49" curve="90"/>
+<wire x1="-5.08" y1="7.62" x2="-3.81" y2="8.89" width="0.127" layer="49" curve="90"/>
+<wire x1="-1.27" y1="8.89" x2="0" y2="7.62" width="0.127" layer="49" curve="90"/>
+<wire x1="0" y1="7.62" x2="1.27" y2="8.89" width="0.127" layer="49" curve="90"/>
+<wire x1="5.08" y1="7.62" x2="3.81" y2="8.89" width="0.127" layer="49" curve="-90"/>
+<wire x1="5.08" y1="7.62" x2="6.35" y2="8.89" width="0.127" layer="49" curve="90"/>
+<wire x1="-5.08" y1="-7.62" x2="-3.81" y2="-8.89" width="0.127" layer="49" curve="-90"/>
+<wire x1="-5.08" y1="-7.62" x2="-6.35" y2="-8.89" width="0.127" layer="49" curve="90"/>
+<wire x1="0" y1="-7.62" x2="1.27" y2="-8.89" width="0.127" layer="49" curve="-90"/>
+<wire x1="0" y1="-7.62" x2="-1.27" y2="-8.89" width="0.127" layer="49" curve="90"/>
+<wire x1="5.08" y1="-7.62" x2="6.35" y2="-8.89" width="0.127" layer="49" curve="-90"/>
+<wire x1="5.08" y1="-7.62" x2="3.81" y2="-8.89" width="0.127" layer="49" curve="90"/>
+<wire x1="-10.16" y1="8.89" x2="-6.35" y2="8.89" width="0.127" layer="49"/>
+<wire x1="-3.81" y1="8.89" x2="-1.27" y2="8.89" width="0.127" layer="49"/>
+<wire x1="1.27" y1="8.89" x2="3.81" y2="8.89" width="0.127" layer="49"/>
+<wire x1="6.35" y1="8.89" x2="10.16" y2="8.89" width="0.127" layer="49"/>
+<wire x1="-8.89" y1="-8.89" x2="-6.35" y2="-8.89" width="0.127" layer="49"/>
+<wire x1="-3.81" y1="-8.89" x2="-1.27" y2="-8.89" width="0.127" layer="49"/>
+<wire x1="1.27" y1="-8.89" x2="3.81" y2="-8.89" width="0.127" layer="49"/>
+<wire x1="6.35" y1="-8.89" x2="10.16" y2="-8.89" width="0.127" layer="49"/>
+<wire x1="-10.16" y1="-7.62" x2="-8.89" y2="-8.89" width="0.127" layer="49"/>
+<smd name="1" x="-5.08" y="-8.84" dx="2.88" dy="2.4" layer="1" rot="R90"/>
+<smd name="2" x="0" y="-8.84" dx="2.88" dy="2.4" layer="1" rot="R90"/>
+<smd name="3" x="5.08" y="-8.84" dx="2.88" dy="2.4" layer="1" rot="R90"/>
+<smd name="4" x="5.08" y="8.84" dx="2.88" dy="2.4" layer="1" rot="R90"/>
+<smd name="5" x="0" y="8.84" dx="2.88" dy="2.4" layer="1" rot="R90"/>
+<smd name="6" x="-5.08" y="8.84" dx="2.88" dy="2.4" layer="1" rot="R90"/>
+<text x="-10.414" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="10.414" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -3011,6 +3076,48 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="2.54" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
 <wire x1="2.54" y1="-17.78" x2="5.08" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-17.78" x2="-2.54" y2="-17.78" width="0.254" layer="94"/>
+</symbol>
+<symbol name="LED_BAR_SMD">
+<description>&lt;h3&gt;5-segment LED Bar Graph&lt;/h3&gt;</description>
+<wire x1="2.54" y1="-5.715" x2="2.54" y2="-4.445" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-0.635" x2="2.54" y2="0.635" width="0.254" layer="94"/>
+<wire x1="2.54" y1="4.445" x2="2.54" y2="5.715" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-3.175" x2="2.54" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="2.54" y1="1.905" x2="2.54" y2="3.175" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
+<pin name="1" x="5.08" y="5.08" visible="pad" length="middle" rot="R180"/>
+<pin name="2" x="5.08" y="2.54" visible="pad" length="middle" rot="R180"/>
+<pin name="3" x="5.08" y="0" visible="pad" length="middle" rot="R180"/>
+<pin name="4" x="5.08" y="-2.54" visible="pad" length="middle" rot="R180"/>
+<pin name="5" x="5.08" y="-5.08" visible="pad" length="middle" rot="R180"/>
+<pin name="6" x="-2.54" y="0" visible="pad" length="middle"/>
+<text x="0" y="6.35" size="1.778" layer="95" font="vector" rot="MR0" align="bottom-right">&gt;NAME</text>
+<text x="0" y="-6.35" size="1.778" layer="96" font="vector" rot="MR0" align="top-right">&gt;VALUE</text>
+<polygon width="0.254" layer="94">
+<vertex x="1.905" y="-5.715"/>
+<vertex x="1.905" y="-4.445"/>
+<vertex x="2.54" y="-5.08"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="1.905" y="-3.175"/>
+<vertex x="1.905" y="-1.905"/>
+<vertex x="2.54" y="-2.54"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="1.905" y="-0.635"/>
+<vertex x="1.905" y="0.635"/>
+<vertex x="2.54" y="0"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="1.905" y="1.905"/>
+<vertex x="1.905" y="3.175"/>
+<vertex x="2.54" y="2.54"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="1.905" y="4.445"/>
+<vertex x="1.905" y="5.715"/>
+<vertex x="2.54" y="5.08"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -4508,6 +4615,33 @@ The LONGPADS Variant is used for a test jig, but you may like it because there i
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="COM-13520" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMA-B500" prefix="D">
+<description>&lt;h3&gt;American Opto Plus LED Corp. - SMA-B520LB&lt;/h3&gt;
+&lt;p&gt;5 segment SMD LED Bar Graph Display, Bright Blue&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13688”&gt;MyoWare LED Shield&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="LED_BAR_SMD" x="5.08" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="LED_BAR_SMD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-13127"/>
 </technology>
 </technologies>
 </device>
