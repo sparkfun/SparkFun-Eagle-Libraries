@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -5366,6 +5366,15 @@ Package for the Xtend Digi Modem 40 mile range.&lt;/p&gt;
 <text x="0" y="1.016" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
 <package name="QFN48-0.4MM">
+<description>&lt;h3&gt;QFN 48 Pin&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 48&lt;/li&gt;
+&lt;li&gt;Pin pitch: 0.4mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://cdn.sparkfun.com/datasheets/IoT/esp32_datasheet_en.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;ESP32&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <circle x="-3.302" y="3.302" radius="0.40160625" width="0" layer="21"/>
 <wire x1="-3" y1="3" x2="-3" y2="-3" width="0.127" layer="51"/>
 <wire x1="-3" y1="-3" x2="3" y2="-3" width="0.127" layer="51"/>
@@ -5733,6 +5742,15 @@ Package for the Xtend Digi Modem 40 mile range.&lt;/p&gt;
 <wire x1="0.3048" y1="-2.2098" x2="-0.3048" y2="-2.2098" width="0.0254" layer="41"/>
 </package>
 <package name="QFN48-6X6MM">
+<description>&lt;h3&gt;QFN-48 pin 6x6mm&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 48&lt;/li&gt;
+&lt;li&gt;Area: 6x6mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://cdn.sparkfun.com/datasheets/Wireless/Bluetooth/nRF52832_PS_v1.0.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;nRF52832&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <wire x1="-3" y1="-3" x2="3" y2="-3" width="0.127" layer="51"/>
 <wire x1="3" y1="-3" x2="3" y2="3" width="0.127" layer="51"/>
 <wire x1="3" y1="3" x2="-3" y2="3" width="0.127" layer="51"/>
@@ -6198,11 +6216,20 @@ Package for the Xtend Digi Modem 40 mile range.&lt;/p&gt;
 <rectangle x1="0.4894" y1="-1.8106" x2="1.8106" y2="-0.4894" layer="31" rot="R270"/>
 </package>
 <package name="RFD77101">
-<description>&lt;p&gt;&lt;strong&gt;Simblee  BLE Module RFD77101&lt;/strong&gt;&lt;/p&gt;
+<description>&lt;h3&gt;Simblee  BLE Module RFD77101&lt;/h3&gt;
 &lt;p&gt;© 2015 RF Digital Corporation&lt;br/&gt; 
 &lt;a href="http://www.RFDigital.com"&gt;www.RFDigital.com&lt;/a&gt;&lt;br/&gt;
 &lt;a href="http://www.Simblee.com"&gt;www.Simblee.com&lt;/a&gt;&lt;br/&gt;
-PATENTS PENDING 04.01.2015&lt;br/&gt;&lt;/p&gt;</description>
+PATENTS PENDING 04.01.2015&lt;br/&gt;&lt;/p&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 45&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.5mm&lt;/li&gt;
+&lt;li&gt;Area:7mmx10mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://cdn.sparkfun.com/datasheets/IoT/Simblee%20RFD77101%20Datasheet%20v1.0.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;RFD77101&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <circle x="2.3368" y="-4.953" radius="0.3048" width="0" layer="31"/>
 <circle x="4.2926" y="-4.953" radius="0.3048" width="0" layer="31"/>
 <circle x="4.318" y="-6.985" radius="0.3048" width="0" layer="31"/>
@@ -6261,8 +6288,8 @@ PATENTS PENDING 04.01.2015&lt;br/&gt;&lt;/p&gt;</description>
 <smd name="43" x="2.3" y="-6.99" dx="1.5" dy="1.5" layer="1" cream="no"/>
 <smd name="44" x="4.3" y="-6.99" dx="1.5" dy="1.5" layer="1" cream="no"/>
 <smd name="45" x="4.3" y="-4.99" dx="1.5" dy="1.5" layer="1" cream="no"/>
-<text x="0" y="0.9" size="1.016" layer="25">&gt;NAME</text>
-<text x="0" y="-11.1" size="1.016" layer="27">&gt;VALUE</text>
+<text x="3.175" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="3.175" y="-10.16" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 <polygon width="0" layer="1">
 <vertex x="3.05" y="-5.74"/>
 <vertex x="1.55" y="-5.74"/>
