@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -693,6 +693,35 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <vertex x="-3.33375" y="-2.38125" curve="90"/>
 <vertex x="-3.01625" y="-2.69875" curve="90"/>
 </polygon>
+</package>
+<package name="SC70-6">
+<description>&lt;h3&gt;SC-88/SC70-6/SOT-363 6-pin Package&lt;/h3&gt;
+&lt;p&gt;&lt;a href="http://www.onsemi.com/pub_link/Collateral/MBT3904DW1T1-D.PDF"&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<circle x="-1.3335" y="-1.016" radius="0.254" width="0" layer="21"/>
+<wire x1="1" y1="0.625" x2="-1" y2="0.625" width="0.127" layer="51"/>
+<wire x1="-1" y1="0.625" x2="-1" y2="-0.625" width="0.127" layer="51"/>
+<wire x1="-1" y1="-0.625" x2="1" y2="-0.625" width="0.127" layer="51"/>
+<wire x1="1" y1="-0.625" x2="1" y2="0.625" width="0.127" layer="51"/>
+<wire x1="-1.1176" y1="0.7493" x2="-1.1176" y2="-0.6223" width="0.2032" layer="21"/>
+<wire x1="1.1176" y1="-0.7493" x2="1.1176" y2="0.7493" width="0.2032" layer="21"/>
+<wire x1="-0.9779" y1="0.7493" x2="-1.1176" y2="0.7493" width="0.2032" layer="21"/>
+<wire x1="1.1176" y1="0.7493" x2="0.9779" y2="0.7493" width="0.2032" layer="21"/>
+<wire x1="-1.1176" y1="-0.6223" x2="-0.9779" y2="-0.7493" width="0.2032" layer="21"/>
+<wire x1="0.9779" y1="-0.7493" x2="1.1176" y2="-0.7493" width="0.2032" layer="21"/>
+<rectangle x1="-0.1016" y1="0.6858" x2="0.1016" y2="1.0414" layer="51"/>
+<rectangle x1="-0.1016" y1="-1.0414" x2="0.1016" y2="-0.6858" layer="51"/>
+<rectangle x1="0.5484" y1="0.6858" x2="0.7516" y2="1.0414" layer="51"/>
+<rectangle x1="-0.7516" y1="0.6858" x2="-0.5484" y2="1.0414" layer="51"/>
+<rectangle x1="-0.7516" y1="-1.0414" x2="-0.5484" y2="-0.6858" layer="51"/>
+<rectangle x1="0.5484" y1="-1.0414" x2="0.7516" y2="-0.6858" layer="51"/>
+<smd name="4" x="0.65" y="0.92" dx="0.3" dy="0.66" layer="1"/>
+<smd name="2" x="0" y="-0.92" dx="0.3" dy="0.66" layer="1" rot="R180"/>
+<smd name="1" x="-0.65" y="-0.92" dx="0.3" dy="0.66" layer="1" rot="R180"/>
+<smd name="3" x="0.65" y="-0.92" dx="0.3" dy="0.66" layer="1" rot="R180"/>
+<smd name="5" x="0" y="0.92" dx="0.3" dy="0.66" layer="1"/>
+<smd name="6" x="-0.65" y="0.92" dx="0.3" dy="0.66" layer="1"/>
+<text x="0" y="1.397" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.397" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -1481,6 +1510,25 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.1524" layer="94"/>
 <wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.1524" layer="94"/>
 </symbol>
+<symbol name="NPN-1">
+<description>&lt;h3&gt;NPN Transistor&lt;/h3&gt;</description>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
+<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
+<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
+<text x="2.54" y="1.27" size="1.778" layer="95" font="vector" align="center-left">&gt;NAME</text>
+<text x="2.54" y="-1.27" size="1.778" layer="96" font="vector" align="center-left">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BAV99" prefix="D">
@@ -1670,17 +1718,21 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MOC3063SM" prefix="U">
-<description>&lt;h3&gt;Zero-cross triac driver potocoupler&lt;/h3&gt;
+<deviceset name="TRIAC_OPTOCOUPLER" prefix="U">
+<description>&lt;h3&gt;Zero-cross Triac Driver Optocoupler&lt;/h3&gt;
 &lt;p&gt;SImplifies logic control of 115/240 VAC power. Zero voltage crossing to minimize conducted and radiated line noise.&lt;/p&gt;
 &lt;p&gt;Link to &lt;a href='http://www.mouser.com/ds/2/149/MOC3063M-196324.pdf'&gt;datasheet&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;b&gt;Emitter:&lt;/b&gt;&amp;nbsp;V&lt;sub&gt;F&lt;/sub&gt;: 1.3V&amp;nbsp;I&lt;sub&gt;FT&lt;/sub&gt;: 5 mA&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;Detector:&lt;/b&gt;&amp;nbsp;V&lt;sub&gt;DRM&lt;/sub&gt;: 600V&amp;nbsp;I&lt;sub&gt;TSM&lt;/sub&gt;: 1A&amp;nbsp;V&lt;sub&gt;ISO&lt;/sub&gt;: 4170V&amp;nbsp;&lt;sup&gt;DV&lt;/sup&gt;&amp;frasl;&lt;sub&gt;dt&lt;/sub&gt;: 1500&lt;sup&gt;V&lt;/sup&gt;&amp;frasl;&lt;sub&gt;µs&lt;/sub&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;b&gt;Detector:&lt;/b&gt;&amp;nbsp;V&lt;sub&gt;DRM&lt;/sub&gt;: 600V&amp;nbsp;I&lt;sub&gt;TSM&lt;/sub&gt;: 1A&amp;nbsp;V&lt;sub&gt;ISO&lt;/sub&gt;: 4170V&amp;nbsp;&lt;sup&gt;DV&lt;/sup&gt;&amp;frasl;&lt;sub&gt;dt&lt;/sub&gt;: 1500&lt;sup&gt;V&lt;/sup&gt;&amp;frasl;&lt;sub&gt;µs&lt;/sub&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12781”&gt;SparkFun EL Sequencer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/10878”&gt;SparkFun EL Escudo Dos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="OPTOTRIAC_ZC" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIP8SMD">
+<device name="-MOC3063SM" package="DIP8SMD">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="K" pad="2"/>
@@ -1695,7 +1747,7 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MOSFET-PCH" prefix="Q">
+<deviceset name="MOSFET_PCH" prefix="Q">
 <description>&lt;h3&gt;P-channel MOSFETs&lt;/h3&gt;
 &lt;p&gt;Voltage controlled devices that allow control of high current outputs.&lt;/p&gt;</description>
 <gates>
@@ -2116,7 +2168,7 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MOSFET-NCH_DUAL" prefix="Q">
+<deviceset name="MOSFET_NCH_DUAL" prefix="Q">
 <description>&lt;h3&gt;Dual N-Channel 30-V&lt;sub&gt;DS&lt;/sub&gt; MOSFET&lt;/h3&gt;
 &lt;p&gt;&lt;a href='https://www.fairchildsemi.com/datasheets/FD/FDMA1024NZ.pdf'&gt;Link to datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
@@ -2142,7 +2194,7 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DMC2700UDM" prefix="Q">
+<deviceset name="MOSFET_COMPLIMENTARY_PAIR" prefix="Q">
 <description>&lt;h3&gt;Complementary pair enhancement mode MOSFET&lt;/h3&gt;
 &lt;p&gt;A P and N channel MOSFET in a single package. Rated to breakdown at 20V&lt;/p&gt;
 &lt;p&gt;&lt;a href='http://www.diodes.com/_files/datasheets/DMC2700UDM.pdf'&gt;Link to datasheet&lt;/a&gt;&lt;/p&gt;</description>
@@ -2150,7 +2202,7 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <gate name="G$1" symbol="DMC2700UDM" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT26">
+<device name="-DMC2700UDM" package="SOT26">
 <connects>
 <connect gate="G$1" pin="D1" pad="D1"/>
 <connect gate="G$1" pin="D2" pad="D2"/>
@@ -2167,7 +2219,7 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TRANSISTOR-NPN-DDTD142TC" prefix="Q">
+<deviceset name="TRANS_NPN_RES" prefix="Q">
 <description>&lt;h3&gt;NPN transistor with built in base resistor&lt;/h3&gt;
 &lt;p&gt;Current controlled device with built in current control for tighter layouts.&lt;/p&gt;
 &lt;p&gt;Link to &lt;a href='http://www.diodes.com/_files/datasheets/ds30399.pdf'&gt;datasheet&lt;/a&gt;.&lt;/p&gt;</description>
@@ -2190,7 +2242,7 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TRANSISTOR-PNP-DDTB142TC" prefix="Q">
+<deviceset name="TRANS_PNP_RES" prefix="Q">
 <description>&lt;h3&gt;PNP transistor with built in base resistor&lt;/h3&gt;
 &lt;p&gt;Current controlled device with built in current control for tighter layouts.&lt;/p&gt;
 &lt;p&gt;Link to &lt;a href='http://www.diodes.com/_files/datasheets/ds30403.pdf'&gt;datasheet&lt;/a&gt;.&lt;/p&gt;</description>
@@ -2198,7 +2250,7 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <gate name="Q1" symbol="PNP-DDTB142TC" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT23-3">
+<device name="-DDTB142TC" package="SOT23-3">
 <connects>
 <connect gate="Q1" pin="B" pad="1"/>
 <connect gate="Q1" pin="C" pad="3"/>
@@ -2207,7 +2259,7 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="TRANS-11479" constant="no"/>
-<attribute name="VALUE" value="PNP-500mA" constant="no"/>
+<attribute name="VALUE" value="500mA" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -2234,7 +2286,7 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MOSFET-PCH_DUAL" prefix="Q">
+<deviceset name="MOSFET_PCH_DUAL" prefix="Q">
 <description>&lt;h3&gt;Dual P-Channel -20V&lt;sub&gt;DS&lt;/sub&gt; MOSFET&lt;/h3&gt;
 &lt;p&gt;&lt;a href='http://www.diodes.com/_files/datasheets/ds31197.pdf'&gt;Link to datasheet&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
@@ -2260,15 +2312,19 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TRIAC-HP" prefix="Q">
+<deviceset name="TRIAC" prefix="Q">
 <description>&lt;h3&gt;Bidirectional triode thyristor (TRIAC)&lt;/h3&gt;
-&lt;p&gt;Link to &lt;a href='http://www.nxp.com/documents/data_sheet/Z0103MN.pdf'&gt;datasheet&lt;/a&gt;
-&lt;p&gt;Used for EL wire applications&lt;/p&gt;</description>
+&lt;p&gt;Four quadrant TRIAC. Useful for EL Wire Applications
+&lt;br&gt;&lt;p&gt;Link to &lt;a href='https://cdn.sparkfun.com/datasheets/Components/EL/EL_Escudo_Dos/Z0103MN.pdf'&gt;datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12781”&gt;SparkFun EL Sequencer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/10878”&gt;SparkFun EL Escudo Dos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="TRIAC-TAB" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="SMD" package="SOT223">
+<device name="-Z0103MN" package="SOT223">
 <connects>
 <connect gate="G$1" pin="G" pad="3"/>
 <connect gate="G$1" pin="T1" pad="1"/>
@@ -2286,7 +2342,12 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </deviceset>
 <deviceset name="DUAL-OPTOISOLATOR" prefix="U">
 <description>&lt;h3&gt;Optocoupler, Phototransistor Output, Dual Channel&lt;/h3&gt;
-&lt;p&gt;Optically coupled pairs with a gallium arsenide infrared LED and a silicon NPN phototransistor. Signal information, including a DC level, can be transmitted by the device while maintaining a high degree of electrical isolation between input and output.&lt;/p&gt;</description>
+&lt;p&gt;Optically coupled pairs with a gallium arsenide infrared LED and a silicon NPN phototransistor.
+&lt;br&gt; Signal information, including a DC level, can be transmitted by the device while maintaining a high degree of electrical isolation between input and output.
+&lt;br&gt;&lt;li&gt;&lt;a href='https://www.sparkfun.com/datasheets/Components/SMD/ild205t.pdf'&gt;Datasheet&lt;/a&gt;&lt;/li&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href='https://www.sparkfun.com/products/9118'&gt;SparkFun Opto-isolator Breakout&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="OPTOISOLATOR-2" x="0" y="0"/>
 </gates>
@@ -2371,6 +2432,35 @@ Belongs in discrete</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TRANS_NPN_DUAL" prefix="Q" uservalue="yes">
+<description>&lt;h3&gt; Dual NPN Transistors in Single Package&lt;/h3&gt;
+&lt;p&gt;The MBT3904W1 puts two general purpose 3904 NPN transistors in a single package.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.onsemi.com/pub_link/Collateral/MBT3904DW1T1-D.PDF"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13907”&gt;SparkFun ESP32 Thing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="Q1" symbol="NPN-1" x="-2.54" y="10.16"/>
+<gate name="Q2" symbol="NPN-1" x="-2.54" y="-10.16" swaplevel="1"/>
+</gates>
+<devices>
+<device name="-MBT3904DW1T1" package="SC70-6">
+<connects>
+<connect gate="Q1" pin="B" pad="5"/>
+<connect gate="Q1" pin="C" pad="3"/>
+<connect gate="Q1" pin="E" pad="4"/>
+<connect gate="Q2" pin="B" pad="2"/>
+<connect gate="Q2" pin="C" pad="6"/>
+<connect gate="Q2" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="TRANS-13337"/>
+</technology>
 </technologies>
 </device>
 </devices>
