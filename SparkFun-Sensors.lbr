@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -90,6 +90,8 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -7128,6 +7130,67 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="1.905" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.54" size="0.6096" layer="27" font="vector" ratio="20" align="bottom-center">&gt;VALUE</text>
 </package>
+<package name="OLGA-14">
+<description>&lt;h3&gt;OLGA - 14 Pin&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 14&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://datasheets.maximintegrated.com/en/ds/MAX30105.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;MAX30105&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<circle x="-2.032" y="3.1" radius="0.1" width="0.2" layer="21"/>
+<wire x1="-1.65" y1="2.8" x2="1.65" y2="2.8" width="0.1524" layer="21"/>
+<wire x1="1.65" y1="2.8" x2="1.65" y2="-2.8" width="0.1524" layer="21"/>
+<wire x1="1.65" y1="-2.8" x2="-1.65" y2="-2.8" width="0.1524" layer="21"/>
+<wire x1="-1.65" y1="-2.8" x2="-1.65" y2="2.8" width="0.1524" layer="21"/>
+<wire x1="-0.7" y1="2.197" x2="0.69" y2="2.197" width="0.05" layer="51"/>
+<wire x1="0.985" y1="1.91" x2="0.985" y2="-0.26" width="0.05" layer="51"/>
+<wire x1="0.7" y1="-0.553" x2="-0.69" y2="-0.553" width="0.05" layer="51"/>
+<wire x1="-0.985" y1="-0.27" x2="-0.985" y2="1.9" width="0.05" layer="51"/>
+<wire x1="-0.985" y1="1.9" x2="-0.7" y2="2.197" width="0.05" layer="51" curve="-73.739795"/>
+<wire x1="0.69" y1="2.197" x2="0.985" y2="1.91" width="0.05" layer="51" curve="-73.739795"/>
+<wire x1="0.985" y1="-0.26" x2="0.7" y2="-0.553" width="0.05" layer="51" curve="-73.739795"/>
+<wire x1="-0.69" y1="-0.553" x2="-0.985" y2="-0.27" width="0.05" layer="51" curve="-73.739795"/>
+<wire x1="-0.7" y1="-1.093" x2="0.69" y2="-1.093" width="0.05" layer="51"/>
+<wire x1="0.985" y1="-1.38" x2="0.985" y2="-1.89" width="0.05" layer="51"/>
+<wire x1="0.7" y1="-2.183" x2="-0.69" y2="-2.183" width="0.05" layer="51"/>
+<wire x1="-0.985" y1="-1.9" x2="-0.985" y2="-1.39" width="0.05" layer="51"/>
+<wire x1="-0.985" y1="-1.39" x2="-0.7" y2="-1.093" width="0.05" layer="51" curve="-73.739795"/>
+<wire x1="0.69" y1="-1.093" x2="0.985" y2="-1.38" width="0.05" layer="51" curve="-73.739795"/>
+<wire x1="0.985" y1="-1.89" x2="0.7" y2="-2.183" width="0.05" layer="51" curve="-73.739795"/>
+<wire x1="-0.69" y1="-2.183" x2="-0.985" y2="-1.9" width="0.05" layer="51" curve="-73.739795"/>
+<rectangle x1="0.87" y1="2.24" x2="1.53" y2="2.56" layer="31"/>
+<rectangle x1="-1.53" y1="2.24" x2="-0.87" y2="2.56" layer="31"/>
+<rectangle x1="-1.53" y1="1.44" x2="-0.87" y2="1.76" layer="31"/>
+<rectangle x1="-1.53" y1="0.64" x2="-0.87" y2="0.96" layer="31"/>
+<rectangle x1="-1.53" y1="-0.16" x2="-0.87" y2="0.16" layer="31"/>
+<rectangle x1="-1.53" y1="-0.96" x2="-0.87" y2="-0.64" layer="31"/>
+<rectangle x1="-1.53" y1="-1.76" x2="-0.87" y2="-1.44" layer="31"/>
+<rectangle x1="-1.53" y1="-2.56" x2="-0.87" y2="-2.24" layer="31"/>
+<rectangle x1="0.87" y1="-2.56" x2="1.53" y2="-2.24" layer="31"/>
+<rectangle x1="0.87" y1="-1.76" x2="1.53" y2="-1.44" layer="31"/>
+<rectangle x1="0.87" y1="-0.96" x2="1.53" y2="-0.64" layer="31"/>
+<rectangle x1="0.87" y1="-0.16" x2="1.53" y2="0.16" layer="31"/>
+<rectangle x1="0.87" y1="0.64" x2="1.53" y2="0.96" layer="31"/>
+<rectangle x1="0.87" y1="1.44" x2="1.53" y2="1.76" layer="31"/>
+<smd name="1" x="-1.2" y="2.4" dx="0.75" dy="0.35" layer="1" cream="no"/>
+<smd name="2" x="-1.2" y="1.6" dx="0.75" dy="0.35" layer="1" cream="no"/>
+<smd name="3" x="-1.2" y="0.8" dx="0.75" dy="0.35" layer="1" cream="no"/>
+<smd name="4" x="-1.2" y="0" dx="0.75" dy="0.35" layer="1" cream="no"/>
+<smd name="5" x="-1.2" y="-0.8" dx="0.75" dy="0.35" layer="1" cream="no"/>
+<smd name="6" x="-1.2" y="-1.6" dx="0.75" dy="0.35" layer="1" cream="no"/>
+<smd name="7" x="-1.2" y="-2.4" dx="0.75" dy="0.35" layer="1" cream="no"/>
+<smd name="8" x="1.2" y="-2.4" dx="0.75" dy="0.35" layer="1" cream="no"/>
+<smd name="9" x="1.2" y="-1.6" dx="0.75" dy="0.35" layer="1" cream="no"/>
+<smd name="10" x="1.2" y="-0.8" dx="0.75" dy="0.35" layer="1" cream="no"/>
+<smd name="11" x="1.2" y="0" dx="0.75" dy="0.35" layer="1" cream="no"/>
+<smd name="12" x="1.2" y="0.8" dx="0.75" dy="0.35" layer="1" cream="no"/>
+<smd name="13" x="1.2" y="1.6" dx="0.75" dy="0.35" layer="1" cream="no"/>
+<smd name="14" x="1.2" y="2.4" dx="0.75" dy="0.35" layer="1" cream="no"/>
+<text x="0" y="3" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-3.048" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ADMP401">
@@ -8522,6 +8585,30 @@ channels, 3 magnetic field channels&lt;/li&gt;
 <wire x1="15.24" y1="17.78" x2="-15.24" y2="17.78" width="0.254" layer="94"/>
 <text x="-15.24" y="-19.05" size="1.778" layer="96" font="vector" align="center-left">&gt;Value</text>
 <text x="-15.24" y="19.05" size="1.778" layer="95" font="vector" align="center-left">&gt;Name</text>
+</symbol>
+<symbol name="MAX30105">
+<description>&lt;h3&gt;MAX30105 Particle Dust Sensor&lt;/h3&gt;
+&lt;p&gt;I2C communication, internal LEDs, photodetectors, optical elements and low-noise electronics.&lt;/p&gt;</description>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<pin name="!INT" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="G_DRV" x="-15.24" y="-7.62" visible="pin" length="short"/>
+<pin name="IR_DRV" x="-15.24" y="-5.08" visible="pin" length="short"/>
+<pin name="NC@1" x="-15.24" y="7.62" visible="pin" length="short"/>
+<pin name="NC@8" x="15.24" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="NC@14" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="PGND" x="-15.24" y="0" visible="pin" length="short"/>
+<pin name="R_DRV" x="-15.24" y="-2.54" visible="pin" length="short"/>
+<pin name="SCL" x="-15.24" y="5.08" visible="pin" length="short"/>
+<pin name="SDA" x="-15.24" y="2.54" visible="pin" length="short"/>
+<pin name="VDD" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="VLED+@9" x="15.24" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="VLED+@10" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
+<text x="-12.7" y="10.668" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-12.7" y="-10.668" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -10747,6 +10834,45 @@ channels, 3 magnetic field channels&lt;/li&gt;
 <technology name="">
 <attribute name="PROD_ID" value="IC-12557" constant="no"/>
 <attribute name="VALUE" value="LSM303C" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX30105" prefix="U">
+<description>&lt;h3&gt;MAX30105 High Sensitivity Optical Sensor&lt;/h3&gt;
+&lt;p&gt;Can be used for Pulse Detection, Pulse Ox, and possible visual particle detection. &lt;/br&gt;
+I2C communication.
+&lt;li&gt;&lt;a href=”https://datasheets.maximintegrated.com/en/ds/MAX30105.pdf”&gt;Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/14045”&gt;SparkFun Particle Sensor Breakout - MAX30105&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="U1" symbol="MAX30105" x="0" y="5.08"/>
+</gates>
+<devices>
+<device name="SMD" package="OLGA-14">
+<connects>
+<connect gate="U1" pin="!INT" pad="13"/>
+<connect gate="U1" pin="GND" pad="12"/>
+<connect gate="U1" pin="G_DRV" pad="7"/>
+<connect gate="U1" pin="IR_DRV" pad="6"/>
+<connect gate="U1" pin="NC@1" pad="1"/>
+<connect gate="U1" pin="NC@14" pad="14"/>
+<connect gate="U1" pin="NC@8" pad="8"/>
+<connect gate="U1" pin="PGND" pad="4"/>
+<connect gate="U1" pin="R_DRV" pad="5"/>
+<connect gate="U1" pin="SCL" pad="2"/>
+<connect gate="U1" pin="SDA" pad="3"/>
+<connect gate="U1" pin="VDD" pad="11"/>
+<connect gate="U1" pin="VLED+@10" pad="10"/>
+<connect gate="U1" pin="VLED+@9" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-13510" constant="no"/>
+<attribute name="VALUE" value="MAX30105" constant="no"/>
 </technology>
 </technologies>
 </device>
