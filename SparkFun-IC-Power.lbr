@@ -160,7 +160,6 @@ In this library you'll find anything that has to do with power delivery, or maki
 &lt;li&gt;Boost/Buck controllers&lt;/li&gt;
 &lt;li&gt;Charge pump controllers&lt;/li&gt;
 &lt;li&gt;Power sequencers&lt;/li&gt;
-&lt;li&gt;Transformers&lt;/li&gt;
 &lt;li&gt;Power switches&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
 &lt;br&gt;
@@ -725,47 +724,6 @@ Source: http://ww1.microchip.com/downloads/en/DeviceDoc/41203E.pdf</description>
 <rectangle x1="-0.12445625" y1="-1.8770625" x2="0.1244625" y2="-1.07188125" layer="31"/>
 <rectangle x1="0.375925" y1="-1.87198125" x2="0.62484375" y2="-1.0668" layer="31"/>
 <rectangle x1="0.87630625" y1="-1.8770625" x2="1.125225" y2="-1.07188125" layer="31"/>
-</package>
-<package name="TRANSFORMER">
-<wire x1="7" y1="7.5" x2="-7" y2="7.5" width="0.127" layer="21"/>
-<wire x1="-7" y1="7.5" x2="-7" y2="-7.5" width="0.127" layer="21"/>
-<wire x1="-7" y1="-7.5" x2="7" y2="-7.5" width="0.127" layer="21"/>
-<wire x1="7" y1="-7.5" x2="7" y2="7.5" width="0.127" layer="21"/>
-<wire x1="3.15" y1="10.3" x2="-3.15" y2="10.3" width="0.127" layer="51"/>
-<wire x1="-3.15" y1="10.3" x2="-3.15" y2="-10.3" width="0.127" layer="51"/>
-<wire x1="-3.15" y1="-10.3" x2="3.15" y2="-10.3" width="0.127" layer="51"/>
-<wire x1="3.15" y1="-10.3" x2="3.15" y2="10.3" width="0.127" layer="51"/>
-<wire x1="-3.302" y1="7.5438" x2="-3.302" y2="10.414" width="0.127" layer="21"/>
-<wire x1="-3.302" y1="10.414" x2="3.302" y2="10.414" width="0.127" layer="21"/>
-<wire x1="3.302" y1="10.414" x2="3.302" y2="7.5184" width="0.127" layer="21"/>
-<wire x1="-3.302" y1="-7.5184" x2="-3.302" y2="-10.414" width="0.127" layer="21"/>
-<wire x1="-3.302" y1="-10.414" x2="3.302" y2="-10.414" width="0.127" layer="21"/>
-<wire x1="3.302" y1="-10.414" x2="3.302" y2="-7.5184" width="0.127" layer="21"/>
-<circle x="-3" y="3" radius="0.7102" width="0.127" layer="21"/>
-<pad name="4" x="5.35" y="4.75" drill="1.4"/>
-<pad name="1" x="-5.35" y="4.75" drill="1.4"/>
-<pad name="2" x="-5.35" y="-4.75" drill="1.4"/>
-<pad name="3" x="5.35" y="-4.75" drill="1.4"/>
-<text x="-7" y="6" size="1.27" layer="25">&gt;NAME</text>
-<text x="0" y="-6" size="1.27" layer="27" rot="R180">&gt;VALUE</text>
-</package>
-<package name="TRANSFORMER_SMD">
-<description>TTC-5023</description>
-<wire x1="-4.8" y1="6.25" x2="-4.8" y2="-6.25" width="0.127" layer="21"/>
-<wire x1="4.8" y1="-6.25" x2="4.8" y2="6.25" width="0.127" layer="21"/>
-<wire x1="-4.8" y1="-6.25" x2="-3.7" y2="-6.25" width="0.127" layer="21"/>
-<wire x1="3.7" y1="-6.25" x2="4.8" y2="-6.25" width="0.127" layer="21"/>
-<wire x1="3.7" y1="6.25" x2="4.8" y2="6.25" width="0.127" layer="21"/>
-<wire x1="-4.8" y1="6.25" x2="-3.7" y2="6.25" width="0.127" layer="21"/>
-<circle x="-4.1" y="-5.5" radius="0.3605" width="0.127" layer="21"/>
-<smd name="4" x="2.54" y="6.15" dx="2.9" dy="1.3" layer="1" rot="R90"/>
-<smd name="3" x="2.54" y="-6.15" dx="2.9" dy="1.3" layer="1" rot="R90"/>
-<smd name="1" x="-2.54" y="-6.15" dx="2.9" dy="1.3" layer="1" rot="R90"/>
-<smd name="6" x="-2.54" y="6.15" dx="2.9" dy="1.3" layer="1" rot="R90"/>
-<smd name="5" x="0" y="6.15" dx="2.9" dy="1.3" layer="1" rot="R90"/>
-<smd name="2" x="0" y="-6.15" dx="2.9" dy="1.3" layer="1" rot="R90"/>
-<text x="-4" y="3" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-4" y="-4" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
 <package name="DIL18">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
@@ -7656,36 +7614,6 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 <wire x1="-1.19" y1="-0.25" x2="-1.7" y2="-0.25" width="0.28" layer="1"/>
 <wire x1="-1.19" y1="0.25" x2="-1.7" y2="0.25" width="0.28" layer="1"/>
 <wire x1="-1.19" y1="0.75" x2="-1.7" y2="0.75" width="0.28" layer="1"/>
-</package>
-<package name="COILCRAFT_DA230X">
-<description>Coilcraft DA2303, DA2304</description>
-<wire x1="-4.1" y1="5" x2="-3" y2="5" width="0.127" layer="21"/>
-<wire x1="-3" y1="5" x2="3" y2="5" width="0.127" layer="21"/>
-<wire x1="3" y1="5" x2="4.1" y2="5" width="0.127" layer="21"/>
-<wire x1="-4.1" y1="-5" x2="-3" y2="-5" width="0.127" layer="21"/>
-<wire x1="-3" y1="-5" x2="3" y2="-5" width="0.127" layer="21"/>
-<wire x1="3" y1="-5" x2="4.1" y2="-5" width="0.127" layer="21"/>
-<wire x1="4.1" y1="5" x2="4.1" y2="-5" width="0.127" layer="21"/>
-<wire x1="-4.1" y1="5" x2="-4.1" y2="-5" width="0.127" layer="21"/>
-<wire x1="-3" y1="5" x2="-3" y2="3" width="0.127" layer="21"/>
-<wire x1="-3" y1="3" x2="-3" y2="-3" width="0.127" layer="21"/>
-<wire x1="-3" y1="-3" x2="-3" y2="-5" width="0.127" layer="21"/>
-<wire x1="3" y1="5" x2="3" y2="3" width="0.127" layer="21"/>
-<text x="-1" y="-4" size="1.27" layer="21" rot="R90">&gt;NAME</text>
-<text x="2" y="-4" size="1.27" layer="21" rot="R90">&gt;VALUE</text>
-<wire x1="3" y1="3" x2="3" y2="-3" width="0.127" layer="21"/>
-<wire x1="3" y1="-3" x2="3" y2="-5" width="0.127" layer="21"/>
-<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.127" layer="21" curve="-73.739795"/>
-<wire x1="3" y1="3" x2="3" y2="-3" width="0.127" layer="21" curve="-73.739795"/>
-<smd name="P$1" x="-5.4" y="3" dx="1.7" dy="1.6" layer="1"/>
-<smd name="P$2" x="-5.4" y="1" dx="1.7" dy="1.6" layer="1"/>
-<smd name="P$3" x="-5.4" y="-1" dx="1.7" dy="1.6" layer="1"/>
-<smd name="P$4" x="-5.4" y="-3" dx="1.7" dy="1.6" layer="1"/>
-<smd name="P$5" x="5.4" y="-3" dx="1.7" dy="1.6" layer="1"/>
-<smd name="P$6" x="5.4" y="-1" dx="1.7" dy="1.6" layer="1"/>
-<smd name="P$7" x="5.4" y="1" dx="1.7" dy="1.6" layer="1"/>
-<smd name="P$8" x="5.4" y="3" dx="1.7" dy="1.6" layer="1"/>
-<circle x="-1.905" y="3.81" radius="0.635" width="0" layer="21"/>
 </package>
 <package name="QFN-10_PAD-8">
 <wire x1="-1.575" y1="1.575" x2="1.57" y2="1.575" width="0.03" layer="51"/>
@@ -15626,24 +15554,6 @@ Pasted was reduced by 40% width on the center ground pad, and some amount on the
 <pin name="VIN" x="-17.78" y="7.62" length="middle" direction="sup"/>
 <pin name="VOUT" x="17.78" y="5.08" length="middle" direction="pas" rot="R180"/>
 </symbol>
-<symbol name="TRANSFORMER">
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="5.08" x2="-5.08" y2="2.54" width="0.254" layer="94" curve="180"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="0" width="0.254" layer="94" curve="180"/>
-<wire x1="-5.08" y1="0" x2="-5.08" y2="-2.54" width="0.254" layer="94" curve="180"/>
-<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="-5.08" width="0.254" layer="94" curve="180"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="2.54" width="0.254" layer="94" curve="-180"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.254" layer="94" curve="-180"/>
-<wire x1="5.08" y1="-2.54" x2="5.08" y2="-5.08" width="0.254" layer="94" curve="-180"/>
-<text x="10.16" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<text x="10.16" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-5.08" y="7.62" visible="pad" length="short" rot="R270"/>
-<pin name="4" x="5.08" y="7.62" visible="pad" length="short" rot="R270"/>
-<pin name="2" x="-5.08" y="-7.62" visible="pad" length="short" rot="R90"/>
-<pin name="3" x="5.08" y="-7.62" visible="pad" length="short" rot="R90"/>
-</symbol>
 <symbol name="ULN2803">
 <wire x1="-10.16" y1="20.32" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="17.78" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
@@ -16076,48 +15986,6 @@ Pasted was reduced by 40% width on the center ground pad, and some amount on the
 <text x="0" y="34.036" size="1.778" layer="95">&gt;NAME</text>
 <text x="-0.254" y="31.242" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND_PAD" x="12.7" y="-2.54" length="short" rot="R90"/>
-</symbol>
-<symbol name="TRANSFORMER-QUADFILIAR">
-<wire x1="0" y1="7.62" x2="1.27" y2="6.35" width="0.1524" layer="94" curve="-90" cap="flat"/>
-<wire x1="0" y1="5.08" x2="1.27" y2="6.35" width="0.1524" layer="94" curve="90" cap="flat"/>
-<wire x1="0" y1="5.08" x2="1.27" y2="3.81" width="0.1524" layer="94" curve="-90" cap="flat"/>
-<wire x1="0" y1="2.54" x2="1.27" y2="3.81" width="0.1524" layer="94" curve="90" cap="flat"/>
-<wire x1="0" y1="2.54" x2="1.27" y2="1.27" width="0.1524" layer="94" curve="-90" cap="flat"/>
-<wire x1="0" y1="0" x2="1.27" y2="1.27" width="0.1524" layer="94" curve="90" cap="flat"/>
-<text x="-2.54" y="18.542" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="-2.54" y="7.62" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="1" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<wire x1="0" y1="17.78" x2="1.27" y2="16.51" width="0.1524" layer="94" curve="-90" cap="flat"/>
-<wire x1="0" y1="15.24" x2="1.27" y2="16.51" width="0.1524" layer="94" curve="90" cap="flat"/>
-<wire x1="0" y1="15.24" x2="1.27" y2="13.97" width="0.1524" layer="94" curve="-90" cap="flat"/>
-<wire x1="0" y1="12.7" x2="1.27" y2="13.97" width="0.1524" layer="94" curve="90" cap="flat"/>
-<wire x1="0" y1="12.7" x2="1.27" y2="11.43" width="0.1524" layer="94" curve="-90" cap="flat"/>
-<wire x1="0" y1="10.16" x2="1.27" y2="11.43" width="0.1524" layer="94" curve="90" cap="flat"/>
-<pin name="4" x="-2.54" y="17.78" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="3" x="-2.54" y="10.16" visible="off" length="short" direction="pas" swaplevel="1"/>
-<wire x1="7.62" y1="7.62" x2="6.35" y2="6.35" width="0.1524" layer="94" curve="90" cap="flat"/>
-<wire x1="7.62" y1="5.08" x2="6.35" y2="6.35" width="0.1524" layer="94" curve="-90" cap="flat"/>
-<wire x1="7.62" y1="5.08" x2="6.35" y2="3.81" width="0.1524" layer="94" curve="90" cap="flat"/>
-<wire x1="7.62" y1="2.54" x2="6.35" y2="3.81" width="0.1524" layer="94" curve="-90" cap="flat"/>
-<wire x1="7.62" y1="2.54" x2="6.35" y2="1.27" width="0.1524" layer="94" curve="90" cap="flat"/>
-<wire x1="7.62" y1="0" x2="6.35" y2="1.27" width="0.1524" layer="94" curve="-90" cap="flat"/>
-<pin name="6" x="10.16" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="5" x="10.16" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<wire x1="7.62" y1="17.78" x2="6.35" y2="16.51" width="0.1524" layer="94" curve="90" cap="flat"/>
-<wire x1="7.62" y1="15.24" x2="6.35" y2="16.51" width="0.1524" layer="94" curve="-90" cap="flat"/>
-<wire x1="7.62" y1="15.24" x2="6.35" y2="13.97" width="0.1524" layer="94" curve="90" cap="flat"/>
-<wire x1="7.62" y1="12.7" x2="6.35" y2="13.97" width="0.1524" layer="94" curve="-90" cap="flat"/>
-<wire x1="7.62" y1="12.7" x2="6.35" y2="11.43" width="0.1524" layer="94" curve="90" cap="flat"/>
-<wire x1="7.62" y1="10.16" x2="6.35" y2="11.43" width="0.1524" layer="94" curve="-90" cap="flat"/>
-<pin name="8" x="10.16" y="17.78" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="7" x="10.16" y="10.16" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<circle x="0" y="16.51" radius="0" width="0.8128" layer="94"/>
-<circle x="7.62" y="16.51" radius="0" width="0.8128" layer="94"/>
-<circle x="0" y="6.35" radius="0" width="0.8128" layer="94"/>
-<circle x="7.62" y="6.35" radius="0" width="0.8128" layer="94"/>
-<wire x1="2.54" y1="17.78" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="17.78" width="0.254" layer="94"/>
 </symbol>
 <symbol name="RAIL_SPLITTER">
 <wire x1="-5.08" y1="-7.62" x2="7.62" y2="0" width="0.4064" layer="94"/>
@@ -17002,36 +16870,6 @@ IC-10035</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TRANSFORMER">
-<description>Small transformers</description>
-<gates>
-<gate name="G$1" symbol="TRANSFORMER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="PTH" package="TRANSFORMER">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SMD" package="TRANSFORMER_SMD">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="3"/>
-<connect gate="G$1" pin="3" pad="4"/>
-<connect gate="G$1" pin="4" pad="6"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="ULN2803" prefix="ULN2803" uservalue="yes">
 <description>&lt;b&gt;Darlington Driver&lt;/b&gt;
 ULN2803 Darlington array. 500mA max per channel, 8-channel package. Spark Fun Electronics SKU : COM-00312</description>
@@ -17768,29 +17606,6 @@ Up to 1A LED current</description>
 <technology name="">
 <attribute name="VALUE" value="LT3652"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TRANSFORMER_QUADFILIAR" prefix="TX">
-<description>Transformer with 4 independent windings</description>
-<gates>
-<gate name="G$1" symbol="TRANSFORMER-QUADFILIAR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="COILCRAFT_DA230X">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
-<connect gate="G$1" pin="4" pad="P$4"/>
-<connect gate="G$1" pin="5" pad="P$5"/>
-<connect gate="G$1" pin="6" pad="P$6"/>
-<connect gate="G$1" pin="7" pad="P$7"/>
-<connect gate="G$1" pin="8" pad="P$8"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
