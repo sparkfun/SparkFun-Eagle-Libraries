@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -65,7 +65,7 @@
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -773,8 +773,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <hole x="2.5" y="52.2" drill="2.5"/>
 <hole x="72.5" y="52.2" drill="2.5"/>
 <hole x="72.5" y="2.5" drill="2.5"/>
-<text x="0" y="54.61" size="0.6096" layer="25" font="vector" ratio="20">&gt;Name</text>
-<text x="0" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20" align="top-left">&gt;Value</text>
+<text x="36.83" y="53.34" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="38.1" y="-0.254" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
 <package name="1X20">
 <description>&lt;h3&gt;0.1" SIL LCD connection&lt;/h3&gt;
@@ -1087,7 +1087,7 @@ none
 <wire x1="15.53" y1="-15.04" x2="2.11" y2="-15.04" width="0.127" layer="52"/>
 <wire x1="2.11" y1="-15.04" x2="2.11" y2="-25.1" width="0.127" layer="52"/>
 <wire x1="2.11" y1="-25.1" x2="15.53" y2="-25.1" width="0.127" layer="52"/>
-<text x="8.82" y="-20.07" size="0.8128" layer="52" rot="R180" align="center">Active Area 0.66"
+<text x="8.82" y="-20.07" size="0.8128" layer="52" font="vector" rot="R180" align="center">Active Area 0.66"
 64 x 48 Pixels
 (Facing Bottom)</text>
 <hole x="17.15" y="-3.4" drill="0.8"/>
@@ -1276,42 +1276,43 @@ none
 <pin name="VLED" x="-10.16" y="-7.62" length="short"/>
 </symbol>
 <symbol name="OLED0.66">
-<description>&lt;h3&gt;MicroView OLED connections&lt;/h3&gt;</description>
-<wire x1="-25.4" y1="48.26" x2="-25.4" y2="-48.26" width="0.254" layer="94"/>
-<wire x1="-25.4" y1="-48.26" x2="10.16" y2="-48.26" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-48.26" x2="10.16" y2="48.26" width="0.254" layer="94"/>
-<wire x1="10.16" y1="48.26" x2="-25.4" y2="48.26" width="0.254" layer="94"/>
-<pin name="!CS!" x="-27.94" y="15.24" length="short"/>
-<pin name="!RESET!" x="-27.94" y="12.7" length="short"/>
-<pin name="BS1" x="-27.94" y="-33.02" length="short"/>
-<pin name="BS2" x="-27.94" y="-35.56" length="short"/>
-<pin name="C1N" x="-27.94" y="20.32" length="short"/>
-<pin name="C1P" x="-27.94" y="27.94" length="short"/>
-<pin name="C2N" x="-27.94" y="30.48" length="short"/>
-<pin name="C2P" x="-27.94" y="38.1" length="short"/>
-<pin name="D/!C!" x="-27.94" y="10.16" length="short"/>
-<pin name="D0/SCK" x="-27.94" y="0" length="short"/>
-<pin name="D1/MOSI" x="-27.94" y="-2.54" length="short"/>
-<pin name="D2" x="-27.94" y="-5.08" length="short"/>
-<pin name="D3" x="-27.94" y="-7.62" length="short"/>
-<pin name="D4" x="-27.94" y="-10.16" length="short"/>
-<pin name="D5" x="-27.94" y="-12.7" length="short"/>
-<pin name="D6" x="-27.94" y="-15.24" length="short"/>
-<pin name="D7" x="-27.94" y="-17.78" length="short"/>
-<pin name="E/!RD!" x="-27.94" y="5.08" length="short"/>
-<pin name="GND@1" x="-27.94" y="-38.1" length="short"/>
-<pin name="GND@2" x="-27.94" y="-40.64" length="short"/>
-<pin name="IREF" x="-27.94" y="-22.86" length="short"/>
-<pin name="R/!W!" x="-27.94" y="7.62" length="short"/>
-<pin name="VBAT" x="-27.94" y="45.72" length="short"/>
-<pin name="VCC" x="-27.94" y="-27.94" length="short"/>
-<pin name="VCOMH" x="-27.94" y="-25.4" length="short"/>
-<pin name="VDD" x="-27.94" y="43.18" length="short"/>
-<pin name="VLSS" x="-27.94" y="-43.18" length="short"/>
-<pin name="VSS" x="-27.94" y="-45.72" length="short"/>
-<text x="0" y="-2.54" size="2.54" layer="94" rot="R270" align="center">OLED 0.66" 64 x 48</text>
-<text x="-25.4" y="48.768" size="1.778" layer="95">&gt;Name</text>
-<text x="-25.4" y="-49.022" size="1.778" layer="96" align="top-left">&gt;Value</text>
+<description>&lt;h3&gt;Micro OLED&lt;/h3&gt;
+Monochrome</description>
+<wire x1="-17.78" y1="25.4" x2="-17.78" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-30.48" x2="17.78" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-30.48" x2="17.78" y2="25.4" width="0.254" layer="94"/>
+<wire x1="17.78" y1="25.4" x2="-17.78" y2="25.4" width="0.254" layer="94"/>
+<pin name="!CS!" x="20.32" y="-5.08" length="short" rot="R180"/>
+<pin name="!RESET!" x="20.32" y="-7.62" length="short" rot="R180"/>
+<pin name="BS1" x="-20.32" y="5.08" length="short"/>
+<pin name="BS2" x="-20.32" y="2.54" length="short"/>
+<pin name="C1N" x="-20.32" y="-27.94" length="short"/>
+<pin name="C1P" x="-20.32" y="-25.4" length="short"/>
+<pin name="C2N" x="-20.32" y="-20.32" length="short"/>
+<pin name="C2P" x="-20.32" y="-17.78" length="short"/>
+<pin name="D/!C!" x="20.32" y="-10.16" length="short" rot="R180"/>
+<pin name="D0/SCK" x="20.32" y="20.32" length="short" rot="R180"/>
+<pin name="D1/MOSI" x="20.32" y="17.78" length="short" rot="R180"/>
+<pin name="D2" x="20.32" y="15.24" length="short" rot="R180"/>
+<pin name="D3" x="20.32" y="12.7" length="short" rot="R180"/>
+<pin name="D4" x="20.32" y="10.16" length="short" rot="R180"/>
+<pin name="D5" x="20.32" y="7.62" length="short" rot="R180"/>
+<pin name="D6" x="20.32" y="5.08" length="short" rot="R180"/>
+<pin name="D7" x="20.32" y="2.54" length="short" rot="R180"/>
+<pin name="E/!RD!" x="20.32" y="-15.24" length="short" rot="R180"/>
+<pin name="GND@1" x="-20.32" y="-2.54" length="short"/>
+<pin name="GND@2" x="-20.32" y="-5.08" length="short"/>
+<pin name="IREF" x="-20.32" y="15.24" length="short"/>
+<pin name="R/!W!" x="20.32" y="-12.7" length="short" rot="R180"/>
+<pin name="VBAT" x="-20.32" y="22.86" length="short"/>
+<pin name="VCC" x="-20.32" y="10.16" length="short"/>
+<pin name="VCOMH" x="-20.32" y="12.7" length="short"/>
+<pin name="VDD" x="-20.32" y="20.32" length="short"/>
+<pin name="VLSS" x="-20.32" y="-7.62" length="short"/>
+<pin name="VSS" x="-20.32" y="-10.16" length="short"/>
+<text x="0" y="0" size="2.54" layer="94" font="vector" align="center">OLED</text>
+<text x="0" y="25.908" size="1.778" layer="95" font="vector" align="bottom-center">&gt;Name</text>
+<text x="0" y="-31.242" size="1.778" layer="96" font="vector" align="top-center">&gt;Value</text>
 </symbol>
 <symbol name="LCD-16X2-MIN">
 <description>&lt;h3&gt;4-bit Character Display Symbol, with RGB backlight&lt;/h3&gt;
@@ -1340,7 +1341,7 @@ none
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="LCD-16X2" prefix="U">
+<deviceset name="LCD-16X2" prefix="LCD">
 <description>&lt;h3&gt;Standard text-only 16x2 parallel input LCD&lt;/h3&gt;
 &lt;p&gt;Basic 16 character by 2 line display.  Typically utilizes the extremely common HD44780 parallel interface chipset &lt;/p&gt;
 
@@ -1373,7 +1374,9 @@ none
 <connect gate="G$1" pin="VSS" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="SF_ID" value="LCD-00255" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="NOSILK" package="LCD-16X2_NOSILK">
@@ -1396,7 +1399,9 @@ none
 <connect gate="G$1" pin="VSS" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="SF_ID" value="LCD-00255" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="NOHOLES" package="LCD-16X2_NOHOLESNOSILK">
@@ -1419,7 +1424,9 @@ none
 <connect gate="G$1" pin="VSS" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="SF_ID" value="LCD-00255" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="8X2" package="LCD-8X2">
@@ -1442,7 +1449,9 @@ none
 <connect gate="G$1" pin="VSS" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="SF_ID" value="LCD-11122" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="8X2-KIT" package="LCD-8X2-KIT">
@@ -1465,15 +1474,19 @@ none
 <connect gate="G$1" pin="VSS" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="SF_ID" value="LCD-11122" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LCD-G12864">
+<deviceset name="LCD-G12864" prefix="LCD">
 <description>&lt;h3&gt;Graphical LCD 128x64&lt;/h3&gt;
-&lt;p&gt;Footprint is not yet proven. Double check it. Spark Fun Electronics SKU : LCD-00710&lt;/p&gt;
-
+Graphical LCD 644x128 with LED Backlight.
+&lt;br&gt;STN Type.
+&lt;br&gt; KS0108B parallel interface chipset. 
+&lt;br&gt;&lt;a href="https://www.sparkfun.com/datasheets/LCD/GDM12864H.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;p&gt;SparkFun Products:
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.sparkfun.com/products/710"&gt;Graphic LCD 128x64&lt;/a&gt;&lt;/li&gt;
@@ -1482,7 +1495,7 @@ none
 <gate name="G$1" symbol="LCD-G12864" x="0" y="0"/>
 </gates>
 <devices>
-<device name="FULL" package="LCD-G12864">
+<device name="-FULL" package="LCD-G12864">
 <connects>
 <connect gate="G$1" pin="A" pad="19"/>
 <connect gate="G$1" pin="CS1" pad="13"/>
@@ -1506,10 +1519,12 @@ none
 <connect gate="G$1" pin="VSS" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="SF_ID" value="LCD-00710" constant="no"/>
+</technology>
 </technologies>
 </device>
-<device name="BARE" package="1X20">
+<device name="-BARE" package="1X20">
 <connects>
 <connect gate="G$1" pin="A" pad="19"/>
 <connect gate="G$1" pin="CS1" pad="13"/>
@@ -1533,7 +1548,9 @@ none
 <connect gate="G$1" pin="VSS" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="SF_ID" value="LCD-00710" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1560,11 +1577,11 @@ none
 </device>
 </devices>
 </deviceset>
-<deviceset name="NOKIA6100_LCD">
+<deviceset name="NOKIA6100_LCD" prefix="LCD">
 <description>&lt;h3&gt;Nokia 6100 Color LCD&lt;/h3&gt;
 &lt;p&gt;
 
-Previously used in production. Spark Fun Electronics SKU : LCD-00569. Mating SMD connector : LCD-00570. &lt;/p&gt;
+Previously used in production. &lt;/p&gt;
 
 &lt;p&gt;SparkFun Products:
 &lt;ul&gt;
@@ -1588,7 +1605,9 @@ Previously used in production. Spark Fun Electronics SKU : LCD-00569. Mating SMD
 <connect gate="G$1" pin="VLED" pad="10"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="SF_ID" value="LCD-00570" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1639,12 +1658,14 @@ Previously used in production. Spark Fun Electronics SKU : LCD-00569. Mating SMD
 <connect gate="G1" pin="VSS" pad="7"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="LCD-12019" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LCD-16X2-MIN" prefix="U">
+<deviceset name="LCD-16X2-MIN" prefix="LCD">
 <description>&lt;h3&gt;RGB 16x2 parallel input LCD, 4bit only&lt;/h3&gt;
 &lt;p&gt;Basic 16 character by 2 line display.  Typically utilizes the extremely common HD44780 parallel interface chipset &lt;/p&gt;
 &lt;p&gt;SparkFun Products:
@@ -1673,7 +1694,9 @@ Previously used in production. Spark Fun Electronics SKU : LCD-00569. Mating SMD
 <connect gate="U1" pin="VSS" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="SF_ID" value="LCD-10862" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
