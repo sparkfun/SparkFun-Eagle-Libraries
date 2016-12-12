@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -746,8 +746,8 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <pin name="A1" x="-10.16" y="0" visible="pad" length="middle"/>
 <pin name="C2" x="10.16" y="0" visible="pad" length="middle" rot="R180"/>
 <pin name="COM" x="0" y="-7.62" visible="pad" length="middle" rot="R90"/>
-<text x="2.54" y="-5.08" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="2.54" y="-7.62" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<text x="-5.08" y="2.794" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="0.254" y="-2.794" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 <polygon width="0.1524" layer="94">
 <vertex x="-3.556" y="1.016"/>
 <vertex x="-1.778" y="0"/>
@@ -799,8 +799,8 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <description>Conventional Si diode</description>
 <wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.1524" layer="94"/>
 <wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.1524" layer="94"/>
-<text x="2.54" y="0.4826" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="2.54" y="-0.4826" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<text x="-2.54" y="2.032" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-2.032" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 <pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
 <wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
@@ -812,12 +812,14 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </polygon>
 </symbol>
 <symbol name="DIODE-SCHOTTKY">
+<description>&lt;h3&gt; Schottky Diode&lt;/h3&gt;
+Diode with low voltage drop</description>
 <wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.1524" layer="94"/>
 <wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.1524" layer="94"/>
 <wire x1="1.27" y1="1.27" x2="1.778" y2="1.27" width="0.1524" layer="94"/>
 <wire x1="1.27" y1="-1.27" x2="0.762" y2="-1.27" width="0.1524" layer="94"/>
-<text x="2.54" y="0.4826" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="2.54" y="-0.4826" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<text x="-2.54" y="2.032" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-2.032" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 <pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
 <wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
@@ -831,12 +833,14 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </polygon>
 </symbol>
 <symbol name="DIODE-ZENER">
+<description>&lt;h3&gt;Zener Diode&lt;/h3&gt;
+Allows current flow in one direction, but allows reverse flow when above breakdown voltage.</description>
 <wire x1="1.27" y1="0.889" x2="1.27" y2="0" width="0.1524" layer="94"/>
 <wire x1="1.27" y1="0" x2="1.27" y2="-0.889" width="0.1524" layer="94"/>
 <wire x1="1.27" y1="0.889" x2="1.778" y2="1.397" width="0.1524" layer="94"/>
 <wire x1="1.27" y1="-0.889" x2="0.762" y2="-1.397" width="0.1524" layer="94"/>
-<text x="2.54" y="0.4826" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="2.54" y="-0.4826" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<text x="-2.54" y="2.032" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-2.032" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 <pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
 <wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
@@ -1399,6 +1403,8 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </polygon>
 </symbol>
 <symbol name="DIODE-ZENER-ADJ">
+<description>&lt;h3&gt; Adjustable Zener Diode&lt;/h3&gt;
+Allows one-direction current flow, but will allow reverse flow when above the adjustable breakdown voltage.</description>
 <wire x1="0" y1="-2.54" x2="0" y2="-0.6604" width="0.1524" layer="94"/>
 <pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas" rot="R90"/>
 <pin name="ADJ" x="0" y="-2.54" visible="off" length="point" rot="R180"/>
@@ -1407,8 +1413,8 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.1524" layer="94"/>
 <wire x1="1.27" y1="1.27" x2="1.778" y2="1.778" width="0.1524" layer="94"/>
 <wire x1="1.27" y1="-1.27" x2="0.762" y2="-1.778" width="0.1524" layer="94"/>
-<text x="2.54" y="0.4826" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="2.54" y="-0.4826" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<text x="-2.54" y="2.032" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="2.54" y="-2.032" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 <wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
 <polygon width="0.1524" layer="94">
@@ -1418,6 +1424,8 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </polygon>
 </symbol>
 <symbol name="LABELED-NMOS">
+<description>&lt;h3&gt; N-channel MOSFET transistor&lt;/h3&gt;
+Switches electronic signals</description>
 <pin name="G" x="-5.08" y="-2.54" visible="off" length="short"/>
 <pin name="S" x="2.54" y="-5.08" visible="off" length="short" rot="R90"/>
 <pin name="D" x="2.54" y="5.08" visible="off" length="short" rot="R270"/>
@@ -1454,6 +1462,8 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <text x="5.08" y="-2.54" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
 <symbol name="LABELED-PMOS">
+<description>&lt;h3&gt;P-channel MOSFET&lt;/h3&gt;
+Switches electrical signals</description>
 <text x="5.08" y="0" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="5.08" y="-2.54" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 <pin name="G" x="-5.08" y="-2.54" visible="off" length="short"/>
@@ -1534,7 +1544,10 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <deviceset name="BAV99" prefix="D">
 <description>&lt;h3&gt;Series-pair diode array&lt;/h3&gt;
 &lt;p&gt;Two small signal silicon diodes connected anode to cathode. Connections to all three nodes available.&lt;/p&gt;
-&lt;p&gt;Link to &lt;a href='https://www.fairchildsemi.com/datasheets/BA/BAV99.pdf'&gt;datasheet&lt;/a&gt;</description>
+&lt;p&gt;Link to &lt;a href='https://www.fairchildsemi.com/datasheets/BA/BAV99.pdf'&gt;datasheet&lt;/a&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13752”&gt;SparkFun AutoDriver&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="BAV99" x="0" y="0"/>
 </gates>
@@ -1694,12 +1707,16 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </deviceset>
 <deviceset name="ILD213T" prefix="U">
 <description>&lt;h3&gt;Dual Channel Phototransistor Optocoupler&lt;/h3&gt;
-&lt;p&gt;Dual Channel 70 V 4000 Vrms Phototransistor Optocoupler in a standard SOIC-8 package. Used to couple signals between electrically isolated circuits.&lt;/p&gt;</description>
+&lt;p&gt;Dual Channel 70 V 4000 Vrms Phototransistor Optocoupler in a standard SOIC-8 package. Used to couple signals between electrically isolated circuits.&lt;/p&gt;
+&lt;br&gt;&lt;a href=”https://www.sparkfun.com/datasheets/Components/SMD/ild205t.pdf”&gt;Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/9118”&gt;SparkFun Opto-Isolator Breakout&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="ILD213T" x="-5.08" y="-12.7"/>
 </gates>
 <devices>
-<device name="_SOIC8" package="SO08">
+<device name="-IDL213T" package="SO08">
 <connects>
 <connect gate="G$1" pin="A1" pad="1"/>
 <connect gate="G$1" pin="A2" pad="3"/>
@@ -1749,7 +1766,11 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </deviceset>
 <deviceset name="MOSFET_PCH" prefix="Q">
 <description>&lt;h3&gt;P-channel MOSFETs&lt;/h3&gt;
-&lt;p&gt;Voltage controlled devices that allow control of high current outputs.&lt;/p&gt;</description>
+&lt;p&gt;Voltage controlled devices that allow control of high current outputs.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13907”&gt;SparkFun ESP32 Thing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13231”&gt;SparkFun ESP8266 Thing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="LABELED-PMOS" x="0" y="0"/>
 </gates>
@@ -1823,7 +1844,10 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </deviceset>
 <deviceset name="OPTO_DARL_6N138S" prefix="U">
 <description>&lt;h3&gt;Optoisolator, darlington pair output&lt;/h3&gt;
-&lt;p&gt;Optocoupler consisting of an AlGaAs LED optically coupled to a high gain split darlington photodetector.&lt;/p&gt;</description>
+&lt;p&gt;Optocoupler consisting of an AlGaAs LED optically coupled to a high gain split darlington photodetector.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12898”&gt;SparkFun MIDI Shield&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="OPTO_DARLINGTON_6N138-39" x="0" y="0"/>
 </gates>
@@ -1939,7 +1963,11 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </deviceset>
 <deviceset name="TRANS_PNP" prefix="Q">
 <description>&lt;h3&gt;PNP transistor&lt;/h3&gt;
-&lt;p&gt;Current controlled devices typically used to amplify current or used as a switch.&lt;/p&gt;</description>
+&lt;p&gt;Current controlled devices typically used to amplify current or used as a switch.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/9068”&gt;SparkFun Serial Enabled 16x2 LCD - Red on Black&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12772”&gt;SparkFun Logomatic&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="PNP" x="0" y="0"/>
 </gates>
@@ -1974,7 +2002,11 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </deviceset>
 <deviceset name="DIODE" prefix="D">
 <description>&lt;h3&gt;Diode&lt;/h3&gt;
-&lt;p&gt;These are standard reverse protection diodes and small signal diodes.&lt;/p&gt;</description>
+&lt;p&gt;These are standard reverse protection diodes and small signal diodes.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/11177”&gt;SparkFun SparkPunk Sound Kit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13231”&gt;SparkFun ESP8266 Thing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="DIODE" x="0" y="0"/>
 </gates>
@@ -2043,7 +2075,13 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </deviceset>
 <deviceset name="MOSFET-NCH" prefix="Q">
 <description>&lt;h3&gt;N-channel MOSFETs&lt;/h3&gt;
-&lt;p&gt;Voltage controlled devices that allow control of high current outputs.&lt;/p&gt;</description>
+&lt;p&gt;Voltage controlled devices that allow control of high current outputs.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13261”&gt;SparkFun OpenScale&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12651”&gt;SparkFun Digital Sandbox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/10182”&gt;SparkFun Monster Moto Shield&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/11214”&gt;SparkFun MOSFET Power Controller&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="NMOS" symbol="LABELED-NMOS" x="0" y="0"/>
 </gates>
@@ -2145,7 +2183,11 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <description>&lt;h3&gt;Dual N and P Channel MOSFET&lt;/h3&gt;
 &lt;p&gt;Dual N/P-Channel 30V 1.25 W 7.8/7.5 nC Hexfet Power Mosfet Surface Mount-MICRO-8.&lt;/p&gt;
 &lt;p&gt;NMOS R&lt;sub&gt;DS(ON)&lt;/sub&gt; 0.11Ω. PMOS R&lt;sub&gt;DS(ON)&lt;/sub&gt; 0.20Ω.&lt;/p&gt;
-&lt;p&gt;&lt;a href='http://www.irf.com/product-info/datasheets/data/irf7509pbf.pdf'&gt;Link to datasheet&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href='http://www.irf.com/product-info/datasheets/data/irf7509pbf.pdf'&gt;Link to datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12097”&gt;SparkFun RedBot Mainboard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/11447”&gt;SparkFun Wake on Shake&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="NMOS" symbol="LABELED-NMOS" x="0" y="-7.62"/>
 <gate name="PMOS" symbol="LABELED-PMOS" x="0" y="7.62"/>
@@ -2170,13 +2212,16 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </deviceset>
 <deviceset name="MOSFET_NCH_DUAL" prefix="Q">
 <description>&lt;h3&gt;Dual N-Channel 30-V&lt;sub&gt;DS&lt;/sub&gt; MOSFET&lt;/h3&gt;
-&lt;p&gt;&lt;a href='https://www.fairchildsemi.com/datasheets/FD/FDMA1024NZ.pdf'&gt;Link to datasheet&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href='https://www.fairchildsemi.com/datasheets/FD/FDMA1024NZ.pdf'&gt;Link to datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/9627”&gt;SparkFun Mini FET Shield&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="A" symbol="LABELED-NMOS" x="0" y="7.62"/>
 <gate name="B" symbol="LABELED-NMOS" x="0" y="-7.62"/>
 </gates>
 <devices>
-<device name="FDMA1024NZ" package="MICROFET_2X2">
+<device name="-FDMA1024NZ" package="MICROFET_2X2">
 <connects>
 <connect gate="A" pin="D" pad="D1 D1_2"/>
 <connect gate="A" pin="G" pad="G1"/>
@@ -2197,7 +2242,10 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <deviceset name="MOSFET_COMPLIMENTARY_PAIR" prefix="Q">
 <description>&lt;h3&gt;Complementary pair enhancement mode MOSFET&lt;/h3&gt;
 &lt;p&gt;A P and N channel MOSFET in a single package. Rated to breakdown at 20V&lt;/p&gt;
-&lt;p&gt;&lt;a href='http://www.diodes.com/_files/datasheets/DMC2700UDM.pdf'&gt;Link to datasheet&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href='http://www.diodes.com/_files/datasheets/DMC2700UDM.pdf'&gt;Link to datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12780”&gt;ZX Distance and Gesture Sensor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="DMC2700UDM" x="0" y="0"/>
 </gates>
@@ -2222,7 +2270,11 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <deviceset name="TRANS_NPN_RES" prefix="Q">
 <description>&lt;h3&gt;NPN transistor with built in base resistor&lt;/h3&gt;
 &lt;p&gt;Current controlled device with built in current control for tighter layouts.&lt;/p&gt;
-&lt;p&gt;Link to &lt;a href='http://www.diodes.com/_files/datasheets/ds30399.pdf'&gt;datasheet&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;Link to &lt;a href='http://www.diodes.com/_files/datasheets/ds30399.pdf'&gt;datasheet&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/11644”&gt;SparkFun OpenSegment Serial Display - White&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/11644”&gt;SparkFun OpenSegment Serial Display - Red&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="NPN-DDTD142TC" x="0" y="0"/>
 </gates>
@@ -2245,7 +2297,11 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <deviceset name="TRANS_PNP_RES" prefix="Q">
 <description>&lt;h3&gt;PNP transistor with built in base resistor&lt;/h3&gt;
 &lt;p&gt;Current controlled device with built in current control for tighter layouts.&lt;/p&gt;
-&lt;p&gt;Link to &lt;a href='http://www.diodes.com/_files/datasheets/ds30403.pdf'&gt;datasheet&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;Link to &lt;a href='http://www.diodes.com/_files/datasheets/ds30403.pdf'&gt;datasheet&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/11644”&gt;SparkFun OpenSegment Serial Display - White&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/11644”&gt;SparkFun OpenSegment Serial Display - Red&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="Q1" symbol="PNP-DDTB142TC" x="0" y="0"/>
 </gates>
@@ -2267,7 +2323,13 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </deviceset>
 <deviceset name="PHOTOTRANSISTOR" prefix="Q">
 <description>&lt;h3&gt;Phototransistor&lt;/h3&gt;
-&lt;p&gt;PT17-21C/L41/TR8 is a phototransistor in miniature SMD package which is molded in a water clear with flat top view lens. The device is Spectrally matched to visible and infrared emitting diode.&lt;/p&gt;</description>
+&lt;p&gt;PT17-21C/L41/TR8 is a phototransistor in miniature SMD package which is molded in a water clear with flat top view lens. 
+&lt;br&gt;The device is Spectrally matched to visible and infrared emitting diode.
+&lt;br&gt;&lt;a href=”http://www.everlight.com/file/ProductFile/PT17-21C-L41-TR8.pdf”&gt;Datasheet&lt;/a&gt;&lt;/li&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12958”&gt;SparkFun Electric Imp imp002 Breakout&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="PHOTOTRANSISTOR" x="0" y="0"/>
 </gates>
@@ -2288,7 +2350,10 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </deviceset>
 <deviceset name="MOSFET_PCH_DUAL" prefix="Q">
 <description>&lt;h3&gt;Dual P-Channel -20V&lt;sub&gt;DS&lt;/sub&gt; MOSFET&lt;/h3&gt;
-&lt;p&gt;&lt;a href='http://www.diodes.com/_files/datasheets/ds31197.pdf'&gt;Link to datasheet&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href='http://www.diodes.com/_files/datasheets/ds31197.pdf'&gt;Link to datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13229”&gt;SparkFun FreeSoC2 Development Board&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G1" symbol="LABELED-PMOS" x="-2.54" y="7.62"/>
 <gate name="G$1" symbol="LABELED-PMOS" x="-2.54" y="-7.62"/>
@@ -2373,8 +2438,11 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </deviceset>
 <deviceset name="PESD1CAN" prefix="D">
 <description>&lt;h3&gt;CAN bus ESD protection diode&lt;/h3&gt;
-&lt;p&gt;PESD1CAN is used to protect two automotive CAN bus lines from ESD.&lt;/p&gt;
-&lt;p&gt;Link to &lt;a href='http://www.nxp.com/documents/data_sheet/PESD1CAN-U.pdf'&gt;datasheet&lt;/a&gt;</description>
+&lt;p&gt;PESD1CAN is used to protect two CAN bus lines from ESD.&lt;/p&gt;
+&lt;p&gt;Link to &lt;a href='http://www.nxp.com/documents/data_sheet/PESD1CAN-U.pdf'&gt;datasheet&lt;/a&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13262”&gt;SparkFun CAN-BUS Shield&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="PESD1CAN_DIODE" x="0" y="0"/>
 </gates>
@@ -2395,7 +2463,11 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </deviceset>
 <deviceset name="LM4051" prefix="U">
 <description>&lt;h3&gt;Adjustable Shunt Voltage Reference&lt;/h3&gt;
-&lt;p&gt;SOT-23 package without need for external capacitor. Adjustable from 1.24V to 10V. 60µA to 12mA&lt;/p&gt;</description>
+&lt;p&gt;SOT-23 package without need for external capacitor. Adjustable from 1.24V to 10V. 60µA to 12mA&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/11177”&gt;SparkFun SparkPunk Sound Kit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13231”&gt;SparkFun ESP8266 Thing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="DIODE-ZENER-ADJ" x="0" y="0"/>
 </gates>
@@ -2416,10 +2488,14 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 </devices>
 </deviceset>
 <deviceset name="TL431" prefix="U">
-<description>Precision Programmable Reference&lt;br&gt;
+<description>&lt;h3&gt;TL431- Voltage Reference&lt;/h3&gt;
+&lt;p&gt;Precision Programmable Shunt Regulator Diode
+&lt;br&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Components/General%20IC/TL431-D.pdf"&gt;Datasheet&lt;/a&gt;
 &lt;br&gt;
-VFP: IC-10947(PTH)&lt;br&gt;
-Belongs in discrete</description>
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/11078”&gt;TL431-Voltage Reference PTH&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/11087”&gt;SparkFun Uh-Oh Battery Level Indicator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="TL431" x="0" y="0"/>
 </gates>
@@ -2431,7 +2507,10 @@ Belongs in discrete</description>
 <connect gate="G$1" pin="R" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-10947" constant="no"/>
+<attribute name="SF_ID" value="COM-11078" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
