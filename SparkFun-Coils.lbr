@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -153,11 +153,17 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
-<description>&lt;h3&gt;SparkFun Inductors and Ferrite Beads&lt;/h3&gt;
-In this library you'll find inductors, including those wrapped on ferrite beads. Reference designators L &amp; FB.
+<description>&lt;h3&gt;SparkFun Coils&lt;/h3&gt;
+In this library you'll find magnetics.
+
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;Inductors&lt;/li&gt;
+&lt;li&gt;Ferrite Beads&lt;/li&gt;
+&lt;li&gt;Transformers&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+
 &lt;br&gt;
-&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;p&gt;We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
 &lt;br&gt;
 &lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
 &lt;br&gt;
@@ -165,7 +171,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
 &lt;br&gt;
 &lt;br&gt;
-You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.&lt;/p&gt;</description>
 <packages>
 <package name="0603">
 <description>&lt;p&gt;&lt;b&gt;Generic 1608 (0603) package&lt;/b&gt;&lt;/p&gt;
@@ -299,6 +305,77 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.3048" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
+<package name="COILCRAFT_DA230X">
+<description>Coilcraft DA2303, DA2304</description>
+<wire x1="-4.1" y1="5" x2="-3" y2="5" width="0.127" layer="21"/>
+<wire x1="-3" y1="5" x2="3" y2="5" width="0.127" layer="21"/>
+<wire x1="3" y1="5" x2="4.1" y2="5" width="0.127" layer="21"/>
+<wire x1="-4.1" y1="-5" x2="-3" y2="-5" width="0.127" layer="21"/>
+<wire x1="-3" y1="-5" x2="3" y2="-5" width="0.127" layer="21"/>
+<wire x1="3" y1="-5" x2="4.1" y2="-5" width="0.127" layer="21"/>
+<wire x1="4.1" y1="5" x2="4.1" y2="-5" width="0.127" layer="21"/>
+<wire x1="-4.1" y1="5" x2="-4.1" y2="-5" width="0.127" layer="21"/>
+<wire x1="-3" y1="5" x2="-3" y2="3" width="0.127" layer="21"/>
+<wire x1="-3" y1="3" x2="-3" y2="-3" width="0.127" layer="21"/>
+<wire x1="-3" y1="-3" x2="-3" y2="-5" width="0.127" layer="21"/>
+<wire x1="3" y1="5" x2="3" y2="3" width="0.127" layer="21"/>
+<text x="-1" y="-4" size="1.27" layer="21" rot="R90">&gt;NAME</text>
+<text x="2" y="-4" size="1.27" layer="21" rot="R90">&gt;VALUE</text>
+<wire x1="3" y1="3" x2="3" y2="-3" width="0.127" layer="21"/>
+<wire x1="3" y1="-3" x2="3" y2="-5" width="0.127" layer="21"/>
+<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.127" layer="21" curve="-73.739795"/>
+<wire x1="3" y1="3" x2="3" y2="-3" width="0.127" layer="21" curve="-73.739795"/>
+<smd name="P$1" x="-5.4" y="3" dx="1.7" dy="1.6" layer="1"/>
+<smd name="P$2" x="-5.4" y="1" dx="1.7" dy="1.6" layer="1"/>
+<smd name="P$3" x="-5.4" y="-1" dx="1.7" dy="1.6" layer="1"/>
+<smd name="P$4" x="-5.4" y="-3" dx="1.7" dy="1.6" layer="1"/>
+<smd name="P$5" x="5.4" y="-3" dx="1.7" dy="1.6" layer="1"/>
+<smd name="P$6" x="5.4" y="-1" dx="1.7" dy="1.6" layer="1"/>
+<smd name="P$7" x="5.4" y="1" dx="1.7" dy="1.6" layer="1"/>
+<smd name="P$8" x="5.4" y="3" dx="1.7" dy="1.6" layer="1"/>
+<circle x="-1.905" y="3.81" radius="0.635" width="0" layer="21"/>
+</package>
+<package name="TRANSFORMER">
+<wire x1="7" y1="7.5" x2="-7" y2="7.5" width="0.127" layer="21"/>
+<wire x1="-7" y1="7.5" x2="-7" y2="-7.5" width="0.127" layer="21"/>
+<wire x1="-7" y1="-7.5" x2="7" y2="-7.5" width="0.127" layer="21"/>
+<wire x1="7" y1="-7.5" x2="7" y2="7.5" width="0.127" layer="21"/>
+<wire x1="3.15" y1="10.3" x2="-3.15" y2="10.3" width="0.127" layer="51"/>
+<wire x1="-3.15" y1="10.3" x2="-3.15" y2="-10.3" width="0.127" layer="51"/>
+<wire x1="-3.15" y1="-10.3" x2="3.15" y2="-10.3" width="0.127" layer="51"/>
+<wire x1="3.15" y1="-10.3" x2="3.15" y2="10.3" width="0.127" layer="51"/>
+<wire x1="-3.302" y1="7.5438" x2="-3.302" y2="10.414" width="0.127" layer="21"/>
+<wire x1="-3.302" y1="10.414" x2="3.302" y2="10.414" width="0.127" layer="21"/>
+<wire x1="3.302" y1="10.414" x2="3.302" y2="7.5184" width="0.127" layer="21"/>
+<wire x1="-3.302" y1="-7.5184" x2="-3.302" y2="-10.414" width="0.127" layer="21"/>
+<wire x1="-3.302" y1="-10.414" x2="3.302" y2="-10.414" width="0.127" layer="21"/>
+<wire x1="3.302" y1="-10.414" x2="3.302" y2="-7.5184" width="0.127" layer="21"/>
+<circle x="-3" y="3" radius="0.7102" width="0.127" layer="21"/>
+<pad name="4" x="5.35" y="4.75" drill="1.4"/>
+<pad name="1" x="-5.35" y="4.75" drill="1.4"/>
+<pad name="2" x="-5.35" y="-4.75" drill="1.4"/>
+<pad name="3" x="5.35" y="-4.75" drill="1.4"/>
+<text x="-7" y="6" size="1.27" layer="25">&gt;NAME</text>
+<text x="0" y="-6" size="1.27" layer="27" rot="R180">&gt;VALUE</text>
+</package>
+<package name="TRANSFORMER_SMD">
+<description>TTC-5023</description>
+<wire x1="-4.8" y1="6.25" x2="-4.8" y2="-6.25" width="0.127" layer="21"/>
+<wire x1="4.8" y1="-6.25" x2="4.8" y2="6.25" width="0.127" layer="21"/>
+<wire x1="-4.8" y1="-6.25" x2="-3.7" y2="-6.25" width="0.127" layer="21"/>
+<wire x1="3.7" y1="-6.25" x2="4.8" y2="-6.25" width="0.127" layer="21"/>
+<wire x1="3.7" y1="6.25" x2="4.8" y2="6.25" width="0.127" layer="21"/>
+<wire x1="-4.8" y1="6.25" x2="-3.7" y2="6.25" width="0.127" layer="21"/>
+<circle x="-4.1" y="-5.5" radius="0.3605" width="0.127" layer="21"/>
+<smd name="4" x="2.54" y="6.15" dx="2.9" dy="1.3" layer="1" rot="R90"/>
+<smd name="3" x="2.54" y="-6.15" dx="2.9" dy="1.3" layer="1" rot="R90"/>
+<smd name="1" x="-2.54" y="-6.15" dx="2.9" dy="1.3" layer="1" rot="R90"/>
+<smd name="6" x="-2.54" y="6.15" dx="2.9" dy="1.3" layer="1" rot="R90"/>
+<smd name="5" x="0" y="6.15" dx="2.9" dy="1.3" layer="1" rot="R90"/>
+<smd name="2" x="0" y="-6.15" dx="2.9" dy="1.3" layer="1" rot="R90"/>
+<text x="-4" y="3" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-4" y="-4" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="INDUCTOR">
@@ -326,6 +403,66 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0" y1="-1.27" x2="0" y2="-2.54" width="0.1524" layer="94" curve="-180"/>
 <wire x1="0.889" y1="2.54" x2="0.889" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="1.143" y1="2.54" x2="1.143" y2="-2.54" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="TRANSFORMER">
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="2.54" width="0.254" layer="94" curve="180"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="0" width="0.254" layer="94" curve="180"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="-2.54" width="0.254" layer="94" curve="180"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="-5.08" width="0.254" layer="94" curve="180"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="-2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="-5.08" width="0.254" layer="94" curve="-180"/>
+<text x="10.16" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="10.16" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="7.62" visible="pad" length="short" rot="R270"/>
+<pin name="4" x="5.08" y="7.62" visible="pad" length="short" rot="R270"/>
+<pin name="2" x="-5.08" y="-7.62" visible="pad" length="short" rot="R90"/>
+<pin name="3" x="5.08" y="-7.62" visible="pad" length="short" rot="R90"/>
+</symbol>
+<symbol name="TRANSFORMER-QUADFILIAR">
+<wire x1="0" y1="7.62" x2="1.27" y2="6.35" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="5.08" x2="1.27" y2="6.35" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="5.08" x2="1.27" y2="3.81" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="3.81" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="2.54" x2="1.27" y2="1.27" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="0" x2="1.27" y2="1.27" width="0.1524" layer="94" curve="90" cap="flat"/>
+<text x="-2.54" y="18.542" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="-2.54" y="7.62" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<wire x1="0" y1="17.78" x2="1.27" y2="16.51" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="15.24" x2="1.27" y2="16.51" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="15.24" x2="1.27" y2="13.97" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="12.7" x2="1.27" y2="13.97" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="0" y1="12.7" x2="1.27" y2="11.43" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="0" y1="10.16" x2="1.27" y2="11.43" width="0.1524" layer="94" curve="90" cap="flat"/>
+<pin name="4" x="-2.54" y="17.78" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="3" x="-2.54" y="10.16" visible="off" length="short" direction="pas" swaplevel="1"/>
+<wire x1="7.62" y1="7.62" x2="6.35" y2="6.35" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="7.62" y1="5.08" x2="6.35" y2="6.35" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="7.62" y1="5.08" x2="6.35" y2="3.81" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="7.62" y1="2.54" x2="6.35" y2="3.81" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="7.62" y1="2.54" x2="6.35" y2="1.27" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="7.62" y1="0" x2="6.35" y2="1.27" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<pin name="6" x="10.16" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="5" x="10.16" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<wire x1="7.62" y1="17.78" x2="6.35" y2="16.51" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="7.62" y1="15.24" x2="6.35" y2="16.51" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="7.62" y1="15.24" x2="6.35" y2="13.97" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="7.62" y1="12.7" x2="6.35" y2="13.97" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<wire x1="7.62" y1="12.7" x2="6.35" y2="11.43" width="0.1524" layer="94" curve="90" cap="flat"/>
+<wire x1="7.62" y1="10.16" x2="6.35" y2="11.43" width="0.1524" layer="94" curve="-90" cap="flat"/>
+<pin name="8" x="10.16" y="17.78" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="7" x="10.16" y="10.16" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<circle x="0" y="16.51" radius="0" width="0.8128" layer="94"/>
+<circle x="7.62" y="16.51" radius="0" width="0.8128" layer="94"/>
+<circle x="0" y="6.35" radius="0" width="0.8128" layer="94"/>
+<circle x="7.62" y="6.35" radius="0" width="0.8128" layer="94"/>
+<wire x1="2.54" y1="17.78" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="17.78" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -474,6 +611,59 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="PROD_ID" value="NDUC-07859"/>
 <attribute name="VALUE" value="30Ω/1.8A"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TRANSFORMER">
+<description>Small transformers</description>
+<gates>
+<gate name="G$1" symbol="TRANSFORMER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PTH" package="TRANSFORMER">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMD" package="TRANSFORMER_SMD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="G$1" pin="3" pad="4"/>
+<connect gate="G$1" pin="4" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TRANSFORMER_QUADFILIAR" prefix="TX">
+<description>Transformer with 4 independent windings</description>
+<gates>
+<gate name="G$1" symbol="TRANSFORMER-QUADFILIAR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="COILCRAFT_DA230X">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
+<connect gate="G$1" pin="7" pad="P$7"/>
+<connect gate="G$1" pin="8" pad="P$8"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
