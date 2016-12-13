@@ -7,8 +7,8 @@ If you enjoy using this library, please buy one of our products at [SparkFun](ht
 Please also note that we guarantee that there are some messed up footprints in this library. 
 We've tried to note which are proven and tested, but by downloading these files, you acknowledge that you are using the files at your own risk. 
 
-*We cannot be held responsible for faulty PCBs. 
-Always check your parts against a 1:1 printout.*
+**We cannot be held responsible for faulty PCBs. 
+Always check your parts against a 1:1 printout.**
 
 This is the complete SparkFun Electronics default foot prints for Eagle 6.0+. 
 
@@ -23,8 +23,8 @@ If you need more information about how to use Eagle, checkout our Eagle Tutorial
 * [Creating Boards](https://learn.sparkfun.com/tutorials/using-eagle-board-layout)
 * [Designing Custom Footprints](https://learn.sparkfun.com/tutorials/designing-pcbs-smd-footprints)
 * [Creating Footprints from Digital Imagery](https://learn.sparkfun.com/tutorials/making-custom-footprints-in-eagle)
-* [Other SparkFun/Eagle Resources](https://www.sparkfun.com/eagle
-)
+* [Other SparkFun/Eagle Resources](https://www.sparkfun.com/eagle)
+
 How to use GitHub
 -----------------
 
@@ -34,6 +34,7 @@ If you need help getting started using git/GitHub, check out our GitHub tutorial
 
 Library Versions
 ----------------
+
 The library associated with Eagle v5.11 and earlier is found [here](https://github.com/sparkfun/Old-SparkFun-Eagle-Library).
 If you would like to reference the library as it related to a particular version of Eagle, please check our tagged versions [here](https://github.com/sparkfun/SparkFun-Eagle-Libraries/releases). 
 
