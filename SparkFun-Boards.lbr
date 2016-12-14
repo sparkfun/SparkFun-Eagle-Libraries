@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4972,6 +4972,30 @@ Footprint for mating with Edison SBC.
 <text x="0" y="19.558" size="0.8128" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-18.034" size="0.8128" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
+<package name="SPARKFUN_MS5803-14BA_BREAKOUT">
+<description>&lt;h3&gt;SparkFun MS5803-14BA Breakout&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:7&lt;/li&gt;
+&lt;li&gt;Pin pitch: 0.1"&lt;/li&gt;
+&lt;li&gt;Area: 0.8x0.7"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;SPARKFUN_MS5803-14BA_BREAKOUT&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="0" y1="0" x2="0" y2="17.78" width="0.2032" layer="21"/>
+<wire x1="0" y1="17.78" x2="20.32" y2="17.78" width="0.2032" layer="21"/>
+<wire x1="20.32" y1="17.78" x2="20.32" y2="0" width="0.2032" layer="21"/>
+<wire x1="20.32" y1="0" x2="0" y2="0" width="0.2032" layer="21"/>
+<pad name="GND" x="2.54" y="1.27" drill="0.8"/>
+<pad name="3.3V" x="5.08" y="1.27" drill="0.8"/>
+<pad name="SDA/SDI" x="7.62" y="1.27" drill="0.8"/>
+<pad name="SCL/SCLK" x="10.16" y="1.27" drill="0.8"/>
+<pad name="SDO" x="12.7" y="1.27" drill="0.8"/>
+<pad name="AD/CS" x="15.24" y="1.27" drill="0.8"/>
+<pad name="PS" x="17.78" y="1.27" drill="0.8"/>
+<hole x="2.54" y="7.62" drill="3.048"/>
+<hole x="17.78" y="15.24" drill="3.048"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO-MEGA">
@@ -6172,6 +6196,23 @@ Does not include connections for the onboard sensor footprints. &lt;/p&gt;</desc
 <pin name="WKP" x="-22.86" y="5.08" length="short"/>
 <text x="-20.32" y="18.034" size="1.778" layer="95" font="vector">&gt;Name</text>
 <text x="-20.32" y="-15.494" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
+</symbol>
+<symbol name="SPARKFUN_MS5803-14BA_BREAKOUT">
+<description>&lt;h3&gt;SparkFun MS5803-14BA_Breakout&lt;/h3&gt;
+I2C Pressure Sensor Breakout.</description>
+<pin name="GND" x="-15.24" y="7.62" length="middle"/>
+<pin name="3.3V" x="-15.24" y="2.54" length="middle"/>
+<pin name="PS" x="-15.24" y="-2.54" length="middle"/>
+<pin name="SDA/SDI" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="SCL/SCLK" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="SDO" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="AD/CS" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<text x="-10.16" y="10.668" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-10.16" y="-10.668" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -8047,6 +8088,35 @@ PCB footprint compatbile with Big Red Box Enclosure.
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPARKFUN_MS5803-14BA_BREAKOUT" prefix="B">
+<description>&lt;h3&gt;SparkFun MSP5803-14BA Breakout&lt;/h3&gt;
+&lt;p&gt;I&lt;sup&gt;2&lt;/sup&gt;C compatible pressure sensor breakout&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12909”&gt;SparkFun MSP5803-14BA Breakout&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SPARKFUN_MS5803-14BA_BREAKOUT" x="-1" y="1"/>
+</gates>
+<devices>
+<device name="" package="SPARKFUN_MS5803-14BA_BREAKOUT">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="3.3V"/>
+<connect gate="G$1" pin="AD/CS" pad="AD/CS"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="PS" pad="PS"/>
+<connect gate="G$1" pin="SCL/SCLK" pad="SCL/SCLK"/>
+<connect gate="G$1" pin="SDA/SDI" pad="SDA/SDI"/>
+<connect gate="G$1" pin="SDO" pad="SDO"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="SF_ID" value="SEN-12909" constant="no"/>
+<attribute name="VALUE" value="Pressure Sensor" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
