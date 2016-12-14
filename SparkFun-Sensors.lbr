@@ -982,8 +982,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;li&gt;MIC&lt;/li&gt;
 &lt;/ul&gt;</description>
 <circle x="0" y="0" radius="4.85" width="0.2032" layer="21"/>
-<pad name="1" x="-2" y="1.27" drill="0.8" diameter="1.6764"/>
-<pad name="2" x="-2" y="-1.27" drill="0.8" diameter="1.6764"/>
+<pad name="OUT" x="-2" y="1.27" drill="0.8" diameter="1.6764"/>
+<pad name="GND" x="-2" y="-1.27" drill="0.8" diameter="1.6764"/>
 <text x="-1.386" y="-2.93" size="1.27" layer="21">-</text>
 <text x="-5.08" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
 <text x="5.08" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
@@ -7890,7 +7890,7 @@ It includes a sensing element and an IC interface capable of providing the measu
 </symbol>
 <symbol name="MIC">
 <description>&lt;h3&gt;Microphone&lt;/h3&gt;
-&lt;p&gt;Omni-directional electret microphones - one through-hole, the other SMD.&lt;/p&gt;</description>
+&lt;p&gt;Omni-directional electret microphones&lt;/p&gt;</description>
 <wire x1="-1.27" y1="-0.635" x2="0" y2="-0.635" width="0.1524" layer="94"/>
 <wire x1="0" y1="-0.635" x2="0" y2="0" width="0.1524" layer="94"/>
 <wire x1="0" y1="-0.635" x2="0" y2="-1.27" width="0.1524" layer="94"/>
@@ -9633,29 +9633,18 @@ It includes a sensing element and an IC interface capable of providing the measu
 &lt;li&gt;SMD Microphone&lt;/li&gt;
 &lt;ul&gt;&lt;a href="https://www.sparkfun.com/products/retired/10653"&gt;SparkFun Voice Recorder Breakout - ISD1932&lt;/a&gt; (BOB-10653)&lt;/li&gt;</description>
 <gates>
-<gate name="&gt;NAME" symbol="MIC" x="0" y="0"/>
+<gate name="&gt;NAME" symbol="MIC" x="-1" y="1"/>
 </gates>
 <devices>
-<device name="PTH" package="MICROPHONE-PTH-9.7MM">
+<device name="-PTH" package="MICROPHONE-PTH-9.7MM">
 <connects>
-<connect gate="&gt;NAME" pin="1" pad="1"/>
-<connect gate="&gt;NAME" pin="2" pad="2"/>
+<connect gate="&gt;NAME" pin="1" pad="OUT"/>
+<connect gate="&gt;NAME" pin="2" pad="GND"/>
 </connects>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="COMP-08856"/>
 <attribute name="SF_ID" value="COM-08635"/>
-</technology>
-</technologies>
-</device>
-<device name="SMD" package="MICROPHONE-SMD-6MM">
-<connects>
-<connect gate="&gt;NAME" pin="1" pad="1"/>
-<connect gate="&gt;NAME" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="COMP-10458"/>
 </technology>
 </technologies>
 </device>
