@@ -5011,8 +5011,8 @@ Footprint for mating with Edison SBC.
 <wire x1="17.78" y1="52.07" x2="17.78" y2="0" width="0.2032" layer="21"/>
 <wire x1="17.78" y1="0" x2="0" y2="0" width="0.2032" layer="21"/>
 <pad name="P$1" x="2.54" y="1.27" drill="0.8"/>
-<pad name="17/TX" x="5.08" y="1.27" drill="0.8"/>
-<pad name="16/RX" x="7.62" y="1.27" drill="0.8"/>
+<pad name="27/TX" x="5.08" y="1.27" drill="0.8"/>
+<pad name="26/RX" x="7.62" y="1.27" drill="0.8"/>
 <pad name="VCC" x="10.16" y="1.27" drill="0.8"/>
 <pad name="P$5" x="12.7" y="1.27" drill="0.8"/>
 <pad name="GND1" x="15.24" y="1.27" drill="0.8"/>
@@ -5020,7 +5020,7 @@ Footprint for mating with Edison SBC.
 <pad name="VIN1" x="16.51" y="6.35" drill="0.8"/>
 <pad name="3.3V@1" x="16.51" y="8.89" drill="0.8"/>
 <pad name="00/X1" x="16.51" y="11.43" drill="0.8"/>
-<pad name="OO/X2" x="16.51" y="13.97" drill="0.8"/>
+<pad name="01/X2" x="16.51" y="13.97" drill="0.8"/>
 <pad name="02/A0" x="16.51" y="16.51" drill="0.8"/>
 <pad name="03/A1" x="16.51" y="19.05" drill="0.8"/>
 <pad name="04/A2" x="16.51" y="21.59" drill="0.8"/>
@@ -5050,8 +5050,8 @@ Footprint for mating with Edison SBC.
 <pad name="18" x="1.27" y="39.37" drill="0.8"/>
 <pad name="17" x="1.27" y="41.91" drill="0.8"/>
 <pad name="16" x="1.27" y="44.45" drill="0.8"/>
-<pad name="1-NF" x="7.62" y="25.4" drill="0.8"/>
-<pad name="C-2" x="10.16" y="25.4" drill="0.8"/>
+<pad name="1-NFC" x="7.62" y="25.4" drill="0.8"/>
+<pad name="2-NFC" x="10.16" y="25.4" drill="0.8"/>
 <polygon width="0.2032" layer="39">
 <vertex x="0" y="52.07"/>
 <vertex x="0" y="45.72"/>
@@ -5064,7 +5064,8 @@ Footprint for mating with Edison SBC.
 <vertex x="17.78" y="45.72"/>
 <vertex x="17.78" y="52.07"/>
 </polygon>
-<text x="5.08" y="48.26" size="1.27" layer="51" font="vector">Antenna</text>
+<text x="5.08" y="48.26" size="1.27" layer="51" font="vector">Antenna 
+Keepout</text>
 </package>
 </packages>
 <symbols>
@@ -6317,8 +6318,8 @@ SoC with a list of features including:
 <pin name="3.3V" x="-15.24" y="-10.16" length="middle"/>
 <pin name="VIN" x="-15.24" y="-12.7" length="middle"/>
 <pin name="GND" x="-15.24" y="-15.24" length="middle"/>
-<pin name="1-NF" x="-15.24" y="-20.32" length="middle"/>
-<pin name="C-2" x="-15.24" y="-22.86" length="middle"/>
+<pin name="1-NFC" x="-15.24" y="-20.32" length="middle"/>
+<pin name="2-NFC" x="-15.24" y="-22.86" length="middle"/>
 <pin name="15" x="15.24" y="25.4" length="middle" rot="R180"/>
 <pin name="14" x="15.24" y="22.86" length="middle" rot="R180"/>
 <pin name="13" x="15.24" y="20.32" length="middle" rot="R180"/>
@@ -6332,8 +6333,8 @@ SoC with a list of features including:
 <pin name="03/A1" x="15.24" y="0" length="middle" rot="R180"/>
 <pin name="02/A0" x="15.24" y="-2.54" length="middle" rot="R180"/>
 <pin name="01/X2" x="15.24" y="-5.08" length="middle" rot="R180"/>
-<pin name="P$14" x="15.24" y="-7.62" length="middle" rot="R180"/>
-<pin name="00/X1" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="VCC" x="15.24" y="-15.24" length="middle" rot="R180"/>
+<pin name="00/X1" x="15.24" y="-7.62" length="middle" rot="R180"/>
 <pin name="27/TX" x="15.24" y="-17.78" length="middle" rot="R180"/>
 <pin name="26/RX" x="15.24" y="-20.32" length="middle" rot="R180"/>
 <wire x1="-10.16" y1="27.94" x2="-10.16" y2="-25.4" width="0.254" layer="94"/>
@@ -8248,7 +8249,7 @@ PCB footprint compatbile with Big Red Box Enclosure.
 </device>
 </devices>
 </deviceset>
-<deviceset name="SPARKFUN_NRF52832_BREAKOUT">
+<deviceset name="SPARKFUN_NRF52832_BREAKOUT" prefix="B">
 <description>&lt;h3&gt;SparkFun nRF52832 Breakout&lt;/h3&gt;
 &lt;p&gt;SoC microcontroller with BLE, ANT, Nordic support, and 2.4Ghz multiprotocol radio&lt;/p&gt;
 &lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
@@ -8262,13 +8263,14 @@ PCB footprint compatbile with Big Red Box Enclosure.
 <connects>
 <connect gate="G$1" pin="!RST" pad="!RST"/>
 <connect gate="G$1" pin="00/X1" pad="00/X1"/>
+<connect gate="G$1" pin="01/X2" pad="01/X2"/>
 <connect gate="G$1" pin="02/A0" pad="02/A0"/>
 <connect gate="G$1" pin="03/A1" pad="03/A1"/>
 <connect gate="G$1" pin="04/A2" pad="04/A2"/>
 <connect gate="G$1" pin="05/A3" pad="05/A3"/>
 <connect gate="G$1" pin="08" pad="08"/>
 <connect gate="G$1" pin="09" pad="09"/>
-<connect gate="G$1" pin="1-NF" pad="1-NF"/>
+<connect gate="G$1" pin="1-NFC" pad="1-NFC"/>
 <connect gate="G$1" pin="10" pad="10"/>
 <connect gate="G$1" pin="11" pad="11"/>
 <connect gate="G$1" pin="12" pad="12"/>
@@ -8279,24 +8281,27 @@ PCB footprint compatbile with Big Red Box Enclosure.
 <connect gate="G$1" pin="17" pad="17"/>
 <connect gate="G$1" pin="18" pad="18"/>
 <connect gate="G$1" pin="19" pad="19"/>
+<connect gate="G$1" pin="2-NFC" pad="2-NFC"/>
 <connect gate="G$1" pin="20" pad="20"/>
 <connect gate="G$1" pin="22" pad="22"/>
 <connect gate="G$1" pin="23" pad="23"/>
 <connect gate="G$1" pin="24" pad="24"/>
 <connect gate="G$1" pin="25" pad="25"/>
-<connect gate="G$1" pin="26/RX" pad="16/RX"/>
-<connect gate="G$1" pin="27/TX" pad="17/TX"/>
+<connect gate="G$1" pin="26/RX" pad="26/RX"/>
+<connect gate="G$1" pin="27/TX" pad="27/TX"/>
 <connect gate="G$1" pin="28/A4" pad="28/A4"/>
 <connect gate="G$1" pin="29/A5" pad="29/A5"/>
 <connect gate="G$1" pin="3.3V" pad="3.3V 3.3V@1"/>
 <connect gate="G$1" pin="30/A6" pad="30/A6"/>
 <connect gate="G$1" pin="31/A7" pad="31/A7"/>
-<connect gate="G$1" pin="C-2" pad="C-2"/>
 <connect gate="G$1" pin="GND" pad="GND GND1 GND2"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
 <connect gate="G$1" pin="VIN" pad="VIN VIN1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="SF_ID" value="WRL-13990" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
