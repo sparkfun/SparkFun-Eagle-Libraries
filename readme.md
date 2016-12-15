@@ -32,6 +32,13 @@ If you need help getting started using git/GitHub, check out our GitHub tutorial
 * [Using GitHub](https://learn.sparkfun.com/tutorials/using-github)
 * [Using GitHub to Share with SparkFun](https://learn.sparkfun.com/tutorials/using-github-to-share-with-sparkfun)
 
+Want to Contribute?
+-------------------
+
+Check out our [Library Guidelines](https://github.com/sparkfun/SparkFun-Eagle-Libraries/wiki), create your part, and add it to our [UserSubmitted](https://github.com/sparkfun/SparkFun-Eagle-Libraries/blob/master/User-Submitted.lbr) library.
+
+If you discover a bug with an existing component, please submit an issue or pull request.
+
 Library Versions
 ----------------
 
