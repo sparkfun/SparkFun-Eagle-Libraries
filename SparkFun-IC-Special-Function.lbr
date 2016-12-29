@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -14349,6 +14349,80 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0.254" y="-0.762" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-1.778" y="-3.556" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 </package>
+<package name="POWERSO20_L298_PAD">
+<wire x1="-5.461" y1="6.731" x2="-5.461" y2="-7.9502" width="0.127" layer="21"/>
+<wire x1="5.461" y1="7.9502" x2="5.461" y2="-7.9502" width="0.127" layer="21"/>
+<wire x1="-5.461" y1="6.731" x2="-4.2418" y2="7.9502" width="0.127" layer="21"/>
+<smd name="1" x="-6.731" y="5.715" dx="1.651" dy="0.635" layer="1"/>
+<smd name="2" x="-6.731" y="4.445" dx="1.651" dy="0.635" layer="1"/>
+<smd name="3" x="-6.731" y="3.175" dx="1.651" dy="0.635" layer="1"/>
+<smd name="4" x="-6.731" y="1.905" dx="1.651" dy="0.635" layer="1"/>
+<smd name="5" x="-6.731" y="0.635" dx="1.651" dy="0.635" layer="1"/>
+<smd name="6" x="-6.731" y="-0.635" dx="1.651" dy="0.635" layer="1"/>
+<smd name="7" x="-6.731" y="-1.905" dx="1.651" dy="0.635" layer="1"/>
+<smd name="8" x="-6.731" y="-3.175" dx="1.651" dy="0.635" layer="1"/>
+<smd name="9" x="-6.731" y="-4.445" dx="1.651" dy="0.635" layer="1"/>
+<smd name="10" x="-6.731" y="-5.715" dx="1.651" dy="0.635" layer="1"/>
+<smd name="11" x="6.731" y="-5.715" dx="1.651" dy="0.635" layer="1"/>
+<smd name="12" x="6.731" y="-4.445" dx="1.651" dy="0.635" layer="1"/>
+<smd name="13" x="6.731" y="-3.175" dx="1.651" dy="0.635" layer="1"/>
+<smd name="14" x="6.731" y="-1.905" dx="1.651" dy="0.635" layer="1"/>
+<smd name="15" x="6.731" y="-0.635" dx="1.651" dy="0.635" layer="1"/>
+<smd name="16" x="6.731" y="0.635" dx="1.651" dy="0.635" layer="1"/>
+<smd name="17" x="6.731" y="1.905" dx="1.651" dy="0.635" layer="1"/>
+<smd name="18" x="6.731" y="3.175" dx="1.651" dy="0.635" layer="1"/>
+<smd name="19" x="6.731" y="4.445" dx="1.651" dy="0.635" layer="1"/>
+<smd name="20" x="6.731" y="5.715" dx="1.651" dy="0.635" layer="1"/>
+<smd name="PAD" x="0" y="0" dx="5.9944" dy="9.6012" layer="1" stop="no" thermals="no" cream="no"/>
+<polygon width="0.127" layer="1">
+<vertex x="-1.6002" y="7.9502"/>
+<vertex x="1.6002" y="7.9502"/>
+<vertex x="1.6002" y="-7.9502"/>
+<vertex x="-1.6002" y="-7.9502"/>
+</polygon>
+<polygon width="0.254" layer="29">
+<vertex x="-1.6637" y="4.8006"/>
+<vertex x="-1.6637" y="8.0137"/>
+<vertex x="1.6637" y="8.0137"/>
+<vertex x="1.6637" y="4.8006"/>
+<vertex x="2.9972" y="4.8006"/>
+<vertex x="2.9972" y="-4.8006"/>
+<vertex x="1.6637" y="-4.8006"/>
+<vertex x="1.6637" y="-8.0137"/>
+<vertex x="-1.6637" y="-8.0137"/>
+<vertex x="-1.6637" y="-4.8006"/>
+<vertex x="-2.9972" y="-4.8006"/>
+<vertex x="-2.9972" y="4.8006"/>
+</polygon>
+<polygon width="0.254" layer="31">
+<vertex x="0" y="7.366" curve="-90"/>
+<vertex x="1.016" y="6.35" curve="-90"/>
+<vertex x="0" y="5.334" curve="-90"/>
+<vertex x="-1.016" y="6.35" curve="-90"/>
+</polygon>
+<polygon width="0.254" layer="31">
+<vertex x="0" y="-5.334" curve="-90"/>
+<vertex x="1.016" y="-6.35" curve="-90"/>
+<vertex x="0" y="-7.366" curve="-90"/>
+<vertex x="-1.016" y="-6.35" curve="-90"/>
+</polygon>
+<polygon width="0.254" layer="31">
+<vertex x="0" y="4.445" curve="-90"/>
+<vertex x="1.905" y="2.54" curve="-90"/>
+<vertex x="0" y="0.635" curve="-90"/>
+<vertex x="-1.905" y="2.54" curve="-90"/>
+</polygon>
+<polygon width="0.254" layer="31">
+<vertex x="0" y="-0.635" curve="-90"/>
+<vertex x="1.905" y="-2.54" curve="-90"/>
+<vertex x="0" y="-4.445" curve="-90"/>
+<vertex x="-1.905" y="-2.54" curve="-90"/>
+</polygon>
+<wire x1="-4.2418" y1="7.9502" x2="-1.8796" y2="7.9502" width="0.127" layer="21"/>
+<wire x1="1.8796" y1="7.9502" x2="5.461" y2="7.9502" width="0.127" layer="21"/>
+<wire x1="-5.461" y1="-7.9502" x2="-1.8796" y2="-7.9502" width="0.127" layer="21"/>
+<wire x1="1.8796" y1="-7.9502" x2="5.461" y2="-7.9502" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="AD5262">
@@ -15306,6 +15380,35 @@ Level Shifting GPIO Expander w/ LED Driver and Keypad Engine</description>
 <pin name="16" x="15.24" y="7.62" visible="pad" length="short" rot="R180"/>
 <pin name="17" x="15.24" y="12.7" visible="pad" length="short" rot="R180"/>
 <pin name="18" x="15.24" y="17.78" visible="pad" length="short" rot="R180"/>
+</symbol>
+<symbol name="L298_SMD_W_PAD">
+<wire x1="-12.7" y1="-12.7" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="15.24" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<text x="-12.446" y="15.748" size="1.778" layer="95">&gt;Name</text>
+<text x="-12.446" y="-14.986" size="1.778" layer="96">&gt;Value</text>
+<pin name="GND@1" x="-17.78" y="12.7" visible="pin" length="middle"/>
+<pin name="SENSE_A" x="-17.78" y="10.16" visible="pin" length="middle"/>
+<pin name="NC@3" x="-17.78" y="7.62" visible="pin" length="middle"/>
+<pin name="OUT1" x="-17.78" y="5.08" visible="pin" length="middle"/>
+<pin name="OUT2" x="-17.78" y="2.54" visible="pin" length="middle"/>
+<pin name="VS" x="-17.78" y="0" visible="pin" length="middle"/>
+<pin name="IN1" x="-17.78" y="-2.54" visible="pin" length="middle"/>
+<pin name="ENA" x="-17.78" y="-5.08" visible="pin" length="middle"/>
+<pin name="IN2" x="-17.78" y="-7.62" visible="pin" length="middle"/>
+<pin name="GND@10" x="-17.78" y="-10.16" visible="pin" length="middle"/>
+<pin name="GND@11" x="17.78" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="VSS" x="17.78" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="IN3" x="17.78" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="ENB" x="17.78" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="IN4" x="17.78" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="OUT3" x="17.78" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="OUT4" x="17.78" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="NC@18" x="17.78" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="SENSE_B" x="17.78" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="GND@20" x="17.78" y="12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="GND@PAD" x="0" y="-15.24" visible="pin" length="short" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -16844,6 +16947,47 @@ ULN2803 Darlington array. 500mA max per channel, 8-channel package. Spark Fun El
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="L298_SMD_W_PAD">
+<description>Full-bridge power driver IC
+
+This device uses the ground pad under the IC</description>
+<gates>
+<gate name="G$1" symbol="L298_SMD_W_PAD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="POWERSO20_L298_PAD">
+<connects>
+<connect gate="G$1" pin="ENA" pad="8"/>
+<connect gate="G$1" pin="ENB" pad="14"/>
+<connect gate="G$1" pin="GND@1" pad="1"/>
+<connect gate="G$1" pin="GND@10" pad="10"/>
+<connect gate="G$1" pin="GND@11" pad="11"/>
+<connect gate="G$1" pin="GND@20" pad="20"/>
+<connect gate="G$1" pin="GND@PAD" pad="PAD"/>
+<connect gate="G$1" pin="IN1" pad="7"/>
+<connect gate="G$1" pin="IN2" pad="9"/>
+<connect gate="G$1" pin="IN3" pad="13"/>
+<connect gate="G$1" pin="IN4" pad="15"/>
+<connect gate="G$1" pin="NC@18" pad="18"/>
+<connect gate="G$1" pin="NC@3" pad="3"/>
+<connect gate="G$1" pin="OUT1" pad="4"/>
+<connect gate="G$1" pin="OUT2" pad="5"/>
+<connect gate="G$1" pin="OUT3" pad="16"/>
+<connect gate="G$1" pin="OUT4" pad="17"/>
+<connect gate="G$1" pin="SENSE_A" pad="2"/>
+<connect gate="G$1" pin="SENSE_B" pad="19"/>
+<connect gate="G$1" pin="VS" pad="6"/>
+<connect gate="G$1" pin="VSS" pad="12"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-09133" constant="no"/>
+<attribute name="VALUE" value="L298" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
