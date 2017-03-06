@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.7.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="3" fill="10" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
+<layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
+<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
+<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
+<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
+<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
+<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+This library contains board components that are not electrical in nature, such as stand-offs, magnets, and Actobotics. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="MAGNET-18MM">
+<description>&lt;h3&gt;Magnet Disk - 0.709"&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.sparkfun.com/products/8890"&gt;Product Page&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Devices Using&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;MAGNET&lt;/li&gt;&lt;/ul&gt;</description>
+<circle x="0" y="0" radius="9" width="0.2032" layer="21"/>
+<text x="0" y="9.271" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="8.763" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
+<package name="STAND-OFF">
+<description>&lt;h3&gt;Standoff (#4 Screw)&lt;/h3&gt;
+&lt;p&gt;This is the mechanical footprint for a #4 phillips button head screw. Use the keepout ring to avoid running the screw head into surrounding components.&lt;/p&gt;
+&lt;h4&gt;Devices Using&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;STAND-OFF&lt;/li&gt;&lt;/ul&gt;</description>
+<wire x1="0" y1="1.8542" x2="0" y2="-1.8542" width="0.2032" layer="41" curve="-180"/>
+<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="41" curve="-180"/>
+<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="180"/>
+<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="-180"/>
+<circle x="0" y="0" radius="2.794" width="0.127" layer="39"/>
+<hole x="0" y="0" drill="3.302"/>
+<text x="0" y="2.032" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
+<package name="STAND-OFF-TIGHT">
+<description>&lt;h3&gt;Standoff (#4 Screw) - Tight fit around screw body&lt;/h3&gt;
+&lt;p&gt;This is the mechanical footprint for a #4 phillips button head screw. Use the keepout ring to avoid running the screw head into surrounding components.&lt;/p&gt;
+&lt;h4&gt;Devices Using&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;STAND-OFF&lt;/li&gt;&lt;/ul&gt;</description>
+<wire x1="0" y1="1.8542" x2="0" y2="-1.8542" width="0.2032" layer="41" curve="-180"/>
+<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="41" curve="-180"/>
+<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="180"/>
+<wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="-180"/>
+<circle x="0" y="0" radius="2.794" width="0.127" layer="39"/>
+<hole x="0" y="0" drill="3.048"/>
+<text x="0" y="1.651" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.651" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
+<package name="6400BG_HEATSINK">
+<description>&lt;h3&gt;6400BG Heatsink&lt;/h3&gt;
+&lt;p&gt;For use with TO-220, TO-218, TO-247, Multiwatt packages&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Prototyping/General/PRT-09576-6400BG.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;h4&gt;Devices Using&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;6400BG_HEATSINK&lt;/li&gt;&lt;/ul&gt;</description>
+<wire x1="-20.955" y1="12.7" x2="-4.445" y2="12.7" width="0.127" layer="51"/>
+<wire x1="4.445" y1="12.7" x2="20.955" y2="12.7" width="0.127" layer="51"/>
+<wire x1="-12.7" y1="-1.778" x2="-12.7" y2="-12.7" width="0.127" layer="51"/>
+<wire x1="12.7" y1="-1.905" x2="12.7" y2="-12.7" width="0.127" layer="51"/>
+<wire x1="12.7" y1="-12.7" x2="20.955" y2="-12.7" width="0.127" layer="51"/>
+<wire x1="20.955" y1="-12.7" x2="20.955" y2="12.7" width="0.127" layer="51"/>
+<wire x1="-12.7" y1="-12.7" x2="-20.955" y2="-12.7" width="0.127" layer="51"/>
+<wire x1="-21.336" y1="-13.081" x2="-21.336" y2="13.081" width="0.2032" layer="21"/>
+<wire x1="-11.049" y1="-0.7874" x2="11.049" y2="-0.7874" width="0.127" layer="51"/>
+<wire x1="-4.064" y1="13.081" x2="-4.064" y2="1.1684" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="0.7874" x2="4.445" y2="12.7" width="0.127" layer="51"/>
+<wire x1="-4.445" y1="0.7874" x2="4.445" y2="0.7874" width="0.127" layer="51"/>
+<hole x="-12.7" y="0" drill="2.9972"/>
+<hole x="12.7" y="0" drill="2.9972"/>
+<text x="0" y="1.397" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.397" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-21.336" y1="13.081" x2="-4.064" y2="13.081" width="0.2032" layer="21"/>
+<wire x1="-20.955" y1="-12.7" x2="-20.955" y2="12.7" width="0.127" layer="51"/>
+<wire x1="-12.319" y1="-13.081" x2="-21.336" y2="-13.081" width="0.2032" layer="21"/>
+<wire x1="-12.319" y1="-1.778" x2="-12.319" y2="-13.081" width="0.2032" layer="21"/>
+<wire x1="-11.049" y1="-1.1684" x2="11.049" y2="-1.1684" width="0.2032" layer="21"/>
+<wire x1="12.319" y1="-1.905" x2="12.319" y2="-13.081" width="0.2032" layer="21"/>
+<wire x1="12.319" y1="-13.081" x2="21.336" y2="-13.081" width="0.2032" layer="21"/>
+<wire x1="21.336" y1="-13.081" x2="21.336" y2="13.081" width="0.2032" layer="21"/>
+<wire x1="4.064" y1="13.081" x2="21.336" y2="13.081" width="0.2032" layer="21"/>
+<wire x1="4.064" y1="1.1684" x2="4.064" y2="13.081" width="0.2032" layer="21"/>
+<wire x1="-4.064" y1="1.1684" x2="4.064" y2="1.1684" width="0.2032" layer="21"/>
+<wire x1="-4.445" y1="12.7" x2="-4.445" y2="0.7874" width="0.127" layer="51"/>
+</package>
+<package name="STANDOFF-ELECTRICAL">
+<description>&lt;h3&gt;Standoff (#4 Screw) - w/ Electrical Connection&lt;/h3&gt;
+&lt;p&gt;This is the mechanical footprint for a #4 phillips button head screw.&lt;/p&gt;
+&lt;p&gt;The drill is surrounded by a copper ring, which can be connected to any net.&lt;/p&gt;
+&lt;h4&gt;Devices Using&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;STAND-OFF&lt;/li&gt;&lt;/ul&gt;</description>
+<pad name="P1" x="0" y="0" drill="3.2" diameter="6.35"/>
+<text x="0" y="3.302" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.302" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
+<package name="ACTOBOTICS_CHANNEL_12&quot;">
+<wire x1="38.1" y1="0" x2="38.1" y2="19.05" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="19.05" x2="38.1" y2="38.1" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="38.1" x2="38.1" y2="57.15" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="57.15" x2="38.1" y2="76.2" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="76.2" x2="38.1" y2="114.3" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="114.3" x2="38.1" y2="152.4" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="152.4" x2="38.1" y2="190.5" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="190.5" x2="38.1" y2="304.8" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="304.8" x2="0" y2="304.8" width="0.6096" layer="51"/>
+<wire x1="0" y1="304.8" x2="0" y2="190.5" width="0.6096" layer="51"/>
+<wire x1="0" y1="190.5" x2="0" y2="152.4" width="0.6096" layer="51"/>
+<wire x1="0" y1="152.4" x2="0" y2="114.3" width="0.6096" layer="51"/>
+<wire x1="0" y1="114.3" x2="0" y2="76.2" width="0.6096" layer="51"/>
+<wire x1="0" y1="76.2" x2="0" y2="57.15" width="0.6096" layer="51"/>
+<wire x1="0" y1="57.15" x2="0" y2="38.1" width="0.6096" layer="51"/>
+<wire x1="0" y1="38.1" x2="0" y2="19.05" width="0.6096" layer="51"/>
+<wire x1="0" y1="19.05" x2="0" y2="0" width="0.6096" layer="51"/>
+<wire x1="0" y1="0" x2="38.1" y2="0" width="0.6096" layer="51"/>
+<text x="19.05" y="19.05" size="6.4516" layer="51" font="vector" ratio="15" rot="R180" align="center">12</text>
+<wire x1="0" y1="38.1" x2="38.1" y2="38.1" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="76.2" x2="38.1" y2="76.2" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="114.3" x2="38.1" y2="114.3" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="152.4" x2="38.1" y2="152.4" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="190.5" x2="38.1" y2="190.5" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="19.05" x2="31.75" y2="19.05" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="19.05" x2="6.35" y2="19.05" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="57.15" x2="31.75" y2="57.15" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="57.15" x2="6.35" y2="57.15" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="209.55" x2="31.75" y2="209.55" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="209.55" x2="6.35" y2="209.55" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="95.25" x2="31.75" y2="95.25" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="95.25" x2="6.35" y2="95.25" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="133.35" x2="31.75" y2="133.35" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="133.35" x2="6.35" y2="133.35" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="171.45" x2="31.75" y2="171.45" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="171.45" x2="6.35" y2="171.45" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="228.6" x2="38.1" y2="228.6" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="247.65" x2="31.75" y2="247.65" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="247.65" x2="6.35" y2="247.65" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="266.7" x2="38.1" y2="266.7" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="285.75" x2="31.75" y2="285.75" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="285.75" x2="6.35" y2="285.75" width="0.6096" layer="51" style="shortdash"/>
+</package>
+<package name="ACTOBOTICS_CHANNEL_15&quot;">
+<wire x1="38.1" y1="0" x2="38.1" y2="19.05" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="19.05" x2="38.1" y2="38.1" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="38.1" x2="38.1" y2="57.15" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="57.15" x2="38.1" y2="76.2" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="76.2" x2="38.1" y2="114.3" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="114.3" x2="38.1" y2="152.4" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="152.4" x2="38.1" y2="190.5" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="190.5" x2="38.1" y2="304.8" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="304.8" x2="38.1" y2="342.9" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="342.9" x2="38.1" y2="381" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="381" x2="0" y2="381" width="0.6096" layer="51"/>
+<wire x1="0" y1="381" x2="0" y2="342.9" width="0.6096" layer="51"/>
+<wire x1="0" y1="342.9" x2="0" y2="304.8" width="0.6096" layer="51"/>
+<wire x1="0" y1="304.8" x2="0" y2="190.5" width="0.6096" layer="51"/>
+<wire x1="0" y1="190.5" x2="0" y2="152.4" width="0.6096" layer="51"/>
+<wire x1="0" y1="152.4" x2="0" y2="114.3" width="0.6096" layer="51"/>
+<wire x1="0" y1="114.3" x2="0" y2="76.2" width="0.6096" layer="51"/>
+<wire x1="0" y1="76.2" x2="0" y2="57.15" width="0.6096" layer="51"/>
+<wire x1="0" y1="57.15" x2="0" y2="38.1" width="0.6096" layer="51"/>
+<wire x1="0" y1="38.1" x2="0" y2="19.05" width="0.6096" layer="51"/>
+<wire x1="0" y1="19.05" x2="0" y2="0" width="0.6096" layer="51"/>
+<wire x1="0" y1="0" x2="38.1" y2="0" width="0.6096" layer="51"/>
+<text x="19.05" y="19.05" size="6.4516" layer="51" font="vector" ratio="15" rot="R180" align="center">15</text>
+<wire x1="0" y1="38.1" x2="38.1" y2="38.1" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="76.2" x2="38.1" y2="76.2" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="114.3" x2="38.1" y2="114.3" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="152.4" x2="38.1" y2="152.4" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="190.5" x2="38.1" y2="190.5" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="19.05" x2="31.75" y2="19.05" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="19.05" x2="6.35" y2="19.05" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="57.15" x2="31.75" y2="57.15" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="57.15" x2="6.35" y2="57.15" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="209.55" x2="31.75" y2="209.55" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="209.55" x2="6.35" y2="209.55" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="95.25" x2="31.75" y2="95.25" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="95.25" x2="6.35" y2="95.25" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="133.35" x2="31.75" y2="133.35" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="133.35" x2="6.35" y2="133.35" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="171.45" x2="31.75" y2="171.45" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="171.45" x2="6.35" y2="171.45" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="228.6" x2="38.1" y2="228.6" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="247.65" x2="31.75" y2="247.65" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="247.65" x2="6.35" y2="247.65" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="266.7" x2="38.1" y2="266.7" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="285.75" x2="31.75" y2="285.75" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="285.75" x2="6.35" y2="285.75" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="323.85" x2="31.75" y2="323.85" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="323.85" x2="6.35" y2="323.85" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="361.95" x2="31.75" y2="361.95" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="361.95" x2="6.35" y2="361.95" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="304.8" x2="38.1" y2="304.8" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="342.9" x2="38.1" y2="342.9" width="0.6096" layer="51" style="shortdash"/>
+</package>
+<package name="ACTOBOTICS_CHANNEL_18&quot;">
+<wire x1="38.1" y1="0" x2="38.1" y2="19.05" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="19.05" x2="38.1" y2="38.1" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="38.1" x2="38.1" y2="57.15" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="57.15" x2="38.1" y2="76.2" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="76.2" x2="38.1" y2="114.3" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="114.3" x2="38.1" y2="152.4" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="152.4" x2="38.1" y2="190.5" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="190.5" x2="38.1" y2="304.8" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="304.8" x2="38.1" y2="342.9" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="342.9" x2="38.1" y2="381" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="381" x2="38.1" y2="400.05" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="400.05" x2="38.1" y2="419.1" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="419.1" x2="38.1" y2="438.15" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="438.15" x2="38.1" y2="457.2" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="457.2" x2="0" y2="457.2" width="0.6096" layer="51"/>
+<wire x1="0" y1="457.2" x2="0" y2="438.15" width="0.6096" layer="51"/>
+<wire x1="0" y1="438.15" x2="0" y2="419.1" width="0.6096" layer="51"/>
+<wire x1="0" y1="419.1" x2="0" y2="400.05" width="0.6096" layer="51"/>
+<wire x1="0" y1="400.05" x2="0" y2="381" width="0.6096" layer="51"/>
+<wire x1="0" y1="381" x2="0" y2="342.9" width="0.6096" layer="51"/>
+<wire x1="0" y1="342.9" x2="0" y2="304.8" width="0.6096" layer="51"/>
+<wire x1="0" y1="304.8" x2="0" y2="190.5" width="0.6096" layer="51"/>
+<wire x1="0" y1="190.5" x2="0" y2="152.4" width="0.6096" layer="51"/>
+<wire x1="0" y1="152.4" x2="0" y2="114.3" width="0.6096" layer="51"/>
+<wire x1="0" y1="114.3" x2="0" y2="76.2" width="0.6096" layer="51"/>
+<wire x1="0" y1="76.2" x2="0" y2="57.15" width="0.6096" layer="51"/>
+<wire x1="0" y1="57.15" x2="0" y2="38.1" width="0.6096" layer="51"/>
+<wire x1="0" y1="38.1" x2="0" y2="19.05" width="0.6096" layer="51"/>
+<wire x1="0" y1="19.05" x2="0" y2="0" width="0.6096" layer="51"/>
+<wire x1="0" y1="0" x2="38.1" y2="0" width="0.6096" layer="51"/>
+<text x="19.05" y="19.05" size="6.4516" layer="51" font="vector" ratio="15" rot="R180" align="center">18</text>
+<wire x1="0" y1="38.1" x2="38.1" y2="38.1" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="76.2" x2="38.1" y2="76.2" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="114.3" x2="38.1" y2="114.3" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="152.4" x2="38.1" y2="152.4" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="190.5" x2="38.1" y2="190.5" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="19.05" x2="31.75" y2="19.05" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="19.05" x2="6.35" y2="19.05" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="57.15" x2="31.75" y2="57.15" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="57.15" x2="6.35" y2="57.15" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="209.55" x2="31.75" y2="209.55" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="209.55" x2="6.35" y2="209.55" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="95.25" x2="31.75" y2="95.25" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="95.25" x2="6.35" y2="95.25" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="133.35" x2="31.75" y2="133.35" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="133.35" x2="6.35" y2="133.35" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="171.45" x2="31.75" y2="171.45" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="171.45" x2="6.35" y2="171.45" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="228.6" x2="38.1" y2="228.6" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="247.65" x2="31.75" y2="247.65" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="247.65" x2="6.35" y2="247.65" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="266.7" x2="38.1" y2="266.7" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="285.75" x2="31.75" y2="285.75" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="285.75" x2="6.35" y2="285.75" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="323.85" x2="31.75" y2="323.85" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="323.85" x2="6.35" y2="323.85" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="361.95" x2="31.75" y2="361.95" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="361.95" x2="6.35" y2="361.95" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="304.8" x2="38.1" y2="304.8" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="342.9" x2="38.1" y2="342.9" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="381" x2="38.1" y2="381" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="419.1" x2="38.1" y2="419.1" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="400.05" x2="31.75" y2="400.05" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="438.15" x2="31.75" y2="438.15" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="400.05" x2="6.35" y2="400.05" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="438.15" x2="6.35" y2="438.15" width="0.6096" layer="51" style="shortdash"/>
+</package>
+<package name="ACTOBOTICS_CHANNEL_24&quot;">
+<wire x1="38.1" y1="0" x2="38.1" y2="19.05" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="19.05" x2="38.1" y2="38.1" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="38.1" x2="38.1" y2="57.15" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="57.15" x2="38.1" y2="76.2" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="76.2" x2="38.1" y2="114.3" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="114.3" x2="38.1" y2="152.4" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="152.4" x2="38.1" y2="190.5" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="190.5" x2="38.1" y2="304.8" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="304.8" x2="38.1" y2="342.9" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="342.9" x2="38.1" y2="381" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="381" x2="38.1" y2="400.05" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="400.05" x2="38.1" y2="419.1" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="419.1" x2="38.1" y2="438.15" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="438.15" x2="38.1" y2="609.6" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="609.6" x2="0" y2="609.6" width="0.6096" layer="51"/>
+<wire x1="0" y1="609.6" x2="0" y2="438.15" width="0.6096" layer="51"/>
+<wire x1="0" y1="438.15" x2="0" y2="419.1" width="0.6096" layer="51"/>
+<wire x1="0" y1="419.1" x2="0" y2="400.05" width="0.6096" layer="51"/>
+<wire x1="0" y1="400.05" x2="0" y2="381" width="0.6096" layer="51"/>
+<wire x1="0" y1="381" x2="0" y2="342.9" width="0.6096" layer="51"/>
+<wire x1="0" y1="342.9" x2="0" y2="304.8" width="0.6096" layer="51"/>
+<wire x1="0" y1="304.8" x2="0" y2="190.5" width="0.6096" layer="51"/>
+<wire x1="0" y1="190.5" x2="0" y2="152.4" width="0.6096" layer="51"/>
+<wire x1="0" y1="152.4" x2="0" y2="114.3" width="0.6096" layer="51"/>
+<wire x1="0" y1="114.3" x2="0" y2="76.2" width="0.6096" layer="51"/>
+<wire x1="0" y1="76.2" x2="0" y2="57.15" width="0.6096" layer="51"/>
+<wire x1="0" y1="57.15" x2="0" y2="38.1" width="0.6096" layer="51"/>
+<wire x1="0" y1="38.1" x2="0" y2="19.05" width="0.6096" layer="51"/>
+<wire x1="0" y1="19.05" x2="0" y2="0" width="0.6096" layer="51"/>
+<wire x1="0" y1="0" x2="38.1" y2="0" width="0.6096" layer="51"/>
+<text x="19.05" y="19.05" size="6.4516" layer="51" font="vector" ratio="15" rot="R180" align="center">24</text>
+<wire x1="0" y1="38.1" x2="38.1" y2="38.1" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="76.2" x2="38.1" y2="76.2" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="114.3" x2="38.1" y2="114.3" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="152.4" x2="38.1" y2="152.4" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="190.5" x2="38.1" y2="190.5" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="19.05" x2="31.75" y2="19.05" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="19.05" x2="6.35" y2="19.05" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="57.15" x2="31.75" y2="57.15" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="57.15" x2="6.35" y2="57.15" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="209.55" x2="31.75" y2="209.55" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="209.55" x2="6.35" y2="209.55" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="95.25" x2="31.75" y2="95.25" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="95.25" x2="6.35" y2="95.25" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="133.35" x2="31.75" y2="133.35" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="133.35" x2="6.35" y2="133.35" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="171.45" x2="31.75" y2="171.45" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="171.45" x2="6.35" y2="171.45" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="228.6" x2="38.1" y2="228.6" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="247.65" x2="31.75" y2="247.65" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="247.65" x2="6.35" y2="247.65" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="266.7" x2="38.1" y2="266.7" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="285.75" x2="31.75" y2="285.75" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="285.75" x2="6.35" y2="285.75" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="323.85" x2="31.75" y2="323.85" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="323.85" x2="6.35" y2="323.85" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="361.95" x2="31.75" y2="361.95" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="361.95" x2="6.35" y2="361.95" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="304.8" x2="38.1" y2="304.8" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="342.9" x2="38.1" y2="342.9" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="381" x2="38.1" y2="381" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="419.1" x2="38.1" y2="419.1" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="400.05" x2="31.75" y2="400.05" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="438.15" x2="31.75" y2="438.15" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="400.05" x2="6.35" y2="400.05" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="438.15" x2="6.35" y2="438.15" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="457.2" x2="38.1" y2="457.2" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="476.25" x2="31.75" y2="476.25" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="476.25" x2="6.35" y2="476.25" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="495.3" x2="38.1" y2="495.3" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="514.35" x2="31.75" y2="514.35" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="514.35" x2="6.35" y2="514.35" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="533.4" x2="38.1" y2="533.4" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="552.45" x2="31.75" y2="552.45" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="552.45" x2="6.35" y2="552.45" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="590.55" x2="31.75" y2="590.55" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="590.55" x2="6.35" y2="590.55" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="571.5" x2="38.1" y2="571.5" width="0.6096" layer="51" style="shortdash"/>
+</package>
+<package name="ACTOBOTICS_CHANNEL_3&quot;">
+<wire x1="38.1" y1="0" x2="38.1" y2="19.05" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="19.05" x2="38.1" y2="38.1" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="38.1" x2="38.1" y2="57.15" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="57.15" x2="38.1" y2="76.2" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="76.2" x2="0" y2="76.2" width="0.6096" layer="51"/>
+<wire x1="0" y1="76.2" x2="0" y2="57.15" width="0.6096" layer="51"/>
+<wire x1="0" y1="57.15" x2="0" y2="38.1" width="0.6096" layer="51"/>
+<wire x1="0" y1="38.1" x2="0" y2="19.05" width="0.6096" layer="51"/>
+<wire x1="0" y1="19.05" x2="0" y2="0" width="0.6096" layer="51"/>
+<wire x1="0" y1="0" x2="38.1" y2="0" width="0.6096" layer="51"/>
+<text x="19.05" y="19.05" size="6.4516" layer="51" font="vector" ratio="15" rot="R180" align="center">3</text>
+<wire x1="0" y1="38.1" x2="38.1" y2="38.1" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="76.2" x2="38.1" y2="76.2" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="19.05" x2="31.75" y2="19.05" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="19.05" x2="6.35" y2="19.05" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="57.15" x2="31.75" y2="57.15" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="57.15" x2="6.35" y2="57.15" width="0.6096" layer="51" style="shortdash"/>
+</package>
+<package name="ACTOBOTICS_CHANNEL_3.75&quot;">
+<wire x1="38.1" y1="0" x2="38.1" y2="19.05" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="19.05" x2="38.1" y2="38.1" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="38.1" x2="38.1" y2="57.15" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="57.15" x2="38.1" y2="76.2" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="76.2" x2="38.1" y2="95.25" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="95.25" x2="0" y2="95.25" width="0.6096" layer="51"/>
+<wire x1="0" y1="95.25" x2="0" y2="76.2" width="0.6096" layer="51"/>
+<wire x1="0" y1="76.2" x2="0" y2="57.15" width="0.6096" layer="51"/>
+<wire x1="0" y1="57.15" x2="0" y2="38.1" width="0.6096" layer="51"/>
+<wire x1="0" y1="38.1" x2="0" y2="19.05" width="0.6096" layer="51"/>
+<wire x1="0" y1="19.05" x2="0" y2="0" width="0.6096" layer="51"/>
+<wire x1="0" y1="0" x2="38.1" y2="0" width="0.6096" layer="51"/>
+<text x="19.05" y="19.05" size="6.4516" layer="51" font="vector" ratio="15" rot="R180" align="center">3.75</text>
+<wire x1="0" y1="38.1" x2="38.1" y2="38.1" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="76.2" x2="38.1" y2="76.2" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="19.05" x2="31.75" y2="19.05" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="19.05" x2="6.35" y2="19.05" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="57.15" x2="31.75" y2="57.15" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="57.15" x2="6.35" y2="57.15" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="95.25" x2="31.75" y2="95.25" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="95.25" x2="6.35" y2="95.25" width="0.6096" layer="51" style="shortdash"/>
+</package>
+<package name="ACTOBOTICS_CHANNEL_4.5&quot;">
+<wire x1="38.1" y1="0" x2="38.1" y2="19.05" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="19.05" x2="38.1" y2="38.1" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="38.1" x2="38.1" y2="57.15" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="57.15" x2="38.1" y2="76.2" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="76.2" x2="38.1" y2="114.3" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="114.3" x2="0" y2="114.3" width="0.6096" layer="51"/>
+<wire x1="0" y1="114.3" x2="0" y2="76.2" width="0.6096" layer="51"/>
+<wire x1="0" y1="76.2" x2="0" y2="57.15" width="0.6096" layer="51"/>
+<wire x1="0" y1="57.15" x2="0" y2="38.1" width="0.6096" layer="51"/>
+<wire x1="0" y1="38.1" x2="0" y2="19.05" width="0.6096" layer="51"/>
+<wire x1="0" y1="19.05" x2="0" y2="0" width="0.6096" layer="51"/>
+<wire x1="0" y1="0" x2="38.1" y2="0" width="0.6096" layer="51"/>
+<text x="19.05" y="19.05" size="6.4516" layer="51" font="vector" ratio="15" rot="R180" align="center">4.5</text>
+<wire x1="0" y1="38.1" x2="38.1" y2="38.1" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="76.2" x2="38.1" y2="76.2" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="19.05" x2="31.75" y2="19.05" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="19.05" x2="6.35" y2="19.05" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="57.15" x2="31.75" y2="57.15" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="57.15" x2="6.35" y2="57.15" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="95.25" x2="31.75" y2="95.25" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="95.25" x2="6.35" y2="95.25" width="0.6096" layer="51" style="shortdash"/>
+</package>
+<package name="ACTOBOTICS_CHANNEL_6&quot;">
+<wire x1="38.1" y1="0" x2="38.1" y2="19.05" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="19.05" x2="38.1" y2="38.1" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="38.1" x2="38.1" y2="57.15" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="57.15" x2="38.1" y2="76.2" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="76.2" x2="38.1" y2="114.3" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="114.3" x2="38.1" y2="152.4" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="152.4" x2="0" y2="152.4" width="0.6096" layer="51"/>
+<wire x1="0" y1="152.4" x2="0" y2="114.3" width="0.6096" layer="51"/>
+<wire x1="0" y1="114.3" x2="0" y2="76.2" width="0.6096" layer="51"/>
+<wire x1="0" y1="76.2" x2="0" y2="57.15" width="0.6096" layer="51"/>
+<wire x1="0" y1="57.15" x2="0" y2="38.1" width="0.6096" layer="51"/>
+<wire x1="0" y1="38.1" x2="0" y2="19.05" width="0.6096" layer="51"/>
+<wire x1="0" y1="19.05" x2="0" y2="0" width="0.6096" layer="51"/>
+<wire x1="0" y1="0" x2="38.1" y2="0" width="0.6096" layer="51"/>
+<text x="19.05" y="19.05" size="6.4516" layer="51" font="vector" ratio="15" rot="R180" align="center">6</text>
+<wire x1="0" y1="38.1" x2="38.1" y2="38.1" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="76.2" x2="38.1" y2="76.2" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="114.3" x2="38.1" y2="114.3" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="152.4" x2="38.1" y2="152.4" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="19.05" x2="31.75" y2="19.05" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="19.05" x2="6.35" y2="19.05" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="57.15" x2="31.75" y2="57.15" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="57.15" x2="6.35" y2="57.15" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="95.25" x2="31.75" y2="95.25" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="95.25" x2="6.35" y2="95.25" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="133.35" x2="31.75" y2="133.35" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="133.35" x2="6.35" y2="133.35" width="0.6096" layer="51" style="shortdash"/>
+</package>
+<package name="ACTOBOTICS_CHANNEL_9&quot;">
+<wire x1="38.1" y1="0" x2="38.1" y2="19.05" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="19.05" x2="38.1" y2="38.1" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="38.1" x2="38.1" y2="57.15" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="57.15" x2="38.1" y2="76.2" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="76.2" x2="38.1" y2="114.3" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="114.3" x2="38.1" y2="152.4" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="152.4" x2="38.1" y2="190.5" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="190.5" x2="38.1" y2="228.6" width="0.6096" layer="51"/>
+<wire x1="38.1" y1="228.6" x2="0" y2="228.6" width="0.6096" layer="51"/>
+<wire x1="0" y1="228.6" x2="0" y2="190.5" width="0.6096" layer="51"/>
+<wire x1="0" y1="190.5" x2="0" y2="152.4" width="0.6096" layer="51"/>
+<wire x1="0" y1="152.4" x2="0" y2="114.3" width="0.6096" layer="51"/>
+<wire x1="0" y1="114.3" x2="0" y2="76.2" width="0.6096" layer="51"/>
+<wire x1="0" y1="76.2" x2="0" y2="57.15" width="0.6096" layer="51"/>
+<wire x1="0" y1="57.15" x2="0" y2="38.1" width="0.6096" layer="51"/>
+<wire x1="0" y1="38.1" x2="0" y2="19.05" width="0.6096" layer="51"/>
+<wire x1="0" y1="19.05" x2="0" y2="0" width="0.6096" layer="51"/>
+<wire x1="0" y1="0" x2="38.1" y2="0" width="0.6096" layer="51"/>
+<text x="19.05" y="19.05" size="6.4516" layer="51" font="vector" ratio="15" rot="R180" align="center">9</text>
+<wire x1="0" y1="38.1" x2="38.1" y2="38.1" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="76.2" x2="38.1" y2="76.2" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="114.3" x2="38.1" y2="114.3" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="152.4" x2="38.1" y2="152.4" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="190.5" x2="38.1" y2="190.5" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="19.05" x2="31.75" y2="19.05" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="19.05" x2="6.35" y2="19.05" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="57.15" x2="31.75" y2="57.15" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="57.15" x2="6.35" y2="57.15" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="209.55" x2="31.75" y2="209.55" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="209.55" x2="6.35" y2="209.55" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="95.25" x2="31.75" y2="95.25" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="95.25" x2="6.35" y2="95.25" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="133.35" x2="31.75" y2="133.35" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="133.35" x2="6.35" y2="133.35" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="38.1" y1="171.45" x2="31.75" y2="171.45" width="0.6096" layer="51" style="shortdash"/>
+<wire x1="0" y1="171.45" x2="6.35" y2="171.45" width="0.6096" layer="51" style="shortdash"/>
+</package>
+<package name="ACTOBOTICS_CHANNEL_SINGLE_DRILL_REF">
+<wire x1="38.1" y1="0" x2="38.1" y2="38.1" width="0.6096" layer="51"/>
+<wire x1="0" y1="38.1" x2="0" y2="0" width="0.6096" layer="51"/>
+<wire x1="0" y1="0" x2="38.1" y2="0" width="0.6096" layer="51"/>
+<circle x="5.588" y="5.588" radius="1.778" width="0.0254" layer="51"/>
+<circle x="25.96515" y="25.96515" radius="1.778" width="0.0254" layer="51"/>
+<circle x="5.588" y="32.512" radius="1.778" width="0.0254" layer="51"/>
+<circle x="32.512" y="5.588" radius="1.778" width="0.0254" layer="51"/>
+<circle x="32.520890625" y="32.520890625" radius="1.778" width="0.0254" layer="51"/>
+<circle x="12.13485" y="25.96515" radius="1.778" width="0.0254" layer="51"/>
+<circle x="12.13485" y="12.13485" radius="1.778" width="0.0254" layer="51"/>
+<circle x="25.96515" y="12.13485" radius="1.778" width="0.0254" layer="51"/>
+<circle x="19.05" y="19.05" radius="6.35" width="0.0254" layer="51"/>
+<circle x="5.588" y="24.638" radius="1.778" width="0.0254" layer="51"/>
+<circle x="32.512" y="24.638" radius="1.778" width="0.0254" layer="51"/>
+<circle x="12.13485" y="31.18485" radius="1.778" width="0.0254" layer="51"/>
+<circle x="25.96515" y="31.18485" radius="1.778" width="0.0254" layer="51"/>
+<circle x="19.05" y="28.575" radius="2.032" width="0.0254" layer="51"/>
+<circle x="19.05" y="9.525" radius="2.032" width="0.0254" layer="51"/>
+<circle x="28.575" y="19.05" radius="2.032" width="0.0254" layer="51"/>
+<circle x="9.525" y="19.05" radius="2.032" width="0.0254" layer="51"/>
+<circle x="25.96515" y="6.91515" radius="1.778" width="0.0254" layer="51"/>
+<circle x="5.588" y="13.462" radius="1.778" width="0.0254" layer="51"/>
+<circle x="32.520890625" y="13.470890625" radius="1.778" width="0.0254" layer="51"/>
+<circle x="12.13485" y="6.91515" radius="1.778" width="0.0254" layer="51"/>
+<circle x="5.588" y="5.588" radius="1.778" width="0.0254" layer="51"/>
+<circle x="25.96515" y="25.96515" radius="1.778" width="0.0254" layer="51"/>
+<circle x="5.588" y="32.512" radius="1.778" width="0.0254" layer="51"/>
+<circle x="32.512" y="5.588" radius="1.778" width="0.0254" layer="51"/>
+<circle x="32.520890625" y="32.520890625" radius="1.778" width="0.0254" layer="51"/>
+<circle x="12.13485" y="25.96515" radius="1.778" width="0.0254" layer="51"/>
+<circle x="12.13485" y="12.13485" radius="1.778" width="0.0254" layer="51"/>
+<circle x="25.96515" y="12.13485" radius="1.778" width="0.0254" layer="51"/>
+<circle x="19.05" y="19.05" radius="6.35" width="0.0254" layer="51"/>
+<circle x="19.05" y="9.525" radius="2.032" width="0.0254" layer="51"/>
+<circle x="5.588" y="24.638" radius="1.778" width="0.0254" layer="51"/>
+<circle x="32.512" y="24.638" radius="1.778" width="0.0254" layer="51"/>
+<circle x="12.13485" y="31.18485" radius="1.778" width="0.0254" layer="51"/>
+<circle x="25.96515" y="31.18485" radius="1.778" width="0.0254" layer="51"/>
+<circle x="19.05" y="28.575" radius="2.032" width="0.0254" layer="51"/>
+<circle x="25.96515" y="25.96515" radius="1.778" width="0.0254" layer="51"/>
+<circle x="5.588" y="32.512" radius="1.778" width="0.0254" layer="51"/>
+<circle x="32.520890625" y="32.520890625" radius="1.778" width="0.0254" layer="51"/>
+<circle x="12.13485" y="25.96515" radius="1.778" width="0.0254" layer="51"/>
+<circle x="5.588" y="24.638" radius="1.778" width="0.0254" layer="51"/>
+<circle x="32.512" y="24.638" radius="1.778" width="0.0254" layer="51"/>
+<circle x="12.13485" y="31.18485" radius="1.778" width="0.0254" layer="51"/>
+<circle x="25.96515" y="31.18485" radius="1.778" width="0.0254" layer="51"/>
+<circle x="19.05" y="28.575" radius="2.032" width="0.0254" layer="51"/>
+<wire x1="38.1" y1="38.1" x2="0" y2="38.1" width="0.6096" layer="51"/>
+<text x="19.05" y="19.05" size="1.27" layer="51" font="vector" align="center">0.5"</text>
+<text x="12.13485" y="31.18485" size="0.6096" layer="51" font="vector" align="center">0.14"</text>
+<text x="25.96515" y="31.18485" size="0.6096" layer="51" font="vector" align="center">0.14"</text>
+<text x="32.520890625" y="32.520890625" size="0.6096" layer="51" font="vector" align="center">0.14"</text>
+<text x="32.512" y="24.638" size="0.6096" layer="51" font="vector" align="center">0.14"</text>
+<text x="25.96515" y="25.96515" size="0.6096" layer="51" font="vector" align="center">0.14"</text>
+<text x="32.520890625" y="13.470890625" size="0.6096" layer="51" font="vector" align="center">0.14"</text>
+<text x="25.96515" y="12.13485" size="0.6096" layer="51" font="vector" align="center">0.14"</text>
+<text x="32.512" y="5.588" size="0.6096" layer="51" font="vector" align="center">0.14"</text>
+<text x="25.96515" y="6.91515" size="0.6096" layer="51" font="vector" align="center">0.14"</text>
+<text x="5.588" y="24.638" size="0.6096" layer="51" font="vector" align="center">0.14"</text>
+<text x="12.13485" y="25.96515" size="0.6096" layer="51" font="vector" align="center">0.14"</text>
+<text x="5.588" y="13.462" size="0.6096" layer="51" font="vector" align="center">0.14"</text>
+<text x="12.13485" y="12.13485" size="0.6096" layer="51" font="vector" align="center">0.14"</text>
+<text x="12.13485" y="6.91515" size="0.6096" layer="51" font="vector" align="center">0.14"</text>
+<text x="5.588" y="5.588" size="0.6096" layer="51" font="vector" align="center">0.14"</text>
+<text x="5.588" y="32.512" size="0.6096" layer="51" font="vector" align="center">0.14"</text>
+<text x="19.05" y="28.575" size="0.6096" layer="51" font="vector" align="center">0.16"</text>
+<text x="28.575" y="19.05" size="0.6096" layer="51" font="vector" align="center">0.16"
+</text>
+<text x="9.525" y="19.05" size="0.6096" layer="51" font="vector" align="center">0.16"</text>
+<text x="19.05" y="9.525" size="0.6096" layer="51" font="vector" align="center">0.16"</text>
+</package>
+</packages>
+<symbols>
+<symbol name="MAGNET">
+<description>&lt;h3&gt;Magnet&lt;/h3&gt;</description>
+<circle x="0" y="0" radius="5.08" width="0.254" layer="94"/>
+<text x="-3.35" y="-0.63" size="1.27" layer="94">MAGNET</text>
+<text x="0" y="5.334" size="1.778" layer="95" font="vector" align="bottom-center">&gt;Name</text>
+<text x="0" y="-5.334" size="1.778" layer="96" font="vector" align="top-center">&gt;Value</text>
+</symbol>
+<symbol name="STAND-OFF">
+<description>&lt;h3&gt;Stand-Off Drill Hole&lt;/h3&gt;</description>
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+</symbol>
+<symbol name="6400GB_HEATSINK">
+<description>&lt;h3&gt;6400BG Heatsink&lt;/h3&gt;</description>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<text x="-3.81" y="2.286" size="1.4224" layer="94" ratio="12">6400BG</text>
+<text x="-2.286" y="0.508" size="1.4224" layer="94" ratio="12">HEAT</text>
+<text x="-2.286" y="-1.27" size="1.4224" layer="94" ratio="12">SINK</text>
+</symbol>
+<symbol name="STANDOFF_ELECTRICAL">
+<description>&lt;h3&gt;Stand-Off with Electrical Connection&lt;/h3&gt;</description>
+<pin name="P$1" x="7.62" y="0" visible="off" length="short" rot="R180"/>
+<circle x="0" y="0" radius="5.08" width="0.254" layer="94"/>
+<text x="0" y="5.334" size="1.27" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-5.334" size="1.27" layer="96" font="vector" rot="R180" align="bottom-center">&gt;VALUE</text>
+</symbol>
+<symbol name="ACTOBOTICS">
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="2.3417625" width="0.254" layer="94"/>
+<text x="-3.556" y="4.318" size="1.27" layer="94" font="vector">ctobotics</text>
+<text x="-4.572" y="-5.08" size="1.27" layer="94" font="vector">Reference</text>
+<text x="-5.588" y="3.556" size="2.54" layer="94" font="vector">A</text>
+<wire x1="-5.461" y1="4.064" x2="5.334" y2="4.064" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MAGNET" prefix="H">
+<description>&lt;h3&gt;Magnet&lt;/h3&gt;
+&lt;p&gt;Magnets that can be attached to a PCB with double-stick tape or hot-glue.&lt;/p&gt;
+&lt;h4&gt;SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8890"&gt;Magnet Disk - 0.709"&lt;/a&gt; (COM-08890)&lt;/li&gt;&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="MAGNET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MAGNET-18MM">
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-09030"/>
+<attribute name="SF_SKU" value="COM-08890"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STAND-OFF" prefix="H">
+<description>&lt;h3&gt;Stand Off&lt;/h3&gt;
+&lt;p&gt;Drill holes for mechanically mounting via screws, standoffs, etc.&lt;/p&gt;
+&lt;p&gt;Note: Use the keepout ring to avoid running the screw head into surrounding components.
+&lt;h4&gt;Variant Overviews&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;STAND-OFF&lt;/b&gt; - Mechanical footprint for a &lt;b&gt;#4 phillips button head&lt;/b&gt; screw.&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;STAND-OFF-TIGHT&lt;/b&gt; - Mechanical footprint for a &lt;b&gt;#4 phillips button head&lt;/b&gt; screw, &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Example SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10453"&gt;Screw - Phillips Head (1/4", 4-40, 10 pack)&lt;/a&gt; (PRT-10453)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10452"&gt;Screw - Phillips Head (1/2", 4-40, 10 pack)&lt;/a&gt; (PRT-10452)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10451"&gt;Screw - Phillips Head (3/4", 4-40, 10 pack)&lt;/a&gt; (PRT-10451)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10450"&gt;Screw - Phillips Head (1", 4-40, 10 pack)&lt;/a&gt; (PRT-10450)&lt;/li&gt;</description>
+<gates>
+<gate name="G$1" symbol="STAND-OFF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="STAND-OFF">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TIGHT" package="STAND-OFF-TIGHT">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="6400BG_HEATSINK" prefix="H">
+<description>&lt;h3&gt;6400BG Heatsink - Multiwatt Package&lt;/h3&gt;
+&lt;p&gt;This beefy heatsink is designed to dissipate a lot of heat! The 6400BG heatsink fits TO-220, TO-218, TO-247, and Multiwatt packages - which means it’s a great fit for the &lt;a href="http://www.sparkfun.com/commerce/product_info.php?products_id=9557"&gt;STA540&lt;/a&gt;, &lt;a href="http://www.sparkfun.com/commerce/product_info.php?products_id=9479"&gt;L298N&lt;/a&gt;, and all of our &lt;a href="http://www.sparkfun.com/commerce/advanced_search_result.php?keywords=TO-220+COM&amp;amp;x=21&amp;amp;y=16&amp;amp;search_section=products"&gt;T-220 package voltage regulators&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9576"&gt;Heat Sink - Multiwatt Package&lt;/a&gt; (PRT-09576)&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="6400GB_HEATSINK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="6400BG_HEATSINK">
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-09537"/>
+<attribute name="SF_SKU" value="PRT-09576"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STANDOFF_ELECTRICAL" prefix="H">
+<description>&lt;h3&gt;Stand Off&lt;/h3&gt;
+&lt;p&gt;Drill holes with an electrical connection. For example, use these to ground your board to a chassis.&lt;/p&gt;
+&lt;h4&gt;Example SparkFun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10453"&gt;Screw - Phillips Head (1/4", 4-40, 10 pack)&lt;/a&gt; (PRT-10453)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10452"&gt;Screw - Phillips Head (1/2", 4-40, 10 pack)&lt;/a&gt; (PRT-10452)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10451"&gt;Screw - Phillips Head (3/4", 4-40, 10 pack)&lt;/a&gt; (PRT-10451)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10450"&gt;Screw - Phillips Head (1", 4-40, 10 pack)&lt;/a&gt; (PRT-10450)&lt;/li&gt;</description>
+<gates>
+<gate name="G$1" symbol="STANDOFF_ELECTRICAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="STANDOFF-ELECTRICAL">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ACTOBOTICS" prefix="H">
+<description>&lt;h3&gt;Actobotics Reference Packages&lt;/h3&gt;
+&lt;p&gt;This device contains a variety of refrence packages that can be used to plan out a design using actobotics hardware.&lt;/p&gt;
+&lt;p&gt;Note, none of these packages have electrical conections (pins or pads), they are intended to be used for referencing drill spacing on Actobotics hardware.&lt;/p&gt;
+&lt;p&gt; It can take a lot of precise planning, measuring and calculating to mate a PCB design with the drill spacing of your projects hardware. &lt;/p&gt;
+&lt;p&gt; If you drop these packages into your eagle design, you can more easily know exactly where your drill hits should be.&lt;/p&gt;
+&lt;p&gt; Note, you could simply add these packages directly to your board file (without ever adding the "device" to your schematic). We created this device simple to make this collection of packages organized and more accessible &lt;/p&gt;
+&lt;p&gt; The "CHANNEL" packages simply have the outline of the Actobotics part, with some dotted lines to show the 1" and 0.5" grid points. If you set your grid to 0.75", then you can easlity place these various channels down to plan out your project.&lt;/p&gt;
+&lt;p&gt;The "SINGLE_DRILL_REF" package contains the actual drill hit positions. It also contains the diameter for each drill hit. Once you have your channels layed out, then you can drop some of these packages on top to see the drill hit spacing.&lt;/p&gt;
+&lt;p&gt;Note, all of these packages are drawn on the "tDocu" layer (51), so make sure that is turned on when viewing your design.&lt;/p&gt;
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12551"&gt;Aluminum Channel - 24"&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12616"&gt;Aluminum Channel - 18"&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12500"&gt;Aluminum Channel - 15"&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12221"&gt;Aluminum Channel - 12"&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12250"&gt;Aluminum Channel - 9.0"&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12164"&gt;Aluminum Channel - 6.0"&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12122"&gt;Aluminum Channel - 4.50"&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12169"&gt;Aluminum Channel - 3.75"&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12498"&gt; Aluminum Channel - 3.0"&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12383"&gt;Aluminum Channel - 1.50"&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="ACTOBOTICS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="12" package="ACTOBOTICS_CHANNEL_12&quot;">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="15" package="ACTOBOTICS_CHANNEL_15&quot;">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="18" package="ACTOBOTICS_CHANNEL_18&quot;">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="24" package="ACTOBOTICS_CHANNEL_24&quot;">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3" package="ACTOBOTICS_CHANNEL_3&quot;">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3.75" package="ACTOBOTICS_CHANNEL_3.75&quot;">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="4.5" package="ACTOBOTICS_CHANNEL_4.5&quot;">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="6" package="ACTOBOTICS_CHANNEL_6&quot;">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="9" package="ACTOBOTICS_CHANNEL_9&quot;">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SINGLE_DRILL_REF" package="ACTOBOTICS_CHANNEL_SINGLE_DRILL_REF">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
+</eagle>

@@ -6,12 +6,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 If you enjoy using this library, please buy one of our products at [SparkFun](http://www.sparkfun.com). 
 Please also note that we guarantee that there are some messed up footprints in this library. 
 We've tried to note which are proven and tested, but by downloading these files, you acknowledge that you are using the files at your own risk. 
-We cannot be held responsible for faulty PCBs. 
-Always check your parts against a 1:1 printout.
+
+**We cannot be held responsible for faulty PCBs. 
+Always check your parts against a 1:1 printout.**
 
 This is the complete SparkFun Electronics default foot prints for Eagle 6.0+. 
-We switched to Eagle back in 2006 and have been extremely impressed with its ease of use and flexibility. 
-As with any new software, it's like learning a new language and takes time. Do it. Eagle is great. 
 
 How to Use Eagle
 ----------------
@@ -24,15 +23,28 @@ If you need more information about how to use Eagle, checkout our Eagle Tutorial
 * [Creating Boards](https://learn.sparkfun.com/tutorials/using-eagle-board-layout)
 * [Designing Custom Footprints](https://learn.sparkfun.com/tutorials/designing-pcbs-smd-footprints)
 * [Creating Footprints from Digital Imagery](https://learn.sparkfun.com/tutorials/making-custom-footprints-in-eagle)
+* [Other SparkFun/Eagle Resources](https://www.sparkfun.com/eagle)
 
 How to use GitHub
 -----------------
 
-If you need help getting started using git, check out our GitHub tutorials:
+If you need help getting started using git/GitHub, check out our GitHub tutorials:
 * [Using GitHub](https://learn.sparkfun.com/tutorials/using-github)
 * [Using GitHub to Share with SparkFun](https://learn.sparkfun.com/tutorials/using-github-to-share-with-sparkfun)
 
+Want to Contribute?
+-------------------
+
+Check out our [Library Guidelines](https://github.com/sparkfun/SparkFun-Eagle-Libraries/wiki), create your part, and add it to our [UserSubmitted](https://github.com/sparkfun/SparkFun-Eagle-Libraries/blob/master/User-Submitted.lbr) library.
+
+If you discover a bug with an existing component, please submit an issue or pull request.
+
+Library Versions
+----------------
+
 The library associated with Eagle v5.11 and earlier is found [here](https://github.com/sparkfun/Old-SparkFun-Eagle-Library).
+If you would like to reference the library as it related to a particular version of Eagle, please check our tagged versions [here](https://github.com/sparkfun/SparkFun-Eagle-Libraries/releases). 
+
 
 License Information
 -------------------
