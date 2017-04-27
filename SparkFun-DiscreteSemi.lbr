@@ -2421,6 +2421,41 @@ Adjustable shunt regulator</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="LM385">
+<description>&lt;h3&gt;LM385 - Voltage Reference&lt;/h3&gt;</description>
+<gates>
+<gate name="G$1" symbol="DIODE-ZENER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT23" package="SOT23-3">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO92" package="TO-92">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SO8" package="SO08">
+<connects>
+<connect gate="G$1" pin="A" pad="8"/>
+<connect gate="G$1" pin="C" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="TL431" prefix="U">
 <description>&lt;h3&gt;TL431- Voltage Reference&lt;/h3&gt;
 &lt;p&gt;Precision Programmable Shunt Regulator Diode
@@ -2445,6 +2480,16 @@ Adjustable shunt regulator</description>
 <attribute name="PROD_ID" value="IC-10947" constant="no"/>
 <attribute name="SF_ID" value="COM-11078" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="SOT23" package="SOT23-3">
+<connects>
+<connect gate="G$1" pin="A" pad="3"/>
+<connect gate="G$1" pin="C" pad="1"/>
+<connect gate="G$1" pin="R" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
