@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -844,6 +844,16 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <wire x1="6.857" y1="5.057" x2="6.857" y2="3.706" width="0.2032" layer="21"/>
 <wire x1="6.857" y1="-3.706" x2="6.857" y2="-5.057" width="0.2032" layer="21"/>
 </package>
+<package name="AXIAL-2.0">
+<wire x1="-22.86" y1="-5.08" x2="-22.86" y2="5.08" width="0.127" layer="21"/>
+<wire x1="-22.86" y1="5.08" x2="24.13" y2="5.08" width="0.127" layer="21"/>
+<wire x1="24.13" y1="5.08" x2="24.13" y2="-5.08" width="0.127" layer="21"/>
+<wire x1="24.13" y1="-5.08" x2="-22.86" y2="-5.08" width="0.127" layer="21"/>
+<pad name="P$1" x="-25.4" y="0" drill="0.8" diameter="1.778" shape="square"/>
+<pad name="P$2" x="26.67" y="0" drill="0.8" diameter="1.778" shape="square"/>
+<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -1144,6 +1154,15 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <attribute name="PROD_ID" value="RES-08269"/>
 <attribute name="VALUE" value="1"/>
 </technology>
+</technologies>
+</device>
+<device name="-AXIAL-2.0-10W-5%" package="AXIAL-2.0">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
