@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1387,6 +1387,20 @@ Pasted was reduced by 40% width on the center ground pad, and some amount on the
 <rectangle x1="0.1" y1="-2.375" x2="0.3" y2="-1.575" layer="31" rot="R180"/>
 <rectangle x1="0.5" y1="-2.375" x2="0.7" y2="-1.575" layer="31" rot="R180"/>
 <rectangle x1="0.9" y1="-2.375" x2="1.1" y2="-1.575" layer="31" rot="R180"/>
+</package>
+<package name="DC-DC_CONVERTER_78XX">
+<wire x1="5.849440625" y1="6.49848125" x2="-5.750559375" y2="6.49848125" width="0.127" layer="21"/>
+<wire x1="-5.750559375" y1="6.49848125" x2="-5.750559375" y2="-2.00151875" width="0.127" layer="21"/>
+<wire x1="-5.750559375" y1="-2.00151875" x2="5.849440625" y2="-2.00151875" width="0.127" layer="21"/>
+<wire x1="5.849440625" y1="-2.00151875" x2="5.849440625" y2="6.49848125" width="0.127" layer="21"/>
+<pad name="VIN" x="-2.54" y="0" drill="0.8" rot="R180"/>
+<pad name="GND" x="0" y="0" drill="0.8" rot="R180"/>
+<pad name="VOUT" x="2.54" y="0" drill="0.8" rot="R180"/>
+<text x="-4.750559375" y="7.09548125" size="1.27" layer="25">&gt;NAME</text>
+<text x="-4.734559375" y="-3.93851875" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.890559375" y1="-0.12651875" x2="-2.190559375" y2="0.12348125" layer="51"/>
+<rectangle x1="-0.350559375" y1="-0.12651875" x2="0.349440625" y2="0.12348125" layer="51"/>
+<rectangle x1="2.189440625" y1="-0.12651875" x2="2.889440625" y2="0.12348125" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -2943,6 +2957,41 @@ LM3880MF-1XY (Timing Designator)
 <technology name="">
 <attribute name="PROD_ID" value="VREG-13321" constant="no"/>
 <attribute name="VALUE" value="SPX3819M5_3_3" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="R-78E5.0-1.0" prefix="U">
+<description>&lt;H3&gt;Recom Power 5V 1A DC/DC Converter&lt;/H3&gt;
+
+The Recom R-78E5.0-X.X is a compact DC/DC converter module that is a pin for pin drop-in replacement for the LM7805 linear voltage regulator. &lt;br&gt;&lt;br&gt;
+
+Specifications:
+&lt;ul&gt;
+&lt;li&gt;Input Range: 7-28V&lt;/li&gt;
+&lt;li&gt;Output Voltage: 5V&lt;/li&gt;
+&lt;li&gt;Output Current: 1A&lt;/li&gt;
+&lt;li&gt;Max Efficiency: 91%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;
+
+&lt;br&gt;
+
+&lt;a href="https://www.recom-power.com/pdf/Innoline/R-78Exx-1.0.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="78XX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DC-DC_CONVERTER_78XX">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="IN" pad="VIN"/>
+<connect gate="G$1" pin="OUT" pad="VOUT"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="COM-13655"/>
 </technology>
 </technologies>
 </device>
