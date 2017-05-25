@@ -1887,6 +1887,22 @@ Pasted was reduced by 40% width on the center ground pad, and some amount on the
 <text x="-7.62" y="8.128" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="-7.62" y="-8.128" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
 </symbol>
+<symbol name="PAM2401">
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<pin name="AGND" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="EN" x="-12.7" y="-5.08" length="short"/>
+<pin name="FB" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="LX" x="12.7" y="10.16" length="short" rot="R180"/>
+<pin name="OUT" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="PGND" x="12.7" y="-10.16" length="short" rot="R180"/>
+<pin name="RSET" x="-12.7" y="-10.16" length="short"/>
+<pin name="VIN" x="-12.7" y="10.16" length="short"/>
+<text x="-5.08" y="14.224" size="1.778" layer="95">&gt;NAME</text>
+<text x="-4.826" y="-16.002" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DC-DC_CONVERTER">
@@ -2992,6 +3008,39 @@ Specifications:
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="COM-13655"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PAM2401">
+<description>&lt;h3&gt;PAM2401 - Boost PMIC&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Up to 1A output current&lt;/li&gt;
+&lt;li&gt;0.9V to 4.75V Input Range &lt;/li&gt;
+&lt;li&gt;2.5V to 5.0V Adjustable Output Voltage&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://www.diodes.com/assets/Datasheets/PAM2401.pdf”&gt;Datasheet&lt;/a&gt; (Diodes inc.)&lt;/p&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="PAM2401" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MSOP8">
+<connects>
+<connect gate="G$1" pin="AGND" pad="4"/>
+<connect gate="G$1" pin="EN" pad="2"/>
+<connect gate="G$1" pin="FB" pad="5"/>
+<connect gate="G$1" pin="LX" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="7"/>
+<connect gate="G$1" pin="PGND" pad="8"/>
+<connect gate="G$1" pin="RSET" pad="6"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-XXXXX" constant="no"/>
+<attribute name="VALUE" value="PAM2401" constant="no"/>
 </technology>
 </technologies>
 </device>
