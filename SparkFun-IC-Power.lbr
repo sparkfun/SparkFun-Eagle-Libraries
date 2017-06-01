@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1388,6 +1388,20 @@ Pasted was reduced by 40% width on the center ground pad, and some amount on the
 <rectangle x1="0.5" y1="-2.375" x2="0.7" y2="-1.575" layer="31" rot="R180"/>
 <rectangle x1="0.9" y1="-2.375" x2="1.1" y2="-1.575" layer="31" rot="R180"/>
 </package>
+<package name="DC-DC_CONVERTER_78XX">
+<wire x1="5.849440625" y1="6.49848125" x2="-5.750559375" y2="6.49848125" width="0.127" layer="21"/>
+<wire x1="-5.750559375" y1="6.49848125" x2="-5.750559375" y2="-2.00151875" width="0.127" layer="21"/>
+<wire x1="-5.750559375" y1="-2.00151875" x2="5.849440625" y2="-2.00151875" width="0.127" layer="21"/>
+<wire x1="5.849440625" y1="-2.00151875" x2="5.849440625" y2="6.49848125" width="0.127" layer="21"/>
+<pad name="VIN" x="-2.54" y="0" drill="0.8" rot="R180"/>
+<pad name="GND" x="0" y="0" drill="0.8" rot="R180"/>
+<pad name="VOUT" x="2.54" y="0" drill="0.8" rot="R180"/>
+<text x="-4.750559375" y="7.09548125" size="1.27" layer="25">&gt;NAME</text>
+<text x="-4.734559375" y="-3.93851875" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.890559375" y1="-0.12651875" x2="-2.190559375" y2="0.12348125" layer="51"/>
+<rectangle x1="-0.350559375" y1="-0.12651875" x2="0.349440625" y2="0.12348125" layer="51"/>
+<rectangle x1="2.189440625" y1="-0.12651875" x2="2.889440625" y2="0.12348125" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DC-DC_CONVERTER">
@@ -1872,6 +1886,22 @@ Pasted was reduced by 40% width on the center ground pad, and some amount on the
 <pin name="OUT" x="7.62" y="5.08" visible="pin" length="short" direction="pas" rot="R180"/>
 <text x="-7.62" y="8.128" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="-7.62" y="-8.128" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+</symbol>
+<symbol name="PAM2401">
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<pin name="AGND" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="EN" x="-12.7" y="-5.08" length="short"/>
+<pin name="FB" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="LX" x="12.7" y="10.16" length="short" rot="R180"/>
+<pin name="OUT" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="PGND" x="12.7" y="-10.16" length="short" rot="R180"/>
+<pin name="RSET" x="-12.7" y="-10.16" length="short"/>
+<pin name="VIN" x="-12.7" y="10.16" length="short"/>
+<text x="-5.08" y="14.224" size="1.778" layer="95">&gt;NAME</text>
+<text x="-4.826" y="-16.002" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2943,6 +2973,74 @@ LM3880MF-1XY (Timing Designator)
 <technology name="">
 <attribute name="PROD_ID" value="VREG-13321" constant="no"/>
 <attribute name="VALUE" value="SPX3819M5_3_3" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="R-78E5.0-1.0" prefix="U">
+<description>&lt;H3&gt;Recom Power 5V 1A DC/DC Converter&lt;/H3&gt;
+
+The Recom R-78E5.0-X.X is a compact DC/DC converter module that is a pin for pin drop-in replacement for the LM7805 linear voltage regulator. &lt;br&gt;&lt;br&gt;
+
+Specifications:
+&lt;ul&gt;
+&lt;li&gt;Input Range: 7-28V&lt;/li&gt;
+&lt;li&gt;Output Voltage: 5V&lt;/li&gt;
+&lt;li&gt;Output Current: 1A&lt;/li&gt;
+&lt;li&gt;Max Efficiency: 91%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;b&gt;
+
+&lt;br&gt;
+
+&lt;a href="https://www.recom-power.com/pdf/Innoline/R-78Exx-1.0.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="78XX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DC-DC_CONVERTER_78XX">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="IN" pad="VIN"/>
+<connect gate="G$1" pin="OUT" pad="VOUT"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="COM-13655"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PAM2401">
+<description>&lt;h3&gt;PAM2401 - Boost PMIC&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Up to 1A output current&lt;/li&gt;
+&lt;li&gt;0.9V to 4.75V Input Range &lt;/li&gt;
+&lt;li&gt;2.5V to 5.0V Adjustable Output Voltage&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://www.diodes.com/assets/Datasheets/PAM2401.pdf”&gt;Datasheet&lt;/a&gt; (Diodes inc.)&lt;/p&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="PAM2401" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MSOP8">
+<connects>
+<connect gate="G$1" pin="AGND" pad="4"/>
+<connect gate="G$1" pin="EN" pad="2"/>
+<connect gate="G$1" pin="FB" pad="5"/>
+<connect gate="G$1" pin="LX" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="7"/>
+<connect gate="G$1" pin="PGND" pad="8"/>
+<connect gate="G$1" pin="RSET" pad="6"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-XXXXX" constant="no"/>
+<attribute name="VALUE" value="PAM2401" constant="no"/>
 </technology>
 </technologies>
 </device>
