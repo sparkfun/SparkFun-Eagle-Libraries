@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -12381,10 +12381,10 @@ Extended soldering pads.
 <wire x1="1.5" y1="0.7" x2="1.3" y2="0.7" width="0.127" layer="21"/>
 <wire x1="1.5" y1="-0.7" x2="1.3" y2="-0.7" width="0.127" layer="21"/>
 <wire x1="1.5" y1="-2" x2="1.3" y2="-2" width="0.127" layer="21"/>
-<smd name="P$1" x="0" y="1.375" dx="2.2" dy="0.85" layer="1"/>
-<smd name="P$2" x="0" y="-1.375" dx="2.2" dy="0.85" layer="1"/>
-<smd name="P$3" x="1.525" y="0" dx="1.05" dy="1" layer="1"/>
-<smd name="P$4" x="-1.525" y="0" dx="1.05" dy="1" layer="1"/>
+<smd name="1" x="0" y="1.375" dx="2.2" dy="0.85" layer="1"/>
+<smd name="2" x="0" y="-1.375" dx="2.2" dy="0.85" layer="1"/>
+<smd name="FEED" x="1.525" y="0" dx="1.05" dy="1" layer="1"/>
+<smd name="NC" x="-1.525" y="0" dx="1.05" dy="1" layer="1"/>
 <text x="-1.27" y="2.54" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.27" y="-2.54" size="0.6096" layer="27" font="vector" ratio="20" align="top-left">&gt;VALUE</text>
 </package>
@@ -21231,6 +21231,14 @@ This type of connector and cable is frequently used for transmitting midi data (
 <text x="-4.572" y="-2.54" size="1.778" layer="94" font="vector" align="center-left">GND</text>
 <text x="-4.572" y="5.08" size="1.778" layer="94" font="vector" align="center-left">SCL</text>
 </symbol>
+<symbol name="U.FL-1">
+<circle x="0" y="0" radius="1.1359" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<pin name="GND" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="SIGNAL" x="5.08" y="0" visible="off" length="middle" rot="R180"/>
+<text x="2.54" y="-5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-7.62" size="1.778" layer="96">&gt;Value</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="6_PIN_SERIAL_TARGET" prefix="J" uservalue="yes">
@@ -23045,7 +23053,9 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-12382" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -27186,9 +27196,9 @@ Unfortunately, we no longer sell the &lt;a href="https://www.sparkfun.com/produc
 <devices>
 <device name="" package="U.FL">
 <connects>
-<connect gate="G$1" pin="GND@0" pad="P$1"/>
-<connect gate="G$1" pin="GND@1" pad="P$2"/>
-<connect gate="G$1" pin="SIGNAL" pad="P$3"/>
+<connect gate="G$1" pin="GND@0" pad="1"/>
+<connect gate="G$1" pin="GND@1" pad="2"/>
+<connect gate="G$1" pin="SIGNAL" pad="FEED"/>
 </connects>
 <technologies>
 <technology name="">
@@ -28547,6 +28557,20 @@ to be daisy chained easily.&lt;/p&gt;
 <technology name=""/>
 </technologies>
 </device>
+<device name="QWIIC" package="1X04_1MM_RA">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-13729" constant="no"/>
+<attribute name="VALUE" value="Qwiic Right Angle" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CONN_20X2" prefix="J">
@@ -29604,6 +29628,33 @@ We carry &lt;a href=”https://www.sparkfun.com/products/14204”&gt;200mm&lt;/a
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="U.FL2PIN" prefix="J" uservalue="yes">
+<description>&lt;h3&gt;SMD Antenna Connector - U.FL&lt;/h3&gt;
+&lt;p&gt;2mm height, 3.0mm x 3.0mm receptacle size. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13287"&gt;SparkFun WiFi Shield - ESP8266&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13231”&gt;SparkFun ESP8266 Thing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/11420”&gt;SparkFun MiniGen - Pro Mini Signal Generator Shield&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="U.FL-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="U.FL">
+<connects>
+<connect gate="G$1" pin="GND" pad="1 2"/>
+<connect gate="G$1" pin="SIGNAL" pad="FEED"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-09193"/>
+<attribute name="SF_ID" value="WRL-09144" constant="no"/>
+<attribute name="VALUE" value="U.FL"/>
+</technology>
 </technologies>
 </device>
 </devices>
