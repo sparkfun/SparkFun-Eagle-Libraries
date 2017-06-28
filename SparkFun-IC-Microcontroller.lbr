@@ -6698,23 +6698,143 @@ Prototype in process!  Do keep!</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PSOC6_6347BZI">
+<deviceset name="PSOC6_6347BZI" prefix="U">
 <description>PSoC6 with Dual core M0+, M4, BLE &lt;br&gt;
 
 1MB Flash, 288k SRAM, BGA-116 pkg</description>
 <gates>
-<gate name="G$1" symbol="CY8C6347BZI_ASST" x="7.62" y="10.16"/>
-<gate name="G$2" symbol="CY8C6347BZI_P0_P1" x="7.62" y="-17.78"/>
-<gate name="G$3" symbol="CY8C6347BZI_SUPPLY" x="-38.1" y="-45.72"/>
-<gate name="G$5" symbol="CY8C6347BZI_VDDA" x="7.62" y="-50.8"/>
-<gate name="G$6" symbol="CY8C6347BZI_VDDD" x="43.18" y="-45.72"/>
-<gate name="G$7" symbol="CY8C6347BZI_VDDIO0" x="43.18" y="-20.32"/>
-<gate name="G$8" symbol="CY8C6347BZI_VDDIO1" x="81.28" y="-43.18"/>
+<gate name="G1" symbol="CY8C6347BZI_ASST" x="7.62" y="10.16"/>
+<gate name="G2" symbol="CY8C6347BZI_P0_P1" x="7.62" y="-17.78"/>
+<gate name="G3" symbol="CY8C6347BZI_SUPPLY" x="-38.1" y="-45.72"/>
+<gate name="G5" symbol="CY8C6347BZI_VDDA" x="7.62" y="-50.8"/>
+<gate name="G6" symbol="CY8C6347BZI_VDDD" x="43.18" y="-45.72"/>
+<gate name="G7" symbol="CY8C6347BZI_VDDIO0" x="43.18" y="-20.32"/>
+<gate name="G8" symbol="CY8C6347BZI_VDDIO1" x="81.28" y="-43.18"/>
 </gates>
 <devices>
 <device name="" package="BGA-116">
+<connects>
+<connect gate="G1" pin="ANT" pad="K1"/>
+<connect gate="G1" pin="XI" pad="M4"/>
+<connect gate="G1" pin="XO" pad="M5"/>
+<connect gate="G2" pin="P0.0" pad="C2"/>
+<connect gate="G2" pin="P0.1" pad="D3"/>
+<connect gate="G2" pin="P0.2" pad="E4"/>
+<connect gate="G2" pin="P0.3" pad="E3"/>
+<connect gate="G2" pin="P0.4" pad="F3"/>
+<connect gate="G2" pin="P0.5" pad="D2"/>
+<connect gate="G2" pin="V_BACKUP" pad="C1"/>
+<connect gate="G3" pin="DVDD" pad="M6"/>
+<connect gate="G3" pin="VBUCK1" pad="G2"/>
+<connect gate="G3" pin="VCCD" pad="A2"/>
+<connect gate="G3" pin="VDCDC" pad="M7"/>
+<connect gate="G3" pin="VDDR1" pad="L2"/>
+<connect gate="G3" pin="VDDR2" pad="M1"/>
+<connect gate="G3" pin="VDDR3" pad="M2"/>
+<connect gate="G3" pin="VDDR_HVL" pad="L7"/>
+<connect gate="G3" pin="VDD_NS" pad="H3"/>
+<connect gate="G3" pin="VIND1" pad="F1"/>
+<connect gate="G3" pin="VIND2" pad="G1"/>
+<connect gate="G3" pin="VREF" pad="B10"/>
+<connect gate="G3" pin="VRF" pad="H1"/>
+<connect gate="G3" pin="VSSR_0" pad="J1"/>
+<connect gate="G3" pin="VSSR_1" pad="K2"/>
+<connect gate="G3" pin="VSSR_10" pad="M8"/>
+<connect gate="G3" pin="VSSR_2" pad="K3"/>
+<connect gate="G3" pin="VSSR_3" pad="K4"/>
+<connect gate="G3" pin="VSSR_4" pad="K5"/>
+<connect gate="G3" pin="VSSR_5" pad="L1"/>
+<connect gate="G3" pin="VSSR_6" pad="L3"/>
+<connect gate="G3" pin="VSSR_7" pad="L4"/>
+<connect gate="G3" pin="VSSR_8" pad="L5"/>
+<connect gate="G3" pin="VSSR_9" pad="M3"/>
+<connect gate="G3" pin="VSS_0" pad="B2"/>
+<connect gate="G3" pin="VSS_1" pad="B9"/>
+<connect gate="G3" pin="VSS_2" pad="D1"/>
+<connect gate="G3" pin="VSS_3" pad="H2"/>
+<connect gate="G3" pin="VSS_4" pad="H9"/>
+<connect gate="G3" pin="XRES" pad="E2"/>
+<connect gate="G5" pin="P10.0" pad="B8"/>
+<connect gate="G5" pin="P10.1" pad="A8"/>
+<connect gate="G5" pin="P10.2" pad="F6"/>
+<connect gate="G5" pin="P10.3" pad="E6"/>
+<connect gate="G5" pin="P10.4" pad="D6"/>
+<connect gate="G5" pin="P10.5" pad="B7"/>
+<connect gate="G5" pin="P10.6" pad="A7"/>
+<connect gate="G5" pin="P9.0" pad="D10"/>
+<connect gate="G5" pin="P9.1" pad="D9"/>
+<connect gate="G5" pin="P9.2" pad="D8"/>
+<connect gate="G5" pin="P9.3" pad="D7"/>
+<connect gate="G5" pin="P9.4" pad="C10"/>
+<connect gate="G5" pin="P9.5" pad="C9"/>
+<connect gate="G5" pin="P9.6" pad="C8"/>
+<connect gate="G5" pin="P9.7" pad="C7"/>
+<connect gate="G5" pin="VDDA" pad="A9"/>
+<connect gate="G6" pin="P1.0" pad="G3"/>
+<connect gate="G6" pin="P1.1" pad="F2"/>
+<connect gate="G6" pin="P1.2" pad="J5"/>
+<connect gate="G6" pin="P1.3" pad="J4"/>
+<connect gate="G6" pin="P1.4" pad="J3"/>
+<connect gate="G6" pin="P1.5" pad="J2"/>
+<connect gate="G6" pin="VDDD" pad="B1"/>
+<connect gate="G7" pin="P11.0" pad="F5"/>
+<connect gate="G7" pin="P11.1" pad="E5"/>
+<connect gate="G7" pin="P11.2" pad="D5"/>
+<connect gate="G7" pin="P11.3" pad="C6"/>
+<connect gate="G7" pin="P11.4" pad="B6"/>
+<connect gate="G7" pin="P11.5" pad="A6"/>
+<connect gate="G7" pin="P11.6" pad="B5"/>
+<connect gate="G7" pin="P11.7" pad="A5"/>
+<connect gate="G7" pin="P12.0" pad="A4"/>
+<connect gate="G7" pin="P12.1" pad="B4"/>
+<connect gate="G7" pin="P12.2" pad="C4"/>
+<connect gate="G7" pin="P12.3" pad="A3"/>
+<connect gate="G7" pin="P12.4" pad="C5"/>
+<connect gate="G7" pin="P12.5" pad="D4"/>
+<connect gate="G7" pin="P12.6" pad="G5"/>
+<connect gate="G7" pin="P12.7" pad="H5"/>
+<connect gate="G7" pin="P13.0" pad="H4"/>
+<connect gate="G7" pin="P13.1" pad="G4"/>
+<connect gate="G7" pin="P13.6" pad="F4"/>
+<connect gate="G7" pin="P13.7" pad="C3"/>
+<connect gate="G7" pin="VDDIO0" pad="B3"/>
+<connect gate="G8" pin="P5.0" pad="L6"/>
+<connect gate="G8" pin="P5.1" pad="K6"/>
+<connect gate="G8" pin="P5.2" pad="J6"/>
+<connect gate="G8" pin="P5.3" pad="K7"/>
+<connect gate="G8" pin="P5.4" pad="J7"/>
+<connect gate="G8" pin="P5.5" pad="L8"/>
+<connect gate="G8" pin="P5.6" pad="M9"/>
+<connect gate="G8" pin="P6.0" pad="K8"/>
+<connect gate="G8" pin="P6.1" pad="J8"/>
+<connect gate="G8" pin="P6.2" pad="L9"/>
+<connect gate="G8" pin="P6.3" pad="K9"/>
+<connect gate="G8" pin="P6.4" pad="J9"/>
+<connect gate="G8" pin="P6.5" pad="M10"/>
+<connect gate="G8" pin="P6.6" pad="L10"/>
+<connect gate="G8" pin="P6.7" pad="K10"/>
+<connect gate="G8" pin="P7.0" pad="J10"/>
+<connect gate="G8" pin="P7.1" pad="H10"/>
+<connect gate="G8" pin="P7.2" pad="H8"/>
+<connect gate="G8" pin="P7.3" pad="H7"/>
+<connect gate="G8" pin="P7.4" pad="H6"/>
+<connect gate="G8" pin="P7.5" pad="G9"/>
+<connect gate="G8" pin="P7.6" pad="G8"/>
+<connect gate="G8" pin="P7.7" pad="G7"/>
+<connect gate="G8" pin="P8.0" pad="F10"/>
+<connect gate="G8" pin="P8.1" pad="F9"/>
+<connect gate="G8" pin="P8.2" pad="F8"/>
+<connect gate="G8" pin="P8.3" pad="F7"/>
+<connect gate="G8" pin="P8.4" pad="G6"/>
+<connect gate="G8" pin="P8.5" pad="E9"/>
+<connect gate="G8" pin="P8.6" pad="E8"/>
+<connect gate="G8" pin="P8.7" pad="E7"/>
+<connect gate="G8" pin="VDDIO1" pad="G10"/>
+</connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="VALUE" value="CY8C6347BZI"/>
+</technology>
 </technologies>
 </device>
 </devices>
