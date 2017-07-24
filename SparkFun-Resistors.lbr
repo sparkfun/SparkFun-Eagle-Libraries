@@ -854,6 +854,10 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="2512">
+<smd name="P$1" x="-3.175" y="0" dx="3.175" dy="1.27" layer="1" rot="R90"/>
+<smd name="P$2" x="3.175" y="0" dx="3.175" dy="1.27" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -3396,6 +3400,18 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="RES-12535"/>
+<attribute name="VALUE" value="0.05"/>
+</technology>
+</technologies>
+</device>
+<device name="-2512-3W-1%" package="2512">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-13771"/>
 <attribute name="VALUE" value="0.05"/>
 </technology>
 </technologies>
