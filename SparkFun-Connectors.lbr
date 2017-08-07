@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -15710,14 +15710,16 @@ Banana-jack compatible post
 <circle x="0" y="0" radius="5.5" width="0.127" layer="39"/>
 <circle x="0" y="0" radius="5.5" width="0.254" layer="21"/>
 <wire x1="0.5" y1="3.5" x2="-0.5" y2="3.5" width="0.127" layer="20"/>
-<wire x1="0.5" y1="-3.5" x2="4" y2="0" width="0.127" layer="21" curve="90"/>
-<wire x1="4" y1="0" x2="0.5" y2="3.5" width="0.127" layer="21" curve="90"/>
-<wire x1="-0.5" y1="3.5" x2="-4" y2="0" width="0.127" layer="21" curve="90"/>
-<wire x1="0.5" y1="3.5" x2="-0.5" y2="3.5" width="0.127" layer="21"/>
-<wire x1="-4" y1="0" x2="-0.5" y2="-3.5" width="0.127" layer="21" curve="90"/>
-<wire x1="-0.5" y1="-3.5" x2="0.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-3.5" x2="4" y2="0" width="0.127" layer="20" curve="90"/>
+<wire x1="4" y1="0" x2="0.5" y2="3.5" width="0.127" layer="20" curve="90"/>
+<wire x1="-0.5" y1="3.5" x2="-4" y2="0" width="0.127" layer="20" curve="90"/>
+<wire x1="0.5" y1="3.5" x2="-0.5" y2="3.5" width="0.127" layer="20"/>
+<wire x1="-4" y1="0" x2="-0.5" y2="-3.5" width="0.127" layer="20" curve="90"/>
+<wire x1="-0.5" y1="-3.5" x2="0.5" y2="-3.5" width="0.127" layer="20"/>
 <text x="-1.27" y="9.017" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.27" y="-7.112" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<text x="-2.54" y="-1.905" size="1.27" layer="20">ROUTE
+OUT</text>
 </package>
 <package name="1X04_SMD_RA_FEMALE">
 <description>&lt;h3&gt;SMD - 4 Pin Right-Angle Female Header&lt;/h3&gt;
@@ -29778,4 +29780,10 @@ JST-SH type.
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
