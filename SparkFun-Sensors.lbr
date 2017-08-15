@@ -11827,6 +11827,37 @@ NC pin 19. 2-6 &amp; 14-17 not internally connected. May be used for PCB trace r
 </device>
 </devices>
 </deviceset>
+<deviceset name="H3LIS331DL" prefix="U">
+<gates>
+<gate name="G$1" symbol="LIS331" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LGA-16-3X3">
+<connects>
+<connect gate="G$1" pin="CS" pad="8"/>
+<connect gate="G$1" pin="GND@12" pad="12"/>
+<connect gate="G$1" pin="GND@13" pad="13"/>
+<connect gate="G$1" pin="GND@16" pad="16"/>
+<connect gate="G$1" pin="GND@5" pad="5"/>
+<connect gate="G$1" pin="GNDR" pad="10"/>
+<connect gate="G$1" pin="INT1" pad="11"/>
+<connect gate="G$1" pin="INT2" pad="9"/>
+<connect gate="G$1" pin="SA0/SDO" pad="7"/>
+<connect gate="G$1" pin="SCL/SPC" pad="4"/>
+<connect gate="G$1" pin="SDA/SDI" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="14"/>
+<connect gate="G$1" pin="VDDIO" pad="1"/>
+<connect gate="G$1" pin="VDDR" pad="15"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-13786"/>
+<attribute name="VALUE" value="H3LIS331DL"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
