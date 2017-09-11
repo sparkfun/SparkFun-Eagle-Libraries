@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -14424,52 +14424,25 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="1.8796" y1="-7.9502" x2="5.461" y2="-7.9502" width="0.127" layer="21"/>
 </package>
 <package name="HTSSOP32">
+<description>&lt;h3&gt;[HTSSOP-32] - [Package for the TLC5947 PWM driver]&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: [32]&lt;/li&gt;
+&lt;li&gt;Pin pitch: [0.65 mm]&lt;/li&gt;
+&lt;li&gt;Area: [11.00 mm x 6.20 mm]&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=http://www.ti.com/lit/ds/symlink/tlc5947.pdf&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;[TLC5947]&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <wire x1="5.5" y1="2.6" x2="-5.5" y2="2.6" width="0.127" layer="21"/>
 <wire x1="5.5" y1="-2.6" x2="-5.5" y2="-2.6" width="0.127" layer="21"/>
-<wire x1="5.5" y1="2.5" x2="5.5" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="-5.5" y1="2.5" x2="-5.5" y2="0.5" width="0.127" layer="21"/>
+<wire x1="5.5" y1="2.6" x2="5.5" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="2.6" x2="-5.5" y2="0.5" width="0.127" layer="21"/>
 <wire x1="-5.5" y1="0.5" x2="-5" y2="0" width="0.127" layer="21" curve="-90"/>
 <wire x1="-5" y1="0" x2="-5.5" y2="-0.5" width="0.127" layer="21" curve="-90"/>
-<wire x1="-5.5" y1="-0.5" x2="-5.5" y2="-2.5" width="0.127" layer="21"/>
-<wire x1="-6" y1="-2.75" x2="-5.75" y2="-3" width="0.127" layer="21" curve="-90"/>
-<wire x1="-5.75" y1="-3" x2="-6" y2="-3.25" width="0.127" layer="21" curve="-90"/>
-<wire x1="-6" y1="-3.25" x2="-6.25" y2="-3" width="0.127" layer="21" curve="-90"/>
-<wire x1="-6.25" y1="-3" x2="-6" y2="-2.75" width="0.127" layer="21" curve="-90"/>
+<wire x1="-5.5" y1="-0.5" x2="-5.5" y2="-2.6" width="0.127" layer="21"/>
 <rectangle x1="-2.18" y1="-2.055" x2="2.18" y2="2.055" layer="29"/>
 <rectangle x1="-2" y1="-1.875" x2="2" y2="1.875" layer="31"/>
-<pad name="P$1" x="-4.55" y="1.95" drill="0.381" stop="no"/>
-<pad name="P$2" x="-4.55" y="0.65" drill="0.381" stop="no"/>
-<pad name="P$3" x="-4.55" y="-0.65" drill="0.381" stop="no"/>
-<pad name="P$4" x="-4.55" y="-1.95" drill="0.381" stop="no"/>
-<pad name="P$5" x="-3.25" y="-1.95" drill="0.381" stop="no"/>
-<pad name="P$6" x="-3.25" y="-0.65" drill="0.381" stop="no"/>
-<pad name="P$7" x="-3.25" y="0.65" drill="0.381" stop="no"/>
-<pad name="P$8" x="-3.25" y="1.95" drill="0.381" stop="no"/>
-<pad name="P$9" x="-1.95" y="-1.95" drill="0.381" stop="no"/>
-<pad name="P$10" x="-0.65" y="-1.95" drill="0.381" stop="no"/>
-<pad name="P$11" x="-0.65" y="-0.65" drill="0.381" stop="no"/>
-<pad name="P$12" x="-0.65" y="0.65" drill="0.381" stop="no"/>
-<pad name="P$13" x="-0.65" y="1.95" drill="0.381" stop="no"/>
-<pad name="P$14" x="-1.95" y="1.95" drill="0.381" stop="no"/>
-<pad name="P$15" x="-1.95" y="0.65" drill="0.381" stop="no"/>
-<pad name="P$16" x="-1.95" y="-0.65" drill="0.381" stop="no"/>
-<pad name="P$17" x="0.65" y="1.95" drill="0.381" stop="no"/>
-<pad name="P$18" x="1.95" y="1.95" drill="0.381" stop="no"/>
-<pad name="P$19" x="3.25" y="1.95" drill="0.381" stop="no"/>
-<pad name="P$20" x="4.55" y="1.95" drill="0.381" stop="no"/>
-<pad name="P$21" x="0.65" y="0.65" drill="0.381" stop="no"/>
-<pad name="P$22" x="0.65" y="-0.65" drill="0.381" stop="no"/>
-<pad name="P$23" x="0.65" y="-1.95" drill="0.381" stop="no"/>
-<pad name="P$24" x="1.95" y="0.65" drill="0.381" stop="no"/>
-<pad name="P$25" x="3.25" y="0.65" drill="0.381" stop="no"/>
-<pad name="P$26" x="4.55" y="0.65" drill="0.381" stop="no"/>
-<pad name="P$27" x="1.95" y="-0.65" drill="0.381" stop="no"/>
-<pad name="P$28" x="1.95" y="-1.95" drill="0.381" stop="no"/>
-<pad name="P$29" x="3.25" y="-1.95" drill="0.381" stop="no"/>
-<pad name="P$30" x="3.25" y="-0.65" drill="0.381" stop="no"/>
-<pad name="P$31" x="4.55" y="-0.65" drill="0.381" stop="no"/>
-<pad name="P$32" x="4.55" y="-1.95" drill="0.381" stop="no"/>
-<rectangle x1="-2.18" y1="-2.055" x2="2.18" y2="2.055" layer="1"/>
 <rectangle x1="-5.025" y1="-4.6" x2="-4.725" y2="-2.8" layer="29"/>
 <rectangle x1="-5.025" y1="2.8" x2="-4.725" y2="4.6" layer="29"/>
 <rectangle x1="-4.375" y1="2.8" x2="-4.075" y2="4.6" layer="29"/>
@@ -14567,6 +14540,43 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="XLAT" x="-3.575" y="3.7" dx="0.3" dy="1.8" layer="1" stop="no" cream="no"/>
 <smd name="IREF" x="-4.225" y="3.7" dx="0.3" dy="1.8" layer="1" stop="no" cream="no"/>
 <smd name="VCC" x="-4.875" y="3.7" dx="0.3" dy="1.8" layer="1" stop="no" cream="no"/>
+<text x="0" y="-5.08" size="0.6096" layer="25" font="vector" ratio="20" align="center">&gt;Name</text>
+<text x="0" y="5.08" size="0.6096" layer="27" font="vector" ratio="20" align="center">&gt;Value</text>
+<circle x="-5.842" y="-2.794" radius="0.127" width="0" layer="21"/>
+<rectangle x1="-5.5508" y1="-4.6508" x2="5.5508" y2="4.6508" layer="39"/>
+<smd name="EPAD" x="0" y="0" dx="4.36" dy="4.11" layer="1" stop="no" cream="no"/>
+<pad name="P$1" x="-0.65" y="-0.65" drill="0.381"/>
+<pad name="P$2" x="-0.65" y="-1.95" drill="0.381"/>
+<pad name="P$3" x="-0.65" y="0.65" drill="0.381"/>
+<pad name="P$4" x="-0.65" y="1.95" drill="0.381"/>
+<pad name="P$5" x="0.65" y="1.95" drill="0.381"/>
+<pad name="P$6" x="0.65" y="0.65" drill="0.381"/>
+<pad name="P$7" x="0.65" y="-0.65" drill="0.381"/>
+<pad name="P$8" x="0.65" y="-1.95" drill="0.381"/>
+<pad name="P$9" x="1.95" y="-1.95" drill="0.381"/>
+<pad name="P$10" x="1.95" y="-0.65" drill="0.381"/>
+<pad name="P$11" x="3.25" y="-1.95" drill="0.381"/>
+<pad name="P$12" x="4.55" y="-1.95" drill="0.381"/>
+<pad name="P$13" x="-1.95" y="-1.95" drill="0.381"/>
+<pad name="P$14" x="-3.25" y="-1.95" drill="0.381"/>
+<pad name="P$15" x="-4.55" y="-1.95" drill="0.381"/>
+<pad name="P$16" x="-4.55" y="-0.65" drill="0.381"/>
+<pad name="P$17" x="-4.55" y="0.65" drill="0.381"/>
+<pad name="P$18" x="-4.55" y="1.95" drill="0.381"/>
+<pad name="P$19" x="-3.25" y="1.95" drill="0.381"/>
+<pad name="P$20" x="-3.25" y="0.65" drill="0.381"/>
+<pad name="P$21" x="-3.25" y="-0.65" drill="0.381"/>
+<pad name="P$22" x="-1.95" y="-0.65" drill="0.381"/>
+<pad name="P$23" x="-1.95" y="0.65" drill="0.381"/>
+<pad name="P$24" x="-1.95" y="1.95" drill="0.381"/>
+<pad name="P$25" x="1.95" y="1.95" drill="0.381"/>
+<pad name="P$26" x="1.95" y="0.65" drill="0.381"/>
+<pad name="P$27" x="3.25" y="0.65" drill="0.381"/>
+<pad name="P$28" x="3.25" y="-0.65" drill="0.381"/>
+<pad name="P$29" x="4.55" y="-0.65" drill="0.381"/>
+<pad name="P$30" x="4.55" y="0.65" drill="0.381"/>
+<pad name="P$31" x="3.25" y="1.95" drill="0.381"/>
+<pad name="P$32" x="4.55" y="1.95" drill="0.381"/>
 </package>
 </packages>
 <symbols>
@@ -15556,6 +15566,11 @@ Level Shifting GPIO Expander w/ LED Driver and Keypad Engine</description>
 <pin name="GND@PAD" x="0" y="-15.24" visible="pin" length="short" rot="R90"/>
 </symbol>
 <symbol name="TLC5947">
+<description>&lt;h3&gt;[Texas Instruments] [TLC5947] [24-Channel 12-bit PWM driver]&lt;/h3&gt;
+&lt;h3&gt;TI TLC5947 24-channel 12-bit constant current PWM driver&lt;/h3&gt;
+&lt;p&gt;The TLC5947 is a 24-channel, constant-current sink LED driver. Each channel is individually adjustable with 4096 pulse-width modulated (PWM) steps. PWM control is repeated automatically with the programmed grayscale (GS) data. GS data are written via a serial interface port. The current value of all 24 channels is set by a single external resistor.&lt;/p&gt;
+
+The TLC5947 has a thermal shutdown (TSD) function that turns off all output drivers during an over-temperature condition. All of the output drivers automatically restart when the temperature returns to normal conditions. &lt;/p&gt;</description>
 <pin name="OUT23" x="15.24" y="-20.32" length="middle" direction="out" rot="R180"/>
 <pin name="OUT6" x="-15.24" y="-20.32" length="middle" direction="out"/>
 <pin name="OUT5" x="-15.24" y="-17.78" length="middle" direction="out"/>
@@ -15564,7 +15579,7 @@ Level Shifting GPIO Expander w/ LED Driver and Keypad Engine</description>
 <pin name="OUT2" x="-15.24" y="-10.16" length="middle" direction="out"/>
 <pin name="OUT1" x="-15.24" y="-7.62" length="middle" direction="out"/>
 <pin name="OUT0" x="-15.24" y="-5.08" length="middle" direction="out"/>
-<pin name="BLANK" x="-15.24" y="0" length="middle"/>
+<pin name="!BLANK" x="-15.24" y="0" length="middle"/>
 <pin name="XLAT" x="-15.24" y="2.54" length="middle"/>
 <pin name="SOUT" x="-15.24" y="5.08" length="middle"/>
 <pin name="SIN" x="-15.24" y="7.62" length="middle"/>
@@ -15592,6 +15607,8 @@ Level Shifting GPIO Expander w/ LED Driver and Keypad Engine</description>
 <wire x1="-10.16" y1="22.86" x2="-10.16" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-22.86" x2="10.16" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-22.86" x2="10.16" y2="22.86" width="0.254" layer="94"/>
+<text x="-10.16" y="-25.4" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="22.86" size="1.778" layer="96" font="vector">&gt;Values</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -17176,15 +17193,21 @@ This device uses the ground pad under the IC</description>
 </devices>
 </deviceset>
 <deviceset name="TLC5947">
-<description>Package for the TLC5947 Constant current LED driver</description>
+<description>&lt;h3&gt;TI TLC5947 24-channel 12-bit constant current PWM driver&lt;/h3&gt;
+&lt;p&gt;The TLC5947 is a 24-channel, constant-current sink LED driver. Each channel is individually adjustable with 4096 pulse-width modulated (PWM) steps. PWM control is repeated automatically with the programmed grayscale (GS) data. GS data are written via a serial interface port. The current value of all 24 channels is set by a single external resistor.&lt;/p&gt;
+
+The TLC5947 has a thermal shutdown (TSD) function that turns off all output drivers during an over-temperature condition. All of the output drivers automatically restart when the temperature returns to normal conditions.
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”[PRODUCT1LINK]”&gt;[PRODUCT 1]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="TLC5947" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="HTSSOP32">
 <connects>
-<connect gate="G$1" pin="BLANK" pad="BLANK"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="!BLANK" pad="BLANK"/>
+<connect gate="G$1" pin="GND" pad="EPAD GND P$1 P$2 P$3 P$4 P$5 P$6 P$7 P$8 P$9 P$10 P$11 P$12 P$13 P$14 P$15 P$16 P$17 P$18 P$19 P$20 P$21 P$22 P$23 P$24 P$25 P$26 P$27 P$28 P$29 P$30 P$31 P$32"/>
 <connect gate="G$1" pin="IREF" pad="IREF"/>
 <connect gate="G$1" pin="OUT0" pad="OUT0"/>
 <connect gate="G$1" pin="OUT1" pad="OUT1"/>
@@ -17217,7 +17240,9 @@ This device uses the ground pad under the IC</description>
 <connect gate="G$1" pin="XLAT" pad="XLAT"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-13817" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
