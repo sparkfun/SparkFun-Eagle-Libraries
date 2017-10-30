@@ -432,6 +432,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-2.0240625" y1="0.6746875" x2="-2.0240625" y2="-0.6746875" width="0.2032" layer="21"/>
 <wire x1="2.0240625" y1="0.6746875" x2="2.0240625" y2="-0.6746875" width="0.2032" layer="21"/>
 </package>
+<package name="INDUCTOR-SRP4020">
+<smd name="P$1" x="-2.05" y="0" dx="1.5" dy="1.9" layer="1" rot="R90"/>
+<smd name="P$2" x="2.05" y="0" dx="1.5" dy="1.9" layer="1" rot="R90"/>
+<wire x1="-2" y1="2" x2="2" y2="2" width="0.127" layer="21"/>
+<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.127" layer="21"/>
+<wire x1="-2" y1="2" x2="-2" y2="1.5" width="0.127" layer="21"/>
+<wire x1="2" y1="2" x2="2" y2="1.5" width="0.127" layer="21"/>
+<wire x1="2" y1="-2" x2="2" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-2" y1="-2" x2="-2" y2="-1.5" width="0.127" layer="21"/>
+<text x="-2.032" y="2.286" size="0.8128" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-2.032" y="-3.048" size="0.8128" layer="25" font="vector" ratio="15">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="INDUCTOR">
@@ -675,6 +687,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technology name="">
 <attribute name="PROD_ID" value="NDUC-13770" constant="no"/>
 <attribute name="VALUE" value="2.2UH3A" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-SRP4020-1UH" package="INDUCTOR-SRP4020">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="NDUC-12274"/>
+<attribute name="VALUE" value="1uH"/>
 </technology>
 </technologies>
 </device>
