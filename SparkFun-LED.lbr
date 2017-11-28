@@ -2139,6 +2139,78 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-2.55" y1="-0.89" x2="-1" y2="0" layer="21"/>
 <circle x="-2.921" y="-2.794" radius="0.2032" width="0" layer="21"/>
 </package>
+<package name="WS2812B-PTH-KIT">
+<wire x1="-3.175" y1="2.8575" x2="-3.175" y2="1.4605" width="0.254" layer="21"/>
+<wire x1="-3.175" y1="1.4605" x2="-3.175" y2="-2.159" width="0.254" layer="21"/>
+<wire x1="-3.175" y1="2.8575" x2="-3.175" y2="-2.159" width="0.254" layer="21" curve="-288.461981"/>
+<wire x1="-3.175" y1="1.4605" x2="-3.1115" y2="-0.8255" width="0.254" layer="21" curve="-323.123915"/>
+<wire x1="-0.889" y1="1.3335" x2="-0.381" y2="1.3335" width="0.127" layer="21"/>
+<pad name="1" x="2.413" y="0.0794" drill="0.762" diameter="1.27" shape="offset" rot="R270" stop="no"/>
+<pad name="2" x="0.889" y="0.6509" drill="0.762" diameter="1.27" shape="offset" rot="R90" stop="no"/>
+<pad name="3" x="-0.635" y="0.0794" drill="0.762" diameter="1.27" shape="offset" rot="R270" stop="no"/>
+<pad name="4" x="-2.159" y="0.6509" drill="0.762" diameter="1.27" shape="offset" rot="R90" stop="no"/>
+<text x="0.5842" y="-1.0922" size="0.8128" layer="21">+</text>
+<polygon width="0.2032" layer="30">
+<vertex x="-2.7686" y="0.6604"/>
+<vertex x="-2.7686" y="1.9558" curve="-90"/>
+<vertex x="-2.2098" y="2.5146"/>
+<vertex x="-2.159" y="2.5146" curve="-90"/>
+<vertex x="-1.5494" y="1.905"/>
+<vertex x="-1.5494" y="0.6604" curve="-90"/>
+<vertex x="-2.159" y="0.0508" curve="-90"/>
+</polygon>
+<polygon width="0.2032" layer="30">
+<vertex x="-1.2446" y="-1.1938"/>
+<vertex x="-1.2446" y="0.1016" curve="-90"/>
+<vertex x="-0.6858" y="0.6604"/>
+<vertex x="-0.635" y="0.6604" curve="-90"/>
+<vertex x="-0.0254" y="0.0508"/>
+<vertex x="-0.0254" y="-1.1938" curve="-90"/>
+<vertex x="-0.635" y="-1.8034" curve="-90"/>
+</polygon>
+<polygon width="0.2032" layer="30">
+<vertex x="0.2794" y="0.6604"/>
+<vertex x="0.2794" y="1.9558" curve="-90"/>
+<vertex x="0.8382" y="2.5146"/>
+<vertex x="0.889" y="2.5146" curve="-90"/>
+<vertex x="1.4986" y="1.905"/>
+<vertex x="1.4986" y="0.6604" curve="-90"/>
+<vertex x="0.889" y="0.0508" curve="-90"/>
+</polygon>
+<polygon width="0.2032" layer="30">
+<vertex x="1.8034" y="-1.1684"/>
+<vertex x="1.8034" y="0.127" curve="-90"/>
+<vertex x="2.3622" y="0.6858"/>
+<vertex x="2.413" y="0.6858" curve="-90"/>
+<vertex x="3.0226" y="0.0762"/>
+<vertex x="3.0226" y="-1.1684" curve="-90"/>
+<vertex x="2.413" y="-1.778" curve="-90"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-2.159" y="0.1905" curve="-90.012891"/>
+<vertex x="-2.6035" y="0.6147" curve="-90"/>
+<vertex x="-2.159" y="1.082" curve="-90"/>
+<vertex x="-1.7171" y="0.6249" curve="-90.012967"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="0.889" y="0.1905" curve="-90.012891"/>
+<vertex x="0.4445" y="0.6147" curve="-90"/>
+<vertex x="0.889" y="1.082" curve="-90"/>
+<vertex x="1.3309" y="0.6249" curve="-90.012967"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="-0.635" y="-0.381" curve="-90.012891"/>
+<vertex x="-1.0795" y="0.0432" curve="-90"/>
+<vertex x="-0.635" y="0.5105" curve="-90"/>
+<vertex x="-0.1931" y="0.0534" curve="-90.012967"/>
+</polygon>
+<polygon width="0.127" layer="29">
+<vertex x="2.413" y="-0.381" curve="-90.012891"/>
+<vertex x="1.9685" y="0.0432" curve="-90"/>
+<vertex x="2.413" y="0.5105" curve="-90"/>
+<vertex x="2.8549" y="0.0534" curve="-90.012967"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -2554,8 +2626,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0.762" y1="3.048" x2="2.032" y2="3.048" width="0.254" layer="94"/>
 <wire x1="-0.508" y1="3.048" x2="-1.778" y2="3.048" width="0.254" layer="94"/>
 <pin name="VDD" x="-15.24" y="5.08" visible="pin" length="short"/>
-<pin name="VSS" x="-15.24" y="-2.54" visible="pin" length="short"/>
-<pin name="DI" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="VSS" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="DI" x="-15.24" y="-2.54" visible="pin" length="short"/>
 <pin name="DO" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
 <text x="-12.7" y="8.382" size="1.778" layer="95">&gt;NAME</text>
 <text x="-12.7" y="-7.62" size="1.778" layer="95">&gt;VALUE</text>
@@ -4942,6 +5014,47 @@ The LONGPADS Variant is used for a test jig, but you may like it because there i
 <technology name="">
 <attribute name="PROD_ID" value="DIO-13739" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WS2812B-PTH">
+<description>&lt;h3&gt;WS2812B PTH addressable RGB LED&lt;/h3&gt;
+
+5mm PTH LED with built-in controller IC.
+
+&lt;p&gt;&lt;li&gt;&lt;b&gt;Color:&lt;/b&gt; Red/Green/Blue&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;mC Rating: &lt;/b&gt;RGB: 390, 660, 180 mcd&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Forward Voltage: &lt;/b&gt; RGB: 2.0, 3.0, 3.0 V&lt;/li&gt;
+
+&lt;/p&gt;
+&lt;p&gt;SparkFun Products:
+
+&lt;ul&gt;
+
+&lt;li&gt;&lt;a href = https://www.sparkfun.com/products/12986&gt;LED - RGB Addressable, PTH, 5mm Diffused (5 Pack)&lt;/a&gt;&lt;/li&gt;
+
+
+
+&lt;li&gt;&lt;a href = https://www.sparkfun.com/products/12999&gt;LED - RGB Addressable, PTH, 5mm Clear (5 Pack)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Datasheet referenced for footprint:&lt;/b&gt; &lt;a href="https://cdn.sparkfun.com/datasheets/Components/LED/COM-12877.pdf"&gt;WS2812B-PTH&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="LED-TRICOLOR-WS28X1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WS2812B-PTH-KIT">
+<connects>
+<connect gate="G$1" pin="DI" pad="4"/>
+<connect gate="G$1" pin="DO" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
