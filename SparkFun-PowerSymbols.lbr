@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -179,7 +180,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
-<pin name="1.0V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+<pin name="28V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
 <symbol name="1.8V">
 <description>&lt;h3&gt;1.8V Voltage Supply&lt;/h3&gt;</description>
@@ -353,6 +354,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 <pin name="VOUT" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="28V">
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+<pin name="28V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="1.0V" prefix="SUPPLY">
@@ -495,11 +502,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
-<deviceset name="GND2" prefix="GND">
+<deviceset name="GND2" prefix="SUPPLY">
 <description>&lt;h3&gt;Ground Supply (Earth Ground style)&lt;/h3&gt;
 &lt;p&gt;Ground supply with a traditional "earth ground" symbol.&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="GND" x="2.54" y="0"/>
+<gate name="GND" symbol="GND" x="2.54" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -702,6 +709,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;Output voltage &lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="VOUT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="28V" prefix="SUPPLY">
+<description>&lt;h3&gt;28V Supply Symbol&lt;/h3&gt;
+&lt;p&gt;Power supply symbol for a 28VDC source.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="28V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
