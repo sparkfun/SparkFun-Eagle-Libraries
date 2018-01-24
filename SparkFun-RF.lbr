@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -145,6 +145,8 @@
 <layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
@@ -6305,6 +6307,41 @@ PATENTS PENDING 04.01.2015&lt;br/&gt;&lt;/p&gt;
 <vertex x="3.15" y="-5.84"/>
 </polygon>
 </package>
+<package name="ESP07">
+<wire x1="-7.726" y1="7.361" x2="-7.726" y2="-9.559" width="0.127" layer="21"/>
+<wire x1="-7.726" y1="-9.559" x2="8.274" y2="-9.559" width="0.127" layer="21"/>
+<wire x1="8.274" y1="-9.559" x2="8.274" y2="7.361" width="0.127" layer="21"/>
+<wire x1="8.274" y1="7.361" x2="-7.726" y2="7.361" width="0.127" layer="21"/>
+<smd name="ADC" x="-8.026" y="3.841" dx="2.5" dy="1" layer="1"/>
+<smd name="CH_PD" x="-8.026" y="1.841" dx="2.5" dy="1" layer="1"/>
+<smd name="GND" x="8.374" y="-8.064" dx="2.5" dy="1" layer="1"/>
+<smd name="GPIO0" x="8.374" y="-2.159" dx="2.5" dy="1" layer="1"/>
+<smd name="GPIO2" x="8.374" y="-4.159" dx="2.5" dy="1" layer="1"/>
+<smd name="GPIO4" x="8.374" y="1.841" dx="2.5" dy="1" layer="1"/>
+<smd name="GPIO5" x="8.374" y="-0.159" dx="2.5" dy="1" layer="1"/>
+<smd name="GPIO12" x="-8.026" y="-4.159" dx="2.5" dy="1" layer="1"/>
+<smd name="GPIO13" x="-8.026" y="-6.159" dx="2.5" dy="1" layer="1"/>
+<smd name="GPIO14" x="-8.026" y="-2.159" dx="2.5" dy="1" layer="1"/>
+<smd name="GPIO15" x="8.374" y="-6.159" dx="2.5" dy="1" layer="1"/>
+<smd name="GPIO16" x="-8.026" y="-0.159" dx="2.5" dy="1" layer="1"/>
+<smd name="REST" x="-8.026" y="5.841" dx="2.5" dy="1" layer="1"/>
+<smd name="RX" x="8.374" y="3.841" dx="2.5" dy="1" layer="1"/>
+<smd name="TX" x="8.374" y="5.841" dx="2.5" dy="1" layer="1" roundness="17"/>
+<smd name="VCC" x="-8.026" y="-8.064" dx="2.5" dy="1" layer="1"/>
+<text x="-7.826" y="7.961" size="1.27" layer="25">&gt;Name</text>
+<text x="-7.826" y="-11.059" size="1.27" layer="27">&gt;Value</text>
+<circle x="-5.426" y="5.726" radius="0.806225" width="0.127" layer="21"/>
+<circle x="-5.426" y="5.726" radius="0.1" width="0.127" layer="21"/>
+<wire x1="-4.426" y1="4.726" x2="-4.426" y2="6.726" width="0.127" layer="21"/>
+<wire x1="-4.426" y1="6.726" x2="-6.426" y2="6.726" width="0.127" layer="21"/>
+<wire x1="-6.426" y1="6.726" x2="-6.426" y2="4.726" width="0.127" layer="21"/>
+<wire x1="-6.426" y1="4.726" x2="-4.426" y2="4.726" width="0.127" layer="21"/>
+<circle x="-8.763" y="7.366" radius="0.127" width="0.127" layer="21"/>
+<circle x="-8.763" y="7.366" radius="0.254" width="0.127" layer="21"/>
+<circle x="-8.763" y="7.366" radius="0.381" width="0.127" layer="21"/>
+<circle x="-8.763" y="7.366" radius="0.523634375" width="0.127" layer="21"/>
+<circle x="-8.763" y="7.366" radius="0.40160625" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ANTENNA-GROUNDED">
@@ -7586,6 +7623,30 @@ PATENTS PENDING 04.01.2015&lt;br/&gt;&lt;/p&gt;</description>
 <text x="0" y="22.86" size="2.54" layer="94">ANTENNA</text>
 <text x="-25.4" y="34.29" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="17.78" y="34.036" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+<symbol name="ESP07-16PIN">
+<wire x1="-12.7" y1="10.16" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<pin name="ADC" x="-17.78" y="5.08" visible="pin" length="middle"/>
+<pin name="CH_PD" x="-17.78" y="2.54" visible="pin" length="middle"/>
+<pin name="GND" x="15.24" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO0" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO2" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO4" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO5" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO12" x="-17.78" y="-5.08" visible="pin" length="middle"/>
+<pin name="GPIO13" x="-17.78" y="-7.62" visible="pin" length="middle"/>
+<pin name="GPIO14" x="-17.78" y="-2.54" visible="pin" length="middle"/>
+<pin name="GPIO15" x="15.24" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="GPIO16" x="-17.78" y="0" visible="pin" length="middle"/>
+<pin name="RESET" x="-17.78" y="7.62" visible="pin" length="middle"/>
+<pin name="RX" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="TX" x="15.24" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="VCC" x="-17.78" y="-10.16" visible="pin" length="middle"/>
+<text x="-12.7" y="10.668" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-12.7" y="-15.24" size="1.778" layer="96" font="vector">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -9491,6 +9552,44 @@ Bluetooth Smart radio transceiver, ARM Cortex M0 microcontroller.
 <technology name="">
 <attribute name="PROD_ID" value="COMP-13237" constant="no"/>
 <attribute name="SF_ID" value="WRL-13808" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ESP07-16PIN">
+<description>&lt;h3&gt;Espressif ESP-07S&lt;/h3&gt;
+&lt;p&gt;
+&lt;li&gt;WiFi-compatible SoC microcontroller.&lt;/li&gt;
+&lt;li&gt;16 GPIO pins&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=”https://www.tinyosshop.com/datasheet/ESP-07S_User_Manual.pdf”&gt;User Guide&lt;/a&gt;&lt;/li&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="A" symbol="ESP07-16PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ESP07">
+<connects>
+<connect gate="A" pin="ADC" pad="ADC"/>
+<connect gate="A" pin="CH_PD" pad="CH_PD"/>
+<connect gate="A" pin="GND" pad="GND"/>
+<connect gate="A" pin="GPIO0" pad="GPIO0"/>
+<connect gate="A" pin="GPIO12" pad="GPIO12"/>
+<connect gate="A" pin="GPIO13" pad="GPIO13"/>
+<connect gate="A" pin="GPIO14" pad="GPIO14"/>
+<connect gate="A" pin="GPIO15" pad="GPIO15"/>
+<connect gate="A" pin="GPIO16" pad="GPIO16"/>
+<connect gate="A" pin="GPIO2" pad="GPIO2"/>
+<connect gate="A" pin="GPIO4" pad="GPIO4"/>
+<connect gate="A" pin="GPIO5" pad="GPIO5"/>
+<connect gate="A" pin="RESET" pad="REST"/>
+<connect gate="A" pin="RX" pad="RX"/>
+<connect gate="A" pin="TX" pad="TX"/>
+<connect gate="A" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="PENDING" constant="no"/>
 </technology>
 </technologies>
 </device>

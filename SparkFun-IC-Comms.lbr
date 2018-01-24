@@ -145,6 +145,8 @@
 <layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
@@ -1135,6 +1137,31 @@ SOIC, 0.3 inch width</description>
 <vertex x="-3.96875" y="3.65125" curve="90"/>
 </polygon>
 </package>
+<package name="TSSOP10">
+<smd name="4" x="-2.259" y="-0.4825" dx="1.1" dy="0.25" layer="1"/>
+<smd name="3" x="-2.259" y="0.0175" dx="1.1" dy="0.25" layer="1"/>
+<smd name="2" x="-2.259" y="0.5175" dx="1.1" dy="0.25" layer="1"/>
+<smd name="1" x="-2.259" y="1.0175" dx="1.1" dy="0.25" layer="1"/>
+<smd name="5" x="-2.259" y="-0.9875" dx="1.1" dy="0.25" layer="1"/>
+<circle x="-0.954" y="1.0025" radius="0.335409375" width="0.127" layer="21"/>
+<text x="0.096" y="1.7275" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0.121" y="-2.3825" size="0.6096" layer="27" font="vector" ratio="20" align="bottom-center">&gt;VALUE</text>
+<polygon width="0.002540625" layer="21">
+<vertex x="-1.93525" y="1.65125" curve="90"/>
+<vertex x="-1.61775" y="1.96875" curve="90"/>
+<vertex x="-1.93525" y="2.28625" curve="90"/>
+<vertex x="-2.25275" y="1.96875" curve="90"/>
+</polygon>
+<wire x1="-1.524" y1="-1.5875" x2="1.626" y2="-1.5875" width="0.127" layer="21"/>
+<wire x1="1.626" y1="-1.5875" x2="1.626" y2="1.5625" width="0.127" layer="21"/>
+<wire x1="1.626" y1="1.5625" x2="-1.524" y2="1.5625" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="1.5625" x2="-1.524" y2="-1.5875" width="0.127" layer="21"/>
+<smd name="7" x="2.366" y="-0.4825" dx="1.1" dy="0.25" layer="1"/>
+<smd name="8" x="2.366" y="0.0175" dx="1.1" dy="0.25" layer="1"/>
+<smd name="9" x="2.366" y="0.5175" dx="1.1" dy="0.25" layer="1"/>
+<smd name="10" x="2.366" y="1.0175" dx="1.1" dy="0.25" layer="1"/>
+<smd name="6" x="2.366" y="-0.9875" dx="1.1" dy="0.25" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FT232R">
@@ -1629,6 +1656,24 @@ SOIC, 0.3 inch width</description>
 <pin name="ANALOG_IN" x="-5.08" y="35.56" length="middle" direction="in" rot="R270"/>
 <pin name="PWM/!VPW" x="-7.62" y="35.56" length="middle" direction="out" rot="R270"/>
 <pin name="PAD" x="35.56" y="-25.4" length="middle" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="PCA9615">
+<pin name="EN" x="-15.24" y="2.54" length="middle"/>
+<pin name="SDA" x="-15.24" y="0" length="middle"/>
+<pin name="SCL" x="-15.24" y="-2.54" length="middle"/>
+<pin name="GND" x="-15.24" y="-5.08" length="middle"/>
+<pin name="DSDA-" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="DSDA+" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="DSCL+" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="DSCL-" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="-0.254" y="8.128" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-10.16" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
+<pin name="VDDA" x="-15.24" y="5.08" length="middle"/>
+<pin name="VDDB" x="15.24" y="5.08" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2459,6 +2504,35 @@ SOIC, 0.3 inch width</description>
 <technology name="">
 <attribute name="PROD_ID" value="IC-10017" constant="no"/>
 <attribute name="VALUE" value="STN1110" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PCA9615">
+<description>&lt;h3&gt;Differential I2C Bus Buffer&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://www.nxp.com/docs/en/data-sheet/PCA9615.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="PCA9615" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSSOP10">
+<connects>
+<connect gate="G$1" pin="DSCL+" pad="7"/>
+<connect gate="G$1" pin="DSCL-" pad="6"/>
+<connect gate="G$1" pin="DSDA+" pad="8"/>
+<connect gate="G$1" pin="DSDA-" pad="9"/>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="SCL" pad="4"/>
+<connect gate="G$1" pin="SDA" pad="2"/>
+<connect gate="G$1" pin="VDDA" pad="1"/>
+<connect gate="G$1" pin="VDDB" pad="10"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="PENDING" constant="no"/>
 </technology>
 </technologies>
 </device>
