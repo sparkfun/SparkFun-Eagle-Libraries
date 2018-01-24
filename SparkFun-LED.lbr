@@ -2046,6 +2046,27 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="1.905" y1="-1.42875" x2="1.905" y2="-1.5875" width="0.1778" layer="21"/>
 <circle x="-2.28975" y="1.8615" radius="0.254" width="0" layer="21"/>
 </package>
+<package name="APA102">
+<smd name="2" x="-2.1" y="0" dx="1.2" dy="1" layer="1"/>
+<smd name="1" x="-2.1" y="1.6" dx="1.2" dy="1" layer="1"/>
+<smd name="3" x="-2.1" y="-1.6" dx="1.2" dy="1" layer="1"/>
+<smd name="5" x="2.1" y="0" dx="1.2" dy="1" layer="1"/>
+<smd name="6" x="2.1" y="1.6" dx="1.2" dy="1" layer="1"/>
+<smd name="4" x="2.1" y="-1.6" dx="1.2" dy="1" layer="1"/>
+<wire x1="-2.5" y1="0.9" x2="-2.5" y2="0.7" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-0.7" x2="-2.5" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="2.5" y1="0.9" x2="2.5" y2="0.7" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2.3" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="2.3" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-0.7" x2="2.5" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.3" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.3" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="3" x2="-3" y2="2.5" width="0.127" layer="21" curve="90"/>
+<text x="-1.5" y="3" size="0.6096" layer="25" font="vector" ratio="20">&gt;Name</text>
+<text x="-1.5" y="-3.5" size="0.6096" layer="27" font="vector" ratio="20">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -3162,6 +3183,46 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="1.905" y="5.715"/>
 <vertex x="2.54" y="5.08"/>
 </polygon>
+</symbol>
+<symbol name="LED-RGB-I2C">
+<description>&lt;h3&gt;RGB LED - I2C&lt;/h3&gt;
+&lt;p&gt;6 pin Adafruit DotStar RGB LED&lt;/p&gt;</description>
+<wire x1="-12.7" y1="5.08" x2="-12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.27" x2="-0.508" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="0" x2="-0.508" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="1.27" x2="0.762" y2="0" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="-0.508" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-1.27" x2="0.762" y2="0" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="0.762" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0" x2="2.032" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="0" x2="-1.778" y2="0" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="1.778" x2="-0.508" y2="3.048" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="3.048" x2="-0.508" y2="4.318" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="4.318" x2="0.762" y2="3.048" width="0.254" layer="94"/>
+<wire x1="0.762" y1="3.048" x2="-0.508" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0.762" y1="1.778" x2="0.762" y2="3.048" width="0.254" layer="94"/>
+<wire x1="0.762" y1="3.048" x2="0.762" y2="4.318" width="0.254" layer="94"/>
+<wire x1="0.762" y1="3.048" x2="2.032" y2="3.048" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="3.048" x2="-1.778" y2="3.048" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-4.318" x2="-0.508" y2="-3.048" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-3.048" x2="-0.508" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.778" x2="0.762" y2="-3.048" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-3.048" x2="-0.508" y2="-4.318" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-4.318" x2="0.762" y2="-3.048" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-3.048" x2="0.762" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-3.048" x2="2.032" y2="-3.048" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-3.048" x2="-1.778" y2="-3.048" width="0.254" layer="94"/>
+<pin name="DI" x="-15.24" y="2.54" visible="pin" length="short"/>
+<pin name="DO" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="CI" x="-15.24" y="0" visible="pin" length="short"/>
+<pin name="CO" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="-15.24" y="-2.54" visible="pin" length="short"/>
+<pin name="VCC" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
+<text x="0" y="5.715" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-5.715" size="1.778" layer="95" font="vector" align="top-center">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4731,6 +4792,26 @@ The LONGPADS Variant is used for a test jig, but you may like it because there i
 <attribute name="PROD_ID" value="DIO-13722" constant="no"/>
 <attribute name="VALUE" value="XZM2CRKM2DGFBB45SCCB" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED-RGB-I2C" prefix="D">
+<gates>
+<gate name="G$1" symbol="LED-RGB-I2C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="APA102">
+<connects>
+<connect gate="G$1" pin="CI" pad="2"/>
+<connect gate="G$1" pin="CO" pad="5"/>
+<connect gate="G$1" pin="DI" pad="1"/>
+<connect gate="G$1" pin="DO" pad="6"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
