@@ -606,6 +606,23 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <text x="0" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 <wire x1="3.91" y1="1" x2="3.91" y2="-1" width="0.127" layer="21"/>
 </package>
+<package name="CAP-RADIAL-5MM-21.5MM">
+<description>&lt;h3&gt;[Radial PTH Capacitor] - [5mm spaced leads, 21.5 mm OD]&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: [2]&lt;/li&gt;
+&lt;li&gt;Pin pitch: [5mm]&lt;/li&gt;
+&lt;li&gt;Area: [Circle: 21.5mm Outer Diameter]&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=http://www.cooperindustries.com/content/dam/public/bussmann/Electronics/Resources/product-datasheets/Bus_Elx_DS_4327_KR_Series.pdf&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<pad name="+" x="-2.5" y="0" drill="0.7" diameter="1.651"/>
+<pad name="-" x="2.5" y="0" drill="0.7" diameter="1.651"/>
+<circle x="0" y="0" radius="10.75" width="0.2032" layer="21"/>
+<text x="-11.5" y="0" size="1.27" layer="21" align="center">+</text>
+<text x="-4.5" y="0" size="1.27" layer="21" align="center">+</text>
+<text x="-1.27" y="11.43" size="0.6096" layer="25" font="vector" ratio="15">&gt;Name</text>
+<text x="-1.27" y="-12.065" size="0.6096" layer="27" font="vector" ratio="15">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP">
@@ -2018,6 +2035,27 @@ CAP-09321</description>
 <technology name="">
 <attribute name="PROD_ID" value="CAP-13339" constant="no"/>
 <attribute name="VALUE" value="270PF" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1F-EDLC" prefix="C">
+<description>&lt;h3&gt;[Eaton] [KR-5R5C105-R] - [1F Electric Double Layer Capacitor (SuperCapacitor)]&lt;/h3&gt;
+&lt;p&gt;This is a 21.5mm OD 1F SuperCapacitor.&lt;/p&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAP_POL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CAP-RADIAL-5MM-21.5MM">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-13904" constant="no"/>
 </technology>
 </technologies>
 </device>
