@@ -1346,6 +1346,42 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <text x="-1.27" y="-2.032" size="0.6096" layer="25" font="vector" ratio="20">&gt;Name</text>
 <text x="-1.397" y="1.524" size="0.6096" layer="27" font="vector" ratio="20">&gt;Value</text>
 </package>
+<package name="RV-1805">
+<description>&lt;h3&gt;SON 10-pin - Miniature SMT ceramic package&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: [10]&lt;/li&gt;
+&lt;li&gt;Pin pitch: [0.8mm]&lt;/li&gt;
+&lt;li&gt;Area: [3.7mm x 2.5mm]&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=http://www.microcrystal.com/images/_Product-Documentation/02_Oscillator_&amp;_RTC_Modules/02_Application_Manual/RV-1805-C3_App-Manual.pdf&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="1.85" y1="1.25" x2="1.85" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="1.85" y1="-1.25" x2="-1.85" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-1.85" y1="-1.25" x2="-1.85" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-1.85" y1="1.25" x2="1.85" y2="1.25" width="0.127" layer="51"/>
+<text x="-1.85" y="1.95" size="0.508" layer="25">&gt;Name</text>
+<text x="-1.75" y="-2.45" size="0.508" layer="27">&gt;Value</text>
+<circle x="-2.45" y="-1.75" radius="0.14141875" width="0" layer="21"/>
+<wire x1="1.48" y1="1.8" x2="2.1" y2="1.8" width="0.1778" layer="21"/>
+<wire x1="2.1" y1="1.8" x2="2.1" y2="1" width="0.1778" layer="21"/>
+<wire x1="2.1" y1="-1" x2="2.1" y2="-1.8" width="0.1778" layer="21"/>
+<wire x1="2.1" y1="-1.8" x2="1.48" y2="-1.8" width="0.1778" layer="21"/>
+<wire x1="-1.48" y1="-1.8" x2="-2.1" y2="-1.8" width="0.1778" layer="21"/>
+<wire x1="-2.1" y1="-1.8" x2="-2.1" y2="-1" width="0.1778" layer="21"/>
+<wire x1="-2.1" y1="1" x2="-2.1" y2="1.8" width="0.1778" layer="21"/>
+<wire x1="-2.1" y1="1.8" x2="-1.48" y2="1.8" width="0.1778" layer="21"/>
+<smd name="1" x="-1.6" y="-1.1" dx="0.8" dy="0.5" layer="1" rot="R90"/>
+<smd name="2" x="-0.8" y="-1.1" dx="0.8" dy="0.5" layer="1" rot="R90"/>
+<smd name="3" x="0" y="-1.1" dx="0.8" dy="0.5" layer="1" rot="R90"/>
+<smd name="4" x="0.8" y="-1.1" dx="0.8" dy="0.5" layer="1" rot="R90"/>
+<smd name="5" x="1.6" y="-1.1" dx="0.8" dy="0.5" layer="1" rot="R90"/>
+<smd name="6" x="1.6" y="1.1" dx="0.8" dy="0.5" layer="1" rot="R270"/>
+<smd name="7" x="0.8" y="1.1" dx="0.8" dy="0.5" layer="1" rot="R270"/>
+<smd name="8" x="0" y="1.1" dx="0.8" dy="0.5" layer="1" rot="R270"/>
+<smd name="9" x="-0.8" y="1.1" dx="0.8" dy="0.5" layer="1" rot="R270"/>
+<smd name="10" x="-1.6" y="1.1" dx="0.8" dy="0.5" layer="1" rot="R270"/>
+<smd name="11" x="0" y="0" dx="0" dy="0" layer="1" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CRYSTAL">
@@ -1526,6 +1562,32 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <wire x1="10.16" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
 <text x="-7.62" y="8.1026" size="1.778" layer="95" font="vector">&gt;Name</text>
 <text x="-7.62" y="-9.6266" size="1.778" layer="96" font="vector">&gt;Value</text>
+</symbol>
+<symbol name="RV-1805">
+<description>&lt;h3&gt;Micro Crystal Switzerland - RV-1805-C3 - Extremely low power RTC module&lt;/h3&gt;
+&lt;p&gt;This RTC IC has been specially designed for ultimate low current
+consumption of typically 60 nA @ VDD 3.0V for 32.768 kHz XTAL mode.
+Additionally, there is an RC-Mode consuming only 17nA and an autocalibrated
+RC-mode consuming 22nA which permits to operate this RTC
+module several hours at Backup Supply Voltage using low-cost MLCC.
+The very small SMT ceramic-package combines the 32.768 kHz crystal
+unit with the CMOS-based oscillator and real-time-clock IC. &lt;/p&gt;</description>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<pin name="GND" x="-12.7" y="-7.62" length="short"/>
+<pin name="VCC" x="-12.7" y="7.62" length="short"/>
+<pin name="SDA" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="SCL" x="12.7" y="7.62" length="short" rot="R180"/>
+<pin name="CAP_RC" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="CLK/!INT" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="VBACKUP" x="-12.7" y="5.08" length="short"/>
+<pin name="PSW" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="WDI" x="12.7" y="-5.08" length="short" rot="R180"/>
+<text x="-10.16" y="10.922" size="1.778" layer="95">&gt;Name</text>
+<text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;Value</text>
+<pin name="!RST" x="12.7" y="-7.62" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2387,6 +2449,38 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <technology name="">
 <attribute name="PROD_ID" value="IC-13900" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RV-1805" prefix="U">
+<description>&lt;h3&gt;Micro Crystal Switzerland - RV-1805-C3 - Extremely low power RTC module&lt;/h3&gt;
+&lt;p&gt;This RTC IC has been specially designed for ultimate low current
+consumption of typically 60 nA @ VDD 3.0V for 32.768 kHz XTAL mode.
+Additionally, there is an RC-Mode consuming only 17nA and an autocalibrated
+RC-mode consuming 22nA which permits to operate this RTC
+module several hours at Backup Supply Voltage using low-cost MLCC.
+The very small SMT ceramic-package combines the 32.768 kHz crystal
+unit with the CMOS-based oscillator and real-time-clock IC. &lt;/p&gt;</description>
+<gates>
+<gate name="U1" symbol="RV-1805" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RV-1805">
+<connects>
+<connect gate="U1" pin="!RST" pad="10"/>
+<connect gate="U1" pin="CAP_RC" pad="2"/>
+<connect gate="U1" pin="CLK/!INT" pad="3"/>
+<connect gate="U1" pin="GND" pad="6"/>
+<connect gate="U1" pin="PSW" pad="8"/>
+<connect gate="U1" pin="SCL" pad="4"/>
+<connect gate="U1" pin="SDA" pad="5"/>
+<connect gate="U1" pin="VBACKUP" pad="7"/>
+<connect gate="U1" pin="VCC" pad="1"/>
+<connect gate="U1" pin="WDI" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
