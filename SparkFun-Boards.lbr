@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5548,6 +5548,94 @@ Keepout</text>
 <text x="10.16" y="8.89" size="1.27" layer="27" align="center-left">&gt;VALUE</text>
 <text x="10.16" y="10.16" size="1.27" layer="25" align="center-left">&gt;NAME</text>
 </package>
+<package name="CAN485">
+<wire x1="-8.89" y1="-16.51" x2="8.89" y2="-16.51" width="0.127" layer="21"/>
+<wire x1="8.89" y1="-16.51" x2="8.89" y2="16.51" width="0.127" layer="21"/>
+<wire x1="8.89" y1="16.51" x2="-8.89" y2="16.51" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="16.51" x2="-8.89" y2="-16.51" width="0.127" layer="21"/>
+<pad name="2" x="-7.62" y="2.54" drill="1"/>
+<pad name="3" x="-7.62" y="0" drill="1"/>
+<pad name="4" x="-7.62" y="-2.54" drill="1"/>
+<pad name="5" x="-7.62" y="-5.08" drill="1"/>
+<pad name="6" x="-7.62" y="-7.62" drill="1"/>
+<pad name="7" x="-7.62" y="-10.16" drill="1"/>
+<pad name="8" x="-7.62" y="-12.7" drill="1"/>
+<pad name="9" x="-7.62" y="-15.24" drill="1"/>
+<pad name="10" x="7.62" y="-15.24" drill="1"/>
+<pad name="11" x="7.62" y="-12.7" drill="1"/>
+<pad name="12" x="7.62" y="-10.16" drill="1"/>
+<pad name="13" x="7.62" y="-7.62" drill="1"/>
+<pad name="485A" x="-2.54" y="-15.24" drill="1" rot="R90"/>
+<pad name="485B" x="-5.08" y="-15.24" drill="1" rot="R90"/>
+<pad name="A0" x="7.62" y="-5.08" drill="1"/>
+<pad name="A1" x="7.62" y="-2.54" drill="1"/>
+<pad name="A2" x="7.62" y="0" drill="1"/>
+<pad name="A3" x="7.62" y="2.54" drill="1"/>
+<pad name="A4" x="5.08" y="6.35" drill="1"/>
+<pad name="A5" x="5.08" y="8.89" drill="1"/>
+<pad name="GND4" x="-6.35" y="15.24" drill="1" rot="R90"/>
+<pad name="CANHI" x="2.54" y="-15.24" drill="1" rot="R270"/>
+<pad name="CANLO" x="5.08" y="-15.24" drill="1" rot="R90"/>
+<pad name="GND2" x="7.62" y="10.16" drill="1"/>
+<pad name="GND1" x="-7.62" y="5.08" drill="1"/>
+<pad name="GND3" x="0" y="-15.24" drill="1" rot="R90"/>
+<pad name="CTS" x="-3.81" y="15.24" drill="1" rot="R90"/>
+<pad name="DTR" x="6.35" y="15.24" drill="1" rot="R90"/>
+<pad name="RAW" x="7.62" y="12.7" drill="1"/>
+<pad name="RST" x="7.62" y="7.62" drill="1"/>
+<pad name="RST1" x="-7.62" y="7.62" drill="1"/>
+<pad name="RXI" x="1.27" y="15.24" drill="1" rot="R90"/>
+<pad name="RXI1" x="-7.62" y="10.16" drill="1"/>
+<pad name="TXO" x="3.81" y="15.24" drill="1" rot="R90"/>
+<pad name="TXO1" x="-7.62" y="12.7" drill="1"/>
+<pad name="VCC" x="7.62" y="5.08" drill="1"/>
+<pad name="VCC1" x="-1.27" y="15.24" drill="1" rot="R90"/>
+<pad name="A7" x="-5.08" y="8.89" drill="1"/>
+<pad name="A6" x="-5.08" y="6.35" drill="1"/>
+</package>
+<package name="CAN485_PRO_MINI">
+<wire x1="-8.89" y1="-15.24" x2="8.89" y2="-15.24" width="0.127" layer="21"/>
+<wire x1="8.89" y1="-15.24" x2="8.89" y2="17.78" width="0.127" layer="21"/>
+<wire x1="8.89" y1="17.78" x2="-8.89" y2="17.78" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="17.78" x2="-8.89" y2="-15.24" width="0.127" layer="21"/>
+<pad name="2" x="-7.62" y="3.81" drill="1"/>
+<pad name="3" x="-7.62" y="1.27" drill="1"/>
+<pad name="4" x="-7.62" y="-1.27" drill="1"/>
+<pad name="5" x="-7.62" y="-3.81" drill="1"/>
+<pad name="6" x="-7.62" y="-6.35" drill="1"/>
+<pad name="7" x="-7.62" y="-8.89" drill="1"/>
+<pad name="8" x="-7.62" y="-11.43" drill="1"/>
+<pad name="9" x="-7.62" y="-13.97" drill="1"/>
+<pad name="10" x="7.62" y="-13.97" drill="1"/>
+<pad name="11" x="7.62" y="-11.43" drill="1"/>
+<pad name="12" x="7.62" y="-8.89" drill="1"/>
+<pad name="13" x="7.62" y="-6.35" drill="1"/>
+<pad name="485A" x="-2.54" y="-13.97" drill="1" rot="R90"/>
+<pad name="485B" x="-5.08" y="-13.97" drill="1" rot="R90"/>
+<pad name="A0" x="7.62" y="-3.81" drill="1"/>
+<pad name="A1" x="7.62" y="-1.27" drill="1"/>
+<pad name="A2" x="7.62" y="1.27" drill="1"/>
+<pad name="A3" x="7.62" y="3.81" drill="1"/>
+<pad name="A4M" x="4.699" y="2.667" drill="1"/>
+<pad name="A5M" x="4.699" y="5.207" drill="1"/>
+<pad name="GND4" x="-6.35" y="16.51" drill="1" rot="R90"/>
+<pad name="CANHI" x="2.54" y="-13.97" drill="1" rot="R270"/>
+<pad name="CANLO" x="5.08" y="-13.97" drill="1" rot="R90"/>
+<pad name="GND2" x="7.62" y="11.43" drill="1"/>
+<pad name="GND1" x="-7.62" y="6.35" drill="1"/>
+<pad name="GND3" x="0" y="-13.97" drill="1" rot="R90"/>
+<pad name="CTS" x="-3.81" y="16.51" drill="1" rot="R90"/>
+<pad name="DTR" x="6.35" y="16.51" drill="1" rot="R90"/>
+<pad name="RAW" x="7.62" y="13.97" drill="1"/>
+<pad name="RST" x="7.62" y="8.89" drill="1"/>
+<pad name="RST1" x="-7.62" y="8.89" drill="1"/>
+<pad name="RXI" x="1.27" y="16.51" drill="1" rot="R90"/>
+<pad name="RXI1" x="-7.62" y="11.43" drill="1"/>
+<pad name="TXO" x="3.81" y="16.51" drill="1" rot="R90"/>
+<pad name="TXO1" x="-7.62" y="13.97" drill="1"/>
+<pad name="VCC" x="7.62" y="6.35" drill="1"/>
+<pad name="VCC1" x="-1.27" y="16.51" drill="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO-MEGA">
@@ -6957,6 +7045,98 @@ SoC with a list of features including:
 <text x="1.27" y="2.54" size="1.27" layer="94" align="center-left">SCLK_0</text>
 <text x="1.27" y="5.08" size="1.27" layer="94" align="center-left">SCLK_1</text>
 <text x="1.27" y="7.62" size="1.27" layer="94" align="center-left">!RESET!_0</text>
+</symbol>
+<symbol name="CAN485">
+<wire x1="-10.16" y1="25.4" x2="12.7" y2="25.4" width="0.254" layer="94"/>
+<wire x1="12.7" y1="25.4" x2="12.7" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-33.02" x2="-10.16" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-33.02" x2="-10.16" y2="25.4" width="0.254" layer="94"/>
+<pin name="485A" x="17.78" y="-27.94" visible="pin" length="middle" rot="R180"/>
+<pin name="485B" x="17.78" y="-30.48" visible="pin" length="middle" rot="R180"/>
+<pin name="A0" x="17.78" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="A1" x="17.78" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="A2" x="17.78" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="A3" x="17.78" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="A4" x="17.78" y="-17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="A5" x="17.78" y="-20.32" visible="pin" length="middle" rot="R180"/>
+<pin name="CANHI" x="-15.24" y="-25.4" visible="pin" length="middle"/>
+<pin name="CANLO" x="-15.24" y="-27.94" visible="pin" length="middle"/>
+<pin name="CTS" x="-2.54" y="30.48" visible="pin" length="middle" rot="R270"/>
+<pin name="D2/INT0/SCL" x="-15.24" y="5.08" visible="pin" length="middle"/>
+<pin name="D3/INT1/SDA" x="-15.24" y="2.54" visible="pin" length="middle"/>
+<pin name="D4" x="-15.24" y="0" visible="pin" length="middle"/>
+<pin name="D5" x="-15.24" y="-2.54" visible="pin" length="middle"/>
+<pin name="D6" x="-15.24" y="-5.08" visible="pin" length="middle"/>
+<pin name="D7" x="-15.24" y="-7.62" visible="pin" length="middle"/>
+<pin name="D8" x="-15.24" y="-10.16" visible="pin" length="middle"/>
+<pin name="D9" x="-15.24" y="-12.7" visible="pin" length="middle"/>
+<pin name="D10" x="17.78" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="DTR" x="7.62" y="30.48" visible="pin" length="middle" rot="R270"/>
+<pin name="GND1" x="-15.24" y="7.62" visible="pin" length="middle"/>
+<pin name="GND2" x="17.78" y="12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="GND3" x="-15.24" y="-30.48" visible="pin" length="middle"/>
+<pin name="GND4" x="-5.08" y="30.48" visible="pin" length="middle" rot="R270"/>
+<pin name="MISO/D12" x="17.78" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="MOSI/D11" x="17.78" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="RAW" x="17.78" y="15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="RESET1" x="-15.24" y="10.16" visible="pin" length="middle"/>
+<pin name="RESET" x="17.78" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="RXI" x="-15.24" y="12.7" visible="pin" length="middle"/>
+<pin name="RXI1" x="2.54" y="30.48" visible="pin" length="middle" rot="R270"/>
+<pin name="SCK/D13" x="17.78" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="TXO" x="-15.24" y="15.24" visible="pin" length="middle"/>
+<pin name="TXO1" x="5.08" y="30.48" visible="pin" length="middle" rot="R270"/>
+<pin name="VCC" x="17.78" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="VCC1" x="0" y="30.48" visible="pin" length="middle" rot="R270"/>
+<text x="-7.62" y="33.02" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-35.56" size="1.778" layer="95">&gt;VALUE</text>
+<pin name="A6" x="-15.24" y="-17.78" visible="pin" length="middle"/>
+<pin name="A7" x="-15.24" y="-20.32" visible="pin" length="middle"/>
+</symbol>
+<symbol name="CAN485_PRO_MINI">
+<wire x1="-10.16" y1="25.4" x2="12.7" y2="25.4" width="0.254" layer="94"/>
+<wire x1="12.7" y1="25.4" x2="12.7" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-27.94" x2="-10.16" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-27.94" x2="-10.16" y2="25.4" width="0.254" layer="94"/>
+<pin name="485A" x="17.78" y="-22.86" visible="pin" length="middle" rot="R180"/>
+<pin name="485B" x="17.78" y="-25.4" visible="pin" length="middle" rot="R180"/>
+<pin name="A0" x="17.78" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="A1" x="17.78" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="A2" x="17.78" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="A3" x="17.78" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="A4M" x="17.78" y="-17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="A5M" x="17.78" y="-20.32" visible="pin" length="middle" rot="R180"/>
+<pin name="CANHI" x="-15.24" y="-20.32" visible="pin" length="middle"/>
+<pin name="CANLO" x="-15.24" y="-22.86" visible="pin" length="middle"/>
+<pin name="CTS" x="-2.54" y="30.48" visible="pin" length="middle" rot="R270"/>
+<pin name="D2/INT0/SCL" x="-15.24" y="5.08" visible="pin" length="middle"/>
+<pin name="D3/INT1/SDA" x="-15.24" y="2.54" visible="pin" length="middle"/>
+<pin name="D4" x="-15.24" y="0" visible="pin" length="middle"/>
+<pin name="D5" x="-15.24" y="-2.54" visible="pin" length="middle"/>
+<pin name="D6" x="-15.24" y="-5.08" visible="pin" length="middle"/>
+<pin name="D7" x="-15.24" y="-7.62" visible="pin" length="middle"/>
+<pin name="D8" x="-15.24" y="-10.16" visible="pin" length="middle"/>
+<pin name="D9" x="-15.24" y="-12.7" visible="pin" length="middle"/>
+<pin name="D10" x="17.78" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="DTR" x="7.62" y="30.48" visible="pin" length="middle" rot="R270"/>
+<pin name="GND1" x="-15.24" y="7.62" visible="pin" length="middle"/>
+<pin name="GND2" x="17.78" y="12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="GND3" x="-15.24" y="-25.4" visible="pin" length="middle"/>
+<pin name="GND4" x="-5.08" y="30.48" visible="pin" length="middle" rot="R270"/>
+<pin name="MISO/D12" x="17.78" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="MOSI/D11" x="17.78" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="RAW" x="17.78" y="15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="RESET1" x="-15.24" y="10.16" visible="pin" length="middle"/>
+<pin name="RESET" x="17.78" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="RXI" x="-15.24" y="12.7" visible="pin" length="middle"/>
+<pin name="RXI1" x="2.54" y="30.48" visible="pin" length="middle" rot="R270"/>
+<pin name="SCK/D13" x="17.78" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="TXO" x="-15.24" y="15.24" visible="pin" length="middle"/>
+<pin name="TXO1" x="5.08" y="30.48" visible="pin" length="middle" rot="R270"/>
+<pin name="VCC" x="17.78" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="VCC1" x="0" y="30.48" visible="pin" length="middle" rot="R270"/>
+<text x="-7.62" y="33.02" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-30.48" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -9120,6 +9300,110 @@ PCB footprint compatbile with Big Red Box Enclosure.
 <connect gate="G2" pin="7" pad="21"/>
 <connect gate="G2" pin="8" pad="22"/>
 <connect gate="G2" pin="9" pad="23"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CAN485">
+<gates>
+<gate name="G$1" symbol="CAN485" x="0" y="0"/>
+</gates>
+<devices>
+<device name="FULL_SOCKET" package="CAN485">
+<connects>
+<connect gate="G$1" pin="485A" pad="485A"/>
+<connect gate="G$1" pin="485B" pad="485B"/>
+<connect gate="G$1" pin="A0" pad="A0"/>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="A2" pad="A2"/>
+<connect gate="G$1" pin="A3" pad="A3"/>
+<connect gate="G$1" pin="A4" pad="A4"/>
+<connect gate="G$1" pin="A5" pad="A5"/>
+<connect gate="G$1" pin="A6" pad="A6"/>
+<connect gate="G$1" pin="A7" pad="A7"/>
+<connect gate="G$1" pin="CANHI" pad="CANHI"/>
+<connect gate="G$1" pin="CANLO" pad="CANLO"/>
+<connect gate="G$1" pin="CTS" pad="CTS"/>
+<connect gate="G$1" pin="D10" pad="10"/>
+<connect gate="G$1" pin="D2/INT0/SCL" pad="2"/>
+<connect gate="G$1" pin="D3/INT1/SDA" pad="3"/>
+<connect gate="G$1" pin="D4" pad="4"/>
+<connect gate="G$1" pin="D5" pad="5"/>
+<connect gate="G$1" pin="D6" pad="6"/>
+<connect gate="G$1" pin="D7" pad="7"/>
+<connect gate="G$1" pin="D8" pad="8"/>
+<connect gate="G$1" pin="D9" pad="9"/>
+<connect gate="G$1" pin="DTR" pad="DTR"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="GND3" pad="GND3"/>
+<connect gate="G$1" pin="GND4" pad="GND4"/>
+<connect gate="G$1" pin="MISO/D12" pad="12"/>
+<connect gate="G$1" pin="MOSI/D11" pad="11"/>
+<connect gate="G$1" pin="RAW" pad="RAW"/>
+<connect gate="G$1" pin="RESET" pad="RST"/>
+<connect gate="G$1" pin="RESET1" pad="RST1"/>
+<connect gate="G$1" pin="RXI" pad="RXI"/>
+<connect gate="G$1" pin="RXI1" pad="RXI1"/>
+<connect gate="G$1" pin="SCK/D13" pad="13"/>
+<connect gate="G$1" pin="TXO" pad="TXO"/>
+<connect gate="G$1" pin="TXO1" pad="TXO1"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="VCC1" pad="VCC1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CAN485_PRO_MINI">
+<gates>
+<gate name="G$1" symbol="CAN485_PRO_MINI" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PRO_MINI_COMPATIBLE" package="CAN485_PRO_MINI">
+<connects>
+<connect gate="G$1" pin="485A" pad="485A"/>
+<connect gate="G$1" pin="485B" pad="485B"/>
+<connect gate="G$1" pin="A0" pad="A0"/>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="A2" pad="A2"/>
+<connect gate="G$1" pin="A3" pad="A3"/>
+<connect gate="G$1" pin="A4M" pad="A4M"/>
+<connect gate="G$1" pin="A5M" pad="A5M"/>
+<connect gate="G$1" pin="CANHI" pad="CANHI"/>
+<connect gate="G$1" pin="CANLO" pad="CANLO"/>
+<connect gate="G$1" pin="CTS" pad="CTS"/>
+<connect gate="G$1" pin="D10" pad="10"/>
+<connect gate="G$1" pin="D2/INT0/SCL" pad="2"/>
+<connect gate="G$1" pin="D3/INT1/SDA" pad="3"/>
+<connect gate="G$1" pin="D4" pad="4"/>
+<connect gate="G$1" pin="D5" pad="5"/>
+<connect gate="G$1" pin="D6" pad="6"/>
+<connect gate="G$1" pin="D7" pad="7"/>
+<connect gate="G$1" pin="D8" pad="8"/>
+<connect gate="G$1" pin="D9" pad="9"/>
+<connect gate="G$1" pin="DTR" pad="DTR"/>
+<connect gate="G$1" pin="GND1" pad="GND1"/>
+<connect gate="G$1" pin="GND2" pad="GND2"/>
+<connect gate="G$1" pin="GND3" pad="GND3"/>
+<connect gate="G$1" pin="GND4" pad="GND4"/>
+<connect gate="G$1" pin="MISO/D12" pad="12"/>
+<connect gate="G$1" pin="MOSI/D11" pad="11"/>
+<connect gate="G$1" pin="RAW" pad="RAW"/>
+<connect gate="G$1" pin="RESET" pad="RST"/>
+<connect gate="G$1" pin="RESET1" pad="RST1"/>
+<connect gate="G$1" pin="RXI" pad="RXI"/>
+<connect gate="G$1" pin="RXI1" pad="RXI1"/>
+<connect gate="G$1" pin="SCK/D13" pad="13"/>
+<connect gate="G$1" pin="TXO" pad="TXO"/>
+<connect gate="G$1" pin="TXO1" pad="TXO1"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+<connect gate="G$1" pin="VCC1" pad="VCC1"/>
 </connects>
 <technologies>
 <technology name=""/>
