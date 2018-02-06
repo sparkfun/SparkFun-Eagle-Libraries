@@ -145,6 +145,8 @@
 <layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
@@ -444,6 +446,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-2.032" y="2.286" size="0.8128" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <text x="-2.032" y="-3.048" size="0.8128" layer="25" font="vector" ratio="15">&gt;VALUE</text>
 </package>
+<package name="INDUCTOR_LQH32">
+<wire x1="-1.27" y1="-0.595" x2="1.13" y2="-0.595" width="0.127" layer="21"/>
+<wire x1="1.13" y1="0.505" x2="-1.27" y2="0.505" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="1.905" x2="-1.27" y2="0.505" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="0.505" x2="-1.27" y2="-0.595" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-0.595" x2="-1.27" y2="-1.995" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.995" x2="1.13" y2="-1.995" width="0.127" layer="21"/>
+<wire x1="1.13" y1="-1.995" x2="1.13" y2="-0.595" width="0.127" layer="21"/>
+<wire x1="1.13" y1="-0.595" x2="1.13" y2="0.505" width="0.127" layer="21"/>
+<wire x1="1.13" y1="0.505" x2="1.13" y2="1.905" width="0.127" layer="21"/>
+<wire x1="1.13" y1="1.905" x2="-1.27" y2="1.905" width="0.127" layer="21"/>
+<smd name="P$1" x="-0.07" y="1.205" dx="2" dy="1.25" layer="1"/>
+<smd name="P$2" x="-0.07" y="-1.295" dx="2" dy="1.25" layer="1"/>
+<text x="0" y="2.166" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.15" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="INDUCTOR">
@@ -699,6 +717,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technology name="">
 <attribute name="PROD_ID" value="NDUC-12274"/>
 <attribute name="VALUE" value="1uH"/>
+</technology>
+</technologies>
+</device>
+<device name="-LQH32-15UH" package="INDUCTOR_LQH32">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="NDUC-13914" constant="no"/>
+<attribute name="VALUE" value="15uH,700mA" constant="no"/>
 </technology>
 </technologies>
 </device>
