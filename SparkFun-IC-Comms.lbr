@@ -1162,6 +1162,48 @@ SOIC, 0.3 inch width</description>
 <smd name="10" x="2.366" y="1.0175" dx="1.1" dy="0.25" layer="1"/>
 <smd name="6" x="2.366" y="-0.9875" dx="1.1" dy="0.25" layer="1"/>
 </package>
+<package name="DFN8">
+<smd name="1" x="-0.975" y="-1.4" dx="0.7" dy="0.3" layer="1" rot="R90" cream="no"/>
+<smd name="2" x="-0.325" y="-1.4" dx="0.7" dy="0.3" layer="1" rot="R90" cream="no"/>
+<smd name="3" x="0.325" y="-1.4" dx="0.7" dy="0.3" layer="1" rot="R90" cream="no"/>
+<smd name="4" x="0.975" y="-1.4" dx="0.7" dy="0.3" layer="1" rot="R90" cream="no"/>
+<smd name="5" x="0.975" y="1.4" dx="0.7" dy="0.3" layer="1" rot="R90" cream="no"/>
+<smd name="6" x="0.325" y="1.4" dx="0.7" dy="0.3" layer="1" rot="R90" cream="no"/>
+<smd name="7" x="-0.325" y="1.4" dx="0.7" dy="0.3" layer="1" rot="R90" cream="no"/>
+<smd name="8" x="-0.975" y="1.4" dx="0.7" dy="0.3" layer="1" rot="R90" cream="no"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<smd name="9" x="0" y="0" dx="2.38" dy="1.65" layer="1" cream="no"/>
+<wire x1="-1.5" y1="1.5" x2="-1.25" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="1.25" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.25" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="1.25" y2="-1.5" width="0.127" layer="21"/>
+<circle x="-1.619" y="-1.619" radius="0.1621875" width="0.127" layer="21"/>
+<rectangle x1="-1.08" y1="-1.645" x2="-0.87" y2="-1.155" layer="31"/>
+<rectangle x1="-0.43" y1="-1.645" x2="-0.22" y2="-1.155" layer="31"/>
+<rectangle x1="0.22" y1="-1.645" x2="0.43" y2="-1.155" layer="31"/>
+<rectangle x1="0.87" y1="-1.645" x2="1.08" y2="-1.155" layer="31"/>
+<rectangle x1="-1.08" y1="1.155" x2="-0.87" y2="1.645" layer="31"/>
+<rectangle x1="-0.43" y1="1.155" x2="-0.22" y2="1.645" layer="31"/>
+<rectangle x1="0.22" y1="1.155" x2="0.43" y2="1.645" layer="31"/>
+<rectangle x1="0.87" y1="1.155" x2="1.08" y2="1.645" layer="31"/>
+<rectangle x1="-0.6" y1="-0.3" x2="0.6" y2="0.3" layer="31"/>
+<text x="-1.875" y="-1.44" size="1.016" layer="25" rot="R90">&gt;NAME</text>
+<text x="2.76" y="-2.675" size="1.016" layer="27" rot="R90">&gt;VALUE</text>
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.127" layer="51"/>
+<rectangle x1="0.175" y1="1.2" x2="0.475" y2="1.5" layer="51"/>
+<rectangle x1="-1.125" y1="1.2" x2="-0.825" y2="1.5" layer="51"/>
+<rectangle x1="-0.475" y1="1.2" x2="-0.175" y2="1.5" layer="51"/>
+<rectangle x1="0.825" y1="1.2" x2="1.125" y2="1.5" layer="51"/>
+<rectangle x1="0.175" y1="-1.5" x2="0.475" y2="-1.2" layer="51" rot="R180"/>
+<rectangle x1="-1.125" y1="-1.5" x2="-0.825" y2="-1.2" layer="51" rot="R180"/>
+<rectangle x1="-0.475" y1="-1.5" x2="-0.175" y2="-1.2" layer="51" rot="R180"/>
+<rectangle x1="0.825" y1="-1.5" x2="1.125" y2="-1.2" layer="51" rot="R180"/>
+<rectangle x1="-1.2" y1="-0.8" x2="1.2" y2="0.8" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FT232R">
@@ -1674,6 +1716,38 @@ SOIC, 0.3 inch width</description>
 <text x="0" y="-10.16" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 <pin name="VDDA" x="-15.24" y="5.08" length="middle"/>
 <pin name="VDDB" x="15.24" y="5.08" length="middle" rot="R180"/>
+</symbol>
+<symbol name="ATA6561DFN8">
+<wire x1="-7.62" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<pin name="VCC" x="-10.16" y="7.62" length="short"/>
+<pin name="TXD" x="-10.16" y="2.54" length="short"/>
+<pin name="RXD" x="-10.16" y="-2.54" length="short"/>
+<pin name="GND" x="-10.16" y="-7.62" length="short"/>
+<pin name="STBY" x="12.7" y="-7.62" length="short" rot="R180"/>
+<pin name="CANL" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="CANH" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="VIO" x="12.7" y="7.62" length="short" rot="R180"/>
+<text x="-7.62" y="11.43" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="MAX13487E">
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<pin name="VCC" x="-10.16" y="10.16" length="short"/>
+<pin name="!RE" x="-10.16" y="5.08" length="short"/>
+<pin name="GND" x="-10.16" y="-10.16" length="short"/>
+<pin name="!SHDN" x="-10.16" y="-5.08" length="short"/>
+<pin name="RO" x="10.16" y="-10.16" length="short" rot="R180"/>
+<pin name="DI" x="10.16" y="-5.08" length="short" rot="R180"/>
+<pin name="B" x="10.16" y="5.08" length="short" rot="R180"/>
+<pin name="A" x="10.16" y="10.16" length="short" rot="R180"/>
+<text x="-7.62" y="13.716" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2533,6 +2607,54 @@ SOIC, 0.3 inch width</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-13899" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATA6561" prefix="U">
+<gates>
+<gate name="G$1" symbol="ATA6561DFN8" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DFN8">
+<connects>
+<connect gate="G$1" pin="CANH" pad="7"/>
+<connect gate="G$1" pin="CANL" pad="6"/>
+<connect gate="G$1" pin="GND" pad="2 9"/>
+<connect gate="G$1" pin="RXD" pad="4"/>
+<connect gate="G$1" pin="STBY" pad="8"/>
+<connect gate="G$1" pin="TXD" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+<connect gate="G$1" pin="VIO" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-13837"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX13487E" prefix="U">
+<gates>
+<gate name="G$1" symbol="MAX13487E" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO08">
+<connects>
+<connect gate="G$1" pin="!RE" pad="2"/>
+<connect gate="G$1" pin="!SHDN" pad="3"/>
+<connect gate="G$1" pin="A" pad="6"/>
+<connect gate="G$1" pin="B" pad="7"/>
+<connect gate="G$1" pin="DI" pad="4"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="RO" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-13823"/>
 </technology>
 </technologies>
 </device>

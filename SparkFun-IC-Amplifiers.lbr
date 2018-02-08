@@ -499,6 +499,36 @@ MSOP&lt;br&gt;
 </polygon>
 <smd name="PAD" x="0" y="0" dx="2.3114" dy="2.3114" layer="1"/>
 </package>
+<package name="TFSOP-10">
+<smd name="LIN" x="-2.175" y="1" dx="0.85" dy="0.29" layer="1"/>
+<smd name="SDN" x="-2.175" y="0.5" dx="0.85" dy="0.29" layer="1"/>
+<smd name="HP-IN" x="-2.175" y="0" dx="0.85" dy="0.29" layer="1"/>
+<smd name="GND" x="-2.175" y="-0.5" dx="0.85" dy="0.29" layer="1"/>
+<smd name="RIN" x="-2.175" y="-1" dx="0.85" dy="0.29" layer="1"/>
+<smd name="ROUT" x="2.175" y="-1" dx="0.85" dy="0.29" layer="1"/>
+<smd name="BP" x="2.175" y="-0.5" dx="0.85" dy="0.29" layer="1"/>
+<smd name="BTL" x="2.175" y="0" dx="0.85" dy="0.29" layer="1"/>
+<smd name="VDD" x="2.175" y="0.5" dx="0.85" dy="0.29" layer="1"/>
+<smd name="LOUT" x="2.175" y="1" dx="0.85" dy="0.29" layer="1"/>
+<wire x1="-1.55" y1="1.55" x2="1.55" y2="1.55" width="0.127" layer="21"/>
+<wire x1="1.55" y1="1.55" x2="1.55" y2="-1.55" width="0.127" layer="21"/>
+<wire x1="1.55" y1="-1.55" x2="-1.55" y2="-1.55" width="0.127" layer="21"/>
+<wire x1="-1.55" y1="-1.55" x2="-1.55" y2="1.55" width="0.127" layer="21"/>
+<circle x="-1.2" y="1.2" radius="0.14141875" width="0.127" layer="21"/>
+<circle x="-1.9" y="1.8" radius="0.2" width="0.127" layer="21"/>
+<rectangle x1="-2.55" y1="-0.11" x2="-1.6" y2="0.11" layer="51"/>
+<rectangle x1="-2.55" y1="0.89" x2="-1.6" y2="1.11" layer="51"/>
+<rectangle x1="-2.55" y1="0.39" x2="-1.6" y2="0.61" layer="51"/>
+<rectangle x1="-2.55" y1="-0.61" x2="-1.6" y2="-0.39" layer="51"/>
+<rectangle x1="-2.55" y1="-1.11" x2="-1.6" y2="-0.89" layer="51"/>
+<rectangle x1="1.6" y1="0.89" x2="2.55" y2="1.11" layer="51" rot="R180"/>
+<rectangle x1="1.6" y1="0.39" x2="2.55" y2="0.61" layer="51" rot="R180"/>
+<rectangle x1="1.6" y1="-0.11" x2="2.55" y2="0.11" layer="51" rot="R180"/>
+<rectangle x1="1.6" y1="-0.61" x2="2.55" y2="-0.39" layer="51" rot="R180"/>
+<rectangle x1="1.6" y1="-1.11" x2="2.55" y2="-0.89" layer="51" rot="R180"/>
+<text x="-0.8" y="0.43" size="0.3048" layer="25">&gt;NAME</text>
+<text x="-1" y="-0.73" size="0.3048" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="OP-AMP">
@@ -653,6 +683,24 @@ Exposed paddle pin is broken out and recommended to be connected to -VS.</descri
 <pin name="PAD" x="15.24" y="-5.08" length="short" direction="pwr" rot="R180"/>
 <wire x1="11.43" y1="-2.54" x2="11.43" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="11.43" y1="-5.08" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+</symbol>
+<symbol name="LM4853">
+<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<pin name="HP-IN" x="-12.7" y="7.62" visible="pin" length="short"/>
+<pin name="SDN" x="-12.7" y="5.08" visible="pin" length="short"/>
+<pin name="LIN" x="-12.7" y="0" visible="pin" length="short"/>
+<pin name="RIN" x="-12.7" y="-5.08" visible="pin" length="short"/>
+<pin name="BP" x="-12.7" y="-10.16" visible="pin" length="short"/>
+<pin name="VDD" x="12.7" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="LOUT" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="ROUT" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="12.7" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="BTL" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<text x="-10.16" y="10.922" size="1.27" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-15.24" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1183,6 +1231,33 @@ Note:  SparkFun currenly only uses the QFN style part</description>
 <technology name="">
 <attribute name="PROD_ID" value="IC-10149" constant="no"/>
 <attribute name="VALUE" value="TPA6111A2DR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM4853" prefix="U">
+<gates>
+<gate name="G$1" symbol="LM4853" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TFSOP-10">
+<connects>
+<connect gate="G$1" pin="BP" pad="BP"/>
+<connect gate="G$1" pin="BTL" pad="BTL"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="HP-IN" pad="HP-IN"/>
+<connect gate="G$1" pin="LIN" pad="LIN"/>
+<connect gate="G$1" pin="LOUT" pad="LOUT"/>
+<connect gate="G$1" pin="RIN" pad="RIN"/>
+<connect gate="G$1" pin="ROUT" pad="ROUT"/>
+<connect gate="G$1" pin="SDN" pad="SDN"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-13812"/>
+<attribute name="VALUE" value="LM4853"/>
 </technology>
 </technologies>
 </device>

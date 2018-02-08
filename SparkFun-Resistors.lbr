@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -857,6 +857,30 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <package name="2512">
 <smd name="P$1" x="-3.175" y="0" dx="3.175" dy="1.27" layer="1" rot="R90"/>
 <smd name="P$2" x="3.175" y="0" dx="3.175" dy="1.27" layer="1" rot="R90"/>
+</package>
+<package name="POT-DUAL-SWITCH-PTH">
+<pad name="A1" x="2.54" y="2.5" drill="1"/>
+<pad name="A2" x="2.54" y="0" drill="1"/>
+<pad name="A3" x="2.54" y="-2.5" drill="1"/>
+<pad name="B1" x="0.04" y="2.5" drill="1"/>
+<pad name="B2" x="0.04" y="0" drill="1"/>
+<pad name="B3" x="0.04" y="-2.5" drill="1"/>
+<pad name="SW1" x="-6.21" y="2.5" drill="1"/>
+<pad name="SW2" x="-6.21" y="-2.5" drill="1"/>
+<wire x1="-8.26" y1="4.5" x2="7.54" y2="4.5" width="0.127" layer="21"/>
+<wire x1="7.54" y1="4.5" x2="7.54" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="7.54" y1="-4.5" x2="-8.26" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="-8.26" y1="-4.5" x2="-8.26" y2="4.5" width="0.127" layer="21"/>
+<wire x1="7.54" y1="3.5" x2="14.54" y2="3.5" width="0.127" layer="51"/>
+<wire x1="14.54" y1="3.5" x2="14.54" y2="3" width="0.127" layer="51"/>
+<wire x1="14.54" y1="3" x2="14.54" y2="-3" width="0.127" layer="51"/>
+<wire x1="14.54" y1="-3" x2="14.54" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="14.54" y1="-3.5" x2="7.54" y2="-3.5" width="0.127" layer="51"/>
+<wire x1="14.54" y1="3" x2="26.54" y2="3" width="0.127" layer="51"/>
+<wire x1="26.54" y1="3" x2="26.54" y2="-3" width="0.127" layer="51"/>
+<wire x1="26.54" y1="-3" x2="14.54" y2="-3" width="0.127" layer="51"/>
+<text x="-6.46" y="5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-6.46" y="-6" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -4066,6 +4090,33 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <technology name="">
 <attribute name="PROD_ID" value="RES-13768"/>
 <attribute name="VALUE" value="750K"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POTENTIOMETER_DUAL_W/SWITCH" prefix="POT">
+<gates>
+<gate name="G2" symbol="POTENTIOMETER" x="0" y="0"/>
+<gate name="G1" symbol="POTENTIOMETER" x="-12.7" y="0"/>
+<gate name="G3" symbol="SWITCH-MOMENTARY" x="15.24" y="0"/>
+</gates>
+<devices>
+<device name="" package="POT-DUAL-SWITCH-PTH">
+<connects>
+<connect gate="G1" pin="A" pad="A1"/>
+<connect gate="G1" pin="E" pad="A3"/>
+<connect gate="G1" pin="S" pad="A2"/>
+<connect gate="G2" pin="A" pad="B1"/>
+<connect gate="G2" pin="E" pad="B3"/>
+<connect gate="G2" pin="S" pad="B2"/>
+<connect gate="G3" pin="1" pad="SW1"/>
+<connect gate="G3" pin="2" pad="SW2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-13814"/>
+<attribute name="VALUE" value="20k" constant="no"/>
 </technology>
 </technologies>
 </device>
