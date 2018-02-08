@@ -63,6 +63,10 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -71,6 +75,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
@@ -85,7 +90,10 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -94,11 +102,16 @@
 <layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
@@ -125,11 +138,19 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <description>&lt;h3&gt;SparkFun Displays&lt;/h3&gt;
@@ -1476,6 +1497,283 @@ none
 <wire x1="8.3" y1="-11.35" x2="-21.7" y2="-11.35" width="0.127" layer="48" style="shortdash"/>
 <wire x1="-21.7" y1="-11.35" x2="-21.7" y2="0.1" width="0.127" layer="48" style="shortdash"/>
 </package>
+<package name="FPC-13">
+<description>&lt;h3&gt;FPC Connector - 13 Pin&lt;/h3&gt;
+&lt;p&gt;&lt;a href=http://www.molex.com/pdm_docs/sd/5035665100_sd.pdf&gt;Example Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="-2.775" y1="-1.525" x2="-1.5" y2="-1.525" width="0.0254" layer="51"/>
+<wire x1="1.5" y1="-1.525" x2="2.775" y2="-1.525" width="0.0254" layer="51"/>
+<wire x1="2.775" y1="-1.525" x2="2.775" y2="1.175" width="0.0254" layer="51"/>
+<wire x1="-2.775" y1="1.175" x2="-2.775" y2="-1.525" width="0.0254" layer="51"/>
+<smd name="P$1" x="-2.51" y="-1.2" dx="0.3" dy="0.85" layer="1"/>
+<smd name="P$2" x="2.51" y="-1.2" dx="0.3" dy="0.85" layer="1"/>
+<smd name="13" x="-1.8" y="-1.265" dx="0.25" dy="0.72" layer="1"/>
+<smd name="11" x="-1.2" y="-1.265" dx="0.25" dy="0.72" layer="1"/>
+<smd name="9" x="-0.6" y="-1.265" dx="0.25" dy="0.72" layer="1"/>
+<smd name="7" x="0" y="-1.265" dx="0.25" dy="0.72" layer="1"/>
+<smd name="5" x="0.6" y="-1.265" dx="0.25" dy="0.72" layer="1"/>
+<smd name="3" x="1.2" y="-1.265" dx="0.25" dy="0.72" layer="1"/>
+<smd name="1" x="1.8" y="-1.265" dx="0.25" dy="0.72" layer="1"/>
+<smd name="12" x="-1.5" y="1.165" dx="0.25" dy="0.52" layer="1"/>
+<smd name="10" x="-0.9" y="1.165" dx="0.25" dy="0.52" layer="1"/>
+<smd name="8" x="-0.3" y="1.165" dx="0.25" dy="0.52" layer="1"/>
+<smd name="6" x="0.3" y="1.165" dx="0.25" dy="0.52" layer="1"/>
+<smd name="4" x="0.9" y="1.165" dx="0.25" dy="0.52" layer="1"/>
+<smd name="2" x="1.5" y="1.165" dx="0.25" dy="0.52" layer="1"/>
+<wire x1="-2.875" y1="1.275" x2="-2.875" y2="-1.525" width="0.2032" layer="21"/>
+<wire x1="2.775" y1="1.175" x2="-2.775" y2="1.175" width="0.0254" layer="51"/>
+<wire x1="2.875" y1="-1.525" x2="2.875" y2="1.275" width="0.2032" layer="21"/>
+<wire x1="-1.805" y1="1.275" x2="-2.875" y2="1.275" width="0.2032" layer="21"/>
+<wire x1="2.875" y1="1.275" x2="1.805" y2="1.275" width="0.2032" layer="21"/>
+<wire x1="-1.5" y1="-1.525" x2="-1.5" y2="-3.025" width="0.0254" layer="51"/>
+<wire x1="-1.5" y1="-3.025" x2="1.5" y2="-3.025" width="0.0254" layer="51"/>
+<wire x1="1.5" y1="-3.025" x2="1.5" y2="-1.525" width="0.0254" layer="51"/>
+<wire x1="1.5" y1="-1.525" x2="-1.5" y2="-1.525" width="0.0254" layer="51"/>
+<text x="0" y="-2.3" size="0.254" layer="51" align="center">FPC Entry</text>
+</package>
+<package name="OEL_1.8_FPC">
+<description>&lt;h3&gt;1.81" Greyscale OLED&lt;/h3&gt;
+&lt;p&gt;Includes FPC connector on bottom side and dimensions of display.&lt;/p&gt;
+&lt;p&gt;bDoc outline indicates approximate location of the FPC cable.&lt;/p&gt;</description>
+<wire x1="-7.47" y1="-27.65" x2="7.47" y2="-27.65" width="0.0254" layer="51"/>
+<wire x1="7.47" y1="-27.65" x2="7.47" y2="27.65" width="0.0254" layer="51"/>
+<wire x1="-7.47" y1="27.65" x2="-7.47" y2="-27.65" width="0.0254" layer="51"/>
+<wire x1="7.47" y1="27.65" x2="7.47" y2="29.64" width="0.0254" layer="51"/>
+<wire x1="7.47" y1="29.64" x2="7.47" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="7.47" y1="31.64" x2="5.37" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="5.37" y1="31.64" x2="3.27" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="3.27" y1="31.64" x2="1.17" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="1.17" y1="31.64" x2="0.69" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="0.69" y1="31.64" x2="-0.93" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="-0.93" y1="31.64" x2="-3.48" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="-3.48" y1="31.64" x2="-3.51" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="-3.51" y1="31.64" x2="-5.49" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="-5.49" y1="31.64" x2="-7.47" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="-7.47" y1="31.64" x2="-7.47" y2="29.65" width="0.0254" layer="51"/>
+<text x="0" y="30" size="1.27" layer="51" align="center">Avoid Bending</text>
+<wire x1="-7.47" y1="29.65" x2="-7.47" y2="27.65" width="0.0254" layer="51"/>
+<wire x1="-7.47" y1="27.65" x2="-4.91" y2="27.65" width="0.0254" layer="51"/>
+<wire x1="-4.91" y1="27.65" x2="-2.81" y2="27.65" width="0.0254" layer="51"/>
+<wire x1="-2.81" y1="27.65" x2="-0.71" y2="27.65" width="0.0254" layer="51"/>
+<wire x1="-0.71" y1="27.65" x2="1.39" y2="27.65" width="0.0254" layer="51"/>
+<wire x1="1.39" y1="27.65" x2="3.49" y2="27.65" width="0.0254" layer="51"/>
+<wire x1="3.49" y1="27.65" x2="5.49" y2="27.65" width="0.0254" layer="51"/>
+<wire x1="5.49" y1="27.65" x2="7.47" y2="27.65" width="0.0254" layer="51"/>
+<wire x1="2.1" y1="89.64" x2="2.1" y2="47.21" width="0.0254" layer="49"/>
+<wire x1="6.3" y1="47.21" x2="6.3" y2="89.64" width="0.0254" layer="49"/>
+<wire x1="6.3" y1="89.64" x2="2.1" y2="89.64" width="0.0254" layer="49"/>
+<wire x1="-3.51" y1="38.94" x2="2.1" y2="47.21" width="0.0254" layer="49"/>
+<wire x1="0.69" y1="38.94" x2="6.3" y2="47.21" width="0.0254" layer="49"/>
+<wire x1="-3.51" y1="38.94" x2="-3.51" y2="31.64" width="0.0254" layer="49"/>
+<wire x1="0.69" y1="38.94" x2="0.69" y2="31.64" width="0.0254" layer="49"/>
+<wire x1="6.975" y1="-11.06" x2="6.975" y2="-13.76" width="0.0254" layer="52"/>
+<wire x1="1.425" y1="-13.76" x2="1.425" y2="-11.06" width="0.0254" layer="52"/>
+<smd name="P$1" x="1.69" y="-11.385" dx="0.3" dy="0.85" layer="16"/>
+<smd name="P$2" x="6.71" y="-11.385" dx="0.3" dy="0.85" layer="16"/>
+<smd name="13" x="2.4" y="-11.32" dx="0.25" dy="0.72" layer="16"/>
+<smd name="11" x="3" y="-11.32" dx="0.25" dy="0.72" layer="16"/>
+<smd name="9" x="3.6" y="-11.32" dx="0.25" dy="0.72" layer="16"/>
+<smd name="7" x="4.2" y="-11.32" dx="0.25" dy="0.72" layer="16"/>
+<smd name="5" x="4.8" y="-11.32" dx="0.25" dy="0.72" layer="16"/>
+<smd name="3" x="5.4" y="-11.32" dx="0.25" dy="0.72" layer="16"/>
+<smd name="1" x="6" y="-11.32" dx="0.25" dy="0.72" layer="16"/>
+<smd name="12" x="2.7" y="-13.75" dx="0.25" dy="0.52" layer="16"/>
+<smd name="10" x="3.3" y="-13.75" dx="0.25" dy="0.52" layer="16"/>
+<smd name="8" x="3.9" y="-13.75" dx="0.25" dy="0.52" layer="16"/>
+<smd name="6" x="4.5" y="-13.75" dx="0.25" dy="0.52" layer="16"/>
+<smd name="4" x="5.1" y="-13.75" dx="0.25" dy="0.52" layer="16"/>
+<smd name="2" x="5.7" y="-13.75" dx="0.25" dy="0.52" layer="16"/>
+<wire x1="1.325" y1="-13.86" x2="1.325" y2="-11.06" width="0.2032" layer="22"/>
+<wire x1="6.975" y1="-13.76" x2="1.425" y2="-13.76" width="0.0254" layer="52"/>
+<wire x1="7.075" y1="-11.06" x2="7.075" y2="-13.86" width="0.2032" layer="22"/>
+<wire x1="2.395" y1="-13.86" x2="1.325" y2="-13.86" width="0.2032" layer="22"/>
+<wire x1="7.075" y1="-13.86" x2="6.005" y2="-13.86" width="0.2032" layer="22"/>
+<wire x1="6.975" y1="-11.06" x2="1.425" y2="-11.06" width="0.0254" layer="52"/>
+<wire x1="2.1" y1="-13.21" x2="2.1" y2="29.22" width="0.0254" layer="52"/>
+<wire x1="6.3" y1="29.22" x2="6.3" y2="-13.21" width="0.0254" layer="52"/>
+<wire x1="6.3" y1="-13.21" x2="2.1" y2="-13.21" width="0.0254" layer="52"/>
+<wire x1="-3.51" y1="38.215" x2="-3.51" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="0.69" y1="38.215" x2="0.69" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="-3.51" y1="37.49" x2="2.1" y2="29.22" width="0.0254" layer="52"/>
+<wire x1="0.69" y1="37.49" x2="6.3" y2="29.22" width="0.0254" layer="52"/>
+<wire x1="-3.51" y1="37.49" x2="-3.51" y2="38.215" width="0.0254" layer="52"/>
+<wire x1="0.69" y1="37.49" x2="0.69" y2="38.215" width="0.0254" layer="52"/>
+<wire x1="0.69" y1="38.215" x2="-3.51" y2="38.215" width="0.0254" layer="52"/>
+<wire x1="-3.51" y1="38.215" x2="0.69" y2="38.215" width="0.0254" layer="51"/>
+<wire x1="-7.47" y1="27.65" x2="-3.48" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="3.49" y1="27.65" x2="7.47" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="1.39" y1="27.65" x2="5.37" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="-0.71" y1="27.65" x2="3.27" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="-2.81" y1="27.65" x2="1.17" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="-4.91" y1="27.65" x2="-0.93" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="5.49" y1="27.65" x2="7.47" y2="29.64" width="0.0254" layer="51"/>
+<wire x1="-7.47" y1="29.65" x2="-5.49" y2="31.64" width="0.0254" layer="51"/>
+<polygon width="0.0254" layer="51" pour="hatch">
+<vertex x="4.5" y="22.548"/>
+<vertex x="-4.5" y="22.548"/>
+<vertex x="-4.5" y="-22.548"/>
+<vertex x="4.5" y="-22.548"/>
+</polygon>
+<text x="0" y="0" size="1.27" layer="51" rot="R90" align="center">Display Area</text>
+</package>
+<package name="AYF331335">
+<description>&lt;h3&gt;Panasonic Y3B FPC Connector - 13 Pin&lt;/h3&gt;
+&lt;p&gt;Low-profile, top/bottom contact connector for 13-pin, 0.3mm pitch FPC connector.&lt;/p&gt;
+&lt;p&gt;&lt;a href=http://www3.panasonic.biz/ac/e_download/control/connector/fpc-ffc/catalog/con_eng_y3bw.pdf&gt;Datasheet&lt;/a&gt;</description>
+<smd name="13" x="1.8" y="1.355" dx="0.23" dy="0.44" layer="1" rot="R180"/>
+<smd name="12" x="1.5" y="-1.405" dx="0.23" dy="0.34" layer="1" rot="R180"/>
+<smd name="11" x="1.2" y="1.355" dx="0.23" dy="0.44" layer="1" rot="R180"/>
+<smd name="10" x="0.9" y="-1.405" dx="0.23" dy="0.34" layer="1" rot="R180"/>
+<smd name="9" x="0.6" y="1.355" dx="0.23" dy="0.44" layer="1" rot="R180"/>
+<smd name="8" x="0.3" y="-1.405" dx="0.23" dy="0.34" layer="1" rot="R180"/>
+<smd name="7" x="0" y="1.355" dx="0.23" dy="0.44" layer="1" rot="R180"/>
+<smd name="6" x="-0.3" y="-1.405" dx="0.23" dy="0.34" layer="1" rot="R180"/>
+<smd name="5" x="-0.6" y="1.355" dx="0.23" dy="0.44" layer="1" rot="R180"/>
+<smd name="4" x="-0.9" y="-1.405" dx="0.23" dy="0.34" layer="1" rot="R180"/>
+<smd name="3" x="-1.2" y="1.355" dx="0.23" dy="0.44" layer="1" rot="R180"/>
+<smd name="2" x="-1.5" y="-1.405" dx="0.23" dy="0.34" layer="1" rot="R180"/>
+<smd name="1" x="-1.8" y="1.355" dx="0.23" dy="0.44" layer="1" rot="R180"/>
+<wire x1="2.7" y1="1.475" x2="2.7" y2="-1.475" width="0.002540625" layer="51"/>
+<wire x1="2.7" y1="-1.475" x2="-2.7" y2="-1.475" width="0.002540625" layer="51"/>
+<wire x1="-2.7" y1="-1.475" x2="-2.7" y2="1.475" width="0.002540625" layer="51"/>
+<wire x1="-2.7" y1="1.475" x2="-2.1" y2="1.475" width="0.002540625" layer="51"/>
+<rectangle x1="1.75" y1="1.135" x2="1.85" y2="1.535" layer="51" rot="R180"/>
+<rectangle x1="1.45" y1="-1.535" x2="1.55" y2="-1.235" layer="51" rot="R180"/>
+<rectangle x1="0.85" y1="-1.535" x2="0.95" y2="-1.235" layer="51" rot="R180"/>
+<rectangle x1="0.25" y1="-1.535" x2="0.35" y2="-1.235" layer="51" rot="R180"/>
+<rectangle x1="-0.35" y1="-1.535" x2="-0.25" y2="-1.235" layer="51" rot="R180"/>
+<rectangle x1="-0.95" y1="-1.535" x2="-0.85" y2="-1.235" layer="51" rot="R180"/>
+<rectangle x1="-1.55" y1="-1.535" x2="-1.45" y2="-1.235" layer="51" rot="R180"/>
+<rectangle x1="1.15" y1="1.135" x2="1.25" y2="1.535" layer="51" rot="R180"/>
+<rectangle x1="0.55" y1="1.135" x2="0.65" y2="1.535" layer="51" rot="R180"/>
+<rectangle x1="-0.05" y1="1.135" x2="0.05" y2="1.535" layer="51" rot="R180"/>
+<rectangle x1="-0.65" y1="1.135" x2="-0.55" y2="1.535" layer="51" rot="R180"/>
+<rectangle x1="-1.25" y1="1.135" x2="-1.15" y2="1.535" layer="51" rot="R180"/>
+<rectangle x1="-1.85" y1="1.135" x2="-1.75" y2="1.535" layer="51" rot="R180"/>
+<wire x1="-2.1" y1="1.475" x2="2.1" y2="1.475" width="0.002540625" layer="51"/>
+<wire x1="2.1" y1="1.475" x2="2.7" y2="1.475" width="0.002540625" layer="51"/>
+<wire x1="2.1" y1="0.125" x2="-2.1" y2="0.125" width="0.002540625" layer="51"/>
+<text x="0" y="0.4" size="0.254" layer="51" font="vector" rot="R180" align="center">FPC Depth</text>
+<wire x1="2.9" y1="1.675" x2="2.9" y2="-1.675" width="0.2032" layer="21"/>
+<wire x1="-2.9" y1="-1.675" x2="-2.9" y2="1.675" width="0.2032" layer="21"/>
+<wire x1="2.9" y1="-1.675" x2="1.8" y2="-1.675" width="0.2032" layer="21"/>
+<wire x1="-1.8" y1="-1.675" x2="-2.9" y2="-1.675" width="0.2032" layer="21"/>
+<wire x1="2.1" y1="1.675" x2="2.9" y2="1.675" width="0.2032" layer="21"/>
+<wire x1="-2.9" y1="1.675" x2="-2.1" y2="1.675" width="0.2032" layer="21"/>
+<text x="0" y="-1.905" size="0.6096" layer="25" font="vector" align="top-center">&gt;Name</text>
+<text x="0" y="1.905" size="0.6096" layer="27" font="vector" align="bottom-center">&gt;Value</text>
+<wire x1="2.1" y1="0.125" x2="2.1" y2="1.475" width="0.002540625" layer="51"/>
+<wire x1="-2.1" y1="0.125" x2="-2.1" y2="1.475" width="0.002540625" layer="51"/>
+</package>
+<package name="OEL_1.8_FPC_Y3B">
+<description>&lt;h3&gt;1.81" Greyscale OLED&lt;/h3&gt;
+&lt;p&gt;Includes Panasonic Y3B FPC connector on bottom side and dimensions of display.&lt;/p&gt;
+&lt;p&gt;bDoc outline indicates approximate location of the FPC cable.&lt;/p&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 13&lt;/li&gt;
+&lt;li&gt;Pin pitch: 0.6mm&lt;/li&gt;
+&lt;li&gt;Area: 5.8 mm x 3.35 mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=https://cdn.sparkfun.com/assets/d/b/1/f/d/SSD1320_1.0__to_Wisechip_.pdf&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="-7.47" y1="-27.65" x2="7.47" y2="-27.65" width="0.0254" layer="51"/>
+<wire x1="7.47" y1="-27.65" x2="7.47" y2="27.65" width="0.0254" layer="51"/>
+<wire x1="-7.47" y1="27.65" x2="-7.47" y2="-27.65" width="0.0254" layer="51"/>
+<wire x1="7.47" y1="27.65" x2="7.47" y2="29.64" width="0.0254" layer="51"/>
+<wire x1="7.47" y1="29.64" x2="7.47" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="7.47" y1="31.64" x2="5.37" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="5.37" y1="31.64" x2="3.27" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="3.27" y1="31.64" x2="1.17" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="1.17" y1="31.64" x2="0.69" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="0.69" y1="31.64" x2="-0.93" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="-0.93" y1="31.64" x2="-3.48" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="-3.48" y1="31.64" x2="-3.51" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="-3.51" y1="31.64" x2="-5.49" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="-5.49" y1="31.64" x2="-7.47" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="-7.47" y1="31.64" x2="-7.47" y2="29.65" width="0.0254" layer="51"/>
+<text x="0" y="30" size="1.27" layer="51" align="center">Avoid Bending</text>
+<wire x1="-7.47" y1="29.65" x2="-7.47" y2="27.65" width="0.0254" layer="51"/>
+<wire x1="-7.47" y1="27.65" x2="-4.91" y2="27.65" width="0.0254" layer="51"/>
+<wire x1="-4.91" y1="27.65" x2="-2.81" y2="27.65" width="0.0254" layer="51"/>
+<wire x1="-2.81" y1="27.65" x2="-0.71" y2="27.65" width="0.0254" layer="51"/>
+<wire x1="-0.71" y1="27.65" x2="1.39" y2="27.65" width="0.0254" layer="51"/>
+<wire x1="1.39" y1="27.65" x2="3.49" y2="27.65" width="0.0254" layer="51"/>
+<wire x1="3.49" y1="27.65" x2="5.49" y2="27.65" width="0.0254" layer="51"/>
+<wire x1="5.49" y1="27.65" x2="7.47" y2="27.65" width="0.0254" layer="51"/>
+<wire x1="2.1" y1="89.64" x2="2.1" y2="47.21" width="0.0254" layer="49"/>
+<wire x1="6.3" y1="47.21" x2="6.3" y2="89.64" width="0.0254" layer="49"/>
+<wire x1="6.3" y1="89.64" x2="2.1" y2="89.64" width="0.0254" layer="49"/>
+<wire x1="-3.51" y1="38.94" x2="2.1" y2="47.21" width="0.0254" layer="49"/>
+<wire x1="0.69" y1="38.94" x2="6.3" y2="47.21" width="0.0254" layer="49"/>
+<wire x1="-3.51" y1="38.94" x2="-3.51" y2="31.64" width="0.0254" layer="49"/>
+<wire x1="0.69" y1="38.94" x2="0.69" y2="31.64" width="0.0254" layer="49"/>
+<wire x1="2.1" y1="-13.21" x2="2.1" y2="29.22" width="0.0254" layer="52"/>
+<wire x1="6.3" y1="29.22" x2="6.3" y2="-13.21" width="0.0254" layer="52"/>
+<wire x1="6.3" y1="-13.21" x2="2.1" y2="-13.21" width="0.0254" layer="52"/>
+<wire x1="-3.51" y1="38.215" x2="-3.51" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="0.69" y1="38.215" x2="0.69" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="-3.51" y1="37.49" x2="2.1" y2="29.22" width="0.0254" layer="52"/>
+<wire x1="0.69" y1="37.49" x2="6.3" y2="29.22" width="0.0254" layer="52"/>
+<wire x1="-3.51" y1="37.49" x2="-3.51" y2="38.215" width="0.0254" layer="52"/>
+<wire x1="0.69" y1="37.49" x2="0.69" y2="38.215" width="0.0254" layer="52"/>
+<wire x1="0.69" y1="38.215" x2="-3.51" y2="38.215" width="0.0254" layer="52"/>
+<wire x1="-3.51" y1="38.215" x2="0.69" y2="38.215" width="0.0254" layer="51"/>
+<wire x1="-7.47" y1="27.65" x2="-3.48" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="3.49" y1="27.65" x2="7.47" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="1.39" y1="27.65" x2="5.37" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="-0.71" y1="27.65" x2="3.27" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="-2.81" y1="27.65" x2="1.17" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="-4.91" y1="27.65" x2="-0.93" y2="31.64" width="0.0254" layer="51"/>
+<wire x1="5.49" y1="27.65" x2="7.47" y2="29.64" width="0.0254" layer="51"/>
+<wire x1="-7.47" y1="29.65" x2="-5.49" y2="31.64" width="0.0254" layer="51"/>
+<polygon width="0.0254" layer="51" pour="hatch">
+<vertex x="4.5" y="22.548"/>
+<vertex x="-4.5" y="22.548"/>
+<vertex x="-4.5" y="-22.548"/>
+<vertex x="4.5" y="-22.548"/>
+</polygon>
+<text x="0" y="0" size="1.27" layer="51" rot="R90" align="center">Display Area</text>
+<smd name="13" x="2.4" y="-11.795" dx="0.23" dy="1" layer="16"/>
+<smd name="12" x="2.7" y="-14.955" dx="0.23" dy="1" layer="16"/>
+<smd name="11" x="3" y="-11.795" dx="0.23" dy="1" layer="16"/>
+<smd name="10" x="3.3" y="-14.955" dx="0.23" dy="1" layer="16"/>
+<smd name="9" x="3.6" y="-11.795" dx="0.23" dy="1" layer="16"/>
+<smd name="8" x="3.9" y="-14.955" dx="0.23" dy="1" layer="16"/>
+<smd name="7" x="4.2" y="-11.795" dx="0.23" dy="1" layer="16"/>
+<smd name="6" x="4.5" y="-14.955" dx="0.23" dy="1" layer="16"/>
+<smd name="5" x="4.8" y="-11.795" dx="0.23" dy="1" layer="16"/>
+<smd name="4" x="5.1" y="-14.955" dx="0.23" dy="1" layer="16"/>
+<smd name="3" x="5.4" y="-11.795" dx="0.23" dy="1" layer="16"/>
+<smd name="2" x="5.7" y="-14.955" dx="0.23" dy="1" layer="16"/>
+<smd name="1" x="6" y="-11.795" dx="0.23" dy="1" layer="16"/>
+<wire x1="1.5" y1="-11.875" x2="1.5" y2="-14.825" width="0.002540625" layer="52"/>
+<wire x1="1.5" y1="-14.825" x2="6.9" y2="-14.825" width="0.002540625" layer="52"/>
+<wire x1="6.9" y1="-14.825" x2="6.9" y2="-11.875" width="0.002540625" layer="52"/>
+<wire x1="6.9" y1="-11.875" x2="6.3" y2="-11.875" width="0.002540625" layer="52"/>
+<rectangle x1="2.35" y1="-12.215" x2="2.45" y2="-11.815" layer="52"/>
+<rectangle x1="2.65" y1="-14.885" x2="2.75" y2="-14.585" layer="52"/>
+<rectangle x1="3.25" y1="-14.885" x2="3.35" y2="-14.585" layer="52"/>
+<rectangle x1="3.85" y1="-14.885" x2="3.95" y2="-14.585" layer="52"/>
+<rectangle x1="4.45" y1="-14.885" x2="4.55" y2="-14.585" layer="52"/>
+<rectangle x1="5.05" y1="-14.885" x2="5.15" y2="-14.585" layer="52"/>
+<rectangle x1="5.65" y1="-14.885" x2="5.75" y2="-14.585" layer="52"/>
+<rectangle x1="2.95" y1="-12.215" x2="3.05" y2="-11.815" layer="52"/>
+<rectangle x1="3.55" y1="-12.215" x2="3.65" y2="-11.815" layer="52"/>
+<rectangle x1="4.15" y1="-12.215" x2="4.25" y2="-11.815" layer="52"/>
+<rectangle x1="4.75" y1="-12.215" x2="4.85" y2="-11.815" layer="52"/>
+<rectangle x1="5.35" y1="-12.215" x2="5.45" y2="-11.815" layer="52"/>
+<rectangle x1="5.95" y1="-12.215" x2="6.05" y2="-11.815" layer="52"/>
+<wire x1="6.3" y1="-11.875" x2="2.1" y2="-11.875" width="0.002540625" layer="52"/>
+<wire x1="2.1" y1="-11.875" x2="1.5" y2="-11.875" width="0.002540625" layer="52"/>
+<wire x1="2.1" y1="-13.225" x2="6.3" y2="-13.225" width="0.002540625" layer="52"/>
+<text x="4.2" y="-12.95" size="0.254" layer="52" font="vector" rot="MR180" align="center">FPC Depth</text>
+<wire x1="1.3" y1="-11.675" x2="1.3" y2="-15.025" width="0.2032" layer="22"/>
+<wire x1="7.1" y1="-15.025" x2="7.1" y2="-11.675" width="0.2032" layer="22"/>
+<wire x1="1.3" y1="-15.025" x2="2.4" y2="-15.025" width="0.2032" layer="22"/>
+<wire x1="6" y1="-15.025" x2="7.1" y2="-15.025" width="0.2032" layer="22"/>
+<wire x1="2.1" y1="-11.675" x2="1.3" y2="-11.675" width="0.2032" layer="22"/>
+<wire x1="7.1" y1="-11.675" x2="6.3" y2="-11.675" width="0.2032" layer="22"/>
+<wire x1="2.1" y1="-13.225" x2="2.1" y2="-11.875" width="0.002540625" layer="52"/>
+<wire x1="6.3" y1="-13.225" x2="6.3" y2="-11.875" width="0.002540625" layer="52"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LCD-16X2">
@@ -1692,6 +1990,27 @@ Monochrome</description>
 <text x="-12.7" y="-21.082" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
 <pin name="VDDB" x="-15.24" y="7.62" length="short"/>
 <pin name="VDD" x="-15.24" y="2.54" length="short"/>
+</symbol>
+<symbol name="OEL_1.8">
+<description>&lt;h3&gt; WiseChip SSD1320 - 1.80" Flexible Grayscale OLED&lt;/h3&gt;
+&lt;p&gt;1.80" 160*32 pixel flexible grayscale OLED display&lt;/p&gt;
+
+&lt;/ul&gt;&lt;/p&gt;</description>
+<pin name="VCC" x="-12.7" y="5.08" length="short"/>
+<pin name="VLSS" x="-12.7" y="-5.08" length="short"/>
+<pin name="VSS" x="-12.7" y="-2.54" length="short"/>
+<pin name="VDD" x="-12.7" y="2.54" length="short"/>
+<pin name="!CS!" x="10.16" y="0" length="short" rot="R180"/>
+<pin name="!RES!" x="10.16" y="5.08" length="short" rot="R180"/>
+<pin name="SCLK" x="10.16" y="-2.54" length="short" rot="R180"/>
+<pin name="SDIN" x="10.16" y="-5.08" length="short" rot="R180"/>
+<pin name="VCOMH" x="-12.7" y="0" length="short"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="-10.16" y="7.874" size="1.778" layer="95">&gt;Name</text>
+<text x="-10.16" y="-7.874" size="1.778" layer="96" align="top-left">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2170,6 +2489,83 @@ Previously used in production. &lt;/p&gt;
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OEL_1.8" prefix="DS">
+<description>&lt;h3&gt; WiseChip SSD1320 - 1.80" Flexible Grayscale OLED&lt;/h3&gt;
+&lt;p&gt;1.80" 160*32 pixel flexible grayscale OLED display&lt;/p&gt;
+
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="OEL_1.8" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FPC-13">
+<connects>
+<connect gate="G$1" pin="!CS!" pad="4"/>
+<connect gate="G$1" pin="!RES!" pad="5"/>
+<connect gate="G$1" pin="SCLK" pad="6"/>
+<connect gate="G$1" pin="SDIN" pad="7"/>
+<connect gate="G$1" pin="VCC" pad="1 13"/>
+<connect gate="G$1" pin="VCOMH" pad="12"/>
+<connect gate="G$1" pin="VDD" pad="10"/>
+<connect gate="G$1" pin="VLSS" pad="2 9"/>
+<connect gate="G$1" pin="VSS" pad="3 8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="OEL_1.8" package="OEL_1.8_FPC">
+<connects>
+<connect gate="G$1" pin="!CS!" pad="4"/>
+<connect gate="G$1" pin="!RES!" pad="5"/>
+<connect gate="G$1" pin="SCLK" pad="6"/>
+<connect gate="G$1" pin="SDIN" pad="7"/>
+<connect gate="G$1" pin="VCC" pad="1 13"/>
+<connect gate="G$1" pin="VCOMH" pad="12"/>
+<connect gate="G$1" pin="VDD" pad="10"/>
+<connect gate="G$1" pin="VLSS" pad="2 9"/>
+<connect gate="G$1" pin="VSS" pad="3 8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-AYF331335" package="AYF331335">
+<connects>
+<connect gate="G$1" pin="!CS!" pad="10"/>
+<connect gate="G$1" pin="!RES!" pad="9"/>
+<connect gate="G$1" pin="SCLK" pad="8"/>
+<connect gate="G$1" pin="SDIN" pad="7"/>
+<connect gate="G$1" pin="VCC" pad="1 13"/>
+<connect gate="G$1" pin="VCOMH" pad="2"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+<connect gate="G$1" pin="VLSS" pad="5 12"/>
+<connect gate="G$1" pin="VSS" pad="6 11"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="OEL_Y3B" package="OEL_1.8_FPC_Y3B">
+<connects>
+<connect gate="G$1" pin="!CS!" pad="4"/>
+<connect gate="G$1" pin="!RES!" pad="5"/>
+<connect gate="G$1" pin="SCLK" pad="6"/>
+<connect gate="G$1" pin="SDIN" pad="7"/>
+<connect gate="G$1" pin="VCC" pad="1 13"/>
+<connect gate="G$1" pin="VCOMH" pad="12"/>
+<connect gate="G$1" pin="VDD" pad="10"/>
+<connect gate="G$1" pin="VLSS" pad="2 9"/>
+<connect gate="G$1" pin="VSS" pad="3 8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="LCD-13910" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
