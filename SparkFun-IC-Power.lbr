@@ -1917,8 +1917,8 @@ Pasted was reduced by 40% width on the center ground pad, and some amount on the
 <pin name="SHDN" x="-12.7" y="0" length="middle" direction="in"/>
 <pin name="SW" x="12.7" y="0" length="middle" direction="pwr" rot="R180"/>
 <pin name="VIN" x="-12.7" y="5.08" length="middle" direction="pwr"/>
-<text x="-7.2644" y="8.3566" size="2.0828" layer="95" font="vector" ratio="6" rot="SR0">&gt;Name</text>
-<text x="-7.0104" y="-10.4394" size="2.0828" layer="95" font="vector" ratio="6" rot="SR0">&gt;Value</text>
+<text x="-7.62" y="-10.16" size="1.27" layer="96" ratio="15">&gt;VALUE</text>
+<text x="-7.62" y="7.874" size="1.27" layer="96" ratio="15">&gt;NAME</text>
 </symbol>
 <symbol name="AP3012">
 <description>&lt;h3&gt;AP3012&lt;/h3&gt;
@@ -2305,6 +2305,18 @@ The LD1085xx is a low drop voltage regulator able to provide up to 3 A of output
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="LD1117-SMD" package="SOT223">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="VREG-13917" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3095,7 +3107,7 @@ Specifications:
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="PENDING" constant="no"/>
+<attribute name="PROD_ID" value="IC-13918" constant="no"/>
 </technology>
 </technologies>
 </device>
