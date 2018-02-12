@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.8" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1370,17 +1370,27 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <wire x1="-2.1" y1="-1.8" x2="-2.1" y2="-1" width="0.1778" layer="21"/>
 <wire x1="-2.1" y1="1" x2="-2.1" y2="1.8" width="0.1778" layer="21"/>
 <wire x1="-2.1" y1="1.8" x2="-1.48" y2="1.8" width="0.1778" layer="21"/>
-<smd name="1" x="-1.6" y="-1.1" dx="0.8" dy="0.5" layer="1" rot="R90"/>
-<smd name="2" x="-0.8" y="-1.1" dx="0.8" dy="0.5" layer="1" rot="R90"/>
-<smd name="3" x="0" y="-1.1" dx="0.8" dy="0.5" layer="1" rot="R90"/>
-<smd name="4" x="0.8" y="-1.1" dx="0.8" dy="0.5" layer="1" rot="R90"/>
-<smd name="5" x="1.6" y="-1.1" dx="0.8" dy="0.5" layer="1" rot="R90"/>
-<smd name="6" x="1.6" y="1.1" dx="0.8" dy="0.5" layer="1" rot="R270"/>
-<smd name="7" x="0.8" y="1.1" dx="0.8" dy="0.5" layer="1" rot="R270"/>
-<smd name="8" x="0" y="1.1" dx="0.8" dy="0.5" layer="1" rot="R270"/>
-<smd name="9" x="-0.8" y="1.1" dx="0.8" dy="0.5" layer="1" rot="R270"/>
-<smd name="10" x="-1.6" y="1.1" dx="0.8" dy="0.5" layer="1" rot="R270"/>
+<smd name="1" x="-1.6" y="-1.1" dx="0.8" dy="0.5" layer="1" rot="R90" cream="no"/>
+<smd name="2" x="-0.8" y="-1.1" dx="0.8" dy="0.5" layer="1" rot="R90" cream="no"/>
+<smd name="3" x="0" y="-1.1" dx="0.8" dy="0.5" layer="1" rot="R90" cream="no"/>
+<smd name="4" x="0.8" y="-1.1" dx="0.8" dy="0.5" layer="1" rot="R90" cream="no"/>
+<smd name="5" x="1.6" y="-1.1" dx="0.8" dy="0.5" layer="1" rot="R90" cream="no"/>
+<smd name="6" x="1.6" y="1.1" dx="0.8" dy="0.5" layer="1" rot="R270" cream="no"/>
+<smd name="7" x="0.8" y="1.1" dx="0.8" dy="0.5" layer="1" rot="R270" cream="no"/>
+<smd name="8" x="0" y="1.1" dx="0.8" dy="0.5" layer="1" rot="R270" cream="no"/>
+<smd name="9" x="-0.8" y="1.1" dx="0.8" dy="0.5" layer="1" rot="R270" cream="no"/>
+<smd name="10" x="-1.6" y="1.1" dx="0.8" dy="0.5" layer="1" rot="R270" cream="no"/>
 <smd name="11" x="0" y="0" dx="0" dy="0" layer="1" cream="no"/>
+<rectangle x1="-0.1875" y1="0.8" x2="0.1875" y2="1.4" layer="31"/>
+<rectangle x1="-0.9875" y1="0.8" x2="-0.6125" y2="1.4" layer="31"/>
+<rectangle x1="-1.7875" y1="0.8" x2="-1.4125" y2="1.4" layer="31"/>
+<rectangle x1="0.6125" y1="0.8" x2="0.9875" y2="1.4" layer="31"/>
+<rectangle x1="1.4125" y1="0.8" x2="1.7875" y2="1.4" layer="31"/>
+<rectangle x1="1.4125" y1="-1.4" x2="1.7875" y2="-0.8" layer="31"/>
+<rectangle x1="0.6125" y1="-1.4" x2="0.9875" y2="-0.8" layer="31"/>
+<rectangle x1="-0.1875" y1="-1.4" x2="0.1875" y2="-0.8" layer="31"/>
+<rectangle x1="-0.9875" y1="-1.4" x2="-0.6125" y2="-0.8" layer="31"/>
+<rectangle x1="-1.7875" y1="-1.4" x2="-1.4125" y2="-0.8" layer="31"/>
 </package>
 </packages>
 <symbols>
