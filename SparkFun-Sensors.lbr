@@ -7956,6 +7956,53 @@ Used by APDS-9301</description>
 <rectangle x1="0.3" y1="-0.5" x2="0.5" y2="-0.3" layer="31"/>
 <rectangle x1="0.3" y1="0.3" x2="0.5" y2="0.5" layer="31"/>
 </package>
+<package name="GRIDEYE-AMG88">
+<description>&lt;h3&gt;Panasonic AMG8833 GRIDEye&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 10&lt;/li&gt;
+&lt;li&gt;Pin pitch: .050 in.&lt;/li&gt;
+&lt;li&gt;Area: .315 in. x 11.6 in.&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=https://cdn.sparkfun.com/assets/2/c/9/d/8/Grid-EYE_Datasheet.pdf&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="5.8" y1="-4" x2="-5.8" y2="-4" width="0.127" layer="51"/>
+<wire x1="-5.8" y1="-4" x2="-5.8" y2="4" width="0.127" layer="51"/>
+<wire x1="-5.8" y1="4" x2="5.8" y2="4" width="0.127" layer="51"/>
+<wire x1="5.8" y1="4" x2="5.8" y2="-4" width="0.127" layer="51"/>
+<smd name="2" x="-2.54" y="-3.05" dx="0.7" dy="2.6" layer="1"/>
+<smd name="3" x="-1.27" y="-3.05" dx="0.7" dy="2.6" layer="1"/>
+<smd name="4" x="0" y="-3.05" dx="0.7" dy="2.6" layer="1"/>
+<smd name="5" x="1.27" y="-3.05" dx="0.7" dy="2.6" layer="1"/>
+<smd name="6" x="2.54" y="-3.05" dx="0.7" dy="2.6" layer="1"/>
+<text x="-1.2" y="4.4" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.2" y="-4.7" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="0.7" y1="-1.3" x2="3.3" y2="1.3" layer="21"/>
+<wire x1="-3.5" y1="2.65" x2="3.4" y2="2.65" width="0.2032" layer="51"/>
+<wire x1="4.45" y1="1.7" x2="4.45" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="3.5" y1="-2.65" x2="-3.4" y2="-2.65" width="0.2032" layer="51"/>
+<wire x1="-4.45" y1="-1.7" x2="-4.45" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="-3.4" y1="-2.65" x2="-4.45" y2="-1.7" width="0.2032" layer="21" curve="-86.116928"/>
+<wire x1="-4.45" y1="1.6" x2="-3.5" y2="2.65" width="0.2032" layer="21" curve="-86.116928"/>
+<wire x1="3.4" y1="2.65" x2="4.45" y2="1.7" width="0.2032" layer="21" curve="-86.116928"/>
+<wire x1="4.45" y1="-1.6" x2="3.5" y2="-2.65" width="0.2032" layer="21" curve="-86.116928"/>
+<smd name="1" x="-5.5" y="-2.55" dx="0.8" dy="3.6" layer="1"/>
+<smd name="14" x="-5.5" y="3.05" dx="0.8" dy="2.6" layer="1"/>
+<smd name="8" x="5.5" y="3.05" dx="0.8" dy="2.6" layer="1"/>
+<smd name="7" x="5.5" y="-3.05" dx="0.8" dy="2.6" layer="1"/>
+<smd name="9" x="2.54" y="3.05" dx="0.7" dy="2.6" layer="1" rot="R180"/>
+<smd name="10" x="1.27" y="3.05" dx="0.7" dy="2.6" layer="1" rot="R180"/>
+<smd name="11" x="0" y="3.05" dx="0.7" dy="2.6" layer="1" rot="R180"/>
+<smd name="12" x="-1.27" y="3.05" dx="0.7" dy="2.6" layer="1" rot="R180"/>
+<smd name="13" x="-2.54" y="3.05" dx="0.7" dy="2.6" layer="1" rot="R180"/>
+<wire x1="-5.8" y1="1.4" x2="-5.8" y2="-0.5" width="0.2032" layer="21"/>
+<wire x1="5.8" y1="1.4" x2="5.8" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="4.9" y1="4" x2="3.1" y2="4" width="0.2032" layer="21"/>
+<wire x1="-3.1" y1="4" x2="-4.9" y2="4" width="0.2032" layer="21"/>
+<wire x1="-3.1" y1="-4" x2="-4.9" y2="-4" width="0.2032" layer="21"/>
+<wire x1="4.9" y1="-4" x2="3.1" y2="-4" width="0.2032" layer="21"/>
+<wire x1="-6" y1="0" x2="-6" y2="-0.5" width="0.2032" layer="21"/>
+<wire x1="-6" y1="1.4" x2="-6" y2="0.9" width="0.2032" layer="21"/>
+<circle x="-6.1468" y="-4.699" radius="0.127" width="0" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADMP401">
@@ -9561,6 +9608,23 @@ channels, 3 magnetic field channels&lt;/li&gt;
 <pin name="GND" x="12.7" y="-2.54" length="short" rot="R180"/>
 <pin name="IP+@2" x="-12.7" y="2.54" length="short" direction="in"/>
 <pin name="IP-@1" x="-12.7" y="0" length="short"/>
+</symbol>
+<symbol name="AMG88">
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<pin name="GND" x="-10.16" y="-7.62" length="short"/>
+<pin name="INT" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="SCL" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="SDA" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="VDD" x="-10.16" y="2.54" length="short"/>
+<text x="-7.62" y="5.588" size="1.778" layer="95">&gt;Name</text>
+<text x="-7.62" y="-12.446" size="1.778" layer="96">&gt;Value</text>
+<pin name="ADDR" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="DVDD" x="-10.16" y="-2.54" length="short"/>
+<pin name="VPP" x="-10.16" y="0" length="short"/>
+<pin name="AVDD" x="-10.16" y="-5.08" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -12185,6 +12249,33 @@ NC pin 19. 2-6 &amp; 14-17 not internally connected. May be used for PCB trace r
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="SEN-13886" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GRIDEYE" prefix="U">
+<description>&lt;h3&gt;Panasonic AMG8833 GRIDEye&lt;/h3&gt;
+This 8x8 thermopile infrared sensor array allows for a low resolution thermal camera.</description>
+<gates>
+<gate name="U1" symbol="AMG88" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="GRIDEYE-AMG88">
+<connects>
+<connect gate="U1" pin="ADDR" pad="5"/>
+<connect gate="U1" pin="AVDD" pad="10"/>
+<connect gate="U1" pin="DVDD" pad="12"/>
+<connect gate="U1" pin="GND" pad="6"/>
+<connect gate="U1" pin="INT" pad="4"/>
+<connect gate="U1" pin="SCL" pad="3"/>
+<connect gate="U1" pin="SDA" pad="2"/>
+<connect gate="U1" pin="VDD" pad="9"/>
+<connect gate="U1" pin="VPP" pad="13"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-13912" constant="no"/>
 </technology>
 </technologies>
 </device>
