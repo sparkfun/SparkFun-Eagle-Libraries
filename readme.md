@@ -38,7 +38,7 @@ We've grouped the various parts into individual libraries to make it as easy as 
 * **IC-Microcontroller** - Various micros including ATMega, ATTiny, PICs, and PSOC families
 * **IC-Power** - Anything that has to do with power delivery, or making power supplies. 
 * **IC-Special-Function** - 555 timers, LED drivers, Motor Control, etc. ICs that do not really fit into the other, more generic categories. Basically, anything that serves some function but has a bunch of brains or special bias circuitry that prevents it from being used as a general part qualifies for this category. 
-* **Jumpers - Semipermanent means of changing current paths. The least permanent form is the solder jumper. These can be changed by adding, removing, or moving solder. In cases that are less likely to be changed we have jumpers that are connected with traces. These can be cut with a razor, or reconnected with solder. Reference designator JP. 
+* **Jumpers** - Semipermanent means of changing current paths. The least permanent form is the solder jumper. These can be changed by adding, removing, or moving solder. In cases that are less likely to be changed we have jumpers that are connected with traces. These can be cut with a razor, or reconnected with solder. Reference designator JP. 
 * **LED** - Illumination or indication, but no displays. 
 * **PowerSymbols** - Power, ground, and voltage-supply symbols. 
 * **Resistors** - More color swatches.
