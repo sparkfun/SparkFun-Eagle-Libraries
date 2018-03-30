@@ -90,6 +90,8 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="Badge_Outline" color="7" fill="1" visible="no" active="yes"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -143,6 +145,8 @@
 <layer number="229" name="229bmp" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="230" name="230bmp" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="231" name="231bmp" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
@@ -882,6 +886,16 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <text x="-6.46" y="5" size="1.27" layer="25">&gt;NAME</text>
 <text x="-6.46" y="-6" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="FLEX_SENSOR">
+<description>&lt;h3&gt;Spectra Symbol Flex Sensor (2.2", 4.5") - A flexible resistor that changes its resistance as it bends.&lt;/h3&gt;
+&lt;p&gt;A footpring for the 2.2" and 4.5" flex sensors that allows them to be attached to PCB for more durabiility&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/8606”&gt;4.5" Flex Sensor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/10264”&gt;2.2" Flex Sensor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="P$1" x="-1.27" y="0" dx="1.27" dy="7.62" layer="1"/>
+<smd name="P$2" x="1.27" y="0" dx="1.27" dy="7.62" layer="1" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -1057,6 +1071,21 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <text x="0" y="-0.762" size="1.778" layer="96" align="top-center">&gt;VALUE</text>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="2"/>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="FLEX_SENSOR">
+<wire x1="-7.62" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-4.318" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-4.318" y1="1.27" x2="-3.556" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="-1.524" x2="-2.794" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-2.794" y1="1.27" x2="-2.032" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-2.032" y1="-1.524" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-0.508" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.508" y1="-1.524" x2="0.254" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0.254" y1="1.27" x2="1.016" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="-1.524" x2="1.778" y2="0" width="0.254" layer="94"/>
+<wire x1="1.778" y1="0" x2="4.318" y2="0" width="0.254" layer="94"/>
+<pin name="P$1" x="-10.16" y="0" length="middle"/>
+<pin name="P$2" x="7.62" y="0" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4117,6 +4146,41 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <technology name="">
 <attribute name="PROD_ID" value="RES-13814"/>
 <attribute name="VALUE" value="20k" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FLEX_SENSOR" prefix="R">
+<description>&lt;h3&gt;Spectra Symbol Flex Sensor (2.2", 4.5") - A flexible resistor that changes its resistance as it bends.&lt;/h3&gt;
+&lt;p&gt;A footpring for the 2.2" and 4.5" flex sensors that allows them to be attached to PCB for more durabiility&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/8606”&gt;4.5" Flex Sensor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/10264”&gt;2.2" Flex Sensor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-4.5&quot;" package="FLEX_SENSOR">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-13078" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-2.2&quot;" package="FLEX_SENSOR">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-10225" constant="no"/>
 </technology>
 </technologies>
 </device>
