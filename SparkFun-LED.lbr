@@ -3460,11 +3460,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="-5.715" size="1.778" layer="95" font="vector" align="top-center">&gt;VALUE</text>
 </symbol>
 <symbol name="APA102">
-<pin name="CO" x="12.7" y="2.54" length="middle" rot="R180"/>
-<pin name="DI" x="-12.7" y="0" length="middle"/>
-<pin name="CI" x="-12.7" y="2.54" length="middle"/>
-<pin name="GND" x="-12.7" y="-5.08" length="middle"/>
-<pin name="DO" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="CO" x="10.16" y="2.54" length="short" rot="R180"/>
+<pin name="DI" x="-10.16" y="0" length="short"/>
+<pin name="CI" x="-10.16" y="2.54" length="short"/>
+<pin name="GND" x="-10.16" y="-5.08" length="short"/>
+<pin name="DO" x="10.16" y="0" length="short" rot="R180"/>
 <wire x1="-7.62" y1="5.08" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-7.62" x2="7.62" y2="5.08" width="0.254" layer="94"/>
@@ -3495,7 +3495,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0.762" y1="-2.286" x2="0.762" y2="-1.524" width="0.1524" layer="94"/>
 <text x="0" y="5.588" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-10.16" size="1.778" layer="96" font="vector" align="bottom-center">&gt;VALUE</text>
-<pin name="VCC" x="-12.7" y="-2.54" length="middle"/>
+<pin name="VCC" x="-10.16" y="-2.54" length="short"/>
 <wire x1="1.397" y1="-3.429" x2="1.651" y2="-3.683" width="0.127" layer="94"/>
 <wire x1="1.651" y1="-3.683" x2="1.524" y2="-3.81" width="0.127" layer="94"/>
 <wire x1="1.524" y1="-3.81" x2="1.778" y2="-3.81" width="0.127" layer="94"/>
@@ -5193,7 +5193,9 @@ The LONGPADS Variant is used for a test jig, but you may like it because there i
 <connect gate="G$1" pin="VCC" pad="VDD VDDPAD"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-13883" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="5050" package="APA102-5050">
@@ -5221,7 +5223,9 @@ The LONGPADS Variant is used for a test jig, but you may like it because there i
 <connect gate="G$1" pin="VCC" pad="VDD VDDPAD"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-13883" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
