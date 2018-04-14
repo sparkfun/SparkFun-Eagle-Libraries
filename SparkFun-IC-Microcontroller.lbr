@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -3389,8 +3389,8 @@ IC needs to have legs bent before insertion.</description>
 <pin name="(ADC1)PA1" x="17.78" y="-12.7" length="short" rot="R180"/>
 <pin name="(ADC0)PA0" x="17.78" y="-15.24" length="short" rot="R180"/>
 <pin name="(SCL/SCK/ADC4)PA4" x="17.78" y="-5.08" length="short" rot="R180"/>
-<pin name="(MISO/ADC5)PA5" x="17.78" y="-2.54" length="short" rot="R180"/>
-<pin name="(SDA/MOSI/ADC6)PA6" x="17.78" y="0" length="short" rot="R180"/>
+<pin name="(RX/MISO/ADC5)PA5" x="17.78" y="-2.54" length="short" rot="R180"/>
+<pin name="(TX/SDA/MOSI/ADC6)PA6" x="17.78" y="0" length="short" rot="R180"/>
 <pin name="(ADC7)PA7" x="17.78" y="2.54" length="short" rot="R180"/>
 <pin name="(XTAL1)PB0" x="17.78" y="7.62" length="short" rot="R180"/>
 <pin name="(XTAL2)PB1" x="17.78" y="10.16" length="short" rot="R180"/>
@@ -5118,6 +5118,28 @@ TC6_WO1</text>
 <text x="0" y="-0.254" size="1.778" layer="96" align="top-left">&gt;Value</text>
 <pin name="VDDIO@44" x="66.04" y="73.66" length="short" rot="R180"/>
 </symbol>
+<symbol name="ATTINY84-ARDUINO">
+<wire x1="-15.24" y1="17.78" x2="15.24" y2="17.78" width="0.254" layer="94"/>
+<wire x1="15.24" y1="17.78" x2="15.24" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-17.78" x2="-15.24" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-17.78" x2="-15.24" y2="17.78" width="0.254" layer="94"/>
+<text x="-15.24" y="18.542" size="1.778" layer="95">&gt;NAME</text>
+<text x="-15.24" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="VCC" x="-17.78" y="15.24" length="short"/>
+<pin name="(A3)3" x="17.78" y="-7.62" length="short" rot="R180"/>
+<pin name="(A2)2" x="17.78" y="-10.16" length="short" rot="R180"/>
+<pin name="(A1)1" x="17.78" y="-12.7" length="short" rot="R180"/>
+<pin name="(A0)0" x="17.78" y="-15.24" length="short" rot="R180"/>
+<pin name="(SCL/SCK/A4)4" x="17.78" y="-5.08" length="short" rot="R180"/>
+<pin name="(TX/MISO/A5)~5" x="17.78" y="-2.54" length="short" rot="R180"/>
+<pin name="(RX/SDA/MOSI/A6)~6" x="17.78" y="0" length="short" rot="R180"/>
+<pin name="(A7)~7" x="17.78" y="2.54" length="short" rot="R180"/>
+<pin name="(XTAL1)10" x="17.78" y="12.7" length="short" rot="R180"/>
+<pin name="(XTAL2)9" x="17.78" y="10.16" length="short" rot="R180"/>
+<pin name="(INT0)~8" x="17.78" y="7.62" length="short" rot="R180"/>
+<pin name="(!RESET!)11" x="17.78" y="15.24" length="short" rot="R180"/>
+<pin name="GND" x="-17.78" y="-15.24" length="short"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ATMEGA128" prefix="U">
@@ -5745,9 +5767,9 @@ See regular 328 for product references.&lt;/p&gt;</description>
 <connect gate="U1" pin="(ADC3)PA3" pad="10"/>
 <connect gate="U1" pin="(ADC7)PA7" pad="6"/>
 <connect gate="U1" pin="(INT0)PB2" pad="5"/>
-<connect gate="U1" pin="(MISO/ADC5)PA5" pad="8"/>
+<connect gate="U1" pin="(RX/MISO/ADC5)PA5" pad="8"/>
 <connect gate="U1" pin="(SCL/SCK/ADC4)PA4" pad="9"/>
-<connect gate="U1" pin="(SDA/MOSI/ADC6)PA6" pad="7"/>
+<connect gate="U1" pin="(TX/SDA/MOSI/ADC6)PA6" pad="7"/>
 <connect gate="U1" pin="(XTAL1)PB0" pad="2"/>
 <connect gate="U1" pin="(XTAL2)PB1" pad="3"/>
 <connect gate="U1" pin="GND" pad="14"/>
@@ -5769,9 +5791,9 @@ See regular 328 for product references.&lt;/p&gt;</description>
 <connect gate="U1" pin="(ADC3)PA3" pad="10"/>
 <connect gate="U1" pin="(ADC7)PA7" pad="6"/>
 <connect gate="U1" pin="(INT0)PB2" pad="5"/>
-<connect gate="U1" pin="(MISO/ADC5)PA5" pad="8"/>
+<connect gate="U1" pin="(RX/MISO/ADC5)PA5" pad="8"/>
 <connect gate="U1" pin="(SCL/SCK/ADC4)PA4" pad="9"/>
-<connect gate="U1" pin="(SDA/MOSI/ADC6)PA6" pad="7"/>
+<connect gate="U1" pin="(TX/SDA/MOSI/ADC6)PA6" pad="7"/>
 <connect gate="U1" pin="(XTAL1)PB0" pad="2"/>
 <connect gate="U1" pin="(XTAL2)PB1" pad="3"/>
 <connect gate="U1" pin="GND" pad="14"/>
@@ -5790,9 +5812,9 @@ See regular 328 for product references.&lt;/p&gt;</description>
 <connect gate="U1" pin="(ADC3)PA3" pad="2"/>
 <connect gate="U1" pin="(ADC7)PA7" pad="15"/>
 <connect gate="U1" pin="(INT0)PB2" pad="14"/>
-<connect gate="U1" pin="(MISO/ADC5)PA5" pad="20"/>
+<connect gate="U1" pin="(RX/MISO/ADC5)PA5" pad="20"/>
 <connect gate="U1" pin="(SCL/SCK/ADC4)PA4" pad="1"/>
-<connect gate="U1" pin="(SDA/MOSI/ADC6)PA6" pad="16"/>
+<connect gate="U1" pin="(TX/SDA/MOSI/ADC6)PA6" pad="16"/>
 <connect gate="U1" pin="(XTAL1)PB0" pad="11"/>
 <connect gate="U1" pin="(XTAL2)PB1" pad="12"/>
 <connect gate="U1" pin="GND" pad="8"/>
@@ -7985,6 +8007,34 @@ Prototype in process!  Do keep!</description>
 <connect gate="G$1" pin="VDDIO@36" pad="36"/>
 <connect gate="G$1" pin="VDDIO@44" pad="44"/>
 <connect gate="G$1" pin="VSW" pad="43"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATTINY84-ARDUINO" prefix="U">
+<gates>
+<gate name="U1" symbol="ATTINY84-ARDUINO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO14">
+<connects>
+<connect gate="U1" pin="(!RESET!)11" pad="4"/>
+<connect gate="U1" pin="(A0)0" pad="13"/>
+<connect gate="U1" pin="(A1)1" pad="12"/>
+<connect gate="U1" pin="(A2)2" pad="11"/>
+<connect gate="U1" pin="(A3)3" pad="10"/>
+<connect gate="U1" pin="(A7)~7" pad="6"/>
+<connect gate="U1" pin="(INT0)~8" pad="5"/>
+<connect gate="U1" pin="(RX/SDA/MOSI/A6)~6" pad="7"/>
+<connect gate="U1" pin="(SCL/SCK/A4)4" pad="9"/>
+<connect gate="U1" pin="(TX/MISO/A5)~5" pad="8"/>
+<connect gate="U1" pin="(XTAL1)10" pad="2"/>
+<connect gate="U1" pin="(XTAL2)9" pad="3"/>
+<connect gate="U1" pin="GND" pad="14"/>
+<connect gate="U1" pin="VCC" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
