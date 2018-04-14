@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -25191,6 +25191,45 @@ Reversed pinout to match Raspberry Pi male header pinout when coupled.</descript
 <text x="-3.67" y="7.635" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3.67" y="-6.505" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="MICROSD_TINY">
+<wire x1="11.3" y1="0" x2="11.3" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="0" y1="5.95" x2="0" y2="6.45" width="0.2032" layer="21"/>
+<wire x1="0" y1="6.45" x2="1.8246" y2="6.45" width="0.2032" layer="21"/>
+<wire x1="0" y1="0.55" x2="0" y2="0" width="0.2032" layer="21"/>
+<wire x1="0" y1="0" x2="11.3" y2="0" width="0.2032" layer="21"/>
+<wire x1="11.3" y1="3.85" x2="11.3" y2="4.9" width="0.2032" layer="21"/>
+<wire x1="10.25" y1="6.45" x2="9.3754" y2="6.45" width="0.2032" layer="21"/>
+<wire x1="6.0246" y1="6.45" x2="5.2" y2="6.45" width="0.2032" layer="21"/>
+<wire x1="0" y1="3.3754" x2="0" y2="4.3" width="0.2032" layer="21"/>
+<wire x1="0.7" y1="-9.7" x2="11.7" y2="-9.7" width="0.2032" layer="51"/>
+<wire x1="11.7" y1="-9.7" x2="11.7" y2="-8.2" width="0.2032" layer="51"/>
+<wire x1="11.7" y1="-8.2" x2="11.7" y2="-0.2" width="0.2032" layer="51"/>
+<wire x1="11.7" y1="-0.2" x2="10.45" y2="1.05" width="0.2032" layer="51"/>
+<wire x1="10.45" y1="5.3" x2="0.7" y2="5.3" width="0.2032" layer="51"/>
+<wire x1="0.7" y1="5.3" x2="0.7" y2="-8.2" width="0.2032" layer="51"/>
+<wire x1="0.7" y1="-8.2" x2="0.7" y2="-9.7" width="0.2032" layer="51"/>
+<wire x1="10.45" y1="1.05" x2="10.45" y2="5.3" width="0.2032" layer="51"/>
+<wire x1="0.7" y1="-8.2" x2="11.7" y2="-8.2" width="0.2032" layer="51"/>
+<rectangle x1="1.016" y1="1.016" x2="9.652" y2="4.826" layer="39"/>
+<smd name="1" x="9.2" y="-0.85" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="2" x="8.1" y="-0.85" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="3" x="7" y="-0.85" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="4" x="5.9" y="-0.85" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="5" x="4.8" y="-0.85" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="6" x="3.7" y="-0.85" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="7" x="2.6" y="-0.85" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="8" x="1.5" y="-0.85" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="9" x="11" y="1.83" dx="0.72" dy="0.78" layer="1" rot="R180"/>
+<smd name="GND1" x="11" y="3.1" dx="1.08" dy="1.05" layer="1" rot="R90"/>
+<smd name="GND2" x="11" y="5.71" dx="1.2" dy="1.05" layer="1" rot="R90"/>
+<smd name="GND3" x="0.325" y="5.14" dx="1.2" dy="1.05" layer="1" rot="R90"/>
+<smd name="GND4" x="0.325" y="1.955" dx="2.39" dy="1.05" layer="1" rot="R90"/>
+<smd name="GND5" x="3.505" y="6.385" dx="2.91" dy="0.55" layer="1"/>
+<smd name="GND6" x="7.695" y="6.385" dx="2.91" dy="0.55" layer="1"/>
+<text x="4.85" y="-5.95" size="1.27" layer="51">uSD</text>
+<text x="4.445" y="3.175" size="0.8128" layer="25">&gt;Name</text>
+<text x="4.445" y="1.905" size="0.8128" layer="27">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -27693,31 +27732,6 @@ Single connection binding post</description>
 <pin name="+" x="7.62" y="0" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="-" x="7.62" y="-2.54" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
-<symbol name="MICRO-SD_CARD">
-<description>Newer version of USDCARD symbol that moves pins for easier routing and uses more accurate pin names.&lt;br /&gt;
-Renamed DAT2 from NC to RSV to remove the implication that you should leave it not connected.</description>
-<wire x1="-12.7" y1="10.16" x2="15.24" y2="10.16" width="0.254" layer="94"/>
-<wire x1="15.24" y1="10.16" x2="15.24" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-12.7" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
-<text x="-12.7" y="10.668" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.874" y="10.668" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="!CS" x="-15.24" y="2.54" visible="pin" length="short"/>
-<pin name="DI" x="-15.24" y="0" visible="pin" length="short"/>
-<pin name="GND" x="2.54" y="-15.24" visible="pin" length="short" rot="R90"/>
-<pin name="VCC" x="-15.24" y="5.08" visible="pin" length="short"/>
-<pin name="SCK" x="-15.24" y="-2.54" visible="pin" length="short"/>
-<pin name="RSV@2" x="17.78" y="0" visible="pin" length="short" rot="R180"/>
-<pin name="DO" x="-15.24" y="-5.08" visible="pin" length="short"/>
-<pin name="RSV@1" x="17.78" y="5.08" visible="pin" length="short" rot="R180"/>
-<pin name="SHIELD@3" x="0" y="-15.24" visible="pin" length="short" rot="R90"/>
-<pin name="SHIELD@1" x="-2.54" y="-15.24" visible="pin" length="short" rot="R90"/>
-<pin name="CD1" x="17.78" y="-5.08" visible="pin" length="short" rot="R180"/>
-<pin name="CD2" x="17.78" y="-10.16" visible="pin" length="short" rot="R180"/>
-<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
-<wire x1="13.462" y1="-10.16" x2="13.462" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="13.462" y1="-5.08" x2="14.732" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="13.462" y1="-10.16" x2="14.732" y2="-10.16" width="0.254" layer="94"/>
-</symbol>
 <symbol name="CORTEX_DEBUG">
 <description>&lt;h3&gt;Cortex Debug Connector&lt;/h3&gt;
 &lt;p&gt;&lt;a href="http://infocenter.arm.com/help/topic/com.arm.doc.faqs/attached/13634/cortex_debug_connectors.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
@@ -28081,6 +28095,23 @@ This type of connector and cable is frequently used for transmitting midi data (
 <pin name="23" x="7.62" y="27.94" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="24" x="7.62" y="30.48" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="7.62" y="-27.94" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="MICROSD">
+<wire x1="-5.08" y1="15.24" x2="7.62" y2="15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="15.24" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-12.7" x2="-5.08" y2="15.24" width="0.254" layer="94"/>
+<pin name="CS" x="-7.62" y="10.16" visible="pin" length="short"/>
+<pin name="DI" x="-7.62" y="7.62" visible="pin" length="short"/>
+<pin name="DO" x="-7.62" y="0" visible="pin" length="short"/>
+<pin name="GND" x="-7.62" y="-7.62" visible="pin" length="short"/>
+<pin name="NC" x="-7.62" y="12.7" visible="pin" length="short"/>
+<pin name="RSV" x="-7.62" y="-2.54" visible="pin" length="short"/>
+<pin name="SCK" x="-7.62" y="2.54" visible="pin" length="short"/>
+<pin name="SHIELD" x="-7.62" y="-10.16" visible="pin" length="short"/>
+<pin name="VCC" x="-7.62" y="5.08" visible="pin" length="short"/>
+<text x="-5.08" y="15.748" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -35579,28 +35610,42 @@ to be daisy chained easily.&lt;/p&gt;
 &lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13743”&gt;SparkFun Level Shifing microSD Breakout&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="1" symbol="MICRO-SD_CARD" x="-5.08" y="-7.62"/>
+<gate name="J1" symbol="MICROSD" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="MICRO-SD-SOCKET">
+<device name="PUSH-PUSH" package="MICRO-SD-SOCKET">
 <connects>
-<connect gate="1" pin="!CS" pad="CS"/>
-<connect gate="1" pin="CD1" pad="CD1"/>
-<connect gate="1" pin="CD2" pad="CD2"/>
-<connect gate="1" pin="DI" pad="DI"/>
-<connect gate="1" pin="DO" pad="DO"/>
-<connect gate="1" pin="GND" pad="GND"/>
-<connect gate="1" pin="RSV@1" pad="RSV1"/>
-<connect gate="1" pin="RSV@2" pad="RSV2"/>
-<connect gate="1" pin="SCK" pad="SCLK"/>
-<connect gate="1" pin="SHIELD@1" pad="GND1"/>
-<connect gate="1" pin="SHIELD@3" pad="GND3"/>
-<connect gate="1" pin="VCC" pad="VCC"/>
+<connect gate="J1" pin="CS" pad="CS"/>
+<connect gate="J1" pin="DI" pad="DI"/>
+<connect gate="J1" pin="DO" pad="DO"/>
+<connect gate="J1" pin="GND" pad="GND"/>
+<connect gate="J1" pin="NC" pad="RSV2"/>
+<connect gate="J1" pin="RSV" pad="RSV1"/>
+<connect gate="J1" pin="SCK" pad="SCLK"/>
+<connect gate="J1" pin="SHIELD" pad="CD1"/>
+<connect gate="J1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="CONN-07820"/>
-<attribute name="SF_ID" value="PRT-00127" constant="no"/>
+<attribute name="PROD_ID" value="CONN-07820" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="TINY" package="MICROSD_TINY">
+<connects>
+<connect gate="J1" pin="CS" pad="2"/>
+<connect gate="J1" pin="DI" pad="3"/>
+<connect gate="J1" pin="DO" pad="7"/>
+<connect gate="J1" pin="GND" pad="6"/>
+<connect gate="J1" pin="NC" pad="9"/>
+<connect gate="J1" pin="RSV" pad="1 8"/>
+<connect gate="J1" pin="SCK" pad="5"/>
+<connect gate="J1" pin="SHIELD" pad="GND1 GND2 GND3 GND4 GND5 GND6"/>
+<connect gate="J1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-13500" constant="no"/>
 </technology>
 </technologies>
 </device>
