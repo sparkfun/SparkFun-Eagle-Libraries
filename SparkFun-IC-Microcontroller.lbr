@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -5723,7 +5723,7 @@ See regular 328 for product references.&lt;/p&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ATTINY84">
+<deviceset name="ATTINY84" prefix="U">
 <description>&lt;h3&gt;Atmel 14-pin 2/4/8kB flash uC&lt;/h3&gt;
 &lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Widgets/doc8006.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
 &lt;h4&gt;SparkFun Products&lt;/h4&gt;
@@ -5733,25 +5733,25 @@ See regular 328 for product references.&lt;/p&gt;</description>
 &lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13118"&gt;SparkFun Servo Trigger&lt;/a&gt; (WIG-13118)&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
-<gate name="G$1" symbol="ATTINY84" x="0" y="0"/>
+<gate name="U1" symbol="ATTINY84" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SO14">
 <connects>
-<connect gate="G$1" pin="(!RESET!)PB3" pad="4"/>
-<connect gate="G$1" pin="(ADC0)PA0" pad="13"/>
-<connect gate="G$1" pin="(ADC1)PA1" pad="12"/>
-<connect gate="G$1" pin="(ADC2)PA2" pad="11"/>
-<connect gate="G$1" pin="(ADC3)PA3" pad="10"/>
-<connect gate="G$1" pin="(ADC7)PA7" pad="6"/>
-<connect gate="G$1" pin="(INT0)PB2" pad="5"/>
-<connect gate="G$1" pin="(MISO/ADC5)PA5" pad="8"/>
-<connect gate="G$1" pin="(SCL/SCK/ADC4)PA4" pad="9"/>
-<connect gate="G$1" pin="(SDA/MOSI/ADC6)PA6" pad="7"/>
-<connect gate="G$1" pin="(XTAL1)PB0" pad="2"/>
-<connect gate="G$1" pin="(XTAL2)PB1" pad="3"/>
-<connect gate="G$1" pin="GND" pad="14"/>
-<connect gate="G$1" pin="VCC" pad="1"/>
+<connect gate="U1" pin="(!RESET!)PB3" pad="4"/>
+<connect gate="U1" pin="(ADC0)PA0" pad="13"/>
+<connect gate="U1" pin="(ADC1)PA1" pad="12"/>
+<connect gate="U1" pin="(ADC2)PA2" pad="11"/>
+<connect gate="U1" pin="(ADC3)PA3" pad="10"/>
+<connect gate="U1" pin="(ADC7)PA7" pad="6"/>
+<connect gate="U1" pin="(INT0)PB2" pad="5"/>
+<connect gate="U1" pin="(MISO/ADC5)PA5" pad="8"/>
+<connect gate="U1" pin="(SCL/SCK/ADC4)PA4" pad="9"/>
+<connect gate="U1" pin="(SDA/MOSI/ADC6)PA6" pad="7"/>
+<connect gate="U1" pin="(XTAL1)PB0" pad="2"/>
+<connect gate="U1" pin="(XTAL2)PB1" pad="3"/>
+<connect gate="U1" pin="GND" pad="14"/>
+<connect gate="U1" pin="VCC" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
@@ -5762,20 +5762,20 @@ See regular 328 for product references.&lt;/p&gt;</description>
 </device>
 <device name="ATTINY84-20PU" package="DIP14">
 <connects>
-<connect gate="G$1" pin="(!RESET!)PB3" pad="4"/>
-<connect gate="G$1" pin="(ADC0)PA0" pad="13"/>
-<connect gate="G$1" pin="(ADC1)PA1" pad="12"/>
-<connect gate="G$1" pin="(ADC2)PA2" pad="11"/>
-<connect gate="G$1" pin="(ADC3)PA3" pad="10"/>
-<connect gate="G$1" pin="(ADC7)PA7" pad="6"/>
-<connect gate="G$1" pin="(INT0)PB2" pad="5"/>
-<connect gate="G$1" pin="(MISO/ADC5)PA5" pad="8"/>
-<connect gate="G$1" pin="(SCL/SCK/ADC4)PA4" pad="9"/>
-<connect gate="G$1" pin="(SDA/MOSI/ADC6)PA6" pad="7"/>
-<connect gate="G$1" pin="(XTAL1)PB0" pad="2"/>
-<connect gate="G$1" pin="(XTAL2)PB1" pad="3"/>
-<connect gate="G$1" pin="GND" pad="14"/>
-<connect gate="G$1" pin="VCC" pad="1"/>
+<connect gate="U1" pin="(!RESET!)PB3" pad="4"/>
+<connect gate="U1" pin="(ADC0)PA0" pad="13"/>
+<connect gate="U1" pin="(ADC1)PA1" pad="12"/>
+<connect gate="U1" pin="(ADC2)PA2" pad="11"/>
+<connect gate="U1" pin="(ADC3)PA3" pad="10"/>
+<connect gate="U1" pin="(ADC7)PA7" pad="6"/>
+<connect gate="U1" pin="(INT0)PB2" pad="5"/>
+<connect gate="U1" pin="(MISO/ADC5)PA5" pad="8"/>
+<connect gate="U1" pin="(SCL/SCK/ADC4)PA4" pad="9"/>
+<connect gate="U1" pin="(SDA/MOSI/ADC6)PA6" pad="7"/>
+<connect gate="U1" pin="(XTAL1)PB0" pad="2"/>
+<connect gate="U1" pin="(XTAL2)PB1" pad="3"/>
+<connect gate="U1" pin="GND" pad="14"/>
+<connect gate="U1" pin="VCC" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -5783,20 +5783,20 @@ See regular 328 for product references.&lt;/p&gt;</description>
 </device>
 <device name="ATTINY84-20MU" package="QFN20">
 <connects>
-<connect gate="G$1" pin="(!RESET!)PB3" pad="13"/>
-<connect gate="G$1" pin="(ADC0)PA0" pad="5"/>
-<connect gate="G$1" pin="(ADC1)PA1" pad="4"/>
-<connect gate="G$1" pin="(ADC2)PA2" pad="3"/>
-<connect gate="G$1" pin="(ADC3)PA3" pad="2"/>
-<connect gate="G$1" pin="(ADC7)PA7" pad="15"/>
-<connect gate="G$1" pin="(INT0)PB2" pad="14"/>
-<connect gate="G$1" pin="(MISO/ADC5)PA5" pad="20"/>
-<connect gate="G$1" pin="(SCL/SCK/ADC4)PA4" pad="1"/>
-<connect gate="G$1" pin="(SDA/MOSI/ADC6)PA6" pad="16"/>
-<connect gate="G$1" pin="(XTAL1)PB0" pad="11"/>
-<connect gate="G$1" pin="(XTAL2)PB1" pad="12"/>
-<connect gate="G$1" pin="GND" pad="8"/>
-<connect gate="G$1" pin="VCC" pad="9"/>
+<connect gate="U1" pin="(!RESET!)PB3" pad="13"/>
+<connect gate="U1" pin="(ADC0)PA0" pad="5"/>
+<connect gate="U1" pin="(ADC1)PA1" pad="4"/>
+<connect gate="U1" pin="(ADC2)PA2" pad="3"/>
+<connect gate="U1" pin="(ADC3)PA3" pad="2"/>
+<connect gate="U1" pin="(ADC7)PA7" pad="15"/>
+<connect gate="U1" pin="(INT0)PB2" pad="14"/>
+<connect gate="U1" pin="(MISO/ADC5)PA5" pad="20"/>
+<connect gate="U1" pin="(SCL/SCK/ADC4)PA4" pad="1"/>
+<connect gate="U1" pin="(SDA/MOSI/ADC6)PA6" pad="16"/>
+<connect gate="U1" pin="(XTAL1)PB0" pad="11"/>
+<connect gate="U1" pin="(XTAL2)PB1" pad="12"/>
+<connect gate="U1" pin="GND" pad="8"/>
+<connect gate="U1" pin="VCC" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
