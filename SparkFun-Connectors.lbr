@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="9.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
@@ -25366,6 +25367,58 @@ Reversed pinout to match Raspberry Pi male header pinout when coupled.</descript
 <vertex x="-3.33581875" y="-1.88468125"/>
 <vertex x="-3.33581875" y="-0.13208125" curve="90"/>
 </polygon>
+</package>
+<package name="2X8-SHROUDED_LOCK">
+<wire x1="-2.775" y1="5.715" x2="-2.775" y2="4.445" width="0.2032" layer="21"/>
+<wire x1="4.5" y1="10.1" x2="4.5" y2="-17.72" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="-17.72" x2="-4.5" y2="-6.01" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="-6.01" x2="-4.5" y2="-1.61" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="-1.61" x2="-4.5" y2="10.1" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="10.1" x2="4.4" y2="10.1" width="0.2032" layer="21"/>
+<wire x1="4.5" y1="-17.72" x2="-4.5" y2="-17.72" width="0.2032" layer="21"/>
+<wire x1="-3.4" y1="9" x2="3.4" y2="9" width="0.2032" layer="51"/>
+<wire x1="3.4" y1="9" x2="3.4" y2="-16.62" width="0.2032" layer="51"/>
+<wire x1="-3.4" y1="-16.62" x2="3.4" y2="-16.62" width="0.2032" layer="51"/>
+<wire x1="-4.5" y1="-1.61" x2="-3" y2="-1.61" width="0.2032" layer="21"/>
+<wire x1="-3" y1="-1.61" x2="-3" y2="-6.01" width="0.2032" layer="21"/>
+<wire x1="-3" y1="-6.01" x2="-4.5" y2="-6.01" width="0.2032" layer="21"/>
+<wire x1="-3.4" y1="9" x2="-3.4" y2="-1.61" width="0.2032" layer="51"/>
+<wire x1="-3.4" y1="-16.62" x2="-3.4" y2="-6.01" width="0.2032" layer="51"/>
+<pad name="1" x="-1.397" y="5.08" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="2" x="1.397" y="5.08" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="3" x="-1.397" y="2.54" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="4" x="1.397" y="2.54" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="5" x="-1.397" y="0" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="6" x="1.397" y="0" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="7" x="-1.397" y="-2.54" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="8" x="1.397" y="-2.54" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="9" x="-1.397" y="-5.08" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="10" x="1.397" y="-5.08" drill="1.016" diameter="1.8796" rot="R270"/>
+<rectangle x1="-1.524" y1="4.826" x2="-1.016" y2="5.334" layer="51" rot="R270"/>
+<rectangle x1="1.016" y1="4.826" x2="1.524" y2="5.334" layer="51" rot="R270"/>
+<rectangle x1="1.016" y1="2.286" x2="1.524" y2="2.794" layer="51" rot="R270"/>
+<rectangle x1="-1.524" y1="2.286" x2="-1.016" y2="2.794" layer="51" rot="R270"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51" rot="R270"/>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51" rot="R270"/>
+<rectangle x1="1.016" y1="-2.794" x2="1.524" y2="-2.286" layer="51" rot="R270"/>
+<rectangle x1="-1.524" y1="-2.794" x2="-1.016" y2="-2.286" layer="51" rot="R270"/>
+<rectangle x1="1.016" y1="-5.334" x2="1.524" y2="-4.826" layer="51" rot="R270"/>
+<rectangle x1="-1.524" y1="-5.334" x2="-1.016" y2="-4.826" layer="51" rot="R270"/>
+<rectangle x1="-1.524" y1="-2.794" x2="-1.016" y2="-2.286" layer="51" rot="R270"/>
+<rectangle x1="1.016" y1="-2.794" x2="1.524" y2="-2.286" layer="51" rot="R270"/>
+<wire x1="-2.813" y1="5.715" x2="-2.813" y2="4.445" width="0.2032" layer="22"/>
+<pad name="11" x="-1.397" y="-7.62" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="12" x="1.397" y="-7.62" drill="1.016" diameter="1.8796" rot="R270"/>
+<rectangle x1="1.016" y1="-7.874" x2="1.524" y2="-7.366" layer="51" rot="R270"/>
+<rectangle x1="-1.524" y1="-7.874" x2="-1.016" y2="-7.366" layer="51" rot="R270"/>
+<pad name="13" x="-1.397" y="-10.16" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="14" x="1.397" y="-10.16" drill="1.016" diameter="1.8796" rot="R270"/>
+<rectangle x1="1.016" y1="-10.414" x2="1.524" y2="-9.906" layer="51" rot="R270"/>
+<rectangle x1="-1.524" y1="-10.414" x2="-1.016" y2="-9.906" layer="51" rot="R270"/>
+<pad name="15" x="-1.397" y="-12.7" drill="1.016" diameter="1.8796" rot="R270"/>
+<pad name="16" x="1.397" y="-12.7" drill="1.016" diameter="1.8796" rot="R270"/>
+<rectangle x1="1.016" y1="-12.954" x2="1.524" y2="-12.446" layer="51" rot="R270"/>
+<rectangle x1="-1.524" y1="-12.954" x2="-1.016" y2="-12.446" layer="51" rot="R270"/>
 </package>
 </packages>
 <symbols>
