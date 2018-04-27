@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5636,6 +5636,61 @@ Keepout</text>
 <pad name="VCC" x="7.62" y="6.35" drill="1"/>
 <pad name="VCC1" x="-1.27" y="16.51" drill="1" rot="R90"/>
 </package>
+<package name="RFM69_BOB">
+<wire x1="-13.97" y1="-10.16" x2="13.97" y2="-10.16" width="0.2032" layer="21"/>
+<wire x1="13.97" y1="-10.16" x2="13.97" y2="10.16" width="0.2032" layer="21"/>
+<wire x1="13.97" y1="10.16" x2="-13.97" y2="10.16" width="0.2032" layer="21"/>
+<wire x1="-13.97" y1="10.16" x2="-13.97" y2="-10.16" width="0.2032" layer="21"/>
+<text x="-11.1125" y="-9.525" size="1.27" layer="21" font="vector" ratio="15">3.3V</text>
+<text x="11.1125" y="-9.525" size="1.27" layer="21" font="vector" ratio="15" align="bottom-right">GND</text>
+<text x="10.4775" y="-6.985" size="1.27" layer="21" font="vector" ratio="15" align="bottom-center">A</text>
+<text x="-10.4775" y="0.635" size="1.27" layer="21" font="vector" ratio="15" align="bottom-center">S</text>
+<text x="-10.4775" y="5.715" size="1.27" layer="21" font="vector" ratio="15" align="bottom-center">I</text>
+<text x="-10.4775" y="8.255" size="1.27" layer="21" font="vector" ratio="15" align="bottom-center">O</text>
+<text x="-10.4775" y="3.175" size="1.27" layer="21" font="vector" ratio="15" align="bottom-center">C</text>
+<text x="-10.4775" y="-4.445" size="1.27" layer="21" font="vector" ratio="15" align="bottom-center">0</text>
+<text x="10.4775" y="8.255" size="1.27" layer="21" font="vector" ratio="15" align="bottom-center">1</text>
+<text x="10.4775" y="5.715" size="1.27" layer="21" font="vector" ratio="15" align="bottom-center">2</text>
+<text x="10.4775" y="3.175" size="1.27" layer="21" font="vector" ratio="15" align="bottom-center">3</text>
+<text x="10.4775" y="0.635" size="1.27" layer="21" font="vector" ratio="15" align="bottom-center">4</text>
+<text x="10.4775" y="-1.905" size="1.27" layer="21" font="vector" ratio="15" align="bottom-center">5</text>
+<text x="-10.4775" y="-1.905" size="1.27" layer="21" font="vector" ratio="15" align="bottom-center">R</text>
+<circle x="12.7" y="-6.35" radius="1.27" width="0.254" layer="21"/>
+<text x="-10.4775" y="-6.985" size="1.27" layer="21" font="vector" ratio="15" align="bottom-center">G</text>
+<text x="10.4775" y="-4.445" size="1.27" layer="21" font="vector" ratio="15" align="bottom-center">G</text>
+<wire x1="-12.7" y1="8.89" x2="-12.7" y2="-8.89" width="0.254" layer="49"/>
+<wire x1="12.7" y1="8.89" x2="12.7" y2="-8.89" width="0.254" layer="49"/>
+<wire x1="8.001" y1="9.271" x2="8.001" y2="-6.731" width="0.254" layer="21"/>
+<wire x1="8.001" y1="-6.731" x2="-8.001" y2="-6.731" width="0.254" layer="21"/>
+<wire x1="-8.001" y1="-6.731" x2="-8.001" y2="9.271" width="0.254" layer="21"/>
+<wire x1="-8.001" y1="9.271" x2="8.001" y2="9.271" width="0.254" layer="21"/>
+<wire x1="-3.937" y1="7.112" x2="-3.937" y2="3.302" width="0.254" layer="21"/>
+<wire x1="-3.937" y1="3.302" x2="0" y2="3.302" width="0.254" layer="21"/>
+<wire x1="0" y1="3.302" x2="0" y2="7.239" width="0.254" layer="21"/>
+<wire x1="0" y1="7.239" x2="-3.937" y2="7.239" width="0.254" layer="21"/>
+<wire x1="2.032" y1="6.223" x2="2.032" y2="4.191" width="0.254" layer="21"/>
+<wire x1="2.032" y1="4.191" x2="4.064" y2="4.191" width="0.254" layer="21"/>
+<wire x1="4.064" y1="4.191" x2="4.064" y2="6.223" width="0.254" layer="21"/>
+<wire x1="4.064" y1="6.223" x2="2.032" y2="6.223" width="0.254" layer="21"/>
+<text x="-5.461" y="7.62" size="1.27" layer="21" font="vector" ratio="15">1</text>
+<pad name="O" x="-12.7" y="8.89" drill="1.1176" diameter="1.8796"/>
+<pad name="I" x="-12.7" y="6.35" drill="1.1176" diameter="1.8796"/>
+<pad name="C" x="-12.7" y="3.81" drill="1.1176" diameter="1.8796"/>
+<pad name="S" x="-12.7" y="1.27" drill="1.1176" diameter="1.8796"/>
+<pad name="R" x="-12.7" y="-1.27" drill="1.1176" diameter="1.8796"/>
+<pad name="0" x="-12.7" y="-3.81" drill="1.1176" diameter="1.8796"/>
+<pad name="G" x="-12.7" y="-6.35" drill="1.1176" diameter="1.8796"/>
+<pad name="3.3V" x="-12.7" y="-8.89" drill="1.1176" diameter="1.8796"/>
+<pad name="1" x="12.7" y="8.89" drill="1.1176" diameter="1.8796"/>
+<pad name="2" x="12.7" y="6.35" drill="1.1176" diameter="1.8796"/>
+<pad name="3" x="12.7" y="3.81" drill="1.1176" diameter="1.8796"/>
+<pad name="4" x="12.7" y="1.27" drill="1.1176" diameter="1.8796"/>
+<pad name="5" x="12.7" y="-1.27" drill="1.1176" diameter="1.8796"/>
+<pad name="G2" x="12.7" y="-3.81" drill="1.1176" diameter="1.8796"/>
+<pad name="A" x="12.7" y="-6.35" drill="1.1176" diameter="1.8796"/>
+<pad name="GND" x="12.7" y="-8.89" drill="1.1176" diameter="1.8796"/>
+<text x="-5.715" y="-3.81" size="2.54" layer="21" font="vector" ratio="15">RFM69</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO-MEGA">
@@ -7137,6 +7192,30 @@ SoC with a list of features including:
 <pin name="VCC1" x="0" y="30.48" visible="pin" length="middle" rot="R270"/>
 <text x="-7.62" y="33.02" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-30.48" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
+<symbol name="RFM69_BOB">
+<pin name="O" x="-10.16" y="7.62" length="short"/>
+<pin name="I" x="-10.16" y="5.08" length="short"/>
+<pin name="C" x="-10.16" y="2.54" length="short"/>
+<pin name="S" x="-10.16" y="0" length="short"/>
+<pin name="R" x="-10.16" y="-2.54" length="short"/>
+<pin name="0" x="-10.16" y="-5.08" length="short"/>
+<pin name="G" x="-10.16" y="-7.62" length="short"/>
+<pin name="3.3V" x="-10.16" y="-10.16" length="short"/>
+<pin name="1" x="10.16" y="7.62" length="short" rot="R180"/>
+<pin name="2" x="10.16" y="5.08" length="short" rot="R180"/>
+<pin name="3" x="10.16" y="2.54" length="short" rot="R180"/>
+<pin name="4" x="10.16" y="0" length="short" rot="R180"/>
+<pin name="5" x="10.16" y="-2.54" length="short" rot="R180"/>
+<pin name="G2" x="10.16" y="-5.08" length="short" rot="R180"/>
+<pin name="A" x="10.16" y="-7.62" length="short" rot="R180"/>
+<pin name="GND" x="10.16" y="-10.16" length="short" rot="R180"/>
+<wire x1="-7.62" y1="10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<text x="-7.366" y="10.414" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-14.986" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -9404,6 +9483,36 @@ PCB footprint compatbile with Big Red Box Enclosure.
 <connect gate="G$1" pin="TXO1" pad="TXO1"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
 <connect gate="G$1" pin="VCC1" pad="VCC1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RFM69_BOB">
+<gates>
+<gate name="G$1" symbol="RFM69_BOB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RFM69_BOB">
+<connects>
+<connect gate="G$1" pin="0" pad="0"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="3.3V" pad="3.3V"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G$1" pin="G" pad="G"/>
+<connect gate="G$1" pin="G2" pad="G2"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="I" pad="I"/>
+<connect gate="G$1" pin="O" pad="O"/>
+<connect gate="G$1" pin="R" pad="R"/>
+<connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <technologies>
 <technology name=""/>
