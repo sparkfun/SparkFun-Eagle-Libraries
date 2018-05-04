@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="9.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -5702,9 +5703,8 @@ Keepout</text>
 <wire x1="-15.24" y1="53.34" x2="-15.24" y2="-53.34" width="0.254" layer="94"/>
 <text x="-15.24" y="54.102" size="1.778" layer="95">&gt;NAME</text>
 <text x="-15.24" y="-55.88" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="5V@0" x="-17.78" y="48.26" length="short"/>
+<pin name="5V" x="-17.78" y="48.26" length="short"/>
 <pin name="RESET" x="-17.78" y="35.56" length="short"/>
-<pin name="5V@1" x="-17.78" y="45.72" length="short"/>
 <pin name="A0(RX0)" x="-17.78" y="33.02" length="short"/>
 <pin name="A1(TX0)" x="-17.78" y="30.48" length="short"/>
 <pin name="A2" x="-17.78" y="27.94" length="short"/>
@@ -5731,7 +5731,6 @@ Keepout</text>
 <pin name="8" x="-17.78" y="-27.94" length="short"/>
 <pin name="9" x="-17.78" y="-30.48" length="short"/>
 <pin name="10" x="-17.78" y="-33.02" length="short"/>
-<pin name="GND@4" x="-17.78" y="-50.8" length="short"/>
 <pin name="16(TX2)" x="17.78" y="43.18" length="short" rot="R180"/>
 <pin name="17(RX2)" x="17.78" y="40.64" length="short" rot="R180"/>
 <pin name="18(TX1)" x="17.78" y="38.1" length="short" rot="R180"/>
@@ -5767,16 +5766,12 @@ Keepout</text>
 <pin name="13" x="17.78" y="50.8" length="short" rot="R180"/>
 <pin name="15(RX3)" x="17.78" y="45.72" length="short" rot="R180"/>
 <pin name="14(TX3)" x="17.78" y="48.26" length="short" rot="R180"/>
-<pin name="GND@0" x="-17.78" y="-40.64" length="short"/>
-<pin name="GND@1" x="-17.78" y="-43.18" length="short"/>
-<pin name="GND@2" x="-17.78" y="-45.72" length="short"/>
-<pin name="GND@3" x="-17.78" y="-48.26" length="short"/>
+<pin name="GND" x="-17.78" y="-50.8" length="short"/>
 <pin name="53" x="17.78" y="-50.8" length="short" rot="R180"/>
 <pin name="52" x="17.78" y="-48.26" length="short" rot="R180"/>
 <pin name="51" x="17.78" y="-45.72" length="short" rot="R180"/>
 <pin name="50" x="17.78" y="-43.18" length="short" rot="R180"/>
 <pin name="49" x="17.78" y="-40.64" length="short" rot="R180"/>
-<pin name="5V@2" x="-17.78" y="43.18" length="short"/>
 <pin name="3.3V" x="-17.78" y="40.64" length="short"/>
 <pin name="AREF" x="-17.78" y="38.1" length="short"/>
 <pin name="21(SCL)" x="17.78" y="30.48" length="short" rot="R180"/>
@@ -7284,9 +7279,7 @@ SoC with a list of features including:
 <connect gate="G$1" pin="51" pad="51"/>
 <connect gate="G$1" pin="52" pad="52"/>
 <connect gate="G$1" pin="53" pad="53"/>
-<connect gate="G$1" pin="5V@0" pad="5V@0"/>
-<connect gate="G$1" pin="5V@1" pad="5V@1"/>
-<connect gate="G$1" pin="5V@2" pad="5V@2"/>
+<connect gate="G$1" pin="5V" pad="5V@0 5V@1 5V@2"/>
 <connect gate="G$1" pin="6" pad="6"/>
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="8" pad="8"/>
@@ -7308,11 +7301,7 @@ SoC with a list of features including:
 <connect gate="G$1" pin="A8" pad="A8"/>
 <connect gate="G$1" pin="A9" pad="A9"/>
 <connect gate="G$1" pin="AREF" pad="AREF"/>
-<connect gate="G$1" pin="GND@0" pad="GND@0"/>
-<connect gate="G$1" pin="GND@1" pad="GND@1"/>
-<connect gate="G$1" pin="GND@2" pad="GND@2"/>
-<connect gate="G$1" pin="GND@3" pad="GND@3"/>
-<connect gate="G$1" pin="GND@4" pad="GND@4"/>
+<connect gate="G$1" pin="GND" pad="GND@0 GND@1 GND@2 GND@3 GND@4"/>
 <connect gate="G$1" pin="RESET" pad="RESET"/>
 <connect gate="G$1" pin="VIN" pad="VIN"/>
 </connects>
