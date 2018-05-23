@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="9.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -8028,6 +8029,82 @@ Used by APDS-9301</description>
 <rectangle x1="-0.5668" y1="-0.3262" x2="-0.262" y2="-0.0468" layer="31"/>
 <rectangle x1="-0.1604" y1="-0.1484" x2="0.1444" y2="0.131" layer="31"/>
 </package>
+<package name="VL53L1X">
+<description>&lt;h3&gt;LGA-12 - 12 pin LGA package for the V53L1x&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 12&lt;/li&gt;
+&lt;li&gt;Pin pitch: .8 mm&lt;/li&gt;
+&lt;li&gt;Area: 4.8 mm x 2.4 mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=https://www.mouser.com/datasheet/2/389/en.DM00452094-1315090.pdf&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="2.45" y1="1.25" x2="2.45" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="2.45" y1="-1.25" x2="0.35" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="0.35" y1="-1.25" x2="-0.35" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-0.35" y1="-1.25" x2="-2.45" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="-2.45" y1="-1.25" x2="-2.45" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-2.45" y1="1.25" x2="-0.35" y2="1.25" width="0.127" layer="51"/>
+<text x="-2.45" y="1.75" size="0.508" layer="25" font="vector">&gt;Name</text>
+<text x="-2.45" y="-2.25" size="0.508" layer="27" font="vector">&gt;Value</text>
+<circle x="1.6" y="-1.8" radius="0.14141875" width="0" layer="21"/>
+<wire x1="-0.35" y1="1.25" x2="0.35" y2="1.25" width="0.127" layer="51"/>
+<wire x1="0.35" y1="1.25" x2="2.45" y2="1.25" width="0.127" layer="51"/>
+<wire x1="2.1" y1="1.5" x2="2.7" y2="1.5" width="0.1778" layer="21"/>
+<wire x1="2.7" y1="1.5" x2="2.7" y2="0.5" width="0.1778" layer="21"/>
+<wire x1="2.7" y1="-0.5" x2="2.7" y2="-1.5" width="0.1778" layer="21"/>
+<wire x1="2.7" y1="-1.5" x2="2.1" y2="-1.5" width="0.1778" layer="21"/>
+<wire x1="-2.1" y1="-1.5" x2="-2.7" y2="-1.5" width="0.1778" layer="21"/>
+<wire x1="-2.7" y1="-1.5" x2="-2.7" y2="-0.5" width="0.1778" layer="21"/>
+<wire x1="-2.7" y1="0.5" x2="-2.7" y2="1.5" width="0.1778" layer="21"/>
+<wire x1="-2.7" y1="1.5" x2="-2.1" y2="1.5" width="0.1778" layer="21"/>
+<smd name="1" x="1.6" y="-1" dx="0.9" dy="0.5" layer="1" rot="R90" cream="no"/>
+<smd name="2" x="0.8" y="-1" dx="0.9" dy="0.5" layer="1" rot="R90" cream="no"/>
+<smd name="3" x="0" y="-1" dx="0.9" dy="0.5" layer="1" rot="R90" cream="no"/>
+<smd name="4" x="-0.8" y="-1" dx="0.9" dy="0.5" layer="1" rot="R90" cream="no"/>
+<smd name="5" x="-1.6" y="-1" dx="0.9" dy="0.5" layer="1" rot="R90" cream="no"/>
+<smd name="6" x="-2.05" y="0" dx="1.4" dy="0.5" layer="1" rot="R180" cream="no"/>
+<smd name="7" x="-1.6" y="1" dx="0.9" dy="0.5" layer="1" rot="R270" cream="no"/>
+<smd name="8" x="-0.8" y="1" dx="0.9" dy="0.5" layer="1" rot="R270" cream="no"/>
+<smd name="9" x="0" y="1" dx="0.9" dy="0.5" layer="1" rot="R270" cream="no"/>
+<smd name="10" x="0.8" y="1" dx="0.9" dy="0.5" layer="1" rot="R270" cream="no"/>
+<smd name="11" x="1.6" y="1" dx="0.9" dy="0.5" layer="1" rot="R270" cream="no"/>
+<smd name="12" x="2.05" y="0" dx="1.4" dy="0.5" layer="1" cream="no"/>
+<rectangle x1="1.35" y1="-0.25" x2="1.85" y2="0.25" layer="48"/>
+<rectangle x1="-0.25" y1="-1.05" x2="0.25" y2="-0.55" layer="48"/>
+<rectangle x1="0.55" y1="-1.05" x2="1.05" y2="-0.55" layer="48"/>
+<rectangle x1="1.35" y1="-1.05" x2="1.85" y2="-0.55" layer="48"/>
+<rectangle x1="-1.05" y1="-1.05" x2="-0.55" y2="-0.55" layer="48"/>
+<rectangle x1="-1.85" y1="-1.05" x2="-1.35" y2="-0.55" layer="48"/>
+<rectangle x1="-1.85" y1="-0.25" x2="-1.35" y2="0.25" layer="48"/>
+<rectangle x1="-1.85" y1="0.55" x2="-1.35" y2="1.05" layer="48"/>
+<rectangle x1="-1.05" y1="0.55" x2="-0.55" y2="1.05" layer="48"/>
+<rectangle x1="-0.25" y1="0.55" x2="0.25" y2="1.05" layer="48"/>
+<rectangle x1="0.55" y1="0.55" x2="1.05" y2="1.05" layer="48"/>
+<rectangle x1="1.35" y1="0.55" x2="1.85" y2="1.05" layer="48"/>
+<rectangle x1="1.35" y1="-0.8" x2="1.93" y2="-0.55" layer="1"/>
+<rectangle x1="1.25" y1="-0.9" x2="2" y2="-0.45" layer="29"/>
+<rectangle x1="-1.85" y1="-1.15" x2="-1.35" y2="-0.55" layer="31"/>
+<rectangle x1="-1.05" y1="-1.15" x2="-0.55" y2="-0.55" layer="31"/>
+<rectangle x1="-0.25" y1="-1.15" x2="0.25" y2="-0.55" layer="31"/>
+<rectangle x1="0.55" y1="-1.15" x2="1.05" y2="-0.55" layer="31"/>
+<rectangle x1="1.35" y1="-1.15" x2="1.85" y2="-0.55" layer="31"/>
+<rectangle x1="1.4" y1="-0.3" x2="1.9" y2="0.3" layer="31" rot="R90"/>
+<rectangle x1="1.35" y1="0.55" x2="1.85" y2="1.15" layer="31" rot="R180"/>
+<rectangle x1="0.55" y1="0.55" x2="1.05" y2="1.15" layer="31" rot="R180"/>
+<rectangle x1="-0.25" y1="0.55" x2="0.25" y2="1.15" layer="31" rot="R180"/>
+<rectangle x1="-1.05" y1="0.55" x2="-0.55" y2="1.15" layer="31" rot="R180"/>
+<rectangle x1="-1.85" y1="0.55" x2="-1.35" y2="1.15" layer="31" rot="R180"/>
+<rectangle x1="-1.9" y1="-0.3" x2="-1.4" y2="0.3" layer="31" rot="R270"/>
+<wire x1="0.35" y1="-1.25" x2="0.35" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="0.35" y1="-0.5" x2="-0.35" y2="-0.5" width="0.127" layer="51"/>
+<wire x1="-0.35" y1="-0.5" x2="-0.35" y2="-1.25" width="0.127" layer="51"/>
+<wire x1="0.35" y1="0.85" x2="0.35" y2="1.25" width="0.127" layer="51"/>
+<wire x1="-0.35" y1="0.85" x2="-0.35" y2="1.25" width="0.127" layer="51"/>
+<wire x1="0.35" y1="0.85" x2="-0.35" y2="0.85" width="0.127" layer="51" curve="-188.171234"/>
+<circle x="-1.5" y="0" radius="0.425" width="0.05" layer="49"/>
+<circle x="1.5" y="0" radius="0.35" width="0.05" layer="49"/>
+<wire x1="0.4" y1="1.5" x2="-0.4" y2="1.5" width="0.127" layer="21" curve="180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADMP401">
@@ -9664,6 +9741,22 @@ channels, 3 magnetic field channels&lt;/li&gt;
 <pin name="VSS" x="-17.78" y="-5.08" length="middle"/>
 <text x="-12.7" y="11.176" size="1.27" layer="95">&gt;NAME</text>
 <text x="-12.7" y="-12.7" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="VL53L1X">
+<description>&lt;h3&gt;STMicroelectronics VL53L1X - 400 cm IR Laser ToF Sensor&lt;/h3&gt;
+&lt;p&gt;VL53L1X is a state-of-the-art ToF laser-ranging sensor, enhancing the ST FlightSense product family. It is the fastest miniature ToF sensor currently on the market with accurate ranging up to 4 m and fast ranging frequency (up to 50 Hz). Housed in a miniature and reflowable package, it integrates a single photon avalanche diode (SPAD) receiving array, a 940 nm invisible laser Class 1 emitter, physical infrared filters, and optics to achieve the best ranging performance in various ambient lighting conditions with a range of cover window options.&lt;/p&gt;</description>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="GND" x="-10.16" y="-2.54" length="short"/>
+<pin name="VCC" x="-10.16" y="5.08" length="short"/>
+<pin name="SDA" x="10.16" y="2.54" length="short" rot="R180"/>
+<pin name="SCL" x="10.16" y="0" length="short" rot="R180"/>
+<pin name="!SHUT" x="10.16" y="5.08" length="short" rot="R180"/>
+<pin name="!INT" x="10.16" y="-2.54" length="short" rot="R180"/>
+<text x="-7.62" y="8.382" size="1.778" layer="95">&gt;Name</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -12363,6 +12456,30 @@ required for operation.&lt;/p&gt;
 <technology name="">
 <attribute name="PROD_ID" value="IC-13773" constant="no"/>
 <attribute name="VALUE" value="AT42QT1010 - UDFN" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VL53L1X" prefix="U">
+<description>&lt;h3&gt;STMicroelectronics VL53L1X - 400 cm IR Laser ToF Sensor&lt;/h3&gt;
+&lt;p&gt;VL53L1X is a state-of-the-art ToF laser-ranging sensor, enhancing the ST FlightSense product family. It is the fastest miniature ToF sensor currently on the market with accurate ranging up to 4 m and fast ranging frequency (up to 50 Hz). Housed in a miniature and reflowable package, it integrates a single photon avalanche diode (SPAD) receiving array, a 940 nm invisible laser Class 1 emitter, physical infrared filters, and optics to achieve the best ranging performance in various ambient lighting conditions with a range of cover window options.&lt;/p&gt;</description>
+<gates>
+<gate name="U1" symbol="VL53L1X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD" package="VL53L1X">
+<connects>
+<connect gate="U1" pin="!INT" pad="7"/>
+<connect gate="U1" pin="!SHUT" pad="5"/>
+<connect gate="U1" pin="GND" pad="2 3 4 6 12"/>
+<connect gate="U1" pin="SCL" pad="10"/>
+<connect gate="U1" pin="SDA" pad="9"/>
+<connect gate="U1" pin="VCC" pad="1 11"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-13960" constant="no"/>
 </technology>
 </technologies>
 </device>
