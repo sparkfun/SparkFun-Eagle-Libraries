@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2915,80 +2915,50 @@ IC needs to have legs bent before insertion.</description>
 </package>
 </packages>
 <symbols>
-<symbol name="ATMEGA32U4">
-<wire x1="-15.24" y1="38.1" x2="-15.24" y2="-40.64" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-40.64" x2="15.24" y2="-40.64" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-40.64" x2="15.24" y2="38.1" width="0.254" layer="94"/>
+<symbol name="ATMEGA32U4-ARDUINO">
+<wire x1="-15.24" y1="38.1" x2="-15.24" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-33.02" x2="15.24" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-33.02" x2="15.24" y2="38.1" width="0.254" layer="94"/>
 <wire x1="15.24" y1="38.1" x2="-15.24" y2="38.1" width="0.254" layer="94"/>
-<text x="-15.24" y="38.1" size="1.778" layer="95">&gt;NAME</text>
-<text x="-15.24" y="-43.18" size="1.778" layer="96">&gt;VALUE</text>
-<text x="30.48" y="-23.622" size="1.524" layer="103">D17/RX LED</text>
-<text x="30.48" y="-26.162" size="1.524" layer="103">D15</text>
-<text x="30.48" y="-28.702" size="1.524" layer="103">D16</text>
-<text x="30.48" y="-31.242" size="1.524" layer="103">D14</text>
-<text x="30.48" y="-8.382" size="1.524" layer="103">D8</text>
-<text x="30.48" y="-10.922" size="1.524" layer="103">D9#/A8</text>
-<text x="30.48" y="-13.462" size="1.524" layer="103">D10#</text>
-<text x="30.48" y="-16.002" size="1.524" layer="103">D11#</text>
-<text x="30.48" y="-0.762" size="1.524" layer="103">D5#</text>
-<text x="30.48" y="-21.082" size="1.524" layer="103">D13#</text>
-<text x="30.48" y="4.318" size="1.524" layer="103">D3#</text>
-<text x="30.48" y="6.858" size="1.524" layer="103">D2</text>
-<text x="30.48" y="11.938" size="1.524" layer="103">D0</text>
-<text x="30.48" y="9.398" size="1.524" layer="103">D1</text>
-<text x="30.48" y="1.778" size="1.524" layer="103">D4/A6</text>
-<text x="30.48" y="-36.322" size="1.524" layer="103">TX LED</text>
-<text x="30.48" y="-18.542" size="1.524" layer="103">D12/A10</text>
-<text x="30.48" y="-3.302" size="1.524" layer="103">D6#/A7</text>
-<text x="30.48" y="-5.842" size="1.524" layer="103">D7</text>
-<text x="30.48" y="34.798" size="1.524" layer="103">A0</text>
-<text x="30.48" y="32.258" size="1.524" layer="103">A1</text>
-<text x="30.48" y="29.718" size="1.524" layer="103">A2</text>
-<text x="30.48" y="27.178" size="1.524" layer="103">A3</text>
-<text x="30.48" y="24.638" size="1.524" layer="103">A4</text>
-<text x="30.48" y="22.098" size="1.524" layer="103">A5</text>
+<text x="-15.24" y="38.608" size="1.778" layer="95">&gt;NAME</text>
+<text x="-15.24" y="-35.56" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="!RESET" x="-17.78" y="35.56" length="short"/>
 <pin name="AREF" x="-17.78" y="22.86" length="short"/>
-<pin name="AVCC@24" x="-17.78" y="27.94" length="short"/>
-<pin name="AVCC@44" x="-17.78" y="25.4" length="short"/>
+<pin name="AVCC" x="-17.78" y="30.48" length="short"/>
 <pin name="D+" x="-17.78" y="2.54" length="short"/>
 <pin name="D-" x="-17.78" y="0" length="short"/>
-<pin name="GND@15" x="-17.78" y="-30.48" length="short"/>
-<pin name="GND@23" x="-17.78" y="-33.02" length="short"/>
-<pin name="GND@35" x="-17.78" y="-35.56" length="short"/>
-<pin name="GND@43" x="-17.78" y="-38.1" length="short"/>
-<pin name="PB0(SS)" x="17.78" y="-22.86" length="short" rot="R180"/>
-<pin name="PB1(SCK)" x="17.78" y="-25.4" length="short" rot="R180"/>
-<pin name="PB2(MOSI)" x="17.78" y="-27.94" length="short" rot="R180"/>
-<pin name="PB3(MISO)" x="17.78" y="-30.48" length="short" rot="R180"/>
-<pin name="PB4(ADC11)" x="17.78" y="-7.62" length="short" rot="R180"/>
-<pin name="PB5(ADC12)" x="17.78" y="-10.16" length="short" rot="R180"/>
-<pin name="PB6(ADC13)" x="17.78" y="-12.7" length="short" rot="R180"/>
-<pin name="PB7" x="17.78" y="-15.24" length="short" rot="R180"/>
-<pin name="PC6" x="17.78" y="0" length="short" rot="R180"/>
-<pin name="PC7" x="17.78" y="-20.32" length="short" rot="R180"/>
-<pin name="PD0(SCL)" x="17.78" y="5.08" length="short" rot="R180"/>
-<pin name="PD1(SDA)" x="17.78" y="7.62" length="short" rot="R180"/>
-<pin name="PD2(RX)" x="17.78" y="12.7" length="short" rot="R180"/>
-<pin name="PD3(TX)" x="17.78" y="10.16" length="short" rot="R180"/>
-<pin name="PD4(ADC8)" x="17.78" y="2.54" length="short" rot="R180"/>
-<pin name="PD5" x="17.78" y="-35.56" length="short" rot="R180"/>
-<pin name="PD6(ADC9)" x="17.78" y="-17.78" length="short" rot="R180"/>
-<pin name="PD7(ADC10)" x="17.78" y="-2.54" length="short" rot="R180"/>
+<pin name="GND" x="-17.78" y="-30.48" length="short"/>
+<pin name="RXLED" x="17.78" y="-27.94" length="short" rot="R180"/>
+<pin name="D15/SCK" x="17.78" y="-20.32" length="short" rot="R180"/>
+<pin name="D16/MOSI" x="17.78" y="-22.86" length="short" rot="R180"/>
+<pin name="D14/MISO" x="17.78" y="-17.78" length="short" rot="R180"/>
+<pin name="D8" x="17.78" y="-2.54" length="short" rot="R180"/>
+<pin name="D9#/A8" x="17.78" y="-5.08" length="short" rot="R180"/>
+<pin name="D10#" x="17.78" y="-7.62" length="short" rot="R180"/>
+<pin name="D11#" x="17.78" y="-10.16" length="short" rot="R180"/>
+<pin name="D5#" x="17.78" y="5.08" length="short" rot="R180"/>
+<pin name="D13#" x="17.78" y="-15.24" length="short" rot="R180"/>
+<pin name="D3#(SCL)" x="17.78" y="10.16" length="short" rot="R180"/>
+<pin name="D2(SDA)" x="17.78" y="12.7" length="short" rot="R180"/>
+<pin name="D0(RX)" x="17.78" y="17.78" length="short" rot="R180"/>
+<pin name="D1(TX)" x="17.78" y="15.24" length="short" rot="R180"/>
+<pin name="D4/A6" x="17.78" y="7.62" length="short" rot="R180"/>
+<pin name="TXLED" x="17.78" y="-30.48" length="short" rot="R180"/>
+<pin name="D12/A10" x="17.78" y="-12.7" length="short" rot="R180"/>
+<pin name="D6#/A7" x="17.78" y="2.54" length="short" rot="R180"/>
 <pin name="PE2/!HWB" x="-17.78" y="-20.32" length="short"/>
-<pin name="PE6" x="17.78" y="-5.08" length="short" rot="R180"/>
-<pin name="PF0(ADC0)" x="17.78" y="22.86" length="short" rot="R180"/>
-<pin name="PF1(ADC1)" x="17.78" y="25.4" length="short" rot="R180"/>
-<pin name="PF4(ADC4)" x="17.78" y="27.94" length="short" rot="R180"/>
-<pin name="PF5(ADC5)" x="17.78" y="30.48" length="short" rot="R180"/>
-<pin name="PF6(ADC6)" x="17.78" y="33.02" length="short" rot="R180"/>
-<pin name="PF7(ADC7)" x="17.78" y="35.56" length="short" rot="R180"/>
+<pin name="D7" x="17.78" y="0" length="short" rot="R180"/>
+<pin name="A5" x="17.78" y="22.86" length="short" rot="R180"/>
+<pin name="A4" x="17.78" y="25.4" length="short" rot="R180"/>
+<pin name="A3" x="17.78" y="27.94" length="short" rot="R180"/>
+<pin name="A2" x="17.78" y="30.48" length="short" rot="R180"/>
+<pin name="A1" x="17.78" y="33.02" length="short" rot="R180"/>
+<pin name="A0" x="17.78" y="35.56" length="short" rot="R180"/>
 <pin name="UCAP" x="-17.78" y="7.62" length="short"/>
 <pin name="UGND" x="-17.78" y="-27.94" length="short"/>
 <pin name="UVCC" x="-17.78" y="10.16" length="short"/>
 <pin name="VBUS" x="-17.78" y="12.7" length="short"/>
-<pin name="VCC@14" x="-17.78" y="33.02" length="short"/>
-<pin name="VCC@34" x="-17.78" y="30.48" length="short"/>
+<pin name="VCC" x="-17.78" y="33.02" length="short"/>
 <pin name="XTAL1" x="-17.78" y="-10.16" length="short"/>
 <pin name="XTAL2" x="-17.78" y="-15.24" length="short"/>
 </symbol>
@@ -4767,7 +4737,7 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;</description>
 <pin name="XO" x="-5.08" y="2.54" length="middle"/>
 <pin name="ANT" x="25.4" y="5.08" length="middle" rot="R180"/>
 </symbol>
-<symbol name="ATMEGA32U4_NOARD">
+<symbol name="ATMEGA32U4">
 <wire x1="-15.24" y1="38.1" x2="-15.24" y2="-40.64" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="-40.64" x2="15.24" y2="-40.64" width="0.254" layer="94"/>
 <wire x1="15.24" y1="-40.64" x2="15.24" y2="38.1" width="0.254" layer="94"/>
@@ -6014,7 +5984,7 @@ Short timer</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ATMEGA32U4" prefix="U">
+<deviceset name="ATMEGA32U4-ARDUINO" prefix="U">
 <description>&lt;h3&gt;Atmel MCU, 32KByte&lt;/h3&gt;
 &lt;p&gt;Atmel 44-pin 8-bit Microcontroller with 32KBytes of ISP Flash and USB Controller&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/ATMega32U4.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
@@ -6029,53 +5999,48 @@ Short timer</description>
 &lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11519"&gt;Makey Makey Deluxe Kit&lt;/a&gt; (WIG-11519)&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
-<gate name="U1" symbol="ATMEGA32U4" x="0" y="0"/>
+<gate name="U1" symbol="ATMEGA32U4-ARDUINO" x="0" y="0"/>
 </gates>
 <devices>
 <device name="QFN" package="QFN-44">
 <connects>
 <connect gate="U1" pin="!RESET" pad="13"/>
+<connect gate="U1" pin="A0" pad="36"/>
+<connect gate="U1" pin="A1" pad="37"/>
+<connect gate="U1" pin="A2" pad="38"/>
+<connect gate="U1" pin="A3" pad="39"/>
+<connect gate="U1" pin="A4" pad="40"/>
+<connect gate="U1" pin="A5" pad="41"/>
 <connect gate="U1" pin="AREF" pad="42"/>
-<connect gate="U1" pin="AVCC@24" pad="24"/>
-<connect gate="U1" pin="AVCC@44" pad="44"/>
+<connect gate="U1" pin="AVCC" pad="24 44"/>
 <connect gate="U1" pin="D+" pad="4"/>
 <connect gate="U1" pin="D-" pad="3"/>
-<connect gate="U1" pin="GND@15" pad="15"/>
-<connect gate="U1" pin="GND@23" pad="23"/>
-<connect gate="U1" pin="GND@35" pad="35"/>
-<connect gate="U1" pin="GND@43" pad="43"/>
-<connect gate="U1" pin="PB0(SS)" pad="8"/>
-<connect gate="U1" pin="PB1(SCK)" pad="9"/>
-<connect gate="U1" pin="PB2(MOSI)" pad="10"/>
-<connect gate="U1" pin="PB3(MISO)" pad="11"/>
-<connect gate="U1" pin="PB4(ADC11)" pad="28"/>
-<connect gate="U1" pin="PB5(ADC12)" pad="29"/>
-<connect gate="U1" pin="PB6(ADC13)" pad="30"/>
-<connect gate="U1" pin="PB7" pad="12"/>
-<connect gate="U1" pin="PC6" pad="31"/>
-<connect gate="U1" pin="PC7" pad="32"/>
-<connect gate="U1" pin="PD0(SCL)" pad="18"/>
-<connect gate="U1" pin="PD1(SDA)" pad="19"/>
-<connect gate="U1" pin="PD2(RX)" pad="20"/>
-<connect gate="U1" pin="PD3(TX)" pad="21"/>
-<connect gate="U1" pin="PD4(ADC8)" pad="25"/>
-<connect gate="U1" pin="PD5" pad="22"/>
-<connect gate="U1" pin="PD6(ADC9)" pad="26"/>
-<connect gate="U1" pin="PD7(ADC10)" pad="27"/>
+<connect gate="U1" pin="D0(RX)" pad="20"/>
+<connect gate="U1" pin="D1(TX)" pad="21"/>
+<connect gate="U1" pin="D10#" pad="30"/>
+<connect gate="U1" pin="D11#" pad="12"/>
+<connect gate="U1" pin="D12/A10" pad="26"/>
+<connect gate="U1" pin="D13#" pad="32"/>
+<connect gate="U1" pin="D14/MISO" pad="11"/>
+<connect gate="U1" pin="D15/SCK" pad="9"/>
+<connect gate="U1" pin="D16/MOSI" pad="10"/>
+<connect gate="U1" pin="D2(SDA)" pad="19"/>
+<connect gate="U1" pin="D3#(SCL)" pad="18"/>
+<connect gate="U1" pin="D4/A6" pad="25"/>
+<connect gate="U1" pin="D5#" pad="31"/>
+<connect gate="U1" pin="D6#/A7" pad="27"/>
+<connect gate="U1" pin="D7" pad="1"/>
+<connect gate="U1" pin="D8" pad="28"/>
+<connect gate="U1" pin="D9#/A8" pad="29"/>
+<connect gate="U1" pin="GND" pad="15 23 35 43"/>
 <connect gate="U1" pin="PE2/!HWB" pad="33"/>
-<connect gate="U1" pin="PE6" pad="1"/>
-<connect gate="U1" pin="PF0(ADC0)" pad="41"/>
-<connect gate="U1" pin="PF1(ADC1)" pad="40"/>
-<connect gate="U1" pin="PF4(ADC4)" pad="39"/>
-<connect gate="U1" pin="PF5(ADC5)" pad="38"/>
-<connect gate="U1" pin="PF6(ADC6)" pad="37"/>
-<connect gate="U1" pin="PF7(ADC7)" pad="36"/>
+<connect gate="U1" pin="RXLED" pad="8"/>
+<connect gate="U1" pin="TXLED" pad="22"/>
 <connect gate="U1" pin="UCAP" pad="6"/>
 <connect gate="U1" pin="UGND" pad="5"/>
 <connect gate="U1" pin="UVCC" pad="2"/>
 <connect gate="U1" pin="VBUS" pad="7"/>
-<connect gate="U1" pin="VCC@14" pad="14"/>
-<connect gate="U1" pin="VCC@34" pad="34"/>
+<connect gate="U1" pin="VCC" pad="14 34"/>
 <connect gate="U1" pin="XTAL1" pad="17"/>
 <connect gate="U1" pin="XTAL2" pad="16"/>
 </connects>
@@ -6089,47 +6054,42 @@ Short timer</description>
 <device name="QFN2" package="QFN-44-NOPAD">
 <connects>
 <connect gate="U1" pin="!RESET" pad="13"/>
+<connect gate="U1" pin="A0" pad="36"/>
+<connect gate="U1" pin="A1" pad="37"/>
+<connect gate="U1" pin="A2" pad="38"/>
+<connect gate="U1" pin="A3" pad="39"/>
+<connect gate="U1" pin="A4" pad="40"/>
+<connect gate="U1" pin="A5" pad="41"/>
 <connect gate="U1" pin="AREF" pad="42"/>
-<connect gate="U1" pin="AVCC@24" pad="24"/>
-<connect gate="U1" pin="AVCC@44" pad="44"/>
+<connect gate="U1" pin="AVCC" pad="24 44"/>
 <connect gate="U1" pin="D+" pad="4"/>
 <connect gate="U1" pin="D-" pad="3"/>
-<connect gate="U1" pin="GND@15" pad="15"/>
-<connect gate="U1" pin="GND@23" pad="23"/>
-<connect gate="U1" pin="GND@35" pad="35"/>
-<connect gate="U1" pin="GND@43" pad="43"/>
-<connect gate="U1" pin="PB0(SS)" pad="8"/>
-<connect gate="U1" pin="PB1(SCK)" pad="9"/>
-<connect gate="U1" pin="PB2(MOSI)" pad="10"/>
-<connect gate="U1" pin="PB3(MISO)" pad="11"/>
-<connect gate="U1" pin="PB4(ADC11)" pad="28"/>
-<connect gate="U1" pin="PB5(ADC12)" pad="29"/>
-<connect gate="U1" pin="PB6(ADC13)" pad="30"/>
-<connect gate="U1" pin="PB7" pad="12"/>
-<connect gate="U1" pin="PC6" pad="31"/>
-<connect gate="U1" pin="PC7" pad="32"/>
-<connect gate="U1" pin="PD0(SCL)" pad="18"/>
-<connect gate="U1" pin="PD1(SDA)" pad="19"/>
-<connect gate="U1" pin="PD2(RX)" pad="20"/>
-<connect gate="U1" pin="PD3(TX)" pad="21"/>
-<connect gate="U1" pin="PD4(ADC8)" pad="25"/>
-<connect gate="U1" pin="PD5" pad="22"/>
-<connect gate="U1" pin="PD6(ADC9)" pad="26"/>
-<connect gate="U1" pin="PD7(ADC10)" pad="27"/>
+<connect gate="U1" pin="D0(RX)" pad="20"/>
+<connect gate="U1" pin="D1(TX)" pad="21"/>
+<connect gate="U1" pin="D10#" pad="30"/>
+<connect gate="U1" pin="D11#" pad="12"/>
+<connect gate="U1" pin="D12/A10" pad="26"/>
+<connect gate="U1" pin="D13#" pad="32"/>
+<connect gate="U1" pin="D14/MISO" pad="11"/>
+<connect gate="U1" pin="D15/SCK" pad="9"/>
+<connect gate="U1" pin="D16/MOSI" pad="10"/>
+<connect gate="U1" pin="D2(SDA)" pad="19"/>
+<connect gate="U1" pin="D3#(SCL)" pad="18"/>
+<connect gate="U1" pin="D4/A6" pad="25"/>
+<connect gate="U1" pin="D5#" pad="31"/>
+<connect gate="U1" pin="D6#/A7" pad="27"/>
+<connect gate="U1" pin="D7" pad="1"/>
+<connect gate="U1" pin="D8" pad="28"/>
+<connect gate="U1" pin="D9#/A8" pad="29"/>
+<connect gate="U1" pin="GND" pad="15 23 35 43"/>
 <connect gate="U1" pin="PE2/!HWB" pad="33"/>
-<connect gate="U1" pin="PE6" pad="1"/>
-<connect gate="U1" pin="PF0(ADC0)" pad="41"/>
-<connect gate="U1" pin="PF1(ADC1)" pad="40"/>
-<connect gate="U1" pin="PF4(ADC4)" pad="39"/>
-<connect gate="U1" pin="PF5(ADC5)" pad="38"/>
-<connect gate="U1" pin="PF6(ADC6)" pad="37"/>
-<connect gate="U1" pin="PF7(ADC7)" pad="36"/>
+<connect gate="U1" pin="RXLED" pad="8"/>
+<connect gate="U1" pin="TXLED" pad="22"/>
 <connect gate="U1" pin="UCAP" pad="6"/>
 <connect gate="U1" pin="UGND" pad="5"/>
 <connect gate="U1" pin="UVCC" pad="2"/>
 <connect gate="U1" pin="VBUS" pad="7"/>
-<connect gate="U1" pin="VCC@14" pad="14"/>
-<connect gate="U1" pin="VCC@34" pad="34"/>
+<connect gate="U1" pin="VCC" pad="14 34"/>
 <connect gate="U1" pin="XTAL1" pad="17"/>
 <connect gate="U1" pin="XTAL2" pad="16"/>
 </connects>
@@ -6143,47 +6103,42 @@ Short timer</description>
 <device name="1:1" package="QFN-44-NOPAD_1:1">
 <connects>
 <connect gate="U1" pin="!RESET" pad="13"/>
+<connect gate="U1" pin="A0" pad="36"/>
+<connect gate="U1" pin="A1" pad="37"/>
+<connect gate="U1" pin="A2" pad="38"/>
+<connect gate="U1" pin="A3" pad="39"/>
+<connect gate="U1" pin="A4" pad="40"/>
+<connect gate="U1" pin="A5" pad="41"/>
 <connect gate="U1" pin="AREF" pad="42"/>
-<connect gate="U1" pin="AVCC@24" pad="24"/>
-<connect gate="U1" pin="AVCC@44" pad="44"/>
+<connect gate="U1" pin="AVCC" pad="24 44"/>
 <connect gate="U1" pin="D+" pad="4"/>
 <connect gate="U1" pin="D-" pad="3"/>
-<connect gate="U1" pin="GND@15" pad="15"/>
-<connect gate="U1" pin="GND@23" pad="23"/>
-<connect gate="U1" pin="GND@35" pad="35"/>
-<connect gate="U1" pin="GND@43" pad="43"/>
-<connect gate="U1" pin="PB0(SS)" pad="8"/>
-<connect gate="U1" pin="PB1(SCK)" pad="9"/>
-<connect gate="U1" pin="PB2(MOSI)" pad="10"/>
-<connect gate="U1" pin="PB3(MISO)" pad="11"/>
-<connect gate="U1" pin="PB4(ADC11)" pad="28"/>
-<connect gate="U1" pin="PB5(ADC12)" pad="29"/>
-<connect gate="U1" pin="PB6(ADC13)" pad="30"/>
-<connect gate="U1" pin="PB7" pad="12"/>
-<connect gate="U1" pin="PC6" pad="31"/>
-<connect gate="U1" pin="PC7" pad="32"/>
-<connect gate="U1" pin="PD0(SCL)" pad="18"/>
-<connect gate="U1" pin="PD1(SDA)" pad="19"/>
-<connect gate="U1" pin="PD2(RX)" pad="20"/>
-<connect gate="U1" pin="PD3(TX)" pad="21"/>
-<connect gate="U1" pin="PD4(ADC8)" pad="25"/>
-<connect gate="U1" pin="PD5" pad="22"/>
-<connect gate="U1" pin="PD6(ADC9)" pad="26"/>
-<connect gate="U1" pin="PD7(ADC10)" pad="27"/>
+<connect gate="U1" pin="D0(RX)" pad="20"/>
+<connect gate="U1" pin="D1(TX)" pad="21"/>
+<connect gate="U1" pin="D10#" pad="30"/>
+<connect gate="U1" pin="D11#" pad="12"/>
+<connect gate="U1" pin="D12/A10" pad="26"/>
+<connect gate="U1" pin="D13#" pad="32"/>
+<connect gate="U1" pin="D14/MISO" pad="11"/>
+<connect gate="U1" pin="D15/SCK" pad="9"/>
+<connect gate="U1" pin="D16/MOSI" pad="10"/>
+<connect gate="U1" pin="D2(SDA)" pad="19"/>
+<connect gate="U1" pin="D3#(SCL)" pad="18"/>
+<connect gate="U1" pin="D4/A6" pad="25"/>
+<connect gate="U1" pin="D5#" pad="31"/>
+<connect gate="U1" pin="D6#/A7" pad="27"/>
+<connect gate="U1" pin="D7" pad="1"/>
+<connect gate="U1" pin="D8" pad="28"/>
+<connect gate="U1" pin="D9#/A8" pad="29"/>
+<connect gate="U1" pin="GND" pad="15 23 35 43"/>
 <connect gate="U1" pin="PE2/!HWB" pad="33"/>
-<connect gate="U1" pin="PE6" pad="1"/>
-<connect gate="U1" pin="PF0(ADC0)" pad="41"/>
-<connect gate="U1" pin="PF1(ADC1)" pad="40"/>
-<connect gate="U1" pin="PF4(ADC4)" pad="39"/>
-<connect gate="U1" pin="PF5(ADC5)" pad="38"/>
-<connect gate="U1" pin="PF6(ADC6)" pad="37"/>
-<connect gate="U1" pin="PF7(ADC7)" pad="36"/>
+<connect gate="U1" pin="RXLED" pad="8"/>
+<connect gate="U1" pin="TXLED" pad="22"/>
 <connect gate="U1" pin="UCAP" pad="6"/>
 <connect gate="U1" pin="UGND" pad="5"/>
 <connect gate="U1" pin="UVCC" pad="2"/>
 <connect gate="U1" pin="VBUS" pad="7"/>
-<connect gate="U1" pin="VCC@14" pad="14"/>
-<connect gate="U1" pin="VCC@34" pad="34"/>
+<connect gate="U1" pin="VCC" pad="14 34"/>
 <connect gate="U1" pin="XTAL1" pad="17"/>
 <connect gate="U1" pin="XTAL2" pad="16"/>
 </connects>
@@ -6197,47 +6152,42 @@ Short timer</description>
 <device name="1:1-LESS_PASTE" package="QFN-44-NOPAD_1:1-LESS_PASTE">
 <connects>
 <connect gate="U1" pin="!RESET" pad="13"/>
+<connect gate="U1" pin="A0" pad="36"/>
+<connect gate="U1" pin="A1" pad="37"/>
+<connect gate="U1" pin="A2" pad="38"/>
+<connect gate="U1" pin="A3" pad="39"/>
+<connect gate="U1" pin="A4" pad="40"/>
+<connect gate="U1" pin="A5" pad="41"/>
 <connect gate="U1" pin="AREF" pad="42"/>
-<connect gate="U1" pin="AVCC@24" pad="24"/>
-<connect gate="U1" pin="AVCC@44" pad="44"/>
+<connect gate="U1" pin="AVCC" pad="24 44"/>
 <connect gate="U1" pin="D+" pad="4"/>
 <connect gate="U1" pin="D-" pad="3"/>
-<connect gate="U1" pin="GND@15" pad="15"/>
-<connect gate="U1" pin="GND@23" pad="23"/>
-<connect gate="U1" pin="GND@35" pad="35"/>
-<connect gate="U1" pin="GND@43" pad="43"/>
-<connect gate="U1" pin="PB0(SS)" pad="8"/>
-<connect gate="U1" pin="PB1(SCK)" pad="9"/>
-<connect gate="U1" pin="PB2(MOSI)" pad="10"/>
-<connect gate="U1" pin="PB3(MISO)" pad="11"/>
-<connect gate="U1" pin="PB4(ADC11)" pad="28"/>
-<connect gate="U1" pin="PB5(ADC12)" pad="29"/>
-<connect gate="U1" pin="PB6(ADC13)" pad="30"/>
-<connect gate="U1" pin="PB7" pad="12"/>
-<connect gate="U1" pin="PC6" pad="31"/>
-<connect gate="U1" pin="PC7" pad="32"/>
-<connect gate="U1" pin="PD0(SCL)" pad="18"/>
-<connect gate="U1" pin="PD1(SDA)" pad="19"/>
-<connect gate="U1" pin="PD2(RX)" pad="20"/>
-<connect gate="U1" pin="PD3(TX)" pad="21"/>
-<connect gate="U1" pin="PD4(ADC8)" pad="25"/>
-<connect gate="U1" pin="PD5" pad="22"/>
-<connect gate="U1" pin="PD6(ADC9)" pad="26"/>
-<connect gate="U1" pin="PD7(ADC10)" pad="27"/>
+<connect gate="U1" pin="D0(RX)" pad="20"/>
+<connect gate="U1" pin="D1(TX)" pad="21"/>
+<connect gate="U1" pin="D10#" pad="30"/>
+<connect gate="U1" pin="D11#" pad="12"/>
+<connect gate="U1" pin="D12/A10" pad="26"/>
+<connect gate="U1" pin="D13#" pad="32"/>
+<connect gate="U1" pin="D14/MISO" pad="11"/>
+<connect gate="U1" pin="D15/SCK" pad="9"/>
+<connect gate="U1" pin="D16/MOSI" pad="10"/>
+<connect gate="U1" pin="D2(SDA)" pad="19"/>
+<connect gate="U1" pin="D3#(SCL)" pad="18"/>
+<connect gate="U1" pin="D4/A6" pad="25"/>
+<connect gate="U1" pin="D5#" pad="31"/>
+<connect gate="U1" pin="D6#/A7" pad="27"/>
+<connect gate="U1" pin="D7" pad="1"/>
+<connect gate="U1" pin="D8" pad="28"/>
+<connect gate="U1" pin="D9#/A8" pad="29"/>
+<connect gate="U1" pin="GND" pad="15 23 35 43"/>
 <connect gate="U1" pin="PE2/!HWB" pad="33"/>
-<connect gate="U1" pin="PE6" pad="1"/>
-<connect gate="U1" pin="PF0(ADC0)" pad="41"/>
-<connect gate="U1" pin="PF1(ADC1)" pad="40"/>
-<connect gate="U1" pin="PF4(ADC4)" pad="39"/>
-<connect gate="U1" pin="PF5(ADC5)" pad="38"/>
-<connect gate="U1" pin="PF6(ADC6)" pad="37"/>
-<connect gate="U1" pin="PF7(ADC7)" pad="36"/>
+<connect gate="U1" pin="RXLED" pad="8"/>
+<connect gate="U1" pin="TXLED" pad="22"/>
 <connect gate="U1" pin="UCAP" pad="6"/>
 <connect gate="U1" pin="UGND" pad="5"/>
 <connect gate="U1" pin="UVCC" pad="2"/>
 <connect gate="U1" pin="VBUS" pad="7"/>
-<connect gate="U1" pin="VCC@14" pad="14"/>
-<connect gate="U1" pin="VCC@34" pad="34"/>
+<connect gate="U1" pin="VCC" pad="14 34"/>
 <connect gate="U1" pin="XTAL1" pad="17"/>
 <connect gate="U1" pin="XTAL2" pad="16"/>
 </connects>
@@ -6251,47 +6201,42 @@ Short timer</description>
 <device name="TQFP-44" package="TQFP44">
 <connects>
 <connect gate="U1" pin="!RESET" pad="13"/>
+<connect gate="U1" pin="A0" pad="36"/>
+<connect gate="U1" pin="A1" pad="37"/>
+<connect gate="U1" pin="A2" pad="38"/>
+<connect gate="U1" pin="A3" pad="39"/>
+<connect gate="U1" pin="A4" pad="40"/>
+<connect gate="U1" pin="A5" pad="41"/>
 <connect gate="U1" pin="AREF" pad="42"/>
-<connect gate="U1" pin="AVCC@24" pad="24"/>
-<connect gate="U1" pin="AVCC@44" pad="44"/>
+<connect gate="U1" pin="AVCC" pad="24 44"/>
 <connect gate="U1" pin="D+" pad="4"/>
 <connect gate="U1" pin="D-" pad="3"/>
-<connect gate="U1" pin="GND@15" pad="15"/>
-<connect gate="U1" pin="GND@23" pad="23"/>
-<connect gate="U1" pin="GND@35" pad="35"/>
-<connect gate="U1" pin="GND@43" pad="43"/>
-<connect gate="U1" pin="PB0(SS)" pad="8"/>
-<connect gate="U1" pin="PB1(SCK)" pad="9"/>
-<connect gate="U1" pin="PB2(MOSI)" pad="10"/>
-<connect gate="U1" pin="PB3(MISO)" pad="11"/>
-<connect gate="U1" pin="PB4(ADC11)" pad="28"/>
-<connect gate="U1" pin="PB5(ADC12)" pad="29"/>
-<connect gate="U1" pin="PB6(ADC13)" pad="30"/>
-<connect gate="U1" pin="PB7" pad="12"/>
-<connect gate="U1" pin="PC6" pad="31"/>
-<connect gate="U1" pin="PC7" pad="32"/>
-<connect gate="U1" pin="PD0(SCL)" pad="18"/>
-<connect gate="U1" pin="PD1(SDA)" pad="19"/>
-<connect gate="U1" pin="PD2(RX)" pad="20"/>
-<connect gate="U1" pin="PD3(TX)" pad="21"/>
-<connect gate="U1" pin="PD4(ADC8)" pad="25"/>
-<connect gate="U1" pin="PD5" pad="22"/>
-<connect gate="U1" pin="PD6(ADC9)" pad="26"/>
-<connect gate="U1" pin="PD7(ADC10)" pad="27"/>
+<connect gate="U1" pin="D0(RX)" pad="20"/>
+<connect gate="U1" pin="D1(TX)" pad="21"/>
+<connect gate="U1" pin="D10#" pad="30"/>
+<connect gate="U1" pin="D11#" pad="12"/>
+<connect gate="U1" pin="D12/A10" pad="26"/>
+<connect gate="U1" pin="D13#" pad="32"/>
+<connect gate="U1" pin="D14/MISO" pad="11"/>
+<connect gate="U1" pin="D15/SCK" pad="9"/>
+<connect gate="U1" pin="D16/MOSI" pad="10"/>
+<connect gate="U1" pin="D2(SDA)" pad="19"/>
+<connect gate="U1" pin="D3#(SCL)" pad="18"/>
+<connect gate="U1" pin="D4/A6" pad="25"/>
+<connect gate="U1" pin="D5#" pad="31"/>
+<connect gate="U1" pin="D6#/A7" pad="27"/>
+<connect gate="U1" pin="D7" pad="1"/>
+<connect gate="U1" pin="D8" pad="28"/>
+<connect gate="U1" pin="D9#/A8" pad="29"/>
+<connect gate="U1" pin="GND" pad="15 23 35 43"/>
 <connect gate="U1" pin="PE2/!HWB" pad="33"/>
-<connect gate="U1" pin="PE6" pad="1"/>
-<connect gate="U1" pin="PF0(ADC0)" pad="41"/>
-<connect gate="U1" pin="PF1(ADC1)" pad="40"/>
-<connect gate="U1" pin="PF4(ADC4)" pad="39"/>
-<connect gate="U1" pin="PF5(ADC5)" pad="38"/>
-<connect gate="U1" pin="PF6(ADC6)" pad="37"/>
-<connect gate="U1" pin="PF7(ADC7)" pad="36"/>
+<connect gate="U1" pin="RXLED" pad="8"/>
+<connect gate="U1" pin="TXLED" pad="22"/>
 <connect gate="U1" pin="UCAP" pad="6"/>
 <connect gate="U1" pin="UGND" pad="5"/>
 <connect gate="U1" pin="UVCC" pad="2"/>
 <connect gate="U1" pin="VBUS" pad="7"/>
-<connect gate="U1" pin="VCC@14" pad="14"/>
-<connect gate="U1" pin="VCC@34" pad="34"/>
+<connect gate="U1" pin="VCC" pad="14 34"/>
 <connect gate="U1" pin="XTAL1" pad="17"/>
 <connect gate="U1" pin="XTAL2" pad="16"/>
 </connects>
@@ -7451,7 +7396,7 @@ Prototype in process!  Do keep!</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ATMEGA32U4_NOARD" prefix="U">
+<deviceset name="ATMEGA32U4" prefix="U">
 <description>&lt;h3&gt;Atmel MCU, 32KByte&lt;/h3&gt;
 &lt;p&gt;Atmel 44-pin 8-bit Microcontroller with 32KBytes of ISP Flash and USB Controller&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://cdn.sparkfun.com/datasheets/Dev/Arduino/Boards/ATMega32U4.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
@@ -7466,7 +7411,7 @@ Prototype in process!  Do keep!</description>
 &lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11519"&gt;Makey Makey Deluxe Kit&lt;/a&gt; (WIG-11519)&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
-<gate name="U1" symbol="ATMEGA32U4_NOARD" x="0" y="0"/>
+<gate name="U1" symbol="ATMEGA32U4" x="0" y="0"/>
 </gates>
 <devices>
 <device name="QFN" package="QFN-44">
