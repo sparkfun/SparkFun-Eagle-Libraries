@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1350,6 +1350,31 @@ Note:  SparkFun currenly only uses the QFN style part</description>
 <connect gate="G$1" pin="PVCC" pad="15 16 27 28"/>
 <connect gate="G$1" pin="RINN" pad="11"/>
 <connect gate="G$1" pin="RINP" pad="12"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TSH82" prefix="U">
+<description>65MHz dual op amp in a SOIC8 package.</description>
+<gates>
+<gate name="G1" symbol="OP-AMP" x="-20.32" y="10.16"/>
+<gate name="G2" symbol="OP-AMP" x="22.86" y="10.16"/>
+<gate name="G3" symbol="POWER_CONSORT" x="0" y="-17.78"/>
+</gates>
+<devices>
+<device name="" package="SO08">
+<connects>
+<connect gate="G1" pin="+IN" pad="3"/>
+<connect gate="G1" pin="-IN" pad="2"/>
+<connect gate="G1" pin="OUT" pad="1"/>
+<connect gate="G2" pin="+IN" pad="5"/>
+<connect gate="G2" pin="-IN" pad="6"/>
+<connect gate="G2" pin="OUT" pad="7"/>
+<connect gate="G3" pin="P$V+" pad="8"/>
+<connect gate="G3" pin="P$V-" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
