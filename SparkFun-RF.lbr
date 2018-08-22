@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -21,9 +21,9 @@
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -73,6 +73,8 @@
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
@@ -7218,6 +7220,36 @@ PATENTS PENDING 04.01.2015&lt;br/&gt;&lt;/p&gt;
 <wire x1="7.041" y1="-9.127" x2="14.057" y2="-9.127" width="0.2032" layer="21"/>
 <wire x1="14.057" y1="9.127" x2="14.057" y2="-9.127" width="0.2032" layer="21"/>
 </package>
+<package name="RFM95/96/97/98W">
+<description>&lt;h3&gt;RFM95/96/97/98&lt;/h3&gt;
+
+&lt;p&gt;The RFM95/96/97/98(W) transceivers feature the
+LoRaTM    long range modem that provides ultra-long range
+spread spectrum communication and high interference
+immunity whilst minimising current consumption. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://www.hoperf.com/upload/rf/RFM95_96_97_98W.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<circle x="-4" y="6" radius="0.5" width="0.127" layer="21"/>
+<wire x1="-8" y1="8" x2="8" y2="8" width="0.127" layer="21"/>
+<wire x1="-8" y1="-8" x2="8" y2="-8" width="0.127" layer="21"/>
+<smd name="!RESET" x="-7.5" y="-3" dx="3" dy="1" layer="1"/>
+<smd name="3.3V" x="7.5" y="1" dx="3" dy="1" layer="1"/>
+<smd name="ANT" x="7.5" y="-7" dx="3" dy="1" layer="1"/>
+<smd name="DIO0" x="7.5" y="3" dx="3" dy="1" layer="1"/>
+<smd name="DIO1" x="7.5" y="5" dx="3" dy="1" layer="1"/>
+<smd name="DIO2" x="7.5" y="7" dx="3" dy="1" layer="1"/>
+<smd name="DIO3" x="7.5" y="-3" dx="3" dy="1" layer="1"/>
+<smd name="DIO4" x="7.5" y="-1" dx="3" dy="1" layer="1"/>
+<smd name="DIO5" x="-7.5" y="-5" dx="3" dy="1" layer="1"/>
+<smd name="GND@1" x="-7.5" y="7" dx="3" dy="1" layer="1"/>
+<smd name="GND@2" x="-7.5" y="-7" dx="3" dy="1" layer="1"/>
+<smd name="GND@3" x="7.5" y="-5" dx="3" dy="1" layer="1"/>
+<smd name="MISO" x="-7.5" y="5" dx="3" dy="1" layer="1"/>
+<smd name="MOSI" x="-7.5" y="3" dx="3" dy="1" layer="1"/>
+<smd name="NSS" x="-7.5" y="-1" dx="3" dy="1" layer="1"/>
+<smd name="SCK" x="-7.5" y="1" dx="3" dy="1" layer="1"/>
+<circle x="-9.906" y="7.62" radius="0.359209375" width="0" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ANTENNA-GROUNDED">
@@ -8571,6 +8603,35 @@ PATENTS PENDING 04.01.2015&lt;br/&gt;&lt;/p&gt;</description>
 <wire x1="15.24" y1="-38.1" x2="-15.24" y2="-38.1" width="0.254" layer="94"/>
 <text x="-15.24" y="35.814" size="1.778" layer="95">&gt;Name</text>
 <text x="-15.24" y="-38.354" size="1.778" layer="96" align="top-left">&gt;Value</text>
+</symbol>
+<symbol name="RFM95W">
+<description>&lt;h3&gt;RFM95/96/97/98&lt;/h3&gt;
+
+&lt;p&gt;The RFM95/96/97/98(W) transceivers feature the
+LoRaTM    long range modem that provides ultra-long range
+spread spectrum communication and high interference
+immunity whilst minimising current consumption. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://www.hoperf.com/upload/rf/RFM95_96_97_98W.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="-12.668" y1="17.812" x2="12.748" y2="17.812" width="0.254" layer="94"/>
+<wire x1="12.748" y1="17.812" x2="12.748" y2="-15.208" width="0.254" layer="94"/>
+<wire x1="12.748" y1="-15.208" x2="-12.668" y2="-15.208" width="0.254" layer="94"/>
+<wire x1="-12.668" y1="-15.208" x2="-12.668" y2="17.812" width="0.254" layer="94"/>
+<pin name="!RESET" x="-15.24" y="12.7" visible="pin" length="short"/>
+<pin name="3.3V" x="-15.24" y="15.24" visible="pin" length="short"/>
+<pin name="ANT" x="-15.24" y="-7.62" visible="pin" length="short"/>
+<pin name="DIO0" x="15.24" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="DIO1" x="15.24" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="DIO2" x="15.24" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="DIO3" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="DIO4" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="DIO5" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="-15.24" y="-12.7" visible="pin" length="short"/>
+<pin name="MISO" x="15.24" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="MOSI" x="15.24" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="NSS" x="15.24" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="SCK" x="15.24" y="-10.16" visible="pin" length="short" rot="R180"/>
+<text x="-12.668" y="18.32" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -10614,6 +10675,50 @@ Bluetooth Smart radio transceiver, ARM Cortex M0 microcontroller.
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-13849"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RFM95W" prefix="U">
+<description>&lt;h3&gt;RFM95/96/97/98&lt;/h3&gt;
+
+&lt;p&gt;The RFM95/96/97/98(W) transceivers feature the
+LoRaTM    long range modem that provides ultra-long range
+spread spectrum communication and high interference
+immunity whilst minimising current consumption. &lt;/p&gt;
+
+&lt;p&gt;These devices also support high performance (G)FSK
+modes for systems including WMBus, IEEE802.15.4g. The
+RFM95/96/97/98(W) deliver exceptional phase noise,
+selectivity, receiver linearity and IIP3 for significantly
+lower current consumption than competing devices&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://www.hoperf.com/upload/rf/RFM95_96_97_98W.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RFM95W" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RFM95/96/97/98W">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="!RESET"/>
+<connect gate="G$1" pin="3.3V" pad="3.3V"/>
+<connect gate="G$1" pin="ANT" pad="ANT"/>
+<connect gate="G$1" pin="DIO0" pad="DIO0"/>
+<connect gate="G$1" pin="DIO1" pad="DIO1"/>
+<connect gate="G$1" pin="DIO2" pad="DIO2"/>
+<connect gate="G$1" pin="DIO3" pad="DIO3"/>
+<connect gate="G$1" pin="DIO4" pad="DIO4"/>
+<connect gate="G$1" pin="DIO5" pad="DIO5"/>
+<connect gate="G$1" pin="GND" pad="GND@1 GND@2 GND@3"/>
+<connect gate="G$1" pin="MISO" pad="MISO"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="NSS" pad="NSS"/>
+<connect gate="G$1" pin="SCK" pad="SCK"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-13959" constant="no"/>
 </technology>
 </technologies>
 </device>
