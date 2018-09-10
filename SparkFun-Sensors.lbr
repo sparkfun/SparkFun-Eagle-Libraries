@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.125" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -12349,7 +12349,7 @@ NC pin 19. 2-6 &amp; 14-17 not internally connected. May be used for PCB trace r
 </deviceset>
 <deviceset name="BME680" prefix="U">
 <description>&lt;h3&gt;Bosch BME680 &amp;ndash; Combined Humidity and Pressure Sensor&lt;/h3&gt;
-&lt;p&gt;The  BME680 is as combined digital humidity, pressure and temperature sensor based on proven sensing principles. The sensor module is housed in an extremely compact metal-lid LGA package  with a footprint of only 3.0×3.0mm² with a height of 0.93mm. Its small dimensions and its low power consumption allow the implementation in battery driven devices such as handsets,  GPS modules or watches.&lt;/p&gt;</description>
+&lt;p&gt;The  BME680 is as combined digital humidity, pressure and temperature sensor based on proven sensing principles. The sensor module is housed in an extremely compact metal-lid LGA package  with a footprint of only 3.0×3.0mm with a height of 0.93mm. Its small dimensions and its low power consumption allow the implementation in battery driven devices such as handsets,  GPS modules or watches.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="BME680" x="0" y="0"/>
 </gates>
@@ -12358,11 +12358,11 @@ NC pin 19. 2-6 &amp; 14-17 not internally connected. May be used for PCB trace r
 <connects>
 <connect gate="G$1" pin="!CS" pad="2"/>
 <connect gate="G$1" pin="GND" pad="1 7"/>
-<connect gate="G$1" pin="SCK/SCL" pad="5"/>
-<connect gate="G$1" pin="SDI/SDA" pad="6"/>
-<connect gate="G$1" pin="SDO/ADR" pad="4"/>
+<connect gate="G$1" pin="SCK/SCL" pad="4"/>
+<connect gate="G$1" pin="SDI/SDA" pad="3"/>
+<connect gate="G$1" pin="SDO/ADR" pad="5"/>
 <connect gate="G$1" pin="VDD" pad="8"/>
-<connect gate="G$1" pin="VDDIO" pad="3"/>
+<connect gate="G$1" pin="VDDIO" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
