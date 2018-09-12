@@ -25578,6 +25578,37 @@ Reversed pinout to match Raspberry Pi male header pinout when coupled.</descript
 <vertex x="3.175" y="0.0508"/>
 </polygon>
 </package>
+<package name="TAB_GATOR_MINI">
+<pad name="P1" x="0" y="4.826" drill="4.0005" diameter="5.08"/>
+<polygon width="0.254" layer="1">
+<vertex x="0" y="7.874" curve="90"/>
+<vertex x="-3.048" y="4.826"/>
+<vertex x="-3.048" y="0"/>
+<vertex x="3.048" y="0"/>
+<vertex x="3.048" y="4.826" curve="90"/>
+</polygon>
+<polygon width="0.254" layer="16">
+<vertex x="0" y="7.874" curve="90"/>
+<vertex x="-3.048" y="4.826"/>
+<vertex x="-3.048" y="0"/>
+<vertex x="3.048" y="0"/>
+<vertex x="3.048" y="4.826" curve="90"/>
+</polygon>
+<polygon width="0.254" layer="29">
+<vertex x="3.1496" y="-0.1016"/>
+<vertex x="-3.1496" y="-0.1016"/>
+<vertex x="-3.1496" y="4.9784" curve="-97.62815"/>
+<vertex x="0" y="7.9248" curve="-90"/>
+<vertex x="3.1496" y="5.08"/>
+</polygon>
+<polygon width="0.254" layer="30">
+<vertex x="3.175" y="-0.0508"/>
+<vertex x="-3.1242" y="-0.0508"/>
+<vertex x="-3.1242" y="5.0292" curve="-97.62815"/>
+<vertex x="0.0254" y="7.9756" curve="-90"/>
+<vertex x="3.175" y="5.1308"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -28462,6 +28493,12 @@ This type of connector and cable is frequently used for transmitting midi data (
 <text x="-5.08" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="MICRO_BIT_GATOR_CLIP">
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
+<pin name="P$1" x="-2.54" y="0" visible="off" length="middle"/>
+<text x="0" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+<symbol name="TAB_MICRO_BIT_GATOR_CLIP">
 <wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94" curve="-180"/>
 <pin name="P$1" x="-2.54" y="0" visible="off" length="middle"/>
 <text x="0" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
@@ -37230,6 +37267,21 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <device name="" package="GATOR">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1 P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TAB_GATOR_MINI">
+<gates>
+<gate name="G$1" symbol="TAB_MICRO_BIT_GATOR_CLIP" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="TAB_GATOR_MINI">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P1"/>
 </connects>
 <technologies>
 <technology name=""/>
