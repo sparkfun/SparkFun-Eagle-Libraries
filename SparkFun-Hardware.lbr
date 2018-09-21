@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="9.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -66,6 +67,8 @@
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -91,6 +94,7 @@
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -144,6 +148,8 @@
 <layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
@@ -699,6 +705,42 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="9.525" y="19.05" size="0.6096" layer="51" font="vector" align="center">0.16"</text>
 <text x="19.05" y="9.525" size="0.6096" layer="51" font="vector" align="center">0.16"</text>
 </package>
+<package name="NUBBIN_LOCKER_PB">
+<circle x="0" y="0" radius="1.796" width="0.254" layer="49"/>
+<circle x="0" y="0" radius="6.6925" width="0.0762" layer="49"/>
+<wire x1="-3.556" y1="-3.81" x2="-3.556" y2="3.81" width="0.127" layer="49"/>
+<wire x1="-3.556" y1="3.81" x2="-1.27" y2="6.35" width="0.127" layer="49" curve="-89.995489"/>
+<wire x1="-1.27" y1="6.35" x2="1.27" y2="6.35" width="0.127" layer="49"/>
+<wire x1="1.27" y1="6.35" x2="3.429" y2="3.81" width="0.127" layer="49" curve="-90"/>
+<wire x1="3.429" y1="3.81" x2="3.429" y2="-3.81" width="0.127" layer="49"/>
+<wire x1="3.429" y1="-3.81" x2="1.27" y2="-6.35" width="0.127" layer="49" curve="-90"/>
+<wire x1="1.27" y1="-6.35" x2="-1.27" y2="-6.35" width="0.127" layer="49"/>
+<wire x1="-1.27" y1="-6.35" x2="-3.556" y2="-3.81" width="0.127" layer="49" curve="-89.995489"/>
+<wire x1="-4.7352" y1="-1.3739" x2="-4.8127" y2="1.4647" width="0.127" layer="49" curve="-126.811781"/>
+<wire x1="-4.826" y1="-0.635" x2="-4.699" y2="-1.397" width="0.127" layer="49"/>
+<wire x1="-4.699" y1="-1.397" x2="-5.461" y2="-1.397" width="0.127" layer="49"/>
+<wire x1="-4.699" y1="1.524" x2="-4.953" y2="0.762" width="0.127" layer="49"/>
+<wire x1="-4.699" y1="1.524" x2="-5.588" y2="1.524" width="0.127" layer="49"/>
+<circle x="0" y="0" radius="0.762" width="0.127" layer="200"/>
+</package>
+<package name="NUBBIN_LOCKER">
+<circle x="0" y="0" radius="1.796" width="0.254" layer="49"/>
+<circle x="0" y="0" radius="6.6925" width="0.0762" layer="49"/>
+<wire x1="-3.556" y1="-3.81" x2="-3.556" y2="3.81" width="0.127" layer="49"/>
+<wire x1="-3.556" y1="3.81" x2="-1.27" y2="6.35" width="0.127" layer="49" curve="-89.995489"/>
+<wire x1="-1.27" y1="6.35" x2="1.27" y2="6.35" width="0.127" layer="49"/>
+<wire x1="1.27" y1="6.35" x2="3.429" y2="3.81" width="0.127" layer="49" curve="-90"/>
+<wire x1="3.429" y1="3.81" x2="3.429" y2="-3.81" width="0.127" layer="49"/>
+<wire x1="3.429" y1="-3.81" x2="1.27" y2="-6.35" width="0.127" layer="49" curve="-90"/>
+<wire x1="1.27" y1="-6.35" x2="-1.27" y2="-6.35" width="0.127" layer="49"/>
+<wire x1="-1.27" y1="-6.35" x2="-3.556" y2="-3.81" width="0.127" layer="49" curve="-89.995489"/>
+<wire x1="-4.7352" y1="-1.3739" x2="-4.8127" y2="1.4647" width="0.127" layer="49" curve="-126.811781"/>
+<wire x1="-4.826" y1="-0.635" x2="-4.699" y2="-1.397" width="0.127" layer="49"/>
+<wire x1="-4.699" y1="-1.397" x2="-5.461" y2="-1.397" width="0.127" layer="49"/>
+<wire x1="-4.699" y1="1.524" x2="-4.953" y2="0.762" width="0.127" layer="49"/>
+<wire x1="-4.699" y1="1.524" x2="-5.588" y2="1.524" width="0.127" layer="49"/>
+<hole x="0" y="0" drill="2.794"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MAGNET">
@@ -739,6 +781,32 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-4.572" y="-5.08" size="1.27" layer="94" font="vector">Reference</text>
 <text x="-5.588" y="3.556" size="2.54" layer="94" font="vector">A</text>
 <wire x1="-5.461" y1="4.064" x2="5.334" y2="4.064" width="0.254" layer="94"/>
+</symbol>
+<symbol name="NUBBIN_LOCKER">
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="0" y2="5.08" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="5.08" x2="2.54" y2="2.54" width="0.254" layer="94" curve="-90"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0" y2="-5.08" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="-5.08" x2="-2.54" y2="-2.54" width="0.254" layer="94" curve="-90"/>
+<wire x1="-1.27" y1="0" x2="0" y2="1.27" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94" curve="-90"/>
+<wire x1="1.27" y1="0" x2="0" y2="-1.27" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="-1.27" x2="-1.27" y2="0" width="0.254" layer="94" curve="-90"/>
+<wire x1="-1.27" y1="2.032" x2="-0.762" y2="2.54" width="0.127" layer="94"/>
+<wire x1="-0.762" y1="2.54" x2="0.762" y2="2.54" width="0.127" layer="94" curve="-90"/>
+<wire x1="0.762" y1="2.54" x2="1.27" y2="2.032" width="0.127" layer="94"/>
+<wire x1="1.143" y1="2.667" x2="1.27" y2="2.032" width="0.127" layer="94"/>
+<wire x1="1.27" y1="2.032" x2="0.635" y2="2.159" width="0.127" layer="94"/>
+<wire x1="-1.27" y1="2.032" x2="-0.635" y2="2.159" width="0.127" layer="94"/>
+<wire x1="-1.27" y1="2.032" x2="-1.143" y2="2.667" width="0.127" layer="94"/>
+<wire x1="1.27" y1="-2.032" x2="0.762" y2="-2.54" width="0.127" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="-0.762" y2="-2.54" width="0.127" layer="94" curve="-90"/>
+<wire x1="-0.762" y1="-2.54" x2="-1.27" y2="-2.032" width="0.127" layer="94"/>
+<wire x1="-1.143" y1="-2.667" x2="-1.27" y2="-2.032" width="0.127" layer="94"/>
+<wire x1="-1.27" y1="-2.032" x2="-0.635" y2="-2.159" width="0.127" layer="94"/>
+<wire x1="1.27" y1="-2.032" x2="0.635" y2="-2.159" width="0.127" layer="94"/>
+<wire x1="1.27" y1="-2.032" x2="1.143" y2="-2.667" width="0.127" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -908,6 +976,24 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </technologies>
 </device>
 <device name="SINGLE_DRILL_REF" package="ACTOBOTICS_CHANNEL_SINGLE_DRILL_REF">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NUBBIN_LOCKER">
+<description>&lt;b&gt;Description:&lt;/b&gt; 'Nubbins' are used on test jigs to hold a unit-under-test in place against the pogo pins. The nubbin is a small round PCB that has a screw through the middle. The PCB is allowed to rotate around the screw.</description>
+<gates>
+<gate name="G$1" symbol="NUBBIN_LOCKER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="PB" package="NUBBIN_LOCKER_PB">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PM/PF" package="NUBBIN_LOCKER">
 <technologies>
 <technology name=""/>
 </technologies>
