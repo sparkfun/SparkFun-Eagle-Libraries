@@ -1449,6 +1449,26 @@ SOIC, 0.3 inch width</description>
 <text x="-3.81" y="0" size="0.6096" layer="25" ratio="10">&gt;NAME</text>
 <text x="-3.81" y="-1.27" size="0.6096" layer="27">&gt;VALUE</text>
 </package>
+<package name="UFQFN-8">
+<smd name="8" x="-0.575" y="0" dx="0.45" dy="0.25" layer="1" rot="R180"/>
+<smd name="4" x="0.575" y="0" dx="0.45" dy="0.25" layer="1" rot="R180"/>
+<smd name="1" x="-0.5" y="-0.605" dx="0.4" dy="0.25" layer="1" rot="R270"/>
+<smd name="2" x="0" y="-0.605" dx="0.4" dy="0.25" layer="1" rot="R270"/>
+<smd name="3" x="0.5" y="-0.605" dx="0.4" dy="0.25" layer="1" rot="R270"/>
+<smd name="6" x="0" y="0.605" dx="0.4" dy="0.25" layer="1" rot="R270"/>
+<smd name="5" x="0.5" y="0.605" dx="0.4" dy="0.25" layer="1" rot="R270"/>
+<smd name="7" x="-0.5" y="0.605" dx="0.4" dy="0.25" layer="1" rot="R270"/>
+<wire x1="-0.8" y1="0.8" x2="0.8" y2="0.8" width="0.1016" layer="51"/>
+<wire x1="0.8" y1="0.8" x2="0.8" y2="-0.8" width="0.1016" layer="51"/>
+<wire x1="0.8" y1="-0.8" x2="-0.8" y2="-0.8" width="0.1016" layer="51"/>
+<wire x1="-0.8" y1="-0.8" x2="-0.8" y2="0.8" width="0.1016" layer="51"/>
+<polygon width="0" layer="21">
+<vertex x="-1.243" y="-1.016" curve="90"/>
+<vertex x="-1.043" y="-1.216" curve="90"/>
+<vertex x="-0.843" y="-1.016" curve="90"/>
+<vertex x="-1.043" y="-0.816" curve="90"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="FT232R">
@@ -2069,6 +2089,30 @@ SOIC, 0.3 inch width</description>
 <pin name="VCC" x="-10.16" y="7.62" length="short"/>
 <text x="-7.62" y="10.795" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="FXMAR2102">
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-1.778" y2="-7.62" width="0.127" layer="97" style="shortdash"/>
+<wire x1="-1.778" y1="-7.62" x2="-1.778" y2="2.54" width="0.127" layer="97" style="shortdash"/>
+<wire x1="-1.778" y1="2.54" x2="-10.16" y2="2.54" width="0.127" layer="97" style="shortdash"/>
+<wire x1="10.16" y1="2.54" x2="2.032" y2="2.54" width="0.127" layer="97" style="shortdash"/>
+<wire x1="2.032" y1="2.54" x2="2.032" y2="-7.62" width="0.127" layer="97" style="shortdash"/>
+<wire x1="2.032" y1="-7.62" x2="10.16" y2="-7.62" width="0.127" layer="97" style="shortdash"/>
+<text x="-10.16" y="13.462" size="1.27" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-12.7" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-9.779" y="-6.35" size="1.27" layer="97">1.65-5.5V</text>
+<text x="2.2098" y="-6.35" size="1.27" layer="97">1.65-5.5V</text>
+<pin name="VCCA" x="-2.54" y="15.24" length="short" rot="R270"/>
+<pin name="A1" x="-12.7" y="0" length="short"/>
+<pin name="A2" x="-12.7" y="-2.54" length="short"/>
+<pin name="GND" x="0" y="-12.7" length="short" rot="R90"/>
+<pin name="VCCB" x="2.54" y="15.24" length="short" rot="R270"/>
+<pin name="B1" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="B2" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="OE" x="-12.7" y="5.08" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3079,6 +3123,28 @@ SOIC, 0.3 inch width</description>
 <technology name="">
 <attribute name="PROD_ID" value="IC-14038" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FXMAR2102" prefix="U">
+<gates>
+<gate name="G$1" symbol="FXMAR2102" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="UFQFN-8">
+<connects>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="3"/>
+<connect gate="G$1" pin="B1" pad="7"/>
+<connect gate="G$1" pin="B2" pad="6"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="OE" pad="5"/>
+<connect gate="G$1" pin="VCCA" pad="1"/>
+<connect gate="G$1" pin="VCCB" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
