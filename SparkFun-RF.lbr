@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.0">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8667,41 +8667,41 @@ PATENTS PENDING 04.01.2015&lt;br/&gt;&lt;/p&gt;</description>
 <pin name="GND@1" x="-17.78" y="-27.94" length="short"/>
 <pin name="3V3" x="-17.78" y="33.02" length="short"/>
 <pin name="EN" x="-17.78" y="30.48" length="short"/>
-<pin name="SENSOR_VP" x="17.78" y="-33.02" length="short" rot="R180"/>
-<pin name="SENSOR_VN" x="17.78" y="-35.56" length="short" rot="R180"/>
+<pin name="SENSOR_VP/I36" x="17.78" y="-33.02" length="short" rot="R180"/>
+<pin name="SENSOR_VN/I39" x="17.78" y="-35.56" length="short" rot="R180"/>
 <pin name="IO34" x="17.78" y="-27.94" length="short" rot="R180"/>
 <pin name="IO35" x="17.78" y="-30.48" length="short" rot="R180"/>
-<pin name="IO32" x="17.78" y="-22.86" length="short" rot="R180"/>
-<pin name="IO33" x="17.78" y="-25.4" length="short" rot="R180"/>
+<pin name="XTAL_P/IO32" x="17.78" y="-22.86" length="short" rot="R180"/>
+<pin name="XTAL_N/IO33" x="17.78" y="-25.4" length="short" rot="R180"/>
 <pin name="IO25" x="17.78" y="-15.24" length="short" rot="R180"/>
 <pin name="IO26" x="17.78" y="-17.78" length="short" rot="R180"/>
 <pin name="IO27" x="17.78" y="-20.32" length="short" rot="R180"/>
-<pin name="IO14" x="17.78" y="10.16" length="short" rot="R180"/>
-<pin name="IO12" x="17.78" y="15.24" length="short" rot="R180"/>
+<pin name="SCK_H/IO14" x="17.78" y="10.16" length="short" rot="R180"/>
+<pin name="MISO_H/IO12" x="17.78" y="15.24" length="short" rot="R180"/>
 <pin name="GND@15" x="-17.78" y="-30.48" length="short"/>
-<pin name="IO13" x="17.78" y="12.7" length="short" rot="R180"/>
-<pin name="SHD" x="-17.78" y="15.24" length="short"/>
-<pin name="SWP" x="-17.78" y="12.7" length="short"/>
-<pin name="SCS" x="-17.78" y="10.16" length="short"/>
+<pin name="MOSI_H/IO13" x="17.78" y="12.7" length="short" rot="R180"/>
+<pin name="SHD/IO9" x="-17.78" y="15.24" length="short"/>
+<pin name="SWP/IO10" x="-17.78" y="12.7" length="short"/>
+<pin name="SCS/IO11" x="-17.78" y="10.16" length="short"/>
 <pin name="GND@38" x="-17.78" y="-33.02" length="short"/>
-<pin name="IO23" x="17.78" y="-12.7" length="short" rot="R180"/>
+<pin name="MOSI_V/IO23" x="17.78" y="-12.7" length="short" rot="R180"/>
 <pin name="IO22" x="17.78" y="-10.16" length="short" rot="R180"/>
 <pin name="TXD" x="17.78" y="33.02" length="short" rot="R180"/>
 <pin name="RXD" x="17.78" y="30.48" length="short" rot="R180"/>
 <pin name="IO21" x="17.78" y="-7.62" length="short" rot="R180"/>
-<pin name="IO20" x="17.78" y="-5.08" length="short" rot="R180"/>
-<pin name="IO19" x="17.78" y="-2.54" length="short" rot="R180"/>
-<pin name="IO18" x="17.78" y="0" length="short" rot="R180"/>
-<pin name="IO5" x="17.78" y="17.78" length="short" rot="R180"/>
+<pin name="NC" x="17.78" y="-5.08" length="short" rot="R180"/>
+<pin name="MISO_V/IO19" x="17.78" y="-2.54" length="short" rot="R180"/>
+<pin name="SCK_V/IO18" x="17.78" y="0" length="short" rot="R180"/>
+<pin name="CS0_V/IO5" x="17.78" y="17.78" length="short" rot="R180"/>
 <pin name="IO17" x="17.78" y="2.54" length="short" rot="R180"/>
 <pin name="IO16" x="17.78" y="5.08" length="short" rot="R180"/>
 <pin name="IO4" x="17.78" y="20.32" length="short" rot="R180"/>
 <pin name="IO0" x="17.78" y="25.4" length="short" rot="R180"/>
 <pin name="IO2" x="17.78" y="22.86" length="short" rot="R180"/>
-<pin name="IO15" x="17.78" y="7.62" length="short" rot="R180"/>
-<pin name="SDI" x="-17.78" y="2.54" length="short"/>
-<pin name="SDO" x="-17.78" y="5.08" length="short"/>
-<pin name="SCK" x="-17.78" y="7.62" length="short"/>
+<pin name="CS0_H/IO15" x="17.78" y="7.62" length="short" rot="R180"/>
+<pin name="SDI/IO8" x="-17.78" y="2.54" length="short"/>
+<pin name="SDO/IO7" x="-17.78" y="5.08" length="short"/>
+<pin name="SCK/IO6" x="-17.78" y="7.62" length="short"/>
 <pin name="GND" x="-17.78" y="-35.56" length="short"/>
 <wire x1="-15.24" y1="-38.1" x2="-15.24" y2="35.56" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="35.56" x2="15.24" y2="35.56" width="0.254" layer="94"/>
@@ -8798,6 +8798,53 @@ ESP8266 WiFi module pre-programmed with an AT command interface.</description>
 <wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-5.08" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+</symbol>
+<symbol name="ESP-WROOM-32-IMPORT">
+<wire x1="-15.24" y1="-38.1" x2="-15.24" y2="35.56" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="35.56" x2="15.24" y2="35.56" width="0.254" layer="94"/>
+<wire x1="15.24" y1="35.56" x2="15.24" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-38.1" x2="-15.24" y2="-38.1" width="0.254" layer="94"/>
+<pin name="3V3" x="-17.78" y="33.02" length="short"/>
+<pin name="EN" x="-17.78" y="30.48" length="short"/>
+<pin name="GND" x="-17.78" y="-35.56" length="short"/>
+<pin name="GND@1" x="-17.78" y="-27.94" length="short"/>
+<pin name="GND@15" x="-17.78" y="-30.48" length="short"/>
+<pin name="GND@38" x="-17.78" y="-33.02" length="short"/>
+<pin name="IO0" x="17.78" y="25.4" length="short" rot="R180"/>
+<pin name="IO2" x="17.78" y="22.86" length="short" rot="R180"/>
+<pin name="IO4" x="17.78" y="20.32" length="short" rot="R180"/>
+<pin name="CS0_V/IO5" x="17.78" y="17.78" length="short" rot="R180"/>
+<pin name="MISO_H/IO12" x="17.78" y="15.24" length="short" rot="R180"/>
+<pin name="MOSI_HIO13" x="17.78" y="12.7" length="short" rot="R180"/>
+<pin name="SCK_HIO14" x="17.78" y="10.16" length="short" rot="R180"/>
+<pin name="CS0_H/IO15" x="17.78" y="7.62" length="short" rot="R180"/>
+<pin name="IO16" x="17.78" y="5.08" length="short" rot="R180"/>
+<pin name="IO17" x="17.78" y="2.54" length="short" rot="R180"/>
+<pin name="SCK_V/IO18" x="17.78" y="0" length="short" rot="R180"/>
+<pin name="MISO_V/IO19" x="17.78" y="-2.54" length="short" rot="R180"/>
+<pin name="NC" x="17.78" y="-5.08" length="short" rot="R180"/>
+<pin name="IO21" x="17.78" y="-7.62" length="short" rot="R180"/>
+<pin name="IO22" x="17.78" y="-10.16" length="short" rot="R180"/>
+<pin name="MOSI_V/IO23" x="17.78" y="-12.7" length="short" rot="R180"/>
+<pin name="IO25" x="17.78" y="-15.24" length="short" rot="R180"/>
+<pin name="IO26" x="17.78" y="-17.78" length="short" rot="R180"/>
+<pin name="IO27" x="17.78" y="-20.32" length="short" rot="R180"/>
+<pin name="XTAL_P/IO32" x="17.78" y="-22.86" length="short" rot="R180"/>
+<pin name="XTAL_N/IO33" x="17.78" y="-25.4" length="short" rot="R180"/>
+<pin name="I34" x="17.78" y="-27.94" length="short" rot="R180"/>
+<pin name="I35" x="17.78" y="-30.48" length="short" rot="R180"/>
+<pin name="RXD" x="17.78" y="30.48" length="short" rot="R180"/>
+<pin name="SCK/IO6" x="-17.78" y="7.62" length="short"/>
+<pin name="SCS/IO11" x="-17.78" y="10.16" length="short"/>
+<pin name="SDI/IO8" x="-17.78" y="2.54" length="short"/>
+<pin name="SDO/IO7" x="-17.78" y="5.08" length="short"/>
+<pin name="SENSOR_VN/I39" x="17.78" y="-35.56" length="short" rot="R180"/>
+<pin name="SENSOR_VP/I36" x="17.78" y="-33.02" length="short" rot="R180"/>
+<pin name="SHD/IO9" x="-17.78" y="15.24" length="short"/>
+<pin name="SWP/IO10" x="-17.78" y="12.7" length="short"/>
+<pin name="TXD" x="17.78" y="33.02" length="short" rot="R180"/>
+<text x="-15.24" y="35.814" size="1.778" layer="95">&gt;Name</text>
+<text x="-15.24" y="-38.354" size="1.778" layer="96" align="top-left">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -10751,44 +10798,44 @@ Bluetooth Smart radio transceiver, ARM Cortex M0 microcontroller.
 <device name="" package="ESP-WROOM-32">
 <connects>
 <connect gate="G$1" pin="3V3" pad="2"/>
+<connect gate="G$1" pin="CS0_H/IO15" pad="23"/>
+<connect gate="G$1" pin="CS0_V/IO5" pad="29"/>
 <connect gate="G$1" pin="EN" pad="3"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="GND@1" pad="1"/>
 <connect gate="G$1" pin="GND@15" pad="15"/>
 <connect gate="G$1" pin="GND@38" pad="38"/>
 <connect gate="G$1" pin="IO0" pad="25"/>
-<connect gate="G$1" pin="IO12" pad="14"/>
-<connect gate="G$1" pin="IO13" pad="16"/>
-<connect gate="G$1" pin="IO14" pad="13"/>
-<connect gate="G$1" pin="IO15" pad="23"/>
 <connect gate="G$1" pin="IO16" pad="27"/>
 <connect gate="G$1" pin="IO17" pad="28"/>
-<connect gate="G$1" pin="IO18" pad="30"/>
-<connect gate="G$1" pin="IO19" pad="31"/>
 <connect gate="G$1" pin="IO2" pad="24"/>
-<connect gate="G$1" pin="IO20" pad="32"/>
 <connect gate="G$1" pin="IO21" pad="33"/>
 <connect gate="G$1" pin="IO22" pad="36"/>
-<connect gate="G$1" pin="IO23" pad="37"/>
 <connect gate="G$1" pin="IO25" pad="10"/>
 <connect gate="G$1" pin="IO26" pad="11"/>
 <connect gate="G$1" pin="IO27" pad="12"/>
-<connect gate="G$1" pin="IO32" pad="8"/>
-<connect gate="G$1" pin="IO33" pad="9"/>
 <connect gate="G$1" pin="IO34" pad="6"/>
 <connect gate="G$1" pin="IO35" pad="7"/>
 <connect gate="G$1" pin="IO4" pad="26"/>
-<connect gate="G$1" pin="IO5" pad="29"/>
+<connect gate="G$1" pin="MISO_H/IO12" pad="14"/>
+<connect gate="G$1" pin="MISO_V/IO19" pad="31"/>
+<connect gate="G$1" pin="MOSI_H/IO13" pad="16"/>
+<connect gate="G$1" pin="MOSI_V/IO23" pad="37"/>
+<connect gate="G$1" pin="NC" pad="32"/>
 <connect gate="G$1" pin="RXD" pad="34"/>
-<connect gate="G$1" pin="SCK" pad="20"/>
-<connect gate="G$1" pin="SCS" pad="19"/>
-<connect gate="G$1" pin="SDI" pad="22"/>
-<connect gate="G$1" pin="SDO" pad="21"/>
-<connect gate="G$1" pin="SENSOR_VN" pad="5"/>
-<connect gate="G$1" pin="SENSOR_VP" pad="4"/>
-<connect gate="G$1" pin="SHD" pad="17"/>
-<connect gate="G$1" pin="SWP" pad="18"/>
+<connect gate="G$1" pin="SCK/IO6" pad="20"/>
+<connect gate="G$1" pin="SCK_H/IO14" pad="13"/>
+<connect gate="G$1" pin="SCK_V/IO18" pad="30"/>
+<connect gate="G$1" pin="SCS/IO11" pad="19"/>
+<connect gate="G$1" pin="SDI/IO8" pad="22"/>
+<connect gate="G$1" pin="SDO/IO7" pad="21"/>
+<connect gate="G$1" pin="SENSOR_VN/I39" pad="5"/>
+<connect gate="G$1" pin="SENSOR_VP/I36" pad="4"/>
+<connect gate="G$1" pin="SHD/IO9" pad="17"/>
+<connect gate="G$1" pin="SWP/IO10" pad="18"/>
 <connect gate="G$1" pin="TXD" pad="35"/>
+<connect gate="G$1" pin="XTAL_N/IO33" pad="9"/>
+<connect gate="G$1" pin="XTAL_P/IO32" pad="8"/>
 </connects>
 <technologies>
 <technology name="">
@@ -10799,44 +10846,44 @@ Bluetooth Smart radio transceiver, ARM Cortex M0 microcontroller.
 <device name="NARROW" package="ESP-WROOM-32-NARROW">
 <connects>
 <connect gate="G$1" pin="3V3" pad="2"/>
+<connect gate="G$1" pin="CS0_H/IO15" pad="23"/>
+<connect gate="G$1" pin="CS0_V/IO5" pad="29"/>
 <connect gate="G$1" pin="EN" pad="3"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="GND@1" pad="1"/>
 <connect gate="G$1" pin="GND@15" pad="15"/>
 <connect gate="G$1" pin="GND@38" pad="38"/>
 <connect gate="G$1" pin="IO0" pad="25"/>
-<connect gate="G$1" pin="IO12" pad="14"/>
-<connect gate="G$1" pin="IO13" pad="16"/>
-<connect gate="G$1" pin="IO14" pad="13"/>
-<connect gate="G$1" pin="IO15" pad="23"/>
 <connect gate="G$1" pin="IO16" pad="27"/>
 <connect gate="G$1" pin="IO17" pad="28"/>
-<connect gate="G$1" pin="IO18" pad="30"/>
-<connect gate="G$1" pin="IO19" pad="31"/>
 <connect gate="G$1" pin="IO2" pad="24"/>
-<connect gate="G$1" pin="IO20" pad="32"/>
 <connect gate="G$1" pin="IO21" pad="33"/>
 <connect gate="G$1" pin="IO22" pad="36"/>
-<connect gate="G$1" pin="IO23" pad="37"/>
 <connect gate="G$1" pin="IO25" pad="10"/>
 <connect gate="G$1" pin="IO26" pad="11"/>
 <connect gate="G$1" pin="IO27" pad="12"/>
-<connect gate="G$1" pin="IO32" pad="8"/>
-<connect gate="G$1" pin="IO33" pad="9"/>
 <connect gate="G$1" pin="IO34" pad="6"/>
 <connect gate="G$1" pin="IO35" pad="7"/>
 <connect gate="G$1" pin="IO4" pad="26"/>
-<connect gate="G$1" pin="IO5" pad="29"/>
+<connect gate="G$1" pin="MISO_H/IO12" pad="14"/>
+<connect gate="G$1" pin="MISO_V/IO19" pad="31"/>
+<connect gate="G$1" pin="MOSI_H/IO13" pad="16"/>
+<connect gate="G$1" pin="MOSI_V/IO23" pad="37"/>
+<connect gate="G$1" pin="NC" pad="32"/>
 <connect gate="G$1" pin="RXD" pad="34"/>
-<connect gate="G$1" pin="SCK" pad="20"/>
-<connect gate="G$1" pin="SCS" pad="19"/>
-<connect gate="G$1" pin="SDI" pad="22"/>
-<connect gate="G$1" pin="SDO" pad="21"/>
-<connect gate="G$1" pin="SENSOR_VN" pad="5"/>
-<connect gate="G$1" pin="SENSOR_VP" pad="4"/>
-<connect gate="G$1" pin="SHD" pad="17"/>
-<connect gate="G$1" pin="SWP" pad="18"/>
+<connect gate="G$1" pin="SCK/IO6" pad="20"/>
+<connect gate="G$1" pin="SCK_H/IO14" pad="13"/>
+<connect gate="G$1" pin="SCK_V/IO18" pad="30"/>
+<connect gate="G$1" pin="SCS/IO11" pad="19"/>
+<connect gate="G$1" pin="SDI/IO8" pad="22"/>
+<connect gate="G$1" pin="SDO/IO7" pad="21"/>
+<connect gate="G$1" pin="SENSOR_VN/I39" pad="5"/>
+<connect gate="G$1" pin="SENSOR_VP/I36" pad="4"/>
+<connect gate="G$1" pin="SHD/IO9" pad="17"/>
+<connect gate="G$1" pin="SWP/IO10" pad="18"/>
 <connect gate="G$1" pin="TXD" pad="35"/>
+<connect gate="G$1" pin="XTAL_N/IO33" pad="9"/>
+<connect gate="G$1" pin="XTAL_P/IO32" pad="8"/>
 </connects>
 <technologies>
 <technology name="">
