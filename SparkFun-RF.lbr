@@ -7356,6 +7356,47 @@ immunity whilst minimising current consumption. &lt;/p&gt;
 <wire x1="7.2516" y1="12.5016" x2="7.2516" y2="-12.5016" width="0.2032" layer="21"/>
 <wire x1="7.2516" y1="-12.5016" x2="-7.2516" y2="-12.5016" width="0.2032" layer="21"/>
 </package>
+<package name="E19-915MS1W">
+<description>&lt;h3&gt;E19-915M30S - 1W 915M TRX Using SX1276&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 22&lt;/li&gt;
+&lt;li&gt;Pin pitch: Varies&lt;/li&gt;
+&lt;li&gt;Area: 1.15 in x 1.65 in&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://cdn.sparkfun.com/assets/d/8/3/6/e/E19__915M30S__Datasheet_EN_v1.0.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s): 
+&lt;ul&gt;&lt;li&gt;SAMD21 ProRF 1W&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="0" y1="40" x2="0" y2="0" width="0.254" layer="51"/>
+<wire x1="0" y1="0" x2="25" y2="0" width="0.254" layer="51"/>
+<wire x1="25" y1="0" x2="25" y2="40" width="0.254" layer="51"/>
+<wire x1="25" y1="40" x2="0" y2="40" width="0.254" layer="51"/>
+<smd name="P$1" x="0" y="23.82" dx="3.4" dy="1.5" layer="1"/>
+<smd name="P$2" x="0" y="21.28" dx="3.4" dy="1.5" layer="1"/>
+<smd name="P$3" x="0" y="18.74" dx="3.4" dy="1.5" layer="1"/>
+<smd name="P$4" x="0" y="16.2" dx="3.4" dy="1.5" layer="1"/>
+<smd name="P$5" x="0" y="13.66" dx="3.4" dy="1.5" layer="1"/>
+<smd name="P$6" x="0" y="11.12" dx="3.4" dy="1.5" layer="1"/>
+<smd name="P$7" x="0" y="8.58" dx="3.4" dy="1.5" layer="1"/>
+<smd name="P$8" x="0" y="6.04" dx="3.4" dy="1.5" layer="1"/>
+<smd name="P$9" x="0" y="3.5" dx="3.4" dy="1.5" layer="1"/>
+<smd name="P$10" x="25" y="3.5" dx="3.4" dy="1.5" layer="1"/>
+<smd name="P$11" x="25" y="6.04" dx="3.4" dy="1.5" layer="1"/>
+<smd name="P$12" x="25" y="8.58" dx="3.4" dy="1.5" layer="1"/>
+<smd name="P$13" x="25" y="11.12" dx="3.4" dy="1.5" layer="1"/>
+<smd name="P$14" x="24.98" y="13.66" dx="3.4" dy="1.5" layer="1"/>
+<smd name="P$15" x="25" y="16.2" dx="3.4" dy="1.5" layer="1"/>
+<smd name="P$16" x="25" y="18.74" dx="3.4" dy="1.5" layer="1"/>
+<smd name="P$17" x="25" y="21.28" dx="3.4" dy="1.5" layer="1"/>
+<smd name="P$18" x="25" y="23.82" dx="3.4" dy="1.5" layer="1"/>
+<smd name="P$20" x="16.96" y="40" dx="1.5" dy="3.4" layer="1"/>
+<smd name="P$21" x="8.04" y="40" dx="1.5" dy="3.4" layer="1"/>
+<smd name="P$22" x="5.5" y="40" dx="1.5" dy="3.4" layer="1"/>
+<text x="4" y="36" size="1.778" layer="25">&gt;NAME</text>
+<text x="4" y="34" size="1.778" layer="27">&gt;VALUE</text>
+<smd name="P$19" x="19.5" y="39.5682" dx="1.5" dy="2.550159375" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ANTENNA-GROUNDED">
@@ -8845,6 +8886,32 @@ ESP8266 WiFi module pre-programmed with an AT command interface.</description>
 <pin name="TXD" x="17.78" y="33.02" length="short" rot="R180"/>
 <text x="-15.24" y="35.814" size="1.778" layer="95">&gt;Name</text>
 <text x="-15.24" y="-38.354" size="1.778" layer="96" align="top-left">&gt;Value</text>
+</symbol>
+<symbol name="E19-915MS1W">
+<description>&lt;h3&gt;Chengdu Ebyte E19-915M30S - 915M TRX 1W Using SX1276, LoRa&lt;/h3&gt;
+&lt;p&gt;This is a 915 MHz LoRa (or optionally FSK) modulated transciver bassed on the Semtech SX1276. It has a high ouput power of 1W an a pre-installed U.FL connector. Can be used with LoRa WAN with DIO0, DIO1, and DIO2 hooked up to controller interrupt inputs&lt;/p&gt;</description>
+<pin name="RXEN" x="-10.16" y="7.62" visible="pin" length="short"/>
+<pin name="TXEN" x="-10.16" y="5.08" visible="pin" length="short"/>
+<pin name="!NSS" x="-10.16" y="2.54" visible="pin" length="short"/>
+<pin name="MOSI" x="-10.16" y="0" visible="pin" length="short"/>
+<pin name="MISO" x="-10.16" y="-2.54" visible="pin" length="short"/>
+<pin name="SCK" x="-10.16" y="-5.08" visible="pin" length="short"/>
+<pin name="VCC" x="-10.16" y="-7.62" visible="pin" length="short"/>
+<pin name="GND" x="-10.16" y="-10.16" visible="pin" length="short"/>
+<pin name="!RST" x="12.7" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="DIO0" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="DIO1" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="DIO2" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="DIO3" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="DIO4" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="DIO5" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="ANT" x="12.7" y="7.62" visible="pin" length="short" rot="R180"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<text x="-7.62" y="15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="12.7" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -11024,6 +11091,43 @@ clock speed support 80 MHz, 160 MHz, supports the RTOS, integrated Wi-Fi MAC/BB/
 <technologies>
 <technology name="">
 <attribute name="SF_ID" value="WRL-13678"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="E19-915MS1W" prefix="U" uservalue="yes">
+<description>&lt;h3&gt;Chengdu Ebyte E19-915M30S - 915M LoRa (FSK) TRX Using SX1276&lt;/h3&gt;
+&lt;p&gt;This is a 915 MHz LoRa (or optionally FSK) modulated transciver bassed on the Semtech SX1276. It has a high ouput power of 1W an a pre-installed U.FL connector. Can be used with LoRa WAN with DIO0, DIO1, and DIO2 hooked up to controller interrupt inputs&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/15034”&gt;SAMD21 Pro RF 1W&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="E19-915MS1W" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="E19-915MS1W">
+<connects>
+<connect gate="G$1" pin="!NSS" pad="P$15"/>
+<connect gate="G$1" pin="!RST" pad="P$8"/>
+<connect gate="G$1" pin="ANT" pad="P$19"/>
+<connect gate="G$1" pin="DIO0" pad="P$7"/>
+<connect gate="G$1" pin="DIO1" pad="P$6"/>
+<connect gate="G$1" pin="DIO2" pad="P$5"/>
+<connect gate="G$1" pin="DIO3" pad="P$4"/>
+<connect gate="G$1" pin="DIO4" pad="P$3"/>
+<connect gate="G$1" pin="DIO5" pad="P$2"/>
+<connect gate="G$1" pin="GND" pad="P$1 P$9 P$10 P$18 P$20 P$21 P$22"/>
+<connect gate="G$1" pin="MISO" pad="P$13"/>
+<connect gate="G$1" pin="MOSI" pad="P$14"/>
+<connect gate="G$1" pin="RXEN" pad="P$17"/>
+<connect gate="G$1" pin="SCK" pad="P$12"/>
+<connect gate="G$1" pin="TXEN" pad="P$16"/>
+<connect gate="G$1" pin="VCC" pad="P$11"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-14076"/>
 </technology>
 </technologies>
 </device>
