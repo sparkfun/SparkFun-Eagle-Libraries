@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -304,13 +305,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;These are high quality Single Pole - Double Throw (SPDT) sealed relays. Use them to switch high voltage, and/or high current devices.&lt;/p&gt;
 &lt;p&gt;This relay’s coil is rated up to 12V, with a minimum switching voltage of 5V. The contacts are rated up to 5A (@250VAC, 30VDC).&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.sparkfun.com/datasheets/Components/General/JZC-11F-05VDC-1Z%20EN.pdf"&gt;Datasheet&lt;/a&gt; (JZC-11F-5V-1Z)&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Note&lt;/b&gt;: The datasheet specifies a 5.04mm (.2 inch) gap between pins two and three. This does not reflect the &lt;i&gt;actual&lt;/i&gt; gap between the two pins which is .17 inches. Furthermore the gap is not split into an equidistant Y-offset with pin four. Instead, pin 3 is 2.54mm (.1 inch) in the Y-direction from center of pin four and pin 4 is .07 inches in the negative Y direction. &lt;/p&gt;
 &lt;h4&gt;Devices Using&lt;/h4&gt;
 &lt;ul&gt;&lt;li&gt;RELAY-SPDT&lt;/li&gt;&lt;/ul&gt;</description>
 <pad name="4" x="3.81" y="3.81" drill="1.3" diameter="2.286" rot="R270"/>
 <pad name="5" x="-3.81" y="-8.89" drill="1.3" diameter="2.286" rot="R270"/>
 <pad name="1" x="3.81" y="-8.89" drill="1.3" diameter="2.286" rot="R270"/>
 <pad name="3" x="-3.81" y="6.35" drill="1.3" diameter="2.286" rot="R270"/>
-<pad name="2" x="-3.81" y="1.27" drill="1.3" diameter="2.286" rot="R270"/>
+<pad name="2" x="-3.81" y="2.032" drill="1.3" diameter="2.286" rot="R270"/>
 <text x="0" y="-10.795" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-10.287" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center">&gt;VALUE</text>
 <wire x1="-5.254" y1="-10.754" x2="-5.254" y2="8.254" width="0.2032" layer="21"/>
