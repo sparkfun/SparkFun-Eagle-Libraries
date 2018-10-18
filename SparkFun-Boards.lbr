@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5512,6 +5512,42 @@ Keepout</text>
 <text x="33.02" y="54.61" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="33.02" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 </package>
+<package name="MICROSD-BREAKOUT">
+<wire x1="-8.89" y1="-8.89" x2="13.97" y2="-8.89" width="0.2032" layer="21"/>
+<wire x1="13.97" y1="-8.89" x2="13.97" y2="11.43" width="0.2032" layer="21"/>
+<wire x1="13.97" y1="11.43" x2="-8.89" y2="11.43" width="0.2032" layer="21"/>
+<wire x1="-8.89" y1="11.43" x2="-8.89" y2="-8.89" width="0.2032" layer="21"/>
+<text x="11.43" y="-6.35" size="1.27" layer="21" font="vector" ratio="15" align="center-right">CS</text>
+<text x="11.43" y="8.89" size="1.27" layer="21" font="vector" ratio="15" align="center-right">CD</text>
+<text x="11.43" y="6.35" size="1.27" layer="21" font="vector" ratio="15" align="center-right">DO</text>
+<text x="11.43" y="3.81" size="1.27" layer="21" font="vector" ratio="15" align="center-right">GND</text>
+<text x="11.43" y="1.27" size="1.27" layer="21" font="vector" ratio="15" align="center-right">SCK</text>
+<text x="11.43" y="-1.27" size="1.27" layer="21" font="vector" ratio="15" align="center-right">VCC</text>
+<text x="11.43" y="-3.81" size="1.27" layer="21" font="vector" ratio="15" align="center-right">DI</text>
+<pad name="CD" x="12.7" y="8.89" drill="1.1176" diameter="1.8796"/>
+<pad name="DO" x="12.7" y="6.35" drill="1.1176" diameter="1.8796"/>
+<pad name="GND" x="12.7" y="3.81" drill="1.1176" diameter="1.8796"/>
+<pad name="SCK" x="12.7" y="1.27" drill="1.1176" diameter="1.8796"/>
+<pad name="VCC" x="12.7" y="-1.27" drill="1.1176" diameter="1.8796"/>
+<pad name="DI" x="12.7" y="-3.81" drill="1.1176" diameter="1.8796"/>
+<pad name="CS" x="12.7" y="-6.35" drill="1.1176" diameter="1.8796"/>
+<wire x1="-7.62" y1="-6.35" x2="7.62" y2="-6.35" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="-6.35" x2="7.62" y2="7.62" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="7.62" x2="6.35" y2="7.62" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="7.62" x2="6.35" y2="3.81" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="3.81" x2="-1.27" y2="3.81" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="3.81" x2="-2.54" y2="7.62" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="8.89" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="8.89" x2="-7.62" y2="8.89" width="0.2032" layer="21"/>
+<wire x1="-7.62" y1="8.89" x2="-7.62" y2="-6.35" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="10.16" x2="1.27" y2="7.62" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="7.62" x2="0" y2="7.62" width="0.2032" layer="21"/>
+<wire x1="0" y1="7.62" x2="2.54" y2="5.08" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="5.08" x2="5.08" y2="7.62" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="7.62" x2="3.81" y2="7.62" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="7.62" x2="3.81" y2="10.16" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="10.16" x2="1.27" y2="10.16" width="0.2032" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO-MEGA">
@@ -7036,6 +7072,24 @@ SoC with a list of features including:
 <wire x1="-7.62" y1="-12.7" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
 <text x="-7.366" y="10.414" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-14.986" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="MICROSD-BREAKOUT">
+<description>&lt;h3&gt; microSD Card&lt;/h3&gt;
+
+&lt;p&gt;Breaks out all standard pins from microSD spec.&lt;/p&gt;</description>
+<wire x1="7.62" y1="12.7" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<text x="-5.08" y="13.335" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-5.08" y="-8.255" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<pin name="DI" x="10.16" y="-2.54" length="short" rot="R180"/>
+<pin name="VCC" x="10.16" y="0" length="short" rot="R180"/>
+<pin name="SCK" x="10.16" y="2.54" length="short" direction="pwr" rot="R180"/>
+<pin name="GND" x="10.16" y="5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="DO" x="10.16" y="7.62" length="short" rot="R180"/>
+<pin name="CD" x="10.16" y="10.16" length="short" rot="R180"/>
+<pin name="CS" x="10.16" y="-5.08" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9376,6 +9430,27 @@ PCB footprint compatbile with Big Red Box Enclosure.
 <connect gate="G$1" pin="O" pad="O"/>
 <connect gate="G$1" pin="R" pad="R"/>
 <connect gate="G$1" pin="S" pad="S"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MICROSD-BREAKOUT" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="MICROSD-BREAKOUT" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="MICROSD-BREAKOUT">
+<connects>
+<connect gate="G$1" pin="CD" pad="CD"/>
+<connect gate="G$1" pin="CS" pad="CS"/>
+<connect gate="G$1" pin="DI" pad="DI"/>
+<connect gate="G$1" pin="DO" pad="DO"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SCK" pad="SCK"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
