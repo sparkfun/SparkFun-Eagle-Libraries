@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -413,14 +414,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </symbol>
 <symbol name="SPI_FLASH_DUAL/QUAD">
 <description>&lt;h3&gt;SPI Flash Memory - Dual/Quad&lt;/h3&gt;</description>
-<pin name="!CS" x="-15.24" y="5.08" length="middle"/>
-<pin name="!WP(D2)" x="-15.24" y="0" length="middle"/>
-<pin name="GND" x="-15.24" y="-2.54" length="middle"/>
-<pin name="SO(D1)" x="-15.24" y="2.54" length="middle"/>
-<pin name="VCC" x="20.32" y="5.08" length="middle" rot="R180"/>
-<pin name="!HOLD(D3)" x="20.32" y="2.54" length="middle" rot="R180"/>
-<pin name="SCK" x="20.32" y="0" length="middle" rot="R180"/>
-<pin name="SI(D0)" x="20.32" y="-2.54" length="middle" rot="R180"/>
+<pin name="!CS" x="-12.7" y="5.08" length="short"/>
+<pin name="!WP(D2)" x="-12.7" y="0" length="short"/>
+<pin name="GND" x="-12.7" y="-2.54" length="short"/>
+<pin name="SO(D1)" x="-12.7" y="2.54" length="short"/>
+<pin name="VCC" x="17.78" y="5.08" length="short" rot="R180"/>
+<pin name="!HOLD(D3)" x="17.78" y="2.54" length="short" rot="R180"/>
+<pin name="SCK" x="17.78" y="0" length="short" rot="R180"/>
+<pin name="SI(D0)" x="17.78" y="-2.54" length="short" rot="R180"/>
 <wire x1="-10.16" y1="-5.08" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="7.62" x2="15.24" y2="7.62" width="0.254" layer="94"/>
 <wire x1="15.24" y1="7.62" x2="15.24" y2="-5.08" width="0.254" layer="94"/>
