@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.0">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -25740,6 +25740,16 @@ Reversed pinout to match Raspberry Pi male header pinout when coupled.</descript
 <wire x1="1.016" y1="-1.524" x2="-0.889" y2="-1.524" width="0.2032" layer="21"/>
 <wire x1="-0.889" y1="-1.524" x2="1.016" y2="-1.524" width="0.2032" layer="22"/>
 </package>
+<package name="SOLDER_PAD_2">
+<description>&lt;h3&gt;LuMini Ring Solder Pads&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
+&lt;li&gt;Pin pitch: .8 in&lt;/li&gt;
+&lt;li&gt;Area: .4 x 1 in.&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="P$1" x="-1.016" y="0" dx="1.016" dy="2.54" layer="1" roundness="100" cream="no"/>
+<smd name="P$2" x="1.016" y="0" dx="1.016" dy="2.54" layer="1" roundness="100" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -37502,6 +37512,23 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <device name="" package="TAB_GATOR_MINI">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SOLDER_PAD_2" prefix="J">
+<description>Solder Pad for LuMini Rings</description>
+<gates>
+<gate name="G$1" symbol="CONN_02" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOLDER_PAD_2">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
