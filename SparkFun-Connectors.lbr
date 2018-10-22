@@ -25750,6 +25750,11 @@ Reversed pinout to match Raspberry Pi male header pinout when coupled.</descript
 <smd name="P$1" x="-1.016" y="0" dx="1.016" dy="2.54" layer="1" roundness="100" cream="no"/>
 <smd name="P$2" x="1.016" y="0" dx="1.016" dy="2.54" layer="1" roundness="100" cream="no"/>
 </package>
+<package name="CIRCULARPAD">
+<description>LuMini Pad</description>
+<smd name="P$1" x="0" y="0" dx="2" dy="2" layer="1" roundness="100"/>
+<smd name="P$2" x="0" y="-0.508" dx="2.0066" dy="1.016" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -37529,6 +37534,22 @@ This footprint was designed to help hold the alignment of a through-hole compone
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED_PAD" prefix="J">
+<description>LuMini 8X8 Solder Pad</description>
+<gates>
+<gate name="G$1" symbol="CONN_01" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CIRCULARPAD">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1 P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
