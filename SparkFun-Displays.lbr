@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -1775,6 +1776,52 @@ none
 <wire x1="6.3" y1="-13.225" x2="6.3" y2="-11.875" width="0.002540625" layer="52"/>
 <wire x1="2.531" y1="-10.892" x2="5.881" y2="-10.892" width="0.2032" layer="22"/>
 </package>
+<package name="37-PIN-TFT-CONNECTOR-ILI9341">
+<smd name="1" x="-69" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="2" x="-68" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="3" x="-67" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="4" x="-66" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="5" x="-65" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="6" x="-64" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="7" x="-63" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="8" x="-62" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="9" x="-61" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="10" x="-60" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="11" x="-59" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="12" x="-58" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="13" x="-57" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="14" x="-56" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="15" x="-55" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="16" x="-54" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="17" x="-53" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="18" x="-52" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="19" x="-51" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="20" x="-50" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="21" x="-49" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="22" x="-48" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="23" x="-47" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="24" x="-46" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="25" x="-45" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="26" x="-44" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="27" x="-43" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="28" x="-42" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="29" x="-41" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="30" x="-40" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="31" x="-39" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="32" x="-38" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="33" x="-37" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="34" x="-36" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="35" x="-35" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="36" x="-34" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<smd name="37" x="-33" y="0" dx="3" dy="0.5" layer="1" rot="R90"/>
+<wire x1="-30.5" y1="1.5" x2="-71.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-71.5" y1="1.5" x2="-71.5" y2="-3" width="0.127" layer="21"/>
+<wire x1="-30.5" y1="1.5" x2="-30.5" y2="-3" width="0.127" layer="21"/>
+<circle x="-31.5" y="0" radius="0.5" width="0.127" layer="21"/>
+<circle x="-70.5" y="0" radius="0.5" width="0.127" layer="21"/>
+<text x="-71" y="2" size="1.27" layer="27">1</text>
+<text x="-32" y="2" size="1.27" layer="27">37</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LCD-16X2">
@@ -2012,6 +2059,53 @@ Monochrome</description>
 <wire x1="7.62" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
 <text x="-10.16" y="7.874" size="1.778" layer="95">&gt;Name</text>
 <text x="-10.16" y="-7.874" size="1.778" layer="96" align="top-left">&gt;Value</text>
+</symbol>
+<symbol name="37-PIN-TFT-CONNECTOR-ILI9341">
+<pin name="1-DB0" x="-7.62" y="0" length="middle"/>
+<pin name="2-DB1" x="-7.62" y="-2.54" length="middle"/>
+<pin name="3-DB2" x="-7.62" y="-5.08" length="middle"/>
+<pin name="4-DB3" x="-7.62" y="-7.62" length="middle"/>
+<pin name="5-GND" x="-7.62" y="-10.16" length="middle"/>
+<pin name="6-VCC" x="-7.62" y="-12.7" length="middle"/>
+<pin name="7-/CS" x="-7.62" y="-15.24" length="middle"/>
+<pin name="8-RS" x="-7.62" y="-17.78" length="middle"/>
+<pin name="9-/WR" x="-7.62" y="-20.32" length="middle"/>
+<pin name="10-/RD" x="-7.62" y="-22.86" length="middle"/>
+<pin name="11-IMO" x="-7.62" y="-25.4" length="middle"/>
+<pin name="12-XR(X+)" x="-7.62" y="-27.94" length="middle"/>
+<pin name="13-YD(Y+)" x="-7.62" y="-30.48" length="middle"/>
+<pin name="14-XL(X-)" x="-7.62" y="-33.02" length="middle"/>
+<pin name="15-YU(Y-)" x="-7.62" y="-35.56" length="middle"/>
+<pin name="16-LEDA" x="-7.62" y="-38.1" length="middle"/>
+<pin name="17-LEDK1" x="-7.62" y="-40.64" length="middle"/>
+<pin name="18-LEDK2" x="-7.62" y="-43.18" length="middle"/>
+<pin name="19-LEDK3" x="-7.62" y="-45.72" length="middle"/>
+<pin name="20-LEDK4" x="-7.62" y="-48.26" length="middle"/>
+<pin name="21-NC" x="-7.62" y="-50.8" length="middle"/>
+<pin name="22-DB4" x="-7.62" y="-53.34" length="middle"/>
+<pin name="23-DB8" x="-7.62" y="-55.88" length="middle"/>
+<pin name="24-DB9" x="-7.62" y="-58.42" length="middle"/>
+<pin name="25-DB10" x="-7.62" y="-60.96" length="middle"/>
+<pin name="26-DB11" x="-7.62" y="-63.5" length="middle"/>
+<pin name="27-DB12" x="-7.62" y="-66.04" length="middle"/>
+<pin name="28-DB13" x="-7.62" y="-68.58" length="middle"/>
+<pin name="29-DB14" x="-7.62" y="-71.12" length="middle"/>
+<pin name="30-DB15" x="-7.62" y="-73.66" length="middle"/>
+<pin name="31-/REST" x="-7.62" y="-76.2" length="middle"/>
+<pin name="32-VCC" x="-7.62" y="-78.74" length="middle"/>
+<pin name="33-VCC" x="-7.62" y="-81.28" length="middle"/>
+<pin name="34-GND" x="-7.62" y="-83.82" length="middle"/>
+<pin name="35-DB5" x="-7.62" y="-86.36" length="middle"/>
+<pin name="36-DB6" x="-7.62" y="-88.9" length="middle"/>
+<pin name="37-DB7" x="-7.62" y="-91.44" length="middle"/>
+<wire x1="-2.54" y1="2.54" x2="10.16" y2="2.54" width="0.254" layer="97"/>
+<wire x1="10.16" y1="2.54" x2="10.16" y2="-93.98" width="0.254" layer="97"/>
+<wire x1="10.16" y1="-93.98" x2="-2.54" y2="-93.98" width="0.254" layer="97"/>
+<wire x1="-2.54" y1="-93.98" x2="-2.54" y2="2.54" width="0.254" layer="97"/>
+<circle x="-3.175" y="-15.24" radius="0.635" width="0.254" layer="94"/>
+<circle x="-3.175" y="-20.32" radius="0.635" width="0.254" layer="94"/>
+<circle x="-3.175" y="-22.86" radius="0.635" width="0.254" layer="94"/>
+<circle x="-3.175" y="-76.2" radius="0.635" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2567,6 +2661,59 @@ Previously used in production. &lt;/p&gt;
 <technology name="">
 <attribute name="PROD_ID" value="LCD-13910, CONN-13933" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ILI9347-LCD-CONNECTOR-37PIN">
+<description>37 Pin connector, 1mm pitch (0.5mm wide pads, with a 0.5mm gap between them) for an FPC/FFC ribbon cable connector.
+This is for a TFT ILI9341 or ST7789 screen with 37 pins (Don't confuse this with the 50 pin variant)</description>
+<gates>
+<gate name="G$1" symbol="37-PIN-TFT-CONNECTOR-ILI9341" x="2.54" y="45.72"/>
+</gates>
+<devices>
+<device name="" package="37-PIN-TFT-CONNECTOR-ILI9341">
+<connects>
+<connect gate="G$1" pin="1-DB0" pad="1"/>
+<connect gate="G$1" pin="10-/RD" pad="10"/>
+<connect gate="G$1" pin="11-IMO" pad="11"/>
+<connect gate="G$1" pin="12-XR(X+)" pad="12"/>
+<connect gate="G$1" pin="13-YD(Y+)" pad="13"/>
+<connect gate="G$1" pin="14-XL(X-)" pad="14"/>
+<connect gate="G$1" pin="15-YU(Y-)" pad="15"/>
+<connect gate="G$1" pin="16-LEDA" pad="16"/>
+<connect gate="G$1" pin="17-LEDK1" pad="17"/>
+<connect gate="G$1" pin="18-LEDK2" pad="18"/>
+<connect gate="G$1" pin="19-LEDK3" pad="19"/>
+<connect gate="G$1" pin="2-DB1" pad="2"/>
+<connect gate="G$1" pin="20-LEDK4" pad="20"/>
+<connect gate="G$1" pin="21-NC" pad="21"/>
+<connect gate="G$1" pin="22-DB4" pad="22"/>
+<connect gate="G$1" pin="23-DB8" pad="23"/>
+<connect gate="G$1" pin="24-DB9" pad="24"/>
+<connect gate="G$1" pin="25-DB10" pad="25"/>
+<connect gate="G$1" pin="26-DB11" pad="26"/>
+<connect gate="G$1" pin="27-DB12" pad="27"/>
+<connect gate="G$1" pin="28-DB13" pad="28"/>
+<connect gate="G$1" pin="29-DB14" pad="29"/>
+<connect gate="G$1" pin="3-DB2" pad="3"/>
+<connect gate="G$1" pin="30-DB15" pad="30"/>
+<connect gate="G$1" pin="31-/REST" pad="31"/>
+<connect gate="G$1" pin="32-VCC" pad="32"/>
+<connect gate="G$1" pin="33-VCC" pad="33"/>
+<connect gate="G$1" pin="34-GND" pad="34"/>
+<connect gate="G$1" pin="35-DB5" pad="35"/>
+<connect gate="G$1" pin="36-DB6" pad="36"/>
+<connect gate="G$1" pin="37-DB7" pad="37"/>
+<connect gate="G$1" pin="4-DB3" pad="4"/>
+<connect gate="G$1" pin="5-GND" pad="5"/>
+<connect gate="G$1" pin="6-VCC" pad="6"/>
+<connect gate="G$1" pin="7-/CS" pad="7"/>
+<connect gate="G$1" pin="8-RS" pad="8"/>
+<connect gate="G$1" pin="9-/WR" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
