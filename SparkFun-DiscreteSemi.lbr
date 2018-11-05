@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.1">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1024,7 +1024,7 @@ TRIAC that is triggered optically.</description>
 <wire x1="6.8072" y1="-1.016" x2="7.0104" y2="-1.016" width="0.254" layer="94"/>
 <wire x1="1.7272" y1="-1.016" x2="1.6256" y2="-1.016" width="0.254" layer="94"/>
 </symbol>
-<symbol name="OPTO_DARLINGTON_6N138-39">
+<symbol name="OPTO_DARLINGTON">
 <description>&lt;h3&gt; Darlington Opto-isolator&lt;/h3&gt;</description>
 <wire x1="-5.08" y1="-10.16" x2="7.62" y2="-10.16" width="0.1524" layer="94"/>
 <wire x1="7.62" y1="-10.16" x2="7.62" y2="5.08" width="0.1524" layer="94"/>
@@ -1587,6 +1587,35 @@ Adjustable shunt regulator</description>
 <text x="-2.54" y="3.048" size="1.27" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-7.112" size="1.27" layer="95">&gt;VALUE</text>
 </symbol>
+<symbol name="OPTO_DARLINGTON_6N137">
+<description>&lt;h3&gt;Lite-On 6N137S - High-Speed OptoIsolator&lt;/h3&gt;
+&lt;p&gt;Opto-Isolator capable of 10 MBd.&lt;/p&gt;</description>
+<wire x1="-5.08" y1="-12.7" x2="7.62" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-5.08" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="-5.08" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="-10.16" x2="-5.08" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-3.302" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-3.302" y1="5.08" x2="-3.302" y2="-1.778" width="0.1524" layer="94"/>
+<wire x1="-3.302" y1="-2.794" x2="-2.286" y2="-2.794" width="0.1524" layer="94"/>
+<wire x1="-4.318" y1="-2.794" x2="-3.302" y2="-2.794" width="0.1524" layer="94"/>
+<wire x1="-3.302" y1="-2.794" x2="-3.302" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="-3.302" y1="-10.16" x2="-5.08" y2="-10.16" width="0.1524" layer="94"/>
+<text x="-3.302" y="8.128" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-3.556" y="-13.208" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<pin name="C" x="-7.62" y="-10.16" length="short"/>
+<pin name="A" x="-7.62" y="5.08" length="short"/>
+<pin name="VCC" x="10.16" y="5.08" length="short" rot="R180"/>
+<pin name="VOUT" x="10.16" y="0" length="short" rot="R180"/>
+<pin name="GND" x="10.16" y="-10.16" length="short" rot="R180"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-4.318" y="-1.778"/>
+<vertex x="-3.302" y="-2.794"/>
+<vertex x="-2.286" y="-1.778"/>
+</polygon>
+<pin name="EN" x="10.16" y="-5.08" length="short" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BAV99" prefix="D">
@@ -1933,7 +1962,7 @@ Adjustable shunt regulator</description>
 &lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12898”&gt;SparkFun MIDI Shield&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="OPTO_DARLINGTON_6N138-39" x="0" y="0"/>
+<gate name="G$1" symbol="OPTO_DARLINGTON" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="8-SMD">
@@ -2659,6 +2688,30 @@ Adjustable shunt regulator</description>
 <technology name="">
 <attribute name="PROD_ID" value="IC-14121"/>
 <attribute name="VALUE" value="TLP290-4"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="6N137S_HIGH_SPEED_OPTOISOLATOR">
+<description>&lt;h3&gt;Lite-On 6N137 - High Speed Opto Isolator&lt;/h3&gt;
+&lt;p&gt;Opto isolator capable of data rates up to 10MBd&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="OPTO_DARLINGTON_6N137" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="8-SMD">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="EN" pad="7"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="VOUT" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-15084" constant="no"/>
 </technology>
 </technologies>
 </device>
