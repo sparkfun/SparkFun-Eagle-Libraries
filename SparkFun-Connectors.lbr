@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.1">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -21,10 +21,10 @@
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
@@ -25943,6 +25943,40 @@ Reversed pinout to match Raspberry Pi male header pinout when coupled.</descript
 <vertex x="3.8" y="-5.9"/>
 </polygon>
 </package>
+<package name="XLR-3_MALE">
+<description>&lt;h3&gt;XLR-3 Connector - Package for the NC3MAAH-1 XLR-3 Connector&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 5&lt;/li&gt;
+&lt;li&gt;Area: 1 x .7 in&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=http://www.neutrik.us/zoolu-website/media/download/1429/Drawing+NC3MAAH-1&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;</description>
+<rectangle x1="-12.5" y1="8.89" x2="12.8" y2="11.59" layer="51"/>
+<pad name="NC1" x="-3.81" y="5.08" drill="1.6002"/>
+<pad name="NC2" x="3.81" y="0" drill="1.6002"/>
+<pad name="3" x="0" y="-8.89" drill="1.2"/>
+<pad name="1" x="3.81" y="-8.89" drill="1.6002"/>
+<pad name="2" x="-3.81" y="-8.89" drill="1.6002"/>
+<text x="-5.08" y="12.7" size="1.27" layer="51" font="vector">Front Edge</text>
+<text x="-5.08" y="15.24" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-5.08" y="-12.7" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="XLR-3_FEMALE">
+<description>&lt;h3&gt;XLR-3 Connector - Package for the NC3FAAH-1 XLR-3 Connector&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 5&lt;/li&gt;
+&lt;li&gt;Area: 1 x .7 in&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=http://www.neutrik.us/zoolu-website/media/download/1389/Drawing+NC3FAAH1&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;</description>
+<rectangle x1="-12.5" y1="12.7" x2="12.8" y2="15.4" layer="51"/>
+<pad name="NC1" x="-3.81" y="8.89" drill="1.6002"/>
+<pad name="NC2" x="3.81" y="3.81" drill="1.6002"/>
+<pad name="3" x="0" y="-4.445" drill="1.2"/>
+<pad name="1" x="-3.81" y="0" drill="1.6002"/>
+<pad name="2" x="3.81" y="-0.635" drill="1.6002"/>
+<text x="-5.08" y="16.51" size="1.27" layer="51" font="vector">Front Edge</text>
+<text x="-5.08" y="19.05" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-5.08" y="-8.89" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -28855,6 +28889,19 @@ Exposes the minimal pins needed to implement a USB 2.x legacy device.</descripti
 <pin name="D-" x="12.7" y="2.54" length="short" rot="R180"/>
 <pin name="CC2" x="12.7" y="-2.54" length="short" rot="R180"/>
 <pin name="SHLD" x="12.7" y="-5.08" length="short" rot="R180"/>
+</symbol>
+<symbol name="XLR-3">
+<description>&lt;h3&gt;Neutrik XLR-3 Jack - XLR-3 Jack for DMX&lt;/h3&gt;
+&lt;p&gt;Symbol for a horizontal, 3-pin DMX connector&lt;/p&gt;</description>
+<pin name="GND" x="7.62" y="-5.08" length="short" rot="R180"/>
+<pin name="D+" x="7.62" y="0" length="short" rot="R180"/>
+<pin name="D-" x="7.62" y="5.08" length="short" rot="R180"/>
+<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
+<text x="-5.08" y="7.874" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-5.08" y="-10.16" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -37799,6 +37846,39 @@ Super Speed pins not available on the 16-pin purely SMD connector so this part i
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="CONN-14122" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="XLR-3" prefix="J">
+<description>&lt;h3&gt;Neutrik XLR-3 Jack - XLR-3 Jack for DMX&lt;/h3&gt;
+&lt;p&gt;Symbol for a horizontal, 3-pin DMX connector&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="XLR-3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-MALE" package="XLR-3_MALE">
+<connects>
+<connect gate="G$1" pin="D+" pad="3"/>
+<connect gate="G$1" pin="D-" pad="2"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-14141" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-FEMALE" package="XLR-3_FEMALE">
+<connects>
+<connect gate="G$1" pin="D+" pad="3"/>
+<connect gate="G$1" pin="D-" pad="2"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-14142" constant="no"/>
 </technology>
 </technologies>
 </device>
