@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -3031,7 +3031,7 @@ IC needs to have legs bent before insertion.</description>
 <text x="0" y="4.445" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-5.08" size="0.6096" layer="27" font="vector" ratio="20" align="bottom-center">&gt;VALUE</text>
 </package>
-<package name="ATTINY85_ATTINY85">
+<package name="ATTINY85">
 <circle x="-3.429" y="3.048" radius="0.127" width="0.254" layer="21"/>
 <wire x1="3.048" y1="2.54" x2="-3.048" y2="2.54" width="0.2032" layer="21"/>
 <wire x1="-3.048" y1="-2.54" x2="3.048" y2="-2.54" width="0.2032" layer="21"/>
@@ -5247,20 +5247,20 @@ TC6_WO1</text>
 <pin name="GND" x="-17.78" y="-15.24" length="short"/>
 </symbol>
 <symbol name="ATTINY85_ATTINY85">
-<wire x1="-25.4" y1="2.54" x2="-25.4" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-25.4" y1="-15.24" x2="43.18" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="43.18" y1="-15.24" x2="43.18" y2="2.54" width="0.254" layer="94"/>
-<wire x1="43.18" y1="2.54" x2="-25.4" y2="2.54" width="0.254" layer="94"/>
-<pin name="(MISO/DO/AIN1/OC0B/OC1A/PCINT1)PB1" x="45.72" y="-10.16" length="short" rot="R180"/>
-<pin name="(MOSI/DI/SDA/AIN0/OC0A/OC1A/AREF/PCINT0)PB0" x="45.72" y="-12.7" length="short" rot="R180"/>
-<pin name="(PCINT3/XTAL1/CLKI/OC1B/ADC3)PB3" x="45.72" y="-5.08" length="short" rot="R180"/>
-<pin name="(PCINT4/XTAL2/CLKO/OC1B/ADC2)PB4" x="45.72" y="-2.54" length="short" rot="R180"/>
-<pin name="(PCINT5/!RESET!/ADC0/DW)PB5" x="45.72" y="0" length="short" rot="R180"/>
-<pin name="(SCK/USCK/SCL/ADC1/T0/INT0/PCINT2)PB2" x="45.72" y="-7.62" length="short" rot="R180"/>
-<pin name="GND" x="-27.94" y="-12.7" length="short"/>
-<pin name="VCC" x="-27.94" y="0" length="short"/>
-<text x="-25.4" y="-17.78" size="1.778" layer="96" font="vector">&gt;VALUE</text>
-<text x="-25.4" y="3.048" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="PB1" x="10.16" y="-5.08" length="short" rot="R180"/>
+<pin name="PB0" x="10.16" y="-7.62" length="short" rot="R180"/>
+<pin name="PB3" x="10.16" y="0" length="short" rot="R180"/>
+<pin name="PB4" x="10.16" y="2.54" length="short" rot="R180"/>
+<pin name="PB5" x="10.16" y="5.08" length="short" rot="R180"/>
+<pin name="PB2" x="10.16" y="-2.54" length="short" rot="R180"/>
+<pin name="GND" x="-10.16" y="-7.62" length="short"/>
+<pin name="VCC" x="-10.16" y="5.08" length="short"/>
+<text x="-7.62" y="-12.7" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<text x="-7.62" y="8.128" size="1.778" layer="95" font="vector">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -8201,20 +8201,20 @@ Prototype in process!  Do keep!</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ATTINY85_ATTIN85" prefix="U">
+<deviceset name="ATTINY85" prefix="U">
 <gates>
-<gate name="U1" symbol="ATTINY85_ATTINY85" x="-7.62" y="5.08"/>
+<gate name="U1" symbol="ATTINY85_ATTINY85" x="-10.16" y="5.08"/>
 </gates>
 <devices>
-<device name="_SOIC_5.3MM" package="ATTINY85_ATTINY85">
+<device name="_SOIC_5.3MM" package="ATTINY85">
 <connects>
-<connect gate="U1" pin="(MISO/DO/AIN1/OC0B/OC1A/PCINT1)PB1" pad="6"/>
-<connect gate="U1" pin="(MOSI/DI/SDA/AIN0/OC0A/OC1A/AREF/PCINT0)PB0" pad="5"/>
-<connect gate="U1" pin="(PCINT3/XTAL1/CLKI/OC1B/ADC3)PB3" pad="2"/>
-<connect gate="U1" pin="(PCINT4/XTAL2/CLKO/OC1B/ADC2)PB4" pad="3"/>
-<connect gate="U1" pin="(PCINT5/!RESET!/ADC0/DW)PB5" pad="1"/>
-<connect gate="U1" pin="(SCK/USCK/SCL/ADC1/T0/INT0/PCINT2)PB2" pad="7"/>
 <connect gate="U1" pin="GND" pad="4"/>
+<connect gate="U1" pin="PB0" pad="5"/>
+<connect gate="U1" pin="PB1" pad="6"/>
+<connect gate="U1" pin="PB2" pad="7"/>
+<connect gate="U1" pin="PB3" pad="2"/>
+<connect gate="U1" pin="PB4" pad="3"/>
+<connect gate="U1" pin="PB5" pad="1"/>
 <connect gate="U1" pin="VCC" pad="8"/>
 </connects>
 <technologies>
