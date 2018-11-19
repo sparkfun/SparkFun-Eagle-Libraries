@@ -21,10 +21,10 @@
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
@@ -25979,6 +25979,16 @@ Reversed pinout to match Raspberry Pi male header pinout when coupled.</descript
 <text x="-5.08" y="-8.89" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 <rectangle x1="-11" y1="12.6" x2="11" y2="15.5" layer="51"/>
 </package>
+<package name="USB-SOLDER-PADS">
+<smd name="D-" x="0" y="0.635" dx="3" dy="0.9" layer="1"/>
+<smd name="VBUS" x="0" y="1.905" dx="3" dy="0.9" layer="1"/>
+<smd name="D+" x="0" y="-0.635" dx="3" dy="0.9" layer="1"/>
+<smd name="GND" x="0" y="-1.905" dx="3" dy="0.9" layer="1"/>
+</package>
+<package name="USB-SOLDER-PADS-DATA_ONLY">
+<smd name="D-" x="0" y="0.635" dx="3" dy="0.9" layer="1"/>
+<smd name="D+" x="0" y="-0.635" dx="3" dy="0.9" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -37895,6 +37905,42 @@ Super Speed pins not available on the 16-pin purely SMD connector so this part i
 <technology name="">
 <attribute name="PROD_ID" value="CONN-14142" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="USB_SOLDER_PADS_DATA_ONLY" prefix="JP">
+<description>Solder pad access to USB pins. Helpful to expose on PCBs so user can attach external USB connector if necessary.</description>
+<gates>
+<gate name="JP1" symbol="CONN_02" x="-2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="USB-SOLDER-PADS-DATA_ONLY">
+<connects>
+<connect gate="JP1" pin="1" pad="D+"/>
+<connect gate="JP1" pin="2" pad="D-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="USB_SOLDER_PADS" prefix="JP">
+<description>Solder pad access to USB pins. Helpful to expose on PCBs so user can attach external USB connector if necessary.</description>
+<gates>
+<gate name="JP1" symbol="CONN_04" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="USB-SOLDER-PADS">
+<connects>
+<connect gate="JP1" pin="1" pad="VBUS"/>
+<connect gate="JP1" pin="2" pad="D-"/>
+<connect gate="JP1" pin="3" pad="D+"/>
+<connect gate="JP1" pin="4" pad="GND"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
