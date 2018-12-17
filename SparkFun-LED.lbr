@@ -2082,11 +2082,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="SDI" x="-0.8" y="0.85" dx="0.7" dy="0.4" layer="1" rot="R90" cream="no"/>
 <smd name="GND" x="0" y="0.85" dx="0.7" dy="0.4" layer="1" rot="R90" cream="no"/>
 <smd name="SDO" x="0.8" y="0.85" dx="0.7" dy="0.4" layer="1" rot="R90" cream="no"/>
-<wire x1="1.5" y1="1.577" x2="-1.5" y2="1.577" width="0.2" layer="21"/>
-<wire x1="-1.5" y1="1.577" x2="-1.5" y2="-1.45" width="0.2" layer="21"/>
-<wire x1="-1.5" y1="-1.45" x2="1.5" y2="-1.45" width="0.2" layer="21"/>
-<wire x1="1.5" y1="-1.45" x2="1.5" y2="1.327" width="0.2" layer="21"/>
-<wire x1="1.5" y1="1.327" x2="1.5" y2="1.577" width="0.2" layer="21"/>
 <wire x1="-0.15" y1="0.45" x2="0.15" y2="0.45" width="0.1" layer="51"/>
 <wire x1="0.15" y1="0.45" x2="0.15" y2="0.95" width="0.1" layer="51"/>
 <wire x1="0.15" y1="0.95" x2="-0.15" y2="0.95" width="0.1" layer="51"/>
@@ -2117,12 +2112,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-1" y1="1" x2="1" y2="1" width="0.1" layer="51"/>
 <text x="0" y="1.632" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.268" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center">&gt;VALUE</text>
-<wire x1="1.4" y1="1.427" x2="0.5" y2="1.427" width="0.127" layer="21"/>
-<wire x1="0.5" y1="1.427" x2="0.5" y2="1.527" width="0.127" layer="21"/>
-<wire x1="0.5" y1="1.527" x2="1.5" y2="1.527" width="0.127" layer="21"/>
+<wire x1="1.4" y1="1.427" x2="1.262" y2="1.427" width="0.127" layer="21"/>
+<wire x1="1.262" y1="1.427" x2="1.262" y2="1.527" width="0.127" layer="21"/>
+<wire x1="1.262" y1="1.527" x2="1.5" y2="1.527" width="0.127" layer="21"/>
 <wire x1="1.5" y1="1.527" x2="1.5" y2="1.327" width="0.127" layer="21"/>
-<wire x1="1.5" y1="1.327" x2="0.5" y2="1.327" width="0.127" layer="21"/>
-<wire x1="0.5" y1="1.327" x2="0.5" y2="1.427" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.327" x2="1.262" y2="1.327" width="0.127" layer="21"/>
+<wire x1="1.262" y1="1.327" x2="1.262" y2="1.427" width="0.127" layer="21"/>
 <rectangle x1="-0.95" y1="0.55" x2="-0.65" y2="1.15" layer="31"/>
 <rectangle x1="-0.95" y1="-1.15" x2="-0.65" y2="-0.55" layer="31"/>
 <rectangle x1="-0.15" y1="-1.15" x2="0.15" y2="-0.55" layer="31"/>
@@ -5282,12 +5277,12 @@ The LONGPADS Variant is used for a test jig, but you may like it because there i
 <devices>
 <device name="-2020" package="APA102-2020">
 <connects>
-<connect gate="G$1" pin="CI" pad="GND"/>
-<connect gate="G$1" pin="CO" pad="VDD"/>
-<connect gate="G$1" pin="DI" pad="SDO"/>
-<connect gate="G$1" pin="DO" pad="CKO"/>
-<connect gate="G$1" pin="GND" pad="SDI"/>
-<connect gate="G$1" pin="VCC" pad="CKI"/>
+<connect gate="G$1" pin="CI" pad="CKI"/>
+<connect gate="G$1" pin="CO" pad="CKO"/>
+<connect gate="G$1" pin="DI" pad="SDI"/>
+<connect gate="G$1" pin="DO" pad="SDO"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VCC" pad="VDD"/>
 </connects>
 <technologies>
 <technology name="">
