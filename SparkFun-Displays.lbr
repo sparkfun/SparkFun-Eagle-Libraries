@@ -2941,6 +2941,28 @@ Previously used in production. &lt;/p&gt;
 </device>
 </devices>
 </deviceset>
+<deviceset name="EXTERNAL_DISP">
+<description>&lt;h3&gt;External Display Device&lt;/h3&gt;
+&lt;p&gt;Use this device to represent a display module that you connect to your board with a connector. (The connector will be electrically linked to the symbol for your display and connected to traces) Using this along with a footprint of the display module outline will allow the BOM utility to find the correct PROD_ID for the module. Then you can move it to the BOM list (it will be in non-BOM list unless it has a hardware element like holes or pads)&lt;/p&gt;
+&lt;p&gt;Variants:
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;KWH018ST14-F01&lt;/b&gt;A footprint of the KWH018ST14-F01 with holes&lt;/li&gt;
+&lt;p&gt;SparkFun Products:
+&lt;ul&gt;&lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="EXTERNAL_MODULE" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="-KWH018ST14-F01" package="KWH018ST14-F01_HOLES">
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="LCD-14196" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
