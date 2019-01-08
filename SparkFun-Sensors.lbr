@@ -8209,6 +8209,42 @@ Used by APDS-9301</description>
 <wire x1="1.397" y1="0.635" x2="0.508" y2="0.635" width="0.002540625" layer="41"/>
 <wire x1="-1.397" y1="-0.635" x2="-0.508" y2="-0.635" width="0.002540625" layer="41"/>
 </package>
+<package name="SPARKX_VCNL4040">
+<description>&lt;h3&gt;SMD-8 for VCNL4040&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 8&lt;/li&gt;
+&lt;li&gt;Pin pitch: 1.075mm&lt;/li&gt;
+&lt;li&gt;Area: 2mm x 4mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=https://www.vishay.com/docs/84274/vcnl4040.pdf&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;</description>
+<circle x="1.6462" y="-2.2606" radius="0.1016" width="0.2032" layer="21"/>
+<circle x="0" y="0.9144" radius="0.59784375" width="0.127" layer="51"/>
+<circle x="0" y="0.9144" radius="0.457903125" width="0.1778" layer="21"/>
+<wire x1="-1" y1="2" x2="1" y2="2" width="0.1" layer="51"/>
+<wire x1="1" y1="2" x2="1" y2="-2" width="0.1" layer="51"/>
+<wire x1="1" y1="-2" x2="-1" y2="-2" width="0.1" layer="51"/>
+<wire x1="-1" y1="2" x2="-1" y2="-2" width="0.1" layer="51"/>
+<wire x1="-0.508" y1="-1.7272" x2="0.508" y2="-1.7272" width="0.127" layer="51"/>
+<wire x1="-0.508" y1="-1.7272" x2="0.5334" y2="-1.7272" width="0.127" layer="51" curve="-244.761355"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.1778" layer="21"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.1778" layer="21" curve="-236.144974"/>
+<wire x1="-1.016" y1="2.286" x2="1.016" y2="2.286" width="0.127" layer="21"/>
+<wire x1="1.016" y1="2.286" x2="1.016" y2="2.159" width="0.127" layer="21"/>
+<wire x1="-1.016" y1="2.286" x2="-1.016" y2="2.159" width="0.127" layer="21"/>
+<wire x1="-1.016" y1="-2.159" x2="-1.016" y2="-2.286" width="0.127" layer="21"/>
+<wire x1="-1.016" y1="-2.286" x2="1.016" y2="-2.286" width="0.127" layer="21"/>
+<wire x1="1.016" y1="-2.286" x2="1.016" y2="-2.159" width="0.127" layer="21"/>
+<smd name="1" x="1" y="-1.6125" dx="0.7" dy="0.725" layer="1"/>
+<smd name="2" x="1" y="-0.5375" dx="0.7" dy="0.725" layer="1"/>
+<smd name="3" x="1" y="0.5375" dx="0.7" dy="0.725" layer="1"/>
+<smd name="4" x="1" y="1.6125" dx="0.7" dy="0.725" layer="1"/>
+<smd name="5" x="-1" y="1.6125" dx="0.7" dy="0.725" layer="1"/>
+<smd name="6" x="-1" y="0.5375" dx="0.7" dy="0.725" layer="1"/>
+<smd name="7" x="-1" y="-0.5375" dx="0.7" dy="0.725" layer="1"/>
+<smd name="8" x="-1" y="-1.6125" dx="0.7" dy="0.725" layer="1"/>
+<text x="-1.27" y="2.54" size="0.8128" layer="25" font="vector" ratio="12">&gt;NAME</text>
+<text x="-1.27" y="-3.81" size="0.8128" layer="25" font="vector" ratio="12">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ADMP401">
@@ -9901,6 +9937,22 @@ channels, 3 magnetic field channels&lt;/li&gt;
 <pin name="SCL" x="10.16" y="-2.54" length="short" rot="R180"/>
 <text x="-7.62" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
 <text x="-7.62" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
+</symbol>
+<symbol name="SPARKX_VCNL4040">
+<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="12.7" x2="15.24" y2="12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="12.7" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
+<pin name="ANODE" x="17.78" y="10.16" length="short" rot="R180"/>
+<pin name="CATHODE_LED" x="17.78" y="-7.62" length="short" rot="R180"/>
+<pin name="CATHODE_SEN" x="17.78" y="-12.7" length="short" rot="R180"/>
+<pin name="GND" x="-17.78" y="-12.7" length="short"/>
+<pin name="INT" x="17.78" y="-2.54" length="short" rot="R180"/>
+<pin name="SCL" x="17.78" y="2.54" length="short" rot="R180"/>
+<pin name="SDA" x="17.78" y="5.08" length="short" rot="R180"/>
+<pin name="VDD" x="-17.78" y="10.16" length="short"/>
+<text x="-15.24" y="12.954" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-15.24" y="-18.034" size="1.778" layer="96" font="vector">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -12696,6 +12748,34 @@ a microprocessor for decoding.&lt;/p&gt;</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-14149" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VCNL4040" prefix="U">
+<description>&lt;h3&gt;Vishay VCNL4040 Human Presence sensor&lt;/h3&gt;
+&lt;p&gt;A presence sensor with a range of 20 cm. VCNL4040 integrates a proximity sensor (PS), ambient
+light sensor (ALS), and a high power IRED into one small
+package. &lt;/p&gt;</description>
+<gates>
+<gate name="U1" symbol="SPARKX_VCNL4040" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SPARKX_VCNL4040">
+<connects>
+<connect gate="U1" pin="ANODE" pad="4"/>
+<connect gate="U1" pin="CATHODE_LED" pad="5"/>
+<connect gate="U1" pin="CATHODE_SEN" pad="2"/>
+<connect gate="U1" pin="GND" pad="1"/>
+<connect gate="U1" pin="INT" pad="6"/>
+<connect gate="U1" pin="SCL" pad="8"/>
+<connect gate="U1" pin="SDA" pad="7"/>
+<connect gate="U1" pin="VDD" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-14227" constant="no"/>
 </technology>
 </technologies>
 </device>
