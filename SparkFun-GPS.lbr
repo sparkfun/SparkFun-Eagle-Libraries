@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1137,7 +1137,6 @@ Physcial Characteristics
 <wire x1="-7.75" y1="7.75" x2="7.75" y2="7.75" width="0.127" layer="51"/>
 <text x="-7.75" y="8.25" size="0.508" layer="25">&gt;Name</text>
 <text x="-7.75" y="-8.75" size="0.508" layer="27">&gt;Value</text>
-<circle x="-8.35" y="7.75" radius="0.14141875" width="0" layer="21"/>
 <wire x1="6.2" y1="8" x2="8" y2="8" width="0.1778" layer="21"/>
 <wire x1="8" y1="8" x2="8" y2="6.2" width="0.1778" layer="21"/>
 <wire x1="8" y1="-6.2" x2="8" y2="-8" width="0.1778" layer="21"/>
@@ -1188,6 +1187,7 @@ Physcial Characteristics
 <rectangle x1="-4.55" y1="5.85" x2="-3.05" y2="7.65" layer="51"/>
 <rectangle x1="-5.08" y1="-5.08" x2="5.08" y2="5.08" layer="39"/>
 <rectangle x1="-5.08" y1="-5.08" x2="5.08" y2="5.08" layer="40"/>
+<circle x="-8.89" y="7.62" radius="0.40160625" width="0" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -1833,7 +1833,7 @@ Dedicated massive-correlator signal parameter search engine within the baseband 
 </device>
 </devices>
 </deviceset>
-<deviceset name="UBLOX_ZOE_M8-0-10" prefix="U">
+<deviceset name="UBLOX_ZOE_M8Q-0-10" prefix="U">
 <description>&lt;h3&gt;UBLOX ZOE-M8Q-0-10&lt;/h3&gt;
 &lt;p&gt;u-blox ZOE-M8 standard precision GNSS SiP (System in Package) modules feature the high performance u-blox M8
 GNSS engine. ZOE-M8’s ultra-miniature form factor integrates a complete GNSS receiver including SAW filter, LNA
@@ -1885,7 +1885,7 @@ This can be corrected with the &lt;b&gt;SBAS&lt;/b&gt; or &lt;b&gt;QZSS &lt;/b&g
 </device>
 </devices>
 </deviceset>
-<deviceset name="UBLOX_SAM-M8Q" prefix="U">
+<deviceset name="UBLOX_SAM_M8Q-0-10" prefix="U">
 <description>&lt;h3&gt;u-blox SAM-M8Q&lt;/h3&gt;
 &lt;p&gt;The u-blox concurrent SAM-M8Q GNSS patch antenna module benefits from the exceptional performance of the
 u-blox M8 multi-GNSS engine. The SAM-M8Q module offers high sensitivity and minimal acquisition times in an
