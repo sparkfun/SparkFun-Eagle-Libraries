@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.0">
+<eagle version="9.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -14717,6 +14717,112 @@ package with digital interface.&lt;/p&gt;
 <circle x="1.1174125" y="2.697678125" radius="0.254" width="1.5748" layer="30"/>
 <circle x="-1.11741875" y="2.6976875" radius="0.254" width="1.5748" layer="30"/>
 </package>
+<package name="14_PIN_OESIP">
+<description>&lt;h3&gt;MAX30101 14 Pin OESIP&lt;/h3&gt;
+
+&lt;p&gt;Phycial Characteristics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;3.3 X 5.6 X 1.55 mm&lt;/li&gt;
+&lt;li&gt;14 pin - 8mm Pitch&lt;/li&gt;
+&lt;li&gt;OESIP&lt;/li&gt;
+&lt;/ul&gt;</description>
+<wire x1="1.662459375" y1="-2.790190625" x2="1.662459375" y2="2.809809375" width="0.1" layer="51"/>
+<wire x1="1.662459375" y1="2.809809375" x2="-1.637540625" y2="2.809809375" width="0.1" layer="51"/>
+<wire x1="-1.637540625" y1="2.809809375" x2="-1.637540625" y2="-2.790190625" width="0.1" layer="51"/>
+<wire x1="-1.637540625" y1="-2.790190625" x2="1.662459375" y2="-2.790190625" width="0.1" layer="51"/>
+<smd name="P1" x="-1.192540625" y="2.408809375" dx="0.75" dy="0.35" layer="1"/>
+<smd name="P2" x="-1.192540625" y="1.608809375" dx="0.75" dy="0.35" layer="1"/>
+<smd name="P3" x="-1.192540625" y="0.808809375" dx="0.75" dy="0.35" layer="1"/>
+<smd name="P4" x="-1.192540625" y="0.008809375" dx="0.75" dy="0.35" layer="1"/>
+<smd name="P5" x="-1.192540625" y="-0.791190625" dx="0.75" dy="0.35" layer="1"/>
+<smd name="P6" x="-1.192540625" y="-1.591190625" dx="0.75" dy="0.35" layer="1"/>
+<smd name="P7" x="-1.192540625" y="-2.391190625" dx="0.75" dy="0.35" layer="1"/>
+<smd name="P8" x="1.207459375" y="-2.391190625" dx="0.75" dy="0.35" layer="1"/>
+<smd name="P9" x="1.207459375" y="-1.591190625" dx="0.75" dy="0.35" layer="1"/>
+<smd name="P10" x="1.207459375" y="-0.791190625" dx="0.75" dy="0.35" layer="1"/>
+<smd name="P11" x="1.207459375" y="0.008809375" dx="0.75" dy="0.35" layer="1"/>
+<smd name="P12" x="1.207459375" y="0.808809375" dx="0.75" dy="0.35" layer="1"/>
+<smd name="P13" x="1.207459375" y="1.608809375" dx="0.75" dy="0.35" layer="1"/>
+<smd name="P14" x="1.207459375" y="2.408809375" dx="0.75" dy="0.35" layer="1"/>
+<circle x="-2.040540625" y="3.207809375" radius="0.188" width="0" layer="21"/>
+<text x="-2.637540625" y="3.209809375" size="1" layer="25">&gt;NAME</text>
+<text x="-2.637540625" y="-4.187190625" size="1" layer="27">&gt;VALUE</text>
+<wire x1="1.763459375" y1="-2.861190625" x2="1.763459375" y2="2.896809375" width="0.1" layer="39"/>
+<wire x1="1.761459375" y1="2.907809375" x2="-1.737540625" y2="2.907809375" width="0.1" layer="39"/>
+<wire x1="-1.737540625" y1="2.907809375" x2="-1.736540625" y2="-2.892190625" width="0.1" layer="39"/>
+<wire x1="-1.736540625" y1="-2.892190625" x2="1.764459375" y2="-2.891190625" width="0.1" layer="39"/>
+<wire x1="1.764459375" y1="-2.891190625" x2="1.763459375" y2="-2.853190625" width="0.1" layer="41"/>
+<wire x1="-0.722540625" y1="2.199809375" x2="0.747459375" y2="2.199809375" width="0.1" layer="51"/>
+<wire x1="0.747459375" y1="2.199809375" x2="0.997459375" y2="1.949809375" width="0.1" layer="51" curve="-90"/>
+<wire x1="0.997459375" y1="1.949809375" x2="0.997459375" y2="-0.300190625" width="0.1" layer="51"/>
+<wire x1="0.997459375" y1="-0.300190625" x2="0.747459375" y2="-0.550190625" width="0.1" layer="51" curve="-90"/>
+<wire x1="0.747459375" y1="-0.550190625" x2="-0.722540625" y2="-0.550190625" width="0.1" layer="51"/>
+<wire x1="-0.722540625" y1="-0.550190625" x2="-0.972540625" y2="-0.300190625" width="0.1" layer="51" curve="-90"/>
+<wire x1="-0.972540625" y1="-0.300190625" x2="-0.972540625" y2="1.949809375" width="0.1" layer="51"/>
+<wire x1="-0.972540625" y1="1.949809375" x2="-0.722540625" y2="2.199809375" width="0.1" layer="51" curve="-90"/>
+<wire x1="0.742459375" y1="-2.176190625" x2="-0.727540625" y2="-2.176190625" width="0.1" layer="51"/>
+<wire x1="-0.727540625" y1="-2.176190625" x2="-0.977540625" y2="-1.926190625" width="0.1" layer="51" curve="-90"/>
+<wire x1="-0.977540625" y1="-1.926190625" x2="-0.977540625" y2="-1.332190625" width="0.1" layer="51"/>
+<wire x1="0.742459375" y1="-2.176190625" x2="0.992459375" y2="-1.926190625" width="0.1" layer="51" curve="90"/>
+<wire x1="0.992459375" y1="-1.926190625" x2="0.992459375" y2="-1.332190625" width="0.1" layer="51"/>
+<wire x1="-0.977540625" y1="-1.332190625" x2="-0.727540625" y2="-1.082190625" width="0.1" layer="51" curve="-90"/>
+<wire x1="0.992459375" y1="-1.332190625" x2="0.742459375" y2="-1.082190625" width="0.1" layer="51" curve="90"/>
+<wire x1="0.742459375" y1="-1.082190625" x2="-0.727540625" y2="-1.082190625" width="0.1" layer="51"/>
+</package>
+<package name="16_PIN_WLP">
+<description>&lt;h3&gt;16_PIN_WLP&lt;/h3&gt;
+
+Physical Characteristics
+&lt;ul&gt;
+&lt;li&gt;1.554 X 1.572 X .64mm &lt;/li&gt;
+&lt;li&gt;16 Pins&lt;/li&gt;
+&lt;li&gt;.35mm pitch&lt;/li&gt;
+&lt;li&gt;WLP Package&lt;/li&gt;
+&lt;/ul&gt;</description>
+<wire x1="-0.792" y1="0.79" x2="-0.792" y2="-0.7639" width="0.1" layer="51"/>
+<wire x1="0.78" y1="0.79" x2="0.78" y2="-0.7639" width="0.1" layer="51"/>
+<wire x1="-0.7913" y1="0.79" x2="0.78" y2="0.79" width="0.1" layer="51"/>
+<wire x1="-0.7913" y1="-0.782" x2="0.78" y2="-0.782" width="0.1" layer="51"/>
+<smd name="1" x="-0.532" y="0.518" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
+<smd name="2" x="-0.182" y="0.518" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
+<smd name="3" x="0.168" y="0.518" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
+<smd name="4" x="0.518" y="0.518" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
+<smd name="5" x="0.518" y="0.168" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
+<smd name="6" x="0.518" y="-0.182" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
+<smd name="7" x="0.518" y="-0.532" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
+<smd name="8" x="0.168" y="-0.532" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
+<smd name="9" x="-0.182" y="-0.532" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
+<smd name="10" x="-0.532" y="-0.532" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
+<smd name="11" x="-0.532" y="-0.182" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
+<smd name="12" x="-0.532" y="0.168" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
+<smd name="13" x="-0.182" y="0.168" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
+<smd name="14" x="0.168" y="0.168" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
+<smd name="15" x="0.168" y="-0.182" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
+<smd name="16" x="-0.182" y="-0.182" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
+<circle x="-0.532" y="-0.532" radius="0.11" width="0" layer="29"/>
+<circle x="-0.182" y="-0.532" radius="0.11" width="0" layer="29"/>
+<circle x="0.168" y="-0.532" radius="0.11" width="0" layer="29"/>
+<circle x="0.518" y="-0.532" radius="0.11" width="0" layer="29"/>
+<circle x="0.518" y="-0.182" radius="0.11" width="0" layer="29"/>
+<circle x="0.168" y="-0.182" radius="0.11" width="0" layer="29"/>
+<circle x="-0.182" y="-0.182" radius="0.11" width="0" layer="29"/>
+<circle x="-0.532" y="-0.182" radius="0.11" width="0" layer="29"/>
+<circle x="-0.532" y="0.168" radius="0.11" width="0" layer="29"/>
+<circle x="-0.182" y="0.168" radius="0.11" width="0" layer="29"/>
+<circle x="0.168" y="0.168" radius="0.11" width="0" layer="29"/>
+<circle x="0.518" y="0.168" radius="0.11" width="0" layer="29"/>
+<circle x="0.518" y="0.518" radius="0.11" width="0" layer="29"/>
+<circle x="0.168" y="0.518" radius="0.11" width="0" layer="29"/>
+<circle x="-0.182" y="0.518" radius="0.11" width="0" layer="29"/>
+<circle x="-0.532" y="0.518" radius="0.11" width="0" layer="29"/>
+<circle x="-1.292" y="1.218" radius="0.14141875" width="0" layer="21"/>
+<text x="-0.792" y="1.218" size="1" layer="25">&gt;NAME</text>
+<text x="-0.792" y="-2.282" size="1" layer="27">&gt;VALUE</text>
+<wire x1="-0.902" y1="-0.892" x2="0.888" y2="-0.892" width="0.1" layer="39"/>
+<wire x1="0.888" y1="-0.892" x2="0.888" y2="0.898" width="0.1" layer="39"/>
+<wire x1="0.888" y1="0.898" x2="-0.902" y2="0.898" width="0.1" layer="39"/>
+<wire x1="-0.902" y1="0.898" x2="-0.902" y2="-0.892" width="0.1" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="AD5262">
@@ -15789,6 +15895,46 @@ The TLC5947 has a thermal shutdown (TSD) function that turns off all output driv
 <pin name="VDD" x="-10.16" y="2.54" length="short"/>
 <text x="-7.62" y="-5.334" size="1.778" layer="96" align="top-left">&gt;Value</text>
 <text x="-7.62" y="5.334" size="1.778" layer="96">&gt;Name</text>
+</symbol>
+<symbol name="MAX30101">
+<description>&lt;h3&gt;MAX30101 Heart Rate Sensor and Oximeter&lt;/h3&gt;
+&lt;p&gt;&lt;/p&gt;</description>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="NC" x="15.24" y="-5.08" length="middle" direction="nc" rot="R180"/>
+<pin name="VDD" x="-15.24" y="5.08" length="middle" direction="pwr"/>
+<pin name="GND" x="-15.24" y="-5.08" length="middle" direction="pwr"/>
+<pin name="!INT" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="SDA" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="SCL" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="VDD_LED" x="-15.24" y="2.54" length="middle" direction="pwr"/>
+<text x="-10.16" y="10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="MAX32664">
+<description>&lt;h3&gt;MAX32644 Version A Biometric Sensor Hub&lt;/h3&gt;</description>
+<wire x1="-10.16" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="10.16" y2="17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="17.78" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="17.78" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<pin name="NC" x="15.24" y="-12.7" length="middle" direction="nc" rot="R180"/>
+<pin name="GND" x="-15.24" y="-12.7" length="middle" direction="pwr"/>
+<pin name="VDD" x="-15.24" y="15.24" length="middle" direction="pwr"/>
+<pin name="VCORE" x="-15.24" y="12.7" length="middle" direction="pwr"/>
+<pin name="OSC_OUT" x="15.24" y="15.24" length="middle" rot="R180"/>
+<pin name="OSC_IN" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="SNSR_SDA" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="SNSR_SCL" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="SLAVE_SDA" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="SLAVE_SCL" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="!RST" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="!MFIO" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="ACCEL_INT" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="HR_INT" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<text x="-10.16" y="20.32" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -17492,6 +17638,89 @@ package with digital interface.&lt;/p&gt;</description>
 <technology name="4">
 <attribute name="PROD_ID" value="IC-14041" constant="no"/>
 <attribute name="VALUE" value="110DEG" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX30101EFD" prefix="U">
+<description>&lt;h3&gt;MAX30101 High-Sensitivity Pulse Oximeter and
+Heart-Rate Sensor&lt;/h3&gt;
+
+&lt;p&gt;The MAX30101 is an integrated pulse oximetry and
+heart-rate monitor module. It includes internal LEDs,
+photodetectors, optical elements, and low-noise electronics
+with ambient light rejection. The MAX30101 provides a
+complete system solution to ease the design-in process
+for mobile and wearable devices.
+&lt;/p&gt;
+&lt;p&gt;
+The MAX30101 operates on a single 1.8V power supply
+and a separate 5.0V power supply for the internal LEDs.
+Communication is through a standard I2C-compatible
+interface. The module can be shut down through software
+with zero standby current, allowing the power rails to
+remain powered at all times&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MAX30101" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="14_PIN_OESIP">
+<connects>
+<connect gate="G$1" pin="!INT" pad="P13"/>
+<connect gate="G$1" pin="GND" pad="P4 P12"/>
+<connect gate="G$1" pin="NC" pad="P1 P5 P6 P7 P8 P14"/>
+<connect gate="G$1" pin="SCL" pad="P2"/>
+<connect gate="G$1" pin="SDA" pad="P3"/>
+<connect gate="G$1" pin="VDD" pad="P11"/>
+<connect gate="G$1" pin="VDD_LED" pad="P9 P10"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-14270" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX32664GWEA" prefix="U">
+<description>&lt;h3&gt;Maxim MAX32664 Biometric Sensor Hub&lt;/h3&gt;
+&lt;p&gt;he MAX32664 is a sensor hub family with embedded
+firmware and algorithms for wearables. It seamlessly
+enables customer-desired sensor functionality, including
+communication with Maxim’s optical sensor solutions and
+delivering raw or calculated data to the outside world. This
+is achieved while keeping overall system power consumption in check.
+&lt;/p&gt;
+&lt;p&gt;
+The MAX32664 Version A supports the MAX30101/
+MAX30102 high-sensitivity pulse oximeter and heart rate
+sensor for wearable health for finger-based applications.
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MAX32664" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="16_PIN_WLP">
+<connects>
+<connect gate="G$1" pin="!MFIO" pad="16"/>
+<connect gate="G$1" pin="!RST" pad="12"/>
+<connect gate="G$1" pin="ACCEL_INT" pad="15"/>
+<connect gate="G$1" pin="GND" pad="13"/>
+<connect gate="G$1" pin="HR_INT" pad="6"/>
+<connect gate="G$1" pin="NC" pad="7 8 11"/>
+<connect gate="G$1" pin="OSC_IN" pad="2"/>
+<connect gate="G$1" pin="OSC_OUT" pad="1"/>
+<connect gate="G$1" pin="SLAVE_SCL" pad="10"/>
+<connect gate="G$1" pin="SLAVE_SDA" pad="9"/>
+<connect gate="G$1" pin="SNSR_SCL" pad="5"/>
+<connect gate="G$1" pin="SNSR_SDA" pad="14"/>
+<connect gate="G$1" pin="VCORE" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-14271" constant="no"/>
 </technology>
 </technologies>
 </device>
