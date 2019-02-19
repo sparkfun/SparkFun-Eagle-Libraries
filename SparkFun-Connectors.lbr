@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -25951,8 +25951,6 @@ Reversed pinout to match Raspberry Pi male header pinout when coupled.</descript
 &lt;/ul&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=http://www.neutrik.us/zoolu-website/media/download/1429/Drawing+NC3MAAH-1&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;</description>
 <rectangle x1="-12.5" y1="8.89" x2="12.8" y2="11.59" layer="51"/>
-<pad name="NC1" x="-3.81" y="5.08" drill="1.6002"/>
-<pad name="NC2" x="3.81" y="0" drill="1.6002"/>
 <pad name="3" x="0" y="-8.89" drill="1.2"/>
 <pad name="1" x="3.81" y="-8.89" drill="1.6002"/>
 <pad name="2" x="-3.81" y="-8.89" drill="1.6002"/>
@@ -25967,6 +25965,8 @@ Reversed pinout to match Raspberry Pi male header pinout when coupled.</descript
 <wire x1="6.35" y1="-10.16" x2="6.35" y2="-5.08" width="0.2032" layer="51"/>
 <wire x1="6.35" y1="-5.08" x2="10.922" y2="-5.08" width="0.2032" layer="51"/>
 <wire x1="10.922" y1="-5.08" x2="10.922" y2="8.89" width="0.2032" layer="51"/>
+<hole x="-3.81" y="5.08" drill="1.6002"/>
+<hole x="3.81" y="0" drill="1.6002"/>
 </package>
 <package name="XLR-3_FEMALE">
 <description>&lt;h3&gt;XLR-3 Connector - Package for the NC3FAAH-1 XLR-3 Connector&lt;/h3&gt;
@@ -25976,8 +25976,6 @@ Reversed pinout to match Raspberry Pi male header pinout when coupled.</descript
 &lt;/ul&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=http://www.neutrik.us/zoolu-website/media/download/1389/Drawing+NC3FAAH1&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;</description>
 <rectangle x1="-12.5" y1="12.7" x2="12.8" y2="15.4" layer="51"/>
-<pad name="NC1" x="-3.81" y="8.89" drill="1.6002"/>
-<pad name="NC2" x="3.81" y="3.81" drill="1.6002"/>
 <pad name="3" x="0" y="-4.445" drill="1.2"/>
 <pad name="1" x="-3.81" y="0" drill="1.6002"/>
 <pad name="2" x="3.81" y="-0.635" drill="1.6002"/>
@@ -26002,6 +26000,8 @@ Reversed pinout to match Raspberry Pi male header pinout when coupled.</descript
 <wire x1="6.35" y1="-6.35" x2="6.35" y2="1.27" width="0.2032" layer="51"/>
 <wire x1="6.35" y1="1.27" x2="10.922" y2="1.27" width="0.2032" layer="51"/>
 <wire x1="10.922" y1="1.27" x2="10.922" y2="12.7" width="0.2032" layer="51"/>
+<hole x="-3.81" y="8.89" drill="1.6002"/>
+<hole x="3.81" y="3.81" drill="1.6002"/>
 </package>
 <package name="USB-SOLDER-PADS">
 <smd name="D-" x="0" y="0.635" dx="3" dy="0.9" layer="1" cream="no"/>
@@ -26116,6 +26116,40 @@ CONN-14082</description>
 <rectangle x1="10.3886" y1="-3.6576" x2="12.3952" y2="-1.4478" layer="29"/>
 <rectangle x1="10.4902" y1="-3.556" x2="12.2936" y2="-1.5494" layer="31"/>
 <rectangle x1="-12.2936" y1="-3.556" x2="-10.4902" y2="-1.5494" layer="31"/>
+</package>
+<package name="1X16_LOCK_NO_SILK">
+<pad name="1" x="-19.05" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="-16.51" y="-0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="-13.97" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="4" x="-11.43" y="-0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="5" x="-8.89" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="6" x="-6.35" y="-0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="7" x="-3.81" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="8" x="-1.27" y="-0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="9" x="1.27" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="10" x="3.81" y="-0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="11" x="6.35" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="12" x="8.89" y="-0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="13" x="11.43" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="14" x="13.97" y="-0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="15" x="16.51" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="16" x="19.05" y="-0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
+<rectangle x1="-6.604" y1="-0.254" x2="-6.096" y2="0.254" layer="51"/>
+<rectangle x1="-9.144" y1="-0.254" x2="-8.636" y2="0.254" layer="51"/>
+<rectangle x1="-11.684" y1="-0.254" x2="-11.176" y2="0.254" layer="51"/>
+<rectangle x1="-14.224" y1="-0.254" x2="-13.716" y2="0.254" layer="51"/>
+<rectangle x1="-16.764" y1="-0.254" x2="-16.256" y2="0.254" layer="51"/>
+<rectangle x1="-19.304" y1="-0.254" x2="-18.796" y2="0.254" layer="51"/>
+<rectangle x1="13.716" y1="-0.254" x2="14.224" y2="0.254" layer="51"/>
+<rectangle x1="11.176" y1="-0.254" x2="11.684" y2="0.254" layer="51"/>
+<rectangle x1="8.636" y1="-0.254" x2="9.144" y2="0.254" layer="51"/>
+<rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
+<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="16.256" y1="-0.254" x2="16.764" y2="0.254" layer="51"/>
+<rectangle x1="18.796" y1="-0.254" x2="19.304" y2="0.254" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -35520,6 +35554,29 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </technologies>
 </device>
 <device name="1X16_SM_SQ_NOSILK" package="1X16_SM_SQ_NOSILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="LOCK_NO_SILK" package="1X16_LOCK_NO_SILK">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>
