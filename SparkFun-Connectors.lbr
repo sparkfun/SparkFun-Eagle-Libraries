@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.0">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -35,7 +35,7 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
@@ -26152,22 +26152,22 @@ CONN-14082</description>
 <rectangle x1="18.796" y1="-0.254" x2="19.304" y2="0.254" layer="51"/>
 </package>
 <package name="1X04_SPRING_TERMINAL">
-<wire x1="-0.9" y1="5.34" x2="11.82" y2="5.34" width="0.2032" layer="21"/>
-<wire x1="11.82" y1="5.34" x2="11.82" y2="-4.9" width="0.2032" layer="21"/>
-<wire x1="11.82" y1="-4.9" x2="-0.9" y2="-4.9" width="0.2032" layer="21"/>
-<wire x1="-0.9" y1="-4.9" x2="-0.9" y2="5.34" width="0.2032" layer="21"/>
-<pad name="1" x="0" y="2.54" drill="1" diameter="1.8" rot="R90"/>
-<pad name="5" x="0" y="-2.54" drill="0.8" diameter="1.4" rot="R90"/>
-<pad name="2" x="2.54" y="2.54" drill="1" diameter="1.8" rot="R90"/>
-<pad name="3" x="5.08" y="2.54" drill="1" diameter="1.8" rot="R90"/>
-<pad name="4" x="7.62" y="2.54" drill="1" diameter="1.8" rot="R90"/>
-<rectangle x1="-0.9" y1="-6.3" x2="0.78" y2="-3.3" layer="51"/>
-<rectangle x1="1.64" y1="-6.3" x2="3.32" y2="-3.3" layer="51"/>
-<rectangle x1="4.18" y1="-6.3" x2="5.86" y2="-3.3" layer="51"/>
-<rectangle x1="6.72" y1="-6.3" x2="8.4" y2="-3.3" layer="51"/>
-<pad name="6" x="2.54" y="-2.54" drill="0.8" diameter="1.4" rot="R90"/>
-<pad name="7" x="5.08" y="-2.54" drill="0.8" diameter="1.4" rot="R90"/>
-<pad name="8" x="7.62" y="-2.54" drill="0.8" diameter="1.4" rot="R90"/>
+<wire x1="11.72" y1="-5.34" x2="-0.98" y2="-5.34" width="0.2032" layer="21"/>
+<wire x1="-0.98" y1="-5.34" x2="-0.98" y2="4.9" width="0.2032" layer="21"/>
+<wire x1="-0.98" y1="4.9" x2="11.72" y2="4.9" width="0.2032" layer="21"/>
+<wire x1="11.72" y1="4.9" x2="11.72" y2="-5.34" width="0.2032" layer="21"/>
+<pad name="1" x="7.62" y="2.54" drill="1.1" diameter="1.8" rot="R270"/>
+<pad name="5" x="7.62" y="-2.54" drill="1.1" diameter="1.8" rot="R270"/>
+<pad name="2" x="5.08" y="2.54" drill="1.1" diameter="1.8" rot="R270"/>
+<pad name="3" x="2.54" y="2.54" drill="1.1" diameter="1.8" rot="R270"/>
+<pad name="4" x="0" y="2.54" drill="1.1" diameter="1.8" rot="R270"/>
+<rectangle x1="6.84" y1="3.3" x2="8.52" y2="6.3" layer="51" rot="R180"/>
+<rectangle x1="4.3" y1="3.3" x2="5.98" y2="6.3" layer="51" rot="R180"/>
+<rectangle x1="1.76" y1="3.3" x2="3.44" y2="6.3" layer="51" rot="R180"/>
+<rectangle x1="-0.78" y1="3.3" x2="0.9" y2="6.3" layer="51" rot="R180"/>
+<pad name="6" x="5.08" y="-2.54" drill="1.1" diameter="1.8" rot="R270"/>
+<pad name="7" x="2.54" y="-2.54" drill="1.1" diameter="1.8" rot="R270"/>
+<pad name="8" x="0" y="-2.54" drill="1.1" diameter="1.8" rot="R270"/>
 <text x="1.27" y="0" size="0.762" layer="25">&gt;Name</text>
 <text x="1.27" y="-1.27" size="0.762" layer="27">&gt;Value</text>
 </package>
