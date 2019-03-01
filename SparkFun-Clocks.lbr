@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.8" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1359,17 +1360,17 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <wire x1="1.85" y1="-1.25" x2="-1.85" y2="-1.25" width="0.127" layer="51"/>
 <wire x1="-1.85" y1="-1.25" x2="-1.85" y2="1.25" width="0.127" layer="51"/>
 <wire x1="-1.85" y1="1.25" x2="1.85" y2="1.25" width="0.127" layer="51"/>
-<text x="-1.85" y="1.95" size="0.508" layer="25">&gt;Name</text>
-<text x="-1.75" y="-2.45" size="0.508" layer="27">&gt;Value</text>
+<text x="-1.85" y="1.95" size="0.508" layer="25" font="vector">&gt;Name</text>
+<text x="-1.75" y="-2.45" size="0.508" layer="27" font="vector">&gt;Value</text>
 <circle x="-2.45" y="-1.75" radius="0.14141875" width="0" layer="21"/>
-<wire x1="1.48" y1="1.8" x2="2.1" y2="1.8" width="0.1778" layer="21"/>
-<wire x1="2.1" y1="1.8" x2="2.1" y2="1" width="0.1778" layer="21"/>
-<wire x1="2.1" y1="-1" x2="2.1" y2="-1.8" width="0.1778" layer="21"/>
-<wire x1="2.1" y1="-1.8" x2="1.48" y2="-1.8" width="0.1778" layer="21"/>
-<wire x1="-1.48" y1="-1.8" x2="-2.1" y2="-1.8" width="0.1778" layer="21"/>
-<wire x1="-2.1" y1="-1.8" x2="-2.1" y2="-1" width="0.1778" layer="21"/>
-<wire x1="-2.1" y1="1" x2="-2.1" y2="1.8" width="0.1778" layer="21"/>
-<wire x1="-2.1" y1="1.8" x2="-1.48" y2="1.8" width="0.1778" layer="21"/>
+<wire x1="1.48" y1="1.8" x2="2.1" y2="1.8" width="0.2032" layer="21"/>
+<wire x1="2.1" y1="1.8" x2="2.1" y2="1" width="0.2032" layer="21"/>
+<wire x1="2.1" y1="-1" x2="2.1" y2="-1.8" width="0.2032" layer="21"/>
+<wire x1="2.1" y1="-1.8" x2="1.48" y2="-1.8" width="0.2032" layer="21"/>
+<wire x1="-1.48" y1="-1.8" x2="-2.1" y2="-1.8" width="0.2032" layer="21"/>
+<wire x1="-2.1" y1="-1.8" x2="-2.1" y2="-1" width="0.2032" layer="21"/>
+<wire x1="-2.1" y1="1" x2="-2.1" y2="1.8" width="0.2032" layer="21"/>
+<wire x1="-2.1" y1="1.8" x2="-1.48" y2="1.8" width="0.2032" layer="21"/>
 <smd name="1" x="-1.6" y="-1.1" dx="0.8" dy="0.5" layer="1" rot="R90" cream="no"/>
 <smd name="2" x="-0.8" y="-1.1" dx="0.8" dy="0.5" layer="1" rot="R90" cream="no"/>
 <smd name="3" x="0" y="-1.1" dx="0.8" dy="0.5" layer="1" rot="R90" cream="no"/>
