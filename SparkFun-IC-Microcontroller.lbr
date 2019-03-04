@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.0">
+<eagle version="9.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -528,7 +528,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="9.525" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="MLF32">
-<description>&lt;b&gt;32M1-A&lt;/b&gt; Micro Lead Frame package (MLF)</description>
+<description>&lt;b&gt;Atmega168 32M1-A&lt;/b&gt; 
+
+&lt;p&gt;Physical Characteristics&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Micro Leadframe(MLF)&lt;/li&gt;
+&lt;li&gt;5mm x 5mm x .9mm&lt;/li&gt;
+&lt;li&gt;32 pins @ .5mm Pitch&lt;/li&gt;
+&lt;li&gt;Has a ground pad underneath IC&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
 <wire x1="-2.25" y1="2.15" x2="-2.15" y2="2.25" width="0.254" layer="21"/>
 <wire x1="-2.05" y1="2.35" x2="2.05" y2="2.35" width="0.254" layer="51"/>
 <wire x1="2.15" y1="2.25" x2="2.25" y2="2.15" width="0.254" layer="21"/>
@@ -537,7 +546,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="2.05" y1="-2.35" x2="-2.05" y2="-2.35" width="0.254" layer="51"/>
 <wire x1="-2.15" y1="-2.25" x2="-2.25" y2="-2.15" width="0.254" layer="21"/>
 <wire x1="-2.35" y1="-2.05" x2="-2.35" y2="2.05" width="0.254" layer="51"/>
-<circle x="-1.55" y="1.55" radius="0.15" width="0.254" layer="21"/>
 <smd name="1" x="-2.35" y="1.75" dx="0.7" dy="0.3" layer="1" roundness="50"/>
 <smd name="2" x="-2.35" y="1.25" dx="0.7" dy="0.3" layer="1" roundness="50"/>
 <smd name="3" x="-2.35" y="0.75" dx="0.7" dy="0.3" layer="1" roundness="50"/>
@@ -604,6 +612,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-1.9" y1="2.05" x2="-1.6" y2="2.5" layer="51"/>
 <text x="0" y="3.175" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-3.81" size="0.6096" layer="27" font="vector" ratio="20" align="bottom-center">&gt;VALUE</text>
+<circle x="-2.667" y="2.667" radius="0.283978125" width="0" layer="21"/>
+<smd name="33" x="0" y="0" dx="3.1" dy="3.1" layer="1" roundness="10" cream="no"/>
+<rectangle x1="-1.27" y1="-1.27" x2="1.27" y2="1.27" layer="31"/>
 </package>
 <package name="TQFP100">
 <description>&lt;b&gt;100-lead Thin Quad Flat Pack Package Outline&lt;/b&gt;</description>
@@ -5416,7 +5427,7 @@ TC6_WO1</text>
 </device>
 </devices>
 </deviceset>
-<deviceset name="ATMEGA168" prefix="U">
+<deviceset name="ATMEGA168_MLF" prefix="U">
 <description>&lt;h3&gt;ATMEGA 168&lt;/h3&gt;
 &lt;p&gt;Atmel 32-pin 8-bit micro, 16k flash.&lt;/p&gt;
 &lt;h4&gt;SparkFun Products&lt;/h4&gt;
@@ -5426,7 +5437,7 @@ TC6_WO1</text>
 &lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8884"&gt;SparkFun Serial Graphic LCD 160x128&lt;/a&gt; (LCD-08884)&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
-<gate name="U1" symbol="ATMEGAXX8-32PIN" x="0" y="0"/>
+<gate name="U1" symbol="ATMEGAXX8-32PIN" x="-2.54" y="2.54"/>
 </gates>
 <devices>
 <device name="MLF" package="MLF32">
@@ -5436,7 +5447,9 @@ TC6_WO1</text>
 <connect gate="U1" pin="AGND" pad="21"/>
 <connect gate="U1" pin="AREF" pad="20"/>
 <connect gate="U1" pin="AVCC" pad="18"/>
-<connect gate="U1" pin="GND@3" pad="3 5"/>
+<connect gate="U1" pin="GND@3" pad="3"/>
+<connect gate="U1" pin="GND@5" pad="5"/>
+<connect gate="U1" pin="GND@PAD" pad="33"/>
 <connect gate="U1" pin="PB0(ICP)" pad="12"/>
 <connect gate="U1" pin="PB1(OC1A)" pad="13"/>
 <connect gate="U1" pin="PB2(SS/OC1B)" pad="14"/>
@@ -5466,47 +5479,6 @@ TC6_WO1</text>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="NA-XXXXX" constant="no"/>
-<attribute name="VALUE" value="ATMEGA168" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="" package="TQFP32-08">
-<connects>
-<connect gate="U1" pin="ADC6" pad="19"/>
-<connect gate="U1" pin="ADC7" pad="22"/>
-<connect gate="U1" pin="AGND" pad="5"/>
-<connect gate="U1" pin="AREF" pad="20"/>
-<connect gate="U1" pin="AVCC" pad="18"/>
-<connect gate="U1" pin="GND@3" pad="3 21"/>
-<connect gate="U1" pin="PB0(ICP)" pad="12"/>
-<connect gate="U1" pin="PB1(OC1A)" pad="13"/>
-<connect gate="U1" pin="PB2(SS/OC1B)" pad="14"/>
-<connect gate="U1" pin="PB3(MOSI/OC2)" pad="15"/>
-<connect gate="U1" pin="PB4(MISO)" pad="16"/>
-<connect gate="U1" pin="PB5(SCK)" pad="17"/>
-<connect gate="U1" pin="PB6(XTAL1/TOSC1)" pad="7"/>
-<connect gate="U1" pin="PB7(XTAL2/TOSC2)" pad="8"/>
-<connect gate="U1" pin="PC0(ADC0)" pad="23"/>
-<connect gate="U1" pin="PC1(ADC1)" pad="24"/>
-<connect gate="U1" pin="PC2(ADC2)" pad="25"/>
-<connect gate="U1" pin="PC3(ADC3)" pad="26"/>
-<connect gate="U1" pin="PC4(ADC4/SDA)" pad="27"/>
-<connect gate="U1" pin="PC5(ADC5/SCL)" pad="28"/>
-<connect gate="U1" pin="PC6(/RESET)" pad="29"/>
-<connect gate="U1" pin="PD0(RXD)" pad="30"/>
-<connect gate="U1" pin="PD1(TXD)" pad="31"/>
-<connect gate="U1" pin="PD2(INT0)" pad="32"/>
-<connect gate="U1" pin="PD3(INT1)" pad="1"/>
-<connect gate="U1" pin="PD4(XCK/T0)" pad="2"/>
-<connect gate="U1" pin="PD5(T1)" pad="9"/>
-<connect gate="U1" pin="PD6(AIN0)" pad="10"/>
-<connect gate="U1" pin="PD7(AIN1)" pad="11"/>
-<connect gate="U1" pin="VCC@4" pad="4"/>
-<connect gate="U1" pin="VCC@6" pad="6"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="IC-08594" constant="no"/>
 <attribute name="VALUE" value="ATMEGA168" constant="no"/>
 </technology>
 </technologies>
