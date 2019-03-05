@@ -16036,7 +16036,7 @@ The TLC5947 has a thermal shutdown (TSD) function that turns off all output driv
 <pin name="SCL/I2CL" x="20.32" y="7.62" length="middle" direction="in" rot="R180"/>
 <pin name="MOSI/I2CD" x="20.32" y="12.7" length="middle" direction="in" rot="R180"/>
 <pin name="MISO" x="20.32" y="10.16" length="middle" direction="out" rot="R180"/>
-<pin name="CS" x="20.32" y="5.08" length="middle" direction="in" rot="R180"/>
+<pin name="!CS" x="20.32" y="5.08" length="middle" direction="in" rot="R180"/>
 <pin name="VDD" x="-20.32" y="15.24" length="middle" direction="pwr"/>
 <pin name="INP" x="20.32" y="-10.16" length="middle" rot="R180"/>
 <pin name="EN_VREG" x="-20.32" y="-5.08" length="middle"/>
@@ -17856,10 +17856,10 @@ blocks.&lt;/p&gt;</description>
 <devices>
 <device name="QFN" package="16LD_MLPQ">
 <connects>
+<connect gate="G$1" pin="!CS" pad="8"/>
 <connect gate="G$1" pin="AC_GND" pad="1"/>
 <connect gate="G$1" pin="ADD0" pad="15"/>
 <connect gate="G$1" pin="ADD1" pad="16"/>
-<connect gate="G$1" pin="CS" pad="8"/>
 <connect gate="G$1" pin="EN_VREG" pad="7"/>
 <connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="GND_PAD" pad="17"/>
