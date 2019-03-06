@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -26278,6 +26278,24 @@ CONN-14082</description>
 <text x="0" y="-2.3368" size="0.6096" layer="25" font="vector" ratio="20" align="top-center">&gt;Name</text>
 <text x="0" y="0" size="0.6096" layer="27" font="vector" ratio="20" align="center">&gt;Value</text>
 </package>
+<package name="1X07_LOCK_NO_SILK">
+<pad name="1" x="0" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="2.54" y="-0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="5.08" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="4" x="7.62" y="-0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="5" x="10.16" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="6" x="12.7" y="-0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="7" x="15.24" y="0.127" drill="1.016" diameter="1.8796" rot="R90"/>
+<rectangle x1="14.986" y1="-0.254" x2="15.494" y2="0.254" layer="51"/>
+<rectangle x1="12.446" y1="-0.254" x2="12.954" y2="0.254" layer="51"/>
+<rectangle x1="9.906" y1="-0.254" x2="10.414" y2="0.254" layer="51"/>
+<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -31700,6 +31718,20 @@ This footprint was designed to help hold the alignment of a through-hole compone
 </technologies>
 </device>
 <device name="3.5MM-7" package="SCREWTERMINAL-3.5MM-7">
+<connects>
+<connect gate="J1" pin="1" pad="1"/>
+<connect gate="J1" pin="2" pad="2"/>
+<connect gate="J1" pin="3" pad="3"/>
+<connect gate="J1" pin="4" pad="4"/>
+<connect gate="J1" pin="5" pad="5"/>
+<connect gate="J1" pin="6" pad="6"/>
+<connect gate="J1" pin="7" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="LOCK_NO_SILK" package="1X07_LOCK_NO_SILK">
 <connects>
 <connect gate="J1" pin="1" pad="1"/>
 <connect gate="J1" pin="2" pad="2"/>
