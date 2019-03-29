@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -28854,15 +28854,15 @@ Single connection binding post</description>
 <pin name="GND@5" x="-15.24" y="0" length="short"/>
 <pin name="KEY" x="-15.24" y="-2.54" length="short"/>
 <pin name="GNDDTCT" x="-15.24" y="-5.08" length="short"/>
-<pin name="!RESET" x="17.78" y="-5.08" length="short" rot="R180"/>
-<pin name="NC/TDI" x="17.78" y="-2.54" length="short" rot="R180"/>
-<pin name="SWO/TDO" x="17.78" y="0" length="short" rot="R180"/>
-<pin name="SWDCLK/TCK" x="17.78" y="2.54" length="short" rot="R180"/>
-<pin name="SWDIO/TMS" x="17.78" y="5.08" length="short" rot="R180"/>
+<pin name="!RESET" x="15.24" y="-5.08" length="short" rot="R180"/>
+<pin name="NC/TDI" x="15.24" y="-2.54" length="short" rot="R180"/>
+<pin name="SWO/TDO" x="15.24" y="0" length="short" rot="R180"/>
+<pin name="SWDCLK/TCK" x="15.24" y="2.54" length="short" rot="R180"/>
+<pin name="SWDIO/TMS" x="15.24" y="5.08" length="short" rot="R180"/>
 <wire x1="-12.7" y1="-7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="7.62" x2="15.24" y2="7.62" width="0.254" layer="94"/>
-<wire x1="15.24" y1="7.62" x2="15.24" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
 <text x="-12.7" y="7.874" size="1.778" layer="95" font="vector">&gt;Name</text>
 <text x="-12.7" y="-9.906" size="1.778" layer="96" font="vector">&gt;Value</text>
 </symbol>
