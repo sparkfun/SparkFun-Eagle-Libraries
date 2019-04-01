@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -25,9 +25,9 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -8441,14 +8441,14 @@ Used by APDS-9301</description>
 <wire x1="-1.016" y1="1.932" x2="-1.524" y2="1.932" width="0.1524" layer="21"/>
 <wire x1="-1.524" y1="1.932" x2="-1.524" y2="1.424" width="0.1524" layer="21"/>
 <smd name="4" x="0.9" y="0.3" dx="0.725" dy="0.522" layer="1"/>
-<hole x="0" y="-1" drill="0.1"/>
+<hole x="0" y="-1" drill="0.8"/>
 <smd name="5" x="0.9" y="1.3" dx="0.725" dy="0.522" layer="1"/>
 <smd name="1" x="-0.9" y="1.3" dx="0.725" dy="0.522" layer="1"/>
 <smd name="2" x="-0.9" y="0.3" dx="0.725" dy="0.522" layer="1"/>
-<circle x="0" y="-1" radius="0.5125" width="0.3" layer="1"/>
-<circle x="0" y="-1" radius="0.5125" width="0.6" layer="29"/>
-<circle x="0" y="-1" radius="0.5125" width="0.3" layer="31"/>
-<smd name="3" x="0" y="-0.5" dx="0.381" dy="0.254" layer="1"/>
+<circle x="0" y="-1" radius="0.6625" width="0.3" layer="1"/>
+<circle x="0" y="-1" radius="0.6625" width="0.6" layer="29"/>
+<circle x="0" y="-1" radius="0.6625" width="0.3" layer="31"/>
+<smd name="3" x="0" y="-0.4" dx="0.5" dy="0.17" layer="1"/>
 <text x="-1.6" y="2.2" size="0.6" layer="25" font="vector">&gt;NAME</text>
 <text x="-1.6" y="-2.9" size="0.6" layer="27" font="vector">&gt;VALUE</text>
 </package>
