@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -25,9 +25,9 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -45,7 +45,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -8423,6 +8423,35 @@ Used by APDS-9301</description>
 <smd name="5" x="1.1" y="0" dx="1" dy="0.35" layer="1"/>
 <smd name="6" x="1.1" y="0.6" dx="1" dy="0.35" layer="1"/>
 </package>
+<package name="SPH0641LM4H-1_MICROPHONE">
+<description>&lt;h3&gt;SPH0641LM4H-1 Microphone&lt;/h3&gt;
+&lt;a href = "https://media.digikey.com/pdf/Data%20Sheets/Knowles%20Acoustics%20PDFs/SPH0641LM4H-1.pdf"&gt;Datasheet&lt;/a&gt;
+
+&lt;h4&gt;Specifications&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Pin Count: 5
+&lt;li&gt; Devices: SPH061LM4H-1 Microphone
+&lt;/ul&gt;</description>
+<wire x1="1.524" y1="1.424" x2="1.524" y2="1.932" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="1.932" x2="1.524" y2="1.932" width="0.1524" layer="21"/>
+<wire x1="1.524" y1="-1.524" x2="1.524" y2="-2.032" width="0.1524" layer="21"/>
+<wire x1="1.524" y1="-2.032" x2="1.016" y2="-2.032" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="-1.524" x2="-1.524" y2="-2.032" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="-2.032" x2="-1.016" y2="-2.032" width="0.1524" layer="21"/>
+<wire x1="-1.016" y1="1.932" x2="-1.524" y2="1.932" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="1.932" x2="-1.524" y2="1.424" width="0.1524" layer="21"/>
+<smd name="4" x="0.9" y="0.3" dx="0.725" dy="0.522" layer="1"/>
+<hole x="0" y="-1" drill="0.1"/>
+<smd name="5" x="0.9" y="1.3" dx="0.725" dy="0.522" layer="1"/>
+<smd name="1" x="-0.9" y="1.3" dx="0.725" dy="0.522" layer="1"/>
+<smd name="2" x="-0.9" y="0.3" dx="0.725" dy="0.522" layer="1"/>
+<circle x="0" y="-1" radius="0.5125" width="0.3" layer="1"/>
+<circle x="0" y="-1" radius="0.5125" width="0.6" layer="29"/>
+<circle x="0" y="-1" radius="0.5125" width="0.3" layer="31"/>
+<smd name="3" x="0" y="-0.5" dx="0.381" dy="0.254" layer="1"/>
+<text x="-1.6" y="2.2" size="0.6" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.6" y="-2.9" size="0.6" layer="27" font="vector">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ADMP401">
@@ -10261,6 +10290,24 @@ channels, 3 magnetic field channels&lt;/li&gt;
 <wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
 <text x="-10.16" y="5.842" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="SPH0641LM4H-1_MICROPHONE">
+<description>&lt;h3&gt; SPH0641LM4H-1 Microphone&lt;/h3&gt;
+
+
+A miniature, high-performance, low power,
+bottom port silicon digital microphone with a single bit PDM output.</description>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.1524" layer="94"/>
+<pin name="VDD" x="-12.7" y="5.08" length="short" direction="pwr"/>
+<pin name="GND" x="-12.7" y="-5.08" length="short" direction="pwr"/>
+<pin name="SELECT" x="12.7" y="5.08" length="short" direction="in" rot="R180"/>
+<pin name="CLK" x="12.7" y="0" length="short" direction="in" rot="R180"/>
+<pin name="DATA" x="12.7" y="-5.08" length="short" direction="out" rot="R180"/>
+<text x="-6.096" y="9.144" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="-5.334" y="-9.144" size="1.778" layer="96" align="center">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -13283,6 +13330,32 @@ blocks.&lt;/p&gt;</description>
 <technology name="">
 <attribute name="PROD_ID" value="IC-14356" constant="no"/>
 <attribute name="VALUE" value="CAP1203"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPH0641LM4H-1_MICROPHONE" prefix="U">
+<description>&lt;h3&gt;SPH0641LM4H-1 Microphone&lt;/h3&gt;
+
+A miniature, high-performance, low power,
+bottom port silicon digital microphone with a single bit PDM output.</description>
+<gates>
+<gate name="G$1" symbol="SPH0641LM4H-1_MICROPHONE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SPH0641LM4H-1_MICROPHONE">
+<connects>
+<connect gate="G$1" pin="CLK" pad="4"/>
+<connect gate="G$1" pin="DATA" pad="1"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="SELECT" pad="2"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-14361" constant="no"/>
+<attribute name="VALUE" value="SPH0641LM4H-1" constant="no"/>
 </technology>
 </technologies>
 </device>
