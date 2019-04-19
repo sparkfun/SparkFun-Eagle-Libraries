@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -27,7 +27,7 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -7166,34 +7166,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0.69" y1="-1.093" x2="0.985" y2="-1.38" width="0.05" layer="51" curve="-73.739795"/>
 <wire x1="0.985" y1="-1.89" x2="0.7" y2="-2.183" width="0.05" layer="51" curve="-73.739795"/>
 <wire x1="-0.69" y1="-2.183" x2="-0.985" y2="-1.9" width="0.05" layer="51" curve="-73.739795"/>
-<rectangle x1="0.87" y1="2.24" x2="1.53" y2="2.56" layer="31"/>
-<rectangle x1="-1.53" y1="2.24" x2="-0.87" y2="2.56" layer="31"/>
-<rectangle x1="-1.53" y1="1.44" x2="-0.87" y2="1.76" layer="31"/>
-<rectangle x1="-1.53" y1="0.64" x2="-0.87" y2="0.96" layer="31"/>
-<rectangle x1="-1.53" y1="-0.16" x2="-0.87" y2="0.16" layer="31"/>
-<rectangle x1="-1.53" y1="-0.96" x2="-0.87" y2="-0.64" layer="31"/>
-<rectangle x1="-1.53" y1="-1.76" x2="-0.87" y2="-1.44" layer="31"/>
-<rectangle x1="-1.53" y1="-2.56" x2="-0.87" y2="-2.24" layer="31"/>
-<rectangle x1="0.87" y1="-2.56" x2="1.53" y2="-2.24" layer="31"/>
-<rectangle x1="0.87" y1="-1.76" x2="1.53" y2="-1.44" layer="31"/>
-<rectangle x1="0.87" y1="-0.96" x2="1.53" y2="-0.64" layer="31"/>
-<rectangle x1="0.87" y1="-0.16" x2="1.53" y2="0.16" layer="31"/>
-<rectangle x1="0.87" y1="0.64" x2="1.53" y2="0.96" layer="31"/>
-<rectangle x1="0.87" y1="1.44" x2="1.53" y2="1.76" layer="31"/>
-<smd name="1" x="-1.2" y="2.4" dx="0.75" dy="0.35" layer="1" cream="no"/>
-<smd name="2" x="-1.2" y="1.6" dx="0.75" dy="0.35" layer="1" cream="no"/>
-<smd name="3" x="-1.2" y="0.8" dx="0.75" dy="0.35" layer="1" cream="no"/>
-<smd name="4" x="-1.2" y="0" dx="0.75" dy="0.35" layer="1" cream="no"/>
-<smd name="5" x="-1.2" y="-0.8" dx="0.75" dy="0.35" layer="1" cream="no"/>
-<smd name="6" x="-1.2" y="-1.6" dx="0.75" dy="0.35" layer="1" cream="no"/>
-<smd name="7" x="-1.2" y="-2.4" dx="0.75" dy="0.35" layer="1" cream="no"/>
-<smd name="8" x="1.2" y="-2.4" dx="0.75" dy="0.35" layer="1" cream="no"/>
-<smd name="9" x="1.2" y="-1.6" dx="0.75" dy="0.35" layer="1" cream="no"/>
-<smd name="10" x="1.2" y="-0.8" dx="0.75" dy="0.35" layer="1" cream="no"/>
-<smd name="11" x="1.2" y="0" dx="0.75" dy="0.35" layer="1" cream="no"/>
-<smd name="12" x="1.2" y="0.8" dx="0.75" dy="0.35" layer="1" cream="no"/>
-<smd name="13" x="1.2" y="1.6" dx="0.75" dy="0.35" layer="1" cream="no"/>
-<smd name="14" x="1.2" y="2.4" dx="0.75" dy="0.35" layer="1" cream="no"/>
+<smd name="1" x="-1.2" y="2.4" dx="0.75" dy="0.35" layer="1"/>
+<smd name="2" x="-1.2" y="1.6" dx="0.75" dy="0.35" layer="1"/>
+<smd name="3" x="-1.2" y="0.8" dx="0.75" dy="0.35" layer="1"/>
+<smd name="4" x="-1.2" y="0" dx="0.75" dy="0.35" layer="1"/>
+<smd name="5" x="-1.2" y="-0.8" dx="0.75" dy="0.35" layer="1"/>
+<smd name="6" x="-1.2" y="-1.6" dx="0.75" dy="0.35" layer="1"/>
+<smd name="7" x="-1.2" y="-2.4" dx="0.75" dy="0.35" layer="1"/>
+<smd name="8" x="1.2" y="-2.4" dx="0.75" dy="0.35" layer="1"/>
+<smd name="9" x="1.2" y="-1.6" dx="0.75" dy="0.35" layer="1"/>
+<smd name="10" x="1.2" y="-0.8" dx="0.75" dy="0.35" layer="1"/>
+<smd name="11" x="1.2" y="0" dx="0.75" dy="0.35" layer="1"/>
+<smd name="12" x="1.2" y="0.8" dx="0.75" dy="0.35" layer="1"/>
+<smd name="13" x="1.2" y="1.6" dx="0.75" dy="0.35" layer="1"/>
+<smd name="14" x="1.2" y="2.4" dx="0.75" dy="0.35" layer="1"/>
 <text x="0" y="3" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-3.048" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
