@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -96,7 +96,10 @@
 <layer number="114" name="Badge_Outline" color="7" fill="1" visible="no" active="no"/>
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="no"/>
+<layer number="117" name="PM_Ref" color="26" fill="1" visible="no" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="PF_Ref" color="31" fill="1" visible="no" active="yes"/>
+<layer number="120" name="WFL_Ref" color="25" fill="1" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="no"/>
@@ -52683,6 +52686,91 @@ Board logo is .4" by 1.1"
 <smd name="1" x="0" y="0" dx="0.2" dy="0.2" layer="1" roundness="100" stop="no" cream="no"/>
 <circle x="0" y="0" radius="0.06" width="0.1524" layer="29"/>
 </package>
+<package name="RASP_μPI_HAT_SPECIFICATION">
+<wire x1="-28.75" y1="-12.7" x2="30.25" y2="-12.7" width="0.2032" layer="51"/>
+<wire x1="30.25" y1="-12.7" x2="33.25" y2="-9.7" width="0.2032" layer="51" curve="90"/>
+<wire x1="33.25" y1="-9.7" x2="33.25" y2="14.8" width="0.2032" layer="51"/>
+<wire x1="33.25" y1="14.8" x2="30.25" y2="17.8" width="0.2032" layer="51" curve="90"/>
+<wire x1="30.25" y1="17.8" x2="-28.75" y2="17.8" width="0.2032" layer="51"/>
+<wire x1="-28.75" y1="17.8" x2="-31.75" y2="14.8" width="0.2032" layer="51" curve="90"/>
+<wire x1="-31.75" y1="14.8" x2="-31.75" y2="-9.7" width="0.2032" layer="51"/>
+<wire x1="-31.75" y1="-9.7" x2="-28.75" y2="-12.7" width="0.2032" layer="51" curve="90"/>
+<dimension x1="-31.75" y1="17.8" x2="-31.75" y2="-12.7" x3="-36.75" y3="2.55" textsize="1.778" layer="51"/>
+<dimension x1="-28.25" y1="13.8" x2="0.75" y2="13.8" x3="-13.75" y3="19.8" textsize="1.778" layer="51"/>
+<dimension x1="-28.25" y1="13.8" x2="29.75" y2="13.8" x3="0.75" y3="24.3" textsize="1.778" layer="51"/>
+<text x="-10.75" y="-25.7" size="2" layer="51" font="vector">Units in MM</text>
+<dimension x1="-28.25" y1="-9.2" x2="-28.25" y2="13.8" x3="-33.75" y3="2.3" textsize="1.778" textratio="15" layer="51"/>
+<dimension x1="4.35" y1="-9.2" x2="29.75" y2="-9.2" x3="17.05" y3="-16.51" textsize="1.778" textratio="15" layer="51"/>
+<dimension x1="-31.75" y1="-12.699996875" x2="33.25" y2="-12.7" x3="0.75" y3="-21.699996875" textsize="1.778" textratio="15" layer="51"/>
+<dimension x1="-28.25" y1="-9.2" x2="-31.75" y2="-9.2202" x3="-29.95068125" y3="-17.75495625" textsize="1.778" textratio="15" layer="51"/>
+<circle x="-23.38" y="12.5" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="-23.38" y="15.03" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="-20.84" y="12.5" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="-20.84" y="15.03" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="-18.3" y="12.5" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="-18.3" y="15.03" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="-15.76" y="12.5" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="-15.76" y="15.03" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="-13.22" y="12.5" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="-13.22" y="15.03" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="-10.68" y="12.5" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="-10.68" y="15.03" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="-8.14" y="12.5" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="-8.14" y="15.03" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="-5.6" y="12.5" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="-5.6" y="15.03" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="-3.06" y="12.5" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="-3.06" y="15.03" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="-0.52" y="12.5" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="-0.52" y="15.03" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="2.02" y="12.5" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="2.02" y="15.03" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="4.56" y="12.5" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="4.56" y="15.03" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="7.1" y="12.5" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="7.1" y="15.03" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="9.64" y="12.5" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="9.64" y="15.03" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="12.18" y="12.5" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="12.18" y="15.03" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="14.72" y="12.5" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="14.72" y="15.03" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="17.26" y="12.5" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="17.26" y="15.03" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="19.8" y="12.5" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="19.8" y="15.03" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="22.34" y="12.5" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="22.34" y="15.03" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="24.88" y="12.5" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="24.88" y="15.03" radius="0.951259375" width="0.0254" layer="51"/>
+<circle x="-28.2448" y="13.7922" radius="1.53454375" width="0.0254" layer="51"/>
+<circle x="-28.2448" y="13.7922" radius="1.53454375" width="0.0254" layer="51"/>
+<circle x="29.7552" y="13.7922" radius="1.53454375" width="0.0254" layer="51"/>
+<circle x="-28.2548" y="-9.2078" radius="1.53454375" width="0.0254" layer="51"/>
+<circle x="-28.2548" y="-9.2078" radius="1.53454375" width="0.0254" layer="51"/>
+<circle x="29.7452" y="-9.1978" radius="1.53454375" width="0.0254" layer="51"/>
+<wire x1="40.64" y1="21.59" x2="40.64" y2="16.51" width="0.254" layer="51"/>
+<wire x1="40.64" y1="16.51" x2="40.64" y2="-22.86" width="0.254" layer="51"/>
+<wire x1="40.64" y1="-22.86" x2="91.44" y2="-22.86" width="0.254" layer="51"/>
+<wire x1="91.44" y1="-22.86" x2="91.44" y2="16.51" width="0.254" layer="51"/>
+<wire x1="91.44" y1="16.51" x2="91.44" y2="21.59" width="0.254" layer="51"/>
+<wire x1="91.44" y1="21.59" x2="40.64" y2="21.59" width="0.254" layer="51"/>
+<wire x1="40.64" y1="16.51" x2="91.44" y2="16.51" width="0.254" layer="51"/>
+<text x="41.91" y="17.78" size="2.54" layer="51" font="vector">Min μHat Specifications</text>
+<dimension x1="30.25" y1="14.8" x2="32.592175" y2="16.674621875" x3="38.68183125" y3="21.54864375" textsize="1.778" layer="51" dtype="radius"/>
+<text x="41.91" y="1.27" size="1.778" layer="51" font="vector">- Mounting hole offset at top of 
+board is not equal to mounting
+hole offset at bottom of board</text>
+<text x="41.91" y="-5.08" size="1.778" layer="51" font="vector">- Mounting holes are non-plated
+or electrically isolated. </text>
+<text x="41.91" y="-20.32" size="1.778" layer="51" font="vector">- Must have minimum 3 mounting
+holes</text>
+<text x="41.91" y="-13.97" size="1.778" layer="51" font="vector">- If non-plated landing area use 
+trestrict and brestrict of radius 
+3.1mm</text>
+<text x="41.91" y="10.16" size="1.778" layer="51" font="vector">- μHat dimensions 
+are outlined in tDocu measures.</text>
+</package>
 </packages>
 <symbols>
 <symbol name="FIDUCIAL">
@@ -75081,6 +75169,18 @@ Board logo is .4" by 1.1"
 <vertex x="-5.852896875" y="0.48276875"/>
 </polygon>
 </symbol>
+<symbol name="RASP_μHAT_SPECIFICATION">
+<description>&lt;h3&gt;Mechanical Specification for Raspberry μHat &lt;/h3&gt;
+
+&lt;p&gt; More information can be found here: 
+https://github.com/raspberrypi/hats/blob/master/uhat-board-mechanical.pdf
+&lt;/p&gt;</description>
+<wire x1="-27.94" y1="5.08" x2="-27.94" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-27.94" y1="-2.54" x2="27.94" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-2.54" x2="27.94" y2="5.08" width="0.254" layer="94"/>
+<wire x1="27.94" y1="5.08" x2="-27.94" y2="5.08" width="0.254" layer="94"/>
+<text x="-0.254" y="1.524" size="2.54" layer="94" font="vector" align="center">μHAT MECHANICAL DRAWING</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FIDUCIAL" prefix="FD">
@@ -75804,7 +75904,28 @@ Board logo is .4" by 1.1"
 </device>
 </devices>
 </deviceset>
+<deviceset name="RASP_μHAT_MECH_SPECIFICATION">
+<description>&lt;h3&gt;Mechanical Specification for Raspberry μHat&lt;/h3&gt;
+&lt;p&gt;You can reference the specifcation on their Github page:
+https://github.com/raspberrypi/hats/blob/master/uhat-board-mechanical.pdf &lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RASP_μHAT_SPECIFICATION" x="0.254" y="-1.524"/>
+</gates>
+<devices>
+<device name="" package="RASP_μPI_HAT_SPECIFICATION">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
