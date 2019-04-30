@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -21,9 +21,9 @@
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -7441,6 +7441,60 @@ immunity whilst minimising current consumption. &lt;/p&gt;
 <rectangle x1="-3" y1="-1.5" x2="3" y2="1.4" layer="2"/>
 <rectangle x1="-3" y1="-1.5" x2="3" y2="1.4" layer="15"/>
 </package>
+<package name="ESP-WROVER-32">
+<text x="8" y="-9.64" size="0.8128" layer="25" align="center">&gt;Name</text>
+<text x="8" y="-10.91" size="0.8128" layer="27" align="center">&gt;Value</text>
+<wire x1="0" y1="-6.3" x2="0" y2="-31.4" width="0.2032" layer="51"/>
+<wire x1="0" y1="-31.4" x2="18" y2="-31.4" width="0.2032" layer="51"/>
+<wire x1="18" y1="-31.4" x2="18" y2="-6.3" width="0.2032" layer="51"/>
+<wire x1="0" y1="-6.3" x2="0" y2="0" width="0.2032" layer="51"/>
+<wire x1="0" y1="0" x2="18" y2="0" width="0.2032" layer="51"/>
+<wire x1="18" y1="0" x2="18" y2="-6.3" width="0.2032" layer="51"/>
+<wire x1="18" y1="-6.3" x2="0" y2="-6.3" width="0.2032" layer="51"/>
+<smd name="P$1" x="0.5" y="-7.44" dx="2" dy="0.9" layer="1"/>
+<smd name="P$2" x="0.5" y="-8.71" dx="2" dy="0.9" layer="1"/>
+<smd name="P$3" x="0.5" y="-9.98" dx="2" dy="0.9" layer="1"/>
+<smd name="P$4" x="0.5" y="-11.25" dx="2" dy="0.9" layer="1"/>
+<smd name="P$5" x="0.5" y="-12.52" dx="2" dy="0.9" layer="1"/>
+<smd name="P$6" x="0.5" y="-13.79" dx="2" dy="0.9" layer="1"/>
+<smd name="P$7" x="0.5" y="-15.06" dx="2" dy="0.9" layer="1"/>
+<smd name="P$8" x="0.5" y="-16.33" dx="2" dy="0.9" layer="1"/>
+<smd name="P$9" x="0.5" y="-17.6" dx="2" dy="0.9" layer="1"/>
+<smd name="P$10" x="0.5" y="-18.87" dx="2" dy="0.9" layer="1"/>
+<smd name="P$11" x="0.5" y="-20.14" dx="2" dy="0.9" layer="1"/>
+<smd name="P$12" x="0.5" y="-21.41" dx="2" dy="0.9" layer="1"/>
+<smd name="P$13" x="0.5" y="-22.68" dx="2" dy="0.9" layer="1"/>
+<smd name="P$14" x="0.5" y="-23.95" dx="2" dy="0.9" layer="1"/>
+<smd name="P$15" x="0.5" y="-25.22" dx="2" dy="0.9" layer="1"/>
+<smd name="P$16" x="0.5" y="-26.49" dx="2" dy="0.9" layer="1"/>
+<smd name="P$17" x="0.5" y="-27.76" dx="2" dy="0.9" layer="1"/>
+<smd name="P$18" x="0.5" y="-29.03" dx="2" dy="0.9" layer="1"/>
+<smd name="P$19" x="0.5" y="-30.3" dx="2" dy="0.9" layer="1"/>
+<smd name="P$20" x="17.5" y="-30.3" dx="2" dy="0.9" layer="1"/>
+<smd name="P$21" x="17.5" y="-29.03" dx="2" dy="0.9" layer="1"/>
+<smd name="P$22" x="17.5" y="-27.76" dx="2" dy="0.9" layer="1"/>
+<smd name="P$23" x="17.5" y="-26.49" dx="2" dy="0.9" layer="1"/>
+<smd name="P$24" x="17.5" y="-25.22" dx="2" dy="0.9" layer="1"/>
+<smd name="P$25" x="17.5" y="-23.95" dx="2" dy="0.9" layer="1"/>
+<smd name="P$26" x="17.5" y="-22.68" dx="2" dy="0.9" layer="1"/>
+<smd name="P$27" x="17.5" y="-21.41" dx="2" dy="0.9" layer="1"/>
+<smd name="P$28" x="17.5" y="-20.14" dx="2" dy="0.9" layer="1"/>
+<smd name="P$29" x="17.5" y="-18.87" dx="2" dy="0.9" layer="1"/>
+<smd name="P$30" x="17.5" y="-17.6" dx="2" dy="0.9" layer="1"/>
+<smd name="P$31" x="17.5" y="-16.33" dx="2" dy="0.9" layer="1"/>
+<smd name="P$32" x="17.5" y="-15.06" dx="2" dy="0.9" layer="1"/>
+<smd name="P$33" x="17.5" y="-13.79" dx="2" dy="0.9" layer="1"/>
+<smd name="P$34" x="17.5" y="-12.52" dx="2" dy="0.9" layer="1"/>
+<smd name="P$35" x="17.5" y="-11.25" dx="2" dy="0.9" layer="1"/>
+<smd name="P$36" x="17.5" y="-9.98" dx="2" dy="0.9" layer="1"/>
+<smd name="P$37" x="17.5" y="-8.71" dx="2" dy="0.9" layer="1"/>
+<smd name="P$38" x="17.5" y="-7.44" dx="2" dy="0.9" layer="1"/>
+<smd name="P$39" x="8" y="-15" dx="5" dy="5" layer="1"/>
+<wire x1="0" y1="-31" x2="0" y2="-31.4" width="0.2032" layer="21"/>
+<wire x1="0" y1="-31.4" x2="18" y2="-31.4" width="0.2032" layer="21"/>
+<wire x1="18" y1="-31.4" x2="18" y2="-31" width="0.2032" layer="21"/>
+<circle x="-0.7" y="-6.3" radius="0.3" width="0" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ANTENNA-GROUNDED">
@@ -8956,6 +9010,51 @@ ESP8266 WiFi module pre-programmed with an AT command interface.</description>
 <wire x1="10.16" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
 <text x="-7.62" y="15.24" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="12.7" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="ESP-WROVER-32">
+<pin name="GND@1" x="-17.78" y="-27.94" length="short"/>
+<pin name="3V3" x="-17.78" y="33.02" length="short"/>
+<pin name="EN" x="-17.78" y="30.48" length="short"/>
+<pin name="SENSOR_VP/I36" x="17.78" y="-33.02" length="short" rot="R180"/>
+<pin name="SENSOR_VN/I39" x="17.78" y="-35.56" length="short" rot="R180"/>
+<pin name="IO34" x="17.78" y="-27.94" length="short" rot="R180"/>
+<pin name="IO35" x="17.78" y="-30.48" length="short" rot="R180"/>
+<pin name="XTAL_P/IO32" x="17.78" y="-22.86" length="short" rot="R180"/>
+<pin name="XTAL_N/IO33" x="17.78" y="-25.4" length="short" rot="R180"/>
+<pin name="IO25" x="17.78" y="-15.24" length="short" rot="R180"/>
+<pin name="IO26" x="17.78" y="-17.78" length="short" rot="R180"/>
+<pin name="IO27" x="17.78" y="-20.32" length="short" rot="R180"/>
+<pin name="SCK_H/IO14" x="17.78" y="10.16" length="short" rot="R180"/>
+<pin name="MISO_H/IO12" x="17.78" y="15.24" length="short" rot="R180"/>
+<pin name="GND@15" x="-17.78" y="-30.48" length="short"/>
+<pin name="MOSI_H/IO13" x="17.78" y="12.7" length="short" rot="R180"/>
+<pin name="SHD/IO9" x="-17.78" y="15.24" length="short"/>
+<pin name="SWP/IO10" x="-17.78" y="12.7" length="short"/>
+<pin name="SCS/IO11" x="-17.78" y="10.16" length="short"/>
+<pin name="GND@38" x="-17.78" y="-33.02" length="short"/>
+<pin name="MOSI_V/IO23" x="17.78" y="-12.7" length="short" rot="R180"/>
+<pin name="IO22" x="17.78" y="-10.16" length="short" rot="R180"/>
+<pin name="TXD" x="17.78" y="33.02" length="short" rot="R180"/>
+<pin name="RXD" x="17.78" y="30.48" length="short" rot="R180"/>
+<pin name="IO21" x="17.78" y="-7.62" length="short" rot="R180"/>
+<pin name="NC" x="17.78" y="-5.08" length="short" rot="R180"/>
+<pin name="MISO_V/IO19" x="17.78" y="-2.54" length="short" rot="R180"/>
+<pin name="SCK_V/IO18" x="17.78" y="0" length="short" rot="R180"/>
+<pin name="CS0_V/IO5" x="17.78" y="17.78" length="short" rot="R180"/>
+<pin name="IO4" x="17.78" y="20.32" length="short" rot="R180"/>
+<pin name="IO0" x="17.78" y="25.4" length="short" rot="R180"/>
+<pin name="IO2" x="17.78" y="22.86" length="short" rot="R180"/>
+<pin name="CS0_H/IO15" x="17.78" y="7.62" length="short" rot="R180"/>
+<pin name="SDI/IO8" x="-17.78" y="2.54" length="short"/>
+<pin name="SDO/IO7" x="-17.78" y="5.08" length="short"/>
+<pin name="SCK/IO6" x="-17.78" y="7.62" length="short"/>
+<pin name="GND" x="-17.78" y="-35.56" length="short"/>
+<wire x1="-15.24" y1="-38.1" x2="-15.24" y2="35.56" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="35.56" x2="15.24" y2="35.56" width="0.254" layer="94"/>
+<wire x1="15.24" y1="35.56" x2="15.24" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-38.1" x2="-15.24" y2="-38.1" width="0.254" layer="94"/>
+<text x="-15.24" y="35.814" size="1.778" layer="95">&gt;Name</text>
+<text x="-15.24" y="-38.354" size="1.778" layer="96" align="top-left">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -11193,6 +11292,57 @@ clock speed support 80 MHz, 160 MHz, supports the RTOS, integrated Wi-Fi MAC/BB/
 <technology name="">
 <attribute name="PROD_ID" value="IC-14076"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ESP-WROVER-32" prefix="U">
+<gates>
+<gate name="G$1" symbol="ESP-WROVER-32" x="0" y="0"/>
+</gates>
+<devices>
+<device name="ESP-WROVER-32" package="ESP-WROVER-32">
+<connects>
+<connect gate="G$1" pin="3V3" pad="P$2"/>
+<connect gate="G$1" pin="CS0_H/IO15" pad="P$23"/>
+<connect gate="G$1" pin="CS0_V/IO5" pad="P$29"/>
+<connect gate="G$1" pin="EN" pad="P$3"/>
+<connect gate="G$1" pin="GND" pad="P$39"/>
+<connect gate="G$1" pin="GND@1" pad="P$1"/>
+<connect gate="G$1" pin="GND@15" pad="P$15"/>
+<connect gate="G$1" pin="GND@38" pad="P$38"/>
+<connect gate="G$1" pin="IO0" pad="P$25"/>
+<connect gate="G$1" pin="IO2" pad="P$24"/>
+<connect gate="G$1" pin="IO21" pad="P$33"/>
+<connect gate="G$1" pin="IO22" pad="P$36"/>
+<connect gate="G$1" pin="IO25" pad="P$10"/>
+<connect gate="G$1" pin="IO26" pad="P$11"/>
+<connect gate="G$1" pin="IO27" pad="P$12"/>
+<connect gate="G$1" pin="IO34" pad="P$6"/>
+<connect gate="G$1" pin="IO35" pad="P$7"/>
+<connect gate="G$1" pin="IO4" pad="P$26"/>
+<connect gate="G$1" pin="MISO_H/IO12" pad="P$14"/>
+<connect gate="G$1" pin="MISO_V/IO19" pad="P$31"/>
+<connect gate="G$1" pin="MOSI_H/IO13" pad="P$16"/>
+<connect gate="G$1" pin="MOSI_V/IO23" pad="P$37"/>
+<connect gate="G$1" pin="NC" pad="P$27 P$28 P$32"/>
+<connect gate="G$1" pin="RXD" pad="P$34"/>
+<connect gate="G$1" pin="SCK/IO6" pad="P$20"/>
+<connect gate="G$1" pin="SCK_H/IO14" pad="P$13"/>
+<connect gate="G$1" pin="SCK_V/IO18" pad="P$30"/>
+<connect gate="G$1" pin="SCS/IO11" pad="P$19"/>
+<connect gate="G$1" pin="SDI/IO8" pad="P$22"/>
+<connect gate="G$1" pin="SDO/IO7" pad="P$21"/>
+<connect gate="G$1" pin="SENSOR_VN/I39" pad="P$5"/>
+<connect gate="G$1" pin="SENSOR_VP/I36" pad="P$4"/>
+<connect gate="G$1" pin="SHD/IO9" pad="P$17"/>
+<connect gate="G$1" pin="SWP/IO10" pad="P$18"/>
+<connect gate="G$1" pin="TXD" pad="P$35"/>
+<connect gate="G$1" pin="XTAL_N/IO33" pad="P$9"/>
+<connect gate="G$1" pin="XTAL_P/IO32" pad="P$8"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
