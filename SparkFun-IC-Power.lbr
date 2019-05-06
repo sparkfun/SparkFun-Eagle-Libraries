@@ -2702,9 +2702,9 @@ system stand by current during the sleep time.&lt;/p&gt;</description>
 <wire x1="-10.16" y1="7.62" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
 <pin name="VDD" x="-15.24" y="5.08" length="middle" direction="pwr"/>
 <pin name="GND" x="-15.24" y="-7.62" length="middle" direction="pwr"/>
-<pin name="DELY/M_DRV" x="15.24" y="-2.54" length="middle" direction="in" rot="R180"/>
+<pin name="DELAY/M_DRV" x="15.24" y="-2.54" length="middle" direction="in" rot="R180"/>
 <pin name="DONE" x="15.24" y="5.08" length="middle" direction="in" rot="R180"/>
-<pin name="DRV" x="15.24" y="-7.62" length="middle" direction="out" rot="R180"/>
+<pin name="!DRV" x="15.24" y="-7.62" length="middle" direction="out" rot="R180"/>
 <pin name="EN/ONE_SHOT" x="-15.24" y="0" length="middle" direction="in"/>
 <text x="-10.16" y="-15.24" size="1.778" layer="96">&gt;Value</text>
 <text x="-10.16" y="10.16" size="1.778" layer="95">&gt;Name</text>
@@ -4068,9 +4068,9 @@ system stand by current during the sleep time.&lt;/p&gt;</description>
 <devices>
 <device name="" package="SOT23-6">
 <connects>
-<connect gate="G$1" pin="DELY/M_DRV" pad="3"/>
+<connect gate="G$1" pin="!DRV" pad="5"/>
+<connect gate="G$1" pin="DELAY/M_DRV" pad="3"/>
 <connect gate="G$1" pin="DONE" pad="4"/>
-<connect gate="G$1" pin="DRV" pad="5"/>
 <connect gate="G$1" pin="EN/ONE_SHOT" pad="6"/>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="VDD" pad="1"/>
