@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.1">
+<eagle version="9.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -995,6 +995,14 @@ Source: http://www.onsemi.co.jp .. LM317M-D.PDF</description>
 </polygon>
 </package>
 <package name="SOT23-6">
+<description>&lt;h3&gt;SOT23 (6 pin)&lt;/h3&gt;
+
+&lt;p&gt;Mechanical Layout&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Landing Pad: 0.55mm X 1.395mm&lt;/li&gt;
+&lt;li&gt;Landing Pad Pitch: 0.95mm&lt;/li&gt;
+&lt;li&gt;2.7mm vertical distance between pads&lt;/li&gt;
+&lt;/ul&gt;</description>
 <wire x1="1.4224" y1="0.4294" x2="1.4224" y2="-0.4294" width="0.2032" layer="21"/>
 <wire x1="1.4" y1="-0.8" x2="-1.4" y2="-0.8" width="0.1524" layer="51"/>
 <wire x1="-1.4224" y1="-0.4294" x2="-1.4224" y2="0.4294" width="0.2032" layer="21"/>
@@ -2679,6 +2687,28 @@ Pasted was reduced by 40% width on the center ground pad, and some amount on the
 <text x="-10.16" y="13.716" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="TPL5110">
+<description>&lt;h3&gt;TPL5110 Nano-Power System Timer for Power Gating&lt;/h3&gt;
+
+&lt;p&gt;The TPL5110 Nano Timer is a low power timer with
+an integrated MOSFET driver designed for power
+gating in duty cycled or battery-powered applications.
+Consuming only 35 nA, the TPL5110 can enable the
+power supply line and drastically reduce the overall
+system stand by current during the sleep time.&lt;/p&gt;</description>
+<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<pin name="VDD" x="-15.24" y="5.08" length="middle" direction="pwr"/>
+<pin name="GND" x="-15.24" y="-7.62" length="middle" direction="pwr"/>
+<pin name="DELY/M_DRV" x="15.24" y="-2.54" length="middle" direction="in" rot="R180"/>
+<pin name="DONE" x="15.24" y="5.08" length="middle" direction="in" rot="R180"/>
+<pin name="DRV" x="15.24" y="-7.62" length="middle" direction="out" rot="R180"/>
+<pin name="EN/ONE_SHOT" x="-15.24" y="0" length="middle" direction="in"/>
+<text x="-2.54" y="-15.24" size="1.778" layer="96">&gt;Value</text>
+<text x="-2.54" y="10.16" size="1.778" layer="95">&gt;Name</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DC-DC_CONVERTER">
@@ -4018,6 +4048,36 @@ Specifications:
 <technology name="">
 <attribute name="PROD_ID" value="IC-14369"/>
 <attribute name="VALUE" value="MCP73833"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPL5110" prefix="U">
+<description>&lt;h3&gt;TPL5110 Nano-Power System Timer for Power Gating&lt;/h3&gt;
+
+&lt;p&gt;The TPL5110 Nano Timer is a low power timer with
+an integrated MOSFET driver designed for power
+gating in duty cycled or battery-powered applications.
+Consuming only 35 nA, the TPL5110 can enable the
+power supply line and drastically reduce the overall
+system stand by current during the sleep time.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="TPL5110" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-6">
+<connects>
+<connect gate="G$1" pin="DELY/M_DRV" pad="3"/>
+<connect gate="G$1" pin="DONE" pad="4"/>
+<connect gate="G$1" pin="DRV" pad="5"/>
+<connect gate="G$1" pin="EN/ONE_SHOT" pad="6"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="VREG-14387" constant="no"/>
 </technology>
 </technologies>
 </device>
