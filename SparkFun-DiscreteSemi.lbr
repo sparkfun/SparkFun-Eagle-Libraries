@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -746,14 +746,13 @@ http://www.vishay.com/docs/71151/71151.pdf</description>
 <text x="-2.54" y="2.54" size="1.27" layer="25" font="vector">&gt;Name</text>
 <text x="-2.54" y="-3.81" size="1.27" layer="27" font="vector">&gt;Value</text>
 </package>
-<package name="SOT363_PHILIPS" urn="urn:adsk.eagle:footprint:29648/1">
+<package name="SOT363_PHILIPS" urn="urn:adsk.eagle:footprint:29648/1" locally_modified="yes">
 <description>&lt;b&gt;Small Outline Transistor; 6 leads&lt;/b&gt;&lt;p&gt;
 Philips Semiconductors, SOT363.pdf</description>
 <wire x1="-1" y1="0.55" x2="1" y2="0.55" width="0.2032" layer="51"/>
 <wire x1="1" y1="0.55" x2="1" y2="-0.55" width="0.2032" layer="21"/>
 <wire x1="1" y1="-0.55" x2="-1" y2="-0.55" width="0.2032" layer="51"/>
 <wire x1="-1" y1="-0.55" x2="-1" y2="0.55" width="0.2032" layer="21"/>
-<circle x="-0.7" y="-0.25" radius="0.15" width="0" layer="21"/>
 <smd name="1" x="-0.65" y="-0.8" dx="0.4" dy="0.8" layer="1"/>
 <smd name="2" x="0" y="-0.8" dx="0.4" dy="0.8" layer="1"/>
 <smd name="3" x="0.65" y="-0.8" dx="0.4" dy="0.8" layer="1"/>
@@ -771,7 +770,7 @@ Philips Semiconductors, SOT363.pdf</description>
 </package>
 </packages>
 <packages3d>
-<package3d name="SOT363_PHILIPS" urn="urn:adsk.eagle:package:29757/2" type="model">
+<package3d name="SOT363_PHILIPS" urn="urn:adsk.eagle:package:29757/2" locally_modified="yes" type="model">
 <description>Small Outline Transistor; 6 leads
 Philips Semiconductors, SOT363.pdf</description>
 <packageinstances>
