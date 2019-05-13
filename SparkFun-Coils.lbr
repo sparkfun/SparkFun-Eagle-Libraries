@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1181,17 +1181,17 @@ Physical Characteristics:
 </devices>
 </deviceset>
 <deviceset name="1.0μH" prefix="L" uservalue="yes">
-<description>&lt;h3&gt;2.2μH Inductor&lt;/h3&gt;
+<description>&lt;h3&gt;1.0μH Inductor&lt;/h3&gt;
 &lt;p&gt;Resist changes in electrical current. Basically a coil of wire.&lt;/p&gt;
 &lt;p&gt;SparkFun Products:
-&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/15170"&gt;SparkFun Edge - HX711&lt;/a&gt;&lt;/li&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/15170"&gt;SparkFun Edge&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-0805_WIDE-1.0μH-1.4A-0.07OHM" package="0805-WIDE">
+<device name="-0805_WIDE-1.0μH-1.4A-0.07OHM-1.4MM_H" package="0805-WIDE">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -1200,6 +1200,18 @@ Physical Characteristics:
 <technology name="">
 <attribute name="PROD_ID" value="NDUC-14237"/>
 <attribute name="VALUE" value="1.0μH"/>
+</technology>
+</technologies>
+</device>
+<device name="-0805_WIDE-1.0μH-1.45A-0.106OHM-1.0MM_H" package="0805-WIDE">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="NDUC-14375" constant="no"/>
+<attribute name="VALUE" value="1.0μH" constant="no"/>
 </technology>
 </technologies>
 </device>
