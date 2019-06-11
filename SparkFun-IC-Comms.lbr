@@ -3448,7 +3448,8 @@ Physical Characteristics
 </deviceset>
 <deviceset name="PCA9306" prefix="U" uservalue="yes">
 <description>&lt;h3&gt;Bidirectional I2C level shifter&lt;/h3&gt;
-&lt;p&gt;Not compatible with all available part number pinout schemes- DOUBLE CHECK!!!
+&lt;p&gt;Not compatible with all available part number pinout schemes- DOUBLE CHECK!!! 
+&lt;p&gt;Variants PCA9306DC and PSOP-8 are EOL. If your part has VREF as pin 1 then this is your variant. VSSOP_8PIN is &lt;i&gt;not&lt;/i&gt; EOL.&lt;/p&gt;
 &lt;/p&gt;
 &lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/BreakoutBoards/PCA9306DC.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
 &lt;h4&gt;SparkFun Products&lt;/h4&gt;
@@ -3482,7 +3483,7 @@ Physical Characteristics
 </technology>
 </technologies>
 </device>
-<device name="PCA9306DC-1:1" package="PCA9306DC">
+<device name="PCA9306DC" package="PCA9306DC">
 <connects>
 <connect gate="G$1" pin="EN" pad="8"/>
 <connect gate="G$1" pin="GND" pad="4"/>
