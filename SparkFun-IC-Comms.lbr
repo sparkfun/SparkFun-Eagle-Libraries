@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2148,6 +2148,34 @@ SOIC, 0.3 inch width</description>
 <text x="0" y="1.905" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.54" size="0.6096" layer="27" font="vector" ratio="20" align="bottom-center">&gt;VALUE</text>
 </package>
+<package name="VSSOP_8PIN">
+<description>&lt;h3&gt;VSSOP 8-Pin&lt;/h3&gt;
+
+Physical Characteristics
+
+&lt;ul&gt;
+&lt;li&gt;Lead to Lead SIze: 3.2 x 2.1 mm&lt;/li&gt;
+&lt;li&gt;Body Size: 2.1 x 2.4 x .9 mm &lt;/li&gt;
+&lt;li&gt;Lead: .25 x .8 mm&lt;/li&gt;
+&lt;li&gt;Pitch: .5 mm&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<smd name="P1" x="-1.57" y="0.734" dx="0.8" dy="0.3" layer="1"/>
+<smd name="P2" x="-1.57" y="0.234" dx="0.8" dy="0.3" layer="1"/>
+<smd name="P3" x="-1.57" y="-0.266" dx="0.8" dy="0.3" layer="1"/>
+<smd name="P4" x="-1.57" y="-0.766" dx="0.8" dy="0.3" layer="1"/>
+<smd name="P5" x="1.53" y="-0.766" dx="0.8" dy="0.3" layer="1"/>
+<smd name="P6" x="1.53" y="-0.266" dx="0.8" dy="0.3" layer="1"/>
+<smd name="P7" x="1.53" y="0.234" dx="0.8" dy="0.3" layer="1"/>
+<smd name="P8" x="1.53" y="0.734" dx="0.8" dy="0.3" layer="1"/>
+<wire x1="-1.22" y1="-1.066" x2="1.18" y2="-1.066" width="0.05" layer="51"/>
+<wire x1="1.18" y1="-1.066" x2="1.18" y2="1.034" width="0.05" layer="51"/>
+<wire x1="1.18" y1="1.034" x2="-1.22" y2="1.034" width="0.05" layer="51"/>
+<wire x1="-1.22" y1="1.034" x2="-1.22" y2="-1.066" width="0.05" layer="51"/>
+<circle x="-1.32" y="1.234" radius="0.1581125" width="0" layer="21"/>
+<text x="-1.22" y="1.434" size="0.5" layer="25">&gt;NAME</text>
+<text x="-1.22" y="-2.066" size="0.5" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="FT232R">
@@ -2524,30 +2552,30 @@ SOIC, 0.3 inch width</description>
 <pin name="GND" x="10.16" y="7.62" length="short" rot="R180"/>
 </symbol>
 <symbol name="PCA9306">
-<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-5.08" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
-<pin name="SDA1" x="-15.24" y="0" length="middle"/>
-<pin name="SCL1" x="-15.24" y="2.54" length="middle"/>
-<pin name="EN" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="VREF1" x="-15.24" y="5.08" length="middle"/>
-<pin name="VREF2" x="15.24" y="5.08" length="middle" rot="R180"/>
-<pin name="SCL2" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="SDA2" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="GND" x="-15.24" y="-2.54" length="middle"/>
-<text x="-10.16" y="10.922" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<pin name="SDA1" x="-15.24" y="-2.54" length="middle"/>
+<pin name="SCL1" x="-15.24" y="0" length="middle"/>
+<pin name="EN" x="15.24" y="5.08" length="middle" direction="in" rot="R180"/>
+<pin name="VREF1" x="-15.24" y="2.54" length="middle" direction="pwr"/>
+<pin name="VREF2" x="15.24" y="2.54" length="middle" direction="pwr" rot="R180"/>
+<pin name="SCL2" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="SDA2" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND" x="-15.24" y="-5.08" length="middle" direction="pwr"/>
+<text x="-10.16" y="8.382" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="1.778" y1="-2.54" x2="-1.778" y2="-2.54" width="0.254" layer="97"/>
 <wire x1="1.778" y1="0" x2="-1.778" y2="0" width="0.254" layer="97"/>
-<wire x1="1.778" y1="2.54" x2="-1.778" y2="2.54" width="0.254" layer="97"/>
-<wire x1="-1.778" y1="2.54" x2="-1.27" y2="3.048" width="0.254" layer="97"/>
-<wire x1="-1.778" y1="2.54" x2="-1.27" y2="2.032" width="0.254" layer="97"/>
-<wire x1="1.778" y1="2.54" x2="1.27" y2="3.048" width="0.254" layer="97"/>
-<wire x1="1.778" y1="2.54" x2="1.27" y2="2.032" width="0.254" layer="97"/>
 <wire x1="-1.778" y1="0" x2="-1.27" y2="0.508" width="0.254" layer="97"/>
 <wire x1="-1.778" y1="0" x2="-1.27" y2="-0.508" width="0.254" layer="97"/>
 <wire x1="1.778" y1="0" x2="1.27" y2="0.508" width="0.254" layer="97"/>
 <wire x1="1.778" y1="0" x2="1.27" y2="-0.508" width="0.254" layer="97"/>
+<wire x1="-1.778" y1="-2.54" x2="-1.27" y2="-2.032" width="0.254" layer="97"/>
+<wire x1="-1.778" y1="-2.54" x2="-1.27" y2="-3.048" width="0.254" layer="97"/>
+<wire x1="1.778" y1="-2.54" x2="1.27" y2="-2.032" width="0.254" layer="97"/>
+<wire x1="1.778" y1="-2.54" x2="1.27" y2="-3.048" width="0.254" layer="97"/>
 </symbol>
 <symbol name="TXB0104PWR">
 <wire x1="-12.7" y1="15.24" x2="12.7" y2="15.24" width="0.254" layer="94"/>
@@ -3469,6 +3497,23 @@ SOIC, 0.3 inch width</description>
 <technology name="">
 <attribute name="PROD_ID" value="IC-10023"/>
 <attribute name="VALUE" value="PCA9306"/>
+</technology>
+</technologies>
+</device>
+<device name="VSSOP_8PIN" package="VSSOP_8PIN">
+<connects>
+<connect gate="G$1" pin="EN" pad="P8"/>
+<connect gate="G$1" pin="GND" pad="P1"/>
+<connect gate="G$1" pin="SCL1" pad="P3"/>
+<connect gate="G$1" pin="SCL2" pad="P6"/>
+<connect gate="G$1" pin="SDA1" pad="P4"/>
+<connect gate="G$1" pin="SDA2" pad="P5"/>
+<connect gate="G$1" pin="VREF1" pad="P2"/>
+<connect gate="G$1" pin="VREF2" pad="P7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
