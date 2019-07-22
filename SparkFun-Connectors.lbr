@@ -26617,6 +26617,22 @@ CONN-14082</description>
 <wire x1="5.104" y1="3.154" x2="5.104" y2="3.535" width="0.1" layer="51"/>
 <wire x1="5.104" y1="3.535" x2="4.723" y2="3.535" width="0.1" layer="51"/>
 </package>
+<package name="1X04_1.27MM_NO_SILK">
+<description>&lt;h3&gt;Plated Through Hole - 4 Pin&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:4&lt;/li&gt;
+&lt;li&gt;Pin pitch: 1.27mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_04&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<pad name="4" x="3.81" y="0" drill="0.508" diameter="1"/>
+<pad name="3" x="2.54" y="0" drill="0.508" diameter="1"/>
+<pad name="2" x="1.27" y="0" drill="0.508" diameter="1"/>
+<pad name="1" x="0" y="0" drill="0.508" diameter="1"/>
+<text x="-0.508" y="1.016" size="0.6096" layer="25" font="vector" ratio="12">&gt;NAME</text>
+<text x="-0.508" y="-1.651" size="0.6096" layer="27" font="vector" ratio="12">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -38777,6 +38793,17 @@ Super Speed pins not available on the 16-pin purely SMD connector so this part i
 <technology name="">
 <attribute name="SF_ID" value="PRT-08075" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="1.27MM_NO_SILK" package="1X04_1.27MM_NO_SILK">
+<connects>
+<connect gate="J1" pin="1" pad="1"/>
+<connect gate="J1" pin="2" pad="2"/>
+<connect gate="J1" pin="3" pad="3"/>
+<connect gate="J1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
