@@ -5861,16 +5861,16 @@ TC6_WO1</text>
 <description>&lt;h3&gt;SAMD21E&lt;/h3&gt;
 
 &lt;p&gt;The SAM D21E is a low-power microcontroller using the 32-bit ARM® Cortex®-M0+ processor,with 32-pins with up to 256KB Flash and 32KB of SRAM. The SAM D21E operates at a maximum frequency of 48MHz and reach 2.46 CoreMark®/MHz.&lt;/p&gt;</description>
-<pin name="D7_PA00/INT0/1:0/XIN32" x="-33.02" y="-10.16" length="middle"/>
-<pin name="D8_PA01/INT1/1:1/XOUT32" x="-33.02" y="-7.62" length="middle"/>
+<pin name="D5_PA00/INT0/1:0/XIN32" x="-33.02" y="-10.16" length="middle"/>
+<pin name="D6_PA01/INT1/1:1/XOUT32" x="-33.02" y="-7.62" length="middle"/>
 <pin name="D1_PA02/INT2/DAC" x="-33.02" y="-5.08" length="middle"/>
 <pin name="PA03/INT3/VREFA" x="-33.02" y="-2.54" length="middle"/>
-<pin name="D6_PA04/INT4/VREFB/0:0" x="-33.02" y="0" length="middle"/>
-<pin name="D5_PA05/INT5/0:1" x="-33.02" y="2.54" length="middle"/>
-<pin name="D4_PA06/INT5/0:2" x="-33.02" y="5.08" length="middle"/>
-<pin name="D3_PA07/INT7/0:3/I2S" x="-33.02" y="7.62" length="middle"/>
+<pin name="D7_PA04/INT4/VREFB/0:0" x="-33.02" y="0" length="middle"/>
+<pin name="D3_PA05/INT5/0:1" x="-33.02" y="2.54" length="middle"/>
+<pin name="D2_PA06/INT5/0:2" x="-33.02" y="5.08" length="middle"/>
+<pin name="D4_PA07/INT7/0:3/I2S" x="-33.02" y="7.62" length="middle"/>
 <pin name="D0_PA08/NMI/0:0/2:0/I2S" x="-33.02" y="10.16" length="middle"/>
-<pin name="D2_PA09/INT9/0:1/2:1/I2S" x="-33.02" y="12.7" length="middle"/>
+<pin name="D8_PA09/INT9/0:1/2:1/I2S" x="-33.02" y="12.7" length="middle"/>
 <pin name="NRESET" x="33.02" y="12.7" length="middle" rot="R180"/>
 <pin name="GNDANA" x="-33.02" y="-20.32" length="middle" direction="pwr"/>
 <pin name="GND" x="-33.02" y="-22.86" length="middle" direction="pwr"/>
@@ -9006,13 +9006,13 @@ The flexibility of the Artemis module starts with our [Arduino core](https://git
 <connects>
 <connect gate="G$1" pin="D0_PA08/NMI/0:0/2:0/I2S" pad="PA08"/>
 <connect gate="G$1" pin="D1_PA02/INT2/DAC" pad="PA02"/>
-<connect gate="G$1" pin="D2_PA09/INT9/0:1/2:1/I2S" pad="PA09"/>
-<connect gate="G$1" pin="D3_PA07/INT7/0:3/I2S" pad="PA07"/>
-<connect gate="G$1" pin="D4_PA06/INT5/0:2" pad="PA06"/>
-<connect gate="G$1" pin="D5_PA05/INT5/0:1" pad="PA05"/>
-<connect gate="G$1" pin="D6_PA04/INT4/VREFB/0:0" pad="PA04"/>
-<connect gate="G$1" pin="D7_PA00/INT0/1:0/XIN32" pad="PA00"/>
-<connect gate="G$1" pin="D8_PA01/INT1/1:1/XOUT32" pad="PA01"/>
+<connect gate="G$1" pin="D2_PA06/INT5/0:2" pad="PA06"/>
+<connect gate="G$1" pin="D3_PA05/INT5/0:1" pad="PA05"/>
+<connect gate="G$1" pin="D4_PA07/INT7/0:3/I2S" pad="PA07"/>
+<connect gate="G$1" pin="D5_PA00/INT0/1:0/XIN32" pad="PA00"/>
+<connect gate="G$1" pin="D6_PA01/INT1/1:1/XOUT32" pad="PA01"/>
+<connect gate="G$1" pin="D7_PA04/INT4/VREFB/0:0" pad="PA04"/>
+<connect gate="G$1" pin="D8_PA09/INT9/0:1/2:1/I2S" pad="PA09"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="GNDANA" pad="GNDANA"/>
 <connect gate="G$1" pin="NRESET" pad="RES"/>
