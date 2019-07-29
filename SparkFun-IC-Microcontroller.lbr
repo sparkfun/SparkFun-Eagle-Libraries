@@ -3491,6 +3491,12 @@ IC needs to have legs bent before insertion.</description>
 <text x="-2.502" y="-4.004" size="1" layer="27">&gt;VALUE</text>
 </package>
 <package name="QFN-48-.4MMPITCH">
+<description>&lt;h3&gt;48QFN-FE310&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 48&lt;/li&gt;
+&lt;li&gt;Pin pitch: 0.4mm&lt;/li&gt;
+&lt;li&gt;Area: 6 mm x 6 mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <smd name="37" x="-2.2" y="2.925" dx="0.65" dy="0.2" layer="1" rot="R270"/>
 <smd name="38" x="-1.8" y="2.925" dx="0.65" dy="0.2" layer="1" rot="R270"/>
 <smd name="39" x="-1.4" y="2.925" dx="0.65" dy="0.2" layer="1" rot="R270"/>
@@ -3539,6 +3545,20 @@ IC needs to have legs bent before insertion.</description>
 <smd name="10" x="2.925" y="-1.4" dx="0.65" dy="0.2" layer="1" rot="R180"/>
 <smd name="11" x="2.925" y="-1.8" dx="0.65" dy="0.2" layer="1" rot="R180"/>
 <smd name="12" x="2.925" y="-2.2" dx="0.65" dy="0.2" layer="1" rot="R180"/>
+<smd name="49" x="0" y="0" dx="4.4" dy="4.4" layer="1" cream="no"/>
+<rectangle x1="-1.875" y1="0.375" x2="-0.375" y2="1.875" layer="31"/>
+<rectangle x1="0.375" y1="0.375" x2="1.875" y2="1.875" layer="31"/>
+<rectangle x1="0.375" y1="-1.875" x2="1.875" y2="-0.375" layer="31"/>
+<rectangle x1="-1.875" y1="-1.875" x2="-0.375" y2="-0.375" layer="31"/>
+<wire x1="3" y1="2.6" x2="2.6" y2="3" width="0.2032" layer="21"/>
+<wire x1="-3" y1="3" x2="-2.625" y2="3" width="0.2032" layer="21"/>
+<wire x1="-3" y1="3" x2="-3" y2="2.625" width="0.2032" layer="21"/>
+<wire x1="-3" y1="-3" x2="-3" y2="-2.625" width="0.2032" layer="21"/>
+<wire x1="-3" y1="-3" x2="-2.625" y2="-3" width="0.2032" layer="21"/>
+<wire x1="3" y1="-3" x2="2.625" y2="-3" width="0.2032" layer="21"/>
+<wire x1="3" y1="-3" x2="3" y2="-2.625" width="0.2032" layer="21"/>
+<circle x="2.9972" y="2.9972" radius="0.127" width="0" layer="21"/>
+<rectangle x1="-3" y1="-3" x2="3" y2="3" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -5953,7 +5973,21 @@ TC6_WO1</text>
 </symbol>
 <symbol name="FE310">
 <description>&lt;h3&gt;SiFive FE310&lt;/h3&gt;
-&lt;p&gt;The FE310-G002 is the second Freedom E300 SoC. The FE310-G002 is built around the E31 Core Complex instantiated in the Freedom E300 platform. SiFive E31 Core Complex up to 320MHz. Flexible clocking options including internal PLL, free-running ring oscillator and external 16MHz crystal. 1.61 DMIPs/MHz, 2.73 Coremark/MHz. RV32IMAC. 8kB OTP Program Memory. 8kB Mask ROM. 16kB Instruction Cache. 16kB Data SRAM. 3 Independent PWM Controllers. External RESET pin. JTAG, SPI I2C, and UART interfaces. QSPI Flash interface. Requires 1.8V and 3.3V supplies.</description>
+&lt;p&gt;The FE310-G002 is the second Freedom E300 SoC. The FE310-G002 is built around the E31 Core Complex instantiated in the Freedom E300 platform.
+&lt;ul&gt;&lt;li&gt;SiFive E31 Core Complex up to 320MHz&lt;/li&gt;
+&lt;li&gt;Flexible clocking options including internal PLL, free-running ring oscillator and external 16MHz crystal&lt;/li&gt;
+&lt;li&gt;1.61 DMIPs/MHz&lt;/li&gt;
+&lt;li&gt;2.73 Coremark/MHz&lt;/li&gt;
+&lt;li&gt;RV32IMAC&lt;/li&gt;
+&lt;li&gt;8kB OTP Program Memory&lt;/li&gt;
+&lt;li&gt;8kB Mask ROM&lt;/li&gt;
+&lt;li&gt;16kB Instruction Cache&lt;/li&gt;
+&lt;li&gt;16kB Data SRAM&lt;/li&gt;
+&lt;li&gt;3 Independent PWM Controllers&lt;/li&gt;
+&lt;li&gt;External RESET pin, JTAG, SPI I2C, and UART interfaces&lt;/li&gt;
+&lt;li&gt;QSPI Flash interface&lt;/li&gt;
+&lt;li&gt;Requires 1.8V and 3.3V supplies.&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <pin name="VDD_CORE" x="22.86" y="27.94" length="short" rot="R180"/>
 <pin name="VDD_IO" x="-25.4" y="27.94" length="short"/>
 <pin name="PLL_AVSS" x="22.86" y="22.86" length="short" rot="R180"/>
@@ -9170,14 +9204,69 @@ The flexibility of the Artemis module starts with our [Arduino core](https://git
 </device>
 </devices>
 </deviceset>
-<deviceset name="SIFIVE_FE310">
+<deviceset name="SIFIVE_FE310" prefix="U">
+<description>&lt;h3&gt;SiFive FE310 - RISC-V MCU&lt;/h3&gt;
+&lt;p&gt;The FE310-G002 is the second Freedom E300 SoC. The FE310-G002 is built around the E31 Core Complex instantiated in the Freedom E300 platform.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”[PRODUCT1LINK]”&gt;[PRODUCT 1]&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="FE310" x="0" y="2.54"/>
 </gates>
 <devices>
 <device name="" package="QFN-48-.4MMPITCH">
+<connects>
+<connect gate="G$1" pin="AON_DWAKEUP_N" pad="18"/>
+<connect gate="G$1" pin="AON_ERST_N" pad="24"/>
+<connect gate="G$1" pin="AON_PMU_OUT_0" pad="22"/>
+<connect gate="G$1" pin="AON_PMU_OUT_1" pad="17"/>
+<connect gate="G$1" pin="AON_PSD_LFALTCLK" pad="20"/>
+<connect gate="G$1" pin="AON_PSD_LFCLKSEL" pad="21"/>
+<connect gate="G$1" pin="AON_VDD" pad="23"/>
+<connect gate="G$1" pin="AON_VDD_IO" pad="19"/>
+<connect gate="G$1" pin="GND" pad="49"/>
+<connect gate="G$1" pin="IO0" pad="25"/>
+<connect gate="G$1" pin="IO1" pad="26"/>
+<connect gate="G$1" pin="IO10" pad="34"/>
+<connect gate="G$1" pin="IO11" pad="35"/>
+<connect gate="G$1" pin="IO12" pad="36"/>
+<connect gate="G$1" pin="IO13" pad="37"/>
+<connect gate="G$1" pin="IO16" pad="38"/>
+<connect gate="G$1" pin="IO17" pad="39"/>
+<connect gate="G$1" pin="IO18" pad="40"/>
+<connect gate="G$1" pin="IO19" pad="41"/>
+<connect gate="G$1" pin="IO2" pad="27"/>
+<connect gate="G$1" pin="IO20" pad="42"/>
+<connect gate="G$1" pin="IO21" pad="43"/>
+<connect gate="G$1" pin="IO22" pad="44"/>
+<connect gate="G$1" pin="IO23" pad="45"/>
+<connect gate="G$1" pin="IO3" pad="28"/>
+<connect gate="G$1" pin="IO4" pad="29"/>
+<connect gate="G$1" pin="IO5" pad="31"/>
+<connect gate="G$1" pin="IO9" pad="33"/>
+<connect gate="G$1" pin="JTAG_TCK" pad="13"/>
+<connect gate="G$1" pin="JTAG_TDI" pad="16"/>
+<connect gate="G$1" pin="JTAG_TDO" pad="14"/>
+<connect gate="G$1" pin="JTAG_TMS" pad="15"/>
+<connect gate="G$1" pin="OTP_AIVDD" pad="12"/>
+<connect gate="G$1" pin="PLL_AVDD" pad="7"/>
+<connect gate="G$1" pin="PLL_AVSS" pad="8"/>
+<connect gate="G$1" pin="QSPI_CS" pad="5"/>
+<connect gate="G$1" pin="QSPI_DQ_0" pad="4"/>
+<connect gate="G$1" pin="QSPI_DQ_1" pad="3"/>
+<connect gate="G$1" pin="QSPI_DQ_2" pad="2"/>
+<connect gate="G$1" pin="QSPI_DQ_3" pad="1"/>
+<connect gate="G$1" pin="QSPI_SCK" pad="48"/>
+<connect gate="G$1" pin="VDD_CORE" pad="6 30 46"/>
+<connect gate="G$1" pin="VDD_IO" pad="11 32 47"/>
+<connect gate="G$1" pin="XTAL_IN" pad="9"/>
+<connect gate="G$1" pin="XTAL_OUT" pad="10"/>
+</connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-14494" constant="no"/>
+<attribute name="VALUE" value="FE310" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
