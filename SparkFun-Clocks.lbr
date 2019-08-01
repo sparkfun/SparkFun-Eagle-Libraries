@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.2">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1394,6 +1394,12 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <rectangle x1="-0.9875" y1="-1.4" x2="-0.6125" y2="-0.8" layer="31"/>
 <rectangle x1="-1.7875" y1="-1.4" x2="-1.4125" y2="-0.8" layer="31"/>
 </package>
+<package name="CRYSTAL-SMD-2X1.2MM">
+<smd name="2" x="-0.1" y="-0.45" dx="0.5" dy="0.2" layer="1" rot="R90"/>
+<smd name="3" x="0.8" y="0" dx="1.4" dy="0.4" layer="1" rot="R90"/>
+<smd name="4" x="0.1" y="0.45" dx="0.5" dy="0.2" layer="1" rot="R90"/>
+<smd name="1" x="-0.8" y="0" dx="1.4" dy="0.4" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CRYSTAL">
@@ -1602,6 +1608,17 @@ unit with the CMOS-based oscillator and real-time-clock IC. &lt;/p&gt;</descript
 <text x="-10.16" y="13.462" size="1.778" layer="95">&gt;Name</text>
 <text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;Value</text>
 <pin name="!RST" x="12.7" y="-5.08" length="short" rot="R180"/>
+</symbol>
+<symbol name="SITIME_CRYSTAL">
+<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<text x="-7.62" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-7.62" y="-5.334" size="1.778" layer="96" font="vector" align="top-left">&gt;Value</text>
+<pin name="GND" x="-10.16" y="-2.54" visible="pin" length="short"/>
+<pin name="OUT" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="VCC" x="-10.16" y="2.54" visible="pin" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2494,6 +2511,26 @@ unit with the CMOS-based oscillator and real-time-clock IC. &lt;/p&gt;</descript
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-13900" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SITIME-CRYSTAL-32.768KHZ" prefix="Y">
+<gates>
+<gate name="G$1" symbol="SITIME_CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CRYSTAL-SMD-2X1.2MM">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="" constant="no"/>
+<attribute name="VALUE" value="32.768KHZ" constant="no"/>
 </technology>
 </technologies>
 </device>
