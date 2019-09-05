@@ -322,7 +322,7 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <pad name="P$1" x="-1.27" y="0" drill="0.9" diameter="1.8796"/>
 <pad name="P$2" x="1.27" y="0" drill="0.9" diameter="1.8796"/>
 <text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
-<text x="0" y="-1.143" size="0.6096" layer="21" font="vector" ratio="20" align="top-center">&gt;Value</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
 <package name="C2031N-1A2-B10K-GP">
 <pad name="3" x="16.75" y="-2" drill="1.2"/>
@@ -402,13 +402,13 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <wire x1="-1.6" y1="-0.7" x2="-1.6" y2="0.7" width="0.0508" layer="39"/>
 <wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
 <wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 <smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
 <smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
 <text x="0" y="0.762" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-0.762" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
 <package name="1210">
 <description>&lt;p&gt;&lt;b&gt;Generic 3225 (1210) package&lt;/b&gt;&lt;/p&gt;
@@ -1117,6 +1117,24 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <wire x1="1.778" y1="0" x2="4.318" y2="0" width="0.254" layer="94"/>
 <pin name="P$1" x="-10.16" y="0" length="middle"/>
 <pin name="P$2" x="7.62" y="0" length="middle" rot="R180"/>
+</symbol>
+<symbol name="NTC-THERMISTOR">
+<description>&lt;h3&gt;NTC Thermistor&lt;/h3&gt;
+&lt;p&gt;An NTC thermistor's resistance &lt;b&gt;decreases&lt;/b&gt; as temperature rises.&lt;/p&gt;
+&lt;p&gt;Applications:
+&lt;ul&gt;&lt;li&gt;Resistance Thermometer - temperature monitoring&lt;/li&gt;
+&lt;li&gt;Inrush current limiter&lt;/li&gt;
+&lt;li&gt;Heat source&lt;/li&gt;&lt;/ul&gt;</description>
+<wire x1="5.08" y1="1.27" x2="5.08" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-1.27" x2="-2.54" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="1.27" x2="5.08" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="-2.54" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="2" x="7.62" y="0" visible="off" length="short" rot="R180"/>
+<text x="1.905" y="3.175" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="1.27" y="-2.794" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4550,6 +4568,43 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <technology name="">
 <attribute name="PROD_ID" value="RES-14466"/>
 <attribute name="VALUE" value="453k"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NTC-THERMISTOR" prefix="R">
+<description>&lt;h3&gt;NTC Thermistor&lt;/h3&gt;
+&lt;p&gt;An NTC thermistor's resistance &lt;b&gt;decreases&lt;/b&gt; as temperature rises.&lt;/p&gt;
+&lt;p&gt;Applications:
+&lt;ul&gt;&lt;li&gt;Resistance Thermometer - temperature monitoring&lt;/li&gt;
+&lt;li&gt;Inrush current limiter&lt;/li&gt;
+&lt;li&gt;Heat source&lt;/li&gt;&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="NTC-THERMISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0603" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-13608"/>
+<attribute name="VALUE" value="10k" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-AXIAL-0.1" package="AXIAL-0.1">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="SF_ID" value="SEN-00250"/>
+<attribute name="VALUE" value="10k" constant="no"/>
 </technology>
 </technologies>
 </device>
