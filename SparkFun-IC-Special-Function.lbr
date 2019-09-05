@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -15367,8 +15367,8 @@ Level Shifting GPIO Expander w/ LED Driver and Keypad Engine</description>
 <pin name="GND" x="-12.7" y="-5.08" visible="pin" length="short"/>
 <pin name="OUT-" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
 <pin name="VDD" x="-12.7" y="5.08" visible="pin" length="short"/>
-<text x="-10.16" y="8.382" size="1.27" layer="95">&gt;NAME</text>
-<text x="-10.668" y="-9.652" size="1.27" layer="96">&gt;VALUE</text>
+<text x="-10.16" y="8.382" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="DRV8811">
 <pin name="VCC" x="-15.24" y="25.4" length="short"/>
@@ -17003,7 +17003,7 @@ Source:&lt;br&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="DRV2605L">
+<deviceset name="DRV2605L" prefix="U">
 <gates>
 <gate name="DRV2605" symbol="DRV2605L" x="0" y="2.54"/>
 </gates>
