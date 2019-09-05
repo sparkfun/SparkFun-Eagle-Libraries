@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -290,21 +290,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="-5.715" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center">&gt;VALUE</text>
 </package>
 <package name="VIBE-MOTOR-10MM">
-<description>&lt;h3&gt;Vibration Motor&lt;/h3&gt;
-&lt;p&gt;10mm vibration motor terminated with tinned wires.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://cdn.sparkfun.com/datasheets/Robotics/B1034.FL45-00-015.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
-&lt;h4&gt;Devices Using&lt;/h4&gt;
-&lt;ul&gt;&lt;li&gt;MOTOR&lt;/li&gt;&lt;/ul&gt;</description>
 <wire x1="-1.5" y1="-4.8" x2="-1.5" y2="-7.8" width="0.127" layer="51"/>
 <wire x1="-1.5" y1="-7.8" x2="1.5" y2="-7.8" width="0.127" layer="51"/>
 <wire x1="1.5" y1="-7.8" x2="1.5" y2="-4.8" width="0.127" layer="51"/>
 <circle x="0" y="0" radius="5.0009" width="0.127" layer="51"/>
 <pad name="+" x="-5" y="-3.9" drill="0.8" diameter="1.6764"/>
 <pad name="-" x="-6.35" y="-2.54" drill="0.8" diameter="1.6764"/>
-<text x="-7.562" y="-2" size="1.27" layer="21">-</text>
-<text x="-4.446" y="-5.554" size="1.27" layer="21">+</text>
-<text x="-5.207" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
-<text x="-4.699" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;VALUE</text>
+<text x="-6.8" y="-2" size="1.27" layer="21">-</text>
+<text x="-4.7" y="-5.3" size="1.27" layer="21">+</text>
 </package>
 <package name="RELAY-JZC">
 <description>&lt;h3&gt;Relay SPDT Sealed (JZC-11F-5V-1Z)&lt;/h3&gt;
@@ -535,6 +528,26 @@ circuit boards.</description>
 <text x="0" y="-7.62" size="1.778" layer="51" ratio="15" align="center">Connector
 This
 Side</text>
+</package>
+<package name="VIBE-MOTOR-10MM-SMD">
+<wire x1="0.635" y1="-5.08" x2="0.635" y2="-5.588" width="0.127" layer="51"/>
+<wire x1="0.635" y1="-5.588" x2="3.81" y2="-5.588" width="0.127" layer="51"/>
+<wire x1="3.81" y1="-5.588" x2="3.81" y2="-8.89" width="0.127" layer="51"/>
+<wire x1="3.81" y1="-8.89" x2="-3.81" y2="-8.89" width="0.127" layer="51"/>
+<wire x1="-3.81" y1="-8.89" x2="-3.81" y2="-5.588" width="0.127" layer="51"/>
+<wire x1="-3.81" y1="-5.588" x2="-0.635" y2="-5.588" width="0.127" layer="51"/>
+<wire x1="-0.635" y1="-5.588" x2="-0.635" y2="-5.08" width="0.127" layer="51"/>
+<wire x1="0.254" y1="-5.08" x2="0.254" y2="-8.509" width="0.127" layer="51"/>
+<wire x1="-0.254" y1="-5.08" x2="-0.254" y2="-8.509" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="5.0009" width="0.254" layer="21"/>
+<smd name="+" x="4.191" y="-7.239" dx="3.175" dy="1.905" layer="1" roundness="75" rot="R90"/>
+<smd name="-" x="-4.191" y="-7.239" dx="3.175" dy="1.905" layer="1" roundness="75" rot="R90"/>
+<rectangle x1="-3.556" y1="-8.509" x2="-0.254" y2="-5.842" layer="51"/>
+<rectangle x1="0.254" y1="-8.509" x2="3.556" y2="-5.842" layer="51"/>
+<text x="3.81" y="-5.08" size="1.27" layer="51" ratio="15">+</text>
+<text x="-4.572" y="-5.08" size="1.27" layer="51" ratio="15">-</text>
+<text x="-2.54" y="1.27" size="1.016" layer="25" ratio="15">&gt;Name</text>
+<text x="-2.54" y="0" size="1.016" layer="27" ratio="15">&gt;Value</text>
 </package>
 </packages>
 <symbols>
@@ -828,6 +841,17 @@ Side</text>
 <technology name="">
 <attribute name="PROD_ID" value="COMP-08572"/>
 <attribute name="SF_SKU" value="ROB-08449"/>
+</technology>
+</technologies>
+</device>
+<device name="SHORT" package="VIBE-MOTOR-10MM-SMD">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-13709" constant="no"/>
 </technology>
 </technologies>
 </device>
