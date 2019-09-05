@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -21,9 +21,9 @@
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -7765,21 +7765,25 @@ Used by APDS-9301</description>
 <circle x="-2.54" y="2.1336" radius="0.127" width="0" layer="21"/>
 </package>
 <package name="LGA3.0X3.0">
-<wire x1="-1.65" y1="1.65" x2="1.65" y2="1.65" width="0.2032" layer="21"/>
 <wire x1="1.65" y1="1.65" x2="1.65" y2="-1.65" width="0.2032" layer="21"/>
-<wire x1="-1.65" y1="-1.65" x2="1.65" y2="-1.65" width="0.2032" layer="21"/>
-<wire x1="-1.65" y1="-1.65" x2="-1.65" y2="1.65" width="0.2032" layer="21"/>
-<smd name="1" x="-1.2" y="1.2" dx="0.4" dy="0.4" layer="1"/>
-<smd name="2" x="-0.4" y="1.2" dx="0.4" dy="0.4" layer="1"/>
-<smd name="4" x="1.2" y="1.2" dx="0.4" dy="0.4" layer="1"/>
-<smd name="5" x="1.2" y="-1.2" dx="0.4" dy="0.4" layer="1"/>
-<smd name="7" x="-0.4" y="-1.2" dx="0.4" dy="0.4" layer="1"/>
-<smd name="8" x="-1.2" y="-1.2" dx="0.4" dy="0.4" layer="1"/>
-<smd name="6" x="0.4" y="-1.2" dx="0.4" dy="0.4" layer="1"/>
-<smd name="3" x="0.4" y="1.2" dx="0.4" dy="0.4" layer="1"/>
-<circle x="-1.8542" y="1.8542" radius="0.127" width="0" layer="21"/>
+<wire x1="1.65" y1="-1.65" x2="-1.65" y2="-1.65" width="0.2032" layer="21"/>
+<wire x1="-1.65" y1="1.65" x2="-1.65" y2="-1.65" width="0.2032" layer="21"/>
+<wire x1="-1.65" y1="1.65" x2="1.65" y2="1.65" width="0.2032" layer="21"/>
+<smd name="1" x="1.2" y="1.2" dx="0.4" dy="0.4" layer="1"/>
+<smd name="2" x="1.2" y="0.4" dx="0.4" dy="0.4" layer="1"/>
+<smd name="4" x="1.2" y="-1.2" dx="0.4" dy="0.4" layer="1"/>
+<smd name="5" x="-1.2" y="-1.2" dx="0.4" dy="0.4" layer="1"/>
+<smd name="7" x="-1.2" y="0.4" dx="0.4" dy="0.4" layer="1"/>
+<smd name="8" x="-1.2" y="1.2" dx="0.4" dy="0.4" layer="1"/>
+<smd name="6" x="-1.2" y="-0.4" dx="0.4" dy="0.4" layer="1"/>
+<smd name="3" x="1.2" y="-0.4" dx="0.4" dy="0.4" layer="1"/>
+<circle x="1.8542" y="1.8542" radius="0.127" width="0" layer="21"/>
 <text x="0" y="2.54" size="0.6096" layer="25" font="vector" ratio="20" align="center">&gt;Name</text>
 <text x="0" y="-2.54" size="0.6096" layer="25" font="vector" ratio="20" align="center">&gt;Value</text>
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.1016" layer="51"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.1016" layer="51"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.1016" layer="51"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.1016" layer="51"/>
 </package>
 <package name="LGA6">
 <wire x1="-1.1" y1="1" x2="1.1" y2="1" width="0.127" layer="51"/>
