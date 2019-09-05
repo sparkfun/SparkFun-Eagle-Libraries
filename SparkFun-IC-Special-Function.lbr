@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -26,7 +26,7 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -14713,10 +14713,10 @@ package with digital interface.&lt;/p&gt;
 <circle x="-1.11741875" y="2.6976875" radius="0.56" width="0" layer="51"/>
 <circle x="1.11741875" y="-2.6976875" radius="0.56" width="0" layer="51"/>
 <circle x="0" y="0" radius="4.85" width="0.1778" layer="21"/>
-<pad name="GND" x="-1.11741875" y="2.6976875" drill="1.25" rot="R247.5" stop="no"/>
-<pad name="SCL" x="-1.1174125" y="-2.697678125" drill="1.25" rot="R67.5" stop="no"/>
-<pad name="SDA" x="1.11741875" y="-2.6976875" drill="1.25" rot="R67.5" stop="no"/>
-<pad name="VDD" x="1.1174125" y="2.697678125" drill="1.25" rot="R247.5" stop="no"/>
+<pad name="GND" x="-1.11741875" y="2.6976875" drill="0.7" rot="R247.5" stop="no"/>
+<pad name="SCL" x="-1.1174125" y="-2.697678125" drill="0.7" rot="R67.5" stop="no"/>
+<pad name="SDA" x="1.11741875" y="-2.6976875" drill="0.7" rot="R67.5" stop="no"/>
+<pad name="VDD" x="1.1174125" y="2.697678125" drill="0.7" rot="R247.5" stop="no"/>
 <polygon width="0.127" layer="21">
 <vertex x="-0.422696875" y="-4.8314875"/>
 <vertex x="-0.50985" y="-5.827671875"/>
@@ -14725,10 +14725,10 @@ package with digital interface.&lt;/p&gt;
 </polygon>
 <text x="-2.54" y="-6.35" size="1.27" layer="25" font="vector">&gt;Name</text>
 <text x="-3.429" y="5.08" size="1.27" layer="27" font="vector">&gt;Value</text>
-<circle x="-1.1178" y="-2.698603125" radius="0.254" width="1.5748" layer="30"/>
-<circle x="1.11741875" y="-2.6976875" radius="0.254" width="1.5748" layer="30"/>
-<circle x="1.1174125" y="2.697678125" radius="0.254" width="1.5748" layer="30"/>
-<circle x="-1.11741875" y="2.6976875" radius="0.254" width="1.5748" layer="30"/>
+<circle x="-1.1178" y="-2.698603125" radius="0.254" width="0.7" layer="30"/>
+<circle x="1.11741875" y="-2.6976875" radius="0.254" width="0.7" layer="30"/>
+<circle x="1.1174125" y="2.697678125" radius="0.254" width="0.7" layer="30"/>
+<circle x="-1.11741875" y="2.6976875" radius="0.254" width="0.7" layer="30"/>
 </package>
 <package name="14_PIN_OESIP">
 <description>&lt;h3&gt;MAX30101 14 Pin OESIP&lt;/h3&gt;
