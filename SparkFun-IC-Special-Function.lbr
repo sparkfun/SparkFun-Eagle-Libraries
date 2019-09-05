@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -96,7 +96,10 @@
 <layer number="114" name="Badge_Outline" color="7" fill="1" visible="no" active="no"/>
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="no"/>
+<layer number="117" name="PM_Ref" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="PF_Ref" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="120" name="WFL_Ref" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="no"/>
@@ -14837,6 +14840,59 @@ Physical Characteristics
 <wire x1="-0.9" y1="0.9" x2="-0.9" y2="-0.9" width="0.1" layer="21"/>
 <wire x1="-0.9" y1="-0.9" x2="0.891" y2="-0.9" width="0.1" layer="21"/>
 </package>
+<package name="SO16">
+<description>SOIC, 0.15 inch width</description>
+<wire x1="4.8768" y1="1.9463" x2="-4.8768" y2="1.9463" width="0.2032" layer="21"/>
+<wire x1="4.9768" y1="-1.9463" x2="5.2578" y2="-1.5653" width="0.2032" layer="21" curve="90"/>
+<wire x1="-5.2578" y1="1.4653" x2="-4.8768" y2="1.9463" width="0.2032" layer="21" curve="-90.023829"/>
+<wire x1="4.8768" y1="1.9463" x2="5.2578" y2="1.5653" width="0.2032" layer="21" curve="-90.030084"/>
+<wire x1="-5.2578" y1="-1.6653" x2="-4.8768" y2="-1.9463" width="0.2032" layer="21" curve="90.060185"/>
+<wire x1="-4.8768" y1="-1.9463" x2="4.9768" y2="-1.9463" width="0.2032" layer="21"/>
+<wire x1="5.2578" y1="-1.5653" x2="5.2578" y2="1.5653" width="0.2032" layer="21"/>
+<wire x1="-5.207" y1="0.6096" x2="-5.207" y2="-0.6604" width="0.2032" layer="21" curve="-180"/>
+<wire x1="-5.2578" y1="1.4526" x2="-5.2578" y2="0.6096" width="0.2032" layer="21"/>
+<wire x1="-5.2578" y1="-1.6653" x2="-5.2578" y2="-0.6604" width="0.2032" layer="21"/>
+<rectangle x1="-4.699" y1="-3.302" x2="-4.191" y2="-2.2733" layer="51"/>
+<rectangle x1="-3.429" y1="-3.302" x2="-2.921" y2="-2.2733" layer="51"/>
+<rectangle x1="-2.159" y1="-3.302" x2="-1.651" y2="-2.2733" layer="51"/>
+<rectangle x1="-0.889" y1="-3.302" x2="-0.381" y2="-2.2733" layer="51"/>
+<rectangle x1="0.381" y1="-3.302" x2="0.889" y2="-2.2733" layer="51"/>
+<rectangle x1="1.651" y1="-3.302" x2="2.159" y2="-2.2733" layer="51"/>
+<rectangle x1="2.921" y1="-3.302" x2="3.429" y2="-2.2733" layer="51"/>
+<rectangle x1="4.191" y1="-3.302" x2="4.699" y2="-2.2733" layer="51"/>
+<rectangle x1="-3.429" y1="2.286" x2="-2.921" y2="3.302" layer="51"/>
+<rectangle x1="-2.159" y1="2.286" x2="-1.651" y2="3.302" layer="51"/>
+<rectangle x1="-0.889" y1="2.286" x2="-0.381" y2="3.302" layer="51"/>
+<rectangle x1="0.381" y1="2.286" x2="0.889" y2="3.302" layer="51"/>
+<rectangle x1="1.651" y1="2.286" x2="2.159" y2="3.302" layer="51"/>
+<rectangle x1="2.921" y1="2.286" x2="3.429" y2="3.302" layer="51"/>
+<rectangle x1="4.191" y1="2.286" x2="4.699" y2="3.302" layer="51"/>
+<rectangle x1="-4.699" y1="2.286" x2="-4.191" y2="3.302" layer="51"/>
+<smd name="1" x="-4.445" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="2" x="-3.175" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="3" x="-1.905" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="4" x="-0.635" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="5" x="0.635" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="6" x="1.905" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="7" x="3.175" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="8" x="4.445" y="-2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="9" x="4.445" y="2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="10" x="3.175" y="2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="11" x="1.905" y="2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="12" x="0.635" y="2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="13" x="-0.635" y="2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="14" x="-1.905" y="2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="15" x="-3.175" y="2.8" dx="0.6" dy="1.2" layer="1"/>
+<smd name="16" x="-4.445" y="2.8" dx="0.6" dy="1.2" layer="1"/>
+<text x="-5.715" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
+<text x="6.35" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;VALUE</text>
+<polygon width="0.002540625" layer="21">
+<vertex x="-5.23875" y="-2.38125" curve="90"/>
+<vertex x="-5.55625" y="-2.06375" curve="90"/>
+<vertex x="-5.87375" y="-2.38125" curve="90"/>
+<vertex x="-5.55625" y="-2.69875" curve="90"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="AD5262">
@@ -15948,6 +16004,30 @@ The TLC5947 has a thermal shutdown (TSD) function that turns off all output driv
 <pin name="HR_INT" x="15.24" y="-10.16" length="middle" rot="R180"/>
 <text x="-10.16" y="20.32" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="WT2003S">
+<wire x1="10.16" y1="17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-17.78" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="17.78" x2="10.16" y2="17.78" width="0.254" layer="94"/>
+<pin name="ADKEY" x="12.7" y="-12.7" length="short" rot="R180"/>
+<pin name="AVSS" x="-12.7" y="-12.7" length="short"/>
+<pin name="BUSY" x="12.7" y="-10.16" length="short" rot="R180"/>
+<pin name="DM" x="-12.7" y="-5.08" length="short"/>
+<pin name="DP" x="-12.7" y="-2.54" length="short"/>
+<pin name="DVSS" x="-12.7" y="-15.24" length="short"/>
+<pin name="P10" x="12.7" y="-15.24" length="short" rot="R180"/>
+<pin name="RX" x="12.7" y="12.7" length="short" rot="R180"/>
+<pin name="SDCLK" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="SDCMD" x="12.7" y="7.62" length="short" rot="R180"/>
+<pin name="SDDAT" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="TX" x="12.7" y="15.24" length="short" rot="R180"/>
+<pin name="VDDIO" x="-12.7" y="12.7" length="short"/>
+<pin name="VDDLDO" x="-12.7" y="15.24" length="short"/>
+<pin name="VOUTL" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="VOUTR" x="12.7" y="-2.54" length="short" rot="R180"/>
+<text x="-10.16" y="18.288" size="1.778" layer="95">&gt;Name</text>
+<text x="-10.16" y="-20.32" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -17734,6 +17814,36 @@ sensor for wearable health for finger-based applications.
 <technology name="">
 <attribute name="PROD_ID" value="IC-14271" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WT2003S" prefix="U">
+<gates>
+<gate name="U1" symbol="WT2003S" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO16">
+<connects>
+<connect gate="U1" pin="ADKEY" pad="13"/>
+<connect gate="U1" pin="AVSS" pad="3"/>
+<connect gate="U1" pin="BUSY" pad="14"/>
+<connect gate="U1" pin="DM" pad="11"/>
+<connect gate="U1" pin="DP" pad="12"/>
+<connect gate="U1" pin="DVSS" pad="6"/>
+<connect gate="U1" pin="P10" pad="7"/>
+<connect gate="U1" pin="RX" pad="15"/>
+<connect gate="U1" pin="SDCLK" pad="9"/>
+<connect gate="U1" pin="SDCMD" pad="10"/>
+<connect gate="U1" pin="SDDAT" pad="8"/>
+<connect gate="U1" pin="TX" pad="16"/>
+<connect gate="U1" pin="VDDIO" pad="4"/>
+<connect gate="U1" pin="VDDLDO" pad="5"/>
+<connect gate="U1" pin="VOUTL" pad="1"/>
+<connect gate="U1" pin="VOUTR" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
