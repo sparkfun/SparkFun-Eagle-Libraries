@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -7794,20 +7794,76 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <vertex x="-5.4" y="6.9"/>
 </polygon>
 </package>
+<package name="TRACE_ANTENNA_915MHZ_THINGMAGIC">
+<wire x1="-4.914421875" y1="-0.287740625" x2="30.518578125" y2="-0.287740625" width="0.127" layer="51"/>
+<smd name="ANT" x="-0.006421875" y="-1.315240625" dx="3" dy="0.44" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="GND@1" x="-3.966421875" y="-0.315240625" dx="1.02" dy="1" layer="1" stop="no" cream="no"/>
+<smd name="GND@2" x="3.908578125" y="-0.315240625" dx="3.677" dy="1" layer="1" stop="no" cream="no"/>
+<smd name="GND@3" x="14" y="-1" dx="30" dy="1" layer="16" stop="no" cream="no"/>
+<text x="16.802578125" y="-0.033740625" size="0.254" layer="51" ratio="15">GND Pour Edge</text>
+<polygon width="0.0254" layer="1">
+<vertex x="12.4693375" y="-3.538940625"/>
+<vertex x="30.08931875" y="-3.538940625"/>
+<vertex x="30.08931875" y="-17.0873"/>
+<vertex x="-4.462303125" y="-17.0873"/>
+<vertex x="-4.462303125" y="-0.45538125"/>
+<vertex x="-3.4691625" y="-0.45538125"/>
+<vertex x="-3.4691625" y="-4.288240625"/>
+<vertex x="-0.449103125" y="-4.288240625"/>
+<vertex x="-0.45" y="-3.8"/>
+<vertex x="-0.21" y="-3.8"/>
+<vertex x="-0.21" y="-2.33"/>
+<vertex x="0.2" y="-2.33"/>
+<vertex x="0.2" y="-3.8"/>
+<vertex x="0.526259375" y="-3.800559375"/>
+<vertex x="0.526259375" y="-4.288240625"/>
+<vertex x="2.337278125" y="-4.288240625"/>
+<vertex x="10.579578125" y="-9.782259375"/>
+<vertex x="10.587196875" y="-9.787340625"/>
+<vertex x="27.3410375" y="-9.787340625"/>
+<vertex x="27.338496875" y="-9.774640625"/>
+<vertex x="27.338496875" y="-6.53868125"/>
+<vertex x="12.4693375" y="-6.53868125"/>
+</polygon>
+<polygon width="0.0254" layer="1">
+<vertex x="2.08" y="-0.23"/>
+<vertex x="2.08" y="-3.26"/>
+<vertex x="5.735" y="-3.26"/>
+<vertex x="5.735" y="-0.23"/>
+</polygon>
+<polygon width="0.0254" layer="51">
+<vertex x="-0.29" y="-2.33"/>
+<vertex x="0.29" y="-2.33"/>
+<vertex x="0.29" y="-3.2"/>
+<vertex x="-0.29" y="-3.2"/>
+</polygon>
+<polygon width="0.0254" layer="51">
+<vertex x="1.31" y="-2.33"/>
+<vertex x="1.89" y="-2.33"/>
+<vertex x="1.89" y="-3.2"/>
+<vertex x="1.31" y="-3.2"/>
+</polygon>
+<polygon width="0.01" layer="16">
+<vertex x="-4.6" y="0"/>
+<vertex x="-4.6" y="-3.15"/>
+<vertex x="30" y="-3.15"/>
+<vertex x="30" y="0"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="ANTENNA-GROUNDED">
 <description>&lt;h3&gt;Antenna (with ground termination)&lt;/h3&gt;</description>
-<wire x1="0" y1="-2.54" x2="0" y2="-5.08" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
-<circle x="0" y="-5.08" radius="1.1359" width="0.254" layer="94"/>
-<text x="5.588" y="-5.08" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="5.588" y="-7.366" size="1.778" layer="96" font="vector">&gt;VALUE</text>
-<pin name="GND" x="5.08" y="-7.62" visible="off" length="short" rot="R90"/>
-<pin name="SIGNAL" x="0" y="-7.62" visible="off" length="short" rot="R90"/>
+<wire x1="0" y1="2.54" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<circle x="0" y="0" radius="1.1359" width="0.254" layer="94"/>
+<text x="3.048" y="0" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="3.048" y="-2.286" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<pin name="GND" x="2.54" y="-2.54" visible="off" length="short" rot="R90"/>
+<pin name="SIGNAL" x="0" y="-2.54" visible="off" length="short" rot="R90"/>
 </symbol>
 <symbol name="ANTENNA">
 <description>&lt;h3&gt;Antenna&lt;/h3&gt;</description>
@@ -9388,7 +9444,7 @@ ESP8266 WiFi module pre-programmed with an AT command interface.</description>
 <wire x1="17.78" y1="22.86" x2="17.78" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="17.78" y1="-17.78" x2="-17.78" y2="-17.78" width="0.254" layer="94"/>
 <wire x1="-17.78" y1="-17.78" x2="-17.78" y2="22.86" width="0.254" layer="94"/>
-<pin name="ENABLE" x="-20.32" y="12.7" length="short"/>
+<pin name="ENABLE" x="-20.32" y="17.78" length="short"/>
 <pin name="GND" x="-20.32" y="-15.24" length="short"/>
 <pin name="GPIO1" x="20.32" y="12.7" length="short" rot="R180"/>
 <pin name="GPIO2" x="20.32" y="10.16" length="short" rot="R180"/>
@@ -9404,8 +9460,8 @@ ESP8266 WiFi module pre-programmed with an AT command interface.</description>
 <pin name="!RESET" x="20.32" y="0" length="short" rot="R180"/>
 <pin name="UART_RX" x="20.32" y="20.32" length="short" rot="R180"/>
 <pin name="UART_TX" x="20.32" y="17.78" length="short" rot="R180"/>
-<pin name="VIN" x="-20.32" y="20.32" length="short"/>
-<pin name="VOUT" x="-20.32" y="15.24" length="short"/>
+<pin name="VIN" x="-20.32" y="15.24" length="short"/>
+<pin name="VOUT" x="-20.32" y="20.32" length="short"/>
 <text x="-17.78" y="23.368" size="1.778" layer="95">&gt;Name</text>
 <text x="-17.78" y="-20.32" size="1.778" layer="95">&gt;Value</text>
 </symbol>
@@ -11134,6 +11190,15 @@ BlueCreation. BC118 can run standalone, with a host processor or controlled by a
 </technology>
 </technologies>
 </device>
+<device name="TRACE-915MHZ" package="TRACE_ANTENNA_915MHZ_THINGMAGIC">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND@1 GND@2 GND@3"/>
+<connect gate="G$1" pin="SIGNAL" pad="ANT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="ESP32" prefix="U">
@@ -11768,8 +11833,8 @@ clock speed support 80 MHz, 160 MHz, supports the RTOS, integrated Wi-Fi MAC/BB/
 <connect gate="U1" pin="!CS" pad="23"/>
 <connect gate="U1" pin="!RESET" pad="28"/>
 <connect gate="U1" pin="ENABLE" pad="11"/>
-<connect gate="U1" pin="GND" pad="1"/>
-<connect gate="U1" pin="GPIO1" pad="2 3 4 5 6 7 8 9 12 18 19 29 30 31 32 33 34 35 36 37 38 40 41 GND_PAD1 GND_PAD2"/>
+<connect gate="U1" pin="GND" pad="1 2 3 4 5 6 7 8 9 18 19 29 30 31 32 33 34 35 36 37 38 40 41 GND_PAD1 GND_PAD2"/>
+<connect gate="U1" pin="GPIO1" pad="12"/>
 <connect gate="U1" pin="GPIO2" pad="13"/>
 <connect gate="U1" pin="GPIO3" pad="14"/>
 <connect gate="U1" pin="GPIO4" pad="15"/>
