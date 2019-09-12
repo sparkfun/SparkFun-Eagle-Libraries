@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1549,7 +1549,7 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
 <wire x1="-1.016" y1="0" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
-<pin name="3" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="GND" x="0" y="-5.08" visible="off" length="short" direction="pwr" rot="R90"/>
 <wire x1="0" y1="-2.8" x2="0" y2="-1.6" width="0.1524" layer="94"/>
 <text x="-1.27" y="-1.524" size="1.778" layer="95" font="vector" align="top-right">&gt;NAME</text>
 </symbol>
@@ -1955,7 +1955,7 @@ unit with the CMOS-based oscillator and real-time-clock IC. &lt;/p&gt;</descript
 <connects>
 <connect gate="G$1" pin="1" pad="3"/>
 <connect gate="G$1" pin="2" pad="1"/>
-<connect gate="G$1" pin="3" pad="2 4"/>
+<connect gate="G$1" pin="GND" pad="2 4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1965,7 +1965,7 @@ unit with the CMOS-based oscillator and real-time-clock IC. &lt;/p&gt;</descript
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
-<connect gate="G$1" pin="3" pad="2 4"/>
+<connect gate="G$1" pin="GND" pad="2 4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2083,7 +2083,7 @@ unit with the CMOS-based oscillator and real-time-clock IC. &lt;/p&gt;</descript
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
-<connect gate="G$1" pin="3" pad="2 4"/>
+<connect gate="G$1" pin="GND" pad="2 4"/>
 </connects>
 <technologies>
 <technology name="">
@@ -2535,6 +2535,39 @@ unit with the CMOS-based oscillator and real-time-clock IC. &lt;/p&gt;</descript
 <attribute name="PROD_ID" value="XTAL-14578" constant="no"/>
 <attribute name="VALUE" value="32.768KHZ" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRYSTAL-16MHZ_SMALL">
+<description>&lt;h3&gt;16 MHz Crystal&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://www.digikey.com/product-detail/en/epson/FA-20H-16.0000MF10Z-AJ5/SER4201TR-ND/7430936"&gt;Digikey Link&lt;/a&gt;
+&lt;/p&gt;
+&lt;b&gt;Crystal Attributes:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Frequency: 16 MHz&lt;/li&gt;
+&lt;li&gt;Frequency Stability: +/- 10ppm&lt;/li&gt;
+&lt;li&gt;Frequency Tolerance: +/- 10ppm&lt;/li&gt;
+&lt;li&gt;Load Capacitance: 8pF&lt;/li&gt;
+&lt;li&gt;ESR: 80 Ohms&lt;/li&gt;
+&lt;li&gt;Operating Mode: Fundamental&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL-GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CRYSTAL-SMD-3.2X2.5MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
