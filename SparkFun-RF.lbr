@@ -21,9 +21,9 @@
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -8223,6 +8223,28 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <wire x1="-11.2" y1="-4.95" x2="-12.7" y2="-4.95" width="0.002540625" layer="41"/>
 <rectangle x1="-13.2" y1="2.7" x2="-10.8" y2="3.9" layer="42"/>
 </package>
+<package name="MOLEX_146200">
+<wire x1="-20" y1="-2.5" x2="-20" y2="2.5" width="0.002540625" layer="51"/>
+<wire x1="-20" y1="2.5" x2="20" y2="2.5" width="0.002540625" layer="51"/>
+<wire x1="20" y1="2.5" x2="20" y2="-2.5" width="0.002540625" layer="51"/>
+<wire x1="20" y1="-2.5" x2="-20" y2="-2.5" width="0.002540625" layer="51"/>
+<smd name="MNT1" x="-19" y="0" dx="2.6" dy="5.6" layer="1"/>
+<smd name="MNT2" x="19" y="0" dx="2.6" dy="5.6" layer="1"/>
+<smd name="GND" x="10.5" y="-0.95" dx="1.4" dy="3.7" layer="1"/>
+<smd name="FEED" x="12.5" y="-0.95" dx="1.4" dy="3.7" layer="1"/>
+<wire x1="20.5334" y1="-3.0334" x2="-20.5334" y2="-3.0334" width="0.2032" layer="21"/>
+<wire x1="-20.5334" y1="-3.0334" x2="-20.5334" y2="3.0334" width="0.2032" layer="21"/>
+<wire x1="-20.5334" y1="3.0334" x2="20.5334" y2="3.0334" width="0.2032" layer="21"/>
+<wire x1="20.5334" y1="3.0334" x2="20.5334" y2="-3.0334" width="0.2032" layer="21"/>
+<wire x1="-20" y1="-7.5" x2="20" y2="-7.5" width="0.002540625" layer="51"/>
+<text x="0" y="-7.5" size="0.6096" layer="51" ratio="20" align="bottom-center">GND KEEPOUT</text>
+<wire x1="-20.6" y1="-2.5" x2="-20.6" y2="2.5" width="0.002540625" layer="51"/>
+<text x="-20.6" y="0" size="0.6096" layer="51" ratio="20" rot="R90" align="bottom-center">BD Edge</text>
+<text x="0" y="-3.1" size="0.6096" layer="25" ratio="20" rot="R180" align="bottom-center">&gt;Name</text>
+<text x="0" y="3.1" size="0.6096" layer="27" ratio="20" align="bottom-center">&gt;Value</text>
+<wire x1="-20" y1="4.5" x2="20" y2="4.5" width="0.002540625" layer="51"/>
+<text x="0" y="4.5" size="0.6096" layer="51" ratio="20" rot="R180" align="bottom-center">Board Edge</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ANTENNA-GROUNDED">
@@ -12337,6 +12359,22 @@ clock speed support 80 MHz, 160 MHz, supports the RTOS, integrated Wi-Fi MAC/BB/
 <technology name="">
 <attribute name="PROD_ID" value="IC-14085"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ANTENNA-CELLULAR">
+<gates>
+<gate name="G$1" symbol="ANTENNA-GROUNDED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MOLEX_146200">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SIGNAL" pad="FEED"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
