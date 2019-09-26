@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -28670,18 +28670,18 @@ This 6 pin header contains all the lines necessary for programming most PIC micr
 <pin name="14" x="17.78" y="17.78" length="middle" rot="R180"/>
 </symbol>
 <symbol name="SIMHOLDER">
-<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<text x="-7.112" y="5.588" size="1.778" layer="95">&gt;Name</text>
-<text x="-7.112" y="-7.62" size="1.778" layer="96">&gt;Value</text>
-<pin name="VCC" x="-10.16" y="2.54" visible="pin" length="short" direction="pwr"/>
-<pin name="RST" x="-10.16" y="0" visible="pin" length="short" direction="in"/>
-<pin name="CLK" x="-10.16" y="-2.54" visible="pin" length="short" direction="in"/>
-<pin name="GND" x="10.16" y="2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
-<pin name="VPP" x="10.16" y="0" visible="pin" length="short" direction="in" rot="R180"/>
-<pin name="I/O" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
+<wire x1="-5.08" y1="-7.62" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="2.54" y2="10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="10.16" x2="-5.08" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="10.16" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
+<text x="-4.572" y="10.668" size="1.778" layer="95">&gt;Name</text>
+<text x="-4.572" y="-10.16" size="1.778" layer="96">&gt;Value</text>
+<pin name="VCC" x="-7.62" y="5.08" visible="pin" length="short" direction="pwr"/>
+<pin name="RST" x="-7.62" y="-2.54" visible="pin" length="short" direction="in"/>
+<pin name="CLK" x="-7.62" y="0" visible="pin" length="short" direction="in"/>
+<pin name="GND" x="-7.62" y="-5.08" visible="pin" length="short" direction="pwr"/>
+<pin name="VPP" x="-7.62" y="7.62" visible="pin" length="short" direction="in"/>
+<pin name="I/O" x="-7.62" y="2.54" visible="pin" length="short"/>
 </symbol>
 <symbol name="U.FL">
 <wire x1="0" y1="-2.54" x2="0" y2="-7.62" width="0.254" layer="94"/>
