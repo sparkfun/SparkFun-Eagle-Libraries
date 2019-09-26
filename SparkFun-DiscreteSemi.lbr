@@ -825,6 +825,31 @@ Philips Semiconductors, SOT363.pdf</description>
 <text x="-1.905" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;NAME</text>
 <text x="2.54" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;VALUE</text>
 </package>
+<package name="SOT23-6L">
+<wire x1="-1.4625" y1="-0.8125" x2="-1.4625" y2="0.8125" width="0.002540625" layer="51"/>
+<wire x1="-1.4625" y1="0.8125" x2="1.4625" y2="0.8125" width="0.002540625" layer="51"/>
+<wire x1="1.4625" y1="0.8125" x2="1.4625" y2="-0.8125" width="0.002540625" layer="51"/>
+<wire x1="1.4625" y1="-0.8125" x2="-1.4625" y2="-0.8125" width="0.002540625" layer="51"/>
+<rectangle x1="0.7375" y1="1.05" x2="1.1625" y2="1.4" layer="51"/>
+<rectangle x1="-0.2125" y1="1.05" x2="0.2125" y2="1.4" layer="51"/>
+<rectangle x1="-1.1625" y1="1.05" x2="-0.7375" y2="1.4" layer="51"/>
+<rectangle x1="0.7375" y1="-1.4" x2="1.1625" y2="-1.05" layer="51" rot="R180"/>
+<rectangle x1="-0.2125" y1="-1.4" x2="0.2125" y2="-1.05" layer="51" rot="R180"/>
+<rectangle x1="-1.1625" y1="-1.4" x2="-0.7375" y2="-1.05" layer="51" rot="R180"/>
+<smd name="5" x="0" y="1.15" dx="0.6" dy="1.2" layer="1"/>
+<smd name="6" x="-0.95" y="1.15" dx="0.6" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.15" dx="0.6" dy="1.2" layer="1"/>
+<smd name="1" x="-0.95" y="-1.15" dx="0.6" dy="1.2" layer="1" rot="R180"/>
+<smd name="2" x="0" y="-1.15" dx="0.6" dy="1.2" layer="1" rot="R180"/>
+<smd name="3" x="0.95" y="-1.15" dx="0.6" dy="1.2" layer="1" rot="R180"/>
+<wire x1="-1.5879" y1="-0.9125" x2="-1.5879" y2="0.9125" width="0.2032" layer="21"/>
+<wire x1="1.5879" y1="0.9125" x2="1.5879" y2="-0.9125" width="0.2032" layer="21"/>
+<wire x1="-1.5879" y1="0.9125" x2="-1.4645" y2="0.9125" width="0.2032" layer="21"/>
+<wire x1="1.5879" y1="-0.9125" x2="1.4645" y2="-0.9125" width="0.2032" layer="21"/>
+<wire x1="1.5879" y1="0.9125" x2="1.4645" y2="0.9125" width="0.2032" layer="21"/>
+<wire x1="-1.5879" y1="-0.9125" x2="-1.4645" y2="-0.9125" width="0.2032" layer="21"/>
+<circle x="-1.8508" y="-1.1746" radius="0.3" width="0" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOT363_PHILIPS" urn="urn:adsk.eagle:package:29757/2" type="model">
@@ -1898,6 +1923,105 @@ Adjustable shunt regulator</description>
 <vertex x="3.81" y="-2.2098"/>
 <vertex x="4.445" y="-2.8448"/>
 </polygon>
+</symbol>
+<symbol name="TVS_DIODE_ARRAY_4">
+<pin name="1" x="-5.08" y="2.54" visible="pad" length="short"/>
+<pin name="2" x="-5.08" y="0" visible="pad" length="short"/>
+<pin name="3" x="-5.08" y="-2.54" visible="pad" length="short"/>
+<pin name="4" x="7.62" y="-2.54" visible="pad" length="short" rot="R180"/>
+<pin name="5" x="7.62" y="0" visible="pad" length="short" rot="R180"/>
+<pin name="6" x="7.62" y="2.54" visible="pad" length="short" rot="R180"/>
+<wire x1="-1.8542" y1="2.8702" x2="-1.9558" y2="2.9718" width="0.0254" layer="94"/>
+<wire x1="-1.8542" y1="2.2098" x2="-1.8542" y2="2.8702" width="0.0254" layer="94"/>
+<wire x1="-1.7526" y1="2.1082" x2="-1.8542" y2="2.2098" width="0.0254" layer="94"/>
+<polygon width="0.0254" layer="94">
+<vertex x="-1.2192" y="1.905"/>
+<vertex x="-1.8542" y="2.54"/>
+<vertex x="-1.2192" y="3.175"/>
+</polygon>
+<wire x1="-0.4318" y1="2.2098" x2="-0.3302" y2="2.1082" width="0.0254" layer="94"/>
+<wire x1="-0.4318" y1="2.8702" x2="-0.4318" y2="2.2098" width="0.0254" layer="94"/>
+<wire x1="-0.5334" y1="2.9718" x2="-0.4318" y2="2.8702" width="0.0254" layer="94"/>
+<polygon width="0.0254" layer="94">
+<vertex x="-1.0668" y="3.175"/>
+<vertex x="-0.4318" y="2.54"/>
+<vertex x="-1.0668" y="1.905"/>
+</polygon>
+<wire x1="-1.8542" y1="-2.2098" x2="-1.9558" y2="-2.1082" width="0.0254" layer="94"/>
+<wire x1="-1.8542" y1="-2.8702" x2="-1.8542" y2="-2.2098" width="0.0254" layer="94"/>
+<wire x1="-1.7526" y1="-2.9718" x2="-1.8542" y2="-2.8702" width="0.0254" layer="94"/>
+<polygon width="0.0254" layer="94">
+<vertex x="-1.2192" y="-3.175"/>
+<vertex x="-1.8542" y="-2.54"/>
+<vertex x="-1.2192" y="-1.905"/>
+</polygon>
+<wire x1="-0.4318" y1="-2.8702" x2="-0.3302" y2="-2.9718" width="0.0254" layer="94"/>
+<wire x1="-0.4318" y1="-2.2098" x2="-0.4318" y2="-2.8702" width="0.0254" layer="94"/>
+<wire x1="-0.5334" y1="-2.1082" x2="-0.4318" y2="-2.2098" width="0.0254" layer="94"/>
+<polygon width="0.0254" layer="94">
+<vertex x="-1.0668" y="-1.905"/>
+<vertex x="-0.4318" y="-2.54"/>
+<vertex x="-1.0668" y="-3.175"/>
+</polygon>
+<wire x1="4.3942" y1="2.2098" x2="4.4958" y2="2.1082" width="0.0254" layer="94"/>
+<wire x1="4.3942" y1="2.8702" x2="4.3942" y2="2.2098" width="0.0254" layer="94"/>
+<wire x1="4.2926" y1="2.9718" x2="4.3942" y2="2.8702" width="0.0254" layer="94"/>
+<polygon width="0.0254" layer="94">
+<vertex x="3.7592" y="3.175"/>
+<vertex x="4.3942" y="2.54"/>
+<vertex x="3.7592" y="1.905"/>
+</polygon>
+<wire x1="2.9718" y1="2.8702" x2="2.8702" y2="2.9718" width="0.0254" layer="94"/>
+<wire x1="2.9718" y1="2.2098" x2="2.9718" y2="2.8702" width="0.0254" layer="94"/>
+<wire x1="3.0734" y1="2.1082" x2="2.9718" y2="2.2098" width="0.0254" layer="94"/>
+<polygon width="0.0254" layer="94">
+<vertex x="3.6068" y="1.905"/>
+<vertex x="2.9718" y="2.54"/>
+<vertex x="3.6068" y="3.175"/>
+</polygon>
+<wire x1="4.3942" y1="-2.8702" x2="4.4958" y2="-2.9718" width="0.0254" layer="94"/>
+<wire x1="4.3942" y1="-2.2098" x2="4.3942" y2="-2.8702" width="0.0254" layer="94"/>
+<wire x1="4.2926" y1="-2.1082" x2="4.3942" y2="-2.2098" width="0.0254" layer="94"/>
+<polygon width="0.0254" layer="94">
+<vertex x="3.7592" y="-1.905"/>
+<vertex x="4.3942" y="-2.54"/>
+<vertex x="3.7592" y="-3.175"/>
+</polygon>
+<wire x1="2.9718" y1="-2.2098" x2="2.8702" y2="-2.1082" width="0.0254" layer="94"/>
+<wire x1="2.9718" y1="-2.8702" x2="2.9718" y2="-2.2098" width="0.0254" layer="94"/>
+<wire x1="3.0734" y1="-2.9718" x2="2.9718" y2="-2.8702" width="0.0254" layer="94"/>
+<polygon width="0.0254" layer="94">
+<vertex x="3.6068" y="-3.175"/>
+<vertex x="2.9718" y="-2.54"/>
+<vertex x="3.6068" y="-1.905"/>
+</polygon>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="5.08" y1="0" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-1.905" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="2.54" x2="1.27" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="2.921" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="4.445" y1="2.54" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="2.921" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-1.905" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="4.445" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<circle x="1.27" y="0" radius="0.381" width="0" layer="94"/>
+<circle x="1.27" y="2.54" radius="0.381" width="0" layer="94"/>
+<circle x="1.27" y="-2.54" radius="0.381" width="0" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="2.54" width="0.1524" layer="94"/>
+<text x="-2.54" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-2.54" y="-5.334" size="1.778" layer="95" font="vector" align="top-left">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3117,6 +3241,28 @@ Adjustable shunt regulator</description>
 <technology name="">
 <attribute name="PROD_ID" value="IC-13538" constant="no"/>
 <attribute name="VALUE" value="ESD Diode" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TVS_DIODE_ARRAY_4" prefix="D">
+<gates>
+<gate name="G$1" symbol="TVS_DIODE_ARRAY_4" x="-2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="DT1042-04SO-7" package="SOT23-6L">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-14095"/>
 </technology>
 </technologies>
 </device>
