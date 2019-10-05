@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -5387,22 +5387,18 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;
 <pin name="ANT" x="25.4" y="5.08" length="middle" rot="R180"/>
 </symbol>
 <symbol name="ATMEGA32U4">
-<wire x1="-15.24" y1="38.1" x2="-15.24" y2="-40.64" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-40.64" x2="15.24" y2="-40.64" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-40.64" x2="15.24" y2="38.1" width="0.254" layer="94"/>
-<wire x1="15.24" y1="38.1" x2="-15.24" y2="38.1" width="0.254" layer="94"/>
-<text x="-15.24" y="38.1" size="1.778" layer="95">&gt;NAME</text>
-<text x="-15.24" y="-43.18" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="!RESET" x="-17.78" y="35.56" length="short"/>
+<wire x1="-15.24" y1="33.02" x2="-15.24" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-38.1" x2="15.24" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-38.1" x2="15.24" y2="33.02" width="0.254" layer="94"/>
+<wire x1="15.24" y1="33.02" x2="-15.24" y2="33.02" width="0.254" layer="94"/>
+<text x="-15.24" y="33.02" size="1.778" layer="95">&gt;NAME</text>
+<text x="-15.24" y="-40.64" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="!RESET" x="-17.78" y="25.4" length="short"/>
 <pin name="AREF" x="-17.78" y="22.86" length="short"/>
 <pin name="AVCC@24" x="-17.78" y="27.94" length="short"/>
-<pin name="AVCC@44" x="-17.78" y="25.4" length="short"/>
 <pin name="D+" x="-17.78" y="2.54" length="short"/>
 <pin name="D-" x="-17.78" y="0" length="short"/>
-<pin name="GND@15" x="-17.78" y="-30.48" length="short"/>
-<pin name="GND@23" x="-17.78" y="-33.02" length="short"/>
-<pin name="GND@35" x="-17.78" y="-35.56" length="short"/>
-<pin name="GND@43" x="-17.78" y="-38.1" length="short"/>
+<pin name="GND" x="-17.78" y="-35.56" length="short"/>
 <pin name="PB0(SS)" x="17.78" y="-22.86" length="short" rot="R180"/>
 <pin name="PB1(SCK)" x="17.78" y="-25.4" length="short" rot="R180"/>
 <pin name="PB2(MOSI)" x="17.78" y="-27.94" length="short" rot="R180"/>
@@ -5423,18 +5419,16 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;
 <pin name="PD7(ADC10)" x="17.78" y="-2.54" length="short" rot="R180"/>
 <pin name="PE2/!HWB" x="-17.78" y="-20.32" length="short"/>
 <pin name="PE6" x="17.78" y="-5.08" length="short" rot="R180"/>
-<pin name="PF0(ADC0)" x="17.78" y="22.86" length="short" rot="R180"/>
-<pin name="PF1(ADC1)" x="17.78" y="25.4" length="short" rot="R180"/>
-<pin name="PF4(ADC4)" x="17.78" y="27.94" length="short" rot="R180"/>
-<pin name="PF5(ADC5)" x="17.78" y="30.48" length="short" rot="R180"/>
-<pin name="PF6(ADC6)" x="17.78" y="33.02" length="short" rot="R180"/>
-<pin name="PF7(ADC7)" x="17.78" y="35.56" length="short" rot="R180"/>
+<pin name="PF0(ADC0)" x="17.78" y="17.78" length="short" rot="R180"/>
+<pin name="PF1(ADC1)" x="17.78" y="20.32" length="short" rot="R180"/>
+<pin name="PF4(ADC4)" x="17.78" y="22.86" length="short" rot="R180"/>
+<pin name="PF5(ADC5)" x="17.78" y="25.4" length="short" rot="R180"/>
+<pin name="PF6(ADC6)" x="17.78" y="27.94" length="short" rot="R180"/>
+<pin name="PF7(ADC7)" x="17.78" y="30.48" length="short" rot="R180"/>
 <pin name="UCAP" x="-17.78" y="7.62" length="short"/>
-<pin name="UGND" x="-17.78" y="-27.94" length="short"/>
 <pin name="UVCC" x="-17.78" y="10.16" length="short"/>
 <pin name="VBUS" x="-17.78" y="12.7" length="short"/>
-<pin name="VCC@14" x="-17.78" y="33.02" length="short"/>
-<pin name="VCC@34" x="-17.78" y="30.48" length="short"/>
+<pin name="VCC@14" x="-17.78" y="30.48" length="short"/>
 <pin name="XTAL1" x="-17.78" y="-10.16" length="short"/>
 <pin name="XTAL2" x="-17.78" y="-15.24" length="short"/>
 </symbol>
@@ -8378,14 +8372,10 @@ Prototype in process!  Do keep!</description>
 <connects>
 <connect gate="U1" pin="!RESET" pad="13"/>
 <connect gate="U1" pin="AREF" pad="42"/>
-<connect gate="U1" pin="AVCC@24" pad="24"/>
-<connect gate="U1" pin="AVCC@44" pad="44"/>
+<connect gate="U1" pin="AVCC@24" pad="24 44"/>
 <connect gate="U1" pin="D+" pad="4"/>
 <connect gate="U1" pin="D-" pad="3"/>
-<connect gate="U1" pin="GND@15" pad="15"/>
-<connect gate="U1" pin="GND@23" pad="23"/>
-<connect gate="U1" pin="GND@35" pad="35"/>
-<connect gate="U1" pin="GND@43" pad="43"/>
+<connect gate="U1" pin="GND" pad="5 15 23 35 43"/>
 <connect gate="U1" pin="PB0(SS)" pad="8"/>
 <connect gate="U1" pin="PB1(SCK)" pad="9"/>
 <connect gate="U1" pin="PB2(MOSI)" pad="10"/>
@@ -8413,11 +8403,9 @@ Prototype in process!  Do keep!</description>
 <connect gate="U1" pin="PF6(ADC6)" pad="37"/>
 <connect gate="U1" pin="PF7(ADC7)" pad="36"/>
 <connect gate="U1" pin="UCAP" pad="6"/>
-<connect gate="U1" pin="UGND" pad="5"/>
 <connect gate="U1" pin="UVCC" pad="2"/>
 <connect gate="U1" pin="VBUS" pad="7"/>
-<connect gate="U1" pin="VCC@14" pad="14"/>
-<connect gate="U1" pin="VCC@34" pad="34"/>
+<connect gate="U1" pin="VCC@14" pad="14 34"/>
 <connect gate="U1" pin="XTAL1" pad="17"/>
 <connect gate="U1" pin="XTAL2" pad="16"/>
 </connects>
@@ -8432,14 +8420,10 @@ Prototype in process!  Do keep!</description>
 <connects>
 <connect gate="U1" pin="!RESET" pad="13"/>
 <connect gate="U1" pin="AREF" pad="42"/>
-<connect gate="U1" pin="AVCC@24" pad="24"/>
-<connect gate="U1" pin="AVCC@44" pad="44"/>
+<connect gate="U1" pin="AVCC@24" pad="24 44"/>
 <connect gate="U1" pin="D+" pad="4"/>
 <connect gate="U1" pin="D-" pad="3"/>
-<connect gate="U1" pin="GND@15" pad="15"/>
-<connect gate="U1" pin="GND@23" pad="23"/>
-<connect gate="U1" pin="GND@35" pad="35"/>
-<connect gate="U1" pin="GND@43" pad="43"/>
+<connect gate="U1" pin="GND" pad="5 15 23 35 43"/>
 <connect gate="U1" pin="PB0(SS)" pad="8"/>
 <connect gate="U1" pin="PB1(SCK)" pad="9"/>
 <connect gate="U1" pin="PB2(MOSI)" pad="10"/>
@@ -8467,11 +8451,9 @@ Prototype in process!  Do keep!</description>
 <connect gate="U1" pin="PF6(ADC6)" pad="37"/>
 <connect gate="U1" pin="PF7(ADC7)" pad="36"/>
 <connect gate="U1" pin="UCAP" pad="6"/>
-<connect gate="U1" pin="UGND" pad="5"/>
 <connect gate="U1" pin="UVCC" pad="2"/>
 <connect gate="U1" pin="VBUS" pad="7"/>
-<connect gate="U1" pin="VCC@14" pad="14"/>
-<connect gate="U1" pin="VCC@34" pad="34"/>
+<connect gate="U1" pin="VCC@14" pad="14 34"/>
 <connect gate="U1" pin="XTAL1" pad="17"/>
 <connect gate="U1" pin="XTAL2" pad="16"/>
 </connects>
@@ -8486,14 +8468,10 @@ Prototype in process!  Do keep!</description>
 <connects>
 <connect gate="U1" pin="!RESET" pad="13"/>
 <connect gate="U1" pin="AREF" pad="42"/>
-<connect gate="U1" pin="AVCC@24" pad="24"/>
-<connect gate="U1" pin="AVCC@44" pad="44"/>
+<connect gate="U1" pin="AVCC@24" pad="24 44"/>
 <connect gate="U1" pin="D+" pad="4"/>
 <connect gate="U1" pin="D-" pad="3"/>
-<connect gate="U1" pin="GND@15" pad="15"/>
-<connect gate="U1" pin="GND@23" pad="23"/>
-<connect gate="U1" pin="GND@35" pad="35"/>
-<connect gate="U1" pin="GND@43" pad="43"/>
+<connect gate="U1" pin="GND" pad="5 15 23 35 43"/>
 <connect gate="U1" pin="PB0(SS)" pad="8"/>
 <connect gate="U1" pin="PB1(SCK)" pad="9"/>
 <connect gate="U1" pin="PB2(MOSI)" pad="10"/>
@@ -8521,11 +8499,9 @@ Prototype in process!  Do keep!</description>
 <connect gate="U1" pin="PF6(ADC6)" pad="37"/>
 <connect gate="U1" pin="PF7(ADC7)" pad="36"/>
 <connect gate="U1" pin="UCAP" pad="6"/>
-<connect gate="U1" pin="UGND" pad="5"/>
 <connect gate="U1" pin="UVCC" pad="2"/>
 <connect gate="U1" pin="VBUS" pad="7"/>
-<connect gate="U1" pin="VCC@14" pad="14"/>
-<connect gate="U1" pin="VCC@34" pad="34"/>
+<connect gate="U1" pin="VCC@14" pad="14 34"/>
 <connect gate="U1" pin="XTAL1" pad="17"/>
 <connect gate="U1" pin="XTAL2" pad="16"/>
 </connects>
@@ -8540,14 +8516,10 @@ Prototype in process!  Do keep!</description>
 <connects>
 <connect gate="U1" pin="!RESET" pad="13"/>
 <connect gate="U1" pin="AREF" pad="42"/>
-<connect gate="U1" pin="AVCC@24" pad="24"/>
-<connect gate="U1" pin="AVCC@44" pad="44"/>
+<connect gate="U1" pin="AVCC@24" pad="24 44"/>
 <connect gate="U1" pin="D+" pad="4"/>
 <connect gate="U1" pin="D-" pad="3"/>
-<connect gate="U1" pin="GND@15" pad="15"/>
-<connect gate="U1" pin="GND@23" pad="23"/>
-<connect gate="U1" pin="GND@35" pad="35"/>
-<connect gate="U1" pin="GND@43" pad="43"/>
+<connect gate="U1" pin="GND" pad="5 15 23 35 43"/>
 <connect gate="U1" pin="PB0(SS)" pad="8"/>
 <connect gate="U1" pin="PB1(SCK)" pad="9"/>
 <connect gate="U1" pin="PB2(MOSI)" pad="10"/>
@@ -8575,11 +8547,9 @@ Prototype in process!  Do keep!</description>
 <connect gate="U1" pin="PF6(ADC6)" pad="37"/>
 <connect gate="U1" pin="PF7(ADC7)" pad="36"/>
 <connect gate="U1" pin="UCAP" pad="6"/>
-<connect gate="U1" pin="UGND" pad="5"/>
 <connect gate="U1" pin="UVCC" pad="2"/>
 <connect gate="U1" pin="VBUS" pad="7"/>
-<connect gate="U1" pin="VCC@14" pad="14"/>
-<connect gate="U1" pin="VCC@34" pad="34"/>
+<connect gate="U1" pin="VCC@14" pad="14 34"/>
 <connect gate="U1" pin="XTAL1" pad="17"/>
 <connect gate="U1" pin="XTAL2" pad="16"/>
 </connects>
@@ -8594,14 +8564,10 @@ Prototype in process!  Do keep!</description>
 <connects>
 <connect gate="U1" pin="!RESET" pad="13"/>
 <connect gate="U1" pin="AREF" pad="42"/>
-<connect gate="U1" pin="AVCC@24" pad="24"/>
-<connect gate="U1" pin="AVCC@44" pad="44"/>
+<connect gate="U1" pin="AVCC@24" pad="24 44"/>
 <connect gate="U1" pin="D+" pad="4"/>
 <connect gate="U1" pin="D-" pad="3"/>
-<connect gate="U1" pin="GND@15" pad="15"/>
-<connect gate="U1" pin="GND@23" pad="23"/>
-<connect gate="U1" pin="GND@35" pad="35"/>
-<connect gate="U1" pin="GND@43" pad="43"/>
+<connect gate="U1" pin="GND" pad="5 15 23 35 43"/>
 <connect gate="U1" pin="PB0(SS)" pad="8"/>
 <connect gate="U1" pin="PB1(SCK)" pad="9"/>
 <connect gate="U1" pin="PB2(MOSI)" pad="10"/>
@@ -8629,11 +8595,9 @@ Prototype in process!  Do keep!</description>
 <connect gate="U1" pin="PF6(ADC6)" pad="37"/>
 <connect gate="U1" pin="PF7(ADC7)" pad="36"/>
 <connect gate="U1" pin="UCAP" pad="6"/>
-<connect gate="U1" pin="UGND" pad="5"/>
 <connect gate="U1" pin="UVCC" pad="2"/>
 <connect gate="U1" pin="VBUS" pad="7"/>
-<connect gate="U1" pin="VCC@14" pad="14"/>
-<connect gate="U1" pin="VCC@34" pad="34"/>
+<connect gate="U1" pin="VCC@14" pad="14 34"/>
 <connect gate="U1" pin="XTAL1" pad="17"/>
 <connect gate="U1" pin="XTAL2" pad="16"/>
 </connects>
@@ -8648,14 +8612,10 @@ Prototype in process!  Do keep!</description>
 <connects>
 <connect gate="U1" pin="!RESET" pad="13"/>
 <connect gate="U1" pin="AREF" pad="42"/>
-<connect gate="U1" pin="AVCC@24" pad="24"/>
-<connect gate="U1" pin="AVCC@44" pad="44"/>
+<connect gate="U1" pin="AVCC@24" pad="24 44"/>
 <connect gate="U1" pin="D+" pad="4"/>
 <connect gate="U1" pin="D-" pad="3"/>
-<connect gate="U1" pin="GND@15" pad="15"/>
-<connect gate="U1" pin="GND@23" pad="23"/>
-<connect gate="U1" pin="GND@35" pad="35"/>
-<connect gate="U1" pin="GND@43" pad="43"/>
+<connect gate="U1" pin="GND" pad="5 15 23 35 43"/>
 <connect gate="U1" pin="PB0(SS)" pad="8"/>
 <connect gate="U1" pin="PB1(SCK)" pad="9"/>
 <connect gate="U1" pin="PB2(MOSI)" pad="10"/>
@@ -8683,11 +8643,9 @@ Prototype in process!  Do keep!</description>
 <connect gate="U1" pin="PF6(ADC6)" pad="37"/>
 <connect gate="U1" pin="PF7(ADC7)" pad="36"/>
 <connect gate="U1" pin="UCAP" pad="6"/>
-<connect gate="U1" pin="UGND" pad="5"/>
 <connect gate="U1" pin="UVCC" pad="2"/>
 <connect gate="U1" pin="VBUS" pad="7"/>
-<connect gate="U1" pin="VCC@14" pad="14"/>
-<connect gate="U1" pin="VCC@34" pad="34"/>
+<connect gate="U1" pin="VCC@14" pad="14 34"/>
 <connect gate="U1" pin="XTAL1" pad="17"/>
 <connect gate="U1" pin="XTAL2" pad="16"/>
 </connects>
