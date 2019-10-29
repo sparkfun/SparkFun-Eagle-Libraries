@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -6037,6 +6037,95 @@ Keepout</text>
 <text x="5.08" y="-3.81" size="1.27" layer="25">&gt;NAME</text>
 <text x="5.08" y="-5.08" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="QWIIC_BOARD_MOUNT_HOLES">
+<circle x="-1.27" y="-11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="-3.81" y="-11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="1.27" y="-11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="3.81" y="-11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="-2.54" y="11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="-5.08" y="11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="0" y="11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="2.54" y="11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="5.08" y="11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="-7.32" y="2.5" radius="0.1414" width="0.4" layer="51"/>
+<circle x="7.32" y="-2.5" radius="0.1414" width="0.4" layer="51"/>
+<wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.127" layer="51"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="-12.7" width="0.127" layer="51"/>
+<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.127" layer="51"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="12.7" width="0.127" layer="51"/>
+<wire x1="-12.22" y1="1.5" x2="-12.22" y2="-1.5" width="0.254" layer="51"/>
+<wire x1="-9.62" y1="3" x2="-7.97" y2="3" width="0.254" layer="51"/>
+<wire x1="-7.97" y1="-2.25" x2="-7.97" y2="-3" width="0.254" layer="51"/>
+<wire x1="-7.97" y1="-3" x2="-9.62" y2="-3" width="0.254" layer="51"/>
+<wire x1="-7.97" y1="3" x2="-7.97" y2="2.25" width="0.254" layer="51"/>
+<wire x1="12.22" y1="-1.5" x2="12.22" y2="1.5" width="0.254" layer="51"/>
+<wire x1="9.62" y1="-3" x2="7.97" y2="-3" width="0.254" layer="51"/>
+<wire x1="7.97" y1="2.25" x2="7.97" y2="3" width="0.254" layer="51"/>
+<wire x1="7.97" y1="3" x2="9.62" y2="3" width="0.254" layer="51"/>
+<wire x1="7.97" y1="-3" x2="7.97" y2="-2.25" width="0.254" layer="51"/>
+<rectangle x1="-8.29" y1="1.2" x2="-6.94" y2="1.8" layer="51"/>
+<rectangle x1="-8.29" y1="0.2" x2="-6.94" y2="0.8" layer="51"/>
+<rectangle x1="-8.29" y1="-0.8" x2="-6.94" y2="-0.2" layer="51"/>
+<rectangle x1="-8.29" y1="-1.8" x2="-6.94" y2="-1.2" layer="51"/>
+<rectangle x1="-12.29" y1="2.2" x2="-10.3" y2="3.4" layer="51"/>
+<rectangle x1="-12.29" y1="-3.4" x2="-10.3" y2="-2.2" layer="51"/>
+<rectangle x1="6.94" y1="-1.8" x2="8.29" y2="-1.2" layer="51" rot="R180"/>
+<rectangle x1="6.94" y1="-0.8" x2="8.29" y2="-0.2" layer="51" rot="R180"/>
+<rectangle x1="6.94" y1="0.2" x2="8.29" y2="0.8" layer="51" rot="R180"/>
+<rectangle x1="6.94" y1="1.2" x2="8.29" y2="1.8" layer="51" rot="R180"/>
+<rectangle x1="10.3" y1="-3.4" x2="12.29" y2="-2.2" layer="51" rot="R180"/>
+<rectangle x1="10.3" y1="2.2" x2="12.29" y2="3.4" layer="51" rot="R180"/>
+<text x="0" y="0" size="0.508" layer="51" ratio="15" align="center">Qwiic Board</text>
+<hole x="-10.16" y="10.16" drill="3.302"/>
+<hole x="10.16" y="10.16" drill="3.302"/>
+<hole x="10.16" y="-10.16" drill="3.302"/>
+<hole x="-10.16" y="-10.16" drill="3.302"/>
+</package>
+<package name="QWIIC_BOARD_MOUNT_NOHOLES">
+<circle x="-1.27" y="-11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="-3.81" y="-11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="1.27" y="-11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="3.81" y="-11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="-2.54" y="11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="-5.08" y="11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="0" y="11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="2.54" y="11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="5.08" y="11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="-7.32" y="2.5" radius="0.1414" width="0.4" layer="51"/>
+<circle x="7.32" y="-2.5" radius="0.1414" width="0.4" layer="51"/>
+<circle x="-10.16" y="10.16" radius="1.778" width="0.127" layer="51"/>
+<circle x="10.16" y="10.16" radius="1.778" width="0.127" layer="51"/>
+<circle x="-10.16" y="-10.16" radius="1.778" width="0.127" layer="51"/>
+<circle x="10.16" y="-10.16" radius="1.778" width="0.127" layer="51"/>
+<wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.127" layer="51"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="-12.7" width="0.127" layer="51"/>
+<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.127" layer="51"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="12.7" width="0.127" layer="51"/>
+<wire x1="-12.22" y1="1.5" x2="-12.22" y2="-1.5" width="0.254" layer="51"/>
+<wire x1="-9.62" y1="3" x2="-7.97" y2="3" width="0.254" layer="51"/>
+<wire x1="-7.97" y1="-2.25" x2="-7.97" y2="-3" width="0.254" layer="51"/>
+<wire x1="-7.97" y1="-3" x2="-9.62" y2="-3" width="0.254" layer="51"/>
+<wire x1="-7.97" y1="3" x2="-7.97" y2="2.25" width="0.254" layer="51"/>
+<wire x1="12.22" y1="-1.5" x2="12.22" y2="1.5" width="0.254" layer="51"/>
+<wire x1="9.62" y1="-3" x2="7.97" y2="-3" width="0.254" layer="51"/>
+<wire x1="7.97" y1="2.25" x2="7.97" y2="3" width="0.254" layer="51"/>
+<wire x1="7.97" y1="3" x2="9.62" y2="3" width="0.254" layer="51"/>
+<wire x1="7.97" y1="-3" x2="7.97" y2="-2.25" width="0.254" layer="51"/>
+<rectangle x1="-8.29" y1="1.2" x2="-6.94" y2="1.8" layer="51"/>
+<rectangle x1="-8.29" y1="0.2" x2="-6.94" y2="0.8" layer="51"/>
+<rectangle x1="-8.29" y1="-0.8" x2="-6.94" y2="-0.2" layer="51"/>
+<rectangle x1="-8.29" y1="-1.8" x2="-6.94" y2="-1.2" layer="51"/>
+<rectangle x1="-12.29" y1="2.2" x2="-10.3" y2="3.4" layer="51"/>
+<rectangle x1="-12.29" y1="-3.4" x2="-10.3" y2="-2.2" layer="51"/>
+<rectangle x1="6.94" y1="-1.8" x2="8.29" y2="-1.2" layer="51" rot="R180"/>
+<rectangle x1="6.94" y1="-0.8" x2="8.29" y2="-0.2" layer="51" rot="R180"/>
+<rectangle x1="6.94" y1="0.2" x2="8.29" y2="0.8" layer="51" rot="R180"/>
+<rectangle x1="6.94" y1="1.2" x2="8.29" y2="1.8" layer="51" rot="R180"/>
+<rectangle x1="10.3" y1="-3.4" x2="12.29" y2="-2.2" layer="51" rot="R180"/>
+<rectangle x1="10.3" y1="2.2" x2="12.29" y2="3.4" layer="51" rot="R180"/>
+<text x="0" y="0" size="0.508" layer="51" ratio="15" align="center">Qwiic Board</text>
+<text x="-7.62" y="-12.065" size="0.508" layer="51" ratio="15" align="center">0.13"</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO-MEGA">
@@ -7724,6 +7813,14 @@ SoC with a list of features including:
 <pin name="VIN" x="-17.78" y="33.02" visible="pin" length="short"/>
 <text x="-15.24" y="36.068" size="1.778" layer="95" rot="MR180" align="top-left">&gt;NAME</text>
 <text x="-15.24" y="-35.56" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="QWIIC_BOARD_FOOTPRINT">
+<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<text x="0.127" y="0" size="1.016" layer="94" ratio="15" align="center">Qwiic Board
+Outline</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -10237,6 +10334,24 @@ PCB footprint compatbile with Big Red Box Enclosure.
 <connect gate="U1" pin="GND" pad="GND GND1"/>
 <connect gate="U1" pin="VIN" pad="VIN"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="QWIIC_BOARD_OUTLINE">
+<description>Standard Outline of a Qwiic Board. Good for defining a spot on shields and board areas in which to mount a Qwiic Board.</description>
+<gates>
+<gate name="G$1" symbol="QWIIC_BOARD_FOOTPRINT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="H" package="QWIIC_BOARD_MOUNT_HOLES">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NH" package="QWIIC_BOARD_MOUNT_NOHOLES">
 <technologies>
 <technology name=""/>
 </technologies>
