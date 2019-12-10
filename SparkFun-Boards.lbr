@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -6126,6 +6126,46 @@ Keepout</text>
 <text x="0" y="0" size="0.508" layer="51" ratio="15" align="center">Qwiic Board</text>
 <text x="-7.62" y="-12.065" size="0.508" layer="51" ratio="15" align="center">0.13"</text>
 </package>
+<package name="THING_PLUS">
+<wire x1="-11.43" y1="25.4" x2="11.43" y2="25.4" width="0.127" layer="51"/>
+<wire x1="11.43" y1="25.4" x2="11.43" y2="-25.4" width="0.127" layer="51"/>
+<wire x1="11.43" y1="-25.4" x2="-11.43" y2="-25.4" width="0.127" layer="51"/>
+<wire x1="-11.43" y1="-25.4" x2="-11.43" y2="25.4" width="0.127" layer="51"/>
+<pad name="13" x="10.16" y="19.05" drill="1.016"/>
+<pad name="14" x="10.16" y="16.51" drill="1.016"/>
+<pad name="15" x="10.16" y="13.97" drill="1.016"/>
+<pad name="16" x="10.16" y="11.43" drill="1.016"/>
+<pad name="17" x="10.16" y="8.89" drill="1.016"/>
+<pad name="18" x="10.16" y="6.35" drill="1.016"/>
+<pad name="19" x="10.16" y="3.81" drill="1.016"/>
+<pad name="20" x="10.16" y="1.27" drill="1.016"/>
+<pad name="21" x="10.16" y="-1.27" drill="1.016"/>
+<pad name="22" x="10.16" y="-3.81" drill="1.016"/>
+<pad name="23" x="10.16" y="-6.35" drill="1.016"/>
+<pad name="24" x="10.16" y="-8.89" drill="1.016"/>
+<pad name="25" x="10.16" y="-11.43" drill="1.016"/>
+<pad name="26" x="10.16" y="-13.97" drill="1.016"/>
+<pad name="27" x="10.16" y="-16.51" drill="1.016"/>
+<pad name="28" x="10.16" y="-19.05" drill="1.016"/>
+<pad name="12" x="-10.16" y="-8.89" drill="1.016"/>
+<pad name="11" x="-10.16" y="-6.35" drill="1.016"/>
+<pad name="10" x="-10.16" y="-3.81" drill="1.016"/>
+<pad name="9" x="-10.16" y="-1.27" drill="1.016"/>
+<pad name="8" x="-10.16" y="1.27" drill="1.016"/>
+<pad name="7" x="-10.16" y="3.81" drill="1.016"/>
+<pad name="6" x="-10.16" y="6.35" drill="1.016"/>
+<pad name="5" x="-10.16" y="8.89" drill="1.016"/>
+<pad name="4" x="-10.16" y="11.43" drill="1.016"/>
+<pad name="3" x="-10.16" y="13.97" drill="1.016"/>
+<pad name="2" x="-10.16" y="16.51" drill="1.016"/>
+<pad name="1" x="-10.16" y="19.05" drill="1.016"/>
+<circle x="-8.89" y="22.86" radius="1.27" width="0.127" layer="51"/>
+<circle x="8.89" y="22.86" radius="1.27" width="0.127" layer="51"/>
+<circle x="8.89" y="-22.86" radius="1.27" width="0.127" layer="51"/>
+<circle x="-8.89" y="-22.86" radius="1.27" width="0.127" layer="51"/>
+<text x="-11.43" y="-27.94" size="1.27" layer="25" font="vector">&gt;Name</text>
+<text x="-11.43" y="26.67" size="1.27" layer="27" font="vector">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO-MEGA">
@@ -7821,6 +7861,42 @@ SoC with a list of features including:
 <wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
 <text x="0.127" y="0" size="1.016" layer="94" ratio="15" align="center">Qwiic Board
 Outline</text>
+</symbol>
+<symbol name="THING_PLUS">
+<pin name="SDA" x="-12.7" y="10.16" length="short"/>
+<pin name="SCL" x="-12.7" y="7.62" length="short"/>
+<pin name="GPIO6" x="-12.7" y="5.08" length="short"/>
+<pin name="GPIO5" x="-12.7" y="2.54" length="short"/>
+<pin name="GPIO4" x="-12.7" y="0" length="short"/>
+<pin name="GPIO3" x="-12.7" y="-2.54" length="short"/>
+<pin name="GPIO2" x="-12.7" y="-5.08" length="short"/>
+<pin name="GPIO1" x="-12.7" y="-7.62" length="short"/>
+<pin name="GPIO0" x="-12.7" y="-10.16" length="short"/>
+<pin name="VUSB" x="-12.7" y="-12.7" length="short"/>
+<pin name="!EN" x="-12.7" y="-15.24" length="short"/>
+<pin name="VBAT" x="-12.7" y="-17.78" length="short"/>
+<pin name="FREE" x="12.7" y="10.16" length="short" rot="R180"/>
+<pin name="TX" x="12.7" y="7.62" length="short" rot="R180"/>
+<pin name="RX" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="MISO" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="MOSI" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="SCK" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="A5" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="A4" x="12.7" y="-7.62" length="short" rot="R180"/>
+<pin name="A3" x="12.7" y="-10.16" length="short" rot="R180"/>
+<pin name="A2" x="12.7" y="-12.7" length="short" rot="R180"/>
+<pin name="A1" x="12.7" y="-15.24" length="short" rot="R180"/>
+<pin name="A0" x="12.7" y="-17.78" length="short" rot="R180"/>
+<pin name="GND" x="12.7" y="-20.32" length="short" rot="R180"/>
+<pin name="NC" x="12.7" y="-22.86" length="short" rot="R180"/>
+<pin name="3V3" x="12.7" y="-25.4" length="short" rot="R180"/>
+<pin name="!RESET" x="12.7" y="-27.94" length="short" rot="R180"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-30.48" x2="-10.16" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-30.48" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<text x="-10.16" y="-33.02" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-10.16" y="13.208" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -10352,6 +10428,48 @@ PCB footprint compatbile with Big Red Box Enclosure.
 </technologies>
 </device>
 <device name="NH" package="QWIIC_BOARD_MOUNT_NOHOLES">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="THING_PLUS" prefix="U">
+<gates>
+<gate name="G$1" symbol="THING_PLUS" x="0" y="7.62"/>
+</gates>
+<devices>
+<device name="" package="THING_PLUS">
+<connects>
+<connect gate="G$1" pin="!EN" pad="11"/>
+<connect gate="G$1" pin="!RESET" pad="28"/>
+<connect gate="G$1" pin="3V3" pad="27"/>
+<connect gate="G$1" pin="A0" pad="24"/>
+<connect gate="G$1" pin="A1" pad="23"/>
+<connect gate="G$1" pin="A2" pad="22"/>
+<connect gate="G$1" pin="A3" pad="21"/>
+<connect gate="G$1" pin="A4" pad="20"/>
+<connect gate="G$1" pin="A5" pad="19"/>
+<connect gate="G$1" pin="FREE" pad="13"/>
+<connect gate="G$1" pin="GND" pad="25"/>
+<connect gate="G$1" pin="GPIO0" pad="9"/>
+<connect gate="G$1" pin="GPIO1" pad="8"/>
+<connect gate="G$1" pin="GPIO2" pad="7"/>
+<connect gate="G$1" pin="GPIO3" pad="6"/>
+<connect gate="G$1" pin="GPIO4" pad="5"/>
+<connect gate="G$1" pin="GPIO5" pad="4"/>
+<connect gate="G$1" pin="GPIO6" pad="3"/>
+<connect gate="G$1" pin="MISO" pad="16"/>
+<connect gate="G$1" pin="MOSI" pad="17"/>
+<connect gate="G$1" pin="NC" pad="26"/>
+<connect gate="G$1" pin="RX" pad="15"/>
+<connect gate="G$1" pin="SCK" pad="18"/>
+<connect gate="G$1" pin="SCL" pad="2"/>
+<connect gate="G$1" pin="SDA" pad="1"/>
+<connect gate="G$1" pin="TX" pad="14"/>
+<connect gate="G$1" pin="VBAT" pad="12"/>
+<connect gate="G$1" pin="VUSB" pad="10"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
