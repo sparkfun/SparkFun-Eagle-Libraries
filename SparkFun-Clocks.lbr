@@ -1399,9 +1399,15 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <smd name="3" x="0.8" y="0" dx="1.4" dy="0.4" layer="1" rot="R90"/>
 <smd name="4" x="0.1" y="0.45" dx="0.5" dy="0.2" layer="1" rot="R90"/>
 <smd name="1" x="-0.8" y="0" dx="1.4" dy="0.4" layer="1" rot="R90"/>
-<wire x1="-1.27" y1="0.762" x2="-1.27" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="0.762" x2="-1.27" y2="-0.762" width="0.2032" layer="21"/>
 <text x="-2.54" y="1.27" size="1.27" layer="125" font="vector">&gt;Name</text>
 <text x="-2.54" y="-2.54" size="1.27" layer="127" font="vector">&gt;Value</text>
+<wire x1="-0.9906" y1="0.6858" x2="-0.6858" y2="0.6858" width="0.2032" layer="51"/>
+<wire x1="-0.6858" y1="0.6858" x2="-0.6096" y2="0.6096" width="0.2032" layer="51"/>
+<wire x1="-0.6096" y1="0.6096" x2="-0.6096" y2="-0.6096" width="0.2032" layer="51"/>
+<wire x1="-0.6096" y1="-0.6096" x2="-0.6858" y2="-0.6858" width="0.2032" layer="51"/>
+<wire x1="-0.6858" y1="-0.6858" x2="-0.9906" y2="-0.6858" width="0.2032" layer="51"/>
+<wire x1="-0.9906" y1="-0.6858" x2="-0.9906" y2="0.6858" width="0.2032" layer="51"/>
 </package>
 <package name="CRYSTAL-SMD-2X2.5MM">
 <description>&lt;h3&gt;2mm X 2.5mm SMD Crystal Package&lt;/h3&gt;
@@ -1417,11 +1423,11 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 &lt;/ul&gt;</description>
 <text x="0.008" y="1.776" size="0.6096" layer="25" font="vector" ratio="12" align="bottom-center">&gt;Name</text>
 <text x="0.008" y="-1.672" size="0.6096" layer="27" font="vector" ratio="12" align="top-center">&gt;Value</text>
-<smd name="P4" x="-0.854" y="-0.71" dx="1.2" dy="1.1" layer="1"/>
-<smd name="P3" x="0.846" y="-0.71" dx="1.2" dy="1.1" layer="1"/>
-<smd name="P2" x="0.846" y="0.69" dx="1.2" dy="1.1" layer="1"/>
-<smd name="P1" x="-0.854" y="0.69" dx="1.2" dy="1.1" layer="1"/>
-<circle x="1.338" y="1.635" radius="0.161553125" width="0" layer="21"/>
+<smd name="P3" x="-0.854" y="-0.71" dx="1.2" dy="1.1" layer="1"/>
+<smd name="P4" x="0.846" y="-0.71" dx="1.2" dy="1.1" layer="1"/>
+<smd name="P1" x="0.846" y="0.69" dx="1.2" dy="1.1" layer="1"/>
+<smd name="P2" x="-0.854" y="0.69" dx="1.2" dy="1.1" layer="1"/>
+<circle x="-1.71" y="1.635" radius="0.161553125" width="0" layer="21"/>
 <polygon width="0.1" layer="51">
 <vertex x="-1.204" y="-1"/>
 <vertex x="1.266" y="-1.01"/>
@@ -2160,6 +2166,18 @@ unit with the CMOS-based oscillator and real-time-clock IC. &lt;/p&gt;</descript
 <attribute name="PROD_ID" value="XTAL-08181"/>
 <attribute name="SF_ID" value="COM-00536"/>
 <attribute name="VALUE" value="16MHz"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD-2X1.6" package="CRYSTAL-SMD-2.0X1.6MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-14681" constant="no"/>
+<attribute name="VALUE" value="16MHz" constant="no"/>
 </technology>
 </technologies>
 </device>
