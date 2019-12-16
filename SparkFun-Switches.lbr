@@ -7684,6 +7684,44 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="3.048" y1="-1.27" x2="-3.048" y2="-1.27" width="0.127" layer="51"/>
 <wire x1="-3.048" y1="-1.27" x2="-3.048" y2="1.27" width="0.127" layer="51"/>
 </package>
+<package name="SWITCH_SPDT_8.6X4.3MM">
+<description>&lt;h3&gt;SPDT PTH Slide Switch&lt;/h3&gt;
+&lt;p&gt;Single-pole, double-throw (SPDT) switch.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://dznh3ojzb2azq.cloudfront.net/products/Slide/OS/documents/datasheet.pdf"&gt;Dimensional Drawing&lt;/a&gt;&lt;/p&gt;</description>
+<pad name="1" x="-2" y="0" drill="0.8"/>
+<pad name="2" x="0" y="0" drill="0.8"/>
+<pad name="3" x="2" y="0" drill="0.8"/>
+<pad name="4" x="-4.1" y="0" drill="1.5"/>
+<pad name="5" x="4.1" y="0" drill="1.5"/>
+<wire x1="-4.3" y1="2.15" x2="4.3" y2="2.15" width="0.1524" layer="21"/>
+<wire x1="4.3" y1="2.15" x2="4.3" y2="-2.15" width="0.1524" layer="21"/>
+<wire x1="4.3" y1="-2.15" x2="-4.3" y2="-2.15" width="0.1524" layer="21"/>
+<wire x1="-4.3" y1="-2.15" x2="-4.3" y2="2.15" width="0.1524" layer="21"/>
+<rectangle x1="-4.3" y1="-0.6" x2="-3.9" y2="0.6" layer="51"/>
+<rectangle x1="3.9" y1="-0.6" x2="4.3" y2="0.6" layer="51"/>
+<rectangle x1="-0.25" y1="-0.15" x2="0.25" y2="0.15" layer="51"/>
+<rectangle x1="-2.25" y1="-0.15" x2="-1.75" y2="0.15" layer="51"/>
+<rectangle x1="1.75" y1="-0.15" x2="2.25" y2="0.15" layer="51"/>
+</package>
+<package name="SWITCH_SPDT_8.6X4.3MM_LOCK">
+<description>&lt;h3&gt;SPDT PTH Slide Switch&lt;/h3&gt;
+&lt;p&gt;Single-pole, double-throw (SPDT) switch.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://dznh3ojzb2azq.cloudfront.net/products/Slide/OS/documents/datasheet.pdf"&gt;Dimensional Drawing&lt;/a&gt;&lt;/p&gt;</description>
+<pad name="1" x="-1.88" y="0" drill="0.8"/>
+<pad name="2" x="0" y="0" drill="0.8"/>
+<pad name="3" x="1.88" y="0" drill="0.8"/>
+<pad name="4" x="-4.1" y="0" drill="1.5"/>
+<pad name="5" x="4.1" y="0" drill="1.5"/>
+<wire x1="-4.3" y1="2.15" x2="4.3" y2="2.15" width="0.1524" layer="21"/>
+<wire x1="4.3" y1="2.15" x2="4.3" y2="-2.15" width="0.1524" layer="21"/>
+<wire x1="4.3" y1="-2.15" x2="-4.3" y2="-2.15" width="0.1524" layer="21"/>
+<wire x1="-4.3" y1="-2.15" x2="-4.3" y2="2.15" width="0.1524" layer="21"/>
+<rectangle x1="-4.3" y1="-0.6" x2="-3.9" y2="0.6" layer="51"/>
+<rectangle x1="3.9" y1="-0.6" x2="4.3" y2="0.6" layer="51"/>
+<rectangle x1="-0.25" y1="-0.15" x2="0.25" y2="0.15" layer="51"/>
+<rectangle x1="-2.25" y1="-0.15" x2="-1.75" y2="0.15" layer="51"/>
+<rectangle x1="1.75" y1="-0.15" x2="2.25" y2="0.15" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DIPSWITCH-02">
@@ -9808,6 +9846,30 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="SWCH-13151"/>
+</technology>
+</technologies>
+</device>
+<device name="-PTH-8.6X4.3MM" package="SWITCH_SPDT_8.6X4.3MM">
+<connects>
+<connect gate="1" pin="O" pad="1"/>
+<connect gate="1" pin="P" pad="2"/>
+<connect gate="1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="SWCH-14746"/>
+</technology>
+</technologies>
+</device>
+<device name="-PTH-8.6X4.3MM-LOCK" package="SWITCH_SPDT_8.6X4.3MM_LOCK">
+<connects>
+<connect gate="1" pin="O" pad="1"/>
+<connect gate="1" pin="P" pad="2"/>
+<connect gate="1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="SWCH-14746"/>
 </technology>
 </technologies>
 </device>
