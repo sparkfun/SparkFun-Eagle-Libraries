@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -4321,6 +4321,90 @@ Physical Characteristics
 <wire x1="2.0574" y1="-1.524" x2="2.0574" y2="-2.0574" width="0.127" layer="21"/>
 <wire x1="2.0574" y1="-2.0574" x2="1.524" y2="-2.0574" width="0.127" layer="21"/>
 </package>
+<package name="QFN-32">
+<description>&lt;h3&gt;QFN-32 - Used for WM8960 Audio Codec&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 32&lt;/li&gt;
+&lt;li&gt;Pin pitch: 0.5mm&lt;/li&gt;
+&lt;li&gt;Area: 5mm x 5mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://statics.cirrus.com/pubs/proDatasheet/WM8960_v4.4.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;</description>
+<circle x="-1.5" y="1.5" radius="0.5" width="0.127" layer="51"/>
+<circle x="-2.75" y="2.75" radius="0.1016" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-2.5" x2="2.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0.127" layer="51"/>
+<rectangle x1="-2.475" y1="-0.325" x2="-2.125" y2="-0.175" layer="31"/>
+<rectangle x1="-2.475" y1="-0.825" x2="-2.125" y2="-0.675" layer="31"/>
+<rectangle x1="-2.475" y1="-1.325" x2="-2.125" y2="-1.175" layer="31"/>
+<rectangle x1="-2.475" y1="-1.825" x2="-2.125" y2="-1.675" layer="31"/>
+<rectangle x1="-2.475" y1="1.675" x2="-2.125" y2="1.825" layer="31"/>
+<rectangle x1="-2.475" y1="1.175" x2="-2.125" y2="1.325" layer="31"/>
+<rectangle x1="-2.475" y1="0.675" x2="-2.125" y2="0.825" layer="31"/>
+<rectangle x1="-2.475" y1="0.175" x2="-2.125" y2="0.325" layer="31"/>
+<rectangle x1="0.075" y1="-2.375" x2="0.425" y2="-2.225" layer="31" rot="R90"/>
+<rectangle x1="0.575" y1="-2.375" x2="0.925" y2="-2.225" layer="31" rot="R90"/>
+<rectangle x1="1.075" y1="-2.375" x2="1.425" y2="-2.225" layer="31" rot="R90"/>
+<rectangle x1="1.575" y1="-2.375" x2="1.925" y2="-2.225" layer="31" rot="R90"/>
+<rectangle x1="-1.925" y1="-2.375" x2="-1.575" y2="-2.225" layer="31" rot="R90"/>
+<rectangle x1="-1.425" y1="-2.375" x2="-1.075" y2="-2.225" layer="31" rot="R90"/>
+<rectangle x1="-0.925" y1="-2.375" x2="-0.575" y2="-2.225" layer="31" rot="R90"/>
+<rectangle x1="-0.425" y1="-2.375" x2="-0.075" y2="-2.225" layer="31" rot="R90"/>
+<rectangle x1="2.125" y1="0.175" x2="2.475" y2="0.325" layer="31" rot="R180"/>
+<rectangle x1="2.125" y1="0.675" x2="2.475" y2="0.825" layer="31" rot="R180"/>
+<rectangle x1="2.125" y1="1.175" x2="2.475" y2="1.325" layer="31" rot="R180"/>
+<rectangle x1="2.125" y1="1.675" x2="2.475" y2="1.825" layer="31" rot="R180"/>
+<rectangle x1="2.125" y1="-1.825" x2="2.475" y2="-1.675" layer="31" rot="R180"/>
+<rectangle x1="2.125" y1="-1.325" x2="2.475" y2="-1.175" layer="31" rot="R180"/>
+<rectangle x1="2.125" y1="-0.825" x2="2.475" y2="-0.675" layer="31" rot="R180"/>
+<rectangle x1="2.125" y1="-0.325" x2="2.475" y2="-0.175" layer="31" rot="R180"/>
+<rectangle x1="-0.425" y1="2.225" x2="-0.075" y2="2.375" layer="31" rot="R270"/>
+<rectangle x1="-0.925" y1="2.225" x2="-0.575" y2="2.375" layer="31" rot="R270"/>
+<rectangle x1="-1.425" y1="2.225" x2="-1.075" y2="2.375" layer="31" rot="R270"/>
+<rectangle x1="-1.925" y1="2.225" x2="-1.575" y2="2.375" layer="31" rot="R270"/>
+<rectangle x1="1.575" y1="2.225" x2="1.925" y2="2.375" layer="31" rot="R270"/>
+<rectangle x1="1.075" y1="2.225" x2="1.425" y2="2.375" layer="31" rot="R270"/>
+<rectangle x1="0.575" y1="2.225" x2="0.925" y2="2.375" layer="31" rot="R270"/>
+<rectangle x1="0.075" y1="2.225" x2="0.425" y2="2.375" layer="31" rot="R270"/>
+<rectangle x1="-1.25" y1="0.25" x2="-0.25" y2="1.25" layer="31"/>
+<rectangle x1="-1.25" y1="-1.25" x2="-0.25" y2="-0.25" layer="31"/>
+<rectangle x1="0.25" y1="-1.25" x2="1.25" y2="-0.25" layer="31"/>
+<rectangle x1="0.25" y1="0.25" x2="1.25" y2="1.25" layer="31"/>
+<smd name="1" x="-2.3" y="1.75" dx="0.25" dy="0.4" layer="1" rot="R90" cream="no"/>
+<smd name="2" x="-2.3" y="1.25" dx="0.25" dy="0.4" layer="1" rot="R90" cream="no"/>
+<smd name="3" x="-2.3" y="0.75" dx="0.25" dy="0.4" layer="1" rot="R90" cream="no"/>
+<smd name="4" x="-2.3" y="0.25" dx="0.25" dy="0.4" layer="1" rot="R90" cream="no"/>
+<smd name="5" x="-2.3" y="-0.25" dx="0.25" dy="0.4" layer="1" rot="R90" cream="no"/>
+<smd name="6" x="-2.3" y="-0.75" dx="0.25" dy="0.4" layer="1" rot="R90" cream="no"/>
+<smd name="7" x="-2.3" y="-1.25" dx="0.25" dy="0.4" layer="1" rot="R90" cream="no"/>
+<smd name="8" x="-2.3" y="-1.75" dx="0.25" dy="0.4" layer="1" rot="R90" cream="no"/>
+<smd name="9" x="-1.75" y="-2.3" dx="0.25" dy="0.4" layer="1" rot="R180" cream="no"/>
+<smd name="10" x="-1.25" y="-2.3" dx="0.25" dy="0.4" layer="1" rot="R180" cream="no"/>
+<smd name="11" x="-0.75" y="-2.3" dx="0.25" dy="0.4" layer="1" rot="R180" cream="no"/>
+<smd name="12" x="-0.25" y="-2.3" dx="0.25" dy="0.4" layer="1" rot="R180" cream="no"/>
+<smd name="13" x="0.25" y="-2.3" dx="0.25" dy="0.4" layer="1" rot="R180" cream="no"/>
+<smd name="14" x="0.75" y="-2.3" dx="0.25" dy="0.4" layer="1" rot="R180" cream="no"/>
+<smd name="15" x="1.25" y="-2.3" dx="0.25" dy="0.4" layer="1" rot="R180" cream="no"/>
+<smd name="16" x="1.75" y="-2.3" dx="0.25" dy="0.4" layer="1" rot="R180" cream="no"/>
+<smd name="17" x="2.3" y="-1.75" dx="0.25" dy="0.4" layer="1" rot="R270" cream="no"/>
+<smd name="18" x="2.3" y="-1.25" dx="0.25" dy="0.4" layer="1" rot="R270" cream="no"/>
+<smd name="19" x="2.3" y="-0.75" dx="0.25" dy="0.4" layer="1" rot="R270" cream="no"/>
+<smd name="20" x="2.3" y="-0.25" dx="0.25" dy="0.4" layer="1" rot="R270" cream="no"/>
+<smd name="21" x="2.3" y="0.25" dx="0.25" dy="0.4" layer="1" rot="R270" cream="no"/>
+<smd name="22" x="2.3" y="0.75" dx="0.25" dy="0.4" layer="1" rot="R270" cream="no"/>
+<smd name="23" x="2.3" y="1.25" dx="0.25" dy="0.4" layer="1" rot="R270" cream="no"/>
+<smd name="24" x="2.3" y="1.75" dx="0.25" dy="0.4" layer="1" rot="R270" cream="no"/>
+<smd name="25" x="1.75" y="2.3" dx="0.25" dy="0.4" layer="1" cream="no"/>
+<smd name="26" x="1.25" y="2.3" dx="0.25" dy="0.4" layer="1" cream="no"/>
+<smd name="27" x="0.75" y="2.3" dx="0.25" dy="0.4" layer="1" cream="no"/>
+<smd name="28" x="0.25" y="2.3" dx="0.25" dy="0.4" layer="1" cream="no"/>
+<smd name="29" x="-0.25" y="2.3" dx="0.25" dy="0.4" layer="1" cream="no"/>
+<smd name="30" x="-0.75" y="2.3" dx="0.25" dy="0.4" layer="1" cream="no"/>
+<smd name="31" x="-1.25" y="2.3" dx="0.25" dy="0.4" layer="1" cream="no"/>
+<smd name="32" x="-1.75" y="2.3" dx="0.25" dy="0.4" layer="1" cream="no"/>
+<smd name="PADDLE" x="0" y="0" dx="3.45" dy="3.45" layer="1" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="AD5262">
@@ -5511,6 +5595,47 @@ The TLC5947 has a thermal shutdown (TSD) function that turns off all output driv
 <pin name="CLKINB" x="17.78" y="15.24" length="middle" direction="pwr" rot="R180"/>
 <text x="-12.7" y="22.86" size="1.778" layer="95">&gt;NAME</text>
 <text x="-12.7" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="WM8960">
+<wire x1="-15.24" y1="27.94" x2="-15.24" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-30.48" x2="17.78" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-30.48" x2="17.78" y2="27.94" width="0.254" layer="94"/>
+<wire x1="17.78" y1="27.94" x2="-15.24" y2="27.94" width="0.254" layer="94"/>
+<pin name="ADCDAT" x="-17.78" y="2.54" length="short"/>
+<pin name="ADCLRC/GPIO" x="-17.78" y="10.16" length="short"/>
+<pin name="AGND" x="-17.78" y="-17.78" length="short"/>
+<pin name="AVDD" x="-17.78" y="15.24" length="short"/>
+<pin name="BCLK" x="-17.78" y="5.08" length="short"/>
+<pin name="DACDAT" x="-17.78" y="0" length="short"/>
+<pin name="DACLRC" x="-17.78" y="7.62" length="short"/>
+<pin name="DBVDD" x="-17.78" y="22.86" length="short"/>
+<pin name="DCVDD" x="-17.78" y="25.4" length="short"/>
+<pin name="DGND" x="-17.78" y="-15.24" length="short"/>
+<pin name="GNDPADDLE" x="-17.78" y="-27.94" length="short"/>
+<pin name="HEADPHONE_L" x="20.32" y="15.24" length="short" rot="R180"/>
+<pin name="HEADPHONE_R" x="20.32" y="12.7" length="short" rot="R180"/>
+<pin name="LINPUT1" x="20.32" y="-12.7" length="short" rot="R180"/>
+<pin name="LINPUT2" x="20.32" y="-15.24" length="short" rot="R180"/>
+<pin name="LINPUT3" x="20.32" y="-17.78" length="short" rot="R180"/>
+<pin name="MCLK" x="-17.78" y="-2.54" length="short"/>
+<pin name="MICBIAS" x="20.32" y="22.86" length="short" rot="R180"/>
+<pin name="MONO_OUT" x="20.32" y="7.62" length="short" rot="R180"/>
+<pin name="RINPUT1" x="20.32" y="-20.32" length="short" rot="R180"/>
+<pin name="RINPUT2" x="20.32" y="-22.86" length="short" rot="R180"/>
+<pin name="RINPUT3" x="20.32" y="-25.4" length="short" rot="R180"/>
+<pin name="SCL" x="-17.78" y="-10.16" length="short"/>
+<pin name="SDA" x="-17.78" y="-7.62" length="short"/>
+<pin name="SPEAKER_LN" x="20.32" y="-7.62" length="short" rot="R180"/>
+<pin name="SPEAKER_LP" x="20.32" y="-5.08" length="short" rot="R180"/>
+<pin name="SPEAKER_RN" x="20.32" y="0" length="short" rot="R180"/>
+<pin name="SPEAKER_RP" x="20.32" y="2.54" length="short" rot="R180"/>
+<pin name="SPKGND1" x="-17.78" y="-20.32" length="short"/>
+<pin name="SPKGND2" x="-17.78" y="-22.86" length="short"/>
+<pin name="SPKVDD1" x="-17.78" y="20.32" length="short"/>
+<pin name="SPKVDD2" x="-17.78" y="17.78" length="short"/>
+<pin name="VMID" x="20.32" y="25.4" length="short" rot="R180"/>
+<text x="-15.24" y="-33.02" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-15.24" y="28.448" size="1.778" layer="96" font="vector">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -7297,6 +7422,60 @@ system.
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-14612" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WM8960" prefix="U">
+<description>&lt;h3&gt;Cirrus Logic WM890 - Stereo Audio CODEC&lt;/h3&gt;
+&lt;p&gt;I&lt;sup&gt;2&lt;/sup&gt;S enabled audio CODEC with stereo microphone input ADC's and stereo audio output DAC's. Onboard 1W Class D Speaker driver is also capable of driving an 8 Ohm speaker. Also has an onboard headphone driver.&lt;/p&gt;
+
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="WM8960" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN-32">
+<connects>
+<connect gate="G$1" pin="ADCDAT" pad="16"/>
+<connect gate="G$1" pin="ADCLRC/GPIO" pad="15"/>
+<connect gate="G$1" pin="AGND" pad="28"/>
+<connect gate="G$1" pin="AVDD" pad="32"/>
+<connect gate="G$1" pin="BCLK" pad="12"/>
+<connect gate="G$1" pin="DACDAT" pad="14"/>
+<connect gate="G$1" pin="DACLRC" pad="13"/>
+<connect gate="G$1" pin="DBVDD" pad="10"/>
+<connect gate="G$1" pin="DCVDD" pad="8"/>
+<connect gate="G$1" pin="DGND" pad="9"/>
+<connect gate="G$1" pin="GNDPADDLE" pad="PADDLE"/>
+<connect gate="G$1" pin="HEADPHONE_L" pad="31"/>
+<connect gate="G$1" pin="HEADPHONE_R" pad="29"/>
+<connect gate="G$1" pin="LINPUT1" pad="4"/>
+<connect gate="G$1" pin="LINPUT2" pad="3"/>
+<connect gate="G$1" pin="LINPUT3" pad="2"/>
+<connect gate="G$1" pin="MCLK" pad="11"/>
+<connect gate="G$1" pin="MICBIAS" pad="1"/>
+<connect gate="G$1" pin="MONO_OUT" pad="30"/>
+<connect gate="G$1" pin="RINPUT1" pad="5"/>
+<connect gate="G$1" pin="RINPUT2" pad="6"/>
+<connect gate="G$1" pin="RINPUT3" pad="7"/>
+<connect gate="G$1" pin="SCL" pad="17"/>
+<connect gate="G$1" pin="SDA" pad="18"/>
+<connect gate="G$1" pin="SPEAKER_LN" pad="23"/>
+<connect gate="G$1" pin="SPEAKER_LP" pad="25"/>
+<connect gate="G$1" pin="SPEAKER_RN" pad="19"/>
+<connect gate="G$1" pin="SPEAKER_RP" pad="22"/>
+<connect gate="G$1" pin="SPKGND1" pad="24"/>
+<connect gate="G$1" pin="SPKGND2" pad="20"/>
+<connect gate="G$1" pin="SPKVDD1" pad="26"/>
+<connect gate="G$1" pin="SPKVDD2" pad="21"/>
+<connect gate="G$1" pin="VMID" pad="27"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="COM-14824" constant="no"/>
+<attribute name="VALUE" value="WM8960" constant="no"/>
 </technology>
 </technologies>
 </device>
