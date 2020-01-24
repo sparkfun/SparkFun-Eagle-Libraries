@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1436,6 +1436,23 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <vertex x="-1.27" y="0.508"/>
 </polygon>
 </package>
+<package name="RV-8803">
+<smd name="1" x="-1.35" y="-0.6" dx="0.5" dy="0.8" layer="1"/>
+<smd name="2" x="-0.45" y="-0.6" dx="0.5" dy="0.8" layer="1"/>
+<smd name="3" x="0.45" y="-0.6" dx="0.5" dy="0.8" layer="1"/>
+<smd name="4" x="1.35" y="-0.6" dx="0.5" dy="0.8" layer="1"/>
+<smd name="8" x="-1.35" y="0.6" dx="0.5" dy="0.8" layer="1"/>
+<smd name="7" x="-0.45" y="0.6" dx="0.5" dy="0.8" layer="1"/>
+<smd name="6" x="0.45" y="0.6" dx="0.5" dy="0.8" layer="1"/>
+<smd name="5" x="1.35" y="0.6" dx="0.5" dy="0.8" layer="1"/>
+<wire x1="-1.8" y1="0.8" x2="-1.8" y2="-0.8" width="0.2032" layer="21"/>
+<wire x1="1.8" y1="-0.8" x2="1.8" y2="0.8" width="0.2032" layer="21"/>
+<wire x1="1.8" y1="0.8" x2="-1.8" y2="0.8" width="0.127" layer="51"/>
+<wire x1="1.8" y1="-0.8" x2="-1.8" y2="-0.8" width="0.127" layer="51"/>
+<circle x="-2.0574" y="1.0414" radius="0.127" width="0" layer="21"/>
+<text x="-1.27" y="-2.032" size="0.6096" layer="25" font="vector" ratio="20">&gt;Name</text>
+<text x="-1.397" y="1.524" size="0.6096" layer="27" font="vector" ratio="20">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CRYSTAL">
@@ -1655,6 +1672,22 @@ unit with the CMOS-based oscillator and real-time-clock IC. &lt;/p&gt;</descript
 <pin name="GND" x="-10.16" y="-2.54" visible="pin" length="short"/>
 <pin name="OUT" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
 <pin name="VCC" x="-10.16" y="2.54" visible="pin" length="short"/>
+</symbol>
+<symbol name="RV-8803">
+<pin name="VDD" x="-12.7" y="2.54" length="short"/>
+<pin name="GND" x="-12.7" y="-5.08" length="short"/>
+<pin name="SDA" x="-12.7" y="-2.54" length="short"/>
+<pin name="SCL" x="-12.7" y="0" length="short"/>
+<pin name="CLKOUT" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="CLKOE" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="!INT" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="EVI" x="12.7" y="-5.08" length="short" rot="R180"/>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<text x="-10.16" y="-10.16" size="1.778" layer="95" font="vector">&gt;Value</text>
+<text x="-10.16" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2615,6 +2648,33 @@ unit with the CMOS-based oscillator and real-time-clock IC. &lt;/p&gt;</descript
 <technology name="">
 <attribute name="PROD_ID" value="XTAL-14664" constant="no"/>
 <attribute name="VALUE" value="16MHz" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RV-8803" prefix="U">
+<description>&lt;h3&gt;Micro Crystal RV-8803 - Temperature compensated RTC&lt;/h3&gt;
+&lt;p&gt;Ultra accurate plus/minus 3PPM I&lt;sup&gt;2&lt;/sup&gt;C RTC. Temperature compensated crystal for low drift&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RV-8803" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RV-3028">
+<connects>
+<connect gate="G$1" pin="!INT" pad="6"/>
+<connect gate="G$1" pin="CLKOE" pad="4"/>
+<connect gate="G$1" pin="CLKOUT" pad="2"/>
+<connect gate="G$1" pin="EVI" pad="7"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="SCL" pad="8"/>
+<connect gate="G$1" pin="SDA" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-14828" constant="no"/>
+<attribute name="VALUE" value="RV-8803" constant="no"/>
 </technology>
 </technologies>
 </device>
