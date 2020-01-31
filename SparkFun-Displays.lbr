@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.0">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2373,6 +2373,24 @@ Monochrome</description>
 <pin name="BS1" x="10.16" y="15.24" visible="pin" length="short" rot="R180"/>
 <pin name="BS2" x="10.16" y="12.7" visible="pin" length="short" rot="R180"/>
 </symbol>
+<symbol name="4DLCD-24320240-IPS">
+<pin name="GND" x="-12.7" y="-5.08" length="short"/>
+<pin name="LEDA" x="-12.7" y="0" length="short"/>
+<pin name="LEDK" x="-12.7" y="2.54" length="short"/>
+<pin name="SDO" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="D/C" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="CS" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="SCK" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="RESET" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="SDI" x="12.7" y="7.62" length="short" rot="R180"/>
+<pin name="VCC" x="-12.7" y="7.62" length="short"/>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<text x="-10.16" y="10.668" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-10.16" size="1.778" layer="96" font="vector">&gt;Value</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LCD-16X2" prefix="LCD">
@@ -3095,6 +3113,33 @@ Previously used in production. &lt;/p&gt;
 <technology name="">
 <attribute name="PROD_ID" value="CONN-14195" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="4DLCD-24-320X240" prefix="J">
+<description>&lt;h3&gt;4D LCD 4DLCD-24320240-IPS - 2.4" 240x320 TFT LCD&lt;/h3&gt;
+&lt;p&gt;4-wire SPI capable TFT display. 36.72 x 48.96mm active area&lt;/p&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="4DLCD-24320240-IPS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FPC05040-17204">
+<connects>
+<connect gate="G$1" pin="CS" pad="P$9"/>
+<connect gate="G$1" pin="D/C" pad="P$11"/>
+<connect gate="G$1" pin="GND" pad="P$1 P$14 P$15 P$16 P$17 P$18 P$19 P$20 P$21 P$22 P$23 P$24 P$25 P$26 P$27 P$28 P$29 P$30 P$40" route="any"/>
+<connect gate="G$1" pin="LEDA" pad="P$33"/>
+<connect gate="G$1" pin="LEDK" pad="P$34 P$35 P$36 P$37"/>
+<connect gate="G$1" pin="RESET" pad="P$7"/>
+<connect gate="G$1" pin="SCK" pad="P$8"/>
+<connect gate="G$1" pin="SDI" pad="P$2"/>
+<connect gate="G$1" pin="SDO" pad="P$13"/>
+<connect gate="G$1" pin="VCC" pad="P$3 P$10 P$12"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
