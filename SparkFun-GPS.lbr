@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1678,7 +1678,7 @@ Antenna</text>
 <rectangle x1="-7.3" y1="2.2" x2="-6.1" y2="3" layer="31" rot="R180"/>
 <rectangle x1="-6.1" y1="2.3" x2="-5.2" y2="2.9" layer="31" rot="R180"/>
 </package>
-<package name="NEO-M9N/M8T">
+<package name="NEO-M9N/M8T/M8U">
 <description>&lt;h3&gt;u-blox NEO-M9N GPS Module&lt;/h3&gt;
 
 &lt;h4&gt;Mechanical Specifications&lt;/h4&gt;
@@ -2247,6 +2247,34 @@ the 3 V variant.&lt;/p&gt;</description>
 <text x="-12.7" y="-22.86" size="1.778" layer="96">&gt;Value</text>
 <pin name="RESERVED" x="17.78" y="-17.78" length="short" direction="nc" rot="R180"/>
 <pin name="EXTINT1" x="17.78" y="10.16" length="short" rot="R180"/>
+</symbol>
+<symbol name="NEO-M8U">
+<description>&lt;h3&gt;u-blox NEO-M9N GPS Module&lt;/h3&gt;</description>
+<wire x1="15.24" y1="17.78" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-20.32" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="17.78" x2="15.24" y2="17.78" width="0.254" layer="94"/>
+<pin name="GND" x="-15.24" y="-17.78" length="short"/>
+<pin name="VCC" x="-15.24" y="15.24" length="short"/>
+<pin name="!RST" x="17.78" y="15.24" length="short" rot="R180"/>
+<pin name="EXT_INT" x="17.78" y="12.7" length="short" rot="R180"/>
+<pin name="SDA/SPI_!CS!" x="17.78" y="10.16" length="short" rot="R180"/>
+<pin name="SCL/SPI_CLK" x="17.78" y="7.62" length="short" rot="R180"/>
+<pin name="TX/SPI_MISO" x="17.78" y="2.54" length="short" rot="R180"/>
+<pin name="RX/SPI_MOSI" x="17.78" y="0" length="short" rot="R180"/>
+<pin name="LNA_EN" x="-15.24" y="0" length="short"/>
+<pin name="V_BKCP" x="-15.24" y="12.7" length="short"/>
+<pin name="RF_IN" x="-15.24" y="5.08" length="short"/>
+<pin name="VCC_RF" x="-15.24" y="2.54" length="short"/>
+<pin name="VDD_USB" x="-15.24" y="-5.08" length="short"/>
+<pin name="USB_D+" x="-15.24" y="-7.62" length="short"/>
+<pin name="USB_D-" x="-15.24" y="-10.16" length="short"/>
+<pin name="TIMEPULSE" x="17.78" y="-12.7" length="short" rot="R180"/>
+<pin name="D_SEL" x="17.78" y="-2.54" length="short" rot="R180"/>
+<pin name="!SAFEBOOT!" x="17.78" y="-15.24" length="short" rot="R180"/>
+<text x="-12.7" y="18.288" size="1.778" layer="95">&gt;Name</text>
+<text x="-12.7" y="-22.86" size="1.778" layer="96">&gt;Value</text>
+<pin name="RESERVED" x="17.78" y="-17.78" length="short" direction="nc" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2848,7 +2876,7 @@ The NEO-M9N module is available in the NEO form factor LLC package&lt;/p&gt;</de
 <gate name="G$1" symbol="NEO-M9N" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="NEO-M9N/M8T">
+<device name="" package="NEO-M9N/M8T/M8U">
 <connects>
 <connect gate="G$1" pin="!RST" pad="8"/>
 <connect gate="G$1" pin="!SAFEBOOT!" pad="1"/>
@@ -2905,7 +2933,7 @@ known.
 <gate name="G$1" symbol="NEO-M8T" x="-2.54" y="0"/>
 </gates>
 <devices>
-<device name="" package="NEO-M9N/M8T">
+<device name="" package="NEO-M9N/M8T/M8U">
 <connects>
 <connect gate="G$1" pin="!RST" pad="8"/>
 <connect gate="G$1" pin="D_SEL" pad="2"/>
@@ -2931,6 +2959,51 @@ known.
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-14839" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="U-BLOX_MEO-M8U">
+<description>&lt;h3&gt;u-blox NEO-M8U&lt;/h3&gt;
+&lt;p&gt;
+The NEO-M8U module introduces u-blox’s Untethered Dead Reckoning (UDR) technology, which provides continuous navigation without requiring speed information from the vehicle. This innovative technology brings the benefits of dead reckoning to installations previously restricted to using GNSS alone, and significantly reduces the cost of installation for after-market dead reckoning applications.
+&lt;/p&gt;
+&lt;p&gt;
+The strength of UDR is particularly apparent under poor signal conditions, where it brings continuous positioning in urban environments, even to devices with antennas installed within the vehicle. Useful positioning performance is also available during complete signal loss, for example in parking garages and short tunnels. With UDR, positioning starts as soon as power is applied to the module, before the first GNSS fix is available.
+&lt;/p&gt;
+&lt;p&gt;
+The NEO-M8U may be installed in any position within the vehicle without configuration. In addition to its freedom from any electrical connection to the vehicle, the on-board accelerometer and gyroscope sensors result in a fully self-contained solution, perfect for rapid product development with reliable and consistent performance.
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="NEO-M8U" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NEO-M9N/M8T/M8U">
+<connects>
+<connect gate="G$1" pin="!RST" pad="8"/>
+<connect gate="G$1" pin="!SAFEBOOT!" pad="1"/>
+<connect gate="G$1" pin="D_SEL" pad="2"/>
+<connect gate="G$1" pin="EXT_INT" pad="4"/>
+<connect gate="G$1" pin="GND" pad="10 12 13 24"/>
+<connect gate="G$1" pin="LNA_EN" pad="14"/>
+<connect gate="G$1" pin="RESERVED" pad="15 16 17"/>
+<connect gate="G$1" pin="RF_IN" pad="11"/>
+<connect gate="G$1" pin="RX/SPI_MOSI" pad="21"/>
+<connect gate="G$1" pin="SCL/SPI_CLK" pad="19"/>
+<connect gate="G$1" pin="SDA/SPI_!CS!" pad="18"/>
+<connect gate="G$1" pin="TIMEPULSE" pad="3"/>
+<connect gate="G$1" pin="TX/SPI_MISO" pad="20"/>
+<connect gate="G$1" pin="USB_D+" pad="6"/>
+<connect gate="G$1" pin="USB_D-" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="23"/>
+<connect gate="G$1" pin="VCC_RF" pad="9"/>
+<connect gate="G$1" pin="VDD_USB" pad="7"/>
+<connect gate="G$1" pin="V_BKCP" pad="22"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-14850" constant="no"/>
 </technology>
 </technologies>
 </device>
