@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -33772,6 +33772,23 @@ Exposes the minimal pins needed to implement a USB 2.x legacy device.</descripti
 <text x="-15.24" y="2.54" size="1.778" layer="97" ratio="10" rot="R180" align="center-right">GPIO</text>
 <text x="-17.78" y="30.48" size="1.778" layer="95" align="top-left">&gt;NAME</text>
 </symbol>
+<symbol name="MICROSD-SDIO">
+<wire x1="-5.08" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-12.7" x2="-5.08" y2="15.24" width="0.254" layer="94"/>
+<pin name="CS/DAT3" x="-7.62" y="10.16" visible="pin" length="short"/>
+<pin name="DI/CMD" x="-7.62" y="7.62" visible="pin" length="short"/>
+<pin name="DO/DAT0" x="-7.62" y="0" visible="pin" length="short"/>
+<pin name="GND" x="-7.62" y="-7.62" visible="pin" length="short"/>
+<pin name="NC/DAT2" x="-7.62" y="12.7" visible="pin" length="short"/>
+<pin name="RSV/DAT1" x="-7.62" y="-2.54" visible="pin" length="short"/>
+<pin name="SCK/CLK" x="-7.62" y="2.54" visible="pin" length="short"/>
+<pin name="SHIELD" x="-7.62" y="-10.16" visible="pin" length="short"/>
+<pin name="VCC" x="-7.62" y="5.08" visible="pin" length="short"/>
+<text x="-5.08" y="15.748" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="6_PIN_SERIAL_TARGET" prefix="J" uservalue="yes">
@@ -41357,7 +41374,7 @@ to be daisy chained easily.&lt;/p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="MICRO-SD_CARD_SOCKET" prefix="J">
+<deviceset name="MICRO-SD-SPI" prefix="J">
 <description>&lt;h3&gt;microSD Socket for Transflash&lt;/h3&gt;
 &lt;p&gt;Push-push type µSD socket.  tDoc lines correctly indicate media card edge positions when inserting (unlocked, locked, depressed).
 &lt;br&gt;
@@ -43330,6 +43347,40 @@ PTH and SMD connector options available.&lt;/p&gt;
 <technology name="">
 <attribute name="PROD_ID" value="CONN-14679"/>
 <attribute name="VALUE" value="micro:bit"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MICRO-SD-SDIO" prefix="J">
+<description>&lt;h3&gt;microSD Socket for Transflash&lt;/h3&gt;
+&lt;p&gt;Push-push type µSD socket.  tDoc lines correctly indicate media card edge positions when inserting (unlocked, locked, depressed).
+&lt;br&gt;
+&lt;br&gt;&lt;b&gt;NOTE:&lt;/b&gt; CD1 and CD2 are connected internally, and the default detect state of the socket is detect pin to ground.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13660”&gt;WAV Trigger&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13262”&gt;CAN-Bus Shield&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13743”&gt;SparkFun Level Shifing microSD Breakout&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MICROSD-SDIO" x="-2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="PUSH-PUSH" package="MICRO-SD-SOCKET">
+<connects>
+<connect gate="G$1" pin="CS/DAT3" pad="CS"/>
+<connect gate="G$1" pin="DI/CMD" pad="DI"/>
+<connect gate="G$1" pin="DO/DAT0" pad="DO"/>
+<connect gate="G$1" pin="GND" pad="GND GND1 GND3"/>
+<connect gate="G$1" pin="NC/DAT2" pad="RSV1"/>
+<connect gate="G$1" pin="RSV/DAT1" pad="RSV2"/>
+<connect gate="G$1" pin="SCK/CLK" pad="SCLK"/>
+<connect gate="G$1" pin="SHIELD" pad="CD1"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-07820" constant="no"/>
 </technology>
 </technologies>
 </device>
