@@ -932,6 +932,9 @@ Out</text>
 <wire x1="-0.889" y1="0.381" x2="-0.381" y2="0.889" width="0.508" layer="94" curve="-75.963757"/>
 <wire x1="-0.381" y1="-0.889" x2="-0.889" y2="-0.381" width="0.508" layer="94" curve="-75.963757"/>
 <wire x1="0.889" y1="-0.381" x2="0.381" y2="-0.889" width="0.508" layer="94" curve="-75.963757"/>
+<pin name="1" x="0" y="-2.54" visible="off" length="short" rot="R90"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;Name</text>
+<text x="2.54" y="0" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1183,6 +1186,9 @@ Out</text>
 </gates>
 <devices>
 <device name="2.5MM_TALL" package="STAND-OFF-REFLOW-M2.5">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="HW-14899" constant="no"/>
