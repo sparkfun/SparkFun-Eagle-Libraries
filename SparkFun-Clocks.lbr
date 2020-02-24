@@ -1453,6 +1453,25 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <text x="-1.27" y="-2.032" size="0.6096" layer="25" font="vector" ratio="20">&gt;Name</text>
 <text x="-1.397" y="1.524" size="0.6096" layer="27" font="vector" ratio="20">&gt;Value</text>
 </package>
+<package name="RESONATOR-SMD-3.2X2.5">
+<description>&lt;h3&gt;Abracon 24 MHz Oscillator&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 4&lt;/li&gt;
+&lt;li&gt;Area: 3.2 mm x 2.5 mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=https://www.mouser.com/datasheet/2/3/ASEseries-38758.pdf&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;</description>
+<smd name="4" x="-1.05" y="0.825" dx="0.9" dy="0.65" layer="1"/>
+<smd name="1" x="-1.05" y="-0.825" dx="0.9" dy="0.65" layer="1"/>
+<smd name="2" x="1.05" y="-0.825" dx="0.9" dy="0.65" layer="1"/>
+<smd name="3" x="1.05" y="0.825" dx="0.9" dy="0.65" layer="1"/>
+<wire x1="-1.65" y1="0.5" x2="-1.65" y2="-0.5" width="0.2032" layer="21"/>
+<wire x1="1.65" y1="0.5" x2="1.65" y2="-0.5" width="0.2032" layer="21"/>
+<wire x1="-0.5" y1="1.3" x2="0.5" y2="1.3" width="0.2032" layer="21"/>
+<wire x1="-0.5" y1="-1.3" x2="0.5" y2="-1.3" width="0.2032" layer="21"/>
+<circle x="-1.8" y="-1.4" radius="0.1016" width="0.2032" layer="21"/>
+<text x="-1.3" y="1.6" size="0.6096" layer="25" font="vector" ratio="20">&gt;Name</text>
+<text x="-1.6" y="-2.4" size="0.6096" layer="27" font="vector" ratio="20">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CRYSTAL">
@@ -2687,6 +2706,29 @@ unit with the CMOS-based oscillator and real-time-clock IC. &lt;/p&gt;</descript
 <technology name="">
 <attribute name="PROD_ID" value="IC-14828" constant="no"/>
 <attribute name="VALUE" value="RV-8803" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OSCILLATOR-24MHZ" prefix="Y">
+<description>&lt;h3&gt;Abracon 24 MHZ Oscillator&lt;/h3&gt;
+&lt;p&gt;3.3V - 50 PPM - 15 pF - 24 MHz Oscillator&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="OSCILLATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RESONATOR-SMD-3.2X2.5">
+<connects>
+<connect gate="G$1" pin="EN" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-14907" constant="no"/>
+<attribute name="VALUE" value="24 MHz" constant="no"/>
 </technology>
 </technologies>
 </device>
