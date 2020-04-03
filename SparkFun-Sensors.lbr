@@ -8681,6 +8681,47 @@ Used by APDS-9301</description>
 <text x="-0.7" y="1.7" size="0.3048" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <text x="-0.9" y="-1.8" size="0.3048" layer="27" font="vector" ratio="15">&gt;VALUE</text>
 </package>
+<package name="SGP30">
+<smd name="5" x="1.15" y="0" dx="0.55" dy="0.4" layer="1" cream="no"/>
+<smd name="6" x="1.15" y="0.8" dx="0.55" dy="0.4" layer="1" cream="no"/>
+<smd name="4" x="1.15" y="-0.8" dx="0.55" dy="0.4" layer="1" cream="no"/>
+<smd name="3" x="-1.15" y="-0.8" dx="0.55" dy="0.4" layer="1" cream="no"/>
+<smd name="2" x="-1.15" y="0" dx="0.55" dy="0.4" layer="1" cream="no"/>
+<smd name="1" x="-1.15" y="0.8" dx="0.55" dy="0.4" layer="1" cream="no"/>
+<rectangle x1="-1.525" y1="0.6" x2="-0.975" y2="1" layer="31"/>
+<rectangle x1="-1.525" y1="-0.2" x2="-0.975" y2="0.2" layer="31"/>
+<rectangle x1="-1.525" y1="-1" x2="-0.975" y2="-0.6" layer="31"/>
+<rectangle x1="0.975" y1="0.6" x2="1.525" y2="1" layer="31"/>
+<rectangle x1="0.975" y1="-0.2" x2="1.525" y2="0.2" layer="31"/>
+<rectangle x1="0.975" y1="-1" x2="1.525" y2="-0.6" layer="31"/>
+<polygon width="0.0001" layer="1" spacing="0.254">
+<vertex x="-0.625" y="-0.85"/>
+<vertex x="0.625" y="-0.85"/>
+<vertex x="0.625" y="0.85"/>
+<vertex x="-0.35" y="0.85"/>
+<vertex x="-0.625" y="0.575"/>
+</polygon>
+<polygon width="0.0001" layer="29" spacing="0.254">
+<vertex x="-0.725" y="-0.95"/>
+<vertex x="0.725" y="-0.95"/>
+<vertex x="0.725" y="0.95"/>
+<vertex x="-0.4" y="0.95"/>
+<vertex x="-0.725" y="0.625"/>
+</polygon>
+<wire x1="-1.225" y1="-1.225" x2="1.225" y2="-1.225" width="0.2032" layer="51"/>
+<wire x1="1.225" y1="-1.225" x2="1.225" y2="1.225" width="0.2032" layer="51"/>
+<wire x1="1.225" y1="1.225" x2="-1.225" y2="1.225" width="0.2032" layer="51"/>
+<wire x1="-1.225" y1="1.225" x2="-1.225" y2="-1.225" width="0.2032" layer="51"/>
+<wire x1="-0.225" y1="0.5" x2="-0.425" y2="0.7" width="0.2032" layer="51"/>
+<wire x1="-0.425" y1="0.7" x2="-0.7" y2="0.425" width="0.2032" layer="51"/>
+<wire x1="-0.7" y1="0.425" x2="-0.525" y2="0.25" width="0.2032" layer="51"/>
+<wire x1="-0.225" y1="0.5" x2="-0.5" y2="0.225" width="0.2032" layer="51" curve="-318.455491"/>
+<wire x1="-1.225" y1="1.225" x2="1.225" y2="1.225" width="0.2032" layer="21"/>
+<wire x1="1.225" y1="-1.225" x2="-1.225" y2="-1.225" width="0.2032" layer="21"/>
+<circle x="-1.524" y="1.524" radius="0.127" width="0.2032" layer="21"/>
+<rectangle x1="-0.3" y1="-0.425" x2="0.3" y2="0.425" layer="31"/>
+<smd name="DIEPAD" x="0" y="0" dx="0.6096" dy="0.3048" layer="1" rot="R90" stop="no" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADMP401">
@@ -10606,6 +10647,21 @@ bottom port silicon digital microphone with a single bit PDM output.</descriptio
 <wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
 <text x="-7.366" y="5.588" size="1.778" layer="95" font="vector" ratio="15">&gt;NAME</text>
 <text x="-7.62" y="-7.62" size="1.778" layer="96" font="vector" ratio="15">&gt;VALUE</text>
+</symbol>
+<symbol name="SGP30">
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<pin name="VDD" x="-10.16" y="5.08" visible="pin" length="short"/>
+<pin name="VDDH" x="-10.16" y="2.54" visible="pin" length="short"/>
+<pin name="VSS" x="-10.16" y="-2.54" visible="pin" length="short"/>
+<pin name="SDA" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SCL" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="R" x="-10.16" y="0" visible="pin" length="short"/>
+<text x="-7.62" y="8.128" size="1.778" layer="95">&gt;Name</text>
+<text x="-7.62" y="-9.906" size="1.778" layer="96">&gt;Value</text>
+<pin name="DIEPAD" x="-10.16" y="-5.08" visible="pin" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -13769,6 +13825,33 @@ consumer electronics applications. &lt;/p&gt;</description>
 <technology name="">
 <attribute name="PROD_ID" value="IC-14840" constant="no"/>
 <attribute name="VALUE" value="SHTC3" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SGP30" prefix="U">
+<description>The SGP30 is a digital multi-pixel gas sensor designed for
+easy integration into air purifier, demand-controlled
+ventilation, and IoT applications.</description>
+<gates>
+<gate name="G$1" symbol="SGP30" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SGP30">
+<connects>
+<connect gate="G$1" pin="DIEPAD" pad="DIEPAD"/>
+<connect gate="G$1" pin="R" pad="4"/>
+<connect gate="G$1" pin="SCL" pad="6"/>
+<connect gate="G$1" pin="SDA" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="VDDH" pad="5"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-14776" constant="no"/>
+<attribute name="VALUE" value="SGP30" constant="no"/>
 </technology>
 </technologies>
 </device>
