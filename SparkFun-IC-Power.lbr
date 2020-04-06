@@ -4431,6 +4431,44 @@ ranging from 2.3V to 6.0V in increments of 0.1V.&lt;/p&gt;</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="LMR14010A" prefix="U">
+<description>&lt;h3&gt;LMR14010A Buck Regulator 1A Output&lt;/h3&gt;
+
+&lt;p&gt;
+The LMR14010A is a PWM DC-to-DC buck (stepdown) regulator. With a wide input range from 4 V to 40 V, it is suitable for a wide range of applications
+from industrial to automotive. An ultra-low 1-µA
+shutdown current prolongs battery life. Operating
+frequency is fixed at 0.7 MHz, allowing the use of
+small external components while minimizing output
+ripple voltage. Soft-start and compensation circuits
+are implemented internally, limiting the number of
+external components.
+&lt;/p&gt;
+&lt;p&gt;
+The LMR14010A is optimized for up to 1-A load
+current. It has a 0.765-V nominal feedback voltage
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="LMR14203" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-6">
+<connects>
+<connect gate="G$1" pin="CB" pad="1"/>
+<connect gate="G$1" pin="FB" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="SHDN" pad="4"/>
+<connect gate="G$1" pin="SW" pad="6"/>
+<connect gate="G$1" pin="VIN" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-15089" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
