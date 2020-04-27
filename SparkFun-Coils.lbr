@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1363,6 +1363,34 @@ Mechanical Specifications
 <technology name="">
 <attribute name="PROD_ID" value="NDUC-15072" constant="no"/>
 <attribute name="VALUE" value="120NH" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="10μH_SHIELDED_INDUCTOR" prefix="L">
+<description>&lt;h3&gt;Murata 10uH Inductor&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;10uH&lt;/li&gt;
+&lt;li&gt;60mA&lt;/li&gt;
+&lt;li&gt;400mOhm&lt;/li&gt;
+&lt;li&gt;0805 Package&lt;/li&gt;
+&lt;li&gt;Shielded&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0805" package="0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="NDUC-13231" constant="no"/>
 </technology>
 </technologies>
 </device>
