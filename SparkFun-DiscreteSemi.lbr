@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -948,6 +948,44 @@ Mechanical Specifications
 <smd name="P6" x="2.679" y="-0.508" dx="1.9" dy="0.64" layer="1"/>
 <smd name="P7" x="2.679" y="0.762" dx="1.9" dy="0.64" layer="1"/>
 <smd name="P8" x="2.679" y="2.032" dx="1.9" dy="0.64" layer="1"/>
+</package>
+<package name="SSR-40DA-H">
+<hole x="-23.5" y="0" drill="4.5"/>
+<hole x="23.5" y="0" drill="4.5"/>
+<wire x1="-30" y1="22.5" x2="30" y2="22.5" width="0.127" layer="21"/>
+<wire x1="30" y1="22.5" x2="30" y2="-22.5" width="0.127" layer="21"/>
+<wire x1="30" y1="-22.5" x2="-30" y2="-22.5" width="0.127" layer="21"/>
+<wire x1="-30" y1="-22.5" x2="-30" y2="22.5" width="0.127" layer="21"/>
+<wire x1="-30" y1="22.5" x2="30" y2="22.5" width="0.127" layer="39"/>
+<wire x1="30" y1="22.5" x2="30" y2="-22.5" width="0.127" layer="39"/>
+<wire x1="30" y1="-22.5" x2="-30" y2="-22.5" width="0.127" layer="39"/>
+<wire x1="-30" y1="-22.5" x2="-30" y2="22.5" width="0.127" layer="39"/>
+<circle x="23" y="-13.75" radius="3" width="0.2032" layer="21"/>
+<circle x="30.492" y="22.984" radius="0.1016" width="0.2032" layer="21"/>
+<circle x="23" y="13.75" radius="3" width="0.2032" layer="21"/>
+<circle x="-24" y="13.75" radius="3" width="0.2032" layer="21"/>
+<circle x="-24" y="-13.75" radius="3" width="0.2032" layer="21"/>
+<text x="-3" y="23" size="1.27" layer="25" font="vector">&gt;Name</text>
+<text x="-3" y="-25" size="1.27" layer="27" font="vector">&gt;Value</text>
+<wire x1="-34.29" y1="4.445" x2="-33.02" y2="4.445" width="0.2032" layer="21"/>
+<wire x1="-34.29" y1="-4.445" x2="-33.02" y2="-4.445" width="0.2032" layer="21"/>
+<wire x1="-33.655" y1="-5.08" x2="-33.655" y2="-3.81" width="0.2032" layer="21"/>
+<circle x="-30.655" y="-0.095" radius="0.2828" width="0.127" layer="51"/>
+<wire x1="-30.255" y1="3.655" x2="-30.255" y2="-3.345" width="0.2032" layer="21"/>
+<wire x1="-30.255" y1="-3.345" x2="-36.455" y2="-3.345" width="0.2032" layer="21"/>
+<wire x1="-36.455" y1="-3.345" x2="-37.255" y2="-3.345" width="0.2032" layer="21"/>
+<wire x1="-37.255" y1="-3.345" x2="-37.255" y2="3.655" width="0.2032" layer="21"/>
+<wire x1="-37.255" y1="3.655" x2="-36.455" y2="3.655" width="0.2032" layer="21"/>
+<wire x1="-36.455" y1="3.655" x2="-30.255" y2="3.655" width="0.2032" layer="21"/>
+<wire x1="-36.455" y1="-3.345" x2="-36.455" y2="3.655" width="0.2032" layer="21"/>
+<wire x1="-35.005" y1="3.655" x2="-35.005" y2="4.155" width="0.2032" layer="51"/>
+<wire x1="-35.005" y1="4.155" x2="-36.005" y2="4.155" width="0.2032" layer="51"/>
+<wire x1="-36.005" y1="4.155" x2="-36.005" y2="3.655" width="0.2032" layer="51"/>
+<wire x1="-30.505" y1="-3.345" x2="-30.505" y2="-3.845" width="0.2032" layer="51"/>
+<wire x1="-30.505" y1="-3.845" x2="-31.505" y2="-3.845" width="0.2032" layer="51"/>
+<wire x1="-31.505" y1="-3.845" x2="-31.505" y2="-3.345" width="0.2032" layer="51"/>
+<pad name="1" x="-33.655" y="1.905" drill="1.2" diameter="2.032" shape="square" rot="R270"/>
+<pad name="2" x="-33.655" y="-1.595" drill="1.2" diameter="2.032" rot="R270"/>
 </package>
 </packages>
 <packages3d>
@@ -2196,6 +2234,38 @@ Adjustable shunt regulator</description>
 <wire x1="6.35" y1="-1.778" x2="6.35" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="6.35" y1="-2.54" x2="7.112" y2="-2.54" width="0.254" layer="94"/>
 <rectangle x1="6.096" y1="-1.524" x2="6.604" y2="-1.016" layer="94"/>
+</symbol>
+<symbol name="SSR-40DA-H">
+<wire x1="-2.54" y1="10.16" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="10.16" x2="-2.54" y2="10.16" width="0.254" layer="94"/>
+<pin name="+" x="-5.08" y="7.62" length="short"/>
+<pin name="-" x="-5.08" y="-2.54" length="short"/>
+<text x="-2.54" y="-7.62" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-2.54" y="10.668" size="1.778" layer="96" font="vector">&gt;Value</text>
+<wire x1="-1.27" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="1.27" y2="5.08" width="0.254" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="0" y2="3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="3.81" x2="-1.27" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="3.81" x2="0" y2="3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="3.81" x2="1.27" y2="3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="3.81" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-1.27" y2="2.032" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="2.032" x2="1.27" y2="1.778" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.778" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.016" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.016" x2="-1.27" y2="0.508" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0.508" x2="1.27" y2="0.254" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0.254" x2="0" y2="-0.254" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.254" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="5.08" x2="0" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="7.62" x2="-1.27" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="7.62" x2="0" y2="6.35" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="-1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3532,6 +3602,27 @@ range for only 0.5 mA of LED current.
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-15070" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SOLID_STATE_RELAY_SSR-40DA-H" prefix="K">
+<description>&lt;h3&gt;Fotek SSR-40DA-H DC-&gt;AC Solid State Relay&lt;/h3&gt;
+&lt;p&gt;This particular SSR can switch current loads of up to 40A with a 3-32V DC input and a zero cross trigger control method. Each one of these relays is equipped with four screw terminals (for use with ring or fork connectors) and a plastic cover that slides over the top of the relay to protect the terminals.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SSR-40DA-H" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SSR-40DA-H">
+<connects>
+<connect gate="G$1" pin="+" pad="2"/>
+<connect gate="G$1" pin="-" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="COMP-15116, CONN-08399" constant="no"/>
+<attribute name="VALUE" value="Solid State Relay - 40A" constant="no"/>
 </technology>
 </technologies>
 </device>
