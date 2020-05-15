@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2729,6 +2729,32 @@ unit with the CMOS-based oscillator and real-time-clock IC. &lt;/p&gt;</descript
 <technology name="">
 <attribute name="PROD_ID" value="XTAL-14907" constant="no"/>
 <attribute name="VALUE" value="24 MHz" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRYSTAL-40MHZ" prefix="Y" uservalue="yes">
+<description>&lt;h3&gt;40MHz Crystal w/ Ground Pin&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://www.digikey.com/product-detail/en/epson/FA-20H-40-0000MF10Z-K3/SER4045CT-ND/5175137"&gt;Digikey Example&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;ul&gt;&lt;li&gt;Frequency: 40MHz&lt;/li&gt;
+&lt;li&gt;Frequency Stability: &amp;plusmn;10ppm&lt;/li&gt;
+&lt;li&gt;Frequency Tolerance: &amp;plusmn;10ppm&lt;/li&gt;
+&lt;li&gt;Load Capacitance: 10pF&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL-GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-SMD-2X2.5MM" package="CRYSTAL-SMD-2X2.5MM">
+<connects>
+<connect gate="G$1" pin="1" pad="P1"/>
+<connect gate="G$1" pin="2" pad="P3"/>
+<connect gate="G$1" pin="GND" pad="P2 P4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-15127"/>
+<attribute name="VALUE" value="40MHZ"/>
 </technology>
 </technologies>
 </device>
