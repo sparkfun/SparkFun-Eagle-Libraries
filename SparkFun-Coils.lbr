@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.5.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -574,17 +574,16 @@ Physical Characteristics:
 <rectangle x1="0.425" y1="-0.5" x2="0.925" y2="0.5" layer="29"/>
 </package>
 <package name="0402_MURATA">
-<smd name="P1" x="-0.4" y="0" dx="0.4" dy="0.7" layer="1" stop="no"/>
-<smd name="P2" x="0.4" y="0" dx="0.4" dy="0.7" layer="1" stop="no"/>
-<text x="-1.27" y="0.635" size="0.6096" layer="25">&gt;NAME</text>
-<text x="-1.27" y="-1.143" size="0.6096" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.508" y1="-0.254" x2="0.508" y2="0.254" layer="51"/>
-<wire x1="-0.735" y1="0.431" x2="0.735" y2="0.431" width="0.0254" layer="39"/>
-<wire x1="0.735" y1="0.431" x2="0.735" y2="-0.431" width="0.0254" layer="39"/>
-<wire x1="0.735" y1="-0.431" x2="-0.735" y2="-0.431" width="0.0254" layer="39"/>
-<wire x1="-0.735" y1="-0.431" x2="-0.735" y2="0.431" width="0.0254" layer="39"/>
-<rectangle x1="-0.6096" y1="-0.3556" x2="-0.1905" y2="0.3556" layer="29"/>
-<rectangle x1="0.1905" y1="-0.3556" x2="0.6096" y2="0.3556" layer="29"/>
+<wire x1="-0.5" y1="-0.25" x2="-0.5" y2="0.25" width="0.002540625" layer="51"/>
+<wire x1="-0.5" y1="0.25" x2="0.5" y2="0.25" width="0.002540625" layer="51"/>
+<wire x1="0.5" y1="0.25" x2="0.5" y2="-0.25" width="0.002540625" layer="51"/>
+<wire x1="0.5" y1="-0.25" x2="-0.5" y2="-0.25" width="0.002540625" layer="51"/>
+<rectangle x1="-0.5" y1="-0.25" x2="-0.3" y2="0.25" layer="51"/>
+<rectangle x1="0.3" y1="-0.25" x2="0.5" y2="0.25" layer="51" rot="R180"/>
+<smd name="P$1" x="-0.4" y="0" dx="0.4" dy="0.6" layer="1" stop="no"/>
+<smd name="P$2" x="0.4" y="0" dx="0.4" dy="0.6" layer="1" stop="no"/>
+<rectangle x1="-0.6" y1="-0.3" x2="-0.2" y2="0.3" layer="29"/>
+<rectangle x1="0.2" y1="-0.3" x2="0.6" y2="0.3" layer="29"/>
 </package>
 <package name="1008(2520)">
 <description>&lt;h3&gt;Shielded 1008 Inductor&lt;/h3&gt;
@@ -608,31 +607,6 @@ Physical Characteristics:
 <rectangle x1="0.48" y1="-0.91" x2="1.01" y2="0.92" layer="51"/>
 <text x="-0.87" y="1.27" size="0.381" layer="25">&gt;Name</text>
 <text x="-0.87" y="-1.524" size="0.381" layer="27">&gt;Value</text>
-</package>
-<package name="INDUCTOR_15UH">
-<description>&lt;h3&gt;Non-standard 5x5 Inductor&lt;/h3&gt;
-Mechanical Specifications
-&lt;ul&gt;
-&lt;li&gt;Overall Size: 5mm x 5mm&lt;/li&gt;
-&lt;li&gt;Pad Size: 1.85mm x 4.1mm&lt;/li&gt;
-&lt;li&gt;Pad Pitch: 1.8mm&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-<smd name="P1" x="-1.905" y="0" dx="1.85" dy="4.1" layer="1"/>
-<smd name="P2" x="1.745" y="0.05" dx="1.85" dy="4.1" layer="1"/>
-<wire x1="-2.56" y1="-2.45" x2="2.44" y2="-2.45" width="0.1524" layer="51"/>
-<wire x1="2.44" y1="-2.45" x2="2.44" y2="2.55" width="0.1524" layer="51"/>
-<wire x1="2.44" y1="2.55" x2="-2.56" y2="2.55" width="0.1524" layer="51"/>
-<wire x1="-2.56" y1="2.55" x2="-2.56" y2="-2.45" width="0.1524" layer="51"/>
-<text x="-1.66" y="2.8" size="0.6096" layer="25">&gt;NAME</text>
-<text x="-1.683" y="-3.45" size="0.6096" layer="27">&gt;VALUE</text>
-<wire x1="2.845" y1="-2.6" x2="2.845" y2="2.7" width="0.127" layer="39"/>
-<wire x1="2.845" y1="2.7" x2="-3.005" y2="2.7" width="0.127" layer="39"/>
-<wire x1="-3.005" y1="2.7" x2="-3.005" y2="-2.6" width="0.127" layer="39"/>
-<wire x1="-3.005" y1="-2.6" x2="2.845" y2="-2.6" width="0.127" layer="39"/>
-<wire x1="-1.905" y1="2.55" x2="2.095" y2="2.55" width="0.127" layer="21"/>
-<wire x1="-1.905" y1="-2.45" x2="2.095" y2="-2.45" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -756,6 +730,18 @@ Mechanical Specifications
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="FB-30OHM" package="0603">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="NDUC-07859" constant="no"/>
+<attribute name="VALUE" value="30Ω" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -957,17 +943,6 @@ Mechanical Specifications
 </technology>
 </technologies>
 </device>
-<device name="FB-30OHM" package="0603">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="NDUC-07859"/>
-</technology>
-</technologies>
-</device>
 <device name="" package="XFL4020">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
@@ -1058,18 +1033,6 @@ Mechanical Specifications
 <technology name=""/>
 </technologies>
 </device>
-<device name="-LQH5B-15UH" package="INDUCTOR_15UH">
-<connects>
-<connect gate="G$1" pin="1" pad="P1"/>
-<connect gate="G$1" pin="2" pad="P2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="NDUC-15090" constant="no"/>
-<attribute name="VALUE" value="15uH" constant="no"/>
-</technology>
-</technologies>
-</device>
 </devices>
 </deviceset>
 <deviceset name="INDUCTOR-XFL4020" prefix="L" uservalue="yes">
@@ -1108,15 +1071,6 @@ Mechanical Specifications
 <attribute name="MFG_PART" value="BLM15HB121SN1D" constant="no"/>
 <attribute name="PROD_ID" value="NDUC-14206" constant="no"/>
 </technology>
-</technologies>
-</device>
-<device name="-0402T" package="0402-TIGHT">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -1158,10 +1112,6 @@ Mechanical Specifications
 </gates>
 <devices>
 <device name="" package="MA5532-AE">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="NDUC-11334" constant="no"/>
@@ -1252,8 +1202,8 @@ Mechanical Specifications
 <devices>
 <device name="-0402" package="0402_MURATA">
 <connects>
-<connect gate="G$1" pin="1" pad="P1"/>
-<connect gate="G$1" pin="2" pad="P2"/>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1344,53 +1294,6 @@ Mechanical Specifications
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="NDUC-14880" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="FERRITE_BEAD_GNSS" prefix="FB">
-<gates>
-<gate name="G$1" symbol="FERRITE_BEAD" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="0402_MURATA">
-<connects>
-<connect gate="G$1" pin="1" pad="P1"/>
-<connect gate="G$1" pin="2" pad="P2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="NDUC-15072" constant="no"/>
-<attribute name="VALUE" value="120NH" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="10μH_SHIELDED_INDUCTOR" prefix="L">
-<description>&lt;h3&gt;Murata 10uH Inductor&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;10uH&lt;/li&gt;
-&lt;li&gt;60mA&lt;/li&gt;
-&lt;li&gt;400mOhm&lt;/li&gt;
-&lt;li&gt;0805 Package&lt;/li&gt;
-&lt;li&gt;Shielded&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-<gates>
-<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="0805" package="0805">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="NDUC-13231" constant="no"/>
 </technology>
 </technologies>
 </device>
