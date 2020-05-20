@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -950,8 +950,6 @@ Mechanical Specifications
 <smd name="P8" x="2.679" y="2.032" dx="1.9" dy="0.64" layer="1"/>
 </package>
 <package name="SSR-40DA-H">
-<hole x="-23.5" y="0" drill="4.5"/>
-<hole x="23.5" y="0" drill="4.5"/>
 <wire x1="-30" y1="22.5" x2="30" y2="22.5" width="0.127" layer="21"/>
 <wire x1="30" y1="22.5" x2="30" y2="-22.5" width="0.127" layer="21"/>
 <wire x1="30" y1="-22.5" x2="-30" y2="-22.5" width="0.127" layer="21"/>
@@ -967,25 +965,27 @@ Mechanical Specifications
 <circle x="-24" y="-13.75" radius="3" width="0.2032" layer="21"/>
 <text x="-3" y="23" size="1.27" layer="25" font="vector">&gt;Name</text>
 <text x="-3" y="-25" size="1.27" layer="27" font="vector">&gt;Value</text>
-<wire x1="-34.29" y1="4.445" x2="-33.02" y2="4.445" width="0.2032" layer="21"/>
-<wire x1="-34.29" y1="-4.445" x2="-33.02" y2="-4.445" width="0.2032" layer="21"/>
-<wire x1="-33.655" y1="-5.08" x2="-33.655" y2="-3.81" width="0.2032" layer="21"/>
-<circle x="-30.655" y="-0.095" radius="0.2828" width="0.127" layer="51"/>
-<wire x1="-30.255" y1="3.655" x2="-30.255" y2="-3.345" width="0.2032" layer="21"/>
-<wire x1="-30.255" y1="-3.345" x2="-36.455" y2="-3.345" width="0.2032" layer="21"/>
-<wire x1="-36.455" y1="-3.345" x2="-37.255" y2="-3.345" width="0.2032" layer="21"/>
-<wire x1="-37.255" y1="-3.345" x2="-37.255" y2="3.655" width="0.2032" layer="21"/>
-<wire x1="-37.255" y1="3.655" x2="-36.455" y2="3.655" width="0.2032" layer="21"/>
-<wire x1="-36.455" y1="3.655" x2="-30.255" y2="3.655" width="0.2032" layer="21"/>
-<wire x1="-36.455" y1="-3.345" x2="-36.455" y2="3.655" width="0.2032" layer="21"/>
-<wire x1="-35.005" y1="3.655" x2="-35.005" y2="4.155" width="0.2032" layer="51"/>
-<wire x1="-35.005" y1="4.155" x2="-36.005" y2="4.155" width="0.2032" layer="51"/>
-<wire x1="-36.005" y1="4.155" x2="-36.005" y2="3.655" width="0.2032" layer="51"/>
-<wire x1="-30.505" y1="-3.345" x2="-30.505" y2="-3.845" width="0.2032" layer="51"/>
-<wire x1="-30.505" y1="-3.845" x2="-31.505" y2="-3.845" width="0.2032" layer="51"/>
-<wire x1="-31.505" y1="-3.845" x2="-31.505" y2="-3.345" width="0.2032" layer="51"/>
-<pad name="1" x="-33.655" y="1.905" drill="1.2" diameter="2.032" shape="square" rot="R270"/>
-<pad name="2" x="-33.655" y="-1.595" drill="1.2" diameter="2.032" rot="R270"/>
+<wire x1="-35.56" y1="4.445" x2="-34.29" y2="4.445" width="0.2032" layer="21"/>
+<wire x1="-35.56" y1="-4.445" x2="-34.29" y2="-4.445" width="0.2032" layer="21"/>
+<wire x1="-34.925" y1="-5.08" x2="-34.925" y2="-3.81" width="0.2032" layer="21"/>
+<circle x="-31.925" y="-0.095" radius="0.2828" width="0.127" layer="51"/>
+<wire x1="-31.525" y1="3.655" x2="-31.525" y2="-3.345" width="0.2032" layer="21"/>
+<wire x1="-31.525" y1="-3.345" x2="-37.725" y2="-3.345" width="0.2032" layer="21"/>
+<wire x1="-37.725" y1="-3.345" x2="-38.525" y2="-3.345" width="0.2032" layer="21"/>
+<wire x1="-38.525" y1="-3.345" x2="-38.525" y2="3.655" width="0.2032" layer="21"/>
+<wire x1="-38.525" y1="3.655" x2="-37.725" y2="3.655" width="0.2032" layer="21"/>
+<wire x1="-37.725" y1="3.655" x2="-31.525" y2="3.655" width="0.2032" layer="21"/>
+<wire x1="-37.725" y1="-3.345" x2="-37.725" y2="3.655" width="0.2032" layer="21"/>
+<wire x1="-36.275" y1="3.655" x2="-36.275" y2="4.155" width="0.2032" layer="51"/>
+<wire x1="-36.275" y1="4.155" x2="-37.275" y2="4.155" width="0.2032" layer="51"/>
+<wire x1="-37.275" y1="4.155" x2="-37.275" y2="3.655" width="0.2032" layer="51"/>
+<wire x1="-31.775" y1="-3.345" x2="-31.775" y2="-3.845" width="0.2032" layer="51"/>
+<wire x1="-31.775" y1="-3.845" x2="-32.775" y2="-3.845" width="0.2032" layer="51"/>
+<wire x1="-32.775" y1="-3.845" x2="-32.775" y2="-3.345" width="0.2032" layer="51"/>
+<pad name="1" x="-34.925" y="1.905" drill="1.2" diameter="2.032" shape="square" rot="R270"/>
+<pad name="2" x="-34.925" y="-1.595" drill="1.2" diameter="2.032" rot="R270"/>
+<pad name="H1" x="-23.5" y="0" drill="3.73" diameter="5.6"/>
+<pad name="H2" x="23.49" y="0" drill="3.73" diameter="5.6"/>
 </package>
 </packages>
 <packages3d>
@@ -3621,7 +3621,7 @@ range for only 0.5 mA of LED current.
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="COMP-15116, CONN-08399" constant="no"/>
+<attribute name="PROD_ID" value="COMP-15116, CONN-08399, 2 x HW-15038" constant="no"/>
 <attribute name="VALUE" value="Solid State Relay - 40A" constant="no"/>
 </technology>
 </technologies>
