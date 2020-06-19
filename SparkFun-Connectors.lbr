@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -12677,14 +12677,14 @@ Puhs-Push type.
 <smd name="CD1" x="-2.05" y="0.4" dx="1.8" dy="1.4" layer="1"/>
 <smd name="GND3" x="-0.45" y="13.55" dx="1.4" dy="1.9" layer="1"/>
 <smd name="GND1" x="-13.6" y="14.55" dx="1.4" dy="1.9" layer="1"/>
-<smd name="RSV1" x="-8.94" y="10.7" dx="0.8" dy="1.5" layer="1"/>
-<smd name="CS" x="-7.84" y="10.3" dx="0.8" dy="1.5" layer="1"/>
-<smd name="DI" x="-6.74" y="10.7" dx="0.8" dy="1.5" layer="1"/>
+<smd name="DAT2" x="-8.94" y="10.7" dx="0.8" dy="1.5" layer="1"/>
+<smd name="CS/DAT3" x="-7.84" y="10.3" dx="0.8" dy="1.5" layer="1"/>
+<smd name="DI/CMD" x="-6.74" y="10.7" dx="0.8" dy="1.5" layer="1"/>
 <smd name="VCC" x="-5.64" y="10.9" dx="0.8" dy="1.5" layer="1"/>
 <smd name="SCLK" x="-4.54" y="10.7" dx="0.8" dy="1.5" layer="1"/>
 <smd name="GND" x="-3.44" y="10.9" dx="0.8" dy="1.5" layer="1"/>
-<smd name="DO" x="-2.34" y="10.7" dx="0.8" dy="1.5" layer="1"/>
-<smd name="RSV2" x="-1.24" y="10.7" dx="0.8" dy="1.5" layer="1"/>
+<smd name="DO/DAT0" x="-2.34" y="10.7" dx="0.8" dy="1.5" layer="1"/>
+<smd name="DAT1" x="-1.24" y="10.7" dx="0.8" dy="1.5" layer="1"/>
 <text x="-8.89" y="6.35" size="0.6096" layer="25" font="vector" ratio="20">&gt;Name</text>
 <text x="-8.89" y="5.08" size="0.6096" layer="27" font="vector" ratio="20">&gt;Value</text>
 <text x="0.635" y="15.875" size="1.27" layer="51" font="vector" ratio="10" align="center-left">Pressed</text>
@@ -39381,9 +39381,9 @@ This type of connector and cable is frequently used for transmitting midi data (
 <wire x1="7.62" y1="15.24" x2="7.62" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-12.7" x2="-5.08" y2="15.24" width="0.254" layer="94"/>
-<pin name="CS" x="-7.62" y="10.16" visible="pin" length="short"/>
-<pin name="DI" x="-7.62" y="7.62" visible="pin" length="short"/>
-<pin name="DO" x="-7.62" y="0" visible="pin" length="short"/>
+<pin name="!CS!" x="-7.62" y="10.16" visible="pin" length="short"/>
+<pin name="SDI" x="-7.62" y="7.62" visible="pin" length="short"/>
+<pin name="SDO" x="-7.62" y="0" visible="pin" length="short"/>
 <pin name="GND" x="-7.62" y="-7.62" visible="pin" length="short"/>
 <pin name="NC" x="-7.62" y="12.7" visible="pin" length="short"/>
 <pin name="RSV" x="-7.62" y="-2.54" visible="pin" length="short"/>
@@ -39607,9 +39607,9 @@ Exposes the minimal pins needed to implement a USB 2.x legacy device.</descripti
 <wire x1="10.16" y1="12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-12.7" x2="-5.08" y2="12.7" width="0.254" layer="94"/>
-<pin name="DAT3/CS" x="-7.62" y="7.62" visible="pin" length="short"/>
-<pin name="CMD/MOSI" x="-7.62" y="-5.08" visible="pin" length="short"/>
-<pin name="DAT0/MISO" x="-7.62" y="0" visible="pin" length="short"/>
+<pin name="DAT3/!CS!" x="-7.62" y="7.62" visible="pin" length="short"/>
+<pin name="CMD/SDI" x="-7.62" y="-5.08" visible="pin" length="short"/>
+<pin name="DAT0/SDO" x="-7.62" y="0" visible="pin" length="short"/>
 <pin name="GND" x="-7.62" y="-10.16" visible="pin" length="short"/>
 <pin name="DAT2/NC" x="-7.62" y="5.08" visible="pin" length="short"/>
 <pin name="DAT1/NC" x="-7.62" y="2.54" visible="pin" length="short"/>
@@ -47308,13 +47308,13 @@ to be daisy chained easily.&lt;/p&gt;
 <devices>
 <device name="PUSH-PUSH" package="MICRO-SD-SOCKET">
 <connects>
-<connect gate="J1" pin="CS" pad="CS"/>
-<connect gate="J1" pin="DI" pad="DI"/>
-<connect gate="J1" pin="DO" pad="DO"/>
+<connect gate="J1" pin="!CS!" pad="CS/DAT3"/>
 <connect gate="J1" pin="GND" pad="GND"/>
-<connect gate="J1" pin="NC" pad="RSV2"/>
-<connect gate="J1" pin="RSV" pad="RSV1"/>
+<connect gate="J1" pin="NC" pad="DAT1"/>
+<connect gate="J1" pin="RSV" pad="DAT2"/>
 <connect gate="J1" pin="SCK" pad="SCLK"/>
+<connect gate="J1" pin="SDI" pad="DI/CMD"/>
+<connect gate="J1" pin="SDO" pad="DO/DAT0"/>
 <connect gate="J1" pin="SHIELD" pad="CD1"/>
 <connect gate="J1" pin="VCC" pad="VCC"/>
 </connects>
@@ -47326,13 +47326,13 @@ to be daisy chained easily.&lt;/p&gt;
 </device>
 <device name="TINY" package="MICROSD_TINY">
 <connects>
-<connect gate="J1" pin="CS" pad="2"/>
-<connect gate="J1" pin="DI" pad="3"/>
-<connect gate="J1" pin="DO" pad="7"/>
+<connect gate="J1" pin="!CS!" pad="2"/>
 <connect gate="J1" pin="GND" pad="6"/>
 <connect gate="J1" pin="NC" pad="9"/>
 <connect gate="J1" pin="RSV" pad="1 8"/>
 <connect gate="J1" pin="SCK" pad="5"/>
+<connect gate="J1" pin="SDI" pad="3"/>
+<connect gate="J1" pin="SDO" pad="7"/>
 <connect gate="J1" pin="SHIELD" pad="GND1 GND2 GND3 GND4 GND5 GND6"/>
 <connect gate="J1" pin="VCC" pad="4"/>
 </connects>
@@ -49450,11 +49450,11 @@ PTH and SMD connector options available.&lt;/p&gt;
 <device name="PUSH-PUSH" package="MICRO-SD-SOCKET">
 <connects>
 <connect gate="G$1" pin="CLK/SCK" pad="SCLK"/>
-<connect gate="G$1" pin="CMD/MOSI" pad="DI"/>
-<connect gate="G$1" pin="DAT0/MISO" pad="DO"/>
-<connect gate="G$1" pin="DAT1/NC" pad="RSV2"/>
-<connect gate="G$1" pin="DAT2/NC" pad="RSV1"/>
-<connect gate="G$1" pin="DAT3/CS" pad="CS"/>
+<connect gate="G$1" pin="CMD/SDI" pad="DI/CMD"/>
+<connect gate="G$1" pin="DAT0/SDO" pad="DO/DAT0"/>
+<connect gate="G$1" pin="DAT1/NC" pad="DAT1"/>
+<connect gate="G$1" pin="DAT2/NC" pad="DAT2"/>
+<connect gate="G$1" pin="DAT3/!CS!" pad="CS/DAT3"/>
 <connect gate="G$1" pin="GND" pad="GND GND1 GND3"/>
 <connect gate="G$1" pin="SHIELD" pad="CD1"/>
 <connect gate="G$1" pin="VCC" pad="VCC"/>
