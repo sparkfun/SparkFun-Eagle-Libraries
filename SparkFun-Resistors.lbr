@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -939,8 +939,6 @@ It has a reduced top mask to make it harder to install upside-down.</description
 &lt;li&gt;&lt;/li&gt;
 &lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
-<text x="-1.605" y="1.198" size="0.6096" layer="25">&gt;NAME</text>
-<text x="-1.605" y="-1.802" size="0.6096" layer="27">&gt;VALUE</text>
 <smd name="P1" x="-1.2" y="-0.62" dx="0.8" dy="0.55" layer="1" stop="no"/>
 <smd name="P2" x="-0.4" y="-0.62" dx="0.5" dy="0.55" layer="1" stop="no"/>
 <smd name="P3" x="0.4" y="-0.62" dx="0.5" dy="0.55" layer="1" stop="no"/>
@@ -990,6 +988,8 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <wire x1="-1.778" y1="1.1176" x2="1.778" y2="1.1176" width="0.0508" layer="39"/>
 <wire x1="1.778" y1="1.1176" x2="1.778" y2="-1.0668" width="0.0508" layer="39"/>
 <wire x1="1.778" y1="-1.0668" x2="-1.778" y2="-1.0668" width="0.0508" layer="39"/>
+<text x="-1.651" y="1.27" size="0.6096" layer="25" ratio="20">&gt;NAME</text>
+<text x="-1.651" y="-1.778" size="0.6096" layer="27" ratio="20">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
