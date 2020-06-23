@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -27896,7 +27896,7 @@ Part Number: HA-522</description>
 <wire x1="-10.1" y1="6.3" x2="10.1" y2="6.3" width="0.1524" layer="21"/>
 <wire x1="10.1" y1="6.3" x2="10.1" y2="-6.3" width="0.1524" layer="21"/>
 <text x="-10.16" y="6.858" size="1.778" layer="25">&gt;Name</text>
-<text x="-10.16" y="-8.89" size="1.778" layer="25">&gt;Value</text>
+<text x="-10.16" y="-8.89" size="0.6096" layer="25">&gt;Value</text>
 <wire x1="-9" y1="5" x2="-6" y2="5" width="0.1524" layer="51"/>
 <wire x1="-6" y1="5" x2="-6" y2="-7" width="0.1524" layer="51"/>
 <wire x1="-6" y1="-7" x2="-9" y2="-7" width="0.1524" layer="51"/>
@@ -27930,7 +27930,7 @@ Part Number: HA-522</description>
 <wire x1="4" y1="-7" x2="4" y2="5" width="0.1524" layer="51"/>
 <wire x1="4" y1="5" x2="1" y2="5" width="0.1524" layer="51"/>
 <text x="-5.08" y="6.985" size="1.778" layer="25">&gt;Name</text>
-<text x="-5.08" y="-10.16" size="1.778" layer="27">&gt;Value</text>
+<text x="-5.08" y="-8.89" size="0.6096" layer="27" ratio="20">&gt;Value</text>
 </package>
 <package name="CONN_FPC_BOTTOM_12POS_.5MM_R/A">
 <smd name="P$1" x="-2.75" y="0" dx="1" dy="0.3" layer="1" rot="R90"/>
@@ -36484,8 +36484,8 @@ Part Number: HA-522</description>
 <wire x1="-7.6" y1="6.3" x2="-7.6" y2="-6.3" width="0.1524" layer="21"/>
 <wire x1="-7.6" y1="6.3" x2="7.6" y2="6.3" width="0.1524" layer="21"/>
 <wire x1="7.6" y1="6.3" x2="7.6" y2="-6.3" width="0.1524" layer="21"/>
-<text x="-10.16" y="6.858" size="1.778" layer="25">&gt;Name</text>
-<text x="-10.16" y="-8.89" size="1.778" layer="25">&gt;Value</text>
+<text x="-7.62" y="6.858" size="1.778" layer="25">&gt;Name</text>
+<text x="-7.62" y="-8.89" size="0.6096" layer="27">&gt;Value</text>
 <wire x1="-6.5" y1="5" x2="-3.5" y2="5" width="0.1524" layer="51"/>
 <wire x1="-3.5" y1="5" x2="-3.5" y2="-7" width="0.1524" layer="51"/>
 <wire x1="-3.5" y1="-7" x2="-6.5" y2="-7" width="0.1524" layer="51"/>
@@ -41312,7 +41312,9 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <connect gate="J$1" pin="3" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-14721" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
