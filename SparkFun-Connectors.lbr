@@ -49188,7 +49188,7 @@ Super Speed pins not available on the 16-pin purely SMD connector so this part i
 <gate name="G$1" symbol="CAMERA-OV7670-MODULE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="FPC-24-AMPHENOL-SFV24R-1STE1HLF">
+<device name="BOTTOM-CONTACT" package="FPC-24-AMPHENOL-SFV24R-1STE1HLF">
 <connects>
 <connect gate="G$1" pin="AVDD" pad="4 11"/>
 <connect gate="G$1" pin="D0" pad="14"/>
@@ -49216,6 +49216,36 @@ Super Speed pins not available on the 16-pin purely SMD connector so this part i
 <technology name="">
 <attribute name="DIGIKEY" value="609-4320-2-ND"/>
 <attribute name="PROD_ID" value="CONN-14233"/>
+</technology>
+</technologies>
+</device>
+<device name="DOUBLE-CONTACT" package="FPC-24-AMPHENOL-SFV24R-1STE1HLF">
+<connects>
+<connect gate="G$1" pin="AVDD" pad="4 11"/>
+<connect gate="G$1" pin="D0" pad="14"/>
+<connect gate="G$1" pin="D1" pad="3"/>
+<connect gate="G$1" pin="D2" pad="9"/>
+<connect gate="G$1" pin="D3" pad="5"/>
+<connect gate="G$1" pin="D4" pad="12"/>
+<connect gate="G$1" pin="D5" pad="20"/>
+<connect gate="G$1" pin="D6" pad="19"/>
+<connect gate="G$1" pin="D7" pad="13"/>
+<connect gate="G$1" pin="FVLD" pad="6"/>
+<connect gate="G$1" pin="GND" pad="2 15"/>
+<connect gate="G$1" pin="INT" pad="18"/>
+<connect gate="G$1" pin="IOVDD" pad="10"/>
+<connect gate="G$1" pin="LVLD" pad="16"/>
+<connect gate="G$1" pin="MCLK" pad="8"/>
+<connect gate="G$1" pin="MNT1" pad="MNT1@0 MNT1@1"/>
+<connect gate="G$1" pin="MNT2" pad="MNT2@0 MNT2@1"/>
+<connect gate="G$1" pin="PCLK" pad="17"/>
+<connect gate="G$1" pin="SCL" pad="21"/>
+<connect gate="G$1" pin="SDA" pad="22"/>
+<connect gate="G$1" pin="TRIG" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-14195" constant="no"/>
 </technology>
 </technologies>
 </device>
