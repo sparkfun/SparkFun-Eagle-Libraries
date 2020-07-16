@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -96,7 +96,10 @@
 <layer number="114" name="Badge_Outline" color="7" fill="1" visible="no" active="no"/>
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="no"/>
+<layer number="117" name="PM_Ref" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="PF_Ref" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="120" name="WFL_Ref" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="no"/>
@@ -2059,6 +2062,39 @@ none
 <wire x1="13.97" y1="3.81" x2="13.97" y2="0" width="0.1524" layer="51"/>
 <wire x1="13.97" y1="0" x2="-12.7" y2="0" width="0.1524" layer="51"/>
 </package>
+<package name="HT16K33">
+<circle x="-8.485" y="-4.167" radius="0.05" width="0.508" layer="21"/>
+<wire x1="-7.7" y1="3.75" x2="7.7" y2="3.75" width="0.2032" layer="21"/>
+<wire x1="7.7" y1="3.75" x2="7.7" y2="-3.75" width="0.2032" layer="21"/>
+<wire x1="7.7" y1="-3.75" x2="-7.7" y2="-3.75" width="0.2032" layer="21"/>
+<wire x1="-7.7" y1="-3.75" x2="-7.7" y2="3.75" width="0.2032" layer="21"/>
+<smd name="1" x="-6.985" y="-4.572" dx="0.6604" dy="1.143" layer="1"/>
+<smd name="2" x="-5.715" y="-4.572" dx="0.6604" dy="1.143" layer="1"/>
+<smd name="3" x="-4.445" y="-4.572" dx="0.6604" dy="1.143" layer="1"/>
+<smd name="4" x="-3.175" y="-4.572" dx="0.6604" dy="1.143" layer="1"/>
+<smd name="5" x="-1.905" y="-4.572" dx="0.6604" dy="1.143" layer="1"/>
+<smd name="6" x="-0.635" y="-4.572" dx="0.6604" dy="1.143" layer="1"/>
+<smd name="7" x="0.635" y="-4.572" dx="0.6604" dy="1.143" layer="1"/>
+<smd name="8" x="1.905" y="-4.572" dx="0.6604" dy="1.143" layer="1"/>
+<smd name="9" x="3.175" y="-4.572" dx="0.6604" dy="1.143" layer="1"/>
+<smd name="10" x="4.445" y="-4.572" dx="0.6604" dy="1.143" layer="1"/>
+<smd name="11" x="5.715" y="-4.572" dx="0.6604" dy="1.143" layer="1"/>
+<smd name="12" x="6.985" y="-4.572" dx="0.6604" dy="1.143" layer="1"/>
+<smd name="13" x="6.985" y="4.572" dx="0.6604" dy="1.143" layer="1"/>
+<smd name="14" x="5.715" y="4.572" dx="0.6604" dy="1.143" layer="1"/>
+<smd name="15" x="4.445" y="4.572" dx="0.6604" dy="1.143" layer="1"/>
+<smd name="16" x="3.175" y="4.572" dx="0.6604" dy="1.143" layer="1"/>
+<smd name="17" x="1.905" y="4.572" dx="0.6604" dy="1.143" layer="1"/>
+<smd name="18" x="0.635" y="4.572" dx="0.6604" dy="1.143" layer="1"/>
+<smd name="19" x="-0.635" y="4.572" dx="0.6604" dy="1.143" layer="1"/>
+<smd name="20" x="-1.905" y="4.572" dx="0.6604" dy="1.143" layer="1"/>
+<smd name="21" x="-3.175" y="4.572" dx="0.6604" dy="1.143" layer="1"/>
+<smd name="22" x="-4.445" y="4.572" dx="0.6604" dy="1.143" layer="1"/>
+<smd name="23" x="-5.715" y="4.572" dx="0.6604" dy="1.143" layer="1"/>
+<smd name="24" x="-6.985" y="4.572" dx="0.6604" dy="1.143" layer="1"/>
+<text x="-7.75" y="5.6" size="1.778" layer="25">&gt;NAME</text>
+<text x="-7.7" y="-7.4" size="1.778" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LCD-16X2">
@@ -2390,6 +2426,38 @@ Monochrome</description>
 <wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
 <text x="-10.16" y="10.668" size="1.778" layer="95" font="vector">&gt;Name</text>
 <text x="-10.16" y="-10.16" size="1.778" layer="96" font="vector">&gt;Value</text>
+</symbol>
+<symbol name="HT16K33">
+<wire x1="-12.7" y1="27.94" x2="-12.7" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-27.94" x2="12.7" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-27.94" x2="12.7" y2="27.94" width="0.254" layer="94"/>
+<wire x1="12.7" y1="27.94" x2="-12.7" y2="27.94" width="0.254" layer="94"/>
+<pin name="COM0/AD" x="15.24" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="COM1/KS0" x="15.24" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="COM2/KS1" x="15.24" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="COM3/KS2" x="15.24" y="-15.24" visible="pin" length="short" rot="R180"/>
+<pin name="COM4" x="15.24" y="-17.78" visible="pin" length="short" rot="R180"/>
+<pin name="COM5" x="15.24" y="-20.32" visible="pin" length="short" rot="R180"/>
+<pin name="COM6" x="15.24" y="-22.86" visible="pin" length="short" rot="R180"/>
+<pin name="COM7" x="15.24" y="-25.4" visible="pin" length="short" rot="R180"/>
+<pin name="ROW0/A1" x="15.24" y="25.4" visible="pin" length="short" rot="R180"/>
+<pin name="ROW1/A0" x="15.24" y="22.86" visible="pin" length="short" rot="R180"/>
+<pin name="ROW2/K1" x="15.24" y="20.32" visible="pin" length="short" rot="R180"/>
+<pin name="ROW3/K2" x="15.24" y="17.78" visible="pin" length="short" rot="R180"/>
+<pin name="ROW4/K3" x="15.24" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="ROW5/K4" x="15.24" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="ROW6/K5" x="15.24" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="ROW7/K6" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="ROW8/K7" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="ROW9/K8" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="ROW10/K9" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="ROW11/K10/INT" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SCL" x="-15.24" y="5.08" visible="pin" length="short"/>
+<pin name="SDA" x="-15.24" y="7.62" visible="pin" length="short"/>
+<pin name="VDD" x="-15.24" y="25.4" visible="pin" length="short" direction="pwr"/>
+<pin name="VSS" x="-15.24" y="-25.4" visible="pin" length="short"/>
+<text x="-12.7" y="27.94" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-30.48" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3143,6 +3211,49 @@ Previously used in production. &lt;/p&gt;
 <attribute name="PROD_ID" value="LCD-14913" constant="no"/>
 <attribute name="PROD_ID1" value="CONN-14082" constant="no"/>
 <attribute name="VALUE" value="2.4&quot; TFT" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HT16K33" prefix="IC" uservalue="yes">
+<description>HT16K33 24 SOP-A : RAM Mapping 16x8 
+LED Controller Driver with Keyscan</description>
+<gates>
+<gate name="G$1" symbol="HT16K33" x="-12.7" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="HT16K33">
+<connects>
+<connect gate="G$1" pin="COM0/AD" pad="2"/>
+<connect gate="G$1" pin="COM1/KS0" pad="3"/>
+<connect gate="G$1" pin="COM2/KS1" pad="4"/>
+<connect gate="G$1" pin="COM3/KS2" pad="5"/>
+<connect gate="G$1" pin="COM4" pad="6"/>
+<connect gate="G$1" pin="COM5" pad="7"/>
+<connect gate="G$1" pin="COM6" pad="8"/>
+<connect gate="G$1" pin="COM7" pad="9"/>
+<connect gate="G$1" pin="ROW0/A1" pad="21"/>
+<connect gate="G$1" pin="ROW1/A0" pad="20"/>
+<connect gate="G$1" pin="ROW10/K9" pad="11"/>
+<connect gate="G$1" pin="ROW11/K10/INT" pad="10"/>
+<connect gate="G$1" pin="ROW2/K1" pad="19"/>
+<connect gate="G$1" pin="ROW3/K2" pad="18"/>
+<connect gate="G$1" pin="ROW4/K3" pad="17"/>
+<connect gate="G$1" pin="ROW5/K4" pad="16"/>
+<connect gate="G$1" pin="ROW6/K5" pad="15"/>
+<connect gate="G$1" pin="ROW7/K6" pad="14"/>
+<connect gate="G$1" pin="ROW8/K7" pad="13"/>
+<connect gate="G$1" pin="ROW9/K8" pad="12"/>
+<connect gate="G$1" pin="SCL" pad="22"/>
+<connect gate="G$1" pin="SDA" pad="23"/>
+<connect gate="G$1" pin="VDD" pad="24"/>
+<connect gate="G$1" pin="VSS" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-14891" constant="no"/>
+<attribute name="VALUE" value="HTK16K33" constant="no"/>
 </technology>
 </technologies>
 </device>
