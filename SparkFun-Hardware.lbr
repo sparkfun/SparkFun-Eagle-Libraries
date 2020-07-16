@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -96,7 +96,10 @@
 <layer number="114" name="Badge_Outline" color="7" fill="1" visible="no" active="no"/>
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="no"/>
+<layer number="117" name="PM_Ref" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="PF_Ref" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="120" name="WFL_Ref" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="no"/>
@@ -838,6 +841,22 @@ Out</text>
 <vertex x="3" y="-0.4"/>
 </polygon>
 </package>
+<package name="MOUNTING_HOLE_M2-0.4X6">
+<circle x="0" y="0" radius="2.25" width="0.03" layer="51"/>
+<circle x="0" y="-4" radius="1.125" width="0.03" layer="51"/>
+<circle x="0" y="4" radius="1.125" width="0.03" layer="51"/>
+<wire x1="1.125" y1="-4" x2="1.125" y2="4" width="0.03" layer="51"/>
+<wire x1="-1.125" y1="4" x2="-1.125" y2="-4" width="0.03" layer="51"/>
+<wire x1="1.15" y1="1.95" x2="1.15" y2="-1.95" width="0.2032" layer="20" curve="-118.151107"/>
+<wire x1="1.15" y1="1.95" x2="1.15" y2="4" width="0.2032" layer="20"/>
+<wire x1="1.15" y1="4" x2="-1.15" y2="4" width="0.2032" layer="20" curve="180"/>
+<wire x1="-1.15" y1="4" x2="-1.15" y2="1.95" width="0.2032" layer="20"/>
+<wire x1="-1.15" y1="-1.95" x2="-1.15" y2="1.95" width="0.2032" layer="20" curve="-118.151107"/>
+<wire x1="-1.15" y1="-1.95" x2="-1.15" y2="-4" width="0.2032" layer="20"/>
+<wire x1="-1.15" y1="-4" x2="1.15" y2="-4" width="0.2032" layer="20" curve="180"/>
+<wire x1="1.15" y1="-4" x2="1.15" y2="-1.95" width="0.2032" layer="20"/>
+<text x="0" y="0" size="0.5" layer="20" align="center">Out'</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MAGNET">
@@ -935,6 +954,16 @@ Out</text>
 <pin name="1" x="0" y="-2.54" visible="off" length="short" rot="R90"/>
 <text x="-2.54" y="2.54" size="1.778" layer="95">&gt;Name</text>
 <text x="2.54" y="0" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+<symbol name="MOUNTING_HOLE_M2-0.4X6">
+<wire x1="0.762" y1="1.778" x2="0.762" y2="-1.778" width="0.254" layer="94" curve="-133.602819"/>
+<wire x1="0.762" y1="1.778" x2="0.762" y2="3.302" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="3.302" x2="-0.762" y2="1.778" width="0.254" layer="94"/>
+<wire x1="0.762" y1="3.302" x2="-0.762" y2="3.302" width="0.254" layer="94" curve="180"/>
+<wire x1="-0.762" y1="-1.778" x2="-0.762" y2="1.778" width="0.254" layer="94" curve="-133.602819"/>
+<wire x1="-0.762" y1="-1.778" x2="-0.762" y2="-3.302" width="0.254" layer="94"/>
+<wire x1="0.762" y1="-3.302" x2="0.762" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="-3.302" x2="0.762" y2="-3.302" width="0.254" layer="94" curve="180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1193,6 +1222,18 @@ Out</text>
 <technology name="">
 <attribute name="PROD_ID" value="HW-14899" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOUNTING_HOLE_M2-0.4X6">
+<gates>
+<gate name="G$1" symbol="MOUNTING_HOLE_M2-0.4X6" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MOUNTING_HOLE_M2-0.4X6">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
