@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -41,7 +41,7 @@
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
@@ -8238,14 +8238,18 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <wire x1="-20.5334" y1="-3.0334" x2="-20.5334" y2="3.0334" width="0.2032" layer="21"/>
 <wire x1="-20.5334" y1="3.0334" x2="20.5334" y2="3.0334" width="0.2032" layer="21"/>
 <wire x1="20.5334" y1="3.0334" x2="20.5334" y2="-3.0334" width="0.2032" layer="21"/>
-<wire x1="-20" y1="-7.5" x2="20" y2="-7.5" width="0.002540625" layer="51"/>
+<wire x1="-20" y1="-7.5" x2="39.42" y2="-7.5" width="0.002540625" layer="51"/>
 <text x="0" y="-7.5" size="0.6096" layer="51" ratio="20" align="bottom-center">GND KEEPOUT</text>
 <wire x1="-20.6" y1="-2.5" x2="-20.6" y2="2.5" width="0.002540625" layer="51"/>
 <text x="-20.6" y="0" size="0.6096" layer="51" ratio="20" rot="R90" align="bottom-center">BD Edge</text>
 <text x="0" y="-3.1" size="0.6096" layer="25" ratio="20" rot="R180" align="bottom-center">&gt;Name</text>
 <text x="0" y="3.1" size="0.6096" layer="27" ratio="20" align="bottom-center">&gt;Value</text>
-<wire x1="-20" y1="4.5" x2="20" y2="4.5" width="0.002540625" layer="51"/>
+<wire x1="-20" y1="4.5" x2="39.42" y2="4.5" width="0.002540625" layer="51"/>
 <text x="0" y="4.5" size="0.6096" layer="51" ratio="20" rot="R180" align="bottom-center">Board Edge</text>
+<wire x1="39.42" y1="-7.427" x2="39.42" y2="4.5" width="0.002540625" layer="51"/>
+<text x="29.845" y="-0.896" size="0.6096" layer="51" ratio="20" align="bottom-center">GND KEEPOUT</text>
+<wire x1="39.42" y1="4.5" x2="39.42" y2="4.506" width="0.002540625" layer="51"/>
+<dimension x1="20.32" y1="0" x2="39.42" y2="0" x3="29.87" y3="0.889" textsize="1.016" layer="51" width="0.05" visible="yes"/>
 </package>
 <package name="SMA-EDGE-SMD">
 <description>&lt;b&gt;SMA Antenna Connector&lt;/b&gt;&lt;p&gt;
