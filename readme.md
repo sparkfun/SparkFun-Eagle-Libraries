@@ -48,7 +48,7 @@ We've grouped the various parts into individual libraries to make it as easy as 
 * **Switches** - Switches, buttons, joysticks, and anything that moves to create or disrupt an electrical connection. 
 * **User-Submitted** - Parts submitted from SparkFun users everywhere!
 
-How to Use Eagle
+How to Use Eagle change
 ----------------
 
 If you need more information about how to use Eagle, checkout our Eagle Tutorials: 
