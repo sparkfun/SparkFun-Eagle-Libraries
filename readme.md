@@ -1,4 +1,4 @@
-SparkFun Electronics Eagle Libraries
+SparkFun Electronics Eagle Libraries (temp-change)
 ====================================
 
 SparkFun Electronics' preferred foot prints using Eagle v6.0 or greater. 
