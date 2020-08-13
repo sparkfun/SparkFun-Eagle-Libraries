@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -5684,22 +5684,22 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;
 <description>SAMD51 Processor in 64-pin package &lt;br&gt;
 1MB Flash, 256kB SRAM &lt;br&gt;
 1.8V-3.3V, 120MHz</description>
-<pin name="PA00(SER1_0)" x="-30.48" y="22.86" visible="pin" length="short"/>
-<pin name="PA01(SER1_1)" x="-30.48" y="20.32" visible="pin" length="short"/>
-<pin name="PA02(ADC)" x="-30.48" y="17.78" visible="pin" length="short"/>
-<pin name="PA03(ADC)" x="-30.48" y="15.24" visible="pin" length="short"/>
-<pin name="PA04(SER0_0,AIN4)" x="-30.48" y="12.7" visible="pin" length="short"/>
-<pin name="PA05(SER0_1,ADC)" x="-30.48" y="10.16" visible="pin" length="short"/>
-<pin name="PA06(SER0_2,ADC)" x="-30.48" y="7.62" visible="pin" length="short"/>
-<pin name="PA07(SER0_3,ADC)" x="-30.48" y="5.08" visible="pin" length="short"/>
+<pin name="PA00(,SER1_0)" x="-30.48" y="22.86" visible="pin" length="short"/>
+<pin name="PA01(,SER1_1)" x="-30.48" y="20.32" visible="pin" length="short"/>
+<pin name="PA02(ADC,DAC)" x="-30.48" y="17.78" visible="pin" length="short"/>
+<pin name="PA03(ADC,AREFA)" x="-30.48" y="15.24" visible="pin" length="short"/>
+<pin name="PA04(SER0_0,ADC)" x="-30.48" y="12.7" visible="pin" length="short"/>
+<pin name="PA05(,SER0_1,ADC,DAC)" x="-30.48" y="10.16" visible="pin" length="short"/>
+<pin name="PA06(,SER0_2,ADC,VREFC)" x="-30.48" y="7.62" visible="pin" length="short"/>
+<pin name="PA07(,SER0_3,ADC)" x="-30.48" y="5.08" visible="pin" length="short"/>
 <pin name="PA08(SER0_0,SER2_1,ADC)" x="-30.48" y="0" visible="pin" length="short"/>
 <pin name="PA09(SER0_1,SER2_0,ADC)" x="-30.48" y="-2.54" visible="pin" length="short"/>
 <pin name="PA10(SER0_2,SER2_2,ADC)" x="-30.48" y="-5.08" visible="pin" length="short"/>
 <pin name="PA11(SER0_3,SER2_3,ADC)" x="-30.48" y="-7.62" visible="pin" length="short"/>
-<pin name="PA12(SER2_0,SER4_1,ADC)" x="-30.48" y="-10.16" visible="pin" length="short"/>
-<pin name="PA13(SER2_1,SER4_0,ADC)" x="-30.48" y="-12.7" visible="pin" length="short"/>
-<pin name="PA14(SER2_2,SER4_2,ADC)" x="-30.48" y="-15.24" visible="pin" length="short"/>
-<pin name="PA15(SER2_3,SER4_3,ADC)" x="-30.48" y="-17.78" visible="pin" length="short"/>
+<pin name="PA12(SER2_0,SER4_1)" x="-30.48" y="-10.16" visible="pin" length="short"/>
+<pin name="PA13(SER2_1,SER4_0)" x="-30.48" y="-12.7" visible="pin" length="short"/>
+<pin name="PA14(SER2_2,SER4_2)" x="-30.48" y="-15.24" visible="pin" length="short"/>
+<pin name="PA15(SER2_3,SER4_3)" x="-30.48" y="-17.78" visible="pin" length="short"/>
 <pin name="PA16(SER1_0,SER3_1)" x="-30.48" y="-22.86" visible="pin" length="short"/>
 <pin name="PA17(SER1_1,SER3_0)" x="-30.48" y="-25.4" visible="pin" length="short"/>
 <pin name="PA18(SER1_2,SER3_2)" x="-30.48" y="-27.94" visible="pin" length="short"/>
@@ -5711,20 +5711,20 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;
 <pin name="PA24(SER3_2,SER5_2)" x="27.94" y="33.02" visible="pin" length="short" rot="R180"/>
 <pin name="PA25(SER3_3,SER5_3)" x="27.94" y="30.48" visible="pin" length="short" rot="R180"/>
 <pin name="PA27" x="27.94" y="27.94" visible="pin" length="short" rot="R180"/>
-<pin name="PA30(SER7_2,SER1_2)" x="27.94" y="25.4" visible="pin" length="short" rot="R180"/>
-<pin name="PA31(SER7_3,SER1_3)" x="27.94" y="22.86" visible="pin" length="short" rot="R180"/>
-<pin name="PB00(SER5_2,ADC)" x="27.94" y="17.78" visible="pin" length="short" rot="R180"/>
-<pin name="PB01(SER5_3,ADC)" x="27.94" y="15.24" visible="pin" length="short" rot="R180"/>
-<pin name="PB02(SER5_0,ADC)" x="27.94" y="12.7" visible="pin" length="short" rot="R180"/>
-<pin name="PB03(SER5_1,ADC)" x="27.94" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="PA30(,SER1_2)" x="27.94" y="25.4" visible="pin" length="short" rot="R180"/>
+<pin name="PA31(,SER1_3)" x="27.94" y="22.86" visible="pin" length="short" rot="R180"/>
+<pin name="PB00(,SER5_2,ADC)" x="27.94" y="17.78" visible="pin" length="short" rot="R180"/>
+<pin name="PB01(,SER5_3,ADC)" x="27.94" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="PB02(,SER5_0,ADC)" x="27.94" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="PB03(,SER5_1,ADC)" x="27.94" y="10.16" visible="pin" length="short" rot="R180"/>
 <pin name="PB04(ADC)" x="27.94" y="7.62" visible="pin" length="short" rot="R180"/>
 <pin name="PB05(ADC)" x="27.94" y="5.08" visible="pin" length="short" rot="R180"/>
 <pin name="PB06(ADC)" x="27.94" y="2.54" visible="pin" length="short" rot="R180"/>
 <pin name="PB07(ADC)" x="27.94" y="0" visible="pin" length="short" rot="R180"/>
-<pin name="PB08(SER4_1,ADC)" x="27.94" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="PB08(SER4_0,ADC)" x="27.94" y="-5.08" visible="pin" length="short" rot="R180"/>
 <pin name="PB09(SER4_1,ADC)" x="27.94" y="-7.62" visible="pin" length="short" rot="R180"/>
-<pin name="PB10(SER4_2)" x="27.94" y="-10.16" visible="pin" length="short" rot="R180"/>
-<pin name="PB11(SER4_3)" x="27.94" y="-12.7" visible="pin" length="short" rot="R180"/>
+<pin name="PB10(,SER4_2)" x="27.94" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="PB11(,SER4_3)" x="27.94" y="-12.7" visible="pin" length="short" rot="R180"/>
 <pin name="PB12(SER4_0)" x="27.94" y="-15.24" visible="pin" length="short" rot="R180"/>
 <pin name="PB13(SER4_1)" x="27.94" y="-17.78" visible="pin" length="short" rot="R180"/>
 <pin name="PB14(SER4_2)" x="27.94" y="-20.32" visible="pin" length="short" rot="R180"/>
@@ -5733,8 +5733,8 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;
 <pin name="PB17(SER5_1)" x="27.94" y="-30.48" visible="pin" length="short" rot="R180"/>
 <pin name="PB22(SER1_2,SER5_2)" x="27.94" y="-33.02" visible="pin" length="short" rot="R180"/>
 <pin name="PB23(SER1_3,SER5_3)" x="27.94" y="-35.56" visible="pin" length="short" rot="R180"/>
-<pin name="PB30(SER7_0,SER5_1)" x="27.94" y="-38.1" visible="pin" length="short" rot="R180"/>
-<pin name="PB31(SER8_1,SER5_0)" x="27.94" y="-40.64" visible="pin" length="short" rot="R180"/>
+<pin name="PB30(SER5_1)" x="27.94" y="-38.1" visible="pin" length="short" rot="R180"/>
+<pin name="PB31(SER5_0)" x="27.94" y="-40.64" visible="pin" length="short" rot="R180"/>
 <pin name="GND" x="-30.48" y="-45.72" visible="pin" length="short"/>
 <pin name="VDDIO" x="-30.48" y="38.1" visible="pin" length="short"/>
 <pin name="VDDCORE" x="-30.48" y="35.56" visible="pin" length="short"/>
@@ -8904,22 +8904,22 @@ Prototype in process!  Do keep!</description>
 <connects>
 <connect gate="G$1" pin="!RESET" pad="52"/>
 <connect gate="G$1" pin="GND" pad="7 22 33 47 54"/>
-<connect gate="G$1" pin="PA00(SER1_0)" pad="1"/>
-<connect gate="G$1" pin="PA01(SER1_1)" pad="2"/>
-<connect gate="G$1" pin="PA02(ADC)" pad="3"/>
-<connect gate="G$1" pin="PA03(ADC)" pad="4"/>
-<connect gate="G$1" pin="PA04(SER0_0,AIN4)" pad="13"/>
-<connect gate="G$1" pin="PA05(SER0_1,ADC)" pad="14"/>
-<connect gate="G$1" pin="PA06(SER0_2,ADC)" pad="15"/>
-<connect gate="G$1" pin="PA07(SER0_3,ADC)" pad="16"/>
+<connect gate="G$1" pin="PA00(,SER1_0)" pad="1"/>
+<connect gate="G$1" pin="PA01(,SER1_1)" pad="2"/>
+<connect gate="G$1" pin="PA02(ADC,DAC)" pad="3"/>
+<connect gate="G$1" pin="PA03(ADC,AREFA)" pad="4"/>
+<connect gate="G$1" pin="PA04(SER0_0,ADC)" pad="13"/>
+<connect gate="G$1" pin="PA05(,SER0_1,ADC,DAC)" pad="14"/>
+<connect gate="G$1" pin="PA06(,SER0_2,ADC,VREFC)" pad="15"/>
+<connect gate="G$1" pin="PA07(,SER0_3,ADC)" pad="16"/>
 <connect gate="G$1" pin="PA08(SER0_0,SER2_1,ADC)" pad="17"/>
 <connect gate="G$1" pin="PA09(SER0_1,SER2_0,ADC)" pad="18"/>
 <connect gate="G$1" pin="PA10(SER0_2,SER2_2,ADC)" pad="19"/>
 <connect gate="G$1" pin="PA11(SER0_3,SER2_3,ADC)" pad="20"/>
-<connect gate="G$1" pin="PA12(SER2_0,SER4_1,ADC)" pad="29"/>
-<connect gate="G$1" pin="PA13(SER2_1,SER4_0,ADC)" pad="30"/>
-<connect gate="G$1" pin="PA14(SER2_2,SER4_2,ADC)" pad="31"/>
-<connect gate="G$1" pin="PA15(SER2_3,SER4_3,ADC)" pad="32"/>
+<connect gate="G$1" pin="PA12(SER2_0,SER4_1)" pad="29"/>
+<connect gate="G$1" pin="PA13(SER2_1,SER4_0)" pad="30"/>
+<connect gate="G$1" pin="PA14(SER2_2,SER4_2)" pad="31"/>
+<connect gate="G$1" pin="PA15(SER2_3,SER4_3)" pad="32"/>
 <connect gate="G$1" pin="PA16(SER1_0,SER3_1)" pad="35"/>
 <connect gate="G$1" pin="PA17(SER1_1,SER3_0)" pad="36"/>
 <connect gate="G$1" pin="PA18(SER1_2,SER3_2)" pad="37"/>
@@ -8931,20 +8931,20 @@ Prototype in process!  Do keep!</description>
 <connect gate="G$1" pin="PA24(SER3_2,SER5_2)" pad="45"/>
 <connect gate="G$1" pin="PA25(SER3_3,SER5_3)" pad="46"/>
 <connect gate="G$1" pin="PA27" pad="51"/>
-<connect gate="G$1" pin="PA30(SER7_2,SER1_2)" pad="57"/>
-<connect gate="G$1" pin="PA31(SER7_3,SER1_3)" pad="58"/>
-<connect gate="G$1" pin="PB00(SER5_2,ADC)" pad="61"/>
-<connect gate="G$1" pin="PB01(SER5_3,ADC)" pad="62"/>
-<connect gate="G$1" pin="PB02(SER5_0,ADC)" pad="63"/>
-<connect gate="G$1" pin="PB03(SER5_1,ADC)" pad="64"/>
+<connect gate="G$1" pin="PA30(,SER1_2)" pad="57"/>
+<connect gate="G$1" pin="PA31(,SER1_3)" pad="58"/>
+<connect gate="G$1" pin="PB00(,SER5_2,ADC)" pad="61"/>
+<connect gate="G$1" pin="PB01(,SER5_3,ADC)" pad="62"/>
+<connect gate="G$1" pin="PB02(,SER5_0,ADC)" pad="63"/>
+<connect gate="G$1" pin="PB03(,SER5_1,ADC)" pad="64"/>
 <connect gate="G$1" pin="PB04(ADC)" pad="5"/>
 <connect gate="G$1" pin="PB05(ADC)" pad="6"/>
 <connect gate="G$1" pin="PB06(ADC)" pad="9"/>
 <connect gate="G$1" pin="PB07(ADC)" pad="10"/>
-<connect gate="G$1" pin="PB08(SER4_1,ADC)" pad="11"/>
+<connect gate="G$1" pin="PB08(SER4_0,ADC)" pad="11"/>
 <connect gate="G$1" pin="PB09(SER4_1,ADC)" pad="12"/>
-<connect gate="G$1" pin="PB10(SER4_2)" pad="23"/>
-<connect gate="G$1" pin="PB11(SER4_3)" pad="24"/>
+<connect gate="G$1" pin="PB10(,SER4_2)" pad="23"/>
+<connect gate="G$1" pin="PB11(,SER4_3)" pad="24"/>
 <connect gate="G$1" pin="PB12(SER4_0)" pad="25"/>
 <connect gate="G$1" pin="PB13(SER4_1)" pad="26"/>
 <connect gate="G$1" pin="PB14(SER4_2)" pad="27"/>
@@ -8953,8 +8953,8 @@ Prototype in process!  Do keep!</description>
 <connect gate="G$1" pin="PB17(SER5_1)" pad="40"/>
 <connect gate="G$1" pin="PB22(SER1_2,SER5_2)" pad="49"/>
 <connect gate="G$1" pin="PB23(SER1_3,SER5_3)" pad="50"/>
-<connect gate="G$1" pin="PB30(SER7_0,SER5_1)" pad="59"/>
-<connect gate="G$1" pin="PB31(SER8_1,SER5_0)" pad="60"/>
+<connect gate="G$1" pin="PB30(SER5_1)" pad="59"/>
+<connect gate="G$1" pin="PB31(SER5_0)" pad="60"/>
 <connect gate="G$1" pin="VDDANA" pad="8"/>
 <connect gate="G$1" pin="VDDCORE" pad="53"/>
 <connect gate="G$1" pin="VDDIO" pad="21 34 48 56"/>
