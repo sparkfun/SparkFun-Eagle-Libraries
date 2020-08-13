@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -47,7 +47,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -3015,6 +3015,23 @@ system stand by current during the sleep time.&lt;/p&gt;</description>
 <text x="-7.62" y="7.874" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-7.874" size="1.778" layer="96" rot="MR180">&gt;VALUE</text>
 </symbol>
+<symbol name="AP63203">
+<description>&lt;h3&gt;Diodes Inc. AP63203 3.8V-32V input 3.3V Buck&lt;/h3&gt;
+&lt;p&gt;The AP63200/AP63201/AP63203/AP63205 is a 2A, synchronous
+buck converter with a wide input voltage range of 3.8V to 32V and
+fully integrates a 125mΩ high-side power MOSFET and a 68mΩ lowside power MOSFET to provide high-efficiency step-down DC/DC
+conversion&lt;/p&gt;</description>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="VIN" x="-10.16" y="5.08" length="short"/>
+<pin name="EN" x="-10.16" y="0" length="short"/>
+<pin name="GND" x="-10.16" y="-5.08" length="short"/>
+<pin name="BST" x="10.16" y="5.08" length="short" rot="R180"/>
+<pin name="SW" x="10.16" y="0" length="short" rot="R180"/>
+<pin name="FB" x="10.16" y="-5.08" length="short" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DC-DC_CONVERTER">
@@ -4531,6 +4548,34 @@ current. It has a 0.765-V nominal feedback voltage
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="VREG-14094"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AP63203" prefix="U">
+<description>&lt;h3&gt;Diodes Inc. AP63203 3.8V-32V input 3.3V Buck&lt;/h3&gt;
+&lt;p&gt;The AP63200/AP63201/AP63203/AP63205 is a 2A, synchronous
+buck converter with a wide input voltage range of 3.8V to 32V and
+fully integrates a 125mΩ high-side power MOSFET and a 68mΩ lowside power MOSFET to provide high-efficiency step-down DC/DC
+conversion&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="AP63203" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-6">
+<connects>
+<connect gate="G$1" pin="BST" pad="6"/>
+<connect gate="G$1" pin="EN" pad="2"/>
+<connect gate="G$1" pin="FB" pad="1"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="SW" pad="5"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="VREG-15244" constant="no"/>
+<attribute name="VALUE" value="AP63203" constant="no"/>
 </technology>
 </technologies>
 </device>
