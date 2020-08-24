@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -10,24 +10,22 @@
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -51,10 +49,12 @@
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -703,6 +703,26 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <wire x1="3.175" y1="2.54" x2="1.905" y2="2.54" width="0.2032" layer="51"/>
 <wire x1="2.54" y1="3.175" x2="2.54" y2="1.905" width="0.2032" layer="51"/>
 </package>
+<package name="DFN6">
+<description>This is a DFN6 package for the I2C adjustable capacitor NCD2400M</description>
+<wire x1="-1.0033" y1="1.0033" x2="1.0033" y2="1.0033" width="0.1524" layer="51"/>
+<wire x1="1.0033" y1="1.0033" x2="1.0033" y2="-1.0033" width="0.1524" layer="51"/>
+<wire x1="1.0033" y1="-1.0033" x2="-1.0033" y2="-1.0033" width="0.1524" layer="51"/>
+<wire x1="-1.0033" y1="-1.0033" x2="-1.0033" y2="1.0033" width="0.1524" layer="51"/>
+<smd name="1" x="-1.0541" y="0.6604" dx="0.6604" dy="0.3556" layer="1"/>
+<smd name="2" x="-1.0541" y="0" dx="0.6604" dy="0.3556" layer="1"/>
+<smd name="3" x="-1.0541" y="-0.6604" dx="0.6604" dy="0.3556" layer="1"/>
+<smd name="6" x="1.0541" y="0.6604" dx="0.6604" dy="0.3556" layer="1"/>
+<smd name="5" x="1.0541" y="0" dx="0.6604" dy="0.3556" layer="1"/>
+<smd name="4" x="1.0541" y="-0.6604" dx="0.6604" dy="0.3556" layer="1"/>
+<circle x="-1.27" y="1.27" radius="0.127" width="0.1524" layer="21"/>
+<wire x1="-0.889" y1="1.27" x2="-0.889" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.889" y1="-1.27" x2="0.889" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.889" y1="-1.27" x2="0.889" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.889" y1="1.27" x2="-0.889" y2="1.27" width="0.1524" layer="21"/>
+<text x="-0.635" y="-0.762" size="0.254" layer="27">&gt;Value</text>
+<text x="-0.635" y="0.508" size="0.254" layer="25">&gt;Name</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP">
@@ -749,6 +769,21 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <rectangle x1="-2.032" y1="1.524" x2="2.032" y2="2.032" layer="94"/>
 <pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+<symbol name="CAP_I2C_ADJ">
+<description>This is the schematic symbol for the I2C adjustable capacitor NCD2400M. The datasheet can be found here: &lt;a href="https://www.ixysic.com/home/pdfs.nsf/www/NCD2400M.pdf/$file/NCD2400M.pdf"&gt;https://www.ixysic.com/home/pdfs.nsf/www/NCD2400M.pdf/$file/NCD2400M.pdf&lt;/a&gt;</description>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="VCC" x="-10.16" y="5.08" visible="pin" length="short" direction="pwr"/>
+<pin name="SDA" x="-10.16" y="0" visible="pin" length="short"/>
+<pin name="SCL" x="-10.16" y="-5.08" visible="pin" length="short"/>
+<pin name="CP" x="10.16" y="5.08" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="CN" x="10.16" y="0" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="GND" x="10.16" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
+<text x="-7.366" y="8.636" size="1.778" layer="95">&gt;Name</text>
+<text x="-7.62" y="-10.16" size="1.778" layer="95">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1583,18 +1618,6 @@ CAP-09321</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="CAP-14464" constant="no"/>
-<attribute name="VALUE" value="22uF" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="-1206-50V-10%" package="1206">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="CAP-15263" constant="no"/>
 <attribute name="VALUE" value="22uF" constant="no"/>
 </technology>
 </technologies>
@@ -2772,6 +2795,26 @@ CAP-09321</description>
 <attribute name="PROD_ID" value="CAP-14843" constant="no"/>
 <attribute name="VALUE" value="20pF" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NCD2400M" prefix="U">
+<gates>
+<gate name="U1" symbol="CAP_I2C_ADJ" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DFN" package="DFN6">
+<connects>
+<connect gate="U1" pin="CN" pad="3"/>
+<connect gate="U1" pin="CP" pad="2"/>
+<connect gate="U1" pin="GND" pad="5"/>
+<connect gate="U1" pin="SCL" pad="6"/>
+<connect gate="U1" pin="SDA" pad="1"/>
+<connect gate="U1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
