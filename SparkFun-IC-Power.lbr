@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="16" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -47,7 +45,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -55,6 +53,8 @@
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -1088,17 +1088,16 @@ Source: http://www.linear.com .. LT1996</description>
 <package name="DFN-8">
 <description>Now follows http://pdfserv.maximintegrated.com/land_patterns/90-0065.PDF&lt;br /&gt;
 Pasted was reduced by 40% width on the center ground pad, and some amount on the other 8.  Stop mask extends 135 µm wider than the pad to hit dead center of what IPC-7351 recommends.</description>
-<circle x="-1.0628" y="-0.92" radius="0.070709375" width="0.127" layer="21"/>
-<smd name="P$1" x="-0.75" y="-0.99" dx="0.7" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
-<smd name="P$2" x="-0.25" y="-0.99" dx="0.7" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
-<smd name="P$3" x="0.25" y="-0.99" dx="0.7" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
-<smd name="P$4" x="0.75" y="-0.99" dx="0.7" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
-<smd name="P$5" x="0.75" y="0.99" dx="0.7" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
-<smd name="P$6" x="0.25" y="0.99" dx="0.7" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
-<smd name="P$7" x="-0.25" y="0.99" dx="0.7" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
-<smd name="P$8" x="-0.75" y="0.99" dx="0.7" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
-<smd name="P$9" x="0" y="0" dx="1.38" dy="0.8" layer="1" stop="no" cream="no"/>
-<circle x="-1.0628" y="-0.92" radius="0.070709375" width="0.127" layer="21"/>
+<smd name="1" x="-0.75" y="-0.99" dx="0.7" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="2" x="-0.25" y="-0.99" dx="0.7" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="3" x="0.25" y="-0.99" dx="0.7" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="4" x="0.75" y="-0.99" dx="0.7" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="5" x="0.75" y="0.99" dx="0.7" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="6" x="0.25" y="0.99" dx="0.7" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="7" x="-0.25" y="0.99" dx="0.7" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="8" x="-0.75" y="0.99" dx="0.7" dy="0.3" layer="1" rot="R90" stop="no" cream="no"/>
+<smd name="9" x="0" y="0" dx="1.38" dy="0.8" layer="1" stop="no" cream="no"/>
+<circle x="-1.1898" y="-0.92" radius="0.070709375" width="0.1778" layer="21"/>
 <wire x1="-1" y1="1" x2="1" y2="1" width="0.127" layer="51"/>
 <wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="51"/>
 <wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="51"/>
@@ -1122,8 +1121,8 @@ Pasted was reduced by 40% width on the center ground pad, and some amount on the
 <rectangle x1="-0.47" y1="-1.43" x2="-0.03" y2="-0.59" layer="29"/>
 <rectangle x1="-0.97" y1="-1.43" x2="-0.53" y2="-0.59" layer="29"/>
 <rectangle x1="-0.76" y1="-0.47" x2="0.76" y2="0.47" layer="29"/>
-<text x="0" y="1.905" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.54" size="0.6096" layer="27" font="vector" ratio="20" align="bottom-center">&gt;VALUE</text>
+<text x="0" y="1.524" size="0.254" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.778" size="0.254" layer="27" font="vector" align="bottom-center">&gt;VALUE</text>
 </package>
 <package name="PVQFN-N16">
 <description>&lt;h3&gt;16-Pin VSON (VQFN) 3.0 x 3.0 mm IC&lt;/h3&gt;
@@ -4075,26 +4074,26 @@ LM3880MF-1XY (Timing Designator)
 </device>
 </devices>
 </deviceset>
-<deviceset name="MAX17048">
+<deviceset name="MAX17048" prefix="U">
 <description>&lt;h3&gt;Micropower 1-Cell Li+ ModelGauge&lt;/h3&gt;
 &lt;h4&gt;SparkFun Products&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13614"&gt;Qduino Mini&lt;/a&gt; (DEV-13614)&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
-<gate name="G$1" symbol="MAX17048" x="0" y="0"/>
+<gate name="U1" symbol="MAX17048" x="0" y="0"/>
 </gates>
 <devices>
 <device name="DFN8" package="DFN-8">
 <connects>
-<connect gate="G$1" pin="!ALRT" pad="P$5"/>
-<connect gate="G$1" pin="CELL" pad="P$2"/>
-<connect gate="G$1" pin="CTG" pad="P$1"/>
-<connect gate="G$1" pin="GND" pad="P$4 P$9"/>
-<connect gate="G$1" pin="QSTRT" pad="P$6"/>
-<connect gate="G$1" pin="SCL" pad="P$7"/>
-<connect gate="G$1" pin="SDA" pad="P$8"/>
-<connect gate="G$1" pin="VDD" pad="P$3"/>
+<connect gate="U1" pin="!ALRT" pad="5"/>
+<connect gate="U1" pin="CELL" pad="2"/>
+<connect gate="U1" pin="CTG" pad="1"/>
+<connect gate="U1" pin="GND" pad="4 9"/>
+<connect gate="U1" pin="QSTRT" pad="6"/>
+<connect gate="U1" pin="SCL" pad="7"/>
+<connect gate="U1" pin="SDA" pad="8"/>
+<connect gate="U1" pin="VDD" pad="3"/>
 </connects>
 <technologies>
 <technology name="">
