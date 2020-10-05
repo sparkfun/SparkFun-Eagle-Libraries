@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5818,8 +5818,8 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;
 <pin name="(A1)1" x="17.78" y="-12.7" length="short" rot="R180"/>
 <pin name="(A0)0" x="17.78" y="-15.24" length="short" rot="R180"/>
 <pin name="(SCL/SCK/A4)4" x="17.78" y="-5.08" length="short" rot="R180"/>
-<pin name="(TX/MISO/A5)~5" x="17.78" y="-2.54" length="short" rot="R180"/>
-<pin name="(RX/SDA/MOSI/A6)~6" x="17.78" y="0" length="short" rot="R180"/>
+<pin name="(TX/\SDO/A5)~5" x="17.78" y="-2.54" length="short" rot="R180"/>
+<pin name="(RX/SDA/SDI/A6)~6" x="17.78" y="0" length="short" rot="R180"/>
 <pin name="(A7)~7" x="17.78" y="2.54" length="short" rot="R180"/>
 <pin name="(XTAL1)10" x="17.78" y="12.7" length="short" rot="R180"/>
 <pin name="(XTAL2)9" x="17.78" y="10.16" length="short" rot="R180"/>
@@ -9044,9 +9044,9 @@ Prototype in process!  Do keep!</description>
 <connect gate="U1" pin="(A3)3" pad="10"/>
 <connect gate="U1" pin="(A7)~7" pad="6"/>
 <connect gate="U1" pin="(INT0)~8" pad="5"/>
-<connect gate="U1" pin="(RX/SDA/MOSI/A6)~6" pad="7"/>
+<connect gate="U1" pin="(RX/SDA/SDI/A6)~6" pad="7"/>
 <connect gate="U1" pin="(SCL/SCK/A4)4" pad="9"/>
-<connect gate="U1" pin="(TX/MISO/A5)~5" pad="8"/>
+<connect gate="U1" pin="(TX/\SDO/A5)~5" pad="8"/>
 <connect gate="U1" pin="(XTAL1)10" pad="2"/>
 <connect gate="U1" pin="(XTAL2)9" pad="3"/>
 <connect gate="U1" pin="GND" pad="14"/>
