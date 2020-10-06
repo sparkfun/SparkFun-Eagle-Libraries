@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -10510,19 +10510,37 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10982"&gt;Rotary Encoder - Illuminated (RGB)&lt;/a&gt; (COM-10982)&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
-<gate name="G$1" symbol="ENCODER_LED_3_CA" x="0" y="0"/>
+<gate name="S1" symbol="ENCODER_LED_3_CA" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="ENCODER_LED_3">
+<device name="-WITH_NUT" package="ENCODER_LED_3">
 <connects>
-<connect gate="G$1" pin="+" pad="5"/>
-<connect gate="G$1" pin="-B" pad="4"/>
-<connect gate="G$1" pin="-G" pad="2"/>
-<connect gate="G$1" pin="-R" pad="1"/>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="B" pad="B"/>
-<connect gate="G$1" pin="C" pad="C"/>
-<connect gate="G$1" pin="SW" pad="3"/>
+<connect gate="S1" pin="+" pad="5"/>
+<connect gate="S1" pin="-B" pad="4"/>
+<connect gate="S1" pin="-G" pad="2"/>
+<connect gate="S1" pin="-R" pad="1"/>
+<connect gate="S1" pin="A" pad="A"/>
+<connect gate="S1" pin="B" pad="B"/>
+<connect gate="S1" pin="C" pad="C"/>
+<connect gate="S1" pin="SW" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-15425"/>
+<attribute name="SF_SKU" value="COM-15141"/>
+</technology>
+</technologies>
+</device>
+<device name="KIT" package="ENCODER_LED_3_KIT">
+<connects>
+<connect gate="S1" pin="+" pad="5"/>
+<connect gate="S1" pin="-B" pad="4"/>
+<connect gate="S1" pin="-G" pad="2"/>
+<connect gate="S1" pin="-R" pad="1"/>
+<connect gate="S1" pin="A" pad="A"/>
+<connect gate="S1" pin="B" pad="B"/>
+<connect gate="S1" pin="C" pad="C"/>
+<connect gate="S1" pin="SW" pad="3"/>
 </connects>
 <technologies>
 <technology name="">
@@ -10531,21 +10549,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </technology>
 </technologies>
 </device>
-<device name="KIT" package="ENCODER_LED_3_KIT">
+<device name="-NO_NUT" package="ENCODER_LED_3">
 <connects>
-<connect gate="G$1" pin="+" pad="5"/>
-<connect gate="G$1" pin="-B" pad="4"/>
-<connect gate="G$1" pin="-G" pad="2"/>
-<connect gate="G$1" pin="-R" pad="1"/>
-<connect gate="G$1" pin="A" pad="A"/>
-<connect gate="G$1" pin="B" pad="B"/>
-<connect gate="G$1" pin="C" pad="C"/>
-<connect gate="G$1" pin="SW" pad="3"/>
+<connect gate="S1" pin="+" pad="5"/>
+<connect gate="S1" pin="-B" pad="4"/>
+<connect gate="S1" pin="-G" pad="2"/>
+<connect gate="S1" pin="-R" pad="1"/>
+<connect gate="S1" pin="A" pad="A"/>
+<connect gate="S1" pin="B" pad="B"/>
+<connect gate="S1" pin="C" pad="C"/>
+<connect gate="S1" pin="SW" pad="3"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="RES-10859"/>
-<attribute name="SF_SKU" value="COM-10982"/>
+<attribute name="PROD_ID" value="RES-14168" constant="no"/>
 </technology>
 </technologies>
 </device>
