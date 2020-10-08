@@ -8254,9 +8254,9 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <package name="SMA-EDGE-SMD">
 <description>&lt;b&gt;SMA Antenna Connector&lt;/b&gt;&lt;p&gt;
 This is a footprint for an edge mount RF antenna. Works pretty well with SMA type connectors but may also work with other edge mount RF connectors. Keep in mind, these edge mount connectors assume you are using a 0.062" PCB thickness.</description>
-<smd name="GND@0" x="-4.19" y="-3.5" dx="1" dy="7" layer="1"/>
-<smd name="SIG" x="0" y="-8.1" dx="0.9" dy="2.2" layer="1"/>
-<smd name="GND@1" x="4.19" y="-3.5" dx="1" dy="7" layer="1"/>
+<smd name="GND@0" x="-4.19" y="-3.5" dx="1" dy="7" layer="1" cream="no"/>
+<smd name="SIG" x="0" y="-8.1" dx="0.9" dy="2.2" layer="1" cream="no"/>
+<smd name="GND@1" x="4.19" y="-3.5" dx="1" dy="7" layer="1" cream="no"/>
 <wire x1="-4.5" y1="0" x2="-2.667" y2="0" width="0.1524" layer="51"/>
 <wire x1="-2.667" y1="0" x2="2.667" y2="0" width="0.1524" layer="51"/>
 <wire x1="2.667" y1="0" x2="4.5" y2="0" width="0.1524" layer="51"/>
@@ -8324,6 +8324,9 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <rectangle x1="-0.38" y1="-9" x2="0.38" y2="-7" layer="51" rot="R180"/>
 <text x="0" y="-3" size="0.5" layer="46" ratio="15" rot="R180" align="center">Route
 Out</text>
+<rectangle x1="-4.84" y1="-7" x2="-3.69" y2="0" layer="31"/>
+<rectangle x1="3.69" y1="-7" x2="4.84" y2="0" layer="31"/>
+<rectangle x1="-0.56" y1="-9.4" x2="0.54" y2="-7" layer="31"/>
 </package>
 <package name="MDBT50Q">
 <wire x1="-5.25" y1="-7.85" x2="-5.25" y2="7.65" width="0.0254" layer="51"/>
