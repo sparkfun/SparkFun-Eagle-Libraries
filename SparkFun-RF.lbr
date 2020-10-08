@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -25,7 +25,7 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -33,14 +33,14 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
@@ -8254,9 +8254,9 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <package name="SMA-EDGE-SMD">
 <description>&lt;b&gt;SMA Antenna Connector&lt;/b&gt;&lt;p&gt;
 This is a footprint for an edge mount RF antenna. Works pretty well with SMA type connectors but may also work with other edge mount RF connectors. Keep in mind, these edge mount connectors assume you are using a 0.062" PCB thickness.</description>
-<smd name="GND@0" x="-4.14" y="-3.5" dx="1.15" dy="7" layer="1"/>
+<smd name="GND@0" x="-4.19" y="-3.5" dx="1" dy="7" layer="1"/>
 <smd name="SIG" x="0" y="-8.1" dx="0.9" dy="2.2" layer="1"/>
-<smd name="GND@1" x="4.14" y="-3.5" dx="1.15" dy="7" layer="1"/>
+<smd name="GND@1" x="4.19" y="-3.5" dx="1" dy="7" layer="1"/>
 <wire x1="-4.5" y1="0" x2="-2.667" y2="0" width="0.1524" layer="51"/>
 <wire x1="-2.667" y1="0" x2="2.667" y2="0" width="0.1524" layer="51"/>
 <wire x1="2.667" y1="0" x2="4.5" y2="0" width="0.1524" layer="51"/>
@@ -8309,9 +8309,15 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 <wire x1="-3.175" y1="1.9614" x2="3.175" y2="1.9614" width="0.0254" layer="51"/>
 <wire x1="-2.667" y1="3.2314" x2="3.175" y2="3.4854" width="0.0254" layer="51"/>
 <wire x1="2.667" y1="2.7234" x2="3.175" y2="2.4694" width="0.0762" layer="51"/>
-<wire x1="-3.55" y1="0" x2="-3.55" y2="-7" width="0.1524" layer="46"/>
-<wire x1="-3.55" y1="-7" x2="3.55" y2="-7" width="0.1524" layer="46"/>
-<wire x1="3.55" y1="-7" x2="3.55" y2="0" width="0.1524" layer="46"/>
+<wire x1="-3.6" y1="0" x2="-3.6" y2="-7" width="0.1524" layer="46"/>
+<wire x1="-3.6" y1="-7" x2="-3.4" y2="-7.2" width="0.1524" layer="46" curve="90"/>
+<wire x1="-3.4" y1="-7.2" x2="-3.2" y2="-7.2" width="0.1524" layer="46"/>
+<wire x1="-3.2" y1="-7.2" x2="-3" y2="-7" width="0.1524" layer="46" curve="90"/>
+<wire x1="-3" y1="-7" x2="3" y2="-7" width="0.1524" layer="46"/>
+<wire x1="3" y1="-7" x2="3.2" y2="-7.2" width="0.1524" layer="46" curve="90"/>
+<wire x1="3.2" y1="-7.2" x2="3.4" y2="-7.2" width="0.1524" layer="46"/>
+<wire x1="3.4" y1="-7.2" x2="3.6" y2="-7" width="0.1524" layer="46" curve="90"/>
+<wire x1="3.6" y1="-7" x2="3.6" y2="0" width="0.1524" layer="46"/>
 <wire x1="4.5" y1="0" x2="4.5" y2="-7" width="0.1524" layer="51"/>
 <wire x1="4.5" y1="-7" x2="-4.5" y2="-7" width="0.1524" layer="51"/>
 <wire x1="-4.5" y1="-7" x2="-4.5" y2="0" width="0.1524" layer="51"/>
