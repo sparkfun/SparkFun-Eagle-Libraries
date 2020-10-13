@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2265,6 +2265,31 @@ Pasted was reduced by 40% width on the center ground pad, and some amount on the
 <text x="-1.7" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;Name</text>
 <text x="1.7" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="bottom-center">&gt;Value</text>
 </package>
+<package name="VQFN-HR-12">
+<smd name="1" x="-0.9" y="1.125" dx="0.6" dy="0.25" layer="1"/>
+<smd name="11" x="0.9" y="1.125" dx="0.6" dy="0.25" layer="1"/>
+<smd name="10" x="0.9" y="0.475" dx="0.6" dy="0.25" layer="1"/>
+<smd name="2" x="-0.9" y="0.475" dx="0.6" dy="0.25" layer="1"/>
+<smd name="3" x="-0.9" y="-0.175" dx="0.6" dy="0.25" layer="1"/>
+<smd name="4" x="-0.9" y="-0.675" dx="0.6" dy="0.25" layer="1"/>
+<smd name="9" x="0.9" y="-0.175" dx="0.6" dy="0.25" layer="1"/>
+<smd name="8" x="0.9" y="-0.675" dx="0.6" dy="0.25" layer="1"/>
+<smd name="7" x="0.5" y="-1.4" dx="0.6" dy="0.25" layer="1" rot="R90"/>
+<smd name="6" x="0" y="-1.4" dx="0.6" dy="0.25" layer="1" rot="R90"/>
+<smd name="5" x="-0.5" y="-1.4" dx="0.6" dy="0.25" layer="1" rot="R90"/>
+<smd name="12" x="0" y="0.788" dx="0.25" dy="1.824" layer="1" rot="R180"/>
+<wire x1="-1" y1="1.45" x2="-1" y2="1.5" width="0.2032" layer="21"/>
+<wire x1="-1" y1="1.5" x2="-0.35" y2="1.5" width="0.2032" layer="21"/>
+<wire x1="0.35" y1="1.5" x2="1" y2="1.5" width="0.2032" layer="21"/>
+<wire x1="1" y1="1.5" x2="1" y2="1.45" width="0.2032" layer="21"/>
+<wire x1="1" y1="-1.05" x2="1" y2="-1.5" width="0.2032" layer="21"/>
+<wire x1="1" y1="-1.5" x2="0.85" y2="-1.5" width="0.2032" layer="21"/>
+<wire x1="-0.85" y1="-1.5" x2="-1" y2="-1.5" width="0.2032" layer="21"/>
+<wire x1="-1" y1="-1.5" x2="-1" y2="-1.05" width="0.2032" layer="21"/>
+<circle x="-1.35" y="1.75" radius="0.1016" width="0.2032" layer="21"/>
+<text x="0" y="2.5" size="0.6096" layer="25" font="vector" ratio="20" align="center">&gt;Name</text>
+<text x="0" y="-2.25" size="0.6096" layer="27" font="vector" ratio="20" align="center">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="DC-DC_CONVERTER">
@@ -3046,6 +3071,24 @@ conversion&lt;/p&gt;</description>
 <pin name="GND" x="-10.16" y="-2.54" length="short" direction="pwr"/>
 <text x="-7.62" y="5.588" size="1.778" layer="95" font="vector">&gt;Name</text>
 <text x="-7.62" y="-7.62" size="1.778" layer="95" font="vector">&gt;Value</text>
+</symbol>
+<symbol name="LMR33630">
+<pin name="VIN" x="-12.7" y="10.16" length="short"/>
+<pin name="EN" x="-12.7" y="5.08" length="short"/>
+<pin name="PGND" x="-12.7" y="-5.08" length="short"/>
+<pin name="VCC" x="-12.7" y="0" length="short"/>
+<pin name="NC" x="-12.7" y="-10.16" length="short"/>
+<pin name="PG" x="12.7" y="-10.16" length="short" rot="R180"/>
+<pin name="AGND" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="FB" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="BOOT" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="SW" x="12.7" y="10.16" length="short" rot="R180"/>
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<text x="-10.16" y="13.208" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-15.24" size="1.778" layer="95" font="vector">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4611,6 +4654,36 @@ conversion&lt;/p&gt;</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LMR33630" prefix="U">
+<description>&lt;h3&gt;Texas Instruments LMR33630 3.8V-36V 3A Regulator&lt;/h3&gt;
+&lt;p&gt;The LMR33630 SIMPLE SWITCHER® regulator is an easy-to-use, synchronous, step-down DC/DC converter that delivers best-in-class efficiency for rugged industrial applications. The LMR33630 drives up to 3 A of load current from an input of up to 36 V.
+&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="LMR33630" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VQFN-HR-12">
+<connects>
+<connect gate="G$1" pin="AGND" pad="6"/>
+<connect gate="G$1" pin="BOOT" pad="4"/>
+<connect gate="G$1" pin="EN" pad="9"/>
+<connect gate="G$1" pin="FB" pad="7"/>
+<connect gate="G$1" pin="NC" pad="3"/>
+<connect gate="G$1" pin="PG" pad="8"/>
+<connect gate="G$1" pin="PGND" pad="1 11"/>
+<connect gate="G$1" pin="SW" pad="12"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
+<connect gate="G$1" pin="VIN" pad="2 10"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="VREG-15445" constant="no"/>
+<attribute name="VALUE" value="LMR33630" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
