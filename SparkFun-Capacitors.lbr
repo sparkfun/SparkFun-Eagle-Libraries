@@ -728,6 +728,20 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <wire x1="-1.016" y1="-1.27" x2="-1.016" y2="-1.016" width="0.1778" layer="21"/>
 <wire x1="1.016" y1="-1.27" x2="1.016" y2="-1.016" width="0.1778" layer="21"/>
 </package>
+<package name="8X10.5">
+<smd name="+" x="-3.05" y="0" dx="2.9" dy="0.9" layer="1"/>
+<wire x1="-2.15" y1="4.15" x2="4.15" y2="4.15" width="0.127" layer="21"/>
+<wire x1="4.15" y1="-4.15" x2="-2.15" y2="-4.15" width="0.127" layer="21"/>
+<smd name="-" x="3.05" y="0" dx="2.9" dy="0.9" layer="1"/>
+<wire x1="-4" y1="2.3" x2="-4" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-4" y1="-0.5" x2="-4" y2="-2.3" width="0.127" layer="21"/>
+<wire x1="-4" y1="-2.3" x2="-2.15" y2="-4.15" width="0.127" layer="21"/>
+<wire x1="-2.15" y1="4.15" x2="-4" y2="2.3" width="0.127" layer="21"/>
+<wire x1="4.15" y1="4.15" x2="4.15" y2="0.55" width="0.127" layer="21"/>
+<wire x1="4.15" y1="-0.55" x2="4.15" y2="-4.15" width="0.127" layer="21"/>
+<text x="-0.5" y="4.5" size="0.6096" layer="25" font="vector" ratio="20">&gt;Name</text>
+<text x="-0.5" y="-5" size="0.6096" layer="27" font="vector" ratio="20">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP">
@@ -1082,6 +1096,17 @@ CAP-08070</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="CAP-14093" constant="no"/>
+<attribute name="VALUE" value="100uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-8X10.5-50V" package="8X10.5">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name="">
 <attribute name="VALUE" value="100uF" constant="no"/>
 </technology>
 </technologies>

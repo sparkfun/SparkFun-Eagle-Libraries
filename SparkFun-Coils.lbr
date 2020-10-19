@@ -611,6 +611,18 @@ Physical Characteristics:
 <text x="-0.87" y="1.27" size="0.381" layer="25">&gt;Name</text>
 <text x="-0.87" y="-1.524" size="0.381" layer="27">&gt;Value</text>
 </package>
+<package name="INDUCTOR_5X5MM">
+<smd name="P$1" x="-2.25" y="0" dx="2" dy="1.8" layer="1"/>
+<smd name="P$2" x="2.25" y="0" dx="2" dy="1.8" layer="1"/>
+<wire x1="-2.85" y1="1" x2="-2.85" y2="2.6" width="0.127" layer="21"/>
+<wire x1="-2.85" y1="2.6" x2="2.85" y2="2.6" width="0.127" layer="21"/>
+<wire x1="2.85" y1="2.6" x2="2.85" y2="1" width="0.127" layer="21"/>
+<wire x1="2.85" y1="-1" x2="2.85" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="2.85" y1="-2.6" x2="-2.85" y2="-2.6" width="0.127" layer="21"/>
+<wire x1="-2.85" y1="-2.6" x2="-2.85" y2="-1" width="0.127" layer="21"/>
+<text x="-1.3" y="3" size="0.6096" layer="25" font="vector" ratio="20">&gt;Name</text>
+<text x="-1.27" y="-3.81" size="0.6096" layer="27" font="vector" ratio="20">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="INDUCTOR">
@@ -1123,6 +1135,16 @@ Physical Characteristics:
 &lt;li&gt;0806 Package&lt;/li&gt;
 &lt;li&gt;Shielded&lt;/li&gt;
 &lt;li&gt;&lt;/li&gt;
+
+&lt;/ul&gt;&lt;h3&gt;Bourns 2.2uH Inductor&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;2.2uH&lt;/li&gt;
+&lt;li&gt;5.5A&lt;/li&gt;
+&lt;li&gt;205mOhm&lt;/li&gt;
+&lt;li&gt;5x5mm Package&lt;/li&gt;
+&lt;li&gt;Shielded&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
@@ -1136,6 +1158,18 @@ Physical Characteristics:
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="NDUC-14257" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_5X5" package="INDUCTOR_5X5MM">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="NDUC-15453" constant="no"/>
+<attribute name="VALUE" value="2.2uH" constant="no"/>
 </technology>
 </technologies>
 </device>
