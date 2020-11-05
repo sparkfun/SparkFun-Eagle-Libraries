@@ -5580,42 +5580,40 @@ The TLC5947 has a thermal shutdown (TSD) function that turns off all output driv
 <symbol name="MAX30101">
 <description>&lt;h3&gt;MAX30101 Heart Rate Sensor and Oximeter&lt;/h3&gt;
 &lt;p&gt;&lt;/p&gt;</description>
-<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<pin name="NC" x="15.24" y="-5.08" length="middle" direction="nc" rot="R180"/>
-<pin name="VDD" x="-15.24" y="5.08" length="middle" direction="pwr"/>
-<pin name="GND" x="-15.24" y="-5.08" length="middle" direction="pwr"/>
-<pin name="!INT" x="15.24" y="5.08" length="middle" rot="R180"/>
-<pin name="SDA" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="SCL" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="VDD_LED" x="-15.24" y="2.54" length="middle" direction="pwr"/>
-<text x="-10.16" y="10.16" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="VDD" x="-12.7" y="5.08" visible="pin" length="short" direction="pwr"/>
+<pin name="GND" x="-12.7" y="-2.54" visible="pin" length="short" direction="pwr"/>
+<pin name="!INT" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SDA" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SCL" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="VDD_LED" x="-12.7" y="2.54" visible="pin" length="short" direction="pwr"/>
+<text x="-10.16" y="8.128" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="MAX32664">
 <description>&lt;h3&gt;MAX32644 Version A Biometric Sensor Hub&lt;/h3&gt;</description>
-<wire x1="-10.16" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-15.24" x2="10.16" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="17.78" width="0.254" layer="94"/>
 <wire x1="10.16" y1="17.78" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="17.78" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
-<pin name="NC" x="15.24" y="-12.7" length="middle" direction="nc" rot="R180"/>
-<pin name="GND" x="-15.24" y="-12.7" length="middle" direction="pwr"/>
-<pin name="VDD" x="-15.24" y="15.24" length="middle" direction="pwr"/>
-<pin name="VCORE" x="-15.24" y="12.7" length="middle" direction="pwr"/>
-<pin name="OSC_OUT" x="15.24" y="15.24" length="middle" rot="R180"/>
-<pin name="OSC_IN" x="15.24" y="10.16" length="middle" rot="R180"/>
-<pin name="SNSR_SDA" x="15.24" y="7.62" length="middle" rot="R180"/>
-<pin name="SNSR_SCL" x="15.24" y="5.08" length="middle" rot="R180"/>
-<pin name="SLAVE_SDA" x="15.24" y="2.54" length="middle" rot="R180"/>
-<pin name="SLAVE_SCL" x="15.24" y="0" length="middle" rot="R180"/>
-<pin name="!RST" x="15.24" y="-2.54" length="middle" rot="R180"/>
-<pin name="!MFIO" x="15.24" y="-5.08" length="middle" rot="R180"/>
-<pin name="ACCEL_INT" x="15.24" y="-7.62" length="middle" rot="R180"/>
-<pin name="HR_INT" x="15.24" y="-10.16" length="middle" rot="R180"/>
-<text x="-10.16" y="20.32" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="-10.16" y1="17.78" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<pin name="GND" x="-12.7" y="-10.16" visible="pin" length="short" direction="pwr"/>
+<pin name="VDD" x="-12.7" y="15.24" visible="pin" length="short" direction="pwr"/>
+<pin name="VCORE" x="-12.7" y="12.7" visible="pin" length="short" direction="pwr"/>
+<pin name="OSC_OUT" x="12.7" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="OSC_IN" x="12.7" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="SNSR_SDA" x="12.7" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="SNSR_SCL" x="12.7" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SLAVE_SDA" x="12.7" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SLAVE_SCL" x="12.7" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="!RST" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="!MFIO" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="ACCEL_INT" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="HR_INT" x="12.7" y="-10.16" visible="pin" length="short" rot="R180"/>
+<text x="-10.16" y="18.288" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="WT2003S">
 <wire x1="10.16" y1="17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
@@ -7341,18 +7339,17 @@ interface. The module can be shut down through software
 with zero standby current, allowing the power rails to
 remain powered at all times&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="MAX30101" x="-2.54" y="0"/>
+<gate name="U1" symbol="MAX30101" x="-2.54" y="0"/>
 </gates>
 <devices>
 <device name="" package="14_PIN_OESIP">
 <connects>
-<connect gate="G$1" pin="!INT" pad="P13"/>
-<connect gate="G$1" pin="GND" pad="P4 P12"/>
-<connect gate="G$1" pin="NC" pad="P1 P5 P6 P7 P8 P14"/>
-<connect gate="G$1" pin="SCL" pad="P2"/>
-<connect gate="G$1" pin="SDA" pad="P3"/>
-<connect gate="G$1" pin="VDD" pad="P11"/>
-<connect gate="G$1" pin="VDD_LED" pad="P9 P10"/>
+<connect gate="U1" pin="!INT" pad="P13"/>
+<connect gate="U1" pin="GND" pad="P4 P12"/>
+<connect gate="U1" pin="SCL" pad="P2"/>
+<connect gate="U1" pin="SDA" pad="P3"/>
+<connect gate="U1" pin="VDD" pad="P11"/>
+<connect gate="U1" pin="VDD_LED" pad="P9 P10"/>
 </connects>
 <technologies>
 <technology name="">
@@ -7387,7 +7384,6 @@ sensor for wearable health for finger-based applications.
 <connect gate="G$1" pin="ACCEL_INT" pad="15"/>
 <connect gate="G$1" pin="GND" pad="13"/>
 <connect gate="G$1" pin="HR_INT" pad="6"/>
-<connect gate="G$1" pin="NC" pad="7 8 11"/>
 <connect gate="G$1" pin="OSC_IN" pad="2"/>
 <connect gate="G$1" pin="OSC_OUT" pad="1"/>
 <connect gate="G$1" pin="SLAVE_SCL" pad="10"/>
