@@ -37652,6 +37652,40 @@ Alternate pin configuration
 <hole x="1.27" y="1.27" drill="1"/>
 <hole x="46.99" y="1.27" drill="1"/>
 </package>
+<package name="2X4_SMT_NO_POSTS_NS">
+<description>&lt;h3&gt;Surface Mount - 2x3 Male Header with Keying Posts&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:6&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”http://www.4uconnector.com/online/object/4udrawing/15881.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03x2&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="4" x="-1.27" y="2.54" dx="3.17" dy="1" layer="1" rot="R90"/>
+<smd name="3" x="-1.27" y="-2.54" dx="3.17" dy="1" layer="1" rot="R90"/>
+<smd name="5" x="1.27" y="-2.54" dx="3.17" dy="1" layer="1" rot="R90"/>
+<smd name="6" x="1.27" y="2.54" dx="3.17" dy="1" layer="1" rot="R90"/>
+<smd name="2" x="-3.81" y="2.54" dx="3.17" dy="1" layer="1" rot="R90"/>
+<smd name="1" x="-3.81" y="-2.54" dx="3.17" dy="1" layer="1" rot="R90"/>
+<wire x1="-3.048" y1="2.54" x2="-2.032" y2="2.54" width="0.2032" layer="51"/>
+<wire x1="-0.508" y1="2.54" x2="0.508" y2="2.54" width="0.2032" layer="51"/>
+<wire x1="-3.048" y1="-2.54" x2="-2.159" y2="-2.54" width="0.2032" layer="51"/>
+<wire x1="-0.508" y1="-2.54" x2="0.508" y2="-2.54" width="0.2032" layer="51"/>
+<wire x1="-4.445" y1="2.54" x2="-5.08" y2="2.54" width="0.2032" layer="51"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-2.54" width="0.2032" layer="51"/>
+<wire x1="-5.08" y1="-2.54" x2="-4.445" y2="-2.54" width="0.2032" layer="51"/>
+<wire x1="4.445" y1="2.54" x2="5.08" y2="2.54" width="0.2032" layer="51"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.2032" layer="51"/>
+<wire x1="5.08" y1="-2.54" x2="4.445" y2="-2.54" width="0.2032" layer="51"/>
+<text x="-1.397" y="4.445" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.778" y="-5.08" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<smd name="7" x="3.81" y="-2.54" dx="3.17" dy="1" layer="1" rot="R90"/>
+<smd name="8" x="3.81" y="2.54" dx="3.17" dy="1" layer="1" rot="R90"/>
+<wire x1="2.032" y1="2.54" x2="3.048" y2="2.54" width="0.2032" layer="51"/>
+<wire x1="2.032" y1="-2.54" x2="3.048" y2="-2.54" width="0.2032" layer="51"/>
+<circle x="-4.699" y="-3.048" radius="0.127" width="0.254" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -42467,6 +42501,21 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </gates>
 <devices>
 <device name="" package="2X4">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SMT_NO_POSTS_NS" package="2X4_SMT_NO_POSTS_NS">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
