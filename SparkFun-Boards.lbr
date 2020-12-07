@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -19,7 +19,7 @@
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -10072,6 +10072,54 @@ GND</text>
 <wire x1="-8.89" y1="43.18" x2="8.89" y2="43.18" width="0.1524" layer="51"/>
 <wire x1="8.89" y1="43.18" x2="8.89" y2="-17.78" width="0.1524" layer="51"/>
 </package>
+<package name="QWIIC_BOARD_MOUNT_SMD_STANDOFFS">
+<circle x="-1.27" y="-11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="-3.81" y="-11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="1.27" y="-11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="3.81" y="-11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="-2.54" y="11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="-5.08" y="11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="0" y="11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="2.54" y="11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="5.08" y="11.43" radius="0.7239" width="0.5588" layer="51"/>
+<circle x="-7.32" y="2.5" radius="0.1414" width="0.4" layer="51"/>
+<circle x="7.32" y="-2.5" radius="0.1414" width="0.4" layer="51"/>
+<wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.127" layer="51"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="-12.7" width="0.127" layer="51"/>
+<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.127" layer="51"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="12.7" width="0.127" layer="51"/>
+<wire x1="-12.22" y1="1.5" x2="-12.22" y2="-1.5" width="0.254" layer="51"/>
+<wire x1="-9.62" y1="3" x2="-7.97" y2="3" width="0.254" layer="51"/>
+<wire x1="-7.97" y1="-2.25" x2="-7.97" y2="-3" width="0.254" layer="51"/>
+<wire x1="-7.97" y1="-3" x2="-9.62" y2="-3" width="0.254" layer="51"/>
+<wire x1="-7.97" y1="3" x2="-7.97" y2="2.25" width="0.254" layer="51"/>
+<wire x1="12.22" y1="-1.5" x2="12.22" y2="1.5" width="0.254" layer="51"/>
+<wire x1="9.62" y1="-3" x2="7.97" y2="-3" width="0.254" layer="51"/>
+<wire x1="7.97" y1="2.25" x2="7.97" y2="3" width="0.254" layer="51"/>
+<wire x1="7.97" y1="3" x2="9.62" y2="3" width="0.254" layer="51"/>
+<wire x1="7.97" y1="-3" x2="7.97" y2="-2.25" width="0.254" layer="51"/>
+<rectangle x1="-8.29" y1="1.2" x2="-6.94" y2="1.8" layer="51"/>
+<rectangle x1="-8.29" y1="0.2" x2="-6.94" y2="0.8" layer="51"/>
+<rectangle x1="-8.29" y1="-0.8" x2="-6.94" y2="-0.2" layer="51"/>
+<rectangle x1="-8.29" y1="-1.8" x2="-6.94" y2="-1.2" layer="51"/>
+<rectangle x1="-12.29" y1="2.2" x2="-10.3" y2="3.4" layer="51"/>
+<rectangle x1="-12.29" y1="-3.4" x2="-10.3" y2="-2.2" layer="51"/>
+<rectangle x1="6.94" y1="-1.8" x2="8.29" y2="-1.2" layer="51" rot="R180"/>
+<rectangle x1="6.94" y1="-0.8" x2="8.29" y2="-0.2" layer="51" rot="R180"/>
+<rectangle x1="6.94" y1="0.2" x2="8.29" y2="0.8" layer="51" rot="R180"/>
+<rectangle x1="6.94" y1="1.2" x2="8.29" y2="1.8" layer="51" rot="R180"/>
+<rectangle x1="10.3" y1="-3.4" x2="12.29" y2="-2.2" layer="51" rot="R180"/>
+<rectangle x1="10.3" y1="2.2" x2="12.29" y2="3.4" layer="51" rot="R180"/>
+<text x="0" y="0" size="0.508" layer="51" ratio="15" align="center">Qwiic Board</text>
+<hole x="-10.16" y="10.16" drill="3.302"/>
+<hole x="10.16" y="10.16" drill="3.302"/>
+<hole x="10.16" y="-10.16" drill="3.302"/>
+<hole x="-10.16" y="-10.16" drill="3.302"/>
+<pad name="1" x="-10.16" y="10.16" drill="4.2164" diameter="6.1976"/>
+<pad name="2" x="10.16" y="10.16" drill="4.2164" diameter="6.1976"/>
+<pad name="3" x="-10.16" y="-10.16" drill="4.2164" diameter="6.1976"/>
+<pad name="4" x="10.16" y="-10.16" drill="4.2164" diameter="6.1976"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO-MEGA">
@@ -14577,6 +14625,11 @@ PCB footprint compatbile with Big Red Box Enclosure.
 </technologies>
 </device>
 <device name="NH" package="QWIIC_BOARD_MOUNT_NOHOLES">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="STANDOFF" package="QWIIC_BOARD_MOUNT_SMD_STANDOFFS">
 <technologies>
 <technology name=""/>
 </technologies>
