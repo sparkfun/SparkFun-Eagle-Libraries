@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1815,6 +1815,9 @@ Switches electronic signals</description>
 </polygon>
 <text x="5.08" y="0" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="5.08" y="-2.54" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<text x="0.508" y="2.54" size="1.27" layer="94">D</text>
+<text x="0.508" y="-3.81" size="1.27" layer="94">S</text>
+<text x="-3.302" y="-0.508" size="1.27" layer="94" rot="R180">G</text>
 </symbol>
 <symbol name="LABELED-PMOS">
 <description>&lt;h3&gt;P-channel MOSFET&lt;/h3&gt;
@@ -3212,17 +3215,18 @@ Adjustable shunt regulator</description>
 &lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12780”&gt;ZX Distance and Gesture Sensor&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="DMC2700UDM" x="0" y="0"/>
+<gate name="G1" symbol="LABELED-NMOS" x="0" y="0"/>
+<gate name="G2" symbol="LABELED-PMOS" x="0" y="17.78"/>
 </gates>
 <devices>
 <device name="-DMC2700UDM" package="SOT26">
 <connects>
-<connect gate="G$1" pin="D1" pad="D1"/>
-<connect gate="G$1" pin="D2" pad="D2"/>
-<connect gate="G$1" pin="G1" pad="G1"/>
-<connect gate="G$1" pin="G2" pad="G2"/>
-<connect gate="G$1" pin="S1" pad="S1"/>
-<connect gate="G$1" pin="S2" pad="S2"/>
+<connect gate="G1" pin="D" pad="D1"/>
+<connect gate="G1" pin="G" pad="G1"/>
+<connect gate="G1" pin="S" pad="S1"/>
+<connect gate="G2" pin="D" pad="D2"/>
+<connect gate="G2" pin="G" pad="G2"/>
+<connect gate="G2" pin="S" pad="S2"/>
 </connects>
 <technologies>
 <technology name="">
