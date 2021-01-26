@@ -3208,8 +3208,10 @@ Adjustable shunt regulator</description>
 </devices>
 </deviceset>
 <deviceset name="MOSFET_COMPLIMENTARY_PAIR" prefix="Q">
-<description>&lt;h3&gt;Complementary pair enhancement mode MOSFET&lt;/h3&gt;
-&lt;p&gt;A P and N channel MOSFET in a single package. Rated to breakdown at 20V&lt;/p&gt;
+<description>&lt;h3&gt;Complementary pair enhancement mode MOSFET 1A and 4A&lt;/h3&gt;
+&lt;p&gt;A P and N channel MOSFET in a single package. Rated to breakdown at 20V.&lt;/p&gt;
+DMC2700 is 1A. SIL2308 is 4A.
+
 &lt;p&gt;&lt;a href='http://www.diodes.com/_files/datasheets/DMC2700UDM.pdf'&gt;Link to datasheet&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
 &lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12780”&gt;ZX Distance and Gesture Sensor&lt;/a&gt;&lt;/li&gt;
@@ -3231,6 +3233,21 @@ Adjustable shunt regulator</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="TRANS-11993"/>
+</technology>
+</technologies>
+</device>
+<device name="-SIL2308" package="SOT26">
+<connects>
+<connect gate="G1" pin="D" pad="D1"/>
+<connect gate="G1" pin="G" pad="G1"/>
+<connect gate="G1" pin="S" pad="S1"/>
+<connect gate="G2" pin="D" pad="D2"/>
+<connect gate="G2" pin="G" pad="G2"/>
+<connect gate="G2" pin="S" pad="S2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="TRANS-15717" constant="no"/>
 </technology>
 </technologies>
 </device>
