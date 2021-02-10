@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -37686,6 +37686,14 @@ Alternate pin configuration
 <wire x1="2.032" y1="-2.54" x2="3.048" y2="-2.54" width="0.2032" layer="51"/>
 <circle x="-4.699" y="-3.048" radius="0.127" width="0.254" layer="51"/>
 </package>
+<package name="2X3_2MM">
+<pad name="1" x="-2" y="-1" drill="1.016" diameter="1.8796" shape="square"/>
+<pad name="2" x="-2" y="1" drill="1.016" diameter="1.8796"/>
+<pad name="3" x="0" y="-1" drill="1.016" diameter="1.8796"/>
+<pad name="4" x="0" y="1" drill="1.016" diameter="1.8796"/>
+<pad name="5" x="2" y="-1" drill="1.016" diameter="1.8796"/>
+<pad name="6" x="2" y="1" drill="1.016" diameter="1.8796"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -47904,6 +47912,21 @@ This connecotr is used in the National Instruments myDAQ measurement and control
 <technology name="">
 <attribute name="PROD_ID" value="CONN-11566"/>
 <attribute name="VALUE" value="FEMALE 2x3"/>
+</technology>
+</technologies>
+</device>
+<device name="2MM_PITCH" package="2X3_2MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-14886" constant="no"/>
 </technology>
 </technologies>
 </device>
