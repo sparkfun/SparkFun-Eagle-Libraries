@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -19,34 +19,34 @@
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -10025,6 +10025,26 @@ read, as well as embedded engines for orientation, Directional-TapTM/DoubleTapTM
 <text x="-0.127" y="0.762" size="0.3048" layer="51" font="vector" ratio="20">X</text>
 <text x="0.381" y="-0.127" size="0.3048" layer="51" font="vector" ratio="20">Z</text>
 </package>
+<package name="5X2_2MM">
+<pad name="1" x="-1" y="4" drill="1.016" diameter="1.651" shape="square" rot="R180"/>
+<pad name="2" x="1" y="4" drill="1.016" diameter="1.651"/>
+<pad name="3" x="-1" y="2" drill="1.016" diameter="1.651" rot="R180"/>
+<pad name="4" x="1" y="2" drill="1.016" diameter="1.651"/>
+<pad name="5" x="-1" y="0" drill="1.016" diameter="1.651"/>
+<pad name="6" x="1" y="0" drill="1.016" diameter="1.651" rot="R180"/>
+<pad name="7" x="-1" y="-2" drill="1.016" diameter="1.651"/>
+<pad name="8" x="1" y="-2" drill="1.016" diameter="1.651"/>
+<pad name="9" x="-1" y="-4" drill="1.016" diameter="1.651"/>
+<pad name="10" x="1" y="-4" drill="1.016" diameter="1.651"/>
+<wire x1="-4.318" y1="12.065" x2="-4.318" y2="-12.065" width="0.1524" layer="51"/>
+<wire x1="-4.318" y1="-12.065" x2="-49.276" y2="-12.065" width="0.1524" layer="51"/>
+<wire x1="-49.276" y1="-12.065" x2="-49.276" y2="12.065" width="0.1524" layer="51"/>
+<wire x1="-49.276" y1="12.065" x2="-4.318" y2="12.065" width="0.1524" layer="51"/>
+<wire x1="2.794" y1="5.334" x2="2.794" y2="-5.334" width="0.1524" layer="51"/>
+<wire x1="2.794" y1="-5.334" x2="-4.318" y2="-5.334" width="0.1524" layer="51"/>
+<wire x1="-4.318" y1="-5.334" x2="-4.318" y2="5.334" width="0.1524" layer="21"/>
+<wire x1="-4.318" y1="5.334" x2="2.794" y2="5.334" width="0.1524" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADMP401">
@@ -12055,6 +12075,8 @@ read, as well as embedded engines for orientation, Directional-TapTM/DoubleTapTM
 <text x="-12.7" y="10.668" size="1.778" layer="95" font="vector">&gt;Name</text>
 <text x="-12.7" y="-10.16" size="1.778" layer="96" font="vector">&gt;Value</text>
 <pin name="VDDIO" x="15.24" y="5.08" length="short" rot="R180"/>
+</symbol>
+<symbol name="GARMIN_LIDAR_LITE">
 </symbol>
 </symbols>
 <devicesets>
@@ -15421,6 +15443,17 @@ read, as well as embedded engines for orientation, Directional-TapTM/DoubleTapTM
 <attribute name="PROD_ID" value="IC-15721" constant="no"/>
 <attribute name="VALUE" value="KX132" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GARMIN_LIDAR_LITE">
+<gates>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
