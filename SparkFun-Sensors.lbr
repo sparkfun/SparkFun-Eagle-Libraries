@@ -10026,24 +10026,24 @@ read, as well as embedded engines for orientation, Directional-TapTM/DoubleTapTM
 <text x="0.381" y="-0.127" size="0.3048" layer="51" font="vector" ratio="20">Z</text>
 </package>
 <package name="5X2_2MM">
-<pad name="1" x="-1" y="4" drill="1.016" diameter="1.651" shape="square" rot="R180"/>
-<pad name="2" x="1" y="4" drill="1.016" diameter="1.651"/>
-<pad name="3" x="-1" y="2" drill="1.016" diameter="1.651" rot="R180"/>
-<pad name="4" x="1" y="2" drill="1.016" diameter="1.651"/>
-<pad name="5" x="-1" y="0" drill="1.016" diameter="1.651"/>
-<pad name="6" x="1" y="0" drill="1.016" diameter="1.651" rot="R180"/>
-<pad name="7" x="-1" y="-2" drill="1.016" diameter="1.651"/>
-<pad name="8" x="1" y="-2" drill="1.016" diameter="1.651"/>
-<pad name="9" x="-1" y="-4" drill="1.016" diameter="1.651"/>
-<pad name="10" x="1" y="-4" drill="1.016" diameter="1.651"/>
-<wire x1="-4.318" y1="12.065" x2="-4.318" y2="-12.065" width="0.1524" layer="51"/>
-<wire x1="-4.318" y1="-12.065" x2="-49.276" y2="-12.065" width="0.1524" layer="51"/>
-<wire x1="-49.276" y1="-12.065" x2="-49.276" y2="12.065" width="0.1524" layer="51"/>
-<wire x1="-49.276" y1="12.065" x2="-4.318" y2="12.065" width="0.1524" layer="51"/>
-<wire x1="2.794" y1="5.334" x2="2.794" y2="-5.334" width="0.1524" layer="51"/>
-<wire x1="2.794" y1="-5.334" x2="-4.318" y2="-5.334" width="0.1524" layer="51"/>
-<wire x1="-4.318" y1="-5.334" x2="-4.318" y2="5.334" width="0.1524" layer="21"/>
-<wire x1="-4.318" y1="5.334" x2="2.794" y2="5.334" width="0.1524" layer="51"/>
+<pad name="1" x="1" y="4" drill="1.016" diameter="1.651" shape="square" rot="R180"/>
+<pad name="2" x="-1" y="4" drill="1.016" diameter="1.651"/>
+<pad name="3" x="1" y="2" drill="1.016" diameter="1.651" rot="R180"/>
+<pad name="4" x="-1" y="2" drill="1.016" diameter="1.651"/>
+<pad name="5" x="1" y="0" drill="1.016" diameter="1.651"/>
+<pad name="6" x="-1" y="0" drill="1.016" diameter="1.651" rot="R180"/>
+<pad name="7" x="1" y="-2" drill="1.016" diameter="1.651"/>
+<pad name="8" x="-1" y="-2" drill="1.016" diameter="1.651"/>
+<pad name="9" x="1" y="-4" drill="1.016" diameter="1.651"/>
+<pad name="10" x="-1" y="-4" drill="1.016" diameter="1.651"/>
+<wire x1="4.318" y1="-12.065" x2="4.318" y2="12.065" width="0.1524" layer="51"/>
+<wire x1="4.318" y1="12.065" x2="49.276" y2="12.065" width="0.1524" layer="51"/>
+<wire x1="49.276" y1="12.065" x2="49.276" y2="-12.065" width="0.1524" layer="51"/>
+<wire x1="49.276" y1="-12.065" x2="4.318" y2="-12.065" width="0.1524" layer="51"/>
+<wire x1="-2.794" y1="-5.334" x2="-2.794" y2="5.334" width="0.1524" layer="51"/>
+<wire x1="-2.794" y1="5.334" x2="4.318" y2="5.334" width="0.1524" layer="51"/>
+<wire x1="4.318" y1="5.334" x2="4.318" y2="-5.334" width="0.1524" layer="51"/>
+<wire x1="4.318" y1="-5.334" x2="-2.794" y2="-5.334" width="0.1524" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -12077,6 +12077,21 @@ read, as well as embedded engines for orientation, Directional-TapTM/DoubleTapTM
 <pin name="VDDIO" x="15.24" y="5.08" length="short" rot="R180"/>
 </symbol>
 <symbol name="GARMIN_LIDAR_LITE">
+<description>This is a symbol for the &lt;a href=https://www.sparkfun.com/products/15776&gt;Garmin LIDAR Lite v4 &lt;/a&gt;.</description>
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<pin name="VIN" x="-12.7" y="12.7" visible="pin" length="short" direction="pwr"/>
+<pin name="GND" x="-12.7" y="-10.16" visible="pin" length="short" direction="pwr"/>
+<pin name="SDA" x="12.7" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="SCL" x="12.7" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="GPIOA" x="12.7" y="5.08" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="GPIOB" x="12.7" y="2.54" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="VRETURN" x="12.7" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="NRESET" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="SWCLK" x="12.7" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="SWDIO" x="12.7" y="-10.16" visible="pin" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -15448,12 +15463,28 @@ read, as well as embedded engines for orientation, Directional-TapTM/DoubleTapTM
 </devices>
 </deviceset>
 <deviceset name="GARMIN_LIDAR_LITE">
+<description>This is a device for the &lt;a href=https://www.sparkfun.com/products/15776&gt;Garmin LIDAR Lite v4&lt;/a&gt;.</description>
 <gates>
+<gate name="G$1" symbol="GARMIN_LIDAR_LITE" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="5X2_2MM" package="5X2_2MM">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="GPIOA" pad="5"/>
+<connect gate="G$1" pin="GPIOB" pad="6"/>
+<connect gate="G$1" pin="NRESET" pad="8"/>
+<connect gate="G$1" pin="SCL" pad="4"/>
+<connect gate="G$1" pin="SDA" pad="3"/>
+<connect gate="G$1" pin="SWCLK" pad="9"/>
+<connect gate="G$1" pin="SWDIO" pad="10"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VRETURN" pad="7"/>
+</connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="SEN-15776" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
