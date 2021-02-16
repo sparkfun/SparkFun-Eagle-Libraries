@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2285,6 +2285,28 @@ Pasted was reduced by 40% width on the center ground pad, and some amount on the
 <text x="0" y="2.5" size="0.6096" layer="25" font="vector" ratio="20" align="center">&gt;Name</text>
 <text x="0" y="-2.25" size="0.6096" layer="27" font="vector" ratio="20" align="center">&gt;Value</text>
 </package>
+<package name="QFN-12">
+<wire x1="-1.5" y1="-1.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="1.5" x2="-1.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="1.5" x2="-1.5" y2="-1.5" width="0.127" layer="21"/>
+<circle x="-1.75" y="1.75" radius="0.05" width="0.127" layer="21"/>
+<smd name="11" x="0" y="1.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="10" x="0.5" y="1.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="12" x="-0.5" y="1.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="4" x="-0.5" y="-1.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="5" x="0" y="-1.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="6" x="0.5" y="-1.4" dx="0.7" dy="0.25" layer="1" rot="R90"/>
+<smd name="8" x="1.4" y="0" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="9" x="1.4" y="0.5" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="7" x="1.4" y="-0.5" dx="0.7" dy="0.25" layer="1" rot="R180"/>
+<smd name="3" x="-1.4" y="-0.5" dx="0.7" dy="0.25" layer="1"/>
+<smd name="2" x="-1.4" y="0" dx="0.7" dy="0.25" layer="1"/>
+<smd name="1" x="-1.4" y="0.5" dx="0.7" dy="0.25" layer="1"/>
+<smd name="EXP" x="0" y="0" dx="1.65" dy="1.65" layer="1"/>
+<text x="-1.3" y="2" size="0.6096" layer="25" font="vector" ratio="15">&gt;Name</text>
+<text x="-1.5" y="-2.5" size="0.6096" layer="27" font="vector" ratio="15">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="DC-DC_CONVERTER">
@@ -3084,6 +3106,26 @@ conversion&lt;/p&gt;</description>
 <wire x1="-10.16" y1="-12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
 <text x="-10.16" y="13.208" size="1.778" layer="95" font="vector">&gt;Name</text>
 <text x="-10.16" y="-15.24" size="1.778" layer="95" font="vector">&gt;Value</text>
+</symbol>
+<symbol name="LTC4231">
+<pin name="UVH" x="-12.7" y="5.08" length="short"/>
+<pin name="OV" x="-12.7" y="-10.16" length="short"/>
+<pin name="GNDSW" x="-12.7" y="-25.4" length="short"/>
+<pin name="GND" x="-12.7" y="-27.94" length="short"/>
+<pin name="UVL" x="-12.7" y="20.32" length="short"/>
+<pin name="IN" x="-12.7" y="25.4" length="short"/>
+<pin name="SENSE" x="-12.7" y="27.94" length="short"/>
+<pin name="GATE" x="12.7" y="17.78" length="short" rot="R180"/>
+<pin name="SOURCE" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="STATUS" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="!SHDN" x="12.7" y="-10.16" length="short" rot="R180"/>
+<pin name="TIMER" x="12.7" y="-27.94" length="short" rot="R180"/>
+<wire x1="-10.16" y1="30.48" x2="-10.16" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-30.48" x2="10.16" y2="-30.48" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-30.48" x2="10.16" y2="30.48" width="0.254" layer="94"/>
+<wire x1="10.16" y1="30.48" x2="-10.16" y2="30.48" width="0.254" layer="94"/>
+<text x="-10.16" y="31.496" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-33.02" size="1.778" layer="95" font="vector">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4682,6 +4724,41 @@ conversion&lt;/p&gt;</description>
 <technology name="">
 <attribute name="PROD_ID" value="VREG-15445" constant="no"/>
 <attribute name="VALUE" value="LMR33630" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC4231" prefix="U">
+<description>The LTC®4231 is a micropower Hot Swap controller that
+allows safe circuit board insertion and removal from a live
+power supply. An internal high side switch driver controls
+the gate of an external N-channel MOSFET. Back-to-back
+MOSFETs can be used for reverse supply protection down
+to –40V.</description>
+<gates>
+<gate name="G$1" symbol="LTC4231" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN-12">
+<connects>
+<connect gate="G$1" pin="!SHDN" pad="1"/>
+<connect gate="G$1" pin="GATE" pad="10"/>
+<connect gate="G$1" pin="GND" pad="6 EXP"/>
+<connect gate="G$1" pin="GNDSW" pad="5"/>
+<connect gate="G$1" pin="IN" pad="12"/>
+<connect gate="G$1" pin="OV" pad="4"/>
+<connect gate="G$1" pin="SENSE" pad="11"/>
+<connect gate="G$1" pin="SOURCE" pad="9"/>
+<connect gate="G$1" pin="STATUS" pad="7"/>
+<connect gate="G$1" pin="TIMER" pad="8"/>
+<connect gate="G$1" pin="UVH" pad="3"/>
+<connect gate="G$1" pin="UVL" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-15811" constant="no"/>
+<attribute name="VALUE" value="LTC4231 Hot Swap Controller" constant="no"/>
 </technology>
 </technologies>
 </device>
