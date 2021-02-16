@@ -1058,6 +1058,33 @@ Mechanical Specifications
 <text x="-2.286" y="2.159" size="0.6096" layer="25" ratio="20">&gt;NAME</text>
 <text x="-2.413" y="-2.794" size="0.6096" layer="27" ratio="20">&gt;VALUE</text>
 </package>
+<package name="DO-214AC">
+<smd name="C" x="-2.159" y="0" dx="2.0828" dy="1.778" layer="1" rot="R90"/>
+<wire x1="-3.429" y1="1.016" x2="-3.429" y2="-1.016" width="0.127" layer="21"/>
+<smd name="A" x="2.2098" y="0" dx="2.0828" dy="1.778" layer="1" rot="R90"/>
+<wire x1="-2.159" y1="1.30175" x2="2.2098" y2="1.30175" width="0.127" layer="21"/>
+<wire x1="-2.159" y1="-1.30175" x2="2.2098" y2="-1.30175" width="0.127" layer="21"/>
+</package>
+<package name="1212-8">
+<smd name="3" x="-1.49" y="-0.33" dx="0.99" dy="0.405" layer="1"/>
+<smd name="2" x="-1.49" y="0.33" dx="0.99" dy="0.405" layer="1"/>
+<smd name="1" x="-1.49" y="0.99" dx="0.99" dy="0.405" layer="1"/>
+<smd name="4" x="-1.49" y="-0.99" dx="0.99" dy="0.405" layer="1"/>
+<smd name="8" x="1.7475" y="0.99" dx="0.76" dy="0.405" layer="1"/>
+<smd name="7" x="1.7475" y="0.33" dx="0.76" dy="0.405" layer="1"/>
+<smd name="6" x="1.7475" y="-0.33" dx="0.76" dy="0.405" layer="1"/>
+<smd name="5" x="1.7475" y="-0.99" dx="0.76" dy="0.405" layer="1"/>
+<smd name="PAD" x="0.5025" y="0" dx="1.725" dy="2.235" layer="1"/>
+<wire x1="-1.65" y1="1.65" x2="1.65" y2="1.65" width="0.127" layer="21"/>
+<wire x1="1.65" y1="-1.65" x2="-1.65" y2="-1.65" width="0.127" layer="21"/>
+<text x="0" y="2.286" size="0.6096" layer="25" font="vector" distance="20" align="center">&gt;Name</text>
+<text x="0" y="-2.159" size="0.6096" layer="27" font="vector" distance="20" align="center">&gt;Value</text>
+<wire x1="-1.651" y1="1.651" x2="-1.651" y2="1.397" width="0.127" layer="21"/>
+<wire x1="-1.651" y1="-1.651" x2="-1.651" y2="-1.397" width="0.127" layer="21"/>
+<wire x1="1.651" y1="-1.651" x2="1.651" y2="-1.397" width="0.127" layer="21"/>
+<wire x1="1.651" y1="1.651" x2="1.651" y2="1.397" width="0.127" layer="21"/>
+<circle x="-2.159" y="1.905" radius="0.1016" width="0.2032" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOT363_PHILIPS" urn="urn:adsk.eagle:package:29757/2" type="model">
@@ -2406,6 +2433,61 @@ Adjustable shunt regulator</description>
 <wire x1="3.048" y1="1.524" x2="3.048" y2="4.064" width="0.254" layer="94"/>
 <wire x1="3.048" y1="4.064" x2="4.064" y2="5.08" width="0.254" layer="94"/>
 <wire x1="4.064" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+</symbol>
+<symbol name="DIODE-TVS_UNI">
+<wire x1="-1.27" y1="0.889" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-0.889" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0.889" x2="-0.762" y2="1.397" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-0.889" x2="-1.778" y2="-1.397" width="0.1524" layer="94"/>
+<text x="-3.81" y="2.032" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-3.81" y="-2.032" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<pin name="C" x="-3.81" y="0" visible="off" length="point" direction="pas"/>
+<pin name="A" x="3.81" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+<wire x1="-3.81" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="1.27" y="-1.27"/>
+<vertex x="-1.27" y="0"/>
+<vertex x="1.27" y="1.27"/>
+</polygon>
+<wire x1="1.27" y1="0" x2="3.81" y2="0" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="LABELED-NMOS-1">
+<description>&lt;h3&gt; N-channel MOSFET transistor&lt;/h3&gt;
+Switches electronic signals</description>
+<pin name="G" x="-5.08" y="-2.54" visible="off" length="short"/>
+<pin name="S" x="2.54" y="-5.08" visible="off" length="short" rot="R90"/>
+<pin name="D" x="2.54" y="5.08" visible="off" length="short" rot="R270"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="0.6858" x2="-1.9812" y2="-0.8382" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="-1.2954" x2="-1.9812" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="-1.905" x2="-1.9812" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="2.54" x2="-1.9812" y2="1.8034" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="1.8034" x2="-1.9812" y2="1.0922" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.905" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="-1.2192" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-0.7112" x2="2.54" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="-1.9812" y1="1.8034" x2="2.54" y2="1.8034" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="1.8034" x2="2.54" y2="0.5588" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0.5588" x2="3.302" y2="0.5588" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0.5588" x2="1.778" y2="0.5588" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="1.8034" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-1.905" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="1.778" y="-0.7112"/>
+<vertex x="2.54" y="0.5588"/>
+<vertex x="3.302" y="-0.7112"/>
+</polygon>
+<wire x1="3.302" y1="0.5588" x2="3.4798" y2="0.7366" width="0.1524" layer="94"/>
+<wire x1="1.6002" y1="0.381" x2="1.778" y2="0.5588" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-1.9812" y="0"/>
+<vertex x="-1.2192" y="0.254"/>
+<vertex x="-1.2192" y="-0.254"/>
+</polygon>
+<text x="5.08" y="0" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3816,6 +3898,46 @@ range for only 0.5 mA of LED current.
 <technology name="">
 <attribute name="PROD_ID" value="COM-15155" constant="no"/>
 <attribute name="VALUE" value="25A Solid State Relay" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIODE_TVS_UNI" prefix="D">
+<gates>
+<gate name="G$1" symbol="DIODE-TVS_UNI" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DO-214AC">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-15812" constant="no"/>
+<attribute name="VALUE" value="SMAJ36A" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SI7120AD" prefix="Q">
+<description>N-Channel 60 V (D-S) MOSFET</description>
+<gates>
+<gate name="G$1" symbol="LABELED-NMOS-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1212-8">
+<connects>
+<connect gate="G$1" pin="D" pad="5 6 7 8 PAD"/>
+<connect gate="G$1" pin="G" pad="4"/>
+<connect gate="G$1" pin="S" pad="1 2 3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="TRAN-15814" constant="no"/>
+<attribute name="VALUE" value="SI7120AD" constant="no"/>
 </technology>
 </technologies>
 </device>
