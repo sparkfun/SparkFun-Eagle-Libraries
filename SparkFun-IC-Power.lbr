@@ -4764,6 +4764,33 @@ to –40V.</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="STLQ015" prefix="U">
+<description>&lt;h3&gt;STLQ015 - 150mA CMOS LDO Regulator w/ Enable&lt;/h3&gt;
+
+1.4uA quiescent
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+<gates>
+<gate name="U1" symbol="V-REG-LDO_NO-BP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-3.3V" package="SOT23-5">
+<connects>
+<connect gate="U1" pin="EN" pad="3"/>
+<connect gate="U1" pin="GND" pad="2"/>
+<connect gate="U1" pin="IN" pad="1"/>
+<connect gate="U1" pin="NC" pad="4"/>
+<connect gate="U1" pin="OUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-15779"/>
+<attribute name="VALUE" value="3.3V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
