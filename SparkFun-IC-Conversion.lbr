@@ -753,6 +753,37 @@ MSOP&lt;br&gt;
 <rectangle x1="1.9" y1="0.1675" x2="2.45" y2="0.4825" layer="51"/>
 <rectangle x1="1.9" y1="0.8175" x2="2.45" y2="1.1325" layer="51"/>
 </package>
+<package name="SOP65P640X120-16N">
+<description>TSSOP PW0016A</description>
+<smd name="1" x="-2.9" y="2.275" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="2" x="-2.9" y="1.625" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="3" x="-2.9" y="0.975" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="4" x="-2.9" y="0.325" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="5" x="-2.9" y="-0.325" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="6" x="-2.9" y="-0.975" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="7" x="-2.9" y="-1.625" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="8" x="-2.9" y="-2.275" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="9" x="2.9" y="-2.275" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="10" x="2.9" y="-1.625" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="11" x="2.9" y="-0.975" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="12" x="2.9" y="-0.325" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="13" x="2.9" y="0.325" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="14" x="2.9" y="0.975" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="15" x="2.9" y="1.625" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<smd name="16" x="2.9" y="2.275" dx="1.5" dy="0.45" layer="1" roundness="20"/>
+<text x="0" y="4" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-4" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-2.2" y1="2.5" x2="2.2" y2="2.5" width="0.1" layer="51"/>
+<wire x1="2.2" y1="2.5" x2="2.2" y2="-2.5" width="0.1" layer="51"/>
+<wire x1="2.2" y1="-2.5" x2="-2.2" y2="-2.5" width="0.1" layer="51"/>
+<wire x1="-2.2" y1="-2.5" x2="-2.2" y2="2.5" width="0.1" layer="51"/>
+<wire x1="-2.2" y1="1.85" x2="-1.55" y2="2.5" width="0.1" layer="51"/>
+<wire x1="-1.85" y1="2.5" x2="1.85" y2="2.5" width="0.2" layer="21"/>
+<wire x1="1.85" y1="2.5" x2="1.85" y2="-2.5" width="0.2" layer="21"/>
+<wire x1="1.85" y1="-2.5" x2="-1.85" y2="-2.5" width="0.2" layer="21"/>
+<wire x1="-1.85" y1="-2.5" x2="-1.85" y2="2.5" width="0.2" layer="21"/>
+<wire x1="-3.675" y1="2.85" x2="-2.2" y2="2.85" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="VS1000">
@@ -1173,6 +1204,31 @@ RDY</text>
 <pin name="GPIO3" x="12.7" y="-7.62" length="short" rot="R180"/>
 <text x="-10.16" y="8.128" size="1.778" layer="95">&gt;Name</text>
 <text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+<symbol name="ADS122C04IPWR">
+<description>TI ADS122C04</description>
+<wire x1="-10.16" y1="11.43" x2="10.16" y2="11.43" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-11.43" x2="10.16" y2="11.43" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-11.43" x2="-10.16" y2="-11.43" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="11.43" x2="-10.16" y2="-11.43" width="0.254" layer="94"/>
+<text x="0" y="16.51" size="1.778" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="13.97" size="1.778" layer="96" align="center">&gt;VALUE</text>
+<pin name="A0" x="-12.7" y="8.89" length="short" direction="in"/>
+<pin name="A1" x="-12.7" y="6.35" length="short" direction="in"/>
+<pin name="!RESET" x="-12.7" y="3.81" length="short" direction="in"/>
+<pin name="DGND" x="-12.7" y="1.27" length="short" direction="pwr"/>
+<pin name="AVSS" x="-12.7" y="-1.27" length="short" direction="pwr"/>
+<pin name="AIN3" x="-12.7" y="-3.81" length="short" direction="in"/>
+<pin name="AIN2" x="-12.7" y="-6.35" length="short" direction="in"/>
+<pin name="REFN" x="-12.7" y="-8.89" length="short" direction="in"/>
+<pin name="SCL" x="12.7" y="8.89" length="short" rot="R180"/>
+<pin name="SDA" x="12.7" y="6.35" length="short" rot="R180"/>
+<pin name="!DRDY" x="12.7" y="3.81" length="short" direction="out" rot="R180"/>
+<pin name="DVDD" x="12.7" y="1.27" length="short" direction="pwr" rot="R180"/>
+<pin name="AVDD" x="12.7" y="-1.27" length="short" direction="pwr" rot="R180"/>
+<pin name="AIN0" x="12.7" y="-3.81" length="short" direction="in" rot="R180"/>
+<pin name="AIN1" x="12.7" y="-6.35" length="short" direction="in" rot="R180"/>
+<pin name="REFP" x="12.7" y="-8.89" length="short" direction="in" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1749,6 +1805,44 @@ stock = 62</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-15034" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADS122C04IPWR" prefix="U">
+<description>&lt;b&gt;24-Bit, 2kSPS, 4-Ch, Low-Power Delta-Sigma ADC With PGA, Voltage Reference, IDACs and I2C Interface&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://www.ti.com/lit/gpn/ads122c04"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="ADS122C04IPWR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOP65P640X120-16N">
+<connects>
+<connect gate="G$1" pin="!DRDY" pad="14"/>
+<connect gate="G$1" pin="!RESET" pad="3"/>
+<connect gate="G$1" pin="A0" pad="1"/>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="AIN0" pad="11"/>
+<connect gate="G$1" pin="AIN1" pad="10"/>
+<connect gate="G$1" pin="AIN2" pad="7"/>
+<connect gate="G$1" pin="AIN3" pad="6"/>
+<connect gate="G$1" pin="AVDD" pad="12"/>
+<connect gate="G$1" pin="AVSS" pad="5"/>
+<connect gate="G$1" pin="DGND" pad="4"/>
+<connect gate="G$1" pin="DVDD" pad="13"/>
+<connect gate="G$1" pin="REFN" pad="8"/>
+<connect gate="G$1" pin="REFP" pad="9"/>
+<connect gate="G$1" pin="SCL" pad="16"/>
+<connect gate="G$1" pin="SDA" pad="15"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HEIGHT" value="1.2mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Texas Instruments" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="ADS122C04IPWR" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="595-ADS122C04IPWR" constant="no"/>
+<attribute name="PROD_ID" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
