@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -10047,6 +10047,46 @@ read, as well as embedded engines for orientation, Directional-TapTM/DoubleTapTM
 <text x="-2.54" y="6.35" size="0.635" layer="25" font="vector">&gt;Name</text>
 <text x="-2.54" y="-6.35" size="0.635" layer="27" font="vector">&gt;Value</text>
 </package>
+<package name="SGP40">
+<smd name="5" x="1.15" y="0" dx="0.55" dy="0.4" layer="1" cream="no"/>
+<smd name="6" x="1.15" y="0.8" dx="0.55" dy="0.4" layer="1" cream="no"/>
+<smd name="4" x="1.15" y="-0.8" dx="0.55" dy="0.4" layer="1" cream="no"/>
+<smd name="3" x="-1.15" y="-0.8" dx="0.55" dy="0.4" layer="1" cream="no"/>
+<smd name="2" x="-1.15" y="0" dx="0.55" dy="0.4" layer="1" cream="no"/>
+<smd name="1" x="-1.15" y="0.8" dx="0.55" dy="0.4" layer="1" cream="no"/>
+<rectangle x1="-1.525" y1="0.6" x2="-0.975" y2="1" layer="31"/>
+<rectangle x1="-1.525" y1="-0.2" x2="-0.975" y2="0.2" layer="31"/>
+<rectangle x1="-1.525" y1="-1" x2="-0.975" y2="-0.6" layer="31"/>
+<rectangle x1="0.975" y1="0.6" x2="1.525" y2="1" layer="31"/>
+<rectangle x1="0.975" y1="-0.2" x2="1.525" y2="0.2" layer="31"/>
+<rectangle x1="0.975" y1="-1" x2="1.525" y2="-0.6" layer="31"/>
+<polygon width="0.0001" layer="1" spacing="0.254">
+<vertex x="-0.625" y="-0.85"/>
+<vertex x="0.625" y="-0.85"/>
+<vertex x="0.625" y="0.85"/>
+<vertex x="-0.35" y="0.85"/>
+<vertex x="-0.625" y="0.575"/>
+</polygon>
+<polygon width="0.0001" layer="29" spacing="0.254">
+<vertex x="-0.725" y="-0.95"/>
+<vertex x="0.725" y="-0.95"/>
+<vertex x="0.725" y="0.95"/>
+<vertex x="-0.4" y="0.95"/>
+<vertex x="-0.725" y="0.625"/>
+</polygon>
+<wire x1="-1.225" y1="-1.225" x2="1.225" y2="-1.225" width="0.2032" layer="51"/>
+<wire x1="1.225" y1="-1.225" x2="1.225" y2="1.225" width="0.2032" layer="51"/>
+<wire x1="1.225" y1="1.225" x2="-1.225" y2="1.225" width="0.2032" layer="51"/>
+<wire x1="-1.225" y1="1.225" x2="-1.225" y2="-1.225" width="0.2032" layer="51"/>
+<wire x1="-1.225" y1="1.225" x2="1.225" y2="1.225" width="0.2032" layer="21"/>
+<wire x1="1.225" y1="-1.225" x2="-1.225" y2="-1.225" width="0.2032" layer="21"/>
+<circle x="-1.524" y="1.524" radius="0.127" width="0.2032" layer="21"/>
+<rectangle x1="-0.3" y1="-0.425" x2="0.3" y2="0.425" layer="31"/>
+<smd name="DIEPAD" x="0" y="0" dx="0.6096" dy="0.3048" layer="1" rot="R90" stop="no" cream="no"/>
+<text x="-1.27" y="1.524" size="0.8128" layer="25" font="vector">&gt;Name</text>
+<text x="-1.27" y="-2.54" size="0.8128" layer="27" font="vector">&gt;Value</text>
+<circle x="0.254" y="-0.381" radius="0.283978125" width="0.254" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADMP401">
@@ -12096,6 +12136,19 @@ read, as well as embedded engines for orientation, Directional-TapTM/DoubleTapTM
 <pin name="SWDIO" x="12.7" y="-10.16" visible="pin" length="short" rot="R180"/>
 <text x="-10.16" y="17.78" size="1.778" layer="95" font="vector">&gt;Name</text>
 <text x="-10.16" y="-15.24" size="1.778" layer="96" font="vector">&gt;Value</text>
+</symbol>
+<symbol name="SGP40">
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<pin name="VDD" x="-10.16" y="2.54" visible="pin" length="short" direction="pwr"/>
+<pin name="GND" x="-10.16" y="-2.54" visible="pin" length="short" direction="pwr"/>
+<pin name="SDA" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SCL" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
+<text x="-7.62" y="5.588" size="1.778" layer="95">&gt;Name</text>
+<text x="-7.62" y="-7.366" size="1.778" layer="96">&gt;Value</text>
+<pin name="VDDH" x="-10.16" y="0" visible="pin" length="short" direction="pwr"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -15488,6 +15541,32 @@ read, as well as embedded engines for orientation, Directional-TapTM/DoubleTapTM
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="SEN-14784, CONN-15822" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SGP40" prefix="U">
+<description>The SGP40 is a digital gas sensor designed for easy
+integration into air purifiers or demand-controlled
+ventilation systems.</description>
+<gates>
+<gate name="G$1" symbol="SGP40" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SGP40">
+<connects>
+<connect gate="G$1" pin="GND" pad="2 4 DIEPAD"/>
+<connect gate="G$1" pin="SCL" pad="6"/>
+<connect gate="G$1" pin="SDA" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
+<connect gate="G$1" pin="VDDH" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY_PART" value="1649-SGP40-D-R4CT-ND" constant="no"/>
+<attribute name="PROD_ID" value="IC-15580" constant="no"/>
+<attribute name="VALUE" value="SGP40" constant="no"/>
 </technology>
 </technologies>
 </device>
