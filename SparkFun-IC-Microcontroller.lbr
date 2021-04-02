@@ -6524,6 +6524,29 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;
 <text x="-15.494" y="54.356" size="1.778" layer="95">&gt;NAME</text>
 <text x="-15.24" y="-35.56" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="ATTINY841-ARDUINO">
+<description>ATtiny441/841 Pinout - Clockwise Numbering</description>
+<wire x1="-15.24" y1="17.78" x2="12.7" y2="17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="17.78" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-17.78" x2="-15.24" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-17.78" x2="-15.24" y2="17.78" width="0.254" layer="94"/>
+<text x="-15.24" y="18.542" size="1.778" layer="95">&gt;NAME</text>
+<text x="-15.24" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="VCC" x="-17.78" y="15.24" length="short" direction="pwr"/>
+<pin name="(A3)3" x="15.24" y="-7.62" length="short" rot="R180"/>
+<pin name="(RXD0/A2)2" x="15.24" y="-10.16" length="short" rot="R180"/>
+<pin name="(TXD0/A1)1" x="15.24" y="-12.7" length="short" rot="R180"/>
+<pin name="(A0)0" x="15.24" y="-15.24" length="short" rot="R180"/>
+<pin name="(SCL/SCK/A4)4" x="15.24" y="-5.08" length="short" rot="R180"/>
+<pin name="(CIPO/A5)5" x="15.24" y="-2.54" length="short" rot="R180"/>
+<pin name="(SDA/COPI/A6)6" x="15.24" y="0" length="short" rot="R180"/>
+<pin name="(A7)7" x="15.24" y="2.54" length="short" rot="R180"/>
+<pin name="(XTAL1/A11)10" x="15.24" y="12.7" length="short" rot="R180"/>
+<pin name="(INT0/XTAL2/A10)9" x="15.24" y="10.16" length="short" rot="R180"/>
+<pin name="(A8)8" x="15.24" y="7.62" length="short" rot="R180"/>
+<pin name="(!RESET!/A9)11" x="15.24" y="15.24" length="short" rot="R180"/>
+<pin name="GND" x="-17.78" y="-15.24" length="short" direction="pwr"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ATMEGA128" prefix="U">
@@ -9874,6 +9897,38 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-15464" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATTINY841-ARDUINO" prefix="U">
+<description>ATtiny841</description>
+<gates>
+<gate name="U1" symbol="ATTINY841-ARDUINO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO14">
+<connects>
+<connect gate="U1" pin="(!RESET!/A9)11" pad="4"/>
+<connect gate="U1" pin="(A0)0" pad="13"/>
+<connect gate="U1" pin="(A3)3" pad="10"/>
+<connect gate="U1" pin="(A7)7" pad="6"/>
+<connect gate="U1" pin="(A8)8" pad="5"/>
+<connect gate="U1" pin="(CIPO/A5)5" pad="8"/>
+<connect gate="U1" pin="(INT0/XTAL2/A10)9" pad="3"/>
+<connect gate="U1" pin="(RXD0/A2)2" pad="11"/>
+<connect gate="U1" pin="(SCL/SCK/A4)4" pad="9"/>
+<connect gate="U1" pin="(SDA/COPI/A6)6" pad="7"/>
+<connect gate="U1" pin="(TXD0/A1)1" pad="12"/>
+<connect gate="U1" pin="(XTAL1/A11)10" pad="2"/>
+<connect gate="U1" pin="GND" pad="14"/>
+<connect gate="U1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="" constant="no"/>
+<attribute name="VALUE" value="ATtiny841" constant="no"/>
 </technology>
 </technologies>
 </device>
