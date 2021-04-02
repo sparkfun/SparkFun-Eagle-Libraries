@@ -2814,14 +2814,14 @@ Pasted was reduced by 40% width on the center ground pad, and some amount on the
 <wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.2032" layer="94"/>
 <wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.2032" layer="94"/>
 <wire x1="-5.08" y1="1.524" x2="0" y2="1.524" width="0.127" layer="97"/>
-<pin name="CB" x="12.7" y="5.08" length="middle" direction="in" rot="R180"/>
-<pin name="FB" x="12.7" y="-5.08" length="middle" direction="in" rot="R180"/>
-<pin name="GND" x="-12.7" y="-5.08" length="middle" direction="pwr"/>
-<pin name="SHDN" x="-12.7" y="0" length="middle" direction="in"/>
-<pin name="SW" x="12.7" y="0" length="middle" direction="pwr" rot="R180"/>
-<pin name="VIN" x="-12.7" y="5.08" length="middle" direction="pwr"/>
-<text x="-7.62" y="-10.16" size="1.27" layer="96" ratio="15">&gt;VALUE</text>
-<text x="-7.62" y="7.874" size="1.27" layer="96" ratio="15">&gt;NAME</text>
+<pin name="CB" x="10.16" y="5.08" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="FB" x="10.16" y="-5.08" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="GND" x="-10.16" y="-5.08" visible="pin" length="short" direction="pwr"/>
+<pin name="SHDN" x="-10.16" y="0" visible="pin" length="short" direction="in"/>
+<pin name="SW" x="10.16" y="0" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="VIN" x="-10.16" y="5.08" visible="pin" length="short" direction="pwr"/>
+<text x="-7.62" y="-9.906" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-7.62" y="7.874" size="1.778" layer="96">&gt;NAME</text>
 </symbol>
 <symbol name="AP3012">
 <description>&lt;h3&gt;AP3012&lt;/h3&gt;
@@ -4282,19 +4282,19 @@ Specifications:
 </device>
 </devices>
 </deviceset>
-<deviceset name="LMR14203">
+<deviceset name="LMR14203" prefix="U">
 <gates>
-<gate name="A" symbol="LMR14203" x="0" y="0"/>
+<gate name="U1" symbol="LMR14203" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOT23-6">
 <connects>
-<connect gate="A" pin="CB" pad="1"/>
-<connect gate="A" pin="FB" pad="3"/>
-<connect gate="A" pin="GND" pad="2"/>
-<connect gate="A" pin="SHDN" pad="4"/>
-<connect gate="A" pin="SW" pad="6"/>
-<connect gate="A" pin="VIN" pad="5"/>
+<connect gate="U1" pin="CB" pad="1"/>
+<connect gate="U1" pin="FB" pad="3"/>
+<connect gate="U1" pin="GND" pad="2"/>
+<connect gate="U1" pin="SHDN" pad="4"/>
+<connect gate="U1" pin="SW" pad="6"/>
+<connect gate="U1" pin="VIN" pad="5"/>
 </connects>
 <technologies>
 <technology name="">
