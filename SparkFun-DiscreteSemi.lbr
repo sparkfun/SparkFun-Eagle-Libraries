@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -25,7 +25,7 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -43,7 +43,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -71,6 +71,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
@@ -1128,6 +1129,59 @@ Mechanical Specifications
 <rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.3048" layer="51"/>
 <rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.3048" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
+<package name="SOT363">
+<wire x1="-1.1" y1="0.55" x2="1.1" y2="0.55" width="0.2032" layer="51"/>
+<wire x1="1.1" y1="-0.55" x2="-1.1" y2="-0.55" width="0.2032" layer="51"/>
+<wire x1="-1.1" y1="0.6" x2="-1.1" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="1.1" y1="0.6" x2="1.1" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="1.1" y1="0.55" x2="1.1" y2="-0.55" width="0.2032" layer="51"/>
+<wire x1="-1.1" y1="0.55" x2="-1.1" y2="-0.55" width="0.2032" layer="51"/>
+<circle x="-1.25" y="-0.85" radius="0.1" width="0.3" layer="21"/>
+<text x="-1.10571875" y="1.4535" size="0.8128" layer="25">&gt;NAME</text>
+<rectangle x1="-0.80606875" y1="-1.10323125" x2="-0.5" y2="-0.6" layer="51"/>
+<rectangle x1="-0.15191875" y1="-1.1014875" x2="0.15" y2="-0.6" layer="51"/>
+<rectangle x1="0.4993375" y1="-1.10095" x2="0.8" y2="-0.6" layer="51"/>
+<rectangle x1="0.49888125" y1="0.600875" x2="0.8" y2="1.1" layer="51"/>
+<rectangle x1="-0.15370625" y1="0.601571875" x2="0.15" y2="1.099996875" layer="51"/>
+<rectangle x1="-0.8049875" y1="0.601446875" x2="-0.5" y2="1.099996875" layer="51"/>
+<smd name="1" x="-0.65" y="-0.8" dx="0.3" dy="0.7" layer="1"/>
+<smd name="2" x="0" y="-0.8" dx="0.3" dy="0.7" layer="1"/>
+<smd name="3" x="0.65" y="-0.8" dx="0.3" dy="0.7" layer="1"/>
+<smd name="4" x="0.65" y="0.8" dx="0.3" dy="0.7" layer="1"/>
+<smd name="5" x="0" y="0.8" dx="0.3" dy="0.7" layer="1"/>
+<smd name="6" x="-0.65" y="0.8" dx="0.3" dy="0.7" layer="1"/>
+<text x="-1.27" y="-2.54" size="0.8128" layer="27">&gt;VALUE</text>
+</package>
+<package name="SOT563">
+<wire x1="0.65" y1="0.85" x2="0.65" y2="-0.85" width="0.127" layer="51"/>
+<wire x1="0.65" y1="-0.85" x2="-0.65" y2="-0.85" width="0.127" layer="51"/>
+<wire x1="-0.65" y1="-0.85" x2="-0.65" y2="0.85" width="0.127" layer="51"/>
+<wire x1="-0.65" y1="0.85" x2="0.65" y2="0.85" width="0.127" layer="51"/>
+<wire x1="-0.65" y1="0.974" x2="0.65" y2="0.974" width="0.127" layer="21"/>
+<wire x1="-0.65" y1="-0.974" x2="0.65" y2="-0.974" width="0.127" layer="21"/>
+<wire x1="-1.315" y1="0.91" x2="-1.315" y2="-0.91" width="0.05" layer="39"/>
+<wire x1="1.315" y1="0.91" x2="1.315" y2="-0.91" width="0.05" layer="39"/>
+<wire x1="0.9" y1="1.1" x2="-0.9" y2="1.1" width="0.05" layer="39"/>
+<wire x1="0.9" y1="-1.1" x2="-0.9" y2="-1.1" width="0.05" layer="39"/>
+<wire x1="0.9" y1="-1.1" x2="0.9" y2="-0.91" width="0.05" layer="39"/>
+<wire x1="1.315" y1="-0.91" x2="0.9" y2="-0.91" width="0.05" layer="39"/>
+<wire x1="0.9" y1="0.91" x2="0.9" y2="1.1" width="0.05" layer="39"/>
+<wire x1="1.315" y1="0.91" x2="0.9" y2="0.91" width="0.05" layer="39"/>
+<wire x1="-0.9" y1="0.91" x2="-0.9" y2="1.1" width="0.05" layer="39"/>
+<wire x1="-0.9" y1="-1.1" x2="-0.9" y2="-0.91" width="0.05" layer="39"/>
+<wire x1="-0.9" y1="0.91" x2="-1.315" y2="0.91" width="0.05" layer="39"/>
+<wire x1="-0.9" y1="-0.91" x2="-1.315" y2="-0.91" width="0.05" layer="39"/>
+<circle x="-1.006" y="0.993" radius="0.05" width="0.1" layer="22"/>
+<circle x="-1.008" y="0.996" radius="0.05" width="0.1" layer="21"/>
+<text x="-0.85" y="1.24" size="0.254" layer="25">&gt;NAME</text>
+<text x="-0.761" y="-1.45" size="0.254" layer="25">&gt;VALUE</text>
+<smd name="1" x="-0.785" y="0.5" dx="0.56" dy="0.32" layer="1" roundness="50"/>
+<smd name="2" x="-0.785" y="0" dx="0.56" dy="0.32" layer="1" roundness="50"/>
+<smd name="3" x="-0.785" y="-0.5" dx="0.56" dy="0.32" layer="1" roundness="50"/>
+<smd name="4" x="0.785" y="-0.5" dx="0.56" dy="0.32" layer="1" roundness="50"/>
+<smd name="5" x="0.785" y="0" dx="0.56" dy="0.32" layer="1" roundness="50"/>
+<smd name="6" x="0.785" y="0.5" dx="0.56" dy="0.32" layer="1" roundness="50"/>
 </package>
 </packages>
 <packages3d>
@@ -2554,6 +2608,33 @@ Provides ESD protection</description>
 <vertex x="0" y="-1.27"/>
 </polygon>
 </symbol>
+<symbol name="DIODE-DUAL">
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<circle x="2.54" y="0" radius="0.3592" width="0" layer="94"/>
+<text x="-1.524" y="4.191" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.524" y="-5.969" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="C" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="A2" x="-2.54" y="-2.54" visible="pad" length="point" direction="pas" swaplevel="1"/>
+<wire x1="1.27" y1="3.81" x2="1.27" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="1.27" y2="1.27" width="0.1524" layer="94"/>
+<pin name="A1" x="-2.54" y="2.54" visible="pad" length="point" direction="pas" swaplevel="1"/>
+<wire x1="-2.54" y1="2.54" x2="-1.27" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="1.27" y2="2.54" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-1.27" y="3.81"/>
+<vertex x="1.27" y="2.54"/>
+<vertex x="-1.27" y="1.27"/>
+</polygon>
+<wire x1="1.27" y1="-1.27" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-1.27" y="-1.27"/>
+<vertex x="1.27" y="-2.54"/>
+<vertex x="-1.27" y="-3.81"/>
+</polygon>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BAV99" prefix="D">
@@ -2955,6 +3036,19 @@ Provides ESD protection</description>
 </technology>
 </technologies>
 </device>
+<device name="-RE1C001ZPTL" package="SOT-416FL">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="TRANS-15421"/>
+<attribute name="VALUE" value="100mA/20V/3.8Ω"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="OPTO_DARL_6N138S" prefix="U">
@@ -3292,7 +3386,7 @@ Provides ESD protection</description>
 </technology>
 </technologies>
 </device>
-<device name="-RE1C00UNTL" package="SOT-416FL">
+<device name="-RE1C002UNTCL" package="SOT-416FL">
 <connects>
 <connect gate="NMOS" pin="D" pad="3"/>
 <connect gate="NMOS" pin="G" pad="1"/>
@@ -3408,6 +3502,22 @@ DMC2700 is 1A. SIL2308 is 4A.
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="TRANS-15717" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-NX1029X,115" package="SOT563">
+<connects>
+<connect gate="G1" pin="D" pad="6"/>
+<connect gate="G1" pin="G" pad="2"/>
+<connect gate="G1" pin="S" pad="1"/>
+<connect gate="G2" pin="D" pad="3"/>
+<connect gate="G2" pin="G" pad="5"/>
+<connect gate="G2" pin="S" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-15419"/>
+<attribute name="VALUE" value="NX1029X,115"/>
 </technology>
 </technologies>
 </device>
@@ -3797,7 +3907,7 @@ DMC2700 is 1A. SIL2308 is 4A.
 </package3dinstances>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="TRAN-14386" constant="no"/>
+<attribute name="PROD_ID" value="TRANS-14386" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -4038,6 +4148,30 @@ range for only 0.5 mA of LED current.
 <attribute name="DIGIKEY_PART" value="PESD0402-140CT-ND" constant="no"/>
 <attribute name="MOUSE_PART" value="650-PESD0402-140" constant="no"/>
 <attribute name="PROD_ID" value="DIO-15359" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIODE-DUAL" prefix="D">
+<gates>
+<gate name="G1" symbol="DIODE-DUAL" x="0" y="7.62"/>
+<gate name="G2" symbol="DIODE-DUAL" x="0" y="-7.62"/>
+</gates>
+<devices>
+<device name="" package="SOT363">
+<connects>
+<connect gate="G1" pin="A1" pad="1"/>
+<connect gate="G1" pin="A2" pad="2"/>
+<connect gate="G1" pin="C" pad="6"/>
+<connect gate="G2" pin="A1" pad="4"/>
+<connect gate="G2" pin="A2" pad="5"/>
+<connect gate="G2" pin="C" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-15412"/>
+<attribute name="VALUE" value="BAV70S,115"/>
 </technology>
 </technologies>
 </device>
