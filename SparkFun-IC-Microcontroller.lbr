@@ -71,6 +71,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCopper" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
@@ -109,15 +110,40 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="no" active="no"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="no" active="no"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="no"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="no"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="no" active="no"/>
+<layer number="134" name="silk_top" color="7" fill="1" visible="no" active="no"/>
+<layer number="135" name="silk_bottom" color="7" fill="1" visible="no" active="no"/>
+<layer number="136" name="silktop" color="7" fill="1" visible="no" active="no"/>
+<layer number="137" name="silkbottom" color="7" fill="1" visible="no" active="no"/>
+<layer number="138" name="EEE" color="7" fill="1" visible="no" active="no"/>
+<layer number="139" name="_tKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="no" active="no"/>
+<layer number="141" name="ASSEMBLY_TOP" color="7" fill="1" visible="no" active="no"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="no" active="no"/>
+<layer number="143" name="PLACE_BOUND_TOP" color="7" fill="1" visible="no" active="no"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="no"/>
+<layer number="145" name="DrillLegend_01-02" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="146" name="DrillLegend_01-15" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="147" name="DrillLegend_01-16" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="148" name="DrillLegend_01-20" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="149" name="DrillLegend_02-15" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="no" active="no"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="no"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="no"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="no" active="no"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="no" active="no"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="no" active="no"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="no"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="no"/>
@@ -157,6 +183,7 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="253" name="Extra" color="7" fill="1" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="no"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="no"/>
 </layers>
@@ -4278,6 +4305,48 @@ Source: 6120s.pdf</description>
 </polygon>
 <circle x="-7.254" y="7.254" radius="0.508" width="0.127" layer="21"/>
 </package>
+<package name="QFN20_20M1">
+<wire x1="-2" y1="2" x2="2" y2="2" width="0.1524" layer="51"/>
+<wire x1="2" y1="2" x2="2" y2="-2" width="0.1524" layer="51"/>
+<wire x1="2" y1="-2" x2="-2" y2="-2" width="0.1524" layer="51"/>
+<wire x1="-2" y1="-2" x2="-2" y2="2" width="0.1524" layer="51"/>
+<smd name="PAD" x="0" y="0" dx="2.5" dy="2.5" layer="1" cream="no"/>
+<circle x="-2.3" y="2.3" radius="0.125" width="0.25" layer="21"/>
+<smd name="3" x="-1.9" y="0" dx="0.6" dy="0.25" layer="1"/>
+<smd name="2" x="-1.9" y="0.5" dx="0.6" dy="0.25" layer="1"/>
+<smd name="1" x="-1.9" y="1" dx="0.6" dy="0.25" layer="1"/>
+<smd name="4" x="-1.9" y="-0.5" dx="0.6" dy="0.25" layer="1"/>
+<smd name="5" x="-1.9" y="-1" dx="0.6" dy="0.25" layer="1"/>
+<smd name="6" x="-1" y="-1.9" dx="0.6" dy="0.25" layer="1" rot="R90"/>
+<wire x1="-2" y1="-2" x2="-2" y2="-1.4" width="0.1524" layer="21"/>
+<wire x1="-2" y1="1.4" x2="-2" y2="2" width="0.1524" layer="21"/>
+<wire x1="2" y1="1.4" x2="2" y2="2" width="0.1524" layer="21"/>
+<wire x1="2" y1="-2" x2="2" y2="-1.4" width="0.1524" layer="21"/>
+<wire x1="2" y1="-2" x2="1.4" y2="-2" width="0.1524" layer="21"/>
+<wire x1="-1.4" y1="-2" x2="-2" y2="-2" width="0.1524" layer="21"/>
+<wire x1="-1.4" y1="2" x2="-2" y2="2" width="0.1524" layer="21"/>
+<wire x1="2" y1="2" x2="1.4" y2="2" width="0.1524" layer="21"/>
+<smd name="7" x="-0.5" y="-1.9" dx="0.6" dy="0.25" layer="1" rot="R90"/>
+<smd name="8" x="0" y="-1.9" dx="0.6" dy="0.25" layer="1" rot="R90"/>
+<smd name="9" x="0.5" y="-1.9" dx="0.6" dy="0.25" layer="1" rot="R90"/>
+<smd name="10" x="1" y="-1.9" dx="0.6" dy="0.25" layer="1" rot="R90"/>
+<smd name="11" x="1.9" y="-1" dx="0.6" dy="0.25" layer="1" rot="R180"/>
+<smd name="12" x="1.9" y="-0.5" dx="0.6" dy="0.25" layer="1" rot="R180"/>
+<smd name="13" x="1.9" y="0" dx="0.6" dy="0.25" layer="1" rot="R180"/>
+<smd name="14" x="1.9" y="0.5" dx="0.6" dy="0.25" layer="1" rot="R180"/>
+<smd name="15" x="1.9" y="1" dx="0.6" dy="0.25" layer="1" rot="R180"/>
+<smd name="16" x="1" y="1.9" dx="0.6" dy="0.25" layer="1" rot="R270"/>
+<smd name="17" x="0.5" y="1.9" dx="0.6" dy="0.25" layer="1" rot="R270"/>
+<smd name="18" x="0" y="1.9" dx="0.6" dy="0.25" layer="1" rot="R270"/>
+<smd name="19" x="-0.5" y="1.9" dx="0.6" dy="0.25" layer="1" rot="R270"/>
+<smd name="20" x="-1" y="1.9" dx="0.6" dy="0.25" layer="1" rot="R270"/>
+<text x="-1.365" y="2.492" size="0.6096" layer="25" ratio="20">&gt;NAME</text>
+<text x="-1.365" y="-3.096" size="0.6096" layer="27" ratio="20">&gt;VALUE</text>
+<rectangle x1="-1.143" y1="0.254" x2="-0.254" y2="1.143" layer="31"/>
+<rectangle x1="-1.143" y1="-1.143" x2="-0.254" y2="-0.254" layer="31"/>
+<rectangle x1="0.254" y1="0.254" x2="1.143" y2="1.143" layer="31"/>
+<rectangle x1="0.254" y1="-1.143" x2="1.143" y2="-0.254" layer="31"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ATMEGA32U4-ARDUINO">
@@ -6939,6 +7008,38 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;
 <pin name="GND@4" x="0" y="-66.04" length="short" rot="R90"/>
 <pin name="GND@5" x="2.54" y="-66.04" length="short" rot="R90"/>
 <pin name="GND@6" x="5.08" y="-66.04" length="short" rot="R90"/>
+</symbol>
+<symbol name="ATTINY43">
+<description>&lt;b&gt;ATtiny43&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+Pin 4 is COPI and Pin 5 is CIPO when the chip is in peripheral mode or is being programmed&lt;br&gt;
+Pin 4 is CIPO and Pin 5 is COPI when the chip is operating in controller mode&lt;br&gt;
+The #defines in the ATTinyCore assume controller mode</description>
+<pin name="VCC" x="-17.78" y="-10.16" visible="pin" length="short" direction="pwr"/>
+<pin name="D0" x="-17.78" y="10.16" visible="pin" length="short"/>
+<pin name="D1" x="-17.78" y="7.62" visible="pin" length="short"/>
+<pin name="D2" x="-17.78" y="5.08" visible="pin" length="short"/>
+<pin name="D3" x="-17.78" y="2.54" visible="pin" length="short"/>
+<pin name="D4/DI/COPI/SDA" x="-17.78" y="0" visible="pin" length="short"/>
+<pin name="D5/DO/CIPO" x="-17.78" y="-2.54" visible="pin" length="short"/>
+<pin name="D6/SCK/SCL" x="-17.78" y="-5.08" visible="pin" length="short"/>
+<pin name="D7/SS/INT0" x="-17.78" y="-7.62" visible="pin" length="short"/>
+<pin name="GND" x="-17.78" y="-12.7" visible="pin" length="short" direction="pwr"/>
+<pin name="LSW" x="17.78" y="-12.7" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="VBAT" x="17.78" y="-10.16" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="A0/D8" x="17.78" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="A1/D9" x="17.78" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="A2/D10" x="17.78" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="A3/D11" x="17.78" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="TXD/D12" x="17.78" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="RXD/D13" x="17.78" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="D14" x="17.78" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="!RESET!/D15" x="17.78" y="10.16" visible="pin" length="short" rot="R180"/>
+<wire x1="-15.24" y1="12.7" x2="-15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-15.24" x2="15.24" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="15.24" y2="12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="12.7" x2="-15.24" y2="12.7" width="0.254" layer="94"/>
+<text x="-15.24" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="-15.24" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -10448,6 +10549,48 @@ Advanced Analog
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-13238" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATTINY43">
+<description>&lt;b&gt;ATtiny43&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+Pin 4 is COPI and Pin 5 is CIPO when the chip is in peripheral mode or is being programmed&lt;br&gt;
+Pin 4 is CIPO and Pin 5 is COPI when the chip is operating in controller mode&lt;br&gt;
+The #defines in the ATTinyCore assume controller mode</description>
+<gates>
+<gate name="G$1" symbol="ATTINY43" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_QFN20" package="QFN20_20M1">
+<connects>
+<connect gate="G$1" pin="!RESET!/D15" pad="18"/>
+<connect gate="G$1" pin="A0/D8" pad="11"/>
+<connect gate="G$1" pin="A1/D9" pad="12"/>
+<connect gate="G$1" pin="A2/D10" pad="13"/>
+<connect gate="G$1" pin="A3/D11" pad="14"/>
+<connect gate="G$1" pin="D0" pad="19"/>
+<connect gate="G$1" pin="D1" pad="20"/>
+<connect gate="G$1" pin="D14" pad="17"/>
+<connect gate="G$1" pin="D2" pad="1"/>
+<connect gate="G$1" pin="D3" pad="2"/>
+<connect gate="G$1" pin="D4/DI/COPI/SDA" pad="3"/>
+<connect gate="G$1" pin="D5/DO/CIPO" pad="4"/>
+<connect gate="G$1" pin="D6/SCK/SCL" pad="5"/>
+<connect gate="G$1" pin="D7/SS/INT0" pad="6"/>
+<connect gate="G$1" pin="GND" pad="8 PAD"/>
+<connect gate="G$1" pin="LSW" pad="9"/>
+<connect gate="G$1" pin="RXD/D13" pad="16"/>
+<connect gate="G$1" pin="TXD/D12" pad="15"/>
+<connect gate="G$1" pin="VBAT" pad="10"/>
+<connect gate="G$1" pin="VCC" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIGIKEY_PART" value="ATTINY43U-MU-ND" constant="no"/>
+<attribute name="MANU_PART" value="ATtiny43U-MU" constant="no"/>
+<attribute name="PROD_ID" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
