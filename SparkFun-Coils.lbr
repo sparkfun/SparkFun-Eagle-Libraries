@@ -71,6 +71,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
@@ -96,10 +97,10 @@
 <layer number="114" name="Badge_Outline" color="7" fill="1" visible="no" active="no"/>
 <layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="no"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="no"/>
-<layer number="117" name="PM_Ref" color="26" fill="1" visible="no" active="yes"/>
+<layer number="117" name="PM_Ref" color="26" fill="1" visible="no" active="no"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
-<layer number="119" name="PF_Ref" color="31" fill="1" visible="no" active="yes"/>
-<layer number="120" name="WFL_Ref" color="25" fill="1" visible="no" active="yes"/>
+<layer number="119" name="PF_Ref" color="31" fill="1" visible="no" active="no"/>
+<layer number="120" name="WFL_Ref" color="25" fill="1" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="no"/>
@@ -649,15 +650,54 @@ Physical Characteristics:
 <text x="-1.27" y="-3.81" size="0.6096" layer="27" font="vector" ratio="20">&gt;Value</text>
 </package>
 <package name="0402_COILCRAFT">
-<wire x1="-0.5461" y1="-0.3048" x2="-0.5461" y2="0.3048" width="0.002540625" layer="51"/>
-<wire x1="-0.5461" y1="0.3048" x2="0.5461" y2="0.3048" width="0.002540625" layer="51"/>
-<wire x1="0.5461" y1="0.3048" x2="0.5461" y2="-0.3048" width="0.002540625" layer="51"/>
-<wire x1="0.5461" y1="-0.3048" x2="-0.5461" y2="-0.3048" width="0.002540625" layer="51"/>
-<rectangle x1="-0.508" y1="-0.254" x2="-0.3048" y2="0.254" layer="51"/>
 <smd name="P$1" x="-0.4318" y="0" dx="0.3556" dy="0.6604" layer="1"/>
 <smd name="P$2" x="0.4318" y="0" dx="0.3556" dy="0.6604" layer="1"/>
-<rectangle x1="0.3048" y1="-0.254" x2="0.508" y2="0.254" layer="51"/>
 <wire x1="0" y1="-0.127" x2="0" y2="0.127" width="0.254" layer="41"/>
+<wire x1="-0.5" y1="-0.25" x2="-0.5" y2="0.25" width="0.002540625" layer="51"/>
+<wire x1="-0.5" y1="0.25" x2="0.5" y2="0.25" width="0.002540625" layer="51"/>
+<wire x1="0.5" y1="0.25" x2="0.5" y2="-0.25" width="0.002540625" layer="51"/>
+<wire x1="0.5" y1="-0.25" x2="-0.5" y2="-0.25" width="0.002540625" layer="51"/>
+<rectangle x1="-0.5" y1="-0.25" x2="-0.3" y2="0.25" layer="51"/>
+<rectangle x1="0.3" y1="-0.25" x2="0.5" y2="0.25" layer="51" rot="R180"/>
+</package>
+<package name="INDUCTOR_2X2">
+<smd name="P$1" x="-0.675" y="0" dx="0.65" dy="2" layer="1"/>
+<smd name="P$2" x="0.675" y="0" dx="0.65" dy="2" layer="1"/>
+<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.127" layer="51"/>
+<wire x1="-1" y1="-1" x2="1" y2="-1" width="0.127" layer="51"/>
+<wire x1="1" y1="-1" x2="1" y2="1" width="0.127" layer="51"/>
+<wire x1="1" y1="1" x2="-1" y2="1" width="0.127" layer="51"/>
+<wire x1="-0.25" y1="1" x2="0.25" y2="1" width="0.127" layer="21"/>
+<wire x1="-0.25" y1="-1" x2="0.25" y2="-1" width="0.127" layer="21"/>
+<text x="-1" y="1.5" size="0.8128" layer="25">&gt;NAME</text>
+<text x="0" y="0" size="0.2" layer="51" align="center">&gt;NAME</text>
+<rectangle x1="-1.25" y1="-1.25" x2="1.25" y2="1.25" layer="39"/>
+<text x="-1.27" y="-2.54" size="0.8128" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="INDUCTOR_15UH">
+<description>&lt;h3&gt;Non-standard 5x5 Inductor&lt;/h3&gt;
+Mechanical Specifications
+&lt;ul&gt;
+&lt;li&gt;Overall Size: 5mm x 5mm&lt;/li&gt;
+&lt;li&gt;Pad Size: 1.85mm x 4.1mm&lt;/li&gt;
+&lt;li&gt;Pad Pitch: 1.8mm&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<smd name="P1" x="-1.905" y="0" dx="1.85" dy="4.1" layer="1"/>
+<smd name="P2" x="1.745" y="0.05" dx="1.85" dy="4.1" layer="1"/>
+<wire x1="-2.56" y1="-2.45" x2="2.44" y2="-2.45" width="0.1524" layer="51"/>
+<wire x1="2.44" y1="-2.45" x2="2.44" y2="2.55" width="0.1524" layer="51"/>
+<wire x1="2.44" y1="2.55" x2="-2.56" y2="2.55" width="0.1524" layer="51"/>
+<wire x1="-2.56" y1="2.55" x2="-2.56" y2="-2.45" width="0.1524" layer="51"/>
+<text x="-1.66" y="2.8" size="0.6096" layer="25">&gt;NAME</text>
+<text x="-1.683" y="-3.45" size="0.6096" layer="27">&gt;VALUE</text>
+<wire x1="2.845" y1="-2.6" x2="2.845" y2="2.7" width="0.127" layer="39"/>
+<wire x1="2.845" y1="2.7" x2="-3.005" y2="2.7" width="0.127" layer="39"/>
+<wire x1="-3.005" y1="2.7" x2="-3.005" y2="-2.6" width="0.127" layer="39"/>
+<wire x1="-3.005" y1="-2.6" x2="2.845" y2="-2.6" width="0.127" layer="39"/>
+<wire x1="-1.905" y1="2.55" x2="2.095" y2="2.55" width="0.127" layer="21"/>
+<wire x1="-1.905" y1="-2.45" x2="2.095" y2="-2.45" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -1141,6 +1181,24 @@ Physical Characteristics:
 <technology name=""/>
 </technologies>
 </device>
+<device name="DNP-0402-COILCRAFT" package="0402_COILCRAFT">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-0805-15UH" package="INDUCTOR_15UH">
+<connects>
+<connect gate="G$1" pin="1" pad="P1"/>
+<connect gate="G$1" pin="2" pad="P2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="INDUCTOR-XFL4020" prefix="L" uservalue="yes">
@@ -1414,6 +1472,30 @@ Physical Characteristics:
 </technology>
 </technologies>
 </device>
+<device name="-0402T-250MA" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="NDUC-15408"/>
+<attribute name="VALUE" value="39nH"/>
+</technology>
+</technologies>
+</device>
+<device name="-0402-250MA" package="0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="NDUC-15408"/>
+<attribute name="VALUE" value="39nH"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="4.7μH_SHIELDED_INDUCTOR" prefix="L">
@@ -1490,15 +1572,13 @@ Physical Characteristics:
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-0402" package="0402_COILCRAFT">
+<device name="-0402-200MA" package="0402_COILCRAFT">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="DIGIKEY_PART" value="490-2633-1-ND" constant="no"/>
-<attribute name="MOUSER_PART" value="81-LQG15HS68NJ02D" constant="no"/>
 <attribute name="PROD_ID" value="NDUC-15356" constant="no"/>
 <attribute name="VALUE" value="68nH" constant="no"/>
 </technology>
@@ -1621,6 +1701,26 @@ Physical Characteristics:
 <attribute name="MOUSER_PART" value="994-0402HP-51NXGLU" constant="no"/>
 <attribute name="PROD_ID" value="NDUC-15276" constant="no"/>
 <attribute name="VALUE" value="51nH" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1.5UH" prefix="L">
+<description>FIXED IND 1.5UH 1.4A 120 MOHM</description>
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-2X2-1.4A" package="INDUCTOR_2X2">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="NDUC-15405"/>
+<attribute name="VALUE" value="1.5uH"/>
 </technology>
 </technologies>
 </device>

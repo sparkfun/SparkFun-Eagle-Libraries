@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -71,6 +71,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
@@ -4816,6 +4817,30 @@ Physical Characteristics
 <vertex x="-2.63525" y="-3.07975" curve="90"/>
 </polygon>
 </package>
+<package name="SOT363">
+<wire x1="-1.1" y1="0.55" x2="1.1" y2="0.55" width="0.2032" layer="51"/>
+<wire x1="1.1" y1="-0.55" x2="-1.1" y2="-0.55" width="0.2032" layer="51"/>
+<wire x1="-1.1" y1="0.6" x2="-1.1" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="1.1" y1="0.6" x2="1.1" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="1.1" y1="0.55" x2="1.1" y2="-0.55" width="0.2032" layer="51"/>
+<wire x1="-1.1" y1="0.55" x2="-1.1" y2="-0.55" width="0.2032" layer="51"/>
+<circle x="-1.25" y="-0.85" radius="0.1" width="0.3" layer="21"/>
+<circle x="-0.65" y="-0.15" radius="0.15" width="0" layer="51"/>
+<text x="-1.10571875" y="1.4535" size="0.8128" layer="25">&gt;NAME</text>
+<rectangle x1="-0.80606875" y1="-1.10323125" x2="-0.5" y2="-0.6" layer="51"/>
+<rectangle x1="-0.15191875" y1="-1.1014875" x2="0.15" y2="-0.6" layer="51"/>
+<rectangle x1="0.4993375" y1="-1.10095" x2="0.8" y2="-0.6" layer="51"/>
+<rectangle x1="0.49888125" y1="0.600875" x2="0.8" y2="1.1" layer="51"/>
+<rectangle x1="-0.15370625" y1="0.601571875" x2="0.15" y2="1.099996875" layer="51"/>
+<rectangle x1="-0.8049875" y1="0.601446875" x2="-0.5" y2="1.099996875" layer="51"/>
+<smd name="1" x="-0.65" y="-0.8" dx="0.3" dy="0.7" layer="1"/>
+<smd name="2" x="0" y="-0.8" dx="0.3" dy="0.7" layer="1"/>
+<smd name="3" x="0.65" y="-0.8" dx="0.3" dy="0.7" layer="1"/>
+<smd name="4" x="0.65" y="0.8" dx="0.3" dy="0.7" layer="1"/>
+<smd name="5" x="0" y="0.8" dx="0.3" dy="0.7" layer="1"/>
+<smd name="6" x="-0.65" y="0.8" dx="0.3" dy="0.7" layer="1"/>
+<text x="-1.27" y="-2.54" size="0.8128" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="AD5262">
@@ -6120,6 +6145,18 @@ The TLC5947 has a thermal shutdown (TSD) function that turns off all output driv
 <pin name="VCC" x="-12.7" y="2.54" length="short" direction="pwr"/>
 <text x="-10.16" y="5.842" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="POWER_SW_EN">
+<wire x1="-10.16" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<pin name="EN" x="-15.24" y="-10.16" length="middle" direction="in"/>
+<pin name="GND" x="15.24" y="-10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="VIN" x="-15.24" y="10.16" length="middle" direction="pwr"/>
+<pin name="VOUT" x="15.24" y="10.16" length="middle" direction="pwr" rot="R180"/>
+<text x="-10.16" y="16.002" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -8114,6 +8151,30 @@ system.
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-15951" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POWER-SWITCH" prefix="U">
+<description>&lt;H3&gt;Power Switch&lt;/H3&gt;
+&lt;p&gt;Power Switch/Driver 1:1 P-Channel 1.2A SC-70-6&lt;/p&gt;
+&lt;P&gt;&lt;a href=https://ww1.microchip.com/downloads/en/DeviceDoc/mic9409x.pdf&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="POWER_SW_EN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-MIC94092YC6" package="SOT363">
+<connects>
+<connect gate="G$1" pin="EN" pad="6"/>
+<connect gate="G$1" pin="GND" pad="2 5"/>
+<connect gate="G$1" pin="VIN" pad="4"/>
+<connect gate="G$1" pin="VOUT" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-15422"/>
+<attribute name="VALUE" value="MIC94092YC6"/>
 </technology>
 </technologies>
 </device>
