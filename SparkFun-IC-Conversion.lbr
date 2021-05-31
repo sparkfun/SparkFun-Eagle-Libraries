@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1301,6 +1301,22 @@ RDY</text>
 <text x="-12.7" y="13.462" size="1.778" layer="95">&gt;NAME</text>
 <text x="-12.7" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="DS2482-100">
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="25.4" width="0.254" layer="94"/>
+<wire x1="20.32" y1="25.4" x2="0" y2="25.4" width="0.254" layer="94"/>
+<wire x1="0" y1="25.4" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="SDA" x="-5.08" y="17.78" length="middle"/>
+<pin name="SCL" x="-5.08" y="15.24" length="middle"/>
+<pin name="A0" x="-5.08" y="10.16" length="middle"/>
+<pin name="A1" x="-5.08" y="7.62" length="middle"/>
+<pin name="GND" x="-5.08" y="2.54" length="middle" direction="pwr"/>
+<pin name="VCC" x="-5.08" y="22.86" length="middle" direction="pwr"/>
+<pin name="PCTLZ" x="25.4" y="17.78" length="middle" rot="R180"/>
+<pin name="IO" x="25.4" y="7.62" length="middle" rot="R180"/>
+<text x="0" y="25.654" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-2.286" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="VS1000">
@@ -1937,6 +1953,33 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/ads122c04"&gt; Datasheet &lt;/a&gt
 <connect gate="G$1" pin="SDA" pad="10"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
 <connect gate="G$1" pin="VIN" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS2482-100" prefix="U">
+<description>&lt;h3&gt;Single-Channel I²C to 1-Wire Master&lt;/h3&gt;
+The DS2482-100 is an I²C-to-1-Wire® bridge device
+that interfaces directly to standard (100kHz max) or fast
+(400kHz max) I²C masters to perform bidirectional protocol conversion between the I²C master and any
+downstream 1-Wire slave devices.</description>
+<gates>
+<gate name="G$1" symbol="DS2482-100" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO08">
+<connects>
+<connect gate="G$1" pin="A0" pad="8"/>
+<connect gate="G$1" pin="A1" pad="7"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="IO" pad="2"/>
+<connect gate="G$1" pin="PCTLZ" pad="6"/>
+<connect gate="G$1" pin="SCL" pad="4"/>
+<connect gate="G$1" pin="SDA" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>

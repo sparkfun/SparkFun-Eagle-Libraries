@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -38871,6 +38871,25 @@ Alternate pin configuration
 <smd name="R2" x="1.82" y="12.625" dx="1.1" dy="1" layer="1"/>
 <text x="-2.54" y="3.81" size="0.6096" layer="27">&gt;VALUE</text>
 </package>
+<package name="DS9094FS">
+<description>&lt;h3&gt;SMT version of DS9094F iButton clip holder&lt;h3&gt;</description>
+<smd name="GND" x="-12.65" y="0" dx="6" dy="6" layer="1"/>
+<smd name="DATA" x="12.65" y="0" dx="6" dy="6" layer="1"/>
+<wire x1="-10" y1="-4" x2="-9" y2="-3" width="0.1524" layer="21" curve="90"/>
+<wire x1="-9" y1="-3" x2="-9" y2="3" width="0.1524" layer="21"/>
+<wire x1="-9" y1="3" x2="-10" y2="4" width="0.1524" layer="21" curve="90"/>
+<wire x1="-10" y1="4" x2="-12" y2="4" width="0.1524" layer="21"/>
+<wire x1="-12" y1="4" x2="-12" y2="5" width="0.1524" layer="21"/>
+<wire x1="-12" y1="5" x2="-11" y2="6" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-11" y1="6" x2="-7" y2="6" width="0.1524" layer="21"/>
+<wire x1="-10" y1="-4" x2="-12" y2="-4" width="0.1524" layer="21"/>
+<wire x1="-12" y1="-4" x2="-12" y2="-5" width="0.1524" layer="21"/>
+<wire x1="-12" y1="-5" x2="-11" y2="-6" width="0.1524" layer="21" curve="90"/>
+<wire x1="-11" y1="-6" x2="-7" y2="-6" width="0.1524" layer="21"/>
+<wire x1="9" y1="5" x2="9" y2="-5" width="0.1524" layer="21"/>
+<wire x1="-7" y1="6" x2="9" y2="5" width="0.1524" layer="21" curve="-116.133723"/>
+<wire x1="-7" y1="-6" x2="9" y2="-5" width="0.1524" layer="21" curve="116.133723"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -42014,6 +42033,16 @@ Exposes the minimal pins needed to implement a USB 2.x legacy device.</descripti
 <pin name="20" x="7.62" y="20.32" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="21" x="7.62" y="22.86" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="22" x="7.62" y="25.4" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="DS9094">
+<wire x1="0" y1="0" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="0" y2="7.62" width="0.254" layer="94"/>
+<wire x1="0" y1="7.62" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="DATA" x="-5.08" y="5.08" visible="pin" length="middle"/>
+<pin name="GND" x="-5.08" y="2.54" visible="pin" length="middle"/>
+<text x="-0.254" y="8.128" size="1.778" layer="95">&gt;NAME</text>
+<text x="-0.254" y="-2.286" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -52374,6 +52403,25 @@ PTH and SMD connector options available.&lt;/p&gt;
 <technology name="">
 <attribute name="PROD_ID" value="CONN-13453"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DS9094" prefix="P">
+<description>&lt;h3&gt;iButton PCB Clip&lt;/h3&gt;
+This is a clip for Maxim's iButton devices. Maxim offers two variants: a SMT one (DS9094FS+) and a PTH one (DS9094F+). 
+This clip is compatible with F5 iButtons only.</description>
+<gates>
+<gate name="G$1" symbol="DS9094" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DS9094FS">
+<connects>
+<connect gate="G$1" pin="DATA" pad="DATA"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
