@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4173,6 +4173,26 @@ range for only 0.5 mA of LED current.
 <attribute name="PROD_ID" value="DIO-15412"/>
 <attribute name="VALUE" value="BAV70S,115"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CDBA140SL-HF" prefix="D">
+<description>&lt;h3&gt;Super Low VF SMD Schottky Barrier Rectifier&lt;/h3&gt;
+
+Reverse Voltage: 40 Volts&lt;br/&gt;
+Forward Current: 1.0 Amp</description>
+<gates>
+<gate name="G$1" symbol="DIODE-SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMA-DIODE">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
