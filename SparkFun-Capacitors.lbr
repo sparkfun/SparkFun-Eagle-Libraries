@@ -3081,6 +3081,25 @@ CAP-09321</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="1.5NF/1500PF">
+<gates>
+<gate name="G$1" symbol="CAP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0402±2%-C0G" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-16145" constant="no"/>
+<attribute name="VALUE" value="1500PF" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
