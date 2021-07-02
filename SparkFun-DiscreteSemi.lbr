@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -947,37 +947,6 @@ Philips Semiconductors, SOT363.pdf</description>
 <text x="-1.9304" y="0" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center">&gt;Name</text>
 <text x="1.8796" y="0" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center">&gt;Value</text>
 <circle x="-1.9558" y="-1.7526" radius="0.2032" width="0" layer="21"/>
-</package>
-<package name="SOP_8-PIN">
-<description>&lt;h3&gt;Small Outline Package 8-Pin&lt;/h3&gt;
-
-Mechanical Specifications
-&lt;ul&gt;
-&lt;li&gt;Total Size: 6mm x 5mm&lt;/li&gt;
-&lt;li&gt;Body Size: 4mm x 5mm&lt;/li&gt;
-&lt;li&gt;Pad Size: 1.9mm x .64mm &lt;/li&gt;
-&lt;li&gt;Pad Pitch: 1.270mm&lt;/li&gt;
-&lt;li&gt;8 total Pins&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;</description>
-<text x="-1.646" y="2.96833125" size="0.6096" layer="25">&gt;NAME</text>
-<text x="-1.773" y="-3.47633125" size="0.6096" layer="27">&gt;VALUE</text>
-<wire x1="-2.073" y1="-2.4" x2="1.8254" y2="-2.4" width="0.1" layer="51"/>
-<wire x1="1.8254" y1="-2.4" x2="1.8254" y2="2.6" width="0.1" layer="51"/>
-<wire x1="1.8254" y1="2.6" x2="-2.073" y2="2.6" width="0.1" layer="51"/>
-<wire x1="-2.073" y1="2.6" x2="-2.073" y2="-2.4" width="0.1" layer="51"/>
-<circle x="-2.54" y="3.175" radius="0.283978125" width="0" layer="21"/>
-<smd name="P1" x="-2.921" y="2.032" dx="1.9" dy="0.64" layer="1"/>
-<smd name="P2" x="-2.921" y="0.762" dx="1.9" dy="0.64" layer="1"/>
-<smd name="P3" x="-2.921" y="-0.508" dx="1.9" dy="0.64" layer="1"/>
-<smd name="P4" x="-2.921" y="-1.778" dx="1.9" dy="0.64" layer="1"/>
-<smd name="P5" x="2.679" y="-1.778" dx="1.9" dy="0.64" layer="1"/>
-<smd name="P6" x="2.679" y="-0.508" dx="1.9" dy="0.64" layer="1"/>
-<smd name="P7" x="2.679" y="0.762" dx="1.9" dy="0.64" layer="1"/>
-<smd name="P8" x="2.679" y="2.032" dx="1.9" dy="0.64" layer="1"/>
 </package>
 <package name="SSR-40DA-H">
 <wire x1="-30" y1="22.5" x2="30" y2="22.5" width="0.127" layer="21"/>
@@ -4025,24 +3994,22 @@ range for only 0.5 mA of LED current.
 
 &lt;p&gt;&lt;a href="https://www.digikey.com/product-detail/en/broadcom-limited/HCPL-073L-500E/516-4204-2-ND/1234512"&gt;Digikey Link&lt;/a&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="HCPL-073L" x="0" y="0"/>
+<gate name="U1" symbol="HCPL-073L" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOP_8-PIN">
+<device name="SOIC-8" package="SO08">
 <connects>
-<connect gate="G$1" pin="ANODE1" pad="P1"/>
-<connect gate="G$1" pin="ANODE2" pad="P4"/>
-<connect gate="G$1" pin="CATHODE1" pad="P2"/>
-<connect gate="G$1" pin="CATHODE2" pad="P3"/>
-<connect gate="G$1" pin="GND" pad="P5"/>
-<connect gate="G$1" pin="VCC" pad="P8"/>
-<connect gate="G$1" pin="VOUT1" pad="P7"/>
-<connect gate="G$1" pin="VOUT2" pad="P6"/>
+<connect gate="U1" pin="ANODE1" pad="1"/>
+<connect gate="U1" pin="ANODE2" pad="4"/>
+<connect gate="U1" pin="CATHODE1" pad="2"/>
+<connect gate="U1" pin="CATHODE2" pad="3"/>
+<connect gate="U1" pin="GND" pad="5"/>
+<connect gate="U1" pin="VCC" pad="8"/>
+<connect gate="U1" pin="VOUT1" pad="7"/>
+<connect gate="U1" pin="VOUT2" pad="6"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="PROD_ID" value="IC-15070" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
