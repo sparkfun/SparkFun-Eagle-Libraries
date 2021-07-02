@@ -1617,6 +1617,18 @@ It has a reduced top mask to make it harder to install upside-down.</description
 </technology>
 </technologies>
 </device>
+<device name="-0402-1/16W-5%" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-16072" constant="no"/>
+<attribute name="VALUE" value="10Ω" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="105OHM" prefix="R">
@@ -3629,6 +3641,18 @@ It has a reduced top mask to make it harder to install upside-down.</description
 </technology>
 </technologies>
 </device>
+<device name="-0402-1/10W-0.1%" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-16147" constant="no"/>
+<attribute name="VALUE" value="10K" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="100KOHM" prefix="R">
@@ -4599,7 +4623,19 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="RES-13766"/>
-<attribute name="VALUE" value="560"/>
+<attribute name="VALUE" value="560Ω"/>
+</technology>
+</technologies>
+</device>
+<device name="_0402_TIGHT" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-13766" constant="no"/>
+<attribute name="VALUE" value="560Ω" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -5209,6 +5245,25 @@ A resistor is a passive two-terminal electrical component that implements electr
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1.07KOHM">
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="0402-0.1%-1/10W" package="0402-TIGHT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-16146" constant="no"/>
+<attribute name="VALUE" value="1.07K" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
