@@ -4362,13 +4362,13 @@ Source: 6120s.pdf</description>
 <pin name="D+" x="-17.78" y="2.54" length="short"/>
 <pin name="D-" x="-17.78" y="0" length="short"/>
 <pin name="GND" x="-17.78" y="-30.48" length="short"/>
-<pin name="RXLED" x="17.78" y="-27.94" length="short" rot="R180"/>
+<pin name="RXLED/D17/CS" x="17.78" y="-27.94" length="short" rot="R180"/>
 <pin name="D15/SCK" x="17.78" y="-20.32" length="short" rot="R180"/>
-<pin name="D16/MOSI" x="17.78" y="-22.86" length="short" rot="R180"/>
-<pin name="D14/MISO" x="17.78" y="-17.78" length="short" rot="R180"/>
-<pin name="D8" x="17.78" y="-2.54" length="short" rot="R180"/>
-<pin name="D9#/A8" x="17.78" y="-5.08" length="short" rot="R180"/>
-<pin name="D10#" x="17.78" y="-7.62" length="short" rot="R180"/>
+<pin name="D16/COPI" x="17.78" y="-22.86" length="short" rot="R180"/>
+<pin name="D14/CIPO" x="17.78" y="-17.78" length="short" rot="R180"/>
+<pin name="D8/A8" x="17.78" y="-2.54" length="short" rot="R180"/>
+<pin name="D9#/A9" x="17.78" y="-5.08" length="short" rot="R180"/>
+<pin name="D10#/A10" x="17.78" y="-7.62" length="short" rot="R180"/>
 <pin name="D11#" x="17.78" y="-10.16" length="short" rot="R180"/>
 <pin name="D5#" x="17.78" y="5.08" length="short" rot="R180"/>
 <pin name="D13#" x="17.78" y="-15.24" length="short" rot="R180"/>
@@ -4377,8 +4377,8 @@ Source: 6120s.pdf</description>
 <pin name="D0(RX)" x="17.78" y="17.78" length="short" rot="R180"/>
 <pin name="D1(TX)" x="17.78" y="15.24" length="short" rot="R180"/>
 <pin name="D4/A6" x="17.78" y="7.62" length="short" rot="R180"/>
-<pin name="TXLED" x="17.78" y="-30.48" length="short" rot="R180"/>
-<pin name="D12/A10" x="17.78" y="-12.7" length="short" rot="R180"/>
+<pin name="TXLED/D30" x="17.78" y="-30.48" length="short" rot="R180"/>
+<pin name="D12/A11" x="17.78" y="-12.7" length="short" rot="R180"/>
 <pin name="D6#/A7" x="17.78" y="2.54" length="short" rot="R180"/>
 <pin name="PE2/!HWB" x="-17.78" y="-20.32" length="short"/>
 <pin name="D7" x="17.78" y="0" length="short" rot="R180"/>
@@ -7908,25 +7908,25 @@ Short timer</description>
 <connect gate="U1" pin="D-" pad="3"/>
 <connect gate="U1" pin="D0(RX)" pad="20"/>
 <connect gate="U1" pin="D1(TX)" pad="21"/>
-<connect gate="U1" pin="D10#" pad="30"/>
+<connect gate="U1" pin="D10#/A10" pad="30"/>
 <connect gate="U1" pin="D11#" pad="12"/>
-<connect gate="U1" pin="D12/A10" pad="26"/>
+<connect gate="U1" pin="D12/A11" pad="26"/>
 <connect gate="U1" pin="D13#" pad="32"/>
-<connect gate="U1" pin="D14/MISO" pad="11"/>
+<connect gate="U1" pin="D14/CIPO" pad="11"/>
 <connect gate="U1" pin="D15/SCK" pad="9"/>
-<connect gate="U1" pin="D16/MOSI" pad="10"/>
+<connect gate="U1" pin="D16/COPI" pad="10"/>
 <connect gate="U1" pin="D2(SDA)" pad="19"/>
 <connect gate="U1" pin="D3#(SCL)" pad="18"/>
 <connect gate="U1" pin="D4/A6" pad="25"/>
 <connect gate="U1" pin="D5#" pad="31"/>
 <connect gate="U1" pin="D6#/A7" pad="27"/>
 <connect gate="U1" pin="D7" pad="1"/>
-<connect gate="U1" pin="D8" pad="28"/>
-<connect gate="U1" pin="D9#/A8" pad="29"/>
+<connect gate="U1" pin="D8/A8" pad="28"/>
+<connect gate="U1" pin="D9#/A9" pad="29"/>
 <connect gate="U1" pin="GND" pad="15 23 35 43"/>
 <connect gate="U1" pin="PE2/!HWB" pad="33"/>
-<connect gate="U1" pin="RXLED" pad="8"/>
-<connect gate="U1" pin="TXLED" pad="22"/>
+<connect gate="U1" pin="RXLED/D17/CS" pad="8"/>
+<connect gate="U1" pin="TXLED/D30" pad="22"/>
 <connect gate="U1" pin="UCAP" pad="6"/>
 <connect gate="U1" pin="UGND" pad="5"/>
 <connect gate="U1" pin="UVCC" pad="2"/>
@@ -7957,25 +7957,25 @@ Short timer</description>
 <connect gate="U1" pin="D-" pad="3"/>
 <connect gate="U1" pin="D0(RX)" pad="20"/>
 <connect gate="U1" pin="D1(TX)" pad="21"/>
-<connect gate="U1" pin="D10#" pad="30"/>
+<connect gate="U1" pin="D10#/A10" pad="30"/>
 <connect gate="U1" pin="D11#" pad="12"/>
-<connect gate="U1" pin="D12/A10" pad="26"/>
+<connect gate="U1" pin="D12/A11" pad="26"/>
 <connect gate="U1" pin="D13#" pad="32"/>
-<connect gate="U1" pin="D14/MISO" pad="11"/>
+<connect gate="U1" pin="D14/CIPO" pad="11"/>
 <connect gate="U1" pin="D15/SCK" pad="9"/>
-<connect gate="U1" pin="D16/MOSI" pad="10"/>
+<connect gate="U1" pin="D16/COPI" pad="10"/>
 <connect gate="U1" pin="D2(SDA)" pad="19"/>
 <connect gate="U1" pin="D3#(SCL)" pad="18"/>
 <connect gate="U1" pin="D4/A6" pad="25"/>
 <connect gate="U1" pin="D5#" pad="31"/>
 <connect gate="U1" pin="D6#/A7" pad="27"/>
 <connect gate="U1" pin="D7" pad="1"/>
-<connect gate="U1" pin="D8" pad="28"/>
-<connect gate="U1" pin="D9#/A8" pad="29"/>
+<connect gate="U1" pin="D8/A8" pad="28"/>
+<connect gate="U1" pin="D9#/A9" pad="29"/>
 <connect gate="U1" pin="GND" pad="15 23 35 43"/>
 <connect gate="U1" pin="PE2/!HWB" pad="33"/>
-<connect gate="U1" pin="RXLED" pad="8"/>
-<connect gate="U1" pin="TXLED" pad="22"/>
+<connect gate="U1" pin="RXLED/D17/CS" pad="8"/>
+<connect gate="U1" pin="TXLED/D30" pad="22"/>
 <connect gate="U1" pin="UCAP" pad="6"/>
 <connect gate="U1" pin="UGND" pad="5"/>
 <connect gate="U1" pin="UVCC" pad="2"/>
@@ -8006,25 +8006,25 @@ Short timer</description>
 <connect gate="U1" pin="D-" pad="3"/>
 <connect gate="U1" pin="D0(RX)" pad="20"/>
 <connect gate="U1" pin="D1(TX)" pad="21"/>
-<connect gate="U1" pin="D10#" pad="30"/>
+<connect gate="U1" pin="D10#/A10" pad="30"/>
 <connect gate="U1" pin="D11#" pad="12"/>
-<connect gate="U1" pin="D12/A10" pad="26"/>
+<connect gate="U1" pin="D12/A11" pad="26"/>
 <connect gate="U1" pin="D13#" pad="32"/>
-<connect gate="U1" pin="D14/MISO" pad="11"/>
+<connect gate="U1" pin="D14/CIPO" pad="11"/>
 <connect gate="U1" pin="D15/SCK" pad="9"/>
-<connect gate="U1" pin="D16/MOSI" pad="10"/>
+<connect gate="U1" pin="D16/COPI" pad="10"/>
 <connect gate="U1" pin="D2(SDA)" pad="19"/>
 <connect gate="U1" pin="D3#(SCL)" pad="18"/>
 <connect gate="U1" pin="D4/A6" pad="25"/>
 <connect gate="U1" pin="D5#" pad="31"/>
 <connect gate="U1" pin="D6#/A7" pad="27"/>
 <connect gate="U1" pin="D7" pad="1"/>
-<connect gate="U1" pin="D8" pad="28"/>
-<connect gate="U1" pin="D9#/A8" pad="29"/>
+<connect gate="U1" pin="D8/A8" pad="28"/>
+<connect gate="U1" pin="D9#/A9" pad="29"/>
 <connect gate="U1" pin="GND" pad="15 23 35 43"/>
 <connect gate="U1" pin="PE2/!HWB" pad="33"/>
-<connect gate="U1" pin="RXLED" pad="8"/>
-<connect gate="U1" pin="TXLED" pad="22"/>
+<connect gate="U1" pin="RXLED/D17/CS" pad="8"/>
+<connect gate="U1" pin="TXLED/D30" pad="22"/>
 <connect gate="U1" pin="UCAP" pad="6"/>
 <connect gate="U1" pin="UGND" pad="5"/>
 <connect gate="U1" pin="UVCC" pad="2"/>
@@ -8055,25 +8055,25 @@ Short timer</description>
 <connect gate="U1" pin="D-" pad="3"/>
 <connect gate="U1" pin="D0(RX)" pad="20"/>
 <connect gate="U1" pin="D1(TX)" pad="21"/>
-<connect gate="U1" pin="D10#" pad="30"/>
+<connect gate="U1" pin="D10#/A10" pad="30"/>
 <connect gate="U1" pin="D11#" pad="12"/>
-<connect gate="U1" pin="D12/A10" pad="26"/>
+<connect gate="U1" pin="D12/A11" pad="26"/>
 <connect gate="U1" pin="D13#" pad="32"/>
-<connect gate="U1" pin="D14/MISO" pad="11"/>
+<connect gate="U1" pin="D14/CIPO" pad="11"/>
 <connect gate="U1" pin="D15/SCK" pad="9"/>
-<connect gate="U1" pin="D16/MOSI" pad="10"/>
+<connect gate="U1" pin="D16/COPI" pad="10"/>
 <connect gate="U1" pin="D2(SDA)" pad="19"/>
 <connect gate="U1" pin="D3#(SCL)" pad="18"/>
 <connect gate="U1" pin="D4/A6" pad="25"/>
 <connect gate="U1" pin="D5#" pad="31"/>
 <connect gate="U1" pin="D6#/A7" pad="27"/>
 <connect gate="U1" pin="D7" pad="1"/>
-<connect gate="U1" pin="D8" pad="28"/>
-<connect gate="U1" pin="D9#/A8" pad="29"/>
+<connect gate="U1" pin="D8/A8" pad="28"/>
+<connect gate="U1" pin="D9#/A9" pad="29"/>
 <connect gate="U1" pin="GND" pad="15 23 35 43"/>
 <connect gate="U1" pin="PE2/!HWB" pad="33"/>
-<connect gate="U1" pin="RXLED" pad="8"/>
-<connect gate="U1" pin="TXLED" pad="22"/>
+<connect gate="U1" pin="RXLED/D17/CS" pad="8"/>
+<connect gate="U1" pin="TXLED/D30" pad="22"/>
 <connect gate="U1" pin="UCAP" pad="6"/>
 <connect gate="U1" pin="UGND" pad="5"/>
 <connect gate="U1" pin="UVCC" pad="2"/>
@@ -8104,25 +8104,25 @@ Short timer</description>
 <connect gate="U1" pin="D-" pad="3"/>
 <connect gate="U1" pin="D0(RX)" pad="20"/>
 <connect gate="U1" pin="D1(TX)" pad="21"/>
-<connect gate="U1" pin="D10#" pad="30"/>
+<connect gate="U1" pin="D10#/A10" pad="30"/>
 <connect gate="U1" pin="D11#" pad="12"/>
-<connect gate="U1" pin="D12/A10" pad="26"/>
+<connect gate="U1" pin="D12/A11" pad="26"/>
 <connect gate="U1" pin="D13#" pad="32"/>
-<connect gate="U1" pin="D14/MISO" pad="11"/>
+<connect gate="U1" pin="D14/CIPO" pad="11"/>
 <connect gate="U1" pin="D15/SCK" pad="9"/>
-<connect gate="U1" pin="D16/MOSI" pad="10"/>
+<connect gate="U1" pin="D16/COPI" pad="10"/>
 <connect gate="U1" pin="D2(SDA)" pad="19"/>
 <connect gate="U1" pin="D3#(SCL)" pad="18"/>
 <connect gate="U1" pin="D4/A6" pad="25"/>
 <connect gate="U1" pin="D5#" pad="31"/>
 <connect gate="U1" pin="D6#/A7" pad="27"/>
 <connect gate="U1" pin="D7" pad="1"/>
-<connect gate="U1" pin="D8" pad="28"/>
-<connect gate="U1" pin="D9#/A8" pad="29"/>
+<connect gate="U1" pin="D8/A8" pad="28"/>
+<connect gate="U1" pin="D9#/A9" pad="29"/>
 <connect gate="U1" pin="GND" pad="15 23 35 43"/>
 <connect gate="U1" pin="PE2/!HWB" pad="33"/>
-<connect gate="U1" pin="RXLED" pad="8"/>
-<connect gate="U1" pin="TXLED" pad="22"/>
+<connect gate="U1" pin="RXLED/D17/CS" pad="8"/>
+<connect gate="U1" pin="TXLED/D30" pad="22"/>
 <connect gate="U1" pin="UCAP" pad="6"/>
 <connect gate="U1" pin="UGND" pad="5"/>
 <connect gate="U1" pin="UVCC" pad="2"/>
