@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -39180,6 +39180,20 @@ Alternate pin configuration
 </polygon>
 <text x="0" y="-3" size="0.6096" layer="51" align="bottom-center">CONTACTS THIS SIDE ONLY</text>
 </package>
+<package name="1X03_1.25MM_SMD">
+<description>Molex 0533980367</description>
+<smd name="1" x="-1.25" y="0" dx="1.3" dy="0.8" layer="1" rot="R90"/>
+<smd name="2" x="0" y="0" dx="1.3" dy="0.8" layer="1" rot="R90"/>
+<smd name="3" x="1.25" y="0" dx="1.3" dy="0.8" layer="1" rot="R90"/>
+<smd name="NC2" x="3.8" y="2.75" dx="2.1" dy="3" layer="1"/>
+<smd name="NC1" x="-3.8" y="2.75" dx="2.1" dy="3" layer="1"/>
+<wire x1="-2" y1="0" x2="-4" y2="0" width="0.254" layer="21"/>
+<wire x1="-4" y1="0" x2="-4" y2="1" width="0.254" layer="21"/>
+<wire x1="2" y1="0" x2="4" y2="0" width="0.254" layer="21"/>
+<wire x1="4" y1="0" x2="4" y2="1" width="0.254" layer="21"/>
+<wire x1="-2" y1="4" x2="2" y2="4" width="0.254" layer="21"/>
+<circle x="-2.48" y="-1.02" radius="0.1414" width="0.4" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -44039,6 +44053,16 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <technology name="">
 <attribute name="PROD_ID" value="CONN-14721" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="MOLEX_0533980367" package="1X03_1.25MM_SMD">
+<connects>
+<connect gate="J$1" pin="1" pad="1"/>
+<connect gate="J$1" pin="2" pad="2"/>
+<connect gate="J$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -52826,6 +52850,17 @@ This clip is compatible with F5 iButtons only.</description>
 <connect gate="G$1" pin="DATA" pad="DATA"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOLEX_SMD_3POS_1.25MM">
+<gates>
+</gates>
+<devices>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
