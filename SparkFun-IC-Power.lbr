@@ -136,6 +136,12 @@
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="no"/>
+<layer number="156" name="gesam-Maß" color="1" fill="7" visible="no" active="no"/>
+<layer number="157" name="FaceMchng" color="3" fill="1" visible="no" active="no"/>
+<layer number="158" name="FaceMMeas" color="3" fill="1" visible="no" active="no"/>
+<layer number="159" name="Geh-Bear2" color="1" fill="7" visible="no" active="no"/>
+<layer number="160" name="Topologie" color="9" fill="1" visible="no" active="no"/>
+<layer number="161" name="tomplace2" color="7" fill="1" visible="no" active="no"/>
 <layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
@@ -183,6 +189,7 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="252" name="BR-BS" color="7" fill="1" visible="no" active="no"/>
 <layer number="253" name="Extra" color="7" fill="1" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="no"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="no"/>
@@ -2423,6 +2430,34 @@ Pasted was reduced by 40% width on the center ground pad, and some amount on the
 <text x="-2" y="-1.4" size="0.6096" layer="25" font="vector" rot="R90">&gt;NAME</text>
 <text x="2.3" y="-1.6" size="0.6096" layer="27" font="vector" rot="R90">&gt;VALUE</text>
 </package>
+<package name="DFN300X200-10L">
+<wire x1="0.4572" y1="-1.4986" x2="0.9906" y2="-1.4986" width="0.1524" layer="21"/>
+<wire x1="-0.9906" y1="-1.4986" x2="-0.4572" y2="-1.4986" width="0.1524" layer="21"/>
+<wire x1="0.9906" y1="1.4986" x2="0.4572" y2="1.4986" width="0.1524" layer="21"/>
+<wire x1="-0.4572" y1="1.4986" x2="-0.9906" y2="1.4986" width="0.1524" layer="21"/>
+<wire x1="-0.9906" y1="-1.4986" x2="0.9906" y2="-1.4986" width="0" layer="51"/>
+<wire x1="0.9906" y1="-1.4986" x2="0.9906" y2="1.4986" width="0" layer="51"/>
+<wire x1="0.9906" y1="1.4986" x2="0.3048" y2="1.4986" width="0" layer="51"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0" layer="51"/>
+<wire x1="-0.3048" y1="1.4986" x2="-0.9906" y2="1.4986" width="0" layer="51"/>
+<wire x1="-0.9906" y1="1.4986" x2="-0.9906" y2="-1.4986" width="0" layer="51"/>
+<wire x1="0.3048" y1="1.4986" x2="-0.3048" y2="1.4986" width="0" layer="51" curve="-180"/>
+<smd name="1" x="-0.9398" y="0.9906" dx="0.7112" dy="0.254" layer="1"/>
+<smd name="2" x="-0.9398" y="0.508" dx="0.7112" dy="0.254" layer="1"/>
+<smd name="3" x="-0.9398" y="0" dx="0.7112" dy="0.254" layer="1"/>
+<smd name="4" x="-0.9398" y="-0.508" dx="0.7112" dy="0.254" layer="1"/>
+<smd name="5" x="-0.9398" y="-0.9906" dx="0.7112" dy="0.254" layer="1"/>
+<smd name="6" x="0.9398" y="-0.9906" dx="0.7112" dy="0.254" layer="1"/>
+<smd name="7" x="0.9398" y="-0.508" dx="0.7112" dy="0.254" layer="1"/>
+<smd name="8" x="0.9398" y="0" dx="0.7112" dy="0.254" layer="1"/>
+<smd name="9" x="0.9398" y="0.508" dx="0.7112" dy="0.254" layer="1"/>
+<smd name="10" x="0.9398" y="0.9906" dx="0.7112" dy="0.254" layer="1"/>
+<smd name="11" x="0" y="0" dx="0.635" dy="2.3876" layer="1" cream="no"/>
+<text x="-2.2606" y="-3.556" size="1.016" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-2.8194" y="2.54" size="1.016" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+<rectangle x1="-0.127" y1="0.381" x2="0.127" y2="1.016" layer="31"/>
+<rectangle x1="-0.127" y1="-1.016" x2="0.127" y2="-0.381" layer="31"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DC-DC_CONVERTER">
@@ -3311,6 +3346,24 @@ conversion&lt;/p&gt;</description>
 <pin name="VCC" x="12.7" y="5.08" length="short" direction="pwr" rot="R180"/>
 <text x="-7.62" y="8.382" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="-7.62" y="-10.16" size="1.778" layer="95" font="vector">&gt;VALUE</text>
+</symbol>
+<symbol name="LTC3225EDDB">
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="-15.24" x2="10.16" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="10.16" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="-10.16" y2="15.24" width="0.4064" layer="94"/>
+<pin name="C+" x="-12.7" y="7.62" length="short" direction="pas"/>
+<pin name="C-" x="-12.7" y="5.08" length="short" direction="pas"/>
+<pin name="COUT" x="12.7" y="12.7" length="short" direction="out" rot="R180"/>
+<pin name="CX" x="-12.7" y="0" length="short" direction="pas"/>
+<pin name="GND" x="-12.7" y="-12.7" length="short" direction="pas"/>
+<pin name="PGOOD" x="12.7" y="7.62" length="short" direction="out" rot="R180"/>
+<pin name="PROG" x="-12.7" y="-7.62" length="short" direction="in"/>
+<pin name="VIN" x="-12.7" y="12.7" length="short" direction="pwr"/>
+<pin name="VSEL" x="-12.7" y="-5.08" length="short" direction="in"/>
+<pin name="~SHDN" x="-12.7" y="-2.54" length="short" direction="in"/>
+<text x="-10.16" y="15.24" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-10.16" y="-17.78" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -5125,6 +5178,34 @@ from 1.2 V to 4.5 V in 25-mV steps.&lt;/p&gt;</description>
 <attribute name="PACKAGE" value="SOT-23(5)" constant="no"/>
 <attribute name="PROD_ID" value="VREG-15586"/>
 <attribute name="VALUE" value="3.0V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC3225EDDB" prefix="U">
+<description>150mA Supercapacitor Charger</description>
+<gates>
+<gate name="G$1" symbol="LTC3225EDDB" x="2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="DFN300X200-10L" package="DFN300X200-10L">
+<connects>
+<connect gate="G$1" pin="C+" pad="1"/>
+<connect gate="G$1" pin="C-" pad="2"/>
+<connect gate="G$1" pin="COUT" pad="10"/>
+<connect gate="G$1" pin="CX" pad="3"/>
+<connect gate="G$1" pin="GND" pad="8 11"/>
+<connect gate="G$1" pin="PGOOD" pad="5"/>
+<connect gate="G$1" pin="PROG" pad="7"/>
+<connect gate="G$1" pin="VIN" pad="9"/>
+<connect gate="G$1" pin="VSEL" pad="6"/>
+<connect gate="G$1" pin="~SHDN" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-14693" constant="no"/>
+<attribute name="VALUE" value="LTC3225EDDB" constant="no"/>
 </technology>
 </technologies>
 </device>
