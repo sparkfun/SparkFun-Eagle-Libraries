@@ -1526,7 +1526,8 @@ Out</text>
 <deviceset name="STAND-OFF-REFLOW" prefix="H">
 <description>&lt;h3&gt;Stand Off Reflow Compatible&lt;/h3&gt;
 &lt;p&gt;A metal standoff that can be placed and reflowed onto a PCB.&lt;/p&gt;
-&lt;p&gt;The M2.5 x 2.5mm variant is used on MicroMod.&lt;/p&gt;</description>
+&lt;p&gt;The M2.5 x 2.5mm variant is used on MicroMod.&lt;/p&gt;
+&lt;p&gt;The M2.0 x 6.0mm variant is used to mount the Iridium 9603N modem.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="STAND-OFF-REFLOW" x="0" y="0"/>
 </gates>
@@ -1557,7 +1558,17 @@ Out</text>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="" constant="no"/>
+<attribute name="PROD_ID" value="HW-16212" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-M2.0_5.0MM_TALL" package="STAND-OFF-REFLOW-M2.0">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="HW-16211" constant="no"/>
 </technology>
 </technologies>
 </device>
