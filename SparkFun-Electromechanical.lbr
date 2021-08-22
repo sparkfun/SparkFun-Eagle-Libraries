@@ -654,9 +654,9 @@ Side</text>
 2.0mm in this area</text>
 <wire x1="31.5" y1="0" x2="27.5" y2="-4" width="0.254" layer="51" curve="-90"/>
 <wire x1="27.5" y1="-4" x2="25" y2="-4" width="0.254" layer="51" style="longdash"/>
-<pad name="GND" x="-2.54" y="2.54" drill="0.999996875"/>
-<pad name="VDC" x="-2.54" y="5.08" drill="0.999996875"/>
-<pad name="PWM" x="-2.54" y="7.62" drill="0.999996875"/>
+<pad name="GND" x="-2.54" y="2.54" drill="1.016"/>
+<pad name="VDC" x="-2.54" y="5.08" drill="1.016"/>
+<pad name="PWM" x="-2.54" y="7.62" drill="1.016"/>
 <text x="-1.143" y="7.112" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">W</text>
 <text x="-1.143" y="4.572" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">R</text>
 <text x="-1.143" y="2.032" size="1.016" layer="21" font="vector" ratio="15" rot="SR0">B</text>
@@ -867,25 +867,27 @@ Side</text>
 <text x="5.715" y="0" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 </symbol>
 <symbol name="PQ12--R">
-<wire x1="0" y1="-0.254" x2="0" y2="10.75" width="0.254" layer="94"/>
-<wire x1="0" y1="10.75" x2="18.25" y2="10.75" width="0.254" layer="94"/>
-<wire x1="18.25" y1="10.75" x2="18.25" y2="9.5" width="0.254" layer="94"/>
-<wire x1="18.25" y1="9.5" x2="18.25" y2="6.5" width="0.254" layer="94"/>
-<wire x1="18.25" y1="6.5" x2="18.25" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="18.25" y1="-0.254" x2="0" y2="-0.254" width="0.254" layer="94"/>
-<wire x1="18.25" y1="9.5" x2="29.625" y2="9.5" width="0.254" layer="94"/>
-<wire x1="29.625" y1="9.5" x2="29.625" y2="6.5" width="0.254" layer="94" curve="-180"/>
-<wire x1="29.625" y1="6.5" x2="18.25" y2="6.5" width="0.254" layer="94"/>
-<circle x="29.625" y="8" radius="0.75" width="0.254" layer="94"/>
-<wire x1="0" y1="9.5" x2="-1.375" y2="9.5" width="0.254" layer="94"/>
-<wire x1="-1.375" y1="9.5" x2="-1.375" y2="6.5" width="0.254" layer="94" curve="180"/>
-<wire x1="-1.375" y1="6.5" x2="0" y2="6.5" width="0.254" layer="94"/>
-<circle x="-1.375" y="8" radius="0.75" width="0.254" layer="94"/>
-<text x="0" y="11" size="1.778" layer="95">&gt;NAME</text>
-<text x="0" y="-2.508" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="WHITE" x="-2.54" y="4.78" visible="pin" length="short" direction="in"/>
-<pin name="RED" x="-2.54" y="2.78" visible="pin" length="short" direction="pwr"/>
-<pin name="BLACK" x="-2.54" y="0.78" visible="pin" length="short" direction="pwr"/>
+<wire x1="-10.16" y1="-6.35" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="2.54" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="6.35" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="6.35" x2="7.62" y2="6.35" width="0.254" layer="94"/>
+<wire x1="7.62" y1="6.35" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-6.35" x2="-10.16" y2="-6.35" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="19.05" y2="5.08" width="0.254" layer="94"/>
+<wire x1="19.05" y1="5.08" x2="19.05" y2="2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="19.05" y1="2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<circle x="19.05" y="3.81" radius="0.635" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="5.08" x2="-11.43" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-11.43" y1="5.08" x2="-11.43" y2="2.54" width="0.254" layer="94" curve="180"/>
+<wire x1="-11.43" y1="2.54" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
+<circle x="-11.43" y="3.81" radius="0.635" width="0.254" layer="94"/>
+<text x="-10.16" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-8.89" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="WHITE" x="-12.7" y="0" visible="pin" length="short" direction="in"/>
+<pin name="RED" x="-12.7" y="-2.54" visible="pin" length="short" direction="pwr"/>
+<pin name="BLACK" x="-12.7" y="-5.08" visible="pin" length="short" direction="pwr"/>
 </symbol>
 </symbols>
 <devicesets>
