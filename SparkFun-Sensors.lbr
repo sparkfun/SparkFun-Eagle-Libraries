@@ -16084,6 +16084,54 @@ The ICS-40180 is available in a small, 3.5 mm × 2.65 mm ×
 </device>
 </devices>
 </deviceset>
+<deviceset name="AT42QT1011">
+<description>&lt;h3&gt;Atmel AT42QT1011&lt;/h3&gt;
+&lt;p&gt; The AT42QT1011 (QT1011) is a digital burst mode charge-transfer (QT™) sensor that is capable of detecting nearproximityor touch, making it ideal for implementing touch controls.The QT1011 is designed specifically for human interfaces, like control panels, appliances, toys, lighting controls, or
+anywhere a mechanical switch or button may be found. It includes all hardware and signal processing functions
+necessary to provide stable sensing under a wide variety of changing conditions. Only a single low-cost capacitor is
+required for operation.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='https://ww1.microchip.com/downloads/en/DeviceDoc/40001947A.pdf'&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4&gt;Sparkfun Products&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/14520"&gt;Sparkfun Capacitive Touch Breakout&lt;/a&gt; (SEN-14520)&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="AT42QT1010" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT23" package="SOT23-6">
+<connects>
+<connect gate="G$1" pin="OUT" pad="1"/>
+<connect gate="G$1" pin="SNS" pad="4"/>
+<connect gate="G$1" pin="SNSK" pad="3"/>
+<connect gate="G$1" pin="SYNC/MODE" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="UDFN" package="UDFN/USON_8_PAD">
+<connects>
+<connect gate="G$1" pin="OUT" pad="5"/>
+<connect gate="G$1" pin="SNS" pad="8"/>
+<connect gate="G$1" pin="SNSK" pad="1"/>
+<connect gate="G$1" pin="SYNC/MODE" pad="6"/>
+<connect gate="G$1" pin="VDD" pad="7"/>
+<connect gate="G$1" pin="VSS" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-13838" constant="no"/>
+<attribute name="VALUE" value="AT42QT1011-MAHR" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
