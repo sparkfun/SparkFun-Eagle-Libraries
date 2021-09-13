@@ -1482,13 +1482,13 @@ CAP-09321</description>
 <description>&lt;h3&gt;1nF/1,000pF ceramic capacitors&lt;/h3&gt;
 &lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="CAP" x="0" y="0"/>
+<gate name="C1" symbol="CAP" x="0" y="0"/>
 </gates>
 <devices>
 <device name="-0603-50V-10%" package="0603">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="C1" pin="1" pad="1"/>
+<connect gate="C1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1499,8 +1499,8 @@ CAP-09321</description>
 </device>
 <device name="-0402_TIGHT-50V-10%" package="0402-TIGHT">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="C1" pin="1" pad="1"/>
+<connect gate="C1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1511,8 +1511,8 @@ CAP-09321</description>
 </device>
 <device name="-0402-50V-10%" package="0402">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="C1" pin="1" pad="1"/>
+<connect gate="C1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1520,12 +1520,24 @@ CAP-09321</description>
 </device>
 <device name="-0402-25V-10%-X7R" package="0402">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="C1" pin="1" pad="1"/>
+<connect gate="C1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="CAP-15061" constant="no"/>
+<attribute name="VALUE" value="1nF" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-1206-2KV-10%" package="1206">
+<connects>
+<connect gate="C1" pin="1" pad="1"/>
+<connect gate="C1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-16238" constant="no"/>
 <attribute name="VALUE" value="1nF" constant="no"/>
 </technology>
 </technologies>
@@ -3269,6 +3281,27 @@ CAP-09321</description>
 <technologies>
 <technology name="">
 <attribute name="VALUE" value="DNP" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="6.8NF/6800PF" prefix="C">
+<description>&lt;h3&gt;5.6nF/5600pF ceramic capacitors&lt;/h3&gt;
+&lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
+<gates>
+<gate name="C1" symbol="CAP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0603-50V-5%" package="0603">
+<connects>
+<connect gate="C1" pin="1" pad="1"/>
+<connect gate="C1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-16239"/>
+<attribute name="VALUE" value="6.8nF"/>
 </technology>
 </technologies>
 </device>

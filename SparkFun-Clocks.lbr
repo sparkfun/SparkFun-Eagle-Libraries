@@ -3008,6 +3008,26 @@ unit with the CMOS-based oscillator and real-time-clock IC. &lt;/p&gt;</descript
 </device>
 </devices>
 </deviceset>
+<deviceset name="CRYSTAL-25MHZ" prefix="Y" uservalue="yes">
+<description>&lt;h3&gt;25MHz Crystal&lt;/h3&gt;</description>
+<gates>
+<gate name="Y1" symbol="CRYSTAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-SMD-2.0X1.6MM" package="CRYSTAL-SMD-2.0X1.6MM">
+<connects>
+<connect gate="Y1" pin="1" pad="1"/>
+<connect gate="Y1" pin="2" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-16235" constant="no"/>
+<attribute name="VALUE" value="25MHz" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
