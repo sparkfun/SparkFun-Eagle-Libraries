@@ -3241,9 +3241,9 @@ A =&gt; B : DIR = VCCA</text>
 </symbol>
 <symbol name="W5500">
 <wire x1="-12.7" y1="22.86" x2="12.7" y2="22.86" width="0.254" layer="94"/>
-<wire x1="12.7" y1="22.86" x2="12.7" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-25.4" x2="-12.7" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-25.4" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
+<wire x1="12.7" y1="22.86" x2="12.7" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-40.64" x2="-12.7" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-40.64" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
 <pin name="TXN" x="15.24" y="-17.78" length="short" rot="R180"/>
 <pin name="TXP" x="15.24" y="-15.24" length="short" rot="R180"/>
 <pin name="RXN" x="15.24" y="-22.86" length="short" rot="R180"/>
@@ -3258,7 +3258,7 @@ A =&gt; B : DIR = VCCA</text>
 <pin name="DUPLED" x="15.24" y="-2.54" length="short" rot="R180"/>
 <pin name="ACTLED" x="15.24" y="0" length="short" rot="R180"/>
 <pin name="VDD" x="-15.24" y="20.32" length="short"/>
-<pin name="GND" x="-15.24" y="-22.86" length="short"/>
+<pin name="GND" x="-15.24" y="-38.1" length="short"/>
 <pin name="XI" x="-15.24" y="-2.54" length="short"/>
 <pin name="XO" x="-15.24" y="0" length="short"/>
 <pin name="!CS!" x="15.24" y="10.16" length="short" rot="R180"/>
@@ -3270,9 +3270,15 @@ A =&gt; B : DIR = VCCA</text>
 <pin name="PMODE2" x="-15.24" y="5.08" length="short"/>
 <pin name="PMODE1" x="-15.24" y="7.62" length="short"/>
 <pin name="PMODE0" x="-15.24" y="10.16" length="short"/>
-<pin name="AGND" x="-15.24" y="-20.32" length="short"/>
+<pin name="AGND" x="-15.24" y="-35.56" length="short"/>
 <text x="-12.7" y="23.114" size="1.778" layer="95">&gt;Name</text>
-<text x="-12.7" y="-27.94" size="1.778" layer="96">&gt;Value</text>
+<text x="-12.7" y="-43.18" size="1.778" layer="96">&gt;Value</text>
+<pin name="RSVD23" x="-15.24" y="-17.78" length="short"/>
+<pin name="RSVD38" x="-15.24" y="-20.32" length="short"/>
+<pin name="RSVD39" x="-15.24" y="-22.86" length="short"/>
+<pin name="RSVD40" x="-15.24" y="-25.4" length="short"/>
+<pin name="RSVD41" x="-15.24" y="-27.94" length="short"/>
+<pin name="RSVD42" x="-15.24" y="-30.48" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4537,6 +4543,12 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/sn74avc4t774.pdf"&gt; Datas
 <connect gate="U1" pin="PMODE0" pad="45"/>
 <connect gate="U1" pin="PMODE1" pad="44"/>
 <connect gate="U1" pin="PMODE2" pad="43"/>
+<connect gate="U1" pin="RSVD23" pad="23"/>
+<connect gate="U1" pin="RSVD38" pad="38"/>
+<connect gate="U1" pin="RSVD39" pad="39"/>
+<connect gate="U1" pin="RSVD40" pad="40"/>
+<connect gate="U1" pin="RSVD41" pad="41"/>
+<connect gate="U1" pin="RSVD42" pad="42"/>
 <connect gate="U1" pin="RXN" pad="5"/>
 <connect gate="U1" pin="RXP" pad="6"/>
 <connect gate="U1" pin="SCK" pad="33"/>
