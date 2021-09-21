@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5947,28 +5947,28 @@ The TLC5947 has a thermal shutdown (TSD) function that turns off all output driv
 <text x="-10.16" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="WT2003S">
-<wire x1="10.16" y1="17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-17.78" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-17.78" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="17.78" x2="10.16" y2="17.78" width="0.254" layer="94"/>
-<pin name="ADKEY" x="12.7" y="-12.7" length="short" rot="R180"/>
-<pin name="AVSS" x="-12.7" y="-12.7" length="short"/>
-<pin name="BUSY" x="12.7" y="-10.16" length="short" rot="R180"/>
-<pin name="DM" x="-12.7" y="-5.08" length="short"/>
-<pin name="DP" x="-12.7" y="-2.54" length="short"/>
-<pin name="DVSS" x="-12.7" y="-15.24" length="short"/>
-<pin name="P10" x="12.7" y="-15.24" length="short" rot="R180"/>
-<pin name="RX" x="12.7" y="12.7" length="short" rot="R180"/>
-<pin name="SDCLK" x="12.7" y="5.08" length="short" rot="R180"/>
-<pin name="SDCMD" x="12.7" y="7.62" length="short" rot="R180"/>
-<pin name="SDDAT" x="12.7" y="2.54" length="short" rot="R180"/>
-<pin name="TX" x="12.7" y="15.24" length="short" rot="R180"/>
-<pin name="VDDIO" x="-12.7" y="12.7" length="short"/>
-<pin name="VDDLDO" x="-12.7" y="15.24" length="short"/>
-<pin name="VOUTL" x="12.7" y="-5.08" length="short" rot="R180"/>
-<pin name="VOUTR" x="12.7" y="-2.54" length="short" rot="R180"/>
-<text x="-10.16" y="18.288" size="1.778" layer="95">&gt;Name</text>
-<text x="-10.16" y="-20.32" size="1.778" layer="96">&gt;Value</text>
+<wire x1="12.7" y1="17.78" x2="12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-17.78" x2="-12.7" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-17.78" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="17.78" x2="12.7" y2="17.78" width="0.254" layer="94"/>
+<pin name="AD/ONEKEY" x="15.24" y="-12.7" length="short" rot="R180"/>
+<pin name="AVSS" x="-15.24" y="-12.7" length="short"/>
+<pin name="BUSY" x="15.24" y="-10.16" length="short" rot="R180"/>
+<pin name="DM" x="-15.24" y="-5.08" length="short"/>
+<pin name="DP" x="-15.24" y="-2.54" length="short"/>
+<pin name="DVSS" x="-15.24" y="-15.24" length="short"/>
+<pin name="RESET/DACL" x="15.24" y="-15.24" length="short" rot="R180"/>
+<pin name="RX" x="15.24" y="12.7" length="short" rot="R180"/>
+<pin name="SDCLK" x="15.24" y="5.08" length="short" rot="R180"/>
+<pin name="SDCMD" x="15.24" y="7.62" length="short" rot="R180"/>
+<pin name="SDDAT" x="15.24" y="2.54" length="short" rot="R180"/>
+<pin name="TX" x="15.24" y="15.24" length="short" rot="R180"/>
+<pin name="VDDIO" x="-15.24" y="12.7" length="short"/>
+<pin name="VDDLDO" x="-15.24" y="15.24" length="short"/>
+<pin name="SPK-" x="15.24" y="-5.08" length="short" rot="R180"/>
+<pin name="SPK+" x="15.24" y="-2.54" length="short" rot="R180"/>
+<text x="-12.7" y="18.288" size="1.778" layer="95">&gt;Name</text>
+<text x="-12.7" y="-20.32" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 <symbol name="ATECC108-1">
 <description>ATECC108</description>
@@ -7799,29 +7799,52 @@ sensor for wearable health for finger-based applications.
 <gate name="U1" symbol="WT2003S" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SO16">
+<device name="S" package="SO16">
 <connects>
-<connect gate="U1" pin="ADKEY" pad="13"/>
+<connect gate="U1" pin="AD/ONEKEY" pad="13"/>
 <connect gate="U1" pin="AVSS" pad="3"/>
 <connect gate="U1" pin="BUSY" pad="14"/>
 <connect gate="U1" pin="DM" pad="11"/>
 <connect gate="U1" pin="DP" pad="12"/>
 <connect gate="U1" pin="DVSS" pad="6"/>
-<connect gate="U1" pin="P10" pad="7"/>
+<connect gate="U1" pin="RESET/DACL" pad="7"/>
 <connect gate="U1" pin="RX" pad="15"/>
 <connect gate="U1" pin="SDCLK" pad="9"/>
 <connect gate="U1" pin="SDCMD" pad="10"/>
 <connect gate="U1" pin="SDDAT" pad="8"/>
+<connect gate="U1" pin="SPK+" pad="2"/>
+<connect gate="U1" pin="SPK-" pad="1"/>
 <connect gate="U1" pin="TX" pad="16"/>
 <connect gate="U1" pin="VDDIO" pad="4"/>
 <connect gate="U1" pin="VDDLDO" pad="5"/>
-<connect gate="U1" pin="VOUTL" pad="1"/>
-<connect gate="U1" pin="VOUTR" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-14204" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="H4" package="SO16">
+<connects>
+<connect gate="U1" pin="AD/ONEKEY" pad="7"/>
+<connect gate="U1" pin="AVSS" pad="8"/>
+<connect gate="U1" pin="BUSY" pad="15"/>
+<connect gate="U1" pin="DM" pad="4"/>
+<connect gate="U1" pin="DP" pad="5"/>
+<connect gate="U1" pin="DVSS" pad="12"/>
+<connect gate="U1" pin="RESET/DACL" pad="9"/>
+<connect gate="U1" pin="RX" pad="6"/>
+<connect gate="U1" pin="SDCLK" pad="3"/>
+<connect gate="U1" pin="SDCMD" pad="1"/>
+<connect gate="U1" pin="SDDAT" pad="2"/>
+<connect gate="U1" pin="SPK+" pad="14"/>
+<connect gate="U1" pin="SPK-" pad="13"/>
+<connect gate="U1" pin="TX" pad="16"/>
+<connect gate="U1" pin="VDDIO" pad="10"/>
+<connect gate="U1" pin="VDDLDO" pad="11"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
