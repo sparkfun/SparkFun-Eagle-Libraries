@@ -819,6 +819,14 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
+<package name="CPOL-RADIAL-1F-2.7V">
+<circle x="0" y="0" radius="4.2545" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="1.27" x2="-2.54" y2="1.27" width="0.2032" layer="21"/>
+<pad name="+" x="1.750059375" y="0" drill="0.7" diameter="1.9304" shape="square"/>
+<pad name="-" x="-1.750059375" y="0" drill="0.7" diameter="1.9304"/>
+<text x="-1.905" y="-3.048" size="0.8128" layer="27">&gt;Value</text>
+<text x="-0.762" y="2.921" size="0.4064" layer="25">&gt;Name</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CAP">
@@ -890,6 +898,19 @@ http://www.kemet.com/Lists/ProductCatalog/Attachments/254/KEM_T2005_T491.pdf</de
 <pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 <text x="1.524" y="2.921" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="1.524" y="-2.159" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+<symbol name="CAP_POL-1">
+<rectangle x1="-2.253" y1="0.668" x2="-1.364" y2="0.795" layer="94"/>
+<rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.016" x2="0" y2="-1.0161" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.0161" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1" x2="2.4892" y2="-1.8542" width="0.254" layer="94" curve="-37.878202" cap="flat"/>
+<wire x1="-2.4669" y1="-1.8504" x2="0" y2="-1.0161" width="0.254" layer="94" curve="-37.376341" cap="flat"/>
+<pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<text x="1.016" y="0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3302,6 +3323,25 @@ CAP-09321</description>
 <technology name="">
 <attribute name="PROD_ID" value="CAP-16239"/>
 <attribute name="VALUE" value="6.8nF"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1F-2.7V(PTH)" prefix="C" uservalue="yes">
+<description>1F 2.7V SuperCapacitor CAP-14696</description>
+<gates>
+<gate name="G$1" symbol="CAP_POL-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="CPOL-RADIAL-1H-2.7V" package="CPOL-RADIAL-1F-2.7V">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CAP-14696" constant="no"/>
 </technology>
 </technologies>
 </device>
