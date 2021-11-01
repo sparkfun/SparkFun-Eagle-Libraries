@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -20,33 +20,33 @@
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -10426,6 +10426,59 @@ read, as well as embedded engines for orientation, Directional-TapTM/DoubleTapTM
 <rectangle x1="-0.9" y1="-0.55" x2="-0.25" y2="-0.1" layer="31" rot="R180"/>
 <rectangle x1="0.25" y1="-0.55" x2="0.9" y2="-0.1" layer="31"/>
 </package>
+<package name="VEML7700_TT">
+<description>VEML7700-TT (Top View)</description>
+<wire x1="-3.4" y1="1.5" x2="-3.4" y2="-1.5" width="0.254" layer="21"/>
+<wire x1="3.4" y1="-1.5" x2="3.4" y2="1.5" width="0.254" layer="21"/>
+<wire x1="3.4" y1="1.5" x2="-3.4" y2="1.5" width="0.254" layer="21"/>
+<wire x1="-3.4" y1="1.5" x2="-3.4" y2="-1.5" width="0.254" layer="51"/>
+<wire x1="3.4" y1="-1.5" x2="3.4" y2="1.5" width="0.254" layer="51"/>
+<wire x1="3.4" y1="1.5" x2="-3.4" y2="1.5" width="0.254" layer="51"/>
+<rectangle x1="-2.155" y1="-1.5" x2="-1.655" y2="-0.3" layer="51"/>
+<rectangle x1="-0.885" y1="-1.5" x2="-0.385" y2="-0.3" layer="51"/>
+<rectangle x1="0.385" y1="-1.5" x2="0.885" y2="-0.3" layer="51"/>
+<rectangle x1="1.655" y1="-1.5" x2="2.155" y2="-0.3" layer="51"/>
+<wire x1="-3.4" y1="-1.5" x2="-3" y2="-1.5" width="0.254" layer="21"/>
+<wire x1="3" y1="-1.5" x2="3.4" y2="-1.5" width="0.254" layer="21"/>
+<text x="-4" y="2" size="1.778" layer="25">&gt;NAME</text>
+<text x="-4" y="-4" size="1.778" layer="27">&gt;VALUE</text>
+<wire x1="-3.4" y1="-1.5" x2="-2.8" y2="-1.5" width="0.254" layer="51"/>
+<wire x1="-2.8" y1="-1.2" x2="2.8" y2="-1.2" width="0.254" layer="51"/>
+<wire x1="2.8" y1="-1.5" x2="3.4" y2="-1.5" width="0.254" layer="51"/>
+<wire x1="-2.8" y1="-1.5" x2="-2.8" y2="-1.2" width="0.254" layer="51"/>
+<wire x1="2.8" y1="-1.5" x2="2.8" y2="-1.2" width="0.254" layer="51"/>
+<smd name="1" x="-1.905" y="-0.9" dx="1.6" dy="0.7" layer="1" rot="R90"/>
+<smd name="2" x="-0.635" y="-0.9" dx="1.6" dy="0.7" layer="1" rot="R90"/>
+<smd name="3" x="0.635" y="-0.9" dx="1.6" dy="0.7" layer="1" rot="R90"/>
+<smd name="4" x="1.905" y="-0.9" dx="1.6" dy="0.7" layer="1" rot="R90"/>
+</package>
+<package name="VEML7700_TR">
+<description>VEML7700-TR (Side View)</description>
+<wire x1="-3.4" y1="-1.175" x2="-3.4" y2="1.175" width="0.254" layer="21"/>
+<wire x1="3.4" y1="1.175" x2="3.4" y2="-1.175" width="0.254" layer="21"/>
+<wire x1="3.4" y1="-1.175" x2="-3.4" y2="-1.175" width="0.254" layer="21"/>
+<wire x1="3.4" y1="-1.175" x2="3.4" y2="1.175" width="0.254" layer="51"/>
+<wire x1="-3.4" y1="1.175" x2="-3.4" y2="-1.175" width="0.254" layer="51"/>
+<wire x1="-3.4" y1="-1.175" x2="3.4" y2="-1.175" width="0.254" layer="51"/>
+<rectangle x1="1.655" y1="0.175" x2="2.155" y2="1.175" layer="51" rot="R180"/>
+<rectangle x1="0.385" y1="0.175" x2="0.885" y2="1.175" layer="51" rot="R180"/>
+<rectangle x1="-0.885" y1="0.175" x2="-0.385" y2="1.175" layer="51" rot="R180"/>
+<rectangle x1="-2.155" y1="0.175" x2="-1.655" y2="1.175" layer="51" rot="R180"/>
+<wire x1="-3.4" y1="1.175" x2="-3" y2="1.175" width="0.254" layer="21"/>
+<wire x1="3" y1="1.175" x2="3.4" y2="1.175" width="0.254" layer="21"/>
+<text x="-4" y="2" size="1.778" layer="25">&gt;NAME</text>
+<text x="-4" y="-4" size="1.778" layer="27">&gt;VALUE</text>
+<wire x1="3.4" y1="1.175" x2="2.8" y2="1.175" width="0.254" layer="51"/>
+<wire x1="2.8" y1="0.875" x2="-2.8" y2="0.875" width="0.254" layer="51"/>
+<wire x1="-2.8" y1="1.175" x2="-3.4" y2="1.175" width="0.254" layer="51"/>
+<wire x1="2.8" y1="1.175" x2="2.8" y2="0.875" width="0.254" layer="51"/>
+<wire x1="-2.8" y1="1.175" x2="-2.8" y2="0.875" width="0.254" layer="51"/>
+<smd name="1" x="-1.905" y="0.675" dx="1.4" dy="0.7" layer="1" rot="R90"/>
+<smd name="2" x="-0.635" y="0.675" dx="1.4" dy="0.7" layer="1" rot="R90"/>
+<smd name="3" x="0.635" y="0.675" dx="1.4" dy="0.7" layer="1" rot="R90"/>
+<smd name="4" x="1.905" y="0.675" dx="1.4" dy="0.7" layer="1" rot="R90"/>
+<text x="0" y="-1.7" size="0.3048" layer="51" align="center">Sensitive This Side</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ADMP401">
@@ -12597,6 +12650,19 @@ The ICS-40180 is available in a small, 3.5 mm × 2.65 mm ×
 <pin name="AVDD" x="-12.7" y="5.08" visible="pin" length="short"/>
 <pin name="IOVDD" x="-12.7" y="2.54" visible="pin" length="short"/>
 <pin name="RSVD6" x="-12.7" y="0" visible="pin" length="short"/>
+</symbol>
+<symbol name="VEML7700">
+<description>VEML7700</description>
+<pin name="VDD" x="-10.16" y="2.54" visible="pin" length="short" direction="pwr"/>
+<pin name="GND" x="-10.16" y="-2.54" visible="pin" length="short" direction="pwr"/>
+<pin name="SDA" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SCL" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<text x="-7.62" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -16235,6 +16301,44 @@ required for operation.&lt;/p&gt;
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-16254" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VEML7700">
+<description>Vishay VEML7700 Ambient Light Sensor
+&lt;br&gt;&lt;br&gt;
+VEML7700-TR is the side-view part
+&lt;br&gt;
+VEML7700-TT is the top-view part</description>
+<gates>
+<gate name="U1" symbol="VEML7700" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-TT" package="VEML7700_TT">
+<connects>
+<connect gate="U1" pin="GND" pad="3"/>
+<connect gate="U1" pin="SCL" pad="1"/>
+<connect gate="U1" pin="SDA" pad="4"/>
+<connect gate="U1" pin="VDD" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-16311" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-TR" package="VEML7700_TR">
+<connects>
+<connect gate="U1" pin="GND" pad="3"/>
+<connect gate="U1" pin="SCL" pad="1"/>
+<connect gate="U1" pin="SDA" pad="4"/>
+<connect gate="U1" pin="VDD" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="" constant="no"/>
 </technology>
 </technologies>
 </device>
