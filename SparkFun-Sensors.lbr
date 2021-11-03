@@ -19,13 +19,13 @@
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -875,17 +875,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;li&gt;LIS331&lt;/li&gt;
 &lt;li&gt;LIS3DH&lt;/li&gt;
 &lt;/ul&gt;</description>
-<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.2032" layer="51"/>
-<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.2032" layer="51"/>
-<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.2032" layer="51"/>
-<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.2032" layer="51"/>
-<wire x1="-1.7278" y1="1.3694" x2="-1.3722" y2="1.725" width="0.2032" layer="21"/>
-<wire x1="1.1162" y1="1.6496" x2="1.6242" y2="1.6496" width="0.2032" layer="21"/>
-<wire x1="1.6242" y1="1.6496" x2="1.6242" y2="1.3694" width="0.2032" layer="21"/>
-<wire x1="1.6242" y1="-1.3722" x2="1.6242" y2="-1.6524" width="0.2032" layer="21"/>
-<wire x1="1.1162" y1="-1.6524" x2="1.6242" y2="-1.6524" width="0.2032" layer="21"/>
-<wire x1="-1.627" y1="-1.6524" x2="-1.119" y2="-1.6524" width="0.2032" layer="21"/>
-<wire x1="-1.627" y1="-1.3722" x2="-1.627" y2="-1.6524" width="0.2032" layer="21"/>
 <smd name="10" x="1.4" y="-0.5" dx="0.7" dy="0.28" layer="1" rot="R180"/>
 <smd name="9" x="1.4" y="-1" dx="0.7" dy="0.28" layer="1" rot="R180"/>
 <smd name="11" x="1.4" y="0" dx="0.7" dy="0.28" layer="1" rot="R180"/>
@@ -10479,6 +10468,37 @@ read, as well as embedded engines for orientation, Directional-TapTM/DoubleTapTM
 <smd name="4" x="1.905" y="0.675" dx="1.4" dy="0.7" layer="1" rot="R90"/>
 <text x="0" y="-1.7" size="0.3048" layer="51" align="center">Sensitive This Side</text>
 </package>
+<package name="LGA-16-3X3MM-4X4PINS">
+<description>3 x 3 mm 16 pin LGA package, pitch 0.5 mm.</description>
+<smd name="1" x="0" y="0" dx="0.3" dy="0.45" layer="1"/>
+<smd name="2" x="0.5" y="0" dx="0.3" dy="0.45" layer="1"/>
+<smd name="3" x="1" y="0" dx="0.3" dy="0.45" layer="1"/>
+<smd name="4" x="1.5" y="0" dx="0.3" dy="0.45" layer="1"/>
+<smd name="12" x="0" y="2.55" dx="0.3" dy="0.45" layer="1"/>
+<smd name="9" x="1.5" y="2.55" dx="0.3" dy="0.45" layer="1"/>
+<smd name="11" x="0.5" y="2.55" dx="0.3" dy="0.45" layer="1"/>
+<smd name="10" x="1" y="2.55" dx="0.3" dy="0.45" layer="1"/>
+<smd name="5" x="2.025" y="0.525" dx="0.3" dy="0.45" layer="1" rot="R90"/>
+<smd name="6" x="2.025" y="1.025" dx="0.3" dy="0.45" layer="1" rot="R90"/>
+<smd name="7" x="2.025" y="1.525" dx="0.3" dy="0.45" layer="1" rot="R90"/>
+<smd name="8" x="2.025" y="2.025" dx="0.3" dy="0.45" layer="1" rot="R90"/>
+<smd name="16" x="-0.525" y="0.525" dx="0.3" dy="0.45" layer="1" rot="R90"/>
+<smd name="13" x="-0.525" y="2.025" dx="0.3" dy="0.45" layer="1" rot="R90"/>
+<smd name="15" x="-0.525" y="1.025" dx="0.3" dy="0.45" layer="1" rot="R90"/>
+<smd name="14" x="-0.525" y="1.525" dx="0.3" dy="0.45" layer="1" rot="R90"/>
+<circle x="-0.475" y="-0.475" radius="0.07905625" width="0.15" layer="21"/>
+<circle x="-0.47" y="-0.47" radius="0.036053125" width="0.2" layer="51"/>
+<text x="-0.635" y="3.175" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-0.635" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<wire x1="1.905" y1="-0.127" x2="2.159" y2="-0.127" width="0.2032" layer="21"/>
+<wire x1="2.159" y1="-0.127" x2="2.159" y2="0.127" width="0.2032" layer="21"/>
+<wire x1="2.159" y1="2.413" x2="2.159" y2="2.667" width="0.2032" layer="21"/>
+<wire x1="2.159" y1="2.667" x2="1.905" y2="2.667" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="2.413" x2="-0.635" y2="2.667" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="2.667" x2="-0.381" y2="2.667" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="0.127" x2="-0.635" y2="-0.127" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="-0.127" x2="-0.381" y2="-0.127" width="0.2032" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADMP401">
@@ -12663,6 +12683,27 @@ The ICS-40180 is available in a small, 3.5 mm × 2.65 mm ×
 <wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
 <text x="-7.62" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="MMC5893MA">
+<description>&lt;H3&gt;High performance magnetic sensor&lt;/H3&gt;
+
+±8 Gauss, High Performance 3-axis Magnetic Sensor</description>
+<pin name="NC" x="-2.54" y="5.08" length="short" direction="nc"/>
+<pin name="GND" x="-2.54" y="2.54" length="short" direction="pwr"/>
+<pin name="VDD" x="-2.54" y="10.16" length="short" direction="pwr"/>
+<pin name="SCL/SCK" x="22.86" y="10.16" length="short" rot="R180"/>
+<pin name="SDA/SDI" x="22.86" y="12.7" length="short" rot="R180"/>
+<pin name="VDDIO" x="-2.54" y="12.7" length="short" direction="pwr"/>
+<pin name="SDO" x="22.86" y="7.62" length="short" direction="out" rot="R180"/>
+<pin name="CAP" x="-2.54" y="7.62" length="short" direction="pas"/>
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="15.24" width="0.254" layer="94"/>
+<wire x1="20.32" y1="15.24" x2="0" y2="15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="15.24" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="0" y="16.51" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="!SPI_CS!" x="22.86" y="5.08" length="short" direction="in" rot="R180"/>
+<pin name="INT" x="22.86" y="2.54" length="short" direction="out" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -16339,6 +16380,35 @@ VEML7700-TT is the top-view part</description>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MMC5893MA" prefix="U">
+<description>&lt;h3&gt;High Performance 3-axis Magnetic Sensor&lt;/h3&gt;
+
+The MMC5983MA is an AEC-Q100 qualified complete 3-axis magnetic sensor with on-chip signal processing and integrated I2C/SPI bus suitable for use in automotive applications. The device can be connected directly to a microprocessor, eliminating the need for A/D converters or timing resources. It can measure magnetic fields within the full scale range of ±8 Gauss (G), with 0.25mG/0.0625mG per LSB resolution at 16bits/18bits operation mode and 0.4 mG total RMS noise level, enabling heading accuracy of ±0.5° in electronic compass applications.</description>
+<gates>
+<gate name="G$1" symbol="MMC5893MA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LGA-16-3X3MM-4X4PINS">
+<connects>
+<connect gate="G$1" pin="!SPI_CS!" pad="4"/>
+<connect gate="G$1" pin="CAP" pad="10"/>
+<connect gate="G$1" pin="GND" pad="9 11"/>
+<connect gate="G$1" pin="INT" pad="15"/>
+<connect gate="G$1" pin="NC" pad="3 6 7 8 12 14"/>
+<connect gate="G$1" pin="SCL/SCK" pad="1"/>
+<connect gate="G$1" pin="SDA/SDI" pad="16"/>
+<connect gate="G$1" pin="SDO" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="2"/>
+<connect gate="G$1" pin="VDDIO" pad="13"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-16314" constant="no"/>
 </technology>
 </technologies>
 </device>
