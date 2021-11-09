@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -53,8 +53,8 @@
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="2" name="Route2" color="63" fill="3" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="23" fill="6" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -11824,8 +11824,38 @@ Commonly used for small ceramic capacitors. Like our 0.1uF (http://www.sparkfun.
 <vertex x="-3.01625" y="-2.69875" curve="90"/>
 </polygon>
 </package>
+<package name="SDTR1103-HF2">
+<description>SDTR1103-HF2 RFID Antenna</description>
+<wire x1="5.9" y1="1.8" x2="5.9" y2="-1.8" width="0.1524" layer="21"/>
+<wire x1="-5.9" y1="1.8" x2="-5.9" y2="-1.8" width="0.1524" layer="21"/>
+<wire x1="-5.9" y1="1.8" x2="5.9" y2="1.8" width="0.1524" layer="51"/>
+<wire x1="5.9" y1="1.8" x2="5.9" y2="-1.8" width="0.1524" layer="51"/>
+<wire x1="-5.9" y1="-1.8" x2="5.9" y2="-1.8" width="0.1524" layer="51"/>
+<wire x1="-5.9" y1="1.8" x2="-5.9" y2="-1.8" width="0.1524" layer="51"/>
+<rectangle x1="-5" y1="-1.8" x2="-4.4" y2="1.8" layer="51"/>
+<rectangle x1="4.4" y1="-1.8" x2="5" y2="1.8" layer="51"/>
+<smd name="P$1" x="-4.7" y="0" dx="3.8" dy="1" layer="1" rot="R90"/>
+<smd name="P$2" x="4.7" y="0" dx="3.8" dy="1" layer="1" rot="R90"/>
+<wire x1="-5.9" y1="1.8" x2="-5.5" y2="1.8" width="0.1524" layer="21"/>
+<wire x1="-3.9" y1="1.8" x2="3.9" y2="1.8" width="0.1524" layer="21"/>
+<wire x1="5.5" y1="1.8" x2="5.9" y2="1.8" width="0.1524" layer="21"/>
+<wire x1="-5.9" y1="-1.8" x2="-5.5" y2="-1.8" width="0.1524" layer="21"/>
+<wire x1="-3.9" y1="-1.8" x2="3.9" y2="-1.8" width="0.1524" layer="21"/>
+<wire x1="5.5" y1="-1.8" x2="5.9" y2="-1.8" width="0.1524" layer="21"/>
+</package>
 </packages>
 <symbols>
+<symbol name="INDUCTIVE_ANTENNA">
+<description>&lt;h3&gt;Inductive Antenna&lt;/h3&gt;</description>
+<text x="1.27" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="1.27" y="-2.54" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.1524" layer="94" curve="-180"/>
+<wire x1="0" y1="1.27" x2="0" y2="0" width="0.1524" layer="94" curve="-180"/>
+<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.1524" layer="94" curve="-180"/>
+<wire x1="0" y1="-1.27" x2="0" y2="-2.54" width="0.1524" layer="94" curve="-180"/>
+</symbol>
 <symbol name="ANTENNA-GROUNDED">
 <description>&lt;h3&gt;Antenna (with ground termination)&lt;/h3&gt;</description>
 <wire x1="0" y1="2.54" x2="0" y2="0" width="0.1524" layer="94"/>
@@ -17258,6 +17288,27 @@ Dynamic NFC/RFID tag IC with 4-Kbit, 16-Kbit or 64-Kbit EEPROM, fast transfer mo
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-16315" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RFID_ANTENNA_SDTR1103-HF2">
+<description>RFID Antenna 13.56MHz SDTR1103-HF2</description>
+<gates>
+<gate name="G$1" symbol="INDUCTIVE_ANTENNA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-1UH" package="SDTR1103-HF2">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MANU_PART" value="SDTR1103-HF2-0001K" constant="no"/>
+<attribute name="PROD_ID" value="ANT_16327" constant="no"/>
+<attribute name="VALUE" value="1uH" constant="no"/>
 </technology>
 </technologies>
 </device>
