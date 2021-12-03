@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -12727,7 +12727,7 @@ The ICS-40180 is available in a small, 3.5 mm × 2.65 mm ×
 <text x="-7.62" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="MMC5893MA">
+<symbol name="MMC5983MA">
 <description>&lt;H3&gt;High performance magnetic sensor&lt;/H3&gt;
 
 ±8 Gauss, High Performance 3-axis Magnetic Sensor</description>
@@ -16428,12 +16428,12 @@ VEML7700-TT is the top-view part</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MMC5893MA" prefix="U">
+<deviceset name="MMC5983MA" prefix="U">
 <description>&lt;h3&gt;High Performance 3-axis Magnetic Sensor&lt;/h3&gt;
 
 The MMC5983MA is an AEC-Q100 qualified complete 3-axis magnetic sensor with on-chip signal processing and integrated I2C/SPI bus suitable for use in automotive applications. The device can be connected directly to a microprocessor, eliminating the need for A/D converters or timing resources. It can measure magnetic fields within the full scale range of ±8 Gauss (G), with 0.25mG/0.0625mG per LSB resolution at 16bits/18bits operation mode and 0.4 mG total RMS noise level, enabling heading accuracy of ±0.5° in electronic compass applications.</description>
 <gates>
-<gate name="G$1" symbol="MMC5893MA" x="0" y="0"/>
+<gate name="G$1" symbol="MMC5983MA" x="0" y="0"/>
 </gates>
 <devices>
 <device name="_QFN16" package="LGA-16-3X3MM-4X4PINS">
