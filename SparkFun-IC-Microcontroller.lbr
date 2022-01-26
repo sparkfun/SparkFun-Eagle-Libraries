@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4985,8 +4985,8 @@ Source: 6120s.pdf</description>
 <pin name="(ADC1)PA1" x="17.78" y="-12.7" length="short" rot="R180"/>
 <pin name="(ADC0)PA0" x="17.78" y="-15.24" length="short" rot="R180"/>
 <pin name="(SCL/SCK/ADC4)PA4" x="17.78" y="-5.08" length="short" rot="R180"/>
-<pin name="(RX/MISO/ADC5)PA5" x="17.78" y="-2.54" length="short" rot="R180"/>
-<pin name="(TX/SDA/MOSI/ADC6)PA6" x="17.78" y="0" length="short" rot="R180"/>
+<pin name="(RX/POCI/ADC5)PA5" x="17.78" y="-2.54" length="short" rot="R180"/>
+<pin name="(TX/SDA/PICO/ADC6)PA6" x="17.78" y="0" length="short" rot="R180"/>
 <pin name="(ADC7)PA7" x="17.78" y="2.54" length="short" rot="R180"/>
 <pin name="(XTAL1)PB0" x="17.78" y="7.62" length="short" rot="R180"/>
 <pin name="(XTAL2)PB1" x="17.78" y="10.16" length="short" rot="R180"/>
@@ -7083,8 +7083,8 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;
 <pin name="(TXD0/A1)1" x="15.24" y="-12.7" length="short" rot="R180"/>
 <pin name="(A0)0" x="15.24" y="-15.24" length="short" rot="R180"/>
 <pin name="(SCL/SCK/A4)4" x="15.24" y="-5.08" length="short" rot="R180"/>
-<pin name="(CIPO/A5)5" x="15.24" y="-2.54" length="short" rot="R180"/>
-<pin name="(SDA/COPI/A6)6" x="15.24" y="0" length="short" rot="R180"/>
+<pin name="(POCI/A5)5" x="15.24" y="-2.54" length="short" rot="R180"/>
+<pin name="(SDA/PICO/A6)6" x="15.24" y="0" length="short" rot="R180"/>
 <pin name="(A7)7" x="15.24" y="2.54" length="short" rot="R180"/>
 <pin name="(XTAL1/A11)10" x="15.24" y="12.7" length="short" rot="R180"/>
 <pin name="(INT0/XTAL2/A10)9" x="15.24" y="10.16" length="short" rot="R180"/>
@@ -7202,16 +7202,16 @@ touch button, slider and wheel user interfaces.&lt;/p&gt;
 </symbol>
 <symbol name="ATTINY43">
 <description>&lt;b&gt;ATtiny43&lt;/b&gt;&lt;br&gt;&lt;br&gt;
-Pin 4 is COPI and Pin 5 is CIPO when the chip is in peripheral mode or is being programmed&lt;br&gt;
-Pin 4 is CIPO and Pin 5 is COPI when the chip is operating in controller mode&lt;br&gt;
+Pin 4 is PICO and Pin 5 is POCI when the chip is in peripheral mode or is being programmed&lt;br&gt;
+Pin 4 is POCI and Pin 5 is PICO when the chip is operating in controller mode&lt;br&gt;
 The #defines in the ATTinyCore assume controller mode</description>
 <pin name="VCC" x="-17.78" y="-10.16" visible="pin" length="short" direction="pwr"/>
 <pin name="D0" x="-17.78" y="10.16" visible="pin" length="short"/>
 <pin name="D1" x="-17.78" y="7.62" visible="pin" length="short"/>
 <pin name="D2" x="-17.78" y="5.08" visible="pin" length="short"/>
 <pin name="D3" x="-17.78" y="2.54" visible="pin" length="short"/>
-<pin name="D4/DI/COPI/SDA" x="-17.78" y="0" visible="pin" length="short"/>
-<pin name="D5/DO/CIPO" x="-17.78" y="-2.54" visible="pin" length="short"/>
+<pin name="D4/DI/PICO/SDA" x="-17.78" y="0" visible="pin" length="short"/>
+<pin name="D5/DO/POCI" x="-17.78" y="-2.54" visible="pin" length="short"/>
 <pin name="D6/SCK/SCL" x="-17.78" y="-5.08" visible="pin" length="short"/>
 <pin name="D7/SS/INT0" x="-17.78" y="-7.62" visible="pin" length="short"/>
 <pin name="GND" x="-17.78" y="-12.7" visible="pin" length="short" direction="pwr"/>
@@ -7879,9 +7879,9 @@ See regular 328 for product references.&lt;/p&gt;</description>
 <connect gate="U1" pin="(ADC3)PA3" pad="10"/>
 <connect gate="U1" pin="(ADC7)PA7" pad="6"/>
 <connect gate="U1" pin="(INT0)PB2" pad="5"/>
-<connect gate="U1" pin="(RX/MISO/ADC5)PA5" pad="8"/>
+<connect gate="U1" pin="(RX/POCI/ADC5)PA5" pad="8"/>
 <connect gate="U1" pin="(SCL/SCK/ADC4)PA4" pad="9"/>
-<connect gate="U1" pin="(TX/SDA/MOSI/ADC6)PA6" pad="7"/>
+<connect gate="U1" pin="(TX/SDA/PICO/ADC6)PA6" pad="7"/>
 <connect gate="U1" pin="(XTAL1)PB0" pad="2"/>
 <connect gate="U1" pin="(XTAL2)PB1" pad="3"/>
 <connect gate="U1" pin="GND" pad="14"/>
@@ -7903,9 +7903,9 @@ See regular 328 for product references.&lt;/p&gt;</description>
 <connect gate="U1" pin="(ADC3)PA3" pad="10"/>
 <connect gate="U1" pin="(ADC7)PA7" pad="6"/>
 <connect gate="U1" pin="(INT0)PB2" pad="5"/>
-<connect gate="U1" pin="(RX/MISO/ADC5)PA5" pad="8"/>
+<connect gate="U1" pin="(RX/POCI/ADC5)PA5" pad="8"/>
 <connect gate="U1" pin="(SCL/SCK/ADC4)PA4" pad="9"/>
-<connect gate="U1" pin="(TX/SDA/MOSI/ADC6)PA6" pad="7"/>
+<connect gate="U1" pin="(TX/SDA/PICO/ADC6)PA6" pad="7"/>
 <connect gate="U1" pin="(XTAL1)PB0" pad="2"/>
 <connect gate="U1" pin="(XTAL2)PB1" pad="3"/>
 <connect gate="U1" pin="GND" pad="14"/>
@@ -7924,9 +7924,9 @@ See regular 328 for product references.&lt;/p&gt;</description>
 <connect gate="U1" pin="(ADC3)PA3" pad="2"/>
 <connect gate="U1" pin="(ADC7)PA7" pad="15"/>
 <connect gate="U1" pin="(INT0)PB2" pad="14"/>
-<connect gate="U1" pin="(RX/MISO/ADC5)PA5" pad="20"/>
+<connect gate="U1" pin="(RX/POCI/ADC5)PA5" pad="20"/>
 <connect gate="U1" pin="(SCL/SCK/ADC4)PA4" pad="1"/>
-<connect gate="U1" pin="(TX/SDA/MOSI/ADC6)PA6" pad="16"/>
+<connect gate="U1" pin="(TX/SDA/PICO/ADC6)PA6" pad="16"/>
 <connect gate="U1" pin="(XTAL1)PB0" pad="11"/>
 <connect gate="U1" pin="(XTAL2)PB1" pad="12"/>
 <connect gate="U1" pin="GND" pad="8"/>
@@ -10659,11 +10659,11 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <connect gate="U1" pin="(A3)3" pad="10"/>
 <connect gate="U1" pin="(A7)7" pad="6"/>
 <connect gate="U1" pin="(A8)8" pad="5"/>
-<connect gate="U1" pin="(CIPO/A5)5" pad="8"/>
 <connect gate="U1" pin="(INT0/XTAL2/A10)9" pad="3"/>
+<connect gate="U1" pin="(POCI/A5)5" pad="8"/>
 <connect gate="U1" pin="(RXD0/A2)2" pad="11"/>
 <connect gate="U1" pin="(SCL/SCK/A4)4" pad="9"/>
-<connect gate="U1" pin="(SDA/COPI/A6)6" pad="7"/>
+<connect gate="U1" pin="(SDA/PICO/A6)6" pad="7"/>
 <connect gate="U1" pin="(TXD0/A1)1" pad="12"/>
 <connect gate="U1" pin="(XTAL1/A11)10" pad="2"/>
 <connect gate="U1" pin="GND" pad="14"/>
@@ -10683,11 +10683,11 @@ This is an interface MCU that runs DAPLink to enable advanced features for the t
 <connect gate="U1" pin="(A3)3" pad="2"/>
 <connect gate="U1" pin="(A7)7" pad="15"/>
 <connect gate="U1" pin="(A8)8" pad="14"/>
-<connect gate="U1" pin="(CIPO/A5)5" pad="20"/>
 <connect gate="U1" pin="(INT0/XTAL2/A10)9" pad="12"/>
+<connect gate="U1" pin="(POCI/A5)5" pad="20"/>
 <connect gate="U1" pin="(RXD0/A2)2" pad="3"/>
 <connect gate="U1" pin="(SCL/SCK/A4)4" pad="1"/>
-<connect gate="U1" pin="(SDA/COPI/A6)6" pad="16"/>
+<connect gate="U1" pin="(SDA/PICO/A6)6" pad="16"/>
 <connect gate="U1" pin="(TXD0/A1)1" pad="4"/>
 <connect gate="U1" pin="(XTAL1/A11)10" pad="11"/>
 <connect gate="U1" pin="GND" pad="8 PAD"/>
@@ -10849,8 +10849,8 @@ The #defines in the ATTinyCore assume controller mode</description>
 <connect gate="G$1" pin="D14" pad="17"/>
 <connect gate="G$1" pin="D2" pad="1"/>
 <connect gate="G$1" pin="D3" pad="2"/>
-<connect gate="G$1" pin="D4/DI/COPI/SDA" pad="3"/>
-<connect gate="G$1" pin="D5/DO/CIPO" pad="4"/>
+<connect gate="G$1" pin="D4/DI/PICO/SDA" pad="3"/>
+<connect gate="G$1" pin="D5/DO/POCI" pad="4"/>
 <connect gate="G$1" pin="D6/SCK/SCL" pad="5"/>
 <connect gate="G$1" pin="D7/SS/INT0" pad="6"/>
 <connect gate="G$1" pin="GND" pad="8 PAD"/>
