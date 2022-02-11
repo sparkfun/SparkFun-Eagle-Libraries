@@ -2451,33 +2451,33 @@ the 3 V variant.&lt;/p&gt;</description>
 </symbol>
 <symbol name="NEO-D9S">
 <description>&lt;h3&gt;u-blox NEO-D9S correction receiver&lt;/h3&gt;</description>
-<wire x1="15.24" y1="17.78" x2="15.24" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-22.86" x2="-15.24" y2="-22.86" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-22.86" x2="-15.24" y2="17.78" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="17.78" x2="15.24" y2="17.78" width="0.254" layer="94"/>
-<pin name="GND" x="-17.78" y="-20.32" length="short" direction="pwr"/>
-<pin name="VCC" x="-17.78" y="15.24" length="short" direction="pwr"/>
-<pin name="!RESET!" x="17.78" y="15.24" length="short" direction="in" rot="R180"/>
-<pin name="EXT_INT" x="17.78" y="12.7" length="short" direction="in" rot="R180"/>
-<pin name="SDA/SPI_!CS!" x="17.78" y="10.16" length="short" rot="R180"/>
-<pin name="SCL/SPI_CLK" x="17.78" y="7.62" length="short" rot="R180"/>
-<pin name="TXD1/SPI_SDO" x="17.78" y="-12.7" length="short" direction="out" rot="R180"/>
-<pin name="RXD1/SPI_SDI" x="17.78" y="-15.24" length="short" direction="in" rot="R180"/>
-<pin name="ANT_OFF" x="-17.78" y="0" length="short" direction="out"/>
-<pin name="V_BKCP" x="-17.78" y="12.7" length="short" direction="pwr"/>
-<pin name="RF_IN" x="-17.78" y="7.62" length="short" direction="in"/>
-<pin name="VCC_RF" x="-17.78" y="5.08" length="short" direction="out"/>
-<pin name="V_USB" x="-17.78" y="-10.16" length="short" direction="pwr"/>
-<pin name="USB_D+" x="-17.78" y="-12.7" length="short"/>
-<pin name="USB_D-" x="-17.78" y="-15.24" length="short"/>
-<pin name="D_SEL" x="17.78" y="-7.62" length="short" direction="in" rot="R180"/>
-<pin name="!SAFEBOOT!" x="17.78" y="-20.32" length="short" direction="in" rot="R180"/>
-<text x="-15.24" y="17.78" size="1.778" layer="95">&gt;Name</text>
-<text x="-15.24" y="-25.4" size="1.778" layer="96">&gt;Value</text>
-<pin name="TXD2" x="17.78" y="0" length="short" direction="out" rot="R180"/>
-<pin name="RXD2" x="17.78" y="-2.54" length="short" direction="in" rot="R180"/>
-<pin name="ANT_DETECT" x="-17.78" y="-2.54" length="short" direction="in"/>
-<pin name="!ANT_SHORT!" x="-17.78" y="-5.08" length="short" direction="out"/>
+<wire x1="12.7" y1="17.78" x2="12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="-12.7" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="17.78" x2="12.7" y2="17.78" width="0.254" layer="94"/>
+<pin name="GND" x="-15.24" y="-17.78" length="short" direction="pwr"/>
+<pin name="VCC" x="-15.24" y="15.24" length="short" direction="pwr"/>
+<pin name="!RESET!" x="15.24" y="15.24" length="short" direction="in" rot="R180"/>
+<pin name="EXT_INT" x="15.24" y="12.7" length="short" direction="in" rot="R180"/>
+<pin name="SDA/!CS!" x="15.24" y="7.62" length="short" rot="R180"/>
+<pin name="SCL/SCK" x="15.24" y="5.08" length="short" rot="R180"/>
+<pin name="TXD1/POCI" x="15.24" y="-7.62" length="short" direction="out" rot="R180"/>
+<pin name="RXD1/PICO" x="15.24" y="-10.16" length="short" direction="in" rot="R180"/>
+<pin name="ANT_OFF" x="-15.24" y="0" length="short" direction="out"/>
+<pin name="V_BKCP" x="-15.24" y="12.7" length="short" direction="pwr"/>
+<pin name="RF_IN" x="-15.24" y="7.62" length="short" direction="in"/>
+<pin name="VCC_RF" x="-15.24" y="5.08" length="short" direction="out"/>
+<pin name="V_USB" x="-15.24" y="-10.16" length="short" direction="pwr"/>
+<pin name="USB_D+" x="-15.24" y="-12.7" length="short"/>
+<pin name="USB_D-" x="-15.24" y="-15.24" length="short"/>
+<pin name="D_SEL" x="15.24" y="-15.24" length="short" direction="in" rot="R180"/>
+<pin name="!SAFEBOOT!" x="15.24" y="-17.78" length="short" direction="in" rot="R180"/>
+<text x="-12.7" y="17.78" size="1.778" layer="95">&gt;Name</text>
+<text x="-12.7" y="-22.86" size="1.778" layer="96">&gt;Value</text>
+<pin name="TXD2" x="15.24" y="0" length="short" direction="out" rot="R180"/>
+<pin name="RXD2" x="15.24" y="-2.54" length="short" direction="in" rot="R180"/>
+<pin name="ANT_DETECT" x="-15.24" y="-2.54" length="short" direction="in"/>
+<pin name="!ANT_SHORT!" x="-15.24" y="-5.08" length="short" direction="out"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3278,11 +3278,11 @@ The NEO-D9S can receive the data stream of a GNSS correction service, broadcast 
 <connect gate="U1" pin="EXT_INT" pad="17"/>
 <connect gate="U1" pin="GND" pad="10 12 13 24"/>
 <connect gate="U1" pin="RF_IN" pad="11"/>
-<connect gate="U1" pin="RXD1/SPI_SDI" pad="21"/>
+<connect gate="U1" pin="RXD1/PICO" pad="21"/>
 <connect gate="U1" pin="RXD2" pad="4"/>
-<connect gate="U1" pin="SCL/SPI_CLK" pad="19"/>
-<connect gate="U1" pin="SDA/SPI_!CS!" pad="18"/>
-<connect gate="U1" pin="TXD1/SPI_SDO" pad="20"/>
+<connect gate="U1" pin="SCL/SCK" pad="19"/>
+<connect gate="U1" pin="SDA/!CS!" pad="18"/>
+<connect gate="U1" pin="TXD1/POCI" pad="20"/>
 <connect gate="U1" pin="TXD2" pad="3"/>
 <connect gate="U1" pin="USB_D+" pad="6"/>
 <connect gate="U1" pin="USB_D-" pad="5"/>
