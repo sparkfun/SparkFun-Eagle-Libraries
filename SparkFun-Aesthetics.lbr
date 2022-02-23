@@ -75841,6 +75841,44 @@ Reference: https://github.com/raspberrypi/hats/blob/master/hat-board-mechanical.
 </package>
 <package name="BLANK">
 </package>
+<package name="PRODUCT_IDENT_NO_NO-SILK">
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<smd name="1" x="-0.0254" y="0" dx="1.6764" dy="1.27" layer="1" cream="no"/>
+</package>
+<package name="PRODUCT_IDENT_NO_SILK">
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="0.8636" y1="-1.016" x2="-0.8636" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="0.8636" y1="1.016" x2="1.1176" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.1176" y1="0.762" x2="-0.8636" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.1176" y1="-0.762" x2="-0.8636" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="0.8636" y1="-1.016" x2="1.1176" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.1176" y1="-0.762" x2="1.1176" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-1.1176" y1="-0.762" x2="-1.1176" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-0.8636" y1="1.016" x2="0.8636" y2="1.016" width="0.1524" layer="21"/>
+<smd name="1" x="-0.0254" y="0" dx="1.6764" dy="1.27" layer="1" cream="no"/>
+</package>
+<package name="PRODUCT_IDENT_PASTE_NO-SILK">
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<smd name="1" x="-0.0254" y="0" dx="1.6764" dy="1.27" layer="1" cream="no"/>
+<rectangle x1="-0.9652" y1="-0.7366" x2="0.9144" y2="0.7366" layer="31"/>
+</package>
+<package name="PRODUCT_IDENT_PASTE_SILK">
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="0.8636" y1="-1.016" x2="-0.8636" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="0.8636" y1="1.016" x2="1.1176" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.1176" y1="0.762" x2="-0.8636" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.1176" y1="-0.762" x2="-0.8636" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="0.8636" y1="-1.016" x2="1.1176" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.1176" y1="-0.762" x2="1.1176" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-1.1176" y1="-0.762" x2="-1.1176" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-0.8636" y1="1.016" x2="0.8636" y2="1.016" width="0.1524" layer="21"/>
+<smd name="1" x="-0.0254" y="0" dx="1.6764" dy="1.27" layer="1" cream="no"/>
+<rectangle x1="-0.9652" y1="-0.7366" x2="0.9144" y2="0.7366" layer="31"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FIDUCIAL">
@@ -100323,6 +100361,17 @@ https://github.com/raspberrypi/hats/blob/master/uhat-board-mechanical.pdf
 <vertex x="-24.6257" y="6.3639"/>
 </polygon>
 </symbol>
+<symbol name="PRODUCT_IDENT_NO">
+<text x="0" y="2.794" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-2.794" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
+<rectangle x1="-1.27" y1="-1.27" x2="1.27" y2="1.27" layer="94"/>
+</symbol>
+<symbol name="PRODUCT_IDENT_PASTE">
+<text x="0" y="2.794" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-2.794" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
+<rectangle x1="-1.27" y1="-1.27" x2="1.27" y2="1.27" layer="94"/>
+<rectangle x1="-2.032" y1="-1.778" x2="2.032" y2="1.778" layer="95"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FIDUCIAL" prefix="FD">
@@ -101255,6 +101304,40 @@ Board logo is .4" by 1.1"
 </technologies>
 </device>
 <device name="_10MM" package="RASPI_RP2040_LOGO_10MM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PROD_ID_NO-PASTE">
+<gates>
+<gate name="G$1" symbol="PRODUCT_IDENT_NO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_NO_SILK" package="PRODUCT_IDENT_NO_NO-SILK">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SILK" package="PRODUCT_IDENT_NO_SILK">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PROD_ID_PASTE">
+<gates>
+<gate name="G$1" symbol="PRODUCT_IDENT_PASTE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_NO-SILK" package="PRODUCT_IDENT_PASTE_NO-SILK">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SILK" package="PRODUCT_IDENT_PASTE_SILK">
 <technologies>
 <technology name=""/>
 </technologies>
