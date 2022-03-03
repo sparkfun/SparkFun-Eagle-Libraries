@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -19,9 +19,9 @@
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -6158,6 +6158,19 @@ The TLC5947 has a thermal shutdown (TSD) function that turns off all output driv
 <text x="-10.16" y="16.002" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="AL8860">
+<wire x1="-7.62" y1="-33.02" x2="-7.62" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="20.32" x2="7.62" y2="20.32" width="0.254" layer="94"/>
+<wire x1="7.62" y1="20.32" x2="7.62" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-33.02" x2="-7.62" y2="-33.02" width="0.254" layer="94"/>
+<pin name="SW" x="12.7" y="-30.48" length="middle" rot="R180"/>
+<pin name="GND" x="-12.7" y="-30.48" length="middle"/>
+<pin name="CTRL" x="-12.7" y="17.78" length="middle"/>
+<pin name="VIN" x="12.7" y="17.78" length="middle" rot="R180"/>
+<pin name="SET" x="12.7" y="2.54" length="middle" rot="R180"/>
+<text x="-7.62" y="22.86" size="1.778" layer="95" rot="MR180">&gt;NAME</text>
+<text x="-7.62" y="-35.56" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="AD5262">
@@ -8198,6 +8211,28 @@ system.
 <technology name="">
 <attribute name="PROD_ID" value="IC-15422"/>
 <attribute name="VALUE" value="MIC94092YC6"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AL8860" prefix="U">
+<description>The AL8860 is a buck LED driver that's used on the PicoBuck and FemtoBuck products. It's a replacement for the AL8805 which has gone EOL.</description>
+<gates>
+<gate name="U1" symbol="AL8860" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT23" package="SOT23-5">
+<connects>
+<connect gate="U1" pin="CTRL" pad="3"/>
+<connect gate="U1" pin="GND" pad="2"/>
+<connect gate="U1" pin="SET" pad="4"/>
+<connect gate="U1" pin="SW" pad="1"/>
+<connect gate="U1" pin="VIN" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-16593" constant="no"/>
 </technology>
 </technologies>
 </device>
