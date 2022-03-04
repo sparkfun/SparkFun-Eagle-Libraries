@@ -71,6 +71,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCopper" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
@@ -135,6 +136,12 @@
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="no"/>
+<layer number="156" name="gesam-Maß" color="1" fill="7" visible="no" active="no"/>
+<layer number="157" name="FaceMchng" color="3" fill="1" visible="no" active="no"/>
+<layer number="158" name="FaceMMeas" color="3" fill="1" visible="no" active="no"/>
+<layer number="159" name="Geh-Bear2" color="1" fill="7" visible="no" active="no"/>
+<layer number="160" name="Topologie" color="9" fill="1" visible="no" active="no"/>
+<layer number="161" name="tomplace2" color="7" fill="1" visible="no" active="no"/>
 <layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
@@ -182,6 +189,8 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="252" name="BR-BS" color="7" fill="1" visible="no" active="no"/>
+<layer number="253" name="Extra" color="7" fill="1" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="no"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="no"/>
 </layers>
@@ -971,6 +980,182 @@ Physical Characteristics
 <rectangle x1="1.1" y1="0.05" x2="2" y2="0.45" layer="29"/>
 <rectangle x1="1.1" y1="-0.45" x2="2" y2="-0.05" layer="29"/>
 <rectangle x1="1.1" y1="-0.95" x2="2" y2="-0.55" layer="29"/>
+</package>
+<package name="14-QFN">
+<description>&lt;b&gt;36-QFN&lt;/b&gt;&lt;br&gt;</description>
+<smd name="1" x="-0.25" y="1.35" dx="0.6" dy="0.25" layer="1" roundness="20" rot="R90" cream="no"/>
+<smd name="2" x="-1.1" y="1" dx="0.6" dy="0.25" layer="1" roundness="20" cream="no"/>
+<smd name="3" x="-1.1" y="0.5" dx="0.6" dy="0.25" layer="1" roundness="20" cream="no"/>
+<smd name="4" x="-1.1" y="0" dx="0.6" dy="0.25" layer="1" roundness="20" cream="no"/>
+<smd name="EPAD" x="0" y="0" dx="1" dy="1.5" layer="1" roundness="20" cream="no"/>
+<text x="0" y="2.54" size="0.8128" layer="25" font="vector" ratio="15" align="center">&gt;NAME</text>
+<text x="0" y="-2.54" size="0.8128" layer="27" ratio="15" align="center">&gt;VALUE</text>
+<wire x1="-1.25" y1="1.5" x2="1.25" y2="1.5" width="0.1" layer="51"/>
+<wire x1="1.25" y1="1.5" x2="1.25" y2="-1.5" width="0.1" layer="51"/>
+<wire x1="1.25" y1="-1.5" x2="-1.25" y2="-1.5" width="0.1" layer="51"/>
+<wire x1="-1.25" y1="-1.5" x2="-1.25" y2="1.5" width="0.1" layer="51"/>
+<wire x1="-1.25" y1="1" x2="-0.75" y2="1.5" width="0.1" layer="51"/>
+<circle x="-1.55" y="1.8" radius="0.0762" width="0.1524" layer="21"/>
+<wire x1="0.75" y1="1.5" x2="1.25" y2="1.5" width="0.1524" layer="21"/>
+<wire x1="1.25" y1="1.5" x2="1.25" y2="1.35" width="0.1524" layer="21"/>
+<wire x1="1.25" y1="-1.35" x2="1.25" y2="-1.5" width="0.1524" layer="21"/>
+<wire x1="-1.25" y1="-1.35" x2="-1.25" y2="-1.5" width="0.1524" layer="21"/>
+<wire x1="-1.25" y1="-1.5" x2="-0.75" y2="-1.5" width="0.1524" layer="21"/>
+<wire x1="0.75" y1="-1.5" x2="1.25" y2="-1.5" width="0.1524" layer="21"/>
+<smd name="5" x="-1.1" y="-0.5" dx="0.6" dy="0.25" layer="1" roundness="20" cream="no"/>
+<smd name="6" x="-1.1" y="-1" dx="0.6" dy="0.25" layer="1" roundness="20" cream="no"/>
+<smd name="7" x="-0.25" y="-1.35" dx="0.6" dy="0.25" layer="1" roundness="20" rot="R90" cream="no"/>
+<smd name="8" x="0.25" y="-1.35" dx="0.6" dy="0.25" layer="1" roundness="20" rot="R90" cream="no"/>
+<smd name="9" x="1.1" y="-1" dx="0.6" dy="0.25" layer="1" roundness="20" cream="no"/>
+<smd name="10" x="1.1" y="-0.5" dx="0.6" dy="0.25" layer="1" roundness="20" rot="R180" cream="no"/>
+<smd name="11" x="1.1" y="0" dx="0.6" dy="0.25" layer="1" roundness="20" rot="R180" cream="no"/>
+<smd name="12" x="1.1" y="0.5" dx="0.6" dy="0.25" layer="1" roundness="20" rot="R180" cream="no"/>
+<smd name="13" x="1.1" y="1" dx="0.6" dy="0.25" layer="1" roundness="20" rot="R180" cream="no"/>
+<smd name="14" x="0.25" y="1.35" dx="0.6" dy="0.25" layer="1" roundness="20" rot="R90" cream="no"/>
+<rectangle x1="-0.4" y1="0.2" x2="0.4" y2="0.6" layer="31"/>
+<rectangle x1="-0.4" y1="-0.6" x2="0.4" y2="-0.2" layer="31"/>
+<wire x1="-1.25" y1="1.5" x2="-0.75" y2="1.5" width="0.1524" layer="21"/>
+<wire x1="-1.25" y1="1.5" x2="-1.25" y2="1.35" width="0.1524" layer="21"/>
+<polygon width="0.025" layer="31">
+<vertex x="-0.3" y="1.625"/>
+<vertex x="-0.2" y="1.625" curve="-90"/>
+<vertex x="-0.15" y="1.575"/>
+<vertex x="-0.15" y="1.175" curve="-90"/>
+<vertex x="-0.2" y="1.125"/>
+<vertex x="-0.3" y="1.125" curve="-90"/>
+<vertex x="-0.35" y="1.175"/>
+<vertex x="-0.35" y="1.575" curve="-90"/>
+</polygon>
+<polygon width="0.025" layer="31">
+<vertex x="-0.2" y="-1.625"/>
+<vertex x="-0.3" y="-1.625" curve="-90"/>
+<vertex x="-0.35" y="-1.575"/>
+<vertex x="-0.35" y="-1.175" curve="-90"/>
+<vertex x="-0.3" y="-1.125"/>
+<vertex x="-0.2" y="-1.125" curve="-90"/>
+<vertex x="-0.15" y="-1.175"/>
+<vertex x="-0.15" y="-1.575" curve="-90"/>
+</polygon>
+<polygon width="0.025" layer="31">
+<vertex x="-1.375" y="-0.05"/>
+<vertex x="-1.375" y="0.05" curve="-90"/>
+<vertex x="-1.325" y="0.1"/>
+<vertex x="-0.925" y="0.1" curve="-90"/>
+<vertex x="-0.875" y="0.05"/>
+<vertex x="-0.875" y="-0.05" curve="-90"/>
+<vertex x="-0.925" y="-0.1"/>
+<vertex x="-1.325" y="-0.1" curve="-90"/>
+</polygon>
+<polygon width="0.025" layer="31">
+<vertex x="-1.375" y="-0.55"/>
+<vertex x="-1.375" y="-0.45" curve="-90"/>
+<vertex x="-1.325" y="-0.4"/>
+<vertex x="-0.925" y="-0.4" curve="-90"/>
+<vertex x="-0.875" y="-0.45"/>
+<vertex x="-0.875" y="-0.55" curve="-90"/>
+<vertex x="-0.925" y="-0.6"/>
+<vertex x="-1.325" y="-0.6" curve="-90"/>
+</polygon>
+<polygon width="0.025" layer="31">
+<vertex x="-1.375" y="0.45"/>
+<vertex x="-1.375" y="0.55" curve="-90"/>
+<vertex x="-1.325" y="0.6"/>
+<vertex x="-0.925" y="0.6" curve="-90"/>
+<vertex x="-0.875" y="0.55"/>
+<vertex x="-0.875" y="0.45" curve="-90"/>
+<vertex x="-0.925" y="0.4"/>
+<vertex x="-1.325" y="0.4" curve="-90"/>
+</polygon>
+<polygon width="0.025" layer="31">
+<vertex x="-1.375" y="-1.05"/>
+<vertex x="-1.375" y="-0.95" curve="-90"/>
+<vertex x="-1.325" y="-0.9"/>
+<vertex x="-0.925" y="-0.9" curve="-90"/>
+<vertex x="-0.875" y="-0.95"/>
+<vertex x="-0.875" y="-1.05" curve="-90"/>
+<vertex x="-0.925" y="-1.1"/>
+<vertex x="-1.325" y="-1.1" curve="-90"/>
+</polygon>
+<polygon width="0.025" layer="31">
+<vertex x="-1.375" y="0.95"/>
+<vertex x="-1.375" y="1.05" curve="-90"/>
+<vertex x="-1.325" y="1.1"/>
+<vertex x="-0.925" y="1.1" curve="-90"/>
+<vertex x="-0.875" y="1.05"/>
+<vertex x="-0.875" y="0.95" curve="-90"/>
+<vertex x="-0.925" y="0.9"/>
+<vertex x="-1.325" y="0.9" curve="-90"/>
+</polygon>
+<polygon width="0.025" layer="31">
+<vertex x="0.875" y="-1.05"/>
+<vertex x="0.875" y="-0.95" curve="-90"/>
+<vertex x="0.925" y="-0.9"/>
+<vertex x="1.325" y="-0.9" curve="-90"/>
+<vertex x="1.375" y="-0.95"/>
+<vertex x="1.375" y="-1.05" curve="-90"/>
+<vertex x="1.325" y="-1.1"/>
+<vertex x="0.925" y="-1.1" curve="-90"/>
+</polygon>
+<polygon width="0.025" layer="31">
+<vertex x="0.875" y="-0.55"/>
+<vertex x="0.875" y="-0.45" curve="-90"/>
+<vertex x="0.925" y="-0.4"/>
+<vertex x="1.325" y="-0.4" curve="-90"/>
+<vertex x="1.375" y="-0.45"/>
+<vertex x="1.375" y="-0.55" curve="-90"/>
+<vertex x="1.325" y="-0.6"/>
+<vertex x="0.925" y="-0.6" curve="-90"/>
+</polygon>
+<polygon width="0.025" layer="31">
+<vertex x="0.875" y="-0.05"/>
+<vertex x="0.875" y="0.05" curve="-90"/>
+<vertex x="0.925" y="0.1"/>
+<vertex x="1.325" y="0.1" curve="-90"/>
+<vertex x="1.375" y="0.05"/>
+<vertex x="1.375" y="-0.05" curve="-90"/>
+<vertex x="1.325" y="-0.1"/>
+<vertex x="0.925" y="-0.1" curve="-90"/>
+</polygon>
+<polygon width="0.025" layer="31">
+<vertex x="0.875" y="0.45"/>
+<vertex x="0.875" y="0.55" curve="-90"/>
+<vertex x="0.925" y="0.6"/>
+<vertex x="1.325" y="0.6" curve="-90"/>
+<vertex x="1.375" y="0.55"/>
+<vertex x="1.375" y="0.45" curve="-90"/>
+<vertex x="1.325" y="0.4"/>
+<vertex x="0.925" y="0.4" curve="-90"/>
+</polygon>
+<polygon width="0.025" layer="31">
+<vertex x="0.875" y="0.95"/>
+<vertex x="0.875" y="1.05" curve="-90"/>
+<vertex x="0.925" y="1.1"/>
+<vertex x="1.325" y="1.1" curve="-90"/>
+<vertex x="1.375" y="1.05"/>
+<vertex x="1.375" y="0.95" curve="-90"/>
+<vertex x="1.325" y="0.9"/>
+<vertex x="0.925" y="0.9" curve="-90"/>
+</polygon>
+<polygon width="0.025" layer="31">
+<vertex x="0.3" y="1.125"/>
+<vertex x="0.2" y="1.125" curve="-90"/>
+<vertex x="0.15" y="1.175"/>
+<vertex x="0.15" y="1.575" curve="-90"/>
+<vertex x="0.2" y="1.625"/>
+<vertex x="0.3" y="1.625" curve="-90"/>
+<vertex x="0.35" y="1.575"/>
+<vertex x="0.35" y="1.175" curve="-90"/>
+</polygon>
+<polygon width="0.025" layer="31">
+<vertex x="0.3" y="-1.625"/>
+<vertex x="0.2" y="-1.625" curve="-90"/>
+<vertex x="0.15" y="-1.575"/>
+<vertex x="0.15" y="-1.175" curve="-90"/>
+<vertex x="0.2" y="-1.125"/>
+<vertex x="0.3" y="-1.125" curve="-90"/>
+<vertex x="0.35" y="-1.175"/>
+<vertex x="0.35" y="-1.575" curve="-90"/>
+</polygon>
 </package>
 </packages>
 <symbols>
@@ -2209,6 +2394,40 @@ The 74LVC2T45 and 74LVCH2T45 are dual bit, dual supply translating transceivers 
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74HC4066_QUAD_BILATERAL_SWITCH">
+<description>&lt;h3&gt;Nexperia Quad Bilateral Switch&lt;/h3&gt;
+&lt;p&gt;The 74HC4066 is a quad single pole, single throw analog switch. Each switch
+features two input/output terminals (nY and nZ) and an active HIGH enable input (nE). When nE is LOW, the analog switch is turned off. Inputs include clamp diodes. This enables the use of current limiting resistors to interface inputs to voltages in excess of VCC.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://assets.nexperia.com/documents/data-sheet/74HC_HCT4066.pdf"&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="MUX_1:1_X4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_QFN" package="14-QFN">
+<connects>
+<connect gate="G$1" pin="1E" pad="13"/>
+<connect gate="G$1" pin="1Y" pad="1"/>
+<connect gate="G$1" pin="1Z" pad="2"/>
+<connect gate="G$1" pin="2E" pad="5"/>
+<connect gate="G$1" pin="2Y" pad="4"/>
+<connect gate="G$1" pin="2Z" pad="3"/>
+<connect gate="G$1" pin="3E" pad="6"/>
+<connect gate="G$1" pin="3Y" pad="8"/>
+<connect gate="G$1" pin="3Z" pad="9"/>
+<connect gate="G$1" pin="4E" pad="12"/>
+<connect gate="G$1" pin="4Y" pad="11"/>
+<connect gate="G$1" pin="4Z" pad="10"/>
+<connect gate="G$1" pin="GND" pad="7 EPAD"/>
+<connect gate="G$1" pin="VCC" pad="14"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-16528" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
