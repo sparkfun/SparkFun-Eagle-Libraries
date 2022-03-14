@@ -53,8 +53,8 @@
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="2" name="Route2" color="63" fill="3" visible="no" active="no"/>
+<layer number="15" name="Route15" color="23" fill="6" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -6152,44 +6152,48 @@ Keepout</text>
 <text x="-7.62" y="-12.065" size="0.508" layer="51" ratio="15" align="center">0.13"</text>
 </package>
 <package name="THING_PLUS">
-<wire x1="-11.43" y1="25.4" x2="11.43" y2="25.4" width="0.127" layer="51"/>
-<wire x1="11.43" y1="25.4" x2="11.43" y2="-25.4" width="0.127" layer="51"/>
-<wire x1="11.43" y1="-25.4" x2="-11.43" y2="-25.4" width="0.127" layer="51"/>
-<wire x1="-11.43" y1="-25.4" x2="-11.43" y2="25.4" width="0.127" layer="51"/>
-<pad name="13" x="10.16" y="19.05" drill="1.016"/>
-<pad name="14" x="10.16" y="16.51" drill="1.016"/>
-<pad name="15" x="10.16" y="13.97" drill="1.016"/>
-<pad name="16" x="10.16" y="11.43" drill="1.016"/>
-<pad name="17" x="10.16" y="8.89" drill="1.016"/>
-<pad name="18" x="10.16" y="6.35" drill="1.016"/>
-<pad name="19" x="10.16" y="3.81" drill="1.016"/>
-<pad name="20" x="10.16" y="1.27" drill="1.016"/>
-<pad name="21" x="10.16" y="-1.27" drill="1.016"/>
-<pad name="22" x="10.16" y="-3.81" drill="1.016"/>
-<pad name="23" x="10.16" y="-6.35" drill="1.016"/>
-<pad name="24" x="10.16" y="-8.89" drill="1.016"/>
-<pad name="25" x="10.16" y="-11.43" drill="1.016"/>
-<pad name="26" x="10.16" y="-13.97" drill="1.016"/>
-<pad name="27" x="10.16" y="-16.51" drill="1.016"/>
-<pad name="28" x="10.16" y="-19.05" drill="1.016"/>
-<pad name="12" x="-10.16" y="-8.89" drill="1.016"/>
-<pad name="11" x="-10.16" y="-6.35" drill="1.016"/>
-<pad name="10" x="-10.16" y="-3.81" drill="1.016"/>
-<pad name="9" x="-10.16" y="-1.27" drill="1.016"/>
-<pad name="8" x="-10.16" y="1.27" drill="1.016"/>
-<pad name="7" x="-10.16" y="3.81" drill="1.016"/>
-<pad name="6" x="-10.16" y="6.35" drill="1.016"/>
-<pad name="5" x="-10.16" y="8.89" drill="1.016"/>
-<pad name="4" x="-10.16" y="11.43" drill="1.016"/>
-<pad name="3" x="-10.16" y="13.97" drill="1.016"/>
-<pad name="2" x="-10.16" y="16.51" drill="1.016"/>
-<pad name="1" x="-10.16" y="19.05" drill="1.016"/>
-<circle x="-8.89" y="22.86" radius="1.27" width="0.127" layer="51"/>
-<circle x="8.89" y="22.86" radius="1.27" width="0.127" layer="51"/>
-<circle x="8.89" y="-22.86" radius="1.27" width="0.127" layer="51"/>
-<circle x="-8.89" y="-22.86" radius="1.27" width="0.127" layer="51"/>
-<text x="-11.43" y="-27.94" size="1.27" layer="25" font="vector">&gt;Name</text>
-<text x="-11.43" y="26.67" size="1.27" layer="27" font="vector">&gt;Value</text>
+<wire x1="0" y1="55.88" x2="2.54" y2="58.42" width="0.127" layer="51" curve="-90"/>
+<wire x1="2.54" y1="58.42" x2="20.32" y2="58.42" width="0.127" layer="51"/>
+<wire x1="20.32" y1="58.42" x2="22.86" y2="55.88" width="0.127" layer="51" curve="-90"/>
+<wire x1="22.86" y1="55.88" x2="22.86" y2="2.54" width="0.127" layer="51"/>
+<wire x1="22.86" y1="2.54" x2="20.32" y2="0" width="0.127" layer="51" curve="-90"/>
+<wire x1="20.32" y1="0" x2="2.54" y2="0" width="0.127" layer="51"/>
+<wire x1="2.54" y1="0" x2="0" y2="2.54" width="0.127" layer="51" curve="-90"/>
+<wire x1="0" y1="2.54" x2="0" y2="55.88" width="0.127" layer="51"/>
+<pad name="13" x="21.59" y="52.07" drill="1.016" diameter="1.8796"/>
+<pad name="14" x="21.59" y="49.53" drill="1.016" diameter="1.8796"/>
+<pad name="15" x="21.59" y="46.99" drill="1.016" diameter="1.8796"/>
+<pad name="16" x="21.59" y="44.45" drill="1.016" diameter="1.8796"/>
+<pad name="17" x="21.59" y="41.91" drill="1.016" diameter="1.8796"/>
+<pad name="18" x="21.59" y="39.37" drill="1.016" diameter="1.8796"/>
+<pad name="19" x="21.59" y="36.83" drill="1.016" diameter="1.8796"/>
+<pad name="20" x="21.59" y="34.29" drill="1.016" diameter="1.8796"/>
+<pad name="21" x="21.59" y="31.75" drill="1.016" diameter="1.8796"/>
+<pad name="22" x="21.59" y="29.21" drill="1.016" diameter="1.8796"/>
+<pad name="23" x="21.59" y="26.67" drill="1.016" diameter="1.8796"/>
+<pad name="24" x="21.59" y="24.13" drill="1.016" diameter="1.8796"/>
+<pad name="25" x="21.59" y="21.59" drill="1.016" diameter="1.8796"/>
+<pad name="26" x="21.59" y="19.05" drill="1.016" diameter="1.8796"/>
+<pad name="27" x="21.59" y="16.51" drill="1.016" diameter="1.8796"/>
+<pad name="28" x="21.59" y="13.97" drill="1.016" diameter="1.8796"/>
+<pad name="12" x="1.27" y="24.13" drill="1.016" diameter="1.8796"/>
+<pad name="11" x="1.27" y="26.67" drill="1.016" diameter="1.8796"/>
+<pad name="10" x="1.27" y="29.21" drill="1.016" diameter="1.8796"/>
+<pad name="9" x="1.27" y="31.75" drill="1.016" diameter="1.8796"/>
+<pad name="8" x="1.27" y="34.29" drill="1.016" diameter="1.8796"/>
+<pad name="7" x="1.27" y="36.83" drill="1.016" diameter="1.8796"/>
+<pad name="6" x="1.27" y="39.37" drill="1.016" diameter="1.8796"/>
+<pad name="5" x="1.27" y="41.91" drill="1.016" diameter="1.8796"/>
+<pad name="4" x="1.27" y="44.45" drill="1.016" diameter="1.8796"/>
+<pad name="3" x="1.27" y="46.99" drill="1.016" diameter="1.8796"/>
+<pad name="2" x="1.27" y="49.53" drill="1.016" diameter="1.8796"/>
+<pad name="1" x="1.27" y="52.07" drill="1.016" diameter="1.8796"/>
+<circle x="2.54" y="55.88" radius="1.651" width="0.127" layer="51"/>
+<circle x="20.32" y="55.88" radius="1.651" width="0.127" layer="51"/>
+<circle x="20.32" y="2.54" radius="1.651" width="0.127" layer="51"/>
+<circle x="2.54" y="2.54" radius="1.651" width="0.127" layer="51"/>
+<text x="0" y="-2.54" size="1.27" layer="25" font="vector">&gt;Name</text>
+<text x="0" y="59.69" size="1.27" layer="27" font="vector">&gt;Value</text>
 </package>
 <package name="NANO">
 <description>Arduino Nano Footprint</description>
@@ -11924,8 +11928,8 @@ Outline</text>
 <pin name="FREE" x="12.7" y="10.16" length="short" rot="R180"/>
 <pin name="TX" x="12.7" y="7.62" length="short" rot="R180"/>
 <pin name="RX" x="12.7" y="5.08" length="short" rot="R180"/>
-<pin name="MISO" x="12.7" y="2.54" length="short" rot="R180"/>
-<pin name="MOSI" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="POCI" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="PICO" x="12.7" y="0" length="short" rot="R180"/>
 <pin name="SCK" x="12.7" y="-2.54" length="short" rot="R180"/>
 <pin name="A5" x="12.7" y="-5.08" length="short" rot="R180"/>
 <pin name="A4" x="12.7" y="-7.62" length="short" rot="R180"/>
@@ -14753,9 +14757,9 @@ PCB footprint compatbile with Big Red Box Enclosure.
 <connect gate="G$1" pin="GPIO4" pad="5"/>
 <connect gate="G$1" pin="GPIO5" pad="4"/>
 <connect gate="G$1" pin="GPIO6" pad="3"/>
-<connect gate="G$1" pin="MISO" pad="16"/>
-<connect gate="G$1" pin="MOSI" pad="17"/>
 <connect gate="G$1" pin="NC" pad="26"/>
+<connect gate="G$1" pin="PICO" pad="17"/>
+<connect gate="G$1" pin="POCI" pad="16"/>
 <connect gate="G$1" pin="RX" pad="15"/>
 <connect gate="G$1" pin="SCK" pad="18"/>
 <connect gate="G$1" pin="SCL" pad="2"/>
