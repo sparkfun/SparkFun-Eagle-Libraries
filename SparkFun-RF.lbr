@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.016" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -12292,6 +12292,79 @@ Power Layers</text>
 <rectangle x1="10.33" y1="-3.88" x2="13.73" y2="-1.68" layer="31" rot="R180"/>
 <rectangle x1="10.33" y1="-6.42" x2="13.73" y2="-4.22" layer="31" rot="R180"/>
 </package>
+<package name="XCVR_DA16200MOD-AAC4WA32">
+<text x="-6.9" y="-13.3" size="1.27" layer="25">&gt;NAME</text>
+<text x="-6.9" y="-13.55" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<circle x="-7.9" y="3.45" radius="0.1" width="0.2" layer="21"/>
+<circle x="-7.9" y="3.45" radius="0.1" width="0.2" layer="51"/>
+<wire x1="-6.9" y1="-11.05" x2="6.9" y2="-11.05" width="0.127" layer="51"/>
+<wire x1="6.9" y1="-11.05" x2="6.9" y2="11.05" width="0.127" layer="51"/>
+<wire x1="6.9" y1="11.05" x2="-6.9" y2="11.05" width="0.127" layer="51"/>
+<wire x1="-6.9" y1="11.05" x2="-6.9" y2="-11.05" width="0.127" layer="51"/>
+<rectangle x1="-7.95" y1="5.85" x2="2.05" y2="11.05" layer="41"/>
+<rectangle x1="-7.95" y1="5.85" x2="2.05" y2="11.05" layer="43"/>
+<polygon width="0.01" layer="42">
+<vertex x="2.05" y="5.85"/>
+<vertex x="-7.95" y="5.85"/>
+<vertex x="-7.95" y="11.05"/>
+<vertex x="-6.95" y="11.05"/>
+<vertex x="-6.95" y="7.35"/>
+<vertex x="2.05" y="7.35"/>
+</polygon>
+<wire x1="6.9" y1="11.05" x2="-6.9" y2="11.05" width="0.127" layer="21"/>
+<wire x1="6.9" y1="6.25" x2="6.9" y2="11.05" width="0.127" layer="21"/>
+<wire x1="-6.9" y1="-11.05" x2="-5.2" y2="-11.05" width="0.127" layer="21"/>
+<wire x1="-6.9" y1="-9.45" x2="-6.9" y2="-11.05" width="0.127" layer="21"/>
+<wire x1="-6.9" y1="6.25" x2="-6.9" y2="11.05" width="0.127" layer="21"/>
+<wire x1="6.9" y1="-9.45" x2="6.9" y2="-11.05" width="0.127" layer="21"/>
+<wire x1="6.9" y1="-11.05" x2="5.2" y2="-11.05" width="0.127" layer="21"/>
+<wire x1="-7.6" y1="-11.75" x2="7.6" y2="-11.75" width="0.05" layer="39"/>
+<wire x1="7.6" y1="-11.75" x2="7.6" y2="11.3" width="0.05" layer="39"/>
+<wire x1="7.6" y1="11.3" x2="-8.2" y2="11.3" width="0.05" layer="39"/>
+<wire x1="-7.6" y1="-11.75" x2="-7.6" y2="5.6" width="0.05" layer="39"/>
+<wire x1="-8.2" y1="11.3" x2="-8.2" y2="5.6" width="0.05" layer="39"/>
+<wire x1="-8.2" y1="5.6" x2="-7.6" y2="5.6" width="0.05" layer="39"/>
+<rectangle x1="-0.8446" y1="-1.9046" x2="2.0646" y2="1.0046" layer="31"/>
+<smd name="13" x="-6.6" y="-8.75" dx="1.5" dy="0.5" layer="1"/>
+<smd name="12" x="-6.6" y="-7.75" dx="1.5" dy="0.5" layer="1"/>
+<smd name="1" x="-6.6" y="3.25" dx="1.5" dy="0.5" layer="1"/>
+<smd name="2" x="-6.6" y="2.25" dx="1.5" dy="0.5" layer="1"/>
+<smd name="3" x="-6.6" y="1.25" dx="1.5" dy="0.5" layer="1"/>
+<smd name="4" x="-6.6" y="0.25" dx="1.5" dy="0.5" layer="1"/>
+<smd name="5" x="-6.6" y="-0.75" dx="1.5" dy="0.5" layer="1"/>
+<smd name="6" x="-6.6" y="-1.75" dx="1.5" dy="0.5" layer="1"/>
+<smd name="7" x="-6.6" y="-2.75" dx="1.5" dy="0.5" layer="1"/>
+<smd name="8" x="-6.6" y="-3.75" dx="1.5" dy="0.5" layer="1"/>
+<smd name="9" x="-6.6" y="-4.75" dx="1.5" dy="0.5" layer="1"/>
+<smd name="10" x="-6.6" y="-5.75" dx="1.5" dy="0.5" layer="1"/>
+<smd name="11" x="-6.6" y="-6.75" dx="1.5" dy="0.5" layer="1"/>
+<smd name="14" x="-4.5" y="-10.75" dx="1.5" dy="0.5" layer="1" rot="R90"/>
+<smd name="15" x="-3.5" y="-10.75" dx="1.5" dy="0.5" layer="1" rot="R90"/>
+<smd name="17" x="-1.5" y="-10.75" dx="1.5" dy="0.5" layer="1" rot="R90"/>
+<smd name="16" x="-2.5" y="-10.75" dx="1.5" dy="0.5" layer="1" rot="R90"/>
+<smd name="18" x="-0.5" y="-10.75" dx="1.5" dy="0.5" layer="1" rot="R90"/>
+<smd name="19" x="0.5" y="-10.75" dx="1.5" dy="0.5" layer="1" rot="R90"/>
+<smd name="20" x="1.5" y="-10.75" dx="1.5" dy="0.5" layer="1" rot="R90"/>
+<smd name="21" x="2.5" y="-10.75" dx="1.5" dy="0.5" layer="1" rot="R90"/>
+<smd name="22" x="3.5" y="-10.75" dx="1.5" dy="0.5" layer="1" rot="R90"/>
+<smd name="23" x="4.5" y="-10.75" dx="1.5" dy="0.5" layer="1" rot="R90"/>
+<smd name="24" x="6.6" y="-8.75" dx="1.5" dy="0.5" layer="1"/>
+<smd name="25" x="6.6" y="-7.75" dx="1.5" dy="0.5" layer="1"/>
+<smd name="26" x="6.6" y="-6.75" dx="1.5" dy="0.5" layer="1"/>
+<smd name="27" x="6.6" y="-5.75" dx="1.5" dy="0.5" layer="1"/>
+<smd name="28" x="6.6" y="-4.75" dx="1.5" dy="0.5" layer="1"/>
+<smd name="29" x="6.6" y="-3.75" dx="1.5" dy="0.5" layer="1"/>
+<smd name="30" x="6.6" y="-2.75" dx="1.5" dy="0.5" layer="1"/>
+<smd name="31" x="6.6" y="-1.75" dx="1.5" dy="0.5" layer="1"/>
+<smd name="32" x="6.6" y="-0.75" dx="1.5" dy="0.5" layer="1"/>
+<smd name="33" x="6.6" y="0.25" dx="1.5" dy="0.5" layer="1"/>
+<smd name="34" x="6.6" y="1.25" dx="1.5" dy="0.5" layer="1"/>
+<smd name="35" x="6.6" y="2.25" dx="1.5" dy="0.5" layer="1"/>
+<smd name="36" x="6.6" y="4.25" dx="1.5" dy="0.5" layer="1"/>
+<smd name="37" x="6.6" y="5.25" dx="1.5" dy="0.5" layer="1"/>
+<smd name="GND" x="0.61" y="-0.45" dx="4.6" dy="4.6" layer="1" cream="no"/>
+<smd name="ANT_GND" x="-2.45" y="9.2" dx="9" dy="3.7" layer="16" stop="no" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="INDUCTIVE_ANTENNA">
@@ -14451,6 +14524,49 @@ Dynamic NFC/RFID tag IC with 4-Kbit, 16-Kbit or 64-Kbit EEPROM, fast transfer mo
 <text x="-12.7" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-12.446" y="19.05" size="1.778" layer="95">&gt;NAME</text>
 <pin name="FLASH_PWR" x="15.24" y="-5.08" visible="pin" length="short" direction="in" rot="R180"/>
+</symbol>
+<symbol name="DA16200MOD-AAC4WA32">
+<text x="-17.78" y="31.75" size="1.778" layer="95">&gt;NAME</text>
+<wire x1="-17.78" y1="30.48" x2="17.78" y2="30.48" width="0.254" layer="94"/>
+<text x="-17.78" y="-34.29" size="1.778" layer="96" align="top-left">&gt;VALUE</text>
+<wire x1="-17.78" y1="-33.02" x2="17.78" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-33.02" x2="-17.78" y2="30.48" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-33.02" x2="17.78" y2="30.48" width="0.254" layer="94"/>
+<pin name="VBAT_3V3" x="20.32" y="27.94" length="short" direction="pwr" rot="R180"/>
+<pin name="VDD_DIO1" x="20.32" y="25.4" length="short" direction="pwr" rot="R180"/>
+<pin name="VDD_DIO2" x="20.32" y="22.86" length="short" direction="pwr" rot="R180"/>
+<pin name="RTC_PWR_KEY" x="-20.32" y="17.78" length="short" direction="in"/>
+<pin name="RTC_WAKE_UP" x="-20.32" y="15.24" length="short" direction="in"/>
+<pin name="RTC_WAKE_UP2" x="-20.32" y="12.7" length="short" direction="in"/>
+<pin name="UART_RXD" x="-20.32" y="5.08" length="short" direction="in"/>
+<pin name="F_CLK" x="-20.32" y="-2.54" length="short" function="clk"/>
+<pin name="F_CSN" x="-20.32" y="-5.08" length="short"/>
+<pin name="F_IO0" x="-20.32" y="-7.62" length="short"/>
+<pin name="F_IO1" x="-20.32" y="-10.16" length="short"/>
+<pin name="F_IO2" x="-20.32" y="-12.7" length="short"/>
+<pin name="F_IO3" x="-20.32" y="-15.24" length="short"/>
+<pin name="GPIOA0" x="20.32" y="17.78" length="short" rot="R180"/>
+<pin name="GPIOA1" x="20.32" y="15.24" length="short" rot="R180"/>
+<pin name="GPIOA10" x="20.32" y="-7.62" length="short" rot="R180"/>
+<pin name="GPIOA11" x="20.32" y="-10.16" length="short" rot="R180"/>
+<pin name="GPIOA2" x="20.32" y="12.7" length="short" rot="R180"/>
+<pin name="GPIOA3" x="20.32" y="10.16" length="short" rot="R180"/>
+<pin name="RTC_SENSOR" x="-20.32" y="10.16" length="short" direction="out"/>
+<pin name="UART_TXD" x="-20.32" y="2.54" length="short" direction="out"/>
+<pin name="GPIOA4" x="20.32" y="7.62" length="short" rot="R180"/>
+<pin name="GPIOA5" x="20.32" y="5.08" length="short" rot="R180"/>
+<pin name="GPIOA6" x="20.32" y="2.54" length="short" rot="R180"/>
+<pin name="GPIOA7" x="20.32" y="0" length="short" rot="R180"/>
+<pin name="GPIOA8" x="20.32" y="-2.54" length="short" rot="R180"/>
+<pin name="GPIOA9" x="20.32" y="-5.08" length="short" rot="R180"/>
+<pin name="GPIOC6" x="20.32" y="-15.24" length="short" rot="R180"/>
+<pin name="GPIOC7" x="20.32" y="-17.78" length="short" rot="R180"/>
+<pin name="GPIOC8" x="20.32" y="-20.32" length="short" rot="R180"/>
+<pin name="JTAG_TCLK" x="-20.32" y="-20.32" length="short" function="clk"/>
+<pin name="JTAG_TMS" x="-20.32" y="-22.86" length="short"/>
+<pin name="NC" x="20.32" y="-25.4" length="short" direction="nc" rot="R180"/>
+<pin name="GND" x="20.32" y="-30.48" length="short" direction="pwr" rot="R180"/>
+<pin name="ANT_GND" x="20.32" y="-27.94" length="short" direction="pwr" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -17907,6 +18023,59 @@ Dynamic NFC/RFID tag IC with 4-Kbit, 16-Kbit or 64-Kbit EEPROM, fast transfer mo
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="SUB-15839" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DA16200MOD-AAC4WA32" prefix="U">
+<description> &lt;a href="https://pricing.snapeda.com/parts/DA16200MOD-AAC4WA32/Dialog%20Semiconductor%20GmbH/view-part?ref=eda"&gt;Check prices&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="DA16200MOD-AAC4WA32" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="XCVR_DA16200MOD-AAC4WA32">
+<connects>
+<connect gate="G$1" pin="ANT_GND" pad="ANT_GND"/>
+<connect gate="G$1" pin="F_CLK" pad="21"/>
+<connect gate="G$1" pin="F_CSN" pad="16"/>
+<connect gate="G$1" pin="F_IO0" pad="19"/>
+<connect gate="G$1" pin="F_IO1" pad="17"/>
+<connect gate="G$1" pin="F_IO2" pad="18"/>
+<connect gate="G$1" pin="F_IO3" pad="20"/>
+<connect gate="G$1" pin="GND" pad="2 GND"/>
+<connect gate="G$1" pin="GPIOA0" pad="33"/>
+<connect gate="G$1" pin="GPIOA1" pad="32"/>
+<connect gate="G$1" pin="GPIOA10" pad="23"/>
+<connect gate="G$1" pin="GPIOA11" pad="22"/>
+<connect gate="G$1" pin="GPIOA2" pad="31"/>
+<connect gate="G$1" pin="GPIOA3" pad="30"/>
+<connect gate="G$1" pin="GPIOA4" pad="29"/>
+<connect gate="G$1" pin="GPIOA5" pad="28"/>
+<connect gate="G$1" pin="GPIOA6" pad="27"/>
+<connect gate="G$1" pin="GPIOA7" pad="26"/>
+<connect gate="G$1" pin="GPIOA8" pad="25"/>
+<connect gate="G$1" pin="GPIOA9" pad="24"/>
+<connect gate="G$1" pin="GPIOC6" pad="11"/>
+<connect gate="G$1" pin="GPIOC7" pad="10"/>
+<connect gate="G$1" pin="GPIOC8" pad="9"/>
+<connect gate="G$1" pin="JTAG_TCLK" pad="8"/>
+<connect gate="G$1" pin="JTAG_TMS" pad="7"/>
+<connect gate="G$1" pin="NC" pad="1 6 36 37"/>
+<connect gate="G$1" pin="RTC_PWR_KEY" pad="3"/>
+<connect gate="G$1" pin="RTC_SENSOR" pad="5"/>
+<connect gate="G$1" pin="RTC_WAKE_UP" pad="4"/>
+<connect gate="G$1" pin="RTC_WAKE_UP2" pad="14"/>
+<connect gate="G$1" pin="UART_RXD" pad="13"/>
+<connect gate="G$1" pin="UART_TXD" pad="12"/>
+<connect gate="G$1" pin="VBAT_3V3" pad="35"/>
+<connect gate="G$1" pin="VDD_DIO1" pad="34"/>
+<connect gate="G$1" pin="VDD_DIO2" pad="15"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-16179"/>
+<attribute name="VALUE" value="DA16200MOD"/>
 </technology>
 </technologies>
 </device>
