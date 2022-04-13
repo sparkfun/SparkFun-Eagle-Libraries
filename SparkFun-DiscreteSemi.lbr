@@ -3657,18 +3657,18 @@ DMC2700 is 1A. SIL2308 is 4A.
 &lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13229”&gt;SparkFun FreeSoC2 Development Board&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G1" symbol="LABELED-PMOS" x="-2.54" y="7.62"/>
-<gate name="G$1" symbol="LABELED-PMOS" x="-2.54" y="-7.62"/>
+<gate name="A" symbol="LABELED-PMOS" x="-2.54" y="7.62"/>
+<gate name="B" symbol="LABELED-PMOS" x="-2.54" y="-7.62"/>
 </gates>
 <devices>
 <device name="-DMP2240UDM" package="SOT26">
 <connects>
-<connect gate="G$1" pin="D" pad="D2"/>
-<connect gate="G$1" pin="G" pad="G2"/>
-<connect gate="G$1" pin="S" pad="S2"/>
-<connect gate="G1" pin="D" pad="D1"/>
-<connect gate="G1" pin="G" pad="G1"/>
-<connect gate="G1" pin="S" pad="S1"/>
+<connect gate="A" pin="D" pad="D1"/>
+<connect gate="A" pin="G" pad="G1"/>
+<connect gate="A" pin="S" pad="S1"/>
+<connect gate="B" pin="D" pad="D2"/>
+<connect gate="B" pin="G" pad="G2"/>
+<connect gate="B" pin="S" pad="S2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -3825,18 +3825,18 @@ DMC2700 is 1A. SIL2308 is 4A.
 &lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13907”&gt;SparkFun ESP32 Thing&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="Q1" symbol="NPN" x="-2.54" y="12.7"/>
-<gate name="Q2" symbol="NPN" x="-2.54" y="-10.16"/>
+<gate name="G1" symbol="NPN" x="-2.54" y="12.7"/>
+<gate name="G2" symbol="NPN" x="-2.54" y="-10.16"/>
 </gates>
 <devices>
 <device name="-MBT3904DW1T1" package="SC70-6">
 <connects>
-<connect gate="Q1" pin="B" pad="5"/>
-<connect gate="Q1" pin="C" pad="3"/>
-<connect gate="Q1" pin="E" pad="4"/>
-<connect gate="Q2" pin="B" pad="2"/>
-<connect gate="Q2" pin="C" pad="6"/>
-<connect gate="Q2" pin="E" pad="1"/>
+<connect gate="G1" pin="B" pad="5"/>
+<connect gate="G1" pin="C" pad="3"/>
+<connect gate="G1" pin="E" pad="4"/>
+<connect gate="G2" pin="B" pad="2"/>
+<connect gate="G2" pin="C" pad="6"/>
+<connect gate="G2" pin="E" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
@@ -3935,18 +3935,18 @@ DMC2700 is 1A. SIL2308 is 4A.
 &lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com”&gt;SparkFun Pi Servo HAT V2&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="PNP" x="0" y="10.16"/>
-<gate name="G$2" symbol="PNP" x="0" y="-10.16"/>
+<gate name="G1" symbol="PNP" x="0" y="10.16"/>
+<gate name="G2" symbol="PNP" x="0" y="-10.16"/>
 </gates>
 <devices>
 <device name="SOT-363" package="SOT363_PHILIPS">
 <connects>
-<connect gate="G$1" pin="B" pad="2"/>
-<connect gate="G$1" pin="C" pad="6"/>
-<connect gate="G$1" pin="E" pad="1"/>
-<connect gate="G$2" pin="B" pad="5"/>
-<connect gate="G$2" pin="C" pad="3"/>
-<connect gate="G$2" pin="E" pad="4"/>
+<connect gate="G1" pin="B" pad="2"/>
+<connect gate="G1" pin="C" pad="6"/>
+<connect gate="G1" pin="E" pad="1"/>
+<connect gate="G2" pin="B" pad="5"/>
+<connect gate="G2" pin="C" pad="3"/>
+<connect gate="G2" pin="E" pad="4"/>
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:29757/2"/>
