@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -10632,6 +10632,36 @@ read, as well as embedded engines for orientation, Directional-TapTM/DoubleTapTM
 <vertex x="0.3" y="-0.125"/>
 </polygon>
 </package>
+<package name="TMF882X">
+<description>&lt;h3&gt;OLGA12&lt;/h3&gt;
+&lt;p&gt;Mechanical Specifications:
+&lt;ul&gt;
+&lt;li&gt;Pad Size:.5mm x .3mm&lt;/li&gt;
+&lt;li&gt;Pin count: 12&lt;/li&gt;
+&lt;li&gt;Pin pitch: .82mm&lt;/li&gt;
+&lt;li&gt;Package Size: 1.4mm x 2mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://ams.com/documents/20143/6015057/TMF882X_DS000693_4-00.pdf”&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<smd name="P1" x="-0.6858" y="2.032" dx="0.5" dy="0.35" layer="1"/>
+<smd name="P2" x="-0.6858" y="1.212" dx="0.5" dy="0.35" layer="1"/>
+<smd name="P3" x="-0.6858" y="0.392" dx="0.5" dy="0.35" layer="1"/>
+<smd name="P4" x="-0.6858" y="-0.428" dx="0.5" dy="0.35" layer="1"/>
+<smd name="P5" x="-0.6858" y="-1.248" dx="0.5" dy="0.35" layer="1"/>
+<smd name="P6" x="-0.6858" y="-2.068" dx="0.5" dy="0.35" layer="1"/>
+<smd name="P7" x="0.6642" y="-2.068" dx="0.5" dy="0.35" layer="1"/>
+<smd name="P8" x="0.6642" y="-1.248" dx="0.5" dy="0.35" layer="1"/>
+<smd name="P9" x="0.6642" y="-0.428" dx="0.5" dy="0.35" layer="1"/>
+<smd name="P10" x="0.6642" y="0.392" dx="0.5" dy="0.35" layer="1"/>
+<smd name="P11" x="0.6642" y="1.212" dx="0.5" dy="0.35" layer="1"/>
+<smd name="P12" x="0.6642" y="2.032" dx="0.5" dy="0.35" layer="1"/>
+<text x="-1.0414" y="2.4638" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.016" y="-3.0226" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<wire x1="-0.9652" y1="-2.3114" x2="0.9398" y2="-2.3114" width="0.127" layer="51"/>
+<wire x1="0.9398" y1="-2.3114" x2="0.9398" y2="2.2606" width="0.127" layer="51"/>
+<wire x1="0.9398" y1="2.2606" x2="-0.9652" y2="2.2606" width="0.127" layer="51"/>
+<wire x1="-0.9652" y1="2.2606" x2="-0.9652" y2="-2.3114" width="0.127" layer="51"/>
+<circle x="-1.3462" y="2.7178" radius="0.26150625" width="0" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADMP401">
@@ -12854,6 +12884,22 @@ VD6283 light measurement is fast and accurate thanks to an individual ADC and a 
 <wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
 <text x="-7.62" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="TMF882X">
+<pin name="VCC" x="-12.7" y="5.08" length="short" direction="pwr"/>
+<pin name="GND" x="-12.7" y="-5.08" length="short" direction="pwr"/>
+<pin name="GPIO0" x="10.16" y="2.54" length="short" rot="R180"/>
+<pin name="GPIO1" x="10.16" y="0" length="short" rot="R180"/>
+<pin name="SDA" x="10.16" y="-5.08" length="short" rot="R180"/>
+<pin name="SCL" x="10.16" y="-2.54" length="short" rot="R180"/>
+<pin name="!INT!" x="10.16" y="5.08" length="short" rot="R180"/>
+<pin name="EN" x="-12.7" y="0" length="short" direction="in"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="-10.16" y="8.128" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-10.16" y="-10.16" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -16586,6 +16632,58 @@ VD6283TX light measurement is fast and accurate thanks to an individual ADC and 
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-16459" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TMF882X" prefix="U">
+<description>&lt;h3&gt;AMS TMF882x Direct Time of Flight Sensor&lt;/h3&gt;
+&lt;p&gt;The TMF8820/21 is a direct time-of-flight (dToF) sensor in a single modular package with
+associated VCSEL. The dToF device is based on SPAD, TDC and histogram technology and achieves
+5000 mm detection range. Due to its lens on the SPAD, it supports 3x3, 4x4, and 3x6 multizone
+output data and a very wide, dynamically adjustable, field of view. A multi-lens-array (MLA) inside the
+package above the VCSEL widens up the FoI (field of illumination). All processing of the raw data is
+performed on-chip and the TMF8820/21 provide distance information together with confidence
+values on its I2C interface.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=”https://ams.com/documents/20143/6015057/TMF882X_DS000693_4-00.pdf”&gt;Datasheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://learn.sparkfun.com/tutorials/qwiic-dtof-imager-tmf882x-hookup-guide/all?print=1”&gt;Hookup Guide&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="TMF882X" x="-6.35" y="-5.08"/>
+</gates>
+<devices>
+<device name="_TMF8820" package="TMF882X">
+<connects>
+<connect gate="G$1" pin="!INT!" pad="P4"/>
+<connect gate="G$1" pin="EN" pad="P9"/>
+<connect gate="G$1" pin="GND" pad="P2 P8 P11"/>
+<connect gate="G$1" pin="GPIO0" pad="P3"/>
+<connect gate="G$1" pin="GPIO1" pad="P10"/>
+<connect gate="G$1" pin="SCL" pad="P5"/>
+<connect gate="G$1" pin="SDA" pad="P6"/>
+<connect gate="G$1" pin="VCC" pad="P1 P7 P12"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-16432" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_TMF8821" package="TMF882X">
+<connects>
+<connect gate="G$1" pin="!INT!" pad="P4"/>
+<connect gate="G$1" pin="EN" pad="P9"/>
+<connect gate="G$1" pin="GND" pad="P2 P8 P11"/>
+<connect gate="G$1" pin="GPIO0" pad="P3"/>
+<connect gate="G$1" pin="GPIO1" pad="P10"/>
+<connect gate="G$1" pin="SCL" pad="P5"/>
+<connect gate="G$1" pin="SDA" pad="P6"/>
+<connect gate="G$1" pin="VCC" pad="P1 P7 P12"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-16433" constant="no"/>
 </technology>
 </technologies>
 </device>
