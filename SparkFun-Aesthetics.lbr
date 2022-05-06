@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -43,7 +43,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="13" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -71,6 +71,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
@@ -181,6 +182,7 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="253" name="Extra" color="7" fill="1" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="no"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="no"/>
 </layers>
@@ -75878,6 +75880,17 @@ Reference: https://github.com/raspberrypi/hats/blob/master/hat-board-mechanical.
 <wire x1="-0.8636" y1="1.016" x2="0.8636" y2="1.016" width="0.2032" layer="21"/>
 <smd name="1" x="-0.0254" y="0" dx="1.6764" dy="1.27" layer="1" cream="no"/>
 <rectangle x1="-0.9652" y1="-0.7366" x2="0.9144" y2="0.7366" layer="31"/>
+</package>
+<package name="POLARITY_MARKING_CENTER_POSITIVE#JPG">
+<wire x1="-1.5748" y1="0" x2="-0.6604" y2="0" width="0.1524" layer="21"/>
+<wire x1="0.2032" y1="0" x2="1.6002" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.9304" y1="0" x2="2.5654" y2="0" width="0.1524" layer="21"/>
+<wire x1="2.2606" y1="0.3302" x2="2.2606" y2="-0.3048" width="0.1524" layer="21"/>
+<circle x="2.2606" y="0" radius="0.6604" width="0.1524" layer="21"/>
+<circle x="0" y="0" radius="0.15009375" width="0.4064" layer="21"/>
+<wire x1="0.5334" y1="0.4318" x2="0.4826" y2="-0.4572" width="0.1524" layer="21" curve="276.630044"/>
+<wire x1="-2.54" y1="0" x2="-1.9558" y2="0" width="0.1524" layer="21"/>
+<circle x="-2.2352" y="0" radius="0.6604" width="0.1524" layer="21"/>
 </package>
 </packages>
 <symbols>
