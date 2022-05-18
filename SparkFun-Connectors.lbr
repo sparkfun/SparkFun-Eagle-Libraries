@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -25,7 +25,7 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -136,6 +136,12 @@
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="no"/>
+<layer number="156" name="gesam-Maß" color="7" fill="1" visible="no" active="no"/>
+<layer number="157" name="FaceMchng" color="7" fill="1" visible="no" active="no"/>
+<layer number="158" name="FaceMMeas" color="7" fill="1" visible="no" active="no"/>
+<layer number="159" name="Geh-Bear2" color="7" fill="1" visible="no" active="no"/>
+<layer number="160" name="Topologie" color="7" fill="1" visible="no" active="no"/>
+<layer number="161" name="tomplace2" color="7" fill="1" visible="no" active="no"/>
 <layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
@@ -183,6 +189,7 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="252" name="BR-BS" color="7" fill="1" visible="no" active="no"/>
 <layer number="253" name="Extra" color="7" fill="1" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="no"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="no"/>
@@ -39390,6 +39397,35 @@ Made for the small  &lt;a href="https://www.sparkfun.com/products/18221"&gt; 1mm
 <text x="-1.27" y="-1.778" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 </package>
+<package name="FPC_6_1MM-LIF">
+<wire x1="0" y1="-1.95" x2="0" y2="-1.25" width="0.05" layer="51"/>
+<wire x1="0" y1="-1.25" x2="0.2" y2="-1.45" width="0.05" layer="51"/>
+<wire x1="0" y1="-1.25" x2="-0.2" y2="-1.45" width="0.05" layer="51"/>
+<wire x1="-4" y1="2" x2="4" y2="2" width="0.0508" layer="51"/>
+<wire x1="4" y1="2" x2="4" y2="-3" width="0.0508" layer="51"/>
+<wire x1="4" y1="-3" x2="4" y2="-3.75" width="0.0508" layer="51"/>
+<wire x1="4" y1="-3.75" x2="-4" y2="-3.75" width="0.0508" layer="51"/>
+<wire x1="-4" y1="-3.75" x2="-4" y2="-3" width="0.0508" layer="51"/>
+<wire x1="-4" y1="-3" x2="-4" y2="2" width="0.0508" layer="51"/>
+<wire x1="-3.429" y1="1.984" x2="-4.064" y2="1.984" width="0.2032" layer="21"/>
+<wire x1="-4.064" y1="1.984" x2="-4.064" y2="-2.88" width="0.2032" layer="21"/>
+<wire x1="4.064" y1="1.984" x2="3.429" y2="1.984" width="0.2032" layer="21"/>
+<wire x1="4.064" y1="1.984" x2="4.064" y2="-2.88" width="0.2032" layer="21"/>
+<wire x1="-4" y1="-3" x2="4" y2="-3" width="0.0508" layer="51"/>
+<rectangle x1="-2.65" y1="2.05" x2="-2.35" y2="3.75" layer="51"/>
+<rectangle x1="-1.65" y1="2.05" x2="-1.35" y2="3.75" layer="51"/>
+<rectangle x1="-0.65" y1="2.05" x2="-0.35" y2="3.75" layer="51"/>
+<rectangle x1="0.35" y1="2.05" x2="0.65" y2="3.75" layer="51"/>
+<rectangle x1="1.35" y1="2.05" x2="1.65" y2="3.75" layer="51"/>
+<rectangle x1="2.35" y1="2.05" x2="2.65" y2="3.75" layer="51"/>
+<smd name="1" x="-2.5" y="3" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="2" x="-1.5" y="3" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="3" x="-0.5" y="3" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="4" x="0.5" y="3" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="5" x="1.5" y="3" dx="2" dy="0.6" layer="1" rot="R90"/>
+<smd name="6" x="2.5" y="3" dx="2" dy="0.6" layer="1" rot="R90"/>
+<text x="0" y="-2.25" size="0.2" layer="51" align="center">Ribbon Insert</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -44923,17 +44959,17 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 &lt;p&gt;&lt;/p&gt;
 &lt;/ul&gt;</description>
 <gates>
-<gate name="G$1" symbol="CONN_06" x="-2.54" y="0"/>
+<gate name="JP1" symbol="CONN_06" x="-2.54" y="0"/>
 </gates>
 <devices>
 <device name="SILK_FEMALE_PTH" package="1X06">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name="">
@@ -44943,12 +44979,12 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </device>
 <device name="POLAR" package="MOLEX-1X6">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -44956,12 +44992,12 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </device>
 <device name="RA" package="MOLEX-1X6-RA">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -44969,12 +45005,12 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </device>
 <device name="SMD" package="1X06-SMD_RA_MALE">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name="">
@@ -44985,12 +45021,12 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </device>
 <device name="LOCK" package="1X06_LOCK">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -44998,12 +45034,12 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </device>
 <device name="LOCK_LONGPADS" package="1X06_LOCK_LONGPADS">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -45011,12 +45047,12 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </device>
 <device name="POLAR_LOCK" package="MOLEX-1X6_LOCK">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -45024,12 +45060,12 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </device>
 <device name="RA_LOCK" package="MOLEX_1X6_RA_LOCK">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -45037,12 +45073,12 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </device>
 <device name="FEMALE_LOCK" package="1X06_FEMALE_LOCK.010">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -45050,12 +45086,12 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </device>
 <device name="LONGPADS" package="1X06_LONGPADS">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -45063,12 +45099,12 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </device>
 <device name="3.5MM-6" package="SCREWTERMINAL-3.5MM-6">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name="">
@@ -45078,12 +45114,12 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </device>
 <device name="SMD-FEMALE-V2" package="1X06-SMD-FEMALE">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name="">
@@ -45093,12 +45129,12 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </device>
 <device name="POGOPIN_HOLES_ONLY" package="1X06_HOLES_ONLY">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name="">
@@ -45108,12 +45144,12 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </device>
 <device name="SMD-STRAIGHT-FEMALE" package="1X06_SMD_STRAIGHT">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name="">
@@ -45123,12 +45159,12 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </device>
 <device name="SMD-STRAIGHT-ALT-FEMALE" package="1X06_SMD_STRAIGHT_ALT">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name="">
@@ -45138,12 +45174,12 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </device>
 <device name="SMD-STRAIGHT-COMBO-FEMALE" package="1X06_SMD_STRAIGHT_COMBO">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name="">
@@ -45153,12 +45189,12 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </device>
 <device name="SMD_MALE" package="1X06_SMD_MALE">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name="">
@@ -45168,12 +45204,12 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </device>
 <device name="SMD-1MM" package="1X06-1MM">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name="">
@@ -45184,12 +45220,12 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </device>
 <device name="NO_SILK_FEMALE_PTH" package="1X06_NO_SILK">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name="">
@@ -45199,12 +45235,12 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </device>
 <device name="1.27MM" package="1X06_1.27MM">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -45212,12 +45248,12 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </device>
 <device name="NO_SILK_NO_POP" package="1X06_NO_SILK">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -45225,12 +45261,12 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </device>
 <device name="2.5MM-6-90" package="1X06_SCREW_TERMINAL_BLOCK">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -45238,16 +45274,31 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </device>
 <device name="JST-SMD-LOCKING" package="JST-6-SMD-1.25MM-LOCKING">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
 </connects>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="CONN-16497" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="1MM-LIF" package="FPC_6_1MM-LIF">
+<connects>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-16692" constant="no"/>
 </technology>
 </technologies>
 </device>
