@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -13713,14 +13713,14 @@ PATENTS PENDING 04.01.2015&lt;br/&gt;&lt;/p&gt;</description>
 <pin name="DAC2/IOA26" x="17.78" y="-15.24" length="short" rot="R180"/>
 <pin name="IOA27" x="17.78" y="-17.78" length="short" rot="R180"/>
 <pin name="SCK2/IOA14" x="17.78" y="7.62" length="short" rot="R180"/>
-<pin name="MISO2/IOA12" x="17.78" y="20.32" length="short" rot="R180"/>
-<pin name="MOSI2/IOA13" x="17.78" y="10.16" length="short" rot="R180"/>
-<pin name="MOSI3/IO23" x="17.78" y="-10.16" length="short" rot="R180"/>
+<pin name="POCI2/IOA12" x="17.78" y="20.32" length="short" rot="R180"/>
+<pin name="PICO2/IOA13" x="17.78" y="10.16" length="short" rot="R180"/>
+<pin name="PICO3/IO23" x="17.78" y="-10.16" length="short" rot="R180"/>
 <pin name="SCL/IO22" x="17.78" y="-7.62" length="short" rot="R180"/>
 <pin name="TX-IO1" x="17.78" y="35.56" length="short" rot="R180"/>
 <pin name="RX-IO3" x="17.78" y="33.02" length="short" rot="R180"/>
 <pin name="SDA/IO21" x="17.78" y="-5.08" length="short" rot="R180"/>
-<pin name="MISO3/IO19" x="17.78" y="-2.54" length="short" rot="R180"/>
+<pin name="POCI3/IO19" x="17.78" y="-2.54" length="short" rot="R180"/>
 <pin name="SCK3/IO18" x="17.78" y="0" length="short" rot="R180"/>
 <pin name="CS3/IO5" x="17.78" y="22.86" length="short" rot="R180"/>
 <pin name="IO17" x="17.78" y="2.54" length="short" rot="R180"/>
@@ -16608,10 +16608,10 @@ Includes both "standard" footprints and "narrow" version (for use with tighter l
 <connect gate="U1" pin="IOA2" pad="24"/>
 <connect gate="U1" pin="IOA27" pad="12"/>
 <connect gate="U1" pin="IOA4" pad="26"/>
-<connect gate="U1" pin="MISO2/IOA12" pad="14"/>
-<connect gate="U1" pin="MISO3/IO19" pad="31"/>
-<connect gate="U1" pin="MOSI2/IOA13" pad="16"/>
-<connect gate="U1" pin="MOSI3/IO23" pad="37"/>
+<connect gate="U1" pin="PICO2/IOA13" pad="16"/>
+<connect gate="U1" pin="PICO3/IO23" pad="37"/>
+<connect gate="U1" pin="POCI2/IOA12" pad="14"/>
+<connect gate="U1" pin="POCI3/IO19" pad="31"/>
 <connect gate="U1" pin="RX-IO3" pad="34"/>
 <connect gate="U1" pin="SCK2/IOA14" pad="13"/>
 <connect gate="U1" pin="SCK3/IO18" pad="30"/>
@@ -16646,10 +16646,10 @@ Includes both "standard" footprints and "narrow" version (for use with tighter l
 <connect gate="U1" pin="IOA2" pad="24"/>
 <connect gate="U1" pin="IOA27" pad="12"/>
 <connect gate="U1" pin="IOA4" pad="26"/>
-<connect gate="U1" pin="MISO2/IOA12" pad="14"/>
-<connect gate="U1" pin="MISO3/IO19" pad="31"/>
-<connect gate="U1" pin="MOSI2/IOA13" pad="16"/>
-<connect gate="U1" pin="MOSI3/IO23" pad="37"/>
+<connect gate="U1" pin="PICO2/IOA13" pad="16"/>
+<connect gate="U1" pin="PICO3/IO23" pad="37"/>
+<connect gate="U1" pin="POCI2/IOA12" pad="14"/>
+<connect gate="U1" pin="POCI3/IO19" pad="31"/>
 <connect gate="U1" pin="RX-IO3" pad="34"/>
 <connect gate="U1" pin="SCK2/IOA14" pad="13"/>
 <connect gate="U1" pin="SCK3/IO18" pad="30"/>
@@ -16684,10 +16684,10 @@ Includes both "standard" footprints and "narrow" version (for use with tighter l
 <connect gate="U1" pin="IOA2" pad="24"/>
 <connect gate="U1" pin="IOA27" pad="12"/>
 <connect gate="U1" pin="IOA4" pad="26"/>
-<connect gate="U1" pin="MISO2/IOA12" pad="14"/>
-<connect gate="U1" pin="MISO3/IO19" pad="31"/>
-<connect gate="U1" pin="MOSI2/IOA13" pad="16"/>
-<connect gate="U1" pin="MOSI3/IO23" pad="37"/>
+<connect gate="U1" pin="PICO2/IOA13" pad="16"/>
+<connect gate="U1" pin="PICO3/IO23" pad="37"/>
+<connect gate="U1" pin="POCI2/IOA12" pad="14"/>
+<connect gate="U1" pin="POCI3/IO19" pad="31"/>
 <connect gate="U1" pin="RX-IO3" pad="34"/>
 <connect gate="U1" pin="SCK2/IOA14" pad="13"/>
 <connect gate="U1" pin="SCK3/IO18" pad="30"/>
@@ -16722,10 +16722,10 @@ Includes both "standard" footprints and "narrow" version (for use with tighter l
 <connect gate="U1" pin="IOA2" pad="24"/>
 <connect gate="U1" pin="IOA27" pad="12"/>
 <connect gate="U1" pin="IOA4" pad="26"/>
-<connect gate="U1" pin="MISO2/IOA12" pad="14"/>
-<connect gate="U1" pin="MISO3/IO19" pad="31"/>
-<connect gate="U1" pin="MOSI2/IOA13" pad="16"/>
-<connect gate="U1" pin="MOSI3/IO23" pad="37"/>
+<connect gate="U1" pin="PICO2/IOA13" pad="16"/>
+<connect gate="U1" pin="PICO3/IO23" pad="37"/>
+<connect gate="U1" pin="POCI2/IOA12" pad="14"/>
+<connect gate="U1" pin="POCI3/IO19" pad="31"/>
 <connect gate="U1" pin="RX-IO3" pad="34"/>
 <connect gate="U1" pin="SCK2/IOA14" pad="13"/>
 <connect gate="U1" pin="SCK3/IO18" pad="30"/>
