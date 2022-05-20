@@ -2139,6 +2139,11 @@ SOIC, 0.3 inch width</description>
 <vertex x="1.865" y="-1.47"/>
 </polygon>
 <circle x="-2.84" y="-1.47" radius="0.254" width="0" layer="21"/>
+<rectangle x1="0.105" y1="0.1" x2="1.435" y2="1.02" layer="31"/>
+<rectangle x1="-1.435" y1="0.1" x2="-0.105" y2="1.02" layer="31"/>
+<rectangle x1="0.105" y1="-1.02" x2="1.435" y2="-0.1" layer="31"/>
+<rectangle x1="-1.435" y1="-1.02" x2="-0.105" y2="-0.1" layer="31"/>
+<smd name="EPAD" x="0" y="0" dx="3.05" dy="2.05" layer="1" cream="no"/>
 </package>
 <package name="MSOP10">
 <wire x1="-1.4" y1="1.425" x2="-1.4" y2="-1.425" width="0.127" layer="51"/>
@@ -2939,6 +2944,7 @@ Physical Characteristics
 <wire x1="-10.16" y1="-15.24" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
 <text x="-10.16" y="-16.51" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
 <text x="-10.16" y="13.97" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<pin name="EPAD" x="0" y="-17.78" length="short" rot="R90"/>
 </symbol>
 <symbol name="STN1110-QFN">
 <wire x1="-30.48" y1="30.48" x2="30.48" y2="30.48" width="0.254" layer="94"/>
@@ -4364,6 +4370,7 @@ A =&gt; B : DIR = VCCA</text>
 <connect gate="G$1" pin="B6" pad="14"/>
 <connect gate="G$1" pin="B7" pad="13"/>
 <connect gate="G$1" pin="B8" pad="12"/>
+<connect gate="G$1" pin="EPAD" pad="EPAD"/>
 <connect gate="G$1" pin="GND" pad="11"/>
 <connect gate="G$1" pin="OE" pad="10"/>
 <connect gate="G$1" pin="VCCA" pad="2"/>
