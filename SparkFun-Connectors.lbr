@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -33,9 +33,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -26261,7 +26261,7 @@ Reversed pinout to match Raspberry Pi male header pinout when coupled.</descript
 <wire x1="-5.05" y1="-10.35" x2="-5.05" y2="-11.85" width="0.2032" layer="51"/>
 <wire x1="4.7" y1="-1.75" x2="4.7" y2="3.15" width="0.2032" layer="51"/>
 <wire x1="-5.05" y1="-10.35" x2="5.85" y2="-10.35" width="0.2032" layer="51"/>
-<rectangle x1="-4.484" y1="-1.984" x2="4.052" y2="1.926" layer="39"/>
+<rectangle x1="-4.484" y1="-1.984" x2="4.052" y2="1.926" layer="41"/>
 <smd name="1" x="3.55" y="-3.85" dx="1" dy="0.5" layer="1" rot="R90"/>
 <smd name="2" x="2.45" y="-3.85" dx="1" dy="0.5" layer="1" rot="R90"/>
 <smd name="3" x="1.35" y="-3.85" dx="1" dy="0.5" layer="1" rot="R90"/>
@@ -26280,6 +26280,7 @@ Reversed pinout to match Raspberry Pi male header pinout when coupled.</descript
 <text x="0" y="-7" size="1" layer="51" ratio="15" align="center">uSD</text>
 <text x="-2.54" y="0" size="0.8128" layer="25">&gt;Name</text>
 <text x="-2.54" y="-1.27" size="0.8128" layer="27">&gt;Value</text>
+<rectangle x1="-4.484" y1="-1.984" x2="4.052" y2="1.926" layer="41"/>
 </package>
 <package name="USB-MICROB-PTH-MILL">
 <smd name="SHIELD7" x="2.72858125" y="-2.53091875" dx="2.1" dy="1.4" layer="16" roundness="100" rot="R90" stop="no" cream="no"/>
