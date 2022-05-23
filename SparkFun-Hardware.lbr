@@ -1637,14 +1637,15 @@ The "no copper" versions provide complete isolation around the hole.</descriptio
 <description>&lt;h3&gt;Stand Off Reflow Compatible&lt;/h3&gt;
 &lt;p&gt;A metal standoff that can be placed and reflowed onto a PCB.&lt;/p&gt;
 &lt;p&gt;The M2.5 x 2.5mm variant is used on MicroMod.&lt;/p&gt;
+&lt;p&gt;The M2.5 x 1.5mm variant is used to hold mPCIe boards, including the Swarm M138.&lt;/p&gt;
 &lt;p&gt;The M2.0 x 6.0mm variant is used to mount the Iridium 9603N modem.&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="STAND-OFF-REFLOW" x="0" y="0"/>
+<gate name="G1" symbol="STAND-OFF-REFLOW" x="0" y="0"/>
 </gates>
 <devices>
 <device name="-M2.5_2.5MM_TALL" package="STAND-OFF-REFLOW-M2.5">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G1" pin="1" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1654,7 +1655,7 @@ The "no copper" versions provide complete isolation around the hole.</descriptio
 </device>
 <device name="-M2.0_6.0MM_TALL" package="STAND-OFF-REFLOW-M2.0">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G1" pin="1" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1664,7 +1665,7 @@ The "no copper" versions provide complete isolation around the hole.</descriptio
 </device>
 <device name="-M3.0_15.0MM_TALL" package="STAND-OFF-REFLOW-M3.0">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G1" pin="1" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1674,7 +1675,7 @@ The "no copper" versions provide complete isolation around the hole.</descriptio
 </device>
 <device name="-M2.0_5.0MM_TALL" package="STAND-OFF-REFLOW-M2.0">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G1" pin="1" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1684,11 +1685,21 @@ The "no copper" versions provide complete isolation around the hole.</descriptio
 </device>
 <device name="-M3.0_5.0MM_TALL" package="STAND-OFF-REFLOW-M3.0">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G1" pin="1" pad="1"/>
 </connects>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="HW-16213" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-M2.5_1.5MM_TALL" package="STAND-OFF-REFLOW-M2.5">
+<connects>
+<connect gate="G1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="HW-16629" constant="no"/>
 </technology>
 </technologies>
 </device>
