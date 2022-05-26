@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2535,6 +2535,30 @@ Pasted was reduced by 40% width on the center ground pad, and some amount on the
 <wire x1="3.81" y1="-3.81" x2="-3.81" y2="-3.81" width="0.1524" layer="51"/>
 <wire x1="-3.81" y1="-3.81" x2="-3.81" y2="3.81" width="0.1524" layer="51"/>
 </package>
+<package name="SC-70-6">
+<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.1524" layer="21"/>
+<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.1524" layer="21"/>
+<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.1524" layer="51"/>
+<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.1524" layer="51"/>
+<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.1524" layer="51"/>
+<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.1524" layer="51"/>
+<rectangle x1="-0.1125" y1="-1" x2="0.1125" y2="-0.8" layer="51"/>
+<rectangle x1="-0.1125" y1="0.8" x2="0.1125" y2="1" layer="51"/>
+<rectangle x1="-0.7625" y1="-1" x2="-0.5375" y2="-0.8" layer="51"/>
+<rectangle x1="-0.7625" y1="0.8" x2="-0.5375" y2="1" layer="51"/>
+<rectangle x1="0.5375" y1="0.8" x2="0.7625" y2="1" layer="51"/>
+<rectangle x1="0.5375" y1="-1" x2="0.7625" y2="-0.8" layer="51"/>
+<smd name="1" x="-0.65" y="-1" dx="0.6" dy="0.35" layer="1" roundness="20" rot="R90"/>
+<smd name="2" x="0" y="-1" dx="0.6" dy="0.35" layer="1" roundness="20" rot="R90"/>
+<smd name="3" x="0.65" y="-1" dx="0.6" dy="0.35" layer="1" roundness="20" rot="R90"/>
+<smd name="4" x="0.65" y="1" dx="0.6" dy="0.35" layer="1" roundness="20" rot="R90"/>
+<smd name="5" x="0" y="1" dx="0.6" dy="0.35" layer="1" roundness="20" rot="R90"/>
+<smd name="6" x="-0.65" y="1" dx="0.6" dy="0.35" layer="1" roundness="20" rot="R90"/>
+<circle x="-1.4" y="-0.9" radius="0.1" width="0.2" layer="21"/>
+<circle x="-0.7" y="-0.3" radius="0.14141875" width="0.0762" layer="51"/>
+<text x="-1.27" y="1.651" size="1.016" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="1.016" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="DC-DC_CONVERTER">
@@ -3453,6 +3477,18 @@ conversion&lt;/p&gt;</description>
 <pin name="VIN+" x="-10.16" y="2.54" visible="pin" length="short"/>
 <text x="-7.62" y="5.334" size="1.778" layer="95">&gt;Name</text>
 <text x="-7.62" y="-10.16" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+<symbol name="MIC94064/5">
+<pin name="VIN" x="-10.16" y="5.08" visible="pin" length="short" direction="pwr"/>
+<pin name="EN" x="-10.16" y="0" visible="pin" length="short" direction="in"/>
+<pin name="GND" x="-10.16" y="-5.08" visible="pin" length="short" direction="pwr"/>
+<pin name="VOUT" x="10.16" y="5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.1524" layer="94"/>
+<text x="-7.62" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -5359,6 +5395,42 @@ from 1.2 V to 4.5 V in 25-mV steps.&lt;/p&gt;</description>
 <attribute name="IOUT" value="700mA" constant="no"/>
 <attribute name="PROD_ID" value="VREG-16775" constant="no"/>
 <attribute name="VOUT" value="3.3V" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC94064/5">
+<description>&lt;p&gt;The MIC94064 and MIC94065 are high-side load
+switches designed for operation between 1.7V to 5.5V.
+The devices contain a low on-resistance P-channel
+MOSFET that supports over 2A of continuous current.&lt;/p&gt;
+&lt;p&gt;The MIC94064/5 provides a slew rate controlled SoftStart turn-on of 115µs (typical) to prevent in-rush current
+from glitching supply rails.&lt;/p&gt;
+&lt;p&gt;The MIC94065 features an active load discharge circuit
+which insures capacitive loads retain no charge when
+the main switch is in an OFF state.&lt;/p&gt;
+&lt;p&gt;An active pull-down on the enable input keeps
+MIC94064/5 in a default OFF state until the EN pin is
+pulled to a high level. Built-in level shift circuitry allows
+low voltage logic signals to switch higher supply
+voltages, or vice versa; high level logic signals can
+control low level voltages.&lt;/p&gt;
+&lt;p&gt;&lt;a href=http://ww1.microchip.com/downloads/en/DeviceDoc/mic94064-5.pdf&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="U1" symbol="MIC94064/5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_MIC94064YC6" package="SC-70-6">
+<connects>
+<connect gate="U1" pin="EN" pad="3"/>
+<connect gate="U1" pin="GND" pad="2 5"/>
+<connect gate="U1" pin="VIN" pad="4"/>
+<connect gate="U1" pin="VOUT" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-16794" constant="no"/>
 </technology>
 </technologies>
 </device>
