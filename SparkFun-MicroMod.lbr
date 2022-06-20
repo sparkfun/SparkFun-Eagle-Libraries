@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -5558,10 +5558,10 @@ Out</text>
 <pin name="SPI_SDO" x="17.78" y="22.86" length="short" rot="R180"/>
 <pin name="SPI_SDI" x="17.78" y="20.32" length="short" rot="R180"/>
 <pin name="3.3V" x="-17.78" y="25.4" length="short"/>
-<pin name="USBHOST_D+" x="-17.78" y="-2.54" length="short"/>
-<pin name="USBHOST_D-" x="-17.78" y="0" length="short"/>
-<pin name="CAN-RX" x="-17.78" y="-10.16" length="short"/>
-<pin name="CAN-TX" x="-17.78" y="-7.62" length="short"/>
+<pin name="USBHOST_D+" x="-17.78" y="-5.08" length="short"/>
+<pin name="USBHOST_D-" x="-17.78" y="-2.54" length="short"/>
+<pin name="CAN-RX" x="-17.78" y="-12.7" length="short"/>
+<pin name="CAN-TX" x="-17.78" y="-10.16" length="short"/>
 <pin name="I2C_SCL" x="17.78" y="12.7" length="short" rot="R180"/>
 <pin name="I2C_SDA" x="17.78" y="10.16" length="short" rot="R180"/>
 <pin name="F0/!INT!" x="17.78" y="-12.7" length="short" rot="R180"/>
@@ -5574,8 +5574,8 @@ Out</text>
 <text x="-15.24" y="28.448" size="1.778" layer="95">&gt;Name</text>
 <text x="-15.24" y="-35.56" size="1.778" layer="96">&gt;Value</text>
 <pin name="VCC" x="-17.78" y="22.86" length="short"/>
-<pin name="USB_VIN" x="-17.78" y="2.54" length="short"/>
-<pin name="PWR_EN" x="-17.78" y="15.24" length="short"/>
+<pin name="USB_VIN" x="-17.78" y="0" length="short"/>
+<pin name="PWR_EN" x="-17.78" y="17.78" length="short"/>
 <pin name="RX" x="17.78" y="5.08" length="short" rot="R180"/>
 <pin name="CTS" x="17.78" y="0" length="short" rot="R180"/>
 <pin name="TX" x="17.78" y="2.54" length="short" rot="R180"/>
@@ -5588,6 +5588,8 @@ Out</text>
 <pin name="EEPROM_WP" x="-17.78" y="-25.4" length="short"/>
 <pin name="MCU_!RST!" x="-17.78" y="12.7" length="short"/>
 <pin name="MCU_!BOOT!" x="-17.78" y="10.16" length="short"/>
+<pin name="AUX_RX" x="-17.78" y="7.62" length="short"/>
+<pin name="AUX_TX" x="-17.78" y="5.08" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5749,6 +5751,8 @@ Out</text>
 <connects>
 <connect gate="J1" pin="3.3V" pad="73"/>
 <connect gate="J1" pin="A0" pad="38"/>
+<connect gate="J1" pin="AUX_RX" pad="4"/>
+<connect gate="J1" pin="AUX_TX" pad="6"/>
 <connect gate="J1" pin="CAN-RX" pad="41"/>
 <connect gate="J1" pin="CAN-TX" pad="43"/>
 <connect gate="J1" pin="CTS" pad="18"/>
@@ -5764,7 +5768,7 @@ Out</text>
 <connect gate="J1" pin="F5" pad="57"/>
 <connect gate="J1" pin="F6" pad="59"/>
 <connect gate="J1" pin="F7" pad="61"/>
-<connect gate="J1" pin="GND" pad="1 33 39 45 75 GND1 GND2 GND3 GND4 GND5 GND6"/>
+<connect gate="J1" pin="GND" pad="1 2 8 33 39 45 75 GND1 GND2 GND3 GND4 GND5 GND6"/>
 <connect gate="J1" pin="I2C_!INT!" pad="23"/>
 <connect gate="J1" pin="I2C_SCL" pad="21"/>
 <connect gate="J1" pin="I2C_SDA" pad="19"/>
@@ -5790,6 +5794,8 @@ Out</text>
 <connects>
 <connect gate="J1" pin="3.3V" pad="73"/>
 <connect gate="J1" pin="A0" pad="38"/>
+<connect gate="J1" pin="AUX_RX" pad="4"/>
+<connect gate="J1" pin="AUX_TX" pad="6"/>
 <connect gate="J1" pin="CAN-RX" pad="41"/>
 <connect gate="J1" pin="CAN-TX" pad="43"/>
 <connect gate="J1" pin="CTS" pad="18"/>
@@ -5805,7 +5811,7 @@ Out</text>
 <connect gate="J1" pin="F5" pad="57"/>
 <connect gate="J1" pin="F6" pad="59"/>
 <connect gate="J1" pin="F7" pad="61"/>
-<connect gate="J1" pin="GND" pad="1 33 39 45 75"/>
+<connect gate="J1" pin="GND" pad="1 2 8 33 39 45 75"/>
 <connect gate="J1" pin="I2C_!INT!" pad="23"/>
 <connect gate="J1" pin="I2C_SCL" pad="21"/>
 <connect gate="J1" pin="I2C_SDA" pad="19"/>
