@@ -5549,19 +5549,19 @@ Out</text>
 </symbol>
 <symbol name="MICROMOD_FUNCTION">
 <wire x1="-15.24" y1="27.94" x2="15.24" y2="27.94" width="0.254" layer="94"/>
-<wire x1="15.24" y1="27.94" x2="15.24" y2="-33.02" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-33.02" x2="-15.24" y2="-33.02" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-33.02" x2="-15.24" y2="27.94" width="0.254" layer="94"/>
-<pin name="GND" x="-17.78" y="-30.48" length="short"/>
+<wire x1="15.24" y1="27.94" x2="15.24" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-35.56" x2="-15.24" y2="-35.56" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-35.56" x2="-15.24" y2="27.94" width="0.254" layer="94"/>
+<pin name="GND" x="-17.78" y="-33.02" length="short"/>
 <pin name="I2C_!INT!" x="17.78" y="15.24" length="short" rot="R180"/>
 <pin name="SPI_SCK" x="17.78" y="25.4" length="short" rot="R180"/>
 <pin name="SPI_SDO" x="17.78" y="22.86" length="short" rot="R180"/>
 <pin name="SPI_SDI" x="17.78" y="20.32" length="short" rot="R180"/>
 <pin name="3.3V" x="-17.78" y="25.4" length="short"/>
-<pin name="USBHOST_D+" x="-17.78" y="-5.08" length="short"/>
-<pin name="USBHOST_D-" x="-17.78" y="-2.54" length="short"/>
-<pin name="CAN-RX" x="-17.78" y="-12.7" length="short"/>
-<pin name="CAN-TX" x="-17.78" y="-10.16" length="short"/>
+<pin name="USBHOST_D+" x="-17.78" y="-7.62" length="short"/>
+<pin name="USBHOST_D-" x="-17.78" y="-5.08" length="short"/>
+<pin name="CAN-RX" x="-17.78" y="-15.24" length="short"/>
+<pin name="CAN-TX" x="-17.78" y="-12.7" length="short"/>
 <pin name="I2C_SCL" x="17.78" y="12.7" length="short" rot="R180"/>
 <pin name="I2C_SDA" x="17.78" y="10.16" length="short" rot="R180"/>
 <pin name="F0/!INT!" x="17.78" y="-12.7" length="short" rot="R180"/>
@@ -5572,24 +5572,25 @@ Out</text>
 <pin name="F3" x="17.78" y="-20.32" length="short" rot="R180"/>
 <pin name="F5" x="17.78" y="-25.4" length="short" rot="R180"/>
 <text x="-15.24" y="28.448" size="1.778" layer="95">&gt;Name</text>
-<text x="-15.24" y="-35.56" size="1.778" layer="96">&gt;Value</text>
+<text x="-15.24" y="-38.1" size="1.778" layer="96">&gt;Value</text>
 <pin name="VCC" x="-17.78" y="22.86" length="short"/>
-<pin name="USB_VIN" x="-17.78" y="0" length="short"/>
+<pin name="USB_VIN" x="-17.78" y="-2.54" length="short"/>
 <pin name="PWR_EN" x="-17.78" y="17.78" length="short"/>
 <pin name="RX" x="17.78" y="5.08" length="short" rot="R180"/>
 <pin name="CTS" x="17.78" y="0" length="short" rot="R180"/>
 <pin name="TX" x="17.78" y="2.54" length="short" rot="R180"/>
 <pin name="RTS" x="17.78" y="-2.54" length="short" rot="R180"/>
 <pin name="A0" x="17.78" y="-7.62" length="short" rot="R180"/>
-<pin name="EEPROM_A0" x="-17.78" y="-17.78" length="short"/>
-<pin name="EEPROM_A1" x="-17.78" y="-20.32" length="short"/>
-<pin name="EEPROM_A2" x="-17.78" y="-22.86" length="short"/>
+<pin name="EEPROM_A0" x="-17.78" y="-20.32" length="short"/>
+<pin name="EEPROM_A1" x="-17.78" y="-22.86" length="short"/>
+<pin name="EEPROM_A2" x="-17.78" y="-25.4" length="short"/>
 <pin name="F7" x="17.78" y="-30.48" length="short" rot="R180"/>
-<pin name="EEPROM_WP" x="-17.78" y="-25.4" length="short"/>
+<pin name="EEPROM_WP" x="-17.78" y="-27.94" length="short"/>
 <pin name="MCU_!RST!" x="-17.78" y="12.7" length="short"/>
 <pin name="MCU_!BOOT!" x="-17.78" y="10.16" length="short"/>
-<pin name="AUX_RX" x="-17.78" y="7.62" length="short"/>
-<pin name="AUX_TX" x="-17.78" y="5.08" length="short"/>
+<pin name="MCU_DFU_TX" x="-17.78" y="7.62" length="short"/>
+<pin name="MCU_DFU_RX" x="-17.78" y="5.08" length="short"/>
+<pin name="MCU_!DFU_STAT!" x="-17.78" y="2.54" length="short"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5751,8 +5752,6 @@ Out</text>
 <connects>
 <connect gate="J1" pin="3.3V" pad="73"/>
 <connect gate="J1" pin="A0" pad="38"/>
-<connect gate="J1" pin="AUX_RX" pad="4"/>
-<connect gate="J1" pin="AUX_TX" pad="6"/>
 <connect gate="J1" pin="CAN-RX" pad="41"/>
 <connect gate="J1" pin="CAN-TX" pad="43"/>
 <connect gate="J1" pin="CTS" pad="18"/>
@@ -5773,7 +5772,10 @@ Out</text>
 <connect gate="J1" pin="I2C_SCL" pad="21"/>
 <connect gate="J1" pin="I2C_SDA" pad="19"/>
 <connect gate="J1" pin="MCU_!BOOT!" pad="66"/>
+<connect gate="J1" pin="MCU_!DFU_STAT!" pad="10"/>
 <connect gate="J1" pin="MCU_!RST!" pad="68"/>
+<connect gate="J1" pin="MCU_DFU_RX" pad="6"/>
+<connect gate="J1" pin="MCU_DFU_TX" pad="4"/>
 <connect gate="J1" pin="PWR_EN" pad="71"/>
 <connect gate="J1" pin="RTS" pad="16"/>
 <connect gate="J1" pin="RX" pad="15"/>
@@ -5794,8 +5796,6 @@ Out</text>
 <connects>
 <connect gate="J1" pin="3.3V" pad="73"/>
 <connect gate="J1" pin="A0" pad="38"/>
-<connect gate="J1" pin="AUX_RX" pad="4"/>
-<connect gate="J1" pin="AUX_TX" pad="6"/>
 <connect gate="J1" pin="CAN-RX" pad="41"/>
 <connect gate="J1" pin="CAN-TX" pad="43"/>
 <connect gate="J1" pin="CTS" pad="18"/>
@@ -5816,7 +5816,10 @@ Out</text>
 <connect gate="J1" pin="I2C_SCL" pad="21"/>
 <connect gate="J1" pin="I2C_SDA" pad="19"/>
 <connect gate="J1" pin="MCU_!BOOT!" pad="66"/>
+<connect gate="J1" pin="MCU_!DFU_STAT!" pad="10"/>
 <connect gate="J1" pin="MCU_!RST!" pad="68"/>
+<connect gate="J1" pin="MCU_DFU_RX" pad="6"/>
+<connect gate="J1" pin="MCU_DFU_TX" pad="4"/>
 <connect gate="J1" pin="PWR_EN" pad="71"/>
 <connect gate="J1" pin="RTS" pad="16"/>
 <connect gate="J1" pin="RX" pad="15"/>
