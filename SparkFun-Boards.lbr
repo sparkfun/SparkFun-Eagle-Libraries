@@ -10216,6 +10216,53 @@ GND</text>
 <vertex x="9.76" y="7.16"/>
 </polygon>
 </package>
+<package name="OPENLOG">
+<wire x1="0" y1="0" x2="15.24" y2="0" width="0.2032" layer="51"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="19.05" width="0.2032" layer="51"/>
+<wire x1="15.24" y1="19.05" x2="0" y2="19.05" width="0.2032" layer="51"/>
+<wire x1="0" y1="19.05" x2="0" y2="0" width="0.2032" layer="51"/>
+<circle x="1.27" y="1.27" radius="0.9398" width="0" layer="51"/>
+<circle x="3.81" y="1.27" radius="0.9398" width="0" layer="51"/>
+<circle x="6.35" y="1.27" radius="0.9398" width="0" layer="51"/>
+<circle x="8.89" y="1.27" radius="0.9398" width="0" layer="51"/>
+<circle x="13.97" y="1.27" radius="0.9398" width="0" layer="51"/>
+<circle x="11.43" y="1.27" radius="0.9398" width="0" layer="51"/>
+<pad name="GRN" x="1.27" y="1.27" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="RXI" x="3.81" y="1.27" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="TXO" x="6.35" y="1.27" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="VCC" x="8.89" y="1.27" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="BLK" x="13.97" y="1.27" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="GND" x="11.43" y="1.27" drill="1.016" diameter="1.8796" rot="R180"/>
+<text x="7.62" y="16.383" size="1.143" layer="51" ratio="15" align="center">OpenLog</text>
+<wire x1="0" y1="0" x2="15.24" y2="0" width="0.2032" layer="21"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="19.05" width="0.2032" layer="21"/>
+<wire x1="15.24" y1="19.05" x2="0" y2="19.05" width="0.2032" layer="21"/>
+<wire x1="0" y1="19.05" x2="0" y2="0" width="0.2032" layer="21"/>
+</package>
+<package name="OPENLOG_FLIPPED">
+<wire x1="0" y1="0" x2="15.24" y2="0" width="0.2032" layer="51"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="19.05" width="0.2032" layer="51"/>
+<wire x1="15.24" y1="19.05" x2="0" y2="19.05" width="0.2032" layer="51"/>
+<wire x1="0" y1="19.05" x2="0" y2="0" width="0.2032" layer="51"/>
+<circle x="13.97" y="1.27" radius="0.9398" width="0" layer="51"/>
+<circle x="11.43" y="1.27" radius="0.9398" width="0" layer="51"/>
+<circle x="8.89" y="1.27" radius="0.9398" width="0" layer="51"/>
+<circle x="6.35" y="1.27" radius="0.9398" width="0" layer="51"/>
+<circle x="1.27" y="1.27" radius="0.9398" width="0" layer="51"/>
+<circle x="3.81" y="1.27" radius="0.9398" width="0" layer="51"/>
+<pad name="GRN" x="13.97" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="RXI" x="11.43" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="TXO" x="8.89" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="VCC" x="6.35" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="BLK" x="1.27" y="1.27" drill="1.016" diameter="1.8796"/>
+<pad name="GND" x="3.81" y="1.27" drill="1.016" diameter="1.8796"/>
+<text x="7.62" y="16.383" size="1.143" layer="51" ratio="15" align="center">OpenLog</text>
+<wire x1="0" y1="0" x2="15.24" y2="0" width="0.2032" layer="21"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="19.05" width="0.2032" layer="21"/>
+<wire x1="15.24" y1="19.05" x2="0" y2="19.05" width="0.2032" layer="21"/>
+<wire x1="0" y1="19.05" x2="0" y2="0" width="0.2032" layer="21"/>
+<text x="7.62" y="13.843" size="1.143" layer="51" ratio="15" align="center">(Flipped)</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO-MEGA">
@@ -12332,6 +12379,19 @@ Outline</text>
 <pin name="GPIO0" x="15.24" y="-10.16" visible="pin" length="short" rot="R180"/>
 <pin name="SCL" x="15.24" y="20.32" visible="pin" length="short" rot="R180"/>
 <pin name="SDA" x="15.24" y="22.86" visible="pin" length="short" rot="R180"/>
+</symbol>
+<symbol name="OPENLOG">
+<pin name="GRN" x="-5.08" y="5.08" visible="pin" length="short"/>
+<pin name="RXI" x="-5.08" y="2.54" visible="pin" length="short" direction="in"/>
+<pin name="TXO" x="-5.08" y="0" visible="pin" length="short" direction="out"/>
+<pin name="VCC" x="-5.08" y="-2.54" visible="pin" length="short" direction="pwr"/>
+<pin name="BLK" x="-5.08" y="-7.62" visible="pin" length="short"/>
+<pin name="GND" x="-5.08" y="-5.08" visible="pin" length="short" direction="pwr"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<text x="-2.54" y="7.62" size="1.778" layer="95">OPENLOG</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -15387,6 +15447,39 @@ PCB footprint compatbile with Big Red Box Enclosure.
 <connect gate="G$1" pin="TX" pad="14"/>
 <connect gate="G$1" pin="V_BATT" pad="12"/>
 <connect gate="G$1" pin="V_USB" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OPENLOG">
+<gates>
+<gate name="G1" symbol="OPENLOG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="OPENLOG">
+<connects>
+<connect gate="G1" pin="BLK" pad="BLK"/>
+<connect gate="G1" pin="GND" pad="GND"/>
+<connect gate="G1" pin="GRN" pad="GRN"/>
+<connect gate="G1" pin="RXI" pad="RXI"/>
+<connect gate="G1" pin="TXO" pad="TXO"/>
+<connect gate="G1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_FLIPPED" package="OPENLOG_FLIPPED">
+<connects>
+<connect gate="G1" pin="BLK" pad="BLK"/>
+<connect gate="G1" pin="GND" pad="GND"/>
+<connect gate="G1" pin="GRN" pad="GRN"/>
+<connect gate="G1" pin="RXI" pad="RXI"/>
+<connect gate="G1" pin="TXO" pad="TXO"/>
+<connect gate="G1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
