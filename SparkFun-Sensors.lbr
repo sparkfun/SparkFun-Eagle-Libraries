@@ -71,6 +71,7 @@
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCopper" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
@@ -182,6 +183,7 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="253" name="Extra" color="7" fill="1" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="no"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="no"/>
 </layers>
@@ -10703,6 +10705,50 @@ read, as well as embedded engines for orientation, Directional-TapTM/DoubleTapTM
 <rectangle x1="-0.3675" y1="-0.8675" x2="-0.1325" y2="-0.6475" layer="31" rot="R270"/>
 <rectangle x1="0.1325" y1="-0.8675" x2="0.3675" y2="-0.6475" layer="31" rot="R270"/>
 </package>
+<package name="LGA-14L">
+<description>&lt;p&gt;Physical Characteristics&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Overall Size: 2.5mm x 3mm&lt;/li&gt;
+&lt;li&gt;Total Pins: 14&lt;/li&gt;
+&lt;li&gt;Pad Size: .475mm x . 25mm&lt;/li&gt;
+&lt;li&gt;Pad Pitch: .5mm&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<circle x="-1.865" y="1.619" radius="0.28049375" width="0" layer="21"/>
+<smd name="P1" x="-1.1625" y="0.75" dx="0.48" dy="0.3" layer="1"/>
+<smd name="P2" x="-1.1625" y="0.25" dx="0.48" dy="0.3" layer="1"/>
+<smd name="P3" x="-1.1625" y="-0.25" dx="0.48" dy="0.3" layer="1"/>
+<smd name="P4" x="-1.1625" y="-0.75" dx="0.48" dy="0.3" layer="1"/>
+<smd name="P8" x="1.1625" y="-0.75" dx="0.48" dy="0.3" layer="1" rot="R180"/>
+<smd name="P9" x="1.1625" y="-0.25" dx="0.48" dy="0.3" layer="1" rot="R180"/>
+<smd name="P10" x="1.1625" y="0.25" dx="0.48" dy="0.3" layer="1" rot="R180"/>
+<smd name="P11" x="1.1625" y="0.75" dx="0.48" dy="0.3" layer="1" rot="R180"/>
+<smd name="P5" x="-0.5" y="-1" dx="0.3" dy="0.48" layer="1"/>
+<smd name="P6" x="0" y="-1" dx="0.3" dy="0.48" layer="1"/>
+<smd name="P7" x="0.5" y="-1" dx="0.3" dy="0.48" layer="1"/>
+<smd name="P12" x="0.5" y="1" dx="0.3" dy="0.48" layer="1" rot="R180"/>
+<smd name="P13" x="0" y="1" dx="0.3" dy="0.48" layer="1" rot="R180"/>
+<smd name="P14" x="-0.5" y="1" dx="0.3" dy="0.48" layer="1" rot="R180"/>
+<wire x1="0" y1="0" x2="3" y2="0" width="0.25" layer="51"/>
+<wire x1="0" y1="0" x2="0" y2="3" width="0.25" layer="51"/>
+<circle x="2.04" y="1.74" radius="0.5060625" width="0.25" layer="51"/>
+<wire x1="0" y1="3" x2="-0.5" y2="2.5" width="0.25" layer="51"/>
+<wire x1="-0.5" y1="2.5" x2="0.5" y2="2.5" width="0.25" layer="51"/>
+<wire x1="0.5" y1="2.5" x2="0" y2="3" width="0.25" layer="51"/>
+<wire x1="3" y1="0" x2="2.5" y2="0.5" width="0.25" layer="51"/>
+<wire x1="2.5" y1="0.5" x2="2.5" y2="-0.5" width="0.25" layer="51"/>
+<wire x1="2.5" y1="-0.5" x2="3" y2="0" width="0.25" layer="51"/>
+<circle x="2.04" y="1.75" radius="0.16643125" width="0" layer="51"/>
+<text x="1.981" y="-0.595" size="0.6096" layer="51" font="vector" ratio="20" align="center">X</text>
+<text x="-0.635" y="1.841" size="0.6096" layer="51" font="vector" ratio="20" align="center">Y</text>
+<text x="3" y="1.738" size="0.6096" layer="51" font="vector" ratio="20" align="center">Z</text>
+<text x="0" y="3.849" size="0.6096" layer="25" font="vector" ratio="20" align="center">&gt;NAME</text>
+<text x="0" y="-1.746" size="0.6096" layer="27" font="vector" ratio="20" align="center">&gt;VALUE</text>
+<wire x1="-1.5" y1="-1.25" x2="-1.5" y2="1.25" width="0.1" layer="51"/>
+<wire x1="-1.5" y1="1.25" x2="1.5" y2="1.25" width="0.1" layer="51"/>
+<wire x1="1.5" y1="1.25" x2="1.5" y2="-1.25" width="0.1" layer="51"/>
+<wire x1="1.5" y1="-1.25" x2="-1.5" y2="-1.25" width="0.1" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADMP401">
@@ -12958,6 +13004,28 @@ VD6283 light measurement is fast and accurate thanks to an individual ADC and a 
 <text x="-12.7" y="7.874" size="1.778" layer="95" font="vector">&gt;Name</text>
 <text x="-12.7" y="-12.7" size="1.778" layer="96" font="vector">&gt;Value</text>
 <pin name="VDDIO" x="-15.24" y="-5.08" length="short" direction="pwr"/>
+</symbol>
+<symbol name="ISM330DHCX">
+<wire x1="-12.7" y1="12.7" x2="-12.7" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="-12.7" y1="-15.24" x2="12.7" y2="-15.24" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="12.7" y2="12.7" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="-12.7" y2="12.7" width="0.1524" layer="94"/>
+<pin name="VDD" x="-15.24" y="10.16" visible="pin" length="short" direction="pwr"/>
+<pin name="VDD_IO" x="-15.24" y="5.08" visible="pin" length="short" direction="pwr"/>
+<pin name="GND@6" x="-15.24" y="-10.16" visible="pin" length="short" direction="pwr"/>
+<pin name="GND@7" x="-15.24" y="-12.7" visible="pin" length="short" direction="pwr"/>
+<pin name="SDA/SDI/SDO" x="15.24" y="7.62" visible="pin" length="short" rot="R180"/>
+<pin name="SCL" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="!CS!" x="15.24" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="SDO/SA0" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SDX" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="SCX" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SDO_AUX" x="15.24" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="OCS_AUX" x="15.24" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="INT1" x="15.24" y="-10.16" visible="pin" length="short" rot="R180"/>
+<pin name="INT2" x="15.24" y="-12.7" visible="pin" length="short" rot="R180"/>
+<text x="-10.16" y="15.24" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
+<text x="-10.16" y="-17.78" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -16767,6 +16835,39 @@ values on its I2C interface.&lt;/p&gt;
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-16677" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ISM330DHCX" prefix="U">
+<description>&lt;h3&gt;ISM330DHCX 6DoF&lt;/h3&gt;
+&lt;p&gt;The ISM330DHCX is a system-in-package featuring a high-performance 3D digital
+accelerometer and 3D digital gyroscope tailored for Industry 4.0 applications.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="ISM330DHCX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LGA-14L">
+<connects>
+<connect gate="G$1" pin="!CS!" pad="P12"/>
+<connect gate="G$1" pin="GND@6" pad="P6"/>
+<connect gate="G$1" pin="GND@7" pad="P7"/>
+<connect gate="G$1" pin="INT1" pad="P4"/>
+<connect gate="G$1" pin="INT2" pad="P9"/>
+<connect gate="G$1" pin="OCS_AUX" pad="P10"/>
+<connect gate="G$1" pin="SCL" pad="P13"/>
+<connect gate="G$1" pin="SCX" pad="P3"/>
+<connect gate="G$1" pin="SDA/SDI/SDO" pad="P14"/>
+<connect gate="G$1" pin="SDO/SA0" pad="P1"/>
+<connect gate="G$1" pin="SDO_AUX" pad="P11"/>
+<connect gate="G$1" pin="SDX" pad="P2"/>
+<connect gate="G$1" pin="VDD" pad="P8"/>
+<connect gate="G$1" pin="VDD_IO" pad="P5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-16693" constant="no"/>
 </technology>
 </technologies>
 </device>
