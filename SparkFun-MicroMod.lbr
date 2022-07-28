@@ -39,7 +39,7 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
@@ -166,8 +166,8 @@
 <wire x1="2.025" y1="0" x2="-9.925" y2="0" width="0.0508" layer="47"/>
 <wire x1="-9.925" y1="0" x2="-9.925" y2="3.5" width="0.0508" layer="47"/>
 <wire x1="9.925" y1="3.5" x2="9.925" y2="0" width="0.0508" layer="47"/>
-<wire x1="10.4" y1="4" x2="9.925" y2="3.5" width="0.0508" layer="47" curve="84.949116"/>
-<wire x1="-10.4" y1="4" x2="-9.925" y2="3.5" width="0.0508" layer="47" curve="-83.820277"/>
+<wire x1="10.425" y1="4" x2="9.925" y2="3.5" width="0.0508" layer="47" curve="90"/>
+<wire x1="-10.425" y1="4" x2="-9.925" y2="3.5" width="0.0508" layer="47" curve="-90"/>
 <smd name="1" x="9.25" y="1.275" dx="0.35" dy="1.45" layer="1" rot="R180" cream="no"/>
 <smd name="2" x="9" y="1.525" dx="0.35" dy="1.95" layer="16" cream="no"/>
 <smd name="3" x="8.75" y="1.275" dx="0.35" dy="1.45" layer="1" rot="R180" cream="no"/>
@@ -242,26 +242,18 @@
 <wire x1="10" y1="22" x2="5.75" y2="22" width="0.0508" layer="47"/>
 <wire x1="5.75" y1="22" x2="2.25" y2="22" width="0.0508" layer="47" curve="-180"/>
 <wire x1="2.25" y1="22" x2="-10" y2="22" width="0.0508" layer="47"/>
-<wire x1="-11" y1="21" x2="-11" y2="4.6" width="0.0508" layer="47"/>
+<wire x1="-11" y1="21" x2="-11" y2="4.575" width="0.0508" layer="47"/>
 <wire x1="3.225" y1="2.9" x2="3.225" y2="0" width="0.0508" layer="47"/>
 <wire x1="2.025" y1="2.9" x2="2.025" y2="0" width="0.0508" layer="47"/>
 <wire x1="3.225" y1="2.9" x2="2.025" y2="2.9" width="0.0508" layer="47" curve="180"/>
-<wire x1="11" y1="21" x2="11" y2="4.6" width="0.05" layer="47"/>
-<wire x1="10.4" y1="4" x2="11" y2="4.6" width="0.05" layer="47" curve="86.784874"/>
-<wire x1="-11" y1="4.6" x2="-10.4" y2="4" width="0.05" layer="47" curve="86.784874"/>
-<wire x1="10" y1="22" x2="11" y2="21" width="0.05" layer="47" curve="-87.205638"/>
-<wire x1="-11" y1="21" x2="-10" y2="22" width="0.05" layer="47" curve="-87.205638"/>
+<wire x1="11" y1="21" x2="11" y2="4.575" width="0.05" layer="47"/>
+<wire x1="10.425" y1="4" x2="11" y2="4.575" width="0.05" layer="47" curve="90"/>
+<wire x1="-11" y1="4.575" x2="-10.425" y2="4" width="0.05" layer="47" curve="90"/>
+<wire x1="10" y1="22" x2="11" y2="21" width="0.05" layer="47" curve="-90"/>
+<wire x1="-11" y1="21" x2="-10" y2="22" width="0.05" layer="47" curve="-90"/>
 <wire x1="5.75" y1="22" x2="2.25" y2="22" width="0.0508" layer="47" curve="-180"/>
 <wire x1="6.75" y1="22" x2="1.25" y2="22" width="0.0508" layer="47" curve="-180"/>
 <wire x1="-10.3" y1="0.55" x2="10.7" y2="0.55" width="0.02" layer="51"/>
-<text x="-3.02" y="-1" size="0.762" layer="46" ratio="15" rot="R180" align="center">Chamfered Edge</text>
-<wire x1="10.58" y1="-0.8" x2="9.98" y2="-0.2" width="0.1016" layer="46"/>
-<wire x1="9.98" y1="-0.2" x2="9.98" y2="-0.6" width="0.1016" layer="46"/>
-<wire x1="9.98" y1="-0.2" x2="10.38" y2="-0.2" width="0.1016" layer="46"/>
-<wire x1="-10.62" y1="-0.8" x2="-10.02" y2="-0.2" width="0.1016" layer="46"/>
-<wire x1="-10.02" y1="-0.2" x2="-10.42" y2="-0.2" width="0.1016" layer="46"/>
-<wire x1="-10.02" y1="-0.2" x2="-10.02" y2="-0.6" width="0.1016" layer="46"/>
-<text x="-3.02" y="-2.27" size="0.762" layer="46" ratio="15" rot="R180" align="center">0.8mm PCB</text>
 <polygon width="0.05" layer="1">
 <vertex x="1.25" y="21.75"/>
 <vertex x="2.05" y="21.75" curve="90"/>
@@ -336,10 +328,18 @@ Out</text>
 <rectangle x1="3.841" y1="2.715" x2="4.681" y2="2.755" layer="21"/>
 <rectangle x1="3.841" y1="2.675" x2="4.681" y2="2.715" layer="21"/>
 <rectangle x1="3.881" y1="2.635" x2="4.641" y2="2.675" layer="21"/>
-<text x="-3.02" y="-4" size="0.762" layer="46" ratio="15" rot="R180" align="center">Critical Dimension</text>
-<text x="-3.02" y="-6" size="0.762" layer="46" ratio="15" rot="R180" align="center">Mill using 1.0mm
-Diameter Tool</text>
-<dimension x1="2.025" y1="-0.25" x2="3.225" y2="-0.25" x3="2.625" y3="-7.5" textsize="1.016" layer="46" dtype="horizontal" visible="yes"/>
+<text x="-5.02" y="-0.95" size="0.762" layer="46" font="vector" ratio="10" rot="R180" align="center">Chamfered edge</text>
+<wire x1="10.58" y1="-0.75" x2="9.98" y2="-0.15" width="0.1016" layer="46"/>
+<wire x1="9.98" y1="-0.15" x2="9.98" y2="-0.55" width="0.1016" layer="46"/>
+<wire x1="9.98" y1="-0.15" x2="10.38" y2="-0.15" width="0.1016" layer="46"/>
+<wire x1="-10.62" y1="-0.75" x2="-10.02" y2="-0.15" width="0.1016" layer="46"/>
+<wire x1="-10.02" y1="-0.15" x2="-10.42" y2="-0.15" width="0.1016" layer="46"/>
+<wire x1="-10.02" y1="-0.15" x2="-10.02" y2="-0.55" width="0.1016" layer="46"/>
+<text x="-5.02" y="-2.22" size="0.762" layer="46" font="vector" ratio="10" rot="R180" align="center">0.8mm PCB</text>
+<text x="-3" y="-4.5" size="0.762" layer="46" font="vector" ratio="10" rot="R180" align="center">Critical dimension</text>
+<text x="-3" y="-6.5" size="0.762" layer="46" font="vector" ratio="10" rot="R180" align="center">Mill using correctly
+sized tool</text>
+<dimension x1="2.025" y1="-0.2" x2="3.225" y2="-0.2" x3="2.625" y3="-8" textsize="1.016" layer="46" dtype="horizontal" visible="yes"/>
 </package>
 <package name="M.2-CONNECTOR-E">
 <hole x="10" y="0" drill="1.1"/>
@@ -5091,8 +5091,8 @@ Diameter Tool</text>
 <wire x1="2.025" y1="0" x2="-9.925" y2="0" width="0.0508" layer="51"/>
 <wire x1="-9.925" y1="0" x2="-9.925" y2="3.5" width="0.0508" layer="51"/>
 <wire x1="9.925" y1="3.5" x2="9.925" y2="0" width="0.0508" layer="51"/>
-<wire x1="10.4" y1="4" x2="9.925" y2="3.5" width="0.0508" layer="51" curve="84.949116"/>
-<wire x1="-10.4" y1="4" x2="-9.925" y2="3.5" width="0.0508" layer="51" curve="-83.820277"/>
+<wire x1="10.425" y1="4" x2="9.925" y2="3.5" width="0.0508" layer="51" curve="90"/>
+<wire x1="-10.425" y1="4" x2="-9.925" y2="3.5" width="0.0508" layer="51" curve="-90"/>
 <smd name="1" x="9.25" y="1.275" dx="0.35" dy="1.45" layer="1" rot="R180" cream="no"/>
 <smd name="2" x="9" y="1.525" dx="0.35" dy="1.95" layer="16" cream="no"/>
 <smd name="3" x="8.75" y="1.275" dx="0.35" dy="1.45" layer="1" rot="R180" cream="no"/>
@@ -5194,9 +5194,9 @@ Diameter Tool</text>
 <rectangle x1="3.841" y1="2.715" x2="4.681" y2="2.755" layer="21"/>
 <rectangle x1="3.841" y1="2.675" x2="4.681" y2="2.715" layer="21"/>
 <rectangle x1="3.881" y1="2.635" x2="4.641" y2="2.675" layer="21"/>
-<wire x1="-10.4" y1="4" x2="-18.746" y2="4" width="0.0508" layer="51"/>
+<wire x1="-10.425" y1="4" x2="-18.746" y2="4" width="0.0508" layer="51"/>
 <wire x1="-18.746" y1="4" x2="-18.746" y2="65" width="0.0508" layer="51"/>
-<wire x1="10.4" y1="4" x2="18.746" y2="4" width="0.0508" layer="51"/>
+<wire x1="10.425" y1="4" x2="18.746" y2="4" width="0.0508" layer="51"/>
 <wire x1="18.746" y1="4" x2="18.746" y2="65" width="0.0508" layer="51"/>
 <wire x1="-18.746" y1="65" x2="18.746" y2="65" width="0.0508" layer="51"/>
 <pad name="GND6" x="18" y="46.1" drill="0.3048" diameter="0.6096" rot="R270"/>
@@ -5299,18 +5299,18 @@ Out</text>
 </polygon>
 <wire x1="-18.747" y1="45.733" x2="-18.745" y2="42.271" width="0.05" layer="20" curve="-163.207251"/>
 <wire x1="18.744" y1="45.731" x2="18.748" y2="42.27" width="0.05" layer="20" curve="163.526612"/>
-<text x="-3.02" y="-0.95" size="0.762" layer="46" ratio="15" rot="R180" align="center">Chamfered Edge</text>
+<text x="-5.02" y="-0.95" size="0.762" layer="46" font="vector" ratio="10" rot="R180" align="center">Chamfered edge</text>
 <wire x1="10.58" y1="-0.75" x2="9.98" y2="-0.15" width="0.1016" layer="46"/>
 <wire x1="9.98" y1="-0.15" x2="9.98" y2="-0.55" width="0.1016" layer="46"/>
 <wire x1="9.98" y1="-0.15" x2="10.38" y2="-0.15" width="0.1016" layer="46"/>
 <wire x1="-10.62" y1="-0.75" x2="-10.02" y2="-0.15" width="0.1016" layer="46"/>
 <wire x1="-10.02" y1="-0.15" x2="-10.42" y2="-0.15" width="0.1016" layer="46"/>
 <wire x1="-10.02" y1="-0.15" x2="-10.02" y2="-0.55" width="0.1016" layer="46"/>
-<text x="-3.02" y="-2.22" size="0.762" layer="46" ratio="15" rot="R180" align="center">0.8mm PCB</text>
-<text x="-3.02" y="-3.95" size="0.762" layer="46" ratio="15" rot="R180" align="center">Critical Dimension</text>
-<text x="-3.02" y="-5.95" size="0.762" layer="46" ratio="15" rot="R180" align="center">Mill using 1.0mm
-Diameter Tool</text>
-<dimension x1="2.025" y1="-0.2" x2="3.225" y2="-0.2" x3="2.625" y3="-7.45" textsize="1.016" layer="46" dtype="horizontal" visible="yes"/>
+<text x="-5.02" y="-2.22" size="0.762" layer="46" font="vector" ratio="10" rot="R180" align="center">0.8mm PCB</text>
+<text x="-3" y="-4.5" size="0.762" layer="46" font="vector" ratio="10" rot="R180" align="center">Critical dimension</text>
+<text x="-3" y="-6.5" size="0.762" layer="46" font="vector" ratio="10" rot="R180" align="center">Mill using correctly
+sized tool</text>
+<dimension x1="2.025" y1="-0.2" x2="3.225" y2="-0.2" x3="2.625" y3="-8" textsize="1.016" layer="46" dtype="horizontal" visible="yes"/>
 </package>
 <package name="M.2-CONNECTOR-E-FUNCTION-STANDARD">
 <hole x="10" y="0" drill="1.1"/>
