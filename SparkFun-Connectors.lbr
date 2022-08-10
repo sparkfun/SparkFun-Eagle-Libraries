@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -25,7 +25,7 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -33,9 +33,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -39435,6 +39435,69 @@ Made for the small  &lt;a href="https://www.sparkfun.com/products/18221"&gt; 1mm
 <smd name="6" x="2.5" y="3" dx="2" dy="0.6" layer="1" rot="R90"/>
 <text x="0" y="-2.25" size="0.2" layer="51" align="center">Ribbon Insert</text>
 </package>
+<package name="1X06_2.54MM_SCREWPIN">
+<description>&lt;h3&gt;Plated Through Hole - 6 Pin No Silk Outline&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:6&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_06&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<pad name="1" x="-6.35" y="0" drill="1.3" diameter="2.1" rot="R90"/>
+<pad name="2" x="-3.81" y="0" drill="1.3" diameter="2.1" rot="R90"/>
+<pad name="3" x="-1.27" y="0" drill="1.3" diameter="2.1" rot="R90"/>
+<pad name="4" x="1.27" y="0" drill="1.3" diameter="2.1" rot="R90"/>
+<pad name="5" x="3.81" y="0" drill="1.3" diameter="2.1" rot="R90"/>
+<pad name="6" x="6.35" y="0" drill="1.3" diameter="2.1" rot="R90"/>
+<text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-2.032" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<wire x1="-7.82" y1="3.3" x2="-7.8" y2="3.3" width="0.1524" layer="21"/>
+<wire x1="-7.8" y1="3.3" x2="7.8" y2="3.3" width="0.1524" layer="21"/>
+<wire x1="7.8" y1="3.3" x2="7.82" y2="3.3" width="0.1524" layer="21"/>
+<wire x1="-7.8" y1="-3.2" x2="7.8" y2="-3.2" width="0.1524" layer="21"/>
+<wire x1="2.02" y1="1.7" x2="0.52" y2="1.7" width="0.0762" layer="51"/>
+<wire x1="0.52" y1="1.7" x2="0.52" y2="3.2" width="0.0762" layer="51"/>
+<wire x1="2.02" y1="1.7" x2="2.02" y2="3.2" width="0.0762" layer="51"/>
+<wire x1="4.56" y1="1.7" x2="3.06" y2="1.7" width="0.0762" layer="51"/>
+<wire x1="3.06" y1="1.7" x2="3.06" y2="3.2" width="0.0762" layer="51"/>
+<wire x1="4.56" y1="1.7" x2="4.56" y2="3.2" width="0.0762" layer="51"/>
+<wire x1="7.1" y1="1.7" x2="5.6" y2="1.7" width="0.0762" layer="51"/>
+<wire x1="5.6" y1="1.7" x2="5.6" y2="3.2" width="0.0762" layer="51"/>
+<wire x1="7.1" y1="1.7" x2="7.1" y2="3.2" width="0.0762" layer="51"/>
+<wire x1="-0.52" y1="1.7" x2="-2.02" y2="1.7" width="0.0762" layer="51"/>
+<wire x1="-2.02" y1="1.7" x2="-2.02" y2="3.2" width="0.0762" layer="51"/>
+<wire x1="-0.52" y1="1.7" x2="-0.52" y2="3.2" width="0.0762" layer="51"/>
+<wire x1="-3.06" y1="1.7" x2="-4.56" y2="1.7" width="0.0762" layer="51"/>
+<wire x1="-4.56" y1="1.7" x2="-4.56" y2="3.2" width="0.0762" layer="51"/>
+<wire x1="-3.06" y1="1.7" x2="-3.06" y2="3.2" width="0.0762" layer="51"/>
+<wire x1="-5.6" y1="1.7" x2="-7.1" y2="1.7" width="0.0762" layer="51"/>
+<wire x1="-7.1" y1="1.7" x2="-7.1" y2="3.2" width="0.0762" layer="51"/>
+<wire x1="-5.6" y1="1.7" x2="-5.6" y2="3.2" width="0.0762" layer="51"/>
+<wire x1="-7.8" y1="-3.2" x2="-7.8" y2="-2.311" width="0.1524" layer="21"/>
+<wire x1="-7.8" y1="-2.311" x2="-7.8" y2="3.3" width="0.1524" layer="21"/>
+<wire x1="7.8" y1="-3.2" x2="7.8" y2="-2.311" width="0.1524" layer="21"/>
+<wire x1="7.8" y1="-2.311" x2="7.8" y2="3.3" width="0.1524" layer="21"/>
+<wire x1="-6.35" y1="3.048" x2="-6.35" y2="2.032" width="0.0762" layer="51"/>
+<wire x1="-6.35" y1="2.032" x2="-5.969" y2="2.413" width="0.0762" layer="51"/>
+<wire x1="-6.35" y1="2.032" x2="-6.731" y2="2.413" width="0.0762" layer="51"/>
+<wire x1="-3.81" y1="3.048" x2="-3.81" y2="2.032" width="0.0762" layer="51"/>
+<wire x1="-3.81" y1="2.032" x2="-3.429" y2="2.413" width="0.0762" layer="51"/>
+<wire x1="-3.81" y1="2.032" x2="-4.191" y2="2.413" width="0.0762" layer="51"/>
+<wire x1="-1.27" y1="3.048" x2="-1.27" y2="2.032" width="0.0762" layer="51"/>
+<wire x1="-1.27" y1="2.032" x2="-0.889" y2="2.413" width="0.0762" layer="51"/>
+<wire x1="-1.27" y1="2.032" x2="-1.651" y2="2.413" width="0.0762" layer="51"/>
+<wire x1="1.27" y1="3.048" x2="1.27" y2="2.032" width="0.0762" layer="51"/>
+<wire x1="1.27" y1="2.032" x2="1.651" y2="2.413" width="0.0762" layer="51"/>
+<wire x1="1.27" y1="2.032" x2="0.889" y2="2.413" width="0.0762" layer="51"/>
+<wire x1="3.81" y1="3.048" x2="3.81" y2="2.032" width="0.0762" layer="51"/>
+<wire x1="3.81" y1="2.032" x2="4.191" y2="2.413" width="0.0762" layer="51"/>
+<wire x1="3.81" y1="2.032" x2="3.429" y2="2.413" width="0.0762" layer="51"/>
+<wire x1="6.35" y1="3.048" x2="6.35" y2="2.032" width="0.0762" layer="51"/>
+<wire x1="6.35" y1="2.032" x2="6.731" y2="2.413" width="0.0762" layer="51"/>
+<wire x1="6.35" y1="2.032" x2="5.969" y2="2.413" width="0.0762" layer="51"/>
+<wire x1="-7.8" y1="-2.311" x2="7.8" y2="-2.311" width="0.1524" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -44951,6 +45014,7 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 &lt;li&gt;&lt;a href="https://www.sparkfun.com/products/117"&gt; Break Away Headers - Machine Pin&lt;/a&gt; (PRT-00117)&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.sparkfun.com/products/743"&gt; Break Away Female Headers - Swiss Machine Pin&lt;/a&gt; (PRT-00743)&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9280"&gt; Arduino Stackable Header - 6 Pin&lt;/a&gt; (PRT-09280)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/16499"&gt; Screw Terminals 2.54mm Pitch (6-Pin)&lt;/a&gt; (PRT-16499)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;/p&gt;
@@ -45308,6 +45372,21 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="CONN-16692" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="2.54MM_SCREW_TERMINALS" package="1X06_2.54MM_SCREWPIN">
+<connects>
+<connect gate="JP1" pin="1" pad="1"/>
+<connect gate="JP1" pin="2" pad="2"/>
+<connect gate="JP1" pin="3" pad="3"/>
+<connect gate="JP1" pin="4" pad="4"/>
+<connect gate="JP1" pin="5" pad="5"/>
+<connect gate="JP1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-14885" constant="no"/>
 </technology>
 </technologies>
 </device>
