@@ -25,7 +25,7 @@
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -40,7 +40,7 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
@@ -53,8 +53,8 @@
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="2" name="Route2" color="63" fill="3" visible="no" active="no"/>
+<layer number="15" name="Route15" color="23" fill="6" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -10749,6 +10749,94 @@ read, as well as embedded engines for orientation, Directional-TapTM/DoubleTapTM
 <wire x1="1.5" y1="1.25" x2="1.5" y2="-1.25" width="0.1" layer="51"/>
 <wire x1="1.5" y1="-1.25" x2="-1.5" y2="-1.25" width="0.1" layer="51"/>
 </package>
+<package name="SDP3X">
+<description>SDP31</description>
+<smd name="5" x="-1" y="-2.075" dx="0.75" dy="0.4" layer="1" rot="R90"/>
+<smd name="6" x="0" y="-2.075" dx="0.75" dy="0.4" layer="1" rot="R90"/>
+<smd name="4" x="-2" y="-2.075" dx="0.75" dy="0.4" layer="1" rot="R90"/>
+<smd name="3" x="-2.825" y="-1" dx="0.75" dy="0.4" layer="1"/>
+<smd name="2" x="-2.825" y="0" dx="0.75" dy="0.4" layer="1"/>
+<smd name="1" x="-2.825" y="1" dx="0.75" dy="0.4" layer="1"/>
+<polygon width="0.0001" layer="1" spacing="0.254">
+<vertex x="-0.9" y="0.4"/>
+<vertex x="0.9" y="0.4"/>
+<vertex x="0.9" y="1.3"/>
+<vertex x="-0.6" y="1.3"/>
+<vertex x="-0.9" y="1"/>
+</polygon>
+<wire x1="-4.25" y1="-2.75" x2="4.25" y2="-2.75" width="0.1" layer="51"/>
+<wire x1="4.25" y1="-2.75" x2="4.25" y2="2.75" width="0.1" layer="51"/>
+<wire x1="4.25" y1="2.75" x2="-4.25" y2="2.75" width="0.1" layer="51"/>
+<wire x1="-4.25" y1="2.75" x2="-4.25" y2="-2.75" width="0.1" layer="51"/>
+<rectangle x1="-0.8" y1="-1.2" x2="0.8" y2="-0.5" layer="31"/>
+<smd name="DIEPAD1" x="0" y="0.85" dx="0.6096" dy="0.3048" layer="1" rot="R180" stop="no" cream="no"/>
+<text x="-2.02" y="3.024" size="0.8128" layer="25" font="vector">&gt;Name</text>
+<text x="-2.02" y="-3.99" size="0.8128" layer="27" font="vector">&gt;Value</text>
+<circle x="-2.15" y="-0.65" radius="1" width="0.1" layer="51"/>
+<hole x="-3.65" y="-2.15" drill="0.7"/>
+<hole x="3.65" y="-2.15" drill="0.7"/>
+<hole x="3.65" y="2.15" drill="0.7"/>
+<wire x1="-4.25" y1="-2.75" x2="4.25" y2="-2.75" width="0.2032" layer="21"/>
+<wire x1="-4.25" y1="2.75" x2="-4.25" y2="-2.75" width="0.2032" layer="21"/>
+<wire x1="4.25" y1="-2.75" x2="4.25" y2="2.75" width="0.2032" layer="21"/>
+<wire x1="4.25" y1="2.75" x2="-4.25" y2="2.75" width="0.2032" layer="21"/>
+<rectangle x1="-3" y1="-0.2" x2="-2.45" y2="0.2" layer="51"/>
+<rectangle x1="-3" y1="0.8" x2="-2.45" y2="1.2" layer="51"/>
+<rectangle x1="-3" y1="-1.2" x2="-2.45" y2="-0.8" layer="51"/>
+<rectangle x1="2.45" y1="-0.2" x2="3" y2="0.2" layer="51"/>
+<rectangle x1="2.45" y1="0.8" x2="3" y2="1.2" layer="51"/>
+<rectangle x1="2.45" y1="-1.2" x2="3" y2="-0.8" layer="51"/>
+<wire x1="-3" y1="2.25" x2="3" y2="2.25" width="0.1" layer="51"/>
+<wire x1="-3" y1="-2.25" x2="3" y2="-2.25" width="0.1" layer="51"/>
+<wire x1="-3" y1="2.25" x2="-3" y2="-2.25" width="0.1" layer="51"/>
+<wire x1="3" y1="2.25" x2="3" y2="-2.25" width="0.1" layer="51"/>
+<rectangle x1="-0.2" y1="-2.25" x2="0.2" y2="-1.7" layer="51"/>
+<rectangle x1="0.8" y1="-2.25" x2="1.2" y2="-1.7" layer="51"/>
+<rectangle x1="1.8" y1="-2.25" x2="2.2" y2="-1.7" layer="51"/>
+<rectangle x1="-1.2" y1="-2.25" x2="-0.8" y2="-1.7" layer="51"/>
+<rectangle x1="-2.2" y1="-2.25" x2="-1.8" y2="-1.7" layer="51"/>
+<rectangle x1="-0.2" y1="1.7" x2="0.2" y2="2.25" layer="51"/>
+<rectangle x1="-1.2" y1="1.7" x2="-0.8" y2="2.25" layer="51"/>
+<rectangle x1="-2.2" y1="1.7" x2="-1.8" y2="2.25" layer="51"/>
+<rectangle x1="0.8" y1="1.7" x2="1.2" y2="2.25" layer="51"/>
+<rectangle x1="1.8" y1="1.7" x2="2.2" y2="2.25" layer="51"/>
+<smd name="7" x="1" y="-2.075" dx="0.75" dy="0.4" layer="1" rot="R90"/>
+<smd name="8" x="2" y="-2.075" dx="0.75" dy="0.4" layer="1" rot="R90"/>
+<smd name="9" x="2.825" y="-1" dx="0.75" dy="0.4" layer="1" rot="R180"/>
+<smd name="10" x="2.825" y="0" dx="0.75" dy="0.4" layer="1" rot="R180"/>
+<smd name="11" x="2.825" y="1" dx="0.75" dy="0.4" layer="1" rot="R180"/>
+<smd name="12" x="2" y="2.075" dx="0.75" dy="0.4" layer="1" rot="R270"/>
+<smd name="13" x="1" y="2.075" dx="0.75" dy="0.4" layer="1" rot="R270"/>
+<smd name="14" x="0" y="2.075" dx="0.75" dy="0.4" layer="1" rot="R270"/>
+<smd name="15" x="-1" y="2.075" dx="0.75" dy="0.4" layer="1" rot="R270"/>
+<smd name="16" x="-2" y="2.075" dx="0.75" dy="0.4" layer="1" rot="R270"/>
+<circle x="2.15" y="-0.65" radius="1" width="0.1" layer="51"/>
+<text x="1.55" y="-1.15" size="1.016" layer="51" ratio="12">L</text>
+<text x="-2.1" y="-1.15" size="1.016" layer="51" ratio="12">H</text>
+<polygon width="0.0001" layer="29" spacing="0.254">
+<vertex x="-0.95" y="0.35"/>
+<vertex x="0.95" y="0.35"/>
+<vertex x="0.95" y="1.35"/>
+<vertex x="-0.625" y="1.35"/>
+<vertex x="-0.95" y="1.025"/>
+</polygon>
+<polygon width="0.0001" layer="31" spacing="0.254">
+<vertex x="-0.8" y="0.5"/>
+<vertex x="0.8" y="0.5"/>
+<vertex x="0.8" y="1.2"/>
+<vertex x="-0.5" y="1.2"/>
+<vertex x="-0.8" y="0.9"/>
+</polygon>
+<rectangle x1="-0.95" y1="-1.35" x2="0.95" y2="-0.35" layer="29"/>
+<smd name="DIEPAD2" x="0" y="-0.85" dx="0.6096" dy="0.3048" layer="1" rot="R180" stop="no" cream="no"/>
+<circle x="0" y="0" radius="0.175" width="0.35" layer="41"/>
+<polygon width="0.0001" layer="1">
+<vertex x="0.9" y="-1.3"/>
+<vertex x="-0.9" y="-1.3"/>
+<vertex x="-0.9" y="-0.4"/>
+<vertex x="0.9" y="-0.4"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="ADMP401">
@@ -13026,6 +13114,21 @@ VD6283 light measurement is fast and accurate thanks to an individual ADC and a 
 <pin name="INT2" x="15.24" y="-12.7" visible="pin" length="short" rot="R180"/>
 <text x="-10.16" y="15.24" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
 <text x="-10.16" y="-17.78" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
+</symbol>
+<symbol name="SDP3X">
+<description>SDP3X</description>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<pin name="VDD" x="-10.16" y="2.54" visible="pin" length="short" direction="pwr"/>
+<pin name="GND" x="-10.16" y="-5.08" visible="pin" length="short" direction="pwr"/>
+<pin name="SDA" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SCL" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
+<text x="-7.62" y="5.08" size="1.778" layer="95">&gt;Name</text>
+<text x="-7.62" y="-9.906" size="1.778" layer="96">&gt;Value</text>
+<pin name="IRQ" x="10.16" y="-2.54" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="ADDR" x="10.16" y="-5.08" visible="pin" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -16868,6 +16971,34 @@ accelerometer and 3D digital gyroscope tailored for Industry 4.0 applications.&l
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-16693" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SDP3X" prefix="U">
+<description>&lt;strong&gt;Differential Pressure Sensor SDP3x&lt;/strong&gt;
+&lt;br&gt;
+The World's Smallest Differential Pressure Sensor
+&lt;br&gt;
+The SDP3x is the world's smallest differential pressure sensor. It measures just 5 mm x 8 mm x 5 mm, opening up new dimensions of integration and application possibilities. The sensor is based on the next generation of the CMOSens® sensor chip and is the heart of Sensirion's new sensor platform for measuring differential pressure and mass flow.</description>
+<gates>
+<gate name="G$1" symbol="SDP3X" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_SDP31" package="SDP3X">
+<connects>
+<connect gate="G$1" pin="ADDR" pad="9"/>
+<connect gate="G$1" pin="GND" pad="1 2 3 6 10 11 DIEPAD1 DIEPAD2"/>
+<connect gate="G$1" pin="IRQ" pad="4"/>
+<connect gate="G$1" pin="SCL" pad="5"/>
+<connect gate="G$1" pin="SDA" pad="8"/>
+<connect gate="G$1" pin="VDD" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-15720" constant="no"/>
+<attribute name="VALUE" value="SDP31" constant="no"/>
 </technology>
 </technologies>
 </device>
