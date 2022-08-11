@@ -35,7 +35,7 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
@@ -44,8 +44,8 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -663,7 +663,7 @@ MSOP&lt;br&gt;
 <wire x1="-0.651" y1="1.503" x2="-0.651" y2="-1.597" width="0.1" layer="51"/>
 <circle x="-1.397" y="1.905" radius="0.283978125" width="0" layer="21"/>
 </package>
-<package name="SIP6">
+<package name="SIP6_MICROPAK">
 <description>&lt;h3&gt;SIP6 Package&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Total Size: 1.45mm x 1mm&lt;/li&gt;
@@ -692,13 +692,53 @@ MSOP&lt;br&gt;
 <rectangle x1="-0.208" y1="0.039" x2="0.192" y2="0.659" layer="29"/>
 <rectangle x1="-0.708" y1="0.039" x2="-0.308" y2="0.659" layer="29"/>
 <circle x="-1.068" y="-0.781" radius="0.178884375" width="0" layer="21"/>
-<text x="-1.397" y="-1.651" size="0.6096" layer="27">&gt;VALUE</text>
+<text x="-1.651" y="-1.651" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 <rectangle x1="-0.71" y1="-0.5" x2="0.69" y2="0.5" layer="51"/>
 <wire x1="-0.82" y1="-0.8" x2="0.79" y2="-0.8" width="0.1" layer="39"/>
 <wire x1="0.79" y1="-0.8" x2="0.79" y2="0.77" width="0.1" layer="39"/>
 <wire x1="0.79" y1="0.77" x2="-0.82" y2="0.77" width="0.1" layer="39"/>
 <wire x1="-0.82" y1="0.77" x2="-0.82" y2="-0.8" width="0.1" layer="39"/>
-<text x="-1.397" y="1.016" size="0.6096" layer="25">&gt;NAME</text>
+<text x="-1.524" y="1.016" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+</package>
+<package name="SIP6_MICROPAK2">
+<description>&lt;h3&gt;SIP6 Micropak2 Package&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Total Size: 1 x 1mm&lt;/li&gt;
+&lt;li&gt;Pad Size: .16mm x .4mm&lt;/li&gt;
+&lt;li&gt;Pitch: .35mm&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+https://www.onsemi.com/pdf/datasheet/nc7sz14-d.pdf
+&lt;/p&gt;</description>
+<circle x="-0.758" y="-0.791" radius="0.178884375" width="0" layer="21"/>
+<text x="-1.757" y="-1.361" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<wire x1="-0.566" y1="-0.8" x2="0.536" y2="-0.8" width="0.1" layer="39"/>
+<wire x1="0.536" y1="-0.8" x2="0.536" y2="0.77" width="0.1" layer="39"/>
+<wire x1="0.536" y1="0.77" x2="-0.566" y2="0.77" width="0.1" layer="39"/>
+<wire x1="-0.566" y1="0.77" x2="-0.566" y2="-0.8" width="0.1" layer="39"/>
+<text x="-1.537" y="0.806" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<smd name="P1" x="-0.36" y="-0.4" dx="0.19" dy="0.5" layer="1" stop="no" cream="no"/>
+<smd name="P2" x="-0.01" y="-0.4" dx="0.19" dy="0.5" layer="1" stop="no" cream="no"/>
+<smd name="P3" x="0.34" y="-0.4" dx="0.19" dy="0.5" layer="1" stop="no" cream="no"/>
+<smd name="P4" x="0.34" y="0.43" dx="0.19" dy="0.5" layer="1" stop="no" cream="no"/>
+<smd name="P5" x="-0.01" y="0.43" dx="0.19" dy="0.5" layer="1" stop="no" cream="no"/>
+<smd name="P6" x="-0.36" y="0.43" dx="0.19" dy="0.5" layer="1" stop="no" cream="no"/>
+<rectangle x1="-0.48" y1="-0.66" x2="-0.24" y2="-0.14" layer="29"/>
+<rectangle x1="-0.13" y1="-0.66" x2="0.11" y2="-0.14" layer="29"/>
+<rectangle x1="0.22" y1="-0.66" x2="0.46" y2="-0.14" layer="29"/>
+<rectangle x1="-0.48" y1="0.17" x2="-0.24" y2="0.69" layer="29"/>
+<rectangle x1="-0.13" y1="0.17" x2="0.11" y2="0.69" layer="29"/>
+<rectangle x1="0.22" y1="0.17" x2="0.46" y2="0.69" layer="29"/>
+<rectangle x1="-0.43" y1="-0.62" x2="-0.29" y2="-0.18" layer="31"/>
+<rectangle x1="-0.08" y1="-0.62" x2="0.06" y2="-0.18" layer="31"/>
+<rectangle x1="0.27" y1="-0.62" x2="0.41" y2="-0.18" layer="31"/>
+<rectangle x1="-0.43" y1="0.21" x2="-0.29" y2="0.65" layer="31"/>
+<rectangle x1="-0.08" y1="0.21" x2="0.06" y2="0.65" layer="31"/>
+<rectangle x1="0.27" y1="0.21" x2="0.41" y2="0.65" layer="31"/>
+<rectangle x1="-0.51" y1="-0.48" x2="0.49" y2="0.52" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -1611,7 +1651,7 @@ voltages up to 5.5 V independent of VCC operating voltage.
 </technology>
 </technologies>
 </device>
-<device name="SIP6" package="SIP6">
+<device name="_MPAK" package="SIP6_MICROPAK">
 <connects>
 <connect gate="U1" pin="A" pad="P2"/>
 <connect gate="U1" pin="GND" pad="P3"/>
@@ -1621,6 +1661,19 @@ voltages up to 5.5 V independent of VCC operating voltage.
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-15068" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_MPAK2" package="SIP6_MICROPAK2">
+<connects>
+<connect gate="U1" pin="A" pad="P2"/>
+<connect gate="U1" pin="GND" pad="P3"/>
+<connect gate="U1" pin="VCC" pad="P6"/>
+<connect gate="U1" pin="Y" pad="P4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-17000" constant="no"/>
 </technology>
 </technologies>
 </device>
