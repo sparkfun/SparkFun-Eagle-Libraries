@@ -2414,15 +2414,16 @@ the 3 V variant.&lt;/p&gt;</description>
 <pin name="RESERVED" x="17.78" y="-17.78" length="short" direction="nc" rot="R180"/>
 </symbol>
 <symbol name="ZED-F9R">
-<wire x1="15.24" y1="25.4" x2="15.24" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-25.4" x2="-15.24" y2="-25.4" width="0.254" layer="94"/>
-<wire x1="-15.24" y1="-25.4" x2="-15.24" y2="25.4" width="0.254" layer="94"/>
+<description>&lt;h3&gt;ZED-F9R&lt;/h3&gt;</description>
+<wire x1="15.24" y1="25.4" x2="15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-20.32" x2="-15.24" y2="-20.32" width="0.254" layer="94"/>
+<wire x1="-15.24" y1="-20.32" x2="-15.24" y2="25.4" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="25.4" x2="15.24" y2="25.4" width="0.254" layer="94"/>
-<pin name="GND" x="-17.78" y="-22.86" length="short" direction="pwr"/>
+<pin name="GND" x="-17.78" y="-17.78" length="short" direction="pwr"/>
 <pin name="VCC" x="-17.78" y="22.86" length="short" direction="pwr"/>
 <pin name="!RESET!" x="17.78" y="22.86" length="short" rot="R180"/>
-<pin name="TX/MISO" x="17.78" y="7.62" length="short" rot="R180"/>
-<pin name="RX/MOSI" x="17.78" y="5.08" length="short" rot="R180"/>
+<pin name="TX/COPI" x="17.78" y="7.62" length="short" rot="R180"/>
+<pin name="RX/CIPO" x="17.78" y="5.08" length="short" rot="R180"/>
 <pin name="SDA/!CS!" x="17.78" y="17.78" length="short" rot="R180"/>
 <pin name="SCL/CLK" x="17.78" y="15.24" length="short" rot="R180"/>
 <pin name="TX_READY" x="17.78" y="12.7" length="short" rot="R180"/>
@@ -2440,13 +2441,12 @@ the 3 V variant.&lt;/p&gt;</description>
 <pin name="V_USB" x="-17.78" y="0" length="short" direction="pwr"/>
 <pin name="USB_D-" x="-17.78" y="-5.08" length="short"/>
 <pin name="USB_D+" x="-17.78" y="-2.54" length="short"/>
-<text x="-15.24" y="25.908" size="1.778" layer="95">&gt;Name</text>
-<text x="-15.24" y="-27.94" size="1.778" layer="96">&gt;Value</text>
+<text x="-15.24" y="25.908" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-15.24" y="-22.86" size="1.778" layer="96" font="vector">&gt;Value</text>
 <pin name="TX2" x="17.78" y="-2.54" length="short" direction="out" rot="R180"/>
 <pin name="RX2" x="17.78" y="-5.08" length="short" direction="in" rot="R180"/>
 <pin name="WHEEL_TKS" x="-17.78" y="-12.7" length="short" direction="in"/>
 <pin name="DIR" x="-17.78" y="-15.24" length="short" direction="in"/>
-<pin name="RSVD" x="17.78" y="-22.86" length="short" direction="nc" rot="R180"/>
 <pin name="GEO_FENCE_STAT" x="17.78" y="-10.16" length="short" direction="out" rot="R180"/>
 </symbol>
 <symbol name="NEO-D9S">
@@ -3212,7 +3212,7 @@ The NEO-M8U may be installed in any position within the vehicle without configur
 </device>
 </devices>
 </deviceset>
-<deviceset name="U-BLOX_ZED_F9R" prefix="U">
+<deviceset name="U-BLOX_ZED-F9R" prefix="U">
 <description>&lt;h3&gt;u-blox ZED-F9K ADR&lt;/h3&gt;
 &lt;p&gt;GPS Unit with Real Time Kinematics (RTK) and internal IMU = &lt;b&gt;Automotive Dead Reckoning&lt;/b&gt;&lt;/p&gt;</description>
 <gates>
@@ -3232,14 +3232,13 @@ The NEO-M8U may be installed in any position within the vehicle without configur
 <connect gate="G$1" pin="GEO_FENCE_STAT" pad="P19"/>
 <connect gate="G$1" pin="GND" pad="G1 G2 G3 G4 G5 G6 G7 G8 G9 G10 G11 G12 G13 G14 G15 G16 G17 G18 G19 G20 G21 G22 G23 G24 G25 G26 G27 G28 G29 G30 G31 G32 G33 G34 G35 G36 G37 G38 G39 G40 G41 G42 G43 G44 G45 G46 G47 G48 P1 P3 P12 P14 P32 P37 P41 P48"/>
 <connect gate="G$1" pin="RF_IN" pad="P2"/>
-<connect gate="G$1" pin="RSVD" pad="P8 P9 P10 P11 P13 P15 P16 P17 P18 P21 P24 P25 P28 P29 P30 P31 P35 P52 P54"/>
 <connect gate="G$1" pin="RTK_STAT" pad="P20"/>
-<connect gate="G$1" pin="RX/MOSI" pad="P43"/>
+<connect gate="G$1" pin="RX/CIPO" pad="P43"/>
 <connect gate="G$1" pin="RX2" pad="P26"/>
 <connect gate="G$1" pin="SCL/CLK" pad="P45"/>
 <connect gate="G$1" pin="SDA/!CS!" pad="P44"/>
 <connect gate="G$1" pin="TIMEPULSE" pad="P53"/>
-<connect gate="G$1" pin="TX/MISO" pad="P42"/>
+<connect gate="G$1" pin="TX/COPI" pad="P42"/>
 <connect gate="G$1" pin="TX2" pad="P27"/>
 <connect gate="G$1" pin="TX_READY" pad="P46"/>
 <connect gate="G$1" pin="USB_D+" pad="P40"/>
