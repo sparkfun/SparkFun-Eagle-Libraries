@@ -39498,6 +39498,46 @@ Made for the small  &lt;a href="https://www.sparkfun.com/products/18221"&gt; 1mm
 <wire x1="6.35" y1="2.032" x2="5.969" y2="2.413" width="0.0762" layer="51"/>
 <wire x1="-7.8" y1="-2.311" x2="7.8" y2="-2.311" width="0.1524" layer="21"/>
 </package>
+<package name="POWER_JACK_PTH_SLOT_NO_OVRHNG_SILK">
+<description>&lt;h3&gt;DC Barrel Power Jack/Connector PTH&lt;/h3&gt;
+5.5mm jack, 2.1mm center pole diameter
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 3&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://www.sparkfun.com/datasheets/Prototyping/Barrel-Connector-PJ-202A.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;POWER_JACK&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-5.7" y1="4.5" x2="-5.7" y2="2.7" width="0.2032" layer="21"/>
+<wire x1="0.5296" y1="-4.5" x2="7.7" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="7.7" y1="4.5" x2="0.5296" y2="4.5" width="0.2032" layer="51"/>
+<wire x1="7.7" y1="4.5" x2="7.7" y2="-4.5" width="0.2032" layer="51"/>
+<wire x1="-5.7" y1="4.5" x2="-5.6" y2="4.5" width="0.2032" layer="21"/>
+<wire x1="-5.7" y1="-4.5" x2="-5.7" y2="-2.8" width="0.2032" layer="21"/>
+<text x="-4.3" y="-3.1" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-4.4" y="-4" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<polygon width="0.01" layer="46">
+<vertex x="-4" y="5.2"/>
+<vertex x="-2" y="5.2" curve="-180"/>
+<vertex x="-2" y="4.2"/>
+<vertex x="-4" y="4.2" curve="-180"/>
+</polygon>
+<polygon width="0.01" layer="46">
+<vertex x="-0.5" y="-1"/>
+<vertex x="-0.5" y="1" curve="-180"/>
+<vertex x="0.5" y="1"/>
+<vertex x="0.5" y="-1" curve="-180"/>
+</polygon>
+<polygon width="0.01" layer="46">
+<vertex x="-6.5" y="-1.3"/>
+<vertex x="-6.5" y="1.3" curve="-180"/>
+<vertex x="-5.5" y="1.3"/>
+<vertex x="-5.5" y="-1.3" curve="-180"/>
+</polygon>
+<pad name="GND" x="0" y="0" drill="1" diameter="2" shape="long" rot="R90"/>
+<pad name="GNDBREAK" x="-3.048" y="4.699" drill="1" diameter="2" shape="long" rot="R180"/>
+<pad name="PWR" x="-5.969" y="0" drill="1" diameter="2.3" shape="long" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -48750,6 +48790,16 @@ The Slot footprint only works if the mill layer is transmitted to the PCB fab ho
 <technology name="">
 <attribute name="PROD_ID" value="CONN-08197" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="POWER_JACK_SLOT_NO_SILK_OVRHNG" package="POWER_JACK_PTH_SLOT_NO_OVRHNG_SILK">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GNDBREAK" pad="GNDBREAK"/>
+<connect gate="G$1" pin="PWR" pad="PWR"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
