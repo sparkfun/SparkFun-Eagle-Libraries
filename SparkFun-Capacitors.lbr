@@ -1131,7 +1131,7 @@ CAP-08070</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="100UF-POLAR" prefix="C">
+<deviceset name="100UF-POLAR" prefix="C" uservalue="yes">
 <description>&lt;h3&gt;100µF polarized capacitors&lt;/h3&gt;
 &lt;p&gt;A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.&lt;/p&gt;</description>
 <gates>
@@ -1231,6 +1231,19 @@ CAP-08070</description>
 <technology name="">
 <attribute name="PROD_ID" value="CAP-16823" constant="no"/>
 <attribute name="VALUE" value="100uF" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-25V-20%-SMD(ELEC)" package="PANASONIC_D">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PN" value="EDH107M025A9HAA"/>
+<attribute name="PROD_ID" value="CAP-17222"/>
+<attribute name="VALUE" value="100uF"/>
 </technology>
 </technologies>
 </device>
