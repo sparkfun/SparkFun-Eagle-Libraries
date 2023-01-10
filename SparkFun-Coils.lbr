@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -949,6 +949,20 @@ Mechanical Specifications
 <wire x1="1.5" y1="0.8" x2="1.5" y2="-0.8" width="0.0508" layer="39"/>
 <wire x1="1.5" y1="-0.8" x2="-1.5" y2="-0.8" width="0.0508" layer="39"/>
 <wire x1="-1.5" y1="-0.8" x2="-1.5" y2="0.8" width="0.0508" layer="39"/>
+</package>
+<package name="07A7_6U8H">
+<smd name="P$1" x="-2.775" y="0" dx="1.85" dy="3.5" layer="1"/>
+<smd name="P$2" x="2.775" y="0" dx="1.85" dy="3.5" layer="1"/>
+<wire x1="-3.65" y1="-3.3" x2="-3.65" y2="3.3" width="0.127" layer="51"/>
+<wire x1="-3.65" y1="3.3" x2="3.65" y2="3.3" width="0.127" layer="51"/>
+<wire x1="3.65" y1="3.3" x2="3.65" y2="-3.3" width="0.127" layer="51"/>
+<wire x1="3.65" y1="-3.3" x2="-3.65" y2="-3.3" width="0.127" layer="51"/>
+<wire x1="-3.9" y1="3.5" x2="3.9" y2="3.5" width="0.2" layer="21"/>
+<wire x1="3.9" y1="3.5" x2="3.9" y2="2" width="0.2" layer="21"/>
+<wire x1="-3.9" y1="3.5" x2="-3.9" y2="2" width="0.2" layer="21"/>
+<wire x1="3.9" y1="-3.5" x2="-3.9" y2="-3.5" width="0.2" layer="21"/>
+<wire x1="-3.9" y1="-3.5" x2="-3.9" y2="-2" width="0.2" layer="21"/>
+<wire x1="3.9" y1="-3.5" x2="3.9" y2="-2" width="0.2" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -2104,6 +2118,26 @@ Mechanical Specifications
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="NDUC-08761" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="6.8UH" prefix="L" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="07A7_6U8H">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PN" value="LMLP07A7M6R8DTAS"/>
+<attribute name="PROD_ID" value="NDUC-17223"/>
+<attribute name="VALUE" value="6.8UH"/>
 </technology>
 </technologies>
 </device>
