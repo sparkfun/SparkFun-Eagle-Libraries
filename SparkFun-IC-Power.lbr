@@ -2590,6 +2590,35 @@ Pasted was reduced by 40% width on the center ground pad, and some amount on the
 <text x="-1.524" y="2.286" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.651" y="-2.794" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
+<package name="V-DFN3020-13">
+<smd name="P$1" x="-0.675" y="-0.75" dx="1.5" dy="0.8" layer="1" stop="no" thermals="no"/>
+<smd name="P$8" x="-0.675" y="0.75" dx="1.5" dy="0.8" layer="1" stop="no" thermals="no"/>
+<smd name="P$9" x="-0.79" y="0" dx="1.73" dy="0.4" layer="1" stop="no" thermals="no"/>
+<smd name="P$2" x="0.375" y="-0.85" dx="0.3" dy="0.6" layer="1" stop="no" thermals="no"/>
+<smd name="P$3" x="0.825" y="-0.85" dx="0.3" dy="0.6" layer="1" stop="no" thermals="no"/>
+<smd name="P$4" x="1.275" y="-0.85" dx="0.3" dy="0.6" layer="1" stop="no" thermals="no"/>
+<smd name="P$5" x="1.275" y="0.85" dx="0.3" dy="0.6" layer="1" rot="R180" stop="no" thermals="no"/>
+<smd name="P$6" x="0.825" y="0.85" dx="0.3" dy="0.6" layer="1" rot="R180" stop="no" thermals="no"/>
+<smd name="P$7" x="0.375" y="0.85" dx="0.3" dy="0.6" layer="1" rot="R180" stop="no" thermals="no"/>
+<wire x1="-1.5" y1="1.05" x2="-1.5" y2="-1.05" width="0.1" layer="51"/>
+<wire x1="-1.5" y1="-1.05" x2="1.5" y2="-1.05" width="0.1" layer="51"/>
+<wire x1="1.5" y1="-1.05" x2="1.5" y2="1.05" width="0.1" layer="51"/>
+<wire x1="1.5" y1="1.05" x2="-1.5" y2="1.05" width="0.1" layer="51"/>
+<wire x1="-1" y1="1.4" x2="-1.8" y2="1.4" width="0.3" layer="21"/>
+<wire x1="-1.8" y1="1.4" x2="-1.8" y2="0.9" width="0.3" layer="21"/>
+<wire x1="1.8" y1="-0.9" x2="1.8" y2="-1.4" width="0.3" layer="21"/>
+<wire x1="1.8" y1="-1.4" x2="1" y2="-1.4" width="0.3" layer="21"/>
+<circle x="-1.8" y="-1.5" radius="0.254" width="0" layer="21"/>
+<rectangle x1="-1.47" y1="-1.2" x2="0.12" y2="-0.3" layer="29"/>
+<rectangle x1="0.18" y1="-1.2" x2="0.57" y2="-0.5" layer="29"/>
+<rectangle x1="0.63" y1="-1.2" x2="1.02" y2="-0.5" layer="29"/>
+<rectangle x1="1.08" y1="-1.2" x2="1.47" y2="-0.5" layer="29"/>
+<rectangle x1="0.18" y1="0.5" x2="0.57" y2="1.2" layer="29"/>
+<rectangle x1="0.63" y1="0.5" x2="1.02" y2="1.2" layer="29"/>
+<rectangle x1="1.08" y1="0.5" x2="1.47" y2="1.2" layer="29"/>
+<rectangle x1="-1.47" y1="0.3" x2="0.12" y2="1.2" layer="29"/>
+<rectangle x1="-1.7" y1="-0.25" x2="0.13" y2="0.25" layer="29"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DC-DC_CONVERTER">
@@ -3533,6 +3562,22 @@ conversion&lt;/p&gt;</description>
 <pin name="GND" x="-10.16" y="0" visible="pin" length="short" direction="in"/>
 <pin name="OUT" x="7.62" y="5.08" visible="pin" length="short" direction="pas" rot="R180"/>
 <pin name="EN" x="-10.16" y="-5.08" visible="pin" length="short" direction="in"/>
+</symbol>
+<symbol name="AP63357">
+<wire x1="-12.7" y1="-25.4" x2="12.7" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-25.4" x2="12.7" y2="22.86" width="0.254" layer="94"/>
+<wire x1="12.7" y1="22.86" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="22.86" x2="-12.7" y2="-25.4" width="0.254" layer="94"/>
+<pin name="VIN" x="-15.24" y="17.78" visible="pin" length="short" direction="pwr"/>
+<pin name="EN" x="-15.24" y="2.54" visible="pin" length="short"/>
+<pin name="COMP" x="-15.24" y="-12.7" visible="pin" length="short"/>
+<pin name="GND" x="-15.24" y="-20.32" visible="pin" length="short" direction="sup"/>
+<pin name="PG" x="15.24" y="-20.32" visible="pin" length="short" direction="out" rot="R180"/>
+<pin name="FB" x="15.24" y="-12.7" visible="pin" length="short" direction="in" rot="R180"/>
+<pin name="SW" x="15.24" y="2.54" visible="pin" length="short" direction="pwr" rot="R180"/>
+<pin name="BST" x="15.24" y="17.78" visible="pin" length="short" rot="R180"/>
+<text x="-12.7" y="25.4" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-12.7" y="-30.48" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -5536,6 +5581,36 @@ control low level voltages.&lt;/p&gt;
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="VREG-16875" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AP63357" prefix="U" uservalue="yes">
+<description>The AP63356/AP63357 is a 3.5A, synchronous buck converter with a
+wide input voltage range of 3.8V to 32V. The device fully integrates a
+74mΩ high-side power MOSFET and a 40mΩ low-side power
+MOSFET to provide high-efficiency step-down DC-DC conversion.</description>
+<gates>
+<gate name="G$1" symbol="AP63357" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="V-DFN3020-13">
+<connects>
+<connect gate="G$1" pin="BST" pad="P$6"/>
+<connect gate="G$1" pin="COMP" pad="P$4"/>
+<connect gate="G$1" pin="EN" pad="P$2"/>
+<connect gate="G$1" pin="FB" pad="P$3"/>
+<connect gate="G$1" pin="GND" pad="P$8"/>
+<connect gate="G$1" pin="PG" pad="P$5"/>
+<connect gate="G$1" pin="SW" pad="P$7 P$9"/>
+<connect gate="G$1" pin="VIN" pad="P$1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PN" value="AP63357DV-7"/>
+<attribute name="PROD_ID" value="VREG-17224"/>
+<attribute name="VALUE" value="AP63357"/>
 </technology>
 </technologies>
 </device>
