@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -10837,103 +10837,49 @@ read, as well as embedded engines for orientation, Directional-TapTM/DoubleTapTM
 <vertex x="0.9" y="-0.4"/>
 </polygon>
 </package>
-<package name="BMP581">
-<description>&lt;h3&gt;LGA10&lt;/h3&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count: 10&lt;/li&gt;
-&lt;li&gt;Pin pitch: .5mm&lt;/li&gt;
-&lt;li&gt;Area: 2.0 x 2.0 mm&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp581-ds004.pdf&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="1.1" y1="1.1" x2="1.1" y2="-1.1" width="0.127" layer="21"/>
-<wire x1="1.1" y1="-1.1" x2="-1.1" y2="-1.1" width="0.127" layer="21"/>
-<wire x1="-1.1" y1="-1.1" x2="-1.1" y2="1.1" width="0.127" layer="21"/>
-<wire x1="-1.1" y1="1.1" x2="1.1" y2="1.1" width="0.127" layer="21"/>
-<circle x="1.282" y="1.258" radius="0.045253125" width="0.175" layer="21"/>
-<smd name="9" x="0.7625" y="0" dx="0.275" dy="0.25" layer="1" cream="no"/>
-<smd name="10" x="0.7625" y="0.5" dx="0.275" dy="0.25" layer="1" cream="no"/>
-<smd name="8" x="0.7625" y="-0.5" dx="0.275" dy="0.25" layer="1" cream="no"/>
-<smd name="4" x="-0.7625" y="0" dx="0.275" dy="0.25" layer="1" cream="no"/>
-<smd name="3" x="-0.7625" y="0.5" dx="0.275" dy="0.25" layer="1" cream="no"/>
-<smd name="5" x="-0.7625" y="-0.5" dx="0.275" dy="0.25" layer="1" cream="no"/>
-<smd name="2" x="-0.25" y="0.7625" dx="0.25" dy="0.275" layer="1" cream="no"/>
-<smd name="1" x="0.25" y="0.7625" dx="0.25" dy="0.275" layer="1" cream="no"/>
-<smd name="6" x="-0.25" y="-0.7625" dx="0.25" dy="0.275" layer="1" cream="no"/>
-<smd name="7" x="0.25" y="-0.7625" dx="0.25" dy="0.275" layer="1" cream="no"/>
-<wire x1="-1.05" y1="1.05" x2="1.05" y2="1.05" width="0.127" layer="51"/>
-<wire x1="1.05" y1="1.05" x2="1.05" y2="-1.05" width="0.127" layer="51"/>
-<wire x1="1.05" y1="-1.05" x2="-1.05" y2="-1.05" width="0.127" layer="51"/>
-<wire x1="-1.05" y1="-1.05" x2="-1.05" y2="1.05" width="0.127" layer="51"/>
-<text x="0" y="1.778" size="0.6096" layer="25" font="vector" ratio="20" align="center">&gt;Name</text>
-<text x="0" y="-1.778" size="0.6096" layer="27" font="vector" ratio="20" align="center">&gt;Value</text>
-<rectangle x1="-1.2" y1="-1.2" x2="1.2" y2="1.2" layer="39"/>
-<rectangle x1="0.65" y1="-0.1" x2="0.875" y2="0.1" layer="31"/>
-<rectangle x1="-0.875" y1="-0.1" x2="-0.65" y2="0.1" layer="31"/>
-<rectangle x1="-0.3625" y1="0.6625" x2="-0.1375" y2="0.8625" layer="31" rot="R90"/>
-<rectangle x1="-0.3625" y1="-0.8625" x2="-0.1375" y2="-0.6625" layer="31" rot="R90"/>
-<rectangle x1="0.1375" y1="0.6625" x2="0.3625" y2="0.8625" layer="31" rot="R90"/>
-<rectangle x1="0.1375" y1="-0.8625" x2="0.3625" y2="-0.6625" layer="31" rot="R90"/>
-<rectangle x1="0.65" y1="0.4" x2="0.875" y2="0.6" layer="31"/>
-<rectangle x1="-0.875" y1="0.4" x2="-0.65" y2="0.6" layer="31"/>
-<rectangle x1="0.65" y1="-0.6" x2="0.875" y2="-0.4" layer="31"/>
-<rectangle x1="-0.875" y1="-0.6" x2="-0.65" y2="-0.4" layer="31"/>
-</package>
-<package name="LGA-9">
-<description>&lt;h3&gt;LGA-9&lt;/h3&gt;
-&lt;p&gt;Mechanical Specifications:
-&lt;ul&gt;
-&lt;li&gt;Pad Size: .9mm x .85mm &lt;/li&gt;
-&lt;li&gt;Pin count: 9 &lt;/li&gt;
-&lt;li&gt;Pin pitch: 1.05mm&lt;/li&gt;
-&lt;li&gt;Package Size: 3mm x 3mm&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=”https://www.sciosense.com/wp-content/uploads/documents/SC-001224-DS-7-ENS160-Datasheet.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;</description>
-<wire x1="-1.6" y1="1.55" x2="-1.6" y2="-1.6" width="0.1" layer="51"/>
-<wire x1="-1.6" y1="-1.6" x2="1.55" y2="-1.6" width="0.1" layer="51"/>
-<wire x1="1.55" y1="-1.6" x2="1.55" y2="1.55" width="0.1" layer="51"/>
-<wire x1="1.55" y1="1.55" x2="-1.6" y2="1.55" width="0.1" layer="51"/>
-<circle x="-1.87" y="1.905" radius="0.25164375" width="0" layer="21"/>
-<smd name="P1" x="-1.085" y="1.03" dx="0.9" dy="0.85" layer="1" stop="no" cream="no"/>
-<smd name="P2" x="-1.085" y="-0.02" dx="0.9" dy="0.85" layer="1" stop="no" cream="no"/>
-<smd name="P3" x="-1.085" y="-1.07" dx="0.9" dy="0.85" layer="1" stop="no" cream="no"/>
-<smd name="P4" x="-0.035" y="-1.07" dx="0.9" dy="0.85" layer="1" stop="no" cream="no"/>
-<smd name="P9" x="-0.035" y="-0.02" dx="0.9" dy="0.85" layer="1" stop="no" cream="no"/>
-<smd name="P8" x="-0.035" y="1.03" dx="0.9" dy="0.85" layer="1" stop="no" cream="no"/>
-<smd name="P5" x="1.015" y="-1.07" dx="0.9" dy="0.85" layer="1" stop="no" cream="no"/>
-<smd name="P6" x="1.015" y="-0.02" dx="0.9" dy="0.85" layer="1" stop="no" cream="no"/>
-<smd name="P7" x="1.015" y="1.03" dx="0.9" dy="0.85" layer="1" stop="no" cream="no"/>
-<rectangle x1="-1.535" y1="0.605" x2="-0.635" y2="1.455" layer="29"/>
-<rectangle x1="-1.535" y1="-0.445" x2="-0.635" y2="0.405" layer="29"/>
-<rectangle x1="-1.535" y1="-1.495" x2="-0.635" y2="-0.645" layer="29"/>
-<rectangle x1="-0.485" y1="0.605" x2="0.415" y2="1.455" layer="29"/>
-<rectangle x1="-0.485" y1="-0.445" x2="0.415" y2="0.405" layer="29"/>
-<rectangle x1="-0.485" y1="-1.495" x2="0.415" y2="-0.645" layer="29"/>
-<rectangle x1="0.565" y1="0.605" x2="1.465" y2="1.455" layer="29"/>
-<rectangle x1="0.565" y1="-0.445" x2="1.465" y2="0.405" layer="29"/>
-<rectangle x1="0.565" y1="-1.495" x2="1.465" y2="-0.645" layer="29"/>
-<rectangle x1="-1.48" y1="0.65" x2="-0.68" y2="1.41" layer="31"/>
-<rectangle x1="-1.48" y1="-0.4" x2="-0.68" y2="0.36" layer="31"/>
-<rectangle x1="-1.48" y1="-1.45" x2="-0.68" y2="-0.69" layer="31"/>
-<rectangle x1="-0.43" y1="0.65" x2="0.37" y2="1.41" layer="31"/>
-<rectangle x1="-0.43" y1="-0.4" x2="0.37" y2="0.36" layer="31"/>
-<rectangle x1="-0.43" y1="-1.45" x2="0.37" y2="-0.69" layer="31"/>
-<rectangle x1="0.62" y1="0.65" x2="1.42" y2="1.41" layer="31"/>
-<rectangle x1="0.62" y1="-0.4" x2="1.42" y2="0.36" layer="31"/>
-<rectangle x1="0.62" y1="-1.45" x2="1.42" y2="-0.69" layer="31"/>
-<wire x1="-1.6" y1="1.2" x2="-1.6" y2="1.55" width="0.1" layer="21"/>
-<wire x1="-1.6" y1="1.55" x2="-1.25" y2="1.55" width="0.1" layer="21"/>
-<wire x1="-1.25" y1="-1.6" x2="-1.6" y2="-1.6" width="0.1" layer="21"/>
-<wire x1="-1.6" y1="-1.6" x2="-1.6" y2="-1.25" width="0.1" layer="21"/>
-<wire x1="1.2" y1="1.55" x2="1.55" y2="1.55" width="0.1" layer="21"/>
-<wire x1="1.55" y1="1.55" x2="1.55" y2="1.2" width="0.1" layer="21"/>
-<wire x1="1.55" y1="-1.25" x2="1.55" y2="-1.6" width="0.1" layer="21"/>
-<wire x1="1.55" y1="-1.6" x2="1.2" y2="-1.6" width="0.1" layer="21"/>
-<text x="-1.6256" y="1.7272" size="0.6096" layer="25" font="vector" ratio="20">&gt;Name</text>
-<text x="-1.7526" y="-2.3876" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-<wire x1="-1.7272" y1="1.6764" x2="-1.7272" y2="-1.7272" width="0.1524" layer="39"/>
-<wire x1="-1.7272" y1="-1.7272" x2="1.6764" y2="-1.7272" width="0.1524" layer="39"/>
-<wire x1="1.6764" y1="-1.7272" x2="1.6764" y2="1.6764" width="0.1524" layer="39"/>
-<wire x1="1.6764" y1="1.6764" x2="-1.7272" y2="1.6764" width="0.1524" layer="39"/>
+<package name="LGA-12-LISDH12-NOSILK">
+<wire x1="-1" y1="-1" x2="-1" y2="1" width="0.002540625" layer="51"/>
+<wire x1="-1" y1="1" x2="1" y2="1" width="0.002540625" layer="51"/>
+<wire x1="1" y1="1" x2="1" y2="-1" width="0.002540625" layer="51"/>
+<wire x1="1" y1="-1" x2="-1" y2="-1" width="0.002540625" layer="51"/>
+<rectangle x1="-0.375" y1="0.6125" x2="-0.125" y2="0.8875" layer="51"/>
+<rectangle x1="0.125" y1="0.6125" x2="0.375" y2="0.8875" layer="51"/>
+<rectangle x1="-0.875" y1="0.6125" x2="-0.625" y2="0.8875" layer="51" rot="R90"/>
+<rectangle x1="-0.875" y1="0.1125" x2="-0.625" y2="0.3875" layer="51" rot="R90"/>
+<rectangle x1="-0.875" y1="-0.3875" x2="-0.625" y2="-0.1125" layer="51" rot="R90"/>
+<rectangle x1="-0.875" y1="-0.8875" x2="-0.625" y2="-0.6125" layer="51" rot="R90"/>
+<rectangle x1="-0.375" y1="-0.8875" x2="-0.125" y2="-0.6125" layer="51" rot="R180"/>
+<rectangle x1="0.125" y1="-0.8875" x2="0.375" y2="-0.6125" layer="51" rot="R180"/>
+<rectangle x1="0.625" y1="-0.8875" x2="0.875" y2="-0.6125" layer="51" rot="R90"/>
+<rectangle x1="0.625" y1="-0.3875" x2="0.875" y2="-0.1125" layer="51" rot="R90"/>
+<rectangle x1="0.625" y1="0.1125" x2="0.875" y2="0.3875" layer="51" rot="R90"/>
+<rectangle x1="0.625" y1="0.6125" x2="0.875" y2="0.8875" layer="51" rot="R90"/>
+<smd name="5" x="-0.25" y="-0.75" dx="0.25" dy="0.275" layer="1"/>
+<smd name="6" x="0.25" y="-0.75" dx="0.25" dy="0.275" layer="1"/>
+<smd name="11" x="0.25" y="0.75" dx="0.25" dy="0.275" layer="1"/>
+<smd name="12" x="-0.25" y="0.75" dx="0.25" dy="0.275" layer="1"/>
+<smd name="1" x="-0.75" y="0.75" dx="0.25" dy="0.275" layer="1" rot="R90"/>
+<smd name="2" x="-0.75" y="0.25" dx="0.25" dy="0.275" layer="1" rot="R90"/>
+<smd name="4" x="-0.75" y="-0.75" dx="0.25" dy="0.275" layer="1" rot="R90"/>
+<smd name="3" x="-0.75" y="-0.25" dx="0.25" dy="0.275" layer="1" rot="R90"/>
+<smd name="7" x="0.75" y="-0.75" dx="0.25" dy="0.275" layer="1" rot="R90"/>
+<smd name="8" x="0.75" y="-0.25" dx="0.25" dy="0.275" layer="1" rot="R90"/>
+<smd name="9" x="0.75" y="0.25" dx="0.25" dy="0.275" layer="1" rot="R90"/>
+<smd name="10" x="0.75" y="0.75" dx="0.25" dy="0.275" layer="1" rot="R90"/>
+<circle x="-1.6826" y="1.6826" radius="0.254" width="0" layer="21"/>
+<text x="0" y="1.2192" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-1.2192" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+<wire x1="0" y1="-0.1016" x2="0" y2="-0.4826" width="0.0254" layer="51"/>
+<wire x1="0" y1="-0.4826" x2="0.127" y2="-0.3556" width="0.0254" layer="51"/>
+<wire x1="0" y1="-0.4826" x2="-0.127" y2="-0.3556" width="0.0254" layer="51"/>
+<wire x1="0" y1="0" x2="0.381" y2="0" width="0.0254" layer="51"/>
+<wire x1="0.381" y1="0" x2="0.254" y2="0.127" width="0.0254" layer="51"/>
+<wire x1="0.381" y1="0" x2="0.254" y2="-0.127" width="0.0254" layer="51"/>
+<text x="-0.127" y="-0.2286" size="0.127" layer="51">X</text>
+<text x="0.0508" y="0.0508" size="0.127" layer="51">Y</text>
+<circle x="-0.2794" y="0.0762" radius="0.162353125" width="0.0254" layer="51"/>
+<circle x="-0.2794" y="0.0762" radius="0.0254" width="0.1016" layer="51"/>
+<text x="-0.3302" y="0.3048" size="0.127" layer="51">Z</text>
 </package>
 </packages>
 <symbols>
@@ -13227,42 +13173,6 @@ VD6283 light measurement is fast and accurate thanks to an individual ADC and a 
 <text x="-7.62" y="-9.906" size="1.778" layer="96">&gt;Value</text>
 <pin name="IRQ" x="10.16" y="-2.54" visible="pin" length="short" direction="out" rot="R180"/>
 <pin name="ADDR" x="10.16" y="-5.08" visible="pin" length="short" rot="R180"/>
-</symbol>
-<symbol name="BMP581">
-<description>&lt;h3&gt;Bosch BMP384 Pressure Sensor&lt;/h3&gt;
-&lt;p&gt;Senses pressure from 300 hPa to 1250 hPa, sends data out over I&lt;sup&gt;2&lt;/sup&gt;C or Serial&lt;/p&gt;</description>
-<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<pin name="SDI/SDA" x="12.7" y="7.62" length="short" rot="R180"/>
-<pin name="VDD" x="-12.7" y="0" length="short" direction="pwr"/>
-<pin name="GND" x="-12.7" y="-5.08" length="short" direction="pwr"/>
-<pin name="SCK/SCL" x="12.7" y="5.08" length="short" rot="R180"/>
-<pin name="SDO/ADR" x="12.7" y="2.54" length="short" rot="R180"/>
-<pin name="CSB" x="12.7" y="-5.08" length="short" direction="in" rot="R180"/>
-<pin name="INT" x="12.7" y="-2.54" length="short" direction="out" rot="R180"/>
-<text x="-10.16" y="10.414" size="1.778" layer="95" font="vector">&gt;Name</text>
-<text x="-10.16" y="-10.16" size="1.778" layer="96" font="vector">&gt;Value</text>
-<pin name="VDDIO" x="-12.7" y="-2.54" length="short" direction="pwr"/>
-</symbol>
-<symbol name="ENS160">
-<description>&lt;h3&gt;ENS160&lt;/h3&gt;</description>
-<pin name="VDD" x="-12.7" y="5.08" visible="pin" length="short" direction="pwr"/>
-<pin name="VDDIO" x="-12.7" y="2.54" visible="pin" length="short" direction="pwr"/>
-<pin name="GND@8" x="-12.7" y="-2.54" visible="pin" length="short" direction="pwr"/>
-<pin name="!INT!" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
-<pin name="!CS!" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
-<pin name="PICO/SDA" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
-<pin name="POCI/ADDR" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
-<pin name="SCLK/SCL" x="15.24" y="-5.08" visible="pin" length="short" rot="R180"/>
-<pin name="GND@9" x="-12.7" y="-5.08" visible="pin" length="short" direction="pwr"/>
-<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
-<wire x1="12.7" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
-<text x="-10.16" y="8.128" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="-10.16" y="-10.16" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -16201,26 +16111,45 @@ blocks.&lt;/p&gt;</description>
 </deviceset>
 <deviceset name="LIS2DH12" prefix="U">
 <gates>
-<gate name="G$1" symbol="LIS2DH12" x="0" y="0"/>
+<gate name="U1" symbol="LIS2DH12" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="LGA-12-LISDH12">
 <connects>
-<connect gate="G$1" pin="CS" pad="2"/>
-<connect gate="G$1" pin="GND" pad="6 7 8"/>
-<connect gate="G$1" pin="INT1" pad="12"/>
-<connect gate="G$1" pin="INT2" pad="11"/>
-<connect gate="G$1" pin="RES" pad="5"/>
-<connect gate="G$1" pin="SCL/SPC" pad="1"/>
-<connect gate="G$1" pin="SDA/SDI/SDO" pad="4"/>
-<connect gate="G$1" pin="SDO/SA0" pad="3"/>
-<connect gate="G$1" pin="VDD" pad="9"/>
-<connect gate="G$1" pin="VDD_IO" pad="10"/>
+<connect gate="U1" pin="CS" pad="2"/>
+<connect gate="U1" pin="GND" pad="6 7 8"/>
+<connect gate="U1" pin="INT1" pad="12"/>
+<connect gate="U1" pin="INT2" pad="11"/>
+<connect gate="U1" pin="RES" pad="5"/>
+<connect gate="U1" pin="SCL/SPC" pad="1"/>
+<connect gate="U1" pin="SDA/SDI/SDO" pad="4"/>
+<connect gate="U1" pin="SDO/SA0" pad="3"/>
+<connect gate="U1" pin="VDD" pad="9"/>
+<connect gate="U1" pin="VDD_IO" pad="10"/>
 </connects>
 <technologies>
 <technology name="">
 <attribute name="DIGIKEY" value="497-14851-2-ND"/>
 <attribute name="PROD_ID" value="IC-14229"/>
+</technology>
+</technologies>
+</device>
+<device name="NS" package="LGA-12-LISDH12-NOSILK">
+<connects>
+<connect gate="U1" pin="CS" pad="2"/>
+<connect gate="U1" pin="GND" pad="6 7 8"/>
+<connect gate="U1" pin="INT1" pad="12"/>
+<connect gate="U1" pin="INT2" pad="11"/>
+<connect gate="U1" pin="RES" pad="5"/>
+<connect gate="U1" pin="SCL/SPC" pad="1"/>
+<connect gate="U1" pin="SDA/SDI/SDO" pad="4"/>
+<connect gate="U1" pin="SDO/SA0" pad="3"/>
+<connect gate="U1" pin="VDD" pad="9"/>
+<connect gate="U1" pin="VDD_IO" pad="10"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-14229" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -17133,67 +17062,6 @@ The SDP3x is the world's smallest differential pressure sensor. It measures just
 <technology name="">
 <attribute name="PROD_ID" value="IC-15720" constant="no"/>
 <attribute name="VALUE" value="SDP31" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="BMP581" prefix="U">
-<description>&lt;h3&gt;Bosch BMP581 Pressure Sensor&lt;/h3&gt;
-&lt;p&gt;Senses pressure from 300 hPa to 1250 hPa, sends data out over I&lt;sup&gt;2&lt;/sup&gt;C or SPI&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="BMP581" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="BMP581">
-<connects>
-<connect gate="G$1" pin="CSB" pad="6"/>
-<connect gate="G$1" pin="GND" pad="3 8 9"/>
-<connect gate="G$1" pin="INT" pad="7"/>
-<connect gate="G$1" pin="SCK/SCL" pad="2"/>
-<connect gate="G$1" pin="SDI/SDA" pad="4"/>
-<connect gate="G$1" pin="SDO/ADR" pad="5"/>
-<connect gate="G$1" pin="VDD" pad="10"/>
-<connect gate="G$1" pin="VDDIO" pad="1"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="IC-16798" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ENS-160" prefix="U">
-<description>&lt;h3&gt;ScioSense Indoor Air Quality Sensor - ENS160 &lt;/h3&gt;
-
-&lt;p&gt;The ENS160 is a digital multi-gas sensor solution, based on metal oxide (MOX) technology
-with four sensor elements.
-The independent hotplate control allows the detection of a wide range of volatile organic
-compounds (VOCs) including ethanol, toluene, hydrogen and oxidizing gases with superior
-sensitivity. The ENS160 supports intelligent algorithms to process raw sensor measurements
-on-chip. These algorithms calculate CO2-equivalents, TVOC, air quality indices (AQIs) and
-perform humidity and temperature compensation, as well as baseline management, all on
-chip. &lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="ENS160" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="LGA-9">
-<connects>
-<connect gate="G$1" pin="!CS!" pad="P7"/>
-<connect gate="G$1" pin="!INT!" pad="P6"/>
-<connect gate="G$1" pin="GND@8" pad="P8"/>
-<connect gate="G$1" pin="GND@9" pad="P9"/>
-<connect gate="G$1" pin="PICO/SDA" pad="P1"/>
-<connect gate="G$1" pin="POCI/ADDR" pad="P3"/>
-<connect gate="G$1" pin="SCLK/SCL" pad="P2"/>
-<connect gate="G$1" pin="VDD" pad="P4"/>
-<connect gate="G$1" pin="VDDIO" pad="P5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="IC-17100" constant="no"/>
 </technology>
 </technologies>
 </device>
