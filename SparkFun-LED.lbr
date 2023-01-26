@@ -53,8 +53,8 @@
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="63" fill="3" visible="no" active="no"/>
-<layer number="15" name="Route15" color="23" fill="6" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -2462,35 +2462,14 @@ Standard 0402 sized pads with cathode pin indicator.
 <wire x1="0" y1="0.3" x2="0.3" y2="0" width="0.1" layer="51"/>
 <wire x1="0" y1="-0.3" x2="0.3" y2="0" width="0.1" layer="51"/>
 </package>
-<package name="CBI-RIGHT-ANGLE-PTH">
-<wire x1="-3" y1="0" x2="-3" y2="9.2" width="0.2032" layer="51"/>
-<wire x1="3" y1="0" x2="3" y2="9.2" width="0.2032" layer="51"/>
-<wire x1="-2.5" y1="0" x2="2.5" y2="0" width="0.2032" layer="51"/>
-<wire x1="2.5" y1="0" x2="3" y2="0" width="0.2032" layer="51"/>
-<wire x1="-3" y1="9.2" x2="-0.65" y2="9.2" width="0.2032" layer="51"/>
-<wire x1="-0.65" y1="9.2" x2="0.65" y2="9.2" width="0.2032" layer="51"/>
-<wire x1="0.65" y1="9.2" x2="1.9" y2="9.2" width="0.2032" layer="51"/>
-<wire x1="1.9" y1="9.2" x2="3" y2="9.2" width="0.2032" layer="51"/>
-<wire x1="-2.5" y1="0" x2="-2.5" y2="-2.5" width="0.2032" layer="51"/>
-<wire x1="2.5" y1="0" x2="2.5" y2="-2.5" width="0.2032" layer="51"/>
-<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.2032" layer="51" curve="180"/>
-<pad name="A" x="-1.27" y="5" drill="1" diameter="1.6"/>
-<pad name="C" x="1.27" y="5" drill="1" diameter="1.6"/>
-<wire x1="-3" y1="0" x2="-3" y2="9.2" width="0.2032" layer="21"/>
-<wire x1="3" y1="0" x2="3" y2="9.2" width="0.2032" layer="21"/>
-<wire x1="-3" y1="0" x2="-2.5" y2="0" width="0.2032" layer="51"/>
-<wire x1="-3" y1="0" x2="3" y2="0" width="0.2032" layer="21"/>
-<wire x1="-3" y1="9.2" x2="3" y2="9.2" width="0.2032" layer="21"/>
-<text x="0" y="10.16" size="1.27" layer="25" font="vector" rot="SR0" align="bottom-center">&gt;NAME</text>
-<text x="0" y="12.7" size="1.27" layer="27" font="vector" rot="SR0" align="bottom-center">&gt;VALUE</text>
-<wire x1="-1.9" y1="5" x2="-1.9" y2="9.2" width="0.2032" layer="51"/>
-<wire x1="-0.65" y1="5" x2="-0.65" y2="9.2" width="0.2032" layer="51"/>
-<wire x1="0.65" y1="5" x2="0.65" y2="9.2" width="0.2032" layer="51"/>
-<wire x1="1.9" y1="5" x2="1.9" y2="9.2" width="0.2032" layer="51"/>
-<wire x1="-0.65" y1="5" x2="-1.9" y2="5" width="0.2032" layer="51"/>
-<wire x1="1.9" y1="5" x2="0.65" y2="5" width="0.2032" layer="51"/>
-<text x="2.54" y="-5.08" size="0.254" layer="51">LED center is
-3.0mm above PCB</text>
+<package name="JE2835">
+<smd name="P$1" x="-1.27" y="0" dx="1.8" dy="1.8" layer="1" rot="R270"/>
+<smd name="P$2" x="1.15" y="0" dx="1.8" dy="1.1" layer="1" rot="R270"/>
+<wire x1="-1.524" y1="-1.397" x2="-2.032" y2="-0.889" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="-1.397" x2="1.524" y2="-1.397" width="0.1524" layer="21"/>
+<wire x1="1.524" y1="-1.397" x2="1.524" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="1.524" y1="1.397" x2="-2.032" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.397" x2="-2.032" y2="-1.397" width="0.1524" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -4092,6 +4071,15 @@ Standard 0402 sized pads with cathode pin indicator.
 </technology>
 </technologies>
 </device>
+<device name="0805-PG" package="LED-0805">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="LED-RED" prefix="D" uservalue="yes">
@@ -5514,52 +5502,116 @@ Common names: APA102, Dotstar, etc.
 </device>
 </devices>
 </deviceset>
-<deviceset name="LED-RIGHT-ANGLE-PTH">
+<deviceset name="CREE_J-SERIES">
 <gates>
-<gate name="D1" symbol="LED" x="0" y="0"/>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-BLUE" package="CBI-RIGHT-ANGLE-PTH">
+<device name="RED" package="JE2835">
 <connects>
-<connect gate="D1" pin="A" pad="A"/>
-<connect gate="D1" pin="C" pad="C"/>
+<connect gate="G$1" pin="A" pad="P$1"/>
+<connect gate="G$1" pin="C" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="BLUE" package="JE2835">
+<connects>
+<connect gate="G$1" pin="A" pad="P$2"/>
+<connect gate="G$1" pin="C" pad="P$1"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="DIO-13890" constant="no"/>
+<attribute name="PROD_ID" value="DIO-17282" constant="no"/>
 </technology>
 </technologies>
 </device>
-<device name="-GREEN" package="CBI-RIGHT-ANGLE-PTH">
+<device name="AMBER" package="JE2835">
 <connects>
-<connect gate="D1" pin="A" pad="A"/>
-<connect gate="D1" pin="C" pad="C"/>
+<connect gate="G$1" pin="A" pad="P$1"/>
+<connect gate="G$1" pin="C" pad="P$2"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="DIO-13847" constant="no"/>
+<attribute name="PROD_ID" value="DIO-17286" constant="no"/>
 </technology>
 </technologies>
 </device>
-<device name="-RED" package="CBI-RIGHT-ANGLE-PTH">
+<device name="RED-ORANGE" package="JE2835">
 <connects>
-<connect gate="D1" pin="A" pad="A"/>
-<connect gate="D1" pin="C" pad="C"/>
+<connect gate="G$1" pin="A" pad="P$1"/>
+<connect gate="G$1" pin="C" pad="P$2"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="DIO-13844" constant="no"/>
+<attribute name="PROD_ID" value="DIO-17287" constant="no"/>
 </technology>
 </technologies>
 </device>
-<device name="-AMBER" package="CBI-RIGHT-ANGLE-PTH">
+<device name="PHOTO-RED" package="JE2835">
 <connects>
-<connect gate="D1" pin="A" pad="A"/>
-<connect gate="D1" pin="C" pad="C"/>
+<connect gate="G$1" pin="A" pad="P$1"/>
+<connect gate="G$1" pin="C" pad="P$2"/>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="PROD_ID" value="DIO-13843" constant="no"/>
+<attribute name="PROD_ID" value="DIO-17288" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="FAR-RED" package="JE2835">
+<connects>
+<connect gate="G$1" pin="A" pad="P$1"/>
+<connect gate="G$1" pin="C" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-17289" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="ROYAL-BLUE" package="JE2835">
+<connects>
+<connect gate="G$1" pin="A" pad="P$2"/>
+<connect gate="G$1" pin="C" pad="P$1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-17285" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="CYAN" package="JE2835">
+<connects>
+<connect gate="G$1" pin="A" pad="P$2"/>
+<connect gate="G$1" pin="C" pad="P$1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-17283" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="GREEN" package="JE2835">
+<connects>
+<connect gate="G$1" pin="A" pad="P$2"/>
+<connect gate="G$1" pin="C" pad="P$1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-17284" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="PC-LIME" package="JE2835">
+<connects>
+<connect gate="G$1" pin="A" pad="P$2"/>
+<connect gate="G$1" pin="C" pad="P$1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-17683" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -5568,10 +5620,4 @@ Common names: APA102, Dotstar, etc.
 </devicesets>
 </library>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
