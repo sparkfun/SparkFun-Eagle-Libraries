@@ -10881,6 +10881,47 @@ read, as well as embedded engines for orientation, Directional-TapTM/DoubleTapTM
 <circle x="-0.2794" y="0.0762" radius="0.0254" width="0.1016" layer="51"/>
 <text x="-0.3302" y="0.3048" size="0.127" layer="51">Z</text>
 </package>
+<package name="BMP581">
+<description>&lt;h3&gt;LGA10&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 10&lt;/li&gt;
+&lt;li&gt;Pin pitch: .5mm&lt;/li&gt;
+&lt;li&gt;Area: 2.0 x 2.0 mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmp581-ds004.pdf&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;</description>
+<wire x1="1.1" y1="1.1" x2="1.1" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="1.1" y1="-1.1" x2="-1.1" y2="-1.1" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="-1.1" x2="-1.1" y2="1.1" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="1.1" x2="1.1" y2="1.1" width="0.127" layer="21"/>
+<circle x="1.282" y="1.258" radius="0.045253125" width="0.175" layer="21"/>
+<smd name="9" x="0.7625" y="0" dx="0.275" dy="0.25" layer="1" cream="no"/>
+<smd name="10" x="0.7625" y="0.5" dx="0.275" dy="0.25" layer="1" cream="no"/>
+<smd name="8" x="0.7625" y="-0.5" dx="0.275" dy="0.25" layer="1" cream="no"/>
+<smd name="4" x="-0.7625" y="0" dx="0.275" dy="0.25" layer="1" cream="no"/>
+<smd name="3" x="-0.7625" y="0.5" dx="0.275" dy="0.25" layer="1" cream="no"/>
+<smd name="5" x="-0.7625" y="-0.5" dx="0.275" dy="0.25" layer="1" cream="no"/>
+<smd name="2" x="-0.25" y="0.7625" dx="0.25" dy="0.275" layer="1" cream="no"/>
+<smd name="1" x="0.25" y="0.7625" dx="0.25" dy="0.275" layer="1" cream="no"/>
+<smd name="6" x="-0.25" y="-0.7625" dx="0.25" dy="0.275" layer="1" cream="no"/>
+<smd name="7" x="0.25" y="-0.7625" dx="0.25" dy="0.275" layer="1" cream="no"/>
+<wire x1="-1.05" y1="1.05" x2="1.05" y2="1.05" width="0.127" layer="51"/>
+<wire x1="1.05" y1="1.05" x2="1.05" y2="-1.05" width="0.127" layer="51"/>
+<wire x1="1.05" y1="-1.05" x2="-1.05" y2="-1.05" width="0.127" layer="51"/>
+<wire x1="-1.05" y1="-1.05" x2="-1.05" y2="1.05" width="0.127" layer="51"/>
+<text x="0" y="1.778" size="0.6096" layer="25" font="vector" ratio="20" align="center">&gt;Name</text>
+<text x="0" y="-1.778" size="0.6096" layer="27" font="vector" ratio="20" align="center">&gt;Value</text>
+<rectangle x1="-1.2" y1="-1.2" x2="1.2" y2="1.2" layer="39"/>
+<rectangle x1="0.65" y1="-0.1" x2="0.875" y2="0.1" layer="31"/>
+<rectangle x1="-0.875" y1="-0.1" x2="-0.65" y2="0.1" layer="31"/>
+<rectangle x1="-0.3625" y1="0.6625" x2="-0.1375" y2="0.8625" layer="31" rot="R90"/>
+<rectangle x1="-0.3625" y1="-0.8625" x2="-0.1375" y2="-0.6625" layer="31" rot="R90"/>
+<rectangle x1="0.1375" y1="0.6625" x2="0.3625" y2="0.8625" layer="31" rot="R90"/>
+<rectangle x1="0.1375" y1="-0.8625" x2="0.3625" y2="-0.6625" layer="31" rot="R90"/>
+<rectangle x1="0.65" y1="0.4" x2="0.875" y2="0.6" layer="31"/>
+<rectangle x1="-0.875" y1="0.4" x2="-0.65" y2="0.6" layer="31"/>
+<rectangle x1="0.65" y1="-0.6" x2="0.875" y2="-0.4" layer="31"/>
+<rectangle x1="-0.875" y1="-0.6" x2="-0.65" y2="-0.4" layer="31"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADMP401">
@@ -13173,6 +13214,24 @@ VD6283 light measurement is fast and accurate thanks to an individual ADC and a 
 <text x="-7.62" y="-9.906" size="1.778" layer="96">&gt;Value</text>
 <pin name="IRQ" x="10.16" y="-2.54" visible="pin" length="short" direction="out" rot="R180"/>
 <pin name="ADDR" x="10.16" y="-5.08" visible="pin" length="short" rot="R180"/>
+</symbol>
+<symbol name="BMP581">
+<description>&lt;h3&gt;Bosch BMP384 Pressure Sensor&lt;/h3&gt;
+&lt;p&gt;Senses pressure from 300 hPa to 1250 hPa, sends data out over I&lt;sup&gt;2&lt;/sup&gt;C or Serial&lt;/p&gt;</description>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<pin name="SDI/SDA" x="12.7" y="7.62" length="short" rot="R180"/>
+<pin name="VDD" x="-12.7" y="0" length="short" direction="pwr"/>
+<pin name="GND" x="-12.7" y="-5.08" length="short" direction="pwr"/>
+<pin name="SCK/SCL" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="SDO/ADR" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="CSB" x="12.7" y="-5.08" length="short" direction="in" rot="R180"/>
+<pin name="INT" x="12.7" y="-2.54" length="short" direction="out" rot="R180"/>
+<text x="-10.16" y="10.414" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-10.16" y="-10.16" size="1.778" layer="96" font="vector">&gt;Value</text>
+<pin name="VDDIO" x="-12.7" y="-2.54" length="short" direction="pwr"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -17062,6 +17121,32 @@ The SDP3x is the world's smallest differential pressure sensor. It measures just
 <technology name="">
 <attribute name="PROD_ID" value="IC-15720" constant="no"/>
 <attribute name="VALUE" value="SDP31" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BMP581" prefix="U">
+<description>&lt;h3&gt;Bosch BMP581 Pressure Sensor&lt;/h3&gt;
+&lt;p&gt;Senses pressure from 300 hPa to 1250 hPa, sends data out over I&lt;sup&gt;2&lt;/sup&gt;C or SPI&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="BMP581" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BMP581">
+<connects>
+<connect gate="G$1" pin="CSB" pad="6"/>
+<connect gate="G$1" pin="GND" pad="3 8 9"/>
+<connect gate="G$1" pin="INT" pad="7"/>
+<connect gate="G$1" pin="SCK/SCL" pad="2"/>
+<connect gate="G$1" pin="SDI/SDA" pad="4"/>
+<connect gate="G$1" pin="SDO/ADR" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="10"/>
+<connect gate="G$1" pin="VDDIO" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-16798" constant="no"/>
 </technology>
 </technologies>
 </device>
