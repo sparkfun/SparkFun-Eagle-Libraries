@@ -2471,6 +2471,35 @@ Standard 0402 sized pads with cathode pin indicator.
 <wire x1="1.524" y1="1.397" x2="-2.032" y2="1.397" width="0.1524" layer="21"/>
 <wire x1="-2.032" y1="1.397" x2="-2.032" y2="-1.397" width="0.1524" layer="21"/>
 </package>
+<package name="CBI-RIGHT-ANGLE-PTH">
+<wire x1="-3" y1="0" x2="-3" y2="9.2" width="0.2032" layer="51"/>
+<wire x1="3" y1="0" x2="3" y2="9.2" width="0.2032" layer="51"/>
+<wire x1="-2.5" y1="0" x2="2.5" y2="0" width="0.2032" layer="51"/>
+<wire x1="2.5" y1="0" x2="3" y2="0" width="0.2032" layer="51"/>
+<wire x1="-3" y1="9.2" x2="-0.65" y2="9.2" width="0.2032" layer="51"/>
+<wire x1="-0.65" y1="9.2" x2="0.65" y2="9.2" width="0.2032" layer="51"/>
+<wire x1="0.65" y1="9.2" x2="1.9" y2="9.2" width="0.2032" layer="51"/>
+<wire x1="1.9" y1="9.2" x2="3" y2="9.2" width="0.2032" layer="51"/>
+<wire x1="-2.5" y1="0" x2="-2.5" y2="-2.5" width="0.2032" layer="51"/>
+<wire x1="2.5" y1="0" x2="2.5" y2="-2.5" width="0.2032" layer="51"/>
+<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.2032" layer="51" curve="180"/>
+<pad name="A" x="-1.27" y="5" drill="1" diameter="1.6"/>
+<pad name="C" x="1.27" y="5" drill="1" diameter="1.6"/>
+<wire x1="-3" y1="0" x2="-3" y2="9.2" width="0.2032" layer="21"/>
+<wire x1="3" y1="0" x2="3" y2="9.2" width="0.2032" layer="21"/>
+<wire x1="-3" y1="0" x2="-2.5" y2="0" width="0.2032" layer="51"/>
+<wire x1="-3" y1="0" x2="3" y2="0" width="0.2032" layer="21"/>
+<wire x1="-3" y1="9.2" x2="3" y2="9.2" width="0.2032" layer="21"/>
+<text x="0" y="10.16" size="1.27" layer="25" font="vector" rot="SR0" align="bottom-center">&gt;NAME</text>
+<text x="0" y="12.7" size="1.27" layer="27" font="vector" rot="SR0" align="bottom-center">&gt;VALUE</text>
+<wire x1="-1.9" y1="5" x2="-1.9" y2="9.2" width="0.2032" layer="51"/>
+<wire x1="-0.65" y1="5" x2="-0.65" y2="9.2" width="0.2032" layer="51"/>
+<wire x1="0.65" y1="5" x2="0.65" y2="9.2" width="0.2032" layer="51"/>
+<wire x1="1.9" y1="5" x2="1.9" y2="9.2" width="0.2032" layer="51"/>
+<wire x1="-0.65" y1="5" x2="-1.9" y2="5" width="0.2032" layer="51"/>
+<wire x1="1.9" y1="5" x2="0.65" y2="5" width="0.2032" layer="51"/>
+<text x="2.54" y="-5.08" size="0.254" layer="51">LED center is 3.0mm above PCB</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -5612,6 +5641,57 @@ Common names: APA102, Dotstar, etc.
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="DIO-17683" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
++<deviceset name="LED-RIGHT-ANGLE-PTH">
+<gates>
+<gate name="D1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-BLUE" package="CBI-RIGHT-ANGLE-PTH">
+<connects>
+<connect gate="D1" pin="A" pad="A"/>
+<connect gate="D1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-13890" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-GREEN" package="CBI-RIGHT-ANGLE-PTH">
+<connects>
+<connect gate="D1" pin="A" pad="A"/>
+<connect gate="D1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-13847" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-RED" package="CBI-RIGHT-ANGLE-PTH">
+<connects>
+<connect gate="D1" pin="A" pad="A"/>
+<connect gate="D1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-13844" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-AMBER" package="CBI-RIGHT-ANGLE-PTH">
+<connects>
+<connect gate="D1" pin="A" pad="A"/>
+<connect gate="D1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="DIO-13843" constant="no"/>
 </technology>
 </technologies>
 </device>
