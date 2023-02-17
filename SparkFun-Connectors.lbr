@@ -39696,6 +39696,20 @@ Made for the small  &lt;a href="https://www.sparkfun.com/products/18221"&gt; 1mm
 <wire x1="14.4" y1="4.2" x2="13.6" y2="4.2" width="0.2032" layer="21"/>
 <wire x1="18.15" y1="4.2" x2="17.1" y2="4.2" width="0.2032" layer="21"/>
 </package>
+<package name="1X01_NO_SILK_STAND">
+<description>&lt;h3&gt;Plated Through Hole&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:1&lt;/li&gt;
+&lt;li&gt;Pin pitch:0.1"&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_01&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-1.27" y="1.397" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="-1.524" size="0.6096" layer="27" font="vector" ratio="20" align="top-left">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -44159,6 +44173,14 @@ Also note, the SNAP packages are for using a snappable style connector. We sell 
 </technologies>
 </device>
 <device name="PTH_THIN_NO-SILK" package="1X01_THIN_NO-SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PTH_NO_SILK_STAND" package="1X01_NO_SILK_STAND">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 </connects>
