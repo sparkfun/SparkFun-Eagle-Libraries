@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="inch" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -965,35 +965,35 @@ Mechanical Specifications
 <wire x1="3.9" y1="-3.5" x2="3.9" y2="-2" width="0.2" layer="21"/>
 </package>
 <package name="INDUCTOR_3.9UH">
-<description>&lt;h3&gt;4.8mm x 4.8mm sized inductor&lt;/h3&gt;
+<description>&lt;h3&gt;5mm x 5mm sized inductor&lt;/h3&gt;
 &lt;p&gt;Mechanical Specifications:
 &lt;ul&gt;
-&lt;li&gt;Pad Size: 4.2mm x 1.98mm&lt;/li&gt;
+&lt;li&gt;Pad Size: 4.2mm x 1.6mm&lt;/li&gt;
 &lt;li&gt;Pin count: 2&lt;/li&gt;
-&lt;li&gt;Pin pitch:3.15mm&lt;/li&gt;
-&lt;li&gt;Package Size: 4.8mm x 4.8mm&lt;/li&gt;
+&lt;li&gt;Pin pitch:3.9mm&lt;/li&gt;
+&lt;li&gt;Package Size: 5mm x 5mm&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=”https://www.bourns.com/docs/Product-Datasheets/SRR4818A.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;</description>
-<smd name="P$1" x="0" y="1.6" dx="4" dy="1.98" layer="1"/>
-<smd name="P$2" x="0" y="-1.55" dx="4" dy="1.98" layer="1"/>
-<wire x1="-2.5" y1="-2.6" x2="-2.5" y2="2.7" width="0.1" layer="39"/>
-<wire x1="-2.5" y1="2.7" x2="2.5" y2="2.7" width="0.1" layer="39"/>
-<wire x1="2.5" y1="2.7" x2="2.5" y2="-2.6" width="0.1" layer="39"/>
-<wire x1="2.5" y1="-2.6" x2="-2.5" y2="-2.6" width="0.1" layer="39"/>
-<wire x1="-2.4" y1="-2.4" x2="-2.4" y2="2.4" width="0.1" layer="51"/>
-<wire x1="-2.4" y1="2.4" x2="2.4" y2="2.4" width="0.1" layer="51"/>
-<wire x1="2.4" y1="2.4" x2="2.4" y2="-2.4" width="0.1" layer="51"/>
-<wire x1="2.4" y1="-2.4" x2="-2.4" y2="-2.4" width="0.1" layer="51"/>
-<wire x1="-2.4" y1="1.9" x2="-2.4" y2="2.4" width="0.127" layer="21"/>
-<wire x1="-2.4" y1="2.4" x2="-2.2" y2="2.4" width="0.127" layer="21"/>
-<wire x1="2.2" y1="2.4" x2="2.4" y2="2.4" width="0.127" layer="21"/>
-<wire x1="2.4" y1="2.4" x2="2.4" y2="1.9" width="0.127" layer="21"/>
-<wire x1="2.4" y1="-1.9" x2="2.4" y2="-2.4" width="0.127" layer="21"/>
-<wire x1="2.4" y1="-2.4" x2="2.2" y2="-2.4" width="0.127" layer="21"/>
-<wire x1="-2.2" y1="-2.4" x2="-2.4" y2="-2.4" width="0.127" layer="21"/>
-<wire x1="-2.4" y1="-2.4" x2="-2.4" y2="-1.9" width="0.127" layer="21"/>
-<text x="-1.45" y="-3.5" size="0.6096" layer="25" font="vector" ratio="20">&gt;Name</text>
-<text x="-1.7" y="2.95" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+&lt;p&gt;&lt;a href=”https://www.we-online.com/components/products/datasheet/74404052039.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;</description>
+<smd name="P$1" x="0" y="-2" dx="4" dy="1.6" layer="1"/>
+<wire x1="-2.5" y1="1.95" x2="-2.5" y2="2.45" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2.45" x2="-2.3" y2="2.45" width="0.127" layer="21"/>
+<wire x1="2.3" y1="2.45" x2="2.5" y2="2.45" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2.45" x2="2.5" y2="1.95" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.05" x2="2.5" y2="-2.55" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.55" x2="2.3" y2="-2.55" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="-2.55" x2="-2.5" y2="-2.55" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.55" x2="-2.5" y2="-2.05" width="0.127" layer="21"/>
+<text x="-1.45" y="-3.7" size="0.6096" layer="25" font="vector" ratio="20">&gt;Name</text>
+<text x="-1.7" y="3" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<smd name="P$2" x="0" y="1.9" dx="4" dy="1.6" layer="1"/>
+<wire x1="-2.5" y1="-2.55" x2="2.5" y2="-2.55" width="0.1" layer="51"/>
+<wire x1="2.5" y1="-2.55" x2="2.5" y2="2.45" width="0.1" layer="51"/>
+<wire x1="2.5" y1="2.45" x2="-2.5" y2="2.45" width="0.1" layer="51"/>
+<wire x1="-2.5" y1="2.45" x2="-2.5" y2="-2.55" width="0.1" layer="51"/>
+<wire x1="-2.65" y1="2.8" x2="-2.65" y2="-2.9" width="0.1" layer="39"/>
+<wire x1="-2.65" y1="-2.9" x2="2.65" y2="-2.9" width="0.1" layer="39"/>
+<wire x1="2.65" y1="-2.9" x2="2.65" y2="2.8" width="0.1" layer="39"/>
+<wire x1="2.65" y1="2.8" x2="-2.65" y2="2.8" width="0.1" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -1506,18 +1506,6 @@ Mechanical Specifications
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-<device name="-SRR4818A-3.9UH" package="INDUCTOR_3.9UH">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="NDUC-18014" constant="no"/>
-<attribute name="VALUE" value="3.9uH" constant="no"/>
-</technology>
 </technologies>
 </device>
 </devices>
@@ -2182,6 +2170,33 @@ Mechanical Specifications
 <attribute name="PROD_ID" value="NDUC-17223"/>
 <attribute name="VALUE" value="6.8UH"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3.9UH" prefix="L">
+<description>&lt;h3&gt;Würth's Electronik 3.9uH Inductor&lt;/h3&gt;
+&lt;p&gt;Characteristics&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;3.9uH&lt;/li&gt;
+&lt;li&gt;2.4A Current Rating&lt;/li&gt;
+&lt;li&gt;2.8A Saturation&lt;/li&gt;
+&lt;li&gt;Inductance Frequency: 100kHzd&lt;/li&gt;
+&lt;li&gt;AEC-Q200 Certified&lt;/li&gt;
+&lt;li&gt;5mm x 5mm Package&lt;/li&gt;
+&lt;li&gt;30% tolerance&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="INDUCTOR_3.9UH">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
