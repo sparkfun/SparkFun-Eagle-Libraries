@@ -39710,6 +39710,41 @@ Made for the small  &lt;a href="https://www.sparkfun.com/products/18221"&gt; 1mm
 <text x="-1.27" y="-1.524" size="0.6096" layer="27" font="vector" ratio="20" align="top-left">&gt;VALUE</text>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 </package>
+<package name="2X5-SMD-UNSHROUDED_DNP_NO_PASTE">
+<description>&lt;h3&gt;SMD - 2x5 Unshrouded ARM Cortex Debug Connector (10-pin)&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count:10&lt;/li&gt;
+&lt;li&gt;Pin pitch:1.27mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;a href=http://www.4uconnector.com/online/object/4udrawing/21200.pdf&gt;Datasheet referenced for footprint&lt;/a&gt;</description>
+<wire x1="-3.26" y1="1.715" x2="-3.26" y2="-1.715" width="0.2" layer="21"/>
+<wire x1="3.26" y1="-1.715" x2="3.26" y2="1.715" width="0.2" layer="21"/>
+<wire x1="-3.175" y1="-1.715" x2="-3.175" y2="1.715" width="0.1" layer="51"/>
+<wire x1="-3.175" y1="-1.715" x2="3.175" y2="-1.715" width="0.1" layer="51"/>
+<wire x1="3.175" y1="1.715" x2="-3.175" y2="1.715" width="0.1" layer="51"/>
+<wire x1="3.175" y1="-1.715" x2="3.175" y2="1.715" width="0.1" layer="51"/>
+<text x="-4.106" y="4.046" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-5.78" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-3.425" y1="-3.17" x2="-3.425" y2="3.17" width="0.05" layer="39"/>
+<wire x1="-3.425" y1="3.17" x2="3.425" y2="3.17" width="0.05" layer="39"/>
+<wire x1="3.425" y1="3.17" x2="3.425" y2="-3.17" width="0.05" layer="39"/>
+<wire x1="3.425" y1="-3.17" x2="-3.425" y2="-3.17" width="0.05" layer="39"/>
+<circle x="-3.79" y="-2.035" radius="0.1" width="0.2" layer="21"/>
+<circle x="-3.79" y="-2.035" radius="0.1" width="0.2" layer="51"/>
+<smd name="5" x="0" y="-1.88" dx="0.74" dy="2.38" layer="1" cream="no"/>
+<smd name="6" x="0" y="1.88" dx="0.74" dy="2.38" layer="1" cream="no"/>
+<smd name="7" x="1.27" y="-1.88" dx="0.74" dy="2.38" layer="1" cream="no"/>
+<smd name="8" x="1.27" y="1.88" dx="0.74" dy="2.38" layer="1" cream="no"/>
+<smd name="9" x="2.54" y="-1.88" dx="0.74" dy="2.38" layer="1" cream="no"/>
+<smd name="10" x="2.54" y="1.88" dx="0.74" dy="2.38" layer="1" cream="no"/>
+<smd name="1" x="-2.54" y="-1.88" dx="0.74" dy="2.38" layer="1" cream="no"/>
+<smd name="2" x="-2.54" y="1.88" dx="0.74" dy="2.38" layer="1" cream="no"/>
+<smd name="3" x="-1.27" y="-1.88" dx="0.74" dy="2.38" layer="1" cream="no"/>
+<smd name="4" x="-1.27" y="1.88" dx="0.74" dy="2.38" layer="1" cream="no"/>
+<wire x1="-0.6" y1="-3.09" x2="-0.6" y2="-3.29" width="0.127" layer="21"/>
+<wire x1="-0.6" y1="-3.29" x2="0.6" y2="-3.29" width="0.127" layer="21"/>
+<wire x1="0.6" y1="-3.29" x2="0.6" y2="-3.09" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_SERIAL_PROGRAM">
@@ -53321,6 +53356,19 @@ PTH and SMD connector options available.&lt;/p&gt;
 <technology name="">
 <attribute name="PROD_ID" value="CONN-15353"/>
 </technology>
+</technologies>
+</device>
+<device name="_SMD_UNSHROUDED_DNP_NO_PASTE" package="2X5-SMD-UNSHROUDED_DNP_NO_PASTE">
+<connects>
+<connect gate="G$1" pin="!RESET" pad="10"/>
+<connect gate="G$1" pin="GND" pad="3 5 9"/>
+<connect gate="G$1" pin="SWDCLK" pad="4"/>
+<connect gate="G$1" pin="SWDIO" pad="2"/>
+<connect gate="G$1" pin="SWO" pad="6"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
