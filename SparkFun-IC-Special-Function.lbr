@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -23,9 +23,9 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -33,7 +33,7 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
@@ -4171,54 +4171,36 @@ package with digital interface.&lt;/p&gt;
 <wire x1="-1.778" y1="-2.794" x2="-1.778" y2="2.794" width="0.2032" layer="21"/>
 </package>
 <package name="16_PIN_WLP">
-<description>&lt;h3&gt;16_PIN_WLP&lt;/h3&gt;
-
-Physical Characteristics
+<description>&lt;h3&gt;16 Pin WLP&lt;/h3&gt;
+&lt;p&gt;Mechanical Specifications:
 &lt;ul&gt;
-&lt;li&gt;1.554 X 1.572 X .64mm &lt;/li&gt;
-&lt;li&gt;16 Pins&lt;/li&gt;
-&lt;li&gt;.35mm pitch&lt;/li&gt;
-&lt;li&gt;WLP Package&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;li&gt;Pad Size: .2mm Diameter&lt;/li&gt;
+&lt;li&gt;Pin count: 16&lt;/li&gt;
+&lt;li&gt;Pin pitch: .35mm&lt;/li&gt;
+&lt;li&gt;Package Size: 1.544mm x 1.572mm x .64mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://pdfserv.maximintegrated.com/en/an/AN1891.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;</description>
 <wire x1="-0.792" y1="0.79" x2="-0.792" y2="-0.7639" width="0.1" layer="51"/>
 <wire x1="0.78" y1="0.79" x2="0.78" y2="-0.7639" width="0.1" layer="51"/>
 <wire x1="-0.7913" y1="0.79" x2="0.78" y2="0.79" width="0.1" layer="51"/>
 <wire x1="-0.7913" y1="-0.782" x2="0.78" y2="-0.782" width="0.1" layer="51"/>
-<smd name="1" x="-0.532" y="0.518" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
-<smd name="2" x="-0.182" y="0.518" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
-<smd name="3" x="0.168" y="0.518" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
-<smd name="4" x="0.518" y="0.518" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
-<smd name="5" x="0.518" y="0.168" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
-<smd name="6" x="0.518" y="-0.182" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
-<smd name="7" x="0.518" y="-0.532" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
-<smd name="8" x="0.168" y="-0.532" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
-<smd name="9" x="-0.182" y="-0.532" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
-<smd name="10" x="-0.532" y="-0.532" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
-<smd name="11" x="-0.532" y="-0.182" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
-<smd name="12" x="-0.532" y="0.168" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
-<smd name="13" x="-0.182" y="0.168" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
-<smd name="14" x="0.168" y="0.168" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
-<smd name="15" x="0.168" y="-0.182" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
-<smd name="16" x="-0.182" y="-0.182" dx="0.22" dy="0.22" layer="1" roundness="100" stop="no"/>
-<circle x="-0.532" y="-0.532" radius="0.11" width="0" layer="29"/>
-<circle x="-0.182" y="-0.532" radius="0.11" width="0" layer="29"/>
-<circle x="0.168" y="-0.532" radius="0.11" width="0" layer="29"/>
-<circle x="0.518" y="-0.532" radius="0.11" width="0" layer="29"/>
-<circle x="0.518" y="-0.182" radius="0.11" width="0" layer="29"/>
-<circle x="0.168" y="-0.182" radius="0.11" width="0" layer="29"/>
-<circle x="-0.182" y="-0.182" radius="0.11" width="0" layer="29"/>
-<circle x="-0.532" y="-0.182" radius="0.11" width="0" layer="29"/>
-<circle x="-0.532" y="0.168" radius="0.11" width="0" layer="29"/>
-<circle x="-0.182" y="0.168" radius="0.11" width="0" layer="29"/>
-<circle x="0.168" y="0.168" radius="0.11" width="0" layer="29"/>
-<circle x="0.518" y="0.168" radius="0.11" width="0" layer="29"/>
-<circle x="0.518" y="0.518" radius="0.11" width="0" layer="29"/>
-<circle x="0.168" y="0.518" radius="0.11" width="0" layer="29"/>
-<circle x="-0.182" y="0.518" radius="0.11" width="0" layer="29"/>
-<circle x="-0.532" y="0.518" radius="0.11" width="0" layer="29"/>
+<smd name="1" x="-0.532" y="0.518" dx="0.2" dy="0.2" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="2" x="-0.182" y="0.518" dx="0.2" dy="0.2" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="3" x="0.168" y="0.518" dx="0.2" dy="0.2" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="4" x="0.518" y="0.518" dx="0.2" dy="0.2" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="5" x="0.518" y="0.168" dx="0.2" dy="0.2" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="6" x="0.518" y="-0.182" dx="0.2" dy="0.2" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="7" x="0.518" y="-0.532" dx="0.2" dy="0.2" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="8" x="0.168" y="-0.532" dx="0.2" dy="0.2" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="9" x="-0.182" y="-0.532" dx="0.2" dy="0.2" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="10" x="-0.532" y="-0.532" dx="0.2" dy="0.2" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="11" x="-0.532" y="-0.182" dx="0.2" dy="0.2" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="12" x="-0.532" y="0.168" dx="0.2" dy="0.2" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="13" x="-0.182" y="0.168" dx="0.2" dy="0.2" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="14" x="0.168" y="0.168" dx="0.2" dy="0.2" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="15" x="0.168" y="-0.182" dx="0.2" dy="0.2" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="16" x="-0.182" y="-0.182" dx="0.2" dy="0.2" layer="1" roundness="100" stop="no" cream="no"/>
 <circle x="-1.038" y="1.218" radius="0.1778" width="0" layer="21"/>
-<text x="-0.792" y="1.218" size="1" layer="25">&gt;NAME</text>
-<text x="-0.792" y="-2.282" size="1" layer="27">&gt;VALUE</text>
 <wire x1="-0.902" y1="-0.892" x2="0.888" y2="-0.892" width="0.1" layer="39"/>
 <wire x1="0.888" y1="-0.892" x2="0.888" y2="0.898" width="0.1" layer="39"/>
 <wire x1="0.888" y1="0.898" x2="-0.902" y2="0.898" width="0.1" layer="39"/>
@@ -4227,6 +4209,40 @@ Physical Characteristics
 <wire x1="0.891" y1="0.9" x2="-0.9" y2="0.9" width="0.1" layer="21"/>
 <wire x1="-0.9" y1="0.9" x2="-0.9" y2="-0.9" width="0.1" layer="21"/>
 <wire x1="-0.9" y1="-0.9" x2="0.891" y2="-0.9" width="0.1" layer="21"/>
+<circle x="-0.532" y="0.518" radius="0.1" width="0" layer="29"/>
+<circle x="-0.182" y="0.518" radius="0.1" width="0" layer="29"/>
+<circle x="0.168" y="0.518" radius="0.1" width="0" layer="29"/>
+<circle x="0.518" y="0.518" radius="0.1" width="0" layer="29"/>
+<circle x="-0.532" y="0.168" radius="0.1" width="0" layer="29"/>
+<circle x="-0.182" y="0.168" radius="0.1" width="0" layer="29"/>
+<circle x="0.168" y="0.168" radius="0.1" width="0" layer="29"/>
+<circle x="0.518" y="0.168" radius="0.1" width="0" layer="29"/>
+<circle x="-0.532" y="-0.182" radius="0.1" width="0" layer="29"/>
+<circle x="-0.182" y="-0.182" radius="0.1" width="0" layer="29"/>
+<circle x="0.168" y="-0.182" radius="0.1" width="0" layer="29"/>
+<circle x="0.518" y="-0.182" radius="0.1" width="0" layer="29"/>
+<circle x="-0.532" y="-0.532" radius="0.1" width="0" layer="29"/>
+<circle x="-0.182" y="-0.532" radius="0.1" width="0" layer="29"/>
+<circle x="0.168" y="-0.532" radius="0.1" width="0" layer="29"/>
+<circle x="0.518" y="-0.532" radius="0.1" width="0" layer="29"/>
+<circle x="-0.532" y="0.518" radius="0.09" width="0" layer="31"/>
+<circle x="-0.182" y="0.518" radius="0.09" width="0" layer="31"/>
+<circle x="0.168" y="0.518" radius="0.09" width="0" layer="31"/>
+<circle x="0.518" y="0.518" radius="0.09" width="0" layer="31"/>
+<circle x="-0.532" y="0.168" radius="0.09" width="0" layer="31"/>
+<circle x="-0.182" y="0.168" radius="0.09" width="0" layer="31"/>
+<circle x="0.168" y="0.168" radius="0.09" width="0" layer="31"/>
+<circle x="0.518" y="0.168" radius="0.09" width="0" layer="31"/>
+<circle x="-0.182" y="-0.182" radius="0.09" width="0" layer="31"/>
+<circle x="-0.532" y="-0.182" radius="0.09" width="0" layer="31"/>
+<circle x="-0.532" y="-0.532" radius="0.09" width="0" layer="31"/>
+<circle x="-0.182" y="-0.532" radius="0.09" width="0" layer="31"/>
+<circle x="0.168" y="-0.532" radius="0.09" width="0" layer="31"/>
+<circle x="0.518" y="-0.532" radius="0.09" width="0" layer="31"/>
+<circle x="0.518" y="-0.182" radius="0.09" width="0" layer="31"/>
+<circle x="0.168" y="-0.182" radius="0.09" width="0" layer="31"/>
+<text x="-1.524" y="1.27" size="0.6096" layer="25" font="vector" ratio="20">&gt;Name</text>
+<text x="-1.651" y="-1.778" size="0.6096" layer="27" font="vector" ratio="20">&gt;Value</text>
 </package>
 <package name="SO16">
 <description>SOIC, 0.15 inch width</description>
