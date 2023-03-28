@@ -12614,6 +12614,49 @@ Power Layers</text>
 <wire x1="2.665" y1="-1.705" x2="2.665" y2="1.705" width="0.2032" layer="51"/>
 <wire x1="-2.665" y1="-1.705" x2="-2.665" y2="1.705" width="0.2032" layer="51"/>
 </package>
+<package name="TRACE_ANTENNA_2.4GHZ_15.2MM_MIRROR">
+<description>&lt;h3&gt;2.4GHz Meander PCB Trace Antenna&lt;/h3&gt;
+&lt;p&gt;PCB trace antenna with a 15.2 x 5.7mm footprint.&lt;/p&gt;
+&lt;p&gt;Based on layout from &lt;a href="http://www.ti.com/lit/an/swra117d/swra117d.pdf"&gt;TI app note AN043&lt;/a&gt;.&lt;/p&gt;</description>
+<wire x1="-12" y1="0" x2="3" y2="0" width="0.05" layer="51"/>
+<smd name="GND" x="2.1" y="-0.25" dx="0.9" dy="0.5" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="ANT" x="0" y="-0.25" dx="0.5" dy="0.5" layer="1" stop="no" thermals="no" cream="no"/>
+<wire x1="-12" y1="5.2" x2="3" y2="5.2" width="0.05" layer="51"/>
+<text x="-8" y="-0.8" size="0.64" layer="51" font="vector">Ground Plane</text>
+<text x="-7.5" y="5.5" size="0.64" layer="51" font="vector">Board Edge</text>
+<text x="0" y="1.27" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="1.016" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<polygon width="0.002540625" layer="1">
+<vertex x="2.55" y="-0.5"/>
+<vertex x="2.55" y="4.9"/>
+<vertex x="-2.45" y="4.9"/>
+<vertex x="-2.45" y="2.26"/>
+<vertex x="-4.45" y="2.26"/>
+<vertex x="-4.45" y="4.9"/>
+<vertex x="-7.15" y="4.9"/>
+<vertex x="-7.15" y="2.26"/>
+<vertex x="-9.15" y="2.26"/>
+<vertex x="-9.15" y="4.9"/>
+<vertex x="-11.85" y="4.9"/>
+<vertex x="-11.85" y="0.46"/>
+<vertex x="-11.35" y="0.46"/>
+<vertex x="-11.35" y="4.4"/>
+<vertex x="-9.65" y="4.4"/>
+<vertex x="-9.65" y="1.76"/>
+<vertex x="-6.65" y="1.76"/>
+<vertex x="-6.65" y="4.4"/>
+<vertex x="-4.95" y="4.4"/>
+<vertex x="-4.95" y="1.76"/>
+<vertex x="-1.95" y="1.76"/>
+<vertex x="-1.95" y="4.4"/>
+<vertex x="-0.25" y="4.4"/>
+<vertex x="-0.25" y="-0.5"/>
+<vertex x="0.25" y="-0.5"/>
+<vertex x="0.25" y="4.4"/>
+<vertex x="1.65" y="4.4"/>
+<vertex x="1.65" y="-0.5"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="INDUCTIVE_ANTENNA">
@@ -16571,6 +16614,15 @@ BlueCreation. BC118 can run standalone, with a host processor or controlled by a
 <device name="TRACE-915MHZ" package="TRACE_ANTENNA_915MHZ_THINGMAGIC">
 <connects>
 <connect gate="G$1" pin="GND" pad="GND@1 GND@2 GND@3"/>
+<connect gate="G$1" pin="SIGNAL" pad="ANT"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TRACE-15.2MM-MIRROR" package="TRACE_ANTENNA_2.4GHZ_15.2MM_MIRROR">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="SIGNAL" pad="ANT"/>
 </connects>
 <technologies>
