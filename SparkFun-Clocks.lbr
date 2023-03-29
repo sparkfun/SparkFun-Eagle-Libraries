@@ -1675,6 +1675,26 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <text x="0" y="-1.524" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 <circle x="-2.286" y="-1.143" radius="0.127" width="0.4064" layer="21"/>
 </package>
+<package name="CRYSTAL-SMD-2.0X1.6MM-ECS">
+<description>&lt;h3&gt;2.0 x 1.6 mm Crystal&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://ecsxtal.com/store/pdf/ECX-1637B2.pdf"&gt;Example Datasheet&lt;/a&gt; &lt;/p&gt;</description>
+<smd name="4" x="-0.675" y="0.525" dx="0.85" dy="0.75" layer="1"/>
+<smd name="3" x="0.675" y="0.525" dx="0.85" dy="0.75" layer="1" rot="R180"/>
+<smd name="2" x="0.675" y="-0.525" dx="0.85" dy="0.75" layer="1" rot="R180"/>
+<smd name="1" x="-0.675" y="-0.525" dx="0.85" dy="0.75" layer="1"/>
+<text x="0" y="1.25" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-1.25" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+<wire x1="-1.3" y1="1" x2="-1.3" y2="-1" width="0.1524" layer="51"/>
+<wire x1="-1.3" y1="-1" x2="1.3" y2="-1" width="0.1524" layer="51"/>
+<wire x1="1.3" y1="-1" x2="1.3" y2="1" width="0.1524" layer="51"/>
+<wire x1="1.3" y1="1" x2="-1.3" y2="1" width="0.1524" layer="51"/>
+<wire x1="-1.4" y1="1.1" x2="-1.4" y2="-1.1" width="0.1524" layer="21"/>
+<wire x1="-1.4" y1="-1.1" x2="1.4" y2="-1.1" width="0.1524" layer="21"/>
+<wire x1="1.4" y1="-1.1" x2="1.4" y2="1.1" width="0.1524" layer="21"/>
+<wire x1="1.4" y1="1.1" x2="-1.4" y2="1.1" width="0.1524" layer="21"/>
+<circle x="-1.75" y="-1.25" radius="0.05" width="0.1524" layer="21"/>
+<rectangle x1="-1.3" y1="-1" x2="1.3" y2="1" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CRYSTAL">
@@ -3170,6 +3190,41 @@ unit with the CMOS-based oscillator and real-time-clock IC. &lt;/p&gt;</descript
 <technology name="">
 <attribute name="PROD_ID" value="XTAL-16515" constant="no"/>
 <attribute name="VALUE" value="25MHz" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRYSTAL-48MHZ" prefix="Y">
+<description>&lt;h3&gt;48 MHz Crystal&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href="https://www.digikey.com/en/products/detail/ecs-inc/ECS-480-10-37B2-RWN-TR/14663261"&gt;Digikey Link&lt;/a&gt;
+&lt;/p&gt;
+&lt;b&gt;Crystal Attributes:&lt;/b&gt;
+&lt;ul&gt;
+&lt;li&gt;Frequency: 48 MHz&lt;/li&gt;
+&lt;li&gt;Frequency Stability: +/- 15ppm&lt;/li&gt;
+&lt;li&gt;Frequency Tolerance: +/- 15ppm&lt;/li&gt;
+&lt;li&gt;Load Capacitance: 10pF&lt;/li&gt;
+&lt;li&gt;ESR: 40 Ohms&lt;/li&gt;
+&lt;li&gt;Operating Mode: Fundamental&lt;/li&gt;
+&lt;li&gt;PAD 2 and PAD 4 are &lt;b&gt;GROUNDED&lt;/b&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+<gates>
+<gate name="G$1" symbol="CRYSTAL-GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-SMD-2.0X1.6MM" package="CRYSTAL-SMD-2.0X1.6MM-ECS">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2 4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="XTAL-16925"/>
 </technology>
 </technologies>
 </device>
