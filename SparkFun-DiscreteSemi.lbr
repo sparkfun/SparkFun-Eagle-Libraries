@@ -136,6 +136,12 @@
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="no"/>
+<layer number="156" name="gesam-Maß" color="1" fill="7" visible="no" active="no"/>
+<layer number="157" name="FaceMchng" color="3" fill="1" visible="no" active="no"/>
+<layer number="158" name="FaceMMeas" color="3" fill="1" visible="no" active="no"/>
+<layer number="159" name="Geh-Bear2" color="1" fill="7" visible="no" active="no"/>
+<layer number="160" name="Topologie" color="9" fill="1" visible="no" active="no"/>
+<layer number="161" name="tomplace2" color="7" fill="1" visible="no" active="no"/>
 <layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
@@ -183,6 +189,7 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="252" name="BR-BS" color="7" fill="1" visible="no" active="no"/>
 <layer number="253" name="Extra" color="7" fill="1" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="no"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="no"/>
@@ -1204,6 +1211,42 @@ Philips Semiconductors, SOT363.pdf</description>
 <wire x1="-0.9262" y1="0.4262" x2="-0.9262" y2="-0.4262" width="0.05" layer="39"/>
 <wire x1="-0.9262" y1="-0.4262" x2="0.9262" y2="-0.4262" width="0.05" layer="39"/>
 <wire x1="0.9262" y1="-0.4262" x2="0.9262" y2="0.4262" width="0.05" layer="39"/>
+</package>
+<package name="SOT523">
+<smd name="1" x="0" y="0.7" dx="0.4" dy="0.51" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="2" x="0.5" y="-0.6" dx="0.4" dy="0.51" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="3" x="-0.5" y="-0.6" dx="0.4" dy="0.51" layer="1" stop="no" thermals="no" cream="no"/>
+<rectangle x1="-0.25" y1="0.4" x2="0.25" y2="1.01" layer="29"/>
+<rectangle x1="0.25" y1="-0.9" x2="0.75" y2="-0.29" layer="29"/>
+<rectangle x1="-0.75" y1="-0.9" x2="-0.25" y2="-0.29" layer="29"/>
+<rectangle x1="-0.15" y1="0.5" x2="0.15" y2="0.9" layer="31"/>
+<rectangle x1="-0.65" y1="-0.8" x2="-0.35" y2="-0.4" layer="31"/>
+<rectangle x1="0.35" y1="-0.8" x2="0.65" y2="-0.4" layer="31"/>
+<wire x1="-0.8" y1="0.45" x2="-0.8" y2="-0.35" width="0.05" layer="51"/>
+<wire x1="-0.8" y1="-0.35" x2="0.8" y2="-0.35" width="0.05" layer="51"/>
+<wire x1="0.8" y1="-0.35" x2="0.8" y2="0.45" width="0.05" layer="51"/>
+<wire x1="0.8" y1="0.45" x2="-0.8" y2="0.45" width="0.05" layer="51"/>
+<wire x1="-0.5" y1="0.6" x2="-0.95" y2="0.6" width="0.2" layer="21"/>
+<wire x1="-0.95" y1="0.6" x2="-0.95" y2="-0.3" width="0.2" layer="21"/>
+<wire x1="0.5" y1="0.6" x2="0.95" y2="0.6" width="0.2" layer="21"/>
+<wire x1="0.95" y1="0.6" x2="0.95" y2="-0.3" width="0.2" layer="21"/>
+<text x="-0.9" y="-0.8" size="0.2" layer="51" font="vector">G</text>
+<text x="0.8" y="-0.8" size="0.2" layer="51" font="vector">S</text>
+<text x="0.4" y="0.8" size="0.2" layer="51" font="vector">D</text>
+<text x="-1" y="1.2" size="0.6" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1" y="-1.7" size="0.6" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<rectangle x1="-0.9" y1="-0.9" x2="1" y2="1" layer="39"/>
+</package>
+<package name="DO-214AA">
+<smd name="A" x="-1.95" y="0" dx="2.1" dy="2.3" layer="1"/>
+<smd name="C" x="1.95" y="0" dx="2.1" dy="2.3" layer="1"/>
+<wire x1="-2.03" y1="1.65" x2="2.03" y2="1.65" width="0.2" layer="51"/>
+<wire x1="2.03" y1="1.65" x2="2.03" y2="-1.65" width="0.2" layer="51"/>
+<wire x1="2.03" y1="-1.65" x2="-2.03" y2="-1.65" width="0.2" layer="51"/>
+<wire x1="-2.03" y1="-1.65" x2="-2.03" y2="1.65" width="0.2" layer="51"/>
+<wire x1="-2.03" y1="1.7" x2="2.03" y2="1.7" width="0.2" layer="21"/>
+<wire x1="-2.03" y1="-1.7" x2="2.03" y2="-1.7" width="0.2" layer="21"/>
+<wire x1="3.5" y1="1.7" x2="3.5" y2="-1.7" width="0.2" layer="21"/>
 </package>
 </packages>
 <packages3d>
@@ -2667,6 +2710,23 @@ Provides ESD protection</description>
 <pin name="DRAIN_1" x="15.24" y="-2.54" length="short" rot="R180"/>
 <pin name="DRAIN_2" x="15.24" y="0" length="short" rot="R180"/>
 </symbol>
+<symbol name="DIODE-TVS_UNI-1">
+<wire x1="-1.27" y1="0.889" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-0.889" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0.889" x2="-0.762" y2="1.397" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-0.889" x2="-1.778" y2="-1.397" width="0.1524" layer="94"/>
+<text x="-3.81" y="2.032" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-3.81" y="-2.032" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+<pin name="C" x="-5.08" y="0" visible="off" length="point" direction="pas"/>
+<pin name="A" x="5.08" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+<wire x1="-5.08" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="1.27" y="-1.27"/>
+<vertex x="-1.27" y="0"/>
+<vertex x="1.27" y="1.27"/>
+</polygon>
+<wire x1="1.27" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BAV99" prefix="D">
@@ -3078,6 +3138,21 @@ Provides ESD protection</description>
 <technology name="">
 <attribute name="PROD_ID" value="TRANS-15421"/>
 <attribute name="VALUE" value="100mA/20V/3.8Ω"/>
+</technology>
+</technologies>
+</device>
+<device name="-DMP21D0UT" package="SOT523">
+<connects>
+<connect gate="G$1" pin="D" pad="1"/>
+<connect gate="G$1" pin="G" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="I_D" value="590Ma"/>
+<attribute name="PROD_ID" value="TRANS-16700"/>
+<attribute name="VALUE" value="DMP21D0UT-7" constant="no"/>
+<attribute name="V_DSS" value="-20v"/>
 </technology>
 </technologies>
 </device>
@@ -4128,15 +4203,35 @@ range for only 0.5 mA of LED current.
 <gate name="G$1" symbol="DIODE-TVS_UNI" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DO-214AC">
+<device name="-SMAJ36ALFCT" package="DO-214AC">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name="">
+<attribute name="I_PP" value="6.9A"/>
 <attribute name="PROD_ID" value="DIO-15812" constant="no"/>
+<attribute name="P_PK" value="400W"/>
 <attribute name="VALUE" value="SMAJ36A" constant="no"/>
+<attribute name="VCLMP" value="58.1V"/>
+<attribute name="VWM" value="36V"/>
+</technology>
+</technologies>
+</device>
+<device name="-SMBJP6KE6.8A-TP" package="DO-214AA">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="I_PP" value="58.1A"/>
+<attribute name="PROD_ID" value="DIO-17055"/>
+<attribute name="P_PK" value="600W"/>
+<attribute name="VALUE" value="SMBJP6KE"/>
+<attribute name="VCLMP" value="10.5V"/>
+<attribute name="VWM" value="5.8V"/>
 </technology>
 </technologies>
 </device>
@@ -4290,6 +4385,39 @@ Source: &lt;a href="http://toshiba.semicon-storage.com/info/docget.jsp?did=55304
 <attribute name="MANUFACTURER_NAME" value="Toshiba" constant="no"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="TLP3475R" constant="no"/>
 <attribute name="PROD_ID" value="IC-15447" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMBJP6KE" prefix="D">
+<gates>
+<gate name="G$1" symbol="DIODE-TVS_UNI-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="6.8A-TP" package="DO-214AA">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="I_PP" value="58.1A"/>
+<attribute name="PROD_ID" value="DIO-17055"/>
+<attribute name="P_PK" value="600W"/>
+<attribute name="VCLMP" value="10.5V"/>
+<attribute name="VWM" value="5.8V"/>
+</technology>
+</technologies>
+</device>
+<device name="-DNP" package="DO-214AA">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value=""/>
 </technology>
 </technologies>
 </device>
