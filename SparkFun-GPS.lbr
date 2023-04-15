@@ -109,15 +109,45 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="no" active="no"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="no"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="no"/>
+<layer number="133" name="NET2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="134" name="Info1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="135" name="INFO_1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="136" name="INFO_2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="137" name="INFO_3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="138" name="INFO_4" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="139" name="INFO_5" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="140" name="INFO_6" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="141" name="INFO_7" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="142" name="INFO_8" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="143" name="PLACE_BOUND_TOP" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="no"/>
+<layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="146" name="DrillLegend_01-20" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="147" name="PIN_NUMBER" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="149" name="DrillLegend_02-15" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="no" active="no"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="no"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="no"/>
+<layer number="156" name="gesam-Maß" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="157" name="FaceMchng" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="158" name="FaceMMeas" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="159" name="Geh-Bear2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="160" name="Topologie" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="161" name="tomplace2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="no"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="no"/>
@@ -157,6 +187,8 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="252" name="BR-BS" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="253" name="Extra" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="no"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="no"/>
 </layers>
@@ -1944,6 +1976,90 @@ Antenna</text>
 <wire x1="11.038" y1="8.382" x2="11.038" y2="7.112" width="0.2032" layer="21"/>
 <rectangle x1="-8.382" y1="-8.382" x2="-7.874" y2="-7.62" layer="51"/>
 </package>
+<package name="AI-THINKER-A9G">
+<description>&lt;h3&gt;Ai-Thinker A9G - Quad-band GPS/BDS + GPRS/GSM Module&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 54&lt;/li&gt;
+&lt;li&gt;Pin pitch: 1.2mm&lt;/li&gt;
+&lt;li&gt;Area: 19.2mm x 19.2mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://docs.ai-thinker.com/_media/b101ps01a4_a9g_product_specification.pdf"&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.digikey.com.br/pt/products/detail/ai-thinker/A9G/16688882"&gt;A9G SoC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.digikey.com.br/pt/products/detail/ai-thinker/A9G-KIT/16688884"&gt;A9G Kit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<circle x="-10.94105" y="7.747" radius="0.254" width="0.2032" layer="21"/>
+<wire x1="-9.4" y1="9.6" x2="9.4" y2="9.6" width="0.2032" layer="51"/>
+<wire x1="9.4" y1="9.6" x2="9.4" y2="-9.6" width="0.2032" layer="51"/>
+<wire x1="9.4" y1="-9.6" x2="-9.4" y2="-9.6" width="0.2032" layer="51"/>
+<wire x1="-9.4" y1="-9.6" x2="-9.4" y2="9.6" width="0.2032" layer="51"/>
+<smd name="1" x="-9.4" y="7.8" dx="1.6" dy="0.8" layer="1"/>
+<smd name="2" x="-9.4" y="6.6" dx="1.6" dy="0.8" layer="1"/>
+<smd name="3" x="-9.4" y="5.4" dx="1.6" dy="0.8" layer="1"/>
+<smd name="4" x="-9.4" y="4.2" dx="1.6" dy="0.8" layer="1"/>
+<smd name="5" x="-9.4" y="3" dx="1.6" dy="0.8" layer="1"/>
+<smd name="6" x="-9.4" y="1.8" dx="1.6" dy="0.8" layer="1"/>
+<smd name="7" x="-9.4" y="0.6" dx="1.6" dy="0.8" layer="1"/>
+<smd name="8" x="-9.4" y="-0.6" dx="1.6" dy="0.8" layer="1"/>
+<smd name="9" x="-9.4" y="-1.8" dx="1.6" dy="0.8" layer="1"/>
+<smd name="10" x="-9.4" y="-3" dx="1.6" dy="0.8" layer="1"/>
+<smd name="11" x="-9.4" y="-4.2" dx="1.6" dy="0.8" layer="1"/>
+<smd name="12" x="-9.4" y="-5.4" dx="1.6" dy="0.8" layer="1"/>
+<smd name="13" x="-9.4" y="-6.6" dx="1.6" dy="0.8" layer="1"/>
+<smd name="14" x="-9.4" y="-7.8" dx="1.6" dy="0.8" layer="1"/>
+<smd name="15" x="-7.2" y="-9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="16" x="-6" y="-9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="17" x="-4.8" y="-9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="18" x="-3.6" y="-9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="19" x="-2.4" y="-9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="20" x="-1.2" y="-9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="21" x="0" y="-9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="22" x="1.2" y="-9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="23" x="2.4" y="-9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="24" x="3.6" y="-9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="25" x="4.8" y="-9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="26" x="6" y="-9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="27" x="7.2" y="-9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="28" x="9.4" y="-7.8" dx="1.6" dy="0.8" layer="1"/>
+<smd name="29" x="9.4" y="-6.6" dx="1.6" dy="0.8" layer="1"/>
+<smd name="30" x="9.4" y="-5.4" dx="1.6" dy="0.8" layer="1"/>
+<smd name="31" x="9.4" y="-4.2" dx="1.6" dy="0.8" layer="1"/>
+<smd name="32" x="9.4" y="-3" dx="1.6" dy="0.8" layer="1"/>
+<smd name="33" x="9.4" y="-1.8" dx="1.6" dy="0.8" layer="1"/>
+<smd name="34" x="9.4" y="-0.6" dx="1.6" dy="0.8" layer="1"/>
+<smd name="35" x="9.4" y="0.6" dx="1.6" dy="0.8" layer="1"/>
+<smd name="36" x="9.4" y="1.8" dx="1.6" dy="0.8" layer="1"/>
+<smd name="37" x="9.4" y="3" dx="1.6" dy="0.8" layer="1"/>
+<smd name="38" x="9.4" y="4.2" dx="1.6" dy="0.8" layer="1"/>
+<smd name="39" x="9.4" y="5.4" dx="1.6" dy="0.8" layer="1"/>
+<smd name="40" x="9.4" y="6.6" dx="1.6" dy="0.8" layer="1"/>
+<smd name="41" x="9.4" y="7.8" dx="1.6" dy="0.8" layer="1"/>
+<smd name="42" x="7.2" y="9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="43" x="6" y="9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="44" x="4.8" y="9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="45" x="3.6" y="9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="46" x="2.4" y="9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="47" x="1.2" y="9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="48" x="0" y="9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="49" x="-1.2" y="9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="50" x="-2.4" y="9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="51" x="-3.6" y="9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="52" x="-4.8" y="9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="53" x="-6" y="9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="54" x="-7.2" y="9.5" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="EPAD2" x="-4.2" y="4.7" dx="3" dy="3" layer="1"/>
+<smd name="EPAD1" x="-1.9" y="-1.9" dx="1.5" dy="1.5" layer="1"/>
+<text x="-8.98525" y="10.95375" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-9.144" y="-11.557" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+<wire x1="-9.398" y1="8.49121875" x2="-9.398" y2="9.60246875" width="0.2032" layer="21"/>
+<wire x1="-9.398" y1="9.60246875" x2="-7.8867" y2="9.59993125" width="0.2032" layer="21"/>
+<wire x1="9.398" y1="-8.49121875" x2="9.398" y2="-9.60246875" width="0.2032" layer="21"/>
+<wire x1="9.398" y1="-9.60246875" x2="7.8613" y2="-9.60246875" width="0.2032" layer="21"/>
+<wire x1="9.398" y1="8.49121875" x2="9.398" y2="9.60246875" width="0.2032" layer="21"/>
+<wire x1="9.398" y1="9.60246875" x2="7.907021875" y2="9.5973875" width="0.2032" layer="21"/>
+<wire x1="-9.398" y1="-8.49121875" x2="-9.398" y2="-9.60246875" width="0.2032" layer="21"/>
+<wire x1="-9.398" y1="-9.60246875" x2="-7.85621875" y2="-9.60246875" width="0.2032" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ANTENNA">
@@ -2478,6 +2594,72 @@ the 3 V variant.&lt;/p&gt;</description>
 <pin name="RXD2" x="15.24" y="-2.54" length="short" direction="in" rot="R180"/>
 <pin name="ANT_DETECT" x="-15.24" y="-2.54" length="short" direction="in"/>
 <pin name="!ANT_SHORT!" x="-15.24" y="-5.08" length="short" direction="out"/>
+</symbol>
+<symbol name="AI-THINKER-A9G">
+<description>&lt;h3&gt;Ai-Thinker A9G - Quad-band GPS/BDS + GPRS/GSM Module&lt;/h3&gt;
+
+&lt;p&gt;Complete quad-band  GPS/BDS + GPRS/GSM module (800MHz, 900MHz, 1800MHz, 1900MHz) integrated into a compact single SMD package, operating temperature: -20℃ ~ +70℃, low power mode current: 2mA (average), GPRS class 10, sensitivity: 105dB, supports voice call and SMS, GPIO Level: 2.8V, supports GPRS data service (max 85.5kbps donwload and 42.8Kbps upload), supports standard GSM07.07,07.05 AT command + Ai-Thinker expandable command set + standard AT&amp;TCP/IP command port.&lt;/p&gt;</description>
+<wire x1="-29.21" y1="29.21" x2="-29.21" y2="-29.21" width="0.254" layer="94"/>
+<wire x1="-29.21" y1="-29.21" x2="27.94" y2="-29.21" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-29.21" x2="27.94" y2="29.21" width="0.254" layer="94"/>
+<wire x1="27.94" y1="29.21" x2="-29.21" y2="29.21" width="0.254" layer="94"/>
+<pin name="ADC0" x="-15.24" y="-31.75" length="short" rot="R90"/>
+<pin name="ADC1" x="-12.7" y="-31.75" length="short" rot="R90"/>
+<pin name="EP" x="25.4" y="-31.75" length="short" rot="R90"/>
+<pin name="GND" x="-31.75" y="-6.35" length="short"/>
+<pin name="GND@1" x="15.24" y="-31.75" length="short" rot="R90"/>
+<pin name="GND@2" x="30.48" y="-13.97" length="short" rot="R180"/>
+<pin name="GND@3" x="10.16" y="31.75" length="short" rot="R270"/>
+<pin name="GND@4" x="5.08" y="31.75" length="short" rot="R270"/>
+<pin name="GPRS_RF" x="7.62" y="31.75" length="short" rot="R270"/>
+<pin name="GPS_RF" x="30.48" y="-16.51" length="short" rot="R180"/>
+<pin name="HST_RXD" x="30.48" y="8.89" length="short" rot="R180"/>
+<pin name="HST_TXD" x="30.48" y="6.35" length="short" rot="R180"/>
+<pin name="I2C2_SCL" x="-31.75" y="16.51" length="short"/>
+<pin name="I2C2_SDA" x="-31.75" y="13.97" length="short"/>
+<pin name="IO25" x="30.48" y="-6.35" length="short" rot="R180"/>
+<pin name="IO26" x="10.16" y="-31.75" length="short" rot="R90"/>
+<pin name="IO27" x="12.7" y="-31.75" length="short" rot="R90"/>
+<pin name="IO28" x="30.48" y="-11.43" length="short" rot="R180"/>
+<pin name="IO29" x="7.62" y="-31.75" length="short" rot="R90"/>
+<pin name="IO30" x="30.48" y="-8.89" length="short" rot="R180"/>
+<pin name="LCD_CS" x="-5.08" y="-31.75" length="short" rot="R90"/>
+<pin name="LCD_DIO" x="0" y="-31.75" length="short" rot="R90"/>
+<pin name="LCD_RST" x="-2.54" y="-31.75" length="short" rot="R90"/>
+<pin name="LCD_SCK" x="5.08" y="-31.75" length="short" rot="R90"/>
+<pin name="LCD_SDC" x="2.54" y="-31.75" length="short" rot="R90"/>
+<pin name="MIC_N" x="30.48" y="-3.81" length="short" rot="R180"/>
+<pin name="MIC_P" x="30.48" y="-1.27" length="short" rot="R180"/>
+<pin name="PWRKEY" x="-31.75" y="-3.81" length="short"/>
+<pin name="RESET" x="-7.62" y="-31.75" length="short" rot="R90"/>
+<pin name="SD_CLK" x="-31.75" y="-1.27" length="short"/>
+<pin name="SD_CMD" x="-31.75" y="1.27" length="short"/>
+<pin name="SD_D0" x="-31.75" y="3.81" length="short"/>
+<pin name="SD_D1" x="-31.75" y="6.35" length="short"/>
+<pin name="SD_D2" x="-31.75" y="8.89" length="short"/>
+<pin name="SD_D3" x="-31.75" y="11.43" length="short"/>
+<pin name="SM0_CLK" x="30.48" y="16.51" length="short" rot="R180"/>
+<pin name="SM0_DIO" x="30.48" y="11.43" length="short" rot="R180"/>
+<pin name="SM0_RST" x="15.24" y="31.75" length="short" rot="R270"/>
+<pin name="SPK_N" x="-31.75" y="-16.51" length="short"/>
+<pin name="SPK_P" x="-31.75" y="-13.97" length="short"/>
+<pin name="UART1_CTS" x="-10.16" y="31.75" length="short" rot="R270"/>
+<pin name="UART1_RTS" x="-7.62" y="31.75" length="short" rot="R270"/>
+<pin name="UART1_RXD" x="-12.7" y="31.75" length="short" rot="R270"/>
+<pin name="UART1_TXD" x="-15.24" y="31.75" length="short" rot="R270"/>
+<pin name="UART2_CTS" x="0" y="31.75" length="short" rot="R270"/>
+<pin name="UART2_RTS" x="2.54" y="31.75" length="short" rot="R270"/>
+<pin name="UART2_RXD" x="-5.08" y="31.75" length="short" rot="R270"/>
+<pin name="UART2_TXD" x="-2.54" y="31.75" length="short" rot="R270"/>
+<pin name="USB_N" x="30.48" y="1.27" length="short" rot="R180"/>
+<pin name="USB_P" x="30.48" y="3.81" length="short" rot="R180"/>
+<pin name="VBAT" x="-31.75" y="-8.89" length="short"/>
+<pin name="VBAT@1" x="-31.75" y="-11.43" length="short"/>
+<pin name="VIO" x="12.7" y="31.75" length="short" rot="R270"/>
+<pin name="VSM0" x="30.48" y="13.97" length="short" rot="R180"/>
+<pin name="VUSB" x="-10.16" y="-31.75" length="short" rot="R90"/>
+<text x="-29.21" y="30.734" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-29.21" y="-32.766" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3293,6 +3475,84 @@ The NEO-D9S can receive the data stream of a GNSS correction service, broadcast 
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-16579" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AI-THINKER-A9G" prefix="U" uservalue="yes">
+<description>&lt;h3&gt;Ai-Thinker A9G - Quad-band GPS/BDS + GPRS/GSM Module&lt;/h3&gt;
+&lt;p&gt;Complete quad-band  GPS/BDS + GPRS/GSM module (800MHz, 900MHz, 1800MHz, 1900MHz) integrated into a compact single SMD package, operating temperature: -20℃ ~ +70℃, low power mode current: 2mA (average), GPRS class 10, sensitivity: 105dB, supports voice call and SMS, GPIO Level: 2.8V, supports GPRS data service (max 85.5kbps donwload and 42.8Kbps upload), supports standard GSM07.07,07.05 AT command + Ai-Thinker expandable command set + standard AT&amp;TCP/IP command port.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Ai-Thinker A9G Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.digikey.com.br/pt/products/detail/ai-thinker/A9G/16688882"&gt;A9G SoC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.digikey.com.br/pt/products/detail/ai-thinker/A9G-KIT/16688884"&gt;A9G Kit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="AI-THINKER-A9G" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="AI-THINKER-A9G">
+<connects>
+<connect gate="G$1" pin="ADC0" pad="15"/>
+<connect gate="G$1" pin="ADC1" pad="16"/>
+<connect gate="G$1" pin="EP" pad="EPAD1 EPAD2"/>
+<connect gate="G$1" pin="GND" pad="10"/>
+<connect gate="G$1" pin="GND@1" pad="27"/>
+<connect gate="G$1" pin="GND@2" pad="29"/>
+<connect gate="G$1" pin="GND@3" pad="44"/>
+<connect gate="G$1" pin="GND@4" pad="46"/>
+<connect gate="G$1" pin="GPRS_RF" pad="45"/>
+<connect gate="G$1" pin="GPS_RF" pad="28"/>
+<connect gate="G$1" pin="HST_RXD" pad="38"/>
+<connect gate="G$1" pin="HST_TXD" pad="37"/>
+<connect gate="G$1" pin="I2C2_SCL" pad="1"/>
+<connect gate="G$1" pin="I2C2_SDA" pad="2"/>
+<connect gate="G$1" pin="IO25" pad="32"/>
+<connect gate="G$1" pin="IO26" pad="25"/>
+<connect gate="G$1" pin="IO27" pad="26"/>
+<connect gate="G$1" pin="IO28" pad="30"/>
+<connect gate="G$1" pin="IO29" pad="24"/>
+<connect gate="G$1" pin="IO30" pad="31"/>
+<connect gate="G$1" pin="LCD_CS" pad="19"/>
+<connect gate="G$1" pin="LCD_DIO" pad="21"/>
+<connect gate="G$1" pin="LCD_RST" pad="20"/>
+<connect gate="G$1" pin="LCD_SCK" pad="23"/>
+<connect gate="G$1" pin="LCD_SDC" pad="22"/>
+<connect gate="G$1" pin="MIC_N" pad="33"/>
+<connect gate="G$1" pin="MIC_P" pad="34"/>
+<connect gate="G$1" pin="PWRKEY" pad="9"/>
+<connect gate="G$1" pin="RESET" pad="18"/>
+<connect gate="G$1" pin="SD_CLK" pad="8"/>
+<connect gate="G$1" pin="SD_CMD" pad="7"/>
+<connect gate="G$1" pin="SD_D0" pad="6"/>
+<connect gate="G$1" pin="SD_D1" pad="5"/>
+<connect gate="G$1" pin="SD_D2" pad="4"/>
+<connect gate="G$1" pin="SD_D3" pad="3"/>
+<connect gate="G$1" pin="SM0_CLK" pad="41"/>
+<connect gate="G$1" pin="SM0_DIO" pad="39"/>
+<connect gate="G$1" pin="SM0_RST" pad="42"/>
+<connect gate="G$1" pin="SPK_N" pad="14"/>
+<connect gate="G$1" pin="SPK_P" pad="13"/>
+<connect gate="G$1" pin="UART1_CTS" pad="52"/>
+<connect gate="G$1" pin="UART1_RTS" pad="51"/>
+<connect gate="G$1" pin="UART1_RXD" pad="53"/>
+<connect gate="G$1" pin="UART1_TXD" pad="54"/>
+<connect gate="G$1" pin="UART2_CTS" pad="48"/>
+<connect gate="G$1" pin="UART2_RTS" pad="47"/>
+<connect gate="G$1" pin="UART2_RXD" pad="50"/>
+<connect gate="G$1" pin="UART2_TXD" pad="49"/>
+<connect gate="G$1" pin="USB_N" pad="35"/>
+<connect gate="G$1" pin="USB_P" pad="36"/>
+<connect gate="G$1" pin="VBAT" pad="11"/>
+<connect gate="G$1" pin="VBAT@1" pad="12"/>
+<connect gate="G$1" pin="VIO" pad="43"/>
+<connect gate="G$1" pin="VSM0" pad="40"/>
+<connect gate="G$1" pin="VUSB" pad="17"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="A9G" constant="no"/>
+<attribute name="VALUE" value="A9G" constant="no"/>
 </technology>
 </technologies>
 </device>
