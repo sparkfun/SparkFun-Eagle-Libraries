@@ -5584,10 +5584,10 @@ sized tool</text>
 <pin name="VCC" x="-17.78" y="22.86" length="short"/>
 <pin name="USB_VIN" x="-17.78" y="-2.54" length="short"/>
 <pin name="PWR_EN" x="-17.78" y="17.78" length="short"/>
-<pin name="RX" x="17.78" y="5.08" length="short" rot="R180"/>
-<pin name="CTS" x="17.78" y="0" length="short" rot="R180"/>
-<pin name="TX" x="17.78" y="2.54" length="short" rot="R180"/>
-<pin name="RTS" x="17.78" y="-2.54" length="short" rot="R180"/>
+<pin name="FUNC_RX" x="17.78" y="5.08" length="short" rot="R180"/>
+<pin name="FUNC_CTS" x="17.78" y="0" length="short" rot="R180"/>
+<pin name="FUNC_TX" x="17.78" y="2.54" length="short" rot="R180"/>
+<pin name="FUNC_RTS" x="17.78" y="-2.54" length="short" rot="R180"/>
 <pin name="A0" x="17.78" y="-7.62" length="short" rot="R180"/>
 <pin name="EEPROM_A0" x="-17.78" y="-20.32" length="short"/>
 <pin name="EEPROM_A1" x="-17.78" y="-22.86" length="short"/>
@@ -5762,7 +5762,6 @@ sized tool</text>
 <connect gate="J1" pin="A0" pad="38"/>
 <connect gate="J1" pin="CAN-RX" pad="43"/>
 <connect gate="J1" pin="CAN-TX" pad="41"/>
-<connect gate="J1" pin="CTS" pad="18"/>
 <connect gate="J1" pin="DFU_!ACTIVE!" pad="10"/>
 <connect gate="J1" pin="DFU_!BOOT!" pad="66"/>
 <connect gate="J1" pin="DFU_!RST!" pad="68"/>
@@ -5780,17 +5779,18 @@ sized tool</text>
 <connect gate="J1" pin="F5" pad="57"/>
 <connect gate="J1" pin="F6" pad="59"/>
 <connect gate="J1" pin="F7" pad="61"/>
+<connect gate="J1" pin="FUNC_CTS" pad="18"/>
+<connect gate="J1" pin="FUNC_RTS" pad="16"/>
+<connect gate="J1" pin="FUNC_RX" pad="15"/>
+<connect gate="J1" pin="FUNC_TX" pad="13"/>
 <connect gate="J1" pin="GND" pad="1 2 8 33 39 45 75 GND1 GND2 GND3 GND4 GND5 GND6"/>
 <connect gate="J1" pin="I2C_!INT!" pad="23"/>
 <connect gate="J1" pin="I2C_SCL" pad="21"/>
 <connect gate="J1" pin="I2C_SDA" pad="19"/>
 <connect gate="J1" pin="PWR_EN" pad="71"/>
-<connect gate="J1" pin="RTS" pad="16"/>
-<connect gate="J1" pin="RX" pad="15"/>
 <connect gate="J1" pin="SPI_SCK" pad="3"/>
 <connect gate="J1" pin="SPI_SDI" pad="5"/>
 <connect gate="J1" pin="SPI_SDO" pad="7"/>
-<connect gate="J1" pin="TX" pad="13"/>
 <connect gate="J1" pin="USBHOST_D+" pad="35"/>
 <connect gate="J1" pin="USBHOST_D-" pad="37"/>
 <connect gate="J1" pin="USB_VIN" pad="70"/>
@@ -5806,7 +5806,6 @@ sized tool</text>
 <connect gate="J1" pin="A0" pad="38"/>
 <connect gate="J1" pin="CAN-RX" pad="43"/>
 <connect gate="J1" pin="CAN-TX" pad="41"/>
-<connect gate="J1" pin="CTS" pad="18"/>
 <connect gate="J1" pin="DFU_!ACTIVE!" pad="10"/>
 <connect gate="J1" pin="DFU_!BOOT!" pad="66"/>
 <connect gate="J1" pin="DFU_!RST!" pad="68"/>
@@ -5824,17 +5823,18 @@ sized tool</text>
 <connect gate="J1" pin="F5" pad="57"/>
 <connect gate="J1" pin="F6" pad="59"/>
 <connect gate="J1" pin="F7" pad="61"/>
+<connect gate="J1" pin="FUNC_CTS" pad="18"/>
+<connect gate="J1" pin="FUNC_RTS" pad="16"/>
+<connect gate="J1" pin="FUNC_RX" pad="15"/>
+<connect gate="J1" pin="FUNC_TX" pad="13"/>
 <connect gate="J1" pin="GND" pad="1 2 8 33 39 45 75"/>
 <connect gate="J1" pin="I2C_!INT!" pad="23"/>
 <connect gate="J1" pin="I2C_SCL" pad="21"/>
 <connect gate="J1" pin="I2C_SDA" pad="19"/>
 <connect gate="J1" pin="PWR_EN" pad="71"/>
-<connect gate="J1" pin="RTS" pad="16"/>
-<connect gate="J1" pin="RX" pad="15"/>
 <connect gate="J1" pin="SPI_SCK" pad="3"/>
 <connect gate="J1" pin="SPI_SDI" pad="5"/>
 <connect gate="J1" pin="SPI_SDO" pad="7"/>
-<connect gate="J1" pin="TX" pad="13"/>
 <connect gate="J1" pin="USBHOST_D+" pad="35"/>
 <connect gate="J1" pin="USBHOST_D-" pad="37"/>
 <connect gate="J1" pin="USB_VIN" pad="70"/>
