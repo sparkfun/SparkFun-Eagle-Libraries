@@ -1744,11 +1744,11 @@ conflicts.&lt;/p&gt;
 <wire x1="-2.54" y1="5.08" x2="6.258559375" y2="0" width="0.254" layer="94"/>
 <wire x1="6.258559375" y1="0" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<pin name="Y" x="10.16" y="0" visible="pad" length="point"/>
+<pin name="Y" x="7.62" y="0" visible="pad" length="point" rot="R180"/>
 <pin name="A" x="-5.08" y="0" visible="pad" length="short"/>
 <pin name="!EN" x="2.54" y="-5.08" visible="pad" length="point" rot="R270"/>
 <circle x="2.54" y="-3.302" radius="1.016" width="0.254" layer="94"/>
-<wire x1="10.16" y1="0" x2="6.096" y2="0" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="0" x2="6.35" y2="0" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="-4.318" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
 <text x="-2.54" y="5.842" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="5.08" y="-5.08" size="1.778" layer="95" font="vector">&gt;VALUE</text>
@@ -2222,16 +2222,16 @@ Supply: 1.65V to 5.5V
 &lt;/ul&gt;</description>
 <gates>
 <gate name="G2" symbol="POWER_CONSORT" x="7.62" y="0"/>
-<gate name="G$1" symbol="GATE_BUFFER_WITH_ENABLE" x="-10.16" y="0"/>
+<gate name="U1" symbol="GATE_BUFFER_WITH_ENABLE" x="-10.16" y="0"/>
 </gates>
 <devices>
 <device name="SN74AHC1G125DBVR" package="SOT23-5">
 <connects>
-<connect gate="G$1" pin="!EN" pad="1"/>
-<connect gate="G$1" pin="A" pad="2"/>
-<connect gate="G$1" pin="Y" pad="4"/>
 <connect gate="G2" pin="P$V+" pad="5"/>
 <connect gate="G2" pin="P$V-" pad="3"/>
+<connect gate="U1" pin="!EN" pad="1"/>
+<connect gate="U1" pin="A" pad="2"/>
+<connect gate="U1" pin="Y" pad="4"/>
 </connects>
 <technologies>
 <technology name="AHC">
@@ -2242,11 +2242,11 @@ Supply: 1.65V to 5.5V
 </device>
 <device name="74AHC1G125W5-7" package="SOT23-5">
 <connects>
-<connect gate="G$1" pin="!EN" pad="1"/>
-<connect gate="G$1" pin="A" pad="2"/>
-<connect gate="G$1" pin="Y" pad="4"/>
 <connect gate="G2" pin="P$V+" pad="5"/>
 <connect gate="G2" pin="P$V-" pad="3"/>
+<connect gate="U1" pin="!EN" pad="1"/>
+<connect gate="U1" pin="A" pad="2"/>
+<connect gate="U1" pin="Y" pad="4"/>
 </connects>
 <technologies>
 <technology name="">
