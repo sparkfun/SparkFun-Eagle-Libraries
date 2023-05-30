@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -19,13 +19,13 @@
 <layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -12563,10 +12563,14 @@ Power Layers</text>
 </package>
 <package name="XX21">
 <description>&lt;h3&gt;XX21&lt;/h3&gt;
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count: 8&lt;/li&gt;
-&lt;li&gt;Body width: 0.163" (max)&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
+&lt;p&gt;Mechanical Specifications:
+&lt;ul&gt;
+&lt;li&gt;Pad Size: .76mm x 1.27mm &lt;/li&gt;
+&lt;li&gt;Pin count: 8&lt;/li&gt;
+&lt;li&gt;Pin pitch: 1.27mm&lt;/li&gt;
+&lt;li&gt;Package Size: 5.33mm x 4.14mm  &lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://www.minicircuits.com/pdfs/BP2G1+.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;</description>
 <wire x1="2.3" y1="1.97" x2="-2.3" y2="1.97" width="0.2032" layer="21"/>
 <wire x1="2.3" y1="-1.97" x2="2.665" y2="-1.605" width="0.2032" layer="21" curve="90"/>
 <wire x1="-2.665" y1="1.605" x2="-2.3" y2="1.97" width="0.2032" layer="21" curve="-90.023829"/>
@@ -16239,8 +16243,8 @@ Dynamic NFC/RFID tag IC with 4-Kbit, 16-Kbit or 64-Kbit EEPROM, fast transfer mo
 <wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<text x="-7.62" y="5.08" size="1.778" layer="95">&gt;Name</text>
-<text x="-7.62" y="-7.62" size="1.778" layer="96">&gt;Value</text>
+<text x="-7.62" y="5.334" size="1.778" layer="95" font="vector">&gt;Name</text>
+<text x="-7.62" y="-7.62" size="1.778" layer="96" font="vector">&gt;Value</text>
 <pin name="S" x="-10.16" y="2.54" visible="pin" length="short"/>
 <pin name="2" x="10.16" y="-2.54" visible="pin" length="short" rot="R180"/>
 <pin name="1" x="10.16" y="2.54" visible="pin" length="short" rot="R180"/>
@@ -19993,7 +19997,7 @@ an external resistor for operation.</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BP2G1+_POWER_SPLITTER">
+<deviceset name="BP2G1+_POWER_SPLITTER" prefix="U">
 <description>&lt;b&gt;BP2G1+&lt;/b&gt;&lt;br&gt;
 2 Ways MMIC DC Pass Power Splitter, 1200 - 2000 MHz, 50Ω</description>
 <gates>
