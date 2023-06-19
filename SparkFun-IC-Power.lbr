@@ -5625,6 +5625,27 @@ MOSFET to provide high-efficiency step-down DC-DC conversion.</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="V_REG_RT9080" prefix="U">
+<gates>
+<gate name="G$1" symbol="V-REG-LDO_NO-BP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="VREG-19034"/>
+<attribute name="VALUE" value="RT9080-33GJ5"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
