@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -20661,13 +20661,13 @@ ESP32-WROVER-IE has a u.FL antenna connector, but is otherwise the same as the -
 </device>
 </devices>
 </deviceset>
-<deviceset name="LARA-R6001" prefix="U">
+<deviceset name="LARA-R6" prefix="U">
 <description>u-blox LARA-R6 single or multi-mode LTE Cat 1 modules</description>
 <gates>
 <gate name="U1" symbol="LARA-R6" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="LARA-LGA">
+<device name="_R6001D_GLOBAL_DATA-ONLY" package="LARA-LGA">
 <connects>
 <connect gate="U1" pin="ANT" pad="56"/>
 <connect gate="U1" pin="ANT2" pad="62"/>
@@ -20707,7 +20707,98 @@ ESP32-WROVER-IE has a u.FL antenna connector, but is otherwise the same as the -
 </connects>
 <technologies>
 <technology name="">
+<attribute name="PROD_ID" value="IC-16661" constant="no"/>
+<attribute name="VALUE" value="LARA-R6001D" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_R6001_GLOBAL" package="LARA-LGA">
+<connects>
+<connect gate="U1" pin="ANT" pad="56"/>
+<connect gate="U1" pin="ANT2" pad="62"/>
+<connect gate="U1" pin="ANT_DET" pad="59"/>
+<connect gate="U1" pin="CTS_O" pad="11"/>
+<connect gate="U1" pin="DCD_O" pad="8"/>
+<connect gate="U1" pin="DSR_O" pad="6"/>
+<connect gate="U1" pin="DTR_I" pad="9"/>
+<connect gate="U1" pin="GND" pad="1 3 5 14 20 21 22 30 32 43 50 54 55 57 58 60 61 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96" route="any"/>
+<connect gate="U1" pin="GPIO1" pad="16"/>
+<connect gate="U1" pin="GPIO2" pad="23"/>
+<connect gate="U1" pin="GPIO3" pad="24"/>
+<connect gate="U1" pin="GPIO4" pad="25"/>
+<connect gate="U1" pin="GPIO5" pad="42"/>
+<connect gate="U1" pin="GPIO6" pad="19"/>
+<connect gate="U1" pin="I2S_CLK" pad="36"/>
+<connect gate="U1" pin="I2S_RXD" pad="37"/>
+<connect gate="U1" pin="I2S_TXD" pad="35"/>
+<connect gate="U1" pin="I2S_WA" pad="34"/>
+<connect gate="U1" pin="PWR_ON" pad="15"/>
+<connect gate="U1" pin="RESET_N" pad="18"/>
+<connect gate="U1" pin="RI_O" pad="7"/>
+<connect gate="U1" pin="RTS_I" pad="10"/>
+<connect gate="U1" pin="RXD_O" pad="13"/>
+<connect gate="U1" pin="SCL" pad="27"/>
+<connect gate="U1" pin="SDA" pad="26"/>
+<connect gate="U1" pin="SIM_CLK" pad="38"/>
+<connect gate="U1" pin="SIM_IO" pad="39"/>
+<connect gate="U1" pin="SIM_RST" pad="40"/>
+<connect gate="U1" pin="TXD_I" pad="12"/>
+<connect gate="U1" pin="USB_D+" pad="29"/>
+<connect gate="U1" pin="USB_D-" pad="28"/>
+<connect gate="U1" pin="VCC" pad="51 52 53"/>
+<connect gate="U1" pin="VSIM" pad="41"/>
+<connect gate="U1" pin="VUSB_DET" pad="17"/>
+<connect gate="U1" pin="V_INT" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-17186" constant="no"/>
 <attribute name="VALUE" value="LARA-R6001" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_R6401_USA" package="LARA-LGA">
+<connects>
+<connect gate="U1" pin="ANT" pad="56"/>
+<connect gate="U1" pin="ANT2" pad="62"/>
+<connect gate="U1" pin="ANT_DET" pad="59"/>
+<connect gate="U1" pin="CTS_O" pad="11"/>
+<connect gate="U1" pin="DCD_O" pad="8"/>
+<connect gate="U1" pin="DSR_O" pad="6"/>
+<connect gate="U1" pin="DTR_I" pad="9"/>
+<connect gate="U1" pin="GND" pad="1 3 5 14 20 21 22 30 32 43 50 54 55 57 58 60 61 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96" route="any"/>
+<connect gate="U1" pin="GPIO1" pad="16"/>
+<connect gate="U1" pin="GPIO2" pad="23"/>
+<connect gate="U1" pin="GPIO3" pad="24"/>
+<connect gate="U1" pin="GPIO4" pad="25"/>
+<connect gate="U1" pin="GPIO5" pad="42"/>
+<connect gate="U1" pin="GPIO6" pad="19"/>
+<connect gate="U1" pin="I2S_CLK" pad="36"/>
+<connect gate="U1" pin="I2S_RXD" pad="37"/>
+<connect gate="U1" pin="I2S_TXD" pad="35"/>
+<connect gate="U1" pin="I2S_WA" pad="34"/>
+<connect gate="U1" pin="PWR_ON" pad="15"/>
+<connect gate="U1" pin="RESET_N" pad="18"/>
+<connect gate="U1" pin="RI_O" pad="7"/>
+<connect gate="U1" pin="RTS_I" pad="10"/>
+<connect gate="U1" pin="RXD_O" pad="13"/>
+<connect gate="U1" pin="SCL" pad="27"/>
+<connect gate="U1" pin="SDA" pad="26"/>
+<connect gate="U1" pin="SIM_CLK" pad="38"/>
+<connect gate="U1" pin="SIM_IO" pad="39"/>
+<connect gate="U1" pin="SIM_RST" pad="40"/>
+<connect gate="U1" pin="TXD_I" pad="12"/>
+<connect gate="U1" pin="USB_D+" pad="29"/>
+<connect gate="U1" pin="USB_D-" pad="28"/>
+<connect gate="U1" pin="VCC" pad="51 52 53"/>
+<connect gate="U1" pin="VSIM" pad="41"/>
+<connect gate="U1" pin="VUSB_DET" pad="17"/>
+<connect gate="U1" pin="V_INT" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-16756" constant="no"/>
+<attribute name="VALUE" value="LARA-R6401" constant="no"/>
 </technology>
 </technologies>
 </device>
