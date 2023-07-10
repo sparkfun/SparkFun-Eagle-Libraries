@@ -20586,12 +20586,16 @@ It enables development and rapid iteration of production-quality secure cellular
 
 ESP32-WROVER-E uses the onboard antenna.
 &lt;br&gt;
-ESP32-WROVER-IE has a u.FL antenna connector, but is otherwise the same as the -E.</description>
+&lt;br&gt;
+ESP32-WROVER-IE has a u.FL antenna connector, but is otherwise the same as the -E.
+&lt;br&gt;
+&lt;br&gt;
+N16R8 has 16M Flash, 8M PSRAM</description>
 <gates>
 <gate name="U1" symbol="ESP32-WROVER-E" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="ESP32-WROVER-E/IE">
+<device name="_IE-N16R8" package="ESP32-WROVER-E/IE">
 <connects>
 <connect gate="U1" pin="3V3" pad="2"/>
 <connect gate="U1" pin="CS2/IOA15" pad="23"/>
@@ -20622,10 +20626,12 @@ ESP32-WROVER-IE has a u.FL antenna connector, but is otherwise the same as the -
 <connect gate="U1" pin="XTAL_P/IOA32" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-19265" constant="no"/>
+</technology>
 </technologies>
 </device>
-<device name="-NARROW" package="ESP32-WROVER-E/IE-NARROW">
+<device name="_IE-N16R8_NARROW" package="ESP32-WROVER-E/IE-NARROW">
 <connects>
 <connect gate="U1" pin="3V3" pad="2"/>
 <connect gate="U1" pin="CS2/IOA15" pad="23"/>
@@ -20656,7 +20662,9 @@ ESP32-WROVER-IE has a u.FL antenna connector, but is otherwise the same as the -
 <connect gate="U1" pin="XTAL_P/IOA32" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-19265" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
