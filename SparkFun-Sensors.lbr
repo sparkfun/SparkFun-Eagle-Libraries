@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -23,7 +23,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -136,6 +136,12 @@
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="no"/>
+<layer number="156" name="gesam-Maß" color="7" fill="1" visible="no" active="no"/>
+<layer number="157" name="FaceMchng" color="7" fill="1" visible="no" active="no"/>
+<layer number="158" name="FaceMMeas" color="7" fill="1" visible="no" active="no"/>
+<layer number="159" name="Geh-Bear2" color="7" fill="1" visible="no" active="no"/>
+<layer number="160" name="Topologie" color="7" fill="1" visible="no" active="no"/>
+<layer number="161" name="tomplace2" color="7" fill="1" visible="no" active="no"/>
 <layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
@@ -183,6 +189,7 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="252" name="BR-BS" color="7" fill="1" visible="no" active="no"/>
 <layer number="253" name="Extra" color="7" fill="1" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="no"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="no"/>
@@ -11028,6 +11035,63 @@ read, as well as embedded engines for orientation, Directional-TapTM/DoubleTapTM
 <text x="0.635" y="-1.841" size="0.6096" layer="51" font="vector" ratio="20" rot="R180" align="center">Y</text>
 <text x="-3" y="-1.738" size="0.6096" layer="51" font="vector" ratio="20" rot="R180" align="center">Z</text>
 </package>
+<package name="LGA-9">
+<description>&lt;h3&gt;LGA-9&lt;/h3&gt;
+&lt;p&gt;Mechanical Specifications:
+&lt;ul&gt;
+&lt;li&gt;Pad Size: .9mm x .85mm &lt;/li&gt;
+&lt;li&gt;Pin count: 9 &lt;/li&gt;
+&lt;li&gt;Pin pitch: 1.05mm&lt;/li&gt;
+&lt;li&gt;Package Size: 3mm x 3mm&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://www.sciosense.com/wp-content/uploads/documents/SC-001224-DS-7-ENS160-Datasheet.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;</description>
+<circle x="-1.9335" y="1.905" radius="0.25164375" width="0" layer="21"/>
+<wire x1="-1.6" y1="1.55" x2="-1.6" y2="-1.6" width="0.1" layer="51"/>
+<wire x1="-1.6" y1="-1.6" x2="1.55" y2="-1.6" width="0.1" layer="51"/>
+<wire x1="1.55" y1="-1.6" x2="1.55" y2="1.55" width="0.1" layer="51"/>
+<wire x1="1.55" y1="1.55" x2="-1.6" y2="1.55" width="0.1" layer="51"/>
+<wire x1="-1.6635" y1="1.2" x2="-1.6635" y2="1.6135" width="0.2032" layer="21"/>
+<wire x1="-1.6635" y1="1.6135" x2="-1.25" y2="1.6135" width="0.2032" layer="21"/>
+<wire x1="-1.25" y1="-1.6635" x2="-1.6635" y2="-1.6635" width="0.2032" layer="21"/>
+<wire x1="-1.6635" y1="-1.6635" x2="-1.6635" y2="-1.25" width="0.2032" layer="21"/>
+<wire x1="1.2" y1="1.6135" x2="1.6135" y2="1.6135" width="0.2032" layer="21"/>
+<wire x1="1.6135" y1="1.6135" x2="1.6135" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="1.6135" y1="-1.25" x2="1.6135" y2="-1.6635" width="0.2032" layer="21"/>
+<wire x1="1.6135" y1="-1.6635" x2="1.2" y2="-1.6635" width="0.2032" layer="21"/>
+<wire x1="-1.7272" y1="1.6764" x2="-1.7272" y2="-1.7272" width="0.1524" layer="39"/>
+<wire x1="-1.7272" y1="-1.7272" x2="1.6764" y2="-1.7272" width="0.1524" layer="39"/>
+<wire x1="1.6764" y1="-1.7272" x2="1.6764" y2="1.6764" width="0.1524" layer="39"/>
+<wire x1="1.6764" y1="1.6764" x2="-1.7272" y2="1.6764" width="0.1524" layer="39"/>
+<rectangle x1="-1.535" y1="0.605" x2="-0.635" y2="1.455" layer="29"/>
+<rectangle x1="-1.535" y1="-0.445" x2="-0.635" y2="0.405" layer="29"/>
+<rectangle x1="-1.535" y1="-1.495" x2="-0.635" y2="-0.645" layer="29"/>
+<rectangle x1="-0.485" y1="0.605" x2="0.415" y2="1.455" layer="29"/>
+<rectangle x1="-0.485" y1="-0.445" x2="0.415" y2="0.405" layer="29"/>
+<rectangle x1="-0.485" y1="-1.495" x2="0.415" y2="-0.645" layer="29"/>
+<rectangle x1="0.565" y1="0.605" x2="1.465" y2="1.455" layer="29"/>
+<rectangle x1="0.565" y1="-0.445" x2="1.465" y2="0.405" layer="29"/>
+<rectangle x1="0.565" y1="-1.495" x2="1.465" y2="-0.645" layer="29"/>
+<rectangle x1="-1.48" y1="0.65" x2="-0.68" y2="1.41" layer="31"/>
+<rectangle x1="-1.48" y1="-0.4" x2="-0.68" y2="0.36" layer="31"/>
+<rectangle x1="-1.48" y1="-1.45" x2="-0.68" y2="-0.69" layer="31"/>
+<rectangle x1="-0.43" y1="0.65" x2="0.37" y2="1.41" layer="31"/>
+<rectangle x1="-0.43" y1="-0.4" x2="0.37" y2="0.36" layer="31"/>
+<rectangle x1="-0.43" y1="-1.45" x2="0.37" y2="-0.69" layer="31"/>
+<rectangle x1="0.62" y1="0.65" x2="1.42" y2="1.41" layer="31"/>
+<rectangle x1="0.62" y1="-0.4" x2="1.42" y2="0.36" layer="31"/>
+<rectangle x1="0.62" y1="-1.45" x2="1.42" y2="-0.69" layer="31"/>
+<smd name="P1" x="-1.085" y="1.03" dx="0.9" dy="0.85" layer="1" stop="no" cream="no"/>
+<smd name="P2" x="-1.085" y="-0.02" dx="0.9" dy="0.85" layer="1" stop="no" cream="no"/>
+<smd name="P3" x="-1.085" y="-1.07" dx="0.9" dy="0.85" layer="1" stop="no" cream="no"/>
+<smd name="P4" x="-0.035" y="-1.07" dx="0.9" dy="0.85" layer="1" stop="no" cream="no"/>
+<smd name="P5" x="1.015" y="-1.07" dx="0.9" dy="0.85" layer="1" stop="no" cream="no"/>
+<smd name="P6" x="1.015" y="-0.02" dx="0.9" dy="0.85" layer="1" stop="no" cream="no"/>
+<smd name="P7" x="1.015" y="1.03" dx="0.9" dy="0.85" layer="1" stop="no" cream="no"/>
+<smd name="P8" x="-0.035" y="1.03" dx="0.9" dy="0.85" layer="1" stop="no" cream="no"/>
+<smd name="P9" x="-0.035" y="-0.02" dx="0.9" dy="0.85" layer="1" stop="no" cream="no"/>
+<text x="-1.6256" y="1.7272" size="0.6096" layer="25" font="vector" ratio="20">&gt;Name</text>
+<text x="-1.7526" y="-2.3876" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ADMP401">
@@ -13370,6 +13434,24 @@ VD6283 light measurement is fast and accurate thanks to an individual ADC and a 
 <pin name="INT2" x="12.7" y="-7.62" length="short" direction="out" rot="R180"/>
 <text x="-10.16" y="10.414" size="1.778" layer="95" font="vector">&gt;Name</text>
 <text x="-10.16" y="-12.7" size="1.778" layer="96" font="vector">&gt;Value</text>
+</symbol>
+<symbol name="ENS160">
+<description>&lt;h3&gt;ENS160&lt;/h3&gt;</description>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="!CS!" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="!INT!" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="GND@8" x="-12.7" y="-2.54" visible="pin" length="short" direction="pwr"/>
+<pin name="GND@9" x="-12.7" y="-5.08" visible="pin" length="short" direction="pwr"/>
+<pin name="PICO/SDA" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="POCI/ADDR" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SCLK/SCL" x="15.24" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="VDD" x="-12.7" y="5.08" visible="pin" length="short" direction="pwr"/>
+<pin name="VDDIO" x="-12.7" y="2.54" visible="pin" length="short" direction="pwr"/>
+<text x="-10.16" y="8.128" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-10.16" y="-10.16" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -17335,6 +17417,42 @@ Senses acceleration with 12-bit resolution up to 16g, sends data out over I2C or
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-17118"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ENS-160" prefix="U">
+<description>&lt;h3&gt;ScioSense Indoor Air Quality Sensor - ENS160 &lt;/h3&gt;
+
+&lt;p&gt;The ENS160 is a digital multi-gas sensor solution, based on metal oxide (MOX) technology
+with four sensor elements.
+The independent hotplate control allows the detection of a wide range of volatile organic
+compounds (VOCs) including ethanol, toluene, hydrogen and oxidizing gases with superior
+sensitivity. The ENS160 supports intelligent algorithms to process raw sensor measurements
+on-chip. These algorithms calculate CO2-equivalents, TVOC, air quality indices (AQIs) and
+perform humidity and temperature compensation, as well as baseline management, all on
+chip. &lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="ENS160" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LGA-9">
+<connects>
+<connect gate="G$1" pin="!CS!" pad="P7"/>
+<connect gate="G$1" pin="!INT!" pad="P6"/>
+<connect gate="G$1" pin="GND@8" pad="P8"/>
+<connect gate="G$1" pin="GND@9" pad="P9"/>
+<connect gate="G$1" pin="PICO/SDA" pad="P1"/>
+<connect gate="G$1" pin="POCI/ADDR" pad="P3"/>
+<connect gate="G$1" pin="SCLK/SCL" pad="P2"/>
+<connect gate="G$1" pin="VDD" pad="P4"/>
+<connect gate="G$1" pin="VDDIO" pad="P5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-17100" constant="no"/>
+<attribute name="VALUE" value="ENS160" constant="no"/>
 </technology>
 </technologies>
 </device>
