@@ -573,6 +573,42 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
 <wire x1="0.508" y1="0.889" x2="-0.508" y2="0.889" width="0.2032" layer="21"/>
 </package>
+<package name="SMT-JUMPER_2_SOIC-PAD_PASTE">
+<smd name="1" x="0" y="0" dx="0.6" dy="1.2" layer="1" roundness="30" rot="R90" stop="no" cream="no"/>
+<polygon width="0.01" layer="31">
+<vertex x="-0.6625" y="-0.2"/>
+<vertex x="-0.6625" y="0.2" curve="-90"/>
+<vertex x="-0.5125" y="0.35"/>
+<vertex x="1.8875" y="0.35" curve="-90"/>
+<vertex x="2.0375" y="0.2"/>
+<vertex x="2.0375" y="-0.2" curve="-90"/>
+<vertex x="1.8875" y="-0.35"/>
+<vertex x="-0.5125" y="-0.35" curve="-90"/>
+</polygon>
+<polygon width="0.01" layer="29">
+<vertex x="-0.7125" y="-0.2"/>
+<vertex x="-0.7125" y="0.2" curve="-90"/>
+<vertex x="-0.5125" y="0.4"/>
+<vertex x="1.8875" y="0.4" curve="-90"/>
+<vertex x="2.0875" y="0.2"/>
+<vertex x="2.0875" y="-0.2" curve="-90"/>
+<vertex x="1.8875" y="-0.4"/>
+<vertex x="-0.5125" y="-0.4" curve="-90"/>
+</polygon>
+</package>
+<package name="SMT-JUMPER_2_SOIC-PAD_NO-PASTE">
+<smd name="1" x="0" y="0" dx="0.6" dy="1.2" layer="1" roundness="30" rot="R90" stop="no" cream="no"/>
+<polygon width="0.01" layer="29">
+<vertex x="-0.7125" y="-0.2"/>
+<vertex x="-0.7125" y="0.2" curve="-90"/>
+<vertex x="-0.5125" y="0.4"/>
+<vertex x="1.8875" y="0.4" curve="-90"/>
+<vertex x="2.0875" y="0.2"/>
+<vertex x="2.0875" y="-0.2" curve="-90"/>
+<vertex x="1.8875" y="-0.4"/>
+<vertex x="-0.5125" y="-0.4" curve="-90"/>
+</polygon>
+</package>
 </packages>
 <packages3d>
 <package3d name="SMT-JUMPER_2_NO_SILK_ROUND" urn="urn:adsk.eagle:package:39280/1" type="box">
@@ -802,6 +838,47 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 <wire x1="-0.762" y1="0" x2="1.016" y2="0" width="0.254" layer="94"/>
+</symbol>
+<symbol name="SMT-JUMPER_2_SOIC-PAD_PASTE">
+<wire x1="1.27" y1="-0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.508" y1="0" x2="3.556" y2="0" width="3.175" layer="95"/>
+<text x="1.27" y="2.794" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
+<text x="1.27" y="-2.794" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
+<rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="94"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<wire x1="1.778" y1="0.635" x2="4.318" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="0.635" x2="4.318" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="-0.635" x2="1.778" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-0.635" x2="1.778" y2="0.635" width="0.1524" layer="94"/>
+<rectangle x1="1.778" y1="-0.635" x2="4.318" y2="0.635" layer="94" rot="R180"/>
+</symbol>
+<symbol name="SMT-JUMPER_2_SOIC-PAD_NO-PASTE">
+<wire x1="1.27" y1="-0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<text x="1.27" y="2.794" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
+<text x="1.27" y="-2.794" size="1.778" layer="96" font="vector" align="center">&gt;VALUE</text>
+<rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="94"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<wire x1="1.778" y1="0.635" x2="4.318" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="0.635" x2="4.318" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="4.318" y1="-0.635" x2="1.778" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-0.635" x2="1.778" y2="0.635" width="0.1524" layer="94"/>
+<rectangle x1="1.778" y1="-0.635" x2="4.318" y2="0.635" layer="94" rot="R180"/>
+<wire x1="-2.032" y1="0" x2="-0.508" y2="1.524" width="0.127" layer="95" style="shortdash" curve="-90"/>
+<wire x1="-0.508" y1="1.524" x2="3.556" y2="1.524" width="0.127" layer="95" style="shortdash"/>
+<wire x1="3.556" y1="1.524" x2="5.08" y2="0" width="0.127" layer="95" style="shortdash" curve="-90"/>
+<wire x1="5.08" y1="0" x2="3.556" y2="-1.524" width="0.127" layer="95" style="shortdash" curve="-90"/>
+<wire x1="3.556" y1="-1.524" x2="-0.508" y2="-1.524" width="0.127" layer="95" style="shortdash"/>
+<wire x1="-0.508" y1="-1.524" x2="-2.032" y2="0" width="0.127" layer="95" style="shortdash" curve="-90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1154,6 +1231,40 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JUMPER-SMT_2_SOIC-PAD_PASTE">
+<gates>
+<gate name="J1" symbol="SMT-JUMPER_2_SOIC-PAD_PASTE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMT-JUMPER_2_SOIC-PAD_PASTE">
+<connects>
+<connect gate="J1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="PASTE" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JUMPER-SMT_2_SOIC-PAD_NO-PASTE">
+<gates>
+<gate name="J1" symbol="SMT-JUMPER_2_SOIC-PAD_NO-PASTE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMT-JUMPER_2_SOIC-PAD_NO-PASTE">
+<connects>
+<connect gate="J1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="VALUE" value="NO PASTE" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
