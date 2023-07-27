@@ -1681,7 +1681,7 @@ Antenna</text>
 <rectangle x1="-7.3" y1="2.2" x2="-6.1" y2="3" layer="31" rot="R180"/>
 <rectangle x1="-6.1" y1="2.3" x2="-5.2" y2="2.9" layer="31" rot="R180"/>
 </package>
-<package name="NEO-M9N/M8T/M8U/D9S">
+<package name="NEO-M9N/M8T/M8U/D9S/F9P">
 <description>&lt;h3&gt;u-blox NEO-M9N/M8T/M8U/D9S Module&lt;/h3&gt;
 
 &lt;h4&gt;Mechanical Specifications&lt;/h4&gt;
@@ -2479,6 +2479,36 @@ the 3 V variant.&lt;/p&gt;</description>
 <pin name="ANT_DETECT" x="-15.24" y="-2.54" length="short" direction="in"/>
 <pin name="!ANT_SHORT!" x="-15.24" y="-5.08" length="short" direction="out"/>
 </symbol>
+<symbol name="NEO-F9P">
+<description>&lt;h3&gt;u-blox NEO-D9S correction receiver&lt;/h3&gt;</description>
+<wire x1="12.7" y1="22.86" x2="12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-22.86" x2="-12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-22.86" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="22.86" x2="12.7" y2="22.86" width="0.254" layer="94"/>
+<pin name="GND" x="-15.24" y="-20.32" length="short" direction="pwr"/>
+<pin name="VCC" x="-15.24" y="20.32" length="short" direction="pwr"/>
+<pin name="!RESET!" x="15.24" y="20.32" length="short" direction="in" rot="R180"/>
+<pin name="EXT_INT" x="15.24" y="17.78" length="short" direction="in" rot="R180"/>
+<pin name="SDA/!CS!" x="15.24" y="12.7" length="short" rot="R180"/>
+<pin name="SCL/SCK" x="15.24" y="10.16" length="short" rot="R180"/>
+<pin name="TXD1/POCI" x="15.24" y="-2.54" length="short" direction="out" rot="R180"/>
+<pin name="RXD1/PICO" x="15.24" y="-5.08" length="short" direction="in" rot="R180"/>
+<pin name="LNA_EN" x="-15.24" y="5.08" length="short" direction="out"/>
+<pin name="V_BKCP" x="-15.24" y="17.78" length="short" direction="pwr"/>
+<pin name="RF_IN" x="-15.24" y="12.7" length="short" direction="in"/>
+<pin name="VCC_RF" x="-15.24" y="10.16" length="short" direction="out"/>
+<pin name="V_USB" x="-15.24" y="-12.7" length="short" direction="pwr"/>
+<pin name="USB_D+" x="-15.24" y="-15.24" length="short"/>
+<pin name="USB_D-" x="-15.24" y="-17.78" length="short"/>
+<pin name="D_SEL" x="15.24" y="-17.78" length="short" direction="in" rot="R180"/>
+<pin name="!SAFEBOOT!" x="15.24" y="-20.32" length="short" direction="in" rot="R180"/>
+<text x="-12.7" y="22.86" size="1.778" layer="95">&gt;Name</text>
+<text x="-12.7" y="-25.4" size="1.778" layer="96">&gt;Value</text>
+<pin name="TXD2" x="15.24" y="5.08" length="short" direction="out" rot="R180"/>
+<pin name="RXD2" x="15.24" y="2.54" length="short" direction="in" rot="R180"/>
+<pin name="RTK_STAT" x="15.24" y="-12.7" length="short" direction="in" rot="R180"/>
+<pin name="TIMEPULSE" x="15.24" y="-10.16" length="short" direction="out" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ANTENNA">
@@ -3079,7 +3109,7 @@ The NEO-M9N module is available in the NEO form factor LLC package&lt;/p&gt;</de
 <gate name="G$1" symbol="NEO-M9N" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="NEO-M9N/M8T/M8U/D9S">
+<device name="" package="NEO-M9N/M8T/M8U/D9S/F9P">
 <connects>
 <connect gate="G$1" pin="!RST" pad="8"/>
 <connect gate="G$1" pin="!SAFEBOOT!" pad="1"/>
@@ -3136,7 +3166,7 @@ known.
 <gate name="G$1" symbol="NEO-M8T" x="-2.54" y="0"/>
 </gates>
 <devices>
-<device name="" package="NEO-M9N/M8T/M8U/D9S">
+<device name="" package="NEO-M9N/M8T/M8U/D9S/F9P">
 <connects>
 <connect gate="G$1" pin="!RST" pad="8"/>
 <connect gate="G$1" pin="D_SEL" pad="2"/>
@@ -3182,7 +3212,7 @@ The NEO-M8U may be installed in any position within the vehicle without configur
 <gate name="G$1" symbol="NEO-M8U" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="NEO-M9N/M8T/M8U/D9S">
+<device name="" package="NEO-M9N/M8T/M8U/D9S/F9P">
 <connects>
 <connect gate="G$1" pin="!RST" pad="8"/>
 <connect gate="G$1" pin="!SAFEBOOT!" pad="1"/>
@@ -3266,7 +3296,7 @@ The NEO-D9S can receive the data stream of a GNSS correction service, broadcast 
 <gate name="U1" symbol="NEO-D9S" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-00B" package="NEO-M9N/M8T/M8U/D9S">
+<device name="-00B" package="NEO-M9N/M8T/M8U/D9S/F9P">
 <connects>
 <connect gate="U1" pin="!ANT_SHORT!" pad="16"/>
 <connect gate="U1" pin="!RESET!" pad="8"/>
@@ -3293,6 +3323,43 @@ The NEO-D9S can receive the data stream of a GNSS correction service, broadcast 
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-16579" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="U-BLOX_NEO-F9P" prefix="U">
+<gates>
+<gate name="U1" symbol="NEO-F9P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-15B" package="NEO-M9N/M8T/M8U/D9S/F9P">
+<connects>
+<connect gate="U1" pin="!RESET!" pad="8"/>
+<connect gate="U1" pin="!SAFEBOOT!" pad="1"/>
+<connect gate="U1" pin="D_SEL" pad="2"/>
+<connect gate="U1" pin="EXT_INT" pad="4"/>
+<connect gate="U1" pin="GND" pad="10 12 13 24"/>
+<connect gate="U1" pin="LNA_EN" pad="14"/>
+<connect gate="U1" pin="RF_IN" pad="11"/>
+<connect gate="U1" pin="RTK_STAT" pad="15"/>
+<connect gate="U1" pin="RXD1/PICO" pad="21"/>
+<connect gate="U1" pin="RXD2" pad="17"/>
+<connect gate="U1" pin="SCL/SCK" pad="19"/>
+<connect gate="U1" pin="SDA/!CS!" pad="18"/>
+<connect gate="U1" pin="TIMEPULSE" pad="3"/>
+<connect gate="U1" pin="TXD1/POCI" pad="20"/>
+<connect gate="U1" pin="TXD2" pad="16"/>
+<connect gate="U1" pin="USB_D+" pad="6"/>
+<connect gate="U1" pin="USB_D-" pad="5"/>
+<connect gate="U1" pin="VCC" pad="23"/>
+<connect gate="U1" pin="VCC_RF" pad="9"/>
+<connect gate="U1" pin="V_BKCP" pad="22"/>
+<connect gate="U1" pin="V_USB" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="GPS-" constant="no"/>
 </technology>
 </technologies>
 </device>
