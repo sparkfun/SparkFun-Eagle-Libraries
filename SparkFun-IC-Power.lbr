@@ -4946,24 +4946,41 @@ Specifications:
 </deviceset>
 <deviceset name="MCP73833" prefix="U">
 <gates>
-<gate name="G$1" symbol="MCP73833" x="0" y="0"/>
+<gate name="U1" symbol="MCP73833" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DFN-10">
+<device name="QFN" package="DFN-10">
 <connects>
-<connect gate="G$1" pin="!PG" pad="7"/>
-<connect gate="G$1" pin="PROG" pad="6"/>
-<connect gate="G$1" pin="STAT1" pad="3"/>
-<connect gate="G$1" pin="STAT2" pad="4"/>
-<connect gate="G$1" pin="THERM" pad="8"/>
-<connect gate="G$1" pin="VBAT" pad="9 10"/>
-<connect gate="G$1" pin="VDD" pad="1 2"/>
-<connect gate="G$1" pin="VSS" pad="5 11"/>
+<connect gate="U1" pin="!PG" pad="7"/>
+<connect gate="U1" pin="PROG" pad="6"/>
+<connect gate="U1" pin="STAT1" pad="3"/>
+<connect gate="U1" pin="STAT2" pad="4"/>
+<connect gate="U1" pin="THERM" pad="8"/>
+<connect gate="U1" pin="VBAT" pad="9 10"/>
+<connect gate="U1" pin="VDD" pad="1 2"/>
+<connect gate="U1" pin="VSS" pad="5 11"/>
 </connects>
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-14369"/>
 <attribute name="VALUE" value="MCP73833"/>
+</technology>
+</technologies>
+</device>
+<device name="MSOP" package="MSOP10">
+<connects>
+<connect gate="U1" pin="!PG" pad="7"/>
+<connect gate="U1" pin="PROG" pad="6"/>
+<connect gate="U1" pin="STAT1" pad="3"/>
+<connect gate="U1" pin="STAT2" pad="4"/>
+<connect gate="U1" pin="THERM" pad="8"/>
+<connect gate="U1" pin="VBAT" pad="9 10"/>
+<connect gate="U1" pin="VDD" pad="1 2"/>
+<connect gate="U1" pin="VSS" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-19890" constant="no"/>
 </technology>
 </technologies>
 </device>
