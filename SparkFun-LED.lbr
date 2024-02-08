@@ -2500,6 +2500,33 @@ Standard 0402 sized pads with cathode pin indicator.
 <wire x1="1.9" y1="5" x2="0.65" y2="5" width="0.2032" layer="51"/>
 <text x="2.54" y="-5.08" size="0.254" layer="51">LED center is 3.1mm above PCB</text>
 </package>
+<package name="CBI-RIGHT-ANGLE-RGB-PTH">
+<wire x1="-3.75" y1="0" x2="-3.75" y2="11" width="0.2032" layer="51"/>
+<wire x1="-2.5" y1="0" x2="2.5" y2="0" width="0.2032" layer="51"/>
+<wire x1="2.5" y1="0" x2="3.75" y2="0" width="0.2032" layer="51"/>
+<wire x1="-3.75" y1="11" x2="-2.4" y2="11" width="0.2032" layer="51"/>
+<wire x1="-2.5" y1="0" x2="-2.5" y2="-1.8" width="0.2032" layer="51"/>
+<wire x1="2.5" y1="0" x2="2.5" y2="-1.8" width="0.2032" layer="51"/>
+<wire x1="-2.5" y1="-1.8" x2="2.5" y2="-1.8" width="0.2032" layer="51" curve="180"/>
+<pad name="VCC" x="0.635" y="7" drill="1.016" diameter="1.651"/>
+<pad name="GND" x="-0.635" y="9.54" drill="1.016" diameter="1.651"/>
+<wire x1="-3.75" y1="0" x2="-3.75" y2="11" width="0.2032" layer="21"/>
+<wire x1="3.75" y1="0" x2="3.75" y2="11" width="0.2032" layer="21"/>
+<wire x1="-3.75" y1="0" x2="-2.5" y2="0" width="0.2032" layer="51"/>
+<wire x1="-3.75" y1="0" x2="3.75" y2="0" width="0.2032" layer="21"/>
+<wire x1="-3.75" y1="11" x2="3.75" y2="11" width="0.2032" layer="21"/>
+<text x="0" y="11.43" size="1.27" layer="25" font="vector" rot="SR0" align="bottom-center">&gt;NAME</text>
+<text x="0" y="13.97" size="1.27" layer="27" font="vector" rot="SR0" align="bottom-center">&gt;VALUE</text>
+<text x="2.54" y="-3.81" size="0.254" layer="51">LED center is 3.75mm above PCB</text>
+<pad name="DI" x="1.905" y="9.54" drill="1.016" diameter="1.651"/>
+<pad name="DO" x="-1.905" y="7" drill="1.016" diameter="1.651"/>
+<wire x1="-2.4" y1="6" x2="-2.4" y2="11" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="6" x2="-2.4" y2="6" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="6" x2="2.4" y2="11" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="11" x2="3.75" y2="11" width="0.2032" layer="51"/>
+<wire x1="3.75" y1="0" x2="3.75" y2="11" width="0.2032" layer="51"/>
+<hole x="0" y="3" drill="1.25"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -4517,10 +4544,10 @@ SMD LED with built-in controller IC.
 &lt;p&gt;&lt;li&gt;&lt;b&gt;Color:&lt;/b&gt; Red/Green/Blue&lt;/li&gt;
 &lt;p&gt;SparkFun Products:
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/11821”&gt;LED-SMD RGB (WS2812)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = https://www.sparkfun.com/products/12661&gt;LED-SMD RGB (WS2812)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = https://www.sparkfun.com/products/12986&gt;LED - RGB Addressable, PTH, 5mm Diffused (5 Pack)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href = https://www.sparkfun.com/products/12999&gt;LED - RGB Addressable, PTH, 5mm Clear (5 Pack)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/13794”&gt;Blynk Board - ESP8266&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href = https://www.sparkfun.com/products/23649&gt;RGB Addressable CBI LED 5mm RA&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;/p&gt;
@@ -4579,6 +4606,19 @@ SMD LED with built-in controller IC.
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="_CBI_RA_PTH" package="CBI-RIGHT-ANGLE-RGB-PTH">
+<connects>
+<connect gate="G$1" pin="DI" pad="DI"/>
+<connect gate="G$1" pin="DO" pad="DO"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="LED-20286" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
