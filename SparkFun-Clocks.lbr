@@ -136,6 +136,12 @@
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="no"/>
+<layer number="156" name="gesam-Maß" color="7" fill="1" visible="no" active="no"/>
+<layer number="157" name="FaceMchng" color="7" fill="1" visible="no" active="no"/>
+<layer number="158" name="FaceMMeas" color="7" fill="1" visible="no" active="no"/>
+<layer number="159" name="Geh-Bear2" color="7" fill="1" visible="no" active="no"/>
+<layer number="160" name="Topologie" color="7" fill="1" visible="no" active="no"/>
+<layer number="161" name="tomplace2" color="7" fill="1" visible="no" active="no"/>
 <layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
@@ -183,6 +189,7 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="252" name="BR-BS" color="7" fill="1" visible="no" active="no"/>
 <layer number="253" name="Extra" color="7" fill="1" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="no"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="no"/>
@@ -1695,6 +1702,25 @@ This is the "KIT" version, which has limited top masking for improved ease of as
 <circle x="-1.75" y="-1.25" radius="0.05" width="0.1524" layer="21"/>
 <rectangle x1="-1.3" y1="-1" x2="1.3" y2="1" layer="39"/>
 </package>
+<package name="4-SMD,32X25">
+<smd name="1" x="-1.1" y="-0.8" dx="1.4" dy="1.1" layer="1"/>
+<smd name="2" x="1.1" y="-0.8" dx="1.4" dy="1.1" layer="1"/>
+<smd name="3" x="1.1" y="0.8" dx="1.4" dy="1.1" layer="1"/>
+<smd name="4" x="-1.1" y="0.8" dx="1.4" dy="1.1" layer="1"/>
+<wire x1="-1.6" y1="-1.25" x2="1.6" y2="-1.25" width="0.1" layer="51"/>
+<wire x1="1.6" y1="-1.25" x2="1.6" y2="1.25" width="0.1" layer="51"/>
+<wire x1="1.6" y1="1.25" x2="-1.6" y2="1.25" width="0.1" layer="51"/>
+<wire x1="-1.6" y1="1.25" x2="-1.6" y2="-1.25" width="0.1" layer="51"/>
+<wire x1="-1.1" y1="1.6" x2="-2.1" y2="1.6" width="0.2" layer="21"/>
+<wire x1="-2.1" y1="1.6" x2="-2.1" y2="0.8" width="0.2" layer="21"/>
+<wire x1="1.1" y1="1.6" x2="2.1" y2="1.6" width="0.2" layer="21"/>
+<wire x1="2.1" y1="1.6" x2="2.1" y2="0.8" width="0.2" layer="21"/>
+<wire x1="2.1" y1="-0.8" x2="2.1" y2="-1.6" width="0.2" layer="21"/>
+<wire x1="2.1" y1="-1.6" x2="1.1" y2="-1.6" width="0.2" layer="21"/>
+<wire x1="-1.1" y1="-1.6" x2="-2.1" y2="-1.6" width="0.2" layer="21"/>
+<wire x1="-2.1" y1="-1.6" x2="-2.1" y2="-0.8" width="0.2" layer="21"/>
+<circle x="-2.8" y="-1.2" radius="0.3" width="0" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CRYSTAL">
@@ -2753,6 +2779,21 @@ unit with the CMOS-based oscillator and real-time-clock IC. &lt;/p&gt;</descript
 <technology name="">
 <attribute name="PROD_ID" value="XTAL-14845" constant="no"/>
 <attribute name="VALUE" value="24MHz" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-SMD-3.2X3.2MM" package="4-SMD,32X25">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PN" value="
+RH100-24.000-8-1015-EXT-TR-NS1
+"/>
+<attribute name="PROD-ID" value="XTAL-20784"/>
+<attribute name="VALUE" value="24.000MHz"/>
 </technology>
 </technologies>
 </device>

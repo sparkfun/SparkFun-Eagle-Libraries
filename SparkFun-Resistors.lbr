@@ -136,6 +136,12 @@
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="no" active="no"/>
+<layer number="156" name="gesam-Maß" color="1" fill="7" visible="no" active="no"/>
+<layer number="157" name="FaceMchng" color="3" fill="1" visible="no" active="no"/>
+<layer number="158" name="FaceMMeas" color="3" fill="1" visible="no" active="no"/>
+<layer number="159" name="Geh-Bear2" color="1" fill="7" visible="no" active="no"/>
+<layer number="160" name="Topologie" color="9" fill="1" visible="no" active="no"/>
+<layer number="161" name="tomplace2" color="7" fill="1" visible="no" active="no"/>
 <layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="no"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="no" active="no"/>
@@ -183,6 +189,8 @@
 <layer number="249" name="Edge" color="7" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="252" name="BR-BS" color="7" fill="1" visible="no" active="no"/>
+<layer number="253" name="Extra" color="7" fill="1" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="no" active="no"/>
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="no"/>
 </layers>
@@ -1066,6 +1074,30 @@ It has a reduced top mask to make it harder to install upside-down.</description
 <rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+</package>
+<package name="2506_AR">
+<smd name="1" x="-2.8" y="-0.85" dx="0.45" dy="0.9" layer="1"/>
+<smd name="2" x="-2" y="-0.85" dx="0.45" dy="0.9" layer="1"/>
+<smd name="3" x="-1.2" y="-0.85" dx="0.45" dy="0.9" layer="1"/>
+<smd name="4" x="-0.4" y="-0.85" dx="0.45" dy="0.9" layer="1"/>
+<smd name="5" x="0.4" y="-0.85" dx="0.45" dy="0.9" layer="1"/>
+<smd name="6" x="1.2" y="-0.85" dx="0.45" dy="0.9" layer="1"/>
+<smd name="7" x="2" y="-0.85" dx="0.45" dy="0.9" layer="1"/>
+<smd name="8" x="2.8" y="-0.85" dx="0.45" dy="0.9" layer="1"/>
+<smd name="9" x="2.8" y="0.85" dx="0.45" dy="0.9" layer="1"/>
+<smd name="10" x="2" y="0.85" dx="0.45" dy="0.9" layer="1"/>
+<smd name="11" x="1.2" y="0.85" dx="0.45" dy="0.9" layer="1"/>
+<smd name="12" x="0.4" y="0.85" dx="0.45" dy="0.9" layer="1"/>
+<smd name="13" x="-0.4" y="0.85" dx="0.45" dy="0.9" layer="1"/>
+<smd name="14" x="-1.2" y="0.85" dx="0.45" dy="0.9" layer="1"/>
+<smd name="15" x="-2" y="0.85" dx="0.45" dy="0.9" layer="1"/>
+<smd name="16" x="-2.8" y="0.85" dx="0.45" dy="0.9" layer="1"/>
+<wire x1="3.2" y1="0.8" x2="-3.2" y2="0.8" width="0.1" layer="51"/>
+<wire x1="-3.2" y1="0.8" x2="-3.2" y2="-0.8" width="0.1" layer="51"/>
+<wire x1="-3.2" y1="-0.8" x2="3.2" y2="-0.8" width="0.1" layer="51"/>
+<wire x1="3.2" y1="-0.8" x2="3.2" y2="0.8" width="0.1" layer="51"/>
+<wire x1="-3.3" y1="0.8" x2="-3.3" y2="-0.8" width="0.2" layer="21"/>
+<wire x1="3.3" y1="0.8" x2="3.3" y2="-0.8" width="0.2" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -5776,6 +5808,66 @@ A resistor is a passive two-terminal electrical component that implements electr
 <attribute name="PN" value="RC0402FR-0741K2L"/>
 <attribute name="PROD_ID" value="RES-15010"/>
 <attribute name="VALUE" value="41.2K"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3.3MOHM" prefix="R" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PN" value="MCA1206MD3304BP500"/>
+<attribute name="PROD_ID" value="RES-20093"/>
+<attribute name="VALUE" value="3.3M"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="10KOHM-ARRAY(8)-2506_ARV-1/16W-5%" prefix="RN" uservalue="yes">
+<gates>
+<gate name="A" symbol="RESISTOR-PADS" x="0" y="22.86"/>
+<gate name="B" symbol="RESISTOR-PADS" x="0" y="15.24"/>
+<gate name="C" symbol="RESISTOR-PADS" x="0" y="7.62"/>
+<gate name="D" symbol="RESISTOR-PADS" x="0" y="0"/>
+<gate name="E" symbol="RESISTOR-PADS" x="0" y="-7.62"/>
+<gate name="F" symbol="RESISTOR-PADS" x="0" y="-15.24"/>
+<gate name="G" symbol="RESISTOR-PADS" x="0" y="-22.86"/>
+<gate name="H" symbol="RESISTOR-PADS" x="0" y="-30.48"/>
+</gates>
+<devices>
+<device name="" package="2506_AR">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="2" pad="16"/>
+<connect gate="B" pin="1" pad="2"/>
+<connect gate="B" pin="2" pad="15"/>
+<connect gate="C" pin="1" pad="3"/>
+<connect gate="C" pin="2" pad="14"/>
+<connect gate="D" pin="1" pad="4"/>
+<connect gate="D" pin="2" pad="13"/>
+<connect gate="E" pin="1" pad="5"/>
+<connect gate="E" pin="2" pad="12"/>
+<connect gate="F" pin="1" pad="6"/>
+<connect gate="F" pin="2" pad="11"/>
+<connect gate="G" pin="1" pad="7"/>
+<connect gate="G" pin="2" pad="10"/>
+<connect gate="H" pin="1" pad="8"/>
+<connect gate="H" pin="2" pad="9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="RES-14952"/>
+<attribute name="VALUE" value="10K"/>
 </technology>
 </technologies>
 </device>

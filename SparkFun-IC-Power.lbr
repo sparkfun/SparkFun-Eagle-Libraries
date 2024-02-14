@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2647,7 +2647,59 @@ Pasted was reduced by 40% width on the center ground pad, and some amount on the
 <text x="-12.7" y="12.7" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="-12.7" y="-13.97" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 </package>
+<package name="SOT95P280X145-5M" urn="urn:adsk.eagle:footprint:40937510/1" locally_modified="yes">
+<description>5-SOT23, 0.95 mm pitch, 2.80 mm span, 2.90 X 1.60 X 1.45 mm body
+&lt;p&gt;5-pin SOT23 package with 0.95 mm pitch, 2.80 mm span with body size 2.90 X 1.60 X 1.45 mm&lt;/p&gt;</description>
+<circle x="-1.4663" y="1.7686" radius="0.25" width="0" layer="21"/>
+<wire x1="-0.875" y1="1.5786" x2="0.875" y2="1.5786" width="0.2032" layer="21"/>
+<wire x1="-0.875" y1="-1.5786" x2="0.875" y2="-1.5786" width="0.2032" layer="21"/>
+<wire x1="0.875" y1="-1.525" x2="-0.875" y2="-1.525" width="0.12" layer="51"/>
+<wire x1="-0.875" y1="-1.525" x2="-0.875" y2="1.525" width="0.12" layer="51"/>
+<wire x1="-0.875" y1="1.525" x2="0.875" y2="1.525" width="0.12" layer="51"/>
+<wire x1="0.875" y1="1.525" x2="0.875" y2="-1.525" width="0.12" layer="51"/>
+<smd name="1" x="-1.3033" y="0.95" dx="1.5088" dy="0.6291" layer="1"/>
+<smd name="2" x="-1.3033" y="0" dx="1.5088" dy="0.6291" layer="1"/>
+<smd name="3" x="-1.3033" y="-0.95" dx="1.5088" dy="0.6291" layer="1"/>
+<smd name="4" x="1.3033" y="-0.95" dx="1.5088" dy="0.6291" layer="1"/>
+<smd name="5" x="1.3033" y="0.95" dx="1.5088" dy="0.6291" layer="1"/>
+<text x="0" y="2.6536" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.2136" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="SOT8">
+<smd name="1" x="-0.74" y="0.75" dx="0.67" dy="0.3" layer="1" stop="no"/>
+<smd name="2" x="-0.74" y="0.25" dx="0.67" dy="0.3" layer="1" stop="no"/>
+<smd name="3" x="-0.74" y="-0.25" dx="0.67" dy="0.3" layer="1" stop="no"/>
+<smd name="4" x="-0.74" y="-0.75" dx="0.67" dy="0.3" layer="1" stop="no"/>
+<smd name="5" x="0.74" y="-0.75" dx="0.67" dy="0.3" layer="1" stop="no"/>
+<smd name="6" x="0.74" y="-0.25" dx="0.67" dy="0.3" layer="1" stop="no"/>
+<smd name="7" x="0.74" y="0.25" dx="0.67" dy="0.3" layer="1" stop="no"/>
+<smd name="8" x="0.74" y="0.75" dx="0.67" dy="0.3" layer="1" stop="no"/>
+<wire x1="-0.6" y1="-1.05" x2="0.6" y2="-1.05" width="0.1" layer="51"/>
+<wire x1="0.6" y1="-1.05" x2="0.6" y2="1.05" width="0.1" layer="51"/>
+<wire x1="0.6" y1="1.05" x2="-0.6" y2="1.05" width="0.1" layer="51"/>
+<wire x1="-0.6" y1="1.05" x2="-0.6" y2="-1.05" width="0.1" layer="51"/>
+<wire x1="-0.6" y1="1.2" x2="0.6" y2="1.2" width="0.2" layer="21"/>
+<wire x1="-0.6" y1="-1.2" x2="0.6" y2="-1.2" width="0.2" layer="21"/>
+<circle x="-1.1" y="1.4" radius="0.3" width="0" layer="21"/>
+<rectangle x1="-1.13" y1="0.55" x2="-0.36" y2="0.95" layer="29"/>
+<rectangle x1="-1.13" y1="0.05" x2="-0.36" y2="0.45" layer="29"/>
+<rectangle x1="-1.13" y1="-0.45" x2="-0.36" y2="-0.05" layer="29"/>
+<rectangle x1="-1.13" y1="-0.95" x2="-0.36" y2="-0.55" layer="29"/>
+<rectangle x1="0.36" y1="-0.95" x2="1.13" y2="-0.55" layer="29"/>
+<rectangle x1="0.36" y1="-0.45" x2="1.13" y2="-0.05" layer="29"/>
+<rectangle x1="0.36" y1="0.05" x2="1.13" y2="0.45" layer="29"/>
+<rectangle x1="0.36" y1="0.55" x2="1.13" y2="0.95" layer="29"/>
+</package>
 </packages>
+<packages3d>
+<package3d name="SOT95P280X145-5M" urn="urn:adsk.eagle:package:40937508/1" type="model">
+<description>5-SOT23, 0.95 mm pitch, 2.80 mm span, 2.90 X 1.60 X 1.45 mm body
+&lt;p&gt;5-pin SOT23 package with 0.95 mm pitch, 2.80 mm span with body size 2.90 X 1.60 X 1.45 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOT95P280X145-5M"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
 <symbol name="DC-DC_CONVERTER">
 <wire x1="-12.7" y1="22.86" x2="-12.7" y2="-22.86" width="0.254" layer="94"/>
@@ -3621,6 +3673,63 @@ conversion&lt;/p&gt;</description>
 <pin name="GND" x="12.7" y="-5.08" visible="pin" length="short" direction="pwr" rot="R180"/>
 <text x="-10.16" y="7.62" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="-10.16" y="-10.16" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+<symbol name="LMR62421">
+<wire x1="-10.16" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<pin name="VIN" x="-12.7" y="10.16" visible="pin" length="short"/>
+<pin name="EN" x="-12.7" y="-5.08" visible="pin" length="short"/>
+<pin name="SW" x="12.7" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="FB" x="12.7" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="GND" x="-12.7" y="-10.16" visible="pin" length="short"/>
+<text x="-10.16" y="15.748" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-10.16" y="-17.78" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+<symbol name="LM66200_IDEAL_DIODE">
+<pin name="VIN1" x="-12.7" y="10.16" length="short"/>
+<pin name="VIN2" x="-12.7" y="-2.54" length="short"/>
+<pin name="!ON!" x="-12.7" y="-10.16" length="short"/>
+<pin name="VOUT" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="ST" x="12.7" y="10.16" length="short" rot="R180"/>
+<pin name="GND" x="12.7" y="-10.16" length="short" rot="R180"/>
+<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<text x="-10.16" y="13.462" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<text x="-10.16" y="-15.24" size="1.778" layer="96" font="vector">&gt;VALUE</text>
+<wire x1="-6.35" y1="8.255" x2="-6.35" y2="6.985" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="6.985" x2="-6.35" y2="5.715" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="5.715" x2="-4.445" y2="6.985" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="6.985" x2="-6.35" y2="8.255" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="8.255" x2="-4.445" y2="6.985" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="6.985" x2="-4.445" y2="5.715" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="6.985" x2="-7.62" y2="6.985" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="1.905" x2="-6.35" y2="0.635" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="0.635" x2="-6.35" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="-0.635" x2="-4.445" y2="0.635" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="0.635" x2="-6.35" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="1.905" x2="-4.445" y2="0.635" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="0.635" x2="-4.445" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="0.635" x2="-7.62" y2="0.635" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="6.985" x2="0" y2="6.985" width="0.254" layer="94"/>
+<wire x1="0" y1="6.985" x2="0" y2="0.635" width="0.254" layer="94"/>
+<wire x1="0" y1="0.635" x2="0" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="0" y1="-3.175" x2="7.62" y2="-3.175" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="7.62" y="-2.54"/>
+<vertex x="7.62" y="-3.81"/>
+<vertex x="8.89" y="-3.175"/>
+</polygon>
+<wire x1="-4.445" y1="0.635" x2="0" y2="0.635" width="0.254" layer="94"/>
+<text x="-5.08" y="3.81" size="1.27" layer="94" font="vector" align="center">IDEAL</text>
+<wire x1="1.27" y1="8.255" x2="5.08" y2="8.255" width="0.254" layer="94"/>
+<wire x1="5.08" y1="8.255" x2="5.08" y2="4.445" width="0.254" layer="94"/>
+<wire x1="5.08" y1="4.445" x2="8.89" y2="4.445" width="0.254" layer="94"/>
+<text x="3.175" y="9.525" size="1.27" layer="94" font="vector" align="center">V1</text>
+<text x="6.985" y="3.175" size="1.27" layer="94" font="vector" align="center">V2</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -5768,7 +5877,70 @@ current (0mA to 600mA). The output for this LDO is 1.8V.</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="LMR62421" prefix="U" uservalue="yes">
+<description>The LMR62421 is an easy-to-use, space-efficient
+2.1A low-side switch regulator ideal for Boost and SEPIC DC-DC regulation. It provides all the active functions to provide local DC/DC conversion with fast-transient response and accurate regulation in the
+smallest PCB area. Switching frequency is internally set to 1.6 MHz, allowing the use of extremely small surface mount inductor and chip capacitors while providing efficiencies near 90%</description>
+<gates>
+<gate name="G$1" symbol="LMR62421" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT95P280X145-5M">
+<connects>
+<connect gate="G$1" pin="EN" pad="4"/>
+<connect gate="G$1" pin="FB" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="SW" pad="1"/>
+<connect gate="G$1" pin="VIN" pad="5"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:40937508/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="VREG-19362"/>
+<attribute name="VALUE" value="LMR62421"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IDEAL_DIODE_DUAL_LM66200" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="LM66200_IDEAL_DIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT8">
+<connects>
+<connect gate="G$1" pin="!ON!" pad="4"/>
+<connect gate="G$1" pin="GND" pad="1 5"/>
+<connect gate="G$1" pin="ST" pad="8"/>
+<connect gate="G$1" pin="VIN1" pad="3"/>
+<connect gate="G$1" pin="VIN2" pad="6"/>
+<connect gate="G$1" pin="VOUT" pad="2 7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-20783"/>
+<attribute name="VALUE" value="LM66200"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
