@@ -214,6 +214,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="P$2" x="0" y="-0.635" dx="1.27" dy="0.635" layer="1" stop="no" cream="no"/>
 <wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.4064" layer="1"/>
 </package>
+<package name="2PT_GND_TIE_SMALL">
+<smd name="P$1" x="0" y="0.3" dx="0.5" dy="0.5" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="P$2" x="0" y="-0.3" dx="0.5" dy="0.5" layer="1" stop="no" thermals="no" cream="no"/>
+<wire x1="0" y1="0.3" x2="0" y2="-0.3" width="0.5" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="1.0V">
@@ -550,7 +555,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
-<deviceset name="AGND">
+<deviceset name="AGND" prefix="AGND">
 <description>&lt;b&gt;Analog Ground Symbol&lt;/b&gt;
 &lt;p&gt;Generic symbol for a analog ground supply.&lt;/p&gt;</description>
 <gates>
@@ -798,6 +803,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </gates>
 <devices>
 <device name="" package="2PT_GND_TIE">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SMALL" package="2PT_GND_TIE_SMALL">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
