@@ -877,6 +877,22 @@ Interface consisting of a Serial Data Input (SI), Serial Data Output (SO), Seria
 <text x="-7.62" y="10.16" size="1.778" layer="95" font="vector" align="top-left">&gt;NAME</text>
 <text x="-7.62" y="-10.16" size="1.778" layer="96" font="vector">&gt;VALUE</text>
 </symbol>
+<symbol name="MX25L_QSPI_FLASH">
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="-10.16" y="8.128" size="1.778" layer="95">&gt;Name</text>
+<text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;Value</text>
+<pin name="VDD" x="-12.7" y="5.08" length="short"/>
+<pin name="GND" x="-12.7" y="-7.62" length="short"/>
+<pin name="D3/!RESET!" x="12.7" y="-7.62" length="short" rot="R180"/>
+<pin name="D2/!WP!" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="D1/DO" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="D0/DI" x="12.7" y="0" length="short" rot="R180"/>
+<pin name="CLK" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="!CS!" x="12.7" y="5.08" length="short" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="EEPROM-I2C" prefix="U">
@@ -1382,6 +1398,35 @@ The 24F01 is organized as one block of 128 x 8-bit memory with a 2-wire serial i
 <technologies>
 <technology name="">
 <attribute name="PROD_ID" value="IC-16922"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MX25L12833F_128MBIT_QSPI" prefix="U" uservalue="yes">
+<description>&lt;h1&gt;Macronix MX25L12833FZNI-10G 128MBit QSPI&lt;/h1&gt;
+&lt;p&gt;
+MX25L12833F is 128Mb bits Serial NOR Flash memory.</description>
+<gates>
+<gate name="G$1" symbol="MX25L_QSPI_FLASH" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="WSON-8-6X5">
+<connects>
+<connect gate="G$1" pin="!CS!" pad="1"/>
+<connect gate="G$1" pin="CLK" pad="6"/>
+<connect gate="G$1" pin="D0/DI" pad="5"/>
+<connect gate="G$1" pin="D1/DO" pad="2"/>
+<connect gate="G$1" pin="D2/!WP!" pad="3"/>
+<connect gate="G$1" pin="D3/!RESET!" pad="7"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PN" value="MX25L12833F-10G"/>
+<attribute name="PROD_ID" value="IC-21738"/>
+<attribute name="VALUE" value="MX25L12833F 128Mb"/>
 </technology>
 </technologies>
 </device>
