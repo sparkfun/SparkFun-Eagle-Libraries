@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -177,11 +177,11 @@
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
 <layer number="225" name="225bmp" color="7" fill="1" visible="no" active="no"/>
 <layer number="226" name="226bmp" color="7" fill="1" visible="no" active="no"/>
-<layer number="227" name="227bmp" color="7" fill="1" visible="no" active="no"/>
-<layer number="228" name="228bmp" color="7" fill="1" visible="no" active="no"/>
-<layer number="229" name="229bmp" color="7" fill="1" visible="no" active="no"/>
-<layer number="230" name="230bmp" color="7" fill="1" visible="no" active="no"/>
-<layer number="231" name="231bmp" color="7" fill="1" visible="no" active="no"/>
+<layer number="227" name="227bmp" color="11" fill="1" visible="no" active="no"/>
+<layer number="228" name="228bmp" color="10" fill="1" visible="no" active="no"/>
+<layer number="229" name="229bmp" color="14" fill="1" visible="no" active="no"/>
+<layer number="230" name="230bmp" color="12" fill="1" visible="no" active="no"/>
+<layer number="231" name="231bmp" color="9" fill="1" visible="no" active="no"/>
 <layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
 <layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
 <layer number="248" name="Housing" color="7" fill="1" visible="no" active="no"/>
@@ -1253,7 +1253,7 @@ Out</text>
 <circle x="0" y="0" radius="2.54" width="5.08" layer="42"/>
 <circle x="0" y="0" radius="2.54" width="5.08" layer="41"/>
 </package>
-<package name="STANDOFF_M2X0.4-ELECTRICAL">
+<package name="STANDOFF_M2X0.4_SMD-ELECTRICAL">
 <text x="4.22" y="0.93" size="1.27" layer="25" ratio="15">&gt;NAME</text>
 <text x="4.22" y="-2.1" size="1.27" layer="27" ratio="15">&gt;VALUE</text>
 <smd name="1" x="0" y="0" dx="5.3" dy="5.3" layer="1" roundness="100" cream="no"/>
@@ -1725,12 +1725,14 @@ Out</text>
 <technology name=""/>
 </technologies>
 </device>
-<device name="&quot;" package="STANDOFF_M2X0.4-ELECTRICAL">
+<device name="&quot;" package="STANDOFF_M2X0.4_SMD-ELECTRICAL">
 <connects>
 <connect gate="G$1" pin="P$1" pad="1"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="HW-14879"/>
+</technology>
 </technologies>
 </device>
 </devices>
